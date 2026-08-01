@@ -26,7 +26,7 @@ export function addToOfflineQueue(action: Omit<OfflineAction, "id" | "createdAt"
 
   // Trigger background sync
   if ("serviceWorker" in navigator && "SyncManager" in window) {
-    navigator.serviceWorker.ready.then((reg) => {
+    navigator.serviceWorker.ready.then((reg: any) => {
       reg.sync.register("stadione-sync").catch(() => {})
     })
   }
