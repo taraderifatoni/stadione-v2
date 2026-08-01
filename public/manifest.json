@@ -1,0 +1,15 @@
+{
+  "name": "Stadione — Platform Olahraga Indonesia",
+  "short_name": "Stadione",
+  "description": "Booking lapangan, membership gym, akademi olahraga",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff0000",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "/stadione-logo.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
