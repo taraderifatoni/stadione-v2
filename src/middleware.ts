@@ -48,8 +48,8 @@ export async function middleware(request: NextRequest) {
 
   // No user → redirect to login
   if (!user) {
-    // Exception: staff invite accept page can be accessed without auth
-    if (url.pathname.startsWith("/api/staff/accept")) {
+    // Allow login/register/auth pages on any host
+    if (url.pathname.startsWith("/login") || url.pathname.startsWith("/register") || url.pathname.startsWith("/auth") || url.pathname.startsWith("/api/")) {
       return supabaseResponse
     }
 
