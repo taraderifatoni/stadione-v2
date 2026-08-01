@@ -40,7 +40,7 @@ export default function VenuePublicPage() {
           <Building2 size={40} color={C.textMuted} />
         </div>
         <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
-          <button onClick={() => router.push(`/booking`)} style={{ flex: 1, padding: "12px 20px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
+          <button onClick={() => router.push(`/venue/${venueSlug}/booking`)} style={{ flex: 1, padding: "12px 20px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
             <Calendar size={16} />Booking
           </button>
         </div>
