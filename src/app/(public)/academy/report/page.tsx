@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { ChevronLeft, Star } from "lucide-react"
+import { ChevronLeft, Star, Download } from "lucide-react"
 import { C } from "@/lib/design"
 import { TopBar } from "@/components/shared/TopBar"
 
@@ -39,6 +39,11 @@ export default function AcademyReportPage() {
         left={<ChevronLeft size={20} color={C.text} onClick={() => router.back()} style={{ cursor: "pointer" }} />}
       />
       <div style={{ padding: "0 16px 16px" }}>
+        <div style={{ marginBottom: 12 }}>
+          <button onClick={() => window.print()} style={{ width: "100%", padding: "12px 20px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>
+            <Download size={16} />Download PDF
+          </button>
+        </div>
         <Card style={{ textAlign: "center", marginBottom: 16, background: C.elevated }}>
           <div style={{ fontSize: 11, color: C.textMuted }}>Nilai total</div>
           <div style={{ fontSize: 36, fontWeight: 800, color: "#4CAF50" }}>3.8</div>
