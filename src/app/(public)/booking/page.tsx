@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { notifyBookingConfirmed } from "@/lib/notification/triggers"
 
 const Card = ({ children, style, onClick }: any) => <div onClick={onClick} style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, cursor: onClick ? "pointer" : "default", ...style }}>{children}</div>
 const Btn = ({ children, primary, full, onClick }: any) => <button onClick={onClick} style={{ padding: "12px 20px", borderRadius: 10, border: primary ? "none" : `1px solid ${C.border}`, background: primary ? C.primary : "transparent", color: primary ? "#fff" : C.text, fontSize: 14, fontWeight: 600, cursor: "pointer", width: full ? "100%" : "auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>{children}</button>
@@ -67,7 +68,7 @@ export default function BookingPage() {
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ fontSize: 13, color: C.textMuted }}>Lapangan</span><span style={{ fontSize: 13, color: C.text }}>Futsal A</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ fontSize: 13, color: C.textMuted }}>Waktu</span><span style={{ fontSize: 13, color: C.text }}>{slots[sel]} - {slots[sel]?.replace(/(\d+)/, (m: string) => String(+m + 1))}:00</span></div>
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 14 }}><span style={{ fontSize: 13, color: C.textMuted }}>Total</span><span style={{ fontSize: 15, fontWeight: 700, color: C.accent }}>Rp 120.000</span></div>
-                <Btn primary full>Bayar sekarang</Btn>
+                <Btn primary full onClick={() => { notifyBookingConfirmed("", "", "", ""); alert("Booking berhasil! Notifikasi telah dikirim.") }}>Bayar sekarang</Btn>
               </Card>
             </div>
           )}

@@ -37,23 +37,23 @@ export default async function HomePage() {
           <div style={{ position: "absolute", top: -20, right: -20, width: 100, height: 100, borderRadius: 50, background: "#fff08" }} />
           <div style={{ fontSize: 22, fontWeight: 800, color: "#fff", marginBottom: 6, lineHeight: 1.2 }}>Temukan venue{'\n'}olahraga terbaik</div>
           <div style={{ fontSize: 13, color: "#fff9", marginBottom: 16 }}>Booking, membership, dan akademi</div>
-          <div style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff15", borderRadius: 10, padding: "10px 14px" }}>
-            <Search size={16} color="#fff8" />
-            <span style={{ fontSize: 13, color: "#fff6" }}>Cari venue atau olahraga...</span>
-          </div>
+        <div onClick={() => router.push("/venues")} style={{ display: "flex", alignItems: "center", gap: 8, background: "#fff15", borderRadius: 10, padding: "10px 14px", cursor: "pointer" }}>
+          <Search size={16} color="#fff8" />
+          <span style={{ fontSize: 13, color: "#fff6" }}>Cari venue atau olahraga...</span>
+        </div>
         </div>
 
         {/* Sport filter pills */}
         <div style={{ display: "flex", gap: 8, marginBottom: 20, overflowX: "auto", paddingBottom: 4 }}>
           {sportTypes.map((t, i) => (
-            <span key={t} style={{ padding: "8px 16px", borderRadius: 20, background: i === 0 ? C.primary : C.surface, color: i === 0 ? "#fff" : C.textSec, fontSize: 12, fontWeight: 500, whiteSpace: "nowrap", border: i === 0 ? "none" : `1px solid ${C.border}`, cursor: "pointer" }}>{t}</span>
+            <span key={t} onClick={() => router.push(`/venues?sport=${t.toLowerCase()}`)} style={{ padding: "8px 16px", borderRadius: 20, background: i === 0 ? C.primary : C.surface, color: i === 0 ? "#fff" : C.textSec, fontSize: 12, fontWeight: 500, whiteSpace: "nowrap", border: i === 0 ? "none" : `1px solid ${C.border}`, cursor: "pointer" }}>{t}</span>
           ))}
         </div>
 
         {/* Venue list header */}
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
           <span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>Venue terdekat</span>
-          <span style={{ fontSize: 12, color: C.primaryLight, cursor: "pointer" }}>Lihat semua</span>
+          <span style={{ fontSize: 12, color: C.primaryLight, cursor: "pointer" }} onClick={() => router.push("/venues")}>Lihat semua</span>
         </div>
 
         {/* Venue cards */}
