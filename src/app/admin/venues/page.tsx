@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
 import { ChevronLeft, Plus, Search } from "lucide-react"
-import { createAdminClient } from "@/lib/supabase/admin"
+import { createClient } from "@/lib/supabase/client"
 
 const StatusDot = ({ color }: any) => <span style={{ width: 8, height: 8, borderRadius: 4, background: color, display: "inline-block" }} />
 const Badge = ({ children }: any) => <span style={{ fontSize: 11, fontWeight: 600, padding: "3px 8px", borderRadius: 6, background: C.primary + "22", color: C.primaryLight }}>{children}</span>
@@ -15,7 +15,7 @@ export default function AdminVenues() {
   const [venues, setVenues] = useState<any[]>([])
 
   useEffect(() => {
-    createAdminClient().from("venues").select("*").order("created_at", { ascending: false }).then(({ data }: any) => setVenues(data || []))
+    createClient().from("venues").select("*").order("created_at", { ascending: false }).then(({ data }: any) => setVenues(data || []))
   }, [])
 
   return <div>

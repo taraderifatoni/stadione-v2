@@ -31,14 +31,14 @@ export function EmptyState({ icon: Icon, title, action, actionLabel, onAction }:
 
 export function StatusBadge({ status }: { status: string }) {
   const map: Record<string, { color: string; bg: string; label: string }> = {
-    active: { ...SEMANTIC.success, label: "Aktif" },
-    confirmed: { ...SEMANTIC.success, label: "Dikonfirmasi" },
+    active: { color: SEMANTIC.success.text, bg: SEMANTIC.success.bg, label: "Aktif" },
+    confirmed: { color: SEMANTIC.success.text, bg: SEMANTIC.success.bg, label: "Dikonfirmasi" },
     paid: { color: "#B5AC8A", bg: "#1A1816", label: "Dibayar" },
-    pending: { ...SEMANTIC.warning, label: "Pending" },
-    expired: { ...SEMANTIC.danger, label: "Expired" },
-    cancelled: { ...SEMANTIC.danger, label: "Dibatalkan" },
+    pending: { color: SEMANTIC.warning.text, bg: SEMANTIC.warning.bg, label: "Pending" },
+    expired: { color: SEMANTIC.danger.text, bg: SEMANTIC.danger.bg, label: "Expired" },
+    cancelled: { color: SEMANTIC.danger.text, bg: SEMANTIC.danger.bg, label: "Dibatalkan" },
     draft: { color: "#6B6558", bg: "#1A1816", label: "Draft" },
-    published: { ...SEMANTIC.success, label: "Published" },
+    published: { color: SEMANTIC.success.text, bg: SEMANTIC.success.bg, label: "Published" },
   }
   const s = map[status] || map.active
   return <span style={{ fontSize: 11, fontWeight: 600, padding: "3px 8px", borderRadius: 6, background: s.bg, color: s.color }}>{s.label}</span>
