@@ -78,7 +78,9 @@ export default function BookingPage() {
     const start = info.start; const end = info.end
     const totalHours = (end.getTime() - start.getTime()) / 3600000
     if (selectedCourt) {
-      supabase.from("pricing_rules").select("base_price, member_discount_pct").eq("court_id", selectedCourt.id).eq("is_active", true).limit(1).then(({ data: p }: any) => {
+      const day = start.getDay()
+      const dayType = (day === 0 || day === 6) ? "weekend" : "weekday"
+      supabase.from("pricing_rules").select("base_price, member_discount_pct").eq("court_id", selectedCourt.id).eq("is_active", true).eq("day_type", dayType).order("priority", { ascending: false }).limit(1).then(({ data: p }: any) => {
         const rate = p?.[0]?.base_price || 100000
         setBasePrice(rate * totalHours)
         setPrice(rate * totalHours)
