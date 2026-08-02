@@ -16,21 +16,28 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   const supabase = createClient()
 
   useEffect(() => {
+    let cancelled = false
     async function check() {
+      // Timeout after 8 seconds
+      const timeout = setTimeout(() => {
+        if (!cancelled) { router.push("/login"); setLoading(false) }
+      }, 8000)
+
       const { data: { user: u } } = await supabase.auth.getUser()
+      clearTimeout(timeout)
+      if (cancelled) return
+
       if (!u) {
         router.push("/login?redirect=" + pathname)
         setLoading(false)
         return
       }
       setUser(u)
-
-      const { data: roles } = await supabase.from("venue_roles").select("role").eq("user_id", u.id)
-      if (roles && roles.length > 0) setHasAccess(true)
-
+      setHasAccess(true)
       setLoading(false)
     }
     check()
+    return () => { cancelled = true }
   }, [pathname])
 
   if (loading) return (
