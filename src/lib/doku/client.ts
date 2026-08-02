@@ -1,79 +1,67 @@
 /**
- * DOKU Checkout API client
- * Uses HMAC-SHA256 signing pattern
+ * DOKU Checkout API client — production
  */
 
-const DOKU_ENV = process.env.DOKU_ENVIRONMENT || "sandbox"
-export const DOKU_API_BASE =
-  DOKU_ENV === "production"
-    ? "https://api.doku.com"
-    : "https://api-sandbox.doku.com"
+const DOKU_API_BASE = "https://api.doku.com"
 
-export interface DokuCheckoutPayload {
-  order: {
-    invoice_number: string
-    amount: number
-    currency?: string
-  }
-  payment: {
-    payment_due_date: number // Unix timestamp (minutes from now)
-  }
-  customer: {
-    name: string
-    email: string
-  }
-}
-
-export interface DokuCheckoutResponse {
+export interface DokuPaymentResult {
   payment_url: string
   invoice_number: string
-  transaction_id?: string
-  order_id?: string
+  session_id?: string
 }
 
-async function generateSignature(
-  clientId: string,
-  secretKey: string,
-  requestId: string,
-  timestamp: string,
-  body: string
-): Promise<string> {
-  const data = `${clientId}|${requestId}|${timestamp}|${body}`
-  const encoder = new TextEncoder()
-  const key = await crypto.subtle.importKey(
-    "raw",
-    encoder.encode(secretKey),
-    { name: "HMAC", hash: "SHA-256" },
-    false,
-    ["sign"]
-  )
-  const sig = await crypto.subtle.sign("HMAC", key, encoder.encode(data))
-  return btoa(String.fromCharCode(...new Uint8Array(sig)))
-}
-
-export async function createDokuCheckout(
-  payload: DokuCheckoutPayload
-): Promise<DokuCheckoutResponse> {
+export async function createDokuPayment(input: {
+  amount: number
+  invoiceNumber: string
+  customerName: string
+  customerEmail: string
+  callbackUrl?: string
+}): Promise<DokuPaymentResult> {
   const clientId = process.env.DOKU_CLIENT_ID!
   const secretKey = process.env.DOKU_SECRET_KEY!
   const requestId = crypto.randomUUID()
-  const timestamp = new Date().toISOString()
+  const timestamp = new Date().toISOString().replace(/\.\d{3}/, "")
+
   const body = JSON.stringify({
     order: {
-      invoice_number: payload.order.invoice_number,
-      amount: payload.order.amount,
-      currency: payload.order.currency || "IDR",
+      amount: input.amount,
+      invoice_number: input.invoiceNumber,
+      currency: "IDR",
+      callback_url: input.callbackUrl || "https://stadione.pro",
     },
     payment: {
-      payment_due_date: payload.payment.payment_due_date,
+      type: "SALE",
+      payment_due_date: 60,
     },
     customer: {
-      name: payload.customer.name,
-      email: payload.customer.email,
+      name: input.customerName || "Customer",
+      email: input.customerEmail || "customer@stadione.pro",
+      country: "ID",
     },
+    line_items: [
+      { name: "Venue Booking", price: input.amount, quantity: 1 },
+    ],
   })
 
-  const signature = await generateSignature(clientId, secretKey, requestId, timestamp, body)
+  // Generate body digest
+  const bodyDigest = btoa(String.fromCharCode(...new Uint8Array(
+    await crypto.subtle.digest("SHA-256", new TextEncoder().encode(body))
+  )))
+
+  // Build canonical signature string (V1 format)
+  const canonical = [
+    `Client-Id:${clientId}`,
+    `Request-Id:${requestId}`,
+    `Request-Timestamp:${timestamp}`,
+    `Request-Target:/checkout/v1/payment`,
+    `Digest:${bodyDigest}`,
+  ].join("\n")
+
+  // HMAC-SHA256
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(secretKey),
+    { name: "HMAC", hash: "SHA-256" }, false, ["sign"])
+  const sig = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(canonical))
+  const signature = btoa(String.fromCharCode(...new Uint8Array(sig)))
 
   const response = await fetch(`${DOKU_API_BASE}/checkout/v1/payment`, {
     method: "POST",
@@ -93,31 +81,11 @@ export async function createDokuCheckout(
   }
 
   const data = await response.json()
-  return {
-    payment_url: data.payment_url || data.response?.payment_url,
-    invoice_number: data.invoice_number || data.response?.invoice_number,
-    transaction_id: data.transaction_id,
-    order_id: data.order_id,
-  }
-}
+  const res = data.response || data
 
-export async function verifyDokuSignature(
-  body: string,
-  signature: string,
-  clientId: string,
-  secretKey: string
-): Promise<boolean> {
-  try {
-    const key = await crypto.subtle.importKey(
-      "raw",
-      new TextEncoder().encode(secretKey),
-      { name: "HMAC", hash: "SHA-256" },
-      false,
-      ["verify"]
-    )
-    const sigBytes = Uint8Array.from(atob(signature), (c) => c.charCodeAt(0))
-    return await crypto.subtle.verify("HMAC", key, sigBytes, new TextEncoder().encode(body))
-  } catch {
-    return false
+  return {
+    payment_url: res.payment?.url || res.payment_url || "",
+    invoice_number: res.order?.invoice_number || input.invoiceNumber,
+    session_id: res.order?.session_id,
   }
 }
