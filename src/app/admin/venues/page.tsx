@@ -26,7 +26,9 @@ export default function AdminVenues() {
         <Search size={16} color={C.textMuted} style={{ position: "absolute", left: 12, top: 12 }} />
         <input placeholder="Cari venue..." style={{ width: "100%", padding: "10px 12px 10px 36px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box" }} />
       </div>
-      {venues.map((v: any) => (
+      {venues.length === 0 ? (
+        <div style={{ textAlign: "center", padding: 40, color: C.textMuted }}>Memuat venue...</div>
+      ) : venues.map((v: any) => (
         <div key={v.id} onClick={() => router.push(`/admin/w/${v.slug}`)} style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, marginBottom: 10, cursor: "pointer" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 8 }}>
             <div><div style={{ fontSize: 14, fontWeight: 600, color: C.text }}>{v.name}</div><div style={{ fontSize: 12, color: C.textMuted, marginTop: 2 }}>{v.city || "Yogyakarta"}</div></div>
