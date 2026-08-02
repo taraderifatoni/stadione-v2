@@ -43,6 +43,15 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
   if (loading) return <div style={{ background: C.bg, minHeight: "100vh" }} />
   if (!venue) return <div style={{ padding: 40, textAlign: "center", color: C.textMuted, background: C.bg }}>Venue tidak ditemukan</div>
   if (!role && !platformAdmin) return (
+    <div style={{ background: C.bg, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ textAlign: "center", padding: 40 }}>
+        <div style={{ fontSize: 48, marginBottom: 12 }}>🔒</div>
+        <div style={{ fontSize: 18, fontWeight: 700, color: C.text }}>Akses ditolak</div>
+        <div style={{ fontSize: 13, color: C.textMuted, marginTop: 6 }}>Anda tidak memiliki akses ke venue ini</div>
+        <Link href="/admin/venues" style={{ display: "inline-block", marginTop: 16, padding: "10px 20px", borderRadius: 10, background: C.primary, color: "#fff", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Kembali ke daftar venue</Link>
+      </div>
+    </div>
+  )
 
   const nav = [
     { icon: Calendar, label: "Booking", href: `/admin/w/${slug}/bookings` },
