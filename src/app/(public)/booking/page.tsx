@@ -1,15 +1,14 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import dynamic from "next/dynamic"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
 import { makeBookingCode } from "@/lib/constants"
-import FullCalendar from "@fullcalendar/react"
-import timeGridPlugin from "@fullcalendar/timegrid"
-import interactionPlugin from "@fullcalendar/interaction"
-import dayGridPlugin from "@fullcalendar/daygrid"
+
+const FullCalendar = dynamic(() => import("@fullcalendar/react"), { ssr: false })
 
 const SPORT_LABEL: Record<string, string> = { futsal: "Futsal", basketball: "Basket", badminton: "Badminton", tennis: "Tenis", volleyball: "Voli", pingpong: "Pingpong", squash: "Squash", pickleball: "Pickleball" }
 
@@ -23,8 +22,19 @@ export default function BookingPage() {
   const [price, setPrice] = useState(0)
   const [bookingCode, setBookingCode] = useState("")
   const [msg, setMsg] = useState("")
+  const [plugins, setPlugins] = useState<any[]>([])
   const supabase = createClient()
   const router = useRouter()
+
+  useEffect(() => {
+    Promise.all([
+      import("@fullcalendar/timegrid"),
+      import("@fullcalendar/interaction"),
+      import("@fullcalendar/daygrid"),
+    ]).then(([timeGrid, interaction, dayGrid]) => {
+      setPlugins([timeGrid.default, interaction.default, dayGrid.default])
+    })
+  }, [])
 
   useEffect(() => {
     supabase.from("venues").select("*").eq("status", "active").limit(20).then(({ data }: any) => {
@@ -112,7 +122,7 @@ export default function BookingPage() {
         {step === "select" && (
           <div style={{ background: C.surface, borderRadius: 14, border: `1px solid ${C.border}` }}>
             <FullCalendar
-              plugins={[timeGridPlugin as any, interactionPlugin as any, dayGridPlugin as any]}
+              plugins={plugins as any}
               initialView="timeGridWeek"
               headerToolbar={{ left: "prev,next today", center: "title", right: "timeGridWeek,timeGridDay" }}
               height="auto"
