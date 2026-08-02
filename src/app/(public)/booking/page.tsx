@@ -128,12 +128,28 @@ export default function BookingPage() {
     await supabase.from("bookings").insert({
       venue_id: selectedVenue.id, court_slot_id: slot.id, user_id: user.id,
       booking_date: selectedInfo.date, start_time: selectedInfo.start, end_time: selectedInfo.end,
-      total_hours: selectedInfo.hours, base_price: basePrice, discount_amount: promoDiscount, final_price: price, status: "confirmed",
-    })
+      total_hours: selectedInfo.hours, base_price: basePrice, discount_amount: promoDiscount, final_price: price, status: "pending",
+    }).select().single().then(async ({ data: newBooking }: any) => {
+      if (newBooking) {
+        // Call DOKU payment
+        try {
+          const res = await fetch("/api/payment/create", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              bookingId: newBooking.id, amount: price,
+              userName: user.user_metadata?.name || "User", userEmail: user.email,
+            }),
+          })
+          const doku = await res.json()
+          if (doku.payment_url) window.open(doku.payment_url, "_blank")
+        } catch {}
 
-    setBookingCode(code)
-    setMsg(`Booking berhasil! Kode: ${code}`)
-    setTimeout(() => { setStep("select"); setMsg("") }, 5000)
+        setBookingCode(code)
+        setMsg(`Booking dibuat! Kode: ${code}. Lanjutkan pembayaran di tab baru.`)
+        setTimeout(() => { setStep("select"); setMsg("") }, 5000)
+      }
+    })
   }
 
   return (
