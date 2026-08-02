@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
 import { ChevronLeft, Plus, Search } from "lucide-react"
-import { createClient } from "@/lib/supabase/client"
 
 const StatusDot = ({ color }: any) => <span style={{ width: 8, height: 8, borderRadius: 4, background: color, display: "inline-block" }} />
 const Badge = ({ children }: any) => <span style={{ fontSize: 11, fontWeight: 600, padding: "3px 8px", borderRadius: 6, background: C.primary + "22", color: C.primaryLight }}>{children}</span>
@@ -15,7 +14,9 @@ export default function AdminVenues() {
   const [venues, setVenues] = useState<any[]>([])
 
   useEffect(() => {
-    createClient().from("venues").select("*").order("created_at", { ascending: false }).then(({ data }: any) => setVenues(data || []))
+    fetch("https://api.stadione.pro/rest/v1/venues?select=*&order=created_at.desc&limit=50", {
+      headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
+    }).then(r => r.json()).then(setVenues)
   }, [])
 
   return <div>
