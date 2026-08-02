@@ -33,7 +33,15 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
     check()
   }, [pathname])
 
-  if (loading) return <div style={{ background: C.bg, minHeight: "100vh" }} />
+  if (loading) return (
+    <div style={{ background: C.bg, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ textAlign: "center" }}>
+        <div style={{ width: 40, height: 40, borderRadius: 20, border: `3px solid ${C.border}`, borderTopColor: C.primary, animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
+        <div style={{ fontSize: 14, color: C.textMuted }}>Memuat...</div>
+      </div>
+      <style>{`@keyframes spin { to { transform: rotate(360deg) } }`}</style>
+    </div>
+  )
   if (!user) return null // Will redirect
   if (!hasAccess) return (
     <div style={{ background: C.bg, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>

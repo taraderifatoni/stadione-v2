@@ -32,8 +32,17 @@ export default function BookingPage() {
   const [promoDiscount, setPromoDiscount] = useState(0)
   const [promoError, setPromoError] = useState("")
   const [isFull, setIsFull] = useState(false)
+  const [isMember, setIsMember] = useState(false)
   const supabase = createClient()
   const router = useRouter()
+
+  useEffect(() => {
+    supabase.auth.getUser().then(({ data: { user } }) => {
+      if (user && selectedVenue) {
+        supabase.from("members").select("id").eq("user_id", user.id).eq("venue_id", selectedVenue.id).eq("status", "active").single().then(({ data }: any) => setIsMember(!!data))
+      }
+    })
+  }, [selectedVenue])
 
   useEffect(() => {
     Promise.all([
@@ -82,8 +91,11 @@ export default function BookingPage() {
       const dayType = (day === 0 || day === 6) ? "weekend" : "weekday"
       supabase.from("pricing_rules").select("base_price, member_discount_pct").eq("court_id", selectedCourt.id).eq("is_active", true).eq("day_type", dayType).order("priority", { ascending: false }).limit(1).then(({ data: p }: any) => {
         const rate = p?.[0]?.base_price || 100000
-        setBasePrice(rate * totalHours)
-        setPrice(rate * totalHours)
+        const discPct = p?.[0]?.member_discount_pct || 0
+        const rawPrice = rate * totalHours
+        const memberDisc = isMember ? rawPrice * (discPct / 100) : 0
+        setBasePrice(rawPrice)
+        setPrice(rawPrice - memberDisc)
         setPromoDiscount(0)
         setSelectedInfo({ start: start.toTimeString().slice(0, 5), end: end.toTimeString().slice(0, 5), date: start.toISOString().split("T")[0], hours: totalHours })
         setStep("book")
