@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { useAuth } from "@/hooks/useAuth"
 import { C } from "@/lib/design"
 import { Mail, Lock } from "lucide-react"
@@ -28,6 +28,7 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false)
   const { signIn } = useAuth()
   const router = useRouter()
+  const searchParams = useSearchParams()
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -35,7 +36,11 @@ export default function LoginPage() {
     setLoading(true)
     const { error: err } = await signIn(email, password)
     if (err) setError("Email atau kata sandi salah")
-    else { router.push("/"); router.refresh() }
+    else {
+      const redirectTo = searchParams.get("redirect") || "/"
+      router.push(redirectTo)
+      router.refresh()
+    }
     setLoading(false)
   }
 
