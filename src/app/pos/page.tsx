@@ -28,8 +28,14 @@ export default function PosPage() {
   const [refundTxnId, setRefundTxnId] = useState("")
   const [refundReason, setRefundReason] = useState("")
   const [processing, setProcessing] = useState(false)
+  const [authChecked, setAuthChecked] = useState(false)
+  const [hasAccess, setHasAccess] = useState(false)
 
-  useEffect(() => { loadShift() }, [])
+  useEffect(() => {
+    const token = document.cookie.split("; ").find(r => r.startsWith("sb-"))
+    if (!token) { router.push("https://stadione.pro/login?redirect=" + encodeURIComponent("https://pos.stadione.pro/")); return }
+    setHasAccess(true); setAuthChecked(true); loadShift()
+  }, [])
 
   async function loadShift() {
     const r = await fetch(`https://api.stadione.pro/rest/v1/shifts?select=*&status=eq.open&venue_id=eq.${VID}&limit=1`, {headers:H}).then(r => r.json())
@@ -93,6 +99,9 @@ export default function PosPage() {
     setMsg(`Booking walk-in: ${invNo}`); setWalkinName(""); setWalkinAmount("")
     loadShift(); setProcessing(false)
   }
+
+  if (!authChecked) return <div style={{ minHeight: "100vh", background: C.bg }} />
+  if (!hasAccess) return <div style={{ minHeight: "100vh", background: C.bg, display: "flex", alignItems: "center", justifyContent: "center" }}><div style={{ textAlign: "center" }}><p style={{ fontSize: 18, fontWeight: 700, color: C.text }}>Akses ditolak</p><p style={{ fontSize: 13, color: C.textMuted, marginTop: 4 }}>Silakan login terlebih dahulu</p><a href="https://stadione.pro/login" style={{ display: "inline-block", marginTop: 16, padding: "10px 20px", borderRadius: 10, background: C.primary, color: "#fff", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Login</a></div></div>
 
   return (
     <div style={{ minHeight: "100vh", background: C.bg }}>
