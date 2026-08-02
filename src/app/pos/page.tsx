@@ -167,6 +167,8 @@ export default function PosPage() {
                 </>
               )}
             </div>
+
+            <div style={{ marginTop: 16, background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}` }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}><Clock size={18} color={C.primaryLight} /><span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>Tutup Shift</span></div>
               <input type="number" placeholder="Kas akhir (Rp)" value={closeBal} onChange={e => setCloseBal(e.target.value)} style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 8 }} />
               <button onClick={closeShift} disabled={processing} style={{ width: "100%", padding: "10px", borderRadius: 10, border: `1px solid ${C.danger}44`, background: "transparent", color: C.danger, fontSize: 14, fontWeight: 600, cursor: "pointer" }}>{processing?"...":"Tutup Shift"}</button>
