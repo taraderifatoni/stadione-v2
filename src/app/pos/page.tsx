@@ -21,6 +21,12 @@ export default function PosPage() {
   const [walkinHours, setWalkinHours] = useState("1")
   const [walkinAmount, setWalkinAmount] = useState("")
   const [walkinMethod, setWalkinMethod] = useState("cash")
+  const [splitCash, setSplitCash] = useState("0")
+  const [splitQris, setSplitQris] = useState("0")
+  const [isSplit, setIsSplit] = useState(false)
+  const [showRefund, setShowRefund] = useState(false)
+  const [refundTxnId, setRefundTxnId] = useState("")
+  const [refundReason, setRefundReason] = useState("")
   const [processing, setProcessing] = useState(false)
 
   useEffect(() => { loadShift() }, [])
@@ -46,11 +52,14 @@ export default function PosPage() {
 
   async function closeShift() {
     if (!shift) return; setProcessing(true)
+    const totalCashIn = txns.filter((t:any) => t.payment_method === "cash").reduce((s:number,t:any) => s + (t.amount||0), 0)
+    const closingBal = parseInt(closeBal) || (shift.opening_balance + totalCashIn)
+    const disc = closingBal - shift.opening_balance - totalCashIn
     await fetch(`https://api.stadione.pro/rest/v1/shifts?id=eq.${shift.id}`, {
       method: "PATCH", headers: {"apikey":K,"Authorization":"Bearer "+K,"Content-Type":"application/json"},
-      body: JSON.stringify({status:"closed",closing_balance:parseInt(closeBal)||0,discrepancy:(parseInt(closeBal)||0)-(shift.opening_balance||0),closed_at:new Date().toISOString()})
+      body: JSON.stringify({status:"closed",closing_balance:closingBal,total_cash_in:totalCashIn,discrepancy:disc,closed_at:new Date().toISOString()})
     })
-    setMsg("Shift ditutup!"); setTimeout(() => setMsg(""), 3000)
+    setMsg(`Shift ditutup! Selisih: Rp ${disc.toLocaleString("id-ID")}`); setTimeout(() => setMsg(""), 3000)
     setShift(null); setTxns([]); setProcessing(false)
   }
 
@@ -136,7 +145,28 @@ export default function PosPage() {
               </div>
             ))}
 
-            <div style={{ marginTop: 16, background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}` }}>
+            <div style={{ marginTop: 16, background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, marginBottom: 16 }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}><Clock size={18} color={C.primaryLight} /><span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>Refund</span></div>
+              {!showRefund ? (
+                <button onClick={() => setShowRefund(true)} style={{ width: "100%", padding: "10px", borderRadius: 10, border: `1px solid ${C.border}`, background: "transparent", color: C.text, fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Ajukan Refund</button>
+              ) : (
+                <>
+                  <input placeholder="ID transaksi" value={refundTxnId} onChange={e => setRefundTxnId(e.target.value)} style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 8 }} />
+                  <input placeholder="Alasan refund" value={refundReason} onChange={e => setRefundReason(e.target.value)} style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 8 }} />
+                  <div style={{ display: "flex", gap: 8 }}>
+                    <button onClick={() => setShowRefund(false)} style={{ flex: 1, padding: "10px", borderRadius: 10, border: `1px solid ${C.border}`, background: "transparent", color: C.text, fontSize: 14, cursor: "pointer" }}>Batal</button>
+                    <button onClick={async () => {
+                      if(!refundTxnId) return
+                      await fetch("https://api.stadione.pro/rest/v1/refunds", {
+                        method: "POST", headers: {"apikey":K,"Authorization":"Bearer "+K,"Content-Type":"application/json"},
+                        body: JSON.stringify({pos_transaction_id:refundTxnId,reason:refundReason||"Refund",amount:0,requested_by:"b088dfc5-f677-4292-857f-b9b9e07832f9"})
+                      })
+                      setMsg("Refund diajukan!"); setShowRefund(false); setRefundTxnId(""); setRefundReason("")
+                    }} style={{ flex: 1, padding: "10px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Kirim</button>
+                  </div>
+                </>
+              )}
+            </div>
               <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12 }}><Clock size={18} color={C.primaryLight} /><span style={{ fontSize: 15, fontWeight: 700, color: C.text }}>Tutup Shift</span></div>
               <input type="number" placeholder="Kas akhir (Rp)" value={closeBal} onChange={e => setCloseBal(e.target.value)} style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 8 }} />
               <button onClick={closeShift} disabled={processing} style={{ width: "100%", padding: "10px", borderRadius: 10, border: `1px solid ${C.danger}44`, background: "transparent", color: C.danger, fontSize: 14, fontWeight: 600, cursor: "pointer" }}>{processing?"...":"Tutup Shift"}</button>
