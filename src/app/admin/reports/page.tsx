@@ -1,29 +1,53 @@
 "use client"
-import { useRouter } from "next/navigation"
+
+import { useEffect, useState } from "react"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { ChevronLeft, DollarSign, Calendar, Users, Activity, ArrowUpRight, ArrowDownRight } from "lucide-react"
-
-const StatCard = ({ icon: Icon, label, value, trend, color }: any) => (
-  <div style={{ background: C.surface, borderRadius: 14, padding: 14, border: `1px solid ${C.border}` }}>
-    <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}><div style={{ width: 28, height: 28, borderRadius: 8, background: (color || C.primary) + "18", display: "flex", alignItems: "center", justifyContent: "center" }}><Icon size={14} color={color || C.primaryLight} /></div><span style={{ fontSize: 11, color: C.textMuted }}>{label}</span></div>
-    <div style={{ fontSize: 20, fontWeight: 700, color: C.text }}>{value}</div>
-    {trend != null && <div style={{ fontSize: 11, color: trend > 0 ? "#4CAF50" : C.danger, marginTop: 4, display: "flex", alignItems: "center", gap: 2 }}>{trend > 0 ? <ArrowUpRight size={12} /> : <ArrowDownRight size={12} />} {Math.abs(trend)}%</div>}
-  </div>
-)
+import { DollarSign, Calendar, Users, Activity, TrendingUp } from "lucide-react"
 
 export default function AdminReports() {
-  const router = useRouter()
-  return <div>
-    <TopBar title="Laporan" left={<ChevronLeft size={20} color={C.text} onClick={() => router.back()} style={{ cursor: "pointer" }} />} />
-    <div style={{ padding: "0 16px 16px" }}>
-      <div style={{ display: "flex", gap: 6, marginBottom: 14 }}>{["Harian", "Mingguan", "Bulanan"].map((t, i) => <button key={t} style={{ flex: 1, padding: "8px 0", borderRadius: 8, border: `1px solid ${i === 0 ? C.primaryLight : C.border}`, background: i === 0 ? C.primary + "22" : "transparent", color: i === 0 ? C.primaryLight : C.textMuted, fontSize: 12, cursor: "pointer" }}>{t}</button>)}</div>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-        <StatCard icon={DollarSign} label="Revenue" value="28.5jt" trend={12} color="#4CAF50" />
-        <StatCard icon={Calendar} label="Booking" value="342" trend={8} />
-        <StatCard icon={Users} label="New member" value="23" trend={15} color={C.accent} />
-        <StatCard icon={Activity} label="Check-in" value="1.2rb" trend={-3} color="#FFB300" />
+  const [stats, setStats] = useState({ revenue: 0, bookings: 0, members: 0, checkins: 0, topVenues: [] as any[] })
+  const [loading, setLoading] = useState(true)
+  const H = {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
+
+  useEffect(() => {
+    Promise.all([
+      fetch("https://api.stadione.pro/rest/v1/payment_records?select=amount&status=eq.paid", {headers:H}).then(r => r.json()),
+      fetch("https://api.stadione.pro/rest/v1/bookings?select=id", {headers:H}).then(r => r.json()),
+      fetch("https://api.stadione.pro/rest/v1/members?select=id", {headers:H}).then(r => r.json()),
+      fetch("https://api.stadione.pro/rest/v1/venues?select=name&order=created_at.desc&limit=10", {headers:H}).then(r => r.json()),
+    ]).then(([pay, bk, mb, vn]) => {
+      setStats({
+        revenue: pay.reduce((s: number, p: any) => s + (p.amount || 0), 0),
+        bookings: bk.length, members: mb.length, checkins: 0,
+        topVenues: vn || [],
+      })
+    }).finally(() => setLoading(false))
+  }, [])
+
+  return (
+    <div>
+      <TopBar title="Analitik" />
+      <div style={{ padding: "0 16px 16px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10, marginBottom: 16 }}>
+          {[{ icon: DollarSign, label: "Revenue", value: `Rp ${(stats.revenue/1000).toFixed(0)}rb`, color: "#4CAF50" },
+            { icon: Calendar, label: "Booking", value: stats.bookings },
+            { icon: Users, label: "Member", value: stats.members, color: C.accent },
+            { icon: TrendingUp, label: "Pertumbuhan", value: "+12%", color: C.primaryLight }].map((s, i) => (
+            <div key={i} style={{ background: C.surface, borderRadius: 14, padding: 14, border: `1px solid ${C.border}` }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 8 }}><div style={{ width: 28, height: 28, borderRadius: 8, background: (s.color||C.primary)+"18", display: "flex", alignItems: "center", justifyContent: "center" }}><s.icon size={14} color={s.color||C.primaryLight} /></div><span style={{ fontSize: 11, color: C.textMuted }}>{s.label}</span></div>
+              <div style={{ fontSize: 20, fontWeight: 700, color: C.text }}>{s.value}</div>
+            </div>
+          ))}
+        </div>
+        <div style={{ fontSize: 14, fontWeight: 600, color: C.text, marginBottom: 8 }}>Top venue</div>
+        {stats.topVenues.map((v: any, i: number) => (
+          <div key={i} style={{ padding: "10px 0", borderBottom: `1px solid ${C.border}44`, display: "flex", justifyContent: "space-between" }}>
+            <span style={{ fontSize: 13, color: C.text }}>{v.name}</span>
+            <span style={{ fontSize: 12, color: C.textMuted }}>#{i + 1}</span>
+          </div>
+        ))}
       </div>
     </div>
-  </div>
+  )
 }
