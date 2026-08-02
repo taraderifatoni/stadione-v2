@@ -1,6 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
+import { createClient } from "@/lib/supabase/client"
 import { CreditCard, Calendar, Users, Bell, Settings, Shield, LogOut, ChevronRight } from "lucide-react"
 import { C } from "@/lib/design"
 import { TopBar } from "@/components/shared/TopBar"
@@ -36,6 +37,13 @@ const menuItems = [
 
 export default function ProfilePage() {
   const router = useRouter()
+  const supabase = createClient()
+
+  async function handleLogout() {
+    await supabase.auth.signOut()
+    router.push("/login")
+    router.refresh()
+  }
 
   return (
     <div>
@@ -62,7 +70,7 @@ export default function ProfilePage() {
         ))}
 
         <div style={{ marginTop: 16 }}>
-          <Btn full style={{ color: C.danger, borderColor: C.danger + "44" }}><LogOut size={16} />Keluar</Btn>
+          <Btn full onClick={handleLogout} style={{ color: C.danger, borderColor: C.danger + "44" }}><LogOut size={16} />Keluar</Btn>
         </div>
       </div>
     </div>
