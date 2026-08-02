@@ -12,11 +12,12 @@ const Badge = ({ children }: any) => <span style={{ fontSize: 11, fontWeight: 60
 export default function AdminVenues() {
   const router = useRouter()
   const [venues, setVenues] = useState<any[]>([])
+  const [error, setError] = useState("")
 
   useEffect(() => {
     fetch("https://api.stadione.pro/rest/v1/venues?select=*&order=created_at.desc&limit=50", {
       headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    }).then(r => r.json()).then(setVenues)
+    }).then(r => r.json()).then(setVenues).catch(e => setError("Gagal memuat: " + e.message))
   }, [])
 
   return <div>
@@ -26,7 +27,8 @@ export default function AdminVenues() {
         <Search size={16} color={C.textMuted} style={{ position: "absolute", left: 12, top: 12 }} />
         <input placeholder="Cari venue..." style={{ width: "100%", padding: "10px 12px 10px 36px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box" }} />
       </div>
-      {venues.length === 0 ? (
+      {error && <div style={{ padding: 16, color: C.danger, fontSize: 13 }}>{error}</div>}
+      {venues.length === 0 && !error ? (
         <div style={{ textAlign: "center", padding: 40, color: C.textMuted }}>Memuat venue...</div>
       ) : venues.map((v: any) => (
         <div key={v.id} onClick={() => router.push(`/admin/w/${v.slug}`)} style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, marginBottom: 10, cursor: "pointer" }}>
