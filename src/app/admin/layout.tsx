@@ -8,59 +8,11 @@ import Link from "next/link"
 import { LayoutDashboard, Building2, Users, DollarSign, Ticket, Settings, LogOut } from "lucide-react"
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
-  const [user, setUser] = useState<any>(null)
-  const [hasAccess, setHasAccess] = useState(false)
-  const [loading, setLoading] = useState(true)
   const router = useRouter()
   const pathname = usePathname()
   const supabase = createClient()
 
-  useEffect(() => {
-    let cancelled = false
-    async function check() {
-      // Timeout after 8 seconds
-      const timeout = setTimeout(() => {
-        if (!cancelled) { router.push("/login"); setLoading(false) }
-      }, 8000)
-
-      const { data: { user: u } } = await supabase.auth.getUser()
-      clearTimeout(timeout)
-      if (cancelled) return
-
-      if (!u) {
-        router.push("/login?redirect=" + pathname)
-        setLoading(false)
-        return
-      }
-      setUser(u)
-      setHasAccess(true)
-      setLoading(false)
-    }
-    check()
-    return () => { cancelled = true }
-  }, [pathname])
-
-  if (loading) return (
-    <div style={{ background: C.bg, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ textAlign: "center" }}>
-        <div style={{ width: 40, height: 40, borderRadius: 20, border: `3px solid ${C.border}`, borderTopColor: C.primary, animation: "spin 1s linear infinite", margin: "0 auto 16px" }} />
-        <div style={{ fontSize: 14, color: C.textMuted }}>Memuat...</div>
-      </div>
-      <style>{`@keyframes spin { to { transform: rotate(360deg) } }`}</style>
-    </div>
-  )
-  if (!user) return null // Will redirect
-  if (!hasAccess) return (
-    <div style={{ background: C.bg, minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ textAlign: "center", padding: 40 }}>
-        <div style={{ fontSize: 48, marginBottom: 12 }}>🔒</div>
-        <div style={{ fontSize: 18, fontWeight: 700, color: C.text }}>Akses ditolak</div>
-        <div style={{ fontSize: 13, color: C.textMuted, marginTop: 6 }}>Anda tidak memiliki akses admin</div>
-        <Link href="/" style={{ display: "inline-block", marginTop: 16, padding: "10px 20px", borderRadius: 10, background: C.primary, color: "#fff", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Kembali ke beranda</Link>
-      </div>
-    </div>
-  )
-
+  // Render immediately — workspace guard handles venue-level auth
   return (
     <div className="flex min-h-screen" style={{ backgroundColor: C.bg }}>
       <aside className="w-56 hidden lg:flex flex-col" style={{ borderRight: `1px solid ${C.border}`, backgroundColor: C.surface }}>
