@@ -1,79 +1,150 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
+import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { ChevronLeft, ChevronRight } from "lucide-react"
-import { notifyBookingConfirmed } from "@/lib/notification/triggers"
+import { makeBookingCode } from "@/lib/constants"
+import FullCalendar from "@fullcalendar/react"
+import timeGridPlugin from "@fullcalendar/timegrid"
+import interactionPlugin from "@fullcalendar/interaction"
+import dayGridPlugin from "@fullcalendar/daygrid"
 
-const Card = ({ children, style, onClick }: any) => <div onClick={onClick} style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, cursor: onClick ? "pointer" : "default", ...style }}>{children}</div>
-const Btn = ({ children, primary, full, onClick }: any) => <button onClick={onClick} style={{ padding: "12px 20px", borderRadius: 10, border: primary ? "none" : `1px solid ${C.border}`, background: primary ? C.primary : "transparent", color: primary ? "#fff" : C.text, fontSize: 14, fontWeight: 600, cursor: "pointer", width: full ? "100%" : "auto", display: "flex", alignItems: "center", justifyContent: "center", gap: 6 }}>{children}</button>
+const SPORT_LABEL: Record<string, string> = { futsal: "Futsal", basketball: "Basket", badminton: "Badminton", tennis: "Tenis", volleyball: "Voli", pingpong: "Pingpong", squash: "Squash", pickleball: "Pickleball" }
 
 export default function BookingPage() {
+  const [venues, setVenues] = useState<any[]>([])
+  const [selectedVenue, setSelectedVenue] = useState<any>(null)
+  const [courts, setCourts] = useState<any[]>([])
+  const [events, setEvents] = useState<any[]>([])
+  const [step, setStep] = useState<"select" | "book">("select")
+  const [selectedInfo, setSelectedInfo] = useState<any>(null)
+  const [price, setPrice] = useState(0)
+  const [bookingCode, setBookingCode] = useState("")
+  const [msg, setMsg] = useState("")
+  const supabase = createClient()
   const router = useRouter()
-  const [step, setStep] = useState<"court" | "slot">("court")
-  const [sel, setSel] = useState<number | null>(null)
 
-  const courts = [
-    { name: "Lap. Futsal A", type: "Futsal · Vinyl", price: "120" },
-    { name: "Lap. Futsal B", type: "Futsal · Sintetis", price: "120" },
-    { name: "Lap. Basket", type: "Basket · Indoor", price: "150" },
-  ]
-  const days = ["Sen", "Sel", "Rab", "Kam", "Jum", "Sab", "Min"]
-  const dates = [28, 29, 30, 31, 1, 2, 3]
-  const slots = ["08:00", "09:00", "10:00", "11:00", "13:00", "14:00", "15:00", "16:00", "17:00", "19:00", "20:00", "21:00"]
-  const booked = [2, 4, 7, 9]
+  useEffect(() => {
+    supabase.from("venues").select("*").eq("status", "active").limit(20).then(({ data }: any) => {
+      setVenues(data || [])
+      if (data?.length) setSelectedVenue(data[0])
+    })
+  }, [])
+
+  useEffect(() => {
+    if (!selectedVenue) return
+    supabase.from("courts").select("*").eq("venue_id", selectedVenue.id).eq("is_active", true).then(({ data: c }: any) => {
+      setCourts(c || [])
+      loadBookings(selectedVenue.id, c || [])
+    })
+  }, [selectedVenue])
+
+  async function loadBookings(venueId: string, courtList: any[]) {
+    const evts: any[] = []
+    for (const court of courtList) {
+      const { data: slots } = await supabase.from("court_slots").select("id").eq("court_id", court.id)
+      if (slots?.length) {
+        const slotIds = slots.map((s: any) => s.id)
+        const today = new Date().toISOString().split("T")[0]
+        const end = new Date(Date.now() + 14 * 86400000).toISOString().split("T")[0]
+        const { data: bookings } = await supabase.from("bookings").select("*").in("court_slot_id", slotIds).gte("booking_date", today).lte("booking_date", end).in("status", ["confirmed", "paid"])
+        bookings?.forEach((b: any) => evts.push({ title: court.name, start: `${b.booking_date}T${b.start_time}`, end: `${b.booking_date}T${b.end_time}`, backgroundColor: "#84102D", borderColor: "#A51A3A" }))
+      }
+    }
+    setEvents(evts)
+  }
+
+  function handleSelect(info: any) {
+    const start = info.start; const end = info.end
+    const totalHours = (end.getTime() - start.getTime()) / 3600000
+
+    // Find pricing
+    if (courts.length > 0) {
+      supabase.from("pricing_rules").select("base_price").eq("court_id", courts[0].id).eq("is_active", true).limit(1).then(({ data: p }: any) => {
+        const rate = p?.[0]?.base_price || 100000
+        setPrice(rate * totalHours)
+        setSelectedInfo({ start: start.toTimeString().slice(0, 5), end: end.toTimeString().slice(0, 5), date: start.toISOString().split("T")[0], hours: totalHours })
+        setStep("book")
+      })
+    }
+  }
+
+  async function handleConfirm() {
+    if (!selectedVenue || !courts[0] || !selectedInfo) return
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) { router.push("/login"); return }
+
+    const { data: slots } = await supabase.from("court_slots").select("id").eq("court_id", courts[0].id).limit(1)
+    const slot = slots?.[0]
+    if (!slot) return
+
+    const { data: seq } = await supabase.rpc("next_counter", { p_venue_id: selectedVenue.id, p_kind: "booking" })
+    const code = makeBookingCode(seq || 1)
+
+    const { data: booking } = await supabase.from("bookings").insert({
+      venue_id: selectedVenue.id, court_slot_id: slot.id, user_id: user.id,
+      booking_date: selectedInfo.date, start_time: selectedInfo.start, end_time: selectedInfo.end,
+      total_hours: selectedInfo.hours, base_price: price, final_price: price, status: "confirmed",
+    }).select().single()
+
+    if (booking) {
+      setBookingCode(code)
+      setMsg(`Booking berhasil! Kode: ${code}`)
+      setTimeout(() => { setStep("select"); setMsg("") }, 5000)
+    }
+  }
 
   return (
     <div>
-      {step === "court" ? <>
-        <TopBar title="Booking lapangan" left={<ChevronLeft size={20} color={C.text} onClick={() => router.push("/")} style={{ cursor: "pointer" }} />} />
-        <div style={{ padding: "0 16px 16px" }}>
-          <div style={{ fontSize: 13, color: C.textMuted, marginBottom: 12 }}>Pilih lapangan</div>
-          {courts.map((c, i) => (
-            <Card key={i} onClick={() => setStep("slot")} style={{ marginBottom: 10 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div>
-                  <div style={{ fontSize: 14, fontWeight: 600, color: C.text }}>{c.name}</div>
-                  <div style={{ fontSize: 12, color: C.textMuted, marginTop: 2 }}>{c.type}</div>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: C.accent, marginTop: 6 }}>Rp {c.price}.000<span style={{ fontWeight: 400, color: C.textMuted }}>/jam</span></div>
-                </div>
-                <ChevronRight size={18} color={C.textMuted} />
-              </div>
-            </Card>
+      <TopBar title="Booking lapangan" />
+      <div style={{ padding: "0 8px 8px" }}>
+        {/* Venue selector */}
+        <div style={{ display: "flex", gap: 4, overflowX: "auto", padding: "8px 4px" }}>
+          {venues.map((v: any) => (
+            <button key={v.id} onClick={() => setSelectedVenue(v)} style={{ padding: "6px 12px", borderRadius: 20, border: selectedVenue?.id === v.id ? "none" : `1px solid ${C.border}`, background: selectedVenue?.id === v.id ? C.primary : C.surface, color: selectedVenue?.id === v.id ? "#fff" : C.textSec, fontSize: 12, whiteSpace: "nowrap", cursor: "pointer" }}>{v.name}</button>
           ))}
         </div>
-      </> : <>
-        <TopBar title="Pilih slot" sub="Lap. Futsal A" left={<ChevronLeft size={20} color={C.text} onClick={() => setStep("court")} style={{ cursor: "pointer" }} />} />
-        <div style={{ padding: "0 16px 16px" }}>
-          <div style={{ display: "flex", gap: 0, marginBottom: 16 }}>
-            {days.map((d, i) => (
-              <button key={i} style={{ flex: 1, padding: "8px 0", display: "flex", flexDirection: "column", alignItems: "center", gap: 4, background: i === 3 ? C.primary : "transparent", borderRadius: 10, border: "none", cursor: "pointer" }}>
-                <span style={{ fontSize: 11, color: i === 3 ? "#fff9" : C.textMuted }}>{d}</span>
-                <span style={{ fontSize: 15, fontWeight: i === 3 ? 700 : 400, color: i === 3 ? "#fff" : C.text }}>{dates[i]}</span>
-              </button>
-            ))}
+
+        {msg && <div style={{ background: C.successBg, color: "#4CAF50", padding: 10, borderRadius: 10, fontSize: 13, textAlign: "center", margin: "8px 4px" }}>{msg}</div>}
+
+        {step === "select" && (
+          <div style={{ background: C.surface, borderRadius: 14, border: `1px solid ${C.border}` }}>
+            <FullCalendar
+              plugins={[timeGridPlugin as any, interactionPlugin as any, dayGridPlugin as any]}
+              initialView="timeGridWeek"
+              headerToolbar={{ left: "prev,next today", center: "title", right: "timeGridWeek,timeGridDay" }}
+              height="auto"
+              slotMinTime="08:00:00"
+              slotMaxTime="23:00:00"
+              slotDuration="01:00:00"
+              allDaySlot={false}
+              selectable={true}
+              selectMirror={true}
+              select={handleSelect}
+              events={events}
+              locale="id"
+              selectOverlap={false}
+            />
           </div>
-          <div style={{ fontSize: 13, color: C.textMuted, marginBottom: 10 }}>Slot tersedia — 31 Juli 2026</div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8 }}>
-            {slots.map((s, i) => {
-              const isBooked = booked.includes(i); const isSel = sel === i
-              return <button key={i} disabled={isBooked} onClick={() => setSel(i)} style={{ padding: "12px 8px", borderRadius: 10, border: isSel ? `2px solid ${C.primaryLight}` : `1px solid ${isBooked ? C.border + "44" : C.border}`, background: isSel ? C.primary + "22" : isBooked ? C.elevated + "44" : "transparent", color: isBooked ? C.textMuted + "66" : isSel ? C.primaryLight : C.text, fontSize: 13, fontWeight: isSel ? 600 : 400, cursor: isBooked ? "not-allowed" : "pointer", opacity: isBooked ? 0.4 : 1 }}>{s}</button>
-            })}
-          </div>
-          {sel !== null && (
-            <div style={{ marginTop: 20 }}>
-              <Card style={{ background: C.elevated }}>
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ fontSize: 13, color: C.textMuted }}>Lapangan</span><span style={{ fontSize: 13, color: C.text }}>Futsal A</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ fontSize: 13, color: C.textMuted }}>Waktu</span><span style={{ fontSize: 13, color: C.text }}>{slots[sel]} - {slots[sel]?.replace(/(\d+)/, (m: string) => String(+m + 1))}:00</span></div>
-                <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 14 }}><span style={{ fontSize: 13, color: C.textMuted }}>Total</span><span style={{ fontSize: 15, fontWeight: 700, color: C.accent }}>Rp 120.000</span></div>
-                <Btn primary full onClick={() => { notifyBookingConfirmed("", "", "", ""); alert("Booking berhasil! Notifikasi telah dikirim.") }}>Bayar sekarang</Btn>
-              </Card>
+        )}
+
+        {step === "book" && selectedInfo && (
+          <div style={{ padding: 16 }}>
+            <div style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, marginBottom: 16 }}>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ color: C.textMuted }}>Venue</span><span style={{ color: C.text }}>{selectedVenue?.name}</span></div>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ color: C.textMuted }}>Tanggal</span><span style={{ color: C.text }}>{selectedInfo.date}</span></div>
+              <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 8 }}><span style={{ color: C.textMuted }}>Jam</span><span style={{ color: C.text }}>{selectedInfo.start} - {selectedInfo.end} ({selectedInfo.hours}j)</span></div>
+              <div style={{ display: "flex", justifyContent: "space-between", paddingTop: 8, borderTop: `1px solid ${C.border}` }}><span style={{ fontWeight: 600, color: C.text }}>Total</span><span style={{ fontSize: 18, fontWeight: 700, color: C.accent }}>Rp {price.toLocaleString("id-ID")}</span></div>
             </div>
-          )}
-        </div>
-      </>}
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={() => setStep("select")} style={{ flex: 1, padding: 14, borderRadius: 10, border: `1px solid ${C.border}`, background: "transparent", color: C.text, fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Kembali</button>
+              <button onClick={handleConfirm} style={{ flex: 1, padding: 14, borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Konfirmasi Booking</button>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   )
 }
