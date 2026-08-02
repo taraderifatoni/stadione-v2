@@ -40,7 +40,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           </button>
         </div>
       </aside>
-      <main className="flex-1" style={{ backgroundColor: C.bg }}>{children}</main>
+      <main className="flex-1 p-4" style={{ backgroundColor: C.bg }}>{children}</main>
     </div>
   )
 }
