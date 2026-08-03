@@ -14,23 +14,18 @@ export default function AdminDiscounts() {
   const router = useRouter()
 
   useEffect(() => {
-    fetch("https://api.stadione.pro/rest/v1/platform_discounts?select=*&order=created_at.desc", {
-      headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    }).then(r => r.json()).then(setDiscounts)
+    fetch("/api/admin/discounts").then(r => r.json()).then(setDiscounts)
   }, [])
 
   async function create() {
     if (!code || !discValue) return
-    const key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoic2VydmljZV9yb2xlIn0.oUao5PgOUj94c0DzF_5lmw5eudjaaN8dwjTe9GR9-1Q"
     const until = new Date(); until.setDate(until.getDate() + parseInt(days))
-    await fetch("https://api.stadione.pro/rest/v1/platform_discounts", {
+    await fetch("/api/admin/discounts", {
       method: "POST",
-      headers: {"apikey":key,"Authorization":"Bearer "+key,"Content-Type":"application/json","Prefer":"return=representation"},
-      body: JSON.stringify({name:code,code:code.toUpperCase(),discount_type:"percentage",discount_value:parseFloat(discValue),platform_share_pct:100,valid_until:until.toISOString(),is_active:true})
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ code: code.toUpperCase(), discount_value: parseFloat(discValue), valid_until: until.toISOString() }),
     })
-    const r = await fetch("https://api.stadione.pro/rest/v1/platform_discounts?select=*", {
-      headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    }).then(r => r.json())
+    const r = await fetch("/api/admin/discounts").then(r => r.json())
     setDiscounts(r)
     setShowForm(false); setCode(""); setDiscValue("")
   }

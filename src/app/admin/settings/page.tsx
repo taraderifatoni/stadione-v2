@@ -13,22 +13,19 @@ export default function AdminSettings() {
   const [body, setBody] = useState("")
   const [msg, setMsg] = useState("")
   const router = useRouter()
-  const H = {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-  const KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoic2VydmljZV9yb2xlIn0.oUao5PgOUj94c0DzF_5lmw5eudjaaN8dwjTe9GR9-1Q"
 
   useEffect(() => {
-    fetch("https://api.stadione.pro/rest/v1/platform_announcements?select=*&order=created_at.desc&limit=20", {headers:H})
-      .then(r => r.json()).then(setAnnouncements)
+    fetch("/api/admin/announcements").then(r => r.json()).then(setAnnouncements)
   }, [])
 
   async function create() {
     if (!title) return
-    await fetch("https://api.stadione.pro/rest/v1/platform_announcements", {
+    await fetch("/api/admin/announcements", {
       method: "POST",
-      headers: {"apikey":KEY,"Authorization":"Bearer "+KEY,"Content-Type":"application/json"},
-      body: JSON.stringify({title, body, type:"info", is_active:true})
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ title, body, type: "info" }),
     })
-    const r = await fetch("https://api.stadione.pro/rest/v1/platform_announcements?select=*", {headers:H}).then(r => r.json())
+    const r = await fetch("/api/admin/announcements").then(r => r.json())
     setAnnouncements(r); setShowForm(false); setTitle(""); setBody("")
     setMsg("Pengumuman dibuat!"); setTimeout(() => setMsg(""), 3000)
   }

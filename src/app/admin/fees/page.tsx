@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { ChevronLeft, Save, DollarSign, Trash2 } from "lucide-react"
+import { ChevronLeft, Save, DollarSign } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 export default function AdminFees() {
@@ -13,21 +13,16 @@ export default function AdminFees() {
   const router = useRouter()
 
   useEffect(() => {
-    fetch("https://api.stadione.pro/rest/v1/platform_fee_config?select=*&order=created_at.desc", {
-      headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    }).then(r => r.json()).then(setFees).finally(() => setLoading(false))
+    fetch("/api/admin/fees").then(r => r.json()).then(setFees).finally(() => setLoading(false))
   }, [])
 
   async function save() {
-    const key = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoic2VydmljZV9yb2xlIn0.oUao5PgOUj94c0DzF_5lmw5eudjaaN8dwjTe9GR9-1Q"
-    await fetch("https://api.stadione.pro/rest/v1/platform_fee_config", {
+    await fetch("/api/admin/fees", {
       method: "POST",
-      headers: {"apikey":key,"Authorization":"Bearer "+key,"Content-Type":"application/json","Prefer":"resolution=merge-duplicates"},
-      body: JSON.stringify({fee_pct:parseFloat(pct),is_active:true})
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ fee_pct: parseFloat(pct), is_active: true }),
     })
-    const r = await fetch("https://api.stadione.pro/rest/v1/platform_fee_config?select=*", {
-      headers: {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    }).then(r => r.json())
+    const r = await fetch("/api/admin/fees").then(r => r.json())
     setFees(r)
     setMsg("Fee disimpan")
     setTimeout(() => setMsg(""), 3000)
@@ -45,7 +40,7 @@ export default function AdminFees() {
           </div>
         </div>
         {msg && <div style={{ fontSize: 12, color: "#4CAF50", marginBottom: 12 }}>{msg}</div>}
-        
+
         <div style={{ fontSize: 14, fontWeight: 600, color: C.text, marginBottom: 8 }}>Konfigurasi Aktif</div>
         {fees.map((f: any) => (
           <div key={f.id} style={{ background: C.surface, borderRadius: 14, padding: 12, border: `1px solid ${C.border}`, marginBottom: 8, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
