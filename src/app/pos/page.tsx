@@ -689,7 +689,7 @@ export default function PosPage() {
         <div style={S.modalOverlay} onClick={() => setRefundModal(null)}>
           <div style={S.modalBox} onClick={e => e.stopPropagation()}>
             <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F0E8", marginBottom: 4 }}>Konfirmasi Refund</div>
-            <div style={{ fontSize: 13, color: C ? "#6B6558" : "#6B6558", marginBottom: 12 }}>
+            <div style={{ fontSize: 13, color: "#6B6558", marginBottom: 12 }}>
               Rp {Number(refundModal.txn.amount).toLocaleString("id-ID")} · {refundModal.txn.payment_method.toUpperCase()}
             </div>
 

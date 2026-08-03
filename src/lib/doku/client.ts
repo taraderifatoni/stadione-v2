@@ -30,10 +30,25 @@ export async function createDokuPayment(input: {
       invoice_number: input.invoiceNumber,
       currency: "IDR",
       callback_url: input.callbackUrl || "https://stadione.pro/my-bookings",
+      line_items: [
+        { name: input.itemName || "Stadione Booking", price: input.amount, quantity: 1 },
+      ],
     },
     payment: {
       type: "SALE",
       payment_due_date: 60,
+      payment_method_types: [
+        "VIRTUAL_ACCOUNT_BCA",
+        "VIRTUAL_ACCOUNT_BANK_MANDIRI",
+        "VIRTUAL_ACCOUNT_BRI",
+        "VIRTUAL_ACCOUNT_BNI",
+        "VIRTUAL_ACCOUNT_DOKU",
+        "VIRTUAL_ACCOUNT_BANK_PERMATA",
+        "QRIS",
+        "EMONEY_OVO",
+        "EMONEY_DANA",
+        "EMONEY_SHOPEE_PAY",
+      ],
     },
     customer: {
       name: input.customerName || "Customer",
@@ -41,20 +56,6 @@ export async function createDokuPayment(input: {
       phone: input.customerPhone || "08123456789",
       country: "ID",
     },
-    additional_info: {
-      channel: [
-        "VIRTUAL_ACCOUNT_BCA",
-        "VIRTUAL_ACCOUNT_BRI",
-        "VIRTUAL_ACCOUNT_MANDIRI",
-        "VIRTUAL_ACCOUNT_BNI",
-        "VIRTUAL_ACCOUNT_PERMATA",
-        "QRIS",
-        "DOKU_WALLET",
-      ],
-    },
-    line_items: [
-      { name: input.itemName || "Stadione Booking", price: input.amount, quantity: 1 },
-    ],
   })
 
   // Generate body digest
