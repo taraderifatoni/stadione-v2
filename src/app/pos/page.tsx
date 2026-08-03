@@ -32,9 +32,13 @@ export default function PosPage() {
   const [hasAccess, setHasAccess] = useState(false)
 
   useEffect(() => {
-    const token = document.cookie.split("; ").find(r => r.startsWith("sb-"))
-    if (!token) { router.push("https://stadione.pro/login?redirect=" + encodeURIComponent("https://pos.stadione.pro/")); return }
-    setHasAccess(true); setAuthChecked(true); loadShift()
+    setAuthChecked(true)
+    // Check if already logged in
+    import("@/lib/supabase/client").then(({ createClient }) => {
+      createClient().auth.getUser().then(({ data: { user } }) => {
+        if (user) { setHasAccess(true); loadShift() }
+      })
+    })
   }, [])
 
   async function loadShift() {
@@ -101,7 +105,34 @@ export default function PosPage() {
   }
 
   if (!authChecked) return <div style={{ minHeight: "100vh", background: C.bg }} />
-  if (!hasAccess) return <div style={{ minHeight: "100vh", background: C.bg, display: "flex", alignItems: "center", justifyContent: "center" }}><div style={{ textAlign: "center" }}><p style={{ fontSize: 18, fontWeight: 700, color: C.text }}>Akses ditolak</p><p style={{ fontSize: 13, color: C.textMuted, marginTop: 4 }}>Silakan login terlebih dahulu</p><a href="https://stadione.pro/login" style={{ display: "inline-block", marginTop: 16, padding: "10px 20px", borderRadius: 10, background: C.primary, color: "#fff", fontSize: 13, fontWeight: 600, textDecoration: "none" }}>Login</a></div></div>
+  if (!hasAccess) return (
+    <div style={{ minHeight: "100vh", background: C.bg }}>
+      <div style={{ background: C.primary, padding: "12px 16px", textAlign: "center" }}>
+        <span style={{ fontSize: 16, fontWeight: 800, color: "#fff", letterSpacing: 2 }}>STADIONE POS</span>
+      </div>
+      <div style={{ maxWidth: 400, margin: "40px auto", padding: 24 }}>
+        <div style={{ textAlign: "center", marginBottom: 24 }}>
+          <div style={{ fontSize: 22, fontWeight: 800, color: C.text }}>Masuk POS</div>
+          <div style={{ fontSize: 13, color: C.textMuted, marginTop: 4 }}>Login untuk akses kasir</div>
+        </div>
+        <form onSubmit={async (e) => {
+          e.preventDefault()
+          const email = (e.target as any).email.value
+          const password = (e.target as any).password.value
+          const { createClient } = await import("@/lib/supabase/client")
+          const supabase = createClient()
+          const { error } = await supabase.auth.signInWithPassword({ email, password })
+          if (!error) { setHasAccess(true); setAuthChecked(true); loadShift() }
+          else setMsg("Email atau kata sandi salah")
+        }}>
+          <input name="email" type="email" placeholder="Email" required style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 12 }} />
+          <input name="password" type="password" placeholder="Kata sandi" required style={{ width: "100%", padding: "10px 12px", background: C.elevated, border: `1px solid ${C.border}`, borderRadius: 10, color: C.text, fontSize: 14, outline: "none", boxSizing: "border-box", marginBottom: 8 }} />
+          {msg && <div style={{ fontSize: 12, color: C.danger, marginBottom: 8, textAlign: "center" }}>{msg}</div>}
+          <button type="submit" style={{ width: "100%", padding: "12px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Masuk</button>
+        </form>
+      </div>
+    </div>
+  )
 
   return (
     <div style={{ minHeight: "100vh", background: C.bg }}>
