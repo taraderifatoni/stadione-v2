@@ -1,14 +1,14 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { createClient } from "@/lib/supabase/client"
+import { useAuth } from "@/hooks/useAuth"
 
 export default function PosPage() {
   const [user, setUser] = useState<any>(null)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
-  const supabase = createClient()
+  const { supabase, signIn, signOut } = useAuth()
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => { if (data.user) setUser(data.user) })
@@ -16,8 +16,8 @@ export default function PosPage() {
 
   async function login(e: React.FormEvent) {
     e.preventDefault()
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
-    if (error) setError("Email atau kata sandi salah")
+    const { error: err } = await signIn(email, password)
+    if (err) setError("Email atau kata sandi salah")
     else { const { data } = await supabase.auth.getUser(); if (data.user) setUser(data.user) }
   }
 
@@ -49,7 +49,7 @@ export default function PosPage() {
       <div style={{ padding: 40, textAlign: "center", color: "#6B6558" }}>
         <div style={{ fontSize: 16, color: "#F5F0E8", marginBottom: 8 }}>Selamat datang</div>
         <div style={{ fontSize: 13 }}>{user.email}</div>
-        <button onClick={async () => { await supabase.auth.signOut(); setUser(null) }} style={{ marginTop: 16, padding: "10px 20px", borderRadius: 10, border: "1px solid #C6282844", background: "transparent", color: "#C62828", fontSize: 13, cursor: "pointer" }}>Keluar</button>
+        <button onClick={async () => { await signOut(); setUser(null) }} style={{ marginTop: 16, padding: "10px 20px", borderRadius: 10, border: "1px solid #C6282844", background: "transparent", color: "#C62828", fontSize: 13, cursor: "pointer" }}>Keluar</button>
       </div>
     </div>
   )
