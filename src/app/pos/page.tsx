@@ -147,6 +147,8 @@ export default function PosPage() {
   const [msgType, setMsgType] = useState<"success" | "error">("success")
   const [walkinAmount, setWalkinAmount] = useState("")
   const [walkinNote, setWalkinNote] = useState("")
+  const [memberSearch, setMemberSearch] = useState("")
+  const [foundMember, setFoundMember] = useState<any>(null)
   const [transactions, setTransactions] = useState<any[]>([])
   const [invoice, setInvoice] = useState<any>(null)
   const { supabase, signOut } = useAuth()
@@ -359,6 +361,40 @@ export default function PosPage() {
     setLoading(false)
   }
 
+  async function searchMember() {
+    if (!memberSearch.trim() || !selectedVenue) return
+    const { data } = await supabase.from("members").select("*, membership_plans(name), users!members_user_id_fkey(email)").eq("venue_id", selectedVenue.id).eq("status", "active").filter("users.email", "ilike", `%${memberSearch.trim()}%`).single()
+    setFoundMember(data || null)
+  }
+
+  async function memberCheckIn() {
+    if (!foundMember || !shift) return
+    setLoading(true)
+    await supabase.from("check_ins").insert({ member_id: foundMember.id, venue_id: selectedVenue.id, check_in_type: "membership" })
+    await supabase.from("pos_transactions").insert({
+      shift_id: shift.id, reference_type: "checkin", reference_id: foundMember.id,
+      amount: 0, payment_method: "member", status: "completed",
+      payment_details: { member_email: foundMember.users?.email || "", plan: foundMember.membership_plans?.name || "" },
+    })
+    loadTransactions()
+    setFoundMember(null); setMemberSearch("")
+    setMsg("Member check-in sukses!"); setMsgType("success")
+    setLoading(false)
+  }
+
+  async function voidTransaction(txnId: string) {
+    const txn = transactions.find((t: any) => t.id === txnId)
+    if (!txn) return
+    setLoading(true)
+    await supabase.from("pos_transactions").update({ status: "refunded" }).eq("id", txnId)
+    if (txn.booking_id) {
+      await supabase.from("bookings").update({ status: "cancelled" }).eq("id", txn.booking_id)
+    }
+    loadTransactions()
+    setMsg("Transaksi dibatalkan"); setMsgType("success")
+    setLoading(false)
+  }
+
   if (!user) return (
     <div style={S.page}>
       <div style={S.header}><span style={S.headerTitle}>STADIONE POS</span></div>
@@ -525,6 +561,22 @@ export default function PosPage() {
                   />
                   {msg && tab === "walkin" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
                 </div>
+
+                <div style={S.card}>
+                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>Member Check-in</div>
+                  <div style={{ ...S.flexCenter, marginBottom: 8 }}>
+                    <input type="text" value={memberSearch} onChange={e => { setMemberSearch(e.target.value); setFoundMember(null) }} placeholder="Cari email member..." style={{ ...S.input, flex: 1, marginBottom: 0 }} />
+                    <button onClick={searchMember} style={{ ...S.btnSm, padding: "10px 16px" }}>Cari</button>
+                  </div>
+                  {foundMember && (
+                    <div style={{ padding: "10px 12px", background: "#1B5E2011", borderRadius: 8, marginBottom: 8 }}>
+                      <div style={{ fontSize: 13, color: "#F5F0E8", fontWeight: 600 }}>{foundMember.users?.email}</div>
+                      <div style={{ fontSize: 11, color: "#6B6558" }}>{foundMember.membership_plans?.name || "Member"} · Aktif</div>
+                      <button onClick={memberCheckIn} disabled={loading} style={{ ...S.btn, marginTop: 8 }}>Check-in Member</button>
+                    </div>
+                  )}
+                  {foundMember === null && memberSearch.trim() && msg && tab === "walkin" && msg.includes("Member check-in") && <div style={S.success}>{msg}</div>}
+                </div>
               </div>
             )}
 
@@ -561,16 +613,21 @@ export default function PosPage() {
                     <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8 }}>Transaksi Hari Ini</div>
                     {transactions.map((t: any) => (
                       <div key={t.id} style={{ ...S.flexRow, padding: "6px 0", borderBottom: "1px solid #2E2C2822" }}>
-                        <div>
+                        <div style={{ flex: 1 }}>
                           <div style={{ fontSize: 12, color: "#F5F0E8" }}>
-                            {t.reference_type === "booking" ? "BK Slot" : "Walk-in"}
+                            {t.reference_type === "booking" ? "BK Slot" : t.reference_type === "checkin" ? "Check-in" : "Walk-in"}
                             {t.payment_method === "doku" && t.status === "pending" && <span style={{ color: "#E65100", fontSize: 10, marginLeft: 6 }}>PENDING</span>}
                           </div>
                           <div style={{ fontSize: 10, color: "#6B6558" }}>{new Date(t.created_at).toLocaleTimeString("id-ID")}</div>
                         </div>
                         <div style={{ textAlign: "right" }}>
-                          <div style={{ fontSize: 13, fontWeight: 600, color: t.payment_method === "doku" && t.status === "pending" ? "#E65100" : "#F5F0E8" }}>Rp {Number(t.amount).toLocaleString("id-ID")}</div>
-                          <div style={{ ...S.tag(t.payment_method === "cash" ? "#2E7D32" : t.payment_method === "qris" ? "#1565C0" : t.payment_method === "doku" ? t.status === "pending" ? "#E65100" : "#6A1B9A" : "#8D6E63") }}>{t.payment_method.toUpperCase()}</div>
+                          <div style={{ fontSize: 13, fontWeight: 600, color: t.status === "refunded" ? "#C62828" : t.payment_method === "doku" && t.status === "pending" ? "#E65100" : "#F5F0E8" }}>
+                            {t.status === "refunded" && "VOID "}Rp {Number(t.amount).toLocaleString("id-ID")}
+                          </div>
+                          <div style={S.flexCenter}>
+                            <div style={{ ...S.tag(t.status === "refunded" ? "#C62828" : t.payment_method === "cash" ? "#2E7D32" : t.payment_method === "qris" ? "#1565C0" : t.payment_method === "doku" ? t.status === "pending" ? "#E65100" : "#6A1B9A" : "#8D6E63") }}>{t.payment_method.toUpperCase()}</div>
+                            {t.status === "completed" && <button onClick={() => voidTransaction(t.id)} disabled={loading} style={{ ...S.btnDanger, padding: "2px 8px", fontSize: 9, background: "#C6282822" }}>VOID</button>}
+                          </div>
                         </div>
                       </div>
                     ))}
