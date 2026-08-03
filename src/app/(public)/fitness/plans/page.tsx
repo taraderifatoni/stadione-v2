@@ -17,6 +17,7 @@ export default function FitnessPlanPage() {
   const supabase = createClient()
   const [plans, setPlans] = useState<any[]>([])
   const [user, setUser] = useState<any>(null)
+  const [msg, setMsg] = useState("")
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => setUser(data.user || null))
@@ -38,14 +39,15 @@ export default function FitnessPlanPage() {
       user_id: user.id, venue_id: plan.venue_id, plan_id: plan.id,
       start_date: new Date().toISOString().split("T")[0], end_date: endDate.toISOString().split("T")[0], status: "active",
     })
-    alert("Pendaftaran sukses!")
-    router.push("/fitness")
+    setMsg("Pendaftaran sukses!")
+    setTimeout(() => router.push("/fitness"), 1500)
   }
 
   return (
     <div>
       <TopBar title="Paket Membership" left={<ChevronLeft size={20} color={C.text} onClick={() => router.back()} style={{ cursor: "pointer" }} />} />
       <div style={{ padding: "0 16px 16px" }}>
+        {msg && <div style={{ background: "#1B3A1D", color: "#4CAF50", padding: 10, borderRadius: 10, fontSize: 13, textAlign: "center", marginBottom: 12 }}>{msg}</div>}
         {plans.length === 0 && <div style={{ textAlign: "center", padding: 40, color: C.textMuted }}>Belum ada paket</div>}
         {plans.map((p: any) => {
           const benefits = typeof p.benefits === "string" ? JSON.parse(p.benefits) : (p.benefits || [])
