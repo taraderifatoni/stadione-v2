@@ -70,6 +70,7 @@ export interface DokuPaymentResult {
 
 export interface DokuStatusResult {
   status: "SUCCESS" | "PENDING" | "FAILED" | "EXPIRED" | "REFUNDED" | "TIMEOUT" | "REDIRECT"
+  orderStatus?: "ORDER_GENERATED" | "ORDER_EXPIRED" | "ORDER_RECOVERED"
   isFinal: boolean
   invoiceNumber: string
   amount: number
@@ -95,6 +96,9 @@ export async function createDokuPayment(input: {
       invoice_number: input.invoiceNumber,
       currency: "IDR",
       callback_url: input.callbackUrl || "https://stadione.pro/my-bookings",
+      callback_url_result: input.callbackUrl || "https://stadione.pro/my-bookings",
+      language: "ID",
+      auto_redirect: false,
       line_items: [
         { name: input.itemName || "Stadione Booking", price: input.amount, quantity: 1 },
       ],
@@ -121,15 +125,14 @@ export async function createDokuPayment(input: {
       phone: input.customerPhone || "08123456789",
       country: "ID",
     },
+    collect_customer: {
+      name: true,
+      email: true,
+      phone: true,
+    },
   })
 
-  const sig = await generateSignature("POST", "/checkout/v1/payment", body)
-
-  const response = await fetch(`${DOKU_API_BASE}/checkout/v1/payment`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json", ...authHeaders(sig) },
-    body,
-  })
+  const response = await fetchWithRetry("POST", "/checkout/v1/payment", body)
 
   if (!response.ok) {
     const err = await response.text()
@@ -153,12 +156,8 @@ export async function createDokuPayment(input: {
  */
 export async function checkDokuStatus(invoiceNumber: string): Promise<DokuStatusResult> {
   const path = `/orders/v1/status/${invoiceNumber}`
-  const sig = await generateSignature("GET", path)
 
-  const response = await fetch(`${DOKU_API_BASE}${path}`, {
-    method: "GET",
-    headers: authHeaders(sig),
-  })
+  const response = await fetchWithRetry("GET", path)
 
   if (!response.ok) {
     const err = await response.text()
@@ -173,6 +172,7 @@ export async function checkDokuStatus(invoiceNumber: string): Promise<DokuStatus
 
   return {
     status,
+    orderStatus: data.order?.status as DokuStatusResult["orderStatus"],
     isFinal,
     invoiceNumber: data.order?.invoice_number || invoiceNumber,
     amount: Number(data.order?.amount) || 0,
@@ -182,6 +182,49 @@ export async function checkDokuStatus(invoiceNumber: string): Promise<DokuStatus
     virtualAccountNumber: data.virtual_account_info?.virtual_account_number,
     raw: data,
   }
+}
+
+/**
+ * Retry DOKU request with idempotency (same Request-Id on retry)
+ * DOKU uses Request-Id as idempotency key — duplicate requests return 409
+ */
+async function fetchWithRetry(
+  method: "POST" | "GET",
+  path: string,
+  body?: string,
+  maxRetries = 2
+): Promise<Response> {
+  const sig = await generateSignature(method, path, body)
+  let lastError: Error | null = null
+
+  for (let attempt = 0; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(`${DOKU_API_BASE}${path}`, {
+        method,
+        headers: {
+          ...(method === "POST" ? { "Content-Type": "application/json" } : {}),
+          ...authHeaders(sig),
+        },
+        body,
+      })
+
+      // 409 Conflict = idempotent retry, DOKU returns original response
+      if (response.status === 409) {
+        const cached = await response.json()
+        // Wrap cached response to return as normal response
+        return new Response(JSON.stringify(cached), { status: 200, headers: { "Content-Type": "application/json" } })
+      }
+
+      return response
+    } catch (e: any) {
+      lastError = e
+      if (attempt < maxRetries) {
+        await new Promise(r => setTimeout(r, 1000 * (attempt + 1))) // backoff: 1s, 2s
+      }
+    }
+  }
+
+  throw lastError || new Error("DOKU request failed after retries")
 }
 
 /**
