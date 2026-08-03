@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useAuth } from "@/hooks/useAuth"
+import { estimateSettlementDate, settlementStatus } from "@/lib/doku/refund"
 
 const S = {
   page: { minHeight: "100vh", background: "#0D0D0D", color: "#F5F0E8" } as React.CSSProperties,
@@ -150,6 +151,11 @@ export default function PosPage() {
   const [memberSearch, setMemberSearch] = useState("")
   const [foundMember, setFoundMember] = useState<any>(null)
   const [transactions, setTransactions] = useState<any[]>([])
+  const [refundModal, setRefundModal] = useState<{ txnId: string; txn: any } | null>(null)
+  const [refundReason, setRefundReason] = useState("")
+  const [refundBankCode, setRefundBankCode] = useState("")
+  const [refundBankAccount, setRefundBankAccount] = useState("")
+  const [refundBankName, setRefundBankName] = useState("")
   const [invoice, setInvoice] = useState<any>(null)
   const { supabase, signOut } = useAuth()
 
@@ -382,16 +388,43 @@ export default function PosPage() {
     setLoading(false)
   }
 
-  async function voidTransaction(txnId: string) {
+  function openRefundModal(txnId: string) {
     const txn = transactions.find((t: any) => t.id === txnId)
     if (!txn) return
+    setRefundModal({ txnId, txn })
+    setRefundReason("")
+    setRefundBankCode("014")  // BCA default
+    setRefundBankAccount("")
+    setRefundBankName("")
+  }
+
+  async function confirmRefund() {
+    if (!refundModal) return
     setLoading(true)
-    await supabase.from("pos_transactions").update({ status: "refunded" }).eq("id", txnId)
-    if (txn.booking_id) {
-      await supabase.from("bookings").update({ status: "cancelled" }).eq("id", txn.booking_id)
+    setRefundModal(null)
+
+    try {
+      const res = await fetch("/api/payment/refund", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          transactionId: refundModal.txnId,
+          reason: refundReason || "Refund via POS",
+          customerBankCode: refundBankCode || undefined,
+          customerBankAccount: refundBankAccount || undefined,
+          customerBankName: refundBankName || undefined,
+        }),
+      })
+      const data = await res.json()
+      setMsg(data.note || "Refund berhasil"); setMsgType("success")
+    } catch {
+      // Fallback: local void
+      const txn = refundModal.txn
+      await supabase.from("pos_transactions").update({ status: "refunded" }).eq("id", txn.id)
+      if (txn.booking_id) await supabase.from("bookings").update({ status: "cancelled" }).eq("id", txn.booking_id)
+      setMsg("Transaksi dibatalkan (lokal)"); setMsgType("success")
     }
+
     loadTransactions()
-    setMsg("Transaksi dibatalkan"); setMsgType("success")
     setLoading(false)
   }
 
@@ -611,26 +644,36 @@ export default function PosPage() {
                 {transactions.length > 0 && (
                   <div style={S.card}>
                     <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8 }}>Transaksi Hari Ini</div>
-                    {transactions.map((t: any) => (
-                      <div key={t.id} style={{ ...S.flexRow, padding: "6px 0", borderBottom: "1px solid #2E2C2822" }}>
-                        <div style={{ flex: 1 }}>
-                          <div style={{ fontSize: 12, color: "#F5F0E8" }}>
-                            {t.reference_type === "booking" ? "BK Slot" : t.reference_type === "checkin" ? "Check-in" : "Walk-in"}
-                            {t.payment_method === "doku" && t.status === "pending" && <span style={{ color: "#E65100", fontSize: 10, marginLeft: 6 }}>PENDING</span>}
+                    {transactions.map((t: any) => {
+                      const settDate = t.payment_method !== "cash" ? estimateSettlementDate(t.payment_method, new Date(t.created_at)) : null
+                      const settStat = settDate ? settlementStatus(settDate) : null
+                      return (
+                      <div key={t.id} style={{ padding: "6px 0", borderBottom: "1px solid #2E2C2822" }}>
+                        <div style={S.flexRow}>
+                          <div style={{ flex: 1 }}>
+                            <div style={{ fontSize: 12, color: "#F5F0E8" }}>
+                              {t.reference_type === "booking" ? "BK Slot" : t.reference_type === "checkin" ? "Check-in" : "Walk-in"}
+                              {t.payment_method === "doku" && t.status === "pending" && <span style={{ color: "#E65100", fontSize: 10, marginLeft: 6 }}>PENDING</span>}
+                            </div>
+                            <div style={{ fontSize: 10, color: "#6B6558" }}>{new Date(t.created_at).toLocaleTimeString("id-ID")}</div>
                           </div>
-                          <div style={{ fontSize: 10, color: "#6B6558" }}>{new Date(t.created_at).toLocaleTimeString("id-ID")}</div>
+                          <div style={{ textAlign: "right" }}>
+                            <div style={{ fontSize: 13, fontWeight: 600, color: t.status === "refunded" ? "#C62828" : t.payment_method === "doku" && t.status === "pending" ? "#E65100" : "#F5F0E8" }}>
+                              {t.status === "refunded" && "VOID "}Rp {Number(t.amount).toLocaleString("id-ID")}
+                            </div>
+                            <div style={S.flexCenter}>
+                              <div style={{ ...S.tag(t.status === "refunded" ? "#C62828" : t.payment_method === "cash" ? "#2E7D32" : t.payment_method === "qris" ? "#1565C0" : t.payment_method === "doku" ? t.status === "pending" ? "#E65100" : "#6A1B9A" : "#8D6E63") }}>{t.payment_method.toUpperCase()}</div>
+                              {t.status === "completed" && <button onClick={() => openRefundModal(t.id)} disabled={loading} style={{ ...S.btnDanger, padding: "2px 8px", fontSize: 9, background: "#C6282822" }}>VOID</button>}
+                            </div>
+                          </div>
                         </div>
-                        <div style={{ textAlign: "right" }}>
-                          <div style={{ fontSize: 13, fontWeight: 600, color: t.status === "refunded" ? "#C62828" : t.payment_method === "doku" && t.status === "pending" ? "#E65100" : "#F5F0E8" }}>
-                            {t.status === "refunded" && "VOID "}Rp {Number(t.amount).toLocaleString("id-ID")}
+                        {settDate && t.status === "completed" && (
+                          <div style={{ fontSize: 10, color: settStat === "settled" ? "#4CAF50" : settStat === "overdue" ? "#C62828" : "#E65100", marginTop: 2 }}>
+                            {settStat === "settled" ? `✓ Settled ${settDate}` : settStat === "overdue" ? `⚠ Overdue (est. ${settDate})` : `⟳ Estimasi settle ${settDate}`}
                           </div>
-                          <div style={S.flexCenter}>
-                            <div style={{ ...S.tag(t.status === "refunded" ? "#C62828" : t.payment_method === "cash" ? "#2E7D32" : t.payment_method === "qris" ? "#1565C0" : t.payment_method === "doku" ? t.status === "pending" ? "#E65100" : "#6A1B9A" : "#8D6E63") }}>{t.payment_method.toUpperCase()}</div>
-                            {t.status === "completed" && <button onClick={() => voidTransaction(t.id)} disabled={loading} style={{ ...S.btnDanger, padding: "2px 8px", fontSize: 9, background: "#C6282822" }}>VOID</button>}
-                          </div>
-                        </div>
+                        )}
                       </div>
-                    ))}
+                    )})}
                   </div>
                 )}
               </div>
@@ -640,6 +683,40 @@ export default function PosPage() {
 
         <div style={{ textAlign: "center", padding: "12px 0 20px" }}><div style={S.muted}>{user.email}</div></div>
       </div>
+
+      {/* REFUND MODAL */}
+      {refundModal && (
+        <div style={S.modalOverlay} onClick={() => setRefundModal(null)}>
+          <div style={S.modalBox} onClick={e => e.stopPropagation()}>
+            <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F0E8", marginBottom: 4 }}>Konfirmasi Refund</div>
+            <div style={{ fontSize: 13, color: C ? "#6B6558" : "#6B6558", marginBottom: 12 }}>
+              Rp {Number(refundModal.txn.amount).toLocaleString("id-ID")} · {refundModal.txn.payment_method.toUpperCase()}
+            </div>
+
+            <label style={S.label}>Alasan</label>
+            <input type="text" value={refundReason} onChange={e => setRefundReason(e.target.value)} placeholder="Salah input, customer batal..." style={S.input} />
+
+            {["qris", "transfer", "debit", "doku"].includes(refundModal.txn.payment_method) && (
+              <div style={{ padding: "10px 12px", background: "#141210", borderRadius: 10, marginBottom: 12 }}>
+                <div style={{ fontSize: 11, color: "#B5AC8A", marginBottom: 8 }}>Refund via bank (opsional — kosongkan untuk refund non-direct):</div>
+                <select value={refundBankCode} onChange={e => setRefundBankCode(e.target.value)} style={{ ...S.select, fontSize: 12, marginBottom: 6 }}>
+                  <option value="014">BCA (014)</option>
+                  <option value="008">Mandiri (008)</option>
+                  <option value="009">BNI (009)</option>
+                  <option value="002">BRI (002)</option>
+                </select>
+                <input type="text" value={refundBankAccount} onChange={e => setRefundBankAccount(e.target.value)} placeholder="No. Rekening" style={{ ...S.input, fontSize: 12, marginBottom: 6 }} />
+                <input type="text" value={refundBankName} onChange={e => setRefundBankName(e.target.value)} placeholder="Nama Pemilik Rekening" style={{ ...S.input, fontSize: 12 }} />
+              </div>
+            )}
+
+            <div style={{ display: "flex", gap: 8 }}>
+              <button onClick={() => setRefundModal(null)} style={{ ...S.btn, background: "transparent", border: "1px solid #2E2C28", color: "#B5AC8A", width: "auto", flex: 1 }}>Batal</button>
+              <button onClick={confirmRefund} disabled={loading} style={{ ...S.btn, background: "#C62828", width: "auto", flex: 1 }}>{loading ? "..." : "Konfirmasi Refund"}</button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* INVOICE MODAL */}
       {invoice && (
