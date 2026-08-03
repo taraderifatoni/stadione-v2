@@ -1,9 +1,11 @@
 import type { NotificationPayload } from "@/types"
 import { createAdminClient } from "@/lib/supabase/admin"
-import { spawn } from "child_process"
+
+const isServer = typeof window === "undefined"
 
 export async function sendEmailNotification(payload: NotificationPayload) {
-  // Lookup user email from auth.users
+  if (!isServer) return // Email only works server-side
+
   let email = ""
   try {
     const supabase = createAdminClient()
@@ -22,6 +24,7 @@ export async function sendEmailNotification(payload: NotificationPayload) {
     payload.body,
   ].join("\n")
 
+  const { spawn } = await import("child_process")
   return new Promise<void>((resolve, reject) => {
     const proc = spawn("sendmail", ["-t", "-oi"], { stdio: ["pipe", "ignore", "pipe"] })
     proc.stdin.write(message)
