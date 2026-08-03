@@ -125,8 +125,12 @@ export default function BookingPage() {
     const { data: { user } } = await supabase.auth.getUser()
     if (!user) { router.push("/login"); return }
 
-    const { data: slots } = await supabase.from("court_slots").select("id").eq("court_id", selectedCourt.id).limit(1)
-    const slot = slots?.[0]
+    const { data: slots } = await supabase.from("court_slots").select("id").eq("court_id", selectedCourt.id).eq("start_time", `${selectedInfo.start}:00`).limit(1)
+    let slot = slots?.[0]
+    if (!slot) {
+      const { data: anySlot } = await supabase.from("court_slots").select("id").eq("court_id", selectedCourt.id).limit(1)
+      slot = anySlot?.[0]
+    }
     if (!slot) return
 
     if (isRecurring) {
