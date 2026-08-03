@@ -36,7 +36,7 @@ export default function AcademyPage() {
     if (!program) return
     await supabase.from("students").insert({ academy_id: selectedAcademy.id, program_id: programId, name: user.email, age_group: "Dewasa", status: "active" })
     setMsg("Pendaftaran berhasil!")
-    notifyEnrollmentConfirmed(user.id, program.name, selectedAcademy.venues?.name)
+    notifyEnrollmentConfirmed(user.id, program.name)
     setTimeout(() => setMsg(""), 3000)
   }
 
