@@ -8,8 +8,18 @@ export default function AuthCallbackPage() {
   const supabase = createClient()
 
   useEffect(() => {
-    supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_IN") router.push("/")
+    // Check immediately if already authenticated (hash may have been processed before mount)
+    supabase.auth.getSession().then(({ data }) => {
+      if (data.session) {
+        router.replace("/")
+        return
+      }
+      // Otherwise wait for state change
+      const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
+        if (event === "SIGNED_IN") router.replace("/")
+        else if (event === "SIGNED_OUT") router.replace("/login")
+      })
+      return () => subscription.unsubscribe()
     })
   }, [])
 
