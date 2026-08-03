@@ -13,22 +13,30 @@ export async function POST(request: NextRequest) {
   }).select("token").single()
 
   const token = invite?.token
-  const inviteUrl = `https://stadione.pro/api/staff/accept?token=${token}`
+  const inviteUrl = `https://stadione.pro/invite?token=${token}`
 
-  // Send email via Resend
-  const RESEND = process.env.RESEND_API_KEY
-  if (RESEND) {
-    await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: { "Authorization": `Bearer ${RESEND}`, "Content-Type": "application/json" },
-      body: JSON.stringify({
-        from: "Stadione <noreply@stadione.pro>",
-        to: [email],
-        subject: "Undangan Staff Stadione",
-        text: `Anda diundang sebagai ${role}. Klik tautan ini: ${inviteUrl}`,
-      }),
-    })
-  }
+  // Send email via local Postfix sendmail
+  const message = [
+    `From: Stadione <info@stadione.pro>`,
+    `To: ${email}`,
+    `Subject: Undangan Staff Stadione`,
+    `Content-Type: text/plain; charset=UTF-8`,
+    ``,
+    `Anda diundang sebagai ${role} di Stadione.`,
+    ``,
+    `Klik tautan ini untuk menerima undangan:`,
+    inviteUrl,
+    ``,
+    `Salam,`,
+    `Tim Stadione`,
+  ].join("\n")
+
+  try {
+    const { spawn } = await import("child_process")
+    const proc = spawn("sendmail", ["-t", "-oi", "-f", "info@stadione.pro"], { stdio: ["pipe", "ignore", "pipe"] })
+    proc.stdin.write(message)
+    proc.stdin.end()
+  } catch {}
 
   return NextResponse.json({ success: true, token })
 }

@@ -26,7 +26,7 @@ export async function sendEmailNotification(payload: NotificationPayload) {
 
   const { spawn } = await import("child_process")
   return new Promise<void>((resolve, reject) => {
-    const proc = spawn("sendmail", ["-t", "-oi"], { stdio: ["pipe", "ignore", "pipe"] })
+    const proc = spawn("sendmail", ["-t", "-oi", "-f", "info@stadione.pro"], { stdio: ["pipe", "ignore", "pipe"] })
     proc.stdin.write(message)
     proc.stdin.end()
     proc.on("close", code => code === 0 ? resolve() : reject(new Error(`sendmail exited ${code}`)))
