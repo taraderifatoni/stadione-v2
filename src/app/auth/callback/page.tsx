@@ -5,22 +5,26 @@ import { createClient } from "@/lib/supabase/client"
 
 export default function AuthCallbackPage() {
   const router = useRouter()
-  const supabase = createClient()
 
   useEffect(() => {
-    // Check immediately if already authenticated (hash may have been processed before mount)
-    supabase.auth.getSession().then(({ data }) => {
-      if (data.session) {
-        router.replace("/")
+    const supabase = createClient()
+
+    async function handleCallback() {
+      // Exchange OAuth code for session — @supabase/ssr needs explicit call
+      const { data, error } = await supabase.auth.exchangeCodeForSession(window.location.href)
+      if (error) {
+        console.error("OAuth callback error:", error.message)
+        router.replace("/login")
         return
       }
-      // Otherwise wait for state change
-      const { data: { subscription } } = supabase.auth.onAuthStateChange((event) => {
-        if (event === "SIGNED_IN") router.replace("/")
-        else if (event === "SIGNED_OUT") router.replace("/login")
-      })
-      return () => subscription.unsubscribe()
-    })
+      if (data.session) {
+        router.replace("/")
+      }
+    }
+
+    // Small delay to ensure DOM is ready and hash fragment is available
+    const t = setTimeout(handleCallback, 100)
+    return () => clearTimeout(t)
   }, [])
 
   return (
