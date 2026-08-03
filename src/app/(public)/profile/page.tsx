@@ -39,18 +39,37 @@ export default function ProfilePage() {
       if (data.user) {
         setUser(data.user)
         supabase.from("bookings").select("id", { count: "exact", head: true }).eq("user_id", data.user.id).then(({ count }) => setStats(s => ({ ...s, bookings: count || 0 })))
-        supabase.from("check_ins").select("id", { count: "exact", head: true }).eq("member_id", data.user.id).then(({ count }) => setStats(s => ({ ...s, checkins: count || 0 })))
+        supabase.from("members").select("id").eq("user_id", data.user.id).eq("status", "active").then(({ data: m }) => {
+          if (m?.length) {
+            supabase.from("check_ins").select("id", { count: "exact", head: true }).in("member_id", m.map(x => x.id)).then(({ count }) => setStats(s => ({ ...s, checkins: count || 0 })))
+          }
+        })
       }
     })
   }, [])
 
   async function handleLogout() {
     await supabase.auth.signOut()
+    setUser(null)
     router.push("/login")
     router.refresh()
   }
 
-  const initial = user?.email?.[0]?.toUpperCase() || "?"
+  const initial = user?.email?.[0]?.toUpperCase() || user?.user_metadata?.name?.[0]?.toUpperCase() || "?"
+
+  if (!user) {
+    return (
+      <div>
+        <TopBar title="Profil" />
+        <div style={{ padding: "60px 16px", textAlign: "center" }}>
+          <div style={{ fontSize: 48, marginBottom: 12 }}>👤</div>
+          <div style={{ fontSize: 18, fontWeight: 700, color: C.text, marginBottom: 8 }}>Belum login</div>
+          <div style={{ fontSize: 13, color: C.textMuted, marginBottom: 20 }}>Login untuk melihat profil dan riwayat booking Anda.</div>
+          <button onClick={() => router.push("/login")} style={{ padding: "12px 28px", borderRadius: 10, border: "none", background: C.primary, color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer" }}>Login</button>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div>
