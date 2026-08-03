@@ -44,10 +44,12 @@ type SlotsMap = Record<string, any[]>
 
 function emptySplit(): SplitRow[] { return [{ method: "cash", amount: "" }] }
 
-function PaymentSection({ total, paymentMethod, splitPayments, loading, onChangeMethod, onChangeSplit, onSubmit, submitLabel }: {
+function PaymentSection({ total, paymentMethod, splitPayments, referenceNo, onChangeRef, loading, onChangeMethod, onChangeSplit, onSubmit, submitLabel }: {
   total: number
   paymentMethod: string
   splitPayments: SplitRow[]
+  referenceNo: string
+  onChangeRef: (v: string) => void
   loading: boolean
   onChangeMethod: (m: string) => void
   onChangeSplit: (rows: SplitRow[]) => void
@@ -79,6 +81,10 @@ function PaymentSection({ total, paymentMethod, splitPayments, loading, onChange
           <button key={m} onClick={() => onChangeMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
         ))}
       </div>
+
+      {(paymentMethod === "qris" || paymentMethod === "transfer") && !isSplit && (
+        <input type="text" value={referenceNo} onChange={e => onChangeRef(e.target.value)} placeholder="No. Referensi / Bukti Transfer" style={{ ...S.input, marginBottom: 10, fontSize: 13 }} />
+      )}
 
       {isSplit && (
         <div style={{ marginBottom: 12, padding: "10px 12px", background: "#141210", borderRadius: 10 }}>
@@ -129,6 +135,7 @@ export default function PosPage() {
   const [bookingDate, setBookingDate] = useState(new Date().toISOString().split("T")[0])
   const [paymentMethod, setPaymentMethod] = useState("cash")
   const [splitPayments, setSplitPayments] = useState<SplitRow[]>(emptySplit())
+  const [referenceNo, setReferenceNo] = useState("")
   const [loading, setLoading] = useState(false)
   const [msg, setMsg] = useState("")
   const [msgType, setMsgType] = useState<"success" | "error">("success")
@@ -261,9 +268,13 @@ export default function PosPage() {
     if (paymentMethod === "split") {
       await createSplitTxns(booking.id, "booking", booking.id)
     } else {
+      const details: any = {}
+      if (referenceNo.trim()) details.reference_no = referenceNo.trim()
+      if ((paymentMethod === "qris" || paymentMethod === "transfer") && referenceNo.trim()) details.manual_verified = false
       await supabase.from("pos_transactions").insert({
         shift_id: shift.id, booking_id: booking.id, reference_type: "booking",
         reference_id: booking.id, amount: price, payment_method: paymentMethod, status: "completed",
+        payment_details: Object.keys(details).length > 0 ? details : undefined,
       })
     }
 
@@ -278,7 +289,7 @@ export default function PosPage() {
       split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
-    setSelectedSlot(null); setSplitPayments(emptySplit()); setPaymentMethod("cash")
+    setSelectedSlot(null); setSplitPayments(emptySplit()); setPaymentMethod("cash"); setReferenceNo("")
     loadSlots(selectedCourt.id, bookingDate)
     loadTransactions()
     setLoading(false)
@@ -296,10 +307,13 @@ export default function PosPage() {
     if (paymentMethod === "split") {
       await createSplitTxns(null, "walkin", refId)
     } else {
+      const details: any = { note: walkinNote || "Walk-in payment" }
+      if (referenceNo.trim()) details.reference_no = referenceNo.trim()
+      if ((paymentMethod === "qris" || paymentMethod === "transfer") && referenceNo.trim()) details.manual_verified = false
       await supabase.from("pos_transactions").insert({
         shift_id: shift.id, reference_type: "walkin", reference_id: refId,
         amount, payment_method: paymentMethod, status: "completed",
-        payment_details: { note: walkinNote || "Walk-in payment" },
+        payment_details: details,
       })
     }
 
@@ -313,7 +327,7 @@ export default function PosPage() {
       split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
-    setWalkinAmount(""); setWalkinNote(""); setSplitPayments(emptySplit()); setPaymentMethod("cash")
+    setWalkinAmount(""); setWalkinNote(""); setSplitPayments(emptySplit()); setPaymentMethod("cash"); setReferenceNo("")
     loadTransactions()
     setLoading(false)
   }
@@ -434,6 +448,8 @@ export default function PosPage() {
                       total={Number(selectedSlot.price || 0)}
                       paymentMethod={paymentMethod}
                       splitPayments={splitPayments}
+                      referenceNo={referenceNo}
+                      onChangeRef={setReferenceNo}
                       loading={loading}
                       onChangeMethod={setPaymentMethod}
                       onChangeSplit={(rows) => { setSplitPayments(rows); setPaymentMethod("split") }}
@@ -459,6 +475,8 @@ export default function PosPage() {
                     total={Number(walkinAmount) || 0}
                     paymentMethod={paymentMethod}
                     splitPayments={splitPayments}
+                    referenceNo={referenceNo}
+                    onChangeRef={setReferenceNo}
                     loading={loading}
                     onChangeMethod={setPaymentMethod}
                     onChangeSplit={(rows) => { setSplitPayments(rows); setPaymentMethod("split") }}
