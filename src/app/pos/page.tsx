@@ -70,11 +70,18 @@ export default function PosPage() {
   }, [selectedCourt, bookingDate])
 
   async function loadVenues() {
-    const { data: roles } = await supabase.from("venue_roles").select("venue_id, venues(id, name, slug)").eq("user_id", user.id).in("role", ["owner", "manager", "staff"])
-    if (roles) {
+    const { data: { session } } = await supabase.auth.getSession()
+    if (!session) return
+    const token = session.access_token
+    const r = await fetch(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/venue_roles?select=venue_id,venues(id,name,slug)`, {
+      headers: { apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, Authorization: `Bearer ${token}` }
+    })
+    const roles = await r.json()
+    if (Array.isArray(roles)) {
       const vs = roles.map((r: any) => r.venues).filter(Boolean)
-      setVenues(vs)
-      if (vs.length === 1) setSelectedVenue(vs[0])
+      const unique = [...new Map(vs.map((v: any) => [v.id, v])).values()]
+      setVenues(unique)
+      if (unique.length === 1) setSelectedVenue(unique[0])
     }
   }
 
