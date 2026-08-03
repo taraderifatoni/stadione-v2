@@ -33,12 +33,6 @@ export default function PosPage() {
 
   useEffect(() => {
     setAuthChecked(true)
-    // Check if already logged in
-    import("@/lib/supabase/client").then(({ createClient }) => {
-      createClient().auth.getUser().then(({ data: { user } }) => {
-        if (user) { setHasAccess(true); loadShift() }
-      })
-    })
   }, [])
 
   async function loadShift() {
