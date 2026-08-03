@@ -516,16 +516,38 @@ export default function PosPage() {
             )}
 
             {/* TAB: REPORT */}
-            {tab === "report" && (
+            {tab === "report" && (() => {
+              const transferTotal = transactions.filter((t: any) => t.payment_method === "transfer").reduce((s: number, t: any) => s + Number(t.amount), 0)
+              const debitTotal = transactions.filter((t: any) => t.payment_method === "debit").reduce((s: number, t: any) => s + Number(t.amount), 0)
+              const dokuTotal = transactions.filter((t: any) => t.payment_method === "doku").reduce((s: number, t: any) => s + Number(t.amount), 0)
+              const dokuPending = transactions.filter((t: any) => t.payment_method === "doku" && t.status === "pending").length
+              const bookingCount = transactions.filter((t: any) => t.reference_type === "booking").length
+              const walkinCount = transactions.filter((t: any) => t.reference_type === "walkin").length
+
+              return (
               <div>
                 <div style={S.card}>
                   <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>Shift Report</div>
                   <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Dibuka</span><span style={S.value}>{new Date(shift.opened_at).toLocaleTimeString("id-ID")}</span></div>
                   <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Saldo Awal</span><span style={S.value}>Rp {Number(shift.opening_balance || 0).toLocaleString("id-ID")}</span></div>
-                  <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Total Transaksi</span><span style={S.value}>{transactions.length}</span></div>
+                  <div style={{ ...S.flexRow, marginBottom: 4 }}>
+                    <span style={S.muted}>Transaksi</span>
+                    <span style={S.value}>{transactions.length} ({bookingCount} BK, {walkinCount} WL)</span>
+                  </div>
+                  {dokuPending > 0 && <div style={{ fontSize: 12, color: "#E65100", marginBottom: 4 }}>{dokuPending} DOKU pending</div>}
                   <hr style={S.divider} />
-                  <div style={{ ...S.flexRow }}><span style={{ fontSize: 13, color: "#B5AC8A" }}>Cash</span><span style={S.value}>Rp {cashTotal.toLocaleString("id-ID")}</span></div>
-                  <div style={{ ...S.flexRow }}><span style={{ fontSize: 13, color: "#B5AC8A" }}>QRIS</span><span style={S.value}>Rp {qrisTotal.toLocaleString("id-ID")}</span></div>
+                  {[[
+                    ["Cash", cashTotal, "#2E7D32"],
+                    ["QRIS", qrisTotal, "#1565C0"],
+                    ["Transfer", transferTotal, "#B5AC8A"],
+                    ["Debit", debitTotal, "#B5AC8A"],
+                    ["DOKU", dokuTotal, "#6A1B9A"],
+                  ].filter(([, v]) => v > 0).map(([label, val, color]) => (
+                    <div key={label} style={S.flexRow}>
+                      <span style={{ fontSize: 13, color }}>{label}</span>
+                      <span style={S.value}>Rp {(val as number).toLocaleString("id-ID")}</span>
+                    </div>
+                  )))}
                   <hr style={S.divider} />
                   <div style={{ ...S.flexRow, marginBottom: 12 }}><span style={{ fontSize: 15, fontWeight: 700 }}>TOTAL</span><span style={{ fontSize: 18, fontWeight: 700, color: "#B5AC8A" }}>Rp {shiftTotal.toLocaleString("id-ID")}</span></div>
 
@@ -541,19 +563,22 @@ export default function PosPage() {
                     {transactions.map((t: any) => (
                       <div key={t.id} style={{ ...S.flexRow, padding: "6px 0", borderBottom: "1px solid #2E2C2822" }}>
                         <div>
-                          <div style={{ fontSize: 12, color: "#F5F0E8" }}>{t.reference_type === "booking" ? `BK Slot` : `Walk-in`}</div>
+                          <div style={{ fontSize: 12, color: "#F5F0E8" }}>
+                            {t.reference_type === "booking" ? "BK Slot" : "Walk-in"}
+                            {t.payment_method === "doku" && t.status === "pending" && <span style={{ color: "#E65100", fontSize: 10, marginLeft: 6 }}>PENDING</span>}
+                          </div>
                           <div style={{ fontSize: 10, color: "#6B6558" }}>{new Date(t.created_at).toLocaleTimeString("id-ID")}</div>
                         </div>
                         <div style={{ textAlign: "right" }}>
-                          <div style={{ fontSize: 13, fontWeight: 600 }}>Rp {Number(t.amount).toLocaleString("id-ID")}</div>
-                          <div style={{ ...S.tag(t.payment_method === "cash" ? "#2E7D32" : "#1565C0") }}>{t.payment_method.toUpperCase()}</div>
+                          <div style={{ fontSize: 13, fontWeight: 600, color: t.payment_method === "doku" && t.status === "pending" ? "#E65100" : "#F5F0E8" }}>Rp {Number(t.amount).toLocaleString("id-ID")}</div>
+                          <div style={{ ...S.tag(t.payment_method === "cash" ? "#2E7D32" : t.payment_method === "qris" ? "#1565C0" : t.payment_method === "doku" ? t.status === "pending" ? "#E65100" : "#6A1B9A" : "#8D6E63") }}>{t.payment_method.toUpperCase()}</div>
                         </div>
                       </div>
                     ))}
                   </div>
                 )}
               </div>
-            )}
+            )})()}
           </>
         )}
 
