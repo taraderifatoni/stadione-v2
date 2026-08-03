@@ -35,7 +35,7 @@ const S = {
   modalBox: { background: "#1A1816", border: "1px solid #2E2C28", borderRadius: 16, padding: 24, maxWidth: 400, width: "100%", maxHeight: "80vh", overflow: "auto" } as React.CSSProperties,
 }
 
-const PAYMENT_METHODS = ["cash", "qris", "transfer", "debit", "split"]
+const PAYMENT_METHODS = ["cash", "qris", "transfer", "debit", "doku", "split"]
 const SPLIT_METHODS = ["cash", "qris", "transfer", "debit"]
 
 type Tab = "booking" | "walkin" | "report"
@@ -81,6 +81,12 @@ function PaymentSection({ total, paymentMethod, splitPayments, referenceNo, onCh
           <button key={m} onClick={() => onChangeMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
         ))}
       </div>
+
+      {paymentMethod === "doku" && !isSplit && (
+        <div style={{ fontSize: 12, color: "#B5AC8A", marginBottom: 8, padding: "8px 12px", background: "#1565C022", borderRadius: 8 }}>
+          Payment link DOKU akan digenerate. Customer bisa bayar via QRIS, VA, atau kartu.
+        </div>
+      )}
 
       {(paymentMethod === "qris" || paymentMethod === "transfer") && !isSplit && (
         <input type="text" value={referenceNo} onChange={e => onChangeRef(e.target.value)} placeholder="No. Referensi / Bukti Transfer" style={{ ...S.input, marginBottom: 10, fontSize: 13 }} />
@@ -257,13 +263,28 @@ export default function PosPage() {
     if (!validateSplit(price)) return
     setLoading(true); setMsg("")
 
+    const txnStatus = paymentMethod === "doku" ? "pending" : "completed"
+
     const { data: booking, error: be } = await supabase.from("bookings").insert({
       court_slot_id: selectedSlot.id, venue_id: selectedVenue.id, user_id: user.id,
       booking_date: bookingDate, start_time: selectedSlot.start_time, end_time: selectedSlot.end_time,
-      total_hours: 1, base_price: price, final_price: price, status: "confirmed",
+      total_hours: 1, base_price: price, final_price: price,
+      status: paymentMethod === "doku" ? "pending" : "confirmed",
     }).select().single()
 
     if (be || !booking) { setMsg(be?.message || "Gagal booking"); setMsgType("error"); setLoading(false); return }
+
+    let dokuUrl = ""
+    if (paymentMethod === "doku") {
+      try {
+        const dokuRes = await fetch("/api/payment/create", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ bookingId: booking.id, amount: price, userName: user.email, userEmail: user.email }),
+        })
+        const dokuData = await dokuRes.json()
+        dokuUrl = dokuData.payment_url || ""
+      } catch { /* fallthrough — show invoice without link */ }
+    }
 
     if (paymentMethod === "split") {
       await createSplitTxns(booking.id, "booking", booking.id)
@@ -271,9 +292,10 @@ export default function PosPage() {
       const details: any = {}
       if (referenceNo.trim()) details.reference_no = referenceNo.trim()
       if ((paymentMethod === "qris" || paymentMethod === "transfer") && referenceNo.trim()) details.manual_verified = false
+      if (dokuUrl) details.doku_url = dokuUrl
       await supabase.from("pos_transactions").insert({
         shift_id: shift.id, booking_id: booking.id, reference_type: "booking",
-        reference_id: booking.id, amount: price, payment_method: paymentMethod, status: "completed",
+        reference_id: booking.id, amount: price, payment_method: paymentMethod, status: txnStatus,
         payment_details: Object.keys(details).length > 0 ? details : undefined,
       })
     }
@@ -286,6 +308,7 @@ export default function PosPage() {
       number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
       venue: selectedVenue.name, court: selectedCourt.name, date: bookingDate,
       time: `${selectedSlot.start_time}-${selectedSlot.end_time}`, price, method: methodLabel,
+      dokuUrl,
       split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
@@ -303,6 +326,8 @@ export default function PosPage() {
     setLoading(true); setMsg("")
 
     const refId = crypto.randomUUID()
+    const txnStatus = paymentMethod === "doku" ? "pending" : "completed"
+    let dokuUrl = ""
 
     if (paymentMethod === "split") {
       await createSplitTxns(null, "walkin", refId)
@@ -310,9 +335,10 @@ export default function PosPage() {
       const details: any = { note: walkinNote || "Walk-in payment" }
       if (referenceNo.trim()) details.reference_no = referenceNo.trim()
       if ((paymentMethod === "qris" || paymentMethod === "transfer") && referenceNo.trim()) details.manual_verified = false
+      if (dokuUrl) details.doku_url = dokuUrl
       await supabase.from("pos_transactions").insert({
         shift_id: shift.id, reference_type: "walkin", reference_id: refId,
-        amount, payment_method: paymentMethod, status: "completed",
+        amount, payment_method: paymentMethod, status: txnStatus,
         payment_details: details,
       })
     }
@@ -324,6 +350,7 @@ export default function PosPage() {
     setInvoice({
       number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
       venue: selectedVenue.name, type: "Walk-in", note: walkinNote, amount, method: methodLabel,
+      dokuUrl,
       split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
@@ -570,6 +597,13 @@ export default function PosPage() {
                     ))
                   ) : (
                     <tr><td style={{ color: "#666" }}>Metode</td><td style={{ textAlign: "right" }}>{invoice.method}</td></tr>
+                  )}
+                  {invoice.dokuUrl && (
+                    <tr><td colSpan={2} style={{ padding: "8px 0 0", textAlign: "center" }}>
+                      <div style={{ fontSize: 10, color: "#666", marginBottom: 4 }}>Payment Link:</div>
+                      <a href={invoice.dokuUrl} target="_blank" rel="noopener" style={{ fontSize: 9, color: "#1565C0", wordBreak: "break-all" }}>{invoice.dokuUrl}</a>
+                      <div style={{ fontSize: 10, color: "#E65100", marginTop: 4 }}>Status: Menunggu Pembayaran</div>
+                    </td></tr>
                   )}
                   <tr><td colSpan={2} style={{ textAlign: "center", padding: "12px 0 0", fontSize: 11, color: "#666" }}>Terima kasih telah menggunakan Stadione</td></tr>
                 </tbody>
