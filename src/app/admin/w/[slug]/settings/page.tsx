@@ -16,6 +16,7 @@ export default function WorkspaceSettings() {
   const [sending, setSending] = useState(false)
 
   if (!ctx) return null
+  const venue = ctx.venue
 
   async function sendInvite() {
     if (!inviteEmail) { setErr("Masukkan email"); return }
@@ -24,7 +25,7 @@ export default function WorkspaceSettings() {
     const res = await fetch("/api/staff/invite", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: inviteEmail, venueId: ctx.venue.id, role: inviteRole, invitedBy: user?.id }),
+      body: JSON.stringify({ email: inviteEmail, venueId: venue.id, role: inviteRole, invitedBy: user?.id }),
     })
     const data = await res.json()
     if (data.success) {
@@ -47,9 +48,9 @@ export default function WorkspaceSettings() {
           <Settings size={18} color={C.primaryLight} />
           <span style={{ fontSize: 14, fontWeight: 600, color: C.text }}>Informasi Venue</span>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Nama</span><span style={{ fontSize: 13, color: C.text }}>{ctx.venue.name}</span></div>
-        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Slug</span><span style={{ fontSize: 13, color: C.text }}>{ctx.venue.slug}</span></div>
-        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Kota</span><span style={{ fontSize: 13, color: C.text }}>{ctx.venue.city || "-"}</span></div>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Nama</span><span style={{ fontSize: 13, color: C.text }}>{venue.name}</span></div>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Slug</span><span style={{ fontSize: 13, color: C.text }}>{venue.slug}</span></div>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Kota</span><span style={{ fontSize: 13, color: C.text }}>{venue.city || "-"}</span></div>
         <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}><span style={{ fontSize: 12, color: C.textMuted }}>Role Anda</span><span style={{ fontSize: 13, color: C.accent }}>{ctx.role}</span></div>
       </div>
 
