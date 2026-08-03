@@ -1,29 +1,37 @@
 "use client"
-import { useRouter } from "next/navigation"
+import { useEffect, useState } from "react"
+import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { ChevronLeft, Plus } from "lucide-react"
-
-const Card = ({ children, style }: any) => <div style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, ...style }}>{children}</div>
+import { ChevronLeft, GraduationCap } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 export default function AdminAcademy() {
+  const [academies, setAcademies] = useState<any[]>([])
+  const [loading, setLoading] = useState(true)
+  const supabase = createClient()
   const router = useRouter()
-  const students = [{ name: "Ahmad R.", program: "U-14 Elite", att: "92%", score: "3.8" }, { name: "Bintang S.", program: "U-10 Dev", att: "88%", score: "3.5" }, { name: "Cinta A.", program: "Junior Tennis", att: "95%", score: "4.1" }]
-  return <div>
-    <TopBar title="Kelola akademi" left={<ChevronLeft size={20} color={C.text} onClick={() => router.back()} style={{ cursor: "pointer" }} />} right={<Plus size={20} color={C.primaryLight} />} />
-    <div style={{ padding: "0 16px 16px" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 8, marginBottom: 16 }}>
-        {[{ l: "Program", v: "3" }, { l: "Coach", v: "4" }, { l: "Murid", v: "45" }].map((s, i) => <Card key={i} style={{ textAlign: "center", padding: 10 }}><div style={{ fontSize: 18, fontWeight: 700, color: C.accent }}>{s.v}</div><div style={{ fontSize: 11, color: C.textMuted }}>{s.l}</div></Card>)}
-      </div>
-      <div style={{ fontSize: 14, fontWeight: 600, color: C.text, marginBottom: 10 }}>Murid terdaftar</div>
-      {students.map((s, i) => (
-        <Card key={i} style={{ marginBottom: 8, padding: 12 }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <div><div style={{ fontSize: 13, fontWeight: 500, color: C.text }}>{s.name}</div><div style={{ fontSize: 11, color: C.textMuted }}>{s.program} · Kehadiran {s.att}</div></div>
-            <div style={{ textAlign: "right" }}><div style={{ fontSize: 16, fontWeight: 700, color: C.accent }}>{s.score}</div><div style={{ fontSize: 10, color: C.textMuted }}>Nilai</div></div>
+
+  useEffect(() => {
+    supabase.from("academies").select("*, venues(name, slug), students:students(id)")
+      .limit(20).then(({ data }: any) => { setAcademies(data || []); setLoading(false) })
+  }, [])
+
+  return (
+    <div>
+      <TopBar title="Semua Akademi" sub="Platform Admin" left={<ChevronLeft size={20} color={C.text} onClick={() => router.back()} style={{ cursor: "pointer" }} />} />
+      <div style={{ padding: "0 16px 16px" }}>
+        {academies.length === 0 && !loading && <div style={{ textAlign: "center", padding: 40, color: C.textMuted, fontSize: 13 }}>Belum ada akademi</div>}
+        {academies.map((a: any) => (
+          <div key={a.id} onClick={() => a.venues?.slug && router.push(`/admin/w/${a.venues.slug}/academy`)} style={{ background: C.surface, borderRadius: 14, padding: 14, border: `1px solid ${C.border}`, marginBottom: 10, cursor: a.venues?.slug ? "pointer" : "default" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 4 }}>
+              <GraduationCap size={16} color={C.primaryLight} />
+              <span style={{ fontSize: 14, fontWeight: 600, color: C.text }}>{a.venues?.name} Academy</span>
+            </div>
+            <div style={{ fontSize: 12, color: C.textMuted }}>{a.name} · {a.students?.length || 0} murid</div>
           </div>
-        </Card>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
+  )
 }
