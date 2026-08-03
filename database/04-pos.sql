@@ -3,6 +3,13 @@
 -- Fase 4 — Shift, Transactions, Invoices, Refunds
 -- ============================================
 
+-- ============================================
+-- COURT SLOTS EXTENSION (add time columns)
+-- ============================================
+ALTER TABLE public.court_slots ADD COLUMN IF NOT EXISTS start_time TIME;
+ALTER TABLE public.court_slots ADD COLUMN IF NOT EXISTS end_time TIME;
+
+-- ============================================
 CREATE TABLE IF NOT EXISTS public.shifts (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
   venue_id uuid NOT NULL REFERENCES public.venues(id),

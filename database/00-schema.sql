@@ -134,8 +134,28 @@ CREATE POLICY "Venue admins can update their venue" ON public.venues
 CREATE POLICY "Users can view their own roles" ON public.venue_roles
   FOR SELECT USING (user_id = auth.uid());
 
-CREATE POLICY "Venue owners can manage roles" ON public.venue_roles
-  FOR ALL USING (
+CREATE POLICY "Venue owners can insert roles" ON public.venue_roles
+  FOR INSERT WITH CHECK (
+    EXISTS (
+      SELECT 1 FROM public.venue_roles vr
+      WHERE vr.venue_id = venue_roles.venue_id
+      AND vr.user_id = auth.uid()
+      AND vr.role = 'owner'
+    )
+  );
+
+CREATE POLICY "Venue owners can update roles" ON public.venue_roles
+  FOR UPDATE USING (
+    EXISTS (
+      SELECT 1 FROM public.venue_roles vr
+      WHERE vr.venue_id = venue_roles.venue_id
+      AND vr.user_id = auth.uid()
+      AND vr.role = 'owner'
+    )
+  );
+
+CREATE POLICY "Venue owners can delete roles" ON public.venue_roles
+  FOR DELETE USING (
     EXISTS (
       SELECT 1 FROM public.venue_roles vr
       WHERE vr.venue_id = venue_roles.venue_id

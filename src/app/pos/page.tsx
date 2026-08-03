@@ -7,29 +7,38 @@ const S = {
   page: { minHeight: "100vh", background: "#0D0D0D", color: "#F5F0E8" } as React.CSSProperties,
   header: { background: "#84102D", padding: "12px 16px", display: "flex", justifyContent: "space-between", alignItems: "center" } as React.CSSProperties,
   headerTitle: { fontSize: 16, fontWeight: 800, color: "#fff", letterSpacing: 2 } as React.CSSProperties,
-  container: { maxWidth: 500, margin: "0 auto", padding: "20px 16px 40px" } as React.CSSProperties,
-  card: { background: "#1A1816", border: "1px solid #2E2C28", borderRadius: 12, padding: 16, marginBottom: 16 } as React.CSSProperties,
-  input: { width: "100%", padding: "10px 12px", background: "#242220", border: "1px solid #2E2C28", borderRadius: 10, color: "#F5F0E8", fontSize: 14, outline: "none", boxSizing: "border-box" as any, marginBottom: 10 } as React.CSSProperties,
-  select: { width: "100%", padding: "10px 12px", background: "#242220", border: "1px solid #2E2C28", borderRadius: 10, color: "#F5F0E8", fontSize: 14, outline: "none", boxSizing: "border-box" as any, marginBottom: 10 } as React.CSSProperties,
+  container: { maxWidth: 520, margin: "0 auto", padding: "16px" } as React.CSSProperties,
+  card: { background: "#1A1816", border: "1px solid #2E2C28", borderRadius: 12, padding: 16, marginBottom: 12 } as React.CSSProperties,
+  input: { width: "100%", padding: "10px 12px", background: "#242220", border: "1px solid #2E2C28", borderRadius: 10, color: "#F5F0E8", fontSize: 14, outline: "none", boxSizing: "border-box" as any, marginBottom: 8 } as React.CSSProperties,
+  select: { width: "100%", padding: "10px 12px", background: "#242220", border: "1px solid #2E2C28", borderRadius: 10, color: "#F5F0E8", fontSize: 14, outline: "none", boxSizing: "border-box" as any } as React.CSSProperties,
   btn: { width: "100%", padding: "12px", borderRadius: 10, border: "none", background: "#84102D", color: "#fff", fontSize: 14, fontWeight: 600, cursor: "pointer" } as React.CSSProperties,
   btnSm: { padding: "8px 16px", borderRadius: 8, border: "none", background: "#84102D", color: "#fff", fontSize: 13, fontWeight: 600, cursor: "pointer" } as React.CSSProperties,
-  btnOutline: { padding: "8px 16px", borderRadius: 8, border: "1px solid #2E2C28", background: "transparent", color: "#B5AC8A", fontSize: 13, cursor: "pointer" } as React.CSSProperties,
+  btnOutline: { padding: "6px 14px", borderRadius: 8, border: "1px solid #2E2C28", background: "transparent", color: "#B5AC8A", fontSize: 13, cursor: "pointer" } as React.CSSProperties,
+  btnDanger: { padding: "8px 16px", borderRadius: 8, border: "1px solid #C6282844", background: "transparent", color: "#C62828", fontSize: 13, cursor: "pointer" } as React.CSSProperties,
   label: { fontSize: 13, fontWeight: 600, color: "#B5AC8A", marginBottom: 6, display: "block" } as React.CSSProperties,
   value: { fontSize: 14, color: "#F5F0E8" } as React.CSSProperties,
   muted: { fontSize: 12, color: "#6B6558" } as React.CSSProperties,
-  tag: (bg: string) => ({ padding: "4px 10px", borderRadius: 6, fontSize: 12, fontWeight: 700, background: bg, color: "#fff", display: "inline-block" } as React.CSSProperties),
+  tag: (bg: string) => ({ padding: "3px 8px", borderRadius: 5, fontSize: 11, fontWeight: 700, background: bg, color: "#fff", display: "inline-block" } as React.CSSProperties),
   flexRow: { display: "flex", justifyContent: "space-between", alignItems: "center", gap: 10 } as React.CSSProperties,
-  error: { fontSize: 12, color: "#C62828", marginBottom: 8, textAlign: "center" } as React.CSSProperties,
+  flexCenter: { display: "flex", alignItems: "center", gap: 8 } as React.CSSProperties,
+  error: { fontSize: 12, color: "#C62828", marginBottom: 8, textAlign: "center" as any } as React.CSSProperties,
+  success: { fontSize: 14, color: "#4CAF50", textAlign: "center" as any, padding: 8 } as React.CSSProperties,
+  tabRow: { display: "flex", gap: 4, marginBottom: 16, background: "#141210", borderRadius: 10, padding: 4 } as React.CSSProperties,
+  tab: (active: boolean) => ({ flex: 1, padding: "10px 8px", borderRadius: 8, border: "none", background: active ? "#84102D" : "transparent", color: active ? "#fff" : "#6B6558", fontSize: 13, fontWeight: 700, cursor: "pointer", textAlign: "center" as any }) as React.CSSProperties,
+  slotGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(100px, 1fr))", gap: 8 } as React.CSSProperties,
+  slot: (active: boolean) => ({ padding: "10px 8px", borderRadius: 8, border: active ? "2px solid #84102D" : "1px solid #2E2C28", background: active ? "#84102D22" : "#242220", color: active ? "#F5F0E8" : "#6B6558", fontSize: 12, cursor: "pointer", textAlign: "center" as any }) as React.CSSProperties,
+  slotBooked: { padding: "10px 8px", borderRadius: 8, border: "1px solid #C6282844", background: "#C6282811", color: "#C62828", fontSize: 12, cursor: "not-allowed", textAlign: "center" as any, textDecoration: "line-through" } as React.CSSProperties,
+  paymentBtn: (active: boolean) => ({ padding: "6px 12px", borderRadius: 8, border: active ? "1px solid #84102D" : "1px solid #2E2C28", background: active ? "#84102D" : "transparent", color: active ? "#fff" : "#B5AC8A", fontSize: 12, cursor: "pointer" }) as React.CSSProperties,
+  invoice: { background: "#fff", color: "#111", borderRadius: 8, padding: 20, fontSize: 13, lineHeight: 1.6 } as React.CSSProperties,
+  divider: { border: "none", borderTop: "1px solid #2E2C28", margin: "12px 0" } as React.CSSProperties,
+  modalOverlay: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center", zIndex: 100, padding: 16 } as React.CSSProperties,
+  modalBox: { background: "#1A1816", border: "1px solid #2E2C28", borderRadius: 16, padding: 24, maxWidth: 400, width: "100%", maxHeight: "80vh", overflow: "auto" } as React.CSSProperties,
 }
 
-function calcHours(start: string, end: string): number {
-  if (!start || !end) return 0
-  const [sh, sm] = start.split(":").map(Number)
-  const [eh, em] = end.split(":").map(Number)
-  let hours = eh - sh + (em - sm) / 60
-  if (hours <= 0) hours += 24
-  return Math.round(hours * 10) / 10
-}
+const PAYMENT_METHODS = ["cash", "qris", "transfer", "debit", "split"]
+
+type Tab = "booking" | "walkin" | "report"
+type SlotsMap = Record<string, any[]>
 
 export default function PosPage() {
   const [user, setUser] = useState<any>(null)
@@ -42,14 +51,21 @@ export default function PosPage() {
   const [openingBalance, setOpeningBalance] = useState("0")
   const [closingBalance, setClosingBalance] = useState("")
   const [shiftResult, setShiftResult] = useState<any>(null)
+  const [tab, setTab] = useState<Tab>("booking")
   const [courts, setCourts] = useState<any[]>([])
   const [selectedCourt, setSelectedCourt] = useState<any>(null)
+  const [slots, setSlots] = useState<any[]>([])
+  const [bookedSlotIds, setBookedSlotIds] = useState<Set<string>>(new Set())
+  const [selectedSlot, setSelectedSlot] = useState<any>(null)
   const [bookingDate, setBookingDate] = useState(new Date().toISOString().split("T")[0])
-  const [startTime, setStartTime] = useState("")
-  const [endTime, setEndTime] = useState("")
-  const [price, setPrice] = useState<number | null>(null)
+  const [paymentMethod, setPaymentMethod] = useState("cash")
   const [loading, setLoading] = useState(false)
   const [msg, setMsg] = useState("")
+  const [msgType, setMsgType] = useState<"success" | "error">("success")
+  const [walkinAmount, setWalkinAmount] = useState("")
+  const [walkinNote, setWalkinNote] = useState("")
+  const [transactions, setTransactions] = useState<any[]>([])
+  const [invoice, setInvoice] = useState<any>(null)
   const { supabase, signOut } = useAuth()
 
   useEffect(() => { supabase.auth.getUser().then(({ data }) => { if (data.user) setUser(data.user) }) }, [])
@@ -63,18 +79,17 @@ export default function PosPage() {
   }, [selectedVenue])
 
   useEffect(() => {
-    if (!selectedCourt || !bookingDate) { setPrice(null); return }
-    const day = new Date(bookingDate).getDay()
-    const dayType = (day === 0 || day === 6) ? "weekend" : "weekday"
-    supabase.from("pricing_rules").select("base_price").eq("court_id", selectedCourt.id).eq("is_active", true).eq("day_type", dayType).order("priority", { ascending: false }).limit(1).then(({ data: p }: any) => setPrice(p?.[0]?.base_price ?? null))
+    if (!selectedCourt || !bookingDate) return
+    loadSlots(selectedCourt.id, bookingDate)
   }, [selectedCourt, bookingDate])
+
+  useEffect(() => { if (shift) loadTransactions() }, [shift, tab])
 
   async function loadVenues() {
     const { data: { session } } = await supabase.auth.getSession()
     if (!session) return
-    const token = session.access_token
     const r = await fetch(`${process.env.NEXT_PUBLIC_SUPABASE_URL}/rest/v1/venue_roles?select=venue_id,venues(id,name,slug)`, {
-      headers: { apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, Authorization: `Bearer ${token}` }
+      headers: { apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!, Authorization: `Bearer ${session.access_token}` }
     })
     const roles = await r.json()
     if (Array.isArray(roles)) {
@@ -86,15 +101,40 @@ export default function PosPage() {
   }
 
   async function loadShift() {
+    if (!selectedVenue) return
     const { data } = await supabase.from("shifts").select("*").eq("venue_id", selectedVenue.id).eq("status", "open").single()
     setShift(data || null)
+  }
+
+  async function loadSlots(courtId: string, date: string) {
+    setSlots([]); setBookedSlotIds(new Set()); setSelectedSlot(null)
+    const day = new Date(date).getDay()
+    const dayType = (day === 0 || day === 6) ? "weekend" : "weekday"
+
+    const { data: allSlots } = await supabase.from("court_slots").select("id, start_time, end_time").eq("court_id", courtId).order("start_time")
+    if (!allSlots) return
+
+    const { data: bookings } = await supabase.from("bookings").select("court_slot_id").eq("booking_date", date).in("status", ["confirmed", "ongoing"])
+    const booked = new Set((bookings || []).map((b: any) => b.court_slot_id))
+
+    const { data: pricing } = await supabase.from("pricing_rules").select("base_price").eq("court_id", courtId).eq("is_active", true).eq("day_type", dayType).order("priority", { ascending: false }).limit(1)
+    const basePrice = pricing?.[0]?.base_price ?? null
+
+    setSlots(allSlots.map((s: any) => ({ ...s, price: basePrice })))
+    setBookedSlotIds(booked)
+  }
+
+  async function loadTransactions() {
+    if (!shift) return
+    const { data } = await supabase.from("pos_transactions").select("*, bookings(booking_date, start_time, end_time)").eq("shift_id", shift.id).order("created_at", { ascending: false })
+    setTransactions(data || [])
   }
 
   async function openShift() {
     setLoading(true); setMsg("")
     const { error } = await supabase.from("shifts").insert({ venue_id: selectedVenue.id, staff_id: user.id, opening_balance: Number(openingBalance) || 0, status: "open" }).select().single()
     setLoading(false)
-    if (error) setMsg(error.message)
+    if (error) { setMsg(error.message); setMsgType("error") }
     else loadShift()
   }
 
@@ -102,44 +142,70 @@ export default function PosPage() {
     if (!shift) return
     setLoading(true); setMsg("")
     const bal = Number(closingBalance)
-    if (isNaN(bal)) { setMsg("Masukkan closing balance"); setLoading(false); return }
+    if (isNaN(bal)) { setMsg("Masukkan closing balance"); setMsgType("error"); setLoading(false); return }
     const { data: txns } = await supabase.from("pos_transactions").select("amount, payment_method").eq("shift_id", shift.id)
     const totalCashIn = txns?.filter((t: any) => t.payment_method === "cash").reduce((s: number, t: any) => s + Number(t.amount), 0) || 0
     const expected = (Number(shift.opening_balance) || 0) + totalCashIn
     const discrepancy = bal - expected
     await supabase.from("shifts").update({ status: "closed", closing_balance: bal, total_cash_in: totalCashIn, discrepancy, closed_at: new Date().toISOString() }).eq("id", shift.id)
-    setShiftResult({ totalCashIn, discrepancy, closingBalance: bal })
+    setShiftResult({ totalCashIn, discrepancy, closingBalance: bal, transactions: txns || [] })
     setShift(null)
     setLoading(false)
   }
 
-  async function createBooking() {
-    if (!shift || !selectedCourt || !startTime || !endTime || price === null) { setMsg("Lengkapi semua field"); return }
-    const hours = calcHours(startTime, endTime)
-    if (hours <= 0) { setMsg("Waktu selesai harus setelah mulai"); return }
+  async function bookSlot() {
+    if (!shift || !selectedSlot || !selectedCourt) { setMsg("Pilih slot"); setMsgType("error"); return }
     setLoading(true); setMsg("")
 
-    const { data: slot, error: se } = await supabase.from("court_slots").insert({ court_id: selectedCourt.id }).select().single()
-    if (se || !slot) { setMsg(se?.message || "Gagal membuat slot"); setLoading(false); return }
-
-    const total = price * hours
+    const price = selectedSlot.price || 0
     const { data: booking, error: be } = await supabase.from("bookings").insert({
-      court_slot_id: slot.id, venue_id: selectedVenue.id, user_id: user.id,
-      booking_date: bookingDate, start_time: startTime, end_time: endTime,
-      total_hours: hours, base_price: price, final_price: total, status: "confirmed",
+      court_slot_id: selectedSlot.id, venue_id: selectedVenue.id, user_id: user.id,
+      booking_date: bookingDate, start_time: selectedSlot.start_time, end_time: selectedSlot.end_time,
+      total_hours: 1, base_price: price, final_price: price, status: "confirmed",
     }).select().single()
 
-    if (be || !booking) { setMsg(be?.message || "Gagal booking"); setLoading(false); return }
+    if (be || !booking) { setMsg(be?.message || "Gagal booking"); setMsgType("error"); setLoading(false); return }
 
     const { error: te } = await supabase.from("pos_transactions").insert({
       shift_id: shift.id, booking_id: booking.id, reference_type: "booking",
-      reference_id: booking.id, amount: total, payment_method: "cash", status: "completed",
+      reference_id: booking.id, amount: price, payment_method: paymentMethod, status: "completed",
     })
 
-    if (te) { setMsg(te.message); setLoading(false); return }
+    if (te) { setMsg(te.message); setMsgType("error"); setLoading(false); return }
 
-    setMsg(`Booking sukses! Total: Rp ${total.toLocaleString("id-ID")}`)
-    setStartTime(""); setEndTime(""); setSelectedCourt(null); setPrice(null)
+    setInvoice({
+      number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
+      venue: selectedVenue.name, court: selectedCourt.name, date: bookingDate,
+      time: `${selectedSlot.start_time}-${selectedSlot.end_time}`, price, method: paymentMethod.toUpperCase(),
+    })
+    setMsgType("success")
+    setSelectedSlot(null)
+    loadSlots(selectedCourt.id, bookingDate)
+    loadTransactions()
+    setLoading(false)
+  }
+
+  async function walkinPay() {
+    if (!shift) { setMsg("Shift belum dibuka"); setMsgType("error"); return }
+    const amount = Number(walkinAmount)
+    if (!amount || amount <= 0) { setMsg("Masukkan nominal"); setMsgType("error"); return }
+    setLoading(true); setMsg("")
+
+    const { error } = await supabase.from("pos_transactions").insert({
+      shift_id: shift.id, reference_type: "walkin", reference_id: crypto.randomUUID(),
+      amount, payment_method: paymentMethod, status: "completed",
+      payment_details: { note: walkinNote || "Walk-in payment" },
+    })
+
+    if (error) { setMsg(error.message); setMsgType("error"); setLoading(false); return }
+
+    setInvoice({
+      number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
+      venue: selectedVenue.name, type: "Walk-in", note: walkinNote, amount, method: paymentMethod.toUpperCase(),
+    })
+    setMsgType("success")
+    setWalkinAmount(""); setWalkinNote("")
+    loadTransactions()
     setLoading(false)
   }
 
@@ -157,8 +223,8 @@ export default function PosPage() {
           if (err) setLoginError("Email atau kata sandi salah")
           else { const { data } = await supabase.auth.getUser(); if (data.user) setUser(data.user) }
         }}>
-          <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required style={S.input} />
-          <input type="password" placeholder="Kata sandi" value={password} onChange={e => setPassword(e.target.value)} required style={S.input} />
+          <input type="email" placeholder="Email" name="email" id="pos-email" value={email} onChange={e => setEmail(e.target.value)} required style={S.input} />
+          <input type="password" placeholder="Kata sandi" name="password" id="pos-password" value={password} onChange={e => setPassword(e.target.value)} required style={S.input} />
           {loginError && <div style={S.error}>{loginError}</div>}
           <button type="submit" style={S.btn}>Masuk</button>
         </form>
@@ -166,90 +232,226 @@ export default function PosPage() {
     </div>
   )
 
+  const shiftTotal = transactions.reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const cashTotal = transactions.filter((t: any) => t.payment_method === "cash").reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const qrisTotal = transactions.filter((t: any) => t.payment_method === "qris").reduce((s: number, t: any) => s + Number(t.amount), 0)
+
   return (
     <div style={S.page}>
       <div style={S.header}>
         <span style={S.headerTitle}>STADIONE POS</span>
-        <button onClick={async () => { await signOut(); setUser(null) }} style={{ ...S.btnOutline, color: "#C62828", borderColor: "#C6282844" }}>Keluar</button>
+        <button onClick={async () => { await signOut(); setUser(null) }} style={S.btnDanger}>Keluar</button>
       </div>
       <div style={S.container}>
 
-        <div style={S.card}>
-          <div style={S.flexRow}>
-            <span style={S.label}>Venue</span>
-            <select value={selectedVenue?.id || ""} onChange={e => { const v = venues.find(x => x.id === e.target.value); setSelectedVenue(v || null) }} style={{ ...S.select, width: "auto", minWidth: 200, marginBottom: 0 }}>
+        {/* Venue + Shift Bar */}
+        <div style={{ ...S.card, padding: "12px 16px" }}>
+          <div style={{ ...S.flexRow, marginBottom: selectedVenue ? 8 : 0 }}>
+            <select value={selectedVenue?.id || ""} onChange={e => { const v = venues.find(x => x.id === e.target.value); setSelectedVenue(v || null); setSelectedCourt(null); setSlots([]) }} style={{ ...S.select, flex: 1, marginBottom: 0 }}>
               <option value="">Pilih venue</option>
               {venues.map((v: any) => <option key={v.id} value={v.id}>{v.name}</option>)}
             </select>
+            {!shift && selectedVenue && <span style={S.tag("#C62828")}>✕</span>}
+            {shift && <span style={S.tag("#1B5E20")}>● OPEN</span>}
           </div>
         </div>
 
-        {!selectedVenue && <div style={{ textAlign: "center", padding: 40, color: "#6B6558", fontSize: 14 }}>Pilih venue untuk memulai</div>}
-
+        {/* Open Shift */}
         {selectedVenue && !shift && (
           <div style={S.card}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F0E8", marginBottom: 12 }}>Buka Shift</div>
-            <label style={S.label}>Saldo Awal</label>
+            <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 12 }}>Buka Shift</div>
+            <div style={S.label}>Saldo Awal</div>
             <input type="number" value={openingBalance} onChange={e => setOpeningBalance(e.target.value)} style={S.input} />
             <button onClick={openShift} disabled={loading} style={S.btn}>{loading ? "Membuka..." : "Buka Shift"}</button>
+            {msg && <div style={msgType === "error" ? S.error : S.success}>{msg}</div>}
           </div>
         )}
 
-        {shift && (
+        {/* Shift Closed Result */}
+        {shiftResult && (
           <div style={S.card}>
-            <div style={{ ...S.flexRow, marginBottom: 10 }}>
-              <span style={{ fontSize: 16, fontWeight: 700 }}>Shift Aktif</span>
-              <span style={S.tag("#1B5E20")}>OPEN</span>
-            </div>
-            <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Dibuka</span><span style={S.value}>{new Date(shift.opened_at).toLocaleTimeString("id-ID")}</span></div>
-            <div style={{ ...S.flexRow, marginBottom: 12 }}><span style={S.muted}>Saldo Awal</span><span style={S.value}>Rp {Number(shift.opening_balance || 0).toLocaleString("id-ID")}</span></div>
-            <label style={S.label}>Saldo Akhir</label>
-            <input type="number" value={closingBalance} onChange={e => setClosingBalance(e.target.value)} placeholder="Hitung uang di laci..." style={S.input} />
-            <div style={S.flexRow}>
-              <button onClick={closeShift} disabled={loading} style={S.btnSm}>{loading ? "..." : "Tutup Shift"}</button>
-            </div>
-          </div>
-        )}
-
-        {shift && shiftResult && (
-          <div style={S.card}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F0E8", marginBottom: 8 }}>Shift Ditutup</div>
+            <div style={{ fontSize: 16, fontWeight: 700, marginBottom: 8 }}>Shift Ditutup</div>
             <div style={S.flexRow}><span style={S.muted}>Total Cash In</span><span style={S.value}>Rp {shiftResult.totalCashIn.toLocaleString("id-ID")}</span></div>
             <div style={S.flexRow}><span style={S.muted}>Discrepancy</span><span style={{ ...S.value, color: shiftResult.discrepancy !== 0 ? "#C62828" : "#4CAF50" }}>Rp {shiftResult.discrepancy.toLocaleString("id-ID")}</span></div>
             <button onClick={() => setShiftResult(null)} style={{ ...S.btn, marginTop: 12 }}>OK</button>
           </div>
         )}
 
+        {!shift && !shiftResult && <div style={{ textAlign: "center", padding: 40, color: "#6B6558", fontSize: 14 }}>Buka shift untuk memulai</div>}
+
+        {/* TABS */}
         {shift && (
-          <div style={S.card}>
-            <div style={{ fontSize: 16, fontWeight: 700, color: "#F5F0E8", marginBottom: 12 }}>Walk-in Booking</div>
-            <label style={S.label}>Tanggal</label>
-            <input type="date" value={bookingDate} onChange={e => { setBookingDate(e.target.value); setPrice(null) }} style={S.input} />
-            <label style={S.label}>Lapangan</label>
-            <select value={selectedCourt?.id || ""} onChange={e => { const c = courts.find(x => x.id === e.target.value); setSelectedCourt(c || null) }} style={S.select}>
-              <option value="">Pilih lapangan</option>
-              {courts.map((c: any) => <option key={c.id} value={c.id}>{c.name}</option>)}
-            </select>
-            <div style={S.flexRow}>
-              <div style={{ flex: 1 }}><label style={S.label}>Mulai</label><input type="time" value={startTime} onChange={e => setStartTime(e.target.value)} style={S.input} /></div>
-              <div style={{ flex: 1 }}><label style={S.label}>Selesai</label><input type="time" value={endTime} onChange={e => setEndTime(e.target.value)} style={S.input} /></div>
+          <>
+            <div style={S.tabRow}>
+              {(["booking", "walkin", "report"] as Tab[]).map(t => (
+                <button key={t} onClick={() => setTab(t)} style={S.tab(tab === t)}>
+                  {t === "booking" ? "Booking" : t === "walkin" ? "Walk-in" : "Report"}
+                </button>
+              ))}
             </div>
-            {price !== null && startTime && endTime && (
-              <div style={{ ...S.flexRow, marginBottom: 12, padding: "10px 12px", background: "#242220", borderRadius: 8 }}>
-                <span style={S.muted}>{calcHours(startTime, endTime).toFixed(1)} jam x Rp {price.toLocaleString("id-ID")}</span>
-                <span style={{ fontSize: 18, fontWeight: 700, color: "#B5AC8A" }}>Rp {(price * calcHours(startTime, endTime)).toLocaleString("id-ID")}</span>
+
+            {/* TAB: BOOKING */}
+            {tab === "booking" && (
+              <div>
+                <div style={S.card}>
+                  <div style={S.label}>Tanggal</div>
+                  <input type="date" value={bookingDate} onChange={e => { setBookingDate(e.target.value); setSelectedSlot(null) }} style={S.input} />
+                  <div style={S.label}>Lapangan</div>
+                  <select value={selectedCourt?.id || ""} onChange={e => { const c = courts.find(x => x.id === e.target.value); setSelectedCourt(c || null) }} style={S.select}>
+                    <option value="">Pilih lapangan</option>
+                    {courts.map((c: any) => <option key={c.id} value={c.id}>{c.name} ({c.court_type})</option>)}
+                  </select>
+                </div>
+
+                {selectedCourt && slots.length > 0 && (
+                  <div style={S.card}>
+                    <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 10 }}>Slot Tersedia</div>
+                    <div style={S.slotGrid}>
+                      {slots.map((s: any) => {
+                        const isBooked = bookedSlotIds.has(s.id)
+                        const isSelected = selectedSlot?.id === s.id
+                        if (isBooked) return <div key={s.id} style={S.slotBooked}>{s.start_time?.substring(0, 5)}-{s.end_time?.substring(0, 5)}</div>
+                        return (
+                          <button key={s.id} onClick={() => setSelectedSlot(isSelected ? null : s)} style={S.slot(isSelected)}>
+                            <div style={{ fontSize: 11 }}>{s.start_time?.substring(0, 5)}</div>
+                            <div style={{ fontSize: 11, marginTop: 2 }}>{s.end_time?.substring(0, 5)}</div>
+                            {s.price !== null && <div style={{ fontSize: 10, marginTop: 2, color: "#B5AC8A" }}>Rp {Number(s.price).toLocaleString("id-ID")}</div>}
+                          </button>
+                        )
+                      })}
+                    </div>
+
+                    {selectedSlot && (
+                      <>
+                        <hr style={S.divider} />
+                        <div style={{ ...S.flexRow, marginBottom: 8 }}>
+                          <span style={S.value}>{selectedSlot.start_time?.substring(0, 5)} - {selectedSlot.end_time?.substring(0, 5)}</span>
+                          <span style={{ fontSize: 16, fontWeight: 700, color: "#B5AC8A" }}>Rp {Number(selectedSlot.price || 0).toLocaleString("id-ID")}</span>
+                        </div>
+                        <div style={{ ...S.flexCenter, marginBottom: 12, flexWrap: "wrap" }}>
+                          <span style={S.muted}>Metode:</span>
+                          {PAYMENT_METHODS.map(m => (
+                            <button key={m} onClick={() => setPaymentMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
+                          ))}
+                        </div>
+                        <button onClick={bookSlot} disabled={loading} style={S.btn}>{loading ? "Memproses..." : "Bayar & Konfirmasi"}</button>
+                      </>
+                    )}
+                    {msg && tab === "booking" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
+                  </div>
+                )}
               </div>
             )}
-            <button onClick={createBooking} disabled={loading} style={S.btn}>{loading ? "Memproses..." : "Bayar Tunai & Booking"}</button>
-          </div>
+
+            {/* TAB: WALK-IN */}
+            {tab === "walkin" && (
+              <div>
+                <div style={S.card}>
+                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>Walk-in / Tiket Harian</div>
+                  <div style={S.label}>Nominal (Rp)</div>
+                  <input type="number" value={walkinAmount} onChange={e => setWalkinAmount(e.target.value)} placeholder="50000" style={S.input} />
+                  <div style={S.label}>Catatan</div>
+                  <input type="text" value={walkinNote} onChange={e => setWalkinNote(e.target.value)} placeholder="Tiket gym, sewa alat, dll..." style={S.input} />
+                  <div style={{ ...S.flexCenter, marginBottom: 12, flexWrap: "wrap" }}>
+                    <span style={S.muted}>Metode:</span>
+                    {PAYMENT_METHODS.map(m => (
+                      <button key={m} onClick={() => setPaymentMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
+                    ))}
+                  </div>
+                  <button onClick={walkinPay} disabled={loading} style={S.btn}>{loading ? "Memproses..." : "Bayar Walk-in"}</button>
+                  {msg && tab === "walkin" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
+                </div>
+              </div>
+            )}
+
+            {/* TAB: REPORT */}
+            {tab === "report" && (
+              <div>
+                <div style={S.card}>
+                  <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>Shift Report</div>
+                  <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Dibuka</span><span style={S.value}>{new Date(shift.opened_at).toLocaleTimeString("id-ID")}</span></div>
+                  <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Saldo Awal</span><span style={S.value}>Rp {Number(shift.opening_balance || 0).toLocaleString("id-ID")}</span></div>
+                  <div style={{ ...S.flexRow, marginBottom: 4 }}><span style={S.muted}>Total Transaksi</span><span style={S.value}>{transactions.length}</span></div>
+                  <hr style={S.divider} />
+                  <div style={{ ...S.flexRow }}><span style={{ fontSize: 13, color: "#B5AC8A" }}>Cash</span><span style={S.value}>Rp {cashTotal.toLocaleString("id-ID")}</span></div>
+                  <div style={{ ...S.flexRow }}><span style={{ fontSize: 13, color: "#B5AC8A" }}>QRIS</span><span style={S.value}>Rp {qrisTotal.toLocaleString("id-ID")}</span></div>
+                  <hr style={S.divider} />
+                  <div style={{ ...S.flexRow, marginBottom: 12 }}><span style={{ fontSize: 15, fontWeight: 700 }}>TOTAL</span><span style={{ fontSize: 18, fontWeight: 700, color: "#B5AC8A" }}>Rp {shiftTotal.toLocaleString("id-ID")}</span></div>
+
+                  <div style={S.label}>Saldo Akhir</div>
+                  <input type="number" value={closingBalance} onChange={e => setClosingBalance(e.target.value)} placeholder="Hitung uang di laci..." style={S.input} />
+                  <button onClick={closeShift} disabled={loading} style={S.btn}>{loading ? "..." : "Tutup Shift"}</button>
+                  {msg && tab === "report" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
+                </div>
+
+                {transactions.length > 0 && (
+                  <div style={S.card}>
+                    <div style={{ fontSize: 13, fontWeight: 700, marginBottom: 8 }}>Transaksi Hari Ini</div>
+                    {transactions.map((t: any) => (
+                      <div key={t.id} style={{ ...S.flexRow, padding: "6px 0", borderBottom: "1px solid #2E2C2822" }}>
+                        <div>
+                          <div style={{ fontSize: 12, color: "#F5F0E8" }}>{t.reference_type === "booking" ? `BK Slot` : `Walk-in`}</div>
+                          <div style={{ fontSize: 10, color: "#6B6558" }}>{new Date(t.created_at).toLocaleTimeString("id-ID")}</div>
+                        </div>
+                        <div style={{ textAlign: "right" }}>
+                          <div style={{ fontSize: 13, fontWeight: 600 }}>Rp {Number(t.amount).toLocaleString("id-ID")}</div>
+                          <div style={{ ...S.tag(t.payment_method === "cash" ? "#2E7D32" : "#1565C0") }}>{t.payment_method.toUpperCase()}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
+          </>
         )}
 
-        {msg && <div style={{ ...S.card, textAlign: "center", padding: 12 }}>
-          <span style={msg.includes("sukses") ? { color: "#4CAF50", fontSize: 14 } : { color: "#C62828", fontSize: 14 }}>{msg}</span>
-        </div>}
-
-        <div style={{ textAlign: "center", padding: "20px 0" }}><div style={S.muted}>{user.email}</div></div>
+        <div style={{ textAlign: "center", padding: "12px 0 20px" }}><div style={S.muted}>{user.email}</div></div>
       </div>
+
+      {/* INVOICE MODAL */}
+      {invoice && (
+        <div style={S.modalOverlay} onClick={() => setInvoice(null)}>
+          <div style={S.modalBox} onClick={e => e.stopPropagation()}>
+            <div style={{ ...S.flexRow, marginBottom: 16 }}>
+              <span style={{ fontSize: 16, fontWeight: 800 }}>INVOICE</span>
+              <span style={S.muted}>{invoice.number}</span>
+            </div>
+            <div style={S.invoice}>
+              <div style={{ textAlign: "center", marginBottom: 12 }}>
+                <div style={{ fontSize: 16, fontWeight: 800 }}>{invoice.venue}</div>
+              </div>
+              <table style={{ width: "100%", fontSize: 12 }}>
+                <tbody>
+                  {invoice.type === "Walk-in" ? (
+                    <>
+                      <tr><td style={{ color: "#666" }}>Jenis</td><td style={{ textAlign: "right" }}>{invoice.type}</td></tr>
+                      <tr><td style={{ color: "#666" }}>Catatan</td><td style={{ textAlign: "right" }}>{invoice.note}</td></tr>
+                    </>
+                  ) : (
+                    <>
+                      <tr><td style={{ color: "#666" }}>Lapangan</td><td style={{ textAlign: "right" }}>{invoice.court}</td></tr>
+                      <tr><td style={{ color: "#666" }}>Tanggal</td><td style={{ textAlign: "right" }}>{invoice.date}</td></tr>
+                      <tr><td style={{ color: "#666" }}>Jam</td><td style={{ textAlign: "right" }}>{invoice.time}</td></tr>
+                    </>
+                  )}
+                  <tr><td colSpan={2}><hr /></td></tr>
+                  <tr style={{ fontSize: 14, fontWeight: 700 }}>
+                    <td>Total</td>
+                    <td style={{ textAlign: "right" }}>Rp {Number(invoice.amount).toLocaleString("id-ID")}</td>
+                  </tr>
+                  <tr><td style={{ color: "#666" }}>Metode</td><td style={{ textAlign: "right" }}>{invoice.method}</td></tr>
+                  <tr><td colSpan={2} style={{ textAlign: "center", padding: "12px 0 0", fontSize: 11, color: "#666" }}>Terima kasih telah menggunakan Stadione</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div style={{ ...S.flexRow, marginTop: 12, gap: 8 }}>
+              <button onClick={() => { window.print(); setInvoice(null) }} style={{ ...S.btnOutline, flex: 1 }}>Cetak</button>
+              <button onClick={() => setInvoice(null)} style={{ ...S.btn, flex: 1 }}>Tutup</button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
