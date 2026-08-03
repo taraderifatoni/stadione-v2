@@ -281,7 +281,7 @@ export default function PosPage() {
       try {
         const dokuRes = await fetch("/api/payment/create", {
           method: "POST", headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ bookingId: booking.id, amount: price, userName: user.email, userEmail: user.email }),
+          body: JSON.stringify({ bookingId: booking.id, amount: price, itemName: `${selectedCourt?.name} - ${selectedSlot?.start_time?.substring(0, 5)}`, userName: user.email, userEmail: user.email }),
         })
         const dokuData = await dokuRes.json()
         dokuUrl = dokuData.payment_url || ""

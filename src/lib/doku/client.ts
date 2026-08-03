@@ -15,6 +15,8 @@ export async function createDokuPayment(input: {
   invoiceNumber: string
   customerName: string
   customerEmail: string
+  customerPhone?: string
+  itemName?: string
   callbackUrl?: string
 }): Promise<DokuPaymentResult> {
   const clientId = process.env.DOKU_CLIENT_ID!
@@ -27,7 +29,7 @@ export async function createDokuPayment(input: {
       amount: input.amount,
       invoice_number: input.invoiceNumber,
       currency: "IDR",
-      callback_url: input.callbackUrl || "https://stadione.pro",
+      callback_url: input.callbackUrl || "https://stadione.pro/my-bookings",
     },
     payment: {
       type: "SALE",
@@ -36,10 +38,22 @@ export async function createDokuPayment(input: {
     customer: {
       name: input.customerName || "Customer",
       email: input.customerEmail || "customer@stadione.pro",
+      phone: input.customerPhone || "08123456789",
       country: "ID",
     },
+    additional_info: {
+      channel: [
+        "VIRTUAL_ACCOUNT_BCA",
+        "VIRTUAL_ACCOUNT_BRI",
+        "VIRTUAL_ACCOUNT_MANDIRI",
+        "VIRTUAL_ACCOUNT_BNI",
+        "VIRTUAL_ACCOUNT_PERMATA",
+        "QRIS",
+        "DOKU_WALLET",
+      ],
+    },
     line_items: [
-      { name: "Venue Booking", price: input.amount, quantity: 1 },
+      { name: input.itemName || "Stadione Booking", price: input.amount, quantity: 1 },
     ],
   })
 

@@ -118,7 +118,7 @@ export default function BookingPage() {
     try {
       const res = await fetch("/api/payment/create", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bookingId: booking.id, amount: price, userName: user.user_metadata?.name || user.email, userEmail: user.email }),
+        body: JSON.stringify({ bookingId: booking.id, amount: price, itemName: `${selectedCourt?.name} - ${formatTime(slot.start_time)}`, userName: user.user_metadata?.name || user.email, userEmail: user.email }),
       })
       const doku = await res.json()
       if (doku.payment_url) window.open(doku.payment_url, "_blank")

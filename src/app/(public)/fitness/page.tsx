@@ -69,7 +69,7 @@ export default function FitnessPage() {
     try {
       const res = await fetch("/api/payment/create", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ bookingId: m.id, amount: Number(plan.price), userName: user.email, userEmail: user.email, referenceType: "membership", referenceId: m.id }),
+        body: JSON.stringify({ amount: Number(plan.price), itemName: `Membership ${plan.name}`, userName: user.email, userEmail: user.email, referenceType: "membership", referenceId: m.id }),
       })
       const doku = await res.json()
       if (doku.payment_url) window.open(doku.payment_url, "_blank")
