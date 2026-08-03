@@ -19,6 +19,7 @@ export default function FitnessPage() {
   const [selectedVenue, setSelectedVenue] = useState<any>(null)
   const [tab, setTab] = useState("Plans")
   const [checkins, setCheckins] = useState<any[]>([])
+  const [rewardPoints, setRewardPoints] = useState(0)
   const [msg, setMsg] = useState("")
   const [loading, setLoading] = useState(false)
 
@@ -44,6 +45,8 @@ export default function FitnessPage() {
     if (m) {
       const { data: ci } = await supabase.from("check_ins").select("*").eq("member_id", m.id).order("checked_in_at", { ascending: false }).limit(20)
       setCheckins(ci || [])
+      const { data: rp } = await supabase.from("reward_points").select("points").eq("member_id", m.id)
+      setRewardPoints(rp?.reduce((s, r) => s + Number(r.points), 0) || 0)
     }
   }
 
@@ -158,7 +161,7 @@ export default function FitnessPage() {
               </Card>
             )}
 
-            <TabBar tabs={["Plans", "Kunjungan"]} active={tab} onChange={setTab} />
+            <TabBar tabs={["Plans", "Kunjungan", "Reward"]} active={tab} onChange={setTab} />
 
             {tab === "Plans" && (
               <div>
@@ -202,6 +205,29 @@ export default function FitnessPage() {
                       </div>
                     </Card>
                   ))}
+              </div>
+            )}
+
+            {tab === "Reward" && (
+              <div>
+                <Card style={{ textAlign: "center", marginBottom: 16, background: C.elevated }}>
+                  <div style={{ fontSize: 11, color: C.textMuted }}>Total Poin</div>
+                  <div style={{ fontSize: 32, fontWeight: 800, color: C.accent, margin: "4px 0" }}>{rewardPoints.toLocaleString("id-ID")}</div>
+                  <div style={{ fontSize: 12, color: C.textMuted }}>Dapatkan poin dari setiap booking dan membership</div>
+                </Card>
+                <div style={{ fontSize: 13, fontWeight: 600, color: C.textSec, marginBottom: 8 }}>Cara mendapatkan poin</div>
+                {[
+                  ["Booking lapangan", "+10 poin per booking"],
+                  ["Check-in gym", "+5 poin per kunjungan"],
+                  ["Daftar membership", "+50 poin (one-time)"],
+                ].map(([title, desc], i) => (
+                  <Card key={i} style={{ marginBottom: 8, padding: 12 }}>
+                    <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                      <span style={{ fontSize: 13, color: C.text }}>{title}</span>
+                      <span style={{ fontSize: 12, color: C.accent }}>{desc}</span>
+                    </div>
+                  </Card>
+                ))}
               </div>
             )}
           </>
