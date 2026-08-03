@@ -7,24 +7,24 @@ export default function AuthCallbackPage() {
   const router = useRouter()
 
   useEffect(() => {
+    // GoTrue has already exchanged the OAuth code and set cookies.
+    // We just need to detect the session.
     const supabase = createClient()
 
-    async function handleCallback() {
-      // Exchange OAuth code for session — @supabase/ssr needs explicit call
-      const { data, error } = await supabase.auth.exchangeCodeForSession(window.location.href)
-      if (error) {
-        console.error("OAuth callback error:", error.message)
-        router.replace("/login")
-        return
-      }
+    async function check() {
+      const { data } = await supabase.auth.getSession()
       if (data.session) {
         router.replace("/")
+      } else {
+        // Might need a moment for cookies to propagate
+        setTimeout(async () => {
+          const { data: retry } = await supabase.auth.getSession()
+          if (retry.session) router.replace("/")
+          else router.replace("/login?error=oauth_failed")
+        }, 1000)
       }
     }
-
-    // Small delay to ensure DOM is ready and hash fragment is available
-    const t = setTimeout(handleCallback, 100)
-    return () => clearTimeout(t)
+    check()
   }, [])
 
   return (
