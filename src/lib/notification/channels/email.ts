@@ -1,32 +1,32 @@
 import type { NotificationPayload } from "@/types"
 import { createAdminClient } from "@/lib/supabase/admin"
-
-const RESEND_API_KEY = process.env.RESEND_API_KEY
+import { spawn } from "child_process"
 
 export async function sendEmailNotification(payload: NotificationPayload) {
-  if (!RESEND_API_KEY) return
-
   // Lookup user email from auth.users
   let email = ""
   try {
     const supabase = createAdminClient()
     const { data } = await supabase.from("auth.users").select("email").eq("id", payload.userId).single()
     email = data?.email || ""
-  } catch { /* silently skip if no email found */ }
+  } catch { return }
 
   if (!email) return
 
-  await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${RESEND_API_KEY}`,
-    },
-    body: JSON.stringify({
-      from: "Stadione <info@stadione.pro>",
-      to: [email],
-      subject: payload.title,
-      text: payload.body,
-    }),
+  const message = [
+    `From: Stadione <info@stadione.pro>`,
+    `To: ${email}`,
+    `Subject: ${payload.title}`,
+    `Content-Type: text/plain; charset=UTF-8`,
+    ``,
+    payload.body,
+  ].join("\n")
+
+  return new Promise<void>((resolve, reject) => {
+    const proc = spawn("sendmail", ["-t", "-oi"], { stdio: ["pipe", "ignore", "pipe"] })
+    proc.stdin.write(message)
+    proc.stdin.end()
+    proc.on("close", code => code === 0 ? resolve() : reject(new Error(`sendmail exited ${code}`)))
+    proc.on("error", reject)
   })
 }
