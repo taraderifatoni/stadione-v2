@@ -385,6 +385,19 @@ export default function PosPage() {
   const shiftTotal = transactions.reduce((s: number, t: any) => s + Number(t.amount), 0)
   const cashTotal = transactions.filter((t: any) => t.payment_method === "cash").reduce((s: number, t: any) => s + Number(t.amount), 0)
   const qrisTotal = transactions.filter((t: any) => t.payment_method === "qris").reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const transferTotal = transactions.filter((t: any) => t.payment_method === "transfer").reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const debitTotal = transactions.filter((t: any) => t.payment_method === "debit").reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const dokuTotal = transactions.filter((t: any) => t.payment_method === "doku").reduce((s: number, t: any) => s + Number(t.amount), 0)
+  const dokuPending = transactions.filter((t: any) => t.payment_method === "doku" && t.status === "pending").length
+  const bookingCount = transactions.filter((t: any) => t.reference_type === "booking").length
+  const walkinCount = transactions.filter((t: any) => t.reference_type === "walkin").length
+  const METHOD_BREAKDOWN = [
+    ["Cash", cashTotal, "#2E7D32"],
+    ["QRIS", qrisTotal, "#1565C0"],
+    ["Transfer", transferTotal, "#B5AC8A"],
+    ["Debit", debitTotal, "#B5AC8A"],
+    ["DOKU", dokuTotal, "#6A1B9A"],
+  ].filter(([, v]) => (v as number) > 0) as [string, number, string][]
 
   return (
     <div style={S.page}>
@@ -516,15 +529,7 @@ export default function PosPage() {
             )}
 
             {/* TAB: REPORT */}
-            {tab === "report" && (() => {
-              const transferTotal = transactions.filter((t: any) => t.payment_method === "transfer").reduce((s: number, t: any) => s + Number(t.amount), 0)
-              const debitTotal = transactions.filter((t: any) => t.payment_method === "debit").reduce((s: number, t: any) => s + Number(t.amount), 0)
-              const dokuTotal = transactions.filter((t: any) => t.payment_method === "doku").reduce((s: number, t: any) => s + Number(t.amount), 0)
-              const dokuPending = transactions.filter((t: any) => t.payment_method === "doku" && t.status === "pending").length
-              const bookingCount = transactions.filter((t: any) => t.reference_type === "booking").length
-              const walkinCount = transactions.filter((t: any) => t.reference_type === "walkin").length
-
-              return (
+            {tab === "report" && (
               <div>
                 <div style={S.card}>
                   <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 12 }}>Shift Report</div>
@@ -536,18 +541,12 @@ export default function PosPage() {
                   </div>
                   {dokuPending > 0 && <div style={{ fontSize: 12, color: "#E65100", marginBottom: 4 }}>{dokuPending} DOKU pending</div>}
                   <hr style={S.divider} />
-                  {[[
-                    ["Cash", cashTotal, "#2E7D32"],
-                    ["QRIS", qrisTotal, "#1565C0"],
-                    ["Transfer", transferTotal, "#B5AC8A"],
-                    ["Debit", debitTotal, "#B5AC8A"],
-                    ["DOKU", dokuTotal, "#6A1B9A"],
-                  ].filter(([, v]) => v > 0).map(([label, val, color]) => (
+                  {METHOD_BREAKDOWN.map(([label, val, color]) => (
                     <div key={label} style={S.flexRow}>
                       <span style={{ fontSize: 13, color }}>{label}</span>
-                      <span style={S.value}>Rp {(val as number).toLocaleString("id-ID")}</span>
+                      <span style={S.value}>Rp {val.toLocaleString("id-ID")}</span>
                     </div>
-                  )))}
+                  ))}
                   <hr style={S.divider} />
                   <div style={{ ...S.flexRow, marginBottom: 12 }}><span style={{ fontSize: 15, fontWeight: 700 }}>TOTAL</span><span style={{ fontSize: 18, fontWeight: 700, color: "#B5AC8A" }}>Rp {shiftTotal.toLocaleString("id-ID")}</span></div>
 
@@ -578,7 +577,7 @@ export default function PosPage() {
                   </div>
                 )}
               </div>
-            )})()}
+            )}
           </>
         )}
 
