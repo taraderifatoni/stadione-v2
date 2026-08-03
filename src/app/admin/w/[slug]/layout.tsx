@@ -54,8 +54,10 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
   )
 
   const nav = [
+    { icon: BarChart3, label: "Dashboard", href: `/admin/w/${slug}` },
     { icon: Calendar, label: "Booking", href: `/admin/w/${slug}/bookings` },
     { icon: Users, label: "Member", href: `/admin/w/${slug}/members` },
+    { icon: Users, label: "Staff", href: `/admin/w/${slug}/staff` },
     { icon: GraduationCap, label: "Akademi", href: `/admin/w/${slug}/academy` },
     { icon: BarChart3, label: "Laporan", href: `/admin/w/${slug}/reports` },
     { icon: Settings, label: "Pengaturan", href: `/admin/w/${slug}/settings` },
