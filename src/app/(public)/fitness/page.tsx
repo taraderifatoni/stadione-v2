@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
+import { notifyMembershipActivated } from "@/lib/notification/triggers"
 import { ChevronLeft, Bell, Check, Star, Activity, TrendingUp, Crown, ShoppingCart } from "lucide-react"
 import { C } from "@/lib/design"
 import { TopBar } from "@/components/shared/TopBar"
@@ -76,6 +77,7 @@ export default function FitnessPage() {
     } catch {}
 
     setMsg("Pendaftaran sukses! Arahkan ke halaman pembayaran.")
+    notifyMembershipActivated(user.id, plan.name)
     loadMemberStatus(selectedVenue.id)
     setLoading(false)
   }

@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
+import { notifyBookingCancelled } from "@/lib/notification/triggers"
 import { XCircle, RotateCw } from "lucide-react"
 
 export default function MyBookingsPage() {
@@ -34,8 +35,9 @@ export default function MyBookingsPage() {
     setLoading(false)
   }
 
-  async function cancelBooking(id: string) {
-    await supabase.from("bookings").update({ status: "cancelled" }).eq("id", id)
+  async function cancelBooking(b: any) {
+    await supabase.from("bookings").update({ status: "cancelled" }).eq("id", b.id)
+    notifyBookingCancelled(user.id, b.courts?.name || "Lapangan")
     loadBookings(user.id)
   }
 
@@ -90,7 +92,7 @@ export default function MyBookingsPage() {
               <div style={{ display: "flex", gap: 8 }}>
                 {b.payment_method !== "doku" ? null : <div />}
                 {(b.status === "pending" || b.status === "confirmed") && (
-                  <button onClick={() => cancelBooking(b.id)} style={{ padding: "6px 12px", borderRadius: 8, border: `1px solid ${C.danger}44`, background: "transparent", color: C.danger, fontSize: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><XCircle size={12} />Batal</button>
+                  <button onClick={() => cancelBooking(b)} style={{ padding: "6px 12px", borderRadius: 8, border: `1px solid ${C.danger}44`, background: "transparent", color: C.danger, fontSize: 12, cursor: "pointer", display: "flex", alignItems: "center", gap: 4 }}><XCircle size={12} />Batal</button>
                 )}
               </div>
             </div>

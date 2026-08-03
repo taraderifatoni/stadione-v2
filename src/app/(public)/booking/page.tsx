@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
 import { makeBookingCode } from "@/lib/constants"
+import { notifyBookingConfirmed } from "@/lib/notification/triggers"
 import { validatePromo, applyPromo } from "@/lib/booking/promo"
 import { Ticket, Repeat } from "lucide-react"
 
@@ -123,8 +124,10 @@ export default function BookingPage() {
       const doku = await res.json()
       if (doku.payment_url) window.open(doku.payment_url, "_blank")
       setMsg(`Booking dibuat! Kode: ${code}. Lanjutkan pembayaran di tab baru.`)
+      notifyBookingConfirmed(user.id, selectedCourt?.name, bookingDate, `${formatTime(slot.start_time)}-${formatTime(slot.end_time)}`)
     } catch {
       setMsg(`Booking dibuat! Kode: ${code}.`)
+      notifyBookingConfirmed(user.id, selectedCourt?.name, bookingDate, `${formatTime(slot.start_time)}-${formatTime(slot.end_time)}`)
     }
 
     setTimeout(() => { setStep("select"); setMsg(""); loadSlots() }, 5000)

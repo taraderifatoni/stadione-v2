@@ -7,17 +7,11 @@ import { Calendar, DollarSign, Users, GraduationCap, BarChart3, Building2 } from
 import Link from "next/link"
 
 export default function AdminDashboard() {
-  const [stats, setStats] = useState({ venues: 0, bookings: 0, members: 0, students: 0 })
+  const [stats, setStats] = useState({ venues: 0, bookings: 0, members: 0, students: 0, venueList: [] as any[] })
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const headers = {"apikey":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzdXBhYmFzZSIsImlhdCI6MTc4NTI1MjYwMCwiZXhwIjo0OTQwOTI2MjAwLCJyb2xlIjoiYW5vbiJ9.WoeLAuy5jLAlVVQfKJKIIrb870Bt3ZwKtmyBvvksLBY"}
-    Promise.all([
-      fetch("https://api.stadione.pro/rest/v1/venues?select=id", {headers}).then(r => r.json()),
-      fetch("https://api.stadione.pro/rest/v1/bookings?select=id", {headers}).then(r => r.json()),
-      fetch("https://api.stadione.pro/rest/v1/members?select=id", {headers}).then(r => r.json()),
-      fetch("https://api.stadione.pro/rest/v1/students?select=id", {headers}).then(r => r.json()),
-    ]).then(([v,b,m,s]) => setStats({venues:v.length,bookings:b.length,members:m.length,students:s.length})).finally(() => setLoading(false))
+    fetch("/api/admin/dashboard").then(r => r.json()).then(setStats).finally(() => setLoading(false))
   }, [])
 
   const cards = [
@@ -25,6 +19,11 @@ export default function AdminDashboard() {
     { icon: Calendar, label: "Total booking", value: stats.bookings },
     { icon: Users, label: "Total member", value: stats.members },
     { icon: GraduationCap, label: "Total murid", value: stats.students },
+  ]
+
+  const actions = [
+    { icon: Building2, label: "Kelola Venue", href: "/admin/venues" },
+    { icon: BarChart3, label: "Laporan", href: "/admin/reports" },
   ]
 
   return (
@@ -39,8 +38,10 @@ export default function AdminDashboard() {
             </div>
           ))}
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8 }}>
-          {[{ icon: Calendar, label: "Booking", href: "/admin/w/iron-gym-jakarta/bookings" }, { icon: Users, label: "Member", href: "/admin/w/iron-gym-jakarta/members" }, { icon: Building2, label: "Kelola Venue", href: "/admin/venues" }, { icon: BarChart3, label: "Laporan", href: "/admin/reports" }].map((a, i) => (
+
+        <div style={{ fontSize: 13, fontWeight: 600, color: C.textSec, marginBottom: 8 }}>Quick Access</div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 8, marginBottom: 16 }}>
+          {actions.map((a, i) => (
             <Link key={i} href={a.href} style={{ textDecoration: "none" }}>
               <div style={{ background: C.surface, borderRadius: 14, padding: 14, border: `1px solid ${C.border}`, textAlign: "center" }}>
                 <a.icon size={20} color={C.primaryLight} style={{ margin: "0 auto 6px", display: "block" }} />
@@ -49,6 +50,20 @@ export default function AdminDashboard() {
             </Link>
           ))}
         </div>
+
+        {stats.venueList.length > 0 && (
+          <>
+            <div style={{ fontSize: 13, fontWeight: 600, color: C.textSec, marginBottom: 8 }}>Venue</div>
+            {stats.venueList.map((v: any) => (
+              <Link key={v.id} href={`/admin/w/${v.slug}`} style={{ textDecoration: "none" }}>
+                <div style={{ background: C.surface, borderRadius: 14, padding: 12, border: `1px solid ${C.border}`, marginBottom: 8, display: "flex", alignItems: "center", gap: 10 }}>
+                  <Building2 size={16} color={C.primaryLight} />
+                  <span style={{ fontSize: 13, color: C.text }}>{v.name}</span>
+                </div>
+              </Link>
+            ))}
+          </>
+        )}
       </div>
     </div>
   )

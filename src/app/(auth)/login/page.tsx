@@ -23,8 +23,10 @@ export default function LoginPage() {
     const { error: err } = await signIn(email, password)
     if (err) setError("Email atau kata sandi salah")
     else {
-      const redirectTo = searchParams.get("redirect") || "/"
-      router.push(redirectTo)
+      const redirectTo = searchParams.get("redirect")
+      const allowed = ["/", "/booking", "/my-bookings", "/fitness", "/academy", "/profile", "/notifications"]
+      const safe = redirectTo && allowed.some(a => redirectTo === a || redirectTo.startsWith(a + "/")) ? redirectTo : "/"
+      router.push(safe)
       router.refresh()
     }
     setLoading(false)

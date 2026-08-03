@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
+import { notifyEnrollmentConfirmed } from "@/lib/notification/triggers"
 import { ChevronLeft, Users, BookOpen, GraduationCap } from "lucide-react"
 import { C } from "@/lib/design"
 import { TopBar } from "@/components/shared/TopBar"
@@ -14,7 +15,7 @@ export default function AcademyPage() {
   const [academies, setAcademies] = useState<any[]>([])
   const [selectedAcademy, setSelectedAcademy] = useState<any>(null)
   const [programs, setPrograms] = useState<any[]>([])
-  const [children, setChildren] = useState<any[]>([])
+  const [msg, setMsg] = useState("")
   const [tab, setTab] = useState("program")
 
   useEffect(() => {
@@ -34,13 +35,16 @@ export default function AcademyPage() {
     const program = programs.find(p => p.id === programId)
     if (!program) return
     await supabase.from("students").insert({ academy_id: selectedAcademy.id, program_id: programId, name: user.email, age_group: "Dewasa", status: "active" })
-    alert("Pendaftaran berhasil!")
+    setMsg("Pendaftaran berhasil!")
+    notifyEnrollmentConfirmed(user.id, program.name, selectedAcademy.venues?.name)
+    setTimeout(() => setMsg(""), 3000)
   }
 
   return (
     <div>
       <TopBar title="Akademi" left={<ChevronLeft size={20} color={C.text} onClick={() => router.push("/")} style={{ cursor: "pointer" }} />} />
       <div style={{ padding: "0 16px 16px" }}>
+        {msg && <div style={{ background: C.successBg, color: "#4CAF50", padding: 10, borderRadius: 10, fontSize: 13, textAlign: "center", marginBottom: 12 }}>{msg}</div>}
         <div style={{ display: "flex", gap: 4, overflowX: "auto", padding: "0 0 12px" }}>
           {academies.map((a: any) => (
             <button key={a.id} onClick={() => setSelectedAcademy(a)} style={{ padding: "8px 14px", borderRadius: 20, border: selectedAcademy?.id === a.id ? "none" : `1px solid ${C.border}`, background: selectedAcademy?.id === a.id ? C.primary : C.surface, color: selectedAcademy?.id === a.id ? "#fff" : C.textSec, fontSize: 12, whiteSpace: "nowrap", cursor: "pointer" }}>{a.venues?.name} Academy</button>

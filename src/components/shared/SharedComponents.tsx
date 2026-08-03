@@ -1,4 +1,5 @@
 import { C } from "@/lib/design"
+import { SEMANTIC } from "@/lib/constants"
 
 export function LoadingSkeleton({ count = 3 }: { count?: number }) {
   return (
@@ -43,5 +44,3 @@ export function StatusBadge({ status }: { status: string }) {
   const s = map[status] || map.active
   return <span style={{ fontSize: 11, fontWeight: 600, padding: "3px 8px", borderRadius: 6, background: s.bg, color: s.color }}>{s.label}</span>
 }
-
-import { SEMANTIC } from "@/lib/constants"
