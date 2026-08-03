@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { TopBar } from "@/components/shared/TopBar"
+import { LoadingSkeleton } from "@/components/shared/SharedComponents"
 import { C } from "@/lib/design"
 import { makeBookingCode } from "@/lib/constants"
 import { notifyBookingConfirmed } from "@/lib/notification/triggers"
@@ -30,6 +31,7 @@ export default function BookingPage() {
   const [promoError, setPromoError] = useState("")
   const [isMember, setIsMember] = useState(false)
   const [user, setUser] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
   const supabase = createClient()
   const router = useRouter()
 
@@ -134,6 +136,8 @@ export default function BookingPage() {
   }
 
   const formatTime = (t: string) => t?.substring(0, 5) || ""
+
+  if (loading && venues.length === 0) return <div><TopBar title="Booking lapangan" /><LoadingSkeleton count={4} /></div>
 
   return (
     <div>
