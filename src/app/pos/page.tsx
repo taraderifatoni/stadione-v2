@@ -36,9 +36,78 @@ const S = {
 }
 
 const PAYMENT_METHODS = ["cash", "qris", "transfer", "debit", "split"]
+const SPLIT_METHODS = ["cash", "qris", "transfer", "debit"]
 
 type Tab = "booking" | "walkin" | "report"
+type SplitRow = { method: string; amount: string }
 type SlotsMap = Record<string, any[]>
+
+function emptySplit(): SplitRow[] { return [{ method: "cash", amount: "" }] }
+
+function PaymentSection({ total, paymentMethod, splitPayments, loading, onChangeMethod, onChangeSplit, onSubmit, submitLabel }: {
+  total: number
+  paymentMethod: string
+  splitPayments: SplitRow[]
+  loading: boolean
+  onChangeMethod: (m: string) => void
+  onChangeSplit: (rows: SplitRow[]) => void
+  onSubmit: () => void
+  submitLabel: string
+}) {
+  const splitSum = splitPayments.reduce((s, r) => s + Number(r.amount), 0)
+  const splitValid = Math.abs(splitSum - total) < 0.5
+  const isSplit = paymentMethod === "split"
+
+  function updateSplitRow(i: number, field: keyof SplitRow, value: string) {
+    const next = [...splitPayments]
+    next[i] = { ...next[i], [field]: value }
+    onChangeSplit(next)
+  }
+
+  return (
+    <>
+      <hr style={S.divider} />
+      {total > 0 && (
+        <div style={{ ...S.flexRow, marginBottom: 8 }}>
+          <span style={S.value}>Total</span>
+          <span style={{ fontSize: 16, fontWeight: 700, color: "#B5AC8A" }}>Rp {total.toLocaleString("id-ID")}</span>
+        </div>
+      )}
+      <div style={{ ...S.flexCenter, marginBottom: 10, flexWrap: "wrap" }}>
+        <span style={S.muted}>Metode:</span>
+        {PAYMENT_METHODS.map(m => (
+          <button key={m} onClick={() => onChangeMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
+        ))}
+      </div>
+
+      {isSplit && (
+        <div style={{ marginBottom: 12, padding: "10px 12px", background: "#141210", borderRadius: 10 }}>
+          {splitPayments.map((row, i) => (
+            <div key={i} style={{ ...S.flexCenter, marginBottom: 6 }}>
+              <select value={row.method} onChange={e => updateSplitRow(i, "method", e.target.value)} style={{ ...S.select, flex: 1, marginBottom: 0, padding: "6px 8px", fontSize: 12 }}>
+                {SPLIT_METHODS.map(m => <option key={m} value={m}>{m.toUpperCase()}</option>)}
+              </select>
+              <input type="number" value={row.amount} onChange={e => updateSplitRow(i, "amount", e.target.value)} placeholder="Nominal" style={{ ...S.input, flex: 2, marginBottom: 0, padding: "6px 8px", fontSize: 12 }} />
+              {splitPayments.length > 1 && (
+                <button onClick={() => onChangeSplit(splitPayments.filter((_, j) => j !== i))} style={{ ...S.btnDanger, padding: "4px 8px", fontSize: 10, color: "#C62828" }}>✕</button>
+              )}
+            </div>
+          ))}
+          <button onClick={() => onChangeSplit([...splitPayments, { method: "cash", amount: "" }])} style={{ ...S.btnOutline, padding: "4px 12px", fontSize: 11, width: "100%" }}>+ Tambah Metode</button>
+          {!splitValid && splitPayments.some(r => Number(r.amount) > 0) && (
+            <div style={{ ...S.error, marginTop: 6, marginBottom: 0 }}>
+              Split: Rp {splitSum.toLocaleString("id-ID")} ≠ Tagihan: Rp {total.toLocaleString("id-ID")}
+            </div>
+          )}
+        </div>
+      )}
+
+      <button onClick={onSubmit} disabled={loading || (isSplit && !splitValid && splitPayments.some(r => Number(r.amount) > 0))} style={S.btn}>
+        {loading ? "Memproses..." : submitLabel}
+      </button>
+    </>
+  )
+}
 
 export default function PosPage() {
   const [user, setUser] = useState<any>(null)
@@ -59,6 +128,7 @@ export default function PosPage() {
   const [selectedSlot, setSelectedSlot] = useState<any>(null)
   const [bookingDate, setBookingDate] = useState(new Date().toISOString().split("T")[0])
   const [paymentMethod, setPaymentMethod] = useState("cash")
+  const [splitPayments, setSplitPayments] = useState<SplitRow[]>(emptySplit())
   const [loading, setLoading] = useState(false)
   const [msg, setMsg] = useState("")
   const [msgType, setMsgType] = useState<"success" | "error">("success")
@@ -153,11 +223,33 @@ export default function PosPage() {
     setLoading(false)
   }
 
+  function validateSplit(total: number): boolean {
+    if (paymentMethod !== "split") return true
+    const rows = splitPayments.filter(r => Number(r.amount) > 0)
+    if (rows.length === 0) { setMsg("Minimal 1 metode split"); setMsgType("error"); return false }
+    const sum = rows.reduce((s, r) => s + Number(r.amount), 0)
+    if (Math.abs(sum - total) > 0.5) { setMsg(`Total split (${sum.toLocaleString("id-ID")}) tidak sama dengan tagihan (${total.toLocaleString("id-ID")})`); setMsgType("error"); return false }
+    return true
+  }
+
+  async function createSplitTxns(bookingId: string | null, refType: string, refId: string) {
+    const rows = splitPayments.filter(r => Number(r.amount) > 0)
+    const txnDetails = rows.map(r => `${r.method}:${Number(r.amount).toLocaleString("id-ID")}`).join("; ")
+    for (const r of rows) {
+      await supabase.from("pos_transactions").insert({
+        shift_id: shift.id, booking_id: bookingId || undefined, reference_type: refType,
+        reference_id: refId, amount: Number(r.amount), payment_method: r.method, status: "completed",
+        payment_details: { split_group: refId, split_methods: txnDetails },
+      })
+    }
+  }
+
   async function bookSlot() {
     if (!shift || !selectedSlot || !selectedCourt) { setMsg("Pilih slot"); setMsgType("error"); return }
+    const price = selectedSlot.price || 0
+    if (!validateSplit(price)) return
     setLoading(true); setMsg("")
 
-    const price = selectedSlot.price || 0
     const { data: booking, error: be } = await supabase.from("bookings").insert({
       court_slot_id: selectedSlot.id, venue_id: selectedVenue.id, user_id: user.id,
       booking_date: bookingDate, start_time: selectedSlot.start_time, end_time: selectedSlot.end_time,
@@ -166,20 +258,27 @@ export default function PosPage() {
 
     if (be || !booking) { setMsg(be?.message || "Gagal booking"); setMsgType("error"); setLoading(false); return }
 
-    const { error: te } = await supabase.from("pos_transactions").insert({
-      shift_id: shift.id, booking_id: booking.id, reference_type: "booking",
-      reference_id: booking.id, amount: price, payment_method: paymentMethod, status: "completed",
-    })
+    if (paymentMethod === "split") {
+      await createSplitTxns(booking.id, "booking", booking.id)
+    } else {
+      await supabase.from("pos_transactions").insert({
+        shift_id: shift.id, booking_id: booking.id, reference_type: "booking",
+        reference_id: booking.id, amount: price, payment_method: paymentMethod, status: "completed",
+      })
+    }
 
-    if (te) { setMsg(te.message); setMsgType("error"); setLoading(false); return }
+    const methodLabel = paymentMethod === "split"
+      ? splitPayments.filter(r => Number(r.amount) > 0).map(r => r.method.toUpperCase()).join(" + ")
+      : paymentMethod.toUpperCase()
 
     setInvoice({
       number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
       venue: selectedVenue.name, court: selectedCourt.name, date: bookingDate,
-      time: `${selectedSlot.start_time}-${selectedSlot.end_time}`, price, method: paymentMethod.toUpperCase(),
+      time: `${selectedSlot.start_time}-${selectedSlot.end_time}`, price, method: methodLabel,
+      split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
-    setSelectedSlot(null)
+    setSelectedSlot(null); setSplitPayments(emptySplit()); setPaymentMethod("cash")
     loadSlots(selectedCourt.id, bookingDate)
     loadTransactions()
     setLoading(false)
@@ -189,22 +288,32 @@ export default function PosPage() {
     if (!shift) { setMsg("Shift belum dibuka"); setMsgType("error"); return }
     const amount = Number(walkinAmount)
     if (!amount || amount <= 0) { setMsg("Masukkan nominal"); setMsgType("error"); return }
+    if (!validateSplit(amount)) return
     setLoading(true); setMsg("")
 
-    const { error } = await supabase.from("pos_transactions").insert({
-      shift_id: shift.id, reference_type: "walkin", reference_id: crypto.randomUUID(),
-      amount, payment_method: paymentMethod, status: "completed",
-      payment_details: { note: walkinNote || "Walk-in payment" },
-    })
+    const refId = crypto.randomUUID()
 
-    if (error) { setMsg(error.message); setMsgType("error"); setLoading(false); return }
+    if (paymentMethod === "split") {
+      await createSplitTxns(null, "walkin", refId)
+    } else {
+      await supabase.from("pos_transactions").insert({
+        shift_id: shift.id, reference_type: "walkin", reference_id: refId,
+        amount, payment_method: paymentMethod, status: "completed",
+        payment_details: { note: walkinNote || "Walk-in payment" },
+      })
+    }
+
+    const methodLabel = paymentMethod === "split"
+      ? splitPayments.filter(r => Number(r.amount) > 0).map(r => r.method.toUpperCase()).join(" + ")
+      : paymentMethod.toUpperCase()
 
     setInvoice({
       number: `INV-${new Date().toISOString().split("T")[0].replace(/-/g, "")}-${String(Math.floor(Math.random() * 1000)).padStart(3, "0")}`,
-      venue: selectedVenue.name, type: "Walk-in", note: walkinNote, amount, method: paymentMethod.toUpperCase(),
+      venue: selectedVenue.name, type: "Walk-in", note: walkinNote, amount, method: methodLabel,
+      split: paymentMethod === "split" ? splitPayments.filter(r => Number(r.amount) > 0) : null,
     })
     setMsgType("success")
-    setWalkinAmount(""); setWalkinNote("")
+    setWalkinAmount(""); setWalkinNote(""); setSplitPayments(emptySplit()); setPaymentMethod("cash")
     loadTransactions()
     setLoading(false)
   }
@@ -321,22 +430,16 @@ export default function PosPage() {
                       })}
                     </div>
 
-                    {selectedSlot && (
-                      <>
-                        <hr style={S.divider} />
-                        <div style={{ ...S.flexRow, marginBottom: 8 }}>
-                          <span style={S.value}>{selectedSlot.start_time?.substring(0, 5)} - {selectedSlot.end_time?.substring(0, 5)}</span>
-                          <span style={{ fontSize: 16, fontWeight: 700, color: "#B5AC8A" }}>Rp {Number(selectedSlot.price || 0).toLocaleString("id-ID")}</span>
-                        </div>
-                        <div style={{ ...S.flexCenter, marginBottom: 12, flexWrap: "wrap" }}>
-                          <span style={S.muted}>Metode:</span>
-                          {PAYMENT_METHODS.map(m => (
-                            <button key={m} onClick={() => setPaymentMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
-                          ))}
-                        </div>
-                        <button onClick={bookSlot} disabled={loading} style={S.btn}>{loading ? "Memproses..." : "Bayar & Konfirmasi"}</button>
-                      </>
-                    )}
+                    {selectedSlot && <PaymentSection
+                      total={Number(selectedSlot.price || 0)}
+                      paymentMethod={paymentMethod}
+                      splitPayments={splitPayments}
+                      loading={loading}
+                      onChangeMethod={setPaymentMethod}
+                      onChangeSplit={(rows) => { setSplitPayments(rows); setPaymentMethod("split") }}
+                      onSubmit={bookSlot}
+                      submitLabel="Bayar & Konfirmasi"
+                    />}
                     {msg && tab === "booking" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
                   </div>
                 )}
@@ -352,13 +455,16 @@ export default function PosPage() {
                   <input type="number" value={walkinAmount} onChange={e => setWalkinAmount(e.target.value)} placeholder="50000" style={S.input} />
                   <div style={S.label}>Catatan</div>
                   <input type="text" value={walkinNote} onChange={e => setWalkinNote(e.target.value)} placeholder="Tiket gym, sewa alat, dll..." style={S.input} />
-                  <div style={{ ...S.flexCenter, marginBottom: 12, flexWrap: "wrap" }}>
-                    <span style={S.muted}>Metode:</span>
-                    {PAYMENT_METHODS.map(m => (
-                      <button key={m} onClick={() => setPaymentMethod(m)} style={S.paymentBtn(paymentMethod === m)}>{m.toUpperCase()}</button>
-                    ))}
-                  </div>
-                  <button onClick={walkinPay} disabled={loading} style={S.btn}>{loading ? "Memproses..." : "Bayar Walk-in"}</button>
+                  <PaymentSection
+                    total={Number(walkinAmount) || 0}
+                    paymentMethod={paymentMethod}
+                    splitPayments={splitPayments}
+                    loading={loading}
+                    onChangeMethod={setPaymentMethod}
+                    onChangeSplit={(rows) => { setSplitPayments(rows); setPaymentMethod("split") }}
+                    onSubmit={walkinPay}
+                    submitLabel="Bayar Walk-in"
+                  />
                   {msg && tab === "walkin" && <div style={msgType === "error" ? { ...S.error, marginTop: 8 } : { ...S.success, marginTop: 8 }}>{msg}</div>}
                 </div>
               </div>
@@ -440,7 +546,13 @@ export default function PosPage() {
                     <td>Total</td>
                     <td style={{ textAlign: "right" }}>Rp {Number(invoice.amount).toLocaleString("id-ID")}</td>
                   </tr>
-                  <tr><td style={{ color: "#666" }}>Metode</td><td style={{ textAlign: "right" }}>{invoice.method}</td></tr>
+                  {invoice.split ? (
+                    invoice.split.map((r: any, i: number) => (
+                      <tr key={i}><td style={{ color: "#666" }}>{r.method.toUpperCase()}</td><td style={{ textAlign: "right" }}>Rp {Number(r.amount).toLocaleString("id-ID")}</td></tr>
+                    ))
+                  ) : (
+                    <tr><td style={{ color: "#666" }}>Metode</td><td style={{ textAlign: "right" }}>{invoice.method}</td></tr>
+                  )}
                   <tr><td colSpan={2} style={{ textAlign: "center", padding: "12px 0 0", fontSize: 11, color: "#666" }}>Terima kasih telah menggunakan Stadione</td></tr>
                 </tbody>
               </table>
