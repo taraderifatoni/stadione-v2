@@ -6,7 +6,7 @@ export async function notifyBookingConfirmed(userId: string, courtName: string, 
     userId, type: "booking.confirmed",
     title: "Booking Dikonfirmasi",
     body: `${courtName}, ${date}, ${time}`,
-    channels: ["in_app", "push"],
+    channels: ["in_app", "push", "email"],
   })
 }
 
@@ -15,7 +15,7 @@ export async function notifyBookingCancelled(userId: string, courtName: string) 
     userId, type: "booking.cancelled",
     title: "Booking Dibatalkan",
     body: `${courtName}`,
-    channels: ["in_app"],
+    channels: ["in_app", "email"],
   })
 }
 
@@ -24,7 +24,7 @@ export async function notifyMembershipActivated(userId: string, planName: string
     userId, type: "membership.activated",
     title: "Membership Aktif",
     body: `Selamat! Paket ${planName} Anda sudah aktif.`,
-    channels: ["in_app", "push"],
+    channels: ["in_app", "push", "email"],
   })
 }
 
@@ -42,7 +42,7 @@ export async function notifyEnrollmentConfirmed(userId: string, programName: str
     userId, type: "enrollment.confirmed",
     title: "Pendaftaran Berhasil",
     body: `Terdaftar di program ${programName}`,
-    channels: ["in_app", "push"],
+    channels: ["in_app", "push", "email"],
   })
 }
 
