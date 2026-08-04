@@ -47,7 +47,7 @@ export default function InvitePage() {
     const data = await res.json()
     if (data.success) {
       setDone(true)
-      setTimeout(() => router.push(`/admin/w/${invite.venues.slug}`), 2000)
+      setTimeout(() => { window.location.href = `https://admin.stadione.pro/login?redirect=/admin/w/${invite.venues.slug}` }, 2000)
     } else {
       setError(data.error || "Gagal menerima undangan")
     }
