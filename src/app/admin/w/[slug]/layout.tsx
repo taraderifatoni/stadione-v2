@@ -23,6 +23,12 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
   const [platformAdmin, setPlatformAdmin] = useState(false)
   const supabase = createClient()
 
+  // Also create supabase client for logout in sidebar
+  const handleLogout = async () => {
+    await supabase.auth.signOut()
+    window.location.href = "/login"
+  }
+
   useEffect(() => {
     ;(async () => {
       const { data: v } = await supabase.from("venues").select("*").eq("slug", slug).single()
@@ -89,19 +95,24 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
     { icon: GraduationCap, label: "Akademi", href: `/admin/w/${slug}/academy` },
     { icon: BarChart3, label: "Laporan", href: `/admin/w/${slug}/reports` },
     { icon: Settings, label: "Pengaturan", href: `/admin/w/${slug}/settings` },
+    { icon: LogOut, label: "Keluar", action: handleLogout },
   ]
 
   return (
     <Ctx.Provider value={{ venue, role }}>
       <div style={{ background: C.bg, minHeight: "100vh" }}>
-        <TopBar title={venue.name} sub={role} left={<Link href="/admin/venues"><ChevronLeft size={20} color={C.text} /></Link>} />
+        <TopBar title={venue.name} sub={role} left={<Link href="/admin/venues"><ChevronLeft size={20} color={C.text} /></Link>} right={<LogOut size={18} color={C.textMuted} onClick={handleLogout} style={{ cursor: "pointer" }} />} />
         <div className="flex">
           <aside className="w-48 hidden md:block" style={{ borderRight: `1px solid ${C.border}`, background: C.surface, minHeight: "calc(100vh - 56px)" }}>
             <nav className="py-2">
-              {nav.map(item => (
+              {nav.map(item => item.href ? (
                 <Link key={item.href} href={item.href} style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 16px", fontSize: 13, color: C.textSec, textDecoration: "none" }}>
                   <item.icon size={16} />{item.label}
                 </Link>
+              ) : (
+                <div key={item.label} onClick={(item as any).action} style={{ display: "flex", alignItems: "center", gap: 10, padding: "10px 16px", fontSize: 13, color: C.danger, cursor: "pointer" }}>
+                  <item.icon size={16} />{item.label}
+                </div>
               ))}
             </nav>
           </aside>
