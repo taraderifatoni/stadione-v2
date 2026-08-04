@@ -29,12 +29,40 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
       if (!v) { setLoading(false); return }
       setVenue(v)
 
-      const { data: { user } } = await supabase.auth.getUser()
-      if (user) {
-        const { data: r } = await supabase.from("venue_roles").select("role").eq("user_id", user.id).eq("venue_id", v.id).single()
-        if (r) setRole(r.role)
-        const { data: paCheck } = await supabase.from("venue_roles").select("role").eq("user_id", user.id).eq("role", "platform_admin").single()
-        if (paCheck) setPlatformAdmin(true)
+      // Check auth via server API (works cross-subdomain because cookies sent on fetch)
+      try {
+        const sessionRes = await fetch("/api/auth/session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ action: "get" }),
+          credentials: "include",
+        })
+        if (sessionRes.ok) {
+          const { user } = await sessionRes.json()
+          if (user?.id) {
+            const res = await fetch("/api/admin/check-role", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ venueId: v.id, userId: user.id }),
+            })
+            const { role: r, isPlatformAdmin: pa } = await res.json()
+            if (r) setRole(r)
+            if (pa) setPlatformAdmin(true)
+          }
+        }
+      } catch(e) {
+        // Fallback to client-side auth
+        const { data: { user } } = await supabase.auth.getUser()
+        if (user) {
+          const res = await fetch("/api/admin/check-role", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ venueId: v.id, userId: user.id }),
+          })
+          const { role: r, isPlatformAdmin: pa } = await res.json()
+          if (r) setRole(r)
+          if (pa) setPlatformAdmin(true)
+        }
       }
       setLoading(false)
     })()
