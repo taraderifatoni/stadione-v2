@@ -24,11 +24,15 @@ export default function InvitePage() {
     if (!token) { setError("Token undangan tidak ditemukan"); setLoading(false); return }
     supabase.auth.getUser().then(({ data }) => {
       if (data.user) setUser(data.user)
-      // Fetch invite info
-      supabase.from("staff_invites").select("*, venues(name, slug)").eq("token", token).eq("status", "pending").single().then(({ data: inv }: any) => {
-        setInvite(inv || null)
-        setLoading(false)
-      })
+    })
+    // Fetch invite info via server API (bypasses RLS for anonymous users)
+    fetch(`/api/staff/invite-info?token=${token}`).then(r => r.json()).then((data: any) => {
+      setInvite(data.invite || null)
+      if (!data.invite) setError("Token undangan tidak valid atau sudah kadaluarsa.")
+      setLoading(false)
+    }).catch(() => {
+      setError("Gagal memeriksa undangan.")
+      setLoading(false)
     })
   }, [token])
 
