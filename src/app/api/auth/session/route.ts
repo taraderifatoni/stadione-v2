@@ -44,6 +44,8 @@ export async function POST(request: NextRequest) {
     const { data } = await supabase.auth.getUser()
     return NextResponse.json({ user: data.user || null })
   }
+
+  if (action === "signout") {
     const response = NextResponse.json({ success: true })
     response.cookies.set("sb-access-token", "", { domain: ".stadione.pro", path: "/", maxAge: 0 })
     response.cookies.set("sb-refresh-token", "", { domain: ".stadione.pro", path: "/", maxAge: 0 })
