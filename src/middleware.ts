@@ -31,7 +31,7 @@ export function middleware(request: NextRequest) {
     url.pathname = "/pos" + url.pathname
     return NextResponse.rewrite(url)
   }
-  if (isAdmin && !url.pathname.startsWith("/admin") && url.pathname !== "/login" && url.pathname !== "/register" && !shouldSkip(url.pathname)) {
+  if (isAdmin && !url.pathname.startsWith("/admin") && url.pathname !== "/login" && url.pathname !== "/register" && url.pathname !== "/notifications" && !shouldSkip(url.pathname)) {
     url.pathname = "/admin" + url.pathname
     return NextResponse.rewrite(url)
   }
