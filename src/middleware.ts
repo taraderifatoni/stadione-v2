@@ -27,11 +27,11 @@ export function middleware(request: NextRequest) {
   }
 
   // Subdomain rewrite — so admin.stadione.pro shows /admin routes, etc.
-  if (isPos && !url.pathname.startsWith("/pos")) {
+  if (isPos && !url.pathname.startsWith("/pos") && !shouldSkip(url.pathname)) {
     url.pathname = "/pos" + url.pathname
     return NextResponse.rewrite(url)
   }
-  if (isAdmin && !url.pathname.startsWith("/admin")) {
+  if (isAdmin && !url.pathname.startsWith("/admin") && url.pathname !== "/login" && url.pathname !== "/register" && !shouldSkip(url.pathname)) {
     url.pathname = "/admin" + url.pathname
     return NextResponse.rewrite(url)
   }
