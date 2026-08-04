@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server"
 
 export async function POST(request: NextRequest) {
   const { action, email, password } = await request.json()
-  const supabase = createClient()
+  const supabase = await createClient()
 
   if (action === "signin") {
     const { data, error } = await supabase.auth.signInWithPassword({
