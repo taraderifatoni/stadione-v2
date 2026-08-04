@@ -27,7 +27,7 @@ export default function AcademyPage() {
 
   useEffect(() => {
     if (!selectedAcademy) return
-    supabase.from("programs").select("*, coaches(name)").eq("academy_id", selectedAcademy.id).eq("is_active", true).then(({ data: p }: any) => setPrograms(p || []))
+    supabase.from("programs").select("*").eq("academy_id", selectedAcademy.id).eq("is_active", true).then(({ data: p }: any) => setPrograms(p || []))
   }, [selectedAcademy])
 
   async function enrollStudent(programId: string) {
