@@ -125,11 +125,6 @@ export async function createDokuPayment(input: {
       phone: input.customerPhone || "08123456789",
       country: "ID",
     },
-    collect_customer: {
-      name: true,
-      email: true,
-      phone: true,
-    },
   })
 
   const response = await fetchWithRetry("POST", "/checkout/v1/payment", body)
