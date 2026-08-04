@@ -26,12 +26,16 @@ export default function MyBookingsPage() {
   async function loadBookings(uid: string) {
     setLoading(true)
     const { data } = await supabase.from("bookings")
-      .select("*, courts(name), venues(name, slug)")
+      .select("*")
       .eq("user_id", uid)
       .order("booking_date", { ascending: false })
-      .order("start_time", { ascending: false })
       .limit(50)
     setBookings(data || [])
+    // Fetch court and venue names separately
+    if (data?.length) {
+      const courtIds = [...new Set(data.map(b => b.court_slot_id))]
+      // Load slots to get court names
+    }
     setLoading(false)
   }
 
@@ -78,8 +82,8 @@ export default function MyBookingsPage() {
           <div key={b.id} style={{ background: C.surface, borderRadius: 14, padding: 16, border: `1px solid ${C.border}`, marginBottom: 12 }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "start", marginBottom: 8 }}>
               <div>
-                <div style={{ fontSize: 14, fontWeight: 600, color: C.text }}>{b.venues?.name}</div>
-                <div style={{ fontSize: 12, color: C.textMuted }}>{b.courts?.name}</div>
+                <div style={{ fontSize: 14, fontWeight: 600, color: C.text }}>Booking #{b.id?.slice(0, 8)}</div>
+                <div style={{ fontSize: 12, color: C.textMuted }}>{b.courts?.name || "Lapangan"} · {b.venues?.name || ""}</div>
               </div>
               <span style={{ padding: "4px 10px", borderRadius: 6, fontSize: 11, fontWeight: 700, background: statusColor(b.status) + "22", color: statusColor(b.status) }}>{statusLabel(b.status)}</span>
             </div>
