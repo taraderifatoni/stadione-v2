@@ -28,6 +28,14 @@ function jakartaDate(date = new Date()) {
   }).format(date)
 }
 
+function jakartaWeek(date = new Date()) {
+  const parts = jakartaDate(date).split("-").map(Number)
+  const localAsUtc = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]))
+  const weekday = localAsUtc.getUTCDay() || 7
+  localAsUtc.setUTCDate(localAsUtc.getUTCDate() - weekday + 1)
+  return localAsUtc.toISOString().slice(0, 10)
+}
+
 function monthStartIso() {
   const parts = jakartaDate().split("-")
   return `${parts[0]}-${parts[1]}-01T00:00:00+07:00`
@@ -60,7 +68,7 @@ async function cachedResult(key: string) {
 
 async function saveCache(key: string, engine: SearchEngine, params: Record<string, string>, payload: unknown) {
   const admin = createAdminClient()
-  const expiresAt = new Date(Date.now() + 26 * 60 * 60 * 1000).toISOString()
+  const expiresAt = new Date(Date.now() + (engine === "tiktok_search" ? 8 * 24 : 26) * 60 * 60 * 1000).toISOString()
   await admin.from("stadione_trend_snapshots").upsert({
     cache_key: key,
     engine,
@@ -72,17 +80,18 @@ async function saveCache(key: string, engine: SearchEngine, params: Record<strin
 }
 
 async function search(engine: SearchEngine, params: Record<string, string>) {
-  const key = `${jakartaDate()}:${engine}:${requestHash(engine, params).slice(0, 16)}`
+  const dateKey = engine === "tiktok_search" ? `week-${jakartaWeek()}` : jakartaDate()
+  const key = `${dateKey}:${engine}:${requestHash(engine, params).slice(0, 16)}`
   const cached = await cachedResult(key)
   if (cached) return { payload: cached, cached: true }
 
-  const used = await usageCount()
-  if (used >= AUTOMATED_SEARCH_LIMIT) {
-    throw new Error(`Batas aman SearchAPI bulan ini tercapai (${used}/${MONTHLY_SEARCH_LIMIT}).`)
-  }
-
   const apiKey = process.env.SEARCHAPI_IO_KEY
   if (!apiKey) throw new Error("SEARCHAPI_IO_KEY belum dipasang di server Stadione.")
+
+  const admin = createAdminClient()
+  const { data: reservationId, error: reserveError } = await admin.rpc("reserve_stadione_search_request", { p_engine: engine, p_request_key: key })
+  if (reserveError) throw new Error("Reservasi kuota SearchAPI gagal; request dihentikan demi menjaga batas bulanan.")
+  if (!reservationId) throw new Error(`Batas otomatis SearchAPI tercapai (${AUTOMATED_SEARCH_LIMIT}/${MONTHLY_SEARCH_LIMIT}); request dihentikan.`)
 
   const url = new URL(SEARCHAPI_URL)
   url.searchParams.set("engine", engine)
@@ -108,16 +117,12 @@ async function search(engine: SearchEngine, params: Record<string, string>) {
     errorMessage = error instanceof Error ? error.message : "SearchAPI gagal"
     throw error
   } finally {
-    const admin = createAdminClient()
-    await admin.from("stadione_api_usage").insert({
-      provider: "SEARCHAPI_IO",
-      engine,
-      request_key: key,
+    await admin.from("stadione_api_usage").update({
       success,
       status_code: statusCode || null,
       duration_ms: Date.now() - startedAt,
       error_message: errorMessage,
-    })
+    }).eq("id", reservationId)
   }
 }
 
@@ -176,11 +181,19 @@ export async function getSearchUsage() {
 }
 
 export async function getDailySportsPool(): Promise<DailyPool> {
-  const [trends, news, tiktok] = await Promise.all([
+  const [trends, news] = await Promise.all([
     search("google_trends_trending_now", { geo: "ID", time: "past_24_hours", category: "sports" }),
     search("google_news", { q: "olahraga Indonesia", gl: "id", hl: "id", time_period: "last_day", sort_by: "most_recent", link: "resolved" }),
-    search("tiktok_search", { q: "olahraga indonesia", filter_by: "videos" }),
   ])
+  let tiktok: { payload: unknown; cached: boolean }
+  // A weekly UGC discovery sweep keeps the monthly budget generous; reuse its 8-day cache in between.
+  const weekday = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Jakarta", weekday: "short" }).format(new Date())
+  if (weekday === "Tue") tiktok = await search("tiktok_search", { q: "olahraga indonesia", filter_by: "videos" })
+  else {
+    const admin = createAdminClient()
+    const { data } = await admin.from("stadione_trend_snapshots").select("payload").eq("engine", "tiktok_search").gt("expires_at", new Date().toISOString()).order("updated_at", { ascending: false }).limit(1).maybeSingle()
+    tiktok = { payload: data?.payload || {}, cached: Boolean(data?.payload) }
+  }
 
   return {
     date: jakartaDate(),

@@ -47,7 +47,8 @@ export async function POST(request: NextRequest) {
   const admin = createAdminClient()
 
   if (input.action === "create_manual") {
-    const title = String(input.title || "").trim()
+    const slot = input.slot && typeof input.slot === "object" ? input.slot as Record<string, unknown> : null
+    const title = String(input.title || (slot ? `${slot.label} — ${slot.theme}` : "")).trim()
     if (title.length < 8) return NextResponse.json({ error: "Judul minimal 8 karakter." }, { status: 400 })
     const kind = input.kind === "SOCIAL" ? "SOCIAL" : "ARTICLE"
     const format = kind === "ARTICLE" ? "ARTICLE" : (["CAROUSEL", "REEL", "SINGLE_IMAGE", "STORY", "VIDEO"].includes(input.format) ? input.format : "CAROUSEL")
@@ -59,7 +60,8 @@ export async function POST(request: NextRequest) {
       status: "DRAFT",
       platforms: kind === "SOCIAL" ? [String(input.platform || "INSTAGRAM")] : ["WEBSITE"],
       created_by: auth.actor.id,
-      editorial_meta: { origin: "MANUAL", standard: "STADIONE_SPORTS_DESK_V1" },
+      category: slot ? String(slot.pillar || "") : null,
+      editorial_meta: { origin: slot ? "WEEKLY_MATRIX" : "MANUAL", standard: "STADIONE_SPORTS_DESK_V1", slot: slot || null, fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
     }).select("*").single()
     if (error) return NextResponse.json({ error: error.message }, { status: 500 })
     await logActivity(data.id, "create", auth.actor.id, null, "DRAFT")
@@ -85,8 +87,8 @@ export async function POST(request: NextRequest) {
       source_url: candidate.sourceUrl || null,
       source_name: candidate.source || null,
       source_snapshot: candidate,
-      assets: candidate.imageUrl ? [{ role: "cover", type: "image", url: candidate.imageUrl, source_url: candidate.sourceUrl || null }] : [],
-      editorial_meta: { origin: "SEARCHAPI_IO", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1", verification_required: true },
+      assets: [],
+      editorial_meta: { origin: "SEARCHAPI_IO", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1", verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
       created_by: auth.actor.id,
     }).select("*").single()
     if (articleError) return NextResponse.json({ error: articleError.message }, { status: 500 })
@@ -94,7 +96,7 @@ export async function POST(request: NextRequest) {
     const socialRows = ["INSTAGRAM", "FACEBOOK"].map((platform) => ({
       parent_id: article.id,
       kind: "SOCIAL",
-      format: "CAROUSEL",
+      format: "SINGLE_IMAGE",
       title: pack.social.title,
       caption: pack.social.caption,
       hashtags: pack.social.hashtags,
@@ -105,7 +107,7 @@ export async function POST(request: NextRequest) {
       source_name: candidate.source || null,
       source_snapshot: candidate,
       assets: pack.social.slides,
-      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", meta_adapter: "PENDING_CREDENTIALS" },
+      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", meta_adapter: "PENDING_CREDENTIALS", fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
       created_by: auth.actor.id,
     }))
     const { data: socials, error: socialError } = await admin.from("stadione_content_items").insert(socialRows).select("*")
@@ -138,6 +140,10 @@ export async function PATCH(request: NextRequest) {
   for (const field of editableFields) if (field in input) update[field] = String(input[field] || "").trim() || null
   if (Array.isArray(input.hashtags)) update.hashtags = input.hashtags.map((tag: unknown) => String(tag).replace(/^#/, "").trim()).filter(Boolean).slice(0, 20)
   if (Array.isArray(input.assets)) update.assets = input.assets
+  const oldMeta = current.editorial_meta && typeof current.editorial_meta === "object" ? current.editorial_meta : {}
+  if (input.editorial_meta && typeof input.editorial_meta === "object") update.editorial_meta = { ...oldMeta, ...input.editorial_meta }
+  if ("source_url" in input) update.source_url = String(input.source_url || "").trim() || null
+  if ("source_name" in input) update.source_name = String(input.source_name || "").trim() || null
 
   const action = String(input.action || "save")
   let nextStatus = current.status
@@ -146,6 +152,8 @@ export async function PATCH(request: NextRequest) {
   if (action === "archive") { nextStatus = "ARCHIVED"; update.archived_at = new Date().toISOString() }
   if (action === "publish") {
     if (current.kind === "SOCIAL") return NextResponse.json({ error: "Meta API belum dihubungkan. Simpan atau jadwalkan draf sosial terlebih dahulu." }, { status: 409 })
+    const gateMeta = { ...oldMeta, ...(update.editorial_meta as Record<string, unknown> || {}) }
+    if (gateMeta.fact_check_status !== "VERIFIED" || gateMeta.rights_status !== "CLEARED" || !(update.source_url ?? current.source_url)) return NextResponse.json({ error: "Publikasi ditahan. Verifikasi fakta, cantumkan sumber, dan nyatakan hak foto beres terlebih dahulu." }, { status: 409 })
     nextStatus = "PUBLISHED"
     update.published_at = new Date().toISOString()
     update.scheduled_at = null
@@ -155,6 +163,8 @@ export async function PATCH(request: NextRequest) {
     if (Number.isNaN(scheduledAt.getTime()) || scheduledAt.getTime() <= Date.now()) {
       return NextResponse.json({ error: "Jadwal tayang harus berada di masa depan." }, { status: 400 })
     }
+    const gateMeta = { ...oldMeta, ...(update.editorial_meta as Record<string, unknown> || {}) }
+    if (gateMeta.fact_check_status !== "VERIFIED" || gateMeta.rights_status !== "CLEARED" || !(update.source_url ?? current.source_url)) return NextResponse.json({ error: "Penjadwalan ditahan. Verifikasi fakta, cantumkan sumber, dan nyatakan hak foto beres terlebih dahulu." }, { status: 409 })
     nextStatus = "SCHEDULED"
     update.scheduled_at = scheduledAt.toISOString()
   }

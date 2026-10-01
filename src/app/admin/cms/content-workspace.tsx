@@ -1,6 +1,6 @@
 "use client"
 
-import { useCallback, useEffect, useMemo, useState, useTransition } from "react"
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react"
 import Link from "next/link"
 import {
   Archive, ArrowLeft, CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Clock3,
@@ -8,6 +8,7 @@ import {
   Send, Settings2, Sparkles, Trophy, Video, X,
 } from "lucide-react"
 import { toast } from "sonner"
+import { WEEKLY_MATRIX, type EditorialSlot } from "@/lib/cms/editorial"
 
 type Asset = { role?: string; eyebrow?: string; headline?: string; body?: string; tone?: string; image_url?: string | null; url?: string | null }
 type ContentItem = {
@@ -17,6 +18,7 @@ type ContentItem = {
   source_url?: string | null; source_name?: string | null; assets?: Asset[];
   scheduled_at?: string | null; published_at?: string | null; archived_at?: string | null;
   created_at: string; updated_at: string;
+  editorial_meta?: Record<string, unknown>; source_snapshot?: Record<string, unknown>; source_rights_status?: string;
 }
 type Activity = { id: string; content_id: string; action: string; from_status?: string | null; to_status?: string | null; created_at: string }
 type Candidate = {
@@ -26,7 +28,7 @@ type Candidate = {
 type TrendSource = { cached: boolean; items: Candidate[] }
 type TrendPool = { date: string; fetchedAt: string; sources: Record<string, TrendSource> }
 type Usage = { used: number; limit: number; automatedLimit: number; configured: boolean }
-type View = "pipeline" | "calendar" | "history" | "settings"
+type View = "pipeline" | "matrix" | "calendar" | "history" | "settings"
 
 const STATUS: Record<string, { label: string; cls: string }> = {
   DRAFT: { label: "Draft", cls: "border-white/10 bg-white/5 text-[#B5AC8A]" },
@@ -43,9 +45,11 @@ const formatDate = (value?: string | null, time = true) => value ? new Intl.Date
 
 const localInput = (value?: string | null) => {
   if (!value) return ""
-  const d = new Date(value)
-  return new Date(d.getTime() - d.getTimezoneOffset() * 60_000).toISOString().slice(0, 16)
+  const parts = new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Jakarta", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date(value))
+  const get = (type: string) => parts.find((part) => part.type === type)?.value || "00"
+  return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}:${get("minute")}`
 }
+const wibToIso = (value: string) => value ? new Date(`${value}:00+07:00`).toISOString() : null
 
 function StatusBadge({ value }: { value: string }) {
   const tone = STATUS[value] || STATUS.DRAFT
@@ -175,6 +179,7 @@ export function ContentWorkspace() {
         <div className="mt-5 grid gap-5 xl:grid-cols-[250px_minmax(0,1fr)]">
           <aside className="h-fit rounded-2xl border border-[#2E2C28] bg-[#1A1816] p-2 xl:sticky xl:top-24">
             <NavButton active={view === "pipeline"} icon={Newspaper} label="Pipeline konten" onClick={() => setView("pipeline")} />
+            <NavButton active={view === "matrix"} icon={Clock3} label="Matriks mingguan" onClick={() => setView("matrix")} />
             <NavButton active={view === "calendar"} icon={CalendarDays} label="Kalender" onClick={() => setView("calendar")} />
             <NavButton active={view === "history"} icon={History} label="Riwayat aktivitas" onClick={() => setView("history")} />
             <NavButton active={view === "settings"} icon={Settings2} label="Engine & koneksi" onClick={() => setView("settings")} />
@@ -184,6 +189,14 @@ export function ContentWorkspace() {
 
           <section className="min-w-0 rounded-2xl border border-[#2E2C28] bg-[#1A1816]">
             {view === "pipeline" && <Pipeline items={filtered} loading={loading} query={query} setQuery={setQuery} kind={kind} setKind={setKind} status={status} setStatus={setStatus} onEdit={setSelected} />}
+            {view === "matrix" && <MatrixView pending={pending} onCreate={async (slot) => {
+              const response = await fetch("/api/admin/cms", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "create_manual", kind: "SOCIAL", slot }) })
+              const result = await response.json()
+              if (!response.ok) return toast.error(result.error || "Draft slot gagal dibuat")
+              toast.success("Draft slot dibuat; isi dengan fakta terverifikasi dan visual berizin")
+              await load()
+              setSelected(result.item)
+            }} />}
             {view === "calendar" && <CalendarView items={items} onEdit={setSelected} />}
             {view === "history" && <HistoryView activities={activities} items={items} />}
             {view === "settings" && <SettingsView usage={usage} pool={pool} onScan={scanTrends} pending={pending} />}
@@ -254,6 +267,16 @@ function CalendarView({ items, onEdit }: { items: ContentItem[]; onEdit: (item: 
   </div>
 }
 
+function MatrixView({ pending, onCreate }: { pending: boolean; onCreate: (slot: EditorialSlot) => void }) {
+  const columns = ["Senin", "Selasa–Kamis", "Jumat", "Sabtu–Minggu"]
+  const times = [{ value: "08:00", label: "Pagi", window: "07:00–09:00" }, { value: "13:00", label: "Siang", window: "12:00–14:00" }, { value: "20:00", label: "Malam", window: "19:00–21:00" }]
+  return <div className="p-4 sm:p-6"><div className="mb-5"><div className="text-[10px] font-bold uppercase tracking-[.18em] text-[#B5AC8A]">Ritme publikasi · WIB</div><h2 className="mt-1 text-xl font-bold">Matriks jadwal mingguan</h2><p className="mt-1 max-w-3xl text-xs leading-5 text-[#6B6558]">Slot adalah panduan editorial yang bisa dijadikan draft. Jadwal pertandingan aktual mengubah tema; hasil, starting XI, dan live update perlu verifikasi sumber terkini.</p></div><div className="grid gap-3 lg:grid-cols-[130px_repeat(4,minmax(0,1fr))]"><div className="hidden lg:block" />{columns.map((column) => <div key={column} className="hidden rounded-xl bg-[#242220] px-3 py-3 text-[11px] font-bold text-[#B5AC8A] lg:block">{column}</div>)}{times.map((time) => <Fragment key={time.value}><div className="flex items-center gap-3 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 lg:block"><div className="text-sm font-bold">{time.label}</div><div className="text-[10px] text-[#6B6558]">{time.window}</div></div>{columns.map((column) => {
+    const group = column === "Senin" ? "Senin" : column === "Selasa–Kamis" ? "Selasa–Kamis" : column
+    const slot = WEEKLY_MATRIX.find((entry) => entry.day === group && entry.time === time.value)!
+    return <button key={`${time.value}-${column}`} onClick={() => onCreate(slot)} disabled={pending} className="rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 text-left transition hover:border-[#84102D] disabled:opacity-50"><div className="mb-2 flex items-center justify-between gap-2"><span className="text-[9px] font-bold uppercase tracking-[.1em] text-[#A51A3A]">{column} · {slot.time} WIB</span><Plus size={14} className="shrink-0 text-[#B5AC8A]" /></div><div className="text-xs font-bold leading-5">{slot.label}</div><p className="mt-1 text-[10px] leading-4 text-[#8A8375]">{slot.theme}</p><div className="mt-3 inline-flex rounded-full border border-[#2E2C28] px-2 py-1 text-[9px] text-[#B5AC8A]">{slot.pillar}</div></button>
+  })}</Fragment>)}</div><div className="mt-5 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-4 text-[10px] leading-5 text-[#8A8375]"><strong className="text-[#B5AC8A]">Panduan visual cover:</strong> satu foto asli berizin sebagai fokus, judul 3–7 kata, crop dengan wajah/subjek tetap utuh, grading kontras dan grain tipis, aksen burgundy/charcoal/cream. Jangan menganggap thumbnail SearchAPI, Pinterest, atau TikTok otomatis boleh dipakai ulang. Untuk Tarkam/UGC catat izin repost, kredit, asal, tanggal, dan moderasi sebelum tayang.</div></div>
+}
+
 function HistoryView({ activities, items }: { activities: Activity[]; items: ContentItem[] }) {
   const names = new Map(items.map((item) => [item.id, item.title]))
   return <div><div className="border-b border-[#2E2C28] p-5"><h2 className="text-lg font-bold">Riwayat aktivitas</h2><p className="mt-1 text-xs text-[#6B6558]">Jejak perubahan status untuk kebutuhan kontrol redaksi.</p></div><div className="divide-y divide-[#2E2C28]">{activities.length ? activities.map((a) => <div key={a.id} className="flex gap-3 p-4 sm:p-5"><div className="mt-0.5 grid h-8 w-8 shrink-0 place-items-center rounded-full bg-[#84102D]/20 text-[#A51A3A]"><History size={14} /></div><div className="min-w-0"><div className="truncate text-xs font-bold">{names.get(a.content_id) || "Konten"}</div><div className="mt-1 text-[10px] text-[#6B6558]">{a.action.replaceAll("_", " ")} · {a.from_status || "baru"} → {a.to_status || "tetap"} · {formatDate(a.created_at)}</div></div></div>) : <Empty icon={History} text="Belum ada aktivitas." />}</div></div>
@@ -263,7 +286,7 @@ function SettingsView({ usage, pool, onScan, pending }: { usage: Usage; pool: Tr
   const sources = [
     ["Google Trends", "Satu snapshot tren olahraga Indonesia per hari", "google_trends_trending_now"],
     ["Google News", "Satu kumpulan berita olahraga terbaru per hari", "google_news"],
-    ["TikTok Search", "Satu kumpulan video olahraga Indonesia per hari", "tiktok_search"],
+    ["TikTok Search", "Satu pencarian video komunitas per minggu; hasil dipakai bersama", "tiktok_search"],
   ]
   return <div className="p-4 sm:p-6"><h2 className="text-lg font-bold">Engine & koneksi</h2><p className="mt-1 text-xs text-[#6B6558]">Konfigurasi dipisahkan dari Meta API agar CMS bisa dipakai sebelum kanal sosial dihubungkan.</p><div className="mt-5 grid gap-3 lg:grid-cols-2"><div className="rounded-2xl border border-[#2E2C28] bg-[#0D0D0D] p-4"><div className="flex items-center justify-between"><div><div className="text-xs font-bold">SearchAPI.io</div><div className="mt-1 text-[10px] text-[#6B6558]">{usage.configured ? "Kunci API terpasang di server" : "Kunci API belum terpasang"}</div></div><span className={`h-2.5 w-2.5 rounded-full ${usage.configured ? "bg-emerald-400" : "bg-amber-400"}`} /></div><div className="mt-4 h-2 overflow-hidden rounded-full bg-[#242220]"><div className="h-full bg-[#84102D]" style={{ width: `${Math.min(100, usage.used)}%` }} /></div><div className="mt-2 flex justify-between text-[10px] text-[#6B6558]"><span>{usage.used} terpakai</span><span>{usage.limit - usage.used} tersisa</span></div></div><div className="rounded-2xl border border-[#2E2C28] bg-[#0D0D0D] p-4"><div className="text-xs font-bold">Meta API</div><div className="mt-1 text-[10px] leading-5 text-[#6B6558]">Adaptor Instagram dan Facebook sudah disiapkan sebagai status tertunda. Publish sosial tetap dikunci sampai App ID, Page ID, IG User ID, dan token tersedia.</div><div className="mt-3 inline-flex rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-[10px] font-bold text-amber-300">Menunggu kredensial</div></div></div><div className="mt-5 space-y-2">{sources.map(([label, description, key]) => <div key={key} className="flex items-center justify-between rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3"><div><div className="text-xs font-bold">{label}</div><div className="mt-1 text-[10px] text-[#6B6558]">{description}</div></div><span className="text-[10px] font-bold text-[#B5AC8A]">{pool?.sources?.[key] ? `${pool.sources[key].items.length} item` : "Belum diambil"}</span></div>)}</div><button onClick={onScan} disabled={pending || !usage.configured} className="mt-5 inline-flex h-11 items-center gap-2 rounded-xl bg-[#84102D] px-4 text-xs font-bold disabled:opacity-40">{pending ? <LoaderCircle size={16} className="animate-spin" /> : <Sparkles size={16} />} Sinkronkan kolam tren hari ini</button></div>
 }
@@ -284,13 +307,73 @@ function ManualModal({ pending, onClose, onCreated }: { pending: boolean; onClos
 
 function EditorModal({ item, pending, onClose, onSaved }: { item: ContentItem; pending: boolean; onClose: () => void; onSaved: () => void }) {
   const [draft, setDraft] = useState({ title: item.title, excerpt: item.excerpt || "", body: item.body || "", caption: item.caption || "", hashtags: (item.hashtags || []).join(" "), category: item.category || "", scheduled_at: localInput(item.scheduled_at) })
-  async function save(action: string) { const response = await fetch("/api/admin/cms", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: item.id, action, ...draft, hashtags: draft.hashtags.split(/[\s,]+/).map((tag) => tag.replace(/^#/, "")).filter(Boolean), scheduled_at: draft.scheduled_at ? new Date(draft.scheduled_at).toISOString() : null }) }); const result = await response.json(); if (!response.ok) return toast.error(result.error || "Konten gagal disimpan"); toast.success(action === "publish" ? "Artikel diterbitkan" : action === "schedule" ? "Konten dijadwalkan" : "Perubahan disimpan"); onSaved() }
-  return <div className="fixed inset-0 z-50 flex justify-end bg-black/75 backdrop-blur-sm" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}><div className="h-full w-full max-w-3xl overflow-y-auto border-l border-[#2E2C28] bg-[#1A1816]"><div className="sticky top-0 z-10 flex items-start justify-between border-b border-[#2E2C28] bg-[#1A1816]/95 p-5 backdrop-blur"><div><div className="text-[10px] font-bold uppercase tracking-[.16em] text-[#B5AC8A]">{item.kind === "ARTICLE" ? "Article editor" : `${item.platforms?.join(", ")} · ${item.format}`}</div><h2 className="mt-1 text-xl font-bold">Edit konten</h2></div><button onClick={onClose} className="grid h-9 w-9 place-items-center rounded-xl bg-[#242220]"><X size={16} /></button></div><div className="space-y-4 p-5"><Field label="Judul"><input value={draft.title} onChange={(e) => setDraft({ ...draft, title: e.target.value })} className="input" /></Field><div className="grid gap-4 sm:grid-cols-2"><Field label="Kategori"><input value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} className="input" /></Field><Field label="Jadwal tayang"><input type="datetime-local" value={draft.scheduled_at} onChange={(e) => setDraft({ ...draft, scheduled_at: e.target.value })} className="input" /></Field></div>{item.kind === "ARTICLE" ? <><Field label="Ringkasan"><textarea value={draft.excerpt} onChange={(e) => setDraft({ ...draft, excerpt: e.target.value })} className="textarea min-h-24" /></Field><Field label="Isi artikel (HTML)"><textarea value={draft.body} onChange={(e) => setDraft({ ...draft, body: e.target.value })} className="textarea min-h-[360px] font-mono text-[11px]" /></Field></> : <><Field label="Caption"><textarea value={draft.caption} onChange={(e) => setDraft({ ...draft, caption: e.target.value })} className="textarea min-h-36" /></Field><Field label="Hashtag"><input value={draft.hashtags} onChange={(e) => setDraft({ ...draft, hashtags: e.target.value })} className="input" placeholder="#Stadione #OlahragaIndonesia" /></Field>{item.format === "CAROUSEL" && <div><div className="mb-2 text-[11px] font-bold text-[#B5AC8A]">Preview struktur carousel</div><div className="flex gap-3 overflow-x-auto pb-2">{(item.assets || []).map((asset, index) => <SlidePreview key={index} asset={asset} index={index} />)}</div></div>}</>}<div className="rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 text-[10px] leading-5 text-[#6B6558]">Sumber: {item.source_name || "Manual"}{item.source_url && <> · <a href={item.source_url} target="_blank" rel="noreferrer" className="text-[#B5AC8A] underline">buka sumber asli</a></>}</div><div className="flex flex-wrap gap-2 border-t border-[#2E2C28] pt-4"><Action label="Simpan draf" icon={Pencil} onClick={() => save("draft")} pending={pending} /><Action label="Kirim review" icon={Send} onClick={() => save("review")} pending={pending} /><Action label="Jadwalkan" icon={Clock3} onClick={() => save("schedule")} pending={pending} disabled={!draft.scheduled_at} />{item.kind === "ARTICLE" && <Action label="Publish" icon={CheckCircle2} onClick={() => save("publish")} pending={pending} primary />}<Action label="Arsipkan" icon={Archive} onClick={() => save("archive")} pending={pending} /></div></div></div></div>
+  const meta = item.editorial_meta || {}
+  const [sourceUrl, setSourceUrl] = useState(item.source_url || "")
+  const [factVerified, setFactVerified] = useState(meta.fact_check_status === "VERIFIED")
+  const [rightsCleared, setRightsCleared] = useState(meta.rights_status === "CLEARED")
+  const [coverOpen, setCoverOpen] = useState(false)
+  async function save(action: string) { const response = await fetch("/api/admin/cms", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: item.id, action, ...draft, source_url: sourceUrl, editorial_meta: { fact_check_status: factVerified ? "VERIFIED" : "UNVERIFIED", rights_status: rightsCleared ? "CLEARED" : "PENDING" }, hashtags: draft.hashtags.split(/[\s,]+/).map((tag) => tag.replace(/^#/, "")).filter(Boolean), scheduled_at: wibToIso(draft.scheduled_at) }) }); const result = await response.json(); if (!response.ok) return toast.error(result.error || "Konten gagal disimpan"); toast.success(action === "publish" ? "Artikel diterbitkan" : action === "schedule" ? "Konten dijadwalkan" : "Perubahan disimpan"); onSaved() }
+  return <><div className="fixed inset-0 z-50 flex justify-end bg-black/75 backdrop-blur-sm" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}><div className="h-full w-full max-w-3xl overflow-y-auto border-l border-[#2E2C28] bg-[#1A1816]"><div className="sticky top-0 z-10 flex items-start justify-between border-b border-[#2E2C28] bg-[#1A1816]/95 p-5 backdrop-blur"><div><div className="text-[10px] font-bold uppercase tracking-[.16em] text-[#B5AC8A]">{item.kind === "ARTICLE" ? "Article editor" : `${item.platforms?.join(", ")} · ${item.format}`}</div><h2 className="mt-1 text-xl font-bold">Edit konten</h2></div><button onClick={onClose} className="grid h-9 w-9 place-items-center rounded-xl bg-[#242220]"><X size={16} /></button></div><div className="space-y-4 p-5"><Field label="Judul"><input value={draft.title} onChange={(e) => setDraft({ ...draft, title: e.target.value })} className="input" /></Field><div className="grid gap-4 sm:grid-cols-2"><Field label="Kategori"><input value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} className="input" /></Field><Field label="Jadwal tayang (WIB)"><input type="datetime-local" value={draft.scheduled_at} onChange={(e) => setDraft({ ...draft, scheduled_at: e.target.value })} className="input" /></Field></div><Field label="URL sumber primer"><input value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} className="input" placeholder="https://..." /></Field>{item.kind === "ARTICLE" ? <><Field label="Ringkasan"><textarea value={draft.excerpt} onChange={(e) => setDraft({ ...draft, excerpt: e.target.value })} className="textarea min-h-24" /></Field><Field label="Isi artikel / brief (HTML)"><textarea value={draft.body} onChange={(e) => setDraft({ ...draft, body: e.target.value })} className="textarea min-h-[360px] font-mono text-[11px]" /></Field></> : <><button onClick={() => setCoverOpen(true)} className="inline-flex h-10 items-center gap-2 rounded-xl border border-[#84102D]/50 bg-[#84102D]/10 px-3 text-[11px] font-bold text-[#F5F0E8]"><Sparkles size={14} />Buat cover film dari foto asli</button><Field label="Caption"><textarea value={draft.caption} onChange={(e) => setDraft({ ...draft, caption: e.target.value })} className="textarea min-h-36" /></Field><Field label="Hashtag"><input value={draft.hashtags} onChange={(e) => setDraft({ ...draft, hashtags: e.target.value })} className="input" placeholder="#Stadione #OlahragaIndonesia" /></Field>{item.format === "CAROUSEL" && <div><div className="mb-2 text-[11px] font-bold text-[#B5AC8A]">Preview struktur carousel</div><div className="flex gap-3 overflow-x-auto pb-2">{(item.assets || []).map((asset, index) => <SlidePreview key={index} asset={asset} index={index} />)}</div></div>}</>}<div className="space-y-2 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 text-[10px] leading-5"><div className="text-[#B5AC8A]">Gate publikasi · perlu fakta dan aset yang lolos pengecekan</div><label className="flex items-start gap-2 text-[#8A8375]"><input type="checkbox" checked={factVerified} onChange={(e) => setFactVerified(e.target.checked)} className="mt-1 accent-[#84102D]" />Fakta utama, nama, angka/kutipan, dan konteks sudah dicocokkan dengan sumber primer.</label><label className="flex items-start gap-2 text-[#8A8375]"><input type="checkbox" checked={rightsCleared} onChange={(e) => setRightsCleared(e.target.checked)} className="mt-1 accent-[#84102D]" />Foto/video adalah milik sendiri atau izin penggunaan, kredit, dan cakupannya sudah dicatat.</label>{item.source_url && <a href={item.source_url} target="_blank" rel="noreferrer" className="inline-block text-[#B5AC8A] underline">Buka sumber</a>}</div><div className="flex flex-wrap gap-2 border-t border-[#2E2C28] pt-4"><Action label="Simpan draf" icon={Pencil} onClick={() => save("draft")} pending={pending} /><Action label="Kirim review" icon={Send} onClick={() => save("review")} pending={pending} /><Action label="Jadwalkan" icon={Clock3} onClick={() => save("schedule")} pending={pending} disabled={!draft.scheduled_at} />{item.kind === "ARTICLE" && <Action label="Publish" icon={CheckCircle2} onClick={() => save("publish")} pending={pending} primary />}<Action label="Arsipkan" icon={Archive} onClick={() => save("archive")} pending={pending} /></div></div></div></div>{coverOpen && <CoverModal item={item} onClose={() => setCoverOpen(false)} onDone={() => { setCoverOpen(false); onSaved() }} />}</>
 }
 
 function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
   const colors = asset.tone === "burgundy" ? "bg-[#84102D] text-white" : asset.tone === "sand" ? "bg-[#B5AC8A] text-[#0D0D0D]" : "bg-[#0D0D0D] text-[#F5F0E8]"
   return <div className={`relative aspect-square w-52 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] p-4 ${colors}`}>{asset.image_url && <img src={asset.image_url} alt="" className="absolute inset-0 h-full w-full object-cover opacity-35" />}<div className="relative flex h-full flex-col justify-between"><div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">{asset.eyebrow || `Slide ${index + 1}`}</div><div><div className="text-lg font-bold leading-tight">{asset.headline}</div><div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">{asset.body}</div></div><div className="text-[8px] font-bold uppercase tracking-[.15em]">STADIONE</div></div></div>
+}
+
+function CoverModal({ item, onClose, onDone }: { item: ContentItem; onClose: () => void; onDone: () => void }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const [file, setFile] = useState<File | null>(null)
+  const [objectUrl, setObjectUrl] = useState("")
+  const [credit, setCredit] = useState("")
+  const [permissionScope, setPermissionScope] = useState("")
+  const [headline, setHeadline] = useState(item.title)
+  const [style, setStyle] = useState("drama")
+  const [permission, setPermission] = useState(false)
+  const [saving, setSaving] = useState(false)
+  useEffect(() => () => { if (objectUrl) URL.revokeObjectURL(objectUrl) }, [objectUrl])
+  useEffect(() => {
+    if (!objectUrl || !canvasRef.current) return
+    const img = new Image()
+    img.onload = () => {
+      const canvas = canvasRef.current; if (!canvas) return
+      const width = 1080, height = 1350; canvas.width = width; canvas.height = height
+      const ctx = canvas.getContext("2d"); if (!ctx) return
+      ctx.fillStyle = "#0d0d0d"; ctx.fillRect(0, 0, width, height)
+      const scale = Math.max(width / img.width, height / img.height), drawW = img.width * scale, drawH = img.height * scale
+      ctx.save(); ctx.filter = style === "mono" ? "grayscale(1) contrast(1.12) brightness(.88)" : style === "burgundy" ? "contrast(1.08) saturate(.72) sepia(.12)" : "contrast(1.12) saturate(.82) brightness(.9)"
+      ctx.drawImage(img, (width - drawW) / 2, (height - drawH) / 2, drawW, drawH); ctx.restore()
+      const wash = ctx.createLinearGradient(0, 0, width, height); wash.addColorStop(0, "rgba(10,8,8,.08)"); wash.addColorStop(.48, style === "burgundy" ? "rgba(92,8,29,.14)" : "rgba(10,10,10,.16)"); wash.addColorStop(1, "rgba(8,7,8,.92)"); ctx.fillStyle = wash; ctx.fillRect(0, 0, width, height)
+      const bottom = ctx.createLinearGradient(0, height * .42, 0, height); bottom.addColorStop(0, "rgba(10,9,9,0)"); bottom.addColorStop(1, "rgba(10,9,9,.94)"); ctx.fillStyle = bottom; ctx.fillRect(0, 0, width, height)
+      const vignette = ctx.createRadialGradient(width / 2, height / 2, height * .15, width / 2, height / 2, height * .76); vignette.addColorStop(0, "rgba(0,0,0,0)"); vignette.addColorStop(1, "rgba(0,0,0,.28)"); ctx.fillStyle = vignette; ctx.fillRect(0, 0, width, height)
+      ctx.fillStyle = "#B5AC8A"; ctx.fillRect(74, 82, 5, 74)
+      ctx.fillStyle = "#F5F0E8"; ctx.font = "700 25px Arial, sans-serif"; ctx.letterSpacing = "7px"; ctx.fillText("STADIONE  /  SPORTS DESK", 99, 111)
+      ctx.font = "500 18px Arial, sans-serif"; ctx.letterSpacing = "5px"; ctx.fillStyle = "#D0C5B1"; ctx.fillText("THE MOMENT · THE STORY", 80, 870)
+      const words = headline.trim().split(/\s+/); const lines: string[] = []; let line = ""; ctx.font = "700 86px Georgia, serif"
+      words.forEach((word) => { const next = line ? `${line} ${word}` : word; if (ctx.measureText(next).width > 920 && line) { lines.push(line); line = word } else line = next }); if (line) lines.push(line)
+      let y = Math.min(1010, 930 + Math.max(0, 3 - lines.length) * 46); ctx.fillStyle = "#F5F0E8"; ctx.font = "700 86px Georgia, serif"
+      lines.slice(0, 4).forEach((text) => { ctx.fillText(text, 78, y); y += 96 })
+      ctx.fillStyle = "#A51A3A"; ctx.fillRect(80, y + 9, 92, 7)
+      ctx.font = "500 17px Arial, sans-serif"; ctx.letterSpacing = "3px"; ctx.fillStyle = "#D1C9BC"; ctx.fillText("FAKTA · KONTEKS · KOMUNITAS", 80, y + 64)
+      // Light, even film grain; the source photograph remains recognizable and unaltered in identity.
+      let seed = 823; ctx.fillStyle = "rgba(245,240,232,.10)"; for (let i = 0; i < 1100; i++) { seed = (seed * 16807) % 2147483647; const x = seed % width; seed = (seed * 16807) % 2147483647; const py = seed % height; ctx.fillRect(x, py, 2, 2) }
+    }
+    img.src = objectUrl
+  }, [objectUrl, headline, style])
+  async function upload(role: string, blob: Blob) {
+    const body = new FormData(); body.append("itemId", item.id); body.append("role", role); body.append("credit", credit); body.append("permissionScope", permissionScope); body.append("permissionConfirmed", String(permission)); body.append("template", `film-poster-${style}-v1`); body.append("file", blob, role === "original" ? (file?.name || "original.jpg") : "stadione-cover.png")
+    const response = await fetch("/api/admin/cms/cover", { method: "POST", body }); const result = await response.json(); if (!response.ok) throw new Error(result.error || "Unggah aset gagal")
+  }
+  async function save() {
+    if (!file || !credit.trim() || !permissionScope.trim() || !permission || !canvasRef.current) return toast.error("Foto, kredit, cakupan izin, dan konfirmasi wajib ada.")
+    setSaving(true)
+    try {
+      const cover = await new Promise<Blob>((resolve, reject) => canvasRef.current!.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Render cover gagal")), "image/png"))
+      await upload("original", file); await upload("cover", cover)
+      toast.success("Cover dan foto asli tersimpan bersama kreditnya."); onDone()
+    } catch (error) { toast.error(error instanceof Error ? error.message : "Cover gagal disimpan") } finally { setSaving(false) }
+  }
+  return <div className="fixed inset-0 z-[60] flex items-end justify-center bg-black/85 p-0 backdrop-blur sm:items-center sm:p-5" onMouseDown={(e) => { if (e.target === e.currentTarget) onClose() }}><div className="max-h-[96vh] w-full max-w-5xl overflow-y-auto rounded-t-3xl border border-[#2E2C28] bg-[#1A1816] p-4 sm:rounded-3xl sm:p-6"><div className="flex items-start justify-between"><div><div className="text-[10px] font-bold uppercase tracking-[.18em] text-[#B5AC8A]">Photo-led cover · 4:5</div><h2 className="mt-1 text-xl font-bold">Cover film dari foto asli</h2><p className="mt-1 text-xs text-[#8A8375]">Grade warna, crop tengah, vignette, grain halus, tipografi serif. Tidak menghasilkan atau mengubah identitas orang.</p></div><button onClick={onClose} className="grid h-9 w-9 place-items-center rounded-xl bg-[#242220]"><X size={16} /></button></div><div className="mt-5 grid gap-5 md:grid-cols-[minmax(0,1fr)_280px]"><div className="flex min-h-64 items-center justify-center rounded-2xl border border-[#2E2C28] bg-[#0D0D0D] p-3">{file ? <canvas ref={canvasRef} className="max-h-[58vh] w-auto max-w-full rounded-lg object-contain" /> : <div className="text-center text-xs text-[#6B6558]">Pilih foto asli untuk melihat preview cover</div>}</div><div className="space-y-3"><Field label="Foto asli (JPEG/PNG/WebP, max 10 MB)"><input type="file" accept="image/jpeg,image/png,image/webp" onChange={(e) => { const next = e.target.files?.[0] || null; setFile(next); setObjectUrl(next ? URL.createObjectURL(next) : "") }} className="block w-full text-[10px] text-[#B5AC8A] file:mr-2 file:rounded-lg file:border-0 file:bg-[#84102D] file:px-3 file:py-2 file:text-[10px] file:font-bold file:text-white" /></Field><Field label="Judul cover"><textarea value={headline} onChange={(e) => setHeadline(e.target.value.slice(0, 70))} className="textarea min-h-20" /></Field><Field label="Color grade"><select value={style} onChange={(e) => setStyle(e.target.value)} className="input"><option value="drama">Cinematic drama</option><option value="mono">Monochrome + cream</option><option value="burgundy">Burgundy editorial</option></select></Field><Field label="Kredit / asal foto"><input value={credit} onChange={(e) => setCredit(e.target.value)} className="input" placeholder="Nama fotografer · pemilik · sumber" /></Field><Field label="Cakupan izin"><input value={permissionScope} onChange={(e) => setPermissionScope(e.target.value)} className="input" placeholder="Contoh: retouch & repost IG, FB, situs" /></Field><label className="flex items-start gap-2 text-[10px] leading-4 text-[#8A8375]"><input type="checkbox" checked={permission} onChange={(e) => setPermission(e.target.checked)} className="mt-0.5 accent-[#84102D]" />Saya memiliki foto ini atau sudah mengantongi izin penggunaan dan penyuntingan.</label><button onClick={save} disabled={saving || !file || !credit.trim() || !permissionScope.trim() || !permission} className="h-11 w-full rounded-xl bg-[#84102D] text-xs font-bold disabled:opacity-40">{saving ? "Menyimpan foto & cover..." : "Simpan cover dan foto asli"}</button></div></div></div></div>
 }
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) { return <label className="block"><span className="mb-2 block text-[11px] font-bold text-[#B5AC8A]">{label}</span>{children}</label> }
