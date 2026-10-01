@@ -38,6 +38,18 @@ create index if not exists idx_stadione_content_kind_updated on public.stadione_
 create index if not exists idx_stadione_content_schedule on public.stadione_content_items(scheduled_at) where status = 'SCHEDULED';
 create index if not exists idx_stadione_content_parent on public.stadione_content_items(parent_id);
 
+create table if not exists public.stadione_visual_references (
+  id uuid primary key default gen_random_uuid(),
+  reference_month text not null check (reference_month ~ '^20[0-9]{2}-(0[1-9]|1[0-2])$'),
+  source_platform text not null default 'PINTEREST' check (source_platform = 'PINTEREST'),
+  url text not null,
+  note text not null default '',
+  created_by uuid references auth.users(id) on delete set null,
+  created_at timestamptz not null default now(),
+  unique (reference_month, url)
+);
+create index if not exists idx_stadione_visual_references_month on public.stadione_visual_references(reference_month, created_at desc);
+
 create table if not exists public.stadione_content_activity (
   id uuid primary key default gen_random_uuid(),
   content_id uuid not null references public.stadione_content_items(id) on delete cascade,
@@ -136,6 +148,7 @@ create trigger trg_stadione_trend_updated before update on public.stadione_trend
 for each row execute function public.touch_stadione_content_updated_at();
 
 alter table public.stadione_content_items enable row level security;
+alter table public.stadione_visual_references enable row level security;
 alter table public.stadione_content_activity enable row level security;
 alter table public.stadione_trend_snapshots enable row level security;
 alter table public.stadione_editorial_runs enable row level security;
@@ -143,6 +156,11 @@ alter table public.stadione_api_usage enable row level security;
 
 drop policy if exists "platform admins manage stadione content" on public.stadione_content_items;
 create policy "platform admins manage stadione content" on public.stadione_content_items for all to authenticated
+using (exists (select 1 from public.venue_roles vr where vr.user_id = auth.uid() and vr.role = 'platform_admin'))
+with check (exists (select 1 from public.venue_roles vr where vr.user_id = auth.uid() and vr.role = 'platform_admin'));
+
+drop policy if exists "platform admins manage stadione visual references" on public.stadione_visual_references;
+create policy "platform admins manage stadione visual references" on public.stadione_visual_references for all to authenticated
 using (exists (select 1 from public.venue_roles vr where vr.user_id = auth.uid() and vr.role = 'platform_admin'))
 with check (exists (select 1 from public.venue_roles vr where vr.user_id = auth.uid() and vr.role = 'platform_admin'));
 

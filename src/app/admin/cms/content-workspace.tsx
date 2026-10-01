@@ -3,9 +3,9 @@
 import { Fragment, useCallback, useEffect, useMemo, useRef, useState, useTransition } from "react"
 import Link from "next/link"
 import {
-  Archive, ArrowLeft, CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Clock3,
+  Archive, ArrowLeft, BookmarkPlus, CalendarDays, CheckCircle2, ChevronLeft, ChevronRight, Clock3, ExternalLink,
   FileText, History, LayoutDashboard, LoaderCircle, Newspaper, Pencil, Plus, Search,
-  Send, Settings2, Sparkles, Trophy, Video, X,
+  Send, Settings2, Sparkles, Trash2, Trophy, Video, X,
 } from "lucide-react"
 import { toast } from "sonner"
 import { WEEKLY_MATRIX, type EditorialSlot } from "@/lib/cms/editorial"
@@ -28,7 +28,7 @@ type Candidate = {
 type TrendSource = { cached: boolean; items: Candidate[] }
 type TrendPool = { date: string; fetchedAt: string; sources: Record<string, TrendSource> }
 type Usage = { used: number; limit: number; automatedLimit: number; configured: boolean }
-type View = "pipeline" | "matrix" | "calendar" | "history" | "settings"
+type View = "pipeline" | "matrix" | "references" | "calendar" | "history" | "settings"
 
 const STATUS: Record<string, { label: string; cls: string }> = {
   DRAFT: { label: "Draft", cls: "border-white/10 bg-white/5 text-[#B5AC8A]" },
@@ -180,6 +180,7 @@ export function ContentWorkspace() {
           <aside className="h-fit rounded-2xl border border-[#2E2C28] bg-[#1A1816] p-2 xl:sticky xl:top-24">
             <NavButton active={view === "pipeline"} icon={Newspaper} label="Pipeline konten" onClick={() => setView("pipeline")} />
             <NavButton active={view === "matrix"} icon={Clock3} label="Matriks mingguan" onClick={() => setView("matrix")} />
+            <NavButton active={view === "references"} icon={BookmarkPlus} label="Referensi visual bulanan" onClick={() => setView("references")} />
             <NavButton active={view === "calendar"} icon={CalendarDays} label="Kalender" onClick={() => setView("calendar")} />
             <NavButton active={view === "history"} icon={History} label="Riwayat aktivitas" onClick={() => setView("history")} />
             <NavButton active={view === "settings"} icon={Settings2} label="Engine & koneksi" onClick={() => setView("settings")} />
@@ -197,6 +198,7 @@ export function ContentWorkspace() {
               await load()
               setSelected(result.item)
             }} />}
+            {view === "references" && <MonthlyReferences />}
             {view === "calendar" && <CalendarView items={items} onEdit={setSelected} />}
             {view === "history" && <HistoryView activities={activities} items={items} />}
             {view === "settings" && <SettingsView usage={usage} pool={pool} onScan={scanTrends} pending={pending} />}
@@ -275,6 +277,38 @@ function MatrixView({ pending, onCreate }: { pending: boolean; onCreate: (slot: 
     const slot = WEEKLY_MATRIX.find((entry) => entry.day === group && entry.time === time.value)!
     return <button key={`${time.value}-${column}`} onClick={() => onCreate(slot)} disabled={pending} className="rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 text-left transition hover:border-[#84102D] disabled:opacity-50"><div className="mb-2 flex items-center justify-between gap-2"><span className="text-[9px] font-bold uppercase tracking-[.1em] text-[#A51A3A]">{column} · {slot.time} WIB</span><Plus size={14} className="shrink-0 text-[#B5AC8A]" /></div><div className="text-xs font-bold leading-5">{slot.label}</div><p className="mt-1 text-[10px] leading-4 text-[#8A8375]">{slot.theme}</p><div className="mt-3 inline-flex rounded-full border border-[#2E2C28] px-2 py-1 text-[9px] text-[#B5AC8A]">{slot.pillar}</div></button>
   })}</Fragment>)}</div><div className="mt-5 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-4 text-[10px] leading-5 text-[#8A8375]"><strong className="text-[#B5AC8A]">Panduan visual cover:</strong> satu foto asli berizin sebagai fokus, judul 3–7 kata, crop dengan wajah/subjek tetap utuh, grading kontras dan grain tipis, aksen burgundy/charcoal/cream. Jangan menganggap thumbnail SearchAPI, Pinterest, atau TikTok otomatis boleh dipakai ulang. Untuk Tarkam/UGC catat izin repost, kredit, asal, tanggal, dan moderasi sebelum tayang.</div></div>
+}
+
+type VisualReference = { id: string; reference_month: string; url: string; note: string; created_at: string }
+function MonthlyReferences() {
+  const [month, setMonth] = useState(() => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Jakarta", year: "numeric", month: "2-digit" }).format(new Date()))
+  const [items, setItems] = useState<VisualReference[]>([])
+  const [url, setUrl] = useState("")
+  const [note, setNote] = useState("")
+  const [loadedMonth, setLoadedMonth] = useState("")
+  const [saving, setSaving] = useState(false)
+  useEffect(() => {
+    let active = true
+    fetch(`/api/admin/cms/references?month=${encodeURIComponent(month)}`, { cache: "no-store" }).then(async (response) => {
+      const result = await response.json(); if (!response.ok) throw new Error(result.error || "Referensi gagal dimuat")
+      if (active) setItems(result.items || [])
+    }).catch((error) => { if (active) toast.error(error instanceof Error ? error.message : "Referensi gagal dimuat") }).finally(() => { if (active) setLoadedMonth(month) })
+    return () => { active = false }
+  }, [month])
+  async function addReference(event: React.FormEvent) {
+    event.preventDefault(); setSaving(true)
+    try {
+      const response = await fetch("/api/admin/cms/references", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ month, url, note }) })
+      const result = await response.json(); if (!response.ok) throw new Error(result.error || "Referensi gagal disimpan")
+      setItems((current) => [result.item, ...current]); setUrl(""); setNote(""); toast.success("Referensi visual bulan ini tersimpan")
+    } catch (error) { toast.error(error instanceof Error ? error.message : "Referensi gagal disimpan") } finally { setSaving(false) }
+  }
+  async function removeReference(id: string) {
+    const response = await fetch(`/api/admin/cms/references?id=${encodeURIComponent(id)}`, { method: "DELETE" }); const result = await response.json()
+    if (!response.ok) return toast.error(result.error || "Referensi gagal dihapus")
+    setItems((current) => current.filter((item) => item.id !== id)); toast.success("Referensi dihapus")
+  }
+  return <div className="p-4 sm:p-6"><div className="mb-5 flex flex-wrap items-end justify-between gap-3"><div><div className="text-[10px] font-bold uppercase tracking-[.18em] text-[#B5AC8A]">Pinterest · moodboard editorial</div><h2 className="mt-1 text-xl font-bold">Referensi visual bulanan</h2><p className="mt-1 max-w-3xl text-xs leading-5 text-[#6B6558]">Simpan pin yang mewakili gaya bulan ini beserta arahan yang perlu ditiru. Referensi dipakai untuk arah visual, bukan untuk mengambil atau menerbitkan ulang foto pin.</p></div><label className="text-[10px] font-bold text-[#B5AC8A]">Bulan<input type="month" value={month} onChange={(e) => setMonth(e.target.value)} className="mt-1 block h-10 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] px-3 text-xs text-[#F5F0E8]" /></label></div><div className="mb-5 flex flex-col gap-3 rounded-2xl border border-[#2E2C28] bg-[#0D0D0D] p-4 sm:p-5"><div className="flex flex-wrap items-start justify-between gap-3"><div><div className="text-xs font-bold">Tambahkan pin ke moodboard {month}</div><p className="mt-1 text-[10px] leading-4 text-[#6B6558]">Tempel link Pinterest dan catat bagian yang disukai: komposisi, tipografi, grading, atau treatment foto.</p></div><div className="flex flex-wrap items-center gap-2"><span className="rounded-full border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-[9px] font-bold text-amber-300">API menunggu kredensial Pinterest</span><a href="https://developers.pinterest.com/apps/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-lg border border-[#2E2C28] px-2.5 py-1.5 text-[9px] font-bold text-[#B5AC8A] hover:border-[#B5AC8A]"><ExternalLink size={11} />Kelola Pinterest App</a></div></div><form onSubmit={addReference} className="mt-1 grid gap-3"><Field label="Link Pin Pinterest"><input type="url" required value={url} onChange={(e) => setUrl(e.target.value)} className="input" placeholder="https://www.pinterest.com/pin/..." /></Field><Field label="Catatan gaya untuk Stadione"><textarea value={note} onChange={(e) => setNote(e.target.value)} className="textarea min-h-20" placeholder="Contoh: foto close-up, grain tipis, judul serif besar, aksen cream. Hindari menyalin identitas brand sumber." /></Field><button disabled={saving} className="inline-flex h-10 w-fit items-center gap-2 rounded-xl bg-[#84102D] px-4 text-xs font-bold text-white disabled:opacity-50"><BookmarkPlus size={15} />{saving ? "Menyimpan..." : "Tambahkan referensi bulan ini"}</button></form></div><div className="mb-3 text-xs font-bold text-[#B5AC8A]">{items.length} referensi tersimpan · {month}</div>{loadedMonth !== month ? <Empty icon={BookmarkPlus} text="Memuat referensi..." spin /> : items.length ? <div className="grid gap-3 md:grid-cols-2">{items.map((item) => <article key={item.id} className="rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-4"><div className="flex items-start justify-between gap-3"><a href={item.url} target="_blank" rel="noreferrer" className="inline-flex min-w-0 items-center gap-2 break-all text-xs font-bold text-[#F5F0E8] hover:text-[#B5AC8A]"><ExternalLink size={14} className="shrink-0" />{item.url}</a><button onClick={() => void removeReference(item.id)} aria-label="Hapus referensi" className="rounded-lg border border-[#2E2C28] p-2 text-[#8A8375] hover:text-red-300"><Trash2 size={14} /></button></div>{item.note && <p className="mt-3 whitespace-pre-wrap text-[11px] leading-5 text-[#B5AC8A]">{item.note}</p>}<div className="mt-3 text-[9px] text-[#6B6558]">Ditambahkan {formatDate(item.created_at)}</div></article>)}</div> : <div className="rounded-xl border border-dashed border-[#3A3732] px-5 py-12 text-center text-xs text-[#6B6558]">Belum ada pin untuk bulan ini. Referensi yang Anda tambahkan di atas akan tersimpan di arsip bulanan.</div>}</div>
 }
 
 function HistoryView({ activities, items }: { activities: Activity[]; items: ContentItem[] }) {
