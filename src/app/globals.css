@@ -94,3 +94,12 @@
     @apply font-sans;
   }
 }
+
+@layer components {
+  .input {
+    @apply h-11 w-full rounded-xl border border-[#2E2C28] bg-[#0D0D0D] px-3 text-xs text-[#F5F0E8] outline-none transition focus:border-[#84102D];
+  }
+  .textarea {
+    @apply w-full rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-3 text-xs leading-6 text-[#F5F0E8] outline-none transition focus:border-[#84102D];
+  }
+}

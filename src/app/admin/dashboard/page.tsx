@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { Calendar, DollarSign, Users, GraduationCap, BarChart3, Building2 } from "lucide-react"
+import { Calendar, Users, GraduationCap, BarChart3, Building2, Newspaper } from "lucide-react"
 import Link from "next/link"
 
 export default function AdminDashboard() {
-  const [stats, setStats] = useState({ venues: 0, bookings: 0, members: 0, students: 0, venueList: [] as any[] })
+  const [stats, setStats] = useState({ venues: 0, bookings: 0, members: 0, students: 0, venueList: [] as Array<{ id: string; slug: string; name: string }> })
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -24,6 +24,7 @@ export default function AdminDashboard() {
   const actions = [
     { icon: Building2, label: "Kelola Venue", href: "/admin/venues" },
     { icon: BarChart3, label: "Laporan", href: "/admin/reports" },
+    { icon: Newspaper, label: "Content & CMS", href: "/admin/cms" },
   ]
 
   return (
@@ -54,7 +55,7 @@ export default function AdminDashboard() {
         {stats.venueList.length > 0 && (
           <>
             <div style={{ fontSize: 13, fontWeight: 600, color: C.textSec, marginBottom: 8 }}>Venue</div>
-            {stats.venueList.map((v: any) => (
+            {stats.venueList.map((v) => (
               <Link key={v.id} href={`/admin/w/${v.slug}`} style={{ textDecoration: "none" }}>
                 <div style={{ background: C.surface, borderRadius: 14, padding: 12, border: `1px solid ${C.border}`, marginBottom: 8, display: "flex", alignItems: "center", gap: 10 }}>
                   <Building2 size={16} color={C.primaryLight} />
