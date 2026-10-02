@@ -11,6 +11,8 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone()
 
   if (shouldSkip(url.pathname)) return NextResponse.next()
+  // Authentication routes must remain reachable on every product subdomain.
+  if (["/login", "/register", "/forgot-password"].includes(url.pathname) || url.pathname.startsWith("/auth/")) return NextResponse.next()
 
   const isPos = hostname.startsWith("pos.")
   const isAdmin = hostname.startsWith("admin.")
