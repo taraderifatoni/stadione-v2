@@ -9,7 +9,7 @@ export const maxDuration = 180
 export async function POST(request: NextRequest) {
   const expected = process.env.CMS_WORKER_SECRET
   const actual = request.headers.get("authorization")?.replace(/^Bearer /, "") || ""
-  if (!expected || actual.length !== expected.length || !timingSafeEqual(Buffer.from(actual), Buffer.from(expected))) {
+  if (!expected || Buffer.byteLength(actual) !== Buffer.byteLength(expected) || !timingSafeEqual(Buffer.from(actual), Buffer.from(expected))) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
   if (process.env.CMS_SCHEDULER_ENABLED !== "true") return NextResponse.json({ error: "Scheduler disabled" }, { status: 503 })
