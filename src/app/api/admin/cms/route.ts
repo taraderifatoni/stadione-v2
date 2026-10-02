@@ -4,6 +4,7 @@ import { createAdminClient } from "@/lib/supabase/admin"
 import { requirePlatformAdmin } from "@/lib/cms/auth"
 import { buildEditorialPackage, slugifyCms, type EditorialCandidate } from "@/lib/cms/editorial"
 import { getSearchUsage } from "@/lib/cms/serpapi"
+import { metaConfigured, metaConnectionStatus, publicMediaUrl } from "@/lib/cms/meta"
 
 const editableFields = ["title", "excerpt", "body", "caption", "category", "source_url", "source_name", "external_url"] as const
 
@@ -30,14 +31,16 @@ export async function GET() {
   if (!auth.ok) return NextResponse.json({ error: auth.error }, { status: auth.status })
 
   const admin = createAdminClient()
-  const [{ data: items, error }, { data: activities }, usage] = await Promise.all([
+  const [{ data: items, error }, { data: activities }, usage, meta] = await Promise.all([
     admin.from("stadione_content_items").select("*").order("updated_at", { ascending: false }).limit(300),
     admin.from("stadione_content_activity").select("*").order("created_at", { ascending: false }).limit(300),
     getSearchUsage(),
+    metaConnectionStatus(),
   ])
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
-  return NextResponse.json({ items: items || [], activities: activities || [], usage })
+  const { data: attempts } = await admin.from("stadione_ig_publish_attempts").select("content_id,state,creation_id,media_id,error_message").limit(300)
+  return NextResponse.json({ items: items || [], activities: activities || [], usage, meta, schedulerEnabled: process.env.CMS_SCHEDULER_ENABLED === "true", attempts: attempts || [] })
 }
 
 export async function POST(request: NextRequest) {
@@ -112,7 +115,7 @@ export async function POST(request: NextRequest) {
       source_name: candidate.source || null,
       source_snapshot: candidate,
       assets,
-      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", meta_adapter: "PENDING_CREDENTIALS", fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
+      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
       created_by: auth.actor.id,
     }))
     const { data: socials, error: socialError } = await admin.from("stadione_content_items").insert(socialRows).select("*")
@@ -151,12 +154,18 @@ export async function PATCH(request: NextRequest) {
   if ("source_name" in input) update.source_name = String(input.source_name || "").trim() || null
 
   const action = String(input.action || "save")
+  let resetFailedAttempt = false
+  if (current.kind === "SOCIAL") {
+    const { data: attempt } = await admin.from("stadione_ig_publish_attempts").select("state").eq("content_id", id).maybeSingle()
+    if (attempt && ["PREPARING", "PUBLISHING", "PUBLISHED", "UNCERTAIN", "PROCESSING", "READY"].includes(attempt.state)) return NextResponse.json({ error: "Publikasi sedang diproses atau telah dikirim. Konten tidak dapat diubah; lanjutkan atau periksa status Meta." }, { status: 409 })
+    resetFailedAttempt = attempt?.state === "FAILED"
+  }
   let nextStatus = current.status
   if (action === "review") nextStatus = "PENDING_REVIEW"
   if (action === "draft") nextStatus = "DRAFT"
   if (action === "archive") { nextStatus = "ARCHIVED"; update.archived_at = new Date().toISOString() }
   if (action === "publish") {
-    if (current.kind === "SOCIAL") return NextResponse.json({ error: "Meta API belum dihubungkan. Simpan atau jadwalkan draf sosial terlebih dahulu." }, { status: 409 })
+    if (current.kind === "SOCIAL") return NextResponse.json({ error: "Simpan draf sosial, lalu gunakan tombol Publikasikan ke Instagram." }, { status: 409 })
     const gateMeta = { ...oldMeta, ...(update.editorial_meta as Record<string, unknown> || {}) }
     if (gateMeta.fact_check_status !== "VERIFIED" || gateMeta.rights_status !== "CLEARED" || !(update.source_url ?? current.source_url)) return NextResponse.json({ error: "Publikasi ditahan. Verifikasi fakta, cantumkan sumber, dan nyatakan hak foto beres terlebih dahulu." }, { status: 409 })
     nextStatus = "PUBLISHED"
@@ -164,6 +173,16 @@ export async function PATCH(request: NextRequest) {
     update.scheduled_at = null
   }
   if (action === "schedule") {
+    if (!["DRAFT", "PENDING_REVIEW", "SCHEDULED"].includes(current.status)) return NextResponse.json({ error: "Status konten ini tidak dapat dijadwalkan." }, { status: 409 })
+    if (current.kind === "ARTICLE") return NextResponse.json({ error: "Penjadwalan artikel belum aktif karena penerbit otomatis artikel belum tersedia." }, { status: 409 })
+    if (process.env.CMS_SCHEDULER_ENABLED !== "true" || !metaConfigured()) return NextResponse.json({ error: "Penjadwalan otomatis Instagram belum aktif. Gunakan publikasi manual saat waktu tayang." }, { status: 409 })
+    if (!current.platforms?.includes("INSTAGRAM") || !current.platforms.every((platform: string) => platform === "INSTAGRAM") || !["SINGLE_IMAGE", "CAROUSEL", "REEL"].includes(current.format)) return NextResponse.json({ error: "Penjadwalan hanya mendukung gambar tunggal, carousel, dan Reel Instagram." }, { status: 409 })
+    const assets = (update.assets ?? current.assets) as Array<{ url?: string; image_url?: string; video_url?: string }>
+    try {
+      if (!Array.isArray(assets) || (current.format === "CAROUSEL" ? assets.length < 2 || assets.length > 10 : assets.length !== 1)) throw new Error("Jumlah aset belum sesuai format.")
+      assets.forEach((asset, index) => publicMediaUrl(current.format === "REEL" ? asset.video_url || asset.url : asset.url || asset.image_url, `Aset ${index + 1}`))
+      if (!String(update.caption ?? current.caption ?? "").trim()) throw new Error("Caption wajib diisi.")
+    } catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : "Aset tidak valid." }, { status: 400 }) }
     const scheduledAt = new Date(String(input.scheduled_at || ""))
     if (Number.isNaN(scheduledAt.getTime()) || scheduledAt.getTime() <= Date.now()) {
       return NextResponse.json({ error: "Jadwal tayang harus berada di masa depan." }, { status: 400 })
@@ -172,6 +191,7 @@ export async function PATCH(request: NextRequest) {
     if (gateMeta.fact_check_status !== "VERIFIED" || gateMeta.rights_status !== "CLEARED" || !(update.source_url ?? current.source_url)) return NextResponse.json({ error: "Penjadwalan ditahan. Verifikasi fakta, cantumkan sumber, dan nyatakan hak foto beres terlebih dahulu." }, { status: 409 })
     nextStatus = "SCHEDULED"
     update.scheduled_at = scheduledAt.toISOString()
+    update.publish_error = null
   }
   update.status = nextStatus
   if (current.kind === "ARTICLE" && typeof update.title === "string" && update.title !== current.title && !input.keep_slug) {
@@ -180,6 +200,7 @@ export async function PATCH(request: NextRequest) {
 
   const { data, error } = await admin.from("stadione_content_items").update(update).eq("id", id).select("*").single()
   if (error) return NextResponse.json({ error: error.message }, { status: 500 })
+  if (resetFailedAttempt) await admin.from("stadione_ig_publish_attempts").delete().eq("content_id", id).eq("state", "FAILED")
   await logActivity(id, action, auth.actor.id, current.status, nextStatus)
   return NextResponse.json({ item: data })
 }
