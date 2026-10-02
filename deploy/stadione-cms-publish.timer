@@ -1,0 +1,11 @@
+[Unit]
+Description=Check Stadione approved Instagram schedules each minute
+
+[Timer]
+OnBootSec=90
+OnUnitInactiveSec=60
+AccuracySec=5
+Unit=stadione-cms-publish.service
+
+[Install]
+WantedBy=timers.target
