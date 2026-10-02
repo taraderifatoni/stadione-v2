@@ -13,20 +13,20 @@ export const STADIONE_EDITORIAL_STANDARD = {
   ],
 } as const
 
-export type EditorialSlot = { key: string; day: string; time: string; label: string; theme: string; pillar: string; angle: string }
+export type EditorialSlot = { key: string; day: string; time: string; label: string; theme: string; pillar: string; angle: string; format: "CAROUSEL" | "REEL" }
 export const WEEKLY_MATRIX: EditorialSlot[] = [
-  { key: "mon-am", day: "Senin", time: "08:00", label: "Highlight / meme Eropa", theme: "Rekap hasil semalam atau reaction atas hasil yang sudah terkonfirmasi", pillar: "Sepak Bola Eropa", angle: "Recap / reaction" },
-  { key: "mid-am", day: "Selasa–Kamis", time: "08:00", label: "Update / nostalgia", theme: "Hasil kompetisi jika ada; jika tidak, momen bersejarah yang dapat diverifikasi", pillar: "Sepak Bola Eropa", angle: "Update / nostalgia" },
-  { key: "fri-am", day: "Jumat", time: "08:00", label: "Preview non-bola", theme: "Preview agenda F1, MotoGP, atau BWF; hasil hanya setelah sesi berlangsung", pillar: "Olahraga Indonesia", angle: "Preview" },
-  { key: "match-am", day: "Sabtu–Minggu", time: "08:00", label: "Morning reaction", theme: "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi", pillar: "Sepak Bola Eropa", angle: "Reaction" },
-  { key: "mon-noon", day: "Senin", time: "13:00", label: "Non-bola pride", theme: "Apresiasi prestasi atlet Indonesia atau momen akhir pekan yang terkonfirmasi", pillar: "Olahraga Indonesia", angle: "Apresiasi" },
-  { key: "mid-noon", day: "Selasa–Kamis", time: "13:00", label: "Sepak bola lokal", theme: "Liga Indonesia, rumor dengan label jelas, atau bedah taktik berbasis data", pillar: "Sepak Bola Indonesia", angle: "Update / analisis" },
-  { key: "fri-noon", day: "Jumat", time: "13:00", label: "Trivia / interaksi", theme: "Polling big match atau tebak pemain dengan jawaban dan sumber internal", pillar: "Komunitas", angle: "Interaksi" },
-  { key: "match-noon", day: "Sabtu–Minggu", time: "13:00", label: "Tarkam / kearifan lokal", theme: "UGC sepak bola komunitas; hanya tayang setelah izin, kredit, dan moderasi lolos", pillar: "Tarkam & Komunitas", angle: "UGC" },
-  { key: "mon-pm", day: "Senin", time: "20:00", label: "Tarkam of the week", theme: "Momen komunitas pilihan dengan izin tertulis dan konteks lokasi/tanggal", pillar: "Tarkam & Komunitas", angle: "UGC / momen" },
-  { key: "mid-pm", day: "Selasa–Kamis", time: "20:00", label: "Hot news / quotes", theme: "Isu aktual atau kutipan langsung; verifikasi sumber primer dan konteks", pillar: "Sepak Bola Indonesia", angle: "Kutipan / update" },
-  { key: "fri-pm", day: "Jumat", time: "20:00", label: "Kick-off / preview lokal", theme: "Starting XI resmi atau preview laga sesuai jadwal aktual", pillar: "Sepak Bola Indonesia", angle: "Preview / matchday" },
-  { key: "match-pm", day: "Sabtu–Minggu", time: "20:00", label: "Watchalong / live momen", theme: "Live momen hanya dengan sumber real-time/editor; snapshot tren bukan feed live", pillar: "Sepak Bola Indonesia", angle: "Live / reaction" },
+  { key: "mon-am", day: "Senin", time: "08:00", label: "Highlight / meme Eropa", theme: "Rekap hasil semalam atau reaction atas hasil yang sudah terkonfirmasi", pillar: "Sepak Bola Eropa", angle: "Recap / reaction", format: "CAROUSEL" },
+  { key: "mid-am", day: "Selasa–Kamis", time: "08:00", label: "Update / nostalgia", theme: "Hasil kompetisi jika ada; jika tidak, momen bersejarah yang dapat diverifikasi", pillar: "Sepak Bola Eropa", angle: "Update / nostalgia", format: "REEL" },
+  { key: "fri-am", day: "Jumat", time: "08:00", label: "Preview non-bola", theme: "Preview agenda F1, MotoGP, atau BWF; hasil hanya setelah sesi berlangsung", pillar: "Olahraga Indonesia", angle: "Preview", format: "CAROUSEL" },
+  { key: "match-am", day: "Sabtu–Minggu", time: "08:00", label: "Morning reaction", theme: "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi", pillar: "Sepak Bola Eropa", angle: "Reaction", format: "REEL" },
+  { key: "mon-noon", day: "Senin", time: "13:00", label: "Non-bola pride", theme: "Apresiasi prestasi atlet Indonesia atau momen akhir pekan yang terkonfirmasi", pillar: "Olahraga Indonesia", angle: "Apresiasi", format: "CAROUSEL" },
+  { key: "mid-noon", day: "Selasa–Kamis", time: "13:00", label: "Sepak bola lokal", theme: "Liga Indonesia, rumor dengan label jelas, atau bedah taktik berbasis data", pillar: "Sepak Bola Indonesia", angle: "Update / analisis", format: "CAROUSEL" },
+  { key: "fri-noon", day: "Jumat", time: "13:00", label: "Trivia / interaksi", theme: "Polling big match atau tebak pemain dengan jawaban dan sumber internal", pillar: "Komunitas", angle: "Interaksi", format: "CAROUSEL" },
+  { key: "match-noon", day: "Sabtu–Minggu", time: "13:00", label: "Tarkam / kearifan lokal", theme: "UGC sepak bola komunitas; hanya tayang setelah izin, kredit, dan moderasi lolos", pillar: "Tarkam & Komunitas", angle: "UGC", format: "REEL" },
+  { key: "mon-pm", day: "Senin", time: "20:00", label: "Tarkam of the week", theme: "Momen komunitas pilihan dengan izin tertulis dan konteks lokasi/tanggal", pillar: "Tarkam & Komunitas", angle: "UGC / momen", format: "REEL" },
+  { key: "mid-pm", day: "Selasa–Kamis", time: "20:00", label: "Hot news / quotes", theme: "Isu aktual atau kutipan langsung; verifikasi sumber primer dan konteks", pillar: "Sepak Bola Indonesia", angle: "Kutipan / update", format: "REEL" },
+  { key: "fri-pm", day: "Jumat", time: "20:00", label: "Kick-off / preview lokal", theme: "Starting XI resmi atau preview laga sesuai jadwal aktual", pillar: "Sepak Bola Indonesia", angle: "Preview / matchday", format: "REEL" },
+  { key: "match-pm", day: "Sabtu–Minggu", time: "20:00", label: "Watchalong / live momen", theme: "Live momen hanya dengan sumber real-time/editor; snapshot tren bukan feed live", pillar: "Sepak Bola Indonesia", angle: "Live / reaction", format: "REEL" },
 ]
 
 export type EditorialCandidate = {

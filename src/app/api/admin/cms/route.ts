@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from "next/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { requirePlatformAdmin } from "@/lib/cms/auth"
 import { buildEditorialPackage, slugifyCms, type EditorialCandidate } from "@/lib/cms/editorial"
-import { getSearchUsage } from "@/lib/cms/searchapi"
+import { getSearchUsage } from "@/lib/cms/serpapi"
 
 const editableFields = ["title", "excerpt", "body", "caption", "category", "source_url", "source_name", "external_url"] as const
 
@@ -51,7 +51,8 @@ export async function POST(request: NextRequest) {
     const title = String(input.title || (slot ? `${slot.label} — ${slot.theme}` : "")).trim()
     if (title.length < 8) return NextResponse.json({ error: "Judul minimal 8 karakter." }, { status: 400 })
     const kind = input.kind === "SOCIAL" ? "SOCIAL" : "ARTICLE"
-    const format = kind === "ARTICLE" ? "ARTICLE" : (["CAROUSEL", "REEL", "SINGLE_IMAGE", "STORY", "VIDEO"].includes(input.format) ? input.format : "CAROUSEL")
+    const requestedFormat = input.format || slot?.format
+    const format = kind === "ARTICLE" ? "ARTICLE" : (["CAROUSEL", "REEL", "SINGLE_IMAGE", "STORY", "VIDEO"].includes(requestedFormat) ? requestedFormat : "CAROUSEL")
     const { data, error } = await admin.from("stadione_content_items").insert({
       kind,
       format,
@@ -88,15 +89,19 @@ export async function POST(request: NextRequest) {
       source_name: candidate.source || null,
       source_snapshot: candidate,
       assets: [],
-      editorial_meta: { origin: "SEARCHAPI_IO", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1", verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
+      editorial_meta: { origin: "SERPAPI", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1", verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
       created_by: auth.actor.id,
     }).select("*").single()
     if (articleError) return NextResponse.json({ error: articleError.message }, { status: 500 })
 
-    const socialRows = ["INSTAGRAM", "FACEBOOK"].map((platform) => ({
+    const socialRows = [
+      { platform: "INSTAGRAM", format: "CAROUSEL", assets: pack.social.slides },
+      { platform: "INSTAGRAM", format: "REEL", assets: [] },
+      { platform: "FACEBOOK", format: "SINGLE_IMAGE", assets: pack.social.slides },
+    ].map(({ platform, format, assets }) => ({
       parent_id: article.id,
       kind: "SOCIAL",
-      format: "SINGLE_IMAGE",
+      format,
       title: pack.social.title,
       caption: pack.social.caption,
       hashtags: pack.social.hashtags,
@@ -106,7 +111,7 @@ export async function POST(request: NextRequest) {
       source_url: candidate.sourceUrl || null,
       source_name: candidate.source || null,
       source_snapshot: candidate,
-      assets: pack.social.slides,
+      assets,
       editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", meta_adapter: "PENDING_CREDENTIALS", fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
       created_by: auth.actor.id,
     }))

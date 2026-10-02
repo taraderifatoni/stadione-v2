@@ -20,6 +20,12 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Stadione editorial CMS
+
+Set `SERPAPI_API_KEY` in the Stadione server environment before using **Ambil tren hari ini**. Keep this key server-side; never add it to a `NEXT_PUBLIC_*` variable or commit it. Apply `supabase/migrations/20261002000012_stadione_serpapi.sql` before deploying this provider change.
+
+The discovery pool uses Google News and Google Trends Sports once per day, plus a weekly Bing short-video search filtered to TikTok links. This is SERP-based TikTok discovery, not TikTok's native trending feed. Cached results are shared by every draft. The CMS hard-stops SerpApi reservations at 93 calls in a Jakarta calendar month, leaving seven calls below the 100-call operating budget; the planned cadence is about 67 calls in a 31-day month.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

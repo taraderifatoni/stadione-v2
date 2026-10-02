@@ -2,7 +2,7 @@ import { NextResponse } from "next/server"
 
 import { requirePlatformAdmin } from "@/lib/cms/auth"
 import { createAdminClient } from "@/lib/supabase/admin"
-import { getDailySportsPool, getSearchUsage } from "@/lib/cms/searchapi"
+import { getDailySportsPool, getSearchUsage } from "@/lib/cms/serpapi"
 
 function jakartaDate() {
   return new Intl.DateTimeFormat("en-CA", {

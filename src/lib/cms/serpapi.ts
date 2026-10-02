@@ -4,11 +4,11 @@ import { createHash } from "node:crypto"
 import { createAdminClient } from "@/lib/supabase/admin"
 import type { EditorialCandidate } from "@/lib/cms/editorial"
 
-const SEARCHAPI_URL = "https://www.searchapi.io/api/v1/search"
+const SERPAPI_URL = "https://serpapi.com/search.json"
 export const MONTHLY_SEARCH_LIMIT = 100
 export const AUTOMATED_SEARCH_LIMIT = 93
 
-type SearchEngine = "google_trends_trending_now" | "google_news" | "tiktok_search"
+type SearchEngine = "google_trends_trending_now" | "google_news" | "bing_videos"
 
 type DailyPool = {
   date: string
@@ -50,7 +50,7 @@ async function usageCount() {
   const { count } = await admin
     .from("stadione_api_usage")
     .select("id", { count: "exact", head: true })
-    .eq("provider", "SEARCHAPI_IO")
+    .eq("provider", "SERPAPI")
     .gte("created_at", monthStartIso())
   return count || 0
 }
@@ -68,11 +68,11 @@ async function cachedResult(key: string) {
 
 async function saveCache(key: string, engine: SearchEngine, params: Record<string, string>, payload: unknown) {
   const admin = createAdminClient()
-  const expiresAt = new Date(Date.now() + (engine === "tiktok_search" ? 8 * 24 : 26) * 60 * 60 * 1000).toISOString()
+  const expiresAt = new Date(Date.now() + (engine === "bing_videos" ? 8 * 24 : 26) * 60 * 60 * 1000).toISOString()
   await admin.from("stadione_trend_snapshots").upsert({
     cache_key: key,
     engine,
-    query: params.q || params.category || "sports",
+    query: params.q || params.category_id || "sports",
     payload,
     expires_at: expiresAt,
     updated_at: new Date().toISOString(),
@@ -80,20 +80,21 @@ async function saveCache(key: string, engine: SearchEngine, params: Record<strin
 }
 
 async function search(engine: SearchEngine, params: Record<string, string>) {
-  const dateKey = engine === "tiktok_search" ? `week-${jakartaWeek()}` : jakartaDate()
+  const dateKey = engine === "bing_videos" ? `week-${jakartaWeek()}` : jakartaDate()
   const key = `${dateKey}:${engine}:${requestHash(engine, params).slice(0, 16)}`
   const cached = await cachedResult(key)
   if (cached) return { payload: cached, cached: true }
 
-  const apiKey = process.env.SEARCHAPI_IO_KEY
-  if (!apiKey) throw new Error("SEARCHAPI_IO_KEY belum dipasang di server Stadione.")
+  const apiKey = process.env.SERPAPI_API_KEY
+  if (!apiKey) throw new Error("SERPAPI_API_KEY belum dipasang di server Stadione.")
 
   const admin = createAdminClient()
   const { data: reservationId, error: reserveError } = await admin.rpc("reserve_stadione_search_request", { p_engine: engine, p_request_key: key })
-  if (reserveError) throw new Error("Reservasi kuota SearchAPI gagal; request dihentikan demi menjaga batas bulanan.")
-  if (!reservationId) throw new Error(`Batas otomatis SearchAPI tercapai (${AUTOMATED_SEARCH_LIMIT}/${MONTHLY_SEARCH_LIMIT}); request dihentikan.`)
+  if (reserveError) throw new Error("Reservasi kuota SerpApi gagal; request dihentikan demi menjaga batas bulanan.")
+  if (!reservationId) throw new Error(`Batas otomatis SerpApi tercapai (${AUTOMATED_SEARCH_LIMIT}/${MONTHLY_SEARCH_LIMIT}); request dihentikan.`)
 
-  const url = new URL(SEARCHAPI_URL)
+  const url = new URL(SERPAPI_URL)
+  url.searchParams.set("api_key", apiKey)
   url.searchParams.set("engine", engine)
   Object.entries(params).forEach(([name, value]) => url.searchParams.set(name, value))
   const startedAt = Date.now()
@@ -103,18 +104,16 @@ async function search(engine: SearchEngine, params: Record<string, string>) {
   let errorMessage: string | null = null
 
   try {
-    const response = await fetch(url, {
-      headers: { Authorization: `Bearer ${apiKey}`, Accept: "application/json" },
-      cache: "no-store",
-    })
+    const response = await fetch(url, { headers: { Accept: "application/json" }, cache: "no-store" })
     statusCode = response.status
     payload = await response.json()
-    success = response.ok
-    if (!response.ok) throw new Error(`SearchAPI ${engine} gagal (${response.status}).`)
+    const providerError = textValue(record(payload).error)
+    success = response.ok && !providerError
+    if (!response.ok || providerError) throw new Error(providerError ? `SerpApi menolak request (${statusCode || "provider error"}).` : `SerpApi ${engine} gagal (${response.status}).`)
     await saveCache(key, engine, params, payload)
     return { payload, cached: false }
   } catch (error) {
-    errorMessage = error instanceof Error ? error.message : "SearchAPI gagal"
+    errorMessage = error instanceof Error ? error.message : "SerpApi gagal"
     throw error
   } finally {
     await admin.from("stadione_api_usage").update({
@@ -127,7 +126,7 @@ async function search(engine: SearchEngine, params: Record<string, string>) {
 }
 
 function trendItems(payload: unknown): EditorialCandidate[] {
-  return rows(record(payload).trends).slice(0, 12).map((item, index) => ({
+  return rows(record(payload).trending_searches).slice(0, 12).map((item, index) => ({
     id: `trend-${index}-${textValue(item.query).slice(0, 30)}`,
     title: textValue(item.query).trim(),
     snippet: Array.isArray(item.trend_breakdown) ? item.trend_breakdown.map(textValue).filter(Boolean).join(", ") : null,
@@ -135,13 +134,13 @@ function trendItems(payload: unknown): EditorialCandidate[] {
     sourceUrl: null,
     imageUrl: null,
     engine: "google_trends_trending_now",
-    metrics: { searchVolume: numberValue(item.search_volume), increase: numberValue(item.percentage_increase) },
+    metrics: { searchVolume: numberValue(item.search_volume), increase: numberValue(item.increase_percentage) },
   })).filter((item: EditorialCandidate) => item.title)
 }
 
 function newsItems(payload: unknown): EditorialCandidate[] {
   const source = record(payload)
-  const newsRows = [...rows(source.top_stories), ...rows(source.organic_results)]
+  const newsRows = [...rows(source.stories), ...rows(source.news_results), ...rows(source.top_stories), ...rows(source.organic_results)]
   const seen = new Set<string>()
   return newsRows.filter((item) => {
     const key = textValue(item.link) || textValue(item.title)
@@ -152,7 +151,7 @@ function newsItems(payload: unknown): EditorialCandidate[] {
     id: `news-${index}-${textValue(item.title).slice(0, 30)}`,
     title: textValue(item.title).trim(),
     snippet: textValue(item.snippet) || null,
-    source: textValue(item.source) || "Google News",
+    source: textValue(record(item.source).name) || textValue(item.source) || "Google News",
     sourceUrl: textValue(item.link) || null,
     imageUrl: textValue(item.thumbnail) || null,
     publishedAt: textValue(item.date) || null,
@@ -161,37 +160,36 @@ function newsItems(payload: unknown): EditorialCandidate[] {
 }
 
 function tiktokItems(payload: unknown): EditorialCandidate[] {
-  return rows(record(payload).videos).slice(0, 15).map((item, index) => {
-    const author = record(item.author)
-    return {
-    id: `tiktok-${index}-${textValue(item.id)}`,
-    title: (textValue(item.caption) || "Video olahraga TikTok").trim(),
-    snippet: textValue(author.name) ? `Video oleh ${textValue(author.name)}` : null,
-    source: textValue(author.username) ? `TikTok @${textValue(author.username)}` : "TikTok",
+  const videoRows = [...rows(record(payload).shorts_results), ...rows(record(payload).videos_results)]
+  return videoRows.filter((item) => textValue(item.source).toLowerCase() === "tiktok" || textValue(item.link).toLowerCase().includes("tiktok.com/")).slice(0, 15).map((item, index) => ({
+    id: `tiktok-${index}-${textValue(item.link)}`,
+    title: (textValue(item.title) || "Video olahraga TikTok").trim(),
+    snippet: textValue(item.channel) || textValue(item.profile_name) ? `Video oleh ${textValue(item.channel) || textValue(item.profile_name)}` : null,
+    source: textValue(item.source) || "TikTok",
     sourceUrl: textValue(item.link) || null,
     imageUrl: textValue(item.thumbnail) || null,
-    publishedAt: textValue(item.iso_date) || null,
-    engine: "tiktok_search",
-    metrics: { views: numberValue(item.views), likes: numberValue(item.likes), shares: numberValue(item.shares) },
-  }}).filter((item: EditorialCandidate) => item.title)
+    publishedAt: textValue(item.date) || null,
+    engine: "bing_videos",
+    metrics: { views: numberValue(item.views) },
+  })).filter((item: EditorialCandidate) => item.title)
 }
 
 export async function getSearchUsage() {
-  return { used: await usageCount(), limit: MONTHLY_SEARCH_LIMIT, automatedLimit: AUTOMATED_SEARCH_LIMIT, configured: Boolean(process.env.SEARCHAPI_IO_KEY) }
+  return { used: await usageCount(), limit: MONTHLY_SEARCH_LIMIT, automatedLimit: AUTOMATED_SEARCH_LIMIT, configured: Boolean(process.env.SERPAPI_API_KEY) }
 }
 
 export async function getDailySportsPool(): Promise<DailyPool> {
   const [trends, news] = await Promise.all([
-    search("google_trends_trending_now", { geo: "ID", time: "past_24_hours", category: "sports" }),
-    search("google_news", { q: "olahraga Indonesia", gl: "id", hl: "id", time_period: "last_day", sort_by: "most_recent", link: "resolved" }),
+    search("google_trends_trending_now", { geo: "ID", hours: "24", category_id: "17", hl: "id" }),
+    search("google_news", { q: "olahraga Indonesia when:1d", gl: "id", hl: "id" }),
   ])
   let tiktok: { payload: unknown; cached: boolean }
   // A weekly UGC discovery sweep keeps the monthly budget generous; reuse its 8-day cache in between.
   const weekday = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Jakarta", weekday: "short" }).format(new Date())
-  if (weekday === "Tue") tiktok = await search("tiktok_search", { q: "olahraga indonesia", filter_by: "videos" })
+  if (weekday === "Tue") tiktok = await search("bing_videos", { q: "olahraga sepak bola", cc: "id", mkt: "id-ID", type: "shorts" })
   else {
     const admin = createAdminClient()
-    const { data } = await admin.from("stadione_trend_snapshots").select("payload").eq("engine", "tiktok_search").gt("expires_at", new Date().toISOString()).order("updated_at", { ascending: false }).limit(1).maybeSingle()
+    const { data } = await admin.from("stadione_trend_snapshots").select("payload").eq("engine", "bing_videos").gt("expires_at", new Date().toISOString()).order("updated_at", { ascending: false }).limit(1).maybeSingle()
     tiktok = { payload: data?.payload || {}, cached: Boolean(data?.payload) }
   }
 
@@ -201,7 +199,7 @@ export async function getDailySportsPool(): Promise<DailyPool> {
     sources: {
       google_trends_trending_now: { cached: trends.cached, items: trendItems(trends.payload) },
       google_news: { cached: news.cached, items: newsItems(news.payload) },
-      tiktok_search: { cached: tiktok.cached, items: tiktokItems(tiktok.payload) },
+      bing_videos: { cached: tiktok.cached, items: tiktokItems(tiktok.payload) },
     },
   }
 }

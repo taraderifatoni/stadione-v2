@@ -111,12 +111,12 @@ declare
   v_id uuid;
   v_month_start timestamptz := date_trunc('month', now() at time zone 'Asia/Jakarta') at time zone 'Asia/Jakarta';
 begin
-  perform pg_advisory_xact_lock(hashtext('stadione_searchapi_monthly_budget'));
+  perform pg_advisory_xact_lock(hashtext('stadione_serpapi_monthly_budget'));
   select count(*) into v_used from public.stadione_api_usage
-   where provider = 'SEARCHAPI_IO' and created_at >= v_month_start;
+   where provider = 'SERPAPI' and created_at >= v_month_start;
   if v_used >= 93 then return null; end if;
   insert into public.stadione_api_usage(provider, engine, request_key, success, error_message)
-    values ('SEARCHAPI_IO', p_engine, p_request_key, false, 'REQUEST_RESERVED') returning id into v_id;
+    values ('SERPAPI', p_engine, p_request_key, false, 'REQUEST_RESERVED') returning id into v_id;
   return v_id;
 end;
 $$;
