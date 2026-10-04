@@ -16,6 +16,17 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-04 — SerpAPI account verification
+
+- Purpose: Verify the available VPS SerpAPI credential before connecting it to Stadione.
+- Changes: Temporarily tested the existing protected HaloBugar credential, then restored the Stadione environment backup after the account did not match the requested owner. No credential value was logged or committed.
+- Affected components: Protected production environment only; no application source or database schema changed.
+- Deployment: Stadione was restarted after the test and after rollback.
+- Verification: SerpAPI identified the credential as `taradfworkspace.com`, Free Plan, usage 250/250, with zero searches left. It is not the requested `sportsmarktz.com` account. Stadione production was restored with no SerpAPI key; service is active and the public site returns HTTP 200.
+- Rollback: Completed by restoring the timestamped environment backup created before the test.
+- Remaining work: Install an active key belonging to `sportsmarktz.com`, then test Google Trends, Google News, and Bing video/TikTok discovery.
+
+
 ### 2026-10-04 — GitHub push and SerpAPI production readiness
 
 - Purpose: Complete the pending source push and verify whether the production editorial radar can retrieve SerpAPI data.
