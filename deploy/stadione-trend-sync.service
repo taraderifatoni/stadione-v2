@@ -1,0 +1,10 @@
+[Unit]
+Description=Refresh Stadione SerpAPI editorial trend pool
+After=network-online.target stadione.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/opt/stadione/.env.production
+ExecStart=/usr/bin/python3 /opt/stadione-current/scripts/cms-sync-trends.py
+User=root

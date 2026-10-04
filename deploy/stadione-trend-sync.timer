@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh Stadione sports trend pool every morning
+
+[Timer]
+OnCalendar=*-*-* 06:15:00 Asia/Jakarta
+Persistent=true
+RandomizedDelaySec=120
+Unit=stadione-trend-sync.service
+
+[Install]
+WantedBy=timers.target
