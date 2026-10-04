@@ -16,6 +16,24 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-04 — GitHub push and SerpAPI production readiness
+
+- Purpose: Complete the pending source push and verify whether the production editorial radar can retrieve SerpAPI data.
+- Changes:
+  - Pushed `feat/stadione-editorial-scheduler` to `taraderifatoni/stadione-v2` through the VPS SSH identity after collaborator access was granted.
+  - Inspected the production SerpAPI configuration and usage tables without exposing credentials.
+- Affected components: GitHub feature branch, Stadione production environment, `stadione_api_usage`, and `stadione_trend_snapshots`.
+- Deployment: No runtime code changed in this verification entry; production remains on release `bd4f4a2`.
+- Verification:
+  - GitHub remote branch resolved to commit `bd4f4a2ca7cf271a3fe192daeae0b46e60162d55`.
+  - `SERPAPI_API_KEY` is missing from `/opt/stadione/.env.production`.
+  - SerpAPI usage contains zero requests and the trend snapshot cache is empty.
+  - The source integration is present but cannot call SerpAPI until the production key is configured.
+- Rollback: Documentation-only record; revert this commit if the record must be removed.
+- Remaining work:
+  - Add `SERPAPI_API_KEY` to the protected production environment, restart `stadione.service`, and run one CMS trend-pool sync to verify Google Trends and Google News responses.
+  - Do not place the key in Git, Plan Master, or chat.
+
 ### 2026-10-04 — Rolling editorial plan and Instagram scheduler verification
 
 - Purpose: Ensure the Stadione editorial plan creates a continuous seven-day review queue and that approved Instagram schedules can publish automatically.
@@ -28,7 +46,7 @@ This document is the shared operational history for Stadione. Every code, config
 - Affected components: Stadione CMS content tables, systemd editorial-plan timer, existing Instagram publish worker.
 - Deployment:
   - Release `a58aa3b` was built and deployed through TD Connector on 2026-10-04.
-  - The production symlink points to `/opt/stadione-releases/a58aa3b`.
+  - The production symlink points to `/opt/stadione-releases/bd4f4a2`.
   - `stadione-editorial-plan.timer` is enabled with a daily 00:05 Asia/Jakarta schedule and persistent catch-up.
   - `stadione-cms-publish.timer` is enabled and checks approved schedules every minute.
 - Verification:
@@ -42,5 +60,4 @@ This document is the shared operational history for Stadione. Every code, config
   - `https://admin.stadione.pro/admin/cms` returns HTTP 307 to the expected authentication flow.
 - Rollback: Point `/opt/stadione-current` back to `/opt/stadione-releases/62918b8`, restart `stadione.service`, and disable `stadione-editorial-plan.timer` if the rolling calendar must be removed.
 - Remaining work:
-  - Push `feat/stadione-editorial-scheduler` after the GitHub connection for `taraderifatoni/stadione-v2` receives write permission. The current connector reports `push: false`, and the VPS HTTPS remote has no GitHub credentials.
   - Editors must complete and approve each draft; the system intentionally does not invent facts or auto-publish unreviewed material.
