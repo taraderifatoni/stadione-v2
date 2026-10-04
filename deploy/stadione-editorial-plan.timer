@@ -1,0 +1,11 @@
+[Unit]
+Description=Seed Stadione editorial review slots daily
+
+[Timer]
+OnCalendar=*-*-* 00:05:00 Asia/Jakarta
+Persistent=true
+RandomizedDelaySec=120
+Unit=stadione-editorial-plan.service
+
+[Install]
+WantedBy=timers.target

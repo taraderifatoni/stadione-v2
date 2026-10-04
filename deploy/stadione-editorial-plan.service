@@ -1,0 +1,10 @@
+[Unit]
+Description=Maintain Stadione rolling editorial plan
+After=network-online.target stadione.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/opt/stadione/.env.production
+ExecStart=/usr/bin/python3 /opt/stadione-current/scripts/cms-seed-editorial-plan.py
+User=root
