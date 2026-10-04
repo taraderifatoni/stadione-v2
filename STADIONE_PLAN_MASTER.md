@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Make sports discovery refresh automatically for the feed and Reels editorial workflow.
 - Changes: Added a worker-authenticated internal trend-sync endpoint, a credential-safe runner, and a daily 06:15 WIB systemd timer. The sync caches Google Trends, Google News, and TikTok video references while recording monthly SerpAPI usage.
 - Affected components: Internal CMS API, SerpAPI cache, usage ledger, and systemd trend-sync timer.
-- Deployment: Pending build and production rollout of this commit.
-- Verification: Direct provider tests passed with 29 Trends items, 100 News items, and 30 TikTok video items. Production worker verification remains after deployment.
+- Deployment: Release `764a35c` built successfully, deployed through TD Connector, and activated in production. `stadione-trend-sync.timer` is enabled for 06:15 WIB daily.
+- Verification: The production worker completed successfully and cached 12 Google Trends items, 15 Google News items, and 10 TikTok video items. The usage ledger recorded 3 requests; configured status is true.
 - Rollback: Disable the trend-sync timer and redeploy release `1829df5`.
 - Remaining work: Complete Pinterest OAuth activation and validate visual-reference searches.
 
