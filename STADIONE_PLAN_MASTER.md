@@ -16,6 +16,17 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-04 — Connect sportsmarktz SerpAPI and repair TikTok discovery
+
+- Purpose: Connect the requested SerpAPI account and make all editorial discovery sources operational.
+- Changes: Configured the protected production key for `sportsmarktz.com`; corrected Bing Videos parsing from `videos_results` to `video_results`; removed unsupported `mkt=id-ID`; scoped video discovery to TikTok; and added a first-run fetch when no weekly cache exists.
+- Affected components: Protected Stadione environment and `src/lib/cms/serpapi.ts`.
+- Deployment: Pending build and production rollout of this commit.
+- Verification: Account verified as `sportsmarktz.com` with 250 monthly searches and zero prior usage. Google Trends returned 29 items, Google News returned 100 items, and the corrected Bing Videos query returned 30 TikTok items.
+- Rollback: Restore the environment backup created before key installation and redeploy the preceding release.
+- Remaining work: Validate the CMS trend-pool synchronization after deployment and continue Pinterest OAuth activation.
+
+
 ### 2026-10-04 — SerpAPI account verification
 
 - Purpose: Verify the available VPS SerpAPI credential before connecting it to Stadione.

@@ -160,7 +160,7 @@ function newsItems(payload: unknown): EditorialCandidate[] {
 }
 
 function tiktokItems(payload: unknown): EditorialCandidate[] {
-  const videoRows = [...rows(record(payload).shorts_results), ...rows(record(payload).videos_results)]
+  const videoRows = [...rows(record(payload).shorts_results), ...rows(record(payload).video_results)]
   return videoRows.filter((item) => textValue(item.source).toLowerCase() === "tiktok" || textValue(item.link).toLowerCase().includes("tiktok.com/")).slice(0, 15).map((item, index) => ({
     id: `tiktok-${index}-${textValue(item.link)}`,
     title: (textValue(item.title) || "Video olahraga TikTok").trim(),
@@ -186,11 +186,13 @@ export async function getDailySportsPool(): Promise<DailyPool> {
   let tiktok: { payload: unknown; cached: boolean }
   // A weekly UGC discovery sweep keeps the monthly budget generous; reuse its 8-day cache in between.
   const weekday = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Jakarta", weekday: "short" }).format(new Date())
-  if (weekday === "Tue") tiktok = await search("bing_videos", { q: "olahraga sepak bola", cc: "id", mkt: "id-ID", type: "shorts" })
+  if (weekday === "Tue") tiktok = await search("bing_videos", { q: "site:tiktok.com olahraga sepak bola", cc: "id" })
   else {
     const admin = createAdminClient()
     const { data } = await admin.from("stadione_trend_snapshots").select("payload").eq("engine", "bing_videos").gt("expires_at", new Date().toISOString()).order("updated_at", { ascending: false }).limit(1).maybeSingle()
-    tiktok = { payload: data?.payload || {}, cached: Boolean(data?.payload) }
+    tiktok = data?.payload
+      ? { payload: data.payload, cached: true }
+      : await search("bing_videos", { q: "site:tiktok.com olahraga sepak bola", cc: "id" })
   }
 
   return {
