@@ -27,16 +27,20 @@ This document is the shared operational history for Stadione. Every code, config
   - Duplicate prevention uses a stable `editorial_meta.plan_key` per date and slot.
 - Affected components: Stadione CMS content tables, systemd editorial-plan timer, existing Instagram publish worker.
 - Deployment:
-  - Active on the Stadione VPS through TD Connector.
-  - `stadione-editorial-plan.timer` enabled with a daily 00:05 Asia/Jakarta schedule and persistent catch-up.
-  - `stadione-cms-publish.timer` remains enabled and checks approved schedules every minute.
+  - Release `a58aa3b` was built and deployed through TD Connector on 2026-10-04.
+  - The production symlink points to `/opt/stadione-releases/a58aa3b`.
+  - `stadione-editorial-plan.timer` is enabled with a daily 00:05 Asia/Jakarta schedule and persistent catch-up.
+  - `stadione-cms-publish.timer` is enabled and checks approved schedules every minute.
 - Verification:
-  - First run created 21 draft slots covering 2026-10-05 through 2026-10-11.
+  - Production build completed successfully after loading the production environment.
+  - First plan run created 21 draft slots covering 2026-10-05 through 2026-10-11.
   - Each day contains slots from 08:00 through 20:00 WIB.
   - Second run created zero rows, confirming duplicate prevention.
   - Database contains 21 `DRAFT` plan items and two previously published Instagram test items.
-  - Both editorial-plan service runs exited successfully.
-- Rollback: Commit `8641c4e` is the implementation baseline. Revert the follow-up workflow commit to remove documentation-only rules; disable `stadione-editorial-plan.timer` and redeploy the previous release to remove the scheduler.
+  - `stadione.service`, `stadione-cms-publish.timer`, and `stadione-editorial-plan.timer` are active.
+  - Local production endpoint and `https://stadione.pro/` return HTTP 200.
+  - `https://admin.stadione.pro/admin/cms` returns HTTP 307 to the expected authentication flow.
+- Rollback: Point `/opt/stadione-current` back to `/opt/stadione-releases/62918b8`, restart `stadione.service`, and disable `stadione-editorial-plan.timer` if the rolling calendar must be removed.
 - Remaining work:
-  - Push the feature branch to the verified GitHub remote after explicit remote authorization.
+  - Push `feat/stadione-editorial-scheduler` after the GitHub connection for `taraderifatoni/stadione-v2` receives write permission. The current connector reports `push: false`, and the VPS HTTPS remote has no GitHub credentials.
   - Editors must complete and approve each draft; the system intentionally does not invent facts or auto-publish unreviewed material.
