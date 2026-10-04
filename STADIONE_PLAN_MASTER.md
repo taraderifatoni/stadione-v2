@@ -16,6 +16,17 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-04 — Publish trending Feed and Reels test
+
+- Purpose: Prove the full SerpAPI-to-editorial-to-Instagram workflow with one Feed and one Reels post.
+- Changes: Selected a Google News trend from the official Kementerian Pemuda dan Olahraga source, created original Stadione artwork and motion, uploaded both assets to the protected CMS bucket, and published them through the durable Instagram worker.
+- Affected components: Stadione CMS content records, Supabase Storage, Instagram publisher, and the `stadione.id` Instagram account.
+- Deployment: No application release change; production remained on release `764a35c`.
+- Verification: Feed media ID `17946297900070610` published as IMAGE/FEED at `https://www.instagram.com/p/DeE_hcfIyyx/`. Reels media ID `17996940846033736` published as VIDEO/REELS at `https://www.instagram.com/reel/DeE_iKrAFBn/`. Both CMS items and publish attempts are `PUBLISHED` with no error.
+- Rollback: Archive or remove the two Instagram posts manually if editorial withdrawal is required; retain the CMS audit records.
+- Remaining work: Complete Pinterest OAuth activation and reference search validation.
+
+
 ### 2026-10-04 — Automated SerpAPI editorial trend synchronization
 
 - Purpose: Make sports discovery refresh automatically for the feed and Reels editorial workflow.
