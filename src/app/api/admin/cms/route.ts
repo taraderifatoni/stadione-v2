@@ -76,48 +76,40 @@ export async function POST(request: NextRequest) {
 
   if (input.action === "create_from_trend") {
     const candidate = input.candidate as EditorialCandidate
-    if (!candidate?.title || String(candidate.title).trim().length < 4) {
-      return NextResponse.json({ error: "Kandidat tren tidak valid." }, { status: 400 })
+    const decision = String(input.decision || "").toUpperCase()
+    if (!candidate?.title || String(candidate.title).trim().length < 4 || !["FEED","REEL","BOTH","REJECT"].includes(decision)) {
+      return NextResponse.json({ error: "Kandidat atau keputusan tren tidak valid." }, { status: 400 })
     }
+    const candidateId = String(candidate.id || candidate.sourceUrl || candidate.title).slice(0, 300)
+    const { error: decisionError } = await admin.from("stadione_trend_decisions").insert({
+      candidate_id: candidateId, candidate, decision, actor_id: auth.actor.id,
+      source_url: candidate.sourceUrl || null, decided_at: new Date().toISOString(),
+    })
+    if (decisionError) return NextResponse.json({ error: "Keputusan kandidat gagal dicatat." }, { status: 500 })
+    if (decision === "REJECT") return NextResponse.json({ decision, rejected: true })
+
     const pack = buildEditorialPackage(candidate)
+    const approvedFormats = decision === "BOTH" ? ["CAROUSEL","REEL"] : [decision === "FEED" ? "CAROUSEL" : "REEL"]
     const { data: article, error: articleError } = await admin.from("stadione_content_items").insert({
-      kind: "ARTICLE",
-      format: "ARTICLE",
-      title: pack.article.title,
-      slug: await uniqueSlug(pack.article.slug),
-      excerpt: pack.article.excerpt,
-      body: pack.article.body,
-      category: String(input.category || "Sports Update"),
-      status: "PENDING_REVIEW",
-      platforms: ["WEBSITE"],
-      source_url: candidate.sourceUrl || null,
-      source_name: candidate.source || null,
-      source_snapshot: candidate,
-      assets: [],
-      editorial_meta: { origin: "SERPAPI", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1", verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
+      kind: "ARTICLE", format: "ARTICLE", title: pack.article.title, slug: await uniqueSlug(pack.article.slug),
+      excerpt: pack.article.excerpt, body: pack.article.body, category: String(input.category || "Sports Update"),
+      status: "PENDING_REVIEW", platforms: ["WEBSITE"], source_url: candidate.sourceUrl || null,
+      source_name: candidate.source || null, source_snapshot: candidate, assets: [],
+      editorial_meta: { origin: "TREND_APPROVED", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1",
+        trend_decision: decision, trend_approved_by: auth.actor.id, trend_approved_at: new Date().toISOString(),
+        verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
       created_by: auth.actor.id,
     }).select("*").single()
     if (articleError) return NextResponse.json({ error: articleError.message }, { status: 500 })
 
-    const socialRows = [
-      { platform: "INSTAGRAM", format: "CAROUSEL", assets: pack.social.slides },
-      { platform: "INSTAGRAM", format: "REEL", assets: [] },
-      { platform: "FACEBOOK", format: "SINGLE_IMAGE", assets: pack.social.slides },
-    ].map(({ platform, format, assets }) => ({
-      parent_id: article.id,
-      kind: "SOCIAL",
-      format,
-      title: pack.social.title,
-      caption: pack.social.caption,
-      hashtags: pack.social.hashtags,
-      platforms: [platform],
-      category: article.category,
-      status: "PENDING_REVIEW",
-      source_url: candidate.sourceUrl || null,
-      source_name: candidate.source || null,
-      source_snapshot: candidate,
-      assets,
-      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: ENGINE, fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
+    const socialRows = approvedFormats.map((format) => ({
+      parent_id: article.id, kind: "SOCIAL", format, title: pack.social.title, caption: pack.social.caption,
+      hashtags: pack.social.hashtags, platforms: ["INSTAGRAM"], category: article.category, status: "PENDING_REVIEW",
+      source_url: candidate.sourceUrl || null, source_name: candidate.source || null, source_snapshot: candidate,
+      assets: format === "CAROUSEL" ? pack.social.slides : [],
+      editorial_meta: { origin: "TREND_APPROVED", standard: ENGINE, trend_decision: decision,
+        trend_approved_by: auth.actor.id, trend_approved_at: new Date().toISOString(),
+        fact_check_status: "UNVERIFIED", rights_status: "PENDING", engine_state: "AWAITING_SOURCE_PACKET" },
       created_by: auth.actor.id,
     }))
     const { data: socials, error: socialError } = await admin.from("stadione_content_items").insert(socialRows).select("*")
@@ -126,10 +118,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: socialError.message }, { status: 500 })
     }
     await Promise.all([
-      logActivity(article.id, "create_from_trend", auth.actor.id, null, "PENDING_REVIEW", { engine: candidate.engine }),
-      ...(socials || []).map((social) => logActivity(social.id, "create_from_article", auth.actor.id, null, "PENDING_REVIEW", { article_id: article.id })),
+      logActivity(article.id, "approve_trend", auth.actor.id, null, "PENDING_REVIEW", { decision, engine: candidate.engine }),
+      ...(socials || []).map((social) => logActivity(social.id, "create_from_approved_trend", auth.actor.id, null, "PENDING_REVIEW", { article_id: article.id, decision })),
     ])
-    return NextResponse.json({ article, socials: socials || [] })
+    return NextResponse.json({ decision, article, socials: socials || [], final_approval_required: true })
   }
 
   return NextResponse.json({ error: "Aksi tidak dikenali." }, { status: 400 })

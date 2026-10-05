@@ -16,6 +16,22 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Viral candidate approval queue
+
+- Purpose: Change the operating flow so Stadione presents source links first; production begins only after the owner approves Feed, Reels, both, or rejects the candidate.
+- Changes:
+  - Replaced the immediate “Buat paket konten” action with four explicit decisions: Approve Feed, Approve Reels, Approve Keduanya, and Reject.
+  - Candidate cards now show a source link, a transparent potential score (high/medium/check), its reason, and a reminder that final preview approval remains mandatory.
+  - Added an immutable decision ledger containing the candidate snapshot, decision, actor, source URL, and decision time.
+  - Approval creates only the selected formats and records first-stage approval separately from the final content approval. Rejection creates no content.
+- Affected components: CMS approval radar, admin CMS API, `stadione_trend_decisions`, and editorial activity logs.
+- Deployment: Pending commit, database backup/migration, and immutable release deployment.
+- Verification: Engine QA, TypeScript, targeted lint (zero errors), and production build passed.
+- Rollback: Redeploy release `d461e99`; the additive decision table may remain unused.
+- Remaining work: Verify the live decision endpoint using an authenticated owner session; no candidate has been approved automatically.
+
+
+
 ### 2026-10-05 — Multi-clip Reels production deployment
 
 - Purpose: Record live rollout of the corrected real-video Reels pipeline.
