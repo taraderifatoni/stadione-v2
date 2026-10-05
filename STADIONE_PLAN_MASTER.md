@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Correct the missing photographic cover and prevent newspaper headlines/body copy from clipping at the right edge.
 - Changes: Newspaper text now uses Sharp/Pango pixel measurement rather than character-count estimates, constrains every headline and paragraph to a 940 px safe column, wraps overflow downward automatically, and reduces font size only within defined readability limits. The padel cover is rebuilt from the authentic athletes with an AI-assisted newspaper collage background while typography remains deterministic and code-rendered.
 - Affected components: Shared text measurement, newspaper carousel renderer, padel owner-preview assets, and render audit.
-- Deployment: Pending commit, production build, regenerated padel preview, and live verification.
-- Verification: Pending TypeScript, lint, build, visual edge checks, and production health checks.
+- Deployment: Commit `83b3a74` was pushed and activated as immutable release `/opt/stadione-releases/83b3a74` through TD Connector. Draft `be98acb9-2f33-4d43-9fba-674116b4cdbf` was regenerated in place with one AI-assisted authentic-athlete photo cover and six pixel-wrapped newspaper article pages; it remains `DRAFT` with no Meta publish request.
+- Verification: TypeScript and targeted lint passed with zero errors; the production build compiled successfully and generated all 50 pages. All seven regenerated assets are public 1080×1350 JPEGs. Headline and body rendering is constrained to a 940 px safe width and the CMS lightbox can inspect each page. The public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and both the application service and editorial-plan timer are active.
 - Rollback: Redeploy release `2347889`.
 - Remaining work: Owner review is required before any Meta publication.
 
