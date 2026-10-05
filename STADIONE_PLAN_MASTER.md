@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Make published CMS articles visible on the public Stadione website.
 - Changes: Added `/news` listing, `/news/[slug]` article detail, a latest-news section on the homepage, and News links in bottom navigation and the side drawer.
 - Data rules: Public pages read only `ARTICLE` rows with `PUBLISHED` status and a non-null slug. Article HTML is converted into safe text blocks instead of being injected into the page.
-- Verification: Type checking, production build, public route checks, and published-article rendering are required before deployment.
-- Deployment: Pending production release through TD Connector.
+- Verification: Type checking and the production build passed. `/news`, the published final article, and the homepage news block return HTTP 200 and render the CMS title.
+- Deployment: Release `/opt/stadione-releases/669ab00` deployed through TD Connector; `stadione.service` is active on the new release.
 - Rollback: Repoint the production symlink to the preceding release and restart `stadione.service`.
 
 ### 2026-10-05 — Indonesia–Thailand final editorial override
