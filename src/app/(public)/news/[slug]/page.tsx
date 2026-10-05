@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, ExternalLink } from "lucide-react"
 import { C } from "@/lib/design"
 import { articleBlocks, articleImage, formatNewsDate, getPublishedArticle } from "@/lib/cms/public-news"
 
@@ -37,6 +37,15 @@ export default async function NewsDetailPage({ params }: Props) {
         <div>
           {blocks.map((block, index) => block.type === "heading" ? (
             <h2 key={index} style={{ color: C.text, fontSize: 22, lineHeight: 1.25, margin: "28px 0 10px" }}>{block.text}</h2>
+          ) : block.type === "instagram" ? (
+            <figure key={index} style={{ margin: "26px auto", maxWidth: 540 }}>
+              <div style={{ borderRadius: 14, overflow: "hidden", background: "#fff", border: `1px solid ${C.border}` }}>
+                <iframe title="Reels Instagram Stadione" src={block.embedUrl} scrolling="no" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen style={{ display: "block", width: "100%", height: 690, border: 0 }} />
+              </div>
+              <figcaption style={{ marginTop: 9, textAlign: "center", fontSize: 12, color: C.textMuted }}>
+                <a href={block.url} target="_blank" rel="noreferrer" style={{ color: C.primaryLight, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 5 }}>Tonton langsung di Instagram <ExternalLink size={13} /></a>
+              </figcaption>
+            </figure>
           ) : (
             <p key={index} style={{ color: C.textSec, fontSize: 16, lineHeight: 1.72, margin: "0 0 18px" }}>{block.text}</p>
           ))}

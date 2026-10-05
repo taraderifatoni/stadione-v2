@@ -13,6 +13,10 @@ export type PublicArticle = {
   published_at: string | null
 }
 
+export type ArticleBlock =
+  | { type: "heading" | "paragraph"; text: string }
+  | { type: "instagram"; url: string; embedUrl: string }
+
 const articleFields = "id,title,slug,excerpt,body,category,assets,published_at"
 
 export async function getPublishedArticles(limit = 20) {
@@ -74,12 +78,24 @@ function plainText(value: string) {
   return decodeEntities(value.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim())
 }
 
-export function articleBlocks(body: string | null) {
+function instagramEmbed(url: string) {
+  const match = url.match(/^https:\/\/(?:www\.)?instagram\.com\/(?:reel|p)\/([A-Za-z0-9_-]+)/i)
+  return match ? `https://www.instagram.com/p/${match[1]}/embed/captioned/` : null
+}
+
+export function articleBlocks(body: string | null): ArticleBlock[] {
   if (!body) return []
   const safe = body.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi, "")
-  const blocks: Array<{ type: "heading" | "paragraph"; text: string }> = []
-  for (const match of safe.matchAll(/<(h[2-4]|p)\b[^>]*>([\s\S]*?)<\/\1>/gi)) {
-    const text = plainText(match[2])
+  const blocks: ArticleBlock[] = []
+  const pattern = /<(h[2-4]|p)\b[^>]*>([\s\S]*?)<\/\1>|<instagram-reel\b[^>]*\burl=["']([^"']+)["'][^>]*\/?\s*>/gi
+  for (const match of safe.matchAll(pattern)) {
+    if (match[3]) {
+      const url = decodeEntities(match[3])
+      const embedUrl = instagramEmbed(url)
+      if (embedUrl) blocks.push({ type: "instagram", url, embedUrl })
+      continue
+    }
+    const text = plainText(match[2] || "")
     if (text) blocks.push({ type: match[1].toLowerCase().startsWith("h") ? "heading" : "paragraph", text })
   }
   if (blocks.length) return blocks
