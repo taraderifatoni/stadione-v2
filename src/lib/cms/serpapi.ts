@@ -159,17 +159,18 @@ function newsItems(payload: unknown): EditorialCandidate[] {
   })).filter((item: EditorialCandidate) => item.title)
 }
 
-function tiktokItems(payload: unknown): EditorialCandidate[] {
+function videoItems(payload: unknown): EditorialCandidate[] {
   const videoRows = [...rows(record(payload).shorts_results), ...rows(record(payload).video_results)]
-  return videoRows.filter((item) => textValue(item.source).toLowerCase() === "tiktok" || textValue(item.link).toLowerCase().includes("tiktok.com/")).slice(0, 15).map((item, index) => ({
-    id: `tiktok-${index}-${textValue(item.link)}`,
-    title: (textValue(item.title) || "Video olahraga TikTok").trim(),
+  return videoRows.filter((item) => /tiktok\.com|youtube\.com|youtu\.be|x\.com|twitter\.com|instagram\.com/.test(textValue(item.link).toLowerCase())).slice(0, 20).map((item, index) => ({
+    id: `video-${index}-${textValue(item.link)}`,
+    title: (textValue(item.title) || "Video olahraga").trim(),
     snippet: textValue(item.channel) || textValue(item.profile_name) ? `Video oleh ${textValue(item.channel) || textValue(item.profile_name)}` : null,
-    source: textValue(item.source) || "TikTok",
+    source: textValue(item.source) || "Video source",
     sourceUrl: textValue(item.link) || null,
     imageUrl: textValue(item.thumbnail) || null,
     publishedAt: textValue(item.date) || null,
     engine: "bing_videos",
+    mediaProvenance: { pageUrl: textValue(item.link), creator: textValue(item.channel) || textValue(item.profile_name), rightsStatus: "EDITORIAL_REVIEW" },
     metrics: { views: numberValue(item.views) },
   })).filter((item: EditorialCandidate) => item.title)
 }
@@ -186,13 +187,13 @@ export async function getDailySportsPool(): Promise<DailyPool> {
   let tiktok: { payload: unknown; cached: boolean }
   // A weekly UGC discovery sweep keeps the monthly budget generous; reuse its 8-day cache in between.
   const weekday = new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Jakarta", weekday: "short" }).format(new Date())
-  if (weekday === "Tue") tiktok = await search("bing_videos", { q: "site:tiktok.com olahraga sepak bola", cc: "id" })
+  if (weekday === "Tue") tiktok = await search("bing_videos", { q: "(site:tiktok.com OR site:youtube.com OR site:x.com OR site:instagram.com) olahraga sepak bola", cc: "id" })
   else {
     const admin = createAdminClient()
     const { data } = await admin.from("stadione_trend_snapshots").select("payload").eq("engine", "bing_videos").gt("expires_at", new Date().toISOString()).order("updated_at", { ascending: false }).limit(1).maybeSingle()
     tiktok = data?.payload
       ? { payload: data.payload, cached: true }
-      : await search("bing_videos", { q: "site:tiktok.com olahraga sepak bola", cc: "id" })
+      : await search("bing_videos", { q: "(site:tiktok.com OR site:youtube.com OR site:x.com OR site:instagram.com) olahraga sepak bola", cc: "id" })
   }
 
   return {
@@ -201,7 +202,7 @@ export async function getDailySportsPool(): Promise<DailyPool> {
     sources: {
       google_trends_trending_now: { cached: trends.cached, items: trendItems(trends.payload) },
       google_news: { cached: news.cached, items: newsItems(news.payload) },
-      bing_videos: { cached: tiktok.cached, items: tiktokItems(tiktok.payload) },
+      bing_videos: { cached: tiktok.cached, items: videoItems(tiktok.payload) },
     },
   }
 }

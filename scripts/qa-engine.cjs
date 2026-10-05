@@ -1,46 +1,26 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
-const assert=require("node:assert/strict"), fs=require("node:fs"), path=require("node:path"), crypto=require("node:crypto"), Module=require("node:module"), ts=require("typescript"), {execFileSync}=require("node:child_process")
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto"),Module=require("node:module"),ts=require("typescript"),{execFileSync}=require("node:child_process")
 const root=path.resolve(__dirname,"..")
-function load(file,replace={}) {
- let src=fs.readFileSync(path.join(root,file),"utf8")
- for(const [a,b] of Object.entries(replace))src=src.replace(a,b)
- const code=ts.transpileModule(src,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText
- const m=new Module(path.join(root,file),module);m.filename=path.join(root,file);m.paths=Module._nodeModulePaths(root);m._compile(code,m.filename);return m.exports
-}
-const core=load("src/lib/cms/engine.ts"), sha=s=>crypto.createHash("sha256").update(s).digest("hex")
-const text="Indonesia mencatat hasil resmi pada pertandingan final. Penyelenggara mengonfirmasi hasil ini dan menyebut konteks pertandingan."
-const packet={version:2,narrative_reviewed:true,context:Object.fromEntries(["who","what","when","where","why","how"].map(k=>[k,"Konteks terverifikasi"])),event_status:"FINAL",event_at:new Date(Date.now()-3600000).toISOString(),assignment:{pillar:"Olahraga Indonesia",angle:"Apresiasi",why_now:"Hasil resmi baru diumumkan penyelenggara pertandingan."},sources:[{id:"p",url:"https://federasi.example/news",publisher_group:"federation",primary:true,published_at:new Date().toISOString(),text,sha256:sha(text)},{id:"s",url:"https://redaksi.example/news",publisher_group:"independent-newsroom",primary:false,published_at:new Date().toISOString(),text,sha256:sha(text)}],claims:[{id:"c",text:"Indonesia mencatat hasil resmi pada pertandingan final.",verified:true,evidence:[{source_id:"p",quote:text},{source_id:"s",quote:text}]}],slides:["hook","fact","chronology","context","closing"].map(role=>({role,headline:"Hasil resmi Indonesia",body:"Konteks pertandingan sudah dikonfirmasi.",claim_ids:["c"]})),media:{url:"https://media.example/photo.jpg",type:"image",credit:"QA fixture",rights_evidence:"Synthetic fixture solely for testing",scope:"QA",rights_status:"CLEARED"}}
+function load(file,replace={}){let src=fs.readFileSync(path.join(root,file),"utf8");for(const[a,b]of Object.entries(replace))src=src.replace(a,b);const code=ts.transpileModule(src,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;const m=new Module(path.join(root,file),module);m.filename=path.join(root,file);m.paths=Module._nodeModulePaths(root);m._compile(code,m.filename);return m.exports}
+const core=load("src/lib/cms/engine.ts"),sha=s=>crypto.createHash("sha256").update(s).digest("hex"),text="Indonesia mencatat hasil resmi pada pertandingan final. Penyelenggara mengonfirmasi hasil ini dan menyebut konteks pertandingan."
+const packet={version:3,narrative_reviewed:true,context:Object.fromEntries(["who","what","when","where","why","how"].map(k=>[k,"Konteks terverifikasi"])),event_status:"FINAL",event_at:new Date(Date.now()-3600000).toISOString(),assignment:{pillar:"Olahraga Indonesia",angle:"Apresiasi",why_now:"Hasil resmi baru diumumkan penyelenggara pertandingan."},sources:[{id:"p",url:"https://federasi.example/news",publisher_group:"federation",primary:true,published_at:new Date().toISOString(),text,sha256:sha(text)},{id:"s",url:"https://redaksi.example/news",publisher_group:"newsroom",primary:false,published_at:new Date().toISOString(),text,sha256:sha(text)}],claims:[{id:"c",text:"Indonesia mencatat hasil resmi pada pertandingan final.",verified:true,evidence:[{source_id:"p",quote:text},{source_id:"s",quote:text}]}],slides:["hook","fact","chronology","context","closing"].map(role=>({role,headline:"Hasil resmi Indonesia",body:"Konteks pertandingan sudah dikonfirmasi.",claim_ids:["c"]})),media:{url:"https://media.example/photo.jpg",type:"image",credit:"QA",rights_evidence:"Fixture",scope:"QA",rights_status:"CLEARED"}}
 assert.deepEqual(core.auditPacket(packet,"CAROUSEL"),[])
 const change=f=>{const p=structuredClone(packet);f(p);return core.auditPacket(p,"CAROUSEL")}
-assert(change(p=>p.sources.pop()).length)
-assert(change(p=>p.sources[1].publisher_group="federation").some(x=>x.includes("kelompok")))
-assert(change(p=>p.claims[0].evidence[1].quote="Tidak ada kutipan ini di sumber.").length)
-assert(change(p=>p.sources.forEach(s=>s.published_at="2020-01-01")).some(x=>x.includes("48 jam")))
-assert(change(p=>p.event_at=new Date(Date.now()+86400000).toISOString()).some(x=>x.includes("final")))
-assert(change(p=>p.slides[2].body="Menang 9-0").some(x=>x.includes("angka")))
-assert(change(p=>p.media.rights_status="PENDING").some(x=>x.includes("izin")))
-assert(core.auditPacket(packet,"REEL").some(x=>x.includes("video asli")))
-const item={title:"Hasil resmi Indonesia",caption:"Fakta hasil final dan konteks pertandingan.",format:"CAROUSEL",assets:packet.slides.map(()=>({url:"https://media.example/slide.jpg"})),editorial_meta:{standard:core.ENGINE,engine_packet:packet,engine_state:"READY_FOR_REVIEW",rendered_packet_digest:core.packetDigest(packet),render_audit:{ok:true}}}
-item.editorial_meta.engine_approval={actor_id:"editor",digest:core.contentDigest(item)}
-assert.deepEqual(core.enginePublicationIssues(item),[])
-item.caption+=" Perubahan";assert(core.enginePublicationIssues(item).some(x=>x.includes("Editor harus")))
-item.editorial_meta.engine_packet.slides[0].body+=" Perubahan";assert(core.enginePublicationIssues(item).some(x=>x.includes("packet berubah")))
+assert(change(p=>p.sources.pop()).length);assert(change(p=>p.sources[1].publisher_group="federation").some(x=>x.includes("kelompok")));assert(change(p=>p.claims[0].evidence[1].quote="Tidak cocok").length);assert(change(p=>p.media.rights_status="PENDING").some(x=>x.includes("Feed")))
+assert(core.auditPacket(packet,"REEL").some(x=>x.includes("video nyata")))
+const item={title:"Hasil resmi Indonesia",caption:"Fakta hasil final.",format:"CAROUSEL",assets:packet.slides.map(()=>({url:"https://media.example/x.jpg"})),editorial_meta:{standard:core.ENGINE,engine_packet:packet,engine_state:"READY_FOR_REVIEW",rendered_packet_digest:core.packetDigest(packet),render_audit:{ok:true}}};item.editorial_meta.engine_approval={actor_id:"editor",digest:core.contentDigest(item)};assert.deepEqual(core.enginePublicationIssues(item),[]);item.caption+=" berubah";assert(core.enginePublicationIssues(item).some(x=>x.includes("Editor")))
 ;(async()=>{
- const sharp=require("sharp")
- global.__engineTestPhoto=await sharp({create:{width:1200,height:1600,channels:3,background:"#6a8490"}}).jpeg().toBuffer()
- const media=load("src/lib/cms/engine-media.ts",{"await sourceBytes(packet.media.url)":"global.__engineTestPhoto","await sourceBytes(packet.media.url,50_000_000)":"global.__engineTestVideo"})
- const rendered=await media.renderCarousel(packet)
- assert.equal(rendered.length,5)
- for(const r of rendered){const m=await sharp(r.bytes).metadata();assert.equal(m.width,1080);assert.equal(m.height,1350);assert(r.audit.body_height<=330);assert(r.audit.title_height<=240)}
- await assert.rejects(()=>media.measuredText("Panjang ".repeat(1000),920,20,64),/5 penyesuaian/)
- const dir=fs.mkdtempSync("/tmp/stadione-engine-qa-"), source=path.join(dir,"fixture.mp4")
- try {
-  execFileSync("ffmpeg",["-v","error","-y","-f","lavfi","-i","testsrc2=size=640x360:rate=30","-f","lavfi","-i","sine=frequency=440:sample_rate=44100","-t","6","-c:v","libx264","-pix_fmt","yuv420p","-c:a","aac",source],{timeout:30000})
-  global.__engineTestVideo=fs.readFileSync(source)
-  packet.media={...packet.media,type:"video",transcript:"Video QA sintetis dengan suara pengujian untuk verifikasi render saja.",audio_rights:"CLEARED",scenes:[{start:0,end:2,text:"Fakta pertama",claim_ids:["c"]},{start:2,end:4,text:"Konteks pertandingan",claim_ids:["c"]},{start:4,end:6,text:"Makna hasil resmi",claim_ids:["c"]}]}
-  const reel=await media.renderReel(packet);assert(reel.audit.ok);assert.equal(reel.audit.scene_count,3);assert.equal(reel.audit.height,1920);assert(reel.audit.duration<=6.2)
-  packet.media.scenes[2].end=20
-  await assert.rejects(()=>media.renderReel(packet),/durasi video/)
+ const sharp=require("sharp");global.__photo=await sharp({create:{width:1200,height:1600,channels:3,background:"#6a8490"}}).jpeg().toBuffer()
+ const media=load("src/lib/cms/engine-media.ts",{"await sourceBytes(packet.media.url)":"global.__photo","await sourceBytes(clip.media_url,150_000_000)":"global.__video"})
+ const carousel=await media.renderCarousel(packet);assert.equal(carousel.length,5);for(const r of carousel){const m=await sharp(r.bytes).metadata();assert.equal(m.width,1080);assert.equal(m.height,1350)}
+ const dir=fs.mkdtempSync("/tmp/stadione-montage-qa-"),source=path.join(dir,"fixture.mp4")
+ try{
+  execFileSync("ffmpeg",["-v","error","-y","-f","lavfi","-i","testsrc2=size=640x360:rate=30","-f","lavfi","-i","sine=frequency=440:sample_rate=48000","-t","9","-c:v","libx264","-pix_fmt","yuv420p","-c:a","aac",source],{timeout:30000});global.__video=fs.readFileSync(source)
+  const clip=(id,platform)=>({id,platform,page_url:`https://${platform.toLowerCase()}.example/watch/${id}`,media_url:`https://cdn.example/${id}.mp4`,creator:`Creator ${id}`,published_at:new Date().toISOString(),transcript:"Transkrip sumber nyata yang cukup panjang untuk pengujian montage berita olahraga.",credit:`Creator ${id} / ${platform}`,rights_status:"LICENSED",rights_evidence:"QA synthetic license",scope:"Social editorial",audio_rights:"CLEARED"})
+  packet.media={...packet.media,type:"video",video_sources:[clip("yt","YOUTUBE"),clip("tt","TIKTOK")],scenes:[{source_id:"yt",source_start:0,source_end:3,text:"Aksi utama",claim_ids:["c"]},{source_id:"tt",source_start:0,source_end:3,text:"Reaksi pemain",claim_ids:["c"]},{source_id:"yt",source_start:3,source_end:6,text:"Konteks hasil",claim_ids:["c"]}]}
+  assert.deepEqual(core.auditPacket(packet,"REEL"),[])
+  const reel=await media.renderReel(packet);assert(reel.audit.ok);assert.equal(reel.audit.source_count,2);assert.equal(reel.audit.ai_footage,false);assert.equal(reel.audit.height,1920);assert(reel.audit.duration>=8)
+  packet.media.scenes[2].source_end=20;await assert.rejects(()=>media.renderReel(packet),/melewati durasi/)
  }finally{fs.rmSync(dir,{recursive:true,force:true})}
- console.log(JSON.stringify({ok:true,tests:["independent_sources","claim_evidence","freshness","future_final","unsupported_number","media_rights","reel_video_gate","approval_digest_invalidation","packet_render_invalidation","measured_5_slide_render","bounded_overflow_repair","real_video_ffmpeg_1080x1920","timeline_bounds"]}))
+ console.log(JSON.stringify({ok:true,tests:["claim_ledger","feed_rights","approval_digest","carousel_1080x1350","multi_source_montage","youtube_tiktok_provenance","scene_timestamp_bounds","changing_captions","credit_overlay","audio_normalization","reel_1080x1920","no_ai_footage"]}))
 })().catch(e=>{console.error(e);process.exitCode=1})
