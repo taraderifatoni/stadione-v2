@@ -16,6 +16,14 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Live five-slide carousel test
+
+- Purpose: Validate the complete article-to-carousel workflow against the connected Instagram account.
+- Changes: Created an editable website article and a five-slide original Stadione graphic carousel about Fadona Kusumawati/Fitriani Sabatini's Asian Games 2026 padel silver medal. Facts were checked against an official government release retained in private editorial metadata; no portal brand appears in the public caption. The graphics are original Stadione assets, avoiding reuse of the portal photograph.
+- Publication: Instagram content `e0a769c2-22ec-4971-9770-d163f43fa43a` was published successfully as Meta media `18129762628793196` at `https://www.instagram.com/p/DeGwUNcAc-3/`. Its paired website article remains an editable draft (`50ba0447-7a45-4219-8550-19928df27434`).
+- Verification: Meta returned `PUBLISHED`; the CMS record contains five public assets and the publish-attempt ledger records the final media ID.
+- Remaining work: Review and publish the paired website article when the public article renderer is enabled.
+
 ### 2026-10-05 — Article and five-slide carousel drafts
 
 - Purpose: Turn an approved viral candidate into a useful website article and Instagram carousel instead of a one-slide newsroom brief.
