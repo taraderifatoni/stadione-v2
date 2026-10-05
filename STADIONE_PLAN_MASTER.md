@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Provide a Pinterest-independent place for the owner to supply multiple design references according to editorial use.
 - Changes: Replaced the Pinterest-only moodboard input with a monthly library capped at five references. Each reference has a purpose (match result, meme, news cover, statistics, or Reels) and accepts either any HTTPS link or a JPEG/PNG/WebP upload up to 10 MB. Uploaded files are removed from storage when their reference is deleted. References remain inspiration only and do not count as publication-rights evidence.
 - Affected components: CMS reference UI/API, `stadione_visual_references`, and `stadione-cms` storage.
-- Deployment: Pending commit, database backup/migration, build, and immutable release activation.
-- Verification: Pending TypeScript, lint, build, migration, upload/link, five-item-cap, and production health checks.
+- Deployment: Commit `263cbdb` was pushed and activated as immutable release `/opt/stadione-releases/263cbdb` through TD Connector. Database backup `/opt/backups/db-2026-10-05-0219.sql.gz` was created before applying `database/10-visual-reference-library.sql`.
+- Verification: TypeScript and targeted lint passed with zero errors (three pre-existing `<img>` warnings); the production build compiled and generated all 50 pages. The three new database columns are present, the protected references endpoint returns the expected HTTP 401 without a session, the public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and the app plus editorial timers are active.
 - Rollback: Redeploy release `59b0a91`; the additive database columns may remain unused.
 - Remaining work: Populate the five reference roles with the owner's preferred examples.
 
