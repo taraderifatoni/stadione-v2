@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Turn an approved viral candidate into a useful website article and Instagram carousel instead of a one-slide newsroom brief.
 - Changes: The former Feed action now creates an editable article plus a five-slide carousel (cover, summary, context, what to watch, and discussion). Public copy does not expose aggregator or portal brand names and does not claim first-hand reporting; source URL, source name, snapshot, fact-check state, and image-rights state remain in private editorial metadata. Research and primary evidence may still be cited explicitly when an editor adds them.
 - Affected components: Editorial package generator, viral-candidate modal copy, article draft, carousel draft, and internal provenance workflow.
-- Deployment: Pending commit, production build, immutable release, and live verification.
-- Verification: Pending TypeScript, lint, build, and production health checks.
+- Deployment: Commit `4e98183` was pushed and activated as immutable release `/opt/stadione-releases/4e98183` through TD Connector.
+- Verification: TypeScript and targeted lint passed with zero errors (three existing `<img>` warnings); the production build compiled successfully and generated all 50 pages. The public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and both the application service and editorial-plan timer are active.
 - Rollback: Redeploy release `373ceb5`.
 - Remaining work: Editors must verify facts and clear image rights before publication; the generator deliberately does not invent missing facts.
 
