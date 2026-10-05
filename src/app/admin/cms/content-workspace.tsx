@@ -1536,8 +1536,9 @@ function TrendModal({
               Kandidat untuk posting manual
             </h2>
             <p className="mt-1 text-[11px] text-[#6B6558]">
-              Buka sumber lalu buat draf Feed, Reels, atau keduanya. Draf ini
-              tidak ikut autopost; kamu yang mengedit dan menerbitkannya.
+              Buka sumber lalu buat draf Artikel + Carousel, Reels, atau
+              keduanya. Nama portal disimpan untuk pemeriksaan internal dan
+              tidak dimasukkan ke naskah publik.
             </p>
           </div>
           <button
@@ -1636,7 +1637,7 @@ function TrendModal({
                       onClick={() => onCreate(candidate, "FEED")}
                       className="rounded-lg bg-[#84102D] px-2 py-2 text-[10px] font-bold"
                     >
-                      Buat Draf Feed
+                      Artikel + Carousel
                     </button>
                     <button
                       disabled={pending}

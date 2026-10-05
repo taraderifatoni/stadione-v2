@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Article and five-slide carousel drafts
+
+- Purpose: Turn an approved viral candidate into a useful website article and Instagram carousel instead of a one-slide newsroom brief.
+- Changes: The former Feed action now creates an editable article plus a five-slide carousel (cover, summary, context, what to watch, and discussion). Public copy does not expose aggregator or portal brand names and does not claim first-hand reporting; source URL, source name, snapshot, fact-check state, and image-rights state remain in private editorial metadata. Research and primary evidence may still be cited explicitly when an editor adds them.
+- Affected components: Editorial package generator, viral-candidate modal copy, article draft, carousel draft, and internal provenance workflow.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, and production health checks.
+- Rollback: Redeploy release `373ceb5`.
+- Remaining work: Editors must verify facts and clear image rights before publication; the generator deliberately does not invent missing facts.
+
 ### 2026-10-05 — Bulk content actions and simplified editor
 
 - Purpose: Reduce editor clutter, support safe bulk cleanup, and make suggested carousel drafts visually useful immediately.
@@ -25,7 +35,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: TypeScript and targeted lint passed with zero errors (three existing `<img>` warnings); the production build compiled successfully and generated all 50 pages. The protected delete endpoint returns the expected HTTP 401 without a session, the public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, the app service is active, and `stadione-editorial-plan.timer` remains enabled with its next run scheduled.
 - Rollback: Redeploy release `263cbdb`.
 - Remaining work: Existing drafts keep their current assets; newly created suggested carousels receive portal thumbnails automatically when SerpAPI provides one.
-
 
 ### 2026-10-05 — Five-slot visual reference library
 
@@ -37,7 +46,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Redeploy release `59b0a91`; the additive database columns may remain unused.
 - Remaining work: Populate the five reference roles with the owner's preferred examples.
 
-
 ### 2026-10-05 — Manual viral suggestions alongside autopost
 
 - Purpose: Keep the automated editorial pipeline while allowing the owner to select occasional viral stories and publish them manually.
@@ -47,7 +55,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: TypeScript passed and targeted lint completed with zero errors (three pre-existing `<img>` warnings). The production build, including all 50 generated pages, passed with the protected VPS environment. `stadione.service` is active, the public site returns HTTP 200, and the admin CMS returns its expected HTTP 307 authentication redirect.
 - Rollback: Redeploy release `65b8c9c`.
 - Remaining work: Generate a new Pinterest token after the Pinterest application has active API access, then verify `/v5/user_account` before storing it in the protected server environment.
-
 
 ### 2026-10-05 — Quality-gated editorial autopilot
 
@@ -63,8 +70,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Redeploy release `ce0fdb7`.
 - Remaining work: Autopilot still blocks content when factual corroboration, accessible source footage, transcript, or documented reuse rights are missing. No OpenAI API key is configured, so the system does not invent source packets to force publication. The already-processed current slot was not republished; the next eligible editorial slot will be handled automatically.
 
-
-
 ### 2026-10-05 — Viral candidate queue production deployment
 
 - Purpose: Record production activation of the owner-first candidate approval flow.
@@ -74,8 +79,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: Migration table exists; production build passed; app and timer are active; local/public endpoints return HTTP 200 and admin returns expected HTTP 307 authentication redirect.
 - Rollback: Repoint `/opt/stadione-current` to `/opt/stadione-releases/d461e99` and restart `stadione.service`.
 - Remaining work: Owner decisions must be submitted from the authenticated CMS. No candidate was approved during deployment.
-
-
 
 ### 2026-10-05 — Viral candidate approval queue
 
@@ -91,8 +94,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Redeploy release `d461e99`; the additive decision table may remain unused.
 - Remaining work: Verify the live decision endpoint using an authenticated owner session; no candidate has been approved automatically.
 
-
-
 ### 2026-10-05 — Multi-clip Reels production deployment
 
 - Purpose: Record live rollout of the corrected real-video Reels pipeline.
@@ -102,8 +103,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: Release build and TypeScript passed; local/public endpoints return HTTP 200; admin CMS returns expected HTTP 307 authentication redirect; app and engine timer are active; worker completed successfully and retained idempotent skip behavior. No post was auto-published.
 - Rollback: Repoint `/opt/stadione-current` to `/opt/stadione-releases/b21a456` and restart `stadione.service`.
 - Remaining work: A real editorial Reel still requires editor-selected clips with accessible media URLs, transcripts, timestamp ranges, and documented reuse rights. Discovery URLs alone remain review-only.
-
-
 
 ### 2026-10-05 — Real-source multi-clip Reels engine
 
@@ -122,8 +121,6 @@ This document is the shared operational history for Stadione. Every code, config
   - Source/rights/transcript/timestamp/claim gates, Feed carousel render, approval invalidation, TypeScript, targeted lint (zero errors), and Next.js production build passed.
 - Rollback: Redeploy release `b21a456`.
 - Remaining work: Production video results provide discovery/page URLs and remain `EDITORIAL_REVIEW`. An editor must supply an accessible media URL plus permission/license evidence before a real Reel can render or publish. Platform page availability alone is not permission.
-
-
 
 ### 2026-10-05 — Sports newsroom engine V2 production verification
 
@@ -160,7 +157,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Before deployment, return to release `764a35c`. After deployment, repoint `/opt/stadione-current` to release `764a35c`, restart `stadione.service`, and disable `stadione-content-engine.timer`; the additive engine tables may remain unused.
 - Remaining work: Apply and verify the migration, deploy the committed release, activate the worker, generate one honest Feed and Reel preview from cached trends, and keep previews BLOCKED when source evidence or documented media rights are incomplete. This vertical slice uses editor-controlled source-led narrative inputs; it does not claim autonomous AI copy-desk parity with HaloBugar.
 
-
 ### 2026-10-04 — Publish trending Feed and Reels test
 
 - Purpose: Prove the full SerpAPI-to-editorial-to-Instagram workflow with one Feed and one Reels post.
@@ -170,7 +166,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: Feed media ID `17946297900070610` published as IMAGE/FEED at `https://www.instagram.com/p/DeE_hcfIyyx/`. Reels media ID `17996940846033736` published as VIDEO/REELS at `https://www.instagram.com/reel/DeE_iKrAFBn/`. Both CMS items and publish attempts are `PUBLISHED` with no error.
 - Rollback: Archive or remove the two Instagram posts manually if editorial withdrawal is required; retain the CMS audit records.
 - Remaining work: Complete Pinterest OAuth activation and reference search validation.
-
 
 ### 2026-10-04 — Automated SerpAPI editorial trend synchronization
 
@@ -182,7 +177,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Disable the trend-sync timer and redeploy release `1829df5`.
 - Remaining work: Complete Pinterest OAuth activation and validate visual-reference searches.
 
-
 ### 2026-10-04 — Connect sportsmarktz SerpAPI and repair TikTok discovery
 
 - Purpose: Connect the requested SerpAPI account and make all editorial discovery sources operational.
@@ -193,7 +187,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Restore the environment backup created before key installation and redeploy the preceding release.
 - Remaining work: Validate the CMS trend-pool synchronization after deployment and continue Pinterest OAuth activation.
 
-
 ### 2026-10-04 — SerpAPI account verification
 
 - Purpose: Verify the available VPS SerpAPI credential before connecting it to Stadione.
@@ -203,7 +196,6 @@ This document is the shared operational history for Stadione. Every code, config
 - Verification: SerpAPI identified the credential as `taradfworkspace.com`, Free Plan, usage 250/250, with zero searches left. It is not the requested `sportsmarktz.com` account. Stadione production was restored with no SerpAPI key; service is active and the public site returns HTTP 200.
 - Rollback: Completed by restoring the timestamped environment backup created before the test.
 - Remaining work: Install an active key belonging to `sportsmarktz.com`, then test Google Trends, Google News, and Bing video/TikTok discovery.
-
 
 ### 2026-10-04 — GitHub push and SerpAPI production readiness
 
