@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Photojournalistic carousel renderer
+
+- Purpose: Match the approved sports-editorial benchmark: authentic photography edited into a branded cover, followed by strong full-text storytelling cards.
+- Changes: Replaced the repeated-photo renderer with an attention-cropped, graded, full-bleed cover using the authentic source image, dark editorial gradient, gold/burgundy accents, and bottom-weighted headline. Subsequent slides render as textured full-text cards with larger typography, distinct hierarchy, and no repeated photograph. Render audit now records each slide's `photo` or `full_text` layout and whether an authentic photo was used.
+- Affected components: Carousel media renderer, engine slide model, generated JPEG assets, and render audit metadata.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, and production health checks.
+- Rollback: Redeploy release `b3efa20`.
+- Remaining work: Extend the packet schema with multiple cleared photographs before enabling photo/text alternation beyond the single authentic cover image.
+
 ### 2026-10-05 — Authentic-photo carousel rhythm
 
 - Purpose: Replace repetitive photo backgrounds and synthetic athlete likenesses with a stronger sports-editorial image/text rhythm.
