@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Remove unnecessary interface-like labels from the newspaper artwork and leave more visual breathing room for the article itself.
 - Changes: Removed `EDISI DIGITAL`, the footer rule, `BACA UTUH • SIMPAN • BAGIKAN`, and `STADIONE.PRO` from every carousel page. The upper-right label now contains only the page counter (for example `1/7`), and the body-safe area extends farther downward without adding a footer.
 - Affected components: Newspaper carousel renderer and padel owner-preview assets.
-- Deployment: Pending commit, production build, draft regeneration, and live verification.
-- Verification: Pending TypeScript, lint, build, and visual review.
+- Deployment: Commit `6021e44` was pushed and activated as immutable release `/opt/stadione-releases/6021e44` through TD Connector. All seven assets in draft `be98acb9-2f33-4d43-9fba-674116b4cdbf` were regenerated/cleaned in place and the draft remains unpublished.
+- Verification: TypeScript and targeted lint passed with zero errors; the production build compiled successfully and generated all 50 pages. Draft verification confirms seven cleaned assets with page counters only and no edition/footer copy. The public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and both the application service and editorial-plan timer are active.
 - Rollback: Redeploy release `83b3a74`.
 - Remaining work: Owner review is required before publication.
 
