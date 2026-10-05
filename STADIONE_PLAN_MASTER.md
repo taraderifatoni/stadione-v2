@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Carousel zoom lightbox
+
+- Purpose: Let editors read and inspect carousel artwork at a useful size before approval or publication.
+- Changes: Every carousel preview slide with an image is now clickable. It opens a full-screen lightbox with a contained large preview, slide number, close button, outside-click and Escape-key dismissal, plus an `Open original size` link for pixel-level inspection.
+- Affected components: CMS carousel slide preview and editorial review workflow.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, and production health checks.
+- Rollback: Redeploy release `c0b5703`.
+- Remaining work: Consider previous/next keyboard navigation if editors frequently review carousels longer than five slides.
+
 ### 2026-10-05 — Rendered carousel preview fix
 
 - Purpose: Make generated carousel JPEGs visible inside the CMS editor instead of showing blank structural cards.

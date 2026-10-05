@@ -2254,9 +2254,19 @@ function EditorModal({
 }
 
 function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
+  const [zoomed, setZoomed] = useState(false);
   const renderedUrl = asset.url || null;
   const sourceImageUrl = asset.image_url || null;
+  const previewUrl = renderedUrl || sourceImageUrl;
   const fullText = asset.layout === "full_text" || !sourceImageUrl;
+  useEffect(() => {
+    if (!zoomed) return;
+    const close = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setZoomed(false);
+    };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, [zoomed]);
   const colors =
     asset.tone === "burgundy"
       ? "bg-[#84102D] text-white"
@@ -2264,48 +2274,102 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
         ? "bg-[#B5AC8A] text-[#0D0D0D]"
         : "bg-[#0D0D0D] text-[#F5F0E8]";
   return (
-    <div
-      className={`relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] ${renderedUrl ? "" : "p-4"} ${colors}`}
-    >
-      {renderedUrl ? (
-        <img
-          src={renderedUrl}
-          alt={`Preview slide ${index + 1}`}
-          className="h-full w-full object-cover"
-        />
-      ) : (
-        !fullText &&
-        sourceImageUrl && (
+    <>
+      <button
+        type="button"
+        onClick={() => previewUrl && setZoomed(true)}
+        disabled={!previewUrl}
+        aria-label={`Perbesar slide ${index + 1}`}
+        title={previewUrl ? "Klik untuk memperbesar" : undefined}
+        className={`relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] ${renderedUrl ? "" : "p-4"} ${colors}`}
+      >
+        {renderedUrl ? (
           <img
-            src={sourceImageUrl}
-            alt=""
-            className="absolute inset-0 h-full w-full object-cover opacity-35"
+            src={renderedUrl}
+            alt={`Preview slide ${index + 1}`}
+            className="h-full w-full object-cover"
           />
-        )
-      )}
-      {!renderedUrl && (
+        ) : (
+          !fullText &&
+          sourceImageUrl && (
+            <img
+              src={sourceImageUrl}
+              alt=""
+              className="absolute inset-0 h-full w-full object-cover opacity-35"
+            />
+          )
+        )}
+        {!renderedUrl && (
+          <div
+            className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
+          >
+            <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
+              {asset.eyebrow || `Slide ${index + 1}`}
+            </div>
+            <div className={fullText ? "my-auto" : ""}>
+              <div
+                className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
+              >
+                {asset.headline}
+              </div>
+              <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
+                {asset.body}
+              </div>
+            </div>
+            <div className="text-[8px] font-bold uppercase tracking-[.15em]">
+              STADIONE
+            </div>
+          </div>
+        )}
+        {previewUrl && (
+          <span className="absolute bottom-2 right-2 rounded-lg bg-black/70 px-2 py-1 text-[9px] font-bold text-white backdrop-blur-sm">
+            Perbesar
+          </span>
+        )}
+      </button>
+      {zoomed && previewUrl && (
         <div
-          className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
+          className="fixed inset-0 z-[80] flex flex-col bg-black/95 p-4 sm:p-8"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setZoomed(false);
+          }}
         >
-          <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
-            {asset.eyebrow || `Slide ${index + 1}`}
-          </div>
-          <div className={fullText ? "my-auto" : ""}>
-            <div
-              className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
-            >
-              {asset.headline}
+          <div className="mb-3 flex items-center justify-between gap-3 text-white">
+            <div className="text-sm font-bold">Slide {index + 1}</div>
+            <div className="flex items-center gap-2">
+              <a
+                href={previewUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-xl border border-white/20 px-3 py-2 text-xs font-bold"
+              >
+                Buka ukuran asli
+              </a>
+              <button
+                type="button"
+                onClick={() => setZoomed(false)}
+                className="grid h-10 w-10 place-items-center rounded-xl bg-white/10"
+                aria-label="Tutup preview"
+              >
+                <X size={18} />
+              </button>
             </div>
-            <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
-              {asset.body}
-            </div>
           </div>
-          <div className="text-[8px] font-bold uppercase tracking-[.15em]">
-            STADIONE
+          <div
+            className="flex min-h-0 flex-1 items-center justify-center"
+            onMouseDown={(event) => {
+              if (event.target === event.currentTarget) setZoomed(false);
+            }}
+          >
+            <img
+              src={previewUrl}
+              alt={`Slide ${index + 1} ukuran besar`}
+              className="max-h-full max-w-full rounded-xl object-contain shadow-2xl"
+            />
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 
