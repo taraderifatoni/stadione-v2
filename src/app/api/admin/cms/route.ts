@@ -93,9 +93,10 @@ export async function POST(request: NextRequest) {
     const { data: article, error: articleError } = await admin.from("stadione_content_items").insert({
       kind: "ARTICLE", format: "ARTICLE", title: pack.article.title, slug: await uniqueSlug(pack.article.slug),
       excerpt: pack.article.excerpt, body: pack.article.body, category: String(input.category || "Sports Update"),
-      status: "PENDING_REVIEW", platforms: ["WEBSITE"], source_url: candidate.sourceUrl || null,
+      status: "DRAFT", platforms: ["WEBSITE"], source_url: candidate.sourceUrl || null,
       source_name: candidate.source || null, source_snapshot: candidate, assets: [],
-      editorial_meta: { origin: "TREND_APPROVED", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1",
+      editorial_meta: { origin: "TREND_MANUAL", engine: candidate.engine || null, standard: "STADIONE_SPORTS_DESK_V1",
+        manual_publish: true,
         trend_decision: decision, trend_approved_by: auth.actor.id, trend_approved_at: new Date().toISOString(),
         verification_required: true, fact_check_status: "UNVERIFIED", rights_status: "PENDING", image_reference_url: candidate.imageUrl || null },
       created_by: auth.actor.id,
@@ -104,10 +105,10 @@ export async function POST(request: NextRequest) {
 
     const socialRows = approvedFormats.map((format) => ({
       parent_id: article.id, kind: "SOCIAL", format, title: pack.social.title, caption: pack.social.caption,
-      hashtags: pack.social.hashtags, platforms: ["INSTAGRAM"], category: article.category, status: "PENDING_REVIEW",
+      hashtags: pack.social.hashtags, platforms: ["INSTAGRAM"], category: article.category, status: "DRAFT",
       source_url: candidate.sourceUrl || null, source_name: candidate.source || null, source_snapshot: candidate,
       assets: format === "CAROUSEL" ? pack.social.slides : [],
-      editorial_meta: { origin: "TREND_APPROVED", standard: ENGINE, trend_decision: decision,
+      editorial_meta: { origin: "TREND_MANUAL", standard: ENGINE, manual_publish: true, trend_decision: decision,
         trend_approved_by: auth.actor.id, trend_approved_at: new Date().toISOString(),
         fact_check_status: "UNVERIFIED", rights_status: "PENDING", engine_state: "AWAITING_SOURCE_PACKET" },
       created_by: auth.actor.id,
@@ -118,10 +119,10 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: socialError.message }, { status: 500 })
     }
     await Promise.all([
-      logActivity(article.id, "approve_trend", auth.actor.id, null, "PENDING_REVIEW", { decision, engine: candidate.engine }),
-      ...(socials || []).map((social) => logActivity(social.id, "create_from_approved_trend", auth.actor.id, null, "PENDING_REVIEW", { article_id: article.id, decision })),
+      logActivity(article.id, "create_manual_from_trend", auth.actor.id, null, "DRAFT", { decision, engine: candidate.engine }),
+      ...(socials || []).map((social) => logActivity(social.id, "create_manual_from_trend", auth.actor.id, null, "DRAFT", { article_id: article.id, decision })),
     ])
-    return NextResponse.json({ decision, article, socials: socials || [], final_approval_required: true })
+    return NextResponse.json({ decision, article, socials: socials || [], manual_publish: true })
   }
 
   return NextResponse.json({ error: "Aksi tidak dikenali." }, { status: 400 })

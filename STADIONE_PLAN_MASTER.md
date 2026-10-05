@@ -16,6 +16,17 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Manual viral suggestions alongside autopost
+
+- Purpose: Keep the automated editorial pipeline while allowing the owner to select occasional viral stories and publish them manually.
+- Changes: Renamed the old approval radar as a manual viral-suggestion workflow. Selecting Feed, Reels, or both now creates explicit `DRAFT` items marked `TREND_MANUAL` and `manual_publish`; these drafts are excluded from the plan-key autopost worker and remain editable/publishable from the CMS. The supplied Pinterest token was tested against the official v5 account endpoint but was not stored because Pinterest returned HTTP 401 authentication failure.
+- Affected components: CMS viral-suggestion UI, trend-to-draft admin API, editorial activity log, and protected Pinterest configuration decision.
+- Deployment: Pending commit and immutable production deployment.
+- Verification: TypeScript passed and targeted lint completed with zero errors (three pre-existing `<img>` warnings). The isolated local build reached page generation but lacked the protected Supabase build environment; production build and live CMS verification remain pending on the VPS.
+- Rollback: Redeploy release `65b8c9c`.
+- Remaining work: Generate a new Pinterest token after the Pinterest application has active API access, then verify `/v5/user_account` before storing it in the protected server environment.
+
+
 ### 2026-10-05 — Quality-gated editorial autopilot
 
 - Purpose: Remove manual candidate and preview approval so the editorial matrix runs automatically.
