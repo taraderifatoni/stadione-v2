@@ -103,87 +103,71 @@ export async function measuredText(
   throw new Error("Teks melampaui ruang setelah 5 penyesuaian ukuran.");
 }
 export async function renderCarousel(packet: Packet) {
-  const photo = await sourceBytes(packet.media.url),
-    original = await sharp(photo).metadata();
-  if ((original.width || 0) < 800 || (original.height || 0) < 600)
-    throw new Error("Foto sumber kurang dari 800×600.");
-  const photoBase = await sharp(photo)
-    .rotate()
-    .resize(1080, 1350, { fit: "cover", position: "attention" })
-    .modulate({ brightness: 0.82, saturation: 0.9 })
-    .jpeg()
-    .toBuffer();
-  const photoOverlay = Buffer.from(
-    '<svg width="1080" height="1350"><defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="#090909" stop-opacity=".08"/><stop offset=".44" stop-color="#090909" stop-opacity=".18"/><stop offset=".68" stop-color="#090909" stop-opacity=".82"/><stop offset="1" stop-color="#090909" stop-opacity=".98"/></linearGradient></defs><rect width="1080" height="1350" fill="url(#g)"/><rect x="0" width="1080" height="24" fill="#84102d"/><rect x="64" y="718" width="150" height="10" fill="#d4b85a"/></svg>',
-  );
-  const textBase = Buffer.from(
-    '<svg width="1080" height="1350"><defs><linearGradient id="b" x2="1" y2="1"><stop stop-color="#0a0909"/><stop offset="1" stop-color="#1a070d"/></linearGradient><pattern id="p" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M0 28L28 0" stroke="#ffffff" stroke-opacity=".025" stroke-width="2"/></pattern></defs><rect width="1080" height="1350" fill="url(#b)"/><rect width="1080" height="1350" fill="url(#p)"/><circle cx="1050" cy="100" r="360" fill="#84102d" fill-opacity=".30"/><path d="M0 1110L1080 820V1350H0Z" fill="#84102d" fill-opacity=".22"/><rect x="0" width="1080" height="24" fill="#84102d"/><rect x="64" y="360" width="150" height="10" fill="#d4b85a"/></svg>',
-  );
+  const wrap = (value: string, limit: number) => {
+    const lines: string[] = [];
+    let line = "";
+    for (const word of value.replace(/\s+/g, " ").trim().split(" ")) {
+      if (`${line} ${word}`.trim().length > limit && line) {
+        lines.push(line);
+        line = word;
+      } else line = `${line} ${word}`.trim();
+    }
+    if (line) lines.push(line);
+    return lines;
+  };
+  const textLines = (
+    lines: string[],
+    x: number,
+    y: number,
+    size: number,
+    step: number,
+    weight = 500,
+    color = "#191714",
+  ) =>
+    lines
+      .map(
+        (line, index) =>
+          `<text x="${x}" y="${y + index * step}" font-family="DejaVu Sans" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(line)}</text>`,
+      )
+      .join("");
+  const source = (() => {
+    try {
+      return new URL(packet.sources[0]?.url || "").hostname
+        .replace(/^www\./, "")
+        .toUpperCase();
+    } catch {
+      return "REDAKSI STADIONE";
+    }
+  })();
   const images = [];
   for (let i = 0; i < packet.slides.length; i++) {
-    const s = packet.slides[i],
-      photoLed = i === 0 && s.layout !== "full_text",
-      title = await measuredText(
-        s.headline,
-        940,
-        photoLed ? 280 : 360,
-        photoLed ? 72 : 82,
-        true,
-      ),
-      body = await measuredText(
-        s.body,
-        940,
-        photoLed ? 250 : 390,
-        photoLed ? 34 : 42,
-      ),
-      label = await measuredText(
-        `STADIONE  •  ${packet.assignment.pillar.toUpperCase()}  •  ${i + 1}/${packet.slides.length}`,
-        940,
-        50,
-        20,
-        true,
-      ),
-      credit = photoLed
-        ? await measuredText(`Foto: ${packet.media.credit}`, 940, 55, 18)
-        : null;
-    const composites = photoLed
-      ? [
-          { input: photoOverlay },
-          { input: label.buffer, left: 64, top: 70 },
-          { input: title.buffer, left: 64, top: 755 },
-          { input: body.buffer, left: 64, top: 1040 },
-          ...(credit ? [{ input: credit.buffer, left: 64, top: 1260 }] : []),
-        ]
-      : [
-          { input: textBase },
-          { input: label.buffer, left: 64, top: 70 },
-          { input: title.buffer, left: 64, top: 410 },
-          { input: body.buffer, left: 64, top: 800 },
-        ];
-    const canvas = photoLed
-      ? sharp(photoBase)
-      : sharp({
-          create: {
-            width: 1080,
-            height: 1350,
-            channels: 3,
-            background: "#0a0909",
-          },
-        });
-    const bytes = await canvas
-      .composite(composites)
-      .jpeg({ quality: 92 })
-      .toBuffer();
+    const slide = packet.slides[i];
+    const headline = wrap(slide.headline, i === 0 ? 24 : 30);
+    const body = wrap(slide.body, 48);
+    if (headline.length > 4 || body.length > 32)
+      throw new Error(
+        `Slide ${i + 1}: artikel terlalu panjang untuk halaman koran.`,
+      );
+    const firstColumn = body.slice(0, 16);
+    const secondColumn = body.slice(16, 32);
+    const cover = i === 0;
+    const content = cover
+      ? `${textLines(headline, 64, 385, 76, 88, 900)}${textLines(body, 68, 385 + headline.length * 88 + 54, 32, 46, 500, "#302c27")}`
+      : `${textLines(headline, 64, 300, 58, 68, 900)}<line x1="64" y1="${330 + headline.length * 68}" x2="1016" y2="${330 + headline.length * 68}" stroke="#84102d" stroke-width="8"/>${textLines(firstColumn, 64, 430 + headline.length * 68, 28, 42, 500, "#302c27")}${textLines(secondColumn, 558, 430 + headline.length * 68, 28, 42, 500, "#302c27")}`;
+    const svg = Buffer.from(
+      `<svg width="1080" height="1350" xmlns="http://www.w3.org/2000/svg"><defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .18 0 0 0 0 .16 0 0 0 0 .13 0 0 0 .055 0"/></filter></defs><rect width="1080" height="1350" fill="#eee9dd"/><rect width="1080" height="1350" filter="url(#n)" opacity=".55"/><rect width="1080" height="18" fill="#84102d"/><text x="64" y="78" font-family="DejaVu Sans" font-size="27" font-weight="900" letter-spacing="7" fill="#191714">STADIONE</text><text x="1016" y="78" text-anchor="end" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#191714">EDISI DIGITAL • ${i + 1}/${packet.slides.length}</text><line x1="64" y1="105" x2="1016" y2="105" stroke="#191714" stroke-width="2"/><text x="64" y="148" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text><text x="1016" y="148" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text><line x1="64" y1="170" x2="1016" y2="170" stroke="#191714" stroke-width="2"/>${content}<line x1="64" y1="1282" x2="1016" y2="1282" stroke="#191714" stroke-width="2"/><text x="64" y="1320" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#84102d">BACA UTUH • SIMPAN • BAGIKAN</text><text x="1016" y="1320" text-anchor="end" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#191714">STADIONE.PRO</text></svg>`,
+    );
+    const bytes = await sharp(svg).jpeg({ quality: 94 }).toBuffer();
     images.push({
       bytes,
       audit: {
         width: 1080,
         height: 1350,
-        layout: photoLed ? "photo" : "full_text",
-        authentic_photo: photoLed,
-        title_height: title.height,
-        body_height: body.height,
-        repair_attempts: Math.max(title.attempts, body.attempts),
+        layout: "newspaper_text",
+        authentic_photo: false,
+        headline_lines: headline.length,
+        body_lines: body.length,
+        columns: cover ? 1 : secondColumn.length ? 2 : 1,
         ok: true,
       },
     });

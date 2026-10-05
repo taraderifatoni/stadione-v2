@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Newspaper article carousel implementation
+
+- Purpose: Execute the approved direction by converting website-style articles into text-only, nostalgic newspaper carousels.
+- Changes: Replaced the photo/poster carousel renderer with off-white newsprint pages, modern black typography, compact masthead/source/section hierarchy, thin editorial rules, restrained Stadione red accents, and automatic one/two-column article flow. The default editorial package now produces seven article sections instead of five short poster cards. Render audit records headline/body line counts and column count.
+- Affected components: Editorial package generator, carousel JPEG renderer, source label, pagination limits, and render audit.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, a seven-slide padel preview, and production health checks.
+- Rollback: Redeploy release `cd1e96a`.
+- Remaining work: Review the first padel newspaper preview with the owner before publication; no automatic Meta publish is authorized for that draft.
+
 ### 2026-10-05 — Newspaper carousel design direction
 
 - Purpose: Turn full website articles into nostalgic newspaper-style Instagram carousels instead of short poster headlines.
