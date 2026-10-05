@@ -16,6 +16,22 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Quality-gated editorial autopilot
+
+- Purpose: Remove manual candidate and preview approval so the editorial matrix runs automatically.
+- Changes:
+  - Automatic trend sync now persists the complete cached pool for the content engine.
+  - Packages that pass every source, claim, freshness, media-rights, render, and format gate receive `AUTO_EDITORIAL` approval and are scheduled two minutes later for the existing publisher.
+  - The worker no longer reports manual review as required.
+  - Published or scheduled items no longer show the preview-engine action seen on the old published Reel.
+- Affected components: Internal trend sync, content engine, generation worker response, CMS editor state, scheduler, and Instagram publisher.
+- Deployment: Pending commit and immutable deployment.
+- Verification: QA, TypeScript, targeted lint (zero errors), and production build passed.
+- Rollback: Redeploy release `ce0fdb7`.
+- Remaining work: Autopilot still blocks content when factual corroboration, accessible source footage, transcript, or documented reuse rights are missing. No OpenAI API key is configured, so the system does not invent source packets to force publication.
+
+
+
 ### 2026-10-05 — Viral candidate queue production deployment
 
 - Purpose: Record production activation of the owner-first candidate approval flow.

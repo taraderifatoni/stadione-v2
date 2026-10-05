@@ -1,7 +1,7 @@
 import "server-only"
 import { randomUUID, createHash } from "node:crypto"
 import { createAdminClient } from "@/lib/supabase/admin"
-import { ENGINE, auditPacket, packetDigest, type Packet, type Source } from "./engine"
+import { ENGINE, auditPacket, contentDigest, packetDigest, type Packet, type Source } from "./engine"
 import { sourceBytes, renderCarousel, renderReel } from "./engine-media"
 const digest=(text:string)=>createHash("sha256").update(text).digest("hex")
 const plain=(html:string)=>html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&nbsp;|&#160;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/\s+/g," ").trim()
@@ -59,9 +59,14 @@ export async function generateEnginePreview(id:string) {
       const clips=packet.media.video_sources || []; assets.push({...packet.slides[i],type:item.format==="REEL"?"video":"image",...(item.format==="REEL"?{video_url:url.publicUrl}:{url:url.publicUrl}),credit:item.format==="REEL"?clips.map(c=>c.credit).join(" · "):packet.media.credit,rights_status:"CLEARED",rights_evidence:item.format==="REEL"?clips.map(c=>c.rights_evidence).join(" · "):packet.media.rights_evidence,source_url:item.format==="REEL"?clips[0]?.page_url:packet.media.url,source_clips:item.format==="REEL"?clips.map(c=>({id:c.id,platform:c.platform,page_url:c.page_url,creator:c.creator,credit:c.credit,rights_status:c.rights_status,scope:c.scope})):undefined,render_audit:rendered[i].audit})
     }
     const caption=packet.claims.map(c=>c.text).join("\n\n")+`\n\n${packet.slides.at(-1)?.headline}\nSumber: ${packet.sources.map(s=>new URL(s.url).hostname).join(", ")}. Foto/video: ${packet.media.credit}.`
-    const {error:finishError}=await admin.from("stadione_content_items").update({title:packet.slides[0].headline,caption,assets,editorial_meta:{...baseMeta,engine_state:"READY_FOR_REVIEW",engine_issues:[],fact_check_status:"VERIFIED",rights_status:"CLEARED",rendered_packet_digest:packetDigest(packet),render_audit:{ok:true,format:item.format,assets:rendered.map(r=>r.audit)}}}).eq("id",id).eq("updated_at",savedTimestamp).select("id").single()
-    if(finishError)throw finishError
-    await checkpoint("EDITOR_REVIEW","COMPLETED",{assets:assets.length,review_required:true})
-    return {id,state:"READY_FOR_REVIEW",assets:assets.length,review_required:true}
+    const readyMeta={...baseMeta,engine_state:"READY_FOR_REVIEW",engine_issues:[],fact_check_status:"VERIFIED",rights_status:"CLEARED",rendered_packet_digest:packetDigest(packet),render_audit:{ok:true,format:item.format,assets:rendered.map(r=>r.audit)}}
+    const {data:ready,error:finishError}=await admin.from("stadione_content_items").update({title:packet.slides[0].headline,caption,assets,editorial_meta:readyMeta}).eq("id",id).eq("updated_at",savedTimestamp).select("*").single()
+    if(finishError||!ready)throw finishError || new Error("Preview gagal disimpan")
+    const approval={actor_id:"AUTO_EDITORIAL",approved_at:new Date().toISOString(),digest:contentDigest(ready)}
+    const publishAt=new Date(Date.now()+2*60000).toISOString()
+    const {error:scheduleError}=await admin.from("stadione_content_items").update({status:"SCHEDULED",scheduled_at:publishAt,editorial_meta:{...readyMeta,engine_approval:approval,approved_via:"AUTO_EDITORIAL",auto_publish:true}}).eq("id",id).eq("updated_at",ready.updated_at)
+    if(scheduleError)throw scheduleError
+    await checkpoint("AUTO_SCHEDULED","COMPLETED",{assets:assets.length,review_required:false,publish_at:publishAt})
+    return {id,state:"AUTO_SCHEDULED",assets:assets.length,review_required:false,publish_at:publishAt}
   } catch(error) {const message=error instanceof Error?error.message:"Engine gagal";await checkpoint("RECOVERY","FAILED",{issues:[message]});await admin.from("stadione_content_items").update({editorial_meta:{...meta,standard:ENGINE,engine_state:"FAILED",engine_issues:[message],engine_approval:null}}).eq("id",id).eq("updated_at",savedTimestamp);return {id,state:"FAILED",issues:[message]}}
 }

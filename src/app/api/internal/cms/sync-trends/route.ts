@@ -2,6 +2,7 @@ import { timingSafeEqual } from "node:crypto"
 import { NextRequest, NextResponse } from "next/server"
 
 import { getDailySportsPool, getSearchUsage } from "@/lib/cms/serpapi"
+import { createAdminClient } from "@/lib/supabase/admin"
 
 export const runtime = "nodejs"
 export const maxDuration = 180
@@ -16,6 +17,8 @@ export async function POST(request: NextRequest) {
   try {
     const pool = await getDailySportsPool()
     const usage = await getSearchUsage()
+    const admin = createAdminClient()
+    await admin.from("stadione_editorial_runs").insert({ run_date: pool.date, status: "COMPLETED", pool, completed_at: new Date().toISOString() })
     return NextResponse.json({
       synced_at: new Date().toISOString(),
       date: pool.date,

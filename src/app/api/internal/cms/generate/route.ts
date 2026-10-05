@@ -21,5 +21,5 @@ export async function POST(request:NextRequest) {
  }
  const results=[]
  for(const id of ids) {try {results.push(await generateEnginePreview(id))}catch(error){results.push({id,state:"FAILED",error:error instanceof Error?error.message:"Engine failed"})}}
- return NextResponse.json({checked_at:new Date().toISOString(),review_required:true,results})
+ return NextResponse.json({checked_at:new Date().toISOString(),review_required:false,results})
 }
