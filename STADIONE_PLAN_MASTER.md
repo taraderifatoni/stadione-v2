@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Newspaper chrome simplification
+
+- Purpose: Remove unnecessary interface-like labels from the newspaper artwork and leave more visual breathing room for the article itself.
+- Changes: Removed `EDISI DIGITAL`, the footer rule, `BACA UTUH • SIMPAN • BAGIKAN`, and `STADIONE.PRO` from every carousel page. The upper-right label now contains only the page counter (for example `1/7`), and the body-safe area extends farther downward without adding a footer.
+- Affected components: Newspaper carousel renderer and padel owner-preview assets.
+- Deployment: Pending commit, production build, draft regeneration, and live verification.
+- Verification: Pending TypeScript, lint, build, and visual review.
+- Rollback: Redeploy release `83b3a74`.
+- Remaining work: Owner review is required before publication.
+
 ### 2026-10-05 — Pixel-safe newspaper wrapping and photo cover correction
 
 - Purpose: Correct the missing photographic cover and prevent newspaper headlines/body copy from clipping at the right edge.
