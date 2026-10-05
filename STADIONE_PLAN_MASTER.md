@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Pixel-safe newspaper wrapping and photo cover correction
+
+- Purpose: Correct the missing photographic cover and prevent newspaper headlines/body copy from clipping at the right edge.
+- Changes: Newspaper text now uses Sharp/Pango pixel measurement rather than character-count estimates, constrains every headline and paragraph to a 940 px safe column, wraps overflow downward automatically, and reduces font size only within defined readability limits. The padel cover is rebuilt from the authentic athletes with an AI-assisted newspaper collage background while typography remains deterministic and code-rendered.
+- Affected components: Shared text measurement, newspaper carousel renderer, padel owner-preview assets, and render audit.
+- Deployment: Pending commit, production build, regenerated padel preview, and live verification.
+- Verification: Pending TypeScript, lint, build, visual edge checks, and production health checks.
+- Rollback: Redeploy release `2347889`.
+- Remaining work: Owner review is required before any Meta publication.
+
 ### 2026-10-05 — Newspaper article carousel implementation
 
 - Purpose: Execute the approved direction by converting website-style articles into text-only, nostalgic newspaper carousels.

@@ -76,12 +76,13 @@ export async function measuredText(
   maxHeight: number,
   initialSize: number,
   bold = false,
+  color = "#F5F0E8",
 ) {
   for (let attempt = 0; attempt < 5; attempt++) {
     const size = initialSize - attempt * 4;
     const out = await sharp({
       text: {
-        text: `<span foreground="#F5F0E8">${esc(text)}</span>`,
+        text: `<span foreground="${color}">${esc(text)}</span>`,
         font: `DejaVu Sans ${bold ? "Bold " : ""}${size}`,
         width,
         rgba: true,
@@ -103,33 +104,6 @@ export async function measuredText(
   throw new Error("Teks melampaui ruang setelah 5 penyesuaian ukuran.");
 }
 export async function renderCarousel(packet: Packet) {
-  const wrap = (value: string, limit: number) => {
-    const lines: string[] = [];
-    let line = "";
-    for (const word of value.replace(/\s+/g, " ").trim().split(" ")) {
-      if (`${line} ${word}`.trim().length > limit && line) {
-        lines.push(line);
-        line = word;
-      } else line = `${line} ${word}`.trim();
-    }
-    if (line) lines.push(line);
-    return lines;
-  };
-  const textLines = (
-    lines: string[],
-    x: number,
-    y: number,
-    size: number,
-    step: number,
-    weight = 500,
-    color = "#191714",
-  ) =>
-    lines
-      .map(
-        (line, index) =>
-          `<text x="${x}" y="${y + index * step}" font-family="DejaVu Sans" font-size="${size}" font-weight="${weight}" fill="${color}">${esc(line)}</text>`,
-      )
-      .join("");
   const source = (() => {
     try {
       return new URL(packet.sources[0]?.url || "").hostname
@@ -142,22 +116,36 @@ export async function renderCarousel(packet: Packet) {
   const images = [];
   for (let i = 0; i < packet.slides.length; i++) {
     const slide = packet.slides[i];
-    const headline = wrap(slide.headline, i === 0 ? 24 : 30);
-    const body = wrap(slide.body, 48);
-    if (headline.length > 4 || body.length > 32)
-      throw new Error(
-        `Slide ${i + 1}: artikel terlalu panjang untuk halaman koran.`,
-      );
-    const firstColumn = body.slice(0, 16);
-    const secondColumn = body.slice(16, 32);
     const cover = i === 0;
-    const content = cover
-      ? `${textLines(headline, 64, 385, 76, 88, 900)}${textLines(body, 68, 385 + headline.length * 88 + 54, 32, 46, 500, "#302c27")}`
-      : `${textLines(headline, 64, 300, 58, 68, 900)}<line x1="64" y1="${330 + headline.length * 68}" x2="1016" y2="${330 + headline.length * 68}" stroke="#84102d" stroke-width="8"/>${textLines(firstColumn, 64, 430 + headline.length * 68, 28, 42, 500, "#302c27")}${textLines(secondColumn, 558, 430 + headline.length * 68, 28, 42, 500, "#302c27")}`;
-    const svg = Buffer.from(
-      `<svg width="1080" height="1350" xmlns="http://www.w3.org/2000/svg"><defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .18 0 0 0 0 .16 0 0 0 0 .13 0 0 0 .055 0"/></filter></defs><rect width="1080" height="1350" fill="#eee9dd"/><rect width="1080" height="1350" filter="url(#n)" opacity=".55"/><rect width="1080" height="18" fill="#84102d"/><text x="64" y="78" font-family="DejaVu Sans" font-size="27" font-weight="900" letter-spacing="7" fill="#191714">STADIONE</text><text x="1016" y="78" text-anchor="end" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#191714">EDISI DIGITAL • ${i + 1}/${packet.slides.length}</text><line x1="64" y1="105" x2="1016" y2="105" stroke="#191714" stroke-width="2"/><text x="64" y="148" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text><text x="1016" y="148" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text><line x1="64" y1="170" x2="1016" y2="170" stroke="#191714" stroke-width="2"/>${content}<line x1="64" y1="1282" x2="1016" y2="1282" stroke="#191714" stroke-width="2"/><text x="64" y="1320" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#84102d">BACA UTUH • SIMPAN • BAGIKAN</text><text x="1016" y="1320" text-anchor="end" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#191714">STADIONE.PRO</text></svg>`,
+    const headline = await measuredText(
+      slide.headline,
+      940,
+      cover ? 330 : 280,
+      cover ? 76 : 58,
+      true,
+      "#191714",
     );
-    const bytes = await sharp(svg).jpeg({ quality: 94 }).toBuffer();
+    const titleTop = cover ? 290 : 250,
+      ruleTop = titleTop + headline.height + 34,
+      bodyTop = ruleTop + 58;
+    const body = await measuredText(
+      slide.body,
+      940,
+      1215 - bodyTop,
+      cover ? 34 : 31,
+      false,
+      "#302c27",
+    );
+    const base = Buffer.from(
+      `<svg width="1080" height="1350" xmlns="http://www.w3.org/2000/svg"><defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .18 0 0 0 0 .16 0 0 0 0 .13 0 0 0 .055 0"/></filter></defs><rect width="1080" height="1350" fill="#eee9dd"/><rect width="1080" height="1350" filter="url(#n)" opacity=".55"/><rect width="1080" height="18" fill="#84102d"/><text x="64" y="78" font-family="DejaVu Sans" font-size="27" font-weight="900" letter-spacing="7" fill="#191714">STADIONE</text><text x="1016" y="78" text-anchor="end" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#191714">EDISI DIGITAL • ${i + 1}/${packet.slides.length}</text><line x1="64" y1="105" x2="1016" y2="105" stroke="#191714" stroke-width="2"/><text x="64" y="148" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text><text x="1016" y="148" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text><line x1="64" y1="170" x2="1016" y2="170" stroke="#191714" stroke-width="2"/><line x1="64" y1="${ruleTop}" x2="1016" y2="${ruleTop}" stroke="#84102d" stroke-width="8"/><line x1="64" y1="1282" x2="1016" y2="1282" stroke="#191714" stroke-width="2"/><text x="64" y="1320" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#84102d">BACA UTUH • SIMPAN • BAGIKAN</text><text x="1016" y="1320" text-anchor="end" font-family="DejaVu Sans" font-size="17" font-weight="700" fill="#191714">STADIONE.PRO</text></svg>`,
+    );
+    const bytes = await sharp(base)
+      .composite([
+        { input: headline.buffer, left: 64, top: titleTop },
+        { input: body.buffer, left: 64, top: bodyTop },
+      ])
+      .jpeg({ quality: 94 })
+      .toBuffer();
     images.push({
       bytes,
       audit: {
@@ -165,9 +153,11 @@ export async function renderCarousel(packet: Packet) {
         height: 1350,
         layout: "newspaper_text",
         authentic_photo: false,
-        headline_lines: headline.length,
-        body_lines: body.length,
-        columns: cover ? 1 : secondColumn.length ? 2 : 1,
+        headline_height: headline.height,
+        body_height: body.height,
+        headline_font_size: headline.font_size,
+        body_font_size: body.font_size,
+        columns: 1,
         ok: true,
       },
     });
