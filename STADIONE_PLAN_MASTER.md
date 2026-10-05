@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Authentic-photo carousel rhythm
+
+- Purpose: Replace repetitive photo backgrounds and synthetic athlete likenesses with a stronger sports-editorial image/text rhythm.
+- Changes: Carousel drafts now mark odd-numbered slides as photo-led and even-numbered slides as full-text. When only one authentic source photo exists, it is used on the cover only and every following slide is full-text; when multiple authentic photos exist, they alternate across odd slides. Athlete faces must come from authentic supplied/source assets and remain subject to the existing rights gate. The CMS preview now visibly distinguishes photo-led and full-text slides.
+- Affected components: Editorial candidate model, trend-to-carousel mapping, carousel metadata, and CMS slide preview.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, and production health checks.
+- Rollback: Redeploy release `4e98183`.
+- Remaining work: Add multiple licensed photos to a candidate to exercise the alternating-photo path; a single portal thumbnail intentionally produces a cover-photo/text-only carousel.
+
 ### 2026-10-05 — Live five-slide carousel test
 
 - Purpose: Validate the complete article-to-carousel workflow against the connected Instagram account.

@@ -198,6 +198,20 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ decision, rejected: true });
 
     const pack = buildEditorialPackage(candidate);
+    const candidateImages = Array.from(
+      new Set(
+        [candidate.imageUrl, ...(candidate.imageUrls || [])].filter(
+          (url): url is string =>
+            typeof url === "string" && /^https:\/\//.test(url),
+        ),
+      ),
+    );
+    const carouselImage = (index: number) => {
+      if (index % 2 !== 0 || candidateImages.length === 0) return null;
+      if (candidateImages.length === 1)
+        return index === 0 ? candidateImages[0] : null;
+      return candidateImages[(index / 2) % candidateImages.length];
+    };
     const approvedFormats =
       decision === "BOTH"
         ? ["CAROUSEL", "REEL"]
@@ -256,17 +270,21 @@ export async function POST(request: NextRequest) {
       source_snapshot: candidate,
       assets:
         format === "CAROUSEL"
-          ? pack.social.slides.map((slide) => ({
-              ...slide,
-              ...(candidate.imageUrl
-                ? {
-                    image_url: candidate.imageUrl,
-                    source_url: candidate.sourceUrl || null,
-                    source_name: candidate.source || null,
-                    rights_status: "PENDING",
-                  }
-                : {}),
-            }))
+          ? pack.social.slides.map((slide, index) => {
+              const imageUrl = carouselImage(index);
+              return {
+                ...slide,
+                layout: imageUrl ? "photo" : "full_text",
+                ...(imageUrl
+                  ? {
+                      image_url: imageUrl,
+                      source_url: candidate.sourceUrl || null,
+                      source_name: candidate.source || null,
+                      rights_status: "PENDING",
+                    }
+                  : {}),
+              };
+            })
           : [],
       editorial_meta: {
         origin: "TREND_MANUAL",
@@ -277,6 +295,11 @@ export async function POST(request: NextRequest) {
         trend_approved_at: new Date().toISOString(),
         fact_check_status: "UNVERIFIED",
         rights_status: "PENDING",
+        carousel_layout:
+          candidateImages.length > 1
+            ? "ALTERNATING_PHOTO_TEXT"
+            : "COVER_PHOTO_TEXT",
+        authentic_faces_only: true,
         engine_state: "AWAITING_SOURCE_PACKET",
       },
       created_by: auth.actor.id,

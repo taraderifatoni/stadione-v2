@@ -170,6 +170,7 @@ export type EditorialCandidate = {
   source?: string | null;
   sourceUrl?: string | null;
   imageUrl?: string | null;
+  imageUrls?: string[] | null;
   publishedAt?: string | null;
   engine?: string | null;
   metrics?: Record<string, number | string | null>;
@@ -230,6 +231,7 @@ export function buildEditorialPackage(candidate: EditorialCandidate) {
       slides: [
         {
           role: "cover",
+          layout: "photo",
           eyebrow: "STADIONE UPDATE",
           headline: title,
           body: "Geser untuk ringkasan",
@@ -238,6 +240,7 @@ export function buildEditorialPackage(candidate: EditorialCandidate) {
         },
         {
           role: "summary",
+          layout: "full_text",
           eyebrow: "APA YANG TERJADI?",
           headline: "Ringkasan",
           body: summary,
@@ -246,6 +249,7 @@ export function buildEditorialPackage(candidate: EditorialCandidate) {
         },
         {
           role: "context",
+          layout: "photo",
           eyebrow: "KONTEKS",
           headline: "Mengapa penting?",
           body: context,
@@ -254,6 +258,7 @@ export function buildEditorialPackage(candidate: EditorialCandidate) {
         },
         {
           role: "watch",
+          layout: "full_text",
           eyebrow: "BERIKUTNYA",
           headline: "Yang perlu ditunggu",
           body: "Keterangan resmi dan perkembangan terbaru akan menentukan gambaran lengkapnya.",
@@ -262,6 +267,7 @@ export function buildEditorialPackage(candidate: EditorialCandidate) {
         },
         {
           role: "engagement",
+          layout: "photo",
           eyebrow: "DISKUSI",
           headline: "Bagaimana menurutmu?",
           body: "Tulis pendapatmu di kolom komentar dan ikuti pembaruan olahraga lainnya di Stadione.",

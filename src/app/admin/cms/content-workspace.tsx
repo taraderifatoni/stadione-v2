@@ -47,6 +47,7 @@ type Asset = {
   headline?: string;
   body?: string;
   tone?: string;
+  layout?: "photo" | "full_text";
   image_url?: string | null;
   url?: string | null;
 };
@@ -91,6 +92,7 @@ type Candidate = {
   source?: string | null;
   sourceUrl?: string | null;
   imageUrl?: string | null;
+  imageUrls?: string[] | null;
   publishedAt?: string | null;
   engine?: string | null;
   metrics?: Record<string, number | string | null>;
@@ -2252,6 +2254,7 @@ function EditorModal({
 }
 
 function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
+  const fullText = asset.layout === "full_text" || !asset.image_url;
   const colors =
     asset.tone === "burgundy"
       ? "bg-[#84102D] text-white"
@@ -2262,19 +2265,23 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
     <div
       className={`relative aspect-square w-52 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] p-4 ${colors}`}
     >
-      {asset.image_url && (
+      {!fullText && asset.image_url && (
         <img
           src={asset.image_url}
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-35"
         />
       )}
-      <div className="relative flex h-full flex-col justify-between">
+      <div
+        className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
+      >
         <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
           {asset.eyebrow || `Slide ${index + 1}`}
         </div>
-        <div>
-          <div className="text-lg font-bold leading-tight">
+        <div className={fullText ? "my-auto" : ""}>
+          <div
+            className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
+          >
             {asset.headline}
           </div>
           <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
