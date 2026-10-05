@@ -367,3 +367,11 @@ This document is the shared operational history for Stadione. Every code, config
 - Cover memakai foto pertandingan autentik dengan olah latar editorial berbantuan AI; identitas pemain dipertahankan.
 - Carousel tidak memakai label `EDISI DIGITAL` maupun footer promosi. Semua teks memakai safe wrapping dan sumber singkat hanya pada cover.
 - Event key idempoten: `fifa-asean-cup-2026-final-indonesia-thailand-2026-10-05` untuk mencegah duplikasi artikel maupun posting sosial.
+
+### 2026-10-05 — Reels Timnas: Garuda Juara Asia Tenggara
+
+- Reels vertikal 9:16 berdurasi 44 detik dibuat dari video autentik unggahan @ibachdim; tidak menggunakan video generatif AI.
+- Materi disunting menjadi format Stadione dengan judul, skor 2–2 setelah 120 menit, hasil adu penalti 4–2, serta zona teks aman.
+- Fakta pertandingan dan pencetak gol diverifikasi terhadap laporan resmi FIFA.
+- Sumber video dan sumber fakta dicatat di caption serta metadata CMS.
+- Publikasi memakai event key idempoten `fifa-asean-cup-2026-final-indonesia-thailand-reel-2026-10-05` untuk mencegah Reels duplikat.
