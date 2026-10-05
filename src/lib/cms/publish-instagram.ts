@@ -1,4 +1,5 @@
 import "server-only"
+import { enginePublicationIssues } from "./engine"
 import { NextResponse } from "next/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { containerStatus, createCarousel, createImage, createReel, metaConfigured, publicMediaUrl, publishContainer } from "@/lib/cms/meta"
@@ -28,6 +29,8 @@ export async function publishInstagramContent(id: string, actorId: string | null
   if (editorial.fact_check_status !== "VERIFIED" || editorial.rights_status !== "CLEARED" || !item.source_url) {
     return NextResponse.json({ error: "Verifikasi fakta, sumber primer, dan hak pakai aset harus diselesaikan dan disimpan sebelum publikasi." }, { status: 409 })
   }
+  const engineIssues = enginePublicationIssues(item)
+  if (engineIssues.length) return NextResponse.json({error:engineIssues.join(" "),issues:engineIssues},{status:409})
   if (!["DRAFT", "PENDING_REVIEW", "SCHEDULED"].includes(item.status)) return NextResponse.json({ error: "Status konten tidak dapat diterbitkan." }, { status: 409 })
   const assets = Array.isArray(item.assets) ? item.assets : []
   let urls: string[]

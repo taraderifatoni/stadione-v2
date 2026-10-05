@@ -1,0 +1,9 @@
+[Unit]
+Description=Generate Stadione 08/13/20 WIB previews with bounded slot recovery
+[Timer]
+OnCalendar=*-*-* 07,12,19:15,40:00 Asia/Jakarta
+OnCalendar=*-*-* 08,13,20:05:00 Asia/Jakarta
+Persistent=true
+Unit=stadione-content-engine.service
+[Install]
+WantedBy=timers.target

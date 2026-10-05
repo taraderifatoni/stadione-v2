@@ -1,0 +1,10 @@
+[Unit]
+Description=Stadione Sports Desk preview and missed-slot recovery
+After=network-online.target stadione.service
+Wants=network-online.target
+[Service]
+Type=oneshot
+EnvironmentFile=/opt/stadione/.env.production
+ExecStart=/usr/bin/python3 /opt/stadione-current/scripts/cms-generate.py
+TimeoutStartSec=950
+User=root

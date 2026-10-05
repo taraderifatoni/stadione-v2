@@ -6,6 +6,8 @@ import { buildEditorialPackage, slugifyCms, type EditorialCandidate } from "@/li
 import { getSearchUsage } from "@/lib/cms/serpapi"
 import { metaConfigured, metaConnectionStatus, publicMediaUrl } from "@/lib/cms/meta"
 
+import { ENGINE, contentDigest, enginePublicationIssues } from "@/lib/cms/engine"
+
 const editableFields = ["title", "excerpt", "body", "caption", "category", "source_url", "source_name", "external_url"] as const
 
 async function uniqueSlug(base: string) {
@@ -65,7 +67,7 @@ export async function POST(request: NextRequest) {
       platforms: kind === "SOCIAL" ? [String(input.platform || "INSTAGRAM")] : ["WEBSITE"],
       created_by: auth.actor.id,
       category: slot ? String(slot.pillar || "") : null,
-      editorial_meta: { origin: slot ? "WEEKLY_MATRIX" : "MANUAL", standard: "STADIONE_SPORTS_DESK_V1", slot: slot || null, fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
+      editorial_meta: { origin: slot ? "WEEKLY_MATRIX" : "MANUAL", standard: kind === "SOCIAL" ? ENGINE : "STADIONE_SPORTS_DESK_V1", slot: slot || null, fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
     }).select("*").single()
     if (error) return NextResponse.json({ error: error.message }, { status: 500 })
     await logActivity(data.id, "create", auth.actor.id, null, "DRAFT")
@@ -115,7 +117,7 @@ export async function POST(request: NextRequest) {
       source_name: candidate.source || null,
       source_snapshot: candidate,
       assets,
-      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: "STADIONE_SPORTS_DESK_V1", fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
+      editorial_meta: { origin: "ARTICLE_PACKAGE", standard: ENGINE, fact_check_status: "UNVERIFIED", rights_status: "PENDING" },
       created_by: auth.actor.id,
     }))
     const { data: socials, error: socialError } = await admin.from("stadione_content_items").insert(socialRows).select("*")
@@ -159,6 +161,26 @@ export async function PATCH(request: NextRequest) {
     const { data: attempt } = await admin.from("stadione_ig_publish_attempts").select("state").eq("content_id", id).maybeSingle()
     if (attempt && ["PREPARING", "PUBLISHING", "PUBLISHED", "UNCERTAIN", "PROCESSING", "READY"].includes(attempt.state)) return NextResponse.json({ error: "Publikasi sedang diproses atau telah dikirim. Konten tidak dapat diubah; lanjutkan atau periksa status Meta." }, { status: 409 })
     resetFailedAttempt = attempt?.state === "FAILED"
+  }
+  const mergedMeta = { ...oldMeta, ...(update.editorial_meta as Record<string, unknown> || {}) }
+  if (oldMeta.standard === ENGINE) {
+    mergedMeta.standard = ENGINE
+    // Client cannot manufacture render or approval records.
+    for (const field of ["engine_approval","render_audit","rendered_packet_digest","engine_state"]) mergedMeta[field] = oldMeta[field]
+    if (action !== "approve" && contentDigest({ ...current, ...update, editorial_meta:mergedMeta }) !== contentDigest(current)) mergedMeta.engine_approval = null
+    update.editorial_meta = mergedMeta
+  }
+  const proposed = { ...current, ...update, editorial_meta:mergedMeta }
+  if (action === "approve") {
+    if (oldMeta.standard !== ENGINE) return NextResponse.json({error:"Buat preview engine terlebih dahulu."},{status:409})
+    const issues=enginePublicationIssues(proposed,false)
+    if(issues.length) return NextResponse.json({error:issues.join(" "),issues},{status:409})
+    mergedMeta.engine_approval={actor_id:auth.actor.id,approved_at:new Date().toISOString(),digest:contentDigest(proposed)}
+    update.editorial_meta=mergedMeta
+  }
+  if (["schedule","publish"].includes(action)) {
+    const issues=enginePublicationIssues(proposed)
+    if(issues.length)return NextResponse.json({error:issues.join(" "),issues},{status:409})
   }
   let nextStatus = current.status
   if (action === "review") nextStatus = "PENDING_REVIEW"
