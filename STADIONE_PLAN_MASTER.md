@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Execute the approved direction by converting website-style articles into text-only, nostalgic newspaper carousels.
 - Changes: Replaced the photo/poster carousel renderer with off-white newsprint pages, modern black typography, compact masthead/source/section hierarchy, thin editorial rules, restrained Stadione red accents, and automatic one/two-column article flow. The default editorial package now produces seven article sections instead of five short poster cards. Render audit records headline/body line counts and column count.
 - Affected components: Editorial package generator, carousel JPEG renderer, source label, pagination limits, and render audit.
-- Deployment: Pending commit, production build, immutable release, and live verification.
-- Verification: Pending TypeScript, lint, build, a seven-slide padel preview, and production health checks.
+- Deployment: Commit `2347889` was pushed and activated as immutable release `/opt/stadione-releases/2347889` through TD Connector. Newspaper padel preview `be98acb9-2f33-4d43-9fba-674116b4cdbf` was created with seven JPEG pages and remains `DRAFT` without a Meta publish attempt.
+- Verification: TypeScript and targeted lint passed with zero errors; the production build compiled successfully and generated all 50 pages. The seven-page draft stores complete article copy and URL-backed 4:5 assets. The public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and both the application service and editorial-plan timer are active.
 - Rollback: Redeploy release `cd1e96a`.
 - Remaining work: Review the first padel newspaper preview with the owner before publication; no automatic Meta publish is authorized for that draft.
 
