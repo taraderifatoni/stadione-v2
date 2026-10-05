@@ -16,6 +16,16 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Rendered carousel preview fix
+
+- Purpose: Make generated carousel JPEGs visible inside the CMS editor instead of showing blank structural cards.
+- Changes: The slide preview now reads rendered assets from `asset.url`, retains `asset.image_url` for unrendered source-photo structures, displays completed JPEGs without duplicate text overlays, and uses the correct 4:5 Instagram aspect ratio. The padel preview assets were also repaired to retain their headline/body metadata.
+- Affected components: CMS carousel preview and draft `ee2813e7-545c-4d5d-b897-024469b4caa8`.
+- Deployment: Pending commit, production build, immutable release, and live verification.
+- Verification: Pending TypeScript, lint, build, draft-data verification, and production health checks.
+- Rollback: Redeploy release `ab96f85`.
+- Remaining work: Refresh the open editor after deployment to reload the repaired asset payload.
+
 ### 2026-10-05 — Padel carousel owner preview
 
 - Purpose: Let the owner review the new photojournalistic carousel format before any Instagram publication request.

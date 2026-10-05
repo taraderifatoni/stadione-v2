@@ -2254,7 +2254,9 @@ function EditorModal({
 }
 
 function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
-  const fullText = asset.layout === "full_text" || !asset.image_url;
+  const renderedUrl = asset.url || null;
+  const sourceImageUrl = asset.image_url || null;
+  const fullText = asset.layout === "full_text" || !sourceImageUrl;
   const colors =
     asset.tone === "burgundy"
       ? "bg-[#84102D] text-white"
@@ -2263,35 +2265,46 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
         : "bg-[#0D0D0D] text-[#F5F0E8]";
   return (
     <div
-      className={`relative aspect-square w-52 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] p-4 ${colors}`}
+      className={`relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] ${renderedUrl ? "" : "p-4"} ${colors}`}
     >
-      {!fullText && asset.image_url && (
+      {renderedUrl ? (
         <img
-          src={asset.image_url}
-          alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
+          src={renderedUrl}
+          alt={`Preview slide ${index + 1}`}
+          className="h-full w-full object-cover"
         />
+      ) : (
+        !fullText &&
+        sourceImageUrl && (
+          <img
+            src={sourceImageUrl}
+            alt=""
+            className="absolute inset-0 h-full w-full object-cover opacity-35"
+          />
+        )
       )}
-      <div
-        className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
-      >
-        <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
-          {asset.eyebrow || `Slide ${index + 1}`}
-        </div>
-        <div className={fullText ? "my-auto" : ""}>
-          <div
-            className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
-          >
-            {asset.headline}
+      {!renderedUrl && (
+        <div
+          className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
+        >
+          <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
+            {asset.eyebrow || `Slide ${index + 1}`}
           </div>
-          <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
-            {asset.body}
+          <div className={fullText ? "my-auto" : ""}>
+            <div
+              className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
+            >
+              {asset.headline}
+            </div>
+            <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
+              {asset.body}
+            </div>
+          </div>
+          <div className="text-[8px] font-bold uppercase tracking-[.15em]">
+            STADIONE
           </div>
         </div>
-        <div className="text-[8px] font-bold uppercase tracking-[.15em]">
-          STADIONE
-        </div>
-      </div>
+      )}
     </div>
   );
 }
