@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Make generated carousel JPEGs visible inside the CMS editor instead of showing blank structural cards.
 - Changes: The slide preview now reads rendered assets from `asset.url`, retains `asset.image_url` for unrendered source-photo structures, displays completed JPEGs without duplicate text overlays, and uses the correct 4:5 Instagram aspect ratio. The padel preview assets were also repaired to retain their headline/body metadata.
 - Affected components: CMS carousel preview and draft `ee2813e7-545c-4d5d-b897-024469b4caa8`.
-- Deployment: Pending commit, production build, immutable release, and live verification.
-- Verification: Pending TypeScript, lint, build, draft-data verification, and production health checks.
+- Deployment: Commit `c0b5703` was pushed and activated as immutable release `/opt/stadione-releases/c0b5703` through TD Connector.
+- Verification: TypeScript and targeted lint passed with zero errors (four existing `<img>` warnings); the production build compiled successfully and generated all 50 pages. Draft verification confirmed five URL-backed assets with complete headline/body metadata. The public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, and both the application service and editorial-plan timer are active.
 - Rollback: Redeploy release `ab96f85`.
 - Remaining work: Refresh the open editor after deployment to reload the repaired asset payload.
 
