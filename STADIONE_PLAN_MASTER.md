@@ -25,10 +25,10 @@ This document is the shared operational history for Stadione. Every code, config
   - The worker no longer reports manual review as required.
   - Published or scheduled items no longer show the preview-engine action seen on the old published Reel.
 - Affected components: Internal trend sync, content engine, generation worker response, CMS editor state, scheduler, and Instagram publisher.
-- Deployment: Pending commit and immutable deployment.
-- Verification: QA, TypeScript, targeted lint (zero errors), and production build passed.
+- Deployment: Commit `65b8c9c` was pushed and activated as immutable release `/opt/stadione-releases/65b8c9c` through TD Connector. `stadione.service`, `stadione-content-engine.timer`, and `stadione-trend-sync.timer` are active.
+- Verification: QA, TypeScript, targeted lint (zero errors), and production build passed. The live trend-sync rerun completed successfully at 09:00 WIB and persisted a cached pool containing 12 Google Trends items, 15 Google News items, and 10 Bing video references; SerpAPI usage was 5/100. The public site returned HTTP 200 and the admin CMS returned the expected HTTP 307 authentication redirect. The first deployment-time sync attempt briefly hit connection refused while the app was restarting; the post-start rerun succeeded without source or database errors.
 - Rollback: Redeploy release `ce0fdb7`.
-- Remaining work: Autopilot still blocks content when factual corroboration, accessible source footage, transcript, or documented reuse rights are missing. No OpenAI API key is configured, so the system does not invent source packets to force publication.
+- Remaining work: Autopilot still blocks content when factual corroboration, accessible source footage, transcript, or documented reuse rights are missing. No OpenAI API key is configured, so the system does not invent source packets to force publication. The already-processed current slot was not republished; the next eligible editorial slot will be handled automatically.
 
 
 
