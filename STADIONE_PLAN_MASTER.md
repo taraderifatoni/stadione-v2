@@ -16,6 +16,15 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Indonesia–Thailand final editorial override
+
+- Purpose: Temporarily override the normal plan around the Indonesia vs Thailand final without changing the long-term weekly matrix.
+- Schedule (Asia/Jakarta): From 23:00 on 5 October 2026, check hourly for up to four runs and publish the verified final result only after an official result is available; remain silent and avoid duplicates otherwise. On 6 October, run a flexible 08:00 Man of the Match feature, then resume normal editorial posts at approximately 13:00 and 19:00.
+- Content rules: Use SerpAPI plus a primary/official source, verify final score and match events, and use the approved modern-newspaper carousel format: authentic-player cover, article-depth pages, short source label, pixel-safe wrapping, page counter only, no `EDISI DIGITAL`, and no promotional footer.
+- Connectivity check: Instagram `@stadione.id` and the cached trend pool were read successfully before the four cloud automations were created.
+- Deployment: Four enabled one-time/limited cloud automations; no application release required.
+- Remaining work: Observe outcomes after each run, prevent duplicates, and let the standard editorial plan continue after the 19:00 slot on 6 October 2026.
+
 ### 2026-10-05 — Newspaper chrome simplification
 
 - Purpose: Remove unnecessary interface-like labels from the newspaper artwork and leave more visual breathing room for the article itself.
