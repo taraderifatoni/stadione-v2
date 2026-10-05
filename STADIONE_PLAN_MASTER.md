@@ -16,6 +16,13 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Padel carousel owner preview
+
+- Purpose: Let the owner review the new photojournalistic carousel format before any Instagram publication request.
+- Changes: Created draft carousel `ee2813e7-545c-4d5d-b897-024469b4caa8` about Fadona Kusumawati/Fitriani Sabatini's Asian Games 2026 padel silver medal. Slide 1 uses the authentic official-event photograph with Stadione grading and editorial overlays; slides 2–5 are full-text cards. The paired caption and five JPEG assets are stored in CMS.
+- Publication state: `DRAFT`; no Meta container or publish request was created. Owner approval is explicitly required before publishing this preview.
+- Remaining work: Collect owner feedback, revise if requested, and only publish after explicit approval.
+
 ### 2026-10-05 — Photojournalistic carousel renderer
 
 - Purpose: Match the approved sports-editorial benchmark: authentic photography edited into a branded cover, followed by strong full-text storytelling cards.
