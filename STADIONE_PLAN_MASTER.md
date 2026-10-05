@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Reduce editor clutter, support safe bulk cleanup, and make suggested carousel drafts visually useful immediately.
 - Changes: Added row selection, select-all, bulk archive, and permanent delete for non-scheduled/non-published content. Consolidated editor commands into one `Aksi` dropdown containing save, review, schedule/publish, archive, and delete. Suggested carousel drafts now attach the candidate portal thumbnail to their slide previews with source attribution and `PENDING` rights; publication remains blocked until rights are explicitly cleared.
 - Affected components: CMS pipeline/editor UI, CMS content API, trend-to-carousel draft creation, and activity workflow.
-- Deployment: Pending commit, production build, immutable release, and live verification.
-- Verification: Pending TypeScript, lint, build, delete guard, portal-thumbnail draft, and production health checks.
+- Deployment: Commit `373ceb5` was pushed and activated as immutable release `/opt/stadione-releases/373ceb5` through TD Connector.
+- Verification: TypeScript and targeted lint passed with zero errors (three existing `<img>` warnings); the production build compiled successfully and generated all 50 pages. The protected delete endpoint returns the expected HTTP 401 without a session, the public site returns HTTP 200, the admin route returns its expected HTTP 307 login redirect, the app service is active, and `stadione-editorial-plan.timer` remains enabled with its next run scheduled.
 - Rollback: Redeploy release `263cbdb`.
 - Remaining work: Existing drafts keep their current assets; newly created suggested carousels receive portal thumbnails automatically when SerpAPI provides one.
 
