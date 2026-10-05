@@ -1,14 +1,18 @@
 import Link from "next/link"
 import { TopBar } from "@/components/shared/TopBar"
 import { C } from "@/lib/design"
-import { Search, MapPin, Star, Building2, Calendar, Dumbbell, GraduationCap, ChevronRight, Shield, Zap, CreditCard } from "lucide-react"
+import { Search, MapPin, Building2, Calendar, Dumbbell, GraduationCap, ChevronRight, Shield, Zap, CreditCard } from "lucide-react"
 import { createAdminClient } from "@/lib/supabase/admin"
+import { articleImage, formatNewsDate, getPublishedArticles } from "@/lib/cms/public-news"
 
 export const dynamic = "force-dynamic"
 
 export default async function HomePage() {
   const supabase = createAdminClient()
-  const { data: venues } = await supabase.from("venues").select("id, name, slug, city").eq("status", "active").limit(6)
+  const [{ data: venues }, articles] = await Promise.all([
+    supabase.from("venues").select("id, name, slug, city").eq("status", "active").limit(6),
+    getPublishedArticles(3),
+  ])
 
   const venueList = venues?.length ? venues : []
 
@@ -30,6 +34,33 @@ export default async function HomePage() {
             </Link>
           </div>
         </div>
+
+        {/* LATEST NEWS */}
+        {articles.length > 0 && (
+          <section style={{ marginBottom: 24 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+              <span style={{ fontSize: 16, fontWeight: 700, color: C.text }}>Berita Terbaru</span>
+              <Link href="/news" style={{ fontSize: 13, color: C.primaryLight, textDecoration: "none", display: "flex", alignItems: "center", gap: 2 }}>Semua <ChevronRight size={14} /></Link>
+            </div>
+            <div style={{ display: "grid", gap: 10 }}>
+              {articles.map((article) => {
+                const image = articleImage(article)
+                return (
+                  <Link key={article.id} href={`/news/${article.slug}`} style={{ textDecoration: "none" }}>
+                    <div style={{ display: "flex", gap: 12, padding: 10, borderRadius: 14, border: `1px solid ${C.border}`, background: C.surface }}>
+                      {image ? <img src={image} alt="" style={{ width: 92, height: 92, borderRadius: 10, objectFit: "cover", flexShrink: 0 }} /> : <div style={{ width: 92, height: 92, borderRadius: 10, background: C.elevated, flexShrink: 0 }} />}
+                      <div style={{ minWidth: 0, alignSelf: "center" }}>
+                        <div style={{ color: C.primaryLight, fontSize: 9, fontWeight: 800, textTransform: "uppercase", letterSpacing: .7 }}>{article.category || "Sports Update"}</div>
+                        <div style={{ color: C.text, fontSize: 14, fontWeight: 700, lineHeight: 1.35, margin: "5px 0 7px" }}>{article.title}</div>
+                        <div style={{ color: C.textMuted, fontSize: 10 }}>{formatNewsDate(article.published_at)}</div>
+                      </div>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+          </section>
+        )}
 
         {/* 3 CTA CARDS */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 10, marginBottom: 24 }}>

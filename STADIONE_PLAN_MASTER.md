@@ -16,6 +16,15 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-06 — Public News pages
+
+- Purpose: Make published CMS articles visible on the public Stadione website.
+- Changes: Added `/news` listing, `/news/[slug]` article detail, a latest-news section on the homepage, and News links in bottom navigation and the side drawer.
+- Data rules: Public pages read only `ARTICLE` rows with `PUBLISHED` status and a non-null slug. Article HTML is converted into safe text blocks instead of being injected into the page.
+- Verification: Type checking, production build, public route checks, and published-article rendering are required before deployment.
+- Deployment: Pending production release through TD Connector.
+- Rollback: Repoint the production symlink to the preceding release and restart `stadione.service`.
+
 ### 2026-10-05 — Indonesia–Thailand final editorial override
 
 - Purpose: Temporarily override the normal plan around the Indonesia vs Thailand final without changing the long-term weekly matrix.

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { useRouter, usePathname } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { C } from "@/lib/design"
-import { Home, Calendar, Dumbbell, GraduationCap, User, Settings, LogOut, Building2 } from "lucide-react"
+import { Home, Calendar, Dumbbell, GraduationCap, Newspaper, User, LogOut, Building2 } from "lucide-react"
 import type { User as SupaUser } from "@supabase/supabase-js"
 
 interface SideDrawerProps { open: boolean; onClose: () => void; user: SupaUser | null; pathname: string }
@@ -23,6 +23,7 @@ export function SideDrawer({ open, onClose, user, pathname }: SideDrawerProps) {
 
   const menuItems = [
     { icon: Home, label: "Beranda", href: "/" },
+    { icon: Newspaper, label: "News", href: "/news" },
     { icon: Calendar, label: "Booking", href: "/booking" },
     { icon: Dumbbell, label: "Fitness", href: "/fitness" },
     { icon: GraduationCap, label: "Akademi", href: "/academy" },

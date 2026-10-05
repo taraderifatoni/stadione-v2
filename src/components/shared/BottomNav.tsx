@@ -1,11 +1,12 @@
 "use client"
 
 import { usePathname, useRouter } from "next/navigation"
-import { Home, Calendar, Dumbbell, GraduationCap, User } from "lucide-react"
+import { Home, Calendar, Dumbbell, GraduationCap, Newspaper, User } from "lucide-react"
 import { C } from "@/lib/design"
 
 const allTabs = [
   { id: "home", icon: Home, label: "Beranda", href: "/" },
+  { id: "news", icon: Newspaper, label: "News", href: "/news" },
   { id: "booking", icon: Calendar, label: "Booking", href: "/booking" },
   { id: "fitness", icon: Dumbbell, label: "Fitness", href: "/fitness" },
   { id: "academy", icon: GraduationCap, label: "Akademi", href: "/academy" },
@@ -16,9 +17,9 @@ export function BottomNav({ domains }: { domains?: string[] }) {
   const pathname = usePathname()
   const router = useRouter()
 
-  // Filter tabs: always show Home + Profile; hide fitness/academy if domain not active
+  // Filter tabs: always show Home, News, and Profile; hide optional products if inactive.
   const tabs = allTabs.filter(t => {
-    if (t.id === "home" || t.id === "profile") return true
+    if (t.id === "home" || t.id === "news" || t.id === "profile") return true
     if (t.id === "booking" && (!domains || domains.includes("booking"))) return true
     if (t.id === "fitness" && domains?.includes("membership")) return true
     if (t.id === "academy" && domains?.includes("academy")) return true
