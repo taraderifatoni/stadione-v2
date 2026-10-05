@@ -16,6 +16,18 @@ This document is the shared operational history for Stadione. Every code, config
 
 ## Change history
 
+### 2026-10-05 — Viral candidate queue production deployment
+
+- Purpose: Record production activation of the owner-first candidate approval flow.
+- Changes: Pushed commit `ce0fdb755b5144c89addbd32a6deb094ecf3f676`, created an integrity-checked database backup, applied the additive decision-ledger migration, built and activated immutable release `ce0fdb7`.
+- Affected components: CMS approval radar, admin API, production database, and active Stadione release.
+- Deployment: Active on release `ce0fdb7`; rollback release is `d461e99`.
+- Verification: Migration table exists; production build passed; app and timer are active; local/public endpoints return HTTP 200 and admin returns expected HTTP 307 authentication redirect.
+- Rollback: Repoint `/opt/stadione-current` to `/opt/stadione-releases/d461e99` and restart `stadione.service`.
+- Remaining work: Owner decisions must be submitted from the authenticated CMS. No candidate was approved during deployment.
+
+
+
 ### 2026-10-05 — Viral candidate approval queue
 
 - Purpose: Change the operating flow so Stadione presents source links first; production begins only after the owner approves Feed, Reels, both, or rejects the candidate.
