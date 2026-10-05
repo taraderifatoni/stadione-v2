@@ -348,3 +348,13 @@ This document is the shared operational history for Stadione. Every code, config
 - Rollback: Point `/opt/stadione-current` back to `/opt/stadione-releases/62918b8`, restart `stadione.service`, and disable `stadione-editorial-plan.timer` if the rolling calendar must be removed.
 - Remaining work:
   - Editors must complete and approve each draft; the system intentionally does not invent facts or auto-publish unreviewed material.
+
+
+### 2026-10-05 — Final FIFA ASEAN Cup: Indonesia vs Thailand
+
+- Override breaking-news dijalankan setelah hasil akhir terkonfirmasi oleh SerpAPI, FIFA, dan AFC.
+- Fakta publikasi: 2–2 setelah 120 menit; Indonesia menang adu penalti 4–2. Gol: Dean James 84', Iklas Sanron 87', Peeradol Chamrasamee 111', dan Elkan Baggott 116'.
+- Paket terdiri dari artikel CMS utuh dan carousel Instagram tujuh halaman bergaya koran modern.
+- Cover memakai foto pertandingan autentik dengan olah latar editorial berbantuan AI; identitas pemain dipertahankan.
+- Carousel tidak memakai label `EDISI DIGITAL` maupun footer promosi. Semua teks memakai safe wrapping dan sumber singkat hanya pada cover.
+- Event key idempoten: `fifa-asean-cup-2026-final-indonesia-thailand-2026-10-05` untuk mencegah duplikasi artikel maupun posting sosial.
