@@ -21,8 +21,8 @@ This document is the shared operational history for Stadione. Every code, config
 - Purpose: Keep the automated editorial pipeline while allowing the owner to select occasional viral stories and publish them manually.
 - Changes: Renamed the old approval radar as a manual viral-suggestion workflow. Selecting Feed, Reels, or both now creates explicit `DRAFT` items marked `TREND_MANUAL` and `manual_publish`; these drafts are excluded from the plan-key autopost worker and remain editable/publishable from the CMS. The supplied Pinterest token was tested against the official v5 account endpoint but was not stored because Pinterest returned HTTP 401 authentication failure.
 - Affected components: CMS viral-suggestion UI, trend-to-draft admin API, editorial activity log, and protected Pinterest configuration decision.
-- Deployment: Pending commit and immutable production deployment.
-- Verification: TypeScript passed and targeted lint completed with zero errors (three pre-existing `<img>` warnings). The isolated local build reached page generation but lacked the protected Supabase build environment; production build and live CMS verification remain pending on the VPS.
+- Deployment: Commit `59b0a91` was pushed and activated as immutable release `/opt/stadione-releases/59b0a91` through TD Connector. The first restart briefly returned HTTP 502 because the build command had run in the working checkout rather than the new release directory; the same production build was rerun in the correct immutable release and service health was restored.
+- Verification: TypeScript passed and targeted lint completed with zero errors (three pre-existing `<img>` warnings). The production build, including all 50 generated pages, passed with the protected VPS environment. `stadione.service` is active, the public site returns HTTP 200, and the admin CMS returns its expected HTTP 307 authentication redirect.
 - Rollback: Redeploy release `65b8c9c`.
 - Remaining work: Generate a new Pinterest token after the Pinterest application has active API access, then verify `/v5/user_account` before storing it in the protected server environment.
 
