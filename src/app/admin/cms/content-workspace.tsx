@@ -1914,16 +1914,17 @@ function EditorModal({
     return true;
   }
   async function deleteItem() {
+    const syncMeta = item.kind === "SOCIAL" && item.status === "PUBLISHED";
     if (
       !window.confirm(
-        "Hapus permanen draf ini? Tindakan ini tidak dapat dibatalkan.",
+        syncMeta ? "Hapus permanen dari Instagram dan CMS? Jika Meta gagal, data CMS akan tetap disimpan." : "Hapus permanen konten ini? Tindakan ini tidak dapat dibatalkan.",
       )
     )
       return;
     const response = await fetch("/api/admin/cms", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ids: [item.id] }),
+      body: JSON.stringify({ ids: [item.id], sync_meta: syncMeta }),
     });
     const result = await response.json();
     if (!response.ok)
@@ -2224,14 +2225,12 @@ function EditorModal({
                     onClick={deleteItem}
                     disabled={
                       pending ||
-                      ["SCHEDULED", "PUBLISHED", "PUBLISHING"].includes(
-                        item.status,
-                      )
+                      ["SCHEDULED", "PUBLISHING"].includes(item.status)
                     }
                     className="inline-flex h-10 items-center gap-2 rounded-xl px-3 text-[11px] font-bold text-red-300 hover:bg-red-500/10 disabled:opacity-30"
                   >
                     <Trash2 size={14} />
-                    Hapus permanen
+                    {item.kind === "SOCIAL" && item.status === "PUBLISHED" ? "Hapus Meta + CMS" : "Hapus permanen"}
                   </button>
                 </div>
               </details>

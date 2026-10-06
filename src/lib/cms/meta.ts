@@ -82,3 +82,11 @@ export async function publishContainer(id: string) {
   if (!result.id) throw new Error("Meta tidak mengembalikan ID media yang diterbitkan.")
   return result.id
 }
+
+export async function deletePublishedMedia(id: string) {
+  const { token } = credentials()
+  const response = await fetch(`${graph}/${id}`, { method: "DELETE", headers: { Authorization: `Bearer ${token}` }, cache: "no-store", signal: AbortSignal.timeout(20000) })
+  const result = await response.json().catch(() => ({})) as { success?: boolean; error?: { message?: string; code?: number; error_subcode?: number } }
+  if (!response.ok || result.error || result.success !== true) throw new Error(`Meta API: ${result.error?.message || `HTTP ${response.status}`} (${result.error?.code || response.status}${result.error?.error_subcode ? `/${result.error.error_subcode}` : ""})`)
+  return true
+}

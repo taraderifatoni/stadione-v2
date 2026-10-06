@@ -27,6 +27,10 @@ export async function POST(request: NextRequest) {
     if (response.status >= 400 && response.status !== 409) {
       await admin.from("stadione_content_items").update({ publish_error: result.error || "Publication failed" }).eq("id", item.id)
     }
+    if (response.ok && result.state === "PUBLISHED") {
+      const { data: social } = await admin.from("stadione_content_items").select("parent_id,published_at").eq("id", item.id).maybeSingle()
+      if (social?.parent_id) await admin.from("stadione_content_items").update({ status: "PUBLISHED", published_at: social.published_at || new Date().toISOString(), scheduled_at: null, publish_error: null }).eq("id", social.parent_id).eq("kind", "ARTICLE")
+    }
     results.push({ id: item.id, status: response.status, state: result.state || null })
   }
   return NextResponse.json({ checked_at: new Date().toISOString(), results })

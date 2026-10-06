@@ -9,6 +9,7 @@ import {
 } from "@/lib/cms/editorial";
 import { getSearchUsage } from "@/lib/cms/serpapi";
 import {
+  deletePublishedMedia,
   metaConfigured,
   metaConnectionStatus,
   publicMediaUrl,
@@ -470,6 +471,8 @@ export async function PATCH(request: NextRequest) {
   if (action === "review") nextStatus = "PENDING_REVIEW";
   if (action === "draft") nextStatus = "DRAFT";
   if (action === "archive") {
+    if (current.kind === "SOCIAL" && current.status === "PUBLISHED" && current.external_post_id)
+      return NextResponse.json({ error: "Instagram Graph API tidak menyediakan arsip untuk media yang sudah terbit. Arsipkan posting di aplikasi Instagram, atau gunakan Hapus Meta + CMS." }, { status: 409 });
     nextStatus = "ARCHIVED";
     update.archived_at = new Date().toISOString();
   }
@@ -615,6 +618,8 @@ export async function PATCH(request: NextRequest) {
     .single();
   if (error)
     return NextResponse.json({ error: error.message }, { status: 500 });
+  if (action === "schedule" && current.kind === "SOCIAL" && current.parent_id)
+    await admin.from("stadione_content_items").update({ status: "SCHEDULED", scheduled_at: update.scheduled_at, publish_error: null }).eq("id", current.parent_id).eq("kind", "ARTICLE");
   if (resetFailedAttempt)
     await admin
       .from("stadione_ig_publish_attempts")
@@ -630,6 +635,7 @@ export async function DELETE(request: NextRequest) {
   if (!auth.ok)
     return NextResponse.json({ error: auth.error }, { status: auth.status });
   const input = await request.json().catch(() => ({}));
+  const syncMeta = input.sync_meta === true;
   const ids = Array.isArray(input.ids)
     ? [
         ...new Set(
@@ -647,21 +653,25 @@ export async function DELETE(request: NextRequest) {
   const admin = createAdminClient();
   const { data: items, error: findError } = await admin
     .from("stadione_content_items")
-    .select("id,status")
+    .select("id,kind,status,external_post_id")
     .in("id", ids);
   if (findError)
     return NextResponse.json({ error: findError.message }, { status: 500 });
   const blocked = (items || []).filter((item) =>
-    ["SCHEDULED", "PUBLISHED", "PUBLISHING"].includes(item.status),
+    ["SCHEDULED", "PUBLISHING"].includes(item.status),
   );
   if (blocked.length)
     return NextResponse.json(
       {
         error:
-          "Konten terjadwal, sedang terbit, atau sudah tayang tidak dapat dihapus permanen. Batalkan atau arsipkan terlebih dahulu.",
+          "Konten terjadwal atau sedang diterbitkan belum dapat dihapus. Batalkan jadwal atau tunggu proses Meta selesai.",
       },
       { status: 409 },
     );
+  const publishedSocial = (items || []).filter((item) => item.kind === "SOCIAL" && item.status === "PUBLISHED" && item.external_post_id);
+  if (publishedSocial.length && !syncMeta) return NextResponse.json({ error: "Konten sudah tayang di Instagram. Aktifkan penghapusan Meta agar CMS dan Instagram tetap sinkron." }, { status: 409 });
+  try { for (const item of publishedSocial) await deletePublishedMedia(String(item.external_post_id)); }
+  catch (error) { return NextResponse.json({ error: `Konten CMS tidak dihapus karena penghapusan di Meta gagal: ${error instanceof Error ? error.message : "kesalahan tidak dikenal"}` }, { status: 502 }); }
   const { error } = await admin
     .from("stadione_content_items")
     .delete()
