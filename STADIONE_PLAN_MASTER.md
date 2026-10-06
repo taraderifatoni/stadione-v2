@@ -425,3 +425,13 @@ This document is the shared operational history for Stadione. Every code, config
 - packetDigest/contentDigest memakai canonical sorted-object JSON dengan urutan array tetap. Uji regresi memastikan key reorder tidak mengubah digest, sedangkan perubahan nilai tetap membatalkannya.
 - Paket noon hanya dihitung ulang approval-nya jika digest canonical sumber tersimpan identik dengan packet yang telah diperiksa visual. Tidak menonaktifkan gate atau melewati approval.
 - Affected: engine.ts, qa-engine.cjs, run-noon-persija.cjs. Menunggu commit/build/deploy berikutnya sebelum menjadwalkan. Rollback rilis sebelumnya ab9ff6f; rilis 7499437 belum menerbitkan konten.
+
+### 2026-10-06 — Bukti live slot siang Persija
+
+- Deploy aplikasi commit 6fd1998 ke /opt/stadione-releases/6fd1998 melalui TD; stadione-current menunjuk rilis tersebut, stadione.service aktif. Build Next, TypeScript, dan QA engine lulus. Rilis sebelumnya 7499437 tersedia, rollback sebelum rangkaian perubahan ab9ff6f.
+- Publikasi CMS normal slot siang berhasil pukul 13:52 WIB: social 32ce976a-6040-41af-be88-a7bf3c884235, article ed866a29-33f9-4a05-8e8e-4a4d686f62f7, keduanya PUBLISHED pada 2026-10-06T06:52:38.775Z tanpa publish_error.
+- Instagram Graph mengonfirmasi CAROUSEL_ALBUM dengan lima IMAGE children, media_id 17952401802083527: https://www.instagram.com/p/DeJLw1boJIO/. Publish attempt PUBLISHED, error_message null. Tidak menjalankan media_publish langsung atau mengirim ulang.
+- Artikel publik HTTP 200, judul/body tampil dan hero clean tanpa overlay: https://stadione.pro/news/persija-jadwal-padat-oktober-2026-kebugaran. Artikel dan sosial memiliki timestamp yang sama.
+- 21 slot rutin masa depan tidak diubah; tidak ada paket V2 lain yang memiliki approval untuk dimigrasikan. Request tambahan tetap terpisah dari slot normal.
+- Push origin HEAD telah dicoba: gagal karena autentikasi HTTPS GitHub di VPS tidak tersedia (terminal prompts disabled). Commit berada di repo VPS, deploy berhasil, tetapi belum tersalin ke GitHub. Jangan menyatakan push berhasil.
+- Audit pipeline lengkap masih merupakan pekerjaan lanjutan sebagaimana daftar remaining di atas; keberhasilan satu slot ini bukan bukti semua produksi otomatis sudah beres.
