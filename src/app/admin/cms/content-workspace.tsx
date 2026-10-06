@@ -38,6 +38,7 @@ import {
   X,
 } from "lucide-react";
 import { toast } from "sonner";
+import { PerformanceCell, InsightsPanel, type ContentInsight } from "./insights-panel";
 import { WEEKLY_MATRIX, type EditorialSlot } from "@/lib/cms/editorial";
 
 type Asset = {
@@ -54,6 +55,8 @@ type Asset = {
 type ContentItem = {
   id: string;
   parent_id?: string | null;
+  external_post_id?: string | null;
+  external_url?: string | null;
   kind: "ARTICLE" | "SOCIAL";
   format: string;
   title: string;
@@ -189,6 +192,19 @@ function StatusBadge({ value }: { value: string }) {
 }
 
 export function ContentWorkspace() {
+  const [insights, setInsights] = useState<Record<string, ContentInsight>>({});
+  const [insightsLoading, setInsightsLoading] = useState(false);
+  const [insightItem, setInsightItem] = useState<ContentItem | null>(null);
+  async function refreshInsights(ids?: string[], force = false) {
+    setInsightsLoading(true);
+    try {
+      const response = await fetch("/api/admin/cms/insights", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ...(ids?.length ? { ids } : {}), force }) });
+      const result = await response.json();
+      if (!response.ok) throw Error(result.error || "Insight gagal dimuat");
+      setInsights(result.insights || {});
+    } catch (e) { toast.error(e instanceof Error ? e.message : "Insight gagal dimuat"); }
+    finally { setInsightsLoading(false); }
+  }
   const [items, setItems] = useState<ContentItem[]>([]);
   const [activities, setActivities] = useState<Activity[]>([]);
   const [usage, setUsage] = useState<Usage>({
@@ -227,6 +243,12 @@ export function ContentWorkspace() {
       if (!contentResponse.ok)
         throw new Error(content.error || "CMS gagal dimuat");
       setItems(content.items || []);
+      // Insight collection is independent of the content/schedule load.
+      setInsightsLoading(true);
+      void fetch("/api/admin/cms/insights", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({}) })
+        .then(async response => { const result = await response.json(); if (!response.ok) throw Error(result.error || "Insight gagal dimuat"); setInsights(result.insights || {}); })
+        .catch(error => toast.error(error instanceof Error ? error.message : "Insight gagal dimuat"))
+        .finally(() => setInsightsLoading(false));
       setSchedulerEnabled(Boolean(content.schedulerEnabled));
       setMetaConnection(
         content.meta || { configured: false, connected: false, account: null },
@@ -505,8 +527,10 @@ export function ContentWorkspace() {
                 setKind={setKind}
                 status={status}
                 setStatus={setStatus}
-                onEdit={setSelected}
+                onEdit={item => setSelected({ ...item, external_url: item.external_url || insights[item.id]?.permalink })}
                 onChanged={load}
+                insights={insights}
+                onInsight={setInsightItem}
               />
             )}
             {view === "matrix" && (
@@ -537,7 +561,7 @@ export function ContentWorkspace() {
             )}
             {view === "references" && <MonthlyReferences />}
             {view === "calendar" && (
-              <CalendarView items={items} onEdit={setSelected} />
+              <CalendarView items={items} onEdit={item => setSelected({ ...item, external_url: item.external_url || insights[item.id]?.permalink })} />
             )}
             {view === "history" && (
               <HistoryView activities={activities} items={items} />
@@ -575,6 +599,9 @@ export function ContentWorkspace() {
           }}
         />
       )}
+      {insightItem && <SimpleModal wide title={insightItem.title} onClose={() => setInsightItem(null)}>
+        <InsightsPanel insight={insights[insightItem.id]} loading={insightsLoading} onRefresh={() => void refreshInsights([insightItem.id], true)} />
+      </SimpleModal>}
       {selected && (
         <EditorModal
           item={selected}
@@ -651,6 +678,8 @@ function Pipeline({
   setStatus,
   onEdit,
   onChanged,
+  insights,
+  onInsight,
 }: {
   items: ContentItem[];
   loading: boolean;
@@ -662,32 +691,39 @@ function Pipeline({
   setStatus: (v: string) => void;
   onEdit: (item: ContentItem) => void;
   onChanged: () => Promise<void>;
+  insights: Record<string, ContentInsight>;
+  onInsight: (item: ContentItem) => void;
 }) {
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [bulkAction, setBulkAction] = useState("archive");
   const [working, setWorking] = useState(false);
   const selectable = items.filter(
-    (item) => !["SCHEDULED", "PUBLISHED", "PUBLISHING"].includes(item.status),
+    (item) => !["SCHEDULED", "PUBLISHING"].includes(item.status),
   );
   async function applyBulk() {
     if (!selectedIds.length) return;
     if (
       bulkAction === "delete" &&
       !window.confirm(
-        `Hapus permanen ${selectedIds.length} konten terpilih? Tindakan ini tidak dapat dibatalkan.`,
+        `Hapus ${selectedIds.length} konten terpilih? Posting Instagram terkait ikut dihapus. Artikel pasangan tetap disimpan. Tindakan ini tidak dapat dibatalkan.`,
       )
     )
       return;
+    if (bulkAction === "archive" && !window.confirm("Arsipkan konten terpilih di CMS? Postingan Instagram tetap tayang; arsip Instagram dilakukan lewat aplikasinya.")) return;
     setWorking(true);
     try {
       if (bulkAction === "delete") {
         const response = await fetch("/api/admin/cms", {
           method: "DELETE",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ids: selectedIds }),
+          body: JSON.stringify({ ids: selectedIds, sync_meta: true }),
         });
         const result = await response.json();
-        if (!response.ok) throw new Error(result.error || "Hapus massal gagal");
+        if (!response.ok || result.results?.some((row: { ok: boolean }) => !row.ok)) {
+          await onChanged();
+          const failures = (result.results || []).filter((row: { ok: boolean }) => !row.ok);
+          throw new Error(`${result.deleted || 0} berhasil dihapus. ${failures.map((row: { error: string }) => row.error).join(" ") || result.error || "Hapus massal gagal"}`);
+        }
         toast.success(`${result.deleted} konten dihapus permanen`);
       } else {
         for (const id of selectedIds) {
@@ -705,6 +741,8 @@ function Pipeline({
       setSelectedIds([]);
       await onChanged();
     } catch (error) {
+      await onChanged();
+      setSelectedIds([]);
       toast.error(error instanceof Error ? error.message : "Bulk action gagal");
     } finally {
       setWorking(false);
@@ -768,13 +806,14 @@ function Pipeline({
           <span className="text-[10px] text-[#6B6558]">
             {selectedIds.length} dipilih
           </span>
+          <span className="text-[10px] text-[#8A8375]">Performa Instagram tersedia pada setiap posting yang tayang.</span>
           <select
             value={bulkAction}
             onChange={(e) => setBulkAction(e.target.value)}
             className="ml-auto h-9 rounded-lg border border-[#2E2C28] bg-[#0D0D0D] px-3 text-[11px] font-bold"
           >
-            <option value="archive">Arsipkan</option>
-            <option value="delete">Hapus permanen</option>
+            <option value="archive">Arsip CMS</option>
+            <option value="delete">Hapus Instagram + CMS</option>
           </select>
           <button
             onClick={applyBulk}
@@ -802,6 +841,8 @@ function Pipeline({
                 )
               }
               onEdit={() => onEdit(item)}
+              insight={insights[item.id]}
+              onInsight={() => onInsight(item)}
             />
           ))
         ) : (
@@ -817,18 +858,22 @@ function ContentRow({
   selected,
   onSelect,
   onEdit,
+  insight,
+  onInsight,
 }: {
   item: ContentItem;
   selected: boolean;
   onSelect: (checked: boolean) => void;
   onEdit: () => void;
+  insight?: ContentInsight;
+  onInsight: () => void;
 }) {
   const cover = item.assets?.find((asset) => asset.image_url || asset.url);
-  const canSelect = !["SCHEDULED", "PUBLISHED", "PUBLISHING"].includes(
+  const canSelect = !["SCHEDULED", "PUBLISHING"].includes(
     item.status,
   );
   return (
-    <div className="grid w-full grid-cols-[24px_56px_minmax(0,1fr)] gap-3 p-4 text-left transition hover:bg-[#242220]/60 sm:grid-cols-[24px_70px_minmax(0,1fr)_160px_125px] sm:items-center sm:p-5">
+    <div className="grid w-full grid-cols-[24px_56px_minmax(0,1fr)] gap-3 p-4 text-left transition hover:bg-[#242220]/60 sm:grid-cols-[24px_70px_minmax(0,1fr)_135px_100px_170px] sm:items-center sm:p-5">
       <input
         type="checkbox"
         checked={selected}
@@ -884,6 +929,7 @@ function ContentRow({
           <StatusBadge value={item.status} />
         </div>
       </button>
+      <div className="col-start-3 sm:col-start-auto"><p className="mb-1 text-[10px] font-bold text-[#8A8375]">Performa Instagram</p><PerformanceCell insight={insight} published={item.kind === "SOCIAL" && Boolean(item.external_post_id || item.published_at)} onOpen={onInsight} /></div>
     </div>
   );
 }
@@ -1781,6 +1827,20 @@ function EditorModal({
     scheduled_at: localInput(item.scheduled_at),
   });
   const meta = item.editorial_meta || {};
+  const postedInstagram = item.kind === "SOCIAL" && Boolean(item.external_post_id || item.published_at);
+  const editingLocked = item.status === "ARCHIVED" || postedInstagram || ["PUBLISHED", "PREPARING", "PROCESSING", "READY", "PUBLISHING", "UNCERTAIN"].includes(attempt?.state || "");
+  const [managementBusy, setManagementBusy] = useState(false);
+  const [remoteAction, setRemoteAction] = useState<"archive" | "delete" | null>(null);
+  const [remoteConfirmed, setRemoteConfirmed] = useState(false);
+  async function manageArchive(action: "archive" | "restore", reported = false) {
+    setManagementBusy(true);
+    try {
+      const response = await fetch("/api/admin/cms", { method: "PATCH", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id: item.id, action, instagram_archived: reported }) });
+      const result = await response.json(); if (!response.ok) throw Error(result.error);
+      toast.success(result.message); onSaved();
+    } catch (e) { toast.error(e instanceof Error ? e.message : "Arsip gagal"); }
+    finally { setManagementBusy(false); }
+  }
   const [enginePacket, setEnginePacket] = useState(
     JSON.stringify(meta.engine_packet || null, null, 2),
   );
@@ -1826,7 +1886,7 @@ function EditorModal({
     if (sending) return;
     setSending(true);
     try {
-      if (!attempt || ["FAILED", "PREPARING"].includes(attempt.state)) {
+      if (!attempt || attempt.state === "FAILED") {
         const saved = await save("draft", false);
         if (!saved) return;
       }
@@ -1913,25 +1973,20 @@ function EditorModal({
     }
     return true;
   }
-  async function deleteItem() {
-    const syncMeta = item.kind === "SOCIAL" && item.status === "PUBLISHED";
-    if (
-      !window.confirm(
-        syncMeta ? "Hapus permanen dari Instagram dan CMS? Jika Meta gagal, data CMS akan tetap disimpan." : "Hapus permanen konten ini? Tindakan ini tidak dapat dibatalkan.",
-      )
-    )
-      return;
-    const response = await fetch("/api/admin/cms", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ ids: [item.id], sync_meta: syncMeta }),
-    });
-    const result = await response.json();
-    if (!response.ok)
-      return toast.error(result.error || "Konten gagal dihapus");
-    toast.success("Konten dihapus permanen");
-    onSaved();
+  async function deleteItem(reported = false) {
+    if (managementBusy) return;
+    const syncMeta = postedInstagram && !reported;
+    if (!window.confirm(reported ? "Kamu mengonfirmasi posting telah dihapus di Instagram. Hapus dari CMS dan simpan catatan penghapusannya?" : syncMeta ? "Hapus permanen dari Instagram dan CMS? Artikel pasangan tetap disimpan. Jika Meta gagal, data CMS tetap disimpan." : "Hapus permanen konten ini?")) return;
+    setManagementBusy(true);
+    try {
+      const response = await fetch("/api/admin/cms", { method: "DELETE", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids: [item.id], sync_meta: syncMeta, instagram_deleted: reported }) });
+      const result = await response.json();
+      if (!response.ok || !result.results?.[0]?.ok) throw Error(result.results?.[0]?.error || result.error || "Konten gagal dihapus");
+      toast.success(result.results[0].message); onSaved();
+    } catch (e) { toast.error(e instanceof Error ? e.message : "Penghapusan gagal"); }
+    finally { setManagementBusy(false); }
   }
+
   return (
     <>
       <div
@@ -1958,6 +2013,7 @@ function EditorModal({
             </button>
           </div>
           <div className="space-y-4 p-5">
+            {postedInstagram && <div className="rounded-xl border border-[#2E2C28] p-4 text-xs leading-relaxed text-[#B5AC8A]">Posting ini telah diterbitkan. Gunakan Aksi untuk hapus Instagram + CMS atau arsip. Artikel pasangan dikelola terpisah. {meta.archive_scope === "CMS_ONLY" ? "Arsip saat ini hanya di CMS; Instagram tetap tayang." : meta.archive_scope === "INSTAGRAM_REPORTED" ? "Arsip Instagram dicatat berdasarkan konfirmasi pengguna." : ""}</div>}
             {item.kind === "SOCIAL" &&
               ["DRAFT", "PENDING_REVIEW"].includes(item.status) && (
                 <div className="rounded-xl border border-[#84102D]/50 bg-[#84102D]/10 p-4 text-xs">
@@ -2163,6 +2219,7 @@ function EditorModal({
                   Aksi <ChevronDown size={15} />
                 </summary>
                 <div className="absolute bottom-12 right-0 z-20 grid min-w-64 gap-1 rounded-xl border border-[#2E2C28] bg-[#0D0D0D] p-2 shadow-2xl">
+                  {!editingLocked && <>
                   <Action
                     label="Simpan draf"
                     icon={Pencil}
@@ -2200,10 +2257,11 @@ function EditorModal({
                       pending={pending}
                     />
                   )}
-                  {item.kind === "SOCIAL" &&
+                  </>}
+                  {item.kind === "SOCIAL" && !postedInstagram &&
                     (item.platforms || []).includes("INSTAGRAM") &&
-                    item.status !== "PUBLISHED" &&
-                    !["PUBLISHING", "UNCERTAIN"].includes(
+                    !["PUBLISHED", "ARCHIVED"].includes(item.status) &&
+                    !["PUBLISHING", "PUBLISHED", "UNCERTAIN"].includes(
                       attempt?.state || "",
                     ) && (
                       <Action
@@ -2217,22 +2275,21 @@ function EditorModal({
                         pending={pending || sending}
                       />
                     )}
-                  <Action
-                    label="Arsipkan"
-                    icon={Archive}
-                    onClick={() => save("archive")}
-                    pending={pending}
-                  />
+                  {item.status === "ARCHIVED" ? <Action label="Pulihkan arsip CMS" icon={Archive} onClick={() => void manageArchive("restore")} pending={managementBusy} /> : <Action label={postedInstagram ? "Arsip CMS saja" : "Arsipkan"} icon={Archive} onClick={() => { if (!postedInstagram || window.confirm("Arsip di CMS saja? Posting Instagram tetap tayang.")) void manageArchive("archive"); }} pending={managementBusy} />}
+                  {postedInstagram && <>
+                    <Action label="Arsip di Instagram…" icon={ExternalLink} onClick={() => { setRemoteAction("archive"); setRemoteConfirmed(false); }} pending={managementBusy} />
+                    <Action label="Sudah dihapus di Instagram…" icon={Trash2} onClick={() => { setRemoteAction("delete"); setRemoteConfirmed(false); }} pending={managementBusy} />
+                  </>}
                   <button
-                    onClick={deleteItem}
+                    onClick={() => void deleteItem()}
                     disabled={
-                      pending ||
+                      pending || managementBusy ||
                       ["SCHEDULED", "PUBLISHING"].includes(item.status)
                     }
                     className="inline-flex h-10 items-center gap-2 rounded-xl px-3 text-[11px] font-bold text-red-300 hover:bg-red-500/10 disabled:opacity-30"
                   >
                     <Trash2 size={14} />
-                    {item.kind === "SOCIAL" && item.status === "PUBLISHED" ? "Hapus Meta + CMS" : "Hapus permanen"}
+                    {postedInstagram ? "Hapus Instagram + CMS" : "Hapus permanen"}
                   </button>
                 </div>
               </details>
@@ -2240,6 +2297,12 @@ function EditorModal({
           </div>
         </div>
       </div>
+      {remoteAction && <SimpleModal title={remoteAction === "archive" ? "Arsip posting Instagram" : "Konfirmasi posting sudah dihapus"} onClose={() => setRemoteAction(null)}>
+        <p className="text-xs leading-relaxed text-[#B5AC8A]">{remoteAction === "archive" ? "Instagram belum menyediakan arsip lewat API. Buka posting di aplikasi Instagram, pilih menu titik tiga lalu Arsipkan. Setelah selesai, centang konfirmasi untuk mencatat arsip di CMS." : "Gunakan ini hanya jika kamu sudah menghapus posting lewat Instagram. Konfirmasi ini dicatat sebagai laporan kamu, bukan verifikasi otomatis dari Meta."}</p>
+        <a href={item.external_url || "https://www.instagram.com/stadione.id/"} target="_blank" rel="noreferrer" className="my-4 inline-block text-xs font-bold underline">Buka Instagram</a>
+        <label className="flex gap-2 text-xs"><input type="checkbox" checked={remoteConfirmed} onChange={e => setRemoteConfirmed(e.target.checked)} className="accent-[#84102D]" />Saya sudah {remoteAction === "archive" ? "mengarsipkan" : "menghapus"} posting ini di Instagram.</label>
+        <button disabled={!remoteConfirmed || managementBusy} onClick={() => remoteAction === "archive" ? void manageArchive("archive", true) : void deleteItem(true)} className="mt-5 rounded-xl bg-[#84102D] px-4 py-3 text-xs font-bold disabled:opacity-40">{managementBusy ? "Memproses…" : remoteAction === "archive" ? "Catat arsip Instagram" : "Hapus dari CMS"}</button>
+      </SimpleModal>}
       {coverOpen && (
         <CoverModal
           item={item}
@@ -2714,10 +2777,12 @@ function SimpleModal({
   title,
   onClose,
   children,
+  wide = false,
 }: {
   title: string;
   onClose: () => void;
   children: React.ReactNode;
+  wide?: boolean;
 }) {
   return (
     <div
@@ -2726,7 +2791,7 @@ function SimpleModal({
         if (e.target === e.currentTarget) onClose();
       }}
     >
-      <div className="w-full max-w-md rounded-t-3xl border border-[#2E2C28] bg-[#1A1816] p-5 sm:rounded-3xl">
+      <div role="dialog" aria-modal="true" aria-label={title} className={`w-full max-h-[90dvh] overflow-y-auto ${wide ? "max-w-2xl" : "max-w-md"} rounded-t-3xl border border-[#2E2C28] bg-[#1A1816] p-5 sm:rounded-3xl`}>
         <div className="flex items-center justify-between">
           <h2 className="text-lg font-bold">{title}</h2>
           <button

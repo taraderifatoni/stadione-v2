@@ -16,6 +16,7 @@ export async function publishInstagramContent(id: string, actorId: string | null
   const admin = createAdminClient()
   const { data: item, error: itemError } = await admin.from("stadione_content_items").select("*").eq("id", id).single()
   if (itemError || !item) return NextResponse.json({ error: "Konten tidak ditemukan." }, { status: 404 })
+  if(item.status === "ARCHIVED" || item.editorial_meta?.cms_deleted_at) return NextResponse.json({error:"Konten diarsipkan/dihapus; publikasi ulang tidak dijalankan."},{status:409});
   if (item.kind !== "SOCIAL" || !(item.platforms || []).includes("INSTAGRAM") || !(item.platforms || []).every((p: string) => p === "INSTAGRAM") || !["SINGLE_IMAGE", "CAROUSEL", "REEL"].includes(item.format)) {
     return NextResponse.json({ error: "Hanya gambar tunggal, carousel, dan Reel Instagram yang dapat diterbitkan dari sini." }, { status: 409 })
   }

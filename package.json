@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "qa:engine": "node scripts/qa-engine.cjs",
-    "qa:writing": "node scripts/qa-writing.cjs && node scripts/qa-writing-pipeline.cjs"
+    "qa:writing": "node scripts/qa-writing.cjs && node scripts/qa-writing-pipeline.cjs",
+    "qa:cms": "node scripts/qa-cms-management.cjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

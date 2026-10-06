@@ -7,9 +7,9 @@ import {
   slugifyCms,
   type EditorialCandidate,
 } from "@/lib/cms/editorial";
+import { manageCmsContent } from "@/lib/cms/content-management";
 import { getSearchUsage } from "@/lib/cms/serpapi";
 import {
-  deletePublishedMedia,
   metaConfigured,
   metaConnectionStatus,
   publicMediaUrl,
@@ -78,6 +78,7 @@ export async function GET() {
       admin
         .from("stadione_content_items")
         .select("*")
+        .is("editorial_meta->>cms_deleted_at", null)
         .order("updated_at", { ascending: false })
         .limit(300),
       admin
@@ -96,7 +97,7 @@ export async function GET() {
     .select("content_id,state,creation_id,media_id,error_message")
     .limit(300);
   return NextResponse.json({
-    items: items || [],
+    items: (items || []).filter(item => !item.editorial_meta?.cms_deleted_at),
     activities: activities || [],
     usage,
     meta,
@@ -369,6 +370,17 @@ export async function PATCH(request: NextRequest) {
       { status: 404 },
     );
 
+  const managementAction = String(input.action || "save");
+  if (["archive", "restore"].includes(managementAction)) {
+    try {
+      const result = await manageCmsContent(id, managementAction as "archive" | "restore", auth.actor.id, { instagramArchived: input.instagram_archived === true });
+      return NextResponse.json(result);
+    } catch (e) { return NextResponse.json({ error: e instanceof Error ? e.message : "Pengelolaan konten gagal." }, { status: 409 }); }
+  }
+  if (current.status === "ARCHIVED" || current.editorial_meta?.cms_deleted_at)
+    return NextResponse.json({ error: "Pulihkan arsip CMS sebelum mengedit konten." }, { status: 409 });
+  if (Date.parse(current.editorial_meta?.management_lease?.until || "") > Date.now())
+    return NextResponse.json({ error: "Konten sedang dikelola. Tunggu proses selesai." }, { status: 409 });
   const update: Record<string, unknown> = {};
   for (const field of editableFields)
     if (field in input)
@@ -385,6 +397,12 @@ export async function PATCH(request: NextRequest) {
       : {};
   if (input.editorial_meta && typeof input.editorial_meta === "object")
     update.editorial_meta = { ...oldMeta, ...input.editorial_meta };
+  // These records can only be written by the authenticated management endpoint.
+  if (update.editorial_meta) {
+    const managedMeta = update.editorial_meta as Record<string, unknown>;
+    for (const field of ["management_lease", "meta_removal", "cms_deleted_at", "archive_scope", "archive_previous_status", "archived_by"])
+      if (field in oldMeta) managedMeta[field] = oldMeta[field]; else delete managedMeta[field];
+  }
   if ("source_url" in input)
     update.source_url = String(input.source_url || "").trim() || null;
   if ("source_name" in input)
@@ -475,12 +493,6 @@ export async function PATCH(request: NextRequest) {
   let nextStatus = current.status;
   if (action === "review") nextStatus = "PENDING_REVIEW";
   if (action === "draft") nextStatus = "DRAFT";
-  if (action === "archive") {
-    if (current.kind === "SOCIAL" && current.status === "PUBLISHED" && current.external_post_id)
-      return NextResponse.json({ error: "Instagram Graph API tidak menyediakan arsip untuk media yang sudah terbit. Arsipkan posting di aplikasi Instagram, atau gunakan Hapus Meta + CMS." }, { status: 409 });
-    nextStatus = "ARCHIVED";
-    update.archived_at = new Date().toISOString();
-  }
   if (action === "publish") {
     if (current.kind === "SOCIAL")
       return NextResponse.json(
@@ -643,7 +655,7 @@ export async function DELETE(request: NextRequest) {
   const syncMeta = input.sync_meta === true;
   const ids = Array.isArray(input.ids)
     ? [
-        ...new Set(
+        ...new Set<string>(
           input.ids
             .map((id: unknown) => String(id))
             .filter((id: string) => /^[a-f0-9-]{36}$/i.test(id)),
@@ -655,33 +667,11 @@ export async function DELETE(request: NextRequest) {
       { error: "Pilih minimal satu konten." },
       { status: 400 },
     );
-  const admin = createAdminClient();
-  const { data: items, error: findError } = await admin
-    .from("stadione_content_items")
-    .select("id,kind,status,external_post_id")
-    .in("id", ids);
-  if (findError)
-    return NextResponse.json({ error: findError.message }, { status: 500 });
-  const blocked = (items || []).filter((item) =>
-    ["SCHEDULED", "PUBLISHING"].includes(item.status),
-  );
-  if (blocked.length)
-    return NextResponse.json(
-      {
-        error:
-          "Konten terjadwal atau sedang diterbitkan belum dapat dihapus. Batalkan jadwal atau tunggu proses Meta selesai.",
-      },
-      { status: 409 },
-    );
-  const publishedSocial = (items || []).filter((item) => item.kind === "SOCIAL" && item.status === "PUBLISHED" && item.external_post_id);
-  if (publishedSocial.length && !syncMeta) return NextResponse.json({ error: "Konten sudah tayang di Instagram. Aktifkan penghapusan Meta agar CMS dan Instagram tetap sinkron." }, { status: 409 });
-  try { for (const item of publishedSocial) await deletePublishedMedia(String(item.external_post_id)); }
-  catch (error) { return NextResponse.json({ error: `Konten CMS tidak dihapus karena penghapusan di Meta gagal: ${error instanceof Error ? error.message : "kesalahan tidak dikenal"}` }, { status: 502 }); }
-  const { error } = await admin
-    .from("stadione_content_items")
-    .delete()
-    .in("id", ids);
-  if (error)
-    return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ deleted: (items || []).length });
+  const results = [];
+  for (const id of ids) {
+    try { results.push(await manageCmsContent(id, "delete", auth.actor.id, { syncMeta, instagramDeleted: input.instagram_deleted === true && ids.length === 1 })); }
+    catch (e) { results.push({ id, ok: false, error: e instanceof Error ? e.message : "Penghapusan gagal." }); }
+  }
+  const deleted = results.filter(result => result.ok).length;
+  return NextResponse.json({ deleted, results, ...(deleted !== ids.length ? { error: "Sebagian atau semua penghapusan gagal; lihat hasil tiap konten." } : {}) }, { status: deleted === ids.length ? 200 : deleted ? 207 : 409 });
 }
