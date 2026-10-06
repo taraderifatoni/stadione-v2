@@ -1,0 +1,25 @@
+{
+  "social": "0de44d3b-8312-465a-a6b2-231dc38da4bc",
+  "article": "2acee3c6-1481-4cec-aa51-a5a1e6f51b0c",
+  "permalink": "https://www.instagram.com/p/DeJ16t0oAcS/",
+  "media_id": "18115823165000484",
+  "published_at": "2026-10-06T13:01:27.097+00:00",
+  "plan_key": "2026-10-06:mid-pm",
+  "additional_post": false,
+  "slides": 5,
+  "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "other_slots_unchanged": true,
+  "article_url": "https://stadione.pro/news/persib-menalo-port-fc-shopee-cup-8-oktober-2026",
+  "verification": {
+    "account": "stadione.id",
+    "media_type": "CAROUSEL_ALBUM",
+    "image_children": 5,
+    "asset_checksums": "PASS",
+    "paired_article_same_timestamp": true,
+    "public_article_http": 200,
+    "article_body_sections": 4,
+    "visible_article_intro_occurrences": 1,
+    "idempotent_publish": "SKIPPED; existing media retained",
+    "prepublication_deduplication_at": "2026-10-06T12:58:42.439Z"
+  }
+}
