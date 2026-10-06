@@ -445,3 +445,12 @@ This document is the shared operational history for Stadione. Every code, config
 - Standar cover yang harus dipertahankan: wajah dan subjek asli; olah background editorial/collage sesuai acuan cover padel/Timnas; judul compact dengan wrapping; sumber singkat; tanpa EDISI DIGITAL/footer. Paper-tone text-only berlaku untuk halaman artikel setelah cover, bukan alasan mengganti cover menjadi foto kotak biasa.
 - Scope turn ini: push dan diagnosis. Belum mengubah renderer, aset CMS, jadwal rutin, atau menghapus/menerbitkan ulang posting Persija. Koreksi desain dan tindakan pada posting live menunggu arahan pemilik.
 - Deployment aplikasi tetap 6fd1998, tidak ada build/restart karena perubahan ini hanya konfigurasi Git dan dokumentasi. Verifikasi berikutnya membandingkan HEAD lokal dan remote setelah commit entry ini.
+
+### 2026-10-06 — Preview koreksi cover Persija, belum dipublikasikan
+
+- Pemilik menyetujui pembuatan ulang cover sebagai preview saja. Tidak mengganti carousel yang sudah tayang, tidak menerbitkan ulang, dan tidak mengubah slot rutin atau konten CMS.
+- Foto atlet autentik dari ILeague menjadi referensi gambar; background diolah dengan AI menjadi kolase stadion, sobekan koran, charcoal dan merah Stadione. Acuan gaya: assets/editorial/indonesia-thailand-final-cover.jpg. Ini bukan klaim bahwa setiap piksel wajah/jersey tetap identik atau bahwa lisensi foto telah diperoleh.
+- Aset hasil: assets/editorial/previews/persija-cover-preview-20261006.png (1122x1402, PNG; SHA256 8ad16753781f9c2782b4602015990ef7dc1de2f17f257717aa763fd84036b0d0). Resep dan sumber dicatat di assets/editorial/previews/persija-cover-preview-20261006.md.
+- Pemeriksaan visual: subjek menyatu dengan background, bukan foto rectangle di atas cream; judul compact dan terbungkus, sumber singkat ILEAGUE.ID, tanpa EDISI DIGITAL, footer promosi, atau teks terpotong. Preview sudah ditampilkan kepada pemilik; persetujuan desain akhir belum diberikan.
+- Ini adalah aset preview, bukan perbaikan shared renderer atau bukti konsistensi seluruh pipeline. Production tetap 6fd1998. Rollback aset/dokumentasi ke fffb2bd; jangan menghapus atau menerbitkan ulang konten live untuk rollback preview.
+- Commit aset, resep, dan catatan ini ke branch feat/stadione-editorial-scheduler, lalu push melalui SSH VPS yang sudah terverifikasi; cocokkan HEAD dengan remote. Tidak memerlukan deploy/restart aplikasi.
