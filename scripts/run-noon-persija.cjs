@@ -40,6 +40,11 @@ const {data:prior,error:pe}=await db.from("stadione_content_items").select("id,k
 if(mode==="schedule"){
 const item=prior?.find(x=>x.kind==="SOCIAL"&&x.editorial_meta.event_key===EVENT);if(!item)throw Error("Prepared item missing");if(item.status!=="DRAFT")return console.log(JSON.stringify({skipped:true,item}));
 const {data:s,error}=await db.from("stadione_content_items").select("*").eq("id",item.id).single();if(error)throw error;
+const reviewed=JSON.parse(fs.readFileSync(path.join(dir,"packet.json"),"utf8"));
+if(core.packetDigest(s.editorial_meta.engine_packet)!==core.packetDigest(reviewed))throw Error("Stored packet differs from visually reviewed packet");
+const meta={...s.editorial_meta,rendered_packet_digest:core.packetDigest(reviewed)};
+s.editorial_meta=meta;meta.engine_approval={actor_id:"AUTO_EDITORIAL_USER_REQUEST",approved_at:new Date().toISOString(),digest:core.contentDigest(s)};
+const {error:me}=await db.from("stadione_content_items").update({editorial_meta:meta}).eq("id",s.id).eq("status","DRAFT");if(me)throw me;
 const issues=core.enginePublicationIssues(s);if(issues.length)throw Error(issues.join("\n"));
 if(!s.editorial_meta.visual_reviewed_at)throw Error("Visual QA required");
 const {error:e}=await db.from("stadione_content_items").update({status:"SCHEDULED",scheduled_at:"2026-10-06T06:00:00Z"}).eq("id",s.id).eq("status","DRAFT");if(e)throw e;

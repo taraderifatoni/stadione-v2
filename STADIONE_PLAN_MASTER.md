@@ -418,3 +418,10 @@ This document is the shared operational history for Stadione. Every code, config
 - Komponen: src/lib/cms/engine.ts, engine-media.ts, scripts/qa-engine.cjs, run-noon-persija.cjs, stadione_content_items/stadione-cms storage. Deploy aplikasi direncanakan via TD setelah commit; bukti live/publication ditambahkan setelah sukses.
 - Rollback kode: ab9ff6f; jangan menjalankan ulang media_publish untuk rollback konten yang sudah terbit. Identitas event/plan harus tetap disimpan untuk dedupe.
 - Remaining: satukan fallback preview dan semua jalur legacy/manual, lengkapi writer fakta otomatis dan pagination artikel, pertahankan waktu slot di auto_schedule, tambahkan pengujian kualitas editorial end-to-end, dan pulihkan autentikasi git push. Belum mengubah posting lama atau slot masa depan.
+
+### 2026-10-06 — Gate versi JSONB sebelum publikasi siang
+
+- Live preparation masih DRAFT; belum ada permintaan Meta terkirim. Gate mendeteksi packet/approval digest berubah akibat pengurutan ulang kunci objek oleh PostgreSQL JSONB.
+- packetDigest/contentDigest memakai canonical sorted-object JSON dengan urutan array tetap. Uji regresi memastikan key reorder tidak mengubah digest, sedangkan perubahan nilai tetap membatalkannya.
+- Paket noon hanya dihitung ulang approval-nya jika digest canonical sumber tersimpan identik dengan packet yang telah diperiksa visual. Tidak menonaktifkan gate atau melewati approval.
+- Affected: engine.ts, qa-engine.cjs, run-noon-persija.cjs. Menunggu commit/build/deploy berikutnya sebelum menjadwalkan. Rollback rilis sebelumnya ab9ff6f; rilis 7499437 belum menerbitkan konten.

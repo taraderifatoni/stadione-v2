@@ -87,12 +87,26 @@ const domain = (url: string) => {
     return "";
   }
 };
+// PostgreSQL jsonb reorders object keys; hashes must be invariant to key order.
+export function canonicalJson(value: unknown): string {
+  const sort = (v: unknown): unknown => {
+    if (Array.isArray(v)) return v.map(sort);
+    if (v && typeof v === "object") return Object.fromEntries(
+      Object.entries(v as Record<string, unknown>)
+        .filter(([, x]) => x !== undefined)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([k, x]) => [k, sort(x)]),
+    );
+    return v;
+  };
+  return JSON.stringify(sort(value));
+}
 export const packetDigest = (packet: unknown) =>
-  createHash("sha256").update(JSON.stringify(packet)).digest("hex");
+  createHash("sha256").update(canonicalJson(packet)).digest("hex");
 const sha = (value: string) => createHash("sha256").update(value).digest("hex");
 export function contentDigest(item: Item) {
   return sha(
-    JSON.stringify([
+    canonicalJson([
       item.title,
       item.caption,
       item.format,
@@ -298,7 +312,7 @@ export function enginePublicationIssues(item: Item, requireApproval = true) {
   if (
     !item.caption?.trim() ||
     /brief redaksi|belum untuk publikasi/i.test(item.caption)
-)
+  )
     issues.push("Caption belum siap publikasi.");
   if (
     requireApproval &&
