@@ -2,6 +2,7 @@
 // One reviewed noon assignment; shared V2 gates + shared renderer, never direct Meta publishing.
 const fs=require("node:fs"),path=require("node:path"),Module=require("node:module"),ts=require("typescript"),{createHash,randomUUID}=require("node:crypto"),{createClient}=require("@supabase/supabase-js");
 const ROOT=path.resolve(__dirname,".."),EVENT="persija-october-fixtures-recovery-2026-10-06",PLAN="2026-10-06:mid-noon";
+require("./cms-load.cjs");
 const PRIMARY="https://ileague.id/news/detail/-kebugaran-jadi-kunci-persija-jaga-performa-di-jadwal-padat";
 const SECONDARY="https://tangselpos.id/detail/55538/jadwal-padat-menanti-persija-shin-tae-yong-prioritaskan-kebugaran-pemain";
 const PHOTO="https://assets.ileague.id/uploads/images/news/-Kebugaran-Jadi-Kunci-Persija-Jaga-Performa-di-Jadwal-Padat-1791255995.JPG";

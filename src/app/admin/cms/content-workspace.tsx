@@ -1997,6 +1997,8 @@ function EditorModal({
                 dan scenes: URL halaman, URL media, platform, kreator,
                 transkrip, timestamp potongan, kredit, hak media/audio, dan
                 claim_ids. Engine membuat montage, bukan footage AI.
+                Untuk carousel, siapkan cover kolase editorial sesuai gaya
+                Stadione; foto sumber saja belum menjadi cover siap terbit.
               </p>
             </Field>
             <Field label="Judul">
@@ -2255,9 +2257,7 @@ function EditorModal({
 function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
   const [zoomed, setZoomed] = useState(false);
   const renderedUrl = asset.url || null;
-  const sourceImageUrl = asset.image_url || null;
-  const previewUrl = renderedUrl || sourceImageUrl;
-  const fullText = asset.layout === "full_text" || !sourceImageUrl;
+  const previewUrl = renderedUrl;
   useEffect(() => {
     if (!zoomed) return;
     const close = (event: KeyboardEvent) => {
@@ -2266,12 +2266,6 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
     window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
   }, [zoomed]);
-  const colors =
-    asset.tone === "burgundy"
-      ? "bg-[#84102D] text-white"
-      : asset.tone === "sand"
-        ? "bg-[#B5AC8A] text-[#0D0D0D]"
-        : "bg-[#0D0D0D] text-[#F5F0E8]";
   return (
     <>
       <button
@@ -2280,7 +2274,7 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
         disabled={!previewUrl}
         aria-label={`Perbesar slide ${index + 1}`}
         title={previewUrl ? "Klik untuk memperbesar" : undefined}
-        className={`relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] ${renderedUrl ? "" : "p-4"} ${colors}`}
+        className={`relative aspect-[4/5] w-44 shrink-0 overflow-hidden rounded-2xl border border-[#2E2C28] bg-[#eee9dd] text-[#191714] ${renderedUrl ? "" : "p-4"}`}
       >
         {renderedUrl ? (
           <img
@@ -2288,35 +2282,16 @@ function SlidePreview({ asset, index }: { asset: Asset; index: number }) {
             alt={`Preview slide ${index + 1}`}
             className="h-full w-full object-cover"
           />
-        ) : (
-          !fullText &&
-          sourceImageUrl && (
-            <img
-              src={sourceImageUrl}
-              alt=""
-              className="absolute inset-0 h-full w-full object-cover opacity-35"
-            />
-          )
-        )}
+        ) : null}
         {!renderedUrl && (
           <div
-            className={`relative flex h-full flex-col justify-between ${fullText ? "text-center" : ""}`}
+            className="relative flex h-full flex-col justify-center gap-3 text-left"
           >
             <div className="text-[8px] font-bold uppercase tracking-[.16em] opacity-70">
-              {asset.eyebrow || `Slide ${index + 1}`}
+              Slide {index + 1} · Belum dirender
             </div>
-            <div className={fullText ? "my-auto" : ""}>
-              <div
-                className={`${fullText ? "text-2xl" : "text-lg"} font-bold leading-tight`}
-              >
-                {asset.headline}
-              </div>
-              <div className="mt-2 line-clamp-4 text-[9px] leading-4 opacity-80">
-                {asset.body}
-              </div>
-            </div>
-            <div className="text-[8px] font-bold uppercase tracking-[.15em]">
-              STADIONE
+            <div className="text-xs leading-relaxed">
+              Buat preview engine untuk melihat hasil akhir cover kolase dan halaman artikel koran.
             </div>
           </div>
         )}

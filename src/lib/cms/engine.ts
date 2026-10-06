@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { carouselStyleIssues, editorialCoverIssues, type EditorialCover } from "./carousel-style";
 
 export const ENGINE = "STADIONE_SPORTS_DESK_V2";
 export type Source = {
@@ -68,6 +69,7 @@ export type Packet = {
     rights_evidence: string;
     scope: string;
     rights_status: string;
+    editorial_cover?: EditorialCover;
     video_sources?: VideoSource[];
     scenes?: ReelScene[];
   };
@@ -208,6 +210,8 @@ export function auditPacket(
   if (slides.length < 5 || slides.length > 10)
     errors.push("Story perlu 5–10 bagian.");
   slides.forEach((s, i) => {
+    if (format === "CAROUSEL" && /informasi ini sedang menjadi perhatian publik|detail utama tetap harus diperiksa redaksi|redaksi perlu melengkapi|urutan kejadian.*perlu disusun/i.test(`${s.headline} ${s.body}`))
+      errors.push(`Slide ${i+1}: scaffold draf bukan artikel siap publikasi.`);
     if (
       (`${s.headline} ${s.body}`.match(/\d+(?:[.,:]\d+)*/g) || []).some(
         (n) => !numbers.has(n),
@@ -279,6 +283,7 @@ export function auditPacket(
     if (total < 8 || total > 90)
       errors.push("Durasi montage Reel harus 8–90 detik.");
   } else {
+    if (format === "CAROUSEL") errors.push(...editorialCoverIssues(packet));
     const m = packet.media;
     if (
       !/^https:\/\//.test(m.url || "") ||
@@ -294,8 +299,17 @@ export function auditPacket(
 }
 export function enginePublicationIssues(item: Item, requireApproval = true) {
   const meta = item.editorial_meta || {};
-  if (meta.standard !== ENGINE) return [];
-  const issues = auditPacket(meta.engine_packet as Packet, String(item.format));
+  const styleIssues = String(item.format) === "CAROUSEL" ? carouselStyleIssues(item.assets || []) : [];
+  if (meta.standard !== ENGINE) return String(item.format) === "CAROUSEL" ? [...styleIssues, "Carousel legacy harus dipindahkan ke shared engine sebelum publikasi."] : [];
+  const issues = [...styleIssues, ...auditPacket(meta.engine_packet as Packet, String(item.format))];
+  if (String(item.format) === "CAROUSEL") {
+    const packet = meta.engine_packet as Packet | undefined;
+    const coverAudit = item.assets?.[0]?.render_audit as Record<string, unknown> | undefined;
+    if (coverAudit?.cover_input_sha256 !== packet?.media?.editorial_cover?.sha256 ||
+        coverAudit?.source_label !== packet?.media?.editorial_cover?.source_label ||
+        item.assets?.slice(1).some((a, i) => !packet?.slides?.[i+1] || (a.render_audit as Record<string, unknown>)?.text_sha256 !== packetDigest(packet.slides[i+1])))
+      issues.push("Aset carousel tidak berasal dari cover dan artikel pada packet yang diperiksa.");
+  }
   if (meta.rendered_packet_digest !== packetDigest(meta.engine_packet))
     issues.push("Source packet berubah setelah render; buat preview baru.");
   if (

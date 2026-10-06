@@ -1,6 +1,6 @@
 # Preview cover Persija — 6 Oktober 2026
 
-Status: preview ditampilkan kepada pemilik, belum disetujui untuk mengganti konten live. Tidak mengubah CMS, Instagram, renderer, atau jadwal rutin.
+Status: pemilik telah meminta publikasi ulang memakai preview ini dan mengunci gaya di engine. Aset PNG ini tetap menjadi acuan immutable. Publikasi revisi memakai artikel CMS yang sama dan tidak mengganti slot rutin. Bukti publikasi dicatat di Plan Master setelah berhasil.
 
 ## Sumber dan acuan
 
@@ -36,4 +36,4 @@ Nomor slide 1/5 boleh ditampilkan tanpa label edisi. Halaman sesudah cover tetap
 - Generated artifact: /workspace/generated_images/exec-956d5d2b-7f2b-4c23-878a-fb72077e65f4.png
 - Dibuat dengan image generation/editing memakai foto asli dan acuan gaya. Bukan jaminan bahwa piksel wajah, teks sponsor, atau jersey identik dengan sumber.
 - Pemeriksaan visual: kolase menyatu, headline terbungkus, sumber singkat, tidak ada clipping, label edisi, atau footer promosi.
-- Tidak memanggil publisher, mengedit database, atau mengganti media Instagram. Jangan menganggap preview ini sebagai persetujuan produksi otomatis.
+- Pembuatan preview semula tidak memanggil publisher atau mengedit database. Permintaan berikutnya dari pemilik mengotorisasi publikasi revisi melalui publisher CMS, bukan pengiriman Meta langsung; lihat scripts/republish-persija-style.cjs.

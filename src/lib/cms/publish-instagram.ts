@@ -1,5 +1,6 @@
 import "server-only"
 import { enginePublicationIssues } from "./engine"
+import { verifyCarouselAssets } from "./engine-media"
 import { NextResponse } from "next/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { containerStatus, createCarousel, createImage, createReel, metaConfigured, publicMediaUrl, publishContainer } from "@/lib/cms/meta"
@@ -39,6 +40,11 @@ export async function publishInstagramContent(id: string, actorId: string | null
     if ((item.format === "CAROUSEL" && (urls.length < 2 || urls.length > 10)) || (item.format !== "CAROUSEL" && urls.length !== 1)) throw new Error(item.format === "CAROUSEL" ? "Carousel perlu 2–10 URL gambar publik." : "Format ini perlu tepat satu URL media publik.")
     if (!String(item.caption || "").trim()) throw new Error("Caption harus diisi sebelum publikasi.")
   } catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : "Aset tidak valid." }, { status: 400 }) }
+  // Applies to manual, scheduled and legacy callers before any Meta container is created.
+  if (item.format === "CAROUSEL") {
+    try { await verifyCarouselAssets(assets) }
+    catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : "Audit carousel gagal." }, { status: 409 }) }
+  }
 
   const token = crypto.randomUUID()
   const { data: claimed, error: claimError } = await admin.rpc("claim_stadione_ig_publish", { p_content_id: id, p_token: token })

@@ -6,7 +6,9 @@ import { isIP } from "node:net";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import sharp from "sharp";
-import type { Packet, VideoSource } from "./engine";
+import { createHash } from "node:crypto";
+import { CAROUSEL_STYLE, carouselStyleIssues, editorialCoverIssues } from "./carousel-style";
+import { packetDigest, type Packet, type VideoSource } from "./engine";
 const run = promisify(execFile);
 const esc = (s: string) =>
   s.replace(
@@ -104,17 +106,32 @@ attempts: attempt + 1,
   throw new Error("Teks melampaui ruang setelah 5 penyesuaian ukuran.");
 }
 export async function renderCarousel(packet: Packet) {
+  const coverIssues = editorialCoverIssues(packet);
+  if (coverIssues.length) throw new Error(coverIssues.join(" "));
   const source = new URL(packet.sources.find(s => s.primary)?.url || packet.sources[0].url).hostname.replace(/^www\./, "").toUpperCase();
-  const photo = await sourceBytes(packet.media.url);
+  const cover = packet.media.editorial_cover!;
+  const coverBytes = await sourceBytes(cover.url);
+  const hash = (bytes: Buffer) => createHash("sha256").update(bytes).digest("hex");
+  if (hash(coverBytes) !== cover.sha256) throw new Error("Berkas cover berubah setelah review; jangan menerbitkan aset pengganti.");
+  const info = await sharp(coverBytes).metadata();
+  if (!info.width || !info.height || info.width < 1080 || info.height < 1350 ||
+      Math.abs(info.width / info.height - 4 / 5) > 0.002 || (info.pages || 1) !== 1)
+    throw new Error("Cover editorial wajib gambar statis minimal 1080x1350 dengan rasio 4:5; tidak boleh dicrop ulang.");
   const images = [];
   const left = 72, width = 936, bottom = 1278;
   for (let i = 0; i < packet.slides.length; i++) {
-    const slide = packet.slides[i], cover = i === 0;
-    const headline = await measuredText(slide.headline, width, cover ? 255 : 235, cover ? 68 : 60, true, "#191714");
-    const titleTop = cover ? 822 : 205;
+    if (i === 0) {
+      // Mechanical export only. Never regenerate or place a second headline over the approved artwork.
+      const bytes = await sharp(coverBytes).resize(1080, 1350, { fit: "fill" }).jpeg({quality:95,chromaSubsampling:"4:4:4"}).toBuffer();
+      images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_collage_cover",authentic_photo:true,editorial_background:true,source_label:source,cover_input_sha256:cover.sha256,output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,safe_wrap:true,ok:true}});
+      continue;
+    }
+    const slide = packet.slides[i];
+    const headline = await measuredText(slide.headline, width, 235, 60, true, "#191714");
+    const titleTop = 205;
     const bodyTop = titleTop + headline.height + 30;
-    const body = await measuredText(slide.body, width, bottom - bodyTop, cover ? 31 : 36, false, "#302c27");
-    if (body.font_size < (cover ? 27 : 32)) throw new Error("Pisahkan artikel menjadi halaman tambahan; jangan perkecil teks di bawah batas baca.");
+    const body = await measuredText(slide.body, width, bottom - bodyTop, 36, false, "#302c27");
+    if (body.font_size < 32) throw new Error("Pisahkan artikel menjadi halaman tambahan; jangan perkecil teks di bawah batas baca.");
     const boxes = [
       { x: left, y: titleTop, width: headline.width, height: headline.height, font_size: headline.font_size },
       { x: left, y: bodyTop, width: body.width, height: body.height, font_size: body.font_size },
@@ -128,20 +145,28 @@ export async function renderCarousel(packet: Packet) {
       <text x="1008" y="74" text-anchor="end" font-family="DejaVu Sans" font-size="22" font-weight="700" fill="#191714">${i+1}/${packet.slides.length}</text>
       <line x1="72" y1="102" x2="1008" y2="102" stroke="#191714" stroke-width="2"/>
       <text x="72" y="150" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text>
-      ${cover ? `<text x="1008" y="150" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text>` : ""}
       <line x1="72" y1="174" x2="1008" y2="174" stroke="#191714" stroke-width="2"/>
       <line x1="72" y1="${titleTop+headline.height+13}" x2="1008" y2="${titleTop+headline.height+13}" stroke="#84102d" stroke-width="5"/>
     </svg>`);
     const layers: sharp.OverlayOptions[] = [];
-    if (cover) {
-      const cropped = await sharp(photo).resize(width, 586, { fit: "cover", position: "attention" }).modulate({ saturation: 0.85 }).jpeg({quality:95}).toBuffer();
-      layers.push({ input: cropped, left, top: 196 });
-    }
     layers.push({ input: headline.buffer, left, top: titleTop }, { input: body.buffer, left, top: bodyTop });
     const bytes = await sharp(base).composite(layers).jpeg({quality:95,chromaSubsampling:"4:4:4"}).toBuffer();
-    images.push({bytes,audit:{width:1080,height:1350,layout:cover?"newspaper_photo":"newspaper_article",authentic_photo:cover,source_label:cover?source:null,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,boxes,safe_wrap:safe,columns:1,ok:safe}});
+    images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_article",paper_tone:"#eee9dd",authentic_photo:false,source_label:null,text_sha256:packetDigest(slide),output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,boxes,safe_wrap:safe,columns:1,ok:safe}});
   }
   return images;
+}
+export async function verifyCarouselAssets(assets: Record<string, unknown>[]) {
+  const issues = carouselStyleIssues(assets);
+  if (issues.length) throw new Error(issues.join(" "));
+  await Promise.all(assets.map(async (asset, i) => {
+    const bytes = await sourceBytes(String(asset.url || asset.image_url || ""));
+    const a = asset.render_audit as Record<string, unknown>;
+    if (createHash("sha256").update(bytes).digest("hex") !== a.output_sha256)
+      throw new Error(`Slide ${i+1} berubah setelah render; buat render baru sebelum publikasi.`);
+    const info = await sharp(bytes).metadata();
+    if (info.format !== "jpeg" || info.width !== 1080 || info.height !== 1350)
+      throw new Error(`Slide ${i+1} bukan JPEG 1080x1350.`);
+  }));
 }
 async function probe(file: string) {
   return JSON.parse(

@@ -3,6 +3,7 @@ import { randomUUID, createHash } from "node:crypto"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { ENGINE, auditPacket, contentDigest, packetDigest, type Packet, type Source } from "./engine"
 import { sourceBytes, renderCarousel, renderReel } from "./engine-media"
+import { CAROUSEL_STYLE, CAROUSEL_DESIGN_BRIEF } from "./carousel-style"
 const digest=(text:string)=>createHash("sha256").update(text).digest("hex")
 const plain=(html:string)=>html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&nbsp;|&#160;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/\s+/g," ").trim()
 const tokens=(title:string)=>new Set(title.toLowerCase().replace(/[^\p{L}\p{N} ]/gu," ").split(/\s+/).filter(s=>s.length>3 && !/indonesia|olahraga|berita|terbaru|hari|hasil|untuk|dengan|pada|dari/.test(s)))
@@ -43,7 +44,7 @@ export async function generateEnginePreview(id:string) {
     }
     await checkpoint("CLAIM_AUDIT")
     const issues=auditPacket(packet,item.format)
-    const baseMeta={...meta,standard:ENGINE,engine_packet:packet,engine_approval:null,engine_run_key:key,engine_state:issues.length?"BLOCKED":"RENDERING",engine_issues:issues,engine_voice:{tone:"tajam, energik, dekat komunitas",rules:["fakta dulu, konteks sesudahnya","rumor berlabel","hasil hanya final resmi","banter performa, bukan identitas","kutipan persis sumber"]}}
+    const baseMeta={...meta,standard:ENGINE,carousel_style:item.format==="CAROUSEL"?CAROUSEL_STYLE:undefined,carousel_design_brief:item.format==="CAROUSEL"?CAROUSEL_DESIGN_BRIEF:undefined,engine_packet:packet,engine_approval:null,engine_run_key:key,engine_state:issues.length?"BLOCKED":"RENDERING",engine_issues:issues,engine_voice:{tone:"tajam, energik, dekat komunitas",rules:["fakta dulu, konteks sesudahnya","rumor berlabel","hasil hanya final resmi","banter performa, bukan identitas","kutipan persis sumber"]}}
     const {data:savedItem,error:saveError}=await admin.from("stadione_content_items").update({status:"PENDING_REVIEW",editorial_meta:baseMeta,source_url:packet.sources.find(s=>s.primary)?.url || packet.sources[0]?.url || item.source_url,source_snapshot:{sources:packet.sources}}).eq("id",id).eq("updated_at",item.updated_at).select("id,updated_at").single()
     if(saveError) throw new Error("Draf berubah selama research; muat ulang sebelum regenerasi.")
     savedTimestamp=savedItem.updated_at
