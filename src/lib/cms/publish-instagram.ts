@@ -1,6 +1,9 @@
 import "server-only"
 import { enginePublicationIssues } from "./engine"
 import { verifyCarouselAssets } from "./engine-media"
+import { writingReferenceIssues } from "./writing-references"
+import { type Packet } from "./engine"
+import { articleHtml, articleDigest } from "./news-writing"
 import { NextResponse } from "next/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { containerStatus, createCarousel, createImage, createReel, metaConfigured, publicMediaUrl, publishContainer } from "@/lib/cms/meta"
@@ -31,6 +34,14 @@ export async function publishInstagramContent(id: string, actorId: string | null
     return NextResponse.json({ error: "Verifikasi fakta, sumber primer, dan hak pakai aset harus diselesaikan dan disimpan sebelum publikasi." }, { status: 409 })
   }
   const engineIssues = enginePublicationIssues(item)
+  const packet=editorial.engine_packet as Packet | undefined
+  if(item.format === "CAROUSEL" || packet?.article) engineIssues.push(...await writingReferenceIssues(packet?.article))
+  if(packet?.article) {
+    const {data:article,error:articleError}=await admin.from("stadione_content_items").select("id,kind,title,excerpt,body,editorial_meta").eq("id",item.parent_id || "00000000-0000-0000-0000-000000000000").maybeSingle()
+    const paired=article?.editorial_meta?.engine_packet?.article
+    if(articleError || article?.kind!=="ARTICLE" || !paired || article.title!==packet.article.title || article.excerpt!==packet.article.dek || article.body!==articleHtml(packet.article) || articleDigest(paired)!==articleDigest(packet.article))
+      engineIssues.push("Artikel CMS pasangan belum sama dengan naskah carousel; sinkronkan sebelum publikasi.")
+  }
   if (engineIssues.length) return NextResponse.json({error:engineIssues.join(" "),issues:engineIssues},{status:409})
   if (!["DRAFT", "PENDING_REVIEW", "SCHEDULED"].includes(item.status)) return NextResponse.json({ error: "Status konten tidak dapat diterbitkan." }, { status: 409 })
   const assets = Array.isArray(item.assets) ? item.assets : []

@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "goal-20261006-gordon-feature",
+      "url": "https://www.goal.com/id/original/anthony-gordon-bukan-lamine-yamal-nya-inggris-tetapi-bintang-terbaru-barcelona-itu-pantas-menjadi-salah-satu-pemain-yang-tak-tersentuh-milik-thomas-tuchel/bltaee420c200d0f7de",
+      "read_at": "2026-10-06T14:05:00Z",
+      "kind": "FEATURE",
+      "lessons": [
+        "Buka feature lewat kejadian yang membuat tesis relevan, bukan pengantar tentang pentingnya olahraga.",
+        "Dukung pendapat dengan aksi spesifik, data dan kutipan yang memberi sudut berbeda.",
+        "Perbandingan pemain harus menjelaskan perbedaan kontribusi, bukan sekadar reputasi.",
+        "Setiap subbagian memperluas argumen dengan bahan baru; penutup kembali ke tesis tanpa mengulang seluruh cerita."
+      ],
+      "application": "Feature Stadione membutuhkan tesis jelas dan bukti pertandingan. Jangan memberi label Analisis Stadione pada nasihat umum tanpa detail sepak bola."
+    },
+    {
+      "id": "goal-20261006-piala-presiden-news",
+      "url": "https://www.goal.com/id/daftar/penjelasan-panitia-jeda-48-jam-final-piala-presiden/blt09878f72ebba869d",
+      "read_at": "2026-10-06T14:06:00Z",
+      "kind": "NEWS",
+      "lessons": [
+        "Lead berita langsung mempertemukan persoalan dengan respons pihak yang bertanggung jawab.",
+        "Jelaskan konteks pernyataan dan pembicaranya agar kutipan mempunyai fungsi dalam cerita.",
+        "Susun rincian berbeda per bagian; jangan mengulang persoalan pembuka untuk mengisi halaman.",
+        "Gunakan nama, keputusan, waktu atau data yang konkret daripada kalimat motivasi umum."
+      ],
+      "application": "Berita Stadione dimulai dari pokok kabar. Kutipan menjelaskan sikap narasumber dan paragraf berikutnya membawa fakta atau konteks baru. Jumlah carousel mengikuti artikel yang sudah disunting."
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { carouselStyleIssues, editorialCoverIssues, type EditorialCover } from "./carousel-style";
+import { articleIssues, articleSlides, articleHtml, type NewsArticle } from "./news-writing";
 
 export const ENGINE = "STADIONE_SPORTS_DESK_V2";
 export type Source = {
@@ -54,6 +55,8 @@ export type ReelScene = {
 };
 export type Packet = {
   version: number;
+  article?: NewsArticle;
+  writer_brief?: { standard: string; genre: string; rules: string[]; references: {id: string; url: string; lessons: string[]; application: string}[] };
   narrative_reviewed?: boolean;
   context?: Record<string, string>;
   event_status: string;
@@ -70,12 +73,15 @@ export type Packet = {
     scope: string;
     rights_status: string;
     editorial_cover?: EditorialCover;
+    article_image?: { url: string; credit: string };
     video_sources?: VideoSource[];
     scenes?: ReelScene[];
   };
 };
 type Item = {
   title?: string;
+  body?: string;
+  excerpt?: string;
   caption?: string;
   format?: string;
   category?: string;
@@ -115,6 +121,7 @@ export function contentDigest(item: Item) {
       item.category,
       item.assets,
       item.editorial_meta?.engine_packet,
+      ...(item.format === "ARTICLE" ? [item.body,item.excerpt] : []),
     ]),
   );
 }
@@ -207,8 +214,15 @@ export function auditPacket(
         .match(/\d+(?:[.,:]\d+)*/g) || [],
     );
   const slides = Array.isArray(packet.slides) ? packet.slides : [];
-  if (slides.length < 5 || slides.length > 10)
-    errors.push("Story perlu 5–10 bagian.");
+  if (slides.length < (format === "CAROUSEL" ? 2 : 1) || slides.length > 10)
+    errors.push("Panjang story harus mengikuti materi; carousel perlu 2–10 halaman.");
+  if (format === "CAROUSEL" || format === "ARTICLE" || packet.article) {
+    try {
+      errors.push(...articleIssues(packet.article, claims, sources, now));
+      if (format === "CAROUSEL" && packet.article && canonicalJson(slides) !== canonicalJson(articleSlides(packet.article)))
+        errors.push("Carousel harus berasal dari pagination artikel utuh yang sama; jangan menulis ulang isi per slide.");
+    } catch { errors.push("Struktur artikel/pagination tidak valid; lengkapi artikel sebelum render."); }
+  }
   slides.forEach((s, i) => {
     if (format === "CAROUSEL" && /informasi ini sedang menjadi perhatian publik|detail utama tetap harus diperiksa redaksi|redaksi perlu melengkapi|urutan kejadian.*perlu disusun/i.test(`${s.headline} ${s.body}`))
       errors.push(`Slide ${i+1}: scaffold draf bukan artikel siap publikasi.`);
@@ -228,6 +242,8 @@ export function auditPacket(
       errors.push(`Slide ${i + 1}: petakan ke klaim terverifikasi.`);
   });
   if (format === "REEL") {
+    if(packet.article && (!/^https:\/\//.test(packet.media.article_image?.url || '') || !packet.media.article_image?.credit))
+      errors.push("Artikel pasangan Reels perlu foto/frame asli tanpa overlay sebagai hero; URL video bukan foto artikel.");
     const clips = packet.media.video_sources || [],
       scenes = packet.media.scenes || [],
       clipIds = new Set(clips.map((c) => c.id));
@@ -299,6 +315,12 @@ export function auditPacket(
 }
 export function enginePublicationIssues(item: Item, requireApproval = true) {
   const meta = item.editorial_meta || {};
+  if(item.format === "ARTICLE") {
+    const p=meta.engine_packet as Packet | undefined;
+    const issues=articleIssues(p?.article,p?.claims || [],p?.sources || []);
+    if(p?.article && (item.title!==p.article.title || item.excerpt!==p.article.dek || item.body!==articleHtml(p.article)))issues.push("Artikel website berbeda dari naskah yang ditinjau; sinkronkan artikel dan carousel.");
+    if(issues.length)return issues;
+  }
   const styleIssues = String(item.format) === "CAROUSEL" ? carouselStyleIssues(item.assets || []) : [];
   if (meta.standard !== ENGINE) return String(item.format) === "CAROUSEL" ? [...styleIssues, "Carousel legacy harus dipindahkan ke shared engine sebelum publikasi."] : [];
   const issues = [...styleIssues, ...auditPacket(meta.engine_packet as Packet, String(item.format))];
@@ -320,9 +342,9 @@ export function enginePublicationIssues(item: Item, requireApproval = true) {
   const assets = item.assets || [];
   if (
     String(item.format) === "CAROUSEL" &&
-    (assets.length < 5 || assets.length > 10)
+    (assets.length < 2 || assets.length > 10)
   )
-    issues.push("Carousel harus memiliki 5–10 aset.");
+    issues.push("Carousel harus memiliki 2–10 aset sesuai panjang artikel.");
   if (
     !item.caption?.trim() ||
     /brief redaksi|belum untuk publikasi/i.test(item.caption)

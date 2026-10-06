@@ -12,6 +12,7 @@ export type EditorialCover = {
   source_label: string;
   reviewed_at: string;
   reviewed_by: string;
+  page_count?: number;
   safe_wrap: boolean;
   authentic_subject: boolean;
   editorial_background: boolean;
@@ -27,6 +28,7 @@ export function editorialCoverIssues(packet: {
 }) {
   const c = packet.media?.editorial_cover;
   if (!c) return ["Siapkan cover kolase editorial sesuai gaya Stadione; foto mentah bukan cover siap publikasi."];
+  if(c.page_count!==packet.slides.length)return ["Jumlah halaman pada cover belum cocok dengan pagination artikel; siapkan cover setelah naskah selesai."];
   let source = "";
   try { source = new URL(packet.sources.find(s => s.primary)?.url || packet.sources[0]?.url).hostname.replace(/^www\./, "").toUpperCase(); } catch { /* Source audit reports the invalid URL. */ }
   const ok = c.style_version === CAROUSEL_STYLE && /^https:\/\//.test(c.url || "") &&
@@ -37,7 +39,7 @@ export function editorialCoverIssues(packet: {
   return ok ? [] : ["Cover editorial berubah/belum diperiksa atau tidak sesuai foto, judul, naskah, sumber, dan gaya yang dikunci."];
 }
 export function carouselStyleIssues(assets: Record<string, unknown>[]) {
-  if (assets.length < 5 || assets.length > 10) return ["Carousel koran memerlukan 5–10 halaman artikel."];
+  if (assets.length < 2 || assets.length > 10) return ["Carousel koran memerlukan 2–10 halaman sesuai panjang artikel."];
   const valid = assets.every((asset, i) => {
     const a = asset.render_audit as Record<string, unknown> | undefined;
     return a?.style_version === CAROUSEL_STYLE && a.width === 1080 && a.height === 1350 &&

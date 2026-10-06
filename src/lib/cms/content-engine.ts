@@ -4,6 +4,8 @@ import { createAdminClient } from "@/lib/supabase/admin"
 import { ENGINE, auditPacket, contentDigest, packetDigest, type Packet, type Source } from "./engine"
 import { sourceBytes, renderCarousel, renderReel } from "./engine-media"
 import { CAROUSEL_STYLE, CAROUSEL_DESIGN_BRIEF } from "./carousel-style"
+import { articleSlides, articleHtml, WRITING_STANDARD } from "./news-writing"
+import { writingReferenceIssues, writerBrief } from "./writing-references"
 const digest=(text:string)=>createHash("sha256").update(text).digest("hex")
 const plain=(html:string)=>html.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/gi," ").replace(/<[^>]+>/g," ").replace(/&nbsp;|&#160;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/\s+/g," ").trim()
 const tokens=(title:string)=>new Set(title.toLowerCase().replace(/[^\p{L}\p{N} ]/gu," ").split(/\s+/).filter(s=>s.length>3 && !/indonesia|olahraga|berita|terbaru|hari|hasil|untuk|dengan|pada|dari/.test(s)))
@@ -42,8 +44,15 @@ export async function generateEnginePreview(id:string) {
       if(!candidate) { await checkpoint("ASSIGNMENT","BLOCKED",{issues:["Tidak ada kandidat aktual yang sesuai pilar matrix. Editor perlu memilih berita/sumber primer."]});return {id,state:"BLOCKED",issues:["Tidak ada kandidat sesuai pilar matrix."]} }
       packet=await research(candidate,news,meta)
     }
+    if(item.format === "CAROUSEL") {
+      try{packet={...packet,writer_brief:await writerBrief(packet.article?.genre || "NEWS")}}
+      catch{ /* Reference audit below provides a visible blocked reason. */ }
+    }
+    // The complete article is the single writing input, before page layout.
+    if(item.format === "CAROUSEL" && packet.article) packet={...packet,slides:articleSlides(packet.article)}
     await checkpoint("CLAIM_AUDIT")
     const issues=auditPacket(packet,item.format)
+    if(item.format === "CAROUSEL") issues.push(...await writingReferenceIssues(packet.article))
     const baseMeta={...meta,standard:ENGINE,carousel_style:item.format==="CAROUSEL"?CAROUSEL_STYLE:undefined,carousel_design_brief:item.format==="CAROUSEL"?CAROUSEL_DESIGN_BRIEF:undefined,engine_packet:packet,engine_approval:null,engine_run_key:key,engine_state:issues.length?"BLOCKED":"RENDERING",engine_issues:issues,engine_voice:{tone:"tajam, energik, dekat komunitas",rules:["fakta dulu, konteks sesudahnya","rumor berlabel","hasil hanya final resmi","banter performa, bukan identitas","kutipan persis sumber"]}}
     const {data:savedItem,error:saveError}=await admin.from("stadione_content_items").update({status:"PENDING_REVIEW",editorial_meta:baseMeta,source_url:packet.sources.find(s=>s.primary)?.url || packet.sources[0]?.url || item.source_url,source_snapshot:{sources:packet.sources}}).eq("id",id).eq("updated_at",item.updated_at).select("id,updated_at").single()
     if(saveError) throw new Error("Draf berubah selama research; muat ulang sebelum regenerasi.")
@@ -59,12 +68,33 @@ export async function generateEnginePreview(id:string) {
       const {data:url}=admin.storage.from("stadione-cms").getPublicUrl(path)
       const clips=packet.media.video_sources || []; assets.push({...packet.slides[i],type:item.format==="REEL"?"video":"image",...(item.format==="REEL"?{video_url:url.publicUrl}:{url:url.publicUrl}),credit:item.format==="REEL"?clips.map(c=>c.credit).join(" · "):packet.media.credit,rights_status:"CLEARED",rights_evidence:item.format==="REEL"?clips.map(c=>c.rights_evidence).join(" · "):packet.media.rights_evidence,source_url:item.format==="REEL"?clips[0]?.page_url:packet.media.url,source_clips:item.format==="REEL"?clips.map(c=>({id:c.id,platform:c.platform,page_url:c.page_url,creator:c.creator,credit:c.credit,rights_status:c.rights_status,scope:c.scope})):undefined,render_audit:rendered[i].audit})
     }
-    const caption=packet.claims.map(c=>c.text).join("\n\n")+`\n\n${packet.slides.at(-1)?.headline}\nSumber: ${packet.sources.map(s=>new URL(s.url).hostname).join(", ")}. Foto/video: ${packet.media.credit}.`
+    const caption=packet.article?.caption || packet.claims.map(c=>c.text).join("\n\n")
     const readyMeta={...baseMeta,engine_state:"READY_FOR_REVIEW",engine_issues:[],fact_check_status:"VERIFIED",rights_status:"CLEARED",rendered_packet_digest:packetDigest(packet),render_audit:{ok:true,format:item.format,assets:rendered.map(r=>r.audit)}}
     const {data:ready,error:finishError}=await admin.from("stadione_content_items").update({title:packet.slides[0].headline,caption,assets,editorial_meta:readyMeta}).eq("id",id).eq("updated_at",savedTimestamp).select("*").single()
     if(finishError||!ready)throw finishError || new Error("Preview gagal disimpan")
+    savedTimestamp=ready.updated_at
     const approval={actor_id:"AUTO_EDITORIAL",approved_at:new Date().toISOString(),digest:contentDigest(ready)}
-    const publishAt=new Date(Date.now()+2*60000).toISOString()
+    // Preserve the normal slot; additional work never moves a routine plan.
+    const planned=Date.parse(String(meta.planned_at || item.scheduled_at || ""))
+    const publishAt=Number.isFinite(planned)?new Date(planned).toISOString():new Date(Date.now()+2*60000).toISOString()
+    if(packet.article) {
+      const slug=packet.article.title.toLowerCase().replace(/[^\p{L}\p{N}]+/gu,"-").replace(/^-|-$/g,"")+"-"+id.slice(0,8)
+      const hero=item.format==="REEL"?packet.media.article_image!:{url:packet.media.url,credit:packet.media.credit}
+      const articleFields={title:packet.article.title,excerpt:packet.article.dek,body:articleHtml(packet.article),category:item.category,status:"SCHEDULED",scheduled_at:publishAt,assets:[{type:"image",url:hero.url,credit:hero.credit,clean_photo:true,text_overlay:false}],source_url:packet.sources.find(s=>s.primary)?.url,editorial_meta:{...readyMeta,writing_standard:WRITING_STANDARD,plan_key:String(meta.plan_key || id)+":article"}}
+      let parent=item.parent_id
+      if(parent) {
+        const {data:updatedArticle,error:articleError}=await admin.from("stadione_content_items").update(articleFields).eq("id",parent).eq("kind","ARTICLE").in("status",["DRAFT","PENDING_REVIEW","SCHEDULED"]).select("id").maybeSingle()
+        if(articleError)throw articleError
+        if(!updatedArticle)throw new Error("Artikel pasangan sudah terbit/berubah; jangan menimpa artikel historis.")
+      } else {
+        parent=randomUUID();const {error:articleError}=await admin.from("stadione_content_items").insert({id:parent,kind:"ARTICLE",format:"ARTICLE",platforms:["WEBSITE"],slug,...articleFields})
+        if(articleError)throw articleError
+        const {data:linked,error:linkError}=await admin.from("stadione_content_items").update({parent_id:parent}).eq("id",id).eq("updated_at",ready.updated_at).select("updated_at").single()
+        if(linkError)throw linkError
+        ready.updated_at=linked.updated_at
+      }
+    }
+    savedTimestamp=ready.updated_at
     const {error:scheduleError}=await admin.from("stadione_content_items").update({status:"SCHEDULED",scheduled_at:publishAt,editorial_meta:{...readyMeta,engine_approval:approval,approved_via:"AUTO_EDITORIAL",auto_publish:true}}).eq("id",id).eq("updated_at",ready.updated_at)
     if(scheduleError)throw scheduleError
     await checkpoint("AUTO_SCHEDULED","COMPLETED",{assets:assets.length,review_required:false,publish_at:publishAt})

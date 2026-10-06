@@ -9,6 +9,7 @@ import sharp from "sharp";
 import { createHash } from "node:crypto";
 import { CAROUSEL_STYLE, carouselStyleIssues, editorialCoverIssues } from "./carousel-style";
 import { packetDigest, type Packet, type VideoSource } from "./engine";
+import { articleIssues, articleSlides } from "./news-writing";
 const run = promisify(execFile);
 const esc = (s: string) =>
   s.replace(
@@ -106,6 +107,9 @@ attempts: attempt + 1,
   throw new Error("Teks melampaui ruang setelah 5 penyesuaian ukuran.");
 }
 export async function renderCarousel(packet: Packet) {
+  const writingIssues=articleIssues(packet.article,packet.claims,packet.sources);
+  if(writingIssues.length)throw new Error(writingIssues.join(" "));
+  if(packetDigest(packet.slides)!==packetDigest(articleSlides(packet.article!)))throw new Error("Slide berbeda dari artikel yang ditinjau; buat pagination ulang.");
   const coverIssues = editorialCoverIssues(packet);
   if (coverIssues.length) throw new Error(coverIssues.join(" "));
   const source = new URL(packet.sources.find(s => s.primary)?.url || packet.sources[0].url).hostname.replace(/^www\./, "").toUpperCase();

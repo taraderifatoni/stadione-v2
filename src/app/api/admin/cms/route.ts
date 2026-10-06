@@ -19,6 +19,7 @@ import {
   ENGINE,
   contentDigest,
   enginePublicationIssues,
+  type Packet,
 } from "@/lib/cms/engine";
 
 const editableFields = [
@@ -461,6 +462,10 @@ export async function PATCH(request: NextRequest) {
   }
   if (["schedule", "publish"].includes(action)) {
     const issues = enginePublicationIssues(proposed);
+    if(current.format === "CAROUSEL" || current.kind === "ARTICLE") {
+      const {writingReferenceIssues}=await import("@/lib/cms/writing-references");
+      issues.push(...await writingReferenceIssues((mergedMeta.engine_packet as Packet | undefined)?.article));
+    }
     if (issues.length)
       return NextResponse.json(
         { error: issues.join(" "), issues },
