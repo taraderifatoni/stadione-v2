@@ -1827,7 +1827,7 @@ function EditorModal({
     scheduled_at: localInput(item.scheduled_at),
   });
   const meta = item.editorial_meta || {};
-  const postedInstagram = item.kind === "SOCIAL" && Boolean(item.external_post_id || item.published_at);
+  const postedInstagram = item.kind === "SOCIAL" && Boolean(item.external_post_id || item.published_at || attempt?.state === "PUBLISHED");
   const editingLocked = item.status === "ARCHIVED" || postedInstagram || ["PUBLISHED", "PREPARING", "PROCESSING", "READY", "PUBLISHING", "UNCERTAIN"].includes(attempt?.state || "");
   const [managementBusy, setManagementBusy] = useState(false);
   const [remoteAction, setRemoteAction] = useState<"archive" | "delete" | null>(null);

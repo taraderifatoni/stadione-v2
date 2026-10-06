@@ -26,7 +26,7 @@ begin
   if not found or v_item.status in ('SCHEDULED','PUBLISHING') then return false; end if;
   if coalesce((v_item.editorial_meta->'management_lease'->>'until')::timestamptz, '-infinity') > now() then return false; end if;
   if exists(select 1 from public.stadione_ig_publish_attempts where content_id=p_content_id and
-    (state in ('PREPARING','PROCESSING','READY','PUBLISHING','UNCERTAIN') or leased_until>now())) then return false; end if;
+    (state in ('PREPARING','PROCESSING','READY','PUBLISHING','UNCERTAIN') or (state<>'PUBLISHED' and leased_until>now()))) then return false; end if;
   update public.stadione_content_items set editorial_meta=coalesce(editorial_meta,'{}'::jsonb)||jsonb_build_object(
     'management_lease',jsonb_build_object('token',p_token,'until',now()+interval '90 seconds')) where id=p_content_id;
   return true;
