@@ -42,3 +42,7 @@ narrative_reviewed adalah boolean yang dapat diisi produsen paket. Engine belum 
 Contoh angle yang lebih langsung untuk bahan yang sudah terverifikasi adalah Persib Pelajari Port FC, Menalo Bidik Tiga Poin. Buka dengan target Menalo dan persiapan menghadapi lawan, lanjutkan kutipan kesiapan lalu konteks pertandingan. Detail tambahan hanya masuk setelah ada bukti.
 
 Status akhir audit: dokumentasi saja. Penulisan ulang posting Menalo, penggantian aset Instagram dan perubahan gate/prompt/aturan jumlah halaman belum dilakukan.
+
+## Tindak lanjut setelah permintaan memperbaiki engine
+
+Permintaan berikutnya ditindaklanjuti dalam fe1c93b dan rilis tersebut sudah aktif. Artikel kanonis wajib sebelum carousel, pagination 2–10 halaman, audit label/pengulangan/kutipan/review digest, pasangan body website dan referensi Goal harian kini diterapkan. STADIONE_WRITING_GUIDE.md menjelaskan input dan batas operasionalnya. Dua bacaan contoh disimpan sebagai pelajaran sendiri dan automation menambah minimal satu bacaan baru tiap hari. Bagian status audit di atas mencatat keadaan sebelum implementasi ini; histori dipertahankan. Penilaian semantik tetap membutuhkan pembacaan substantif oleh agent/editor produksi, bukan hanya kelulusan regex/digest.
