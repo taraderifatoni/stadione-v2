@@ -98,69 +98,48 @@ export async function measuredText(
         width: out.info.width,
         height: out.info.height,
         font_size: size,
-        attempts: attempt + 1,
+attempts: attempt + 1,
       };
   }
   throw new Error("Teks melampaui ruang setelah 5 penyesuaian ukuran.");
 }
 export async function renderCarousel(packet: Packet) {
-  const source = (() => {
-    try {
-      return new URL(packet.sources[0]?.url || "").hostname
-        .replace(/^www\./, "")
-        .toUpperCase();
-    } catch {
-      return "REDAKSI STADIONE";
-    }
-  })();
+  const source = new URL(packet.sources.find(s => s.primary)?.url || packet.sources[0].url).hostname.replace(/^www\./, "").toUpperCase();
+  const photo = await sourceBytes(packet.media.url);
   const images = [];
+  const left = 72, width = 936, bottom = 1278;
   for (let i = 0; i < packet.slides.length; i++) {
-    const slide = packet.slides[i];
-    const cover = i === 0;
-    const headline = await measuredText(
-      slide.headline,
-      940,
-      cover ? 330 : 280,
-      cover ? 76 : 58,
-      true,
-      "#191714",
-    );
-    const titleTop = cover ? 290 : 250,
-      ruleTop = titleTop + headline.height + 34,
-      bodyTop = ruleTop + 58;
-    const body = await measuredText(
-      slide.body,
-      940,
-      1260 - bodyTop,
-      cover ? 34 : 31,
-      false,
-      "#302c27",
-    );
-    const base = Buffer.from(
-      `<svg width="1080" height="1350" xmlns="http://www.w3.org/2000/svg"><defs><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="8"/><feColorMatrix values="0 0 0 0 .18 0 0 0 0 .16 0 0 0 0 .13 0 0 0 .055 0"/></filter></defs><rect width="1080" height="1350" fill="#eee9dd"/><rect width="1080" height="1350" filter="url(#n)" opacity=".55"/><rect width="1080" height="18" fill="#84102d"/><text x="64" y="78" font-family="DejaVu Sans" font-size="27" font-weight="900" letter-spacing="7" fill="#191714">STADIONE</text><text x="1016" y="78" text-anchor="end" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#191714">${i + 1}/${packet.slides.length}</text><line x1="64" y1="105" x2="1016" y2="105" stroke="#191714" stroke-width="2"/><text x="64" y="148" font-family="DejaVu Sans" font-size="19" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text><text x="1016" y="148" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text><line x1="64" y1="170" x2="1016" y2="170" stroke="#191714" stroke-width="2"/><line x1="64" y1="${ruleTop}" x2="1016" y2="${ruleTop}" stroke="#84102d" stroke-width="8"/></svg>`,
-    );
-    const bytes = await sharp(base)
-      .composite([
-        { input: headline.buffer, left: 64, top: titleTop },
-        { input: body.buffer, left: 64, top: bodyTop },
-      ])
-      .jpeg({ quality: 94 })
-      .toBuffer();
-    images.push({
-      bytes,
-      audit: {
-        width: 1080,
-        height: 1350,
-        layout: "newspaper_text",
-        authentic_photo: false,
-        headline_height: headline.height,
-        body_height: body.height,
-        headline_font_size: headline.font_size,
-        body_font_size: body.font_size,
-        columns: 1,
-        ok: true,
-      },
-    });
+    const slide = packet.slides[i], cover = i === 0;
+    const headline = await measuredText(slide.headline, width, cover ? 255 : 235, cover ? 68 : 60, true, "#191714");
+    const titleTop = cover ? 822 : 205;
+    const bodyTop = titleTop + headline.height + 30;
+    const body = await measuredText(slide.body, width, bottom - bodyTop, cover ? 31 : 36, false, "#302c27");
+    if (body.font_size < (cover ? 27 : 32)) throw new Error("Pisahkan artikel menjadi halaman tambahan; jangan perkecil teks di bawah batas baca.");
+    const boxes = [
+      { x: left, y: titleTop, width: headline.width, height: headline.height, font_size: headline.font_size },
+      { x: left, y: bodyTop, width: body.width, height: body.height, font_size: body.font_size },
+    ];
+    const safe = boxes.every(b => b.x >= left && b.x + b.width <= 1008 && b.y + b.height <= bottom);
+    if (!safe) throw new Error("Teks keluar dari area aman carousel.");
+    const base = Buffer.from(`<svg width="1080" height="1350" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1080" height="1350" fill="#eee9dd"/>
+      <rect width="1080" height="14" fill="#84102d"/>
+      <text x="72" y="74" font-family="DejaVu Sans" font-size="27" font-weight="900" letter-spacing="7" fill="#191714">STADIONE</text>
+      <text x="1008" y="74" text-anchor="end" font-family="DejaVu Sans" font-size="22" font-weight="700" fill="#191714">${i+1}/${packet.slides.length}</text>
+      <line x1="72" y1="102" x2="1008" y2="102" stroke="#191714" stroke-width="2"/>
+      <text x="72" y="150" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text>
+      ${cover ? `<text x="1008" y="150" text-anchor="end" font-family="DejaVu Sans" font-size="18" font-weight="700" fill="#191714">SUMBER: ${esc(source)}</text>` : ""}
+      <line x1="72" y1="174" x2="1008" y2="174" stroke="#191714" stroke-width="2"/>
+      <line x1="72" y1="${titleTop+headline.height+13}" x2="1008" y2="${titleTop+headline.height+13}" stroke="#84102d" stroke-width="5"/>
+    </svg>`);
+    const layers: sharp.OverlayOptions[] = [];
+    if (cover) {
+      const cropped = await sharp(photo).resize(width, 586, { fit: "cover", position: "attention" }).modulate({ saturation: 0.85 }).jpeg({quality:95}).toBuffer();
+      layers.push({ input: cropped, left, top: 196 });
+    }
+    layers.push({ input: headline.buffer, left, top: titleTop }, { input: body.buffer, left, top: bodyTop });
+    const bytes = await sharp(base).composite(layers).jpeg({quality:95,chromaSubsampling:"4:4:4"}).toBuffer();
+    images.push({bytes,audit:{width:1080,height:1350,layout:cover?"newspaper_photo":"newspaper_article",authentic_photo:cover,source_label:cover?source:null,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,boxes,safe_wrap:safe,columns:1,ok:safe}});
   }
   return images;
 }
@@ -198,7 +177,7 @@ export async function renderReel(packet: Packet) {
   const directory = await fs.mkdtemp(join(tmpdir(), "stadione-montage-"));
   try {
     const clips = packet.media.video_sources || [],
-      scenes = packet.media.scenes || [],
+scenes = packet.media.scenes || [],
       files = new Map<string, { file: string; duration: number }>();
     for (let i = 0; i < clips.length; i++)
       files.set(clips[i].id, await writeSource(directory, clips[i], i));
@@ -298,7 +277,7 @@ export async function renderReel(packet: Packet) {
         "-y",
         "-nostdin",
         "-f",
-        "concat",
+"concat",
         "-safe",
         "0",
         "-i",

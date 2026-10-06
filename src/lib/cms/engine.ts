@@ -203,7 +203,7 @@ export function auditPacket(
     if (
       !s.headline?.trim() ||
       s.headline.length > 96 ||
-      (s.body || "").length > 360
+      (s.body || "").length > (format === "CAROUSEL" ? 1200 : 360)
     )
       errors.push(`Slide ${i + 1}: teks melewati batas.`);
     if (!s.claim_ids?.length || s.claim_ids.some((id) => !ids.has(id)))
@@ -298,7 +298,7 @@ export function enginePublicationIssues(item: Item, requireApproval = true) {
   if (
     !item.caption?.trim() ||
     /brief redaksi|belum untuk publikasi/i.test(item.caption)
-  )
+)
     issues.push("Caption belum siap publikasi.");
   if (
     requireApproval &&
