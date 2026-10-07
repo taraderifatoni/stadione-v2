@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Maintain a rolling seven-day Stadione editorial calendar as review-only drafts."""
+"""Maintain today's slots and the next seven days without replacing existing items."""
 from __future__ import annotations
 
 import json
@@ -61,8 +61,8 @@ def api(method: str, path: str, body=None, prefer: str | None = None):
 
 def plan(now_wib: datetime):
     rows = []
-    first_day = now_wib.date() + timedelta(days=1)
-    for offset in range(HORIZON_DAYS):
+    first_day = now_wib.astimezone(WIB).date()
+    for offset in range(HORIZON_DAYS + 1):
         day = first_day + timedelta(days=offset)
         for slot_key, clock, label, theme, pillar, angle, content_format in SLOTS[day.weekday()]:
             hour, minute = map(int, clock.split(":"))
@@ -119,6 +119,7 @@ def main():
         "pool": {
             "origin": "WEEKLY_MATRIX_AUTO",
             "horizon_days": HORIZON_DAYS,
+            "includes_today": True,
             "desired_slots": len(desired),
             "created_slots": len(created),
             "existing_slots": len(desired) - len(missing),
