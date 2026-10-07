@@ -1,0 +1,57 @@
+{
+  "checked_at": "2026-10-07T08:59:52.853Z",
+  "account": "stadione.id",
+  "other_content_unchanged": true,
+  "items": [
+    {
+      "id": "d3715085-1629-4b37-ac36-880db6dcea85",
+      "article_id": "0b4c2f6b-eec6-4062-baba-c9c6feaabe0c",
+      "title": "Menalo Bidik Tiga Poin di Kandang Port FC",
+      "status": "PUBLISHED",
+      "article_status": "PUBLISHED",
+      "scheduled_at": null,
+      "published_at": "2026-10-07T08:58:47.048+00:00",
+      "media_id": "18341080654251445",
+      "plan_key": "additional:persib-menalo-writing-revision-20261007-v1",
+      "event_key": "persib-menalo-approved-writing-revision-20261007-v1",
+      "additional_post": true,
+      "pages": 4,
+      "article_url": "https://stadione.pro/news/menalo-bidik-tiga-poin-di-kandang-port-fc-d3715085",
+      "canonical_article_verified": true,
+      "clean_hero": true,
+      "assets_verified": true,
+      "gate": [],
+      "instagram_url": "https://www.instagram.com/p/DeL-_-SIKjd/",
+      "duplicate_count": 1,
+      "article_http_status": 200
+    },
+    {
+      "id": "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+      "article_id": "f41548c6-572d-476b-b90b-a4fa8176f1d9",
+      "title": "Herdman Memburu Talenta Baru untuk Piala Asia",
+      "status": "SCHEDULED",
+      "article_status": "SCHEDULED",
+      "scheduled_at": "2026-10-07T13:00:00+00:00",
+      "published_at": null,
+      "media_id": null,
+      "plan_key": "2026-10-07:mid-pm",
+      "event_key": "herdman-domestic-talents-asian-cup-plan-20261007",
+      "additional_post": false,
+      "pages": 5,
+      "article_url": "https://stadione.pro/news/herdman-memburu-talenta-baru-untuk-piala-asia-80b9be65",
+      "canonical_article_verified": true,
+      "clean_hero": true,
+      "assets_verified": true,
+      "gate": []
+    }
+  ],
+  "attempts": [
+    {
+      "content_id": "d3715085-1629-4b37-ac36-880db6dcea85",
+      "state": "PUBLISHED",
+      "media_id": "18341080654251445",
+      "creation_id": "18115278797467915",
+      "error_message": null
+    }
+  ]
+}
