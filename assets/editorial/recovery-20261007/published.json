@@ -1,0 +1,48 @@
+{
+  "verified_at": "2026-10-07T08:34:19.521Z",
+  "results": [
+    {
+      "plan_key": "2026-10-07:mid-am",
+      "social_id": "1765eef1-8732-4a04-80f9-30bc2e654535",
+      "article_id": "05687054-d92a-4e84-9edb-48845e34d77c",
+      "status": "PUBLISHED",
+      "published_at": "2026-10-07T08:31:12.343+00:00",
+      "permalink": "https://www.instagram.com/p/DeL713loPKi/",
+      "media_id": "18117962287748105",
+      "article_url": "https://stadione.pro/news/kane-samai-shilton-inggris-tundukkan-ceko-1765eef1",
+      "article_http": 200,
+      "slides": 5,
+      "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "canonical_article_binding": true,
+      "paired_publish_time": true,
+      "clean_hero": true,
+      "asset_hash_verification": true,
+      "idempotent_media_id": true
+    },
+    {
+      "plan_key": "2026-10-07:mid-noon",
+      "social_id": "b9949124-5407-4acf-8f7d-48a0ded883a3",
+      "article_id": "adc13e39-b0d4-40ad-a19a-784550fef7eb",
+      "status": "PUBLISHED",
+      "published_at": "2026-10-07T08:32:58.445+00:00",
+      "permalink": "https://www.instagram.com/p/DeL76w-IKK-/",
+      "media_id": "18434039053198141",
+      "article_url": "https://stadione.pro/news/borneo-buka-shopee-cup-di-markas-juara-bertahan-b9949124",
+      "article_http": 200,
+      "slides": 5,
+      "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "canonical_article_binding": true,
+      "paired_publish_time": true,
+      "clean_hero": true,
+      "asset_hash_verification": true,
+      "idempotent_media_id": true
+    }
+  ],
+  "other_40_items_unchanged": true,
+  "evening": {
+    "id": "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+    "status": "DRAFT",
+    "scheduled_at": "2026-10-07T13:00:00+00:00"
+  },
+  "automation_id": "6ac5fe18aa6081919975505004e57a3d"
+}
