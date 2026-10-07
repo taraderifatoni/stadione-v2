@@ -1,0 +1,300 @@
+{
+  "plan_key": "2026-10-07:mid-am",
+  "event_key": "england-czechia-kane-record-20261006",
+  "format": "CAROUSEL",
+  "format_reason": "Real match footage was not available for this recovery; verified source-led article carousel chosen without changing slot time.",
+  "article": {
+    "version": 1,
+    "genre": "NEWS",
+    "title": "Kane Samai Shilton, Inggris Tundukkan Ceko",
+    "dek": "Dua gol Kane mengantar Inggris menang 3–0 di Wembley pada penampilan ke-125 sang kapten.",
+    "caption": "Dua gol Kane mengantar Inggris menang 3–0 di Wembley pada penampilan ke-125 sang kapten.\n\nKane menutup malam bersejarah dengan dua gol. Catatan penampilan dan jalannya laga tersaji dalam carousel ini.\n\n#Stadione #HarryKane #Inggris #NationsLeague",
+    "paragraphs": [
+      {
+        "id": "lead",
+        "heading": "Malam Bersejarah di Wembley",
+        "text": "Harry Kane menyamai rekor penampilan Peter Shilton ketika Inggris menundukkan Republik Ceko 3–0 di Wembley, Selasa 6 Oktober waktu London atau Rabu dini hari WIB. Kapten The Three Lions itu mencetak dua gol dalam penampilan ke-125 bersama tim nasional. Laga ini berlangsung dalam Grup A3 UEFA Nations League.",
+        "claim_ids": [
+          "result",
+          "caps",
+          "goals"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "opening",
+        "heading": "Coufal Membuka Jalan",
+        "text": "Inggris lebih dulu memimpin pada menit ke-27 lewat gol bunuh diri Vladimir Coufal. Bek Ceko itu salah mengantisipasi bola kiriman Kane dari sisi kanan. Menjelang jeda, Morgan Rogers mengirim bola kepada Kane yang menyelesaikannya dari jarak dekat pada menit ke-40. Tuan rumah masuk ruang ganti dengan keunggulan 2–0.",
+        "claim_ids": [
+          "goals",
+          "result"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "second",
+        "heading": "Kane Menuntaskan Pekerjaan",
+        "text": "Kane kembali mengancam setelah turun minum, tetapi tendangannya membentur mistar. Gol keduanya akhirnya hadir pada menit ke-57 melalui sundulan. Inggris terus menjaga kendali hingga peluit akhir, sementara Ceko gagal mengubah skor. Sepasang gol itu membuat Kane mengoleksi 91 gol internasional dan memperlebar catatannya sebagai pencetak gol terbanyak Inggris.",
+        "claim_ids": [
+          "goals",
+          "record"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "career",
+        "heading": "111 Kali Menjadi Starter",
+        "text": "Dari 125 penampilan tersebut, Kane menjalani 111 sebagai starter dan 14 sebagai pemain pengganti. Pengalamannya mencakup 18 pertandingan putaran final Piala Dunia dan 18 pertandingan putaran final Piala Eropa. Ia juga bermain dalam 27 laga Nations League, 22 laga kualifikasi Piala Dunia, serta 21 laga kualifikasi Piala Eropa. Sebanyak 19 penampilan lainnya berasal dari pertandingan persahabatan.",
+        "claim_ids": [
+          "career"
+        ],
+        "kind": "FACT"
+      }
+    ],
+    "benchmark_ids": [
+      "goal-20261007-barcelona-femenino-clasico-match-news"
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITORIAL_20261007",
+      "reviewed_at": "2026-10-07T08:11:57.206865+00:00",
+      "article_digest": "5c7e40ba41a9c12e3bb9e5e1f0e1996b8730b583a8c3bb2a0178835016452672"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2026-27/nations-league/england-czechia-uefa-nations-league-tuesday-6-october-2026-match-centre",
+      "primary": true,
+      "published_at": "2026-10-06",
+      "publisher_group": "The FA",
+      "text_sha256": "7477fd291b9be41af7497d0e98425ad69357333e11167f76eff9504eb5ac6d8c"
+    },
+    {
+      "url": "https://jatim.antaranews.com/amp/berita/1104732/inggris-menang-3-0-lawan-republik-ceko",
+      "primary": false,
+      "published_at": "2026-10-06T23:44:00Z",
+      "publisher_group": "ANTARA",
+      "text_sha256": "7fae2cb35260cda3273f298a458c8581589266532ec4604ac0e4f50a18ffae5f"
+    },
+    {
+      "url": "https://tirto.id/capaian-rekor-luar-biasa-harry-kane-usai-inggris-vs-ceko-hDBn",
+      "primary": false,
+      "published_at": "2026-10-07T06:44:00Z",
+      "publisher_group": "Tirto",
+      "text_sha256": "7a2f2e932a90fd61fd4907b6e3c91fa3dbb8edb75164aed2923f22f2e51af283"
+    },
+    {
+      "url": "https://www.englandfootball.com/articles/2026/Oct/06/harry-kane-england-career-in-numbers-20260610",
+      "primary": true,
+      "published_at": "2026-10-06",
+      "publisher_group": "The FA",
+      "text_sha256": "a24cb59da506a7a414d87d2983253a4d672e34cd325f3ed1e7d77259b4cf4c6a"
+    }
+  ],
+  "claims": [
+    {
+      "id": "result",
+      "text": "Inggris menang 3–0 atas Republik Ceko dalam Grup A3 UEFA Nations League di Wembley pada 6 Oktober 2026 waktu London atau 7 Oktober WIB.",
+      "verified": true
+    },
+    {
+      "id": "goals",
+      "text": "Coufal gol bunuh diri menit 27, Kane gol menit 40 dan 57, skor jeda 2–0 dan akhir 3–0. Bola Kane memicu gol Coufal; Rogers memberi umpan gol Kane pertama; Kane sempat membentur mistar.",
+      "verified": true
+    },
+    {
+      "id": "caps",
+      "text": "Harry Kane menyamai rekor Peter Shilton dengan 125 penampilan timnas Inggris.",
+      "verified": true
+    },
+    {
+      "id": "record",
+      "text": "Dua gol membawa Harry Kane menjadi pencetak 91 gol dan top skor sepanjang masa Inggris.",
+      "verified": true
+    },
+    {
+      "id": "career",
+      "text": "Harry Kane 125 caps, 111 starter dan 14 pengganti; 18 pertandingan Piala Dunia, 18 Piala Eropa, 27 Nations League, 22 kualifikasi Piala Dunia, 21 kualifikasi Piala Eropa dan 19 friendly.",
+      "verified": true
+    }
+  ],
+  "cover": {
+    "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "source_photo_url": "https://cdn.englandfootball.com/-/jssmedia/EnglandFootball/Article/england/mens-senior-team/2026/October/Czechia-H/20260610-kane-kiss-celebration-952.png?h=536&hash=47C084DB00DBEC9A156265592F5EC1EC&iar=0&rev=5eec6c4516aa412c8a5b91ff91540d68&w=952",
+    "headline": "Kane Samai Shilton, Inggris Tundukkan Ceko",
+    "dek": "Dua gol Kane mengantar Inggris menang 3–0 di Wembley pada penampilan ke-125 sang kapten.",
+    "source_label": "ENGLANDFOOTBALL.COM",
+    "reviewed_at": "2026-10-07T08:11:57.206865+00:00",
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "safe_wrap": true,
+    "authentic_subject": true,
+    "editorial_background": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/england-czechia-kane-record-20261006/dd10783c57f460350ede200744c3e4327a33851eae130228ad1ee0cdabeae2ab.jpg",
+    "sha256": "dd10783c57f460350ede200744c3e4327a33851eae130228ad1ee0cdabeae2ab",
+    "page_count": 5
+  },
+  "render_audit": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "ENGLANDFOOTBALL.COM",
+      "cover_input_sha256": "dd10783c57f460350ede200744c3e4327a33851eae130228ad1ee0cdabeae2ab",
+      "output_sha256": "68a8903407feefcfc5c33c2d6d22112be51c7d786c9fb67a8c976973a852444b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "8492cf8878ef23743c3f9db43f822d7e9fdcf12491e4200f1fc23abfb9761fed",
+      "output_sha256": "51f1fd387051f6644bad0bde2c971d6601d1f69601725b1e5729aba2eddf6ac8",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 692,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 924,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "d7b995a8c4020b9972f99b8d35756501307f7bb01a89cf2285d87f7a9d3e364e",
+      "output_sha256": "2d5d340643579b33fdd1bdbcef90d47b29509bb19bf22835ddc29d7bb6057753",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 747,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 294,
+          "width": 898,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "d67a5e4e56d791d2d24c95752143166b28c389aaec34a0f6ae7e2b35f1a1d65f",
+      "output_sha256": "56e6ddff5cd4efb6e0cb891454daff5718b0e533ded545d2b8b52081a17a1f6e",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 640,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 931,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "abe1cd9633a47d03a71ec698bfaa28558386848d58fa2f15e1ff66bc8db38e9d",
+      "output_sha256": "a61baec867cd40c3f8a3b7ad1e6a99d0e470c11c6fa26ca01763e6a42de99405",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 822,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 294,
+          "width": 922,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_reviewed_at": "2026-10-07T08:30:05.946Z",
+  "visual_reviewer": "CODEX_EDITORIAL_20261007"
+}

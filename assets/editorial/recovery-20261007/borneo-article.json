@@ -1,0 +1,295 @@
+{
+  "plan_key": "2026-10-07:mid-noon",
+  "event_key": "borneo-buriram-shopee-preview-20261007",
+  "format": "CAROUSEL",
+  "format_reason": null,
+  "article": {
+    "version": 1,
+    "genre": "NEWS",
+    "title": "Borneo Buka Shopee Cup di Markas Juara Bertahan",
+    "dek": "Pesut Etam membawa 23 pemain untuk menghadapi Buriram United, Rabu 7 Oktober pukul 19.00 WIB.",
+    "caption": "Pesut Etam membawa 23 pemain untuk menghadapi Buriram United, Rabu 7 Oktober pukul 19.00 WIB.\n\nBorneo memulai perjalanan di Shopee Cup menghadapi juara bertahan. Pertandingan dijadwalkan malam ini; skuad dan persiapannya tersaji dalam carousel ini.\n\n#Stadione #BorneoFC #ShopeeCup #SepakBolaIndonesia",
+    "paragraphs": [
+      {
+        "id": "lead",
+        "heading": "Pembuka yang Langsung Berat",
+        "text": "Borneo FC Samarinda memulai Shopee Cup dengan bertandang ke markas juara bertahan Buriram United, Rabu 7 Oktober 2026 pukul 19.00 WIB. Duel Grup A ini menempatkan Pesut Etam menghadapi salah satu lawan terkuat sejak pertandingan pembuka. Borneo datang dengan sasaran membawa pulang hasil positif untuk memulai perjalanan di kompetisi antarklub Asia Tenggara.",
+        "claim_ids": [
+          "fixture",
+          "travel"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "travel",
+        "heading": "23 Pemain Melintasi Bangkok",
+        "text": "Mauro Jeronimo membawa 23 pemain dalam lawatan ke Thailand. Rombongan melewati Bangkok dan bermalam di sana sebelum meneruskan perjalanan ke Buriram. Klub menempatkan lawatan ini di tengah agenda Oktober yang padat. Asisten manajer Farid menekankan kesiapan pemain menjaga kondisi selama perjalanan dan menjalani tuntutan pertandingan internasional.",
+        "claim_ids": [
+          "travel"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "preparation",
+        "heading": "Jeda untuk Merapikan Tim",
+        "text": "Jeronimo memanfaatkan jeda internasional untuk mengevaluasi permainan dan mengintegrasikan pemain baru. Pembenahan mencakup serangan, pertahanan, serta pemahaman model latihan. Ia juga menyoroti hubungan antarpemain dalam proses adaptasi. Borneo membawa pekerjaan dari lapangan latihan itu ke pertandingan pertama Shopee Cup, ketika lawan yang dihadapi sudah memiliki pengalaman menjadi juara.",
+        "claim_ids": [
+          "preparation",
+          "fixture"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "history",
+        "heading": "Kembali Menghadapi Buriram",
+        "text": "Pertemuan terdahulu kedua klub di Shopee Cup berakhir dengan kemenangan Buriram 4–0. Kali ini Borneo kembali melawat untuk membuka fase grup, sementara tuan rumah memulai kompetisi dengan status juara bertahan. Catatan pertemuan itu menjadi latar lawatan Pesut Etam. Pertandingan malam ini akan menjadi kesempatan pertama melihat hasil pembenahan skuad Borneo di panggung regional musim ini.",
+        "claim_ids": [
+          "history",
+          "fixture",
+          "preparation"
+        ],
+        "kind": "FACT"
+      }
+    ],
+    "benchmark_ids": [
+      "goal-20261007-barcelona-femenino-clasico-match-news"
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITORIAL_20261007",
+      "reviewed_at": "2026-10-07T08:11:57.206865+00:00",
+      "article_digest": "718e9598a06cbaa119a4f7e9c60f3f2d13038bb7a3f56520f0a6091c282c0442"
+    }
+  },
+  "sources": [
+    {
+      "url": "https://borneofc.id/news/read/borneo-fc-jalani-perjalanan-panjang-ke-buriram",
+      "primary": true,
+      "published_at": "2026-10-05",
+      "publisher_group": "Borneo FC",
+      "text_sha256": "64100461d2bed4cc8d43e8fec3066a854ebb936e7279df52a17c88a75a5c68f8"
+    },
+    {
+      "url": "https://borneofc.id/news/read/jeda-internasional-momentum-untuk-berbenah",
+      "primary": true,
+      "published_at": "2026-10-04",
+      "publisher_group": "Borneo FC",
+      "text_sha256": "7c3a4988a04b3d61f5801dc477a91bbfdd8a5e928c8158f94d11a322e0a46c4d"
+    },
+    {
+      "url": "https://aseanutdfc.com/asean-club-championship/2026/news/new-buriram-united-boss-silva-seeks-forward-fix-ahead-of-shopee-cup-defence",
+      "primary": true,
+      "published_at": "2026-10-06",
+      "publisher_group": "AFF",
+      "text_sha256": "65003afd72421aac83789be20b6472f6b20c44fdf7e35953686e3fa23d8ef528"
+    },
+    {
+      "url": "https://www.detik.com/kalimantan/sepakbola/d-8694808/indonesia-kalahkan-thailand-giliran-borneo-fc-bersiap-hadapi-buriram",
+      "primary": false,
+      "published_at": "2026-10-06T08:30:00Z",
+      "publisher_group": "Trans Media",
+      "text_sha256": "a6c49ad1177bced542fc495963d7beb3d6f667dd9d0c994768ea5a750fbabc92"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fixture",
+      "text": "Borneo bertandang menghadapi juara bertahan Buriram United dalam laga pembuka Grup A Shopee Cup 2026/27 pada 7 Oktober 2026 pukul 19.00 WIB.",
+      "verified": true
+    },
+    {
+      "id": "travel",
+      "text": "Mauro Jeronimo membawa 23 pemain, tim melewati dan bermalam di Bangkok menuju Buriram di tengah jadwal Oktober padat. Farid membahas perjalanan dan kondisi pemain.",
+      "verified": true
+    },
+    {
+      "id": "preparation",
+      "text": "Jeronimo membenahi serangan dan pertahanan, adaptasi pemain baru, model latihan serta hubungan antarpemain pada jeda internasional.",
+      "verified": true
+    },
+    {
+      "id": "history",
+      "text": "Buriram menang 4–0 pada pertemuan Shopee Cup sebelumnya; Borneo kembali melawat untuk laga pembuka.",
+      "verified": true
+    }
+  ],
+  "cover": {
+    "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "source_photo_url": "https://borneofc.id/storage/upload/posts/1791241915.jpg",
+    "headline": "Borneo Buka Shopee Cup di Markas Juara Bertahan",
+    "dek": "Pesut Etam membawa 23 pemain untuk menghadapi Buriram United, Rabu 7 Oktober pukul 19.00 WIB.",
+    "source_label": "BORNEOFC.ID",
+    "reviewed_at": "2026-10-07T08:11:57.206865+00:00",
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "safe_wrap": true,
+    "authentic_subject": true,
+    "editorial_background": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/borneo-buriram-shopee-preview-20261007/28ac5cfb7cbc97446afa5d615be1067ead186336b3c934835986011568f1d5a4.jpg",
+    "sha256": "28ac5cfb7cbc97446afa5d615be1067ead186336b3c934835986011568f1d5a4",
+    "page_count": 5
+  },
+  "render_audit": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "BORNEOFC.ID",
+      "cover_input_sha256": "28ac5cfb7cbc97446afa5d615be1067ead186336b3c934835986011568f1d5a4",
+      "output_sha256": "0d1547d7bbd6ba1ce9053cf6a1461f63de7b85b16f50ac16b7c91441a8bc287b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "9cd57556def10b92e8333bfc804c3ea8d346b41bfda0395866db363c233b551f",
+      "output_sha256": "73f47b2b6a79a0379b81a9d7cf56c617c6754c2e3b0f3978fc966c6338d620db",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 840,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 932,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "8c6ed23bc134b3f35532acb3ce85b338b74d3bda9202ffda53c4d30f36e40337",
+      "output_sha256": "7d691bbccffc8bfe19c81225cae3d2fc1022a374119ab5929285ccbe6950358f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 681,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 852,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "0fac365f941fe49ef41501b1645768753edffd8ee4b1a37065a2862c307447e3",
+      "output_sha256": "7015e97fef8603dad5efe0a2d122c5e63da9d0937c525000c34a67b7f696f247",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 889,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 294,
+          "width": 904,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "7602753a8377509ec92a76268aefe291cde6438a3c54faa5459c8b6c4b627d88",
+      "output_sha256": "ec079cf6b0b2362b45c780b094737e5e6a4eb30b995213b8a88b04dce10244b3",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 702,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 922,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_reviewed_at": "2026-10-07T08:30:05.960Z",
+  "visual_reviewer": "CODEX_EDITORIAL_20261007"
+}
