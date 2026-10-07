@@ -33,8 +33,8 @@ async function main(){
  if(mode==='preview'){
   if(input.format==='CAROUSEL'){
    if(!coverFile)throw Error('Prepared, visually reviewed AI editorial cover required');
-   const bytes=fs.readFileSync(coverFile),digest=sha(bytes),key='editorial/production/'+input.event_key+'/'+digest+'.png';
-   const {error:ue}=await db.storage.from('stadione-cms').upload(key,bytes,{contentType:'image/png',upsert:false});if(ue&&!/already exists|duplicate/i.test(ue.message))throw ue;
+   const bytes=fs.readFileSync(coverFile),digest=sha(bytes),jpeg=bytes[0]===255&&bytes[1]===216,key='editorial/production/'+input.event_key+'/'+digest+(jpeg?'.jpg':'.png');
+   const {error:ue}=await db.storage.from('stadione-cms').upload(key,bytes,{contentType:jpeg?'image/jpeg':'image/png',upsert:false});if(ue&&!/already exists|duplicate/i.test(ue.message))throw ue;
    packet.slides=writing.articleSlides(packet.article);
    packet.media.editorial_cover={...packet.media.editorial_cover,url:db.storage.from('stadione-cms').getPublicUrl(key).data.publicUrl,sha256:digest,page_count:packet.slides.length};
   }
