@@ -118,6 +118,6 @@
   "review": {
     "article": true,
     "cover": true,
-    "body_render": "pending"
+    "body_render": "PASSED_AND_VISUALLY_REVIEWED"
   }
 }

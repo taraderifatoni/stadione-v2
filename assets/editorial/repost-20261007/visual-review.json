@@ -1,0 +1,304 @@
+{
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "reviewed_at": "2026-10-07T08:57:45.624Z",
+  "visual_review": true,
+  "notes": "All seven body pages visually inspected; authentic covers previously reviewed. Safe wrapping and margins, compact normal spacing, no edition label or promotional footer.",
+  "items": {
+    "persib": {
+      "id": "d3715085-1629-4b37-ac36-880db6dcea85",
+      "packet_digest": "1a9bef31fa1080a16a42d90b975496b33e18171213ec95c7f7d0bc46412abb25",
+      "input_sha256": "532f43a96e8dc2bc826fc3c5229769cb1ec88ff3776929f361ab24228e78d0e7",
+      "pages": [
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_collage_cover",
+          "authentic_photo": true,
+          "editorial_background": true,
+          "source_label": "PERSIB.CO.ID",
+          "cover_input_sha256": "10fb310b6baffead7e761524e2a3f667154e9ee2afc8d1777bc24f924914792d",
+          "output_sha256": "8258f15bf5790fab614a712e76a08259baa3a2e6a131ccbd96bbb4678919a664",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "safe_wrap": true,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "1bfb1863eb35e783538899ec0a5ab8d9b41c04e4131d476b0a0559b8031fa53e",
+          "output_sha256": "0d42688061d3af750efdaf88487d1e5252248296c0805a8747f6907ddaa0acb3",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 140,
+          "body_height": 458,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 668,
+              "height": 140,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 375,
+              "width": 915,
+              "height": 458,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "f59dfc745a295b3368986d3fd6bc451359729c8fe317f0a37ed732a370a9406b",
+          "output_sha256": "f53580e7f8ce241e6376d574d8f29cf50bb2b282eef971204053c1ce7d96ec0e",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 128,
+          "body_height": 458,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 811,
+              "height": 128,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 363,
+              "width": 894,
+              "height": 458,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "4b6ff9a1a06b095226055203efff6e9229be7622dad0c794563fbbf92158317d",
+          "output_sha256": "e740ed6c005cba6da547e93315cf02e9de94d245b62f750b4bd9db76f253d081",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 128,
+          "body_height": 511,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 873,
+              "height": 128,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 363,
+              "width": 911,
+              "height": 511,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        }
+      ]
+    },
+    "herdman": {
+      "id": "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+      "packet_digest": "406fe1ec6342c8b57b625a1061721b17b404dc84a6cfa3544b6f2310a60eb486",
+      "input_sha256": "17b18ededf8777772c77e70fc4a0c78b3f20b6d0babe09e9a44615351a294e3c",
+      "pages": [
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_collage_cover",
+          "authentic_photo": true,
+          "editorial_background": true,
+          "source_label": "ANTARANEWS.COM",
+          "cover_input_sha256": "302525a74566b8e59f1743932970458676e7293c3ce3c301f0eeea3be62bff68",
+          "output_sha256": "69dacea606a952a4bbb414dabb2592fa598cbf4b6883d9393f746e10c1c3e663",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "safe_wrap": true,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "2752ed01385baba310ec6ac4c17a567735857a4f8c2b3073a8a7411e6321555d",
+          "output_sha256": "00d121497d280edf2983314bb270e628aef57b9135c9933b8c43f96ea8f4654c",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 140,
+          "body_height": 458,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 616,
+              "height": 140,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 375,
+              "width": 914,
+              "height": 458,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "7e39aec63b9d7c0cdd30885ad45edbba9562a5afbbf5f533cbc4f5ed0e340d71",
+          "output_sha256": "8fd6e3a53f0a4de38670c2230074032f5081d7ca536ccd6ceeeda4e131a6d766",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 47,
+          "body_height": 405,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 805,
+              "height": 47,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 282,
+              "width": 932,
+              "height": 405,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "dbb9029ce3d84d74146a9215e31d9fafa0fe0356adbed8db8e23763eb3e04739",
+          "output_sha256": "72e5dcb9342f28f4650e497f69e313bc13470a5bce7db23e3c64d7b0315e1ac1",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 140,
+          "body_height": 558,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 834,
+              "height": 140,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 375,
+              "width": 926,
+              "height": 558,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        },
+        {
+          "width": 1080,
+          "height": 1350,
+          "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+          "layout": "newspaper_article",
+          "paper_tone": "#eee9dd",
+          "authentic_photo": false,
+          "source_label": null,
+          "text_sha256": "45396bbc6acf76cf2eef16da318b813be8ab139adbb0dafc5041697d4fa314a3",
+          "output_sha256": "686a26ca52cae5ba92f7d8d9908840c80bb00fe2d914713bc651d76ae123af3d",
+          "no_edition_label": true,
+          "no_promotional_footer": true,
+          "headline_height": 128,
+          "body_height": 511,
+          "headline_font_size": 60,
+          "body_font_size": 36,
+          "boxes": [
+            {
+              "x": 72,
+              "y": 205,
+              "width": 739,
+              "height": 128,
+              "font_size": 60
+            },
+            {
+              "x": 72,
+              "y": 363,
+              "width": 926,
+              "height": 511,
+              "font_size": 36
+            }
+          ],
+          "safe_wrap": true,
+          "columns": 1,
+          "ok": true
+        }
+      ]
+    }
+  }
+}
