@@ -2,7 +2,8 @@
 // Agent writes/reviews the article; this adapter uses the deployed shared gates.
 // preview -> inspect JPEGs -> schedule; no direct Meta publishing or historical drivers.
 const fs = require('node:fs'), path = require('node:path'), {createHash}=require('node:crypto');
-const load = require('./cms-load.cjs');
+const activeLoader='/opt/stadione-current/scripts/cms-load.cjs';
+const load = require(fs.existsSync(activeLoader)?activeLoader:'./cms-load.cjs');
 const core=load('src/lib/cms/engine.ts'), writing=load('src/lib/cms/news-writing.ts');
 const media=load('src/lib/cms/engine-media.ts'), refs=load('src/lib/cms/writing-references.ts');
 const db=load('src/lib/supabase/admin.ts').createAdminClient();
