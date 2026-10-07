@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "id": "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+  "plan_key": "2026-10-07:mid-pm",
+  "event_key": "herdman-domestic-talents-asian-cup-plan-20261007",
+  "format": "CAROUSEL",
+  "additional_post": false,
+  "revision_of": null,
+  "planned_at": "2026-10-07T13:00:00Z",
+  "article": {
+    "version": 1,
+    "genre": "NEWS",
+    "title": "Herdman Memburu Talenta Baru untuk Piala Asia",
+    "dek": "Kompetisi lokal masuk pantauan pelatih Timnas yang ingin menemukan pemain Indonesia berkelas Liga Champions.",
+    "caption": "HERDMAN MEMBURU TALENTA BARU UNTUK PIALA ASIA\n\nJohn Herdman terus memantau kompetisi lokal untuk memperkuat Timnas Indonesia menuju Piala Asia 2027. Ia ingin menemukan talenta Indonesia yang kelak mampu tampil di Liga Champions.\n\nBali United ikut diamati. Mees Hilgers, Miliano Jonathans, dan Marselino Ferdinan juga masih masuk pantauan sang pelatih.\n\n#Stadione #TimnasIndonesia #JohnHerdman #PialaAsia2027",
+    "paragraphs": [
+      {
+        "id": "lead",
+        "heading": "Pintu Terbuka dari Kompetisi Lokal",
+        "text": "John Herdman membuka kesempatan bagi pemain dari kompetisi lokal untuk memperkuat Timnas Indonesia menuju Piala Asia 2027. Pelatih asal Inggris itu menyebut pemantauan pemain tetap berjalan setelah FIFA ASEAN Cup. Ia ingin menemukan talenta Indonesia yang berkembang hingga mampu tampil di Liga Champions, sambil menyiapkan komposisi tim untuk turnamen berikutnya.",
+        "claim_ids": [
+          "scouting",
+          "hope",
+          "return"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "local",
+        "heading": "Bali United Ikut Diamati",
+        "text": "Herdman mengatakan ia mengikuti pertandingan di Indonesia untuk mencari pemain yang dapat naik ke tingkat berikutnya. Bali United termasuk tim yang ia saksikan karena anaknya bermain di Bali. \"Saya mengikuti liga-liga lokal untuk melihat pemain-pemain mana yang bisa berkembang dan naik ke level berikutnya,\" ujarnya seusai final FIFA ASEAN Cup di Jakarta pada Senin 5 Oktober.",
+        "claim_ids": [
+          "local",
+          "scouting"
+        ],
+        "kind": "QUOTE",
+        "quote": {
+          "text": "Saya mengikuti liga-liga lokal untuk melihat pemain-pemain mana yang bisa berkembang dan naik ke level berikutnya",
+          "source_id": "detik"
+        }
+      },
+      {
+        "id": "hope",
+        "heading": "Harapan Menembus Liga Champions",
+        "text": "\"Saya sangat berharap kami bisa menemukan Alphonso Davies-nya Indonesia, pemain berikutnya dari negara ini yang bisa bermain di Liga Champions,\" kata Herdman dalam konferensi pers di Gelora Bung Karno. Davies, pemain Kanada yang pernah ia latih, menjadi gambaran tingkat perkembangan yang ingin dicapainya bersama talenta Indonesia. Harapan tersebut menyertai pekerjaannya memantau kompetisi domestik dan mencari pemain yang bisa menjadi bagian dari skuad Garuda.",
+        "claim_ids": [
+          "hope",
+          "scouting"
+        ],
+        "kind": "QUOTE",
+        "quote": {
+          "text": "Saya sangat berharap kami bisa menemukan Alphonso Davies-nya Indonesia, pemain berikutnya dari negara ini yang bisa bermain di Liga Champions",
+          "source_id": "talent"
+        }
+      },
+      {
+        "id": "return",
+        "heading": "Hilgers dan Jonathans Masih Dinanti",
+        "text": "Perhatian Herdman juga tertuju pada pemain yang sebelumnya belum dapat bergabung. Mees Hilgers, Miliano Jonathans, dan Marselino Ferdinan masih dipantau dan diharapkan memperkuat Indonesia pada turnamen mendatang. Mereka termasuk nama yang disebut sang pelatih saat membahas persiapan Piala Asia. Rencana itu membuka kemungkinan perubahan komposisi skuad seiring pemantauan pemain lokal dan kembalinya pemain yang sempat absen.",
+        "claim_ids": [
+          "return",
+          "scouting"
+        ],
+        "kind": "FACT"
+      }
+    ],
+    "benchmark_ids": [
+      "goal-20261007-barcelona-femenino-clasico-match-news"
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITORIAL_REPOST_20261007",
+      "reviewed_at": "2026-10-07T08:52:47.674971+00:00",
+      "article_digest": "ba8a809cb6a3584ccf1640f3d69b18f1df65c2a4cb9796633869af904325ad92"
+    }
+  },
+  "claims": [
+    {
+      "id": "scouting",
+      "text": "Herdman memantau pemain baru dan kompetisi lokal untuk Timnas Indonesia menuju Piala Asia 2027.",
+      "verified": true
+    },
+    {
+      "id": "local",
+      "text": "Herdman menonton pertandingan lokal termasuk Bali United karena anaknya bermain di Bali; pernyataan seusai final di Jakarta Senin 5 Oktober 2026.",
+      "verified": true
+    },
+    {
+      "id": "hope",
+      "text": "Herdman berharap menemukan Alphonso Davies Indonesia yang bisa bermain di Liga Champions; Davies adalah pemain Kanada yang pernah ia latih, pernyataan konferensi pers GBK.",
+      "verified": true
+    },
+    {
+      "id": "return",
+      "text": "Herdman menantikan dan memantau Mees Hilgers, Miliano Jonathans, Marselino Ferdinan untuk Timnas Indonesia menuju Piala Asia 2027.",
+      "verified": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "herdman",
+      "url": "https://www.antaranews.com/berita/5773192/pelatih-timnas-indonesia-siap-perkuat-skuad-hadapi-piala-asia-2027",
+      "sha256": "32a1a1a7978e37e559e29ba2412849989cb9486e89e12ca648ade641fef06f96",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-06T14:00:00+07:00",
+      "primary": true,
+      "publisher_group": "ANTARA",
+      "report_type": "FIRST_HAND_PRESS_CONFERENCE_REPORT"
+    },
+    {
+      "id": "talent",
+      "url": "https://jogja.antaranews.com/berita/858236/john-herdman-berharap-temukan-alphonso-davies-versi-indonesia",
+      "sha256": "54a25d64f2d9339554fed18b9baf71f1e681c9c0b983ddd57b26bdea160866f1",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-06T13:19:00+07:00",
+      "primary": true,
+      "publisher_group": "ANTARA",
+      "report_type": "FIRST_HAND_PRESS_CONFERENCE_REPORT"
+    },
+    {
+      "id": "cnn",
+      "url": "https://www.cnnindonesia.com/olahraga/20261007085743-142-1412508/john-herdman-pantau-pemain-baru-timnas-indonesia-untuk-piala-asia-2027",
+      "sha256": "37ede457ad762c94052245b8c0a246c0707c6c77df13c74e6b6cd549aa4b529b",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-07T09:37:00+07:00",
+      "primary": true,
+      "publisher_group": "TRANSMEDIA",
+      "report_type": "FIRST_HAND_PRESS_CONFERENCE_REPORT"
+    },
+    {
+      "id": "detik",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8695358/piala-asia-miliano-hilgers-diharapkan-gabung-timnas-indonesia",
+      "sha256": "675b6c8633dab688dda06e055f437e63e3839764e82201173716fbad131a0c53",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-06T21:00:00+07:00",
+      "primary": true,
+      "publisher_group": "TRANSMEDIA",
+      "report_type": "FIRST_HAND_PRESS_CONFERENCE_REPORT"
+    }
+  ],
+  "source_photo_url": "https://akcdn.detik.net.id/visual/2026/10/01/john-herdman-dan-ole-romeny-1790872336710_169.jpeg?w=1200",
+  "cover_sha256": "302525a74566b8e59f1743932970458676e7293c3ce3c301f0eeea3be62bff68",
+  "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "pages": 5,
+  "format_reason": "Full verified article carousel; no accessible verified original video selected. Original slot time preserved; no AI footage.",
+  "review": {
+    "article": true,
+    "cover": true,
+    "body_render": "pending"
+  }
+}

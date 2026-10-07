@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "id": "d3715085-1629-4b37-ac36-880db6dcea85",
+  "plan_key": "additional:persib-menalo-writing-revision-20261007-v1",
+  "event_key": "persib-menalo-approved-writing-revision-20261007-v1",
+  "format": "CAROUSEL",
+  "additional_post": true,
+  "revision_of": "0de44d3b-8312-465a-a6b2-231dc38da4bc",
+  "planned_at": "2026-10-07T08:53:41.187Z",
+  "article": {
+    "version": 1,
+    "genre": "NEWS",
+    "title": "Menalo Bidik Tiga Poin di Kandang Port FC",
+    "dek": "Persib mempelajari rekaman permainan lawan sebelum membuka Shopee Cup di Thailand, Kamis 8 Oktober.",
+    "caption": "MENALO BIDIK TIGA POIN DI KANDANG PORT FC\n\nLuka Menalo ingin Persib langsung menang pada pembuka Shopee Cup. Maung Bandung menyiapkan lawatan ke Thailand dengan mempelajari rekaman pertandingan Port FC.\n\nDuel dijadwalkan Kamis, 8 Oktober 2026. Menalo menyebut timnya siap, sekaligus mengakui kualitas calon lawan.\n\n#Stadione #Persib #LukaMenalo #ShopeeCup",
+    "paragraphs": [
+      {
+        "id": "lead",
+        "heading": "Menalo Ingin Persib Langsung Menang",
+        "text": "Luka Menalo membidik kemenangan ketika Persib Bandung membuka Shopee Cup menghadapi Port FC di Thailand, Kamis 8 Oktober 2026. Penyerang asal Kroasia itu menyatakan timnya siap menjalani pertandingan perdana ASEAN Club Championship musim 2026/27. Persib sudah mempelajari rekaman laga Port FC untuk mengenali permainan calon lawannya sebelum berangkat memburu tiga poin.",
+        "claim_ids": [
+          "fixture",
+          "ready",
+          "scouting",
+          "target"
+        ],
+        "kind": "FACT"
+      },
+      {
+        "id": "ready",
+        "heading": "Persib Siap Menghadapi Pembuka",
+        "text": "\"Persiapan berjalan sangat baik. Kami siap,\" kata Menalo dalam keterangan yang dimuat klub pada Selasa 6 Oktober. Ia menyebut persiapan Persib terus dimaksimalkan dan mengharapkan seluruh pemain memberi kontribusi terbaik. Menalo juga menaruh respek kepada sepak bola Thailand. Penilaiannya terhadap kualitas liga tersebut menjadi alasan Persib mempelajari pertandingan Port FC menjelang pertemuan kedua tim.",
+        "claim_ids": [
+          "ready",
+          "scouting",
+          "fixture"
+        ],
+        "kind": "QUOTE",
+        "quote": {
+          "text": "Persiapan berjalan sangat baik. Kami siap",
+          "source_id": "persib"
+        }
+      },
+      {
+        "id": "target",
+        "heading": "Tiga Poin dari Lawatan ke Thailand",
+        "text": "Bagi Menalo, kualitas Port FC tidak mengubah sasaran Persib pada laga pembuka. \"Menurut saya mereka tim yang bagus, tapi kami punya modal kuat dan saya berharap kami bisa memulai kompetisi ini dengan raihan tiga poin,\" ujarnya. Pernyataan itu disampaikan setelah Persib menganalisis permainan lawan lewat rekaman pertandingan. Maung Bandung akan mengawali perjalanan di kompetisi antarklub Asia Tenggara dengan laga tandang tersebut.",
+        "claim_ids": [
+          "target",
+          "scouting",
+          "fixture"
+        ],
+        "kind": "QUOTE",
+        "quote": {
+          "text": "Menurut saya mereka tim yang bagus, tapi kami punya modal kuat dan saya berharap kami bisa memulai kompetisi ini dengan raihan tiga poin",
+          "source_id": "persib"
+        }
+      }
+    ],
+    "benchmark_ids": [
+      "goal-20261007-barcelona-femenino-clasico-match-news"
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITORIAL_REPOST_20261007",
+      "reviewed_at": "2026-10-07T08:52:47.674971+00:00",
+      "article_digest": "dcca3b9cc52b54137dfa539e37a62edbf58568a539feccabb3fa18f68a1ed29e"
+    }
+  },
+  "claims": [
+    {
+      "id": "fixture",
+      "text": "Persib menghadapi Port FC di Thailand pada Kamis 8 Oktober 2026 untuk membuka Shopee Cup 2026/27; keterangan klub diterbitkan Selasa 6 Oktober 2026.",
+      "verified": true
+    },
+    {
+      "id": "ready",
+      "text": "Luka Menalo, pemain asal Kroasia, menyebut persiapan Persib baik dan tim siap, serta mengharapkan kontribusi pemain.",
+      "verified": true
+    },
+    {
+      "id": "scouting",
+      "text": "Persib menonton rekaman pertandingan Port FC; Menalo mengakui kualitas sepak bola Thailand dan calon lawan.",
+      "verified": true
+    },
+    {
+      "id": "target",
+      "text": "Menalo menargetkan tiga poin pada pembuka dan menilai Persib mempunyai modal kuat.",
+      "verified": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "persib",
+      "url": "https://persib.co.id/article-details/menalo-nyatakan-kesiapan-hadapi-port-fc",
+      "sha256": "59f7777c73c0ff6926cd941b78c9822b88f874a1c3f62dea19ab403944b14046",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-06T06:29:00+07:00",
+      "primary": true,
+      "publisher_group": "PERSIB_OFFICIAL",
+      "report_type": "OFFICIAL_CLUB_STATEMENT"
+    },
+    {
+      "id": "antara",
+      "url": "https://banten.antaranews.com/berita/392129/luka-menalo-siap-berkontribusi-saat-persib-bandung-hadapi-port-fc",
+      "sha256": "55ed5f2edd49547369c810e69b5b55be86351d2b6ea55ad5ec6d1e1b0d11631a",
+      "retrieved_at": "2026-10-07T08:52:47.674971+00:00",
+      "published_at": "2026-10-06T17:18:00+07:00",
+      "primary": false,
+      "publisher_group": "ANTARA",
+      "report_type": "ATTRIBUTED_CLUB_REPORT"
+    }
+  ],
+  "source_photo_url": "https://adt-persib-app-production.s3.ap-southeast-1.amazonaws.com/menalo_nando_1791267953877746617.jpg",
+  "cover_sha256": "10fb310b6baffead7e761524e2a3f667154e9ee2afc8d1777bc24f924914792d",
+  "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "pages": 4,
+  "format_reason": "Full verified article carousel; no accessible verified original video selected. Original slot time preserved; no AI footage.",
+  "review": {
+    "article": true,
+    "cover": true,
+    "body_render": "pending"
+  }
+}
