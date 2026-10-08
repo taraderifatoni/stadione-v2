@@ -1,0 +1,166 @@
+{
+  "verified_at": "2026-10-08T05:12:01.988Z",
+  "state": "SCHEDULED_VERIFIED",
+  "social_id": "9573c54d-a650-4161-bad3-c58cc884b360",
+  "article_id": "93ddccf2-05e7-440d-8e6c-fe8a2e2f57ac",
+  "plan_key": "2026-10-08:mid-noon",
+  "scheduled_at": "2026-10-08T06:00:00+00:00",
+  "article_slug": "marukawa-menanti-persetujuan-untuk-jadi-wni-9573c54d",
+  "article_digest": "7c783e6add6783eb9177a1d341b3a3003748e35926e77ee0e3cdd10a90da6743",
+  "packet_digest": "4a014d1f53134c4a10d0c2cfa395ff231b8d2ae91d59f4e28fdde9c9e88d84e7",
+  "asset_count": 4,
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_collage_cover",
+      "safe_wrap": true,
+      "source_label": "ILEAGUE.ID",
+      "output_sha256": "c4e238962ac336a5014f01e0e91e6df1e1470c5e97865c0d3ef41b0bde553999",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "authentic_photo": true,
+      "no_edition_label": true,
+      "cover_input_sha256": "48bcf724440f9dfc3b1d758ca742a17bed97ab04c835f0576a690a523e947acc",
+      "editorial_background": true,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 738,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 917,
+          "height": 564,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 564,
+      "text_sha256": "681c7cc5f5cfe0d676f6ddef93c8ab9786a9b105b0202e316da585eafe2574f4",
+      "source_label": null,
+      "output_sha256": "7a5ad42828ee2ec44d345d68d38eeb2017ab2d9a3c1e91c78e0155a46e795b64",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 838,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 922,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 458,
+      "text_sha256": "e4bf65e82913cf651de783bb22f851c2a1fe3a58c02c7def4f33464352c38819",
+      "source_label": null,
+      "output_sha256": "a7ea7667a1ded7a981e4d2d5310444f178e11d4cb345e3da5ff0c6b85ea095b4",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 846,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 924,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 299,
+      "text_sha256": "d664f782c33d364ae62e8b535ed96e1157f5e0c06e9f17ffdedd387355d05f33",
+      "source_label": null,
+      "output_sha256": "7335c102efc9cf9052e39ed1909772f4025ac121b09416d28b039df958f17b72",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    }
+  ],
+  "issues": [],
+  "canonical_article_pair": true,
+  "clean_website_photo": true,
+  "identical_preview_bytes": true,
+  "writer_brief_is_only_post_preview_addition": true,
+  "all_other_rows_unchanged": true,
+  "unchanged_rows": 50,
+  "new_rows": [
+    "93ddccf2-05e7-440d-8e6c-fe8a2e2f57ac"
+  ],
+  "duplicate_cms": false,
+  "duplicate_instagram": false,
+  "durable_attempts": [],
+  "instagram_account": "stadione.id",
+  "goal_reference_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "goal_journal_sha256": "7f768eda18055ff4b9e3943a8f3679537ecb3777762844b9eb2d33131c6765e7",
+  "visual_review": {
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "all_four_slide_jpegs_viewed": true,
+    "source_photo_and_generated_cover_viewed": true,
+    "safe_margins": true,
+    "legible_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "active_release": "/opt/stadione-releases/116735c"
+}
