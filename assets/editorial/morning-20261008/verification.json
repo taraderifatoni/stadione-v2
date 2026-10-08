@@ -1,0 +1,201 @@
+{
+  "verified_at": "2026-10-08T00:14:36.466Z",
+  "state": "SCHEDULED_VERIFIED",
+  "social_id": "9d0d36fd-465c-4051-bd06-e72c62083783",
+  "article_id": "27b854ed-f04b-43ce-8f62-b4fcfbd40bb0",
+  "plan_key": "2026-10-08:mid-am",
+  "scheduled_at": "2026-10-08T01:00:00+00:00",
+  "article_slug": "yoro-akhirnya-mendapat-giliran-bersama-prancis-9d0d36fd",
+  "article_digest": "31d296a3a15676e02e51f19380854589c1557e9aa3f0521142e8e551218ada55",
+  "packet_digest": "1e66610e37f70c205d2d0129b99cd15cdb2375e2197c0c402babc591be631db4",
+  "asset_count": 5,
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_collage_cover",
+      "safe_wrap": true,
+      "source_label": "THEGUARDIAN.COM",
+      "output_sha256": "7fa59b8c1ecbe2c0bf2f25ead5fd042f8b48feaac19c0e43fd2284a057157179",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "authentic_photo": true,
+      "no_edition_label": true,
+      "cover_input_sha256": "15e13a2d0691211ababb36db204e0e3710f0d681ed36df51bf6e2810bf6ce152",
+      "editorial_background": true,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 772,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 926,
+          "height": 511,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 511,
+      "text_sha256": "c9746c37e263dca3fd736817674264d3993c353e1c5ebc36eaf74fb843b3ac2c",
+      "source_label": null,
+      "output_sha256": "157f28b8392ce3afdd384d935f8da29154e360bd3d19ee8b732a16b178e7dc7c",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 816,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 909,
+          "height": 566,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 566,
+      "text_sha256": "4fb042ef3f87448f46d9fc03216ac3e3c77f8ff774fc473c945b7fbb42a92e60",
+      "source_label": null,
+      "output_sha256": "5405c88b72360a2467f8df701d950fe9c97ce60fe82e3f3e0e4e5fc4918a4cb8",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 853,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 934,
+          "height": 564,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 564,
+      "text_sha256": "60a73739ab7f7491bdff346d72512d2c473ee38563ef8dd01b63bdbbb2b225ce",
+      "source_label": null,
+      "output_sha256": "be6a819484779fa9053aaaf33f52108614ef061d1c082cd115a5af4d4236aa80",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 818,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 917,
+          "height": 399,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 399,
+      "text_sha256": "151f39efc35f2e66de33811f151040cd87eb405c5ec706c115edc6b2f9e5a103",
+      "source_label": null,
+      "output_sha256": "8c0f1b97b3cfb87921329a5ee2a6648a11b14a220521d06a7f3528a747d59dff",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    }
+  ],
+  "issues": [],
+  "canonical_article_pair": true,
+  "clean_website_photo": true,
+  "identical_preview_bytes": true,
+  "writer_brief_is_only_post_preview_addition": true,
+  "all_other_rows_unchanged": true,
+  "unchanged_rows": 49,
+  "new_rows": [
+    "27b854ed-f04b-43ce-8f62-b4fcfbd40bb0"
+  ],
+  "duplicate_cms": false,
+  "duplicate_instagram": false,
+  "durable_attempts": [],
+  "instagram_account": "stadione.id",
+  "goal_reference_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "goal_journal_sha256": "05b8014b2b250c8c16e9c3c7bf1916e621a15572e89f21e7777c7819d62e6280",
+  "visual_review": {
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "all_five_slide_jpegs_viewed": true,
+    "source_photo_and_generated_cover_viewed": true,
+    "safe_margins": true,
+    "legible_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "active_release": "/opt/stadione-releases/116735c"
+}
