@@ -12,5 +12,9 @@
   "no_edition_label": true,
   "no_promotional_footer": true,
   "native_image_path": "/workspace/generated_images/exec-2a5e6ee5-ea40-40fe-acf9-4888614c18ba.png",
-  "body_slide_review": "Pending deployed preview; record verified actual JPEG evidence before scheduling."
+  "body_slide_review": "All six deployed JPEGs viewed before schedule; cream text-only body, source only on cover, correct counter and wrapped headline/body.",
+  "actual_jpeg_reviewed_at": "2026-10-08T12:17:50.888Z",
+  "all_six_actual_slide_jpegs_viewed": true,
+  "contact_sheet_file": "assets/editorial/evening-20261008/render-contact.jpg",
+  "contact_sheet_sha256": "a7610543215328801fe605d96d8bf8def8d9c8cd8d434fb7778b7e1405e450b5"
 }

@@ -1,0 +1,254 @@
+{
+  "verified_at": "2026-10-08T12:18:28.209Z",
+  "state": "SCHEDULED_VERIFIED",
+  "social_id": "6ff0d24f-8aac-455e-87ea-d37b46967f43",
+  "article_id": "e3d8fc5b-4fd8-4179-9650-9376a540a9cb",
+  "plan_key": "2026-10-08:mid-pm",
+  "scheduled_at": "2026-10-08T13:00:00+00:00",
+  "article_slug": "kadu-menjaga-satu-poin-borneo-di-buriram-6ff0d24f",
+  "article_digest": "9d1730af24bfbde14ad429d2ed8a52fcf52c6162229b486ac59fff8b47f5b9a4",
+  "packet_digest": "4588aba55a0050bad0d4465e23c7aa647442f6d5eeb710cdb2fbf6fada6f1ecc",
+  "asset_count": 6,
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_collage_cover",
+      "safe_wrap": true,
+      "source_label": "ILEAGUE.ID",
+      "output_sha256": "0149991e76ed3767665327b78a281e7e413c15b7722fde9a6f95b965e379a192",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "authentic_photo": true,
+      "no_edition_label": true,
+      "cover_input_sha256": "61e5f9b396ac0bd9e53719f5b01ecbeae552e5bdca4a212e0a04ee011d5d5878",
+      "editorial_background": true,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 794,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 922,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 405,
+      "text_sha256": "313bbb3f2bb5f9f3fb1fe0a8b6513c94fa9f4eaa9851b6ccc0a26830236f19c4",
+      "source_label": null,
+      "output_sha256": "5ef3ccaa46d59c06f20899b6f09e30fd63d777c27acffc1f38290a7d4684096f",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 586,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 926,
+          "height": 564,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 564,
+      "text_sha256": "d76c33d2c368b0487f89d11592ad89c9a1d5694da161b90a0dc8284d098d08f6",
+      "source_label": null,
+      "output_sha256": "4356664ee28422605a0e43f3871f1a7b8d3a2dab807f20a838916b2b6c492a96",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 749,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 934,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 405,
+      "text_sha256": "a79762e8dd90bec97bd2e45571614051d377f65f1e194891a28204dbbcaa56c3",
+      "source_label": null,
+      "output_sha256": "9b90945be436e41d011bd3283e62ddbec074d8cec86037a8daf04cbcad77147d",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 632,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 929,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 458,
+      "text_sha256": "d7b4862d9cfa001854ebf40c4f55b8aa9aa76fb721e49abac494091b6a89db3c",
+      "source_label": null,
+      "output_sha256": "418ef0e6435b25a3b3da6afba5e929900a47fd3f8e9d925b740df76ce1cb6607",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 818,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 926,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 458,
+      "text_sha256": "3145d717ae90e616ef4859d06031999aed3f858f9efbb71f870abc02f2f1ad05",
+      "source_label": null,
+      "output_sha256": "8d260f704088f4d875282198704dbf1fb3105a25db6b9bd245d526f78590ca24",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    }
+  ],
+  "issues": [],
+  "canonical_article_pair": true,
+  "clean_website_photo": true,
+  "identical_preview_bytes": true,
+  "writer_brief_is_only_post_preview_addition": true,
+  "all_other_rows_unchanged": true,
+  "unchanged_rows": 51,
+  "new_rows": [
+    "e3d8fc5b-4fd8-4179-9650-9376a540a9cb"
+  ],
+  "duplicate_cms": false,
+  "duplicate_instagram": false,
+  "durable_attempts": [],
+  "instagram_account": "stadione.id",
+  "goal_reference_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "goal_journal_sha256": "7f768eda18055ff4b9e3943a8f3679537ecb3777762844b9eb2d33131c6765e7",
+  "visual_review": {
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "all_six_slide_jpegs_viewed": true,
+    "source_photo_and_generated_cover_viewed": true,
+    "safe_margins": true,
+    "legible_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "completed_at": "2026-10-08T12:17:50.888Z"
+  },
+  "active_release": "/opt/stadione-releases/116735c",
+  "schedule_idempotency": {
+    "rerun_skipped": true,
+    "state": "SCHEDULED",
+    "reason": "existing_scheduled_published_archived_or_attempt"
+  },
+  "publisher": {
+    "unit": "stadione-cms-publish.timer",
+    "timer_active": true,
+    "publication_at": "2026-10-08T13:00:00Z",
+    "published_now": false,
+    "route": "Committed adapter and active shared publisher; no direct Meta publish call"
+  },
+  "committed_goal_runtime_identical": true,
+  "preparation_commit": "0154ba48cb06385281121a7b9a42789f99ba257b",
+  "contact_sheet_sha256": "a7610543215328801fe605d96d8bf8def8d9c8cd8d434fb7778b7e1405e450b5"
+}
