@@ -1,0 +1,373 @@
+{
+  "plan_key": "2026-10-08:mid-pm",
+  "event_key": "borneo-buriram-kadu-postmatch-20261007",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "kadu",
+    "buriram"
+  ],
+  "format_reason": "Scheduled REEL changed to CAROUSEL for this slot only, retaining 2026-10-08T13:00:00Z. Official highlights embed ZMb5CX-yVOU exists, but actual yt-dlp acquisition on VPS failed: YouTube requires sign-in to confirm not a bot. No downloadable authenticated footage, transcript or scene evidence is available; no AI video generated. Verified postmatch article and authentic goalkeeper photo used instead.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Kadu Menjaga Satu Poin Borneo di Buriram",
+      "dek": "Mauro Jeronimo memuji ketenangan kipernya. Borneo pulang tanpa kebobolan dari markas juara bertahan.",
+      "caption": "KADU MENJAGA SATU POIN BORNEO DI BURIRAM\n\nBorneo FC membawa pulang satu poin setelah menahan Buriram United 0-0 di Chang Arena, Rabu 7 Oktober.\n\nMauro Jeronimo memuji Kadu Monteiro yang tenang menghadapi bola ke tiang jauh dan ikut membangun serangan dari belakang. Kedua tim punya peluang, tetapi tidak ada gol hingga pertandingan berakhir.\n\n#Stadione #BorneoFC #KaduMonteiro #ShopeeCup #SepakBolaIndonesia",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Pulang dengan Gawang Tetap Bersih",
+          "text": "Borneo FC Samarinda membuka perjalanan di ASEAN Club Championship Shopee Cup dengan satu poin dari markas Buriram United. Laga Grup A di Chang Arena, Thailand, Rabu 7 Oktober 2026, berakhir 0-0. Di bawah tekanan juara bertahan, Kadu Monteiro menjaga gawang Pesut Etam tetap bersih. Penampilannya mendapat pujian dari pelatih Mauro Jeronimo setelah pertandingan.",
+          "claim_ids": [
+            "result",
+            "calm"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "aerial",
+          "heading": "Tiang Jauh Sudah Diantisipasi",
+          "text": "Mauro mengatakan dalam konferensi pers pascalaga, \"Ya, dia tampil sangat bagus, begitu juga dengan pemain lini belakang.\" Ia menilai Kadu tetap tenang dan mampu mengontrol area tiang kedua. Pujian itu berkaitan dengan pola serangan yang sudah dibaca Borneo. Menurut Mauro, Buriram kerap mengincar tiang jauh lewat umpan silang, tendangan bebas dan sepak pojok. Dengan mayoritas pemain Borneo berpostur relatif pendek selain dua bek tengah, Kadu dibutuhkan untuk menghadapi bola-bola atas.",
+          "claim_ids": [
+            "calm",
+            "aerial"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "text": "Ya, dia tampil sangat bagus, begitu juga dengan pemain lini belakang",
+            "source_id": "coach"
+          }
+        },
+        {
+          "id": "build",
+          "heading": "Serangan Dimulai dari Kadu",
+          "text": "Tugas Kadu juga berlanjut ketika Borneo menguasai bola. Mauro menilai kipernya tetap tenang saat tim mencoba membangun serangan dari belakang. Borneo ingin menarik pemain Buriram mendekat, mencari jalan keluar dari tekanan, lalu menciptakan ancaman. Mereka tidak sekadar mengirim bola panjang setiap kali mendapat kesempatan memulai serangan.",
+          "claim_ids": [
+            "build",
+            "calm"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "chances",
+          "heading": "Kedua Tim Sempat Mendekati Gol",
+          "text": "Gawang yang bersih tidak berarti Buriram gagal menciptakan peluang. Selepas turun minum, sepakan Paulinho mengenai kedua tiang sebelum bola kembali ke area permainan. Borneo pun punya kesempatan lewat Kablan N’Goma. Tembakannya ditepis Chatchai Bootprom, tetapi bola yang lepas mengenai kaki Rubio dan kembali diamankan sang kiper. Peluang di kedua ujung lapangan itu berlalu tanpa mengubah skor.",
+          "claim_ids": [
+            "chances"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "late",
+          "heading": "Buriram Menutup Laga dengan Sepuluh Pemain",
+          "text": "Tuan rumah kehilangan Narubadin Weerawatnodom menjelang pertandingan berakhir. Ia menerima kartu kuning kedua setelah menarik kaus Hugo Samir. Borneo mendapat kesempatan menghadapi lawan yang kekurangan pemain di sisa laga, tetapi gol pembeda tidak datang. Buriram harus memulai pembelaan gelarnya dengan hasil seri, sementara Pesut Etam membawa pulang satu poin dari Thailand.",
+          "claim_ids": [
+            "late",
+            "result"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261006-piala-presiden-news",
+        "goal-20261007-barcelona-femenino-clasico-match-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EVENING_EDITOR_20261008",
+        "reviewed_at": "2026-10-08T12:10:00.496764+00:00",
+        "article_digest": "9d1730af24bfbde14ad429d2ed8a52fcf52c6162229b486ac59fff8b47f5b9a4"
+      }
+    },
+    "sources": [
+      {
+        "id": "ileague",
+        "url": "https://www.ileague.id/news/detail/kadu-bangga-bisa-bawa-borneo-fc-curi-poin-dari-buriram",
+        "sha256": "25c63911e50e95abfaf5914356856aba8de0aa3025cf4bdfd94ddf9e65d80454",
+        "published_at": "2026-10-08T14:15:18+07:00",
+        "retrieved_at": "2026-10-08T12:10:00.496764+00:00",
+        "primary": true,
+        "publisher_group": "ILEAGUE_OFFICIAL",
+        "report_type": "OFFICIAL_LEAGUE_POSTMATCH_STATEMENT"
+      },
+      {
+        "id": "coach",
+        "url": "https://www.ileague.id/news/detail/curi-poin-di-kandang-buriram-united--pelatih-borneo-fc-sanjung-performa-lini-pertahanan",
+        "sha256": "185d4f011b50afd7c0c3f601eafa4b3cbca21015ad7d74aa63e4677d28878cf2",
+        "published_at": "2026-10-08T07:41:12+07:00",
+        "retrieved_at": "2026-10-08T12:10:00.496764+00:00",
+        "primary": true,
+        "publisher_group": "ILEAGUE_OFFICIAL",
+        "report_type": "OFFICIAL_LEAGUE_POSTMATCH_STATEMENT"
+      },
+      {
+        "id": "aufc",
+        "url": "https://aseanutdfc.com/asean-club-championship/2026/news/asean-shopee-cup-group-a-buriram-united-fc-0-0-borneo-fc-samarinda",
+        "sha256": "703599167a7f9c05e0c028fc62bfcc107b0a437d2a871c1b5dce62a0bcdf2712",
+        "published_at": "2026-10-07T00:00:00+07:00",
+        "retrieved_at": "2026-10-08T12:10:00.496764+00:00",
+        "primary": true,
+        "publisher_group": "AFF_SPORTFIVE_OFFICIAL",
+        "report_type": "OFFICIAL_COMPETITION_MATCH_REPORT"
+      },
+      {
+        "id": "detik",
+        "url": "https://www.detik.com/kalimantan/sepakbola/d-8697168/borneo-fc-tahan-imbang-buriram-0-0-mauro-puji-kiper-tahan-gempuran",
+        "sha256": "ab271f338e36a4d91250cbbcd76de8418d35ac0f7ffbd606a7d11b755ae08f5f",
+        "published_at": "2026-10-07T21:44:00+07:00",
+        "retrieved_at": "2026-10-08T12:10:00.496764+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "POSTMATCH_PRESS_CONFERENCE_REPORT"
+      },
+      {
+        "id": "match",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8697124/asean-club-championship-buriram-united-vs-borneo-fc-tuntas-0-0",
+        "sha256": "836b8ef33580a5ff8c055c7cb4bfc1fe79e386d8b0b40064aa5d26167f83ee46",
+        "published_at": "2026-10-07T20:58:00+07:00",
+        "retrieved_at": "2026-10-08T12:10:00.496764+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "MATCH_REPORT"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Borneo FC Samarinda meraih satu poin dari hasil 0-0 melawan Buriram United di Chang Arena, Buriram, Thailand pada Rabu 7 Oktober 2026, laga pembuka Grup A ASEAN Club Championship Shopee Cup 2026/27. Buriram adalah juara bertahan. Kiper Borneo Kadu Monteiro dipuji pelatih Mauro Jeronimo.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "8d968533a3ab8cd8f59468243c9f498be3b299b9dd251647ea33c1fa35d8fe41"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "06a6cfd0754ff56690f4e95071c8813716ae3e668fd9711c07f7fa1084b50a42"
+          },
+          {
+            "source_id": "ileague",
+            "quote_sha256": "1d9077fbb37f6ccab38fc75effd42f77564c82a2447c0455f007c760f17ed3e9"
+          },
+          {
+            "source_id": "aufc",
+            "quote_sha256": "630585005430c70d48c84c728c9a86d418e974fb5d684e9f42d5088d19289881"
+          }
+        ]
+      },
+      {
+        "id": "calm",
+        "text": "Pelatih Mauro Jeronimo memuji Kadu Monteiro serta lini belakang dalam konferensi pers pascalaga; kiper tenang dan mengontrol area tiang kedua. Kutipan Ya, dia tampil sangat bagus, begitu juga dengan pemain lini belakang. Dia sangat tenang hari ini dan mampu mengontrol area tiang kedua dengan baik.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "ba800a8368a4d75d3b1a88406f2b67e973deb0f2207e00f544909d4a23c8aec7"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "ba800a8368a4d75d3b1a88406f2b67e973deb0f2207e00f544909d4a23c8aec7"
+          }
+        ]
+      },
+      {
+        "id": "aerial",
+        "text": "Menurut Mauro, Buriram sering menyerang tiang kedua lewat umpan silang, tendangan bebas dan sepak pojok. Borneo sudah mengantisipasi pola itu dan membutuhkan Kadu menghadapi bola atas karena mayoritas pemainnya relatif pendek selain dua bek tengah.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "f38d86c1eb80b15884ef8045a90f1301d4c3ef6604bb398e54f2eb5138e34013"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "d79f00e2283e1e0a9658853be476f9accaf9cb7a83c771202dbcb94d781a3211"
+          },
+          {
+            "source_id": "coach",
+            "quote_sha256": "013cfeee2b310b0f0d76289e77256ecc0934be13323cbf8342909fec96b6ce43"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "23b91ef6228c6bf5fc11b6f95e6ebafce367e10c0970fe091411eeae9196af30"
+          }
+        ]
+      },
+      {
+        "id": "build",
+        "text": "Mauro memuji ketenangan Kadu ketika membangun serangan; Borneo mengalirkan bola dari belakang untuk menarik Buriram, keluar dari tekanan dan membuat ancaman, bukan sekadar melepas bola panjang.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "bda77e1928c758f289cdbf73b17e31860f61409ae49170684215f7f5886444fa"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "ece3cf615f63d12cb5db1c4b38aa50b625b9f274bd49bef368b001ca6c7f639f"
+          }
+        ]
+      },
+      {
+        "id": "chances",
+        "text": "Buriram menekan dan punya peluang. Sepakan Paulinho selepas turun minum mengenai kedua tiang. Tembakan Kablan N’Goma diselamatkan Chatchai Bootprom lalu bola pantul mengenai Rubio dan kembali diamankan kiper. Kedua tim gagal mencetak gol.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "aufc",
+            "quote_sha256": "6425d33e88df1698d6d971b10d9557655d0ab31d887bb528125b20aace0630f9"
+          },
+          {
+            "source_id": "match",
+            "quote_sha256": "d3820aa512996a6be52883fe3c36a3d3e870d331ec588b2045d45dd684c109ef"
+          },
+          {
+            "source_id": "aufc",
+            "quote_sha256": "120c6b1ecbea85d677fb5d94a1018ed2fb7ab08e436f6a543f06e932869d60d5"
+          },
+          {
+            "source_id": "match",
+            "quote_sha256": "f016f84916369d37db16fd405fca3e984e1a94d43aefca2858c9f96f43485806"
+          }
+        ]
+      },
+      {
+        "id": "late",
+        "text": "Buriram kehilangan Narubadin Weerawatnodom di akhir pertandingan karena kartu kuning kedua setelah menarik kaus Hugo Samir. Tetap tidak ada gol; kedua tim mendapat satu poin.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "aufc",
+            "quote_sha256": "5c98d51a833388e31570b4f5d4215c559f9996e8597cbb0ba1119fa8d3d7582e"
+          },
+          {
+            "source_id": "match",
+            "quote_sha256": "9f1b1771994965ab47b58a2ab197db6805a3ddbd25bf19cb7b18c824642ecb94"
+          },
+          {
+            "source_id": "match",
+            "quote_sha256": "dabd12e0babe141e1eaea6b1e57d6eae21fa028f057d24b6d13c14034f7cb07a"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Kadu Menjaga Satu Poin Borneo di Buriram",
+        "body": "Mauro Jeronimo memuji ketenangan kipernya. Borneo pulang tanpa kebobolan dari markas juara bertahan.",
+        "claim_ids": [
+          "result",
+          "calm"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Pulang dengan Gawang Tetap Bersih",
+        "body": "Borneo FC Samarinda membuka perjalanan di ASEAN Club Championship Shopee Cup dengan satu poin dari markas Buriram United. Laga Grup A di Chang Arena, Thailand, Rabu 7 Oktober 2026, berakhir 0-0. Di bawah tekanan juara bertahan, Kadu Monteiro menjaga gawang Pesut Etam tetap bersih. Penampilannya mendapat pujian dari pelatih Mauro Jeronimo setelah pertandingan.",
+        "claim_ids": [
+          "result",
+          "calm"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Tiang Jauh Sudah Diantisipasi",
+        "body": "Mauro mengatakan dalam konferensi pers pascalaga, \"Ya, dia tampil sangat bagus, begitu juga dengan pemain lini belakang.\" Ia menilai Kadu tetap tenang dan mampu mengontrol area tiang kedua. Pujian itu berkaitan dengan pola serangan yang sudah dibaca Borneo. Menurut Mauro, Buriram kerap mengincar tiang jauh lewat umpan silang, tendangan bebas dan sepak pojok. Dengan mayoritas pemain Borneo berpostur relatif pendek selain dua bek tengah, Kadu dibutuhkan untuk menghadapi bola-bola atas.",
+        "claim_ids": [
+          "calm",
+          "aerial"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Serangan Dimulai dari Kadu",
+        "body": "Tugas Kadu juga berlanjut ketika Borneo menguasai bola. Mauro menilai kipernya tetap tenang saat tim mencoba membangun serangan dari belakang. Borneo ingin menarik pemain Buriram mendekat, mencari jalan keluar dari tekanan, lalu menciptakan ancaman. Mereka tidak sekadar mengirim bola panjang setiap kali mendapat kesempatan memulai serangan.",
+        "claim_ids": [
+          "build",
+          "calm"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Kedua Tim Sempat Mendekati Gol",
+        "body": "Gawang yang bersih tidak berarti Buriram gagal menciptakan peluang. Selepas turun minum, sepakan Paulinho mengenai kedua tiang sebelum bola kembali ke area permainan. Borneo pun punya kesempatan lewat Kablan N’Goma. Tembakannya ditepis Chatchai Bootprom, tetapi bola yang lepas mengenai kaki Rubio dan kembali diamankan sang kiper. Peluang di kedua ujung lapangan itu berlalu tanpa mengubah skor.",
+        "claim_ids": [
+          "chances"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Buriram Menutup Laga dengan Sepuluh Pemain",
+        "body": "Tuan rumah kehilangan Narubadin Weerawatnodom menjelang pertandingan berakhir. Ia menerima kartu kuning kedua setelah menarik kaus Hugo Samir. Borneo mendapat kesempatan menghadapi lawan yang kekurangan pemain di sisa laga, tetapi gol pembeda tidak datang. Buriram harus memulai pembelaan gelarnya dengan hasil seri, sementara Pesut Etam membawa pulang satu poin dari Thailand.",
+        "claim_ids": [
+          "late",
+          "result"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-07T19:00:00+07:00",
+    "context": {
+      "who": "Kadu Monteiro, Borneo FC Samarinda dan Buriram United",
+      "what": "Hasil final tanpa gol dan pujian pelatih untuk penjaga gawang Borneo",
+      "when": "Rabu 7 Oktober 2026, laga selesai; laporan pascalaga 7–8 Oktober",
+      "where": "Chang Arena, Buriram, Thailand",
+      "why": "Ketenangan kiper menghadapi tiang jauh dan membangun serangan menopang satu poin",
+      "how": "Menahan serangan juara bertahan dan mengalirkan bola dari belakang"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Indonesia",
+      "angle": "Kutipan / update — pujian pascalaga Mauro Jeronimo untuk Kadu",
+      "why_now": "Release getDailySportsPool fetched 2026-10-08T11:57:38.115Z lists Borneo FC at 50000 searches and 1000% growth. Official match report and independent complete Detik reports verify an unposted postmatch development, distinct from the historical preview."
+    },
+    "media": {
+      "url": "https://assets.ileague.id/uploads/images/news/Kadu-Bangga-Bisa-Bawa-Borneo-FC-Curi-Poin-dari-Buriram-1791443984.jpg",
+      "type": "image",
+      "credit": "I.League source photograph, Kadu Monteiro",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; this is an internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://assets.ileague.id/uploads/images/news/Kadu-Bangga-Bisa-Bawa-Borneo-FC-Curi-Poin-dari-Buriram-1791443984.jpg",
+        "headline": "Kadu Menjaga Satu Poin Borneo di Buriram",
+        "dek": "Mauro Jeronimo memuji ketenangan kipernya. Borneo pulang tanpa kebobolan dari markas juara bertahan.",
+        "source_label": "ILEAGUE.ID",
+        "reviewed_at": "2026-10-08T12:10:00.496764+00:00",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 6,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true
+      }
+    }
+  },
+  "private_packet_path": "/opt/stadione-editorial/evening-20261008/input.json",
+  "cover_file": "assets/editorial/evening-20261008/kadu-cover.jpg",
+  "cover_sha256": "61e5f9b396ac0bd9e53719f5b01ecbeae552e5bdca4a212e0a04ee011d5d5878",
+  "source_photo_sha256": "9e8eadbec2f517dc9a84cdac68de8004811be16f25c1458b846d103489929cc2",
+  "full_article_review": {
+    "lead": "Result first, followed by goalkeeper angle.",
+    "progression": "Coach assessment, aerial threat, distribution, chances at both ends, late dismissal.",
+    "quote": "Exact first sentence of postmatch coach statement, punctuation preserved.",
+    "context": "Official match report plus independent Detik reports; fresh result distinguishes earlier published preview.",
+    "excluded": "Unsupported numerical keeper statistics and official man-of-match claim. Kadu is not labelled official MOTM."
+  },
+  "footage_attempt": {
+    "page_url": "https://aseanutdfc.com/id/asean-club-championship/2026/videos/buriram-united-0-0-borneo-shopee-cup-202627-match-highlights",
+    "youtube_id": "ZMb5CX-yVOU",
+    "result": "ERROR: Sign in to confirm you’re not a bot",
+    "log_path": "/opt/stadione-editorial/evening-20261008/video-fetch.log"
+  }
+}
