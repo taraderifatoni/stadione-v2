@@ -1,0 +1,212 @@
+{
+  "plan_key": "2026-10-08:mid-noon",
+  "event_key": "marukawa-naturalisation-awaiting-approval-20261007",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "marukawa",
+    "persetujuan"
+  ],
+  "format_reason": "Original CAROUSEL slot retained. Verified player statement article; no claim of approved citizenship or national-team call-up.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Marukawa Menanti Persetujuan untuk Jadi WNI",
+      "dek": "Dokumen sudah diserahkan. Pemain Dewa United asal Jepang itu menyimpan impian membela Timnas Indonesia.",
+      "caption": "MARUKAWA MENANTI PERSETUJUAN UNTUK JADI WNI\n\nTaisei Marukawa mengonfirmasi dokumen naturalisasinya sudah diserahkan. Pemain Dewa United asal Jepang itu masih menunggu persetujuan.\n\nLima tahun tinggal di Indonesia membuatnya betah. Ia berharap suatu hari mendapat kesempatan membela Timnas Indonesia.\n\n#Stadione #TaiseiMarukawa #DewaUnited #TimnasIndonesia",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Dokumen Diserahkan, Persetujuan Ditunggu",
+          "text": "Taisei Marukawa sudah menyerahkan dokumen untuk proses naturalisasi menjadi Warga Negara Indonesia. Pemain Dewa United asal Jepang itu masih menunggu persetujuan lanjutan dan belum merinci tahapan administratif yang ditempuhnya. Dalam keterangan di Dewa United Arena, Tangerang, ia memastikan prosesnya tetap berjalan. Kabar tersebut dimuat pada Rabu 7 Oktober 2026, dengan harapan Marukawa untuk membela Timnas Indonesia jika proses naturalisasi rampung.",
+          "claim_ids": [
+            "process",
+            "dream"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "home",
+          "heading": "Lima Tahun Membuatnya Betah",
+          "text": "Keinginan menjadi WNI tumbuh selama Marukawa tinggal dan berkarier di Indonesia. Setelah lima tahun di Tanah Air, ia mengaku jatuh cinta kepada negara yang menjadi tempatnya bermain sepak bola. Keramahan masyarakat membuatnya merasa nyaman dan turut mendasari keputusan menjalani naturalisasi. \"Semua orang sangat ramah, dan menghabiskan waktu di Indonesia membuat saya merasa bahagia,\" ujarnya.",
+          "claim_ids": [
+            "home",
+            "process"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "text": "Semua orang sangat ramah, dan menghabiskan waktu di Indonesia membuat saya merasa bahagia",
+            "source_id": "ileague"
+          }
+        },
+        {
+          "id": "dream",
+          "heading": "Seragam Timnas Menjadi Impiannya",
+          "text": "Jika proses naturalisasinya rampung, Marukawa ingin memakai seragam Timnas Indonesia. \"Impian terbesar saya adalah menjadi bagian dari Tim Nasional Indonesia. Bisa bermain untuk Indonesia akan menjadi sebuah kehormatan yang sangat besar bagi saya,\" tuturnya.",
+          "claim_ids": [
+            "dream",
+            "process"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "text": "Impian terbesar saya adalah menjadi bagian dari Tim Nasional Indonesia. Bisa bermain untuk Indonesia akan menjadi sebuah kehormatan yang sangat besar bagi saya",
+            "source_id": "ileague"
+          }
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261006-piala-presiden-news",
+        "goal-20261007-barcelona-femenino-clasico-match-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_NOON_EDITOR_20261008",
+        "reviewed_at": "2026-10-08T05:07:00.577639+00:00",
+        "article_digest": "7c783e6add6783eb9177a1d341b3a3003748e35926e77ee0e3cdd10a90da6743"
+      }
+    },
+    "sources": [
+      {
+        "id": "ileague",
+        "url": "https://www.ileague.id/news/detail/taisei-marukawa-jalani-proses-naturalisasi--ingin-bela-timnas-indonesia",
+        "sha256": "194b10da39da2200ebe6f3f6bccc64bdf8c8db4f6706b3f3c747b221e9c87a05",
+        "published_at": "2026-10-07T00:00:00+07:00",
+        "retrieved_at": "2026-10-08T05:07:00.577639+00:00",
+        "primary": true,
+        "publisher_group": "ILEAGUE_OFFICIAL",
+        "report_type": "OFFICIAL_LEAGUE_PLAYER_STATEMENT"
+      },
+      {
+        "id": "antara",
+        "url": "https://www.antaranews.com/berita/5775952/taisei-marukawa-tunggu-tahap-persetujuan-lanjutan-proses-naturalisasi",
+        "sha256": "fc534e4c0f7ac5143209d576079ad2818910f76a9e8fcd362c4b26ad0974015f",
+        "published_at": "2026-10-07T22:01:00+07:00",
+        "retrieved_at": "2026-10-08T05:07:00.577639+00:00",
+        "primary": false,
+        "publisher_group": "ANTARA",
+        "report_type": "ATTRIBUTED_PLAYER_STATEMENT_REPORT"
+      },
+      {
+        "id": "detik",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8696876/5-tahun-di-indonesia-taisei-marukawa-urus-naturalisasi-demi-asa-bela-timnas/amp",
+        "sha256": "2d7ab93a3f93fceca5db29d80e7eed670e0ecdd853872137d76f5f6d4e5839ea",
+        "published_at": "2026-10-07T20:45:00+07:00",
+        "retrieved_at": "2026-10-08T05:07:00.577639+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "ATTRIBUTED_PLAYER_STATEMENT_REPORT"
+      }
+    ],
+    "claims": [
+      {
+        "id": "process",
+        "text": "Taisei Marukawa, pemain Dewa United asal Jepang, sedang menjalani naturalisasi untuk menjadi WNI; sudah menyerahkan dokumen, menunggu persetujuan dan tidak merinci tahapan administratif. Laporan I.League terbit 7 Oktober 2026; tempat keterangan Dewa United Arena, Tangerang.",
+        "verified": true,
+        "evidence_sources": [
+          "ileague",
+          "antara",
+          "detik"
+        ]
+      },
+      {
+        "id": "home",
+        "text": "Marukawa telah tinggal dan berkarier di Indonesia selama lima tahun; keramahan masyarakat membuatnya nyaman dan bahagia serta mendorong pilihan naturalisasi.",
+        "verified": true,
+        "evidence_sources": [
+          "ileague",
+          "detik"
+        ]
+      },
+      {
+        "id": "dream",
+        "text": "Marukawa berharap menjadi bagian dari Timnas Indonesia bila naturalisasi rampung, menyebut bermain untuk Indonesia sebagai kehormatan; ini impian pribadi, bukan pengumuman sudah menjadi WNI atau pemanggilan timnas.",
+        "verified": true,
+        "evidence_sources": [
+          "ileague",
+          "antara"
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Marukawa Menanti Persetujuan untuk Jadi WNI",
+        "body": "Dokumen sudah diserahkan. Pemain Dewa United asal Jepang itu menyimpan impian membela Timnas Indonesia.",
+        "claim_ids": [
+          "process",
+          "dream"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Dokumen Diserahkan, Persetujuan Ditunggu",
+        "body": "Taisei Marukawa sudah menyerahkan dokumen untuk proses naturalisasi menjadi Warga Negara Indonesia. Pemain Dewa United asal Jepang itu masih menunggu persetujuan lanjutan dan belum merinci tahapan administratif yang ditempuhnya. Dalam keterangan di Dewa United Arena, Tangerang, ia memastikan prosesnya tetap berjalan. Kabar tersebut dimuat pada Rabu 7 Oktober 2026, dengan harapan Marukawa untuk membela Timnas Indonesia jika proses naturalisasi rampung.",
+        "claim_ids": [
+          "process",
+          "dream"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Lima Tahun Membuatnya Betah",
+        "body": "Keinginan menjadi WNI tumbuh selama Marukawa tinggal dan berkarier di Indonesia. Setelah lima tahun di Tanah Air, ia mengaku jatuh cinta kepada negara yang menjadi tempatnya bermain sepak bola. Keramahan masyarakat membuatnya merasa nyaman dan turut mendasari keputusan menjalani naturalisasi. \"Semua orang sangat ramah, dan menghabiskan waktu di Indonesia membuat saya merasa bahagia,\" ujarnya.",
+        "claim_ids": [
+          "home",
+          "process"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Seragam Timnas Menjadi Impiannya",
+        "body": "Jika proses naturalisasinya rampung, Marukawa ingin memakai seragam Timnas Indonesia. \"Impian terbesar saya adalah menjadi bagian dari Tim Nasional Indonesia. Bisa bermain untuk Indonesia akan menjadi sebuah kehormatan yang sangat besar bagi saya,\" tuturnya.",
+        "claim_ids": [
+          "dream",
+          "process"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "HISTORICAL",
+    "event_at": "2026-10-05T00:00:00+07:00",
+    "context": {
+      "who": "Taisei Marukawa, pemain Dewa United asal Jepang",
+      "what": "Dokumen naturalisasi diserahkan, persetujuan belum selesai",
+      "when": "Pernyataan dirilis Senin 5 Oktober menurut detik; laporan I.League, ANTARA, detik 7 Oktober; waktu tepat wawancara tidak diklaim",
+      "where": "Dewa United Arena, Tangerang",
+      "why": "Kedekatan setelah lima tahun di Indonesia dan impian membela tim nasional",
+      "how": "Menyerahkan dokumen dan menunggu persetujuan lanjutan tanpa mengumumkan sudah WNI"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Indonesia",
+      "angle": "Update / analisis — status naturalisasi Marukawa dan alasan pribadinya",
+      "why_now": "Latest release getDailySportsPool fetched 2026-10-08T05:03:40Z lists Taisei Marukawa at 200 searches and 300% growth. Full official and independent publisher reports dated October 7 verify this unposted topic."
+    },
+    "media": {
+      "url": "https://assets.ileague.id/uploads/images/news/Taisei-Marukawa-Jalani-Proses-Naturalisasi--Ingin-Bela-Timnas-Indonesia-1791364612.jpg",
+      "type": "image",
+      "credit": "I.League source photograph, Taisei Marukawa",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; this is an internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://assets.ileague.id/uploads/images/news/Taisei-Marukawa-Jalani-Proses-Naturalisasi--Ingin-Bela-Timnas-Indonesia-1791364612.jpg",
+        "headline": "Marukawa Menanti Persetujuan untuk Jadi WNI",
+        "dek": "Dokumen sudah diserahkan. Pemain Dewa United asal Jepang itu menyimpan impian membela Timnas Indonesia.",
+        "source_label": "ILEAGUE.ID",
+        "reviewed_at": "2026-10-08T05:07:00.577639+00:00",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 4,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true
+      }
+    }
+  }
+}
