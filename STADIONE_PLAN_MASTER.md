@@ -706,3 +706,11 @@ Normal evening social `80b9be65-650f-4a48-bf2d-2ceed7726a32` and ARTICLE `f41548
 - Affected components: reference journal and this Plan Master only. No CMS/schedule/media/history/renderer/credential/production-code changes. Baseline `cf8471a6b7c6d3a12738fee15aae2c26681ce355`.
 - Verification: prior entries compared structurally; journal QA required before commit. Deployment: commit/push before exact runtime copy to `/opt/stadione-editorial/goal-readings.json`; no restart. Remaining: verify remote SHA, committed/runtime byte identity and runtime QA, then record live evidence.
 - Rollback: restore the two documentation/reference files from baseline by a new commit, push, then copy the committed journal to runtime; never alter read_at on retained entries or touch editorial slots.
+
+
+### 2026-10-09 — Daily reference runtime verified
+
+- Journal/documentation commit `84bdbd3f320e4981d9f4ceb4795958e6ed47d552` pushed successfully; GitHub branch SHA matched before runtime copy.
+- At 2026-10-09T00:58:16.024509+00:00, copied exact committed journal bytes atomically to `/opt/stadione-editorial/goal-readings.json`. Committed file, repository file and runtime are identical, SHA256 `c20b27a0daca342246b85db420bd03ef6c7ce20b0323cd8c0578268c9e718dcf`. Repository and runtime QA both pass, five entries; all four previous entries are unchanged.
+- Engine receives the new reference on its normal file read without restart. Only the reference journal and Plan Master changed; schedules, posts, articles, renderer, credentials and production code untouched. Private pre-change snapshots retained at `/opt/stadione-editorial/goal-learning-20261009`; no third-party full text committed.
+- Remaining: none for this learning run. Rollback reference is baseline `cf8471a6b7c6d3a12738fee15aae2c26681ce355`, journal/documentation only.
