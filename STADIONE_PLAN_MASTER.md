@@ -696,3 +696,13 @@ Normal evening social `80b9be65-650f-4a48-bf2d-2ceed7726a32` and ARTICLE `f41548
 - Goal runtime equals committed journal byte-for-byte, SHA256 `7f768eda18055ff4b9e3943a8f3679537ecb3777762844b9eb2d33131c6765e7`; journal QA valid with four entries. No journal or credential changes.
 - `stadione-cms-publish.timer` active with successful minute runs; publication is still future at 08:00 WIB. Both items SCHEDULED, not claimed already published. Existing shared publisher handles Meta and paired ARTICLE when due; no direct Meta publish call or timer change.
 - Evidence committed: `verification.json`, `render-contact.jpg`, completed `visual-review.json`, this Plan Master. Source full texts, exact evidence, before/after snapshots and prepared packet stay private under `/opt/stadione-editorial/morning-20261009`. No production failure or owner action required in this run. Remaining normal timed publication; rollback documentation/assets by commit only, never revive history or disturb other slots.
+
+
+### 2026-10-09 — Daily Goal reading, direct postmatch news
+
+- Purpose: vary yesterday's analysis/FEATURE with a new NEWS reference, `goal-20261009-coutinho-debut-fitness-news`. URL is in the journal; read_at `2026-10-09T00:57:17.354Z` records this actual complete read, not an old article's publication time.
+- Reading evidence: browsing opened the full Goal Indonesia article, published October 3, from lead through every body section and closing paragraph (article lines 157–178). Studied lead/angle, concrete contribution, quotation placement, contextual progression and competitive implications. No claim based only on a title/search snippet.
+- Changes: appended one original-language entry with five concrete lessons and Stadione application to `editorial/goal-readings.json`; all four prior entries retained unchanged. No copied article body or long quotations stored in Git. Writing Guide remains applicable and unchanged.
+- Affected components: reference journal and this Plan Master only. No CMS/schedule/media/history/renderer/credential/production-code changes. Baseline `cf8471a6b7c6d3a12738fee15aae2c26681ce355`.
+- Verification: prior entries compared structurally; journal QA required before commit. Deployment: commit/push before exact runtime copy to `/opt/stadione-editorial/goal-readings.json`; no restart. Remaining: verify remote SHA, committed/runtime byte identity and runtime QA, then record live evidence.
+- Rollback: restore the two documentation/reference files from baseline by a new commit, push, then copy the committed journal to runtime; never alter read_at on retained entries or touch editorial slots.
