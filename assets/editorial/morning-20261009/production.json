@@ -1,0 +1,385 @@
+{
+  "plan_key": "2026-10-09:fri-am",
+  "event_key": "motogp-mandalika-two-point-preview-20261009",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "mandalika",
+    "marquez"
+  ],
+  "format_reason": "Original Friday morning CAROUSEL retained at 08:00 WIB. Preview only: official weekend schedule, qualification context and verified championship background. Website uses original interview photo without added headline artwork; the source is explicitly credited as Jakarta October 6, not a current race action shot.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Dua Poin Memisahkan Martin dan Marquez di Mandalika",
+      "dek": "Latihan MotoGP dimulai Jumat pukul 09.45 WIB. Sesi siang menentukan tiket langsung ke Q2.",
+      "caption": "DUA POIN MEMISAHKAN MARTIN DAN MARQUEZ DI MANDALIKA\n\nJorge Martin memimpin Marc Marquez dua poin menjelang MotoGP Indonesia, 9–11 Oktober 2026.\n\nHari ini, FP1 MotoGP dijadwalkan pukul 09.45 WIB dan Practice pukul 14.00 WIB. Sepuluh pembalap tercepat di Practice lolos langsung ke Q2.\n\nSprint berlangsung Sabtu pukul 14.00 WIB; Grand Prix Minggu pukul 14.00 WIB.\n\n#Stadione #MotoGPIndonesia #Mandalika #MarcMarquez #JorgeMartin",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Persaingan Gelar Berlanjut di Lombok",
+          "text": "Jorge Martin membawa keunggulan dua poin atas Marc Marquez ke MotoGP Indonesia. Rangkaian balap di Sirkuit Mandalika, Lombok, Nusa Tenggara Barat, berlangsung Jumat hingga Minggu, 9–11 Oktober 2026. Martin datang bersama Aprilia Racing, sedangkan Marquez membela Ducati Lenovo Team. Selisih yang tipis itu menjadi latar persaingan keduanya saat akhir pekan balap memasuki sesi latihan.",
+          "claim_ids": [
+            "preview",
+            "friday"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "motegi",
+          "heading": "Dua Rapor Berbeda di Mandalika",
+          "text": "Jarak di klasemen menyempit setelah Marquez memenangi Sprint dan balapan Grand Prix Jepang di Motegi akhir pekan lalu. Dua kemenangan tersebut menjaga perburuannya terhadap Martin sebelum para pembalap berangkat ke Indonesia.",
+          "claim_ids": [
+            "motegi",
+            "preview"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "history",
+          "heading": "Dua Rapor Berbeda di Mandalika",
+          "text": "Martin pernah memenangi Grand Prix Indonesia pada 2024 ketika masih mengendarai Ducati. Ia kembali ke Mandalika sebagai pembalap Aprilia dan pemimpin klasemen. Marquez justru belum pernah menuntaskan balapan Grand Prix di sirkuit ini sejak masuk kalender pada 2022.",
+          "claim_ids": [
+            "history",
+            "motegi",
+            "preview"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "friday",
+          "heading": "Tiket Q2 Diperebutkan Jumat Siang",
+          "text": "Latihan bebas pertama MotoGP dijadwalkan mulai pukul 09.45 WIB pada Jumat 9 Oktober. Sesi pembuka memberi kesempatan pembalap menyesuaikan diri dengan lintasan dan mencari setelan motor. Agenda berlanjut ke Practice pukul 14.00 WIB. Sepuluh pembalap tercepat dalam sesi ini lolos langsung ke kualifikasi kedua atau Q2, tempat posisi start terdepan diperebutkan. Karena itu, Jumat siang sudah menentukan jalur yang harus ditempuh menuju kualifikasi.",
+          "claim_ids": [
+            "friday"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "weekend",
+          "heading": "Sprint Sabtu, Grand Prix Minggu",
+          "text": "Penentuan grid MotoGP dimulai lewat kualifikasi pada Sabtu 10 Oktober pukul 09.50 WIB. Sprint dijadwalkan pukul 14.00 WIB pada hari yang sama. Balapan Grand Prix menyusul Minggu 11 Oktober pukul 14.00 WIB, atau pukul 15.00 WITA di Lombok.",
+          "claim_ids": [
+            "weekend",
+            "preview"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261006-piala-presiden-news",
+        "goal-20261007-barcelona-femenino-clasico-match-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_MORNING_EDITOR_20261009",
+        "reviewed_at": "2026-10-09T00:13:06.848520+00:00",
+        "article_digest": "5247813f08fa8471e46b7c9c4249aa106c168f33275e0475e6b9028e829a6c76"
+      }
+    },
+    "sources": [
+      {
+        "id": "schedule",
+        "url": "https://www.motogp.com/id/news/2026/10/07/time-schedule-pertamina-grand-prix-of-indonesia/1171110",
+        "sha256": "d2400df68bb2db62de9e200577a33f49e36ab77c0f04eb471dd0f446f407905e",
+        "published_at": "2026-10-07T00:00:00+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": true,
+        "publisher_group": "MOTOGP_OFFICIAL",
+        "report_type": "OFFICIAL_EVENT_SCHEDULE"
+      },
+      {
+        "id": "preview",
+        "url": "https://www.motogp.com/id/news/2026/10/07/two-points-the-gap-as-motogp-s-2026-thriller-lands-in-lombok/1171109",
+        "sha256": "093bdfe66208623a08be0193e508e7e1bf708834828ea8455c75b7fba6a10bf2",
+        "published_at": "2026-10-07T00:00:00+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": true,
+        "publisher_group": "MOTOGP_OFFICIAL",
+        "report_type": "OFFICIAL_CHAMPIONSHIP_PREVIEW"
+      },
+      {
+        "id": "detik",
+        "url": "https://oto.detik.com/otosport/d-8696357/jadwal-motogp-mandalika-2026-akhir-pekan-ini",
+        "sha256": "ed8a958ba43a20146226618d743e08bd461f7d27d40785ac8154560daa775017",
+        "published_at": "2026-10-07T14:17:50+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "INDEPENDENT_PUBLISHER_PREVIEW"
+      },
+      {
+        "id": "liputan",
+        "url": "https://www.liputan6.com/bola/read/8309059/jadwal-dan-tempat-menonton-motogp-indonesia-2026",
+        "sha256": "c7259c55073f2b02662b3aea281c6f021d3040d329cb81b90a241ba61cf9bbdb",
+        "published_at": "2026-10-09T04:30:41+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": false,
+        "publisher_group": "KLY_EMTEK",
+        "report_type": "INDEPENDENT_PUBLISHER_PREVIEW"
+      },
+      {
+        "id": "tirto",
+        "url": "https://tirto.id/jadwal-motogp-moto3-mandalika-hari-ini-9-oktober-apa-tayang-trans7-hDFp",
+        "sha256": "a50a8c8909aef54714f6f5b8530e30946a8ad503f497512a3d5c4fbc55faba01",
+        "published_at": "2026-10-09T00:15:00+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": false,
+        "publisher_group": "TIRTO",
+        "report_type": "INDEPENDENT_PUBLISHER_PREVIEW"
+      },
+      {
+        "id": "marc",
+        "url": "https://oto.detik.com/otosport/d-8695909/belum-pernah-finis-di-mandalika-marc-marquez-bercanda-ngarep-hujan",
+        "sha256": "8fd32f740b34be503a2fe2317ed116bca82bddbaa51108b40200c4d92fb7a675",
+        "published_at": "2026-10-07T09:52:00+07:00",
+        "retrieved_at": "2026-10-09T00:13:06.848520+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "FIRSTHAND_INTERVIEW_REPORT_AND_SOURCE_PHOTO"
+      }
+    ],
+    "claims": [
+      {
+        "id": "preview",
+        "text": "Jorge Martin (Aprilia Racing) memimpin Marc Marquez (Ducati Lenovo Team) dua poin menjelang MotoGP Indonesia 2026. Rangkaian GP digelar 9–11 Oktober 2026 di Sirkuit Mandalika, Lombok, Nusa Tenggara Barat. Ini preview sebelum latihan MotoGP, bukan hasil balapan.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "schedule",
+            "quote_sha256": "a43511d937d0041f05a0164d798576c39494bd87353a1898d3af95a8ce1e822e"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "6a8d9b80816dc6c23eb0e655dc2c2bdd551db50b998980c820a05bc828dc3e82"
+          },
+          {
+            "source_id": "preview",
+            "quote_sha256": "1cb0131efa48dfbd1d976ea0691c290b12c43de618085d60b79b087e0f13536a"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "c2100f68beb1cd8d1b96f2711ebc152fa91649e66f4ed5e2fec6cb8ce36f9dc2"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "4eacdba043e7a8d8837fd83476445df44e7ebc8f23777d7e16e9314bb8811f8c"
+          }
+        ]
+      },
+      {
+        "id": "motegi",
+        "text": "Marc Marquez memenangkan Sprint dan balapan Grand Prix Jepang di Motegi pada akhir pekan sebelumnya; hasil itu memperkecil jarak dari Martin menjadi dua poin.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "preview",
+            "quote_sha256": "fb47b94335ca067eb86ddd54dd9c2ad5e3abf62050d9071c1d712d01851ca3b3"
+          },
+          {
+            "source_id": "liputan",
+            "quote_sha256": "00f521ce7df4f22756b8ab5861744e496f91c03fea2e23d5dc34c2d771f4e313"
+          },
+          {
+            "source_id": "preview",
+            "quote_sha256": "f24346a3d1aeb18d9a770a76b95bc9d29aff9a88d17fa46a1c4cc63d8568b924"
+          },
+          {
+            "source_id": "liputan",
+            "quote_sha256": "ffe53b085340870ffb5937aabd8d98ae7224f48aafb8d32d736dfe8d1f8f9c64"
+          }
+        ]
+      },
+      {
+        "id": "history",
+        "text": "Jorge Martin menang GP Indonesia 2024 dengan Ducati dan kini membela Aprilia Racing; Marc Marquez belum pernah finis balapan Grand Prix di Mandalika, termasuk tidak memulai GP 2022, tidak berarti ia tidak pernah finis Sprint. Rekam jejak GP berbeda untuk dua pembalap teratas.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "preview",
+            "quote_sha256": "c90d69254f83d0095444d4e3bd31792989b0f788580455074c0e6805759e7e30"
+          },
+          {
+            "source_id": "liputan",
+            "quote_sha256": "0aedd1bdb50ef5be96019ffa6bf415abfdf619e506b0f62693817e81492d2b24"
+          },
+          {
+            "source_id": "schedule",
+            "quote_sha256": "70d0ad0a94cb2cd49c44c773d57a443506527dbafc5a76089127cb259ae5a60d"
+          },
+          {
+            "source_id": "marc",
+            "quote_sha256": "477e5b3a667da29cfdd203420c1a7c3ab2b5d2f97de84e1aa0a1eb4ea6b4d90a"
+          }
+        ]
+      },
+      {
+        "id": "friday",
+        "text": "Jumat 9 Oktober 2026 sesi FP1 MotoGP dimulai 09.45 WIB; Practice MotoGP 14.00 WIB; 10 atau sepuluh pembalap tercepat lolos langsung Q2 atau kualifikasi kedua untuk memperebutkan grid terdepan, selebihnya melalui Q1. FP1 untuk adaptasi lintasan dan setelan sebelum Practice.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "schedule",
+            "quote_sha256": "fcd4ba3208f2cdb786e1fab7c62cb203e906cbe9406e95a0617a85eb6b4ebf9a"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "00e721762c6e0500869b4873f789c6a0efda0577165c0d8693e82f5aa4f5d17d"
+          },
+          {
+            "source_id": "schedule",
+            "quote_sha256": "f4b646a08b122870fe260048df8e2fd93bfcf05c81a3f5a0346d019d6db4f366"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "2ac329a7f33b51c53ab1c8fcbf6158ae31f7883c849765a0b33c64e511b9f175"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "2c7c638f4c6f0dc28e4fae9257eaf3c1053edf500a553a680e5313ac3c8aefbd"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "38f08028831670df83112ddeac078549a3fb01af28829d8524fa76df3f165c50"
+          }
+        ]
+      },
+      {
+        "id": "weekend",
+        "text": "Sabtu 10 Oktober 2026 kualifikasi MotoGP dimulai 09.50 WIB; Sprint 14.00 WIB. Minggu 11 Oktober 2026 balapan Grand Prix MotoGP dimulai 14.00 WIB, yaitu 15.00 WITA di Lombok. Jadwal diumumkan penyelenggara, belum hasil.",
+        "verified": true,
+        "evidence_sources": [
+          {
+            "source_id": "schedule",
+            "quote_sha256": "f80cc31a7afb7fca7feb954a468d95a7ed1071b01a049de35b5c8c6ed00932e6"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "716585d448ef80f05fb238a27133b1f3dbf3c5fecca0ef1b88651ad45f3fe494"
+          },
+          {
+            "source_id": "schedule",
+            "quote_sha256": "11e6913220bea70350e31f75829b8e3b7a0a2b5635bff2cd2cfd3e70491a779d"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "fae374c56eaf28d46da390629c60a484a93379085d54b32450706e7f221c2488"
+          },
+          {
+            "source_id": "schedule",
+            "quote_sha256": "6addb5698f5e72ebd25c4dc21b3f24f7f5993dd25b15fb483d1dfaf1bcd9f57d"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "960f17808218f8eefb0d4b138e736cf0c8354dcd8ce92e7e89d4a5ebb9340cb3"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Dua Poin Memisahkan Martin dan Marquez di Mandalika",
+        "body": "Latihan MotoGP dimulai Jumat pukul 09.45 WIB. Sesi siang menentukan tiket langsung ke Q2.",
+        "claim_ids": [
+          "preview",
+          "friday"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Persaingan Gelar Berlanjut di Lombok",
+        "body": "Jorge Martin membawa keunggulan dua poin atas Marc Marquez ke MotoGP Indonesia. Rangkaian balap di Sirkuit Mandalika, Lombok, Nusa Tenggara Barat, berlangsung Jumat hingga Minggu, 9–11 Oktober 2026. Martin datang bersama Aprilia Racing, sedangkan Marquez membela Ducati Lenovo Team. Selisih yang tipis itu menjadi latar persaingan keduanya saat akhir pekan balap memasuki sesi latihan.",
+        "claim_ids": [
+          "preview",
+          "friday"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Dua Rapor Berbeda di Mandalika",
+        "body": "Jarak di klasemen menyempit setelah Marquez memenangi Sprint dan balapan Grand Prix Jepang di Motegi akhir pekan lalu. Dua kemenangan tersebut menjaga perburuannya terhadap Martin sebelum para pembalap berangkat ke Indonesia.\n\nMartin pernah memenangi Grand Prix Indonesia pada 2024 ketika masih mengendarai Ducati. Ia kembali ke Mandalika sebagai pembalap Aprilia dan pemimpin klasemen. Marquez justru belum pernah menuntaskan balapan Grand Prix di sirkuit ini sejak masuk kalender pada 2022.",
+        "claim_ids": [
+          "motegi",
+          "preview",
+          "history"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Tiket Q2 Diperebutkan Jumat Siang",
+        "body": "Latihan bebas pertama MotoGP dijadwalkan mulai pukul 09.45 WIB pada Jumat 9 Oktober. Sesi pembuka memberi kesempatan pembalap menyesuaikan diri dengan lintasan dan mencari setelan motor. Agenda berlanjut ke Practice pukul 14.00 WIB. Sepuluh pembalap tercepat dalam sesi ini lolos langsung ke kualifikasi kedua atau Q2, tempat posisi start terdepan diperebutkan. Karena itu, Jumat siang sudah menentukan jalur yang harus ditempuh menuju kualifikasi.",
+        "claim_ids": [
+          "friday"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Sprint Sabtu, Grand Prix Minggu",
+        "body": "Penentuan grid MotoGP dimulai lewat kualifikasi pada Sabtu 10 Oktober pukul 09.50 WIB. Sprint dijadwalkan pukul 14.00 WIB pada hari yang sama. Balapan Grand Prix menyusul Minggu 11 Oktober pukul 14.00 WIB, atau pukul 15.00 WITA di Lombok.",
+        "claim_ids": [
+          "weekend",
+          "preview"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "PREVIEW",
+    "event_at": "2026-10-09T09:45:00+07:00",
+    "context": {
+      "who": "Jorge Martin dan Marc Marquez, dua pembalap teratas MotoGP",
+      "what": "Preview GP Indonesia dan hari pertama latihan di Mandalika",
+      "when": "Jumat 9 Oktober latihan; Sprint 10 Oktober; Grand Prix 11 Oktober 2026, semua jam ditulis WIB",
+      "where": "Sirkuit Mandalika, Lombok, Nusa Tenggara Barat",
+      "why": "Selisih dua poin dan rekam jejak berbeda di Mandalika menjelang balapan",
+      "how": "Latihan bebas, Practice penentu tiket Q2, kualifikasi lalu Sprint dan Grand Prix"
+    },
+    "assignment": {
+      "pillar": "Olahraga Indonesia",
+      "angle": "Preview — duel dua poin dan agenda MotoGP Mandalika",
+      "why_now": "Release getDailySportsPool fetched 2026-10-09T00:06:25.733Z includes current MotoGP Mandalika coverage. Expanded research selects the actual sporting preview for Friday non-football pillar, rather than economic projections. Official schedule/preview and complete independent Detik, Liputan6 and Tirto reports verify the unposted topic."
+    },
+    "media": {
+      "url": "https://awsimages.detik.net.id/community/media/visual/2026/10/06/marc-marquez-1791281009477_169.jpeg?w=1200",
+      "type": "image",
+      "credit": "Marc Marquez saat wawancara di Jakarta, 6 Oktober 2026; foto Rangga Rahadiansyah/detikOto.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; this is an internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://awsimages.detik.net.id/community/media/visual/2026/10/06/marc-marquez-1791281009477_169.jpeg?w=1200",
+        "headline": "Dua Poin Memisahkan Martin dan Marquez di Mandalika",
+        "dek": "Latihan MotoGP dimulai Jumat pukul 09.45 WIB. Sesi siang menentukan tiket langsung ke Q2.",
+        "source_label": "MOTOGP.COM",
+        "reviewed_at": "2026-10-09T00:13:06.848520+00:00",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true
+      }
+    }
+  },
+  "private_packet_path": "/opt/stadione-editorial/morning-20261009/input.json",
+  "cover_file": "assets/editorial/morning-20261009/marquez-cover.jpg",
+  "cover_sha256": "df115a3bdb159ca1f06b9a26bc7b0a297276085a13b05c8adc091838aded9b9d",
+  "source_photo_sha256": "37c2409e49fc8543b01f9a1a300be0df3fc5b58adf8de5286fbce657c17d6ab3",
+  "full_article_review": {
+    "angle": "Two-point championship gap and Friday schedule, within Olahraga Indonesia non-football preview pillar.",
+    "lead": "Gap, riders, venue and dates before supporting context.",
+    "progression": "Motegi results, differing Mandalika GP histories, Practice/Q2 purpose, weekend schedule.",
+    "quotes": "No invented quotation; no quote needed for the verified schedule and background.",
+    "excluded": "Economic impact estimate, unneeded season totals and inconsistent secondary explanations of past crashes. No session results claimed.",
+    "photo_context": "Original interview photo in Jakarta October 6, not asserted to be taken during current Mandalika practice.",
+    "page_count": 5,
+    "word_count": 224
+  }
+}
