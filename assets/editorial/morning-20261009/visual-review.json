@@ -12,5 +12,18 @@
   "no_edition_label": true,
   "no_promotional_footer": true,
   "native_image_path": "/workspace/generated_images/exec-b9d64ffd-526b-43b2-85e0-929fc2f82606.png",
-  "body_slide_review": "Pending deployed preview; verify actual JPEGs before schedule."
+  "body_slide_review": "All five deployed JPEGs viewed before scheduling; four cream text-only article pages, 36px modern body text, wrapping and safe margins verified.",
+  "actual_render_review": {
+    "reviewed_at": "2026-10-09T00:21:42.843Z",
+    "reviewer": "CODEX_VISUAL_EDITOR",
+    "all_five_actual_slide_jpegs_viewed": true,
+    "contact_sheet": "preview-37034f61-481c-4792-97a0-40273ce99215/contact.jpg",
+    "authentic_subject_checked": true,
+    "headline_dek_source_and_page_count_checked": true,
+    "body_text_lossless_and_legible": true,
+    "safe_wrap_and_margins": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "completed_at": "2026-10-09T00:22:34.196Z"
 }

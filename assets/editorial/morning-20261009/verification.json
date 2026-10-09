@@ -1,0 +1,246 @@
+{
+  "verified_at": "2026-10-09T00:22:05.597Z",
+  "state": "SCHEDULED_VERIFIED",
+  "social_id": "37034f61-481c-4792-97a0-40273ce99215",
+  "article_id": "2e950a22-9b3b-4859-b786-bad48c36155d",
+  "plan_key": "2026-10-09:fri-am",
+  "scheduled_at": "2026-10-09T01:00:00+00:00",
+  "article_slug": "dua-poin-memisahkan-martin-dan-marquez-di-mandalika-37034f61",
+  "article_digest": "5247813f08fa8471e46b7c9c4249aa106c168f33275e0475e6b9028e829a6c76",
+  "packet_digest": "4798ba5c3706698ad9426c95a6ddb05b7e26ad0df027c00d7c4acde76324f3c0",
+  "asset_count": 5,
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_collage_cover",
+      "safe_wrap": true,
+      "source_label": "MOTOGP.COM",
+      "output_sha256": "91763e15f56673c77ec1a6dfca929e65adf7683086e04c66c7e91111f6db58f9",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "authentic_photo": true,
+      "no_edition_label": true,
+      "cover_input_sha256": "df115a3bdb159ca1f06b9a26bc7b0a297276085a13b05c8adc091838aded9b9d",
+      "editorial_background": true,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 915,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 917,
+          "height": 452,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 452,
+      "text_sha256": "c52c1542f1bc93e5d4439def43605a8946e45d67ecba3e109dd39212c9d99e20",
+      "source_label": null,
+      "output_sha256": "5129a7d7ef17b94dd090ce50024a8421fe30182cd8b191e2520b039a4b14ed1f",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 734,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 908,
+          "height": 617,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 617,
+      "text_sha256": "10bb9ee7bc0b23aeec4dc2212e0541a1680c03822d27ff89715bd39a6dc33e39",
+      "source_label": null,
+      "output_sha256": "9bfb0af3e0b31e2802e80ea5122b0b088b735c539515301b0456c510ac1210e9",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 769,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 909,
+          "height": 511,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 511,
+      "text_sha256": "749a15c14bcd19fb02bbd65c125ce47a1ca73678999e2be48a965019b2e7a292",
+      "source_label": null,
+      "output_sha256": "8eedf89a121e7216348a174aae77e84938d452f416f103c8973b232105f04004",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 827,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 375,
+          "width": 929,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 246,
+      "text_sha256": "ffc125ce21baa64beb515ba5137fc6c76f9128b51dc4dd1abe2e64dcd22d6ca6",
+      "source_label": null,
+      "output_sha256": "4b5c13bfe7d9868871177043d7ccd9076e4cc394b215ef89475120e595d5afe0",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 140,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    }
+  ],
+  "issues": [],
+  "canonical_article_pair": true,
+  "clean_website_photo": true,
+  "identical_preview_bytes": true,
+  "writer_brief_is_only_post_preview_addition": true,
+  "all_other_rows_unchanged": true,
+  "unchanged_rows": 55,
+  "new_rows": [
+    "2e950a22-9b3b-4859-b786-bad48c36155d"
+  ],
+  "duplicate_cms": false,
+  "duplicate_instagram": false,
+  "durable_attempts": [],
+  "instagram_account": "stadione.id",
+  "goal_reference_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "goal_journal_sha256": "7f768eda18055ff4b9e3943a8f3679537ecb3777762844b9eb2d33131c6765e7",
+  "visual_review": {
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "all_five_slide_jpegs_viewed": true,
+    "source_photo_and_generated_cover_viewed": true,
+    "safe_margins": true,
+    "legible_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "active_release": "/opt/stadione-releases/116735c",
+  "public_asset_bytes_verified": [
+    {
+      "sha256": "91763e15f56673c77ec1a6dfca929e65adf7683086e04c66c7e91111f6db58f9",
+      "bytes": 811654
+    },
+    {
+      "sha256": "5129a7d7ef17b94dd090ce50024a8421fe30182cd8b191e2520b039a4b14ed1f",
+      "bytes": 215400
+    },
+    {
+      "sha256": "9bfb0af3e0b31e2802e80ea5122b0b088b735c539515301b0456c510ac1210e9",
+      "bytes": 252393
+    },
+    {
+      "sha256": "8eedf89a121e7216348a174aae77e84938d452f416f103c8973b232105f04004",
+      "bytes": 236312
+    },
+    {
+      "sha256": "4b5c13bfe7d9868871177043d7ccd9076e4cc394b215ef89475120e595d5afe0",
+      "bytes": 158209
+    }
+  ],
+  "schedule_adapter_repeat_skipped": true,
+  "all_rows_identical_after_repeat": true,
+  "goal_runtime_identical_to_committed": true,
+  "publisher_timer": {
+    "unit": "stadione-cms-publish.timer",
+    "active": true,
+    "publication_due": "2026-10-09T01:00:00Z",
+    "state": "SCHEDULED; future publication not claimed"
+  },
+  "completed_at": "2026-10-09T00:22:34.196Z",
+  "visual_review_before_schedule": {
+    "reviewed_at": "2026-10-09T00:21:42.843Z",
+    "reviewer": "CODEX_VISUAL_EDITOR",
+    "all_five_actual_slide_jpegs_viewed": true,
+    "contact_sheet": "preview-37034f61-481c-4792-97a0-40273ce99215/contact.jpg",
+    "authentic_subject_checked": true,
+    "headline_dek_source_and_page_count_checked": true,
+    "body_text_lossless_and_legible": true,
+    "safe_wrap_and_margins": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  }
+}
