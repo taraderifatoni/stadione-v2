@@ -1,0 +1,246 @@
+{
+  "verified_at": "2026-10-09T05:17:26.140Z",
+  "state": "SCHEDULED_VERIFIED",
+  "social_id": "4d862c1d-9505-47ac-91a9-61f816b04045",
+  "article_id": "f86fff79-46cd-4512-8020-bc8b8b2d86fd",
+  "plan_key": "2026-10-09:fri-noon",
+  "scheduled_at": "2026-10-09T06:00:00+00:00",
+  "article_slug": "menalo-jadi-bintang-comeback-persib-4d862c1d",
+  "article_digest": "d6a61f2deafbcc2995df2539a0a3269e3ab60ee4d799d8b84e072e46471f8ad7",
+  "packet_digest": "75661c08c7f5110092c8135f15910e2ba395cdfad92bd4c8fc083b772033b8d5",
+  "asset_count": 5,
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_collage_cover",
+      "safe_wrap": true,
+      "source_label": "ASEANUTDFC.COM",
+      "output_sha256": "64b18475b3b99ee2c51265dc3f1ce8530d5c97f32bde831eec6a8fef2cc26d20",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "authentic_photo": true,
+      "no_edition_label": true,
+      "cover_input_sha256": "24884f7036debcca2c120da8f42c70bd2f4e6837ec0c85c268e5fb80554b0769",
+      "editorial_background": true,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 668,
+          "height": 47,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 282,
+          "width": 922,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 405,
+      "text_sha256": "43a05e9fbccda29b519e9667a806fbd7641a6a77932e6e14a33ea0b27aeafcad",
+      "source_label": null,
+      "output_sha256": "d76596a697541ae396d3b007aadba17d7dfcf5051adceb7e82f1ee4a9b5f7d59",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 47,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 774,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 294,
+          "width": 888,
+          "height": 399,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 399,
+      "text_sha256": "cd2a58258f4e235d0ad76d79fd925da0e059c392f1799c20fe0f036db77e0ace",
+      "source_label": null,
+      "output_sha256": "6d9b4292fca578553e48b1daf69d1c4b3639ea9c3410916f0ee244e4b080e97f",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 59,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 722,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 933,
+          "height": 511,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 511,
+      "text_sha256": "2dd2137fd13e05357aef9d7a632ec8faa6f01428a21b7b333db9e58caa26b1f2",
+      "source_label": null,
+      "output_sha256": "c9554275cc1af1344e05d222293290962169fa5e4067c7eede0a5ecfd545e00b",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    },
+    {
+      "ok": true,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 794,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 363,
+          "width": 903,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "width": 1080,
+      "height": 1350,
+      "layout": "newspaper_article",
+      "columns": 1,
+      "safe_wrap": true,
+      "paper_tone": "#eee9dd",
+      "body_height": 405,
+      "text_sha256": "e8d401a92abc6fac2a1b0efbc05e90eabd52212e5b3f17c2ef91b18d50062d65",
+      "source_label": null,
+      "output_sha256": "227f83a98b8ea090f508595a720d88efde9de582b1a9a433703b86d62b234ebc",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "body_font_size": 36,
+      "authentic_photo": false,
+      "headline_height": 128,
+      "no_edition_label": true,
+      "headline_font_size": 60,
+      "no_promotional_footer": true
+    }
+  ],
+  "issues": [],
+  "canonical_article_pair": true,
+  "clean_website_photo": true,
+  "identical_preview_bytes": true,
+  "writer_brief_is_only_post_preview_addition": true,
+  "all_other_rows_unchanged": true,
+  "unchanged_rows": 56,
+  "new_rows": [
+    "f86fff79-46cd-4512-8020-bc8b8b2d86fd"
+  ],
+  "duplicate_cms": false,
+  "duplicate_instagram": false,
+  "durable_attempts": [],
+  "instagram_account": "stadione.id",
+  "goal_reference_ids": [
+    "goal-20261009-coutinho-debut-fitness-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "goal_journal_sha256": "c20b27a0daca342246b85db420bd03ef6c7ce20b0323cd8c0578268c9e718dcf",
+  "visual_review": {
+    "reviewed_by": "CODEX_VISUAL_EDITOR",
+    "all_five_slide_jpegs_viewed": true,
+    "source_photo_and_generated_cover_viewed": true,
+    "safe_margins": true,
+    "legible_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "active_release": "/opt/stadione-releases/116735c",
+  "public_asset_bytes_verified": [
+    {
+      "sha256": "64b18475b3b99ee2c51265dc3f1ce8530d5c97f32bde831eec6a8fef2cc26d20",
+      "bytes": 771929
+    },
+    {
+      "sha256": "d76596a697541ae396d3b007aadba17d7dfcf5051adceb7e82f1ee4a9b5f7d59",
+      "bytes": 190891
+    },
+    {
+      "sha256": "6d9b4292fca578553e48b1daf69d1c4b3639ea9c3410916f0ee244e4b080e97f",
+      "bytes": 182553
+    },
+    {
+      "sha256": "c9554275cc1af1344e05d222293290962169fa5e4067c7eede0a5ecfd545e00b",
+      "bytes": 223793
+    },
+    {
+      "sha256": "227f83a98b8ea090f508595a720d88efde9de582b1a9a433703b86d62b234ebc",
+      "bytes": 190486
+    }
+  ],
+  "schedule_adapter_repeat_skipped": true,
+  "all_rows_identical_after_repeat": true,
+  "goal_runtime_identical_to_committed": true,
+  "publisher_timer": {
+    "unit": "stadione-cms-publish.timer",
+    "active": true,
+    "publication_due": "2026-10-09T06:00:00Z",
+    "state": "SCHEDULED; future publication not claimed"
+  },
+  "completed_at": "2026-10-09T05:18:11.267Z",
+  "visual_review_before_schedule": {
+    "reviewed_at": "2026-10-09T05:17:21.264Z",
+    "reviewer": "CODEX_VISUAL_EDITOR",
+    "all_five_actual_slide_jpegs_viewed": true,
+    "contact_sheet": "preview-4d862c1d-9505-47ac-91a9-61f816b04045/contact.jpg",
+    "authentic_subject_training_photo_and_illustration_label_checked": true,
+    "headline_dek_source_and_page_count_checked": true,
+    "body_text_lossless_and_legible": true,
+    "safe_wrap_and_margins": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  }
+}

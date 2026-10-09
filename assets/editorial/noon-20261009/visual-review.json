@@ -12,5 +12,18 @@
   "source_label": "ASEANUTDFC.COM",
   "no_edition_label": true,
   "no_promotional_footer": true,
-  "body_slide_review": "Pending deployed preview; verify all actual JPEGs before schedule."
+  "body_slide_review": "All five deployed JPEGs viewed before scheduling; four cream text-only article pages, 36px modern body text, wrapping and safe margins verified.",
+  "actual_render_review": {
+    "reviewed_at": "2026-10-09T05:17:21.264Z",
+    "reviewer": "CODEX_VISUAL_EDITOR",
+    "all_five_actual_slide_jpegs_viewed": true,
+    "contact_sheet": "preview-4d862c1d-9505-47ac-91a9-61f816b04045/contact.jpg",
+    "authentic_subject_training_photo_and_illustration_label_checked": true,
+    "headline_dek_source_and_page_count_checked": true,
+    "body_text_lossless_and_legible": true,
+    "safe_wrap_and_margins": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "completed_at": "2026-10-09T05:18:11.267Z"
 }
