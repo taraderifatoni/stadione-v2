@@ -1,0 +1,50 @@
+{
+  "verified_at": "2026-10-09T07:18:54.749Z",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "commit": "ffe41a78ba4dd5746e5a6f6aec10969577f35f66",
+  "cms_rows": 58,
+  "cms_rows_identical": true,
+  "no_meta_publish_call": true,
+  "runtime_identical_to_reviewed": true,
+  "cover_unchanged": true,
+  "article_slides": [
+    {
+      "slide": 2,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "body_font_size": 36,
+      "safe_wrap": true,
+      "sha256": "08024522a0707c8bec81a1f793c9c0610e824a5cc7a937eee290d8d14428db09"
+    },
+    {
+      "slide": 3,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "body_font_size": 36,
+      "safe_wrap": true,
+      "sha256": "8d96503e39b7589673f90eef3c2759d69b683ac79a63988c5b941c8085791b5a"
+    },
+    {
+      "slide": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "body_font_size": 36,
+      "safe_wrap": true,
+      "sha256": "795a98bdc05d75ad20008ada7d7d0aa8cdc336545db9408404434db6a57b7bbe"
+    },
+    {
+      "slide": 5,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "body_font_size": 36,
+      "safe_wrap": true,
+      "sha256": "1b3d9c99e1636ea802059854b9811b0a444394d5c68175ec8c2b9689792d437f"
+    }
+  ],
+  "renderer_sha256": "aea81d229cf31d422b7e43ad24626c930ca3ed0b8b03e446a638bd55234d664e",
+  "reference_sha256": "c20b27a0daca342246b85db420bd03ef6c7ce20b0323cd8c0578268c9e718dcf",
+  "public_http": 200,
+  "admin_http": 307,
+  "service_active": true,
+  "publisher_timer_active": true
+}
