@@ -1,0 +1,336 @@
+{
+  "plan_key": "2026-10-09:fri-noon",
+  "event_key": "persib-port-postmatch-community-20261008",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "persib",
+    "comeback"
+  ],
+  "format_reason": "Original Friday 13:00 WIB CAROUSEL retained. Community interaksi via player-choice caption based on new verified postmatch contribution report; official Menalo award is explicit, no invented polling result. Source photo is a real training illustration, not current match action. Conflicting Peralta minute omitted; venue and added-time goals follow official report.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Menalo Jadi Bintang Comeback Persib",
+      "dek": "Persib bangkit dari tertinggal untuk menang 3–1. Menalo terpilih sebagai Shopee Star of the Match.",
+      "caption": "MENALO JADI BINTANG COMEBACK PERSIB\n\nPersib bangkit dari tertinggal untuk menang 3–1 atas Port FC, Kamis 8 Oktober. Menalo terpilih sebagai Shopee Star of the Match.\n\nPeralta mencetak gol penyama, Berguinho membawa Persib unggul, Menalo menyiapkan satu gol lalu mencetak gol terakhir. Teja juga menggagalkan peluang sebelum jeda.\n\nKalau memilih berdasarkan kontribusi laga ini, siapa pilihanmu: Menalo, Peralta, Berguinho, atau Teja? Tulis nama dan alasannya di komentar.\n\n#Stadione #Persib #LukaMenalo #Bobotoh #ShopeeCup",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Malam Milik Menalo",
+          "text": "Luka Menalo terpilih sebagai Shopee Star of the Match setelah Persib Bandung mengalahkan Port FC 3–1 pada laga pembuka Grup B ASEAN Club Championship Shopee Cup. Pertandingan berlangsung di Stadion Thammasat, Thailand, Kamis 8 Oktober 2026. Persib tertinggal lewat penalti Jude Soonsup-Bell sebelum Mariano Peralta, Berguinho, dan Menalo mencetak tiga gol balasan.",
+          "claim_ids": [
+            "result",
+            "award"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "peralta",
+          "heading": "Peralta Membuka Jalan",
+          "text": "Gol Peralta mengakhiri keunggulan Port FC ketika pertandingan mendekati akhir. Umpan terobosan Balsa Sekulic menemukan Peralta yang bergerak masuk ke kotak penalti. Ia mengontrol bola sebelum melepaskan tembakan ke sudut bawah gawang Michael Falkesgaard. Persib kembali ke kedudukan imbang, lalu mengubah hasil pada masa tambahan waktu.",
+          "claim_ids": [
+            "peralta",
+            "result",
+            "menalo"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "menalo",
+          "heading": "Umpan dan Tandukan Menalo",
+          "text": "Menalo ikut menyiapkan gol yang membawa Persib berbalik unggul. Umpannya diselesaikan Berguinho lewat tembakan dari dekat tepi kotak penalti pada menit 90+2. Empat menit kemudian, giliran Menalo menyambut umpan lambung Peralta dari sisi kiri. Ia menjatuhkan badan sambil menyundul bola untuk mengubah skor menjadi 3–1. Peralta membuka jalan dengan gol penyama, Berguinho membalikkan kedudukan, dan Menalo menuntaskan serangan terakhir.",
+          "claim_ids": [
+            "menalo",
+            "peralta",
+            "result"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "teja",
+          "heading": "Teja Menahan Ancaman Port",
+          "text": "Sebelum tiga gol balasan itu, Teja Paku Alam menjaga Persib tetap dalam pertandingan. Ia menggagalkan peluang Bruno pada awal laga dan menepis tembakan Erik Sviatchenko menjelang turun minum. Babak pertama berakhir tanpa gol. Penyelamatan tersebut menjadi bagian lain dari kemenangan Persib, yang membawa pulang tiga poin dari laga pembuka Grup B.",
+          "claim_ids": [
+            "teja",
+            "result"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261009-coutinho-debut-fitness-news",
+        "goal-20261007-barcelona-femenino-clasico-match-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_NOON_EDITOR_20261009",
+        "reviewed_at": "2026-10-09T05:11:07.073730+00:00",
+        "article_digest": "d6a61f2deafbcc2995df2539a0a3269e3ab60ee4d799d8b84e072e46471f8ad7"
+      }
+    },
+    "sources": [
+      {
+        "id": "official",
+        "url": "https://aseanutdfc.com/asean-club-championship/2026/news/asean-shopee-cup-group-b-port-fc-1-3-persib-bandung",
+        "sha256": "34f8ef1658d08ad5d629e863d57fe74b4ff44d78bec35b8a026355fa6ebd0287",
+        "published_at": "2026-10-08T13:49:00Z",
+        "retrieved_at": "2026-10-09T05:11:07.073730+00:00",
+        "primary": true,
+        "publisher_group": "ASEAN_OFFICIAL",
+        "report_type": "OFFICIAL_MATCH_REPORT"
+      },
+      {
+        "id": "detik",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8698715/port-fc-vs-persib-comeback-maung-bandung-menang-3-1",
+        "sha256": "8af9e2d71070774b17efbd9edd3371b2bf862e436a0eefb9e056a426e8413c3c",
+        "published_at": "2026-10-08T21:03:30+07:00",
+        "retrieved_at": "2026-10-09T05:11:07.073730+00:00",
+        "primary": false,
+        "publisher_group": "TRANSMEDIA",
+        "report_type": "INDEPENDENT_MATCH_REPORT"
+      },
+      {
+        "id": "tirto",
+        "url": "https://tirto.id/hasil-port-fc-vs-persib-skor-akhir-klasemen-shopee-cup-2026-hDFd",
+        "sha256": "4f2f032c01c7d83b69b10ed6022f5a2393565c425d17bfba8ec6f738ad51648e",
+        "published_at": "2026-10-08T21:00:00+07:00",
+        "retrieved_at": "2026-10-09T05:11:07.073730+00:00",
+        "primary": false,
+        "publisher_group": "TIRTO",
+        "report_type": "INDEPENDENT_MATCH_REPORT"
+      },
+      {
+        "id": "tvone",
+        "url": "https://www.tvonenews.com/bola/liga-indonesia/472000-cetak-gol-dan-assist-kemenangan-dari-port-fc-luka-menalo-puji-kekompakan-skuad-persib",
+        "sha256": "64403ee4ac84e8f5b414a947786e54fec9b4d27b580850219031d8ff905a67ae",
+        "published_at": "2026-10-09T05:48:00+07:00",
+        "retrieved_at": "2026-10-09T05:11:07.073730+00:00",
+        "primary": true,
+        "publisher_group": "VIVA",
+        "report_type": "FIRSTHAND_MATCH_AND_POSTMATCH_CONFERENCE_REPORT"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Persib Bandung menang 3-1 (3–1) atas Port FC di Stadion Thammasat, Thailand, Kamis 8 Oktober 2026, laga pembuka Grup B ASEAN Club Championship Shopee Cup 2026/2027. Jude Soonsup-Bell membawa Port FC unggul lewat penalti pada menit 66 sebelum tiga gol balasan. Persib mendapat tiga poin.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "b7badef8f68dd54330ed96fa5d42569ee239cfd369fd474d21f8acd0598f2904"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "e2e51e39082310c7dc5ff99f487bd6654bebdc430464d3e5cc0a735db83eeb8a"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "34e74cf332088f6a0c024585d5fdc055f81b6b2916f717f292bfee89b2a8be7c"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "1626878889ba62732ea0ee082f44d9be759200569ac8f6b034d48e011101a458"
+          },
+          {
+            "source_id": "tvone",
+            "quote_sha256": "1cbfa474474345353d3d3270af5698f100c68aa3ae5fd27ac546551cabd07182"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "d5d139a276d67d32faa9a7e0f8107d8bc31f33da228994b614f54b99faa852f2"
+          }
+        ]
+      },
+      {
+        "id": "award",
+        "text": "Luka Menalo terpilih sebagai Shopee Star of the Match atau pemain terbaik resmi laga Port FC vs Persib; bukan penetapan subjektif Stadione atau hasil polling pembaca.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "b343ec5a5e3097c4a28433665996c51e51812f6e162612fc0c2049bc185a249f"
+          },
+          {
+            "source_id": "tvone",
+            "quote_sha256": "e6efb5c828d0a3687d420722059e80ccf1475dbdd19e93b33edfe9fc8fe12cfc"
+          }
+        ]
+      },
+      {
+        "id": "peralta",
+        "text": "Mariano Peralta mencetak gol penyama kedudukan melalui umpan Balsa Sekulic, mengontrol bola lalu menembak ke sudut bawah gawang Michael Falkesgaard. Tidak menyebut menit gol karena sumber resmi dan media mencatat berbeda.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "b5a2e983600a6722f204736c9019aa7f769b2b0af367edf1d626bd4bcffd56a0"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "966c6369553be86057474d647caee3652d4979acafd606e27039a2989859ea17"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "81db03218f6dc9d3c688714cf48da5de0f19f44a3ad27be3c5789bd1e5dab93c"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "b208c929b90dfaf9c5382672b20d600d70c5b39f107091e7b464478fd4a83b42"
+          }
+        ]
+      },
+      {
+        "id": "menalo",
+        "text": "Luka Menalo memberi umpan kepada Berguinho untuk gol 2-1 di masa tambahan waktu dan mencetak gol 3-1 melalui sundulan menjatuhkan badan dari umpan Mariano Peralta. Berguinho gol menit 90+2 (92) dan Menalo 90+6 (96) mengikuti laporan resmi; media tvOne mencatat gol Berguinho 90+1 sehingga tidak dipakai sebagai acuan menit.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "a026147849480d817725c3e17f9e705568345e5074868c6d31bdf5f07ccb8e74"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "d9345c1dcb1a81e42f29a9de34019488a05a7d0c3c568105f9eda807d049a861"
+          },
+          {
+            "source_id": "tvone",
+            "quote_sha256": "3ed1d190c3d660dad12c331a54a11e769ea28a11c4ae178c154096aa56ddee78"
+          },
+          {
+            "source_id": "tvone",
+            "quote_sha256": "9b6785913bf07f1cdf9aa3602712aa1b5ba0538a04802521588e35d206d59135"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "c88194133be2c18ebeb52f1ea5d06eb6e74d78a183c89b76a5fcd6933ea7cc2d"
+          },
+          {
+            "source_id": "tirto",
+            "quote_sha256": "1b222658c47c1a79be30928bc77a77d8142cc0fc52b096b5417feddef6b72233"
+          }
+        ]
+      },
+      {
+        "id": "teja",
+        "text": "Teja Paku Alam menggagalkan peluang Bruno dan menepis tembakan Erik Sviatchenko sebelum turun minum. Babak pertama berakhir 0-0. Persib mendapat tiga poin pada awal Grup B, tanpa mengarang jumlah penyelamatan.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "8390bf0f06c54a7dd7db47e6d8d450d70385d5301943ab91495ee01aeb1aac36"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "0421532be2ce26a0b454c9c7a11eb4478334342b0efc8ebddca51ca8bdf22ba4"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "7b2e76363ff7d47b93c4256fb9c5da21c0473d24755e3e9ccac2093e4449c9ac"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "4ea14bf30a56ad4d2bc8d2c94c85565925cdb947d562ca9125416021ca4ef34a"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Menalo Jadi Bintang Comeback Persib",
+        "body": "Persib bangkit dari tertinggal untuk menang 3–1. Menalo terpilih sebagai Shopee Star of the Match.",
+        "claim_ids": [
+          "result",
+          "award"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Malam Milik Menalo",
+        "body": "Luka Menalo terpilih sebagai Shopee Star of the Match setelah Persib Bandung mengalahkan Port FC 3–1 pada laga pembuka Grup B ASEAN Club Championship Shopee Cup. Pertandingan berlangsung di Stadion Thammasat, Thailand, Kamis 8 Oktober 2026. Persib tertinggal lewat penalti Jude Soonsup-Bell sebelum Mariano Peralta, Berguinho, dan Menalo mencetak tiga gol balasan.",
+        "claim_ids": [
+          "result",
+          "award"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Peralta Membuka Jalan",
+        "body": "Gol Peralta mengakhiri keunggulan Port FC ketika pertandingan mendekati akhir. Umpan terobosan Balsa Sekulic menemukan Peralta yang bergerak masuk ke kotak penalti. Ia mengontrol bola sebelum melepaskan tembakan ke sudut bawah gawang Michael Falkesgaard. Persib kembali ke kedudukan imbang, lalu mengubah hasil pada masa tambahan waktu.",
+        "claim_ids": [
+          "peralta",
+          "result",
+          "menalo"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Umpan dan Tandukan Menalo",
+        "body": "Menalo ikut menyiapkan gol yang membawa Persib berbalik unggul. Umpannya diselesaikan Berguinho lewat tembakan dari dekat tepi kotak penalti pada menit 90+2. Empat menit kemudian, giliran Menalo menyambut umpan lambung Peralta dari sisi kiri. Ia menjatuhkan badan sambil menyundul bola untuk mengubah skor menjadi 3–1. Peralta membuka jalan dengan gol penyama, Berguinho membalikkan kedudukan, dan Menalo menuntaskan serangan terakhir.",
+        "claim_ids": [
+          "menalo",
+          "peralta",
+          "result"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Teja Menahan Ancaman Port",
+        "body": "Sebelum tiga gol balasan itu, Teja Paku Alam menjaga Persib tetap dalam pertandingan. Ia menggagalkan peluang Bruno pada awal laga dan menepis tembakan Erik Sviatchenko menjelang turun minum. Babak pertama berakhir tanpa gol. Penyelamatan tersebut menjadi bagian lain dari kemenangan Persib, yang membawa pulang tiga poin dari laga pembuka Grup B.",
+        "claim_ids": [
+          "teja",
+          "result"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-08T21:00:00+07:00",
+    "context": {
+      "who": "Luka Menalo, Mariano Peralta, Berguinho dan Teja Paku Alam dari Persib",
+      "what": "Kontribusi terverifikasi dalam kemenangan Persib 3–1 atas Port FC dan pemain terbaik resmi",
+      "when": "Pertandingan Kamis 8 Oktober 2026; konten interaksi Jumat 9 Oktober pukul 13.00 WIB",
+      "where": "Stadion Thammasat, Thailand",
+      "why": "Persib topik teratas di pool SerpAPI, 100000 pencarian; komunitas memilih kontribusi paling menentukan setelah mengetahui penghargaan resmi",
+      "how": "Artikel hasil laga dan kontribusi empat pemain, lalu pertanyaan terbuka di caption; bukan klaim sudah ada hasil polling"
+    },
+    "assignment": {
+      "pillar": "Komunitas",
+      "angle": "Interaksi — pilihan pembaca atas kontribusi pemain dalam comeback Persib",
+      "why_now": "Deployed getDailySportsPool fetched 2026-10-09T05:03:32.287Z: Persib hari ini 100000 searches, increase 1000%. Official final report and full independent match reports verify new postmatch topic. Earlier Menalo post was a PREVIEW; no postmatch result was found in CMS/live Instagram. Friday trivia/interaksi retained with a fan-choice question and official award answer clearly distinguished."
+    },
+    "media": {
+      "url": "https://thumbs.tvonenews.com/thumbnail/2026/10/09/6ac80c882fb8c-pemain-persib-luka-menalo_1265_711.jpg",
+      "type": "image",
+      "credit": "Luka Menalo saat latihan Persib; foto tvOnenews/Dwi R Belva. Ilustrasi pemain, bukan foto laga Port FC.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://thumbs.tvonenews.com/thumbnail/2026/10/09/6ac80c882fb8c-pemain-persib-luka-menalo_1265_711.jpg",
+        "headline": "Menalo Jadi Bintang Comeback Persib",
+        "dek": "Persib bangkit dari tertinggal untuk menang 3–1. Menalo terpilih sebagai Shopee Star of the Match.",
+        "source_label": "ASEANUTDFC.COM",
+        "reviewed_at": "2026-10-09T05:11:07.073730+00:00",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true
+      }
+    }
+  },
+  "prepared_cover_sha256": "24884f7036debcca2c120da8f42c70bd2f4e6837ec0c85c268e5fb80554b0769",
+  "source_photo_sha256": "c73e1d369d07def73a2743aba71607e48378a6462b77bfe5871a7287fcc71f3b",
+  "editorial_review": "Full article read as one story, source-led contributions, official award distinguished from fan-choice question, no filler or invented poll. Differing Peralta minutes excluded; official venue and added-time goals used. No quotation invented. Goal NEWS lessons on contributions and progression applied."
+}
