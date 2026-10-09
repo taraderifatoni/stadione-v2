@@ -1,0 +1,246 @@
+{
+  "cms_mutated": false,
+  "cover_identical": true,
+  "slides": [
+    {
+      "slide": 2,
+      "headline": "Pintu Terbuka dari Kompetisi Lokal",
+      "before": {
+        "rule_top": 356,
+        "rule_bottom": 359,
+        "title_bottom": 344,
+        "body_top": 375,
+        "above_gap": 11,
+        "below_gap": 15
+      },
+      "after": {
+        "rule_top": 381,
+        "rule_bottom": 384,
+        "title_bottom": 344,
+        "body_top": 421,
+        "above_gap": 36,
+        "below_gap": 36
+      },
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "2752ed01385baba310ec6ac4c17a567735857a4f8c2b3073a8a7411e6321555d",
+        "output_sha256": "08024522a0707c8bec81a1f793c9c0610e824a5cc7a937eee290d8d14428db09",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 458,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 616,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 914,
+            "height": 458,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "slide": 3,
+      "headline": "Bali United Ikut Diamati",
+      "before": {
+        "rule_top": 263,
+        "rule_bottom": 266,
+        "title_bottom": 251,
+        "body_top": 282,
+        "above_gap": 11,
+        "below_gap": 15
+      },
+      "after": {
+        "rule_top": 288,
+        "rule_bottom": 291,
+        "title_bottom": 251,
+        "body_top": 328,
+        "above_gap": 36,
+        "below_gap": 36
+      },
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "7e39aec63b9d7c0cdd30885ad45edbba9562a5afbbf5f533cbc4f5ed0e340d71",
+        "output_sha256": "8d96503e39b7589673f90eef3c2759d69b683ac79a63988c5b941c8085791b5a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 47,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 288,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 805,
+            "height": 47,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 328,
+            "width": 932,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "slide": 4,
+      "headline": "Harapan Menembus Liga Champions",
+      "before": {
+        "rule_top": 356,
+        "rule_bottom": 359,
+        "title_bottom": 344,
+        "body_top": 375,
+        "above_gap": 11,
+        "below_gap": 15
+      },
+      "after": {
+        "rule_top": 381,
+        "rule_bottom": 384,
+        "title_bottom": 344,
+        "body_top": 421,
+        "above_gap": 36,
+        "below_gap": 36
+      },
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "dbb9029ce3d84d74146a9215e31d9fafa0fe0356adbed8db8e23763eb3e04739",
+        "output_sha256": "795a98bdc05d75ad20008ada7d7d0aa8cdc336545db9408404434db6a57b7bbe",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 558,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 834,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 926,
+            "height": 558,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "slide": 5,
+      "headline": "Hilgers dan Jonathans Masih Dinanti",
+      "before": {
+        "rule_top": 344,
+        "rule_bottom": 347,
+        "title_bottom": 332,
+        "body_top": 363,
+        "above_gap": 11,
+        "below_gap": 15
+      },
+      "after": {
+        "rule_top": 369,
+        "rule_bottom": 372,
+        "title_bottom": 332,
+        "body_top": 409,
+        "above_gap": 36,
+        "below_gap": 36
+      },
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "45396bbc6acf76cf2eef16da318b813be8ab139adbb0dafc5041697d4fa314a3",
+        "output_sha256": "1b3d9c99e1636ea802059854b9811b0a444394d5c68175ec8c2b9689792d437f",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 511,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 739,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 926,
+            "height": 511,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ]
+}

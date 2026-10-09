@@ -133,7 +133,12 @@ export async function renderCarousel(packet: Packet) {
     const slide = packet.slides[i];
     const headline = await measuredText(slide.headline, width, 235, 60, true, "#191714");
     const titleTop = 205;
-    const bodyTop = titleTop + headline.height + 30;
+    // One body-type unit of breathing room on each side of the rule.
+    // Anchor to measured ink bounds, so wrapped headlines retain the same gaps.
+    const dividerGap = 36, dividerThickness = 4;
+    const dividerTop = titleTop + headline.height + dividerGap;
+    const dividerCenter = dividerTop + dividerThickness / 2;
+    const bodyTop = dividerTop + dividerThickness + dividerGap;
     const body = await measuredText(slide.body, width, bottom - bodyTop, 36, false, "#302c27");
     if (body.font_size < 32) throw new Error("Pisahkan artikel menjadi halaman tambahan; jangan perkecil teks di bawah batas baca.");
     const boxes = [
@@ -150,12 +155,12 @@ export async function renderCarousel(packet: Packet) {
       <line x1="72" y1="102" x2="1008" y2="102" stroke="#191714" stroke-width="2"/>
       <text x="72" y="150" font-family="DejaVu Sans" font-size="20" font-weight="700" fill="#84102d">${esc(packet.assignment.pillar.toUpperCase())}</text>
       <line x1="72" y1="174" x2="1008" y2="174" stroke="#191714" stroke-width="2"/>
-      <line x1="72" y1="${titleTop+headline.height+13}" x2="1008" y2="${titleTop+headline.height+13}" stroke="#84102d" stroke-width="5"/>
+      <line x1="72" y1="${dividerCenter}" x2="1008" y2="${dividerCenter}" stroke="#84102d" stroke-width="${dividerThickness}"/>
     </svg>`);
     const layers: sharp.OverlayOptions[] = [];
     layers.push({ input: headline.buffer, left, top: titleTop }, { input: body.buffer, left, top: bodyTop });
     const bytes = await sharp(base).composite(layers).jpeg({quality:95,chromaSubsampling:"4:4:4"}).toBuffer();
-    images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_article",paper_tone:"#eee9dd",authentic_photo:false,source_label:null,text_sha256:packetDigest(slide),output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,boxes,safe_wrap:safe,columns:1,ok:safe}});
+    images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_article",paper_tone:"#eee9dd",authentic_photo:false,source_label:null,text_sha256:packetDigest(slide),output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,divider_top:dividerTop,divider_thickness:dividerThickness,headline_divider_gap:dividerGap,divider_body_gap:dividerGap,boxes,safe_wrap:safe,columns:1,ok:safe}});
   }
   return images;
 }
