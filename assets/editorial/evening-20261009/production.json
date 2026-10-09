@@ -1,0 +1,390 @@
+{
+  "plan_key": "2026-10-09:fri-pm",
+  "event_key": "psim-persija-cahya-preview-20261010",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "cahya",
+    "persija"
+  ],
+  "format_reason": "Friday20.00 local PREVIEW preserved. Latest pool video candidates are unrelated/generic. Current press pages supply still photos, no verified downloadable relevant2026 footage/transcript/timestamps found; historical2025 footage excluded. Use verified carousel instead of inventing AI video, without moving clock.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Cahya Menantang Laju Persija",
+      "dek": "PSIM mencari kemenangan pertama saat Persija mengejar hasil sempurna. Duel di Sultan Agung berlangsung Sabtu pukul 15.30 WIB.",
+      "caption": "CAHYA MENANTANG LAJU PERSIJA\n\nPSIM mencari kemenangan pertama, Persija memburu kemenangan keempat beruntun. Cahya Supriadi bersiap menghadapi mantan klubnya di Sultan Agung.\n\nPertandingan berlangsung Sabtu, 10 Oktober 2026, pukul 15.30 WIB. Kickoff sudah dimajukan dari rencana awal pukul 19.00 WIB.\n\nDony Tri Pamungkas dan Kwon Chang-hoon kembali pulih untuk Persija. PSIM menyiapkan rencana permainan setelah jeda kompetisi.\n\n#Stadione #PSIMJogja #Persija #CahyaSupriadi #SuperLeague",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "PSIM Mengejar Kemenangan Pertama",
+          "text": "PSIM Yogyakarta mencari kemenangan pertama saat menjamu Persija Jakarta di Stadion Sultan Agung, Bantul, Sabtu 10 Oktober 2026. Tuan rumah baru mengumpulkan satu poin dari tiga pertandingan, sedangkan Persija memenangi seluruh laga awalnya. Jean-Paul van Gastel membawa PSIM kembali berlatih setelah libur jeda kompetisi dan menyiapkan rencana permainan untuk menghadapi Macan Kemayoran.",
+          "claim_ids": [
+            "fixture",
+            "form",
+            "preparation"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "cahya",
+          "heading": "Cahya Bertemu Mantan Klubnya",
+          "text": "Pertandingan ini terasa berbeda bagi Cahya Supriadi karena Persija pernah menjadi tempatnya bermain. Kiper PSIM itu mengaku selalu antusias menghadapi mantan klubnya. Dalam jumpa pers Jumat 9 Oktober, ia menyatakan, “Secara keseluruhan pemain siap untuk menghadapi Persija besok.” Cahya memakai pengalaman pertemuan musim lalu sebagai bahan evaluasi, ketika PSIM kalah di Jakarta lalu menahan imbang Persija sebagai tuan rumah.",
+          "claim_ids": [
+            "cahya"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "text": "Secara keseluruhan pemain siap untuk menghadapi Persija besok.",
+            "source_id": "harianjogja"
+          }
+        },
+        {
+          "id": "persija",
+          "heading": "Dony dan Kwon Kembali Pulih",
+          "text": "Persija datang dengan peluang memperpanjang rangkaian kemenangan menjadi empat laga. Shin Tae-yong kembali memiliki Dony Tri Pamungkas dan Kwon Chang-hoon yang telah pulih dari cedera. Ia belum memastikan mereka menjadi starter karena kondisi fisik tetap menentukan pilihan. Di tengah kabar positif itu, Shin mengingatkan pemainnya agar tidak meremehkan PSIM meski tuan rumah belum meraih kemenangan.",
+          "claim_ids": [
+            "form",
+            "returns"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "kickoff",
+          "heading": "Kickoff Dimajukan ke Sore Hari",
+          "text": "Kickoff PSIM–Persija berlangsung pukul 15.30 WIB, lebih awal dari rencana 19.00 WIB. PSIM mengumumkan penyesuaian itu setelah kesepakatan panitia pelaksana, kepolisian, dan operator liga. Pertimbangan keamanan menjadi dasar perubahan jam pertandingan. Cahya berharap dukungan suporter di Sultan Agung membantu PSIM meraih hasil lebih baik, sementara Persija datang dengan target meneruskan awal musim yang sempurna.",
+          "claim_ids": [
+            "fixture",
+            "kickoff_change",
+            "cahya",
+            "form"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261009-coutinho-debut-fitness-news",
+        "goal-20261006-piala-presiden-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EVENING_EDITOR_20261009",
+        "reviewed_at": "2026-10-09T12:14:10.312Z",
+        "article_digest": "a14aa2da5482c7f9fb191495370c0b9f3f90e5d302f24dc00dad047e1de9d406"
+      }
+    },
+    "sources": [
+      {
+        "id": "schedule",
+        "url": "https://psimjogja.id/jadwal-kick-off-psim-jogja-kontra-persija-maju-sore-hari/",
+        "primary": true,
+        "publisher_group": "PSIM_OFFICIAL",
+        "published_at": "2026-09-29T00:00:00+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "0bd2d4ef5bb93e3c32d1a0bfe7cc8c8ced0dba7e47af087002008d111c1f3ef5",
+        "report_type": "OFFICIAL_SCHEDULE_ANNOUNCEMENT"
+      },
+      {
+        "id": "persija",
+        "url": "https://www.persija.id/media/news/shin-tae-yong-nantikan-energi-jakmania-di-bantul",
+        "primary": true,
+        "publisher_group": "PERSIJA_OFFICIAL",
+        "published_at": "2026-10-08T00:00:00+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "5979f98030bcd16c65dd6f1fdeff3edca3d6db9063411c68f2f065e4acfd9f52",
+        "report_type": "OFFICIAL_TEAM_PREVIEW"
+      },
+      {
+        "id": "detik",
+        "url": "https://www.detik.com/jogja/sepakbola/d-8699714/van-gastel-siapkan-strategi-psim-jogja-untuk-redam-persija",
+        "primary": true,
+        "publisher_group": "TRANSMEDIA",
+        "published_at": "2026-10-09T15:10:00+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "292d330b7b7d2cd98b4abbbce1b1674c876c188da4a012a5650cad9747de83d7",
+        "report_type": "FIRSTHAND_PREMATCH_CONFERENCE_REPORT"
+      },
+      {
+        "id": "harianjogja",
+        "url": "https://sport.harianjogja.com/r-1274375/psim-jogja-butuh-kemenangan-cahya-antusias-lawan-persija",
+        "primary": true,
+        "publisher_group": "BISNIS_INDONESIA",
+        "published_at": "2026-10-09T16:57:00+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "aed339227b35321db7a31f731d977290a78128a8daabf26a1b459992d762648f",
+        "report_type": "FIRSTHAND_PREMATCH_CONFERENCE_REPORT"
+      },
+      {
+        "id": "bola",
+        "url": "https://www.bola.com/indonesia/read/8309465/bri-super-league-shin-tae-yong-waspadai-psim-persija-incar-tiga-poin-di-stadion-sultan-agung",
+        "primary": true,
+        "publisher_group": "KLY",
+        "published_at": "2026-10-09T13:45:16+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "71b55c475c8eac1893a94098f812ccda2693a96ab8fe5f89d8739590e2eb83c9",
+        "report_type": "FIRSTHAND_PERSIJA_CONFERENCE_REPORT"
+      },
+      {
+        "id": "antara",
+        "url": "https://www.antaranews.com/berita/5778549/psim-yogyakarta-siapkan-strategi-raih-kemenangan-lawan-persija-jakarta",
+        "primary": true,
+        "publisher_group": "ANTARA",
+        "published_at": "2026-10-09T16:01:04+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "e9ad5a4e83651a9e1c120adb8d68ff691e928f3921efda21ac880dff12f5b75e",
+        "report_type": "FIRSTHAND_PSIM_CONFERENCE_REPORT"
+      },
+      {
+        "id": "antara_persija",
+        "url": "https://www.antaranews.com/berita/5778310/dony-dan-kwon-pulih-persija-bidik-kemenangan-keempat-di-markas-psim",
+        "primary": false,
+        "publisher_group": "ANTARA",
+        "published_at": "2026-10-09T13:55:56+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "870cd29a14bf5710053b09ef690da3291688f2acd9e4065028e57e51b8795653",
+        "report_type": "OFFICIAL_PERSIJA_STATEMENT_REPORT"
+      },
+      {
+        "id": "kickoff_media",
+        "url": "https://www.bola.com/indonesia/read/8302539/bri-super-league-duel-psim-vs-persija-mengalami-perubahan-jam-kick-off-ini-alasannya",
+        "primary": false,
+        "publisher_group": "KLY",
+        "published_at": "2026-09-30T10:45:00+07:00",
+        "retrieved_at": "2026-10-09T12:14:10.312Z",
+        "sha256": "0984248c4416bc04e15acf3053a2b61fe159392e070a7004b1a4eb22670369b8",
+        "report_type": "OFFICIAL_SCHEDULE_STATEMENT_REPORT"
+      }
+    ],
+    "claims": [
+      {
+        "id": "fixture",
+        "text": "PSIM Yogyakarta vs Persija Jakarta, pekan keempat (4) Super League 2026/2027, Stadion Sultan Agung Bantul, Sabtu 10 Oktober 2026, kickoff 15.30 WIB.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "schedule",
+            "quote_sha256": "be6a9873d812ddabeda00dbdb1517af75f3db72ea1b0413a46cf19e51515b134"
+          },
+          {
+            "source_id": "persija",
+            "quote_sha256": "5d751a13c3acc8507acee13ff8fbeb049a7014ed1e68bd2238f987bfc513c335"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "53a9b5511fe8266bcf2e92a184623db95e7d00e6a96d0fdf3b156b27c916b3de"
+          }
+        ]
+      },
+      {
+        "id": "form",
+        "text": "PSIM mencari kemenangan pertama, satu poin dari tiga pertandingan. Persija memenangi tiga pertandingan pertama dan memburu kemenangan keempat, empat laga beruntun. Shin mengingatkan pemain tidak meremehkan PSIM yang belum menang.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "harianjogja",
+            "quote_sha256": "4732b67b452a2bf454e5bef2e7577ebb684eb3a27ae3f2a776b1d6ddaa788b6e"
+          },
+          {
+            "source_id": "bola",
+            "quote_sha256": "06ed8af09972a4fe43e745ad4c54546dc1fd6f5d803f1782d3db2b5291efcd43"
+          },
+          {
+            "source_id": "persija",
+            "quote_sha256": "81ee5979c6787d0234866c04a3463ec43d0637277627c7a7d30ab289a6603b1a"
+          },
+          {
+            "source_id": "antara_persija",
+            "quote_sha256": "8c0b69443eff5b9de51eb14b92617baeb87d3ccdaabb32f46dd26494b74f3242"
+          }
+        ]
+      },
+      {
+        "id": "preparation",
+        "text": "Jean-Paul van Gastel mempersiapkan strategi, PSIM kembali berlatih setelah beberapa hari libur jeda kompetisi; rencana permainan tidak diumumkan.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "antara",
+            "quote_sha256": "baa6c029a20d55d1934fbb1c1e512efa9cb52c65a6c3a4561ab7fef58b304edc"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "014799eb4501d508ed951124dcccadd22c156dfe441dd09e0a41f77c2ef05265"
+          }
+        ]
+      },
+      {
+        "id": "cahya",
+        "text": "Cahya Supriadi kiper PSIM mantan pemain Persija antusias dan menyatakan kesiapan para pemain pada jumpa pers Jumat 9 Oktober 2026. PSIM kalah di Jakarta lalu menahan imbang Persija sebagai tuan rumah musim lalu; pengalaman menjadi acuan untuk tampil lebih baik. Cahya berharap dukungan suporter Sultan Agung membantu hasil lebih baik.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "harianjogja",
+            "quote_sha256": "79ca8e3b4b214f3acba37e1ca8678ce091a35fd248414e2b051c393640c8e63f"
+          },
+          {
+            "source_id": "harianjogja",
+            "quote_sha256": "1f46f79a6adf9c4bc19820760f58050bc97d457d08042cdf5413948ce09f2e5a"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "b6d59d4a8a9da1d610f00e4da55cc2b9dfe60c28c7a37b20be610f3c50e5dccc"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "56747f2877a448f74873502373d24144de97094b7f1468561b8cc729b1a441d4"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "380ed9cec8c201d6484dab1bc27b535848eae121f43d7cec07de904c6c4a5f3d"
+          }
+        ]
+      },
+      {
+        "id": "returns",
+        "text": "Shin Tae-yong kembali memiliki Dony Tri Pamungkas dan Kwon Chang-hoon yang pulih dari cedera. Starter atau pengganti belum dipastikan, bergantung kondisi fisik. Persija tidak boleh lengah menghadapi PSIM.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "persija",
+            "quote_sha256": "227701aba80cca1bd765eecf95379ef29a58f2d7396d2fc6f037f4d0fdca5f45"
+          },
+          {
+            "source_id": "persija",
+            "quote_sha256": "1da328b20d4d90ed79aa9b11442e5f9576f6ae556f67e4d9c6485bddcad2771e"
+          },
+          {
+            "source_id": "antara_persija",
+            "quote_sha256": "51fd748c17adfbd39e284fb2c825b8e008d9101d5e112148c49b532dd376dfc3"
+          },
+          {
+            "source_id": "bola",
+            "quote_sha256": "1ec2412dd15db4eca30105f50f02d9672daa796862d94b79c9e42f3cdb7b27d0"
+          }
+        ]
+      },
+      {
+        "id": "kickoff_change",
+        "text": "Jam kickoff dimajukan dari 19.00 WIB ke 15.30 WIB setelah kesepakatan panitia pelaksana PSIM, kepolisian dan operator liga untuk keamanan pertandingan dan penonton.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "schedule",
+            "quote_sha256": "2f70b12e24b10724c6f5f7f591e636c76a174cb352ac61a0091737855cca21f4"
+          },
+          {
+            "source_id": "schedule",
+            "quote_sha256": "a22f7fc83a8f8dec22579eb16106724196c83daaf1099df2bf8b8001936f301a"
+          },
+          {
+            "source_id": "kickoff_media",
+            "quote_sha256": "9d2808535e340039edfc0a786c3f121dc3c48d3672db8693af57f08234402e91"
+          },
+          {
+            "source_id": "kickoff_media",
+            "quote_sha256": "9da6c000c4bfd81ed69ecb20ff54f2a28deb0a35a5be2aef91ed97ab7f66ac6b"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Cahya Menantang Laju Persija",
+        "body": "PSIM mencari kemenangan pertama saat Persija mengejar hasil sempurna. Duel di Sultan Agung berlangsung Sabtu pukul 15.30 WIB.",
+        "claim_ids": [
+          "fixture",
+          "form",
+          "preparation"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "PSIM Mengejar Kemenangan Pertama",
+        "body": "PSIM Yogyakarta mencari kemenangan pertama saat menjamu Persija Jakarta di Stadion Sultan Agung, Bantul, Sabtu 10 Oktober 2026. Tuan rumah baru mengumpulkan satu poin dari tiga pertandingan, sedangkan Persija memenangi seluruh laga awalnya. Jean-Paul van Gastel membawa PSIM kembali berlatih setelah libur jeda kompetisi dan menyiapkan rencana permainan untuk menghadapi Macan Kemayoran.",
+        "claim_ids": [
+          "fixture",
+          "form",
+          "preparation"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Cahya Bertemu Mantan Klubnya",
+        "body": "Pertandingan ini terasa berbeda bagi Cahya Supriadi karena Persija pernah menjadi tempatnya bermain. Kiper PSIM itu mengaku selalu antusias menghadapi mantan klubnya. Dalam jumpa pers Jumat 9 Oktober, ia menyatakan, “Secara keseluruhan pemain siap untuk menghadapi Persija besok.” Cahya memakai pengalaman pertemuan musim lalu sebagai bahan evaluasi, ketika PSIM kalah di Jakarta lalu menahan imbang Persija sebagai tuan rumah.",
+        "claim_ids": [
+          "cahya"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Dony dan Kwon Kembali Pulih",
+        "body": "Persija datang dengan peluang memperpanjang rangkaian kemenangan menjadi empat laga. Shin Tae-yong kembali memiliki Dony Tri Pamungkas dan Kwon Chang-hoon yang telah pulih dari cedera. Ia belum memastikan mereka menjadi starter karena kondisi fisik tetap menentukan pilihan. Di tengah kabar positif itu, Shin mengingatkan pemainnya agar tidak meremehkan PSIM meski tuan rumah belum meraih kemenangan.",
+        "claim_ids": [
+          "form",
+          "returns"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Kickoff Dimajukan ke Sore Hari",
+        "body": "Kickoff PSIM–Persija berlangsung pukul 15.30 WIB, lebih awal dari rencana 19.00 WIB. PSIM mengumumkan penyesuaian itu setelah kesepakatan panitia pelaksana, kepolisian, dan operator liga. Pertimbangan keamanan menjadi dasar perubahan jam pertandingan. Cahya berharap dukungan suporter di Sultan Agung membantu PSIM meraih hasil lebih baik, sementara Persija datang dengan target meneruskan awal musim yang sempurna.",
+        "claim_ids": [
+          "fixture",
+          "kickoff_change",
+          "cahya",
+          "form"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "PREVIEW",
+    "event_at": "2026-10-10T15:30:00+07:00",
+    "context": {
+      "who": "Cahya Supriadi, Jean-Paul van Gastel, PSIM Yogyakarta dan Persija Jakarta",
+      "what": "Preview PSIM mencari kemenangan pertama melawan Persija yang memburu kemenangan keempat",
+      "when": "Kickoff Sabtu 10 Oktober 2026 pukul15.30 WIB; slot Jumat9 Oktober20.00 WIB",
+      "where": "Stadion Sultan Agung, Bantul",
+      "why": "Preview aktual seusai jumpa pers; Persija dalam pool SerpAPI, fokus baru Cahya menghadapi mantan klub",
+      "how": "Artikel berita utuh dengan kesiapan tim, opsi pemain pulih dan jadwal baru; bukan hasil atau susunan pemain rekaan"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Indonesia",
+      "angle": "Preview / matchday — Cahya menghadapi mantan klub dan PSIM memburu kemenangan pertama",
+      "why_now": "Latest deployed getDailySportsPool fetched 2026-10-09T12:05:17.796Z includes Persija 2000 searches/increase100. Friday20.00 local preview retained; full current independent press-conference reporting plus official club schedule confirms next-day fixture. No prior Cahya/PSIM match preview found in CMS or live Instagram."
+    },
+    "media": {
+      "url": "https://cdn.antaranews.com/cache/1200x800/2026/10/09/149709.jpg",
+      "type": "image",
+      "credit": "Cahya Supriadi dan Jean-Paul van Gastel dalam jumpa pers9 Oktober2026; ANTARA/Agung Dwi Prakoso.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://cdn.antaranews.com/cache/1200x800/2026/10/09/149709.jpg",
+        "headline": "Cahya Menantang Laju Persija",
+        "dek": "PSIM mencari kemenangan pertama saat Persija mengejar hasil sempurna. Duel di Sultan Agung berlangsung Sabtu pukul 15.30 WIB.",
+        "source_label": "PSIMJOGJA.ID",
+        "reviewed_at": "2026-10-09T12:18:17.844Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/psim-persija-cahya-preview-20261010/828c5ad7595694a39b06ff0b7cdbcf9bf6545119555b72020d4384764dc2b0f6.jpg",
+        "sha256": "828c5ad7595694a39b06ff0b7cdbcf9bf6545119555b72020d4384764dc2b0f6"
+      }
+    }
+  },
+  "editorial_review": "Read article as one story. Direct news lead contrasts verified team records, quote states readiness in actual conference, former-club meeting adds personal context, returning players and corrected kickoff add new information. Current Goal NEWS lessons applied. No age, imagined formation, starting XI, result or tactical inference. Short quote9 words from Harian Jogja. All source text/evidence retained privately only.",
+  "prepared_cover_sha256": "828c5ad7595694a39b06ff0b7cdbcf9bf6545119555b72020d4384764dc2b0f6",
+  "source_photo_sha256": "0dde9d794be3c9e68883941ebeba4001e666946990269e7e5441679f9c09a697"
+}
