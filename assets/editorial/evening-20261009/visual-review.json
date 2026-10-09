@@ -10,6 +10,10 @@
   "page_count": 5,
   "no_edition_label": true,
   "no_promotional_footer": true,
-  "all_body_slides_reviewed": false,
-  "remaining": "Generate shared preview and visually inspect every JPEG before schedule"
+  "all_body_slides_reviewed": true,
+  "remaining": "Normal timed publication through existing shared publisher at20:00 WIB",
+  "completed_at": "2026-10-09T12:22:45.317Z",
+  "body_font_size": 36,
+  "divider_whitespace_px": 36,
+  "all_public_jpeg_bytes_identical": true
 }
