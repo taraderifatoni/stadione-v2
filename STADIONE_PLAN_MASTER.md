@@ -804,3 +804,13 @@ Normal evening social `80b9be65-650f-4a48-bf2d-2ceed7726a32` and ARTICLE `f41548
 - Replay adapter mengembalikan skipped/SCHEDULED. Seluruh 63 row CMS tetap identik setelah replay: idempotensi terverifikasi, bukan hanya pemeriksaan timer.
 - Jurnal Goal runtime valid (5 entry), byte identik dengan repository dan fresh dalam batas 36 jam; tidak diubah dalam produksi ini. Bukti final `assets/editorial/morning-20261010/verification.json`, contact sheet serta visual review berada di direktori yang sama. Teks lengkap penerbit/evidence tetap privat VPS.
 - Slot siap dibiarkan ke shared publisher pada 08.00 WIB. Verifikasi ini menyatakan siap dan terjadwal, bukan mengaku sudah terbit sebelum waktunya. Tidak ada deploy kode produksi dalam rutinitas ini.
+
+
+### 2026-10-10 — Bacaan harian Goal, feature sejarah dan tata kelola klub
+
+- Artikel baru Goal oleh Oliver Maywurm, terbit 1 Oktober 2026, dibuka melalui browsing dan dibaca utuh dari lead hingga penutup (teks artikel baris 152–200, bukan snippet). URL: https://www.goal.com/id/berita/satu-klub-sudah-tidak-ada-lagi-klub-lain-berada-di-ambang-kehancuran-dan-seorang-mantan-juara-ikut-terjun-bersamanya-ke-liga-keenam-pria-yang-menjerumuskan-tiga-klub-tradisional-ke-dalam-kebangkrutan/blt2b8335cc16b50636 . Genre FEATURE sesuai label halaman; variasi dari berita pascalaga pada bacaan sebelumnya.
+- Entry `goal-20261010-bordeaux-ownership-collapse-feature`, read_at `2026-10-10T00:47:24Z`, mencatat lima pelajaran asli tentang kontras sejarah/keadaan kini, perkembangan kronologi dan mekanisme keuangan, fungsi kutipan, pembatasan tanggung jawab, serta penutup yang mempertahankan ketidakpastian. Application menjelaskan penerapan untuk feature klub/komunitas Stadione. Teknik penulisan dipelajari tanpa menyalin artikel atau menganggap penilaian personal Goal sebagai fakta otomatis.
+- Semua lima entry lama, URL dan timestamp dipertahankan dan dibandingkan secara struktural. Perubahan Git hanya `editorial/goal-readings.json` dan Plan Master; Writing Guide tetap berlaku. Tidak ada perubahan CMS, jadwal, posting/artikel terbit, renderer, credential, kode produksi, timer atau service.
+- Validasi memakai `node scripts/qa-writing-references.cjs editorial/goal-readings.json`. Commit dan push dilakukan sebelum salinan byte persis dipasang ke `/opt/stadione-editorial/goal-readings.json`; engine membaca jurnal tanpa restart atau rebuild.
+- Baseline/rollback dokumentasi-jurnal: `56c73284d16763e7102c3bda5d39e563b67fd7cb`. Jika perlu, pulihkan hanya jurnal/dokumentasi melalui commit baru dan sinkronkan runtime setelah push; jangan memulihkan ulang CMS atau jadwal.
+- Tersisa: verifikasi SHA remote, identitas byte committed/runtime serta validasi runtime, lalu catat bukti live dalam follow-up dokumentasi.
