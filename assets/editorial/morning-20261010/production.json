@@ -65,7 +65,7 @@
       ],
       "review": {
         "reviewer_id": "CODEX_MORNING_EDITOR_20261010",
-        "reviewed_at": "2026-10-10T00:09:16.029Z",
+        "reviewed_at": "2026-10-10T00:10:19.966Z",
         "article_digest": "1802d826ce4ed444d7b7e692b7d4a2cf2e0834392347b1392e15c6a8f24d8e40"
       }
     },
@@ -76,7 +76,7 @@
         "primary": true,
         "publisher_group": "BVB_OFFICIAL",
         "published_at": "2026-10-09T20:27:00Z",
-        "retrieved_at": "2026-10-10T00:09:16.029Z",
+        "retrieved_at": "2026-10-10T00:10:19.966Z",
         "sha256": "86b4fe72d8cd2586a1accb910c815b6db65a112df00c17d90be97c1126c9f9fb",
         "report_type": "OFFICIAL_MATCH_REPORT"
       },
@@ -86,7 +86,7 @@
         "primary": false,
         "publisher_group": "SKY_SID",
         "published_at": "2026-10-09T23:22:00+02:00",
-        "retrieved_at": "2026-10-10T00:09:16.029Z",
+        "retrieved_at": "2026-10-10T00:10:19.966Z",
         "sha256": "5bee1d22bc67b849ccdafec4a1fbcbcf2aebdaab6f3d2716dc7415c45684172f",
         "report_type": "FULL_MATCH_REPORT_AND_SKY_PLAYER_INTERVIEW"
       },
@@ -96,7 +96,7 @@
         "primary": false,
         "publisher_group": "DEUTSCHLANDRADIO",
         "published_at": "2026-10-09T22:49:52.245+02:00",
-        "retrieved_at": "2026-10-10T00:09:16.029Z",
+        "retrieved_at": "2026-10-10T00:10:19.966Z",
         "sha256": "e739d6de7f679633ddc7402c52d39ee27454f1784cf68920beacc7c82c9ff13b",
         "report_type": "MATCH_RESULT_BULLETIN"
       }
@@ -329,7 +329,9 @@
       "why_now": "Current release getDailySportsPool fetched2026-10-09T23:58:54.632Z date2026-10-10: DortmundvsBremen GoogleTrends10000searches/increase1000. Officialmatchreport andindependentfullreportcompleted overnight, nopriorCMS/IGevent."
     },
     "media": {
-      "url": "https://e6.365dm.de/26/10/1600x900/skysport_de-fllkrug-werder_7372558.jpg?20261009222228",
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/dortmund-bremen-fullkrug-comeback-20261009/source-e142995d12e7636b7a4d01e581b110d53bca06a79bcc1bb1c269db56ddfb6e3b.jpg",
+      "original_photo_url": "https://e6.365dm.de/26/10/1600x900/skysport_de-fllkrug-werder_7372558.jpg?20261009222228",
+      "source_page_url": "https://videos.sport.sky.de/fussball/dortmund-vs-bremen/spielbericht/563348",
       "type": "image",
       "credit": "Authentic NiclasFüllkrug inWerderpinkkit duringDortmundfixture; SkySport matchreport photograph.",
       "rights_status": "CLEARED",
@@ -337,11 +339,11 @@
       "scope": "Stadione editorial article and Instagram carousel",
       "editorial_cover": {
         "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
-        "source_photo_url": "https://e6.365dm.de/26/10/1600x900/skysport_de-fllkrug-werder_7372558.jpg?20261009222228",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/dortmund-bremen-fullkrug-comeback-20261009/source-e142995d12e7636b7a4d01e581b110d53bca06a79bcc1bb1c269db56ddfb6e3b.jpg",
         "headline": "Füllkrug Buyarkan Kemenangan Dortmund",
         "dek": "Dortmund unggul dua gol hingga menit ke-88. Bremen pulang dengan satu poin setelah sundulan Füllkrug pada waktu tambahan.",
         "source_label": "BVB.DE",
-        "reviewed_at": "2026-10-10T00:09:16.219Z",
+        "reviewed_at": "2026-10-10T00:10:20.322Z",
         "reviewed_by": "CODEX_VISUAL_EDITOR",
         "page_count": 5,
         "safe_wrap": true,
@@ -356,5 +358,5 @@
   },
   "editorial_review": "Full originalIndonesianNEWSarticle writtenbeforepagination. Officialreport authoritativeforSchlotterbeck85; Skystructuredscoreline85agrees despitebodytypo88. Result/goals/timecontext checked. Friday20:30CEST=18:30UTC=Saturday01:30WIB kickoff timezoneconversion checked. Source-ledlead, progressivechronologynewfactseachparagraph, noquotesunneededperrecordedGoalmatchreportlesson. Finalparagraphaddsverifiedplayerreactionandstandingsimplication. Publicarticle paraphrase300wordsundercombinedsourceallowance; evidence/fulltextsprivateonly.",
   "prepared_cover_sha256": "105d897f16cce70d045e487b90e172b6511a2a920f19c0dbf5f105764f3079d5",
-  "source_photo_sha256": "841b1aa0083ae7c351dc5939c05d31d2e6f34c7e1858e86fd37758dad0b72cb7"
+  "source_photo_sha256": "e142995d12e7636b7a4d01e581b110d53bca06a79bcc1bb1c269db56ddfb6e3b"
 }
