@@ -1,5 +1,5 @@
 {
-  "cover_reviewed_at": "2026-10-10T00:06:32.332Z",
+  "cover_reviewed_at": "2026-10-10T00:09:16.219Z",
   "reviewer": "CODEX_VISUAL_EDITOR",
   "source": "Authentic Niclas Fullkrug in pink Werder kit in October9 Sky match report photo",
   "native_reference_image_generation": true,
@@ -10,6 +10,12 @@
   "page_count": 5,
   "no_edition_label": true,
   "no_promotional_footer": true,
-  "all_body_slides_reviewed": false,
-  "remaining": "Generate shared preview and visually inspect every JPEG before schedule"
+  "all_body_slides_reviewed": true,
+  "reviewed_at": "2026-10-10T00:09:16.952435+00:00",
+  "headline_divider_gap_px": 36,
+  "divider_body_gap_px": 36,
+  "body_font_size_px": 36,
+  "all_five_jpegs_visually_checked": true,
+  "safe_wrap_no_clipping": true,
+  "page_count_matches_final_article": true
 }
