@@ -1,0 +1,360 @@
+{
+  "plan_key": "2026-10-10:match-am",
+  "event_key": "dortmund-bremen-fullkrug-comeback-20261009",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "dortmund",
+    "bremen"
+  ],
+  "format_reason": "Saturday08:00 Reaction SepakBolaEropa slot andplan_key preserved. CurrentSerpAPIvideoresults unrelated/generic; BVBofficialreport andSkyfullreport expose nostandalonemp4/m3u8/video source thatcanbe downloadedverifiedwithtranscript/timestamps. Useverifiedcarousel ratherthanunverified/AIfootage.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Füllkrug Buyarkan Kemenangan Dortmund",
+      "dek": "Dortmund unggul dua gol hingga menit ke-88. Bremen pulang dengan satu poin setelah sundulan Füllkrug pada waktu tambahan.",
+      "caption": "FÜLLKRUG BUYARKAN KEMENANGAN DORTMUND\n\nDortmund sudah unggul 2–0 lewat Svensson dan Schlotterbeck. Reis memperkecil jarak pada menit ke-88, lalu Füllkrug menyamakan skor pada 90+2.\n\nBremen pulang dengan hasil 2–2. Dortmund kehilangan kesempatan meraih kemenangan kelima beruntun dan posisinya di puncak belum aman.\n\n#Stadione #Bundesliga #BorussiaDortmund #WerderBremen #Fullkrug",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Dua Gol Tak Cukup untuk Dortmund",
+          "text": "Niclas Füllkrug menggagalkan kemenangan Borussia Dortmund dengan sundulan pada menit 90+2. Werder Bremen membawa pulang hasil 2–2 dari Signal Iduna Park pada Jumat malam, 9 Oktober 2026 waktu Jerman, atau Sabtu dini hari WIB. Dortmund sempat unggul melalui Daniel Svensson pada menit ke-80 dan Nico Schlotterbeck pada menit ke-85. Ludovit Reis menghidupkan kembali harapan Bremen tiga menit kemudian, sebelum Füllkrug menuntaskan kebangkitan tim tamu.",
+          "claim_ids": [
+            "result",
+            "goals",
+            "fixture"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "rhythm",
+          "heading": "Hein Menahan Serangan Tuan Rumah",
+          "text": "Gol-gol itu datang setelah pertandingan yang lama buntu. Bremen bertahan rapat, sementara penguasaan bola Dortmund belum menghasilkan peluang berbahaya pada awal laga. Karl Hein kemudian menggagalkan tembakan Maximilian Beier menjelang jeda dan beberapa usaha tuan rumah setelah turun minum. Ethan Nwaneri sempat memasukkan bola lewat tendangan salto, tetapi golnya tidak disahkan karena pelanggaran lebih dahulu terjadi. Dortmund masih harus mencari jalan untuk memecah kebuntuan.",
+          "claim_ids": [
+            "rhythm",
+            "disallowed"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "turnaround",
+          "heading": "Bremen Bangkit di Menit Terakhir",
+          "text": "Svensson akhirnya membuka skor setelah serangan Dortmund dari sisi kanan. Schlotterbeck menyusul dengan sundulan untuk menggandakan keunggulan. Bremen justru menemukan jalan kembali ketika Reis melepaskan tembakan keras yang membuat selisih tinggal satu gol. Tim tamu terus menekan hingga waktu tambahan. Füllkrug menyambut bola kiriman Marco Grüll dengan kepala dan membuat pertandingan yang hampir dimenangi Dortmund berakhir tanpa pemenang.",
+          "claim_ids": [
+            "goals",
+            "build_up"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "consequence",
+          "heading": "Puncak Klasemen Belum Aman",
+          "text": "Bagi Füllkrug, gol di markas mantan klubnya berarti satu poin yang diselamatkan untuk Bremen. Ia mengatakan kepada Sky bahwa kegembiraannya tertuju pada hasil timnya, lalu memuji semangat rekan-rekannya yang kembali berani menyerang pada akhir laga. Dortmund tetap berada di puncak untuk sementara, tetapi rangkaian empat kemenangan liganya terhenti. Bayern München dan Freiburg masih bisa mengambil alih posisi tersebut melalui pertandingan mereka pada akhir pekan.",
+          "claim_ids": [
+            "reaction",
+            "standings"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261007-barcelona-femenino-clasico-match-news",
+        "goal-20261009-coutinho-debut-fitness-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_MORNING_EDITOR_20261010",
+        "reviewed_at": "2026-10-10T00:03:11.383Z",
+        "article_digest": "1802d826ce4ed444d7b7e692b7d4a2cf2e0834392347b1392e15c6a8f24d8e40"
+      }
+    },
+    "sources": [
+      {
+        "id": "club",
+        "url": "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/10/9/BVB-kassiert-Last-Minute-Ausgleich-gegen-Werder-Bremen.html",
+        "primary": true,
+        "publisher_group": "BVB_OFFICIAL",
+        "published_at": "2026-10-09T20:27:00Z",
+        "retrieved_at": "2026-10-10T00:03:11.383Z",
+        "sha256": "86b4fe72d8cd2586a1accb910c815b6db65a112df00c17d90be97c1126c9f9fb",
+        "report_type": "OFFICIAL_MATCH_REPORT"
+      },
+      {
+        "id": "sky",
+        "url": "https://videos.sport.sky.de/fussball/dortmund-vs-bremen/spielbericht/563348",
+        "primary": false,
+        "publisher_group": "SKY_SID",
+        "published_at": "2026-10-09T23:22:00+02:00",
+        "retrieved_at": "2026-10-10T00:03:11.383Z",
+        "sha256": "5bee1d22bc67b849ccdafec4a1fbcbcf2aebdaab6f3d2716dc7415c45684172f",
+        "report_type": "FULL_MATCH_REPORT_AND_SKY_PLAYER_INTERVIEW"
+      },
+      {
+        "id": "radio",
+        "url": "https://www.deutschlandfunk.de/spaeter-ausgleich-dortmund-verspielt-sieg-gegen-bremen-100.html",
+        "primary": false,
+        "publisher_group": "DEUTSCHLANDRADIO",
+        "published_at": "2026-10-09T22:30:00+02:00",
+        "retrieved_at": "2026-10-10T00:03:11.383Z",
+        "sha256": "e739d6de7f679633ddc7402c52d39ee27454f1784cf68920beacc7c82c9ff13b",
+        "report_type": "MATCH_RESULT_BULLETIN"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Borussia Dortmund vs Werder Bremen finished2–2 (2:2), Dortmund led2–0 (2:0) until88. Four Bundesliga wins before this draw; no fifth win.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "5e4047352b22582369e8ef0f110f435298a03b01ac99c69f39c2a3b292f630f4"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "ff3ef2530b8c446b60e003381f9f932d4cad6a92175a5810e91cbb3130b0ecb6"
+          }
+        ]
+      },
+      {
+        "id": "goals",
+        "text": "Daniel Svensson80, Nico Schlotterbeck85, Ludovit Reis88, Niclas Füllkrug90+2. Scores2–0,2–1,2–2. Svensson scoredfirst, Schlotterbeck header, Reis powerful shot, Füllkrug equalizing header.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "1bfbf9ffc587fbfa98d846e5fcfab409821da4d996e97454f515d66c0597de80"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "3a135d30c87aef0117f5a724f9ae107e53d516bff51c1bb99f15b9c28c4a7c5f"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "bff28e49f239aa6d39ad6b5b686b9bc006d25239c2e3af0783c1f0672be10c1b"
+          },
+          {
+            "source_id": "radio",
+            "quote_sha256": "0238854c84aedc13f125806d6846b5d34c043eaa260b84b67d38034b10fadc6d"
+          }
+        ]
+      },
+      {
+        "id": "fixture",
+        "text": "Friday9 October2026 20:30 CEST German local time, kickoff2026-10-09T18:30:00Z=Saturday10October2026 01:30 WIB Asia/Jakarta. Signal Iduna Park Bundesliga. Match finished before currenttime.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "9646a54997a7b8cb5b5dea1fde5ec67b6793068c77d44f99928fc7d752f37434"
+          },
+          {
+            "source_id": "club",
+            "quote_sha256": "6b62d2e4bddc17aa35450942be62827a18279eec52876a39c89cd860d3572899"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "134d02b029c161b3e5feb7623591b192f4b2393c6aac6cb146de1463af987492"
+          }
+        ]
+      },
+      {
+        "id": "rhythm",
+        "text": "Bremen defensiveblock/five defenders. Dortmund possessionearly withoutclearcutchances. Karl Hein deniedMaximilianBeier beforeinterval thenmultipleDortmundattempts secondhalf.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "bd7d0e7f951b90da230121fba2347dd6e9fc7da695757fa06bcb7176f02bb763"
+          },
+          {
+            "source_id": "club",
+            "quote_sha256": "5aff1cf40addf43db478baf909e8c9c611ec31efaa4390cabde26db59e338984"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "13d9c3ac98a63ff0f730ac81d5c3d1b0a7ae4975f4d05a7b504c0a43cdc0372d"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "db33fe7906f94734cbf12c72412ba617fb123d142b972a0dc35b8a3786fa8536"
+          }
+        ]
+      },
+      {
+        "id": "disallowed",
+        "text": "EthanNwaneri overheadkick goal disallowed afterearlier WaldemarAnton offensive foul, beforeDortmundopener.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "faa1187529e2dde0541f6bb77300482bad60172f9437c89f9dcafc03aec84431"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "fe73a868bbbcd425f016cb8acbaabee6800db6bf11d24e386f5f7cc664a45b2c"
+          }
+        ]
+      },
+      {
+        "id": "build_up",
+        "text": "SvenssonfinishedmovefromDortmundrightside, Schlotterbeck headedsecond. Reis powerfulshot pulledoneback. Füllkrug headedMarcoGrülldelivery forlateequalizer.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "03d585cb5097807a1aefba5ca8a6d7c4f91a3c003279a3e8058ca09f8127a8ac"
+          },
+          {
+            "source_id": "club",
+            "quote_sha256": "2fa13f4c870ef1900354fde24a44feadc2def9da36242f8e653feafe9d29c8e0"
+          },
+          {
+            "source_id": "club",
+            "quote_sha256": "e1c193e6a3a3b4fcbce81ed22b7f4009e8132279bae94394b2f51e4ba301027a"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "1bdfd24a3fd34e4969c42bced92f67b272303f13b948bf119fad1f1020b5acff"
+          }
+        ]
+      },
+      {
+        "id": "reaction",
+        "text": "FüllkrugformerDortmundplayer, equalizeronepointforBremen. Skyinterview hecelebrateshisownteamresultnotagainstformerclub, praisescollectivecommitmentandlatemorebraveattacks.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "736baaaff5e05ceb7b9ce64e81720d2e4cd5ae2218f2055ed00d08e311604e7e"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "39e80b63686af7e98561e71286420cb2562cc353ac3ccbbd8bc0c953ccb7eb5d"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "1801880a709f4ec5ad6c3ab55e88fa2a67621589cf27dcd868d8430896191bfc"
+          }
+        ]
+      },
+      {
+        "id": "standings",
+        "text": "Dortmund remainsprovisionalBundesligaleader afterfourinitialwins andfirstdraw. BayernMünchen andSCFreiburgcanreplaceDortmund attopwithweekendresults.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "club",
+            "quote_sha256": "f1b2b9f2268181001f4246506a0f2315aa69e0603ac85ab7f9698abc4b47200e"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "d25aa53784eee6bf254c032f06ef101754789dd7baa6feb835b549623ec3f767"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "14dbeabb296853b596751c43a5c93ce7edc0d40f89b1fc119d0d674abcadfc5f"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Füllkrug Buyarkan Kemenangan Dortmund",
+        "body": "Dortmund unggul dua gol hingga menit ke-88. Bremen pulang dengan satu poin setelah sundulan Füllkrug pada waktu tambahan.",
+        "claim_ids": [
+          "result",
+          "goals",
+          "fixture"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Dua Gol Tak Cukup untuk Dortmund",
+        "body": "Niclas Füllkrug menggagalkan kemenangan Borussia Dortmund dengan sundulan pada menit 90+2. Werder Bremen membawa pulang hasil 2–2 dari Signal Iduna Park pada Jumat malam, 9 Oktober 2026 waktu Jerman, atau Sabtu dini hari WIB. Dortmund sempat unggul melalui Daniel Svensson pada menit ke-80 dan Nico Schlotterbeck pada menit ke-85. Ludovit Reis menghidupkan kembali harapan Bremen tiga menit kemudian, sebelum Füllkrug menuntaskan kebangkitan tim tamu.",
+        "claim_ids": [
+          "result",
+          "goals",
+          "fixture"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Hein Menahan Serangan Tuan Rumah",
+        "body": "Gol-gol itu datang setelah pertandingan yang lama buntu. Bremen bertahan rapat, sementara penguasaan bola Dortmund belum menghasilkan peluang berbahaya pada awal laga. Karl Hein kemudian menggagalkan tembakan Maximilian Beier menjelang jeda dan beberapa usaha tuan rumah setelah turun minum. Ethan Nwaneri sempat memasukkan bola lewat tendangan salto, tetapi golnya tidak disahkan karena pelanggaran lebih dahulu terjadi. Dortmund masih harus mencari jalan untuk memecah kebuntuan.",
+        "claim_ids": [
+          "rhythm",
+          "disallowed"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Bremen Bangkit di Menit Terakhir",
+        "body": "Svensson akhirnya membuka skor setelah serangan Dortmund dari sisi kanan. Schlotterbeck menyusul dengan sundulan untuk menggandakan keunggulan. Bremen justru menemukan jalan kembali ketika Reis melepaskan tembakan keras yang membuat selisih tinggal satu gol. Tim tamu terus menekan hingga waktu tambahan. Füllkrug menyambut bola kiriman Marco Grüll dengan kepala dan membuat pertandingan yang hampir dimenangi Dortmund berakhir tanpa pemenang.",
+        "claim_ids": [
+          "goals",
+          "build_up"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Puncak Klasemen Belum Aman",
+        "body": "Bagi Füllkrug, gol di markas mantan klubnya berarti satu poin yang diselamatkan untuk Bremen. Ia mengatakan kepada Sky bahwa kegembiraannya tertuju pada hasil timnya, lalu memuji semangat rekan-rekannya yang kembali berani menyerang pada akhir laga. Dortmund tetap berada di puncak untuk sementara, tetapi rangkaian empat kemenangan liganya terhenti. Bayern München dan Freiburg masih bisa mengambil alih posisi tersebut melalui pertandingan mereka pada akhir pekan.",
+        "claim_ids": [
+          "reaction",
+          "standings"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-09T20:30:00+02:00",
+    "context": {
+      "who": "Niclas Füllkrug, Borussia Dortmund and Werder Bremen",
+      "what": "Bremen rescue2–2 draw aftertrailing2–0 until88",
+      "when": "Friday9October2026 Germany/Saturday10OctoberWIB; allfullreportsconfirmmatchended",
+      "where": "Signal Iduna Park Dortmund",
+      "why": "Saturday08:00 European morningreaction; DortmundvsBremen currentSerpAPItrending10000searches increase1000",
+      "how": "Wholematcharticle basedonofficialBVB fullreport plusindependentSkyandDeutschlandfunk; ignoreSkybody85/88typo useofficialandSkystructuredscoreline85"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Eropa",
+      "angle": "Reaction — two lateBremengoalsdenyDortmundfifthwin",
+      "why_now": "Current release getDailySportsPool fetched2026-10-09T23:58:54.632Z date2026-10-10: DortmundvsBremen GoogleTrends10000searches/increase1000. Officialmatchreport andindependentfullreportcompleted overnight, nopriorCMS/IGevent."
+    },
+    "media": {
+      "url": "https://e6.365dm.de/26/10/1600x900/skysport_de-fllkrug-werder_7372558.jpg?20261009222228",
+      "type": "image",
+      "credit": "Authentic NiclasFüllkrug inWerderpinkkit duringDortmundfixture; SkySport matchreport photograph.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://e6.365dm.de/26/10/1600x900/skysport_de-fllkrug-werder_7372558.jpg?20261009222228",
+        "headline": "Füllkrug Buyarkan Kemenangan Dortmund",
+        "dek": "Dortmund unggul dua gol hingga menit ke-88. Bremen pulang dengan satu poin setelah sundulan Füllkrug pada waktu tambahan.",
+        "source_label": "BVB.DE",
+        "reviewed_at": "2026-10-10T00:06:32.332Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/dortmund-bremen-fullkrug-comeback-20261009/105d897f16cce70d045e487b90e172b6511a2a920f19c0dbf5f105764f3079d5.jpg",
+        "sha256": "105d897f16cce70d045e487b90e172b6511a2a920f19c0dbf5f105764f3079d5"
+      }
+    }
+  },
+  "editorial_review": "Full originalIndonesianNEWSarticle writtenbeforepagination. Officialreport authoritativeforSchlotterbeck85; Skystructuredscoreline85agrees despitebodytypo88. Result/goals/timecontext checked. Friday20:30CEST=18:30UTC=Saturday01:30WIB kickoff timezoneconversion checked. Source-ledlead, progressivechronologynewfactseachparagraph, noquotesunneededperrecordedGoalmatchreportlesson. Finalparagraphaddsverifiedplayerreactionandstandingsimplication. Publicarticle paraphrase300wordsundercombinedsourceallowance; evidence/fulltextsprivateonly.",
+  "prepared_cover_sha256": "105d897f16cce70d045e487b90e172b6511a2a920f19c0dbf5f105764f3079d5",
+  "source_photo_sha256": "5e4a8851549c5207cc00342a3be0c054eefcce3b6076e6831dcac03a9229e232"
+}
