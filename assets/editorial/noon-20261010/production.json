@@ -1,0 +1,298 @@
+{
+  "plan_key": "2026-10-10:match-noon",
+  "event_key": "pupuk-kaltim-cup-community-20261010",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "pupuk",
+    "bontang"
+  ],
+  "format_reason": "Preserve13:00WIBUGCcommunityslot. SerpAPIcandidatepointsatBingvideoindexandTikTokprofile; fetchedindexcontainsnosrcforbothvideoelementsandnodirectTikTokpostlink. No downloadable verifiedfootage/transcript/timestamps obtained. Produceverifiedcommunitycarousel, noAIvideo. Existingmatrixangleandclockunchanged.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "FEATURE",
+      "title": "Bontang Punya Panggung untuk Sepak Bola Kampung",
+      "dek": "Lima belas kelurahan bersaing di Stadion Mulawarman. Dukungan warga dan usaha kecil ikut menghidupkan Pupuk Kaltim Cup.",
+      "caption": "BONTANG PUNYA PANGGUNG UNTUK SEPAK BOLA KAMPUNG\n\nPupuk Kaltim Cup mempertemukan 15 tim kelurahan di Stadion Mulawarman. Warga membawa dukungan untuk timnya, sementara pelaku UMKM membuka lapak di sekitar stadion.\n\nDari defile sampai pertandingan, turnamen ini memberi ruang bagi sepak bola komunitas di Bontang.\n\n#Stadione #SepakBolaKomunitas #PupukKaltimCup #Bontang #Tarkam",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Kelurahan Turun ke Lapangan",
+          "text": "Lima belas tim kelurahan membawa nama lingkungan masing-masing ke Pupuk Kaltim Cup 2026 di Stadion Mulawarman, Bontang. Turnamen yang dibuka pada Jumat malam, 2 Oktober, mempertemukan sepak bola komunitas dengan dukungan warga di stadion. Kehadiran ribuan penonton pada pembukaan memperlihatkan besarnya perhatian terhadap ajang lokal ini. Para pemain mendapatkan panggung pertandingan, sementara warga punya alasan untuk datang dan mendukung tim kelurahannya.",
+          "claim_ids": [
+            "competition",
+            "crowd"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "parade",
+          "heading": "Dukungan Dimulai Sebelum Pertandingan",
+          "text": "Kemeriahan sudah terlihat ketika kontingen kelurahan mengikuti defile pembukaan. Pemain dan pendukung hadir dengan penampilan yang disiapkan untuk mewakili daerahnya. Unsur tradisional, koreografi, dan yel-yel mengisi rangkaian acara sebelum persaingan di lapangan dimulai. Identitas kelurahan mendapat tempat dalam turnamen ini melalui sepak bola sekaligus kreativitas warga. Dukungan kepada sebuah tim sudah dibangun bahkan sebelum bola dimainkan.",
+          "claim_ids": [
+            "parade"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "purpose",
+          "heading": "Bakat Lokal Mendapat Ruang",
+          "text": "Pupuk Kaltim Cup digelar sebagai bagian dari peringatan ulang tahun ke-49 Pupuk Kaltim. Wakil Wali Kota Bontang Agus Haris membuka turnamen, sementara Direktur Manajemen Risiko Pupuk Kaltim Maslani menyampaikan dukungan perusahaan bagi masyarakat. Dalam keterangan resmi pemerintah kota, Maslani menjelaskan bahwa ajang ini memberi kesempatan bagi masyarakat dan generasi muda untuk mengembangkan keterampilan sepak bola. Kompetisi antarkelurahan menjadi wadah untuk tujuan tersebut.",
+          "claim_ids": [
+            "purpose"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "market",
+          "heading": "Lapak Warga Ikut Mengisi Stadion",
+          "text": "Kegiatan di Mulawarman juga menjangkau warga yang berjualan. Pelaku UMKM mendapat ruang di sekitar stadion untuk menawarkan jajanan kepada penonton. Laporan pembukaan mencatat keterlibatan usaha kecil lokal dalam rangkaian turnamen. Kehadiran mereka menambah aktivitas di luar pertandingan, mempertemukan pembeli dan pedagang saat warga berkumpul mendukung timnya. Sepak bola kampung di Bontang dengan demikian menghidupkan lapangan, tribun, dan lapak di sekitarnya.",
+          "claim_ids": [
+            "market",
+            "crowd"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261010-bordeaux-ownership-collapse-feature",
+        "goal-20261006-gordon-feature"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_NOON_EDITOR_20261010",
+        "reviewed_at": "2026-10-10T05:11:58.601Z",
+        "article_digest": "326e95b1b434ff1ef6c2d0362e7284f955759a2d781e2ebe6f2ce8d7c32c1691"
+      }
+    },
+    "sources": [
+      {
+        "id": "official",
+        "url": "https://setda.bontangkota.go.id/wawali-agus-haris-buka-resmi-turnamen-sepak-bola-pupuk-kaltim-cup-2026",
+        "primary": true,
+        "publisher_group": "PEMKOT_BONTANG",
+        "published_at": "2026-10-03",
+        "retrieved_at": "2026-10-10T05:11:58.601Z",
+        "sha256": "54417cef869a1bcff159a05cbf8294875f2bca0e14b5276504b92d2ddc603e11",
+        "report_type": "OFFICIAL_GOVERNMENT_OPENING_REPORT"
+      },
+      {
+        "id": "klikkaltim",
+        "url": "https://www.klikkaltim.com/index.php/category/bontang/pupuk-kaltim-cup-2026-kembali-digelar-stadion-mulawarman-dipadati-ribuan-penonton",
+        "primary": false,
+        "publisher_group": "BORNEO_PARIWARA_MANDIRI",
+        "published_at": "2026-10-02",
+        "retrieved_at": "2026-10-10T05:11:58.601Z",
+        "sha256": "d22520ba76f20fa195f353064b5b0073a23542e316e324bc0bdf2513de6113d1",
+        "report_type": "FIRSTHAND_LOCAL_NEWS"
+      },
+      {
+        "id": "community",
+        "url": "https://katakaltim.com/pupuk-kaltim-cup-tumbuhkan-kebersamaan",
+        "primary": false,
+        "publisher_group": "KATAKALTIM",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-10T05:11:58.601Z",
+        "sha256": "a6375fe0f831ed17baebaed8b56ac5f998e636acc01985802b0e5d7729cfe9b8",
+        "report_type": "FIRSTHAND_REPORT_LABELLED_ADV_USED_AS_FRESH_COMMUNITY_CONTEXT"
+      }
+    ],
+    "claims": [
+      {
+        "id": "competition",
+        "text": "Pupuk Kaltim Cup2026 openedFriday2October2026 atStadionMulawarmanBontang,15kelurahanrepresentativescompete; ongoingcompetitionnotafinalresultarticle.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "d39648914e50d557984e0cc1b701bcfcc4a6fb455368fa65a11742c67aa1cb88"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "2105c2b28fdc787cc24d8f2b58cafa8b224306c682c52448d7ec00e58d004545"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "856a5c45cb800ee82d61ae161ce7deed070cefe50a434499e47eb95a63264a3d"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "49bc99f6fdfaf0e51ac99a6f87905d44598c5c19a5fd068a68d5c40f3adff7b7"
+          }
+        ]
+      },
+      {
+        "id": "crowd",
+        "text": "Communitysupportandstadiumattendance:officialopeningreportdescribescommunitygatheringandcelebration;independentKlikKaltimobservedthousandsofspectatorsatopening. Noexactattendancecountorrevenueclaim.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "d5c029ee9e61aee407d6d78e6bf84ba9bcca6efbb26cf102e15cca2f0fe06a1b"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "3a58694449803bf3bb6da4f166bf51e2f4bc22d038bff24fe3feefc08f0b259a"
+          }
+        ]
+      },
+      {
+        "id": "parade",
+        "text": "Openingdefileincluded15kelurahancontingents,playersandsupporters,traditionalkoreographymoderncreativityandyellssupportingtheirteams.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "c2be34413be62a92a2fb468d375faa2f75ebfbba1e43ef89aa3fa9e3d164c6db"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "4a76fcefcf8f7619ce8b5ecf07f40d78ee30f0cb48b683ce0085f1f182544a79"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "ec1d434b2621614d1d52cd861f220f9f13daa9e4ced23276a9cb18f816e3241b"
+          }
+        ]
+      },
+      {
+        "id": "purpose",
+        "text": "HUT49PupukKaltim;DeputyMayorAgusHarisopened;RiskManagementDirectorMaslani supportedcommunityandcompanycontributions;officialstatementexplicitlyintendsopportunityforcommunityandyoungfootballtalent.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "2ea6c904191e553bf4688a46ae9d036e2a47718b45bf51e51defd6880862349a"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "9567df22bc6a5ab6e13c99a9ed29f62585a84cec3a8fe004636bbebbaea7aaa6"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "7216cf8fa5a7f62a21f0dce7840eb63fef6e088ec6587d6975d3d6aff6e87b79"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "5f325b8291cd4d3bc18610c78b53ba0c2b9723ec6ef8399f9f1fee7988f43e7b"
+          },
+          {
+            "source_id": "official",
+            "quote_sha256": "c5e8bad8c4241fe755914b55ccf7f2b145d1e9e33348349fb2a5c3a7546b0325"
+          }
+        ]
+      },
+      {
+        "id": "market",
+        "text": "LocalUMKMweresupportedandgivenstallspacearoundstadium,offeringsnackstoattendingspectators;noactualrevenueorpaymentamountclaimed.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "official",
+            "quote_sha256": "0bc1a5d4d651f998c514aec215c23f2970ae50ed0c4c013c72095cad3e9bab67"
+          },
+          {
+            "source_id": "klikkaltim",
+            "quote_sha256": "f06672bf3a0c3f068a3309e37ad4951872cf94d25935367b989c437800e07609"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Bontang Punya Panggung untuk Sepak Bola Kampung",
+        "body": "Lima belas kelurahan bersaing di Stadion Mulawarman. Dukungan warga dan usaha kecil ikut menghidupkan Pupuk Kaltim Cup.",
+        "claim_ids": [
+          "competition",
+          "crowd"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Kelurahan Turun ke Lapangan",
+        "body": "Lima belas tim kelurahan membawa nama lingkungan masing-masing ke Pupuk Kaltim Cup 2026 di Stadion Mulawarman, Bontang. Turnamen yang dibuka pada Jumat malam, 2 Oktober, mempertemukan sepak bola komunitas dengan dukungan warga di stadion. Kehadiran ribuan penonton pada pembukaan memperlihatkan besarnya perhatian terhadap ajang lokal ini. Para pemain mendapatkan panggung pertandingan, sementara warga punya alasan untuk datang dan mendukung tim kelurahannya.",
+        "claim_ids": [
+          "competition",
+          "crowd"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Dukungan Dimulai Sebelum Pertandingan",
+        "body": "Kemeriahan sudah terlihat ketika kontingen kelurahan mengikuti defile pembukaan. Pemain dan pendukung hadir dengan penampilan yang disiapkan untuk mewakili daerahnya. Unsur tradisional, koreografi, dan yel-yel mengisi rangkaian acara sebelum persaingan di lapangan dimulai. Identitas kelurahan mendapat tempat dalam turnamen ini melalui sepak bola sekaligus kreativitas warga. Dukungan kepada sebuah tim sudah dibangun bahkan sebelum bola dimainkan.",
+        "claim_ids": [
+          "parade"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Bakat Lokal Mendapat Ruang",
+        "body": "Pupuk Kaltim Cup digelar sebagai bagian dari peringatan ulang tahun ke-49 Pupuk Kaltim. Wakil Wali Kota Bontang Agus Haris membuka turnamen, sementara Direktur Manajemen Risiko Pupuk Kaltim Maslani menyampaikan dukungan perusahaan bagi masyarakat. Dalam keterangan resmi pemerintah kota, Maslani menjelaskan bahwa ajang ini memberi kesempatan bagi masyarakat dan generasi muda untuk mengembangkan keterampilan sepak bola. Kompetisi antarkelurahan menjadi wadah untuk tujuan tersebut.",
+        "claim_ids": [
+          "purpose"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Lapak Warga Ikut Mengisi Stadion",
+        "body": "Kegiatan di Mulawarman juga menjangkau warga yang berjualan. Pelaku UMKM mendapat ruang di sekitar stadion untuk menawarkan jajanan kepada penonton. Laporan pembukaan mencatat keterlibatan usaha kecil lokal dalam rangkaian turnamen. Kehadiran mereka menambah aktivitas di luar pertandingan, mempertemukan pembeli dan pedagang saat warga berkumpul mendukung timnya. Sepak bola kampung di Bontang dengan demikian menghidupkan lapangan, tribun, dan lapak di sekitarnya.",
+        "claim_ids": [
+          "market",
+          "crowd"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "LIVE",
+    "event_at": "2026-10-02",
+    "context": {
+      "who": "15 kelurahan footballteams andBontangcommunity",
+      "what": "PupukKaltimCupcommunitycompetitionandsupporters/UMKM",
+      "when": "OpenedFriday2October2026; currentcommunityreportpublished9October2026; nofinalscoreorunconfirmedfinalschedule; event_at is date precision only, no exact opening kickoff claimed",
+      "where": "StadionMulawarman KelurahanBelimbing Bontang",
+      "why": "October10nooncommunityslot; currentdailySerpAPIpoolsurfacesPupukKaltimCup;October9fullreportconfirmsongoinglocalinterest",
+      "how": "Originalfeaturearticlefromgovernmentprimaryopeningreport andindependentKlikKaltim eyewitnesscoverage, freshKatakaltimcommunityreportlabelledAdvusedhonestlyasnonscoringcontext"
+    },
+    "assignment": {
+      "pillar": "Tarkam & Komunitas",
+      "angle": "Community — kelurahanteams, supportersandUMKM",
+      "why_now": "DeployedgetDailySportsPool fetched2026-10-10T05:01:16.538Z identifiesPembukaanPupukKaltimCup2026 viaRadarBontangTikTok. FreshOctober9fullcommunityreportwithgenuineOctober8matchphotoconfirmsrelevance; noCMS/Instagramduplicatetopic."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/pupuk-kaltim-cup-community-20261010/source-d7daef7da8ea0b3f6936a516e8234b37b636128532fc482aa0e5c96f68efe99f.jpg",
+      "original_photo_url": "https://katakaltim.com/api/media/file/Pupuk%20Kaltim%20Cup%202026-1.Pupuk%20Kaltim%20Cup%202026",
+      "source_page_url": "https://katakaltim.com/pupuk-kaltim-cup-tumbuhkan-kebersamaan",
+      "type": "image",
+      "credit": "Agung/Katakaltim; authentic Api-Api versus BontangBaru matchphotograph, October8,2026; noindividualplayeridentityasserted.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/pupuk-kaltim-cup-community-20261010/source-d7daef7da8ea0b3f6936a516e8234b37b636128532fc482aa0e5c96f68efe99f.jpg",
+        "headline": "Bontang Punya Panggung untuk Sepak Bola Kampung",
+        "dek": "Lima belas kelurahan bersaing di Stadion Mulawarman. Dukungan warga dan usaha kecil ikut menghidupkan Pupuk Kaltim Cup.",
+        "source_label": "SETDA.BONTANGKOTA.GO.ID",
+        "reviewed_at": "2026-10-10T05:21:58.331Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/pupuk-kaltim-cup-community-20261010/70cfb0a37c91361f0f0c4f3eb13de015cb5b7a37ce6c18a38a9a756aac3059e3.jpg",
+        "sha256": "70cfb0a37c91361f0f0c4f3eb13de015cb5b7a37ce6c18a38a9a756aac3059e3"
+      }
+    }
+  },
+  "editorial_review": "Article-firstFEATURE239words, fourprogressivelydifferentsections; truecompetition/community/defile/youthopportunity/UMKMfacts. FreshKatakaltimOctober9reportlabelledAdv, transparentlyrecorded, neverportrayedasindependentunpaidreporting. PrimarySetdaandindependentKlikKaltimfulltextsread. Omitconflictingexhibitionscore3-2vs2-1andconflictingfinalscheduleoldOctober10vsnewOctober12. Nonewmatchresult,goal,timeorinterviewinvented. OriginalphotoisactualOctober8footballplayerskeptwide,noinventedcloseupfaces. RecordedGoalfeaturelessonsusedforclearangle, chronologyandnewfacts; nopadding/scaffold/processlabels. Allthirdpartyfulltextandquoteevidenceprivate.",
+  "prepared_cover_sha256": "70cfb0a37c91361f0f0c4f3eb13de015cb5b7a37ce6c18a38a9a756aac3059e3",
+  "source_photo_sha256": "d7daef7da8ea0b3f6936a516e8234b37b636128532fc482aa0e5c96f68efe99f"
+}
