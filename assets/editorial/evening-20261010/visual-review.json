@@ -1,0 +1,25 @@
+{
+  "cover_reviewed_at": "2026-10-10T12:14:34.777Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "native_reference_image_generation": true,
+  "native_output": "/workspace/generated_images/exec-fb2a1d4e-7ff8-46c0-83f4-23f106a40ede.png",
+  "style_reference": "assets/editorial/evening-20261009/cahya-cover.jpg",
+  "actual_photo": "ANTARA FOTO/Fahri Akbar/PF/nym; genuine October9 Brawijaya match. Purple22 centre Dzaky Asraf, opposing Rifqi Ray Farandi/Jorge Mendonca. Cover uses team headline, never misidentifies subject as Barbosa. Source ANTARA watermark retained.",
+  "faces_match_authentic_reference": true,
+  "charcoal_cream_stadione_red_collage": true,
+  "headline_wrapped": true,
+  "source_label": "ILEAGUE.ID",
+  "page_count": 5,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "jpeg": {
+    "width": 1080,
+    "height": 1350,
+    "srgb": true,
+    "quality": 95,
+    "chroma": "4:4:4",
+    "alpha": false
+  },
+  "all_body_slides_reviewed": false,
+  "remaining": "Shared preview and visual inspection before schedule"
+}

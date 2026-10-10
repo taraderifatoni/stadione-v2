@@ -1,0 +1,349 @@
+{
+  "plan_key": "2026-10-10:match-pm",
+  "event_key": "persik-madura-reaction-20261009",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "persik",
+    "madura"
+  ],
+  "format_reason": "Original20:00WIB REEL Live/reaction slot retained as REACTION, not LIVE. Fresh pool Bing/social video indices and targeted current-match searches expose only prior April2026 2025/26 clips or official match-page previous-game highlights (Madura–Persijap), no verified downloadable October9 footage/transcript/timestamps. Use verified authentic-match carousel; no AI video.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Persik Menghentikan Laju Madura",
+      "dek": "Dua gol Barbosa sebelum jeda mengakhiri tiga kemenangan beruntun Madura United. Persik menang 2–0 di Brawijaya.",
+      "caption": "PERSIK MENGHENTIKAN LAJU MADURA\n\nEduardo Barbosa mencetak dua gol sebelum jeda saat Persik Kediri menang 2–0 atas Madura United di Brawijaya, Jumat, 9 Oktober 2026. Rentetan tiga kemenangan tim tamu pun berakhir.\n\nSetelah unggul dan menghadapi sepuluh pemain, Persik mengubah susunan pertahanan untuk menjaga tiga poin.\n\n#Stadione #PersikKediri #MaduraUnited #SuperLeague #SepakBolaIndonesia",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Rentetan Kemenangan Terputus",
+          "text": "Persik Kediri menghentikan laju Madura United dengan kemenangan 2–0 di Stadion Brawijaya, Jumat, 9 Oktober 2026. Eduardo Barbosa memborong kedua gol tuan rumah sebelum turun minum. Madura datang setelah memenangi tiga pertandingan awal musim, tetapi pulang tanpa tambahan poin. Bagi Persik, kemenangan kandang ini menghadirkan tiga poin sekaligus menutup langkah sempurna tim tamu pada awal kompetisi.",
+          "claim_ids": [
+            "result",
+            "streak"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "red",
+          "heading": "Mitkov Keluar Sebelum Jeda",
+          "text": "Madura harus mengejar dua gol dengan jumlah pemain yang berkurang. Dimitar Mitkov menerima kartu merah menjelang akhir babak pertama, ketika Persik sudah memimpin. Tim tamu kemudian bermain dengan sepuluh orang. Setelah jeda, Madura mencoba keluar menyerang, sementara Persik tidak kembali menambah gol. Keunggulan yang dibangun sebelum turun minum bertahan hingga pertandingan selesai.",
+          "claim_ids": [
+            "result",
+            "red"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "tactic",
+          "heading": "Marcos Memilih Empat Bek",
+          "text": "Keunggulan jumlah pemain tidak membuat Persik leluasa menciptakan peluang. Marcos Reina Torres melihat Madura merapatkan pertahanannya, lalu mengubah susunan lini belakang dari tiga bek menjadi empat. Pelatih Persik itu memilih permainan lebih cermat untuk mempertahankan keunggulan. Ia menilai rencana babak pertama telah dijalankan dengan baik. Marcos mengatakan seusai laga, \"Dalam situasi seperti ini, kami harus pintar menjaga tiga poin.\"",
+          "claim_ids": [
+            "tactic"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "text": "Dalam situasi seperti ini, kami harus pintar menjaga tiga poin.",
+            "source_id": "coach"
+          }
+        },
+        {
+          "id": "dzaky",
+          "heading": "Kesempatan Dzaky di Babak Kedua",
+          "text": "Dzaky Asraf mendapatkan kesempatan bermain pada babak kedua. Seusai laga, ia berterima kasih kepada Marcos Reina yang memberinya kepercayaan dan kepada suporter yang hadir di Brawijaya. Tambahan tiga poin membawa Persik mengumpulkan tujuh poin. Madura tetap memiliki sembilan poin, tetapi untuk pertama kalinya musim ini mereka meninggalkan lapangan tanpa kemenangan.",
+          "claim_ids": [
+            "dzaky",
+            "points",
+            "streak"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261007-barcelona-femenino-clasico-match-news",
+        "goal-20261009-coutinho-debut-fitness-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EVENING_EDITOR_20261010",
+        "reviewed_at": "2026-10-10T12:14:12.187Z",
+        "article_digest": "79eb3786e14c701d3325658a368ceb36494e1b1d748660cf0490dfb86d0d3f45"
+      }
+    },
+    "sources": [
+      {
+        "id": "league",
+        "url": "https://ileague.id/news/detail/tren-positif-madura-united-terhenti-di-kandang-macan-putih",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "7973fa8cd92ab7ca84495b7648de658a97788e44332e4696184baf7eabd8e34c"
+      },
+      {
+        "id": "coach",
+        "url": "https://ileague.id/news/detail/marcos-reina-puas-bisa-putus-rantai-kemenangan-madura-united",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "bffea0b48444034f7a3747fd7f13de2394b3382aa0c25970967fc4f22db645aa"
+      },
+      {
+        "id": "result",
+        "url": "https://www.ileague.id/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-09/PERSIK_KEDIRI/MADURA_UNITED_FC",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "5d96d2130b7c88170c80f06df37b6edd67919a5e60da7936f4766f701067fd22"
+      },
+      {
+        "id": "dzaky",
+        "url": "https://www.ileague.id/news/detail/dzaky-asraf-bahagia-bisa-merumput-lagi-di-laga-persik-kontra-madura-united-",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "4ce4fda6e9ba85be8287218f8b668dc667153957eb8957632ed911484bbadfaf"
+      },
+      {
+        "id": "detik",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8700010/hasil-super-league-persik-kediri-kalahkan-madura-united-2-0",
+        "primary": false,
+        "publisher_group": "TRANS_MEDIA",
+        "published_at": "2026-10-09T10:35:00Z",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "6e8fb4cb405c2f04851100f1d609af8f9a44ae6edfa3b973c1ab98c3f5949f5e"
+      },
+      {
+        "id": "antara",
+        "url": "https://jatim.antaranews.com/berita/1105457/persik-hentikan-tren-kemenangan-madura-united-dengan-menang-2-0",
+        "primary": false,
+        "publisher_group": "LKBN_ANTARA",
+        "published_at": "2026-10-09T14:25:00Z",
+        "retrieved_at": "2026-10-10T12:14:12.187Z",
+        "sha256": "01b773dbd37a822428e2f359144f93fad9e38c8330973e4fb50c3ea20387c3b3"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Persik Kediri won 2–0 / 2-0 against Madura United at Stadion Brawijaya Kediri on Friday 9 October 2026. Eduardo Barbosa scored both goals before half-time; full-time score unchanged after a scoreless second half.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "league",
+            "quote_sha256": "219ca571ab300a6ad0e619de14c8df9bd96ed8e195c811f365454f81384685cb"
+          },
+          {
+            "source_id": "coach",
+            "quote_sha256": "4d81f9ab2be844dab4cfb3c80665707516a450e6b0dc84540793b5a343715fb1"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "22d1f8cba5c4bccd0af2ecd29d0cac178fd9fb0b4fbd98652174918565786932"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "4454fac55141042d13c8c76820b286fc8267088fefac2b87d8aa971143962968"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "2e110feb1ba35169004c5b1e2b9626f6262f86467ae5ed5284c3d451b503bbda"
+          }
+        ]
+      },
+      {
+        "id": "streak",
+        "text": "Madura had won its first three league games; this was its first loss. Primary ILeague explicitly confirms three victories, corroborated by independent Detik first-loss report and nine points, plus primary club results listed on official match page. Three prior games at three points each account for its unchanged nine-point total.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "league",
+            "quote_sha256": "d423c9fcc38652902af5edf013155ab32e7e1925a5acdad660730ead5705690e"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "455cd0b194225f629f11dd63cff1c3bf3b0a5e8d3f054a2c93d2858dfe78dc16"
+          },
+          {
+            "source_id": "result",
+            "quote_sha256": "92687579c2d32fe837b6eb19a00a7bc8ac45cda7b2e5def2841f76c312af0ff0"
+          }
+        ]
+      },
+      {
+        "id": "red",
+        "text": "Dimitar Mitkov received a red card shortly before half-time, after both Persik goals; Madura played with ten people and remained unable to score in second half. No exact event minute or VAR mechanism asserted.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "2120c49cac2f12bcfc51da6b2bd864c421b975ca336731065ee9774de8e7c5a7"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "c32e81e8ccfe98232bb89d414a58ea216644aa676eb3af1e51b39d08a8abb148"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "2c9e550d01ae35e93980800cb4930eddc6bb3e1c445cc720857cab5ead42f3f5"
+          }
+        ]
+      },
+      {
+        "id": "tactic",
+        "text": "Marcos Reina Torres acknowledged limited Persik chances despite numerical advantage against compact Madura defence; switched from three defenders to four to preserve lead and three points. His short quote is exactly recorded by official ILeague; independent Antara confirms formation switch, compact defence and protective approach.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "coach",
+            "quote_sha256": "f736ca8fd9ddeacd4df2a28dcb6366fcdad5c67e225eb8a1f8f7c927b98c7386"
+          },
+          {
+            "source_id": "coach",
+            "quote_sha256": "c9a8dec732cebccc0ac13c20e42140732f3ac8588578444eea9d4d16a9bd4245"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "ff9cb1a6a1cc4558d0a12b1bddb4954d063f8cc4d8d74d47aa0bb84785eb505a"
+          }
+        ]
+      },
+      {
+        "id": "dzaky",
+        "text": "Dzaky Asraf played second half, thanked coach Marcos for trust and supporters attending Stadion Brawijaya. No injury, timnas aspiration, goal or assist attributed without two-source support; portrait is him in jersey22 with actual opponents.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "dzaky",
+            "quote_sha256": "548fef732fc6aafdf8ec4e3c34d3c33be1589cf7fdc24719218a6e95928173a8"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "a359bface5a2b53ae08398ab8df7b5f739ca7d117bb09cec9713c0f72906a045"
+          }
+        ]
+      },
+      {
+        "id": "points",
+        "text": "After the completed October9 match, Persik had seven points and Madura nine. No current or provisional league rank asserted because Detik and Antara rank reports differ.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "result",
+            "quote_sha256": "92687579c2d32fe837b6eb19a00a7bc8ac45cda7b2e5def2841f76c312af0ff0"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "3516d348e768155d67d9981ee588056bd0ae79ad18f1ef849cf49f13aa8e587d"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "5f1af131df26a4ba8c5cbf9becff09b4cca995cc0da6fcddb0dcad1046cdc9c5"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Persik Menghentikan Laju Madura",
+        "body": "Dua gol Barbosa sebelum jeda mengakhiri tiga kemenangan beruntun Madura United. Persik menang 2–0 di Brawijaya.",
+        "claim_ids": [
+          "result",
+          "streak"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Rentetan Kemenangan Terputus",
+        "body": "Persik Kediri menghentikan laju Madura United dengan kemenangan 2–0 di Stadion Brawijaya, Jumat, 9 Oktober 2026. Eduardo Barbosa memborong kedua gol tuan rumah sebelum turun minum. Madura datang setelah memenangi tiga pertandingan awal musim, tetapi pulang tanpa tambahan poin. Bagi Persik, kemenangan kandang ini menghadirkan tiga poin sekaligus menutup langkah sempurna tim tamu pada awal kompetisi.",
+        "claim_ids": [
+          "result",
+          "streak"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Mitkov Keluar Sebelum Jeda",
+        "body": "Madura harus mengejar dua gol dengan jumlah pemain yang berkurang. Dimitar Mitkov menerima kartu merah menjelang akhir babak pertama, ketika Persik sudah memimpin. Tim tamu kemudian bermain dengan sepuluh orang. Setelah jeda, Madura mencoba keluar menyerang, sementara Persik tidak kembali menambah gol. Keunggulan yang dibangun sebelum turun minum bertahan hingga pertandingan selesai.",
+        "claim_ids": [
+          "result",
+          "red"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Marcos Memilih Empat Bek",
+        "body": "Keunggulan jumlah pemain tidak membuat Persik leluasa menciptakan peluang. Marcos Reina Torres melihat Madura merapatkan pertahanannya, lalu mengubah susunan lini belakang dari tiga bek menjadi empat. Pelatih Persik itu memilih permainan lebih cermat untuk mempertahankan keunggulan. Ia menilai rencana babak pertama telah dijalankan dengan baik. Marcos mengatakan seusai laga, \"Dalam situasi seperti ini, kami harus pintar menjaga tiga poin.\"",
+        "claim_ids": [
+          "tactic"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Kesempatan Dzaky di Babak Kedua",
+        "body": "Dzaky Asraf mendapatkan kesempatan bermain pada babak kedua. Seusai laga, ia berterima kasih kepada Marcos Reina yang memberinya kepercayaan dan kepada suporter yang hadir di Brawijaya. Tambahan tiga poin membawa Persik mengumpulkan tujuh poin. Madura tetap memiliki sembilan poin, tetapi untuk pertama kalinya musim ini mereka meninggalkan lapangan tanpa kemenangan.",
+        "claim_ids": [
+          "dzaky",
+          "points",
+          "streak"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-09T08:30:00Z",
+    "context": {
+      "who": "Persik Kediri versus Madura United, Barbosa, Mitkov, Marcos Reina Torres and Dzaky Asraf",
+      "what": "Completed 2–0 match and verified post-match reaction, not a live feed",
+      "when": "Friday 9 October 2026 kick-off 15:30WIB, official match report; reporting dated October9; reaction slot October10 20:00WIB",
+      "where": "Stadion Brawijaya, Kediri",
+      "why": "Daily SerpAPI Google Trends persik vs madura united 20000 and trend increase1000 plus current post-match official and independent reports; no prior CMS or Instagram topic",
+      "how": "Original complete article assembled from fully opened ILeague match and coach reports, independent Detik match report and onsite Antara, exact quote and conservative cross-source facts"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Indonesia",
+      "angle": "Reaction — completed Persik–Madura match and tactical response",
+      "why_now": "Deployed getDailySportsPool fetched2026-10-10T11:56:15.364Z; Google Trends persik vs madura united 20000/increase1000. October9 full post-match reports remain within48h. Explicitly reaction, not LIVE from trend snapshot; preserves normal20:00WIB slot."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persik-madura-reaction-20261009/source-4a274811c417dba8b3c10d837e9886a39abcd822590ff62074842b89c63208ab.jpg",
+      "type": "image",
+      "original_photo_url": "https://img.antaranews.com/cache/1200x800/2026/10/09/persik-kediri-menang-atas-madura-united-fc-2881464.jpg",
+      "source_page_url": "https://jatim.antaranews.com/berita/1105457/persik-hentikan-tren-kemenangan-madura-united-dengan-menang-2-0",
+      "credit": "ANTARA FOTO/Fahri Akbar/PF/nym. Actual October9 Brawijaya match: Dzaki/Dzaky Asraf centre purple22, Rifqi Ray Farandi left, Jorge Mendonca right. Not a portrait of goalscorer Barbosa. Existing ANTARA watermark retained.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persik-madura-reaction-20261009/source-4a274811c417dba8b3c10d837e9886a39abcd822590ff62074842b89c63208ab.jpg",
+        "headline": "Persik Menghentikan Laju Madura",
+        "dek": "Dua gol Barbosa sebelum jeda mengakhiri tiga kemenangan beruntun Madura United. Persik menang 2–0 di Brawijaya.",
+        "source_label": "ILEAGUE.ID",
+        "reviewed_at": "2026-10-10T12:14:34.777Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persik-madura-reaction-20261009/aeb66cf9605ed2b7bb9d5b17507f0266cbaab3bcd9d28acaca363d33705f5185.jpg",
+        "sha256": "aeb66cf9605ed2b7bb9d5b17507f0266cbaab3bcd9d28acaca363d33705f5185"
+      }
+    }
+  },
+  "editorial_review": "Original article written before lossless pagination, substantive score/streak lead -> red-card context -> coach four-back protection/short exact quote -> authentic pictured substitute and points. Recorded Goal NEWS lessons used for contributions, football mechanisms and new information each section; no generic analysis labels or padding. Sources fully opened including three primary reports and independent Detik/Antara. Goal minute conflict: primary structured9/24 with duplicate25 versus primary narrative9/25 and Detik8/24; omit exact goal minutes, publish only unanimously supported first-half brace. Ranking conflict4th versus5th: omit standings rank, report points as of October9. Exact kick-off15:30WIB confirmed official match record. Pictured athlete is Dzaky, not Barbosa; collective team headline prevents false portrait identification. One public quote12words from official coach report, no other verbatim excerpts. Third-party source text and claim evidence remain private.",
+  "prepared_cover_sha256": "aeb66cf9605ed2b7bb9d5b17507f0266cbaab3bcd9d28acaca363d33705f5185",
+  "source_photo_sha256": "4a274811c417dba8b3c10d837e9886a39abcd822590ff62074842b89c63208ab"
+}
