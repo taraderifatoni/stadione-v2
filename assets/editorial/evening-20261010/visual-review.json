@@ -20,6 +20,19 @@
     "chroma": "4:4:4",
     "alpha": false
   },
-  "all_body_slides_reviewed": false,
-  "remaining": "Shared preview and visual inspection before schedule"
+  "all_body_slides_reviewed": true,
+  "remaining": null,
+  "body_reviewed_at": "2026-10-10T12:20:08.526Z",
+  "body_font_size": 36,
+  "divider_gaps_px": {
+    "above": 36,
+    "below": 36
+  },
+  "all_five_actual_jpegs_visible_in_contact": true,
+  "safe_margin_left": 72,
+  "safe_margin_right": 72,
+  "no_clipping_or_overflow": true,
+  "text_matches_complete_article": true,
+  "public_render_bytes_checked": true,
+  "scheduled_pair_verified": true
 }
