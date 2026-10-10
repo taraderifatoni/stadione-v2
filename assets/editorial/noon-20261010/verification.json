@@ -1,0 +1,286 @@
+{
+  "verified_at": "2026-10-10T05:25:06.787Z",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "preparation_commit": "cb0be97554cad622791acc683e028f6275ce506c",
+  "social": {
+    "id": "fddf80c0-6d28-4fbd-909d-79690d445b2b",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-10:match-noon",
+    "scheduled_at": "2026-10-10T06:00:00+00:00",
+    "format": "CAROUSEL",
+    "parent_id": "9c8a74ed-85ca-41cf-b59f-2ba1f1ac3ccf",
+    "publish_error": null
+  },
+  "article": {
+    "id": "9c8a74ed-85ca-41cf-b59f-2ba1f1ac3ccf",
+    "status": "SCHEDULED",
+    "slug": "bontang-punya-panggung-untuk-sepak-bola-kampung-fddf80c0",
+    "scheduled_at": "2026-10-10T06:00:00+00:00",
+    "body_same": true,
+    "dek_same": true,
+    "hero": [
+      {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/pupuk-kaltim-cup-community-20261010/source-d7daef7da8ea0b3f6936a516e8234b37b636128532fc482aa0e5c96f68efe99f.jpg",
+        "type": "image",
+        "credit": "Agung/Katakaltim; authentic Api-Api versus BontangBaru matchphotograph, October8,2026; noindividualplayeridentityasserted.",
+        "clean_photo": true,
+        "text_overlay": false
+      }
+    ],
+    "public_url": "https://stadione.pro/news/bontang-punya-panggung-untuk-sepak-bola-kampung-fddf80c0"
+  },
+  "article_digest": "326e95b1b434ff1ef6c2d0362e7284f955759a2d781e2ebe6f2ce8d7c32c1691",
+  "article_words": 239,
+  "packet_audit": [],
+  "publication_audit": [],
+  "reference_audit": [],
+  "writer_brief_is_only_packet_addition": true,
+  "other_rows_unchanged": 62,
+  "paired_article_only_added": true,
+  "public_jpeg_bytes_identical": true,
+  "source_mirror_bytes_identical": true,
+  "website_photo_sha256": "d7daef7da8ea0b3f6936a516e8234b37b636128532fc482aa0e5c96f68efe99f",
+  "website_photo_text_overlay": false,
+  "publisher_last_result_success": true,
+  "assets": [
+    {
+      "slide": 1,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fddf80c0-6d28-4fbd-909d-79690d445b2b/30befbf7f70b02e8344e8137ac91807022c77860221cd9350baea190be5ae5b2-1.jpg",
+      "sha256": "34a5447f3c80a991e20713556a0e92095b1cba313d7ea68a86f830e737364377",
+      "render_audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_collage_cover",
+        "safe_wrap": true,
+        "source_label": "SETDA.BONTANGKOTA.GO.ID",
+        "output_sha256": "34a5447f3c80a991e20713556a0e92095b1cba313d7ea68a86f830e737364377",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "authentic_photo": true,
+        "no_edition_label": true,
+        "cover_input_sha256": "70cfb0a37c91361f0f0c4f3eb13de015cb5b7a37ce6c18a38a9a756aac3059e3",
+        "editorial_background": true,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 2,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fddf80c0-6d28-4fbd-909d-79690d445b2b/30befbf7f70b02e8344e8137ac91807022c77860221cd9350baea190be5ae5b2-2.jpg",
+      "sha256": "6913972034cdd2ba9e0f79d2905519b28d82169a3b142593fdbb98489a173226",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 652,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 897,
+            "height": 564,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 564,
+        "divider_top": 381,
+        "text_sha256": "f6776395aa81847ede5fce20310a396d24833bc1da86e432d217e90ebcb6d799",
+        "source_label": null,
+        "output_sha256": "6913972034cdd2ba9e0f79d2905519b28d82169a3b142593fdbb98489a173226",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 3,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fddf80c0-6d28-4fbd-909d-79690d445b2b/30befbf7f70b02e8344e8137ac91807022c77860221cd9350baea190be5ae5b2-3.jpg",
+      "sha256": "bb6d3d18631370c8277034d3e62060944c19f153e7e10044fec0d8cc99c53d43",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 768,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 895,
+            "height": 511,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 511,
+        "divider_top": 381,
+        "text_sha256": "ea84180e7319e45f877d04d59bc7b134dda0282a270c56ddeb418a1595093acf",
+        "source_label": null,
+        "output_sha256": "bb6d3d18631370c8277034d3e62060944c19f153e7e10044fec0d8cc99c53d43",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 4,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fddf80c0-6d28-4fbd-909d-79690d445b2b/30befbf7f70b02e8344e8137ac91807022c77860221cd9350baea190be5ae5b2-4.jpg",
+      "sha256": "39a142be1c79ece1388d7cbdae63fd285144b078dd37f462b412b9d1b9404bc9",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 750,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 920,
+            "height": 617,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 617,
+        "divider_top": 381,
+        "text_sha256": "1bfe2107c574d3971bdcc81983595873b139bf106046b5e77921a2292ad85a12",
+        "source_label": null,
+        "output_sha256": "39a142be1c79ece1388d7cbdae63fd285144b078dd37f462b412b9d1b9404bc9",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 5,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fddf80c0-6d28-4fbd-909d-79690d445b2b/30befbf7f70b02e8344e8137ac91807022c77860221cd9350baea190be5ae5b2-5.jpg",
+      "sha256": "4208eb62eae186eac1022d8c25bad2e40dc0ae04fda0be480b79a7e6cba0dd78",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 871,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 933,
+            "height": 564,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 564,
+        "divider_top": 369,
+        "text_sha256": "7e6da196a9419539485f1f8f19ed9c6c61c9c21921347320315b77dd673c8225",
+        "source_label": null,
+        "output_sha256": "4208eb62eae186eac1022d8c25bad2e40dc0ae04fda0be480b79a7e6cba0dd78",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 128,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    }
+  ],
+  "durable_attempts": 0,
+  "live_ig_count": 19,
+  "live_duplicate_count": 0,
+  "one_social_event_identity": true,
+  "goal_sha256": "054113dd8b67899ffb95931b24759f6cd23c0532d5677b03f2ec2b86db5c3c97",
+  "goal_committed_runtime_identical": true,
+  "no_other_slot_mutation": true,
+  "published_history_unchanged": true,
+  "publisher_timer_active": true,
+  "no_direct_meta_publish": true,
+  "publication_still_future": true,
+  "idempotency_verified": true,
+  "idempotence_replay_all_rows_unchanged": 64,
+  "known_other_slot_failure": {
+    "read_only": true,
+    "id": "df5a437c-f0b4-4d33-b3d8-bb3e81074d99",
+    "plan_key": "2026-10-10:match-am",
+    "publish_error": "Meta API: Only photo or video can be accepted as media type. (9004/2207052)",
+    "status": "SCHEDULED",
+    "article_status": "SCHEDULED",
+    "attempts": [
+      {
+        "state": "FAILED",
+        "child_ids": [],
+        "creation_id": null,
+        "media_id": null,
+        "error_message": "Meta API: Only photo or video can be accepted as media type. (9004/2207052)",
+        "updated_at": "2026-10-10T01:00:21.381+00:00"
+      }
+    ],
+    "interpretation": "Morning Meta rejection confirmed; timer service success does not establish publication success; causes not confirmed. Do not mutate this other slot."
+  },
+  "cover_public_crawler_user_agent_check": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 886810,
+    "sha256": "34a5447f3c80a991e20713556a0e92095b1cba313d7ea68a86f830e737364377",
+    "note": "Public HTTP byte check only; not a Meta ingestion or publish success claim."
+  }
+}

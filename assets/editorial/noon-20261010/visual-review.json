@@ -9,6 +9,16 @@
   "page_count": 5,
   "no_edition_label": true,
   "no_promotional_footer": true,
-  "all_body_slides_reviewed": false,
-  "remaining": "Shared preview and visual inspection before schedule"
+  "all_body_slides_reviewed": true,
+  "remaining": null,
+  "body_reviewed_at": "2026-10-10T05:23:59.097254+00:00",
+  "all_five_slides_legible": true,
+  "no_cropped_or_overflowing_text": true,
+  "body_font_size": 36,
+  "headline_divider_gap_px": 36,
+  "divider_body_gap_px": 36,
+  "paper_tone": "#eee9dd",
+  "contact_sheet_sha256": "f4ce611ba90a36641ebd7b2e3e08a0ec8b6f85e0ca3657aea6bc6e1918c54e20",
+  "public_render_bytes_checked": true,
+  "scheduled_pair_verified": true
 }
