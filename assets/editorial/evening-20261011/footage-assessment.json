@@ -1,0 +1,40 @@
+{
+  "verified_at": "2026-10-11T12:23:36.393Z",
+  "source_page": "https://www.instagram.com/p/DeUMZA3FBN2/",
+  "embedded_by": "https://www.suara.com/bola/2026/10/10/220000/belum-terkalahkan-di-super-league-shin-tae-yong-bawa-persija-ke-puncak-klasemen",
+  "creator": "persija",
+  "creator_verified": true,
+  "source_http": 200,
+  "source_content_type": "video/mp4",
+  "source_bytes": 18852237,
+  "source_sha256": "2980b6ed768744cd240da65a8b390afa3cc43ad504cabd3c9936603aaed0d3c0",
+  "duration": 75.926395,
+  "video": {
+    "width": 720,
+    "height": 1280
+  },
+  "audio_track_present": true,
+  "source_caption": "Malam Minggu Full Senyum #PersijaDay #BRISuperLeague #Persija",
+  "visual_review": {
+    "method": "15 actual frames at approximately0,5,10,...70seconds",
+    "contact_sha256": "8fd1dd6f430cab71b3e98833dbf44d2b103011ad1f78e19913f4ab22f900df85",
+    "observations": [
+      "0–5s football pitch and supporters with Match day / Winning Moment label",
+      "10s authentic Loncar orange Persija jersey celebrating after match",
+      "15s Jeremejeff face and20s Kwon orange13 in postmatch celebrations",
+      "55–60s team posing with supporters;65–70s club closing graphic"
+    ],
+    "not_live_goal_footage": true
+  },
+  "spoken_transcript_verified": false,
+  "audio_verification_result": "Native audio inspection returned audio content omitted because audio input is not supported; no spoken transcript or audio-clearance claim invented.",
+  "shared_adapter_blocker": {
+    "renderer": "/opt/stadione-current/src/lib/cms/engine-media.ts:342",
+    "adapter": "/opt/stadione-engine-work/scripts/cms-produce-slot.cjs:57",
+    "observed": "renderReel returns audit without output_sha256; committed schedule compares preview sha against prepared.render_audit[i].output_sha256. This conflicts before any CMS mutation.",
+    "actual_reel_render_attempted": false,
+    "no_reel_publish_attempted": true,
+    "no_gate_bypass": true
+  },
+  "decision": "Keep verified CAROUSEL on original20WIB slot. Downloadable footage exists, but it is not fully verified for required transcript/audio or usable via current byte-audit adapter; do not falsely describe it as nonexistent."
+}
