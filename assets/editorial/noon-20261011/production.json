@@ -1,0 +1,311 @@
+{
+  "plan_key": "2026-10-11:match-noon",
+  "event_key": "laser-cup-lhung-asan-community-20261011",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "laser",
+    "lhung"
+  ],
+  "format_reason": "Original communityUGC REEL slot13:00WIB retained; no verified downloadable current Laser Cup I footage, transcript, scene timestamps or evidence URLs found. Fresh pool exposes generic Bing/channel indices or already-covered Pupuk Kaltim footage. Directed YouTube/TikTok/Facebook/Instagram current-event search found reports/photo pages, not a verified current match video. Official PPID contains only generic Facebook page widget; independent match page has source photo, no video embed. Maidi explicitly requires organizer permission for live streaming; no permission fabricated and no live-stream replay repackaged. Use verified authentic-photo carousel on same pillar/time, never AI video.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "FEATURE",
+      "title": "Laser Cup Membuka Panggung Sepak Bola Gampong",
+      "dek": "Tiga puluh klub Abdya bertemu di Lhung Asan. Laser Cup I mempertemukan bakat pemain lokal, kerja pemuda, dan peluang usaha warga di sekitar lapangan.",
+      "caption": "LASER CUP MEMBUKA PANGGUNG SEPAK BOLA GAMPONG\n\nSebanyak 30 klub dari Aceh Barat Daya ikut Laser Cup I di Lapangan Gampong Lhung Asan, Blangpidie. Turnamen dibuka pada Kamis, 8 Oktober 2026.\n\nDi balik persaingan antarklub, ada ruang bagi pemain lokal dan pemuda penyelenggara untuk menunjukkan kemampuan. Aktivitas pertandingan juga diharapkan memberi peluang bagi pedagang di sekitar lapangan.\n\n#Stadione #Tarkam #LaserCup #Abdya #SepakBolaKomunitas",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Tiga Puluh Klub, Satu Lapangan",
+          "text": "Lapangan Gampong Lhung Asan menjadi titik temu 30 klub sepak bola dari Aceh Barat Daya. Mereka mengikuti Laser Cup I yang dibuka pada Kamis, 8 Oktober 2026, di Kecamatan Blangpidie. Seluruh peserta berasal dari Abdya. Pertemuan antargampong ini membawa pemain lokal ke dalam satu kompetisi, sementara pemuda Lhung Asan mengambil peran sebagai penyelenggara.",
+          "claim_ids": [
+            "opening",
+            "organizers"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "development",
+          "heading": "Bakat yang Berangkat dari Gampong",
+          "text": "Saat membuka turnamen, Plt Sekda Abdya Amrizal menempatkan pembinaan pemain muda sebagai salah satu harapan penyelenggaraan. Ia mencontohkan Persada Abdya U-17 yang menjuarai Piala Soeratin Zona Sumatra dan mencapai delapan besar nasional di IKN. Capaian itu menjadi rujukannya ketika berharap pemain dari lapangan gampong mendapat kesempatan berkembang. Laser Cup memberi ruang bertanding bagi klub lokal.",
+          "claim_ids": [
+            "development",
+            "opening"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "community",
+          "heading": "Pertandingan dan Usaha Warga",
+          "text": "Perhatian Amrizal juga tertuju pada masyarakat di sekitar lapangan. Menurutnya, aktivitas turnamen dapat memberi peluang bagi pedagang kecil dan pelaku UMKM. Bagi pemuda Lhung Asan, penyelenggaraan Laser Cup sekaligus menunjukkan kemampuan mereka mengadakan kompetisi yang melibatkan klub-klub dari wilayah Abdya.",
+          "claim_ids": [
+            "economy",
+            "organizers"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "rules",
+          "heading": "Aturan Bersama Menjaga Turnamen",
+          "text": "Keuchik Lhung Asan Maidi meminta peserta mematuhi regulasi panitia dan mengingatkan bahwa siaran langsung membutuhkan izin. Ketua panitia Robbi Sugara mengajak pemain serta penonton menjaga keamanan dan ketertiban. Ia membuka kemungkinan Laser Cup II apabila edisi pertama berjalan lancar dan mendapat dukungan masyarakat.",
+          "claim_ids": [
+            "rules",
+            "future"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261006-gordon-feature",
+        "goal-20261010-bordeaux-ownership-collapse-feature"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_NOON_EDITOR_20261011",
+        "reviewed_at": "2026-10-11T05:10:07.702Z",
+        "article_digest": "a5713577a82a3d185ca19d65b2ef672f49874dd19835203719b1fbc42b6f869a"
+      }
+    },
+    "sources": [
+      {
+        "id": "primary",
+        "url": "https://ppid.acehbaratdayakab.go.id/news/post/dibuka-plt-sekda-abdya-30-klub-adu-gengsi-di-laser-cup-i-lhung-asan",
+        "primary": true,
+        "publisher_group": "PEMKAB_ABDYA",
+        "published_at": "2026-10-09",
+        "retrieved_at": "2026-10-11T05:11:43.861Z",
+        "sha256": "5d93b587117ef937cf3c1cf1a96479faaf4fead89c819c51e0568f4fbc85fb9b"
+      },
+      {
+        "id": "waspada",
+        "url": "https://www.waspada.id/berita/laser-cup-i-bergulir-30-klub-tarkam-abdya-berebut-panggung-talenta-muda",
+        "primary": false,
+        "publisher_group": "WASPADA",
+        "published_at": "2026-10-08T16:40:05Z",
+        "retrieved_at": "2026-10-11T05:11:43.861Z",
+        "sha256": "38c46049e8c4cd55bfc5c481d313f59011baf91f3e717137d33c34bd842c0dc1"
+      },
+      {
+        "id": "dialeksis",
+        "url": "https://dialeksis.com/olahraga/30-klub-sepak-bola-abdya-berebut-gelar-juara-di-laser-cup-i-2026/",
+        "primary": false,
+        "publisher_group": "PEMKAB_ABDYA",
+        "published_at": "2026-10-09T12:00:00Z",
+        "retrieved_at": "2026-10-11T05:11:43.861Z",
+        "sha256": "d70220800652141bea70f0cd58a8ee9256539b402c97194314389752ee109343"
+      },
+      {
+        "id": "game",
+        "url": "https://www.thejurnal.id/news/laser-cup-1-psp-96-singkirkan-barona-fc-lewat-drama-adu-penalti/index.html",
+        "primary": false,
+        "publisher_group": "THE_JURNAL",
+        "published_at": "2026-10-10T12:39:00Z",
+        "retrieved_at": "2026-10-11T05:11:43.861Z",
+        "sha256": "fb90e0c82f4f714743eb73cf83b86b53ce69a1c25e85cfef804ca3aae808ad94"
+      }
+    ],
+    "claims": [
+      {
+        "id": "opening",
+        "text": "Laser Cup I involves30local clubs from Abdya at Lapangan Gampong Lhung Asan Kecamatan Blangpidie Aceh Barat Daya, opened Thursday8October2026. Event date known only to day precision, not actual kickoff time. All clubs from Abdya.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "18cc050a755e8b3fa7ce53e13d5e1747b10c6f349cb7af0fa1640f12ae544448"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "459c61532885a06ad671fa604c3436c977752adbb3bb09a0b238ee4cc11e6353"
+          },
+          {
+            "source_id": "dialeksis",
+            "quote_sha256": "1bc59170043067611fbcced61495f53ef8993e4b25d622ffd6bc9bb91ef682ae"
+          }
+        ]
+      },
+      {
+        "id": "organizers",
+        "text": "Youth from Lhung Asan organize Laser Cup I with stated ambition for its reach across Abdya; Robbi Sugara committee chair. No inflated social metrics or declared public virality.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "de9b05fed1348576e6beb9e8a3e7c8d97e391a7d907daa39c965853df3675d7d"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "252c13b38658121751c832e39b50ffb561665404202edb5fd74fc9e330d7aaf9"
+          }
+        ]
+      },
+      {
+        "id": "development",
+        "text": "At opening Amrizal voiced youth development aspiration and cited Persada Abdya U-17 winning Soeratin U-17 Sumatra zone and reaching national quarterfinals/eight in IKN. Public prose explicitly attributes this example to Amrizal; no claim of automatic professional recruitment or unverified future outcome.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "ff2e9bcd53f1311e2544316fca79a0469c6c9212cc30e846ad9eef9002e62661"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "1c810e8142c8ab8efc8d2747ca6039b046393d0cf2b52fadc985e7eb454db8ed"
+          }
+        ]
+      },
+      {
+        "id": "economy",
+        "text": "Amrizal expected activity to offer opportunities for small vendors and MSMEs near pitch. This is attributed anticipated benefit, not measured income rise. No unsourced economic numbers.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "2955e16864b68780a1a809a5daf1f6724ca90c67f1abe143aac4956ddc65a17b"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "1e65c91f8b46fb2063c1fedc414ce9fef1f6fb4b9185c2c9ffb8d4b5a6d879ef"
+          }
+        ]
+      },
+      {
+        "id": "rules",
+        "text": "Keuchik Maidi asked participants to follow committee rules, including live-streaming only with permission; organizers asked players and spectators to keep security/order. No claim of written public footage permission already given.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "fb4d0d3510dead6f5250950363ad148c9b7bea5f2ac0d034755a89cdaef00164"
+          },
+          {
+            "source_id": "primary",
+            "quote_sha256": "a75f4ef344c019db9dfafc2d19e67e1929aa51def3a361ddd40b5b9f6ad5ba37"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "49971012be8d81f34da0cfec8a52da3d7ff67ba6f8d5f109d66a997f6d0b5ce7"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "19668cdea6d1bb86b7258d0f925db9b64160193d0cc701be2d1e1578bb69fc60"
+          }
+        ]
+      },
+      {
+        "id": "future",
+        "text": "Chair Robbi expressed conditional possibility of Laser Cup II if first edition runs successfully with community response/support; no fixed future fixture or final winner claimed.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "4596d452ae32fa8288f266d966e84bdfbbe28e617d9c273d4ed1d20231e4e940"
+          },
+          {
+            "source_id": "waspada",
+            "quote_sha256": "ea8b47b42b4d629b28475cf7563fb991ece02f73cf048cd9b380bb4273685c89"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Laser Cup Membuka Panggung Sepak Bola Gampong",
+        "body": "Tiga puluh klub Abdya bertemu di Lhung Asan. Laser Cup I mempertemukan bakat pemain lokal, kerja pemuda, dan peluang usaha warga di sekitar lapangan.",
+        "claim_ids": [
+          "opening",
+          "organizers"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Tiga Puluh Klub, Satu Lapangan",
+        "body": "Lapangan Gampong Lhung Asan menjadi titik temu 30 klub sepak bola dari Aceh Barat Daya. Mereka mengikuti Laser Cup I yang dibuka pada Kamis, 8 Oktober 2026, di Kecamatan Blangpidie. Seluruh peserta berasal dari Abdya. Pertemuan antargampong ini membawa pemain lokal ke dalam satu kompetisi, sementara pemuda Lhung Asan mengambil peran sebagai penyelenggara.",
+        "claim_ids": [
+          "opening",
+          "organizers"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Bakat yang Berangkat dari Gampong",
+        "body": "Saat membuka turnamen, Plt Sekda Abdya Amrizal menempatkan pembinaan pemain muda sebagai salah satu harapan penyelenggaraan. Ia mencontohkan Persada Abdya U-17 yang menjuarai Piala Soeratin Zona Sumatra dan mencapai delapan besar nasional di IKN. Capaian itu menjadi rujukannya ketika berharap pemain dari lapangan gampong mendapat kesempatan berkembang. Laser Cup memberi ruang bertanding bagi klub lokal.",
+        "claim_ids": [
+          "development",
+          "opening"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Pertandingan dan Usaha Warga",
+        "body": "Perhatian Amrizal juga tertuju pada masyarakat di sekitar lapangan. Menurutnya, aktivitas turnamen dapat memberi peluang bagi pedagang kecil dan pelaku UMKM. Bagi pemuda Lhung Asan, penyelenggaraan Laser Cup sekaligus menunjukkan kemampuan mereka mengadakan kompetisi yang melibatkan klub-klub dari wilayah Abdya.",
+        "claim_ids": [
+          "economy",
+          "organizers"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Aturan Bersama Menjaga Turnamen",
+        "body": "Keuchik Lhung Asan Maidi meminta peserta mematuhi regulasi panitia dan mengingatkan bahwa siaran langsung membutuhkan izin. Ketua panitia Robbi Sugara mengajak pemain serta penonton menjaga keamanan dan ketertiban. Ia membuka kemungkinan Laser Cup II apabila edisi pertama berjalan lancar dan mendapat dukungan masyarakat.",
+        "claim_ids": [
+          "rules",
+          "future"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "HISTORICAL",
+    "event_at": "2026-10-08",
+    "context": {
+      "who": "Thirty Abdya local clubs, Lhung Asan youth organizers, committee chairman Robbi Sugara, Amrizal and Keuchik Maidi",
+      "what": "Community feature on verified Laser Cup I organization, youth development hopes and local economy, not a live score or final tournament outcome",
+      "when": "OpeningThursday8October2026; exact kickoff hour unknown/date-only. Official reportOctober9, refreshed regional reportOctober9 19:00WIB and genuine match photographOctober10. RoutineOctober11 13:00WIB",
+      "where": "Lapangan Gampong Lhung Asan Kecamatan Blangpidie Kabupaten Aceh Barat Daya, Aceh",
+      "why": "Fresh SerpAPI pool checked for community pillar; only clear ongoing village tournament pool item Pupuk Kaltim is already a CMS event and excluded. Targeted full-source research selected actual local Laser Cup I coverageOctober9/10, preserving pillar rather than switching to unrelated elite football trends",
+      "how": "Complete source-led feature assembled from full official PPID and independent Waspada onsite report; Dialeksis official-handout-based text counted with same government publisher group, not additional independent confirmation; real game photograph verified against reporter caption, no uncorroborated result claims"
+    },
+    "assignment": {
+      "pillar": "Tarkam & Komunitas",
+      "angle": "UGC / kehidupan sepak bola gampong — verified community tournament feature and authentic match photo",
+      "why_now": "Deployed getDailySportsPool fetched2026-10-11T05:02:57.704Z. Community candidate Pupuk Kaltim excluded as existing CMS topic; directed follow-up found Laser Cup I freshOctober9 19:00WIB regional coverage and October10 onsite photo/report, within48h. No invented trend metric; preserves13:00WIB normal community slot."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/laser-cup-lhung-asan-community-20261011/source-a2e956239a82530b78b517bae0e31669a94754e528e766f1d970a7bc6b6882a4.jpg",
+      "type": "image",
+      "original_photo_url": "https://www.thejurnal.id/files/images/20261010-pxl-20261010-100448842-2.jpg",
+      "source_page_url": "https://www.thejurnal.id/news/laser-cup-1-psp-96-singkirkan-barona-fc-lewat-drama-adu-penalti/index.html",
+      "credit": "Syamsurizal/The Jurnal, actual October10 Laser Cup I match at Lhung Asan. Caption identifies Andi India in green dribbling against Barona FC; no invented close-up or misidentification as committee officials.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence. Photographer/source credit retained in media metadata; no claim of organizer live-stream permission.",
+      "scope": "Stadione editorial article and Instagram photo carousel, not live-streamed footage",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/laser-cup-lhung-asan-community-20261011/source-a2e956239a82530b78b517bae0e31669a94754e528e766f1d970a7bc6b6882a4.jpg",
+        "headline": "Laser Cup Membuka Panggung Sepak Bola Gampong",
+        "dek": "Tiga puluh klub Abdya bertemu di Lhung Asan. Laser Cup I mempertemukan bakat pemain lokal, kerja pemuda, dan peluang usaha warga di sekitar lapangan.",
+        "source_label": "PPID.ACEHBARATDAYAKAB.GO.ID",
+        "reviewed_at": "2026-10-11T05:18:24.978Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/laser-cup-lhung-asan-community-20261011/2f6b31f207810b5c81522a1df01a1dc944c7cd7e839073d2da009d0928192f40.jpg",
+        "sha256": "2f6b31f207810b5c81522a1df01a1dc944c7cd7e839073d2da009d0928192f40"
+      }
+    }
+  },
+  "editorial_review": "Four substantive feature paragraphs written before lossless pagination. Local30-club lead -> player-development context attributed to opening speaker -> economic opportunity attributed rather than quantified -> governance and conditional next edition. Recorded Goal FEATURE lessons used for thesis/context and preserved uncertainty; no generic advice, fake editorial headings, quota filler or fake quotes. Actual photo is October10 real village match by Syamsurizal; no result/penalty/card figures from single-source match report are used. Primary PPID read through TDHTTP200 on non-www valid-TLS host; browser failed and www hostname TLS mismatch were not bypassed. Waspada full own report/photo credit independent; Dialeksis Prokopim photo/shared official dispatch treated as same government provenance. The Aceh Post browser read but VPS403 not used as file evidence; not counted independent. Full published timestamps used where available; PPID only date precision, never invented kickoff hour. Freshness establishedOctober9 19:00WIB and October10 19:39WIB, not by refreshing old publication dates. No public source quotations or bodies copied; private evidence only.",
+  "prepared_cover_sha256": "2f6b31f207810b5c81522a1df01a1dc944c7cd7e839073d2da009d0928192f40",
+  "source_photo_sha256": "a2e956239a82530b78b517bae0e31669a94754e528e766f1d970a7bc6b6882a4"
+}

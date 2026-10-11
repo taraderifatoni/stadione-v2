@@ -1,0 +1,25 @@
+{
+  "cover_reviewed_at": "2026-10-11T05:18:24.978Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "native_reference_image_generation": true,
+  "native_output": "/workspace/generated_images/exec-8b139378-2fc6-4334-853e-df9efbdffa7d.png",
+  "style_reference": "assets/editorial/evening-20261009/cahya-cover.jpg",
+  "actual_photo": "The Jurnal actual Laser Cup match photo October10 by Syamsurizal. Authentic Andi India dribbling against a yellow-white opponent; faces, jerseys and action retained. Editorial background uses the actual rural pitch, crowd, palms and tents rather than an unrelated stadium.",
+  "faces_match_authentic_reference": true,
+  "charcoal_cream_stadione_red_collage": true,
+  "headline_wrapped": true,
+  "source_label": "PPID.ACEHBARATDAYAKAB.GO.ID",
+  "page_count": 5,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "jpeg": {
+    "width": 1080,
+    "height": 1350,
+    "srgb": true,
+    "quality": 95,
+    "chroma": "4:4:4",
+    "alpha": false
+  },
+  "all_body_slides_reviewed": false,
+  "remaining": "Shared preview and actual JPEG visual review before scheduling"
+}
