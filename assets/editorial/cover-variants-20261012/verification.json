@@ -1,0 +1,10 @@
+{
+  "verified_at_utc": "2026-10-11T23:58:45.143249+00:00",
+  "commit": "e7555955d69f31298ca1057f46c5129a9b4df7ba",
+  "github_head_identical": true,
+  "committed_reference_bytes_identical": true,
+  "catalog_sha256": "475f16e542071eb096a14d2a70950e340d369148298464d17049847683a48267",
+  "release_unchanged": "/opt/stadione-releases/ffe41a7",
+  "no_cms_meta_mutation": true,
+  "no_schedule_or_credential_change": true
+}
