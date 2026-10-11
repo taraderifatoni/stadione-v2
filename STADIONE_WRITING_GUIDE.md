@@ -39,3 +39,8 @@ Validasi node scripts/qa-writing-references.cjs editorial/goal-readings.json. Up
 VPS belum memiliki konfigurasi provider LLM untuk menulis naskah sendiri. Engine menerima naskah source-led dari editor/agent yang menjalankan produksi, lalu melakukan pagination, sinkronisasi artikel dan gate bersama. Rutinitas bacaan dijalankan automation Codex yang dapat membaca web, bukan scraper yang mengaku belajar dari snippet. Tidak mengklaim penilaian semantik sempurna atau pelatihan ulang model.
 
 Posting historis tidak dimutasi oleh rollout ini. Packet lama tanpa article tidak dapat dipakai untuk publikasi carousel baru. Siapkan artikel baru dan render ulang lewat standar yang sama, tanpa mengganti jadwal rutin.
+
+
+## Variasi komposisi cover
+
+Untuk setiap cover BARU gunakan enam varian dan aturan rotasi di STADIONE_COVER_VARIANTS.md serta editorial/cover-variants.json. Sebelum image generation jalankan node scripts/cms-cover-brief.cjs --input input.json --history cms-before.json dari checkout committed. Helper read-only memilih komposisi yang tidak sama dengan dua cover terakhir dan memberi prompt sesuai artikel/foto/pagination. Tambahkan variant_id dan variant_standard ke media.editorial_cover sebelum review/preview; jangan memasukkan metadata ke packet yang sudah terjadwal atau terbit. Foto asli dan crop varian terpilih menjadi referensi, bukan selalu cover KLASIK. Skor HASIL_LAGA hanya untuk FINAL terverifikasi dengan urutan tim yang diperiksa editor. Warna/font/karakter koran tetap, halaman isi/article/publisher/jadwal tidak berubah. Papan contoh bukan gambar produksi.

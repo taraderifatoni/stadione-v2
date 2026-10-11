@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "updated_at": "2026-10-12",
+  "scope": "Composition selection for newly produced covers; does not mutate existing CMS items or replace article renderer.",
+  "shared": {
+    "canvas": {
+      "width": 1080,
+      "height": 1350
+    },
+    "palette": {
+      "cream": "#eee9dd",
+      "charcoal": "#141414",
+      "red": "#84102d"
+    },
+    "typography": "Same approved modern heavy condensed sans headline family, modern sans deck. Copy font character from approved reference rather than choosing a different family per template.",
+    "horizontal_safe_margin_px": 72,
+    "deck_min_font_px": 32,
+    "source_min_font_px": 24,
+    "authentic_photo": true,
+    "source_on_cover_only": true,
+    "final_page_count_required": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "rotation": {
+    "balance_window": 6,
+    "legacy_variant": "KLASIK",
+    "manual_override_allowed": true,
+    "selection_is_read_only": true,
+    "avoid_last_posts": 2
+  },
+  "variants": [
+    {
+      "id": "KLASIK",
+      "name": "Kolase klasik",
+      "tone": "DARK",
+      "use": "Berita utama dan momen besar.",
+      "layout": "Masthead merah besar di atas, atlet warna asli di tengah, sobekan koran diagonal, headline cream kompak pada bidang charcoal bawah. Ini gaya existing, tidak wajib dipakai setiap post."
+    },
+    {
+      "id": "KOLOM",
+      "name": "Kolom koran",
+      "tone": "LIGHT",
+      "use": "Feature, profil, komunitas dan berita yang memerlukan konteks.",
+      "layout": "Cream dominan, masthead lebih kecil, headline charcoal pada kolom kiri, atlet cutout di kanan, garis burgundy vertikal. Dek rapat di bawah judul. Jangan memakai susunan diagonal klasik."
+    },
+    {
+      "id": "FOTO_DOMINAN",
+      "name": "Foto dominan",
+      "tone": "DARK",
+      "use": "Aksi, emosi pertandingan, selebrasi, foto yang kuat.",
+      "layout": "Foto/subjek menjadi sekitar dua pertiga bidang, latar foto charcoal, masthead kecil, headline cream kiri bawah dengan gradient gelap halus. Satu garis merah tipis, tekstur koran ringan; tidak penuh sobekan diagonal."
+    },
+    {
+      "id": "JUDUL_UTAMA",
+      "name": "Judul utama",
+      "tone": "LIGHT",
+      "use": "Kabar penting, keputusan, kutipan substansial dan headline yang kuat.",
+      "layout": "Cream dominan, masthead kecil, headline charcoal besar di bagian atas, foto atlet di paruh bawah berinteraksi dengan batas tipografi. Garis merah horizontal, dek kompak dekat headline, bukan headline selalu di bawah."
+    },
+    {
+      "id": "PORTRAIT_MERAH",
+      "name": "Portrait merah",
+      "tone": "RED",
+      "use": "Tokoh, prestasi individu, profil dan pembahasan kontribusi pemain.",
+      "layout": "Portrait autentik hitam putih besar di kiri, bidang burgundy bertekstur koran di kanan untuk headline cream. Masthead kecil; gunakan beberapa serpihan cream, tidak mengulang stadium diagonal. Wajah tidak digambar ulang."
+    },
+    {
+      "id": "HASIL_LAGA",
+      "name": "Hasil laga",
+      "tone": "LIGHT",
+      "use": "Hanya hasil FINAL dengan skor dan urutan tim yang terverifikasi.",
+      "layout": "Cream dengan skor burgundy besar sebagai pusat hierarki. Nama kedua tim rapat di kiri/kanan angka, athlete cutout kanan bawah, headline charcoal lebih kecil di kiri. Jangan menciptakan skor/statistik sebagai dekorasi.",
+      "requires_verified_result": true
+    }
+  ]
+}

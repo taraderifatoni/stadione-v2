@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "created_at": "2026-10-11T23:57:38.649Z",
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "preview_only": true,
+  "not_production_1080px_artwork": true,
+  "native_output": "/workspace/generated_images/exec-fc070897-e701-48f8-bb8d-15583cc044b7.png",
+  "reference_photo": "assets/editorial/evening-20261011/persija-source.jpg",
+  "reference_photo_sha256": "de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529",
+  "reference_style": "assets/editorial/evening-20261011/persija-cover.jpg",
+  "sample_headline": "Persija Menutup Kebuntuan dengan Empat Gol",
+  "sample_deck": "Dua gol Loncar membantu Persija menang 4–0 atas PSIM.",
+  "sample_source": "ILEAGUE.ID",
+  "sample_page_count": 5,
+  "sample_result": {
+    "left": "PERSIJA",
+    "score": "4–0",
+    "right": "PSIM"
+  },
+  "all_six_visually_reviewed": true,
+  "distinct_layouts": true,
+  "approved_font_character_preserved": true,
+  "cream_charcoal_burgundy_preserved": true,
+  "authentic_reference_identity_preserved": true,
+  "no_new_fact_or_athlete_invented": true,
+  "source_and_page_count_visible": true,
+  "no_edition_or_promotional_footer": true,
+  "board": {
+    "file": "variants-board.jpg",
+    "width": 1374,
+    "height": 1145,
+    "sha256": "c75189cd4335b0f3d1fa8c155ac0f1fa46dd501fd3f87f773c6ad92d301e8cbc"
+  },
+  "crops": [
+    {
+      "variant_id": "KLASIK",
+      "file": "klasik.jpg",
+      "width": 424,
+      "height": 531,
+      "sha256": "8dba39d27f08a39fd724aeb446453b8bb7032852ac7f39587ca4bbc830839771",
+      "crop": {
+        "left": 30,
+        "top": 34,
+        "width": 424,
+        "height": 531
+      }
+    },
+    {
+      "variant_id": "KOLOM",
+      "file": "kolom.jpg",
+      "width": 422,
+      "height": 531,
+      "sha256": "069738c8e6d85241a5dcdf9627643ccac3d22fd96ba7f16c024d7d24c9f2de07",
+      "crop": {
+        "left": 477,
+        "top": 34,
+        "width": 422,
+        "height": 531
+      }
+    },
+    {
+      "variant_id": "FOTO_DOMINAN",
+      "file": "foto_dominan.jpg",
+      "width": 424,
+      "height": 531,
+      "sha256": "485bf9c4999fc09e67db2d115fa6c42b40dcf112ef22a43b53def764340dbd70",
+      "crop": {
+        "left": 923,
+        "top": 34,
+        "width": 424,
+        "height": 531
+      }
+    },
+    {
+      "variant_id": "JUDUL_UTAMA",
+      "file": "judul_utama.jpg",
+      "width": 424,
+      "height": 525,
+      "sha256": "7e591df0d703bf8e3645754b9a83daf15493f3245761ed005aab1f83d161e52d",
+      "crop": {
+        "left": 30,
+        "top": 603,
+        "width": 424,
+        "height": 525
+      }
+    },
+    {
+      "variant_id": "PORTRAIT_MERAH",
+      "file": "portrait_merah.jpg",
+      "width": 422,
+      "height": 525,
+      "sha256": "7ad087972fe5c1c34383edb2192a90ab6f7c4c1766feead031c989546d61dbcf",
+      "crop": {
+        "left": 477,
+        "top": 603,
+        "width": 422,
+        "height": 525
+      }
+    },
+    {
+      "variant_id": "HASIL_LAGA",
+      "file": "hasil_laga.jpg",
+      "width": 424,
+      "height": 525,
+      "sha256": "f8bcf37da8c90b7da196f8987f3bf9f45fa73bb0e2987688f3ef6108ce0d215e",
+      "crop": {
+        "left": 923,
+        "top": 603,
+        "width": 424,
+        "height": 525
+      }
+    }
+  ],
+  "production_instruction": "These are composition references only. Regenerate full-resolution1080x1350 from actual source photo and exact canonical title/deck/source/page count. Review font/face/wrapping and prohibit subject occluding glyphs/score/source. Shared publisher audit remains mandatory; no existing item changed."
+}
