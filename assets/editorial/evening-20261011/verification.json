@@ -1,0 +1,267 @@
+{
+  "verified_at": "2026-10-11T12:25:11.078Z",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "preparation_commit": "5e72c4effc0f82e4ec261c4e77a75289168b787e",
+  "social": {
+    "id": "8443837d-bc9e-41c2-8b56-975aae582630",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-11:match-pm",
+    "scheduled_at": "2026-10-11T13:00:00+00:00",
+    "format": "CAROUSEL",
+    "parent_id": "a004ece2-0ed7-40d6-bba3-9038acbc96ac",
+    "publish_error": null
+  },
+  "article": {
+    "id": "a004ece2-0ed7-40d6-bba3-9038acbc96ac",
+    "status": "SCHEDULED",
+    "slug": "persija-menutup-kebuntuan-dengan-empat-gol-8443837d",
+    "scheduled_at": "2026-10-11T13:00:00+00:00",
+    "body_same": true,
+    "dek_same": true,
+    "hero": [
+      {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persija-psim-loncar-postmatch-20261010/source-de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529.jpg",
+        "type": "image",
+        "credit": "Dok. Persija melalui Suara.com",
+        "clean_photo": true,
+        "text_overlay": false
+      }
+    ],
+    "public_url": "https://stadione.pro/news/persija-menutup-kebuntuan-dengan-empat-gol-8443837d"
+  },
+  "article_digest": "1436b19f33732c91d0be0024010a2b9c2bb66c62f3f5d8050b4b2455361647ba",
+  "article_words": 174,
+  "packet_audit": [],
+  "publication_audit": [],
+  "reference_audit": [],
+  "writer_brief_is_only_packet_addition": true,
+  "other_rows_unchanged": 69,
+  "paired_article_only_added": true,
+  "public_jpeg_bytes_identical": true,
+  "source_mirror_bytes_identical": true,
+  "website_photo_sha256": "de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529",
+  "website_photo_text_overlay": false,
+  "publisher_last_result_success": true,
+  "assets": [
+    {
+      "slide": 1,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/8443837d-bc9e-41c2-8b56-975aae582630/f830a88864a60bd1bfcd3b5c725e582636ea81999fdf64aded38cb3998b1e938-1.jpg",
+      "sha256": "29735dba9f41b3226369d7a9366b6d0be3fe57cbe78eb68c38b20ceb1d58d542",
+      "render_audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_collage_cover",
+        "safe_wrap": true,
+        "source_label": "ILEAGUE.ID",
+        "output_sha256": "29735dba9f41b3226369d7a9366b6d0be3fe57cbe78eb68c38b20ceb1d58d542",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "authentic_photo": true,
+        "no_edition_label": true,
+        "cover_input_sha256": "265854672a23968882dfa2adfc27536fb27b2571c612902fa179bb40c15c6744",
+        "editorial_background": true,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 2,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/8443837d-bc9e-41c2-8b56-975aae582630/f830a88864a60bd1bfcd3b5c725e582636ea81999fdf64aded38cb3998b1e938-2.jpg",
+      "sha256": "5fa9cecdab89570aded7fc46ea097bb46b96d65c31efcd9db9ed5f809b48cb08",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 808,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 924,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 352,
+        "divider_top": 381,
+        "text_sha256": "33520ce0caae478e9f4376f9dad80d886889d6cb7e2b064b7fb45a1cbf37e727",
+        "source_label": null,
+        "output_sha256": "5fa9cecdab89570aded7fc46ea097bb46b96d65c31efcd9db9ed5f809b48cb08",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 3,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/8443837d-bc9e-41c2-8b56-975aae582630/f830a88864a60bd1bfcd3b5c725e582636ea81999fdf64aded38cb3998b1e938-3.jpg",
+      "sha256": "1b6160aa2f04cb9a46cafebae4ad5ddae0a231176fed5e06d390d10c3b71a5e5",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 887,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 932,
+            "height": 458,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 458,
+        "divider_top": 300,
+        "text_sha256": "c340d6b3f721ce4af1341978b1b90d7937d2807122e4b32791428d85bd342a8d",
+        "source_label": null,
+        "output_sha256": "1b6160aa2f04cb9a46cafebae4ad5ddae0a231176fed5e06d390d10c3b71a5e5",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 59,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 4,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/8443837d-bc9e-41c2-8b56-975aae582630/f830a88864a60bd1bfcd3b5c725e582636ea81999fdf64aded38cb3998b1e938-4.jpg",
+      "sha256": "cb180a7cfcce5b6149f7bbc263f853f113cc0bc443eb5cd9fbe68e1a23f00bf9",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 857,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 902,
+            "height": 511,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 511,
+        "divider_top": 381,
+        "text_sha256": "5fc20254e7ba03db16ca438d0db00c89810be6dc7b57f21625c149902ccf6d2f",
+        "source_label": null,
+        "output_sha256": "cb180a7cfcce5b6149f7bbc263f853f113cc0bc443eb5cd9fbe68e1a23f00bf9",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 5,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/8443837d-bc9e-41c2-8b56-975aae582630/f830a88864a60bd1bfcd3b5c725e582636ea81999fdf64aded38cb3998b1e938-5.jpg",
+      "sha256": "77a2a0ec5924cc9e78a3ca92e62bdb9f7ecb4ae07c9a90e3535ca7032fcbd8be",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 652,
+            "height": 139,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 420,
+            "width": 905,
+            "height": 140,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 140,
+        "divider_top": 380,
+        "text_sha256": "17cafd65da9d46a2cd7221b21ca241d75ec927a91869d10c29b3cd26db0c00ee",
+        "source_label": null,
+        "output_sha256": "77a2a0ec5924cc9e78a3ca92e62bdb9f7ecb4ae07c9a90e3535ca7032fcbd8be",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 139,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    }
+  ],
+  "durable_attempts": 0,
+  "live_ig_count": 22,
+  "live_duplicate_count": 0,
+  "one_social_event_identity": true,
+  "goal_sha256": "eb8a5debfb8fa471f6e5d917f0eaa1504fc521ee193115108fc39fec3efa1b11",
+  "goal_committed_runtime_identical": true,
+  "no_other_slot_mutation": true,
+  "published_history_unchanged": true,
+  "publisher_timer_active": true,
+  "no_direct_meta_publish": true,
+  "publication_still_future": true,
+  "idempotency_verified": true,
+  "idempotence_replay_all_rows_unchanged": 71,
+  "cover_public_crawler_user_agent_check": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 870679,
+    "sha256": "29735dba9f41b3226369d7a9366b6d0be3fe57cbe78eb68c38b20ceb1d58d542",
+    "note": "Public HTTP byte check only; not Meta ingestion/publish success."
+  }
+}
