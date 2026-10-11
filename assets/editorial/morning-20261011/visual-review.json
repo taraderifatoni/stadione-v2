@@ -1,0 +1,25 @@
+{
+  "cover_reviewed_at": "2026-10-11T00:13:56.075Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "native_reference_image_generation": true,
+  "native_output": "/workspace/generated_images/exec-9652b7d2-b004-4b44-b43d-25b1e3a0de2b.png",
+  "style_reference": "assets/editorial/evening-20261009/cahya-cover.jpg",
+  "actual_photo": "Real Madrid official October10 match gallery, authentic Yan Diomande celebration in white jersey. Subject face/braids/expression retained; only editorial background/collage modified.",
+  "faces_match_authentic_reference": true,
+  "charcoal_cream_stadione_red_collage": true,
+  "headline_wrapped": true,
+  "source_label": "REALMADRID.COM",
+  "page_count": 5,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "jpeg": {
+    "width": 1080,
+    "height": 1350,
+    "srgb": true,
+    "quality": 95,
+    "chroma": "4:4:4",
+    "alpha": false
+  },
+  "all_body_slides_reviewed": false,
+  "remaining": "Shared preview and actual JPEG visual review before scheduling"
+}

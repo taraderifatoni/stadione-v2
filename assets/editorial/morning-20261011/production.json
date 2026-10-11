@@ -1,0 +1,336 @@
+{
+  "plan_key": "2026-10-11:match-am",
+  "event_key": "madrid-villarreal-diomande-reaction-20261010",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "madrid",
+    "villarreal"
+  ],
+  "format_reason": "Preserve Sunday08:00WIB Sepak Bola Eropa Reaction slot. Actual current highlights checked: RTVE17262054 metadata geolocalizado=true/hasDRM=true; official Movistar YouTubeThJ0arJjWAA statusUNPLAYABLE, uploader limited countries AD/ES and no streamingData; Sky Brightcove playback403 ACCESS_DENIED DOMAIN. No accessible verified downloadable footage/transcript from these sources; do not circumvent DRM/region/access controls. Use authentic current-match photo and verified carousel instead; no AI video.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Diomande Menangkan Madrid, Vinicius Diusir",
+      "dek": "Gol perdana Yan Diomande membawa Madrid menang 1–0 atas Villarreal. Kartu merah Vinicius membuat tuan rumah bertahan dengan sepuluh pemain.",
+      "caption": "DIOMANDE MENANGKAN MADRID, VINICIUS DIUSIR\n\nReal Madrid menundukkan Villarreal 1–0 di Bernabéu, Minggu dini hari, 11 Oktober 2026 WIB. Yan Diomande menjadi penentu lewat gol pertamanya untuk Madrid.\n\nVinicius sempat membobol gawang lawan, tetapi VAR membatalkan golnya dan ia menerima kartu merah. Madrid kemudian menjaga keunggulan dengan sepuluh pemain.\n\n#Stadione #RealMadrid #Villarreal #LaLiga #YanDiomande",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Gol Perdana yang Menentukan",
+          "text": "Yan Diomande mencetak gol pertamanya untuk Real Madrid sekaligus menentukan kemenangan 1–0 atas Villarreal di Santiago Bernabéu, Minggu dini hari, 11 Oktober 2026 WIB. Gol pada menit ke-62 itu menjadi satu-satunya pembeda dalam pertandingan yang kemudian harus diselesaikan Madrid dengan sepuluh pemain. Vinicius Junior menerima kartu merah setelah pemeriksaan VAR membatalkan golnya.",
+          "claim_ids": [
+            "result",
+            "goal",
+            "red"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "goal",
+          "heading": "Valverde Membuka Jalan",
+          "text": "Madrid sudah mengancam sejak awal. Tembakan kaki kiri Kylian Mbappé membentur tiang pada menit ketujuh, lalu peluang berikutnya digagalkan Péter Gulácsi. Babak pertama berakhir tanpa gol. Kebuntuan pecah setelah Federico Valverde mengirim umpan terobosan kepada Diomande. Penyerang itu menyelesaikannya dengan tembakan mendatar.",
+          "claim_ids": [
+            "firsthalf",
+            "goal"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "red",
+          "heading": "Gol Batal, Vinicius Keluar",
+          "text": "Vinicius masuk pada babak kedua dan sempat mengirim bola ke gawang Villarreal setelah pergerakan Jude Bellingham. Keunggulan Madrid tidak bertambah. Pemeriksaan VAR menemukan Vinicius menjambak rambut Saliba pada awal rangkaian serangan, sebelum ia menyelesaikan peluang tersebut. Gol dibatalkan dan wasit mengeluarkan kartu merah langsung. Madrid pun harus mempertahankan keunggulan tipis dengan jumlah pemain yang berkurang.",
+          "claim_ids": [
+            "red",
+            "substitution"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "finish",
+          "heading": "Courtois Menahan Balasan",
+          "text": "Villarreal mencoba memanfaatkan keunggulan jumlah pemain untuk membalas. Thibaut Courtois menjadi penghalang ketika Carlos Romero mengancam pada menit ke-77. Kiper Madrid itu menggagalkan peluang yang bisa mengubah hasil pertandingan. Di sisi lain, Gulácsi juga beberapa kali menahan upaya tuan rumah. Kedua penjaga gawang membuat skor tetap rapat, tetapi gol Diomande bertahan sampai peluit akhir dan memberikan Madrid tiga poin.",
+          "claim_ids": [
+            "finish",
+            "firsthalf",
+            "result"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261007-barcelona-femenino-clasico-match-news",
+        "goal-20261009-coutinho-debut-fitness-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_MORNING_EDITOR_20261011",
+        "reviewed_at": "2026-10-11T00:10:33.552Z",
+        "article_digest": "6fb1f1576759298086af165422658da59bf6cd7fe369c70c437265760fa310cc"
+      }
+    },
+    "sources": [
+      {
+        "id": "spanish",
+        "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/cronicas/cronica-real-madrid-villarreal-j8-liga-10-10-2026",
+        "primary": true,
+        "publisher_group": "REAL_MADRID",
+        "published_at": "2026-10-10T21:00:23Z",
+        "retrieved_at": "2026-10-11T00:10:33.552Z",
+        "sha256": "3b226a2129053c8dfb3fc2c5955b60379baa937d53b9261d239a588965dd8a32"
+      },
+      {
+        "id": "detik",
+        "url": "https://sport.detik.com/sepakbola/liga-spanyol/d-8701529/madrid-vs-villarreal-vinicius-kartu-merah-el-real-menang-tipis-1-0",
+        "primary": false,
+        "publisher_group": "TRANS_MEDIA",
+        "published_at": "2026-10-10T21:10:47Z",
+        "retrieved_at": "2026-10-11T00:10:33.552Z",
+        "sha256": "82aaae464e771498604975107f6619c929f5d1aec19fb66c543e7a868732145e"
+      },
+      {
+        "id": "goal",
+        "url": "https://www.goal.com/id/daftar/rating-pemain-real-madrid-vs-villarreal-yan-diomande-jadi-pahlawan-tak-terduga-saat-vinicius-junior-dikartu-merah-dalam-kemenangan-menegangkan/blt1a8e5d638a097e92",
+        "primary": false,
+        "publisher_group": "FOOTBALLCO",
+        "published_at": "2026-10-10T21:34:00Z",
+        "retrieved_at": "2026-10-11T00:10:33.552Z",
+        "sha256": "04f18a7ea13efb0af6eb58679c4d7b3a14a4d0042e83367bb55dd61bed130026"
+      },
+      {
+        "id": "reuters",
+        "url": "https://www.reuters.com/sports/soccer/barcelona-cruise-past-getafe-maintain-perfect-start-2026-10-10/",
+        "primary": false,
+        "publisher_group": "THOMSON_REUTERS",
+        "published_at": "2026-10-10T18:48:00Z",
+        "retrieved_at": "2026-10-11T00:10:33.552Z",
+        "sha256": "6b838e48028b150dd6660c7a716eebdc900dce16c253d5be63ac55a8390f93a2"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Real Madrid beat Villarreal 1–0 / 1-0 at Santiago Bernabeu on Saturday 10 October 2026 in Madrid, Sunday early 11 October 2026 WIB, following official21:00 CEST kickoff19:00UTC. Only goal by Diomande, Madrid earned three points and finished with ten men after Vinicius red card.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "fcbb3ad5749a565487b2bdd400ea7b3d91d24c45ba968bc4b4db69e0e7e11419"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "099e843e5fd3399cddf0079fb98da9bc5a4e3cfd6c3837de3f39415795960e38"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "773961fce506aacd1e79178ae855f561b25a07457187ff97a6349fd2d9781be8"
+          }
+        ]
+      },
+      {
+        "id": "goal",
+        "text": "Diomande winner at minute62, low/cross shot after Valverde through-ball; his first goal for Madrid. Primary original Spanish and Detik/Goal agree62; Reuters63 conflicting minute omitted from evidence reliance for chronology, used solely to independently corroborate first Madrid goal.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "2dc985389a92993d3edfa7369e5518483e3b58e35827459bbd0f23b16ca5a503"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "9b5696ed1bc8a5ddb7e457332eb0f6430aad8dc7c8fbf16e3984079b1c7bb260"
+          },
+          {
+            "source_id": "goal",
+            "quote_sha256": "096745d7a60c7ed958c9750f1929e4f9bd76b79adb1ee0c7c1507492dcb35d9d"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "e92a1174ff9e33e8855891d92daa62ae92ea0948b63c727b4495beab8adb367a"
+          }
+        ]
+      },
+      {
+        "id": "firsthalf",
+        "text": "Mbappe hit post at minute7; Gulacsi denied subsequent chance. First-half ended0–0 /0-0. Goalkeeper Gulacsi continued making saves through second-half. No possession percentage or exact save count asserted.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "8608c55e9d665dfe74d26b87b1a92eda1d7db66deb3f70e36313876116299c6c"
+          },
+          {
+            "source_id": "spanish",
+            "quote_sha256": "d1a0fcc67138c967268a7f6383075b2aae1110120d3ac2a886bfe1268b5e9bcb"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "1e1c694734694b28cf54b8005e116693ab1735e189dcf987f893d750922f42b2"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "02e8742721982ec81873c2781557fa4e0749427663afc8da9735f7b6a7b4a8fe"
+          }
+        ]
+      },
+      {
+        "id": "red",
+        "text": "Vinicius potential second goal after Bellingham move disallowed after VAR review for pulling Saliba hair earlier in buildup; straight red left Madrid with ten players. Exact red-card minute omitted due conflicting primary/Detik/Goal timing.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "52d969aad48fbccea25d3499b9f87d0ff6b45ea37caac2f423b346d29f79551a"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "0f5839cfe50f2edd42d6132f47e981f5507aa76e288158d57edbd7ef187ad32e"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "1a094beff2a836b6a62da48753931d524dbf347973c6409422d32d4a821d5c9a"
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "text": "Vinicius entered as second-half substitute (52 in primary and Goal and Reuters), no first-half starting role claimed.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "2f9c3af25638b20c5f474b4a57aca83b567848df43c56b2f9595836c3cbdf7fa"
+          },
+          {
+            "source_id": "goal",
+            "quote_sha256": "fc357fa6db8701e3583acfc88359218936654d4f670b93ce4f00ab8dd2689be3"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "7bbea917a8d6e10e6caedbec645b1b0231e7ddbaf4513ad6d18cadd751d3a0e2"
+          }
+        ]
+      },
+      {
+        "id": "finish",
+        "text": "Numerically superior Villarreal attacked; Courtois saved Carlos Romero attempt at77; Madrid kept1–0 final with ten players, Gulacsi also made stops. No current table or deficit, goal-assist extra, fake coach quote or official player award.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "spanish",
+            "quote_sha256": "00895acf21e5b2b3e21648f0880c9b00b5181e76702166d623ec5f134f60eb7e"
+          },
+          {
+            "source_id": "detik",
+            "quote_sha256": "6ab828bc40f6249ac712c0fb0de354e5e477f53bcae9bd44e888adc660ee253f"
+          },
+          {
+            "source_id": "reuters",
+            "quote_sha256": "135b06fa95c091926510b038c19a9197bb7f2f1bc7daffe1e8dddfea1af4f0dc"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Diomande Menangkan Madrid, Vinicius Diusir",
+        "body": "Gol perdana Yan Diomande membawa Madrid menang 1–0 atas Villarreal. Kartu merah Vinicius membuat tuan rumah bertahan dengan sepuluh pemain.",
+        "claim_ids": [
+          "result",
+          "goal",
+          "red"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Gol Perdana yang Menentukan",
+        "body": "Yan Diomande mencetak gol pertamanya untuk Real Madrid sekaligus menentukan kemenangan 1–0 atas Villarreal di Santiago Bernabéu, Minggu dini hari, 11 Oktober 2026 WIB. Gol pada menit ke-62 itu menjadi satu-satunya pembeda dalam pertandingan yang kemudian harus diselesaikan Madrid dengan sepuluh pemain. Vinicius Junior menerima kartu merah setelah pemeriksaan VAR membatalkan golnya.",
+        "claim_ids": [
+          "result",
+          "goal",
+          "red"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Valverde Membuka Jalan",
+        "body": "Madrid sudah mengancam sejak awal. Tembakan kaki kiri Kylian Mbappé membentur tiang pada menit ketujuh, lalu peluang berikutnya digagalkan Péter Gulácsi. Babak pertama berakhir tanpa gol. Kebuntuan pecah setelah Federico Valverde mengirim umpan terobosan kepada Diomande. Penyerang itu menyelesaikannya dengan tembakan mendatar.",
+        "claim_ids": [
+          "firsthalf",
+          "goal"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Gol Batal, Vinicius Keluar",
+        "body": "Vinicius masuk pada babak kedua dan sempat mengirim bola ke gawang Villarreal setelah pergerakan Jude Bellingham. Keunggulan Madrid tidak bertambah. Pemeriksaan VAR menemukan Vinicius menjambak rambut Saliba pada awal rangkaian serangan, sebelum ia menyelesaikan peluang tersebut. Gol dibatalkan dan wasit mengeluarkan kartu merah langsung. Madrid pun harus mempertahankan keunggulan tipis dengan jumlah pemain yang berkurang.",
+        "claim_ids": [
+          "red",
+          "substitution"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Courtois Menahan Balasan",
+        "body": "Villarreal mencoba memanfaatkan keunggulan jumlah pemain untuk membalas. Thibaut Courtois menjadi penghalang ketika Carlos Romero mengancam pada menit ke-77. Kiper Madrid itu menggagalkan peluang yang bisa mengubah hasil pertandingan. Di sisi lain, Gulácsi juga beberapa kali menahan upaya tuan rumah. Kedua penjaga gawang membuat skor tetap rapat, tetapi gol Diomande bertahan sampai peluit akhir dan memberikan Madrid tiga poin.",
+        "claim_ids": [
+          "finish",
+          "firsthalf",
+          "result"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-10T19:00:00Z",
+    "context": {
+      "who": "Real Madrid and Villarreal, goalscorer Yan Diomande, Vinicius Junior, Valverde, Bellingham and goalkeepers Courtois/Gulacsi",
+      "what": "Completed1–0 match; first Madrid goal for Diomande and subsequent straight red for Vinicius",
+      "when": "Saturday October10 21:00 CEST kick-off,19:00UTC; Sunday October11 02:00WIB. Morning reaction October11 08:00WIB",
+      "where": "Santiago Bernabeu, Madrid",
+      "why": "Largest same-pillar latest SerpAPI trend madrid vs villarreal200000/increase1000, finished only hours before normal European football reaction slot",
+      "how": "Original complete news article from full original-Spanish official report, Detik/Goal independent full reports and Reuters full browser article; omit disputed minute and table deficit; authentic source photo"
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Eropa",
+      "angle": "Reaction — Diomande winner and Vinicius red-card consequences",
+      "why_now": "Deployed getDailySportsPool fetched2026-10-11T00:00:42.346Z: madrid vs villarreal200000/increase1000; completed October10 local match within hours of normal08:00WIB reaction slot; no existing CMS or Instagram topic."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/madrid-villarreal-diomande-reaction-20261010/source-b9122a58b03a771de4bbed5a19c336156d39ce2768aada6fe642437c7b34d25b.jpg",
+      "type": "image",
+      "original_photo_url": "https://assets.realmadrid.com/is/image/realmadrid/ND-LIGA-J08-RM-VILLARREAL-ALEGRIA-DIOMANDE_AV20621?wid=1200&hei=675",
+      "source_page_url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/cronicas/cronica-real-madrid-villarreal-j8-liga-10-10-2026",
+      "credit": "Real Madrid official match gallery; report credits Antonio Villalba, Maria Jimenez and David S Bustamante. Authentic Yan Diomande celebration, not an invented face.",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly instructed direct editorial processing of authentic source photos; internal editorial use decision, not a publisher licence.",
+      "scope": "Stadione editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/madrid-villarreal-diomande-reaction-20261010/source-b9122a58b03a771de4bbed5a19c336156d39ce2768aada6fe642437c7b34d25b.jpg",
+        "headline": "Diomande Menangkan Madrid, Vinicius Diusir",
+        "dek": "Gol perdana Yan Diomande membawa Madrid menang 1–0 atas Villarreal. Kartu merah Vinicius membuat tuan rumah bertahan dengan sepuluh pemain.",
+        "source_label": "REALMADRID.COM",
+        "reviewed_at": "2026-10-11T00:13:56.075Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/madrid-villarreal-diomande-reaction-20261010/1fe31509f30df5ad91ad1fe208f69607dd41ab1b5e2bde2a52866ee9138d14a1.jpg",
+        "sha256": "1fe31509f30df5ad91ad1fe208f69607dd41ab1b5e2bde2a52866ee9138d14a1"
+      }
+    }
+  },
+  "editorial_review": "Article written before five-page lossless pagination; result/contribution lead -> Valverde through-pass after goalless first half -> exact action behind VAR cancellation/red card -> concrete Courtois save preserving win. Recorded Goal NEWS lessons applied, no artificial analysis/process headings or padding. Original Spanish official report used rather than AI-translated English disclaimer. Detik and Goal fully fetched/read; Reuters full article read in browser reference turn886423view0/turn483575view1 (TD directHTTP401, full browser body captured privately). Official62 corroborated Detik and Goal, Reuters63 conflict documented, primary prevailing62 retained. Vinicius red timing inconsistent (primary9minutes aftergoal/Detik70/Goal72and74): omit exact minute. Detik table deficit conflicts Reuters: omit table entirely. First Madrid goal independently corroborated Reuters. Initial Diomande offside flag/VAR only primary detailed support: omit that nonessential mechanism from public article. Official preview fully read establishes21:00 localCEST kickoff -> Sunday02:00WIB, avoiding date mismatch. No quotes invented and no extended public source quotes; third-party full texts/evidence private only.",
+  "prepared_cover_sha256": "1fe31509f30df5ad91ad1fe208f69607dd41ab1b5e2bde2a52866ee9138d14a1",
+  "source_photo_sha256": "b9122a58b03a771de4bbed5a19c336156d39ce2768aada6fe642437c7b34d25b"
+}
