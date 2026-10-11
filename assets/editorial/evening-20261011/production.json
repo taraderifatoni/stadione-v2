@@ -1,0 +1,337 @@
+{
+  "plan_key": "2026-10-11:match-pm",
+  "event_key": "persija-psim-loncar-postmatch-20261010",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "persija",
+    "psim",
+    "4"
+  ],
+  "format_reason": "Normal REEL slot20WIB becomes authentic-photo carousel without clock/pillar change. Current directed video search returns April22 2026 YouTube js2eaqUxyFo score1–1 and previous season2–0 extended highlights LbgsTg1VVOQ; neither is actual October10fixture. Official current matchpage embeds previous Persebaya–PSIM and Persija–Persib footage only. Current Vidio link is exclusive subscription livestream, not verified downloadable current highlights with transcript/timestamps; no access/DRM bypass. No usable actual-match footage verified, never AIvideo.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Persija Menutup Kebuntuan dengan Empat Gol",
+      "dek": "PSIM sempat menahan Persija tanpa gol. Dua gol Stjepan Loncar membantu Macan Kemayoran membawa pulang kemenangan 4–0 dari Bantul.",
+      "caption": "PERSIJA MENUTUP KEBUNTUAN DENGAN EMPAT GOL\n\nPersija menang 4–0 di kandang PSIM, Sabtu, 10 Oktober 2026. Alexander Jeremejeff membuka skor, Stjepan Loncar mencetak dua gol, dan Kwon Chang-hoon ikut membobol gawang tuan rumah.\n\nMacan Kemayoran menyapu bersih empat pertandingan awal Super League dengan 12 poin.\n\n#Stadione #Persija #PSIM #SuperLeague #StjepanLoncar",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Empat Gol di Pengujung Laga",
+          "text": "Persija Jakarta mengalahkan PSIM Yogyakarta 4–0 di Stadion Sultan Agung, Bantul, Sabtu, 10 Oktober 2026. Stjepan Loncar menyumbang dua gol dalam kemenangan pada pekan keempat Super League 2026/27 itu. Skor telak tersebut baru terbentuk setelah Macan Kemayoran melewati babak pertama tanpa gol.",
+          "claim_ids": [
+            "result",
+            "scorers",
+            "halftime"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "goals",
+          "heading": "Jeremejeff Membuka Jalan",
+          "text": "Alexander Jeremejeff memecah kebuntuan pada menit ke-77. Loncar menyusul empat menit kemudian dengan menyelesaikan kiriman bola Kerim Memija. Persija belum berhenti. Kwon Chang-hoon menambah gol pada menit ke-87, sebelum Loncar kembali mencetak gol pada masa tambahan waktu. Tuan rumah yang sempat menjaga skor tetap imbang akhirnya harus menerima empat gol dalam fase akhir pertandingan.",
+          "claim_ids": [
+            "scorers",
+            "halftime"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "coach",
+          "heading": "Pertahanan PSIM Sempat Merepotkan",
+          "text": "Shin Tae-yong menilai rapatnya pertahanan PSIM membuat Persija kesulitan pada paruh pertama. Penyelesaian peluang yang belum maksimal juga menjadi sorotannya. Seusai pertandingan, pelatih Persija itu menekankan pengaruh dua gol Loncar terhadap tim. \"Di babak kedua, Stjepan mencetak dua gol yang sepenuhnya mengubah atmosfer keseluruhan tim,\" ujarnya. Ia mengapresiasi kerja keras para pemain yang memberi hasil lebih baik dari perkiraannya sebelum laga.",
+          "claim_ids": [
+            "coach",
+            "scorers"
+          ],
+          "kind": "QUOTE",
+          "quote": {
+            "source_id": "primary",
+            "text": "Di babak kedua, Stjepan mencetak dua gol yang sepenuhnya mengubah atmosfer keseluruhan tim"
+          }
+        },
+        {
+          "id": "record",
+          "heading": "Empat Laga, Empat Kemenangan",
+          "text": "Kemenangan di Bantul membawa Persija mengoleksi 12 poin dari empat pertandingan awal yang seluruhnya dimenangi Macan Kemayoran.",
+          "claim_ids": [
+            "record"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261007-barcelona-femenino-clasico-match-news",
+        "goal-20261011-fellhauer-kickoff-pressing-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EVENING_EDITOR_20261011",
+        "reviewed_at": "2026-10-11T12:12:04.662Z",
+        "article_digest": "1436b19f33732c91d0be0024010a2b9c2bb66c62f3f5d8050b4b2455361647ba"
+      }
+    },
+    "sources": [
+      {
+        "id": "primary",
+        "url": "https://ileague.id/news/detail/-persija-bawa-pulang-3-poin-dan-4-gol-dari-markas-psim",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "2026-10-11",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "5684a5662842efda8de100f2be024f2b4c77cfa0831b1a8b76c4264b4fb06e3e"
+      },
+      {
+        "id": "record",
+        "url": "https://ileague.id/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-10/PSIM_YOGYAKARTA/PERSIJA_JAKARTA",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "58b891a4c353a591ca38083a551f4b064976584a06d09897fba874901ee14f09"
+      },
+      {
+        "id": "table",
+        "url": "https://www.ileague.id/",
+        "primary": true,
+        "publisher_group": "ILEAGUE",
+        "published_at": "",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "27f222ad335c70515d06e3094bdc2ed6f6374c028c56f12d0a6db823ffe6545b"
+      },
+      {
+        "id": "antara",
+        "url": "https://www.antaranews.com/berita/5780189/persija-jakarta-kalahkan-psim-yogyakarta-40",
+        "primary": false,
+        "publisher_group": "ANTARA",
+        "published_at": "2026-10-10T13:02:17Z",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "21a3a2be6ce29b2abd585c568a90548510c8c8e615301ed0e299a016560f871f"
+      },
+      {
+        "id": "suara",
+        "url": "https://www.suara.com/bola/2026/10/10/203925/dua-gol-stjepan-loncar-bawa-persija-hajar-psim-shin-tae-yong-angkat-topi",
+        "primary": false,
+        "publisher_group": "ARKADIA_SUARA",
+        "published_at": "2026-10-10T13:39:00Z",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "b78ea6f350594b37a98506ad24aa6e2df37d8b3ef0b280f2eafcd7ad04679d8a"
+      },
+      {
+        "id": "bola",
+        "url": "https://www.bola.com/indonesia/read/8310420/bri-super-league-shin-tae-yong-tak-menyangka-persija-menang-4-0-atas-psim",
+        "primary": false,
+        "publisher_group": "KLY",
+        "published_at": "2026-10-10T14:45:06Z",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "88ca5363f08c7decd624cf092ebc486d908910de852da7ffaa3230d3443bb385"
+      },
+      {
+        "id": "record-news",
+        "url": "https://www.suara.com/bola/2026/10/10/220000/belum-terkalahkan-di-super-league-shin-tae-yong-bawa-persija-ke-puncak-klasemen",
+        "primary": false,
+        "publisher_group": "ARKADIA_SUARA",
+        "published_at": "2026-10-10T15:00:00Z",
+        "retrieved_at": "2026-10-11T12:12:04.662Z",
+        "sha256": "f33f9672cbadcdd21890c4175b6492e09029806f3b610cb1b6e45332cd6ba872"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Persija beat PSIM4–0 at Sultan Agung Bantul Saturday10October2026, fourthweek SuperLeague2026/27 (2026/2027). Official match kickoff15:30WIB. Finished match, not live today.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "1d7e92e1b7100569f0d240086523b8097d131c4d270e58fae930881d35e954fb"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "1f187fbf4578e641e14904a6f7d44dba9c4c2e3351592bf9cb43e227c1a436b8"
+          },
+          {
+            "source_id": "bola",
+            "quote_sha256": "a8c37abe169e38467f1d49ff57d0aed73c7a8dbc41c65af3cbe5687d3a1773e7"
+          }
+        ]
+      },
+      {
+        "id": "halftime",
+        "text": "First half0–0; all four Persija goals after interval in late second half. PSIM kept level until first accepted goal77.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "a8df3c92d561f6dff6a7f883c7daed9230b88d8e365801b00715d17bbe5f91a5"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "5230b4ad9f932a31b52b51aa26d038bdbac97aa873d46d7b592041c6f911a496"
+          }
+        ]
+      },
+      {
+        "id": "scorers",
+        "text": "Alexander Jeremejeff77 opened accepted score; Stjepan Loncar81 from Kerim Memija cross and second injury-time goal; Kwon Chang-hoon87. Loncar2 goals and total4. Last goal specific minute omitted due primary90+3, ANTARA90+4, Bola90+2. Earlier minutes77/81/87 primary plus ANTARA corroborate; Bola76/80/86 discrepancy logged. No unverified assist assigned to first goal.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "3f28d48416708de542207fad638694b963008fc24c47acbf185eb6097da95a8c"
+          },
+          {
+            "source_id": "antara",
+            "quote_sha256": "1926d9eafe9b4b4e756aaf1d2e14e21773f4f4f7ba2c9ff567edcbb004307bd3"
+          },
+          {
+            "source_id": "suara",
+            "quote_sha256": "fd00f19e5af0cba2ac73674367ab1e5285e56a2ff2744cf0f4ac5af07eab307f"
+          }
+        ]
+      },
+      {
+        "id": "coach",
+        "text": "After match Shin Tae-yong explained organized PSIM defense and missed finishing made opening half difficult; praised player effort and attributed atmosphere shift to Loncar brace. Short direct quote exactly primary wording, not splicing alternate media translations.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "8f5eeef4196fe62e6b2a19fa8270cad4d5dc6ca83e78cc4559586b0bc62a4a8b"
+          },
+          {
+            "source_id": "bola",
+            "quote_sha256": "435760c0664978191f39fbf6b4388121546d0ee1a76af3c3dd0dfb857bf8b228"
+          },
+          {
+            "source_id": "suara",
+            "quote_sha256": "a62ef4b1684f38f178ffcfa989994672dafab65b8a1156e9b78f9e0226654334"
+          }
+        ]
+      },
+      {
+        "id": "record",
+        "text": "AfterPSIM fourthfixture, Persija won all4opening league games and collected12points; previous opponents omitted because not independently text corroborated. No current Sunday evening rank/gap claim or full leagueweek finished claim.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "record",
+            "quote_sha256": "5705232a0a9eb6214a3a86ed7e5ef74cd1ecc0145c24009f1d4aa5450a2c4dfa"
+          },
+          {
+            "source_id": "table",
+            "quote_sha256": "15613e883c8f0a158eb8cd1f9bd723fb5a9256a74e3696b14fd1a4f9b517c5f0"
+          },
+          {
+            "source_id": "bola",
+            "quote_sha256": "ebc358b19b930a60a46c3818037148425a257291bfed898fca65edd5b050c3a6"
+          },
+          {
+            "source_id": "record-news",
+            "quote_sha256": "93d8c49af5a0f877c60c186df0e051f430296cac6f515b08a6f18142d91c6d7b"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Persija Menutup Kebuntuan dengan Empat Gol",
+        "body": "PSIM sempat menahan Persija tanpa gol. Dua gol Stjepan Loncar membantu Macan Kemayoran membawa pulang kemenangan 4–0 dari Bantul.",
+        "claim_ids": [
+          "result",
+          "scorers",
+          "halftime"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Empat Gol di Pengujung Laga",
+        "body": "Persija Jakarta mengalahkan PSIM Yogyakarta 4–0 di Stadion Sultan Agung, Bantul, Sabtu, 10 Oktober 2026. Stjepan Loncar menyumbang dua gol dalam kemenangan pada pekan keempat Super League 2026/27 itu. Skor telak tersebut baru terbentuk setelah Macan Kemayoran melewati babak pertama tanpa gol.",
+        "claim_ids": [
+          "result",
+          "scorers",
+          "halftime"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Jeremejeff Membuka Jalan",
+        "body": "Alexander Jeremejeff memecah kebuntuan pada menit ke-77. Loncar menyusul empat menit kemudian dengan menyelesaikan kiriman bola Kerim Memija. Persija belum berhenti. Kwon Chang-hoon menambah gol pada menit ke-87, sebelum Loncar kembali mencetak gol pada masa tambahan waktu. Tuan rumah yang sempat menjaga skor tetap imbang akhirnya harus menerima empat gol dalam fase akhir pertandingan.",
+        "claim_ids": [
+          "scorers",
+          "halftime"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Pertahanan PSIM Sempat Merepotkan",
+        "body": "Shin Tae-yong menilai rapatnya pertahanan PSIM membuat Persija kesulitan pada paruh pertama. Penyelesaian peluang yang belum maksimal juga menjadi sorotannya. Seusai pertandingan, pelatih Persija itu menekankan pengaruh dua gol Loncar terhadap tim. \"Di babak kedua, Stjepan mencetak dua gol yang sepenuhnya mengubah atmosfer keseluruhan tim,\" ujarnya. Ia mengapresiasi kerja keras para pemain yang memberi hasil lebih baik dari perkiraannya sebelum laga.",
+        "claim_ids": [
+          "coach",
+          "scorers"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Empat Laga, Empat Kemenangan",
+        "body": "Kemenangan di Bantul membawa Persija mengoleksi 12 poin dari empat pertandingan awal yang seluruhnya dimenangi Macan Kemayoran.",
+        "claim_ids": [
+          "record"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-10T08:30:00Z",
+    "context": {
+      "who": "Persija and PSIM; Stjepan Loncar brace, Alexander Jeremejeff and Kwon Chang-hoon, Shin Tae-yong",
+      "what": "Verified reaction to completed4–0league result; same fixture prior preview is preserved and outcome/brace now new development, not duplicate republication",
+      "when": "Actual matchSaturday10October2026 official kickoff15:30WIB=08:30UTC, not tonight. Sources10/11October. Routine11October20:00WIB unchanged.",
+      "where": "Stadion Sultan Agung Bantul per league and multiple onsite publishers; stale alternate data MandalaKrida not used",
+      "why": "Fresh deployed SerpAPI pool12:05:31Z finds psim vs persija200000searches/increase1000, highest Indonesian football candidate. CMS and22liveIGmedia have prior Cahya preview but no final result/brace reaction.",
+      "how": "Full official league story and match record, ANTARA own reporter, Suara reporters and Bola.com Ana Dewi onsite independently compared. Four paragraphs written first; chronology then coach explanation and verified record, no invented MOTM award or arbitrary padding."
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Indonesia",
+      "angle": "REACTION / hasil PSIM–Persija dan kontribusi Loncar, bukan feed live",
+      "why_now": "getDailySportsPool from deployed cms-load fetched2026-10-11T12:05:31.398Z; PSIM vs Persija200000search volume/increase1000. Actual finished match10October, official postmatch article11October and latest24h independent reports. No prior final/result reaction in CMS or Instagram; existing9Octoberpreview is distinct newsscope."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persija-psim-loncar-postmatch-20261010/source-de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529.jpg",
+      "type": "image",
+      "original_photo_url": "https://media.suara.com/pictures/1200x675/2026/10/10/15398-stjepan-loncar-persija.jpg",
+      "source_page_url": "https://www.suara.com/bola/2026/10/10/203925/dua-gol-stjepan-loncar-bawa-persija-hajar-psim-shin-tae-yong-angkat-topi",
+      "credit": "Dok. Persija melalui Suara.com",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner has explicitly authorized direct editorial processing of authentic source photos. Internal editorial use decision, not fabricated publisher licence; source credit retained. No footage/subscription restriction bypassed.",
+      "scope": "Stadione photo editorial article and Instagram carousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persija-psim-loncar-postmatch-20261010/source-de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529.jpg",
+        "headline": "Persija Menutup Kebuntuan dengan Empat Gol",
+        "dek": "PSIM sempat menahan Persija tanpa gol. Dua gol Stjepan Loncar membantu Macan Kemayoran membawa pulang kemenangan 4–0 dari Bantul.",
+        "source_label": "ILEAGUE.ID",
+        "reviewed_at": "2026-10-11T12:15:36.782Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 5,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persija-psim-loncar-postmatch-20261010/265854672a23968882dfa2adfc27536fb27b2571c612902fa179bb40c15c6744.jpg",
+        "sha256": "265854672a23968882dfa2adfc27536fb27b2571c612902fa179bb40c15c6744"
+      }
+    }
+  },
+  "editorial_review": "Article written first, short evidence-led NEWS without filler or fixed slide quota. Recorded Goal NEWS lessons used for new contribution/result angle, actual chronology, coach explanation and record closing. Lastgoal minute contradictory90+3/90+4/90+2 omitted. First77 second81 third87 corroborated official plus ANTARA; lower-minute Bola variation recorded, not silently blended. No canceled Arlyansyah goal from inconsistent official timeline used. Official current table and record publication times unknown: published_at empty honestly, retrieved_at actual; not counted as freshly published news. Official story11October has dayprecision only, no invented hour. Fourwin/12pts independently matched Bola/Suara plus current primary records, no dynamic rank/gap. Genuine photoStjepanLoncar orange33 matches Suara caption Dok.Persija; clean photo website. Onlynewslot mutated after preview, historicalpreview/results/archives/additionals untouched.",
+  "prepared_cover_sha256": "265854672a23968882dfa2adfc27536fb27b2571c612902fa179bb40c15c6744",
+  "source_photo_sha256": "de36969fa04b6e2e332adeb31ae1464a75df9bb12cb4c82d0fc00ec896d80529"
+}

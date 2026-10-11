@@ -1,0 +1,25 @@
+{
+  "cover_reviewed_at": "2026-10-11T12:15:36.782Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "native_reference_image_generation": true,
+  "native_output": "/workspace/generated_images/exec-cc55132b-68dd-4b6c-871e-e7a6b70f16e8.png",
+  "style_reference": "assets/editorial/evening-20261009/cahya-cover.jpg",
+  "actual_photo": "Authentic Stjepan Loncar orange Persija33 celebrating in actual October10PSIM match, Dok.Persija viaSuara.com matching explicit photo caption. Face/hair/beard/tattoos/jersey/pose retained with charcoal/cream/burgundy newspaper editorial background.",
+  "faces_match_authentic_reference": true,
+  "charcoal_cream_stadione_red_collage": true,
+  "headline_wrapped": true,
+  "source_label": "ILEAGUE.ID",
+  "page_count": 5,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "jpeg": {
+    "width": 1080,
+    "height": 1350,
+    "srgb": true,
+    "quality": 95,
+    "chroma": "4:4:4",
+    "alpha": false
+  },
+  "all_body_slides_reviewed": false,
+  "remaining": "Shared preview and actual JPEG visual review before scheduling"
+}
