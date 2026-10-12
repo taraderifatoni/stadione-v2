@@ -41,6 +41,7 @@ async function main(){
   }
   const issues=[...core.auditPacket(packet,input.format),...await refs.writingReferenceIssues(packet.article)];if(issues.length)throw Error(issues.join('\n'));
   const rendered=input.format==='REEL'?[await media.renderReel(packet)]:await media.renderCarousel(packet);
+  for(const asset of rendered){const digest=sha(asset.bytes);if(asset.audit.output_sha256&&asset.audit.output_sha256!==digest)throw Error('Renderer checksum does not match output bytes');asset.audit={...asset.audit,output_sha256:digest};}
   for(let i=0;i<rendered.length;i++)fs.writeFileSync(path.join(dir,(i+1)+(input.format==='REEL'?'.mp4':'.jpg')),rendered[i].bytes);
   fs.writeFileSync(file,JSON.stringify({input_sha256:sha(fs.readFileSync(inputFile)),packet,render_audit:rendered.map(x=>x.audit)},null,2));
   console.log(JSON.stringify({id:item.id,state:'PREVIEW_ONLY',directory:dir,assets:rendered.length,audit:rendered.map(x=>x.audit)}));return;
