@@ -1,0 +1,224 @@
+{
+  "verified_at": "2026-10-12T00:20:09.381Z",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "preparation_commit": "109a2f14ab641bf151cd2ef2bfdada6a5c1ab8ec",
+  "social": {
+    "id": "e1676c95-2663-48cd-9a97-fbf2dc46db07",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-12:mon-am",
+    "scheduled_at": "2026-10-12T01:00:00+00:00",
+    "format": "CAROUSEL",
+    "parent_id": "dba75f37-f07b-4f67-89bf-288bdf6454f4",
+    "publish_error": null
+  },
+  "article": {
+    "id": "dba75f37-f07b-4f67-89bf-288bdf6454f4",
+    "status": "SCHEDULED",
+    "slug": "city-membungkam-liverpool-di-anfield-e1676c95",
+    "scheduled_at": "2026-10-12T01:00:00+00:00",
+    "body_same": true,
+    "dek_same": true,
+    "hero": [
+      {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/liverpool-city-gravenberch-red-postmatch-20261011/source-1d906f60d12e787199e265b301a5df193e504a3105f3d733d5fb99452abfb9d7.jpg",
+        "type": "image",
+        "credit": "Foto pertandingan melalui Sky Sports",
+        "clean_photo": true,
+        "text_overlay": false
+      }
+    ],
+    "public_url": "https://stadione.pro/news/city-membungkam-liverpool-di-anfield-e1676c95"
+  },
+  "cover_variant": "KOLOM",
+  "cover_variant_standard": "STADIONE_COVER_VARIANTS_V1",
+  "article_digest": "3af3c6f14ce3475ee5e53a18141730b78e11a3505e7385622c24d60d4a93d515",
+  "article_words": 158,
+  "packet_audit": [],
+  "publication_audit": [],
+  "reference_audit": [],
+  "writer_brief_is_only_packet_addition": true,
+  "other_rows_unchanged": 73,
+  "paired_article_only_added": true,
+  "public_jpeg_bytes_identical": true,
+  "source_mirror_bytes_identical": true,
+  "website_photo_sha256": "1d906f60d12e787199e265b301a5df193e504a3105f3d733d5fb99452abfb9d7",
+  "website_photo_text_overlay": false,
+  "publisher_last_result_success": true,
+  "assets": [
+    {
+      "slide": 1,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/e1676c95-2663-48cd-9a97-fbf2dc46db07/8f7bfe31af71e8b019f7f28b050ca4d020014b20a2b8144a9cc9528ae4638882-1.jpg",
+      "sha256": "cf51c39578fa5313885ba403ce574af85738e6474c35089f8c092909ae77600c",
+      "render_audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_collage_cover",
+        "safe_wrap": true,
+        "source_label": "LIVERPOOLFC.COM",
+        "output_sha256": "cf51c39578fa5313885ba403ce574af85738e6474c35089f8c092909ae77600c",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "authentic_photo": true,
+        "no_edition_label": true,
+        "cover_input_sha256": "b571537315a016ca589ea38df51092eb044b5b6db50937bedddc18084e8f475e",
+        "editorial_background": true,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 2,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/e1676c95-2663-48cd-9a97-fbf2dc46db07/8f7bfe31af71e8b019f7f28b050ca4d020014b20a2b8144a9cc9528ae4638882-2.jpg",
+      "sha256": "2f3eae93c309b3dc4f11cb59213134d1f692bed91496e0937d6468876903fff8",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 626,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 929,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 352,
+        "divider_top": 381,
+        "text_sha256": "5b653917bd4dcd0b6739171606d6ef3cac80f29ea345936b9715ac5681a94659",
+        "source_label": null,
+        "output_sha256": "2f3eae93c309b3dc4f11cb59213134d1f692bed91496e0937d6468876903fff8",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 3,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/e1676c95-2663-48cd-9a97-fbf2dc46db07/8f7bfe31af71e8b019f7f28b050ca4d020014b20a2b8144a9cc9528ae4638882-3.jpg",
+      "sha256": "208930a21beb542eaf5def41ba2396ece4a53e334a70a354d2cd8035669b6dc7",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 778,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 922,
+            "height": 511,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 511,
+        "divider_top": 381,
+        "text_sha256": "050c14f4db95c1ec7e0f0daba296d1797200878e42a39f67a79306f6fba5e205",
+        "source_label": null,
+        "output_sha256": "208930a21beb542eaf5def41ba2396ece4a53e334a70a354d2cd8035669b6dc7",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 4,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/e1676c95-2663-48cd-9a97-fbf2dc46db07/8f7bfe31af71e8b019f7f28b050ca4d020014b20a2b8144a9cc9528ae4638882-4.jpg",
+      "sha256": "d825b75126b919df8f118f5c5db4d0b91ebf0435e3c425d93f3aa9178f81aac2",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 753,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 918,
+            "height": 564,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 564,
+        "divider_top": 369,
+        "text_sha256": "5dfad191dea27d182d912da715f70adf665f7a651b318eb5fed5fef2356d555c",
+        "source_label": null,
+        "output_sha256": "d825b75126b919df8f118f5c5db4d0b91ebf0435e3c425d93f3aa9178f81aac2",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 128,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    }
+  ],
+  "durable_attempts": 0,
+  "live_ig_count": 23,
+  "live_duplicate_count": 0,
+  "one_social_event_identity": true,
+  "goal_sha256": "eb8a5debfb8fa471f6e5d917f0eaa1504fc521ee193115108fc39fec3efa1b11",
+  "goal_committed_runtime_identical": true,
+  "no_other_slot_mutation": true,
+  "published_history_unchanged": true,
+  "publisher_timer_active": true,
+  "no_direct_meta_publish": true,
+  "publication_still_future": true,
+  "idempotency_verified": true,
+  "idempotence_replay_all_rows_unchanged": 75,
+  "cover_public_crawler_user_agent_check": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 814063,
+    "sha256": "cf51c39578fa5313885ba403ce574af85738e6474c35089f8c092909ae77600c",
+    "note": "Public HTTP byte check only; not Meta ingestion/publish success."
+  }
+}
