@@ -1,0 +1,294 @@
+{
+  "verified_at": "2026-10-12T12:24:09.313Z",
+  "preparation_commit": "e1cfcb6209279a9102298dbde42dfc7be34b4843",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "social": {
+    "id": "68cfc401-a16a-460e-b657-0472c9f53f41",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-12:mon-pm",
+    "scheduled_at": "2026-10-12T13:00:00+00:00",
+    "format": "CAROUSEL",
+    "parent_id": "fd279917-2f52-4126-b2b3-6d647eab31d7",
+    "publish_error": null
+  },
+  "article": {
+    "id": "fd279917-2f52-4126-b2b3-6d647eab31d7",
+    "status": "SCHEDULED",
+    "slug": "liga-desa-menutup-pintu-untuk-pemain-cabutan-68cfc401",
+    "scheduled_at": "2026-10-12T13:00:00+00:00",
+    "body_same": true,
+    "dek_same": true,
+    "clean_photo": true,
+    "url": "https://stadione.pro/news/liga-desa-menutup-pintu-untuk-pemain-cabutan-68cfc401"
+  },
+  "format_fallback": {
+    "from": "REEL",
+    "to": "CAROUSEL",
+    "reason": "Three currentLigaDesavideo sources fromKompasTV/tvOne/MetroTVall requirelogin/botconfirmation onpublicdownload. No verifieddownload/usageclearance/transcript. ReviewedfallbackCAROUSELwithauthenticteamphoto; preserve20WIB andcommunitypillar.",
+    "queries": [
+      "turnamen tarkam sepak bola kampung komunitas Indonesia",
+      "Liga Desa 2026 2027 Bandung Barat Yandri sepak bola"
+    ],
+    "candidates": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=uJrq6F3A9rE",
+        "creator": "KOMPASTV",
+        "result": "NOT_ACCESSIBLE"
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=wx-a28mPSGM",
+        "creator": "tvOneNews",
+        "result": "NOT_ACCESSIBLE"
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=eAPoMmdgXB0",
+        "creator": "METRO TV",
+        "result": "NOT_ACCESSIBLE"
+      }
+    ],
+    "review_digest": "64dcf08766f708a1df466cef8f3be6be9de56bf4d642e6aeb925ef2fa5824610",
+    "guard_valid": true
+  },
+  "cover_variant": "JUDUL_UTAMA",
+  "article_digest": "b05361ad606d74d9b9b8c9b9fec36962011471e5be75d9874c8c0940840f532d",
+  "article_words": 184,
+  "assets": [
+    {
+      "slide": 1,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/68cfc401-a16a-460e-b657-0472c9f53f41/50e61a810d8d6da6fdda46621ff68854e40a83cba0966eed5b29e72a1c0239e9-1.jpg",
+      "sha256": "d36efdeb83f911eea0c96296ca9e74e7def25c4c89cd403eddf38f4bbb16e84b",
+      "audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_collage_cover",
+        "safe_wrap": true,
+        "source_label": "KEMENDESA.GO.ID",
+        "output_sha256": "d36efdeb83f911eea0c96296ca9e74e7def25c4c89cd403eddf38f4bbb16e84b",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "authentic_photo": true,
+        "no_edition_label": true,
+        "cover_input_sha256": "3839919649cd4e9671349d002749508ea9060165169ac27e59fdeed023540d5b",
+        "editorial_background": true,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 2,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/68cfc401-a16a-460e-b657-0472c9f53f41/50e61a810d8d6da6fdda46621ff68854e40a83cba0966eed5b29e72a1c0239e9-2.jpg",
+      "sha256": "1190495f8c157986a44a4797747ce16d34ef416b9f86ab8517be1a09d0b552cf",
+      "audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 845,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 895,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 405,
+        "divider_top": 300,
+        "text_sha256": "520d172b0c3318980a04b6effb4beabd10e7fbf0e35e1a6e803a5a1eb33ede5e",
+        "source_label": null,
+        "output_sha256": "1190495f8c157986a44a4797747ce16d34ef416b9f86ab8517be1a09d0b552cf",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 59,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 3,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/68cfc401-a16a-460e-b657-0472c9f53f41/50e61a810d8d6da6fdda46621ff68854e40a83cba0966eed5b29e72a1c0239e9-3.jpg",
+      "sha256": "25a8131103f4f2b21f1cc65aa8f2696c11f4f47e06e7afd28c4bd3423b32fcab",
+      "audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 766,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 891,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 299,
+        "divider_top": 300,
+        "text_sha256": "ea9485aa1cfdc539fb326cca8962af38dde91a3055bbf3692dbe8bea50b50554",
+        "source_label": null,
+        "output_sha256": "25a8131103f4f2b21f1cc65aa8f2696c11f4f47e06e7afd28c4bd3423b32fcab",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 59,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 4,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/68cfc401-a16a-460e-b657-0472c9f53f41/50e61a810d8d6da6fdda46621ff68854e40a83cba0966eed5b29e72a1c0239e9-4.jpg",
+      "sha256": "bec3b3339cac3d8a34ef47161f65f1e4dd5ace17aed403d91422d169610a0cdd",
+      "audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 781,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 916,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 405,
+        "divider_top": 300,
+        "text_sha256": "f7c09c801595d1b0e6d6fc692e85507e91ab83d7461af7926d64aa01952b37be",
+        "source_label": null,
+        "output_sha256": "bec3b3339cac3d8a34ef47161f65f1e4dd5ace17aed403d91422d169610a0cdd",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 59,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 5,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/68cfc401-a16a-460e-b657-0472c9f53f41/50e61a810d8d6da6fdda46621ff68854e40a83cba0966eed5b29e72a1c0239e9-5.jpg",
+      "sha256": "9129939b07a1728e6a8214c8dff20bec0d30e9167ffd67b0a2570ae7e9cae79c",
+      "audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 896,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 929,
+            "height": 458,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 458,
+        "divider_top": 300,
+        "text_sha256": "ff10d4a9a0b15db5d2532ecc3a672262a179c3035adcd6ec4c3d3e52d41594f2",
+        "source_label": null,
+        "output_sha256": "9129939b07a1728e6a8214c8dff20bec0d30e9167ffd67b0a2570ae7e9cae79c",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 59,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    }
+  ],
+  "public_jpeg_bytes_identical": true,
+  "website_photo_bytes_original": true,
+  "website_photo_sha256": "c14603d0af93875b1bb42e245a49f42de60482b799d6e009471d670d34b0dc31",
+  "other_baseline_rows_unchanged": 77,
+  "only_parent_article_added": true,
+  "actual_ig_account": "stadione.id",
+  "live_media_count": 26,
+  "live_duplicate_count": 0,
+  "one_social_event_identity": true,
+  "target_durable_attempts": 0,
+  "goal_committed_runtime_identical": true,
+  "goal_sha256": "fd90a772aa23a988d2b901c72cc0e8738f25cfde3e7b5ed1e0f1a10f32ae31c6",
+  "audit": [],
+  "publisher_timer_active": true,
+  "last_publisher_result_success": true,
+  "source_credit_only_cover": true,
+  "no_edition_or_promotional_footer": true,
+  "all_actual_slides_visually_reviewed": true,
+  "all_body_fonts36px": true,
+  "all_body_divider_gaps36px": true,
+  "body_horizontal_margin72px": true,
+  "no_historical_or_additional_mutation": true,
+  "no_credentials_code_or_timer_change": true,
+  "no_direct_meta_publish": true,
+  "publication_future": true,
+  "instagram_published_claimed": false,
+  "idempotency_verified": true,
+  "replay_all_rows_unchanged": 79,
+  "meta_crawler": {
+    "http": 200,
+    "content_type": "image/jpeg",
+    "bytes": 916169,
+    "sha256": "d36efdeb83f911eea0c96296ca9e74e7def25c4c89cd403eddf38f4bbb16e84b",
+    "matches_reviewed": true,
+    "not_publish_confirmation": true
+  },
+  "final_verified_at": "2026-10-12T12:25:06.668Z"
+}
