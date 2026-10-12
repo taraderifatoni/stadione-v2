@@ -1,0 +1,15 @@
+{
+  "reviewed_at": "2026-10-12T12:17:21.769841+00:00",
+  "variant_id": "JUDUL_UTAMA",
+  "page_count": 5,
+  "source_photo_sha256": "c14603d0af93875b1bb42e245a49f42de60482b799d6e009471d670d34b0dc31",
+  "cover_sha256": "3839919649cd4e9671349d002749508ea9060165169ac27e59fdeed023540d5b",
+  "authentic_team_photo": true,
+  "foreground_faces_jerseys_poses_preserved": true,
+  "group_picture_not_live_match_claim": true,
+  "headline_and_dek_match": true,
+  "source_only_cover": true,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "wrapping_no_right_edge_clip": true
+}

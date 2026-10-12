@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-12:mon-pm",
+  "checked_at": "2026-10-12T12:17:21.650Z",
+  "queries": [
+    "turnamen tarkam sepak bola kampung komunitas Indonesia",
+    "Liga Desa 2026 2027 Bandung Barat Yandri sepak bola"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=uJrq6F3A9rE",
+      "creator": "KOMPASTV",
+      "checked_at": "2026-10-12T12:17:21.650Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Standard public yt-dlp read without credentials returned bot-confirmation/login required; streaming file/transcript unavailable. Officialmetadata license youtube, no reuse permission invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "ERROR: [youtube] uJrq6F3A9rE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=wx-a28mPSGM",
+      "creator": "tvOneNews",
+      "checked_at": "2026-10-12T12:17:21.650Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Standard public yt-dlp read without credentials returned bot-confirmation/login required; streaming file/transcript unavailable. Officialmetadata license youtube, no reuse permission invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "ERROR: [youtube] wx-a28mPSGM: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=eAPoMmdgXB0",
+      "creator": "METRO TV",
+      "checked_at": "2026-10-12T12:17:21.650Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Standard public yt-dlp read without credentials returned bot-confirmation/login required; streaming file/transcript unavailable. Officialmetadata license youtube, no reuse permission invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "ERROR: [youtube] eAPoMmdgXB0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies"
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-12T12:17:21.650Z",
+    "digest": "64dcf08766f708a1df466cef8f3be6be9de56bf4d642e6aeb925ef2fa5824610"
+  }
+}

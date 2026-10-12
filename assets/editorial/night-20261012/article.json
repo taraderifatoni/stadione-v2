@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Liga Desa Menutup Pintu untuk Pemain Cabutan",
+  "dek": "Pemain wajib ber-KTP desa yang dibelanya selama minimal dua tahun. Liga Desa 2026–2027 disiapkan bergulir empat bulan.",
+  "caption": "LIGA DESA MENUTUP PINTU UNTUK PEMAIN CABUTAN\n\nLiga Desa 2026–2027 mensyaratkan pemain ber-KTP desa yang dibelanya selama minimal dua tahun. Yandri Susanto menegaskan larangan pemain bayaran dan pemain cabutan saat pembukaan di Cisomang Barat, Bandung Barat, Sabtu 10 Oktober.\n\nKompetisi disiapkan berlangsung empat bulan. Harapannya, pemain dari desa mendapatkan ruang untuk menunjukkan kemampuan.\n\nKalau aturan ini diterapkan di turnamen kampungmu, apa yang paling berubah?",
+  "benchmark_ids": [
+    "goal-20261011-fellhauer-kickoff-pressing-news",
+    "goal-20261009-coutinho-debut-fitness-news"
+  ],
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "KTP Desa Menjadi Syarat",
+      "kind": "FACT",
+      "claim_ids": [
+        "eligibility",
+        "opening"
+      ],
+      "text": "Liga Desa 2026–2027 menetapkan syarat bagi pemain yang akan membela desanya. Mereka harus memiliki KTP desa tersebut selama minimal dua tahun. Menteri Desa dan Pembangunan Daerah Tertinggal Yandri Susanto menyampaikan ketentuan itu saat pembukaan kompetisi di Lapangan Panglejar, Cisomang Barat, Kabupaten Bandung Barat, Sabtu, 10 Oktober."
+    },
+    {
+      "id": "ban",
+      "heading": "Tanpa Pemain Bayaran",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "eligibility"
+      ],
+      "quote": {
+        "text": "Tidak ada pemain naturalisasi, tidak ada pemain bayaran.",
+        "source_id": "primary"
+      },
+      "text": "Yandri menegaskan, \"Tidak ada pemain naturalisasi, tidak ada pemain bayaran.\" Ia juga melarang pemain cabutan. Syarat kependudukan dan larangan tersebut menjadi bagian dari ketentuan Liga Desa, yang digelar sebagai rangkaian Hari Desa Nasional 2027."
+    },
+    {
+      "id": "competition",
+      "heading": "Empat Bulan Kompetisi",
+      "kind": "FACT",
+      "claim_ids": [
+        "duration",
+        "fund",
+        "purpose"
+      ],
+      "text": "Liga Desa disiapkan berlangsung selama empat bulan dengan melibatkan puluhan ribu tim. Hadiah yang diumumkan terdiri dari Rp100 juta dan tambahan Rp150 juta dari Raffi Ahmad, sehingga totalnya Rp250 juta. Yandri berharap kompetisi ini membantu menemukan pemain berbakat dari desa. Ia juga meminta peserta menjaga sportivitas selama pertandingan."
+    },
+    {
+      "id": "local",
+      "heading": "Dimulai di Cisomang Barat",
+      "kind": "FACT",
+      "claim_ids": [
+        "opening",
+        "local",
+        "purpose"
+      ],
+      "text": "Laga pembuka mempertemukan Desa Cisomang Barat dan Desa Wangunsari. Bupati Bandung Barat Ritchie Ismail menekankan pengembangan potensi atlet desa dan semangat olahraga warga sebagai tujuan kompetisi. Yandri juga berharap kegiatan pertandingan membuka kesempatan bagi pedagang kecil dan pelaku UMKM. Rangkaian Hari Desa Nasional turut memuat kegiatan di luar sepak bola, seperti perlombaan BUMDes dan film pendek."
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-12T12:17:21.650Z",
+    "article_digest": "b05361ad606d74d9b9b8c9b9fec36962011471e5be75d9874c8c0940840f532d"
+  }
+}
