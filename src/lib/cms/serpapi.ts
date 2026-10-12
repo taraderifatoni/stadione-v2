@@ -66,9 +66,9 @@ async function cachedResult(key: string) {
   return data?.payload || null
 }
 
-async function saveCache(key: string, engine: SearchEngine, params: Record<string, string>, payload: unknown) {
+async function saveCache(key: string, engine: SearchEngine, params: Record<string, string>, payload: unknown, cacheHours?: number) {
   const admin = createAdminClient()
-  const expiresAt = new Date(Date.now() + (engine === "bing_videos" ? 8 * 24 : 26) * 60 * 60 * 1000).toISOString()
+  const expiresAt = new Date(Date.now() + (cacheHours ?? (engine === "bing_videos" ? 8 * 24 : 26)) * 60 * 60 * 1000).toISOString()
   await admin.from("stadione_trend_snapshots").upsert({
     cache_key: key,
     engine,
@@ -79,8 +79,8 @@ async function saveCache(key: string, engine: SearchEngine, params: Record<strin
   }, { onConflict: "cache_key" })
 }
 
-async function search(engine: SearchEngine, params: Record<string, string>) {
-  const dateKey = engine === "bing_videos" ? `week-${jakartaWeek()}` : jakartaDate()
+async function search(engine: SearchEngine, params: Record<string, string>, options: { daily?: boolean; cacheHours?: number } = {}) {
+  const dateKey = engine === "bing_videos" && !options.daily ? `week-${jakartaWeek()}` : jakartaDate()
   const key = `${dateKey}:${engine}:${requestHash(engine, params).slice(0, 16)}`
   const cached = await cachedResult(key)
   if (cached) return { payload: cached, cached: true }
@@ -110,7 +110,7 @@ async function search(engine: SearchEngine, params: Record<string, string>) {
     const providerError = textValue(record(payload).error)
     success = response.ok && !providerError
     if (!response.ok || providerError) throw new Error(providerError ? `SerpApi menolak request (${statusCode || "provider error"}).` : `SerpApi ${engine} gagal (${response.status}).`)
-    await saveCache(key, engine, params, payload)
+    await saveCache(key, engine, params, payload, options.cacheHours)
     return { payload, cached: false }
   } catch (error) {
     errorMessage = error instanceof Error ? error.message : "SerpApi gagal"
@@ -205,4 +205,25 @@ export async function getDailySportsPool(): Promise<DailyPool> {
       bing_videos: { cached: tiktok.cached, items: videoItems(tiktok.payload) },
     },
   }
+}
+
+
+// Used by the committed operator CLI; normal daily pool stays backwards compatible.
+export const REEL_DISCOVERY_CACHE_HOURS = 24;
+export async function getReelVideoPool(pillar: string, topic?: string | null) {
+  const keywords: Record<string, string> = {
+    "Sepak Bola Eropa": "sepak bola Eropa highlights pertandingan",
+    "Sepak Bola Indonesia": "sepak bola Indonesia Liga Timnas",
+    "Olahraga Indonesia": "atlet Indonesia bulutangkis voli balap prestasi",
+    "Tarkam & Komunitas": "turnamen tarkam sepak bola kampung komunitas Indonesia",
+  };
+  if (!keywords[pillar]) throw new Error("Pilar Reels tidak dikenali.");
+  const subject = topic?.trim() || keywords[pillar];
+  if (subject.length < 8 || subject.length > 220) throw new Error("Topik riset Reels perlu 8–220 karakter.");
+  const month = new Intl.DateTimeFormat("id-ID", { timeZone: "Asia/Jakarta", month: "long", year: "numeric" }).format(new Date());
+  const query = subject + " " + month + " (site:youtube.com OR site:tiktok.com OR site:x.com OR site:instagram.com)";
+  const result = await search("bing_videos", { q: query, cc: "id" }, { daily: true, cacheHours: REEL_DISCOVERY_CACHE_HOURS });
+  // Operator normalizes public source links; this request never publishes.
+  return { query, fetched_at: new Date().toISOString(), date: jakartaDate(), cached: result.cached,
+    cache_hours: REEL_DISCOVERY_CACHE_HOURS, payload: result.payload };
 }

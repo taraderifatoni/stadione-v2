@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-10-12T06:25:55Z",
+  "instagram_total": 25,
+  "feed": 21,
+  "reels": 4,
+  "latest16_are_feed": true,
+  "reels_posts": [
+    {
+      "id": "18091258256216151",
+      "timestamp": "2026-10-05T23:27:50+0000",
+      "permalink": "https://www.instagram.com/reel/DeIYziKDF42/"
+    },
+    {
+      "id": "18342094357167408",
+      "timestamp": "2025-09-02T23:46:59+0000",
+      "permalink": "https://www.instagram.com/reel/DOHmEBvEl0F/"
+    },
+    {
+      "id": "18082621453927130",
+      "timestamp": "2025-09-02T05:18:00+0000",
+      "permalink": "https://www.instagram.com/reel/DOFnmc3kdNV/"
+    },
+    {
+      "id": "18199278256311532",
+      "timestamp": "2025-08-29T23:04:37+0000",
+      "permalink": "https://www.instagram.com/reel/DN9OJtHkhtk/"
+    }
+  ],
+  "cms_rows": 76,
+  "no_performance_metrics_inferred": true,
+  "no_post_mutation": true
+}

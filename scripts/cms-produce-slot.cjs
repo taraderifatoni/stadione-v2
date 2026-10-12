@@ -20,6 +20,7 @@ async function main(){
  if(!['DRAFT','PENDING_REVIEW'].includes(item.status)||item.editorial_meta?.cms_deleted_at||attempts?.some(x=>!['FAILED'].includes(x.state))){console.log(JSON.stringify({skipped:true,id:item.id,status:item.status,reason:'existing_scheduled_published_archived_or_attempt'}));return;}
  const duplicate=rows.find(x=>x.id!==item.id&&x.editorial_meta?.event_key===input.event_key);
  if(duplicate){console.log(JSON.stringify({skipped:true,id:duplicate.id,status:duplicate.status,reason:'existing_event_identity'}));return;}
+ const fallback=require('./reel-research-policy.cjs').fallbackIssues(input,item);if(fallback.length)throw Error(fallback.join('\n'));
  if(!Array.isArray(input.dedupe_terms)||input.dedupe_terms.length<2)throw Error('Require at least two event-specific Instagram duplicate terms');
  const connection=await load('src/lib/cms/meta.ts').metaConnectionStatus();
  if(!connection.connected||connection.account!=='stadione.id')throw Error('Instagram Stadione connection not verified');

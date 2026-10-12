@@ -1,0 +1,30 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),Module=require('node:module'),ts=require('typescript');
+const p=require('./reel-research-policy.cjs');
+assert.equal(p.sourcePage('https://www.bing.com/videos/search?q=site:youtube.com'),null);
+assert.equal(p.sourcePage('https://www.tiktok.com/@channel'),null);
+assert.equal(p.sourcePage('https://example.test/?youtube.com/watch?v=x'),null);
+assert.equal(p.sourcePage('https://www.youtube.com/watch?v=abc'),'https://www.youtube.com/watch?v=abc');
+const normalized=p.normalizeVideoResults({video_results:[{link:'https://www.bing.com/videos/search?q=site:youtube.com',title:'Index'},{link:'https://www.bing.com/videos/search?murl='+encodeURIComponent('https://www.youtube.com/watch?v=actual'),views:'2.4K views',channel:'Original'},{link:'https://www.youtube.com/watch?v=actual'}]});
+assert.equal(normalized[0].page_url,null);assert.equal(normalized[0].link_status,'INDEX_RESOLUTION_REQUIRED');assert.equal(normalized[1].views,2400);assert.equal(normalized.length,2);
+const now=new Date().toISOString(),input={plan_key:'2026-10-12:mon-pm',format:'CAROUSEL'},item={format:'REEL'};
+assert(p.fallbackIssues(input,item).length);
+const r={plan_key:input.plan_key,checked_at:now,queries:['turnamen tarkam Lombok terkini','pertandingan komunitas desa terbaru'],attempts:[0,1,2].map(n=>({page_url:'https://www.youtube.com/watch?v=original'+n,creator:n===0?'A':'B',checked_at:now,result:'NO_MEDIA',detail:'Extractor cannot obtain public downloadable media for this original page.',proof:{kind:'EXTRACTOR',summary:'Public extraction returned no available streams.'}})),review:{reviewer_id:'QA',reviewed_at:now,digest:''}};r.review.digest=p.fallbackDigest(r);input.reel_research=r;assert.deepEqual(p.fallbackIssues(input,item),[]);
+const change=f=>{const x=structuredClone(input);f(x.reel_research);return p.fallbackIssues(x,item)};
+assert(change(x=>x.attempts[0].result='USABLE').length);assert(change(x=>x.attempts[0].page_url='https://www.bing.com/videos/search?q=site:youtube.com').length);assert(change(x=>x.attempts.forEach(a=>a.creator='A')).length);assert(change(x=>x.review.digest='fake').length);assert(change(x=>x.checked_at='2020-01-01T00:00:00Z').length);assert(change(x=>x.plan_key='other').length);
+assert.deepEqual(p.fallbackIssues({format:'REEL'},item),[]);assert.deepEqual(p.fallbackIssues({format:'CAROUSEL'},{format:'CAROUSEL'}),[]);
+const originalFetch=global.fetch,cache=new Map(),reservations=[],writes=[];let fetches=0,budgetAvailable=true;
+global.__reelDb={rpc:async(name,params)=>{reservations.push(params);return{data:budgetAvailable?'qa-request':null,error:null}},from(table){let key=null;return{select(){return this},eq(field,value){if(field==='cache_key')key=value;return this},gt(){return this},maybeSingle:async()=>({data:cache.has(key)?{payload:cache.get(key).payload}:null}),upsert:async value=>{cache.set(value.cache_key,value);writes.push(value)},update(){return{eq:async()=>({error:null})}}}}};
+global.fetch=async()=>{fetches++;return{ok:true,status:200,json:async()=>({video_results:[{link:'https://www.youtube.com/watch?v=authentic',title:'Real source'}]})}};
+const root=path.resolve(__dirname,'..'),file=path.join(root,'src/lib/cms/serpapi.ts');let src=fs.readFileSync(file,'utf8').replace('import "server-only"','').replace('import { createAdminClient } from "@/lib/supabase/admin"','const createAdminClient = () => global.__reelDb');
+const m=new Module(file,module);m.filename=file;m.paths=Module._nodeModulePaths(root);m._compile(ts.transpileModule(src,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText+";module.exports.__search=search;",file);
+process.env.SERPAPI_API_KEY='qa-only';(async()=>{
+ const a=await m.exports.getReelVideoPool('Tarkam & Komunitas','turnamen kampung terbaru');
+ assert.equal(a.cache_hours,24);assert.equal(a.cached,false);assert.equal(fetches,1);assert(!reservations[0].p_request_key.includes('week-'));assert.equal(Math.round((Date.parse(writes[0].expires_at)-Date.now())/3600000),24);
+ const b=await m.exports.getReelVideoPool('Tarkam & Komunitas','turnamen kampung terbaru');assert.equal(b.cached,true);assert.equal(fetches,1);assert.equal(reservations.length,1);
+ budgetAvailable=false;await assert.rejects(()=>m.exports.getReelVideoPool('Sepak Bola Indonesia','topik lain yang berbeda'),/Batas otomatis/);assert.equal(fetches,1);
+ await assert.rejects(()=>m.exports.getReelVideoPool('wrong'),/Pilar/);
+ budgetAvailable=true;await m.exports.__search('bing_videos',{q:'legacy-weekly',cc:'id'});assert(reservations.at(-1).p_request_key.startsWith('week-'));assert.equal(Math.round((Date.parse(writes.at(-1).expires_at)-Date.now())/3600000),192);
+ await m.exports.__search('google_news',{q:'legacy-news'});assert(!reservations.at(-1).p_request_key.startsWith('week-'));assert.equal(Math.round((Date.parse(writes.at(-1).expires_at)-Date.now())/3600000),26);
+ console.log(JSON.stringify({ok:true,groups:['actual_video_pages_not_bing_profiles','link_deduplication_views','fresh_daily_cache24h','quota_atomic_and_cached_requests','fallback_three_candidates_two_creators','usable_footage_blocks_carousel','fallback_review_digest_and_freshness','native_carousel_and_reel_unaffected']}));
+})().finally(()=>{global.fetch=originalFetch}).catch(e=>{console.error(e);process.exitCode=1});
