@@ -1,0 +1,65 @@
+{
+  "verified_at": "2026-10-12T08:31:07.113Z",
+  "preparation_commit": "f0e7d24be3c0d44fa00db9bbda4a395691047d40",
+  "app_release": "/opt/stadione-releases/ffe41a7",
+  "all_cms_rows_unchanged": 78,
+  "mls_blocked_before_preview_or_mutation": true,
+  "published_history_replay_skipped": true,
+  "night": {
+    "id": "68cfc401-a16a-460e-b657-0472c9f53f41",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-12T13:00:00+00:00",
+    "plan_key": "2026-10-12:mon-pm",
+    "unchanged": true
+  },
+  "youtube": {
+    "cached": true,
+    "api_requests": 0,
+    "eligible_candidates": 18,
+    "all_with_audience": true,
+    "pillar_preserved": true
+  },
+  "paes_ajax_example": {
+    "tier": "DIASPORA",
+    "score": 100,
+    "allowed": true,
+    "matches": [
+      "Maarten Paes"
+    ],
+    "verification_required": true
+  },
+  "no_cms_or_publisher_mutation": true,
+  "no_restart_or_credentials_change": true,
+  "scope": "Committed operator discovery/ranking/production; existing suggestUI and apppublisher not changed",
+  "serpapi": {
+    "fetched_at": "2026-10-12T08:31:07.644Z",
+    "pillar": "Sepak Bola Indonesia",
+    "sources": {
+      "google_trends_trending_now": {
+        "cached": true,
+        "discovered_count": 12,
+        "eligible_count": 2,
+        "top_titles": [
+          "persib bandung vs dewa united",
+          "pss vs psm makassar"
+        ]
+      },
+      "google_news": {
+        "cached": true,
+        "discovered_count": 15,
+        "eligible_count": 1,
+        "top_titles": [
+          "Radja Nainggolan Sesali Pilihan Tak Bela Timnas Indonesia"
+        ]
+      },
+      "bing_videos": {
+        "cached": true,
+        "discovered_count": 18,
+        "eligible_count": 0,
+        "top_titles": []
+      }
+    },
+    "audience_ranking_is_not_viral_score": true
+  }
+}
