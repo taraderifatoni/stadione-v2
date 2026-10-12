@@ -3,11 +3,11 @@ const crypto=require('node:crypto');
 function sourcePage(value){
  try{const u=new URL(value);if(u.protocol!=='https:')return null;
  const host=u.hostname.toLowerCase().replace(/^www\./,'');
- if(host==='youtube.com'||host==='m.youtube.com')return u.pathname==='/watch'&&u.searchParams.get('v')||/^\/shorts\/[^/]+/.test(u.pathname)?u.href:null;
- if(host==='youtu.be')return u.pathname.length>1?u.href:null;
- if(host==='tiktok.com'||host==='m.tiktok.com')return /\/video\/\d+/.test(u.pathname)?u.href:null;
- if(['x.com','twitter.com','mobile.twitter.com'].includes(host))return /\/status\/\d+/.test(u.pathname)?u.href:null;
- if(host==='instagram.com')return /^\/(reel|p)\/[^/]+/.test(u.pathname)?u.href:null;
+ if(host==='youtube.com'||host==='m.youtube.com'){const id=u.pathname==='/watch'?u.searchParams.get('v'):u.pathname.match(/^\/shorts\/([^/]+)/)?.[1];return id?'https://www.youtube.com/watch?v='+encodeURIComponent(id):null;}
+ if(host==='youtu.be')return u.pathname.length>1?'https://www.youtube.com/watch?v='+encodeURIComponent(u.pathname.split('/')[1]):null;
+ if(host==='tiktok.com'||host==='m.tiktok.com')return /\/video\/\d+/.test(u.pathname)?'https://www.tiktok.com'+u.pathname.replace(/\/$/,''):null;
+ if(['x.com','twitter.com','mobile.twitter.com'].includes(host))return /\/status\/\d+/.test(u.pathname)?'https://x.com'+u.pathname.replace(/\/$/,''):null;
+ if(host==='instagram.com')return /^\/(reel|p)\/[^/]+/.test(u.pathname)?'https://www.instagram.com'+u.pathname.replace(/\/$/,'')+'/':null;
  return null;
  }catch{return null;}
 }

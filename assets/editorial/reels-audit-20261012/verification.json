@@ -1,0 +1,87 @@
+{
+  "verified_at": "2026-10-12T06:42:01.275Z",
+  "preparation_commit": "f2159dbbddaed0f68658b1cc7c63fe24e96e7674",
+  "runtime_release": "/opt/stadione-releases/ffe41a7",
+  "operator_checkout": "/opt/stadione-engine-work",
+  "discovery": {
+    "query": "turnamen tarkam sepak bola kampung komunitas Indonesia Oktober 2026 (site:youtube.com OR site:tiktok.com OR site:x.com OR site:instagram.com)",
+    "cached_first": false,
+    "cache_hit_repeat": true,
+    "candidates": 18,
+    "actual_source_page_links": 18,
+    "cache_key": "2026-10-12:bing_videos:f4c99bec8c55dc2e",
+    "ttl_hours": 24
+  },
+  "search_usage": {
+    "used": 27,
+    "limit": 100,
+    "automatedLimit": 93,
+    "configured": true
+  },
+  "cms_all_rows_unchanged": 76,
+  "target": {
+    "id": "68cfc401-a16a-460e-b657-0472c9f53f41",
+    "status": "DRAFT",
+    "format": "REEL",
+    "plan_key": "2026-10-12:mon-pm",
+    "scheduled_at": "2026-10-12T13:00:00+00:00"
+  },
+  "source_access": {
+    "browser": "Three original Youtube pages returned Online fetch throttled; no full content read claimed.",
+    "vps_checks": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=5iypqzVMIwE",
+        "http_status": 200,
+        "download_verified": false,
+        "playability": "LOGIN_REQUIRED",
+        "reason": "Login untuk mengonfirmasi bahwa Anda bukan bot",
+        "title": null,
+        "streaming_data_present": false
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=STaQbHFQT2Q",
+        "http_status": 200,
+        "download_verified": false,
+        "playability": "LOGIN_REQUIRED",
+        "reason": "Login untuk mengonfirmasi bahwa Anda bukan bot",
+        "title": null,
+        "streaming_data_present": false
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=Yd8Pf5vb1_Y",
+        "http_status": 200,
+        "download_verified": false,
+        "playability": "LOGIN_REQUIRED",
+        "reason": "Login untuk mengonfirmasi bahwa Anda bukan bot",
+        "title": null,
+        "streaming_data_present": false
+      }
+    ],
+    "source_transcript_verified": false,
+    "render_created": false,
+    "reel_scheduled": false
+  },
+  "no_render_created": true,
+  "no_new_reel_scheduled": true,
+  "no_schedule_or_historical_mutation": true,
+  "no_credentials_changed": true,
+  "no_app_deploy_or_restart": true,
+  "workflow_files": [
+    {
+      "path": "scripts/cms-reel-research.cjs",
+      "sha256": "d63a8db784140248dd5d269da1c0aedaf9b5e7edb27dced79ac15b0882699090"
+    },
+    {
+      "path": "scripts/reel-research-policy.cjs",
+      "sha256": "fbb61f27532ca551c031e319873721f86450f70b93e930e16a607b17e9112357"
+    },
+    {
+      "path": "scripts/cms-produce-slot.cjs",
+      "sha256": "24d171d2a060114e47e801aaf48f6530abe7e92409af5f2e4a167eb0e8e939c0"
+    },
+    {
+      "path": "src/lib/cms/serpapi.ts",
+      "sha256": "ba5d4642d16f0725b06ce55f3c6ce3a6e8bfc36b215b6d019c9c77c6fd0fb73a"
+    }
+  ]
+}
