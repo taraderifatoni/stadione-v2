@@ -1,0 +1,41 @@
+{
+  "cover_reviewed_at": "2026-10-12T00:17:12.235Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "native_reference_image_generation": true,
+  "native_output": "/workspace/generated_images/exec-ac871dc0-5f81-4ef9-a0b6-b63fa61cd28d.png",
+  "style_reference": "assets/editorial/cover-variants-20261012/kolom.jpg",
+  "actual_photo": "Genuine SkySports actual Anfield City match celebration photograph, blondHaalandcenter andDokuatright withteammatebehind; original faces/bluejerseys/pose preserved. New cream-dominant KOLOM composition, headlineleft andauthenticgroupright; notclassicdiagonalrepeat.",
+  "faces_match_authentic_reference": true,
+  "charcoal_cream_stadione_red_collage": true,
+  "headline_wrapped": true,
+  "source_label": "LIVERPOOLFC.COM",
+  "variant_id": "KOLOM",
+  "variant_standard": "STADIONE_COVER_VARIANTS_V1",
+  "page_count": 4,
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "jpeg": {
+    "width": 1080,
+    "height": 1350,
+    "srgb": true,
+    "quality": 95,
+    "chroma": "4:4:4",
+    "alpha": false,
+    "content_resize": {
+      "width": 1048,
+      "height": 1310
+    },
+    "canvas_extension": {
+      "left": 16,
+      "right": 16,
+      "top": 20,
+      "bottom": 20,
+      "color": "#eee9dd"
+    }
+  },
+  "cover_text_margin_visually_at_least_72px": true,
+  "subject_does_not_occlude_glyphs": true,
+  "headline_left_photo_right": true,
+  "all_body_slides_reviewed": false,
+  "remaining": "Shared preview and actual JPEG visual review before scheduling"
+}

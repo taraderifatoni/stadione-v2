@@ -1,0 +1,274 @@
+{
+  "plan_key": "2026-10-12:mon-am",
+  "event_key": "liverpool-city-gravenberch-red-postmatch-20261011",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "liverpool",
+    "city"
+  ],
+  "format_reason": "OriginalMonday08WIB matrix slotCAROUSEL retained; noReelsfallback orvideoattempt, currenttask doesnot requirechangingnativeformat.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "City Membungkam Liverpool di Anfield",
+      "dek": "Kartu merah Ryan Gravenberch mengubah pertandingan. Manchester City menang 3–0 lewat gol Haaland, Doku, dan Cherki.",
+      "caption": "CITY MEMBUNGKAM LIVERPOOL DI ANFIELD\n\nManchester City menang 3–0 atas Liverpool dalam laga Premier League, Senin dini hari, 12 Oktober 2026 WIB. Gravenberch menerima kartu kuning kedua sebelum Haaland, Doku, dan Cherki mencetak gol.\n\nLiverpool menelan kekalahan pertamanya musim ini.\n\n#Stadione #ManchesterCity #Liverpool #PremierLeague #Haaland #Doku",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "City Membungkam Liverpool",
+          "text": "Manchester City menang 3–0 atas Liverpool di Anfield dalam laga Premier League, Senin dini hari, 12 Oktober 2026 WIB. Ketiga gol tim tamu lahir setelah jeda. Pertandingan yang semula seimbang berubah ketika Ryan Gravenberch menerima kartu kuning kedua, sebelum City mengambil alih lewat gol Erling Haaland, Jeremy Doku, dan Rayan Cherki.",
+          "claim_ids": [
+            "result",
+            "red",
+            "goals"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "chances",
+          "heading": "Donnarumma Menahan Liverpool",
+          "text": "Kedua tim memasuki jeda dengan skor tanpa gol. Liverpool kemudian meningkatkan tekanan pada awal babak kedua. Gravenberch dan Alexis Mac Allister sempat mengancam gawang City, sementara Gianluigi Donnarumma harus melakukan sejumlah penyelamatan untuk menjaga tim tamu tetap bertahan. Di sisi lain, Haaland mendapat kesempatan berhadapan dengan Alisson. Usahanya belum menghasilkan gol, sehingga kebuntuan masih bertahan.",
+          "claim_ids": [
+            "chances"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "turning-point",
+          "heading": "Tiga Gol setelah Kartu Merah",
+          "text": "Pada menit ke-62, Gravenberch diusir setelah menghalangi Doku memulai serangan balik. City segera memanfaatkan keunggulan jumlah pemain. Haaland lebih dulu membuka skor, lalu Doku menggandakan keunggulan dengan tembakan melengkung ke sudut atas gawang Alisson. Cherki mencetak gol berikutnya untuk menutup kemenangan City.",
+          "claim_ids": [
+            "red",
+            "goals",
+            "result"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "context",
+          "heading": "Tiga Gol setelah Kartu Merah",
+          "text": "Hasil di Anfield menjadi kekalahan pertama Liverpool pada musim 2026/27.",
+          "claim_ids": [
+            "first-defeat"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261007-barcelona-femenino-clasico-match-news",
+        "goal-20261009-coutinho-debut-fitness-news",
+        "goal-20261011-fellhauer-kickoff-pressing-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_MORNING_EDITOR_20261012",
+        "reviewed_at": "2026-10-12T00:10:09.563Z",
+        "article_digest": "3af3c6f14ce3475ee5e53a18141730b78e11a3505e7385622c24d60d4a93d515"
+      }
+    },
+    "sources": [
+      {
+        "id": "primary",
+        "url": "https://www.liverpoolfc.com/news/match-report-liverpool-man-city-premier-league-anfield",
+        "primary": true,
+        "publisher_group": "LIVERPOOL_FC",
+        "published_at": "2026-10-11T17:25:00Z",
+        "retrieved_at": "2026-10-12T00:10:09.563Z",
+        "sha256": "c6b500f570e6a69383c3b307e67e23d57ffffda4402dabfe066b4bc8de933916"
+      },
+      {
+        "id": "sky",
+        "url": "https://www.skysports.com/football/liverpool-vs-manchester-city/report/559501",
+        "primary": false,
+        "publisher_group": "SKY_SPORTS",
+        "published_at": "2026-10-11T18:25:00Z",
+        "retrieved_at": "2026-10-12T00:10:09.563Z",
+        "sha256": "e84c3fce8a84758e749eb8c5a0766aeba727e6908ad48af7fdd03e3596dfc0ba"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "ManchesterCity beatLiverpool3–0 inPremierLeague atAnfield, Sunday11October2026, kicked16:30BST/15:30UTC/22:30WIB, match beganSundaynightWIB and finishedMonday12October2026earlyWIB; public result date12October2026dinihariWIB. All3goals secondhalf. Not a new match onOctober12morning.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "5e46b4edb0a1e6c9cf16f03eba183bc6bc68e9427cf919ee5500f49f5d543650"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "afb98f44001b26fe46303d8236edf9a837680c6cd5fc1bde28bb016c7db18dd2"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "0693ae0b5c9e94a2d5d2629a584298b04c790c6bbf7985903c807b0adf59964a"
+          }
+        ]
+      },
+      {
+        "id": "red",
+        "text": "RyanGravenberch secondyellow dismissal62 after obstructingDoku counterattack; LFC says2minutespast hour and Sky scoreboard62; no claim of violent red or directred. Turningpoint after balancedscorelesscontest.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "c2bc08b1490ec79f35a04ee6187dd1e0d4002e2d12a595be0c028a3a47009969"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "8068bdd7f6c4e5f330032ad397b784238e9e7a0f98554c9295b0f53315217d86"
+          }
+        ]
+      },
+      {
+        "id": "goals",
+        "text": "ErlingHaaland first, JeremyDoku second curling uppercorner, RayanCherki third, allafterGravenberch dismissal. Goal exactminutes65/68/78 inSky only notprinted because official narrative corroborates sequence not numericminutes. Do not award fictitious assist or officialMOTM.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "4000fee8d70233856ffd35d3d903f597e4ecc53e6a6e68c336d0849aa0ea7a5e"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "0fd912cd8c5eadf27fd76eee4897ef5a388a92bb7bc2562de4e9dae42f29406e"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "bcec5a0f45df948b93d33c7a08183fe772aee0b0e2653565bbcf32915ce46ff9"
+          }
+        ]
+      },
+      {
+        "id": "chances",
+        "text": "0–0 atinterval. Liverpool earlysecondhalf threats fromGravenberch/MacAllister; Donnarumma savedshots. Haaland oneononevsAlisson missed before red, no fake shots/savecount or assignment of MacAllister wide shot as goalkeeper save.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "7294d331ba02c4ce96dbda225373f5dbca8f93e2e3fd0ec0df22fd00e48ba203"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "84b779075aee37b9417416a1e14027330dda89d8389a6d98fd64c727088966b3"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "950136ac54ad35e69d587bce2f0cf9f1825ad46c6295dd6ed87ccb3a30bf916f"
+          }
+        ]
+      },
+      {
+        "id": "first-defeat",
+        "text": "FirstLiverpool defeatof2026/27 season confirmedby clubandSky, not anunverifiedninepointgap orCityfinancialverdictdetail.",
+        "verified": true,
+        "evidence": [
+          {
+            "source_id": "primary",
+            "quote_sha256": "e6bd9ff6e34582dceeacf374dcb04ef1e00e9a704af4c621d896945638c20fbb"
+          },
+          {
+            "source_id": "sky",
+            "quote_sha256": "c499032d77b860493718ae9e27ac2b0dd625df879d8b443ef31ef8681a26d6cd"
+          }
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "City Membungkam Liverpool di Anfield",
+        "body": "Kartu merah Ryan Gravenberch mengubah pertandingan. Manchester City menang 3–0 lewat gol Haaland, Doku, dan Cherki.",
+        "claim_ids": [
+          "result",
+          "red",
+          "goals"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "City Membungkam Liverpool",
+        "body": "Manchester City menang 3–0 atas Liverpool di Anfield dalam laga Premier League, Senin dini hari, 12 Oktober 2026 WIB. Ketiga gol tim tamu lahir setelah jeda. Pertandingan yang semula seimbang berubah ketika Ryan Gravenberch menerima kartu kuning kedua, sebelum City mengambil alih lewat gol Erling Haaland, Jeremy Doku, dan Rayan Cherki.",
+        "claim_ids": [
+          "result",
+          "red",
+          "goals"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Donnarumma Menahan Liverpool",
+        "body": "Kedua tim memasuki jeda dengan skor tanpa gol. Liverpool kemudian meningkatkan tekanan pada awal babak kedua. Gravenberch dan Alexis Mac Allister sempat mengancam gawang City, sementara Gianluigi Donnarumma harus melakukan sejumlah penyelamatan untuk menjaga tim tamu tetap bertahan. Di sisi lain, Haaland mendapat kesempatan berhadapan dengan Alisson. Usahanya belum menghasilkan gol, sehingga kebuntuan masih bertahan.",
+        "claim_ids": [
+          "chances"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Tiga Gol setelah Kartu Merah",
+        "body": "Pada menit ke-62, Gravenberch diusir setelah menghalangi Doku memulai serangan balik. City segera memanfaatkan keunggulan jumlah pemain. Haaland lebih dulu membuka skor, lalu Doku menggandakan keunggulan dengan tembakan melengkung ke sudut atas gawang Alisson. Cherki mencetak gol berikutnya untuk menutup kemenangan City.\n\nHasil di Anfield menjadi kekalahan pertama Liverpool pada musim 2026/27.",
+        "claim_ids": [
+          "red",
+          "goals",
+          "result",
+          "first-defeat"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-11T15:30:00Z",
+    "context": {
+      "who": "ManchesterCity andLiverpool; Gravenberch secondyellow, Haaland/Doku/Cherki goals; Donnarumma/Alisson andMacAllister firstphase",
+      "what": "Verified completed3–0 Cityawaywin recap, notlivefeed ornewkickofftoday",
+      "when": "Sunday11October16:30BST/15:30UTC/22:30WIB kickoff; finishedMondayearlyWIB. RoutineMonday12October08:00WIB preserved.",
+      "where": "Anfield Liverpool England",
+      "why": "Fresh deployed SerpAPIpool00:01:41Z LiverpoolvsCity50000searchvolume/increase1000, tied highestEuropeanfootball withSassuoloMilan. No existingLiverpoolCity topic across74CMSrows/23IGmedia.",
+      "how": "Fullpublicclubreport ChrisShaw andfullindependentSkyreport CallumBishop HTTP200fromTD readbeforewriting. Club/independent matchnarrative corroborate dismissal,score,sequence,keeper andfirstdefeat. Browserinaccessible andCitysite403 recorded notpresentedasread."
+    },
+    "assignment": {
+      "pillar": "Sepak Bola Eropa",
+      "angle": "Recap / reaction — perubahan laga selepas kartu kuning keduaGravenberch",
+      "why_now": "getDailySportsPool activecms-load fetched2026-10-12T00:01:41.825Z; liverpool vsman city50000volume/increase1000 highest eligibleEuropeantopic alongsideSassuoloMilan. CompletedactualmatchOctober11UK/October12earlyWIB; noCMS/IGduplicate, preservesMonday08WIB Europeanpillar."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/liverpool-city-gravenberch-red-postmatch-20261011/source-1d906f60d12e787199e265b301a5df193e504a3105f3d733d5fb99452abfb9d7.jpg",
+      "type": "image",
+      "original_photo_url": "https://e0.365dm.com/26/10/1600x900/skysports-erling-haaland-man-city_7374462.jpg?20261011175947",
+      "source_page_url": "https://www.skysports.com/football/liverpool-vs-manchester-city/report/559501",
+      "credit": "Foto pertandingan melalui Sky Sports",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner expressly authorizes direct editorial processing of authentic source photographs. Internal editorial use decision, not fabricated purchased publisher licence. Preserve original subject identity and source credit; photo is genuine match celebration, not synthetic action.",
+      "scope": "Stadione photo editorial article andInstagramcarousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/liverpool-city-gravenberch-red-postmatch-20261011/source-1d906f60d12e787199e265b301a5df193e504a3105f3d733d5fb99452abfb9d7.jpg",
+        "headline": "City Membungkam Liverpool di Anfield",
+        "dek": "Kartu merah Ryan Gravenberch mengubah pertandingan. Manchester City menang 3–0 lewat gol Haaland, Doku, dan Cherki.",
+        "source_label": "LIVERPOOLFC.COM",
+        "reviewed_at": "2026-10-12T00:17:12.235Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "page_count": 4,
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "variant_id": "KOLOM",
+        "variant_standard": "STADIONE_COVER_VARIANTS_V1",
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/liverpool-city-gravenberch-red-postmatch-20261011/b571537315a016ca589ea38df51092eb044b5b6db50937bedddc18084e8f475e.jpg",
+        "sha256": "b571537315a016ca589ea38df51092eb044b5b6db50937bedddc18084e8f475e"
+      }
+    }
+  },
+  "editorial_review": "Article NEWS writtenbeforepagination. Leadcompletedresult -> scorelessphase/keeper andmissedchance -> secondyellow plusthreegoals -> firstLiverpooldefeatcontext. Lastcontextparagraphshares headingwiththird toavoidstandaloneonefactpage, nofixedfivepagequota. Cutredundantconclusion andrepeatfirstdefeattext. GoalNEWS lessons contribution,chronology,mechanism andcontext used; nofakequote,AIeditoriallabels,genericpadding,assist orMOTM. MainprimaryLFC/Sky fullHTTP200textsread; browserinaccessible/MCFC403 notincluded asverifiedsources. ExactSkygoalminutes notpubliclyused withoutnumericprimarycorroboration. LFC published17:25UTC, Sky18:25UTCmodified19:38UTC frompublicJSONLD, notrelative2hourslabel; eventkickofffromSkySportsEvent16:30+01. Sameauthenticgroupcelebrationphoto withHaalandcenter andDokuatright, teammatebehindretained; never inventpersonor claimportraitaloneisDoku. KOLOM variant selectedpernewrotation, exactarticledek/headline/counter4, cleanphotohero.",
+  "prepared_cover_sha256": "b571537315a016ca589ea38df51092eb044b5b6db50937bedddc18084e8f475e",
+  "source_photo_sha256": "1d906f60d12e787199e265b301a5df193e504a3105f3d733d5fb99452abfb9d7"
+}
