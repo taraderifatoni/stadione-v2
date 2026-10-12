@@ -49,3 +49,7 @@ Untuk setiap cover BARU gunakan enam varian dan aturan rotasi di STADIONE_COVER_
 ## Produksi Reels didahulukan untuk slot video
 
 Baca STADIONE_REELS_PLAYBOOK.md sebelum menyiapkan slot REEL. Gunakan helper committed scripts/cms-reel-research.cjs sejak beberapa jam sebelum clock, dengan query sesuai pilar/topik serta cache harian24jam melalui kuota SerpAPI yang sama. Pool video mingguan dan halaman Bing bukan bukti footage tidak tersedia. Pilih berita yang mempunyai video asli yang dapat diverifikasi sebelum menulis naskah, kemudian edit montage melalui renderer/publisher bersama. Fallback slot REEL menjadi CAROUSEL memerlukan input.reel_research berisi dua pencarian terarah, pemeriksaan tiga URL video asli dari dua kreator, alasan/bukti kegagalan dan digest review. Slot terjadwal/terbit/historis tidak dimutasi untuk memenuhi target video; target minimal satu Reels harian mengikuti matriks, bukan jaminan tayang tanpa bahan.
+
+## Pilih topik sesuai audiens sebelum mencari footage
+
+Baca STADIONE_AUDIENCE_POLICY.md dan editorial/audience-priorities.json. Indonesia berfokus Persija/Persib/Persebaya/PSS Sleman/Timnas; Eropa13klub pemilik; pemainTimnas di luar negeri berdasarkan kontribusi terverifikasi. Footage MLS mudah diunduh tidak menjadikannya pilihan Stadione. Ambil getDailySportsPool rilis melalui scripts/cms-audience-pool.cjs --pillar sesuaiCMS --output filebaru untuk audiencefilter/ranking, lalu cari video topik terpilih. Matchingnama bukan bukti afiliasi/roster atau izinmedia. Pertahankan pilar/clock, termasuk nonbolaIndonesia danTarkam.

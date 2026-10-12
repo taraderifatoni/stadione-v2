@@ -46,3 +46,7 @@ Perubahan ini berlaku pada workflow operator/automation yang memakai checkout co
 ### Provider pencarian YouTube
 
 Helper cms-reel-research.cjs menggunakan YouTube Data API bila YOUTUBE_API_KEY tersedia pada environment produksi. Modul scripts/youtube-discovery.cjs memberi metadata resmi, tanggalunggah absolut, durasi/kanal/views/license/embed dan cacheprivat24jam. Saat key tidak ada gunakan SerpAPI; saat API mengembalikan auth/quotaerror laporkan kegagalan, jangan menganggap video tidak tersedia. Kandidat metadata bukan berkasmedia/transkrip/izin. Key hanya di environmentserver, tanpa Git/output. Validasi node scripts/qa-youtube-discovery.cjs.
+
+## Relevansi sebelum kemudahan unduhan
+
+STADIONE_AUDIENCE_POLICY.md berlaku pada produksi baru. Tes MLS12Oktober keliru untukaudiens; jangan memilih ligaAmerika karena footage mudah diperoleh. Queryoperator memuat klubprioritas/Timnas/diaspora, cache lama diranking/filter ulang, adapter menahan sepak bola di luar fokus sebelum upload/render/CMSmutation. PemainTimnas di luar negeri dipilih menurut penampilan nyata dengan verifikasi klub/status/kontribusi saatkejadian; hintnama bukan roster resmi. Tetap sesuai pilar/clock.

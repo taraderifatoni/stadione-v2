@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-12",
+  "domestic_clubs": [
+    {
+      "name": "Persija",
+      "aliases": [
+        "Persija",
+        "Persija Jakarta"
+      ]
+    },
+    {
+      "name": "Persib",
+      "aliases": [
+        "Persib",
+        "Persib Bandung"
+      ]
+    },
+    {
+      "name": "Persebaya",
+      "aliases": [
+        "Persebaya",
+        "Persebaya Surabaya"
+      ]
+    },
+    {
+      "name": "PSS Sleman",
+      "aliases": [
+        "PSS Sleman",
+        "PSS"
+      ]
+    }
+  ],
+  "european_clubs": [
+    {
+      "name": "Arsenal",
+      "aliases": [
+        "Arsenal"
+      ]
+    },
+    {
+      "name": "Manchester United",
+      "aliases": [
+        "Manchester United",
+        "Man United",
+        "Man Utd",
+        "MU"
+      ]
+    },
+    {
+      "name": "Chelsea",
+      "aliases": [
+        "Chelsea"
+      ]
+    },
+    {
+      "name": "Manchester City",
+      "aliases": [
+        "Manchester City",
+        "Man City"
+      ]
+    },
+    {
+      "name": "Liverpool",
+      "aliases": [
+        "Liverpool"
+      ]
+    },
+    {
+      "name": "Juventus",
+      "aliases": [
+        "Juventus",
+        "Juve"
+      ]
+    },
+    {
+      "name": "Inter Milan",
+      "aliases": [
+        "Inter Milan",
+        "Internazionale",
+        "Inter Milano",
+        "Inter"
+      ]
+    },
+    {
+      "name": "AS Roma",
+      "aliases": [
+        "AS Roma",
+        "Roma"
+      ]
+    },
+    {
+      "name": "Real Madrid",
+      "aliases": [
+        "Real Madrid",
+        "Los Blancos"
+      ]
+    },
+    {
+      "name": "Barcelona",
+      "aliases": [
+        "Barcelona",
+        "Barca",
+        "Barça"
+      ]
+    },
+    {
+      "name": "PSG",
+      "aliases": [
+        "PSG",
+        "Paris Saint-Germain",
+        "Paris Saint Germain"
+      ]
+    },
+    {
+      "name": "Bayern Muenchen",
+      "aliases": [
+        "Bayern",
+        "Bayern Munich",
+        "Bayern München",
+        "Bayern Muenchen"
+      ]
+    },
+    {
+      "name": "Ajax Amsterdam",
+      "aliases": [
+        "Ajax",
+        "Ajax Amsterdam"
+      ]
+    }
+  ],
+  "national_team_aliases": [
+    "Timnas Indonesia",
+    "Tim Nasional Indonesia",
+    "Garuda Pertiwi"
+  ],
+  "diaspora_discovery_hints": [
+    {
+      "name": "Maarten Paes",
+      "aliases": [
+        "Maarten Paes",
+        "Marten Paes",
+        "Paes"
+      ]
+    },
+    {
+      "name": "Emil Audero",
+      "aliases": [
+        "Emil Audero",
+        "Audero"
+      ]
+    },
+    {
+      "name": "Jay Idzes",
+      "aliases": [
+        "Jay Idzes",
+        "Idzes"
+      ]
+    },
+    {
+      "name": "Kevin Diks",
+      "aliases": [
+        "Kevin Diks"
+      ]
+    },
+    {
+      "name": "Justin Hubner",
+      "aliases": [
+        "Justin Hubner",
+        "Hubner"
+      ]
+    },
+    {
+      "name": "Calvin Verdonk",
+      "aliases": [
+        "Calvin Verdonk",
+        "Verdonk"
+      ]
+    },
+    {
+      "name": "Elkan Baggott",
+      "aliases": [
+        "Elkan Baggott",
+        "Baggott"
+      ]
+    }
+  ],
+  "excluded_default_leagues": [
+    "MLS",
+    "Major League Soccer",
+    "NFL",
+    "NBA",
+    "WNBA",
+    "MLB",
+    "NHL",
+    "Liga Amerika",
+    "Liga Sepak Bola Amerika"
+  ],
+  "american_football_club_hints": [
+    "Minnesota United",
+    "Houston Dynamo",
+    "Inter Miami",
+    "LA Galaxy",
+    "Los Angeles FC",
+    "LAFC",
+    "New York Red Bulls"
+  ],
+  "notes": [
+    "Prioritas audiens dari instruksi pemilik; bukan klaim status klub atau skuad pemain saat ini.",
+    "Pemain Timnas Indonesia di luar negeri dapat dibahas di klub mana pun, setelah afiliasi dan kontribusi diverifikasi dari sumber primer dan independen.",
+    "Slot olahraga Indonesia dan Tarkam tetap mengikuti matriks; daftar klub tidak mengganti jam atau pilar.",
+    "Liga Amerika tidak dipilih hanya karena footage tersedia. Klub prioritas dalam laga pramusim di Amerika tetap dapat dibahas."
+  ]
+}

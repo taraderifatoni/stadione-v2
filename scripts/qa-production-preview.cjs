@@ -1,10 +1,10 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os'),vm=require('node:vm'),crypto=require('node:crypto');
 const source=fs.readFileSync(path.join(__dirname,'cms-produce-slot.cjs'),'utf8');
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
-async function fixture(format,declared){
+async function fixture(format,declared,packet){
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'stadione-preview-checksum-'));
  const input=path.join(dir,'input.json'),bytes=Buffer.from('reviewed '+format+' binary'),item={id:'additional',status:'DRAFT',updated_at:'fixture',scheduled_at:new Date().toISOString(),editorial_meta:{plan_key:'qa:additional'}};
- fs.writeFileSync(input,JSON.stringify({plan_key:'qa:additional',event_key:'qa-unique',format,dedupe_terms:['unique','fixture'],packet:{article:{},media:{editorial_cover:{}}}}));
+ fs.writeFileSync(input,JSON.stringify({plan_key:'qa:additional',event_key:'qa-unique',format,dedupe_terms:['unique','fixture'],packet:packet||{article:{},media:{editorial_cover:{}}}}));
  const cover=path.join(dir,'cover.jpg');fs.writeFileSync(cover,Buffer.from([255,216,255]));
  let schedules=0,updates=0;
  const db={
@@ -25,7 +25,7 @@ async function fixture(format,declared){
  }[file]);
  async function run(mode){
   const errors=[],outputs=[],processMock={argv:['node','adapter',mode,input,cover],env:{INSTAGRAM_USER_ID:'fixture',META_ACCESS_TOKEN:'fixture'}};
-  const context={require:x=>x.includes('cms-load.cjs')?load:x==='./reel-research-policy.cjs'?{fallbackIssues:()=>[]}:require(x),process:processMock,console:{log:x=>outputs.push(x),error:x=>errors.push(x)},fetch:async()=>({ok:true,json:async()=>({data:[]})}),URL,AbortSignal,Buffer};
+  const context={require:x=>x.includes('cms-load.cjs')?load:x==='./reel-research-policy.cjs'?{fallbackIssues:()=>[]}:x==='./editorial-audience.cjs'?require(path.join(__dirname,'editorial-audience.cjs')):require(x),process:processMock,console:{log:x=>outputs.push(x),error:x=>errors.push(x)},fetch:async()=>({ok:true,json:async()=>({data:[]})}),URL,AbortSignal,Buffer};
   const script=source.replace(/^#!.*\n/,'').replace('main().catch(e=>','globalThis.finished=main().catch(e=>');
   vm.runInNewContext(script,context,{filename:'cms-produce-slot.cjs'});await context.finished;return{errors,outputs,exitCode:processMock.exitCode};
  }
@@ -45,5 +45,7 @@ async function fixture(format,declared){
  }
  const f=await fixture('REEL',{output_sha256:'0'.repeat(64)});
  try{assert.match((await f.run('preview')).errors.join(' '),/Renderer checksum does not match/);assert(!fs.existsSync(f.prepared));assert.equal(f.updates,0);cases.push('renderer_mismatch_blocked_before_preparation')}finally{fs.rmSync(f.dir,{recursive:true,force:true})}
+ const blocked=await fixture('REEL',{}, {article:{title:'Caldeira Cetak Gol',dek:'Minnesota United vs Houston Dynamo di MLS',paragraphs:[]},assignment:{pillar:'Sepak Bola Dunia'}});
+ try{assert.match((await blocked.run('preview')).errors.join(' '),/Audience policy/);assert(!fs.existsSync(blocked.prepared));assert.equal(blocked.updates,0);assert.equal(blocked.schedules,0);cases.push('unrelated_american_league_blocked_before_preview_and_cms_mutation')}finally{fs.rmSync(blocked.dir,{recursive:true,force:true})}
  console.log(JSON.stringify({ok:true,cases}));
 })().catch(e=>{console.error(e);process.exitCode=1});

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Operator research; quota/cache writes only, never CMS/Meta mutations or downloads.
-const fs=require('node:fs'),load=require('./cms-load.cjs');
+const fs=require('node:fs'),load=require('./cms-load.cjs'),audience=require('./editorial-audience.cjs');
 async function main(){
  const args=process.argv.slice(2),arg=n=>args[args.indexOf(n)+1],plan=args.includes('--plan-key')?arg('--plan-key'):null;
  if(!plan||!args.includes('--output'))throw Error('Use --plan-key YYYY-MM-DD:slot --output /private/reel-research.json [--topic specific subject]');
@@ -11,8 +11,9 @@ async function main(){
  const att=await db.from('stadione_ig_publish_attempts').select('state').eq('content_id',item.id);if(att.error)throw att.error;if(att.data.some(x=>x.state!=='FAILED'))throw Error('Durable publication attempt present: do not re-produce');
  const topic=args.includes('--topic')?arg('--topic'):null;
  const pillar=String(item.category||item.editorial_meta?.pillar);
- const pool=process.env.YOUTUBE_API_KEY?await require("./youtube-discovery.cjs").getYoutubeVideoPool(pillar,topic):await load("src/lib/cms/serpapi.ts").getReelVideoPool(pillar,topic);
+ const pool=process.env.YOUTUBE_API_KEY?await require("./youtube-discovery.cjs").getYoutubeVideoPool(pillar,topic):await load("src/lib/cms/serpapi.ts").getReelVideoPool(pillar,topic||audience.defaultQuery(pillar));
  if(pool.payload){pool.candidates=require("./reel-research-policy.cjs").normalizeVideoResults(pool.payload);delete pool.payload;}
+ pool.candidates=audience.rankCandidates(pool.candidates,pillar);
  const out={version:1,plan_key:plan,requested_format:'REEL',scheduled_at:item.scheduled_at,checked_at:new Date().toISOString(),queries:[pool.query],discovery:pool,attempts:[],review:null,note:'Discovery is not verification/download/license. Open actual source pages, verify full reporting and record real footage/audio/timestamps. No fallback authorization from this file alone.'};
  fs.mkdirSync(require('node:path').dirname(arg('--output')),{recursive:true});fs.writeFileSync(arg('--output'),JSON.stringify(out,null,2));
  console.log(JSON.stringify({id:item.id,plan_key:plan,scheduled_at:item.scheduled_at,provider:pool.provider||'SERPAPI_BING',query:pool.query,cached:pool.cached,cache_hours:pool.cache_hours,candidates:pool.candidates}));
