@@ -1,0 +1,24 @@
+{
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "variant_id": "FOTO_DOMINAN",
+  "variant_name": "Foto dominan",
+  "tone": "DARK",
+  "previous_variants": [
+    "KOLOM",
+    "KLASIK",
+    "KLASIK",
+    "KLASIK",
+    "KLASIK",
+    "KLASIK"
+  ],
+  "selection_reason": "least_used_eligible_excluding_recent",
+  "result_checked": false,
+  "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "reference": "assets/editorial/cover-variants-20261012/foto_dominan.jpg",
+  "prompt": "Create ONE finished Stadione1080x1350 editorial cover from the authentic original athlete photograph and selected variant reference.\nUse the same approved font character and cream/charcoal/#84102d palette; composition must follow FOTO_DOMINAN.\nFoto/subjek menjadi sekitar dua pertiga bidang, latar foto charcoal, masthead kecil, headline cream kiri bawah dengan gradient gelap halus. Satu garis merah tipis, tekstur koran ringan; tidak penuh sobekan diagonal.\nPreserve photographed face, hair, body, jersey, pose and identity; transform editorial background only. No invented athlete/action.\nExact headline: Veda Pulang dari Mandalika dengan Sepuluh Poin\nExact deck: Finis keenam di balapan kandang mengantar Veda Ega Pratama naik ke peringkat ketujuh klasemen Moto3.\nSource label only: SUMBER: MOTOGP.COM\nPage count: 1/4 exactly; review visible count after final pagination.\nInternal horizontal margins72px, normal tight line spacing, deck32px minimum, source24px minimum; measure wrapping and inspect final pixels.\nNo EDISI DIGITAL, no save/shareCTA, no promotional footer. Website uses clean original photograph; article pages remain cream text-only.",
+  "metadata_to_add": {
+    "variant_id": "FOTO_DOMINAN",
+    "variant_standard": "STADIONE_COVER_VARIANTS_V1"
+  },
+  "note": "Suggestion only. Generate artwork from authentic photo, inspect full-resolution cover, record review/hash and use normal shared preview/audit/publisher. Never mutate existing scheduled or published packets."
+}

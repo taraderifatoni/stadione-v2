@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Veda Pulang dari Mandalika dengan Sepuluh Poin",
+  "dek": "Finis keenam di balapan kandang mengantar Veda Ega Pratama naik ke peringkat ketujuh klasemen Moto3.",
+  "caption": "VEDA PULANG DARI MANDALIKA DENGAN SEPULUH POIN\n\nVeda Ega Pratama finis keenam pada Moto3 GP Indonesia, Minggu, 11 Oktober 2026. Pembalap Honda Team Asia itu membawa pulang 10 poin dan naik ke peringkat ketujuh klasemen dengan 115 poin.\n\nPersaingan di Mandalika belum mengantarnya ke podium, tetapi Veda menjadi pembalap Honda dengan hasil terbaik dalam balapan kandangnya.\n\n#Stadione #VedaEgaPratama #Moto3 #Mandalika #OlahragaIndonesia",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Sepuluh Poin di Hadapan Publik Sendiri",
+      "text": "Veda Ega Pratama menuntaskan Moto3 Grand Prix Indonesia di urutan keenam, Minggu, 11 Oktober 2026. Pembalap Honda Team Asia itu meraih 10 poin dari balapan di Sirkuit Mandalika, Lombok Tengah, Nusa Tenggara Barat. Ia memulai lomba dari posisi ketujuh dan memperbaiki satu tempat saat finis.",
+      "claim_ids": [
+        "result",
+        "grid"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "race",
+      "heading": "Bertarung dengan Dua Pembalap Leopard",
+      "text": "Veda ikut meramaikan persaingan barisan depan sebelum rombongan pembalap terpecah. Dalam perebutan posisi pada fase akhir, ia menghadapi Adrian Fernandez dan Guido Pini dari Leopard Racing. Ketiganya berusaha mendekati kelompok di depan, tetapi jarak itu tidak berhasil ditutup. Veda akhirnya menjadi pembalap Honda dengan hasil terbaik pada balapan kandangnya, meski podium masih berada di luar jangkauan.",
+      "claim_ids": [
+        "battle",
+        "result"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "standing",
+      "heading": "Naik ke Tujuh Besar Klasemen",
+      "text": "Tambahan poin di Mandalika membawa koleksi Veda menjadi 115 poin. Ia kini menempati peringkat ketujuh klasemen Moto3. Hasil ini datang pada akhir pekan ketika Maximo Quiles memenangkan balapan sekaligus memastikan gelar juara dunia. David Almansa finis kedua dan Brian Uriarte melengkapi podium.",
+      "claim_ids": [
+        "standing",
+        "champion"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "next",
+      "heading": "Naik ke Tujuh Besar Klasemen",
+      "text": "Quiles mengunci gelar dengan lima putaran masih tersisa. Kalender Moto3 selanjutnya berlanjut ke Grand Prix Australia di Phillip Island pada 23–25 Oktober.",
+      "claim_ids": [
+        "champion",
+        "next"
+      ],
+      "kind": "FACT"
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261011-fellhauer-kickoff-pressing-news",
+    "goal-20261009-coutinho-debut-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITORIAL_REVIEW",
+    "reviewed_at": "2026-10-12T05:10:19.108Z",
+    "article_digest": "984257d8371128920c490ccd5d20e7d6a8cbf78b66ac6453750f5906e4907130"
+  }
+}

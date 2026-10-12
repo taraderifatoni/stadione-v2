@@ -1,0 +1,289 @@
+{
+  "plan_key": "2026-10-12:mon-noon",
+  "event_key": "veda-mandalika-sixth-standings-20261011",
+  "format": "CAROUSEL",
+  "dedupe_terms": [
+    "veda",
+    "mandalika"
+  ],
+  "format_reason": "OriginalMonday13WIBCAROUSEL retained fornonbola pride; noformatfallback orslotchange.",
+  "packet": {
+    "version": 3,
+    "narrative_reviewed": true,
+    "article": {
+      "version": 1,
+      "genre": "NEWS",
+      "title": "Veda Pulang dari Mandalika dengan Sepuluh Poin",
+      "dek": "Finis keenam di balapan kandang mengantar Veda Ega Pratama naik ke peringkat ketujuh klasemen Moto3.",
+      "caption": "VEDA PULANG DARI MANDALIKA DENGAN SEPULUH POIN\n\nVeda Ega Pratama finis keenam pada Moto3 GP Indonesia, Minggu, 11 Oktober 2026. Pembalap Honda Team Asia itu membawa pulang 10 poin dan naik ke peringkat ketujuh klasemen dengan 115 poin.\n\nPersaingan di Mandalika belum mengantarnya ke podium, tetapi Veda menjadi pembalap Honda dengan hasil terbaik dalam balapan kandangnya.\n\n#Stadione #VedaEgaPratama #Moto3 #Mandalika #OlahragaIndonesia",
+      "paragraphs": [
+        {
+          "id": "lead",
+          "heading": "Sepuluh Poin di Hadapan Publik Sendiri",
+          "text": "Veda Ega Pratama menuntaskan Moto3 Grand Prix Indonesia di urutan keenam, Minggu, 11 Oktober 2026. Pembalap Honda Team Asia itu meraih 10 poin dari balapan di Sirkuit Mandalika, Lombok Tengah, Nusa Tenggara Barat. Ia memulai lomba dari posisi ketujuh dan memperbaiki satu tempat saat finis.",
+          "claim_ids": [
+            "result",
+            "grid"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "race",
+          "heading": "Bertarung dengan Dua Pembalap Leopard",
+          "text": "Veda ikut meramaikan persaingan barisan depan sebelum rombongan pembalap terpecah. Dalam perebutan posisi pada fase akhir, ia menghadapi Adrian Fernandez dan Guido Pini dari Leopard Racing. Ketiganya berusaha mendekati kelompok di depan, tetapi jarak itu tidak berhasil ditutup. Veda akhirnya menjadi pembalap Honda dengan hasil terbaik pada balapan kandangnya, meski podium masih berada di luar jangkauan.",
+          "claim_ids": [
+            "battle",
+            "result"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "standing",
+          "heading": "Naik ke Tujuh Besar Klasemen",
+          "text": "Tambahan poin di Mandalika membawa koleksi Veda menjadi 115 poin. Ia kini menempati peringkat ketujuh klasemen Moto3. Hasil ini datang pada akhir pekan ketika Maximo Quiles memenangkan balapan sekaligus memastikan gelar juara dunia. David Almansa finis kedua dan Brian Uriarte melengkapi podium.",
+          "claim_ids": [
+            "standing",
+            "champion"
+          ],
+          "kind": "FACT"
+        },
+        {
+          "id": "next",
+          "heading": "Naik ke Tujuh Besar Klasemen",
+          "text": "Quiles mengunci gelar dengan lima putaran masih tersisa. Kalender Moto3 selanjutnya berlanjut ke Grand Prix Australia di Phillip Island pada 23–25 Oktober.",
+          "claim_ids": [
+            "champion",
+            "next"
+          ],
+          "kind": "FACT"
+        }
+      ],
+      "benchmark_ids": [
+        "goal-20261011-fellhauer-kickoff-pressing-news",
+        "goal-20261009-coutinho-debut-fitness-news"
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EDITORIAL_REVIEW",
+        "reviewed_at": "2026-10-12T05:10:19.108Z",
+        "article_digest": "984257d8371128920c490ccd5d20e7d6a8cbf78b66ac6453750f5906e4907130"
+      }
+    },
+    "sources": [
+      {
+        "id": "primary",
+        "url": "https://www.motogp.com/id/news/2026/10/11/quiles-kunci-gelar-moto3-di-mandalika-veda-pratama-finis-keenam/1174842",
+        "primary": true,
+        "publisher_group": "DORNA_MOTOGP",
+        "published_at": "2026-10-11T00:00:00Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "4890d48bd2bac17bdd0b1d63a9bc47c043676c02642d470416707d36e55e0e38",
+        "date_precision": "DAY",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      },
+      {
+        "id": "honda",
+        "url": "https://honda.racing/moto-3/post/home-hero-pratama-takes-top-honda-honours-in-indonesia",
+        "primary": true,
+        "publisher_group": "HONDA_RACING",
+        "published_at": "2026-10-11T05:25:00Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "c2f2f513e91a76aed77f671af21aad7006e14aec5554acdc693a745cde74b024",
+        "date_precision": "SECOND",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      },
+      {
+        "id": "grid",
+        "url": "https://honda.racing/moto-3/post/honda-riders-in-the-mix-in-mandalika-qualifying",
+        "primary": true,
+        "publisher_group": "HONDA_RACING",
+        "published_at": "2026-10-10T06:23:00Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "dfc516e20ee89e044a006065396aed6c01a24a573136496dafe4e48c625ab51c",
+        "date_precision": "SECOND",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      },
+      {
+        "id": "antara",
+        "url": "https://www.antaranews.com/berita/5780629/veda-ega-finis-keenam-quiles-juara-moto3-2026",
+        "primary": false,
+        "publisher_group": "ANTARA",
+        "published_at": "2026-10-11T04:58:39Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "e8a23587d75c1598939b381825ee9a05464cc630ec1f96ed57d6bb27edeb162e",
+        "date_precision": "SECOND",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      },
+      {
+        "id": "standing",
+        "url": "https://www.antaranews.com/berita/5780761/veda-ega-naik-ke-peringkat-ketujuh-klasemen-moto3",
+        "primary": false,
+        "publisher_group": "ANTARA",
+        "published_at": "2026-10-11T07:16:09Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "537b6ac10ec82b4bd5a26d1d7bea009ba27253f678fdafdde2bfc358de7e9c9f",
+        "date_precision": "SECOND",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      },
+      {
+        "id": "tirto",
+        "url": "https://tirto.id/hasil-moto3-mandalika-2026-ranking-veda-ega-update-klasemen-hDJ2",
+        "primary": false,
+        "publisher_group": "TIRTO",
+        "published_at": "2026-10-11T05:00:00Z",
+        "retrieved_at": "2026-10-12T05:10:19.108Z",
+        "sha256": "ec4255900789b4605b24eb3a0bc4614a29994c8c88e1122f18a3620db1f4b4cc",
+        "date_precision": "SECOND",
+        "full_text_private": "/opt/stadione-editorial/noon-20261012/sources"
+      }
+    ],
+    "claims": [
+      {
+        "id": "result",
+        "text": "Veda Ega Pratama Honda Team Asia Indonesia finished sixth/6 at Mandalika Lombok Tengah NTB Indonesia Grand Prix Moto3 Sunday 11 October 2026; received 10 points. Not a podium or victory. Race started 12:00 WITA/11:00 WIB/04:00 UTC. Publication slot Monday 12 October 13:00 WIB.",
+        "verified": true,
+        "evidence_source_ids": [
+          "primary",
+          "primary",
+          "honda",
+          "antara"
+        ]
+      },
+      {
+        "id": "grid",
+        "text": "Veda qualified seventh/7 Honda Team Asia and finished sixth/6, improving one position overall, not claiming exact in-race lap chronology.",
+        "verified": true,
+        "evidence_source_ids": [
+          "grid",
+          "antara"
+        ]
+      },
+      {
+        "id": "battle",
+        "text": "Veda participated in front group early and late battled Adrian Fernandez and Guido Pini Leopard Racing; group could not catch riders ahead. Veda best placed Honda rider sixth, no claim he finished ahead of all riders, no definitive Pini/Fernandez ordered results due contradictory other reports.",
+        "verified": true,
+        "evidence_source_ids": [
+          "honda",
+          "honda",
+          "primary",
+          "tirto"
+        ]
+      },
+      {
+        "id": "standing",
+        "text": "After Mandalika Veda seventh/7 overall on 115 points following 10 point race gain. Do not use contradictory Danish 109 vs107 or first-race 0.300 gap not primary confirmed.",
+        "verified": true,
+        "evidence_source_ids": [
+          "primary",
+          "standing"
+        ]
+      },
+      {
+        "id": "champion",
+        "text": "Maximo Quiles won the race and 2026 Moto3 World Championship with five/5 rounds remaining; David Almansa second and Brian Uriarte third. No exact lap of lead change because primary2 vsTirto5 conflicts. No Salmela4vs5 claim.",
+        "verified": true,
+        "evidence_source_ids": [
+          "primary",
+          "primary",
+          "antara"
+        ]
+      },
+      {
+        "id": "next",
+        "text": "Next Moto3 event is Australian Grand Prix Phillip Island 23-25 October 2026, future scheduled not already completed.",
+        "verified": true,
+        "evidence_source_ids": [
+          "primary",
+          "honda"
+        ]
+      }
+    ],
+    "slides": [
+      {
+        "role": "hook",
+        "headline": "Veda Pulang dari Mandalika dengan Sepuluh Poin",
+        "body": "Finis keenam di balapan kandang mengantar Veda Ega Pratama naik ke peringkat ketujuh klasemen Moto3.",
+        "claim_ids": [
+          "result",
+          "grid"
+        ],
+        "layout": "photo"
+      },
+      {
+        "role": "article",
+        "headline": "Sepuluh Poin di Hadapan Publik Sendiri",
+        "body": "Veda Ega Pratama menuntaskan Moto3 Grand Prix Indonesia di urutan keenam, Minggu, 11 Oktober 2026. Pembalap Honda Team Asia itu meraih 10 poin dari balapan di Sirkuit Mandalika, Lombok Tengah, Nusa Tenggara Barat. Ia memulai lomba dari posisi ketujuh dan memperbaiki satu tempat saat finis.",
+        "claim_ids": [
+          "result",
+          "grid"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Bertarung dengan Dua Pembalap Leopard",
+        "body": "Veda ikut meramaikan persaingan barisan depan sebelum rombongan pembalap terpecah. Dalam perebutan posisi pada fase akhir, ia menghadapi Adrian Fernandez dan Guido Pini dari Leopard Racing. Ketiganya berusaha mendekati kelompok di depan, tetapi jarak itu tidak berhasil ditutup. Veda akhirnya menjadi pembalap Honda dengan hasil terbaik pada balapan kandangnya, meski podium masih berada di luar jangkauan.",
+        "claim_ids": [
+          "battle",
+          "result"
+        ],
+        "layout": "full_text"
+      },
+      {
+        "role": "article",
+        "headline": "Naik ke Tujuh Besar Klasemen",
+        "body": "Tambahan poin di Mandalika membawa koleksi Veda menjadi 115 poin. Ia kini menempati peringkat ketujuh klasemen Moto3. Hasil ini datang pada akhir pekan ketika Maximo Quiles memenangkan balapan sekaligus memastikan gelar juara dunia. David Almansa finis kedua dan Brian Uriarte melengkapi podium.\n\nQuiles mengunci gelar dengan lima putaran masih tersisa. Kalender Moto3 selanjutnya berlanjut ke Grand Prix Australia di Phillip Island pada 23–25 Oktober.",
+        "claim_ids": [
+          "standing",
+          "champion",
+          "next"
+        ],
+        "layout": "full_text"
+      }
+    ],
+    "event_status": "FINAL",
+    "event_at": "2026-10-11T04:00:00Z",
+    "context": {
+      "who": "Veda Ega Pratama, Honda Team Asia Indonesia; Fernandez and Pini comparison; Quiles champion context",
+      "what": "Confirmed sixth in home Moto3 race,10points,115points andseventhstanding; notracewin orpodium",
+      "when": "CompletedSunday11October2026. Start12WITA/04UTC fromHondaQualifying. NormalMonday12October13WIB preserved.",
+      "where": "Mandalika Lombok Tengah Nusa Tenggara Barat Indonesia, next scheduledAustralia PhillipIsland",
+      "why": "Mondaynonfootball pride pillar uses verifiedIndonesianrider achievement afterweekendMandalika. No Veda topic acrossCMS or24IGmedia; MotoGP weekendcoverage inlatestSerpAPInews pool.",
+      "how": "Read fullMotoGPofficialreport andHondaRacingrace/qualifying and independentANTARA reporterMuhammadRamdan plusTirtoAhmadZidan. Conflicting specificlap/positions notused, no fabricatedquote. Underwatergold candidate rejected becauseprimarywinner notavailable."
+    },
+    "assignment": {
+      "pillar": "Olahraga Indonesia",
+      "angle": "Apresiasi — sepuluh poin Veda pada balapan kandang dan kenaikan klasemen",
+      "why_now": "Latest deployedgetDailySportsPool fetched2026-10-12T05:03:43.834Z shows freshMandalikacoverage; follow-up fullraceandstandingresearch verifiesIndonesianVeda result within24h, notEuropeanfootball trend outsideMondaynonbola pillar."
+    },
+    "media": {
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/veda-mandalika-sixth-standings-20261011/source-31e3c0db1879a1c3e8e3fa0316ebe72df3e42a9fc90e8baba451b0edc7fd14cb.jpg",
+      "type": "image",
+      "credit": "Foto Honda Racing, Moto3 GP Indonesia 11 Oktober 2026",
+      "original_photo_url": "https://cdn.honda.racing/production/275428/conversions/Pratama-large.jpg",
+      "source_page_url": "https://honda.racing/moto-3/post/home-hero-pratama-takes-top-honda-honours-in-indonesia",
+      "rights_status": "CLEARED",
+      "rights_evidence": "Owner explicitly authorizes editorial processing of authentic source photographs for Stadione. Internal editorial use decision only, not a fabricated publisher licence. Preserve rider identity, helmet, pose, bike and source credit; source belongs to Honda Racing official race report.",
+      "scope": "Stadione CMS article clean source photograph andInstagramcarousel",
+      "editorial_cover": {
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "source_photo_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/veda-mandalika-sixth-standings-20261011/source-31e3c0db1879a1c3e8e3fa0316ebe72df3e42a9fc90e8baba451b0edc7fd14cb.jpg",
+        "headline": "Veda Pulang dari Mandalika dengan Sepuluh Poin",
+        "dek": "Finis keenam di balapan kandang mengantar Veda Ega Pratama naik ke peringkat ketujuh klasemen Moto3.",
+        "source_label": "MOTOGP.COM",
+        "page_count": 4,
+        "reviewed_at": "2026-10-12T05:14:45.436Z",
+        "reviewed_by": "CODEX_VISUAL_EDITOR",
+        "safe_wrap": true,
+        "authentic_subject": true,
+        "editorial_background": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "variant_id": "FOTO_DOMINAN",
+        "variant_standard": "STADIONE_COVER_VARIANTS_V1",
+        "sha256": "258f2fc04e9551616bb82989bbc2b6f927415e4f3ca68190e4c1fb98ba3986fc",
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/veda-mandalika-sixth-standings-20261011/258f2fc04e9551616bb82989bbc2b6f927415e4f3ca68190e4c1fb98ba3986fc.jpg"
+      }
+    }
+  },
+  "editorial_review": "Article NEWS written before losslesspagination. GoalFellhauer/Coutinhocontribution andcontextlessons used. Leadresult thenbattlemechanism thenstanding/champion/nextverifiedcalendar. Avoid disputedofficialLap2vsTirto5, PiniFernandez orderandSalmela4vs5, Danish107vs109, unconfirmedgap. No madeupquotes, analysislabels, padding. Sourcephoto is authenticHondaRacing race group, VedaHondaTeamAsia forefrontwhite/red, helmet preserved no AIface. Websitecleanphoto not collagetext."
+}

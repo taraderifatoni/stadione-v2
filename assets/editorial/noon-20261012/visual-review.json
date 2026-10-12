@@ -1,0 +1,18 @@
+{
+  "reviewed_at": "2026-10-12T05:14:45.436Z",
+  "reviewer": "CODEX_VISUAL_EDITOR",
+  "cover_sha256": "258f2fc04e9551616bb82989bbc2b6f927415e4f3ca68190e4c1fb98ba3986fc",
+  "cover_variant": "FOTO_DOMINAN",
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "page_count": 4,
+  "headline_and_dek_match": true,
+  "source_label": "MOTOGP.COM",
+  "no_edition_label": true,
+  "no_promotional_footer": true,
+  "authentic_source_sha256": "31e3c0db1879a1c3e8e3fa0316ebe72df3e42a9fc90e8baba451b0edc7fd14cb",
+  "photo_review": "Honda Racing official Pratama race photo. Foremost white/red Honda Team Asia motorcycle, rider helmet, body and pose retain original identity. No invented visible face or fabricated podium photo. Other original race riders remain in background.",
+  "pixel_review": "Native generated image1092x1440 resized uniformly into1080x1350 canvas:1001x1320 content with39px left/right border15px top/bottom. Source typography internal margins then combined canvas margin>=72px; headline4lines, deck3lines and source insidecanvas. Thin red separator stays clear of glyphs. Source photo dominates upperportion; charcoal/cream newspaper texture atedges andredrule. Clean website uses originalHonda photo withouttext. Rendered slides still require independent preview inspection.",
+  "initial_packet_audit": [],
+  "reference_audit": [],
+  "render_preview_pending": true
+}
