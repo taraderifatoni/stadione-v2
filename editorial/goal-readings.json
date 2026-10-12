@@ -96,6 +96,20 @@
         "Penutup mengembalikan cerita individu ke hasil pertandingan dan posisi tim. Bahasan keputusan wasit perlu memisahkan kejadian, pendapat narasumber dan tafsiran penulis, bukan menetapkan dugaan sebagai kepastian."
       ],
       "application": "Untuk berita pascalaga Stadione, cari detail baru dari narasumber, jelaskan mekanisme aksi, lalu tambahkan konteks yang relevan. Kutipan harus menjawab pertanyaan cerita. Tutup dengan dampak pertandingan yang diverifikasi; opini tentang wasit tetap diberi atribusi, tanpa label analisis atau paragraf pengisi."
+    },
+    {
+      "id": "goal-20261012-brighton-hurzeler-pressing-feature",
+      "url": "https://www.goal.com/id/berita/pelajaran-berharga-untuk-juara-arsenal-fabian-huerzeler-telah-membentuk-tim-paling-bersinar-di-premier-league-di-brighton/blt5be4fc4f2a7cee55",
+      "read_at": "2026-10-12T00:52:57Z",
+      "kind": "FEATURE",
+      "lessons": [
+        "Pembuka memasang angle perkembangan tim, lalu mengingatkan kegagalan terdahulu. Kontras itu menjadi pertanyaan cerita yang dijawab oleh perubahan permainan, bukan rangkuman hasil semata.",
+        "Pembahasan taktik mengikuti hubungan sebab akibat. Tekanan terhadap pembawa bola, penutupan jalur umpan dan perebutan bola berikutnya menjelaskan mekanisme sebelum angka dipakai sebagai bukti.",
+        "Data memiliki pembanding yang jelas, seperti periode awal musim dan pencapaian terdahulu. Angka memperkuat argumen khusus tentang serangan atau pertahanan, bukan sekadar memenuhi paragraf.",
+        "Kutipan berpindah fungsi sepanjang tulisan, dari kritik lama ke penjelasan pelatih, pengalaman pemain dan tanggapan lawan. Setiap suara menambahkan informasi yang belum disampaikan narasi.",
+        "Bagian profil menghubungkan kemampuan pemain dengan kebutuhan sistem. Penutup kembali pada hubungan kedua pelatih yang dibuka sebelumnya, sehingga cerita selesai melalui perkembangan nyata."
+      ],
+      "application": "Dalam feature Stadione, bangun pertanyaan melalui kontras kondisi lama dan baru. Jelaskan aksi serta peran pemain sebelum menyajikan data terverifikasi. Pilih kutipan berdasarkan informasi tambahannya, lalu tutup dengan perkembangan yang menjawab pembuka. Hindari pujian umum dan label analisis; fakta artikel referensi tidak otomatis menjadi fakta berita baru."
     }
   ]
 }
