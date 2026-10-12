@@ -1,0 +1,18 @@
+{
+  "video": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/caldeira-houston-goal-20261011-additional-reel-test/6fa6ed6876621399492886a8a67c9ab482a5409b05b45f245f13c9d78c9b6d53-caldeira-cleared.mp4",
+    "sha256": "6fa6ed6876621399492886a8a67c9ab482a5409b05b45f245f13c9d78c9b6d53",
+    "bytes": 6349019
+  },
+  "frame": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/caldeira-houston-goal-20261011-additional-reel-test/45fd44421192f4c9b797b5502d0c50a4f498c768193e37b336ead6b36aacc6fe-article-frame.jpg",
+    "sha256": "45fd44421192f4c9b797b5502d0c50a4f498c768193e37b336ead6b36aacc6fe",
+    "bytes": 56849
+  },
+  "raw_sha256": "6bcb893c5f3ebb9270e70ecbeebe0af0bbc41652db5c376f3b34dce7dce6c419",
+  "audio_sha256": "de3bdc7f5e5e95b00be3aa6413eb6e2cd8a9e01d51eda49dd90f205070eb5104",
+  "license_video_id": "ecFUjbdfg90",
+  "license": "creativeCommon",
+  "recording_match": "same goal/camera angle visible in officialYouTube thumbnail and downloadedofficialInstagram recording; transcoded bytes not claimed identical",
+  "article_digest": "c340b8a6a2f105a1705648c421b6474106238538655e553c4d81d989f26b168e"
+}

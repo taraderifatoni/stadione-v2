@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-10-12T08:02:55.019Z",
+  "preparation_commit": "e3c5d20bf957c09a875434567519f5decbefcd76",
+  "id": "514f13ec-819f-4dab-b5ca-247cb4f69d0e",
+  "status": "PUBLISHED",
+  "scheduled_at": null,
+  "plan_key": "2026-10-12:additional-reel-caldeira-test",
+  "additional": true,
+  "parent": {
+    "id": "d3a598cc-a19b-4ffc-98fa-179aa8e2049d",
+    "status": "PUBLISHED",
+    "scheduled_at": null,
+    "body_same": true,
+    "hero_clean": true,
+    "url": "https://stadione.pro/news/caldeira-masuk-dari-bangku-cadangan-menyambar-dari-sudut-sempit-514f13ec",
+    "public_http": 200,
+    "title_and_article_visible": true
+  },
+  "night": {
+    "id": "68cfc401-a16a-460e-b657-0472c9f53f41",
+    "plan_key": "2026-10-12:mon-pm",
+    "status": "DRAFT",
+    "scheduled_at": "2026-10-12T13:00:00+00:00",
+    "unchanged": true
+  },
+  "other_rows_unchanged": 76,
+  "added_rows": 2,
+  "audit": [],
+  "output_sha256": "a7123c3518b3658df45eb475db05e7c72e10183c8fa564cb4235fa9c3b2dc0af",
+  "public_preview_bytes_identical": false,
+  "render_audit": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 11.3,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "ai_footage": false,
+    "scene_count": 3,
+    "source_count": 1,
+    "source_video": true,
+    "normalized_audio": true
+  },
+  "article_digest": "c340b8a6a2f105a1705648c421b6474106238538655e553c4d81d989f26b168e",
+  "attempts": [
+    {
+      "state": "PUBLISHED",
+      "media_id": "18114587180151231"
+    }
+  ],
+  "no_direct_meta_publish": true,
+  "published_verified_at": "2026-10-12T08:02:58.365Z",
+  "instagram": {
+    "account": "stadione.id",
+    "media_id": "18114587180151231",
+    "product": "REELS",
+    "type": "VIDEO",
+    "published_at": "2026-10-12T08:01:15+0000",
+    "url": "https://www.instagram.com/reel/DeYwU0QDxn9/",
+    "topic_count": 1,
+    "account_media_count": 26
+  },
+  "actual_public_video_visually_reviewed": {
+    "times_seconds": [
+      1,
+      5,
+      9
+    ],
+    "headline_wrap_safe": true,
+    "captions_change": true,
+    "original_goal_action_visible": true,
+    "source_credit": true,
+    "ai_footage": false
+  },
+  "preview_public_rerender_psnr_db": 56.222475,
+  "byte_difference_disclosed": "Shared app rerenders. Encoded bytes differ; public output independently fetched/hash/probed and all3scene frames inspected. No claim of byte identity or shared Reel checksum enforcement.",
+  "audio": {
+    "original_muted": true,
+    "in_house_instrumental": true,
+    "mean_db": -17.2,
+    "peak_db": -1.4,
+    "audio_listened": false
+  },
+  "idempotency_replay": "Adapter skipped PUBLISHED; no retry of durable attempt",
+  "normal_editorial_automation": {
+    "id": "6ac5fe18aa6081919975505004e57a3d",
+    "enabled": true,
+    "timezone": "Asia/Jakarta",
+    "hours": [
+      7,
+      12,
+      19
+    ],
+    "unchanged": true,
+    "next_run_time_reported": null,
+    "night_production_expected_by_schedule": "19:00 WIB",
+    "night_slot": "20:00 WIB",
+    "not_yet_produced": true
+  }
+}
