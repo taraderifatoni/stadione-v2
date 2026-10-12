@@ -41,3 +41,8 @@ Tidak memaksa video tak terverifikasi demi target frekuensi. Bila setelah riset 
 Hitung porsi Reels berdasarkan media_product_type Instagram, bukan label CMS saja. Bandingkan reach, views, shares, saves dan retensi yang tersedia dengan usia posting sebanding. Jangan menetapkan Reels selalu lebih tinggi hanya dari jumlah tayangan total atau mengisi metrik yang belum tersedia.
 
 Perubahan ini berlaku pada workflow operator/automation yang memakai checkout committed. Renderer/publisher aplikasi aktif tidak diganti; server tetap memerlukan operator/agent untuk riset, naskah dan footage. Jalankan `node scripts/qa-reel-research.cjs` untuk validasi parser, cache, kuota dan guard.
+
+
+### Provider pencarian YouTube
+
+Helper cms-reel-research.cjs menggunakan YouTube Data API bila YOUTUBE_API_KEY tersedia pada environment produksi. Modul scripts/youtube-discovery.cjs memberi metadata resmi, tanggalunggah absolut, durasi/kanal/views/license/embed dan cacheprivat24jam. Saat key tidak ada gunakan SerpAPI; saat API mengembalikan auth/quotaerror laporkan kegagalan, jangan menganggap video tidak tersedia. Kandidat metadata bukan berkasmedia/transkrip/izin. Key hanya di environmentserver, tanpa Git/output. Validasi node scripts/qa-youtube-discovery.cjs.

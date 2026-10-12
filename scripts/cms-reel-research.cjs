@@ -10,10 +10,11 @@ async function main(){
  if(!['DRAFT','PENDING_REVIEW'].includes(item.status)||item.editorial_meta?.cms_deleted_at||item.archived_at){console.log(JSON.stringify({skipped:true,id:item.id,status:item.status}));return;}
  const att=await db.from('stadione_ig_publish_attempts').select('state').eq('content_id',item.id);if(att.error)throw att.error;if(att.data.some(x=>x.state!=='FAILED'))throw Error('Durable publication attempt present: do not re-produce');
  const topic=args.includes('--topic')?arg('--topic'):null;
- const pool=await load('src/lib/cms/serpapi.ts').getReelVideoPool(String(item.category||item.editorial_meta?.pillar),topic);
- pool.candidates=require("./reel-research-policy.cjs").normalizeVideoResults(pool.payload);delete pool.payload;
+ const pillar=String(item.category||item.editorial_meta?.pillar);
+ const pool=process.env.YOUTUBE_API_KEY?await require("./youtube-discovery.cjs").getYoutubeVideoPool(pillar,topic):await load("src/lib/cms/serpapi.ts").getReelVideoPool(pillar,topic);
+ if(pool.payload){pool.candidates=require("./reel-research-policy.cjs").normalizeVideoResults(pool.payload);delete pool.payload;}
  const out={version:1,plan_key:plan,requested_format:'REEL',scheduled_at:item.scheduled_at,checked_at:new Date().toISOString(),queries:[pool.query],discovery:pool,attempts:[],review:null,note:'Discovery is not verification/download/license. Open actual source pages, verify full reporting and record real footage/audio/timestamps. No fallback authorization from this file alone.'};
  fs.mkdirSync(require('node:path').dirname(arg('--output')),{recursive:true});fs.writeFileSync(arg('--output'),JSON.stringify(out,null,2));
- console.log(JSON.stringify({id:item.id,plan_key:plan,scheduled_at:item.scheduled_at,query:pool.query,cached:pool.cached,cache_hours:pool.cache_hours,candidates:pool.candidates}));
+ console.log(JSON.stringify({id:item.id,plan_key:plan,scheduled_at:item.scheduled_at,provider:pool.provider||'SERPAPI_BING',query:pool.query,cached:pool.cached,cache_hours:pool.cache_hours,candidates:pool.candidates}));
 }
 main().catch(e=>{console.error(e.message);process.exitCode=1});

@@ -43,3 +43,8 @@ Pemeriksaan melalui TD pada environment produksi yang digunakan publisher menunj
 - https://developers.google.com/youtube/terms/developer-policies
 
 Status: pembacaan dan rancangan selesai; pemasangan credential serta tes API nyata belum dilakukan. Dokumen ini tidak menyatakan Reels baru sudah dibuat atau terbit.
+
+
+## Implementasi12Oktober2026
+
+Tes awal key pengguna berhasil HTTP200 pada search.list dan videos.list. scripts/youtube-discovery.cjs dan integrasi scripts/cms-reel-research.cjs disiapkan/diperiksa; YouTube dipilih bila key terpasang, SerpAPI tersedia saat key belum ada. QAfixture lolos dengan metadata/dedupe/cache24jam dan error tersanitasi; belum menyatakan pemasangan permanen selesai sebelum bukti live dicatat di Plan Master. Tidak ada kemampuan downloadMP4/transkrip sembarang kanal/OAuthaccount yang diklaim.
