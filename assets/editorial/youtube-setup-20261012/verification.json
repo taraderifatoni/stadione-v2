@@ -1,0 +1,38 @@
+{
+  "verified_at": "2026-10-12T07:25:42.117Z",
+  "preparation_commit": "e7afa89a9b6e0e419e6f00d29f37c57ff7f95c82",
+  "key_configured": true,
+  "key_value_in_output": false,
+  "connection": {
+    "search_http": 200,
+    "videos_http": 200,
+    "public_metadata_only": true,
+    "oauth_channel_connected": false
+  },
+  "install": {
+    "key_installed": true,
+    "environment_path": "/opt/stadione/.env.production",
+    "mode": "0600",
+    "other_environment_lines_unchanged": true,
+    "atomic_write": true,
+    "application_restart": false
+  },
+  "live_discovery": {
+    "provider": "YOUTUBE_DATA_API",
+    "plan_key": "2026-10-12:mon-pm",
+    "scheduled_at": "2026-10-12T13:00:00+00:00",
+    "candidates": 20,
+    "absolute_upload_dates": true,
+    "cache_hours": 24,
+    "replay_cached": true,
+    "replay_api_requests": 0,
+    "download_claim": false,
+    "transcript_claim": false
+  },
+  "cms_all_rows_unchanged": 76,
+  "target_durable_attempts": 0,
+  "release": "/opt/stadione-releases/ffe41a7",
+  "temporary_key_file_removed": true,
+  "qa_passed": true,
+  "no_restart": true
+}

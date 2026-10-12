@@ -12,7 +12,7 @@ async function getYoutubeVideoPool(pillar,topic,options={}){
  const key=options.apiKey||process.env.YOUTUBE_API_KEY;if(!key)throw Error('YOUTUBE_API_KEY belum tersedia untuk pencarian metadata.');
  const now=options.now??Date.now(),fetcher=options.fetch||fetch,after=recentWindow(now),dir=options.cacheDir===false?null:options.cacheDir||'/opt/stadione-editorial/youtube-cache',cacheKey=hash(JSON.stringify([1,pillar,query,after]));
  const file=dir?path.join(dir,cacheKey+'.json'):null;
- if(file){try{const c=JSON.parse(await fs.readFile(file,'utf8'));if(c.expires_at>now&&c.pool?.provider==='YOUTUBE_DATA_API')return {...c.pool,cached:true};}catch(e){if(e.code!=='ENOENT'&&!(e instanceof SyntaxError))throw Error('Cache metadata YouTube tidak dapat dibaca.');}}
+ if(file){try{const c=JSON.parse(await fs.readFile(file,'utf8'));if(c.expires_at>now&&c.pool?.provider==='YOUTUBE_DATA_API')return {...c.pool,cached:true,api_requests:0};}catch(e){if(e.code!=='ENOENT'&&!(e instanceof SyntaxError))throw Error('Cache metadata YouTube tidak dapat dibaca.');}}
  async function request(endpoint,params){
   const url=new URL('https://www.googleapis.com/youtube/v3/'+endpoint);url.searchParams.set('key',key);for(const [k,v]of Object.entries(params))url.searchParams.set(k,String(v));
   let res;try{res=await fetcher(url,{signal:AbortSignal.timeout(20000)});}catch{throw Error('YouTube '+endpoint+': koneksi atau timeout gagal.');}

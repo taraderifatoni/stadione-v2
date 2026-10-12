@@ -18,7 +18,7 @@ Data API mengembalikan metadata dan player embed. Tidak ada endpoint unduh MP4 p
 4. Batasi key untuk YouTube Data API dan aplikasi server yang benar. Simpan melalui jalur credential server yang aman sebagai YOUTUBE_API_KEY; jangan memasukkan nilai key ke chat, Git atau Plan Master.
 5. Setelah pemasangan, uji search.list lalu videos.list terhadap ID hasilnya. Catat status/respons tersanitasi, nama project/quota yang relevan dan hash artefak tanpa mencetak credential. Jangan mengklaim tersambung sebelum respons aktual berhasil.
 
-Pemeriksaan melalui TD pada environment produksi yang digunakan publisher menunjukkan YOUTUBE_API_KEY, GOOGLE_API_KEY, YOUTUBE_CLIENT_ID dan YOUTUBE_CLIENT_SECRET belum tersedia. Hanya boolean keberadaan diperiksa; nilai environment tidak ditampilkan dan credential tidak diubah. Google Cloud belum diakses sebagai pengguna sehingga API belum diaktifkan dan key belum dibuat oleh agent.
+Pemeriksaan awal sebelum pengguna memberikan key, melalui TD pada environment produksi publisher, menunjukkan YOUTUBE_API_KEY, GOOGLE_API_KEY, YOUTUBE_CLIENT_ID dan YOUTUBE_CLIENT_SECRET belum tersedia. Hanya boolean keberadaan diperiksa; nilai environment tidak ditampilkan dan credential tidak diubah. Google Cloud belum diakses sebagai pengguna sehingga API belum diaktifkan dan key belum dibuat oleh agent.
 
 ## Rancangan integrasi berikutnya
 
@@ -42,9 +42,12 @@ Pemeriksaan melalui TD pada environment produksi yang digunakan publisher menunj
 - https://developers.google.com/youtube/v3/docs/captions/download
 - https://developers.google.com/youtube/terms/developer-policies
 
-Status: pembacaan dan rancangan selesai; pemasangan credential serta tes API nyata belum dilakukan. Dokumen ini tidak menyatakan Reels baru sudah dibuat atau terbit.
+Status terkini: API key pengguna sudah dipasang aman pada environment produksi publisher; search.list dan videos.list HTTP200. Workflow pencarian Reels melalui CLI memakai YOUTUBE_DATA_API, menghasilkan20kandidat resmi dengan tanggalunggah absolut dan cache24jam. Tidak menyatakan montage/Reels baru sudah dibuat atau terbit, dan tidak ada OAuthkanal yang diklaim.
 
 
 ## Implementasi12Oktober2026
 
 Tes awal key pengguna berhasil HTTP200 pada search.list dan videos.list. scripts/youtube-discovery.cjs dan integrasi scripts/cms-reel-research.cjs disiapkan/diperiksa; YouTube dipilih bila key terpasang, SerpAPI tersedia saat key belum ada. QAfixture lolos dengan metadata/dedupe/cache24jam dan error tersanitasi; belum menyatakan pemasangan permanen selesai sebelum bukti live dicatat di Plan Master. Tidak ada kemampuan downloadMP4/transkrip sembarang kanal/OAuthaccount yang diklaim.
+
+
+Verifikasi live 2026-10-12T07:25:42.117Z: file key sementara sudah dihapus, modeenvironment0600/variabel lain dipertahankan,20kandidat melaluihelper dan replaycache tanpa requestAPI, seluruh76rowCMS tidak berubah. Bukti tersanitasi assets/editorial/youtube-setup-20261012/verification.json; pemasangan tidak memerlukan restart/deployaplikasi.
