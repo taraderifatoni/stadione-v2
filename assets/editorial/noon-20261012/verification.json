@@ -1,0 +1,234 @@
+{
+  "verified_at": "2026-10-12T05:18:58.267Z",
+  "release": "/opt/stadione-releases/ffe41a7",
+  "preparation_commit": "df468678c4a337874a78c786adde28e4de5fe7c0",
+  "social": {
+    "id": "02a99a90-25fd-4da0-b46f-8101c4dcdea6",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-12:mon-noon",
+    "scheduled_at": "2026-10-12T06:00:00+00:00",
+    "format": "CAROUSEL",
+    "parent_id": "f5008da6-aabf-4064-ac65-ede17125fa2e",
+    "publish_error": null
+  },
+  "article": {
+    "id": "f5008da6-aabf-4064-ac65-ede17125fa2e",
+    "status": "SCHEDULED",
+    "slug": "veda-pulang-dari-mandalika-dengan-sepuluh-poin-02a99a90",
+    "scheduled_at": "2026-10-12T06:00:00+00:00",
+    "body_same": true,
+    "dek_same": true,
+    "hero": [
+      {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/veda-mandalika-sixth-standings-20261011/source-31e3c0db1879a1c3e8e3fa0316ebe72df3e42a9fc90e8baba451b0edc7fd14cb.jpg",
+        "type": "image",
+        "credit": "Foto Honda Racing, Moto3 GP Indonesia 11 Oktober 2026",
+        "clean_photo": true,
+        "text_overlay": false
+      }
+    ],
+    "public_url": "https://stadione.pro/news/veda-pulang-dari-mandalika-dengan-sepuluh-poin-02a99a90"
+  },
+  "cover_variant": "FOTO_DOMINAN",
+  "cover_variant_standard": "STADIONE_COVER_VARIANTS_V1",
+  "article_digest": "984257d8371128920c490ccd5d20e7d6a8cbf78b66ac6453750f5906e4907130",
+  "article_words": 165,
+  "packet_audit": [],
+  "publication_audit": [],
+  "reference_audit": [],
+  "writer_brief_is_only_packet_addition": true,
+  "other_rows_unchanged": 74,
+  "paired_article_only_added": true,
+  "public_jpeg_bytes_identical": true,
+  "source_mirror_bytes_identical": true,
+  "website_photo_sha256": "31e3c0db1879a1c3e8e3fa0316ebe72df3e42a9fc90e8baba451b0edc7fd14cb",
+  "website_photo_text_overlay": false,
+  "publisher_last_result_success": true,
+  "assets": [
+    {
+      "slide": 1,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/02a99a90-25fd-4da0-b46f-8101c4dcdea6/87e5df99a0bc0df3d10adf865b3d7712ca8180d46a6b324807e39eca931d6752-1.jpg",
+      "sha256": "f84851d6efc59ef737056812814fffacfe133ef3845dc32e4202f7bc41d5d7d5",
+      "render_audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_collage_cover",
+        "safe_wrap": true,
+        "source_label": "MOTOGP.COM",
+        "output_sha256": "f84851d6efc59ef737056812814fffacfe133ef3845dc32e4202f7bc41d5d7d5",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "authentic_photo": true,
+        "no_edition_label": true,
+        "cover_input_sha256": "258f2fc04e9551616bb82989bbc2b6f927415e4f3ca68190e4c1fb98ba3986fc",
+        "editorial_background": true,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 2,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/02a99a90-25fd-4da0-b46f-8101c4dcdea6/87e5df99a0bc0df3d10adf865b3d7712ca8180d46a6b324807e39eca931d6752-2.jpg",
+      "sha256": "97e7f511af9f82826f9f6586f976033a3cc360ec24ab2fddef3329bed1faa274",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 844,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 911,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 346,
+        "divider_top": 369,
+        "text_sha256": "383dc9922bebd4611b7effe3812eee105b157c4a2fc492ad293a035828730373",
+        "source_label": null,
+        "output_sha256": "97e7f511af9f82826f9f6586f976033a3cc360ec24ab2fddef3329bed1faa274",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 128,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 3,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/02a99a90-25fd-4da0-b46f-8101c4dcdea6/87e5df99a0bc0df3d10adf865b3d7712ca8180d46a6b324807e39eca931d6752-3.jpg",
+      "sha256": "d98dbbbec1b23b0e8f49bf0a481edce5d55f7aea9db11181f9191182f7452dde",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 764,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 932,
+            "height": 458,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 458,
+        "divider_top": 381,
+        "text_sha256": "445324f76ad39ffd8e6ad46d6ac557f01bbf04a771f5b381213a4b2ea18e77b5",
+        "source_label": null,
+        "output_sha256": "d98dbbbec1b23b0e8f49bf0a481edce5d55f7aea9db11181f9191182f7452dde",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 140,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    },
+    {
+      "slide": 4,
+      "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/02a99a90-25fd-4da0-b46f-8101c4dcdea6/87e5df99a0bc0df3d10adf865b3d7712ca8180d46a6b324807e39eca931d6752-4.jpg",
+      "sha256": "9d4e323bc9a6e70169d27c652761f73a259b1af549dd7dd0b89c466f7df70a79",
+      "render_audit": {
+        "ok": true,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 665,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 926,
+            "height": 611,
+            "font_size": 36
+          }
+        ],
+        "width": 1080,
+        "height": 1350,
+        "layout": "newspaper_article",
+        "columns": 1,
+        "safe_wrap": true,
+        "paper_tone": "#eee9dd",
+        "body_height": 611,
+        "divider_top": 369,
+        "text_sha256": "40168083b1f080b13d718309e5c8a3e0d37a66edbdd5dcaff05284801fdde920",
+        "source_label": null,
+        "output_sha256": "9d4e323bc9a6e70169d27c652761f73a259b1af549dd7dd0b89c466f7df70a79",
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "body_font_size": 36,
+        "authentic_photo": false,
+        "headline_height": 128,
+        "divider_body_gap": 36,
+        "no_edition_label": true,
+        "divider_thickness": 4,
+        "headline_font_size": 60,
+        "headline_divider_gap": 36,
+        "no_promotional_footer": true
+      }
+    }
+  ],
+  "durable_attempts": 0,
+  "live_ig_count": 24,
+  "live_duplicate_count": 0,
+  "one_social_event_identity": true,
+  "goal_sha256": "fd90a772aa23a988d2b901c72cc0e8738f25cfde3e7b5ed1e0f1a10f32ae31c6",
+  "goal_committed_runtime_identical": true,
+  "no_other_slot_mutation": true,
+  "published_history_unchanged": true,
+  "publisher_timer_active": true,
+  "no_direct_meta_publish": true,
+  "publication_still_future": true,
+  "idempotency_verified": true,
+  "replay_all_rows_unchanged": 76,
+  "crawler_cover": {
+    "status": 200,
+    "content_type": "image/jpeg",
+    "bytes": 679856,
+    "sha256": "f84851d6efc59ef737056812814fffacfe133ef3845dc32e4202f7bc41d5d7d5",
+    "not_meta_publish_acceptance": true
+  },
+  "visual_review": {
+    "all_four_actual_jpegs_inspected": true,
+    "contact_sha256": "51d321109bb27b72b440daac17d15d939af78be529ba473872e6f37fcda9aabc",
+    "source_only_cover": true,
+    "body_font36": true,
+    "horizontal_margin72": true,
+    "headline_divider_gap36": true,
+    "divider_body_gap36": true,
+    "article_lossless": true
+  }
+}
