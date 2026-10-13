@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-13T05:51:56.062Z",
+  "release": "/opt/stadione-releases/7dd79b9",
+  "health": [
+    {
+      "path": "/",
+      "http": 200
+    },
+    {
+      "path": "/news",
+      "http": 200
+    },
+    {
+      "path": "/admin/cms",
+      "http": 307
+    },
+    {
+      "path": "/api/admin/cms/mirrors",
+      "http": 401
+    }
+  ],
+  "worker_wrong_auth_http": 401,
+  "worker_valid_auth_http": 200,
+  "worker_result": {
+    "checked_at": "2026-10-13T05:51:55.361Z",
+    "results": [],
+    "mirrors": {
+      "results": [],
+      "error": null
+    }
+  },
+  "cms_rows_before_clock_identical": 84,
+  "facebook": {
+    "platform": "FACEBOOK",
+    "configured": true,
+    "connected": true,
+    "can_publish": true,
+    "account": "Stadione",
+    "page_id": "107991058351974",
+    "error": null
+  },
+  "migration_qa_rollback_passed": true,
+  "build_passed": true,
+  "credentials_unchanged": true,
+  "journal_identical": true,
+  "real_facebook_publication_pending": true
+}
