@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation"
 import { createClient } from "@/lib/supabase/client"
 import { CreditCard, Calendar, Users, Bell, Settings, Shield, LogOut, ChevronRight } from "lucide-react"
 import { C } from "@/lib/design"
+import ReaderPoints from "@/components/news/ReaderPoints"
 import { TopBar } from "@/components/shared/TopBar"
 
 const Card = ({ children, style }: { children: React.ReactNode; style?: React.CSSProperties }) => (
@@ -88,6 +89,8 @@ export default function ProfilePage() {
             <div><div style={{ fontSize: 20, fontWeight: 700, color: C.accent }}>{stats.checkins}</div><div style={{ fontSize: 11, color: C.textMuted }}>Check-in</div></div>
           </div>
         </Card>
+
+        <ReaderPoints />
 
         <ListItem icon={Calendar} title="Booking Saya" subtitle="Lihat riwayat & batalkan" onClick={() => router.push("/my-bookings")} />
         <ListItem icon={CreditCard} title="Riwayat pembayaran" />

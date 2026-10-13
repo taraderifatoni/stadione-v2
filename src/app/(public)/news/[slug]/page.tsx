@@ -3,7 +3,9 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ArrowLeft, ExternalLink } from "lucide-react"
 import { C } from "@/lib/design"
-import { articleBlocks, articleImage, formatNewsDate, getPublishedArticle } from "@/lib/cms/public-news"
+import ArticleTrivia from "@/components/news/ArticleTrivia"
+import {ensureArticleTrivia} from "@/lib/cms/trivia-store"
+import { articleBlocks, articleImage, formatNewsDate, getPublishedArticle, getPublishedArticles, getPublishedReel, blocksWithReel, relatedArticles } from "@/lib/cms/public-news"
 
 export const dynamic = "force-dynamic"
 
@@ -21,7 +23,11 @@ export default async function NewsDetailPage({ params }: Props) {
   const article = await getPublishedArticle(slug)
   if (!article) notFound()
   const image = articleImage(article)
-  const blocks = articleBlocks(article.body)
+  const [reel,candidates] = await Promise.all([getPublishedReel(article.id),getPublishedArticles(60)])
+  const blocks = blocksWithReel(articleBlocks(article.body),reel)
+  const related = relatedArticles(article,candidates)
+  let triviaCount=0
+  try {triviaCount=(await ensureArticleTrivia(article)).length} catch { /* Article remains readable if trivia storage is unavailable. */ }
 
   return (
     <article style={{ paddingBottom: 28 }}>
@@ -40,7 +46,7 @@ export default async function NewsDetailPage({ params }: Props) {
           ) : block.type === "instagram" ? (
             <figure key={index} style={{ margin: "26px auto", maxWidth: 540 }}>
               <div style={{ borderRadius: 14, overflow: "hidden", background: "#fff", border: `1px solid ${C.border}` }}>
-                <iframe title="Reels Instagram Stadione" src={block.embedUrl} scrolling="no" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen style={{ display: "block", width: "100%", height: 690, border: 0 }} />
+                <iframe loading="lazy" title="Reels Instagram Stadione" src={block.embedUrl} scrolling="no" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen style={{ display: "block", width: "100%", height: 690, border: 0 }} />
               </div>
               <figcaption style={{ marginTop: 9, textAlign: "center", fontSize: 12, color: C.textMuted }}>
                 <a href={block.url} target="_blank" rel="noreferrer" style={{ color: C.primaryLight, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: 5 }}>Tonton langsung di Instagram <ExternalLink size={13} /></a>
@@ -50,6 +56,14 @@ export default async function NewsDetailPage({ params }: Props) {
             <p key={index} style={{ color: C.textSec, fontSize: 16, lineHeight: 1.72, margin: "0 0 18px" }}>{block.text}</p>
           ))}
         </div>
+        {related.length?<section aria-labelledby="related-title" style={{marginTop:32,borderTop:`1px solid ${C.border}`,paddingTop:24}}>
+          <h2 id="related-title" style={{color:C.text,fontSize:22,margin:"0 0 16px"}}>Baca juga</h2>
+          <div style={{display:"grid",gap:12}}>{related.map(item=><Link key={item.id} href={"/news/"+item.slug} style={{display:"flex",gap:14,padding:14,borderRadius:12,border:`1px solid ${C.border}`,textDecoration:"none",background:C.surface}}>
+            {articleImage(item)?<img src={articleImage(item)!} alt="" loading="lazy" style={{width:96,height:80,objectFit:"cover",borderRadius:8,flexShrink:0}}/>:null}
+            <div><div style={{fontSize:11,color:C.primaryLight,marginBottom:6}}>{item.category}</div><h3 style={{fontSize:16,lineHeight:1.35,color:C.text,margin:0}}>{item.title}</h3></div>
+          </Link>)}</div>
+        </section>:null}
+        <ArticleTrivia articleId={article.id} slug={article.slug} count={triviaCount}/>
       </div>
     </article>
   )

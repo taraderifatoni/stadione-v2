@@ -26,8 +26,8 @@ export default function LoginPage() {
     if (err) setError("Email atau kata sandi salah")
     else {
       const redirectTo = searchParams.get("redirect")
-      const allowed = ["/", "/admin", "/booking", "/my-bookings", "/fitness", "/academy", "/profile", "/notifications"]
-      const safe = redirectTo && allowed.some(a => redirectTo === a || redirectTo.startsWith(a + "/")) ? redirectTo : "/"
+      const allowed = ["/", "/admin", "/booking", "/my-bookings", "/fitness", "/academy", "/profile", "/notifications", "/news"]
+      const safe = redirectTo && redirectTo.startsWith("/") && !redirectTo.startsWith("//") && !redirectTo.includes("\\") && allowed.some(a => redirectTo === a || redirectTo.startsWith(a + "/")) ? redirectTo : "/"
       router.push(safe)
       router.refresh()
     }
