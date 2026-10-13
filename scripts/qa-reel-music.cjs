@@ -1,0 +1,24 @@
+const assert=require("node:assert/strict"),load=require("./cms-load.cjs");
+process.env.META_ACCESS_TOKEN="fixture-token";process.env.INSTAGRAM_USER_ID="123456";process.env.FACEBOOK_PAGE_ID="654321";
+const policy=load("src/lib/cms/reel-music-policy.ts"),music=load("src/lib/cms/reel-music.ts"),meta=load("src/lib/cms/meta.ts"),core=load("src/lib/cms/engine.ts");
+const choice={audio_id:"1307763720055558",title:"Black Sun",artist:"Jumbo",audio_volume:70,video_volume:0,checked_at:new Date().toISOString(),discovery:"TRENDING",source:"INSTAGRAM_CATALOG"};
+let calls=[],track={audio_id:choice.audio_id,title:choice.title,display_artist:choice.artist,audio_type:"music"},failure=null;
+global.fetch=async (url,options={})=>{const u=new URL(url);calls.push({u,options});if(failure)return Response.json(failure.body,{status:failure.status});if(options.method==="POST")return Response.json({id:"987654"});if(u.pathname.endsWith("/ig_audio"))return Response.json({audio:[{...track,download_url:"https://example.org/preview.mp4",duration_in_ms:30000}]});return Response.json(track);};
+(async()=>{
+ assert.deepEqual(policy.catalogAudioIssues(undefined,"CAROUSEL"),[]);
+ for(const bad of [null,[],{}, {...choice,audio_id:"x"}, {...choice,audio_volume:0}, {...choice,video_volume:-1},{...choice,audio_volume:101},{...choice,video_volume:0.5},{...choice,title:""},{...choice,source:"TIKTOK"},{...choice,discovery:"VIRAL"},{...choice,checked_at:"x"}])assert.ok(policy.catalogAudioIssues(bad,"REEL").length);
+ assert.ok(policy.catalogAudioIssues(choice,"CAROUSEL").length);
+ assert.notEqual(core.packetDigest({media:{catalog_audio:choice}}),core.packetDigest({media:{catalog_audio:{...choice,audio_id:"123456789"}}}));
+ let pool=await music.getReelMusicPool();assert.equal(pool.discovery,"TRENDING");assert.equal(pool.tracks.length,1);assert.equal(calls.at(-1).u.searchParams.get("ig_user_id"),"123456");assert.equal(calls.at(-1).u.searchParams.has("search_query"),false);
+ pool=await music.getReelMusicPool("Black Sun");assert.equal(pool.discovery,"SEARCH");assert.equal(calls.at(-1).u.searchParams.get("search_query"),"Black Sun");
+ calls=[];assert.equal(await meta.createReel("https://example.org/video.mp4","Reviewed caption",choice),"987654");
+ assert.equal(calls.length,2);assert.equal(calls[0].u.searchParams.get("user_id"),"123456");
+ let params=new URLSearchParams(calls[1].options.body);assert.deepEqual(JSON.parse(params.get("audio_configuration")),{audio_id:choice.audio_id,audio_volume:70,video_volume:0});assert.equal(params.get("caption"),"Reviewed caption");
+ calls=[];await meta.createReel("https://example.org/video.mp4","Legacy caption");assert.equal(calls.length,1);assert.equal(new URLSearchParams(calls[0].options.body).has("audio_configuration"),false);
+ track={...track,title:"Changed"};calls=[];await assert.rejects(meta.createReel("https://example.org/video.mp4","caption",choice),/metadata berubah/);assert.equal(calls.filter(x=>x.options.method==="POST").length,0);
+ track={...track,title:choice.title,audio_type:"original_sound"};await assert.rejects(music.verifyReelCatalogAudio(choice),/metadata berubah/);
+ failure={status:400,body:{detail:"Track unavailable",status:400}};calls=[];await assert.rejects(meta.createReel("https://example.org/video.mp4","caption",choice),/Track unavailable/);assert.equal(calls.filter(x=>x.options.method==="POST").length,0);
+ failure={status:200,body:{data:[]}};await assert.rejects(music.getReelMusicPool(),/daftar audio/);
+ failure={status:400,body:{error:{message:"fixture-token permission denied"}}};await assert.rejects(music.getReelMusicPool(),e=>!e.message.includes("fixture-token")&&e.message.includes("[REDACTED]"));
+ console.log(JSON.stringify({ok:true,groups:9,live_publish:false,legacy_payload_unchanged:true,unavailable_song_no_fallback:true}));
+})().catch(e=>{console.error(e);process.exitCode=1});

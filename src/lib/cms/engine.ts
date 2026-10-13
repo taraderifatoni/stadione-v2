@@ -2,6 +2,8 @@ import { createHash } from "node:crypto";
 import { carouselStyleIssues, editorialCoverIssues, type EditorialCover } from "./carousel-style";
 import { articleIssues, articleSlides, articleHtml, type NewsArticle } from "./news-writing";
 
+import {catalogAudioIssues, type ReelCatalogAudio} from "./reel-music-policy";
+
 export const ENGINE = "STADIONE_SPORTS_DESK_V2";
 export type Source = {
   id: string;
@@ -76,6 +78,7 @@ export type Packet = {
     article_image?: { url: string; credit: string };
     video_sources?: VideoSource[];
     scenes?: ReelScene[];
+    catalog_audio?: ReelCatalogAudio;
   };
 };
 type Item = {
@@ -135,6 +138,7 @@ export function auditPacket(
     return [
       "Lengkapi source packet versi 3 untuk newsroom video multi-sumber.",
     ];
+  errors.push(...catalogAudioIssues(packet.media?.catalog_audio, format));
   const sources = Array.isArray(packet.sources) ? packet.sources : [];
   const verified = sources.filter(
     (s) =>

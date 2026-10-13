@@ -1,4 +1,6 @@
 import "server-only"
+import {catalogAudioConfiguration, type ReelCatalogAudio} from "./reel-music-policy"
+import {verifyReelCatalogAudio} from "./reel-music"
 
 const graphVersion = "v25.0"
 const graph = `https://graph.facebook.com/${graphVersion}`
@@ -58,9 +60,10 @@ export async function createImage(url: string, carouselChild = false, caption?: 
   return result.id
 }
 
-export async function createReel(url: string, caption: string) {
+export async function createReel(url: string, caption: string, audio?: ReelCatalogAudio) {
   const { igId } = credentials()
-  const result = await graphRequest(`${igId}/media`, { media_type: "REELS", video_url: url, caption, share_to_feed: "true" })
+  if (audio) await verifyReelCatalogAudio(audio)
+  const result = await graphRequest(`${igId}/media`, { media_type: "REELS", video_url: url, caption, share_to_feed: "true", ...(audio ? {audio_configuration: JSON.stringify(catalogAudioConfiguration(audio))} : {}) })
   if (!result.id) throw new Error("Meta tidak mengembalikan ID kontainer Reels.")
   return result.id
 }

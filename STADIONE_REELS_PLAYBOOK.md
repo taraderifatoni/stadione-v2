@@ -50,3 +50,14 @@ Helper cms-reel-research.cjs menggunakan YouTube Data API bila YOUTUBE_API_KEY t
 ## Relevansi sebelum kemudahan unduhan
 
 STADIONE_AUDIENCE_POLICY.md berlaku pada produksi baru. Tes MLS12Oktober keliru untukaudiens; jangan memilih ligaAmerika karena footage mudah diperoleh. Queryoperator memuat klubprioritas/Timnas/diaspora, cache lama diranking/filter ulang, adapter menahan sepak bola di luar fokus sebelum upload/render/CMSmutation. PemainTimnas di luar negeri dipilih menurut penampilan nyata dengan verifikasi klub/status/kontribusi saatkejadian; hintnama bukan roster resmi. Tetap sesuai pilar/clock.
+
+
+## Musik dari katalog sosial, bukan komposisi otomatis
+
+Arahan pemilik14Oktober2026: prioritaskan lagu yang sedang trending di sosial media dan sesuai suasana berita. Komposisi instrumental sintetis bukan default produksi baru. Ambil kandidat katalog Instagram untuk akunStadione dengan `node scripts/cms-reel-music.cjs --output /private/music-pool.json`; tanpa `--query`, API mengembalikan trending yang tersedia. `--query` mencari judul/artis dan hasilnya tetap perlu ditinjau, bukan otomatis bukti viral. Simpan ID/judul/artis/waktu penelusuran dan preview secara privat; jangan menamai semua lagu hasilpencarian sebagai viral. Pilih suasana yang sesuai; berita kekerasan tidak memakai lagu pesta/gimmick.
+
+Masukkan pilihan yangditinjau ke `packet.media.catalog_audio`: audio_id, title, artist, audio_volume1–100, video_volume0–100, checked_at ISO, discoveryTRENDING/SEARCH, sourceINSTAGRAM_CATALOG. Untuk mengganti backsound video, video_volume0 mematikan audionya diInstagram. Pertahankan suara lapangan/wawancara hanya jika relevan dan jernih. Preview lokal menunjukkan footage; gabungan audio katalog tidak dapat dipreview lewatAPI, sehingga dengarkan previewlagu terpisah dan periksa pascapublikasi.
+
+Publisher membacaulangmetadata sebelum membuatkontainer dan sebelum media_publish. Lagu tidaktersedia/perubahanmetadata gagaljelas, tidakdiganti diamdiam menjadi musik buatan/sendlaguberbeda. Pilihan terikat packet/approvaldigest. PayloadReelstanpapilihan tetapkompatibel untukjadwalexisting. Foto/carousel/Story tidakmemakai fieldAPIini.
+
+KatalogAPI adalah pilihan yangMetaotorisasi untukpublikasiInstagram, dapatberbeda darikatalognative atauviralTikTok. SerpAPI/tautansosial bolehmenemukanjudultrending tetapi bukanberkas/lisensi. JanganmengunduhpreviewInstagramlalu menanamnyakeFacebook atauwebsite denganasumsilisensicrossplatform. MirroringFacebook tetapmenggunakanvideo dasar; laguInstagram yangdipasangplatform tidakotomatisikut. PeriksajalurmusikFacebookterpisah sebelum mengklaimsamalagu. APIini menambahmusik saatpembuatanReels, tidakmengubahmusikpostyangsudahterbit; janganmenghapus/mengunggahulanghistoris sebagai efeksettingmusik.

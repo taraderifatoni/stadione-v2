@@ -1,4 +1,5 @@
 import "server-only"
+import { verifyReelCatalogAudio } from "./reel-music"
 import { enginePublicationIssues } from "./engine"
 import { verifyCarouselAssets } from "./engine-media"
 import { writingReferenceIssues } from "./writing-references"
@@ -94,7 +95,7 @@ export async function publishInstagramContent(id: string, actorId: string | null
     }
     if (!state.creation_id) {
       await heartbeat()
-      const creationId = item.format === "CAROUSEL" ? await createCarousel(state.child_ids, caption) : item.format === "REEL" ? await createReel(urls[0], caption) : await createImage(urls[0], false, caption)
+      const creationId = item.format === "CAROUSEL" ? await createCarousel(state.child_ids, caption) : item.format === "REEL" ? await createReel(urls[0], caption, packet?.media.catalog_audio) : await createImage(urls[0], false, caption)
       state = { ...state, creation_id: creationId }
       await save({ creation_id: creationId, state: "PROCESSING", error_message: null })
     }
@@ -102,6 +103,8 @@ export async function publishInstagramContent(id: string, actorId: string | null
     const status = await containerStatus(state.creation_id!)
     if (status === "ERROR" || status === "EXPIRED") throw new Error(`Kontainer ${state.creation_id} berstatus ${status}. Periksa URL dan format media.`)
     if (status !== "FINISHED") { await save({ state: "PROCESSING", leased_until: null, lease_token: null }); return NextResponse.json({ state: "PROCESSING", message: "Media sedang diproses Meta. Klik Lanjutkan publikasi beberapa saat lagi." }, { status: 202 }) }
+
+    if (packet?.media.catalog_audio) await verifyReelCatalogAudio(packet.media.catalog_audio)
 
     // Persist this transition before the non-idempotent publish request. A lost response requires human reconciliation.
     await save({ state: "PUBLISHING", leased_until: null, lease_token: null, error_message: null })
