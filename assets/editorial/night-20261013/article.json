@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Poin Klub Terancam karena Kekerasan Suporter",
+  "dek": "Erick Thohir memberi liga dan klub sepekan setelah penyerangan rombongan Persib U-18 dan suporter Persija.",
+  "caption": "POIN KLUB TERANCAM KARENA KEKERASAN SUPORTER\n\nPenyerangan terhadap rombongan Persib U-18 dan bus suporter Persija membawa keselamatan sepak bola kembali ke meja PSSI. Erick Thohir memberi liga dan klub waktu sepekan untuk menyepakati langkah pengamanan.\n\nPengurangan poin dan pembatasan suporter tandang menjadi opsi yang ia kemukakan pada konferensi pers 13 Oktober. Pernyataan ini belum menjadi putusan sanksi terhadap klub tertentu.\n\nFootage ANTARA, laporan 12 Oktober. Potongan kondisi bus dan ilustrasi laga EPA; audio asli diganti instrumental produksi Stadione.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Poin Klub dalam Ancaman",
+      "text": "Penyerangan terhadap rombongan Persib U-18 dan suporter Persija bisa berujung pada persoalan baru bagi klub. Ketua Umum PSSI Erick Thohir membuka kemungkinan pengurangan poin untuk klub yang gagal menjaga suporternya. Dalam konferensi pers di Jakarta, Selasa, 13 Oktober, ia menuntut liga dan klub menjamin keselamatan orang-orang yang datang mendukung pertandingan.",
+      "kind": "FACT",
+      "claim_ids": [
+        "sanctions",
+        "incidents"
+      ]
+    },
+    {
+      "id": "incidents",
+      "heading": "Dua Serangan dalam Perjalanan Pulang",
+      "text": "Rombongan Persib U-18 mengalami penyerangan di Rest Area KM 360 Batang pada Minggu malam, 11 Oktober. Bus dilaporkan rusak dan barang rombongan diduga dijarah. Pada Senin dini hari, 12 Oktober, bus The Jakmania yang pulang setelah mendukung Persija menjadi sasaran pelemparan di Tol Palikanci, Cirebon. I.League meminta aparat mengusut insiden Persib dan memproses pihak yang terbukti bertanggung jawab.",
+      "kind": "FACT",
+      "claim_ids": [
+        "incidents",
+        "league-response"
+      ]
+    },
+    {
+      "id": "deadline",
+      "heading": "Liga dan Klub Diberi Waktu Sepekan",
+      "text": "Erick memberi operator liga dan klub kesempatan untuk menyepakati langkah pencegahan. \"Ya, saya akan kasih kesempatan liga, klub untuk bersepakat satu minggu ini,\" katanya di kantor Kemenpora. Kesepakatan itu harus menjawab persoalan keselamatan suporter. Jika tidak tercapai, PSSI akan melakukan intervensi. Pengurangan poin menjadi salah satu tindakan yang ia dorong terhadap klub yang tidak mampu mengendalikan pendukungnya.",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "deadline",
+        "sanctions"
+      ],
+      "quote": {
+        "text": "Ya, saya akan kasih kesempatan liga, klub untuk bersepakat satu minggu ini,",
+        "source_id": "idn"
+      }
+    },
+    {
+      "id": "away",
+      "heading": "Kesempatan Tandang Bisa Ditutup Lagi",
+      "text": "Ancaman itu juga menyentuh kehadiran suporter tandang. Erick mengingatkan bahwa kesempatan tersebut kembali dibuka dengan tanggung jawab pengamanan di tangan klub dan liga. Bila keselamatan tidak bisa dipastikan, PSSI dapat mempertimbangkan larangan lagi. Bagi pendukung yang ingin menemani tim ke kandang lawan, izin hadir kini ikut dipertaruhkan oleh tindakan kekerasan di luar stadion.",
+      "kind": "FACT",
+      "claim_ids": [
+        "away",
+        "sanctions"
+      ]
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261013-united-injuries-atletico-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-13T14:20:31.720Z",
+    "article_digest": "3a52517af55cc910f9d37cae124692d5888eaf609315430666eb02aefd4a126f"
+  }
+}

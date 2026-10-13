@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-13T14:16:34.253965+00:00",
+  "page_url": "https://www.antaranews.com/video/5782340/wali-kota-bandung-kecam-penyerangan-rombongan-persib-epa-di-batang",
+  "source_hls_url": "https://video.antaranews.com/hls/2026/10/5782340/master.m3u8",
+  "raw_sha256": "0a34a6e2591052831d960e02c3a01083ac15423f9b1e0d50b1e5cd48982a618d",
+  "raw_bytes": 85673965,
+  "raw_duration": 140.461,
+  "raw_video": "h264 1920x1080",
+  "raw_audio": "AAC not reused",
+  "prepared_sha256": "c15798fa7f069c7acad750b0ce4593093f8eae1673565cf5bdad2109f03d621e",
+  "prepared_bytes": 5816258,
+  "prepared_video": "h264 720x1280, centre crop, true moving footage",
+  "prepared_duration": 24,
+  "mapping": [
+    {
+      "prepared_start": 0,
+      "prepared_end": 6,
+      "original_start": 38,
+      "original_end": 44,
+      "visual": "Reported Persib bus condition"
+    },
+    {
+      "prepared_start": 6,
+      "prepared_end": 12,
+      "original_start": 50,
+      "original_end": 56,
+      "visual": "Reported Persib bus condition"
+    },
+    {
+      "prepared_start": 12,
+      "prepared_end": 18,
+      "original_start": 103,
+      "original_end": 109,
+      "visual": "Illustrative EPA match footage; not attack scene"
+    },
+    {
+      "prepared_start": 18,
+      "prepared_end": 24,
+      "original_start": 121,
+      "original_end": 127,
+      "visual": "Illustrative EPA match footage; not attack scene"
+    }
+  ],
+  "audio": {
+    "original_removed": true,
+    "music_file": "stadione-original-music.wav",
+    "music_sha256": "e810801976ed2357a5a41726c42e5e11b6e4bc22339ddfa4b50d0cd2c3fcdc6b",
+    "composition": "Original four-chord instrumental, 96bpm, sine harmonics/pulse, no sample/music library, no speech",
+    "rights": "OWNED"
+  },
+  "visual_transcript": "No spoken transcript in prepared source: original narration and interviews were removed. 00:00-00:06 moving interior bus footage; 00:06-00:12 another view of bus seats/floor; 00:12-00:18 illustrative EPA teams before match; 00:18-00:24 illustrative players/referees posing before match. Background original instrumental only.",
+  "ai_footage": false,
+  "rights_basis": "Limited transformed news excerpts from official ANTARA report under explicit Stadione owner editorial-use instruction, retaining source attribution; not claimed as original camera work or an ANTARA licence grant. Original full footage stays private; public derivative only24seconds.",
+  "contrast_matte": "Translucent black top/bottom bands added in source edit for shared renderer white text contrast; no face/scene replacement"
+}
