@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Garuda Pertiwi Muda Menyapu Bersih Kualifikasi",
+  "dek": "Timnas Putri U-17 menang 5–0 atas Singapura dan lolos ke Piala Asia 2027 di China dengan tiga kemenangan.",
+  "caption": "GARUDA PERTIWI MUDA MENYAPU BERSIH KUALIFIKASI\n\nTimnas Putri U-17 menutup Grup B dengan kemenangan 5–0 atas tuan rumah Singapura di Bishan Stadium, Minggu, 11 Oktober. Tiga kemenangan memastikan tiket ke Piala Asia Putri U-17 2027 di China.\n\nIndonesia lebih dulu menang 2–0 atas Bahrain dan 3–1 atas Arab Saudi. Kualifikasi selesai dengan sembilan poin, sepuluh gol, dan satu kali kebobolan.",
+  "paragraphs": [
+    {
+      "id": "qualification",
+      "heading": "Tiket Piala Asia dari Bishan",
+      "text": "Timnas Putri U-17 Indonesia memastikan tiket ke Piala Asia 2027 di China setelah menang 5–0 atas tuan rumah Singapura. Pertandingan terakhir Grup B di Bishan Stadium, Minggu, 11 Oktober 2026, menutup perjalanan Garuda Pertiwi Muda dengan tiga kemenangan. Indonesia finis di puncak grup tanpa kehilangan satu pun poin.",
+      "claim_ids": [
+        "result",
+        "campaign"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "decider",
+      "heading": "Dua Tim Berebut Satu Tiket",
+      "text": "Laga penutup mempertemukan dua tim yang sama-sama memenangi pertandingan sebelumnya. Indonesia dan Singapura datang dengan enam poin, sehingga pertemuan mereka menentukan siapa yang menjadi juara Grup B. Dalam kualifikasi ini, hanya pemuncak grup yang melaju ke putaran final. Kemenangan atas tuan rumah membuat Indonesia mengamankan jalur tersebut dengan raihan sembilan poin.",
+      "claim_ids": [
+        "decider",
+        "campaign",
+        "qualification-rule"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "record",
+      "heading": "Sepuluh Gol, Satu Kali Kebobolan",
+      "text": "Indonesia memulai kualifikasi dengan kemenangan 2–0 atas Bahrain pada 5 Oktober, lalu menundukkan Arab Saudi 3–1 tiga hari kemudian. Hasil 5–0 atas Singapura menyempurnakan rangkaian itu. Dari tiga pertandingan, Garuda Pertiwi Muda mencetak sepuluh gol dan hanya sekali kebobolan. Tiket ke China didapat lewat kemenangan di seluruh laga, bukan dengan menunggu hasil tim lain.",
+      "claim_ids": [
+        "campaign",
+        "result"
+      ],
+      "kind": "FACT"
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-13T05:10:07.152Z",
+    "article_digest": "d7ad043cca66491e6348e9e9ca8cb4e936688e6cbfd11ebe358555824a2ae8c9"
+  }
+}
