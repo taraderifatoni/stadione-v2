@@ -1,4 +1,5 @@
 "use client";
+import { SocialMirrorsPanel } from "./social-mirrors-panel";
 
 import {
   Fragment,
@@ -409,6 +410,7 @@ export function ContentWorkspace() {
       </header>
 
       <main className="mx-auto max-w-[1500px] px-4 py-5 sm:px-6 lg:px-8">
+        <SocialMirrorsPanel />
         <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-5">
           <Kpi
             label="Semua konten"
@@ -705,11 +707,11 @@ function Pipeline({
     if (
       bulkAction === "delete" &&
       !window.confirm(
-        `Hapus ${selectedIds.length} konten terpilih? Posting Instagram terkait ikut dihapus. Artikel pasangan tetap disimpan. Tindakan ini tidak dapat dibatalkan.`,
+        `Hapus ${selectedIds.length} konten terpilih? Posting Instagram dan salinan Facebook terkait ikut dihapus. Artikel pasangan tetap disimpan. Tindakan ini tidak dapat dibatalkan.`,
       )
     )
       return;
-    if (bulkAction === "archive" && !window.confirm("Arsipkan konten terpilih di CMS? Postingan Instagram tetap tayang; arsip Instagram dilakukan lewat aplikasinya.")) return;
+    if (bulkAction === "archive" && !window.confirm("Arsipkan konten terpilih di CMS? Postingan Instagram dan Facebook tetap tayang; arsip Instagram dilakukan lewat aplikasinya.")) return;
     setWorking(true);
     try {
       if (bulkAction === "delete") {
@@ -813,7 +815,7 @@ function Pipeline({
             className="ml-auto h-9 rounded-lg border border-[#2E2C28] bg-[#0D0D0D] px-3 text-[11px] font-bold"
           >
             <option value="archive">Arsip CMS</option>
-            <option value="delete">Hapus Instagram + CMS</option>
+            <option value="delete">Hapus Instagram/Facebook + CMS</option>
           </select>
           <button
             onClick={applyBulk}
@@ -2289,7 +2291,7 @@ function EditorModal({
                     className="inline-flex h-10 items-center gap-2 rounded-xl px-3 text-[11px] font-bold text-red-300 hover:bg-red-500/10 disabled:opacity-30"
                   >
                     <Trash2 size={14} />
-                    {postedInstagram ? "Hapus Instagram + CMS" : "Hapus permanen"}
+                    {postedInstagram ? "Hapus Instagram/Facebook + CMS" : "Hapus permanen"}
                   </button>
                 </div>
               </details>

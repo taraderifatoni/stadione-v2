@@ -2,6 +2,7 @@ import { timingSafeEqual } from "node:crypto"
 import { NextRequest, NextResponse } from "next/server"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { publishInstagramContent } from "@/lib/cms/publish-instagram"
+import { publishDueMirrors } from "@/lib/cms/publish-social-mirrors"
 
 export const runtime = "nodejs"
 export const maxDuration = 180
@@ -33,5 +34,6 @@ export async function POST(request: NextRequest) {
     }
     results.push({ id: item.id, status: response.status, state: result.state || null })
   }
-  return NextResponse.json({ checked_at: new Date().toISOString(), results })
+  const mirrors = await publishDueMirrors().catch(error => ({results: [], error: error instanceof Error ? error.message : "Mirroring gagal."}))
+  return NextResponse.json({ checked_at: new Date().toISOString(), results, mirrors })
 }

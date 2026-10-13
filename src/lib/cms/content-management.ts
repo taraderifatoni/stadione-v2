@@ -2,6 +2,7 @@ import "server-only";
 import { randomUUID } from "node:crypto";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { deletePublishedMedia } from "./meta";
+import { removeFacebookMirror } from "./mirror-removal";
 
 export async function manageCmsContent(id: string, action: "archive" | "restore" | "delete", actorId: string, options: { syncMeta?: boolean; instagramArchived?: boolean; instagramDeleted?: boolean } = {}) {
   if(!/^[a-f0-9-]{36}$/i.test(id))throw Error("ID konten tidak valid.");
@@ -45,6 +46,7 @@ export async function manageCmsContent(id: string, action: "archive" | "restore"
       if(meta.cms_deleted_at)return {id,ok:true,message:"Konten sudah dihapus."};
       if(!options.syncMeta && !options.instagramDeleted)throw Error("Aktifkan Hapus Instagram + CMS atau konfirmasi bahwa posting sudah dihapus di Instagram.");
       if(!options.instagramDeleted && ["DELETING","UNCERTAIN"].includes(removal?.state || ""))throw Error("Hasil penghapusan sebelumnya belum pasti. Periksa Instagram; jangan mengirim hapus ulang sebelum dikonfirmasi.");
+      await removeFacebookMirror(id);
       if(!options.instagramDeleted && removal?.state!=="DELETED") {
         if(!item.external_post_id)throw Error("ID posting Meta belum tercatat; hapus lewat Instagram lalu konfirmasikan di CMS.");
         meta={...meta,meta_removal:{state:"DELETING",requested_at:at,actor_id:actorId}};

@@ -1,0 +1,20 @@
+"use client";
+import {useCallback,useEffect,useState} from "react";
+type Connection={platform:string;connected:boolean;can_publish:boolean;account?:string|null;error?:string|null};
+type Attempt={content_id:string;platform:string;state:string;external_url?:string|null;error_message?:string|null;stadione_content_items?:{title?:string}|null};
+type Report={connections:Connection[];attempts:Attempt[];settings:{platform:string;enabled:boolean;started_at:string}[];error?:string|null};
+export function SocialMirrorsPanel(){
+ const [report,setReport]=useState<Report|null>(null),[error,setError]=useState(""),[loading,setLoading]=useState(true);
+ const refresh=useCallback(async()=>{setLoading(true);try{const r=await fetch("/api/admin/cms/mirrors",{cache:"no-store"}),j=await r.json();if(!r.ok)throw Error(j.error||"Status sosial belum tersedia.");setReport(j);setError(j.error||"");}catch(e){setError(e instanceof Error?e.message:"Status sosial belum tersedia.");}finally{setLoading(false);}},[]);
+ useEffect(()=>{let cancelled=false;fetch("/api/admin/cms/mirrors",{cache:"no-store"}).then(async r=>{const j=await r.json();if(!r.ok)throw Error(j.error||"Status sosial belum tersedia.");if(!cancelled){setReport(j);setError(j.error||"");}}).catch(e=>{if(!cancelled)setError(e instanceof Error?e.message:"Status sosial belum tersedia.");}).finally(()=>{if(!cancelled)setLoading(false);});return()=>{cancelled=true;};},[]);
+ async function retry(id:string){setLoading(true);try{const r=await fetch("/api/admin/cms/mirrors",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({action:"retry",id})}),j=await r.json();if(!r.ok)throw Error(j.error);await refresh();}catch(e){setError(e instanceof Error?e.message:"Gagal memasukkan antrean.");setLoading(false);}}
+ const labels:Record<string,string>={CREATED:"Menunggu",UPLOADING:"Mengunggah",READY:"Siap dikirim",PUBLISHING:"Sedang dikirim",FINALIZING:"Diproses Facebook",PUBLISHED:"Tayang",FAILED:"Gagal",UNCERTAIN:"Perlu diperiksa",DELETED:"Dihapus",DELETING:"Menghapus",REMOVAL_FAILED:"Hapus gagal",REMOVAL_UNCERTAIN:"Hapus perlu diperiksa"};
+ const fb=report?.settings.find(s=>s.platform==="FACEBOOK");
+ return <section className="my-4 rounded-2xl border border-[#2E2C28] bg-[#1A1816] p-4 text-xs">
+  <div className="flex flex-wrap items-center justify-between gap-2"><h2 className="font-bold">Distribusi sosial</h2><button onClick={()=>void refresh()} disabled={loading} className="rounded-lg border border-[#2E2C28] px-3 py-2 disabled:opacity-40">{loading?"Memuat…":"Refresh status"}</button></div>
+  <p className="mt-2 leading-relaxed text-[#B5AC8A]">Instagram mengikuti jadwal CMS. Salinan Facebook {fb?.enabled?"aktif":"belum aktif"} untuk posting baru; status setiap kanal diperiksa terpisah.</p>
+  <div className="mt-3 flex flex-wrap gap-2">{report?.connections.map(c=><span key={c.platform} title={c.error||undefined} className={"rounded-lg border px-3 py-2 "+(c.can_publish?"border-emerald-700 text-emerald-300":"border-[#2E2C28] text-[#8A8375]")}>{c.platform} · {c.can_publish?(c.account||"Terhubung"):(c.platform==="YOUTUBE"&&c.error?.startsWith("API pencarian")?"Pencarian saja":"Belum tersambung")}</span>)}</div>
+  {error&&<p className="mt-3 text-red-300" role="alert">{error}</p>}
+  {!!report?.attempts.length&&<div className="mt-3 space-y-2">{report.attempts.slice(0,5).map(a=><div key={a.content_id+a.platform} className="flex flex-wrap items-center gap-2 rounded-lg bg-[#0D0D0D] p-3"><span className="font-semibold">{a.stadione_content_items?.title||"Posting Stadione"}</span><span>{a.platform} · {labels[a.state]||a.state}</span>{a.external_url&&<a href={a.external_url} target="_blank" rel="noreferrer" className="underline">Lihat posting</a>}{a.error_message&&<span className="text-red-300">{a.error_message}</span>}{a.state==="FAILED"&&<button disabled={loading} onClick={()=>void retry(a.content_id)} className="ml-auto rounded border border-[#2E2C28] px-2 py-1 disabled:opacity-40">Coba lagi</button>}</div>)}</div>}
+ </section>;
+}
