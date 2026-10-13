@@ -1,0 +1,22 @@
+{
+  "verified_at": "2026-10-13T23:38:38.384Z",
+  "article_http": 200,
+  "instagram_embed": "https://www.instagram.com/p/Dec8AuRFLi5/embed/captioned/",
+  "related_links": [
+    "/news/cahya-menantang-laju-persija-e62bb736",
+    "/news/persija-menutup-kebuntuan-dengan-empat-gol-8443837d",
+    "/news/persik-menghentikan-laju-madura-bf32f0b4"
+  ],
+  "trivia_after_article": true,
+  "captcha_simple_addition": true,
+  "authenticated_ui_answer": true,
+  "one_correct_answer_points": 1,
+  "profile_persistence": true,
+  "restart_session_skips_answered_question": true,
+  "replay_score": 1,
+  "guest_mobile_width": {
+    "scroll": 390,
+    "viewport": 390
+  },
+  "qa_user_temporary": true
+}

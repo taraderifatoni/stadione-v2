@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-10-13T23:43:52.251Z",
+  "release": "/opt/stadione-releases/c95ee2b",
+  "cms_rows": 88,
+  "changed_cms_rows": [],
+  "quiz_count": 3,
+  "quiz_source_digest": "80915a28705468985f0bf585f6e611374e4d7451d80dea3af3b1d80652fad3a2",
+  "qa_account_cleanup": {
+    "temporary_account_deleted": true,
+    "stadione_reader_scores_remaining": 0,
+    "stadione_trivia_answers_remaining": 0,
+    "stadione_trivia_sessions_remaining": 0
+  },
+  "leaderboard_after_cleanup": [],
+  "journal_runtime_identical": true,
+  "production_credential_changed": false,
+  "scheduled_posts_changed": false,
+  "social_posts_changed": false
+}

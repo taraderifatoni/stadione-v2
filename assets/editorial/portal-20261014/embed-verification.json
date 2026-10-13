@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-13T23:43:21.973Z",
+  "account_visible": true,
+  "native_instagram_player": true,
+  "playback": {
+    "current_time": 1.847279,
+    "paused": false,
+    "ready_state": 4
+  },
+  "images_loaded": true,
+  "quiz_guest_login_visible": true,
+  "qa_fixture_removed": true
+}
