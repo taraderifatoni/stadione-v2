@@ -16,5 +16,11 @@
   "source_visible": "THE-AFC.COM",
   "page_counter": "1/4",
   "no_edition_or_promotional_footer": true,
-  "body_render_review_pending": true
+  "body_render_review_pending": false,
+  "all_four_actual_jpeg_slides_reviewed": true,
+  "rendered1080x1350": true,
+  "body_font_px": 36,
+  "body_margin_px": 72,
+  "divider_gap_px": 36,
+  "score_team_order_and_count_checked": true
 }
