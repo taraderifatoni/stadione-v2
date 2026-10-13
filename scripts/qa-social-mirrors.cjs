@@ -59,6 +59,9 @@ function reset(item=base){db=memory(item);calls={photo:0,publish:0,confirm:0,sta
  await client.photo('https://media.example.com/1.jpg');await client.photosPost(['one','two'],'Caption');
  const upload=network.find(x=>x.url.endsWith('/photos'));assert.equal(upload.params.published,'false');const feed=network.find(x=>x.url.endsWith('/feed'));assert.deepEqual(JSON.parse(feed.params['attached_media[0]']),{media_fbid:'one'});assert.deepEqual(JSON.parse(feed.params['attached_media[1]']),{media_fbid:'two'});
  const s=await client.reelStart();await client.reelUpload(s.id,'https://media.example.com/reel.mp4');await client.reelFinish(s.id,'Caption');assert((await client.confirm('999',true)).published);assert(network.some(x=>x.headers.file_url==='https://media.example.com/reel.mp4'));
+ let derivedHeader=false;
+ global.fetch=async(url,options)=>{const u=new URL(url);if(u.pathname.endsWith('/me'))return Response.json({id:'user',name:'Owner'});if(u.searchParams.get('fields')==='id,access_token')return Response.json({id:'789',access_token:'qa-derived-page'});if(u.pathname.endsWith('/photos')){derivedHeader=options.headers.Authorization==='Bearer qa-derived-page';return Response.json({id:'photo'});}return Response.json({id:'789',name:'Stadione',can_post:true});};
+ const derived=await real.facebookClient();await derived.photo('https://media.example.com/photo.jpg');assert(derivedHeader);
  global.fetch=async()=>Response.json({id:'789',name:'Other',can_post:false});await assert.rejects(()=>real.facebookClient(),/tidak mengizinkan/);
  global.fetch=async()=>Response.json({error:{message:'qa-only-token invalid',code:190}},{status:400});await assert.rejects(()=>real.facebookClient(),e=>!e.message.includes('qa-only-token'));
  global.fetch=originalFetch;

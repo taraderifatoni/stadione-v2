@@ -16,7 +16,7 @@ async function request(url:URL|string,token:string,params?:Record<string,string>
 export async function facebookClient(){
  const pageId=process.env.FACEBOOK_PAGE_ID||"",initial=process.env.FACEBOOK_PAGE_ACCESS_TOKEN||process.env.META_ACCESS_TOKEN||"";
  if(!/^\d+$/.test(pageId)||!initial)throw new Error("Halaman Facebook belum dikonfigurasi.");
- const me=await request(new URL(graph+'/me?fields=id,name,can_post'),initial);
+ const me=await request(new URL(graph+'/me?fields=id,name'),initial);
  let token=initial;
  if(me.id!==pageId){
   const page=await request(new URL(graph+'/'+pageId+'?fields=id,access_token'),initial);
