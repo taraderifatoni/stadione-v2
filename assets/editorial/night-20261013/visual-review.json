@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-13T22:57:54.830Z",
+  "reviewer": "CODEX_EDITOR",
+  "artifact_sha256": "b35cf76608ef14a456130aae3953606db0c51e6d2aae950cd45d0840a0532110",
+  "format": "REEL",
+  "width": 1080,
+  "height": 1920,
+  "duration": 24.062667,
+  "scene_count": 4,
+  "motion_sample_frames": 48,
+  "motion_unique_frames": 48,
+  "visual_review": [
+    "Four final rendered frames at 2,8,14,20 seconds viewed as a contact sheet.",
+    "First actual EPA frame shows players/referees and is labelled illustration; no AI footage or claimed custom thumbnail.",
+    "Headline, four captions and attribution remain inside frame with contrast and wrapping.",
+    "Bus images are low-resolution authentic source footage; no attack reenactment or interview misattribution."
+  ],
+  "audio": {
+    "original_speech_removed": true,
+    "original_stadione_instrumental": true,
+    "mean_volume_db": -17.8,
+    "max_volume_db": -7.9
+  },
+  "decision": "PASS"
+}
