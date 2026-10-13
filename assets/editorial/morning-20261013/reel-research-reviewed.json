@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-13:mid-am",
+  "checked_at": "2026-10-13T00:12:04.046Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Manchester United Carrick Atletico Madrid press conference 12 October 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=s-tKsJS2vTE",
+      "creator": "Manchester United",
+      "checked_at": "2026-10-13T00:04:46.642922+00:00",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Public yt-dlp read without credentials returned YouTube sign-in to confirm not a bot. No downloadable streaming file or transcript. Official club alternative public page exposes authenticated video entitlement; no bypass. No reuse licence invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "e] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] s-tKsJS2vTE: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=M2-D1HHuZVU",
+      "creator": "Diario AS",
+      "checked_at": "2026-10-13T00:04:46.600481+00:00",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Public yt-dlp read without credentials returned YouTube sign-in to confirm not a bot. No downloadable streaming file or transcript. Official club alternative public page exposes authenticated video entitlement; no bypass. No reuse licence invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "e] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] M2-D1HHuZVU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=Z8RNiyEj2EQ",
+      "creator": "BeanymanSports",
+      "checked_at": "2026-10-13T00:04:46.599842+00:00",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Public yt-dlp read without credentials returned YouTube sign-in to confirm not a bot. No downloadable streaming file or transcript. Official club alternative public page exposes authenticated video entitlement; no bypass. No reuse licence invented.",
+      "proof": {
+        "kind": "PUBLIC_DOWNLOAD_LOG",
+        "summary": "e] No supported JavaScript runtime could be found. Only deno is enabled by default; to use another runtime add  --js-runtimes RUNTIME[:PATH]  to your command/config. YouTube extraction without a JS runtime has been deprecated, and some formats may be missing. See  https://github.com/yt-dlp/yt-dlp/wiki/EJS  for details on installing one\nWARNING: [youtube] No title found in player responses; falling back to title from initial data. Other metadata may also be missing\nERROR: [youtube] Z8RNiyEj2EQ: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n"
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-13T00:12:04.046Z",
+    "digest": "c5e732cf986bc7d8d60cab4559822c94ac23181c68013d25c4aeee7699cc0d26"
+  }
+}

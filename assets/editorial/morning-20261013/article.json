@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "De Ligt Kembali Saat United Kehilangan Dua Pemain",
+  "dek": "De Ligt kembali ke skuad untuk lawatan ke Atlético Madrid. Shaw dan Mainoo absen, sementara pemulihan Sesko belum punya tenggat.",
+  "caption": "DE LIGT KEMBALI SAAT UNITED KEHILANGAN DUA PEMAIN\n\nMatthijs de Ligt masuk skuad Manchester United untuk lawatan Liga Champions ke Atlético Madrid. Kabar itu datang bersamaan dengan absennya Luke Shaw dan Kobbie Mainoo, yang mengalami masalah saat menghadapi Tottenham.\n\nCarrick menyambut kembalinya De Ligt, tetapi belum bisa memberi tanggal pulih Benjamin Sesko. Artikel lengkapnya ada dalam carousel ini.",
+  "paragraphs": [
+    {
+      "id": "return",
+      "heading": "De Ligt Kembali ke Skuad",
+      "text": "Matthijs de Ligt kembali masuk skuad Manchester United untuk menghadapi Atlético Madrid di Liga Champions. Bek Belanda itu ikut ke ibu kota Spanyol setelah lama menepi. Namun, Michael Carrick kehilangan Luke Shaw dan Kobbie Mainoo untuk pertandingan pada Selasa, 13 Oktober 2026 waktu setempat.",
+      "claim_ids": [
+        "return",
+        "absences",
+        "fixture"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "absences",
+      "heading": "Shaw dan Mainoo Tak Ikut ke Madrid",
+      "text": "Carrick memastikan Shaw dan Mainoo tidak ikut perjalanan tim. Keduanya mengalami masalah saat United bermain imbang melawan Tottenham pada Sabtu lalu dan belum siap menghadapi Atlético. Absennya Shaw mengurangi pilihan di sisi pertahanan, sedangkan kehilangan Mainoo membuat Carrick harus menentukan pilihan lain di lini tengah.",
+      "claim_ids": [
+        "absences",
+        "fixture"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "ready",
+      "heading": "Carrick Siap Memakai De Ligt",
+      "text": "Kembalinya De Ligt memberi Carrick tambahan pilihan di jantung pertahanan. Sang pelatih menyatakan siap memainkannya dan memuji kerja keras bek itu selama pemulihan. De Ligt telah mengikuti latihan dan sempat mendapat menit bermain dalam laga persahabatan melawan Lausanne. Carrick tetap ingin mengatur kapan dan seberapa banyak ia bermain, agar pemulihannya tidak dipaksakan terlalu cepat.",
+      "claim_ids": [
+        "return",
+        "readiness"
+      ],
+      "kind": "FACT"
+    },
+    {
+      "id": "sesko",
+      "heading": "Sesko Masih Menunggu Pemeriksaan",
+      "text": "Di lini depan, Benjamin Sesko belum memiliki tanggal kembali yang pasti. Carrick mengatakan masih ada pemeriksaan tambahan pada pekan ini sebelum tim menentukan langkah berikutnya. Situasi itu membuat persiapan United di Madrid berjalan dengan dua kebutuhan sekaligus, menyambut pemain yang pulih dan menyesuaikan pilihan untuk mereka yang masih belum tersedia.",
+      "claim_ids": [
+        "sesko",
+        "return",
+        "absences"
+      ],
+      "kind": "FACT"
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261009-coutinho-debut-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-13T00:12:04.046Z",
+    "article_digest": "0ce61dbc187915e668d82829f75be0625cb4d9413c6dfd133aba70374a5abd72"
+  }
+}
