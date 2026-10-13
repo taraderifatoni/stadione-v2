@@ -19,6 +19,18 @@
   "first_two_covers_rejected_for_cramped_right_margin": true,
   "third_cover_rejected_missing_source": true,
   "fourth_image_has_required_source_and_safe_headline": true,
-  "render_review_pending": true,
-  "note": "Generated art preserves athlete identity as newspaper treatment; no claim photo was captured12October. Artwork lettering visually checked, not programmatically exact font sizes."
+  "render_review_pending": false,
+  "note": "Generated art preserves athlete identity as newspaper treatment; no claim photo was captured12October. Artwork lettering visually checked, not programmatically exact font sizes.",
+  "all_five_actual_jpeg_slides_reviewed": true,
+  "article_digest": "35da5c8aec3f0b8a23041e6b83346f440e36f0d7917997db44e9536f5fadc0db",
+  "final_word_count": 168,
+  "actual_render_width": 1080,
+  "actual_render_height": 1350,
+  "body_font_px": 36,
+  "body_horizontal_margin_px": 72,
+  "headline_divider_gap_px": 36,
+  "divider_body_gap_px": 36,
+  "final_slide_has_no_repeated_generic_closing_line": true,
+  "source_label_only_cover": true,
+  "byte_hashes_verified": true
 }
