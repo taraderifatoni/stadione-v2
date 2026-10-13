@@ -1,0 +1,10 @@
+{
+  "query": "Persib Persija penyerangan bus Batang site:tiktok.com Oktober 2026 (site:youtube.com OR site:tiktok.com OR site:x.com OR site:instagram.com)",
+  "fetched_at": "2026-10-13T22:57:10.781Z",
+  "cached": false,
+  "provider_status": "Success",
+  "result_count": 19,
+  "actual_tiktok_video_links": [],
+  "rejected_as_irrelevant": true,
+  "note": "HTTP/API success is not relevant usable footage. The released helper chooses YouTube when a key exists; this explicit SerpAPI search produced unrelated YouTube videos and none were used. Discovery, media download and publishing are distinct."
+}

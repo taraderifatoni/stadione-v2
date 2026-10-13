@@ -1,0 +1,79 @@
+{
+  "verified_at": "2026-10-13T23:01:39.560Z",
+  "release": "/opt/stadione-releases/7dd79b9",
+  "content_id": "d3e24231-1dd5-48b4-b11f-f9b1688490a4",
+  "parent_id": "f63b4fe4-ab90-46ae-ae8d-adbc0fca6a2e",
+  "plan_key": "2026-10-13:mid-pm",
+  "original_planned_at": "2026-10-13T13:00:00+00:00",
+  "late_publication": true,
+  "instagram": {
+    "id": "18117293807021230",
+    "url": "https://www.instagram.com/reel/Dec8AuRFLi5/",
+    "account": "stadione.id",
+    "media_type": "VIDEO",
+    "product_type": "REELS",
+    "durable_state": "PUBLISHED",
+    "published_at": "2026-10-13T23:00:29.719+00:00",
+    "topic_count": 1,
+    "caption_matches": true
+  },
+  "facebook": {
+    "id": "1112009094561583",
+    "url": "https://www.facebook.com/reel/1112009094561583",
+    "state": "PUBLISHED",
+    "page_id": "107991058351974",
+    "actual_reel_confirmed": true,
+    "status": {
+      "video_status": "ready",
+      "uploading_phase": {
+        "status": "complete",
+        "bytes_transferred": 9459655
+      },
+      "processing_phase": {
+        "status": "complete"
+      },
+      "publishing_phase": {
+        "status": "complete",
+        "publish_status": "published",
+        "publish_time": "2026-10-13T23:00:31+0000"
+      },
+      "copyright_check_status": {
+        "status": "complete",
+        "matches_found": false
+      }
+    },
+    "caption_matches": true
+  },
+  "article": {
+    "id": "f63b4fe4-ab90-46ae-ae8d-adbc0fca6a2e",
+    "url": "https://stadione.pro/news/poin-klub-terancam-karena-kekerasan-suporter-d3e24231",
+    "status": "PUBLISHED",
+    "published_at": "2026-10-13T23:00:29.719+00:00",
+    "http": 200,
+    "body_matches": true,
+    "article_digest": "3a52517af55cc910f9d37cae124692d5888eaf609315430666eb02aefd4a126f",
+    "hero_sha256": "b6deda311a5c6959dc58ffee2d2432de1928cc7ab8e0a7666e72b4ebb66a8c44",
+    "clean_original_photo": true
+  },
+  "render": {
+    "public_bytes": 9459655,
+    "sha256": "b35cf76608ef14a456130aae3953606db0c51e6d2aae950cd45d0840a0532110",
+    "viewed_preview_identical": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 24.062667,
+    "actual_motion": true,
+    "ai_footage": false,
+    "original_instrumental": true
+  },
+  "shared_audit_valid": true,
+  "unrelated_cms_rows_unchanged": 83,
+  "cms_rows": 88,
+  "published_replay_unchanged": true,
+  "journal_runtime_identical": true,
+  "journal_sha256": "37cecb038a9302e94d0a588a009960341992d33a1407443cf7b00c001574c696",
+  "historical_backfill": false,
+  "credentials_changed": false,
+  "production_code_changed": false,
+  "threads_publishing_configured": false
+}
