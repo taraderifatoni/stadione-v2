@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-10-13T06:02:56.008Z",
+  "release": "/opt/stadione-releases/7dd79b9",
+  "content_id": "23534374-abad-420f-a10d-f89089b13bfd",
+  "parent_id": "f12c15aa-6e8e-4c05-addf-9b1c2ffbc890",
+  "plan_key": "2026-10-13:mid-noon",
+  "planned_at": "2026-10-13T06:00:00+00:00",
+  "instagram": {
+    "id": "18036424727892591",
+    "url": "https://www.instagram.com/p/DebHb4UHWYR/",
+    "account": "stadione.id",
+    "media_type": "CAROUSEL_ALBUM",
+    "product_type": "FEED",
+    "child_count": 4,
+    "durable_state": "PUBLISHED",
+    "published_at": "2026-10-13T06:02:13.172+00:00",
+    "topic_count": 1
+  },
+  "facebook": {
+    "id": "107991058351974_1131627996094910",
+    "url": "https://www.facebook.com/1121154640475579/posts/1131627996094910",
+    "is_published": true,
+    "created_time": "2026-10-13T06:02:28+0000",
+    "state": "PUBLISHED",
+    "child_ids": [
+      "1131627796094930",
+      "1131627856094924",
+      "1131627916094918",
+      "1131627959428247"
+    ],
+    "actual_order_matches": true,
+    "caption_matches": true,
+    "topic_count": 1,
+    "old_intro_preserved": true
+  },
+  "article": {
+    "id": "f12c15aa-6e8e-4c05-addf-9b1c2ffbc890",
+    "url": "https://stadione.pro/news/garuda-pertiwi-muda-menyapu-bersih-kualifikasi-23534374",
+    "status": "PUBLISHED",
+    "published_at": "2026-10-13T06:02:13.172+00:00",
+    "http": 200,
+    "body_matches": true,
+    "clean_photo": true,
+    "article_digest": "d7ad043cca66491e6348e9e9ca8cb4e936688e6cbfd11ebe358555824a2ae8c9"
+  },
+  "shared_audit_valid": true,
+  "unrelated_cms_rows_unchanged": 82,
+  "cms_rows": 84,
+  "published_replay_unchanged": true,
+  "journal_runtime_identical": true,
+  "journal_sha256": "37cecb038a9302e94d0a588a009960341992d33a1407443cf7b00c001574c696",
+  "historical_backfill": false,
+  "credentials_changed": false,
+  "facebook_reel_actual_test": false,
+  "instagram_published_replay_unchanged": true,
+  "production_adapter_replay_skipped_published": true,
+  "prepublication_asset_proof": "assets/editorial/noon-20261013/verification.json"
+}

@@ -24,3 +24,6 @@ Verification:
 - Inspect the first future normal post on Instagram and Facebook, paired ARTICLE and per-platform attempt; replay must not create another post.
 
 Rollback: disable stadione_social_mirror_settings.enabled for FACEBOOK, switch /opt/stadione-current to the previous immutable release and restart stadione.service. Preserve the mirror ledger and settings cutoff; do not drop evidence or re-send unknown work. Disable new sends before reconciling any in-flight work. Existing Instagram schedules, attempts and content are preserved.
+
+
+Live activation evidence (13 October 2026): immutable release 7dd79b9, cutoff 05:37:42.307991Z. The 13:00 WIB normal slot published at 13:02 on Instagram and its website article, then Facebook confirmed a four-photo feed post with the same caption and ordered photo IDs. Both accounts had exactly one matching topic. Published replays did not send or mutate records; all 82 unrelated CMS rows stayed identical. See assets/editorial/social-mirrors-20261013/live-verification.json. Facebook Reel transport is covered by fixtures; this live proof covers photos, not an actual Reel upload.
