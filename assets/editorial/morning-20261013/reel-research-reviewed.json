@@ -1,7 +1,7 @@
 {
   "version": 1,
   "plan_key": "2026-10-13:mid-am",
-  "checked_at": "2026-10-13T00:12:04.046Z",
+  "checked_at": "2026-10-13T00:22:48.401Z",
   "queries": [
     "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
     "Manchester United Carrick Atletico Madrid press conference 12 October 2026"
@@ -43,7 +43,7 @@
   ],
   "review": {
     "reviewer_id": "CODEX_EDITOR",
-    "reviewed_at": "2026-10-13T00:12:04.046Z",
-    "digest": "c5e732cf986bc7d8d60cab4559822c94ac23181c68013d25c4aeee7699cc0d26"
+    "reviewed_at": "2026-10-13T00:22:48.401Z",
+    "digest": "da992f6f28bf39e33cab406a583bcbb023b53c6fbf6f93a80d3a5fe7a9964d3b"
   }
 }
