@@ -1,0 +1,193 @@
+{
+  "checked_at": "2026-10-14T12:49:52.221Z",
+  "plan_key": "additional:2026-10-14:verdonk-arsenal-reel",
+  "social_id": "16b2c2f7-8ccd-4721-b432-1a603e6aa292",
+  "article_id": "8d183052-779f-48e5-9aed-8cd156b7ad45",
+  "instagram_duplicates": 0,
+  "durable_attempts": 0,
+  "current_state": "DRAFT_AWAITING_VERIFIED_PLAYER_FOOTAGE",
+  "source_discovery": {
+    "youtube_query": "Calvin Verdonk Arsenal highlights",
+    "youtube_candidates": [
+      {
+        "url": "https://www.youtube.com/watch?v=beA4sReZ9E8",
+        "creator": "SPORT7 ID",
+        "published_at": "2026-10-13T11:40:54Z",
+        "title": "KELAS‼️ aksi Calvin Verdonk vs Arsenal | ARSENAL vs LOSC LILLE | Liga Champions 2026"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=mTUNdiK-RkU",
+        "creator": "Instan Goalz",
+        "published_at": "2026-10-13T21:30:39Z",
+        "title": "🔴 Debut liga Champions Calvin Verdonk vs Arsenal | UEFA Champions league 2026 🇮🇩"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=2PIobup-pgM",
+        "creator": "GoalZone ID",
+        "published_at": "2026-10-14T03:00:18Z",
+        "title": "HASIL PERTANDINGAN ARSENAL VS LILLE - DEBUT CALVIN VERDONK DI UCL #shorts #highlights #trending #fyp"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=FrmEV8kqAD8",
+        "creator": "NIEWSPORT",
+        "published_at": "2026-10-14T04:00:26Z",
+        "title": "HISTORY FOR INDONESIA #Arsenal #CalvinVerdonk #Lille #ChampionsLeague #BukayoSaka #JurrienTimber"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=X3sJZDRwmM4",
+        "creator": "PMS TV",
+        "published_at": "2026-10-14T01:51:11Z",
+        "title": "SEJARAH TERCIPTA   ✅ Menit ke 77 Arsenal vs Lille  Indonesia membuat sejarah setelah Calvin Verdonk"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=bqTQ5slaQjQ",
+        "creator": "Kanaka Wicaksono",
+        "published_at": "2026-10-13T23:00:39Z",
+        "title": "Arsenal 3-0 Lille | Champions League 26/27 | CALVIN VERDONK DEBUT UCL | Match Highlights"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=MW-0cr8-VFw",
+        "creator": "Bancin Simsim",
+        "published_at": "2026-10-14T06:06:51Z",
+        "title": "Calvin verdonk debut di Champions league"
+      }
+    ],
+    "serpapi_query": "Calvin Verdonk Arsenal aksi debut Liga Champions Oktober 2026 (site:youtube.com OR site:tiktok.com OR site:x.com OR site:instagram.com)",
+    "serpapi_relevance": "Returned unrelated popular videos despite specific query. Rejected; not evidence that matching social videos do not exist.",
+    "instagram_accounts": [
+      {
+        "account": "football5star",
+        "http": 200,
+        "error": null,
+        "media_count": 40,
+        "relevant": [
+          {
+            "id": "18431519191179115",
+            "type": "IMAGE",
+            "url": "https://www.instagram.com/p/DeeKc-CCe3P/",
+            "timestamp": "2026-10-14T10:25:05+0000"
+          },
+          {
+            "id": "18117578053797794",
+            "type": "CAROUSEL_ALBUM",
+            "url": "https://www.instagram.com/p/Dec_-9IkuIF/",
+            "timestamp": "2026-10-13T23:34:21+0000"
+          }
+        ]
+      },
+      {
+        "account": "sepakbolaid",
+        "http": 200,
+        "error": null,
+        "media_count": 40,
+        "relevant": []
+      },
+      {
+        "account": "bolanet",
+        "http": 200,
+        "error": null,
+        "media_count": 40,
+        "relevant": [
+          {
+            "id": "18009748742999693",
+            "type": "IMAGE",
+            "url": "https://www.instagram.com/p/DecxPBCjNkN/",
+            "timestamp": "2026-10-13T21:25:32+0000"
+          }
+        ]
+      },
+      {
+        "account": "bolacom",
+        "http": 400,
+        "error": "Invalid user id",
+        "media_count": 0,
+        "relevant": []
+      },
+      {
+        "account": "c.verdonk",
+        "http": 200,
+        "recorded_from": "Successful TD tool output earlier in this follow-up; source response overwritten by subsequent account batch, no full snapshot claimed."
+      },
+      {
+        "account": "losclive",
+        "http": 200,
+        "recorded_from": "Successful TD tool output earlier in this follow-up; source response overwritten by subsequent account batch, no full snapshot claimed."
+      },
+      {
+        "account": "433",
+        "http": 200,
+        "recorded_from": "Successful TD tool output earlier in this follow-up; source response overwritten by subsequent account batch, no full snapshot claimed."
+      },
+      {
+        "account": "pssi",
+        "http": 200,
+        "recorded_from": "Successful TD tool output earlier in this follow-up; source response overwritten by subsequent account batch, no full snapshot claimed."
+      }
+    ],
+    "official_losc": "Debut acknowledgement post DedTIp5mHhw children are both IMAGE. Match album DedyHb6DUkM five IMAGE. Club video DecKrxoDdch is pre-senior-game youth match; not Calvin senior action.",
+    "new_video_candidate": {
+      "post": "https://www.instagram.com/p/Dec_-9IkuIF/",
+      "creator": "football5star",
+      "child_id": "18090887318669200",
+      "api_media_type": "VIDEO",
+      "api_download_http": 410,
+      "public_download_http": 404,
+      "child_refresh_http": 400,
+      "child_refresh_error": "Unsupported object or missing permissions; no bypass attempted.",
+      "actual_footage_unseen": true
+    },
+    "tiktok": "Browser reported robots.txt nonretryable; not circumvented. Search results did not yield actual candidate page.",
+    "reddit": "Entry and history threads have still images, not downloadable match video."
+  },
+  "attempts": [
+    {
+      "platform": "YOUTUBE",
+      "url": "https://www.youtube.com/watch?v=MW-0cr8-VFw",
+      "creator": "Bancin Simsim",
+      "result": "BOT_SIGN_IN",
+      "log_sha256": "b70b6aab2f8610c7a8c8ab876bfeb7ced6882452f29adccb8b97f06b0e117e8a",
+      "visual_verified": false,
+      "downloaded": false
+    },
+    {
+      "platform": "YOUTUBE",
+      "url": "https://www.youtube.com/watch?v=beA4sReZ9E8",
+      "creator": "SPORT7 ID",
+      "result": "BOT_SIGN_IN",
+      "log_sha256": "04436fa38a449925c42d896c9f321787a27e63a0ca4ab5cd2e05a009cea1224c",
+      "visual_verified": false,
+      "downloaded": false
+    },
+    {
+      "platform": "PORTAL",
+      "url": "https://www.tudn.com/futbol/uefa-champions-league/arsenal-vs-lille-game-highlights-video",
+      "creator": "TUDN",
+      "result": "HTTP_403_SECURE_URL_AUTH",
+      "log_sha256": "680cbd7216fc15823ed1fbe40706bd08473f508945a3f50ffc4f5d40b68b0d6f",
+      "visual_verified": false,
+      "downloaded": false
+    },
+    {
+      "platform": "PORTAL",
+      "url": "https://www.tntsports.co.uk/football/champions-league/2026-2027/arsenal-v-lille-highlights-second-half-masterclass-jurrien-timber-eberechi-eze-bukayo-saka_vid60102882/video.shtml",
+      "creator": "TNT Sports",
+      "result": "HTTP_403",
+      "log_sha256": "69bc5690bcf79339b62eb5de955640413afac3f08cb9ab83d1c858f367f9f83c",
+      "visual_verified": false,
+      "downloaded": false
+    },
+    {
+      "platform": "INSTAGRAM",
+      "url": "https://www.instagram.com/p/Dec_-9IkuIF/",
+      "creator": "football5star",
+      "result": "HTTP_410_API_MEDIA_AND_404_PUBLIC_MEDIA",
+      "log_sha256": "3f7ffc3b790936565e9f1f53c4d1b1a6011fa39c6650277f65fde24d454d3c40",
+      "visual_verified": false,
+      "downloaded": false
+    }
+  ],
+  "prior_video": "Previously downloaded beIN highlights inspected after492sec jump from76:56 to injury time; insufficient identifiable Calvin action after entry78. Not presented as a player montage.",
+  "facts_scope": "Existing verified article retained. No successful containment of Saka/Odegaard asserted; all goals precede entry.",
+  "remaining": "Obtain genuine accessible footage featuring Calvin after substitution, then review montage/transcript/timestamps, shared preview, paired article, publisher and idempotence. No carousel fallback or AI video for this additional request.",
+  "proposed_followup": "Dedicated hourly condition-watch for at most12 checks; quiet unchanged, stop on publication/archive/tombstone, notify success or final unresolved blocker. Routine clocks stay untouched."
+}
