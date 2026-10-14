@@ -1,0 +1,42 @@
+{
+  "entry": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/verdonk-arsenal-ucl-20261013-additional-video/d0ec50f333bd3693589d102fcd0ae52c0b5ca65f17c7d5d01d2942374b3a72e3.mp4",
+    "sha256": "d0ec50f333bd3693589d102fcd0ae52c0b5ca65f17c7d5d01d2942374b3a72e3",
+    "bytes": 4595040
+  },
+  "result": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/verdonk-arsenal-ucl-20261013-additional-video/70991d486c853d0570b3ac0901582ae5449c394be53a80aa04dccd029d45d37a.mp4",
+    "sha256": "70991d486c853d0570b3ac0901582ae5449c394be53a80aa04dccd029d45d37a",
+    "bytes": 1932223
+  },
+  "hero": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/verdonk-arsenal-ucl-20261013-additional-video/8a64c29beffe053a602cc2fadccb5c3898855cc47ff79a9baff58643c518b5dd.jpg",
+    "sha256": "8a64c29beffe053a602cc2fadccb5c3898855cc47ff79a9baff58643c518b5dd",
+    "bytes": 15922
+  },
+  "mapping": [
+    {
+      "source": "BOLASPORT_RAW",
+      "original_start": 42.55,
+      "original_end": 56.15,
+      "prepared_start": 0,
+      "prepared_end": 13.6
+    },
+    {
+      "source": "BEIN_RAW",
+      "original_start": 524,
+      "original_end": 530.55,
+      "prepared_start": 0,
+      "prepared_end": 6.55
+    }
+  ],
+  "source_soundtracks_removed": true,
+  "catalogue_metadata_review": {
+    "title": "Fight (Instrumental)",
+    "artist": "Sugartapes",
+    "source": "authorized Instagram TRENDING response",
+    "preview_http": 200,
+    "auditory_review": false,
+    "limitation": "Tool reported model does not support audio input; no claim of audition. Selection based on catalogue/title instrumental metadata. Combined Instagram playback only verifiable after platform publishes."
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "reviewed_at": "2026-10-14T14:57:54.706Z",
+  "target": "16b2c2f7-8ccd-4721-b432-1a603e6aa292",
+  "parent": "8d183052-779f-48e5-9aed-8cd156b7ad45",
+  "plan_key": "additional:2026-10-14:verdonk-arsenal-reel",
+  "event_key": "verdonk-arsenal-ucl-20261013-additional-video",
+  "state": "PREVIEW_ONLY",
+  "input_sha256": "d69bf1dccad66fcb34fc0830417a670164ae6916391863db74b394b8e1c63aec",
+  "render_audit": [
+    {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 20.278667,
+      "scene_count": 5,
+      "source_count": 2,
+      "platforms": [
+        "INSTAGRAM",
+        "PORTAL"
+      ],
+      "normalized_audio": true,
+      "source_video": true,
+      "ai_footage": false,
+      "output_sha256": "876c78176e0865e103cbad317537dbc70bf17a2eaa795267f77c255c6ad0fde8"
+    }
+  ],
+  "render_bytes": 5547282,
+  "source": {
+    "creator": "bolasportcom",
+    "url": "https://www.instagram.com/reel/Ded78rRsKJE/",
+    "media_id": "18426606877146664",
+    "published_at": "2026-10-14T08:19:15Z",
+    "duration": 56.655283,
+    "sha256": "fd60f72202f67fcccb54cc1152bd7c31660846452fa68f180b103e1f6f0148ea",
+    "used_seconds": [
+      42.55,
+      56.15
+    ],
+    "excluded": "First 41 seconds contain photos. Use only genuine moving substitution footage."
+  },
+  "context": {
+    "publisher": "beIN SPORTS Hong Kong",
+    "url": "https://www.dailymotion.com/video/xbmqwqm",
+    "used_seconds": [
+      524,
+      530.55
+    ],
+    "purpose": "Senior match final score context at injury time; never attributed as Verdonk duel footage."
+  },
+  "facts": {
+    "score": "Arsenal 3-0 Lille",
+    "date": "2026-10-13 London / 2026-10-14 WIB",
+    "entry_minute": 78,
+    "goals": [
+      [
+        "Timber",
+        64
+      ],
+      [
+        "Eze",
+        67
+      ],
+      [
+        "Saka",
+        71
+      ]
+    ],
+    "giroud": "Entered alongside Verdonk, ovation for Giroud",
+    "duel_claim": false
+  },
+  "source_reading": {
+    "method": "Full main text from previously retrieved primary LOSC 19885 and independent Bola 8312605 snapshots; retrieval timestamps preserved, not claimed as newly fetched."
+  },
+  "visual_review": [
+    "All final contact frames reviewed",
+    "Verdonk face and jersey verified at original 42.55 seconds; Ayase Ueda frame rejected",
+    "Five chronological cuts, 20.278667 seconds, real footage, no AI or slideshow",
+    "Captions distinguish Verdonk debut, Giroud reception, pre-entry score and full-time result",
+    "Safe wrap and source marks inspected; clean real-player hero without headline"
+  ],
+  "audio": {
+    "title": "Fight (Instrumental)",
+    "artist": "Sugartapes",
+    "source": "authorized Instagram TRENDING response",
+    "preview_http": 200,
+    "auditory_review": false,
+    "limitation": "Tool reported model does not support audio input; no claim of audition. Selection based on catalogue/title instrumental metadata. Combined Instagram playback only verifiable after platform publishes."
+  },
+  "source_audio": "Physically muted, rendered AAC measured -91 dB; native Instagram catalogue music selected by authorized TRENDING metadata. No auditory audition claimed; tool does not support audio input. Facebook mirror base video remains silent.",
+  "new_research": [
+    "Two new YouTube candidates EPp7Jpt-Fz0 and 4KyjVtU_D-M blocked by bot sign-in; no bypass",
+    "SerpAPI cache returned 19 irrelevant videos, rejected",
+    "New BolaSport Business Discovery VIDEO downloaded HTTP 200",
+    "Previously rejected Football5Star URL was not retried"
+  ],
+  "scope": "Additional target and existing parent only; no routine schedule, production code, renderer or credentials changed."
+}

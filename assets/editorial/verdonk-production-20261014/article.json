@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "12 Menit Verdonk di Emirates",
+  "dek": "Calvin Verdonk masuk pada menit ke-78 ketika Lille sudah tertinggal 0-3 dari Arsenal. Kesempatan di Liga Champions datang pada penghujung laga.",
+  "caption": "12 MENIT VERDONK DI EMIRATES\n\nCalvin Verdonk mendapat kesempatan tampil di Liga Champions ketika Lille menghadapi Arsenal. Ia menggantikan Romain Perraud pada menit ke-78, saat timnya sudah tertinggal 0-3.\n\nVerdonk masuk bersamaan dengan Olivier Giroud, yang disambut meriah oleh pendukung mantan klubnya. Lille tidak kembali kebobolan sampai laga berakhir.\n\nSemua gol Arsenal tercipta sebelum Verdonk masuk.",
+  "paragraphs": [
+    {
+      "id": "entry",
+      "heading": "Kesempatan Datang pada Menit ke-78",
+      "kind": "FACT",
+      "claim_ids": [
+        "ENTRY",
+        "SCORE"
+      ],
+      "text": "Calvin Verdonk mendapat kesempatan tampil di Liga Champions ketika Lille menghadapi Arsenal di Emirates Stadium, Rabu dini hari WIB, 14 Oktober 2026. Bek Timnas Indonesia itu masuk menggantikan Romain Perraud pada menit ke-78. Ia memiliki sekitar 12 menit waktu normal untuk bermain, sementara Lille sudah tertinggal 0-3."
+    },
+    {
+      "id": "three-goals",
+      "heading": "Arsenal Menjauh Sebelum Verdonk Masuk",
+      "kind": "FACT",
+      "claim_ids": [
+        "SCORE",
+        "GOALS",
+        "ENTRY"
+      ],
+      "text": "Lille sempat menjaga skor tanpa gol sampai turun minum. Arsenal kemudian membongkar pertahanan tim tamu pada babak kedua. Jurrien Timber membuka skor pada menit ke-64, disusul Eberechi Eze pada menit ke-67 dan Bukayo Saka pada menit ke-71. Ketiga gol itu sudah tercipta ketika Verdonk masih berada di bangku cadangan."
+    },
+    {
+      "id": "remaining-time",
+      "heading": "Verdonk dan Giroud Masuk Bersamaan",
+      "kind": "FACT",
+      "claim_ids": [
+        "ENTRY",
+        "GIR",
+        "AFTER_ENTRY",
+        "SCORE"
+      ],
+      "text": "Verdonk masuk bersamaan dengan Olivier Giroud, mantan penyerang Arsenal yang mendapat sambutan meriah di Emirates. Lille tidak kembali kebobolan setelah pergantian itu, tetapi juga gagal mencetak gol balasan. Pertandingan berakhir 3-0 untuk Arsenal."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T14:46:58.838Z",
+    "article_digest": "954986fe99628702ccb6dda9a0af7dbafec70631d6fb9eea4410da742bf5754a"
+  }
+}
