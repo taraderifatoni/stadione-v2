@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "United Dihantam Gol Kilat dan Kartu Merah",
+  "dek": "Atlético Madrid menang 2-0 atas Manchester United. Barrios membuka skor pada menit pertama, Yoro diusir, lalu Lookman mengunci kemenangan.",
+  "caption": "UNITED DIHANTAM GOL KILAT DAN KARTU MERAH\n\nManchester United pulang dari Madrid dengan kekalahan 2-0. Gol Pablo Barrios pada menit pertama membuat mereka langsung mengejar, sementara kartu merah Leny Yoro memperberat upaya menyamakan kedudukan.\n\nBruno Fernandes sempat mengenai mistar. Ademola Lookman kemudian mencetak gol kedua Atlético pada menit ke-79.\n\nSeberapa besar kartu merah Yoro mengubah pertandingan ini?",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Malam Berat United di Madrid",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "BARRIOS",
+        "YORO",
+        "LOOKMAN"
+      ],
+      "text": "Manchester United kalah 2-0 dari Atlético Madrid dalam pertandingan kedua fase liga Liga Champions di Metropolitano, Rabu dini hari WIB, 14 Oktober 2026. Pablo Barrios dan Ademola Lookman mencetak gol pada dua babak berbeda. United juga kehilangan Leny Yoro akibat kartu merah ketika masih berusaha mengejar ketertinggalan."
+    },
+    {
+      "id": "first-half",
+      "heading": "Barrios Menyerang Sejak Awal",
+      "kind": "FACT",
+      "claim_ids": [
+        "BARRIOS",
+        "VAR",
+        "RESULT"
+      ],
+      "text": "Pertandingan belum berjalan semenit ketika Barrios membawa tuan rumah unggul. United pun harus mencari gol penyama sejak awal. Atlético sempat kembali memasukkan bola lewat Johnny Cardoso menjelang akhir babak pertama, tetapi gol itu dibatalkan setelah pemeriksaan VAR karena handball. Keputusan tersebut menjaga selisih tetap satu gol dan peluang United membalas masih terbuka."
+    },
+    {
+      "id": "turning-point",
+      "heading": "Mistar dan Kartu Merah",
+      "kind": "FACT",
+      "claim_ids": [
+        "BRUNO",
+        "YORO",
+        "VAR"
+      ],
+      "text": "Pada babak kedua, Bruno Fernandes sempat mengancam gawang Atlético, tetapi bola membentur mistar. United belum bisa mengubah peluang itu menjadi gol penyama. Situasi semakin sulit pada menit ke-74. Yoro menerima kartu merah langsung karena menjatuhkan Jonathan David yang memiliki peluang mencetak gol. United harus meneruskan usaha membalas dengan sepuluh pemain."
+    },
+    {
+      "id": "decisive-goal",
+      "heading": "Lookman Menutup Peluang Membalas",
+      "kind": "FACT",
+      "claim_ids": [
+        "LOOKMAN",
+        "YORO",
+        "RESULT"
+      ],
+      "text": "Ademola Lookman menambah keunggulan Atlético pada menit ke-79. Gol kedua itu datang ketika United sudah kehilangan satu pemain dan belum berhasil menembus gawang tuan rumah. Skor 2-0 bertahan hingga pertandingan berakhir. United meninggalkan Madrid tanpa gol setelah peluang Fernandes mengenai mistar, sementara Atlético mempertahankan keunggulan yang mereka dapatkan sejak menit pertama."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T00:18:37.083Z",
+    "article_digest": "d0b37054a7a73bebb38d61cfde492a24005de78ee7a322054f47ae01672bda3e"
+  }
+}

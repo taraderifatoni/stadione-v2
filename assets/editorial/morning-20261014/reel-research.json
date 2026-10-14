@@ -1,0 +1,65 @@
+{
+  "plan_key": "2026-10-14:mid-am",
+  "checked_at": "2026-10-14T00:18:37.083Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Atletico Manchester United 2-0 13 October 2026 Barrios Lookman highlights"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=yTN2FzYMSac",
+      "creator": "beIN SPORTS Indonesia",
+      "checked_at": "2026-10-14T00:18:37.083Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Unduhan yt-dlp gagal karena YouTube mewajibkan sign-in untuk memastikan bukan bot; tidak ada footage terunduh dan tidak melewati pembatasan.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Log bein-download.log mencatat Sign in to confirm you are not a bot; exit 1.",
+        "sha256": "394bd549cb067cb5d575bdc6dfabf9cd27962d99ce0408a2f380ab70748bc9ba"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=7LsNrwfk19U",
+      "creator": "The Quick News",
+      "checked_at": "2026-10-14T00:18:37.083Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Unduhan yt-dlp gagal karena YouTube mewajibkan sign-in untuk memastikan bukan bot; tidak ada footage terunduh dan tidak melewati pembatasan.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Log quicknews-download.log mencatat Sign in to confirm you are not a bot; exit 1.",
+        "sha256": "fc64b935675303315b8af3ab4e70e31f67ccaaed761916e19839855692ab79da"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=-0O93XmTwBY",
+      "creator": "All About Barca",
+      "checked_at": "2026-10-14T00:18:37.083Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Unduhan yt-dlp gagal karena YouTube mewajibkan sign-in untuk memastikan bukan bot; tidak ada footage terunduh dan tidak melewati pembatasan.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Log allaboutbarca-download.log mencatat Sign in to confirm you are not a bot; exit 1.",
+        "sha256": "7f87ccf7169ef06e83c4ba033bc5462bb5949a49478744cdaefcf12b8ef9ba27"
+      }
+    }
+  ],
+  "additional_attempts": [
+    {
+      "page_url": "https://as.com/futbol/videos/resumen-y-goles-del-atletico-vs-manchester-unided-jornada-2-de-la-champions-league-26-27-f202610-v/",
+      "creator": "Movistar+ melalui AS",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "MP4 publik 1225045_212334_video_1200.mp4 HTTP403 geofence:blocked; tidak diunduh. Deskripsi pencetak gol Cardoso bertentangan dengan hasil resmi dan ditolak sebagai bukti fakta."
+    },
+    {
+      "page_url": "https://players.brightcove.net/6057984924001/DESF5xFjJ_default/index.html?videoId=ref:80048395-3701-4bf6-9e3b-e779aa1dac1c",
+      "creator": "Sky Sports",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "yt-dlp Brightcove menolak Access to this resource is forbidden by access policy; tidak melewati pembatasan."
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T00:18:37.083Z",
+    "digest": "6453e111564fe8347abe8e11e91a5076f4f28e33b4e17913d2c0132e0e4a67ad"
+  }
+}

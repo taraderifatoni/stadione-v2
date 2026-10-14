@@ -1,0 +1,24 @@
+{
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "variant_id": "KOLOM",
+  "variant_name": "Kolom koran",
+  "tone": "LIGHT",
+  "previous_variants": [
+    "KLASIK",
+    "HASIL_LAGA",
+    "PORTRAIT_MERAH",
+    "JUDUL_UTAMA",
+    "KLASIK",
+    "FOTO_DOMINAN"
+  ],
+  "selection_reason": "least_used_eligible_excluding_recent",
+  "result_checked": false,
+  "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "reference": "assets/editorial/cover-variants-20261012/kolom.jpg",
+  "prompt": "Create ONE finished Stadione1080x1350 editorial cover from the authentic original athlete photograph and selected variant reference.\nUse the same approved font character and cream/charcoal/#84102d palette; composition must follow KOLOM.\nCream dominan, masthead lebih kecil, headline charcoal pada kolom kiri, atlet cutout di kanan, garis burgundy vertikal. Dek rapat di bawah judul. Jangan memakai susunan diagonal klasik.\nPreserve photographed face, hair, body, jersey, pose and identity; transform editorial background only. No invented athlete/action.\nExact headline: United Dihantam Gol Kilat dan Kartu Merah\nExact deck: Atlético Madrid menang 2-0 atas Manchester United. Barrios membuka skor pada menit pertama, Yoro diusir, lalu Lookman mengunci kemenangan.\nSource label only: SUMBER: ATLETICODEMADRID.COM\nPage count: 1/5 exactly; review visible count after final pagination.\nInternal horizontal margins72px, normal tight line spacing, deck32px minimum, source24px minimum; measure wrapping and inspect final pixels.\nNo EDISI DIGITAL, no save/shareCTA, no promotional footer. Website uses clean original photograph; article pages remain cream text-only.",
+  "metadata_to_add": {
+    "variant_id": "KOLOM",
+    "variant_standard": "STADIONE_COVER_VARIANTS_V1"
+  },
+  "note": "Suggestion only. Generate artwork from authentic photo, inspect full-resolution cover, record review/hash and use normal shared preview/audit/publisher. Never mutate existing scheduled or published packets."
+}

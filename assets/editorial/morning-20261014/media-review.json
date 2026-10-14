@@ -1,0 +1,14 @@
+{
+  "reviewed_at": "2026-10-14T00:23:18.271Z",
+  "reviewed_by": "CODEX_EDITOR",
+  "original_photo_url": "https://e0.365dm.com/26/10/768x432/skysports-bruno-fernandes-man-utd_7376312.jpg?20261013215819",
+  "photo_sha256": "30343acb8b2dde4460b9ba5482fffecf132ca1614e58417ab7d979afbc782bf7",
+  "photo_bytes": 55297,
+  "hero_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/atletico-manchester-united-ucl-final-20261013/hero-30343acb8b2dde4460b9ba5482fffecf132ca1614e58417ab7d979afbc782bf7.jpg",
+  "cover_sha256": "a08aa688bf303c41b85ecfe4cde581fcb045aa97df4fa17412606db97d9222e9",
+  "cover_width": 1122,
+  "cover_height": 1402,
+  "variant_id": "KOLOM",
+  "pagination_count": 5,
+  "review": "Cover 1/5, all exact title/deck/source text visible, authentic Bruno photo reference, wrapped left column, no edition/CTA, cream/charcoal/red editorial background. Original first generation 1092x1440 rejected; imagegen reframe 1122x1402 passes ratio, no mechanical crop."
+}
