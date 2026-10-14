@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-10-14T05:37:17.532Z",
+  "social": {
+    "id": "16b2c2f7-8ccd-4721-b432-1a603e6aa292",
+    "plan_key": "additional:2026-10-14:verdonk-arsenal-reel",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": null,
+    "auto_publish": false,
+    "assets_count": 0,
+    "engine_state": "AWAITING_VERIFIED_PLAYER_FOOTAGE",
+    "durable_attempts": 0
+  },
+  "article": {
+    "id": "8d183052-779f-48e5-9aed-8cd156b7ad45",
+    "status": "DRAFT",
+    "scheduled_at": null,
+    "same_body": true,
+    "digest": "86929fc19a9f6c3a5680c69e10c80067ecfa2550dd4aa13bbe97da6965fcc35e",
+    "hero_url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/verdonk-arsenal-ucl-20261013-additional-video/hero-aea26b64848c1fe77652400bff58aa470ad646bdc9b93daeb916aad45104f236.jpg",
+    "hero_bytes": 88645,
+    "hero_sha256": "aea26b64848c1fe77652400bff58aa470ad646bdc9b93daeb916aad45104f236"
+  },
+  "preservation": {
+    "before_count": 90,
+    "after_count": 92,
+    "all_90_existing_rows_identical": true,
+    "normal_noon": "SCHEDULED",
+    "normal_evening": "DRAFT"
+  },
+  "account": "stadione.id",
+  "duplicate_count": 0,
+  "remaining": "Need downloadable verified footage showing Verdonk; no AI/static-photo fallback. Draft is not ready/scheduled/published."
+}
