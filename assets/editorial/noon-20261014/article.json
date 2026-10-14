@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Bek Kanan Jadi Pekerjaan Rumah Timnas",
+  "dek": "PSSI memetakan stok pemain menuju Piala Dunia 2030. Erick Thohir menyoroti bek kanan dan membidik dua kelompok pemain dengan kualitas setara.",
+  "caption": "BEK KANAN JADI PEKERJAAN RUMAH TIMNAS\n\nErick Thohir menilai pilihan pemain di bek kanan masih terbatas. PSSI kini memetakan kebutuhan Timnas Indonesia untuk membangun dua kelompok pemain dengan kualitas relatif setara menuju Piala Dunia 2030.\n\nTambahan pilihan juga dibutuhkan di lini tengah, penyerang dan sayap. Evaluasi dilakukan bersama John Herdman dan BTN.\n\nMenurutmu, posisi mana yang paling mendesak diperkuat?",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Bek Kanan Masih Kekurangan Pilihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "MAPPING",
+        "RIGHT_BACK"
+      ],
+      "text": "Bek kanan menjadi salah satu persoalan utama dalam pemetaan skuad Timnas Indonesia menuju Piala Dunia 2030. Ketua Umum PSSI Erick Thohir menilai pilihan pemain di posisi itu masih terbatas, terlebih ketika cedera mengurangi pemain yang tersedia. Penilaian tersebut ia sampaikan dalam konferensi pers di Jakarta, Selasa, 13 Oktober 2026."
+    },
+    {
+      "id": "depth",
+      "heading": "Dua Kelompok dengan Kualitas Setara",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "LAYERS",
+        "MAPPING"
+      ],
+      "quote": {
+        "text": "Kita harus memiliki tiga tim yang masing-masing terdiri dari 11 pemain, atau setidaknya dua kelompok berisi 11 pemain dengan kualitas yang relatif setara",
+        "source_id": "ANTARA"
+      },
+      "text": "Erick menginginkan kualitas tim tidak bertumpu pada sebelas pemain utama. “Kita harus memiliki tiga tim yang masing-masing terdiri dari 11 pemain, atau setidaknya dua kelompok berisi 11 pemain dengan kualitas yang relatif setara,” katanya. Sasaran pemetaan itu adalah menyediakan pilihan pengganti yang mampu menjaga kekuatan tim ketika pemain utama tidak tersedia."
+    },
+    {
+      "id": "positions",
+      "heading": "Stok Pemain Belum Merata",
+      "kind": "FACT",
+      "claim_ids": [
+        "DEFENCE",
+        "MIDFIELD",
+        "RIGHT_BACK"
+      ],
+      "text": "Menurut Erick, penjaga gawang sudah memiliki dua opsi utama. Bek tengah dinilai cukup, meski masih terbuka kemungkinan menambah satu pemain, sementara bek kiri memiliki lebih banyak pilihan. Kebutuhan tambahan justru masih terasa di lini tengah, penyerang dan sayap. Ia menyebut ada tiga gelandang yang konsisten, tetapi masih membutuhkan dua pemain lagi. Pemetaan setiap posisi menunjukkan pekerjaan PSSI belum selesai di bek kanan saja."
+    },
+    {
+      "id": "evaluation",
+      "heading": "Herdman dan BTN Mengawal Pemetaan",
+      "kind": "FACT",
+      "claim_ids": [
+        "JAPAN",
+        "BALANCE"
+      ],
+      "text": "Erick menunjuk Jepang sebagai pembanding karena tim tersebut memiliki lebih banyak alternatif saat pemain cedera. Untuk Indonesia, ia menekankan keseimbangan antara pemain yang berkarier di luar negeri dan mereka yang tampil di kompetisi domestik. Pemetaan kebutuhan akan terus dievaluasi bersama pelatih John Herdman dan Badan Tim Nasional, dengan perhatian pada posisi yang masih memerlukan tambahan pemain."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T05:06:27.541Z",
+    "article_digest": "82e5a1181be1bcbf9939720a25e3a64eb336ce556d64035d00e06321e302ea4b"
+  }
+}
