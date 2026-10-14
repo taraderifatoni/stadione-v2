@@ -93,5 +93,6 @@
     "New BolaSport Business Discovery VIDEO downloaded HTTP 200",
     "Previously rejected Football5Star URL was not retried"
   ],
-  "scope": "Additional target and existing parent only; no routine schedule, production code, renderer or credentials changed."
+  "scope": "Additional target and existing parent only; no routine schedule, production code, renderer or credentials changed.",
+  "article_digest": "954986fe99628702ccb6dda9a0af7dbafec70631d6fb9eea4410da742bf5754a"
 }

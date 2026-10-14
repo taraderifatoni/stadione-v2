@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-14T17:18:48.439Z",
+  "social": {
+    "id": "16b2c2f7-8ccd-4721-b432-1a603e6aa292",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-14T17:20:17.092+00:00",
+    "auto_publish": true,
+    "plan_key": "additional:2026-10-14:verdonk-arsenal-reel",
+    "event_key": "verdonk-arsenal-ucl-20261013-additional-video",
+    "issues": []
+  },
+  "parent": {
+    "id": "8d183052-779f-48e5-9aed-8cd156b7ad45",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-14T17:20:17.092+00:00",
+    "slug": "12-menit-verdonk-di-emirates-16b2c2f7",
+    "title": "12 Menit Verdonk di Emirates",
+    "body_equal": true,
+    "article_equal": true,
+    "issues": [],
+    "article_digest": "954986fe99628702ccb6dda9a0af7dbafec70631d6fb9eea4410da742bf5754a"
+  },
+  "attempts": [],
+  "account": "stadione.id",
+  "instagram_matches": [],
+  "other_changed": [],
+  "assets": [
+    {
+      "http": 200,
+      "bytes": 5547281,
+      "sha256": "7980fef1960cefa5f98fa7277227999354f6b9ebcb06cb4503bbe07b53109359",
+      "matches_preview": false,
+      "audit": {
+        "ok": true,
+        "width": 1080,
+        "height": 1920,
+        "duration": 20.278667,
+        "platforms": [
+          "INSTAGRAM",
+          "PORTAL"
+        ],
+        "ai_footage": false,
+        "scene_count": 5,
+        "source_count": 2,
+        "source_video": true,
+        "normalized_audio": true
+      }
+    }
+  ],
+  "hero": {
+    "http": 200,
+    "bytes": 15922,
+    "sha256": "8a64c29beffe053a602cc2fadccb5c3898855cc47ff79a9baff58643c518b5dd",
+    "matches_clean_frame": true
+  },
+  "render_comparison": {
+    "preview_bytes": 5547282,
+    "published_asset_bytes": 5547281,
+    "byte_identical": false,
+    "reason": "Shared renderer re-encode differs by one byte. Decoded 605-frame SSIM rounds to 1.000000; all final CMS contact scenes visually inspected and content/wrapping matches preview.",
+    "ssim_log": [
+      "frame=  605 fps=174 q=-0.0 Lsize=N/A time=00:00:20.26 bitrate=N/A speed=5.81x    ",
+      "[Parsed_ssim_0 @ 0x56fecdc1b880] SSIM Y:1.000000 (inf) U:1.000000 (95.982487) V:1.000000 (90.101645) All:1.000000 (96.885741)"
+    ],
+    "idempotence": "Committed adapter replay skipped SCHEDULED; no new render or attempt."
+  },
+  "special_automation_paused": true
+}
