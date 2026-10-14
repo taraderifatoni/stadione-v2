@@ -1,0 +1,81 @@
+{
+  "verified_at": "2026-10-14T12:26:14.185Z",
+  "active_release": "/opt/stadione-releases/c95ee2b",
+  "social": {
+    "id": "bd031436-b244-406c-ad21-c08bd6ad878f",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-14:mid-pm",
+    "scheduled_at": "2026-10-14T13:00:00+00:00",
+    "attempts": 0,
+    "public_assets": [
+      {
+        "index": 1,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/bd031436-b244-406c-ad21-c08bd6ad878f/0b1e0c94cb77c93d070091e8447710d88c0960ab1eafa30615f6c7b58f0731cc-1.jpg",
+        "bytes": 811840,
+        "sha256": "82ccfae9e4b67ebcaa1bd2d2fec0bd8649063e622620946808bfbd95eb43a9db",
+        "preview_identical": true
+      },
+      {
+        "index": 2,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/bd031436-b244-406c-ad21-c08bd6ad878f/0b1e0c94cb77c93d070091e8447710d88c0960ab1eafa30615f6c7b58f0731cc-2.jpg",
+        "bytes": 221879,
+        "sha256": "c90e715c32ee8587df469b0baa35741dc060027b5032126b03bb53c1e173ade5",
+        "preview_identical": true
+      },
+      {
+        "index": 3,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/bd031436-b244-406c-ad21-c08bd6ad878f/0b1e0c94cb77c93d070091e8447710d88c0960ab1eafa30615f6c7b58f0731cc-3.jpg",
+        "bytes": 214613,
+        "sha256": "ae1b72cd3eb8fada50de1809f39511f5d8b2a330423b65e8039f67797e92f9ee",
+        "preview_identical": true
+      },
+      {
+        "index": 4,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/bd031436-b244-406c-ad21-c08bd6ad878f/0b1e0c94cb77c93d070091e8447710d88c0960ab1eafa30615f6c7b58f0731cc-4.jpg",
+        "bytes": 209297,
+        "sha256": "a7c64f2c1b023c1e233ba9ee8c3fb11995601c241806feb93ddfcfdd8dbaa352",
+        "preview_identical": true
+      },
+      {
+        "index": 5,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/bd031436-b244-406c-ad21-c08bd6ad878f/0b1e0c94cb77c93d070091e8447710d88c0960ab1eafa30615f6c7b58f0731cc-5.jpg",
+        "bytes": 164291,
+        "sha256": "fb62922d58d977977569402a78840fe8c04e784b4df6ca7a77ed86c16896e02f",
+        "preview_identical": true
+      }
+    ]
+  },
+  "article": {
+    "id": "bcb29d5c-77ac-4b44-9338-db91cc36eab6",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-14T13:00:00+00:00",
+    "slug": "sandy-walsh-masuk-starter-persib-bd031436",
+    "digest": "ca77dc276260df3e741117202911df9dab04b2021d2c31827d11763c49fa2090",
+    "same_full_body": true,
+    "clean_original_hero": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persib-sandy-starter-viettel-20261014/hero-2441a02128404b0fe4239559243a59a5369e5869ba6baa25c2fbb6a350d210b6.jpg",
+    "hero_bytes": 62783,
+    "hero_sha256": "2441a02128404b0fe4239559243a59a5369e5869ba6baa25c2fbb6a350d210b6"
+  },
+  "checks": {
+    "publication_issues": [],
+    "all_91_other_baseline_rows_identical": true,
+    "baseline_count": 92,
+    "current_count": 93,
+    "instagram_account": "stadione.id",
+    "instagram_media_count": 32,
+    "match_duplicates": 0,
+    "original_clock_preserved": true,
+    "source_research_fallback": "Original matrix REEL. Three actual relevant YouTube URLs from three creators failed bot sign-in; reviewed fallback manifest. Clock unchanged. Genuine training photograph, not a match frame.",
+    "no_direct_meta_publish": true,
+    "replay_all_93_cms_rows_identical": true,
+    "replay_attempts_unchanged": true,
+    "journal_valid_and_identical_to_git": true
+  },
+  "publisher": {
+    "timer": "active",
+    "service_last_result": "success",
+    "exit_status": 0,
+    "future_slot_left_to_shared_publisher": true
+  }
+}
