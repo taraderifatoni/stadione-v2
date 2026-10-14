@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-10-14T12:52:31.238Z",
+  "social_id": "16b2c2f7-8ccd-4721-b432-1a603e6aa292",
+  "article_id": "8d183052-779f-48e5-9aed-8cd156b7ad45",
+  "status": "DRAFT",
+  "engine_state": "AWAITING_VERIFIED_PLAYER_FOOTAGE",
+  "new_downloadable_video_assets": 0,
+  "published": false,
+  "attempts": 0,
+  "article_packet_body_and_hero_unchanged": true,
+  "scheduled_at": null,
+  "normal_evening": "SCHEDULED",
+  "other_91_rows_identical": true,
+  "rows": 93,
+  "followup": {
+    "id": "6acf7ab46cf48191b4339fc9805aaf3e",
+    "registered": true,
+    "enabled": true,
+    "timing_mode": "condition_watch",
+    "timezone": "Asia/Jakarta",
+    "first_check": "2026-10-14T20:50:00+07:00",
+    "last_check": "2026-10-15T07:50:00+07:00",
+    "max_checks": 12,
+    "quiet_unchanged": true,
+    "stop_on_published_or_protected_state": true
+  },
+  "production_code_credentials_and_routine_automations_unchanged": true
+}
