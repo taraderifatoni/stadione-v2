@@ -1,0 +1,82 @@
+{
+  "verified_at": "2026-10-14T05:14:39.808Z",
+  "active_release": "/opt/stadione-releases/c95ee2b",
+  "social": {
+    "id": "fef7c345-2fd4-4cba-92d4-5921d13e31d1",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-14:mid-noon",
+    "scheduled_at": "2026-10-14T06:00:00+00:00",
+    "attempts": 0,
+    "public_assets": [
+      {
+        "index": 1,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fef7c345-2fd4-4cba-92d4-5921d13e31d1/f5cc04f22f168b66d7699d1c17a7bece05e95c608a5808245ffe4ccaaec641b3-1.jpg",
+        "bytes": 630989,
+        "sha256": "388923159ecfbcdbbbdd01eb209db5a8d118e413bcc3ed0b1128d509e8aec9ad",
+        "preview_identical": true
+      },
+      {
+        "index": 2,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fef7c345-2fd4-4cba-92d4-5921d13e31d1/f5cc04f22f168b66d7699d1c17a7bece05e95c608a5808245ffe4ccaaec641b3-2.jpg",
+        "bytes": 192118,
+        "sha256": "1d5ddcf93a78c4fe07da177fa276e3363f033be0cfe0323d8cbe424da5503a57",
+        "preview_identical": true
+      },
+      {
+        "index": 3,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fef7c345-2fd4-4cba-92d4-5921d13e31d1/f5cc04f22f168b66d7699d1c17a7bece05e95c608a5808245ffe4ccaaec641b3-3.jpg",
+        "bytes": 205616,
+        "sha256": "457fee1642ddb1c8a42d3d8e926399f29e7530f8a5d80f8a0bc064ffa12dc44e",
+        "preview_identical": true
+      },
+      {
+        "index": 4,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fef7c345-2fd4-4cba-92d4-5921d13e31d1/f5cc04f22f168b66d7699d1c17a7bece05e95c608a5808245ffe4ccaaec641b3-4.jpg",
+        "bytes": 220860,
+        "sha256": "9251b8085b4adb51c014e571aa4084f9e1089b657e6d2f178a3441c107a69d71",
+        "preview_identical": true
+      },
+      {
+        "index": 5,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/fef7c345-2fd4-4cba-92d4-5921d13e31d1/f5cc04f22f168b66d7699d1c17a7bece05e95c608a5808245ffe4ccaaec641b3-5.jpg",
+        "bytes": 224279,
+        "sha256": "23df67eb9f758b358998845eb073f1a221438c1968045ac293722b6dd77359f4",
+        "preview_identical": true
+      }
+    ]
+  },
+  "article": {
+    "id": "be51532e-9d2d-438c-bd23-95cd6e3cd61f",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-14T06:00:00+00:00",
+    "slug": "bek-kanan-jadi-pekerjaan-rumah-timnas-fef7c345",
+    "digest": "82e5a1181be1bcbf9939720a25e3a64eb336ce556d64035d00e06321e302ea4b",
+    "same_full_body": true,
+    "clean_original_hero": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/pssi-squad-depth-right-back-20261013/hero-6b3e525ff64d3c6d28439d48d4ccfc86946a4edf3c00eadd967dc2bb6a39fea3.jpg",
+    "hero_bytes": 153492,
+    "hero_sha256": "6b3e525ff64d3c6d28439d48d4ccfc86946a4edf3c00eadd967dc2bb6a39fea3"
+  },
+  "checks": {
+    "publication_issues": [],
+    "all_88_other_baseline_rows_identical": true,
+    "baseline_count": 89,
+    "current_count": 90,
+    "instagram_account": "stadione.id",
+    "instagram_media_count": 31,
+    "match_duplicates": 0,
+    "original_clock_preserved": true,
+    "source_research_fallback": "Original matrix CAROUSEL. No format fallback; source photo403 replaced with verified archived athlete photograph.",
+    "no_direct_meta_publish": true
+  },
+  "idempotency": {
+    "replay": "SKIPPED_SCHEDULED",
+    "all_90_rows_identical": true,
+    "attempts_still_zero": true
+  },
+  "publisher": {
+    "scheduler_enabled": true,
+    "worker_secret_present": true,
+    "scheduled_in_future": true
+  }
+}
