@@ -1,0 +1,85 @@
+{
+  "verified_at": "2026-10-14T00:29:01.855Z",
+  "active_release": "/opt/stadione-releases/c95ee2b",
+  "social": {
+    "id": "6eea474f-7905-4f28-a034-43e955d3899e",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-14:mid-am",
+    "scheduled_at": "2026-10-14T01:00:00+00:00",
+    "attempts": 0,
+    "public_assets": [
+      {
+        "index": 1,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/6eea474f-7905-4f28-a034-43e955d3899e/844d74256df0033013686509a1d5b323db96f765a8c55a2f2a1b4bab22c8cee0-1.jpg",
+        "bytes": 859643,
+        "sha256": "80253926ff270df78a00bfc67aa9f6df50add0aed98db1cd92f818880f0ed9b9",
+        "preview_identical": true
+      },
+      {
+        "index": 2,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/6eea474f-7905-4f28-a034-43e955d3899e/844d74256df0033013686509a1d5b323db96f765a8c55a2f2a1b4bab22c8cee0-2.jpg",
+        "bytes": 180824,
+        "sha256": "34ed1406446c7a57ceb6e063368fb8a64975ca2e843e52aecd027721899de057",
+        "preview_identical": true
+      },
+      {
+        "index": 3,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/6eea474f-7905-4f28-a034-43e955d3899e/844d74256df0033013686509a1d5b323db96f765a8c55a2f2a1b4bab22c8cee0-3.jpg",
+        "bytes": 205089,
+        "sha256": "d6999cb645b261aeacb70b692a697e0ab2ba2fdea2043f63727eee82e3270bcf",
+        "preview_identical": true
+      },
+      {
+        "index": 4,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/6eea474f-7905-4f28-a034-43e955d3899e/844d74256df0033013686509a1d5b323db96f765a8c55a2f2a1b4bab22c8cee0-4.jpg",
+        "bytes": 194419,
+        "sha256": "201f07b0af603a867b8bf92bb6fbe77882fad43f6478117a9206e6e5983f1497",
+        "preview_identical": true
+      },
+      {
+        "index": 5,
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/engine/6eea474f-7905-4f28-a034-43e955d3899e/844d74256df0033013686509a1d5b323db96f765a8c55a2f2a1b4bab22c8cee0-5.jpg",
+        "bytes": 215211,
+        "sha256": "4521eaab3787fa2528dea7033c63a4481039843cfc2c1c51c2ec38917db128b7",
+        "preview_identical": true
+      }
+    ]
+  },
+  "article": {
+    "id": "fc06f15c-f101-47a3-a7de-08d5d2578ba8",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-14T01:00:00+00:00",
+    "slug": "united-dihantam-gol-kilat-dan-kartu-merah-6eea474f",
+    "digest": "d0b37054a7a73bebb38d61cfde492a24005de78ee7a322054f47ae01672bda3e",
+    "same_full_body": true,
+    "clean_original_hero": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/atletico-manchester-united-ucl-final-20261013/hero-30343acb8b2dde4460b9ba5482fffecf132ca1614e58417ab7d979afbc782bf7.jpg",
+    "hero_bytes": 55297,
+    "hero_sha256": "30343acb8b2dde4460b9ba5482fffecf132ca1614e58417ab7d979afbc782bf7"
+  },
+  "checks": {
+    "publication_issues": [],
+    "all_87_other_baseline_rows_identical": true,
+    "baseline_count": 88,
+    "current_count": 89,
+    "instagram_account": "stadione.id",
+    "instagram_media_count": 30,
+    "match_duplicates": 0,
+    "original_clock_preserved": true,
+    "source_research_fallback": "Three YouTube download bot sign-in failures, AS geofence403 and Sky access policy. No usable footage. Carousel only this slot.",
+    "no_direct_meta_publish": true
+  },
+  "idempotency": {
+    "adapter_replay": "SKIPPED_SCHEDULED",
+    "all_89_rows_identical": true,
+    "attempts_still_zero": true
+  },
+  "publisher_configuration": {
+    "scheduler_enabled": true,
+    "worker_secret_present": true,
+    "scheduled_in_future": true,
+    "timer": "active",
+    "last_result": "success",
+    "service_exit": 0
+  }
+}
