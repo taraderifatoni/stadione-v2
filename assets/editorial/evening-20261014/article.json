@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Sandy Walsh Masuk Starter Persib",
+  "dek": "Setelah pulih dari cedera, Sandy Walsh mendapat tempat di sebelas pemain pertama Persib untuk menghadapi Cong Viettel di ACL Two.",
+  "caption": "SANDY WALSH MASUK STARTER PERSIB\n\nMasa pemulihan berakhir dengan tempat di sebelas pemain pertama. Persib memasukkan Sandy Walsh dalam susunan resmi menghadapi Cong Viettel pada 14 Oktober di Si Jalak Harupat.\n\nIgor Tolic sebelumnya menyambut kembalinya Sandy karena kualitas dan kepercayaan diri yang ia bawa. Luciano Guaycochea juga kembali masuk susunan pemain.\n\nKabar ini membahas pemilihan pemain, bukan hasil akhir pertandingan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Debut Berawal dari Sebelas Pertama",
+      "kind": "FACT",
+      "claim_ids": [
+        "STARTER",
+        "RECOVERY"
+      ],
+      "text": "Sandy Walsh masuk sebelas pemain pertama Persib Bandung untuk menghadapi Cong Viettel di Stadion Si Jalak Harupat, Rabu, 14 Oktober 2026. Namanya tercantum dalam susunan resmi yang diumumkan klub untuk laga kedua Grup E AFC Champions League Two. Kesempatan tersebut datang setelah cedera menunda penampilan perdananya bersama Persib, termasuk pada pertandingan awal di Super League dan Shopee Cup."
+    },
+    {
+      "id": "return",
+      "heading": "Tolic Menyambut Kembalinya Sandy",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "RECOVERY",
+        "CONFIDENCE"
+      ],
+      "quote": {
+        "text": "Dia memberi kami banyak kualitas dan kepercayaan diri. Dan ya, saya pikir dia akan banyak membantu kami",
+        "source_id": "DETiK"
+      },
+      "text": "Pada konferensi pers sehari sebelum laga, Igor Tolic memastikan Sandy sudah kembali berlatih normal. Saat itu ia masih menunggu evaluasi terakhir sebelum menentukan starter. “Dia memberi kami banyak kualitas dan kepercayaan diri. Dan ya, saya pikir dia akan banyak membantu kami,” kata Tolic. Pengumuman susunan pemain kemudian memastikan Sandy mendapat kepercayaan tampil sejak awal."
+    },
+    {
+      "id": "selection",
+      "heading": "Pemulihan Mendahului Pemilihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "READINESS"
+      ],
+      "text": "Tolic menimbang kebugaran tim setelah pertandingan melawan Dewa United. Ia memberi pemain waktu pemulihan tambahan sebelum memilih komposisi untuk menghadapi wakil Vietnam. Beckham Putra juga sudah kembali mengikuti latihan, tetapi pelatih belum menjadikan perkembangan itu sebagai kepastian untuk langsung memainkannya. Kesiapan setiap pemain tetap menentukan keputusan tim pelatih."
+    },
+    {
+      "id": "partners",
+      "heading": "Guaycochea Kembali ke Susunan Pemain",
+      "kind": "FACT",
+      "claim_ids": [
+        "PARTNERS",
+        "STARTER"
+      ],
+      "text": "Luciano Guaycochea turut kembali masuk susunan pemain setelah pulih. Thom Haye dan Marc Klok juga dipilih sejak awal, sementara Teja Paku Alam menjaga gawang. Di barisan pemain bertahan, Sandy tercantum bersama Julio Cesar dan Kakang Rudianto."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261009-coutinho-debut-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T12:17:38.943Z",
+    "article_digest": "ca77dc276260df3e741117202911df9dab04b2021d2c31827d11763c49fa2090"
+  }
+}

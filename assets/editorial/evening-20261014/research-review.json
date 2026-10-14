@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-10-14T12:24:46.784Z",
+  "plan_key": "2026-10-14:mid-pm",
+  "event_key": "persib-sandy-starter-viettel-20261014",
+  "source_discovery": {
+    "daily_serpapi_pool": "2026-10-14T12:10:19.140Z",
+    "note": "Daily Indonesia pool had one eligible Timnas squad-depth story already published at noon. Supplementary current club reporting and targeted YouTube discovery found fresh Persib selection news; no duplicate squad-depth story reused."
+  },
+  "full_read_sources": [
+    {
+      "id": "PERSIB_STARTER",
+      "url": "https://persib.co.id/article-details/starter-persib-vs-cong-viettel-walsh-jalani-debut",
+      "publisher_group": "PERSIB_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-14T10:53:00+07:00",
+      "text_sha256": "865a5333345c9c044b691cfdd8f1170bdf13462e0c2dfeb780c8da8181c7eda5",
+      "read_method": "TD public HTML main text read fully; TVONE includes page2",
+      "snippet_only": false
+    },
+    {
+      "id": "PERSIB_PRESS",
+      "url": "https://persib.co.id/article-details/jamu-cong-viettel-tolic-terus-pantau-kesiapan-dan-kebugaran-pemain",
+      "publisher_group": "PERSIB_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-13T11:58:00+07:00",
+      "text_sha256": "3944445f2e44021a83f59e7ec389136abe3121b6cb937bb037c4824d875aefbf",
+      "read_method": "TD public HTML main text read fully; TVONE includes page2",
+      "snippet_only": false
+    },
+    {
+      "id": "DETiK",
+      "url": "https://www.detik.com/jabar/sepakbola/d-8705582/persib-tambah-amunisi-lawan-the-cong-viettel/amp",
+      "publisher_group": "DETIK_BIMA_BAGASKARA",
+      "primary": false,
+      "published_at": "2026-10-14T05:00:00+07:00",
+      "text_sha256": "417e3e047fe787aebb9210804e6a68181acf64758b19bb9884c1465579ea0ed7",
+      "read_method": "TD public HTML main text read fully; TVONE includes page2",
+      "snippet_only": false
+    },
+    {
+      "id": "TVONE",
+      "url": "https://www.tvonenews.com/bola/liga-internasional/472990-starting-line-up-persib-vs-viettel-fc-sandy-walsh-langsung-starter-thom-haye-dan-marc-klok-main-bareng",
+      "publisher_group": "TVONE_NEWS",
+      "primary": false,
+      "published_at": "2026-10-14T18:13:00+07:00",
+      "text_sha256": "1d93fe991001a3143fab974f998bd71015d0a06aa59daa20ada7b11b9a27cf4e",
+      "read_method": "TD public HTML main text read fully; TVONE includes page2",
+      "snippet_only": false
+    },
+    {
+      "id": "VIVA",
+      "url": "https://vivagoal.com/sandy-walsh-pulih-dan-siap-jalani-debut-bersama-persib/",
+      "publisher_group": "VIVAGOAL_RAFFY_FARAZ",
+      "primary": false,
+      "published_at": "2026-10-13T00:00:00+07:00",
+      "text_sha256": "5ae0386caac1838469b64d79e1ca2a60539357346828769f1d9d1545ba865a42",
+      "read_method": "TD public HTML main text read fully; TVONE includes page2",
+      "snippet_only": false
+    }
+  ],
+  "verified": {
+    "starter": "Official Persib named Sandy in first eleven, corroborated by TVONE; does not claim final score.",
+    "recovery": "Official Persib, Bima Bagaskara/Detik and Raffy Faraz/Vivagoal original reporting corroborate return to training.",
+    "quote": "17-word direct quote exactly matches Detik full text; attributed to Tolic.",
+    "medical": "No invented injury diagnosis, recovery deadline or claim Beckham will play.",
+    "formation": "Primary groups three defenders while TVONE assigns four. Formation omitted; named starters agree.",
+    "status": "FINAL refers official lineup announcement, not match result.",
+    "photo": "Actual Sandy Walsh training photo by VIVAGOAL/Raffy Faraz read and viewed. Editorial reuse authorised by owner; no invented license grant.",
+    "dates": "Older pre-match starter uncertainty distinguished from updated official team selection14October."
+  },
+  "reels": {
+    "queries": [
+      "Persib Persija Persebaya Timnas Indonesia 14 Oktober 2026",
+      "Persib Viettel Oktober 2026",
+      "Persib Viettel press conference"
+    ],
+    "actual_download_attempts": 3,
+    "creators": 3,
+    "blocked_at": "YOUTUBE_DOWNLOAD_BOT_SIGN_IN",
+    "no_auth_bypass": true,
+    "dailymotion": "Recent query yielded supporter violence story already published and irrelevant broad results; no same-event Sandy footage. Not proof TikTok footage absent.",
+    "fallback_reason": "Three new relevant video URLs from three creators failed normal YouTube bot sign-in checks. Dailymotion recent search had no same-event player footage; existing supporter violence videos are another already-published topic. Verified carousel fallback preserves original 20.00 WIB clock."
+  },
+  "journal": {
+    "entries": 10,
+    "latest_read_at": "2026-10-14T00:13:39Z"
+  },
+  "changes_scope": "Target slot only; no production code, renderer, timer, credentials or other CMS items changed. Normal matrix clock preserved."
+}

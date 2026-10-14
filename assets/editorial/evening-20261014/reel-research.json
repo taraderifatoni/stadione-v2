@@ -1,0 +1,52 @@
+{
+  "plan_key": "2026-10-14:mid-pm",
+  "checked_at": "2026-10-14T12:17:38.943Z",
+  "queries": [
+    "Persib Persija Persebaya Timnas Indonesia 14 Oktober 2026",
+    "Persib Viettel Oktober 2026",
+    "Persib Viettel press conference"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=x54eGKyRC2c",
+      "creator": "AF BOLA ID",
+      "checked_at": "2026-10-14T12:17:38.943Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node JavaScript runtime failed because YouTube requests sign-in to confirm not a bot. No downloadable footage obtained; did not bypass authentication.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "YouTube returned Sign in to confirm you are not a bot for this exact video. Browser also returned online fetch throttled.",
+        "sha256": "85dfa0f9f6d6dcff36a00a51f97c45960f9057ef2c71ebb4a9b3500419900ac0"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=yEQm5HcbyuM",
+      "creator": "Adi Klik",
+      "checked_at": "2026-10-14T12:17:38.943Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node JavaScript runtime failed because YouTube requests sign-in to confirm not a bot. No downloadable footage obtained; did not bypass authentication.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "YouTube returned Sign in to confirm you are not a bot for this exact video. Browser also returned online fetch throttled.",
+        "sha256": "a3c5435dd4df6b14e21f94ee63a593c9bec84b48777b8a7ab822c3f26658ad3e"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=l3hjYEYh6zo",
+      "creator": "Falfal Nick",
+      "checked_at": "2026-10-14T12:17:38.943Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node JavaScript runtime failed because YouTube requests sign-in to confirm not a bot. No downloadable footage obtained; did not bypass authentication.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "YouTube returned Sign in to confirm you are not a bot for this exact video. Browser also returned online fetch throttled.",
+        "sha256": "71b7ca81478a8efb9b49aa63c67ae7d2819e7a0521b402c7af5d4ce9746735e5"
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T12:17:38.943Z",
+    "digest": "274c057ca613e32933ad54c058b5a4d2eeef85a68ec5d931d2cdfdeccedb163a"
+  }
+}
