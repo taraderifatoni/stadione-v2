@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "plan_key": "additional:2026-10-14:verdonk-arsenal-reel",
+  "requested_format": "REEL",
+  "checked_at": "2026-10-14T05:33:38.835Z",
+  "status": "AWAITING_VERIFIED_PLAYER_FOOTAGE",
+  "queries": [
+    "Calvin Verdonk vs Arsenal individual highlights all touches 13 October 2026",
+    "Calvin Verdonk Arsenal",
+    "Calvin Verdonk Arsenal TikTok highlights"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=ThsWOlQgJLs",
+      "creator": "Sepatu Bola",
+      "published_at": "2026-10-14T01:28:04Z",
+      "checked_at": "2026-10-14T05:33:38.835Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node runtime refused bot sign-in. No cookies/authentication bypass. No video downloaded.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Sign in to confirm you are not a bot",
+        "sha256": "397f408496eb30774b535956267fa86195ce49285bed616ce7605f6906fcc2aa"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=nPycvj7w5a8",
+      "creator": "FOOTBALL BES REBORN",
+      "published_at": "2026-10-14T04:27:48Z",
+      "checked_at": "2026-10-14T05:33:38.835Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node runtime refused bot sign-in. No cookies/authentication bypass. No video downloaded.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Sign in to confirm you are not a bot",
+        "sha256": "c437bdb7a30278daec386482bb9958648230043c03e74c47e42fc525ad3eb05d"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=ymTaHWE3DDo",
+      "creator": "LangsungGaya",
+      "published_at": "2026-10-14T01:45:01Z",
+      "checked_at": "2026-10-14T05:33:38.835Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp with Node runtime refused bot sign-in. No cookies/authentication bypass. No video downloaded.",
+      "proof": {
+        "kind": "DOWNLOAD_LOG",
+        "summary": "Sign in to confirm you are not a bot",
+        "sha256": "cf9c4e6e22879767e41a38bd8dc1c5a37506ac9d2590dc15b50109ddbe21ef51"
+      }
+    }
+  ],
+  "dailymotion": {
+    "page_url": "https://www.dailymotion.com/video/xbmqwqm",
+    "creator": "beIN SPORTS Hong Kong",
+    "downloaded": true,
+    "bytes": 321170522,
+    "sha256": "7fa18e1668685c89d285feb8712f87e25124133f6156236a709dda92eeb63743",
+    "duration_seconds": 538.407007,
+    "reviewed_intervals": [
+      {
+        "source_start": 492,
+        "source_end": 523,
+        "match_time": "76:25–76:56",
+        "decision": "Before Verdonk entry78; cannot label these actions as Verdonk."
+      },
+      {
+        "source_start": 524,
+        "source_end": 530,
+        "match_time": "90+1 stoppage time",
+        "decision": "Short wide match view; no verified identifiable Verdonk action. Cannot meet player-specific montage requirement."
+      },
+      {
+        "source_start": 530,
+        "source_end": 538,
+        "decision": "Coaches after final whistle, not Verdonk action."
+      }
+    ],
+    "status": "MATCH_CONTEXT_ONLY_NOT_SELECTED"
+  },
+  "other_discovery": {
+    "serpapi_video": "Calculator videos, unrelated to Calvin/Arsenal, rejected.",
+    "dailymotion_api": "Mostly unrelated results, no new qualifying player video.",
+    "reddit": "Actual posts were static images/predicted lineup; not footage, JSON endpoint403."
+  },
+  "editorial_rule": "No claim that Verdonk neutralized Saka or Odegaard without visible verified duels. No AI video or animated photo fallback. Routine13/20WIB remains unchanged."
+}

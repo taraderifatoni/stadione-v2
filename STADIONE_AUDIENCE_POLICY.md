@@ -25,3 +25,10 @@ Adapter cms-produce-slot.cjs menilai judul/dek/lead sebelum preview/upload aset/
 Pilar olahraga Indonesia nonbola dan Tarkam tetap mengikuti matriks. Jam08/13/20WIB, additional dan sejarah tidak berubah. SCHEDULED/PUBLISHED/ARCHIVED/tombstone/attempt dilindungi skip sebelum gate baru. Publisher/renderer app tidak diubah.
 
 Validasi: node scripts/qa-editorial-audience.cjs; node scripts/qa-production-preview.cjs; node scripts/qa-youtube-discovery.cjs; node scripts/qa-reel-research.cjs. Policy dipakai langsung oleh workflow operator committed. Endpoint suggestCMS lama dan publisher aplikasi tidak diklaim memiliki filter baru.
+
+
+## Momen pemain diaspora melawan klub besar
+
+Permintaan pemilik 14 Oktober menekankan video aksi pemain Timnas menghadapi klub prioritas, seperti Calvin Verdonk melawan Arsenal. Pool berita harian bukan daftar lengkap momen potensial. Lengkapi discovery dengan query singkat nama pemain dan lawan melalui helper rilis; query panjang individual highlights all touches dapat kehilangan hasil relevan. Pada riset ini query panjang menghasilkan nol kandidat, sedangkan Calvin Verdonk Arsenal menghasilkan16 kandidat YouTube. Tetap gunakan kuota/cache yang berlaku, bukan loop pencarian tanpa batas.
+
+Utamakan menit bermain, aksi konkret dan lawan duel yang benar-benar dapat diperiksa. Skor tidak bertambah sesudah pemain masuk tidak membuktikan ia sendiri meredam penyerang tertentu. Periksa clock video terhadap menit pergantian sebelum memilih potongan. Highlight Arsenal–Lille yang didownload berhenti pada76:56 sebelum entryVerdonk78 lalu melompat ke injury time; jangan mengemasnya sebagai kompilasi duel Verdonk. Request tambahan memakai identitas terpisah dan tidak mengubah slot rutin atau posting historis.

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "12 Menit Verdonk di Emirates",
+  "dek": "Calvin Verdonk masuk pada menit ke-78 ketika Lille sudah tertinggal 0-3 dari Arsenal. Kesempatan di Liga Champions datang pada penghujung laga.",
+  "caption": "12 MENIT VERDONK DI EMIRATES\n\nCalvin Verdonk tampil pada penghujung laga Arsenal–Lille di Liga Champions. Ia menggantikan Romain Perraud pada menit ke-78, saat Lille sudah tertinggal 0-3.\n\nSemua gol Arsenal tercipta sebelum Verdonk masuk. Lille tidak kembali kebobolan sampai laga berakhir.\n\nCatatan duel dengan pemain Arsenal akan dibahas lewat potongan aksi yang dapat diperiksa.",
+  "paragraphs": [
+    {
+      "id": "entry",
+      "heading": "Kesempatan Datang pada Menit ke-78",
+      "kind": "FACT",
+      "claim_ids": [
+        "ENTRY",
+        "SCORE"
+      ],
+      "text": "Calvin Verdonk mendapat kesempatan tampil di Liga Champions ketika Lille menghadapi Arsenal di Emirates Stadium, Rabu dini hari WIB, 14 Oktober 2026. Bek Timnas Indonesia itu masuk menggantikan Romain Perraud pada menit ke-78. Ia memiliki sekitar 12 menit waktu normal untuk bermain, sementara Lille sudah tertinggal 0-3."
+    },
+    {
+      "id": "three-goals",
+      "heading": "Arsenal Menjauh Sebelum Verdonk Masuk",
+      "kind": "FACT",
+      "claim_ids": [
+        "SCORE",
+        "GOALS",
+        "ENTRY"
+      ],
+      "text": "Lille sempat menjaga skor tanpa gol sampai turun minum. Arsenal kemudian membongkar pertahanan tim tamu pada babak kedua. Jurrien Timber membuka skor pada menit ke-64, disusul Eberechi Eze pada menit ke-67 dan Bukayo Saka pada menit ke-71. Ketiga gol itu sudah tercipta ketika Verdonk masih berada di bangku cadangan."
+    },
+    {
+      "id": "remaining-time",
+      "heading": "Lille Menutup Laga Tanpa Gol Tambahan",
+      "kind": "FACT",
+      "claim_ids": [
+        "AFTER_ENTRY",
+        "SCORE",
+        "ENTRY"
+      ],
+      "text": "Lille melakukan pergantian pemain setelah tertinggal tiga gol, termasuk memasukkan Verdonk dan Olivier Giroud pada menit ke-78. Arsenal tidak menambah gol sampai peluit akhir, tetapi Lille juga gagal memperkecil ketertinggalan. Skor 3-0 tetap menjadi hasil pertandingan. Kesempatan Verdonk datang pada fase ketika timnya sudah harus mengejar selisih besar."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-14T05:33:38.835Z",
+    "article_digest": "86929fc19a9f6c3a5680c69e10c80067ecfa2550dd4aa13bbe97da6965fcc35e"
+  }
+}
