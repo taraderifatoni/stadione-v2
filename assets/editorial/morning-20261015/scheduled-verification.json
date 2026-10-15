@@ -1,0 +1,68 @@
+{
+  "checked_at": "2026-10-15T00:19:01.682Z",
+  "target": {
+    "id": "5d48214d-87dc-4671-bbd7-7f2e5111e96d",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-15:mid-am",
+    "event_key": "roma-madrid-three-corners-20261014",
+    "scheduled_at": "2026-10-15T01:00:00+00:00",
+    "auto_publish": true,
+    "issues": []
+  },
+  "parent": {
+    "id": "94fb56ec-c855-48ca-8a99-926efe87ea8e",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-15T01:00:00+00:00",
+    "title": "Tiga Korner Membalikkan Malam Madrid",
+    "slug": "tiga-korner-membalikkan-malam-madrid-5d48214d",
+    "body_equal": true,
+    "article_digest_equal": true,
+    "issues": []
+  },
+  "rows": 97,
+  "baseline_rows": 96,
+  "changed_other": [],
+  "new_rows": [
+    {
+      "id": "94fb56ec-c855-48ca-8a99-926efe87ea8e",
+      "kind": "ARTICLE",
+      "status": "SCHEDULED"
+    }
+  ],
+  "attempts": [],
+  "references": [],
+  "video": {
+    "http": 200,
+    "bytes": 10035510,
+    "sha256": "d6f06154ec9c262cf6002abca9d94828042160cb0e54976fd31003c40d6fb39c",
+    "preview_sha256": "d6f06154ec9c262cf6002abca9d94828042160cb0e54976fd31003c40d6fb39c",
+    "matches_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 42.673333,
+      "platforms": [
+        "INSTAGRAM",
+        "PORTAL"
+      ],
+      "ai_footage": false,
+      "scene_count": 6,
+      "source_count": 6,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "hero": {
+    "http": 200,
+    "bytes": 49784,
+    "sha256": "99432346227913233230f45e011c78434497c2b95c26182005b90bc07245715b",
+    "matches_clean_frame": true
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "count": 35,
+    "duplicates": []
+  }
+}
