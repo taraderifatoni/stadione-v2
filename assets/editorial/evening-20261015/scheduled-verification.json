@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-15T12:14:38.394Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "36c783e4-4dc8-476f-a7d3-9e850cffd0cd",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-15:mid-pm",
+    "event_key": "bonek-masker-persebaya-pss-20261018",
+    "scheduled_at": "2026-10-15T13:00:00+00:00",
+    "time_wib": "15 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "issues": []
+  },
+  "article": {
+    "id": "5290089a-b452-4643-983f-9a171571da84",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-15T13:00:00+00:00",
+    "canonical_body_identical": true,
+    "digest": "90c4750521457ea5302f8ffd89d99f21a040f0caf42d391769af583e31109562",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 37844,
+      "sha256": "60327960c3cd95a33bdda71f59870d9dfa5ff3642497401bf93ab568f0ebeb73",
+      "original_frame_without_headline": true
+    }
+  },
+  "render": {
+    "http": 200,
+    "bytes": 3624724,
+    "sha256": "a62ea1b521dd421d3885c50640935e6be2e095dcc2a80701eb6532132539fa0f",
+    "identical_reviewed_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.550667,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "ai_footage": false,
+      "scene_count": 5,
+      "source_count": 5,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "catalog_audio": {
+    "title": "Dilema (Instrumental)",
+    "artist": "Clark",
+    "source": "INSTAGRAM_CATALOG",
+    "audio_id": "1656169098451825",
+    "discovery": "TRENDING",
+    "checked_at": "2026-10-15T12:01:42.725Z",
+    "audio_volume": 40,
+    "video_volume": 0
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 37,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 98,
+  "current_rows": 99,
+  "new_article_rows": 1,
+  "unchanged_existing_other_rows": 97,
+  "changed_other_rows": [],
+  "pre_schedule_commit": "d4390d394dcc6806890b954091fa2e3f3e70603e",
+  "publisher": "Future slot left to shared publisher. Not claiming Instagram or website already published."
+}
