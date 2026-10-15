@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-15T05:19:45.601Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "40322b35-e491-400c-8c0b-2795d5036c0e",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-15:mid-noon",
+    "event_key": "persib-viettel-final-20261014",
+    "scheduled_at": "2026-10-15T06:00:00+00:00",
+    "time_wib": "15 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "b8205e24-c513-45b1-aa8b-7e9ba8b9085b",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-15T06:00:00+00:00",
+    "title": "Persib Menang, Dua Kartu Merah",
+    "canonical_body_identical": true,
+    "digest": "12a2b58f108d9d045dc95810920f4639b2d2a2a5176ce8ca491d4a139b89909f",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 2111033,
+      "sha256": "4bbd1bcc16c97e24d6f09e47b5d4082c42ca581d68e3ba76d3efc12f66a12492",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 872348,
+      "sha256": "67c8722c8315e98e42ae5da6a9bc38cd9ece1c268443fe7adb9d44fc85a81287",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 196251,
+      "sha256": "d367d1ad641c868ec72e677161c0b05dd0adf5bb17037df24a68943875248ca6",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 215468,
+      "sha256": "d13ec0a1413a8ab7e3d2e665a66d5374ab8751d800ad523326caae9a8ead618d",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 228957,
+      "sha256": "d2c5ca0323124e524e5e1e34c09e269a4174f6edfbed8966d63b15ba9c84d5a6",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 186675,
+      "sha256": "abd82b7015074f00b03b19114487fb701d25f2144da39f979c7a331687f83644",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 36,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 96,
+  "changed_other_rows": [],
+  "baseline_rows": 97,
+  "current_rows": 98,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "f8c6c8c706c39bd6ec4a8b141e4b91eb1d56953e"
+}
