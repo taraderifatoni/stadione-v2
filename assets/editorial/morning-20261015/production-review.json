@@ -1,0 +1,147 @@
+{
+  "checked_at": "2026-10-15T00:16:13.210Z",
+  "state": "PREVIEW_ONLY",
+  "target": "5d48214d-87dc-4671-bbd7-7f2e5111e96d",
+  "plan_key": "2026-10-15:mid-am",
+  "scheduled_at": "2026-10-15T01:00:00Z",
+  "event_key": "roma-madrid-three-corners-20261014",
+  "format": "REEL",
+  "article_digest": "c1c32ea961e2050bafdd3a72c525fce286a32096bbf66dff476b42b2c668743a",
+  "article_words": 200,
+  "baseline_rows": 96,
+  "baseline_target_status": "DRAFT",
+  "baseline_target_attempts": 0,
+  "instagram_account": "stadione.id",
+  "instagram_media_count": 35,
+  "duplicate_topic": false,
+  "source_reading": {
+    "method": "Normal public HTTP200 via TD Connector; full article/main text extracted and read. Browser open unavailable, not claimed as full browser reading.",
+    "sources": [
+      {
+        "id": "RM",
+        "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/cronicas/cronica-roma-real-madrid-14-10-2026",
+        "publisher_group": "REAL_MADRID",
+        "primary": true,
+        "published_at": "2026-10-14T10:42:00.000Z",
+        "retrieved_at": "2026-10-14T23:58:43.697Z",
+        "sha256": "2136240a1941fbfe28b00908c4da2b65849bf852e87cbc64dd87deb16ff7a93d",
+        "chars": 2856
+      },
+      {
+        "id": "PRESS",
+        "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/ruedas-de-prensa/mourinho-xxxx-14-10-2026",
+        "publisher_group": "REAL_MADRID",
+        "primary": true,
+        "published_at": "2026-10-14T21:45:00.000Z",
+        "retrieved_at": "2026-10-15T00:01:17.888Z",
+        "sha256": "33ffd2790182ca90ac81c1ab5ff8027029a700f59677ba68afb00c17d0b36ea9",
+        "chars": 7571
+      },
+      {
+        "id": "ANSA_RECAP",
+        "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/10/14/champions-da-3-1-a-3-4-roma-ripresa-e-superata-dal-real-madrid_4523d3df-60e3-4d59-a5ee-9cb4ddf3fb16.html",
+        "publisher_group": "ANSA",
+        "primary": false,
+        "published_at": "2026-10-14T00:00:00Z",
+        "retrieved_at": "2026-10-15T00:10:36.597Z",
+        "sha256": "7b53382b91f3ded979f14c4b7e4ddfe8273e12d0f1890e4e872115d13379cada",
+        "chars": 724
+      },
+      {
+        "id": "ANSA",
+        "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/10/14/sconfitta-amara-per-la-roma-avanti-3-1-il-real-madrid-la-ribalta-in-otto-minuti_d32e57f1-7e06-4727-a272-394e02130a10.html",
+        "publisher_group": "ANSA",
+        "primary": false,
+        "published_at": "2026-10-14T00:00:00Z",
+        "retrieved_at": "2026-10-14T23:57:48.811Z",
+        "sha256": "09919e691227aebf00462858282f9c55058fe04be7a18e1b799c32f32fd7bbc4",
+        "chars": 8156
+      }
+    ],
+    "publisher_groups": 2,
+    "official_original_published_at": "2026-10-14T10:42:00Z",
+    "official_modified_at": "2026-10-14T22:49:20.806Z",
+    "official_note": "Early creation metadata retained; final result verified from full updated body, match center Finalizado and video. ANSA published_at has DAY precision, midnight is not a claimed release clock."
+  },
+  "research": {
+    "pool": "getDailySportsPool active release via committed cms-audience-pool.cjs; cached Trends Roma vs Madrid200000; News/video no eligible candidates",
+    "queries": [
+      "Real Madrid Roma 14 October 2026 highlights",
+      "Roma Real Madrid 3-4 resumen 2026"
+    ],
+    "youtube_official": {
+      "url": "https://www.youtube.com/watch?v=zkgpyvjJl84",
+      "result": "NOT_ACCESSIBLE",
+      "reason": "Bot sign-in requested, no bypass",
+      "log_sha256": "fb5f9e4744a0c15aefd72310f31bc179bc5bda2c73cdfd77784c6562059ae349"
+    },
+    "instagram_official": {
+      "url": "https://www.instagram.com/reel/DefXyf0o6pY/",
+      "media_id": "17934879723399665",
+      "creator": "realmadrid",
+      "http": 200,
+      "bytes": 1401271,
+      "duration": 4.757234,
+      "sha256": "a5649a2a172ce41a9ff2c9e5df3ef4f411053e9a9d2df85817ef332393379083"
+    },
+    "broadcaster": {
+      "url": "https://www.dailymotion.com/video/xbndq5e",
+      "creator": "beIN SPORTS Hong Kong",
+      "published_at": "2026-10-14T21:26:39.000Z",
+      "duration": 525.887007,
+      "sha256": "7b81fc40b116948da786a74026443164c14ba4688ad8fccee41a2775d028a454",
+      "bytes": 142317898,
+      "download": "Normal available HLS through yt-dlp. No login/DRM/geofence bypass."
+    }
+  },
+  "facts": {
+    "result": "Roma3–4RealMadrid",
+    "date": "14OctoberRome/15OctoberWIB",
+    "scores": "Roma led3–1; Espi,Endrick,Rudiger goals from Guler corners",
+    "timing": "Actual final render checked at gameclock82:04/84:42/89:48; conventional goal minutes83/85/90. Official report prose has inconsistent85/87,89/90 and ANSA first-goal83/84. Exact disputed minute counts omitted from public article/caption. First-goal header attribution in ANSA live notes differs; use separate full ANSA recap confirming Espi rebound and actual footage with primary report.",
+    "assists": "No claim of three official statistical assists for Guler; only three corner-origin attacks.",
+    "Rudiger_finish": "Acrobatic foot strike, not a header."
+  },
+  "visual_review": [
+    "All six output scenes reviewed in render-contact.jpg; goals additionally inspected enlarged in render-goals-contact.jpg",
+    "Endrick face/jersey and actual original frame hero inspected",
+    "Original broadcaster clock, score, source marks retained, ball and goal action visible",
+    "No AI/slideshow; real moving footage only",
+    "Headline/caption safe wrapping; no EDISI DIGITAL or promotional footer",
+    "Reels format retained, no carousel fallback"
+  ],
+  "audio": {
+    "source": "Original match commentary/stadium from beIN; official MVP clip physically muted to omit unreviewed soundtrack",
+    "transcript": "Available public Dailymotion English autogenerated SRT retrieved and selected timestamps read; inaccurate names not used as facts",
+    "srt_sha256": "e4ff3aaf3d51d478b3c06b25c76a8e710f6ba6e68b1a60d772065e42ce4ad84b",
+    "mean_db": -19.8,
+    "max_db": -1.5,
+    "normalized_aac": true,
+    "synthetic_default_music": false,
+    "auditory_review": false,
+    "limitation": "No claim of auditory audition; QA uses decoded AAC, signal level, transcript alignment and verified visuals."
+  },
+  "render": {
+    "audit": [
+      {
+        "ok": true,
+        "width": 1080,
+        "height": 1920,
+        "duration": 42.673333,
+        "scene_count": 6,
+        "source_count": 6,
+        "platforms": [
+          "INSTAGRAM",
+          "PORTAL"
+        ],
+        "normalized_audio": true,
+        "source_video": true,
+        "ai_footage": false,
+        "output_sha256": "d6f06154ec9c262cf6002abca9d94828042160cb0e54976fd31003c40d6fb39c"
+      }
+    ],
+    "bytes": 10035510,
+    "sha256": "d6f06154ec9c262cf6002abca9d94828042160cb0e54976fd31003c40d6fb39c"
+  },
+  "scope": "Only routine08WIBtargetandnewparentARTICLE to be scheduled; all other slots, additional, historical, credentials and production code untouched. No direct Meta publication."
+}

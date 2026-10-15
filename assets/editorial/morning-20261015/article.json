@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Tiga Korner Membalikkan Malam Madrid",
+  "dek": "Real Madrid bangkit dari ketertinggalan 1–3 untuk menang 4–3 di kandang Roma. Carlos Espí, Endrick dan Antonio Rüdiger menyelesaikan tiga serangan dari korner Arda Güler.",
+  "caption": "TIGA KORNER MEMBALIKKAN MALAM MADRID\n\nRoma sempat memimpin 3–1 di Olimpico, tetapi Real Madrid pulang dengan kemenangan 4–3 pada laga Liga Champions, Kamis dini hari WIB.\n\nKorner Arda Güler menjadi awal tiga gol penutup. Carlos Espí memanfaatkan bola pantulan, Endrick menyamakan skor lewat sundulan, lalu Antonio Rüdiger menentukan kemenangan dengan sepakan akrobatik.\n\nMadrid mengubah hasil pertandingan ketika Roma sudah memegang keunggulan dua gol.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Madrid Membalikkan Keunggulan Dua Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "DEFICIT",
+        "CORNERS"
+      ],
+      "text": "Real Madrid bangkit dari ketertinggalan 1–3 untuk mengalahkan Roma 4–3 di Stadion Olimpico, Rabu, 14 Oktober 2026 waktu setempat atau Kamis dini hari WIB. Tiga gol penutup Madrid berasal dari situasi yang sama, korner Arda Güler. Carlos Espí, Endrick dan Antonio Rüdiger bergantian menyelesaikan serangan yang mengubah keunggulan dua gol tuan rumah menjadi kekalahan."
+    },
+    {
+      "id": "roma",
+      "heading": "Dua Gol Malen Membawa Roma Menjauh",
+      "kind": "FACT",
+      "claim_ids": [
+        "EARLY",
+        "MALEN",
+        "DEFICIT"
+      ],
+      "text": "Roma lebih dulu memimpin melalui Marten de Roon. Kylian Mbappé menyamakan kedudukan lima menit kemudian, tetapi tuan rumah kembali menjauh setelah jeda. Donyell Malen mencetak dua gol untuk membawa Roma unggul 3–1. Madrid sempat mendapat harapan melalui gol Mbappé berikutnya, namun gol itu dibatalkan karena offside. Mereka masih harus mencari jalan keluar ketika pertandingan mendekati akhir."
+    },
+    {
+      "id": "corners",
+      "heading": "Pantulan, Sundulan, Lalu Sepakan Akrobatik",
+      "kind": "FACT",
+      "claim_ids": [
+        "CORNERS",
+        "ESPI",
+        "ENDRICK",
+        "RUDIGER"
+      ],
+      "text": "Espí memperkecil ketertinggalan dengan menyambar bola pantulan di depan gawang setelah sundulan Endrick dari korner Güler. Gol tersebut sempat dibatalkan sebelum akhirnya disahkan. Endrick kemudian menyamakan skor melalui sundulan dari kiriman korner berikutnya. Güler kembali mengirim bola dari sudut lapangan saat Madrid mencari gol kemenangan. Kali ini Rüdiger menjangkaunya dengan sepakan akrobatik di area kecil dan menuntaskan kebangkitan tim tamu."
+    },
+    {
+      "id": "coach",
+      "heading": "Mourinho Mengakui Kuatnya Awal Roma",
+      "kind": "FACT",
+      "claim_ids": [
+        "COACH"
+      ],
+      "text": "Seusai laga, José Mourinho mengakui Roma lebih baik pada fase awal pertandingan. Ia menilai ritme tinggi tuan rumah sulit dipertahankan sepanjang laga dan menyebut Madrid sulit dihentikan pada fase penutup."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261007-barcelona-femenino-clasico-match-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-15T00:13:21.969Z",
+    "article_digest": "c1c32ea961e2050bafdd3a72c525fce286a32096bbf66dff476b42b2c668743a"
+  }
+}
