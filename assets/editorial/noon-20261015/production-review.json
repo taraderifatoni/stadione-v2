@@ -1,0 +1,298 @@
+{
+  "reviewed_at": "2026-10-15T05:18:52.418Z",
+  "reviewer": "CODEX_EDITOR",
+  "phase": "REVIEWED_PREVIEW_BEFORE_CMS_SCHEDULE",
+  "target_id": "40322b35-e491-400c-8c0b-2795d5036c0e",
+  "plan_key": "2026-10-15:mid-noon",
+  "scheduled_at": "2026-10-15T06:00:00Z",
+  "scheduled_wib": "15 Oktober 2026 13.00 WIB",
+  "event_key": "persib-viettel-final-20261014",
+  "format": "CAROUSEL",
+  "original_status": "DRAFT",
+  "baseline_rows": 97,
+  "instagram_account": "stadione.id",
+  "baseline_instagram_media": 36,
+  "attempts_before": 0,
+  "duplicate_event_matches_before": 0,
+  "discovery": {
+    "method": "getDailySportsPool from active release through committed cms-audience-pool.cjs/cms-load.cjs",
+    "fetched_at": "2026-10-15T05:02:57.212Z",
+    "cache": "existing current-day cache; quota respected",
+    "eligible_trend": "klasemen persib bandung vs viettel fc",
+    "search_volume": 200000,
+    "reason": "Final result is a new development after the earlier starter story; Persib is an owner-priority Indonesian club.",
+    "slot_format": "CAROUSEL as already planned; no Reel-to-carousel fallback"
+  },
+  "sources": [
+    {
+      "id": "AFC",
+      "url": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-persib-bandung-idn-1-0-the-cong-viettel-fc-vie",
+      "published_at": "2026-10-14T00:00:00Z",
+      "primary": true,
+      "publisher_group": "AFC_OFFICIAL",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "ce2cb4e6267953fb2dbfa101aa235fb2e10c4718b54f8a940bf5ac29ec15366a"
+    },
+    {
+      "id": "PERSIB",
+      "url": "https://persib.co.id/article-details/starter-persib-vs-cong-viettel-walsh-jalani-debut",
+      "published_at": "2026-10-14T03:53:00Z",
+      "primary": true,
+      "publisher_group": "PERSIB_OFFICIAL",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "865a5333345c9c044b691cfdd8f1170bdf13462e0c2dfeb780c8da8181c7eda5"
+    },
+    {
+      "id": "AFC_SEOUL",
+      "url": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-fc-seoul-kor-0-1-persib-bandung-ina",
+      "published_at": "2026-09-30T00:00:00Z",
+      "primary": true,
+      "publisher_group": "AFC_OFFICIAL",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "f77972587a4b5b46074369c7d747f7c01f5c292f93c202075d0e4a3599a14471"
+    },
+    {
+      "id": "DETIK_SEOUL",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8665833/fc-seoul-vs-persib-maung-bandung-menang-1-0-di-acl-two/amp",
+      "published_at": "2026-09-16T11:56:00Z",
+      "primary": false,
+      "publisher_group": "TRANS_MEDIA",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "c58a4dbc2a7801dbc290e3cb651f5eec142d65efc7f87b64fadfb896020a75ae"
+    },
+    {
+      "id": "DETIK",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8707442/persib-vs-viettel-diwarnai-dua-kartu-merah-maung-bandung-menang-1-0/amp",
+      "published_at": "2026-10-14T14:18:00Z",
+      "primary": false,
+      "publisher_group": "TRANS_MEDIA",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "842d991b980236c8c43d141016b1a805223185c33a08c9a258b7d9806b541ba1"
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://jabar.antaranews.com/berita/712521/klasemen-persib-bandung-vs-viettel-fc-1-0-gol-peralta-bawa-pangeran-biru-kedinginan-di-puncak-grup-e-acl-two",
+      "published_at": "2026-10-14T14:41:00Z",
+      "primary": false,
+      "publisher_group": "ANTARA",
+      "full_text_method": "Browser full-page reading and normal public HTTP200 HTML; complete main body isolated and read",
+      "body_sha256": "1e8a65f8e93468d74b54baab1661f8052902507b7ed8091de52cc25be1619623"
+    }
+  ],
+  "fact_reconciliation": [
+    "AFC URL/title and club/independent reports establish Group E; isolated Group B typo in AFC body excluded.",
+    "Paulinho dismissal minute differs 65/67 between independent reports; exact minute excluded. AFC confirms second-half dismissals and 10 v 10.",
+    "AFC opener page publication date differs from match date; article only states opening match, without an exact date.",
+    "No direct quotations used. Peralta penalty at 45, final 1-0, six points and first two clean sheets corroborated.",
+    "Detik articles belong to one publisher group, never counted as two independent publishers."
+  ],
+  "article_digest": "12a2b58f108d9d045dc95810920f4639b2d2a2a5176ce8ca491d4a139b89909f",
+  "article_words": 202,
+  "article_first": true,
+  "benchmark_ids": [
+    "goal-20261015-roma-madrid-comeback-match-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_seen": true,
+    "cover": "HASIL_LAGA variant selected explicitly for verified result, absent from prior six covers; Persib left/Viettel right/1-0 checked.",
+    "authentic_reference": "AFC collective celebration: Eliano Reijnders #2, Sandy Walsh #6, Marc Klok #23; do not identify group as a portrait of Peralta.",
+    "photo_rejections": [
+      "ANTARA initial OG was a scoreboard without athlete faces, rejected.",
+      "ANTARA action photo has watermark and uncertain foreground identification; not used."
+    ],
+    "background": "AI editorial newspaper collage; authentic photo used as reference, not invented player identity.",
+    "text": "Headline and dek complete, no clipping; source on cover only; no EDISI DIGITAL and no promotional footer.",
+    "body": "All four text pages inspected at contact resolution; measured wrapping, 36px body, 72px margins, 36px each side of divider.",
+    "website": "Original AFC photograph with no editorial headline, not carousel cover."
+  },
+  "hero": {
+    "bytes": 2111033,
+    "sha256": "4bbd1bcc16c97e24d6f09e47b5d4082c42ca581d68e3ba76d3efc12f66a12492",
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/persib-viettel-final-20261014/hero-4bbd1bcc16c97e24d6f09e47b5d4082c42ca581d68e3ba76d3efc12f66a12492.jpg"
+  },
+  "cover_input": {
+    "bytes": 2996018,
+    "sha256": "d27c3829a93aa1621540ab2fc68253d1fa8d5a4dce21b3601887bcc2138a8a79"
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "THE-AFC.COM",
+      "cover_input_sha256": "d27c3829a93aa1621540ab2fc68253d1fa8d5a4dce21b3601887bcc2138a8a79",
+      "output_sha256": "67c8722c8315e98e42ae5da6a9bc38cd9ece1c268443fe7adb9d44fc85a81287",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "9bcbdf4151522cdde028728a18e6da23d19f9b8d43756c7580f9dbfe61d85ed0",
+      "output_sha256": "d367d1ad641c868ec72e677161c0b05dd0adf5bb17037df24a68943875248ca6",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 346,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 836,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 926,
+          "height": 346,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "18baed10aa1b178082a5525fcbe8c7ebc41ee9eb9023cd54f4adb0b181bac48b",
+      "output_sha256": "d13ec0a1413a8ab7e3d2e665a66d5374ab8751d800ad523326caae9a8ead618d",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 715,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 932,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "8456269692c560da7732d37fa657a55f97caf8b7c547d8b7ac2352c3f20781d7",
+      "output_sha256": "d2c5ca0323124e524e5e1e34c09e269a4174f6edfbed8966d63b15ba9c84d5a6",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 511,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 820,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 926,
+          "height": 511,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "008c83b067cea461a92b9bd43cb77b73feef8b5d5a9f21ee2dc19895aa10f134",
+      "output_sha256": "abd82b7015074f00b03b19114487fb701d25f2144da39f979c7a331687f83644",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 605,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 924,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": "Only this normal 13WIB SOCIAL and a new paired ARTICLE may change; no other slots, historical records, renderer, credentials or services.",
+  "rollback_basis": "947ca761f75ccefd563e6c2b0db73f5c4014d60b",
+  "publication": "Not yet scheduled/published at review time; commit and push before shared adapter schedule."
+}

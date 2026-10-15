@@ -1,0 +1,24 @@
+{
+  "standard": "STADIONE_COVER_VARIANTS_V1",
+  "variant_id": "HASIL_LAGA",
+  "variant_name": "Hasil laga",
+  "tone": "LIGHT",
+  "previous_variants": [
+    "KLASIK",
+    "KLASIK",
+    "JUDUL_UTAMA",
+    "FOTO_DOMINAN",
+    "KOLOM",
+    "KLASIK"
+  ],
+  "selection_reason": "explicit_editor_override",
+  "result_checked": true,
+  "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+  "reference": "assets/editorial/cover-variants-20261012/hasil_laga.jpg",
+  "prompt": "Create ONE finished Stadione1080x1350 editorial cover from the authentic original athlete photograph and selected variant reference.\nUse the same approved font character and cream/charcoal/#84102d palette; composition must follow HASIL_LAGA.\nCream dengan skor burgundy besar sebagai pusat hierarki. Nama kedua tim rapat di kiri/kanan angka, athlete cutout kanan bawah, headline charcoal lebih kecil di kiri. Jangan menciptakan skor/statistik sebagai dekorasi.\nPreserve photographed face, hair, body, jersey, pose and identity; transform editorial background only. No invented athlete/action.\nExact headline: Persib Menang, Dua Kartu Merah\nExact deck: Penalti Mariano Peralta memastikan kemenangan 1–0 atas Viettel. Kedua tim menutup laga dengan sepuluh pemain.\nSource label only: SUMBER: THE-AFC.COM\nPage count: 1/5 exactly; review visible count after final pagination.\nInternal horizontal margins72px, normal tight line spacing, deck32px minimum, source24px minimum; measure wrapping and inspect final pixels.\nNo EDISI DIGITAL, no save/shareCTA, no promotional footer. Website uses clean original photograph; article pages remain cream text-only.\nVerified ordered result supplied by editor: Persib 1-0 Viettel; preserve exactly, never infer team order.",
+  "metadata_to_add": {
+    "variant_id": "HASIL_LAGA",
+    "variant_standard": "STADIONE_COVER_VARIANTS_V1"
+  },
+  "note": "Suggestion only. Generate artwork from authentic photo, inspect full-resolution cover, record review/hash and use normal shared preview/audit/publisher. Never mutate existing scheduled or published packets."
+}

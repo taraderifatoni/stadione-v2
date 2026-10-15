@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persib Menang, Dua Kartu Merah",
+  "dek": "Penalti Mariano Peralta memastikan kemenangan 1–0 atas Viettel. Kedua tim menutup laga dengan sepuluh pemain.",
+  "caption": "PERSIB MENANG, DUA KARTU MERAH\n\nMariano Peralta mencetak satu-satunya gol ketika Persib mengalahkan Viettel 1–0 di Si Jalak Harupat, Rabu malam. Penalti menjelang turun minum memberi Persib keunggulan yang bertahan sampai akhir.\n\nPaulinho dan Marc Klok sama-sama harus meninggalkan lapangan pada babak kedua. Kedua tim menuntaskan laga dengan sepuluh pemain.\n\nPersib kini mengoleksi enam poin dari dua pertandingan ACL Two.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Persib Mempertahankan Kemenangan di Kandang",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "VENUE",
+        "RED"
+      ],
+      "text": "Persib Bandung mengalahkan The Cong-Viettel 1–0 pada pertandingan kedua Grup E AFC Champions League Two di Stadion Si Jalak Harupat, Kabupaten Bandung, Rabu, 14 Oktober 2026. Keunggulan tuan rumah bertahan hingga akhir meski pertandingan berubah menjadi duel sepuluh lawan sepuluh pada babak kedua."
+    },
+    {
+      "id": "penalty",
+      "heading": "Peralta Menuntaskan Penalti Sebelum Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "PENALTY",
+        "SECOND_HALF"
+      ],
+      "text": "Mariano Peralta menjadi penentu kemenangan lewat penalti pada menit ke-45. Tendangan itu diberikan setelah ia dilanggar di kotak terlarang. Peralta mengambil sendiri tugas sebagai eksekutor dan menaklukkan Nguyen Van Viet untuk membawa Persib memimpin saat turun minum. Gol tersebut menjadi pembeda karena tidak ada tambahan gol setelah kedua tim kembali dari ruang ganti."
+    },
+    {
+      "id": "cards",
+      "heading": "Paulinho dan Klok Meninggalkan Lapangan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RED",
+        "SECOND_HALF"
+      ],
+      "text": "Viettel lebih dulu kehilangan Paulinho pada babak kedua. Persib sempat memiliki keunggulan jumlah pemain, tetapi situasi itu tidak berlangsung sampai akhir. Marc Klok kemudian juga harus meninggalkan lapangan setelah menerima kartu kuning kedua. Kedua tim menuntaskan pertandingan dengan sepuluh pemain. Perubahan jumlah pemain tidak mengubah skor, dan Persib tetap membawa pulang tiga poin dari laga kandangnya."
+    },
+    {
+      "id": "points",
+      "heading": "Enam Poin, Belum Kebobolan",
+      "kind": "FACT",
+      "claim_ids": [
+        "POINTS",
+        "OPENER"
+      ],
+      "text": "Kemenangan ini membuat Persib mengoleksi enam poin dari dua pertandingan fase grup. Pada laga pembuka, mereka juga menang 1–0 di kandang FC Seoul lewat gol Julio Cesar. Dua pertandingan awal itu dilalui tanpa kebobolan. Viettel tetap memiliki satu poin, yang diperoleh dari hasil imbang melawan Melbourne Victory pada pertandingan pembuka."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261015-roma-madrid-comeback-match-news",
+    "goal-20261007-barcelona-femenino-clasico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-15T05:10:53.186Z",
+    "article_digest": "12a2b58f108d9d045dc95810920f4639b2d2a2a5176ce8ca491d4a139b89909f"
+  }
+}
