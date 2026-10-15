@@ -1,0 +1,152 @@
+{
+  "reviewed_at": "2026-10-15T12:13:14.087Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "reviewer": "CODEX_EDITOR",
+  "target_id": "36c783e4-4dc8-476f-a7d3-9e850cffd0cd",
+  "plan_key": "2026-10-15:mid-pm",
+  "scheduled_at": "2026-10-15T13:00:00Z",
+  "time_wib": "15 Oktober 2026 20.00 WIB",
+  "event_key": "bonek-masker-persebaya-pss-20261018",
+  "format": "REEL",
+  "original_status": "DRAFT",
+  "original_format": "REEL",
+  "attempts_before": 0,
+  "baseline_rows": 98,
+  "baseline_instagram_media": 37,
+  "instagram": "stadione.id",
+  "duplicate_topic_matches_before": 0,
+  "discovery": {
+    "daily_pool": "getDailySportsPool from active release via cms-load and committed cms-audience-pool.cjs; same-day quota/cache respected",
+    "daily_trend": "Persib Viettel already published at noon, excluded for duplication",
+    "youtube_queries": [
+      "Timnas Indonesia Persija Persebaya 15 Oktober 2026",
+      "Thom Haye fasilitas Persib Oktober 2026",
+      "Persebaya Alex Martins PSS Oktober 2026"
+    ],
+    "youtube_failures": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=RF3m4tod9eI",
+        "creator": "tribunjabar video",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "3ceea52bd9911a76fa1940e6fd7e7208ffd8b441d063b76d1f23977a4edef812"
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=g23h6OhRLZo",
+        "creator": "Indosiar",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "0b8c310171e91505ae94c9d4939359da6aa89c315932f8637807739229232f53"
+      }
+    ],
+    "instagram_api": "Business Discovery officialpersebaya HTTP200 exposes VIDEO metadata and children; media_url absent. No direct-child permission bypass. Public source page extracted normally by yt-dlp without cookies/login/challenge bypass.",
+    "selected_page": "https://www.instagram.com/reel/DeednlGh4K8/",
+    "source_published_at": "2026-10-14T13:13:52Z",
+    "downloaded": true,
+    "source_bytes": 9977614,
+    "source_sha256": "6c46f7db74e124362ad2e784ae37b0ca6ec6a73059c9fafba75a7090240ef131",
+    "source_duration": 64.56,
+    "selected_reason": "Fresh 15October reporting and verified moving source for owner-priority Persebaya/PSS. Preserve routine Reel; no carousel fallback."
+  },
+  "sources": [
+    {
+      "id": "CLUB",
+      "url": "https://www.persebaya.id/r/4174/suporter-persebaya-galang-donasi-masker-untuk-masyarakat-terdampak-karhutla",
+      "publisher_group": "PERSEBAYA",
+      "primary": true,
+      "published_at": "2026-10-15T00:00:00Z",
+      "body_sha256": "623e8363f4c1546a094dee9d574915c7c588cc069d383f5291543d6bc9d2e87e",
+      "reading": "Full main text normal public HTTP200 through TD; browser open returned unavailable, not claimed successful full-page browsing."
+    },
+    {
+      "id": "JATIMNET",
+      "url": "https://jatimnet.com/bonek-galang-donasi-masker-saat-persebaya-lawan-pss-di-gbt",
+      "publisher_group": "JATIMNET",
+      "primary": false,
+      "published_at": "2026-10-15T04:00:00Z",
+      "body_sha256": "0f73e9316adbd1d6cdd2d4b96bb28453455a6690599599932cf5494e74a85357",
+      "reading": "Full main text normal public HTTP200 through TD; browser open returned unavailable, not claimed successful full-page browsing."
+    },
+    {
+      "id": "SUARA",
+      "url": "https://www.suara.com/bola/2026/10/15/141419/jelang-persebaya-vs-pss-sleman-bonek-punya-misi-kemanusiaan-untuk-korban-karhutla",
+      "publisher_group": "SUARA_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-15T07:14:19Z",
+      "body_sha256": "e1ad089c14927de2cd15bb08099521cf5f04a383f1d1deb0ee5b7650d7cfb054",
+      "reading": "Full main text normal public HTTP200 through TD; browser open returned unavailable, not claimed successful full-page browsing."
+    }
+  ],
+  "source_notes": [
+    "Jatimnet reporter Januar explicitly says Cak Tulus was confirmed on 15October. Suara national report quotes release; not falsely presented as a separate original interview.",
+    "Club has date-only publication15October, stored DAY precision. Jatimnet timestamp04UTC corresponds11WIB. Suara URLtime14:14:19WIB. Video posted14October20:13WIB.",
+    "Campaign is planned for18October, not already completed/distributed. No exact AQI/hotspot/medical-protection claim or unverified target-million masks.",
+    "Instagram source mentions BCS and lower-third labels Ovan BCS East Java. Article makes supported broader claim of inviting PSS supporters, without inventing a personal quote from Ovan."
+  ],
+  "article": {
+    "words": 179,
+    "digest": "90c4750521457ea5302f8ffd89d99f21a040f0caf42d391769af583e31109562",
+    "article_first": true,
+    "benchmark_ids": [
+      "goal-20261006-piala-presiden-news",
+      "goal-20261011-fellhauer-kickoff-pressing-news"
+    ],
+    "no_scaffold": true,
+    "no_editorial_label": true,
+    "quote": "Short exact quotation from club release; not attributed as verbatim audio of selected source segment."
+  },
+  "visual_review": {
+    "source_contacts_seen": [
+      "bonek-contact",
+      "bounds-contact",
+      "ovan-contact"
+    ],
+    "all_five_final_scenes_seen": true,
+    "review_contact": "render-contact-final.jpg",
+    "moving_people_verified": "Participant faces, mouths/hands and camera change; Ovan segment explicitly checked2fps. Five prepared clips from one original creator, not five independent publishers.",
+    "framing": "First preview had low contrast white header over pale source background. Final crop1080x1200 at y350, resize972x1080 and pad1080x1920 at54,340 places fixed hook/caption/credit on black. Faces and native Cak Tulus/Ovan labels retained.",
+    "omitted": "All KompasTV/Tribun/fire/haze inserts excluded. This is meeting/invitation footage, not documentation of finished donation distribution.",
+    "hero": "Frame Cak Tulus at30sec, crop900x506, without editorial headline/native lower-third; visible banner is part of real setting, not added text.",
+    "no_ai_video": true,
+    "no_slideshow": true
+  },
+  "audio": {
+    "source_audio_physically_muted": true,
+    "decoded_aac_valid": true,
+    "mean_db": -91,
+    "max_db": -91,
+    "catalog": {
+      "audio_id": "1656169098451825",
+      "title": "Dilema (Instrumental)",
+      "artist": "Clark",
+      "discovery": "TRENDING",
+      "checked_at": "2026-10-15T12:01:42.725Z",
+      "video_volume": 0,
+      "audio_volume": 40
+    },
+    "review_limit": "Catalog metadata reviewed, instrumental selected for humanitarian story. Tool cannot audition audio; no claim of listening or of combined music in local preview. Native IG catalog applied by shared publisher, which revalidates metadata. Facebook base video silent; no cross-platform music licence claim."
+  },
+  "render": {
+    "bytes": 3624724,
+    "sha256": "a62ea1b521dd421d3885c50640935e6be2e095dcc2a80701eb6532132539fa0f",
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 21.550667,
+    "scene_count": 5,
+    "source_count": 5,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "a62ea1b521dd421d3885c50640935e6be2e095dcc2a80701eb6532132539fa0f"
+  },
+  "hero": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/60327960c3cd95a33bdda71f59870d9dfa5ff3642497401bf93ab568f0ebeb73.jpg",
+    "bytes": 37844,
+    "sha256": "60327960c3cd95a33bdda71f59870d9dfa5ff3642497401bf93ab568f0ebeb73"
+  },
+  "scope": "Only selected 20WIB SOCIAL and new paired ARTICLE may change. No other slots/additional/historical/renderer/credential/services.",
+  "rollback_basis": "5b9eee03b9703c5a52660e01d1b1cd5c86dcb18c",
+  "publication": "Not scheduled/published at preparation. Commit and push review first, then shared adapter/publisher only."
+}

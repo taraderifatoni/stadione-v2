@@ -1,0 +1,103 @@
+{
+  "maps": [
+    {
+      "id": "HOOK",
+      "file": "hook.mp4",
+      "start": 18,
+      "end": 19.7,
+      "text": "Ke GBT, bawa masker",
+      "claims": [
+        "CAMPAIGN",
+        "TULUS"
+      ],
+      "visual": "Cak Tulus berdiri bersama komunitas. Gerak tubuh dan ekspresi berubah; bukan foto. Bagian ini cuplikan ajakan, tanpa mengklaim transkrip audio.",
+      "asset": {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/7e47811c8a60ac50c2f0715fb68ab48ae6fa28b9d9f2c3949f4f82f5c099b6b6.mp4",
+        "bytes": 344394,
+        "sha256": "7e47811c8a60ac50c2f0715fb68ab48ae6fa28b9d9f2c3949f4f82f5c099b6b6"
+      }
+    },
+    {
+      "id": "MEETING",
+      "file": "meeting.mp4",
+      "start": 11.2,
+      "end": 15,
+      "text": "Bonek menyiapkan donasi",
+      "claims": [
+        "COMMUNITY"
+      ],
+      "visual": "Pertemuan suporter di meja, kamera berpindah dari wide ke dua peserta. Gerakan orang dan kamera diperiksa. Bukan dokumentasi pembagian masker.",
+      "asset": {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/1f135db587a8536fb0ee3a65fd9e4809282d5a3171d667a7b84ca9fc6d371832.mp4",
+        "bytes": 650580,
+        "sha256": "1f135db587a8536fb0ee3a65fd9e4809282d5a3171d667a7b84ca9fc6d371832"
+      }
+    },
+    {
+      "id": "SUPPORTERS",
+      "file": "supporters.mp4",
+      "start": 15,
+      "end": 17.8,
+      "text": "Saat Persebaya menjamu PSS\n18 Oktober, Gelora Bung Tomo",
+      "claims": [
+        "CAMPAIGN",
+        "COMMUNITY"
+      ],
+      "visual": "Peserta pertemuan berpakaian hitam dan close-up pria berambut pirang. Identitas pribadi tidak dikarang; bukan foto pemain/pertandingan.",
+      "asset": {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/48cab1b0e0a52fd6ee1b6914b3ee91c9890cb38751d5fad186db4e706fd917ba.mp4",
+        "bytes": 420029,
+        "sha256": "48cab1b0e0a52fd6ee1b6914b3ee91c9890cb38751d5fad186db4e706fd917ba"
+      }
+    },
+    {
+      "id": "INVITATION",
+      "file": "invitation.mp4",
+      "start": 26,
+      "end": 34.6,
+      "text": "Cak Tulus mengajak penonton\nikut menyumbang masker",
+      "claims": [
+        "TULUS",
+        "COMMUNITY"
+      ],
+      "visual": "Lower third sumber berbunyi CAK TULUS BONEK. Ekspresi, mulut dan tangan bergerak. Prosa pada layar adalah ringkasan ajakan terverifikasi, bukan subtitle verbatim. Sisipan KompasTV sebelum source26 dikeluarkan.",
+      "asset": {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/5496d3bc5280bc2a331da7d3f2ee6bf796741090d71660d93e5fc7737355e421.mp4",
+        "bytes": 1502431,
+        "sha256": "5496d3bc5280bc2a331da7d3f2ee6bf796741090d71660d93e5fc7737355e421"
+      }
+    },
+    {
+      "id": "UNITY",
+      "file": "unity.mp4",
+      "start": 35.2,
+      "end": 39.8,
+      "text": "Untuk warga terdampak\nkebakaran hutan dan lahan",
+      "claims": [
+        "CAMPAIGN"
+      ],
+      "visual": "Tiga orang dalam ajakan komunitas; lower third asli OVAN BCS EAST JAVA. Mulut dan tangan berubah pada pemeriksaan2fps. Tidak menambahkan klaim pribadi atau angka bantuan. Keluar sebelum sisipan berita kebakaran berikutnya.",
+      "asset": {
+        "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/9e7ff57c40eee989e893e8204c2f318bb54c8392090d448229e9c07acda5aee9.mp4",
+        "bytes": 566437,
+        "sha256": "9e7ff57c40eee989e893e8204c2f318bb54c8392090d448229e9c07acda5aee9"
+      }
+    }
+  ],
+  "hero": {
+    "url": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/bonek-masker-persebaya-pss-20261018/60327960c3cd95a33bdda71f59870d9dfa5ff3642497401bf93ab568f0ebeb73.jpg",
+    "bytes": 37844,
+    "sha256": "60327960c3cd95a33bdda71f59870d9dfa5ff3642497401bf93ab568f0ebeb73"
+  },
+  "raw_bytes": 9977614,
+  "raw_sha256": "6c46f7db74e124362ad2e784ae37b0ca6ec6a73059c9fafba75a7090240ef131",
+  "raw_duration": 64.56,
+  "duration": 21.5,
+  "music": {
+    "audio_id": "1656169098451825",
+    "title": "Dilema (Instrumental)",
+    "artist": "Clark",
+    "duration_ms": 136540,
+    "review": "Metadata ditinjau: TRENDING dari katalog akun, instrumental untuk kabar kemanusiaan. Tidak mengklaim audition atau gabungan audio-preview karena tool tidak mendukung input audio; audio sumber dimute fisik, FB base silent."
+  }
+}

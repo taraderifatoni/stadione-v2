@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Bonek Ajak Penonton Bawa Masker ke GBT",
+  "dek": "Penggalangan masker untuk warga terdampak karhutla akan dimulai saat Persebaya menjamu PSS Sleman, Minggu, 18 Oktober. Suporter yang datang ke GBT diajak ikut menyumbang.",
+  "caption": "BONEK AJAK PENONTON BAWA MASKER KE GBT\n\nAda ajakan membawa masker saat Persebaya menjamu PSS Sleman di Gelora Bung Tomo, Minggu, 18 Oktober. Bonek menggalang bantuan untuk warga yang terdampak kebakaran hutan dan lahan.\n\nKomunitas suporter telah membahas pengumpulan dan penyaluran bantuannya. Cak Tulus mengajak penonton ikut menyumbang ketika datang mendukung tim.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Masker Dikumpulkan Saat Persebaya Menjamu PSS",
+      "kind": "FACT",
+      "claim_ids": [
+        "CAMPAIGN",
+        "COMMUNITY"
+      ],
+      "text": "Bonek mengajak penonton membawa masker ketika Persebaya Surabaya menjamu PSS Sleman di Stadion Gelora Bung Tomo, Minggu, 18 Oktober 2026. Masker akan dikumpulkan untuk membantu warga terdampak kebakaran hutan dan lahan. Gerakan One Man One Mask itu memanfaatkan laga kandang sebagai tempat pengumpulan bantuan."
+    },
+    {
+      "id": "mechanism",
+      "heading": "Komunitas Menyiapkan Pengumpulan dan Penyaluran",
+      "kind": "FACT",
+      "claim_ids": [
+        "COMMUNITY"
+      ],
+      "text": "Sejumlah komunitas Bonek sebelumnya berkumpul untuk membahas mekanisme pengumpulan dan distribusi masker. Laga kandang dipilih karena menjadi tempat berkumpulnya banyak suporter. Ajakan menyumbang juga terbuka bagi pendukung PSS yang datang ke Surabaya, sehingga partisipasi tidak terbatas pada penonton yang mendukung Persebaya."
+    },
+    {
+      "id": "voice",
+      "heading": "Cak Tulus Mengajak Suporter Ikut Bergerak",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "TULUS"
+      ],
+      "quote": {
+        "source_id": "CLUB",
+        "text": "Selama ini teman-teman Bonek sudah menunjukkan bahwa sepak bola itu tidak berhenti 90 menit."
+      },
+      "text": "Tulus Budi, salah seorang inisiator gerakan yang akrab disapa Cak Tulus, meminta suporter membawa masker saat datang ke GBT. Ia mengaitkan ajakan itu dengan kegiatan kemanusiaan yang dijalankan komunitas. Dalam keterangan yang dimuat Persebaya, Kamis, 15 Oktober, ia mengatakan, “Selama ini teman-teman Bonek sudah menunjukkan bahwa sepak bola itu tidak berhenti 90 menit.”"
+    },
+    {
+      "id": "record",
+      "heading": "Melanjutkan Bantuan di Luar Lapangan",
+      "kind": "FACT",
+      "claim_ids": [
+        "HISTORY"
+      ],
+      "text": "Bonek sebelumnya ikut membantu pembangunan jaringan air bersih di Nusa Tenggara Timur. Bersama manajemen Persebaya, mereka juga pernah menggalang peralatan sekolah yang kemudian disalurkan ke daerah tertinggal, terdepan dan terluar. Kali ini, bantuan yang disiapkan berupa masker untuk warga terdampak karhutla."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261006-piala-presiden-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-15T12:11:09.693Z",
+    "article_digest": "90c4750521457ea5302f8ffd89d99f21a040f0caf42d391769af583e31109562"
+  }
+}
