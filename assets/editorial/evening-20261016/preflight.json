@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-16T11:56:25.563Z",
+  "rows": 104,
+  "social": {
+    "id": "b2dd609a-c8cd-4920-8b68-94d3b5d44d39",
+    "status": "DRAFT",
+    "format": "REEL",
+    "plan_key": "2026-10-16:fri-pm",
+    "scheduled_at": "2026-10-16T13:00:00+00:00",
+    "category": "Sepak Bola Indonesia",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "username": "stadione.id",
+    "count": 40,
+    "matching_preview": []
+  },
+  "existing_cms_matches": []
+}

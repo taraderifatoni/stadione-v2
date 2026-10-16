@@ -1,0 +1,95 @@
+{
+  "original": {
+    "page_url": "https://www.instagram.com/reel/DehIsaoI9eE/",
+    "creator": "Persija Jakarta / persija",
+    "id": "18110856485238284",
+    "published_at": "2026-10-15T14:08:39+0000",
+    "caption": "𝗙𝗨𝗟𝗟 𝗙𝗢𝗖𝗨𝗦. 🔒\n\nPersiapan menuju laga tandang terus digeber. Saksikan latihan hari ini full video di Persija TV! \n\n#Persija",
+    "http": 200,
+    "bytes": 14563779,
+    "sha256": "92a95b71d5da041291e2027c6b63d5cce596704640ff967a22477a6c42545387",
+    "method": "Available Business Discovery media_url, normal HTTP download. No cookies/login/challenge bypass."
+  },
+  "original_duration": 54.378277,
+  "cuts": [
+    {
+      "id": "HOOK",
+      "original_start": 0.4,
+      "original_end": 2.4,
+      "prepared_duration": 2,
+      "prepared_bytes": 1902538,
+      "prepared_sha256": "677cc7b2e5d34cc124aa5ec8244ff8efd3395f0eb7db3257fc92720d261f9b86",
+      "editorial_caption": "Empat laga, empat kemenangan",
+      "visual_transcript": "Transkrip visual sumber asli 0.4–2.4 detik: Dua pemain berseragam latihan merah Persija bergerak saling mendekat/berputar; kamera bergerak. Bukan aksi pertandingan. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    },
+    {
+      "id": "GROUP",
+      "original_start": 4,
+      "original_end": 8,
+      "prepared_duration": 4,
+      "prepared_bytes": 4059703,
+      "prepared_sha256": "e5f902c76fc70c2c58cdfed107ebe481049057678daa7e7222be7535991c9092",
+      "editorial_caption": "Persita vs Persija\n17 Oktober, 19.00 WIB",
+      "visual_transcript": "Transkrip visual sumber asli 4–8 detik: Kelompok pemain merah berkumpul dan bergerak bersama. Rekaman latihan, bukan selebrasi kemenangan atas Persita. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    },
+    {
+      "id": "MOVEMENT",
+      "original_start": 10,
+      "original_end": 13.5,
+      "prepared_duration": 3.5,
+      "prepared_bytes": 1817148,
+      "prepared_sha256": "592bc20a0fec85790febf510222edb830525e1deebbc722d3f1140ef07ba6873",
+      "editorial_caption": "Rekaman latihan 15 Oktober\nPersija Training Ground, Depok",
+      "visual_transcript": "Transkrip visual sumber asli 10–13.5 detik: Pemain melakukan gerak lutut/lunge dan tersenyum; pelatih/anggota tim di belakang. Identitas individual tidak dikarang. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    },
+    {
+      "id": "KEEPERS",
+      "original_start": 22,
+      "original_end": 26.5,
+      "prepared_duration": 4.5,
+      "prepared_bytes": 3490687,
+      "prepared_sha256": "7e2eac5b9abfbacbf1b66a02d9a19a7334c4641e087a314e4ae3bcb8ae038476",
+      "editorial_caption": "Tiga clean sheet dalam empat laga",
+      "visual_transcript": "Transkrip visual sumber asli 22–26.5 detik: Penjaga gawang berjersey oranye melakukan gerak kaki melewati rintangan kecil. Tidak diklaim penyelamatan dalam laga. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    },
+    {
+      "id": "PASSING",
+      "original_start": 32,
+      "original_end": 37,
+      "prepared_duration": 5,
+      "prepared_bytes": 4051574,
+      "prepared_sha256": "9b67e46dd17e733af55b958cfc206e687d05058c7ae7dd2465c8ed3a41a5e491",
+      "editorial_caption": "Persita juga belum terkalahkan",
+      "visual_transcript": "Transkrip visual sumber asli 32–37 detik: Pemain merah memindahkan bola dalam latihan kelompok. Gerak kaki, bola dan kamera berubah. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    },
+    {
+      "id": "BALL",
+      "original_start": 37,
+      "original_end": 42.5,
+      "prepared_duration": 5.5,
+      "prepared_bytes": 4188549,
+      "prepared_sha256": "f111f7e531da87fd5a7d89e7490c70312597439945ee350e3bdb8bca7df11b1e",
+      "editorial_caption": "Banten International Stadium\nSabtu, 17 Oktober",
+      "visual_transcript": "Transkrip visual sumber asli 37–42.5 detik: Permainan bola berlanjut dengan pemain bergerak dan arah bola berubah. Bukan cuplikan laga Persita. Audio sumber dimute secara fisik, bukan transkrip percakapan. Caption editorial merangkum fakta artikel terverifikasi, bukan subtitle verbatim."
+    }
+  ],
+  "final_duration": 24.56,
+  "hero": {
+    "original_time": 11.5,
+    "crop": "720x480, x0y250, no added headline; original training frame",
+    "bytes": 50724,
+    "sha256": "a1364a4bd4a1b3ec33bbc659166d34b58fa32bdd7a9657ac83dc107bae964e07"
+  },
+  "framing": "Private source preparation only: vertical120px shift, standard charcoal type panels; no renderer/code production changes. Source sound physically muted; catalog added by native publisher only.",
+  "catalog_audio": {
+    "audio_id": "1482891479125465",
+    "title": "This Is The One",
+    "artist": "The K Club",
+    "audio_volume": 35,
+    "video_volume": 0,
+    "checked_at": "2026-10-16T12:01:09.123Z",
+    "discovery": "TRENDING",
+    "source": "INSTAGRAM_CATALOG",
+    "review": "Available TRENDING metadata for account checked; not a claim of TikTok rank or audio audition. Tools cannot audition the catalog input or preview native combined soundtrack. Source audio physically muted; native music added by Instagram publisher, Facebook base remains silent."
+  }
+}

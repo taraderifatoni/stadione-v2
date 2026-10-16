@@ -1,0 +1,217 @@
+{
+  "reviewed_at": "2026-10-16T12:13:46.978Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "a8cddfbe778e946c98af232348ec896d7d6ab8c9",
+  "target": {
+    "id": "b2dd609a-c8cd-4920-8b68-94d3b5d44d39",
+    "plan_key": "2026-10-16:fri-pm",
+    "scheduled_at": "2026-10-16T13:00:00Z",
+    "time_wib": "16 Oktober 2026 20.00 WIB",
+    "format": "REEL",
+    "pillar": "Sepak Bola Indonesia",
+    "theme": "Starting XI resmi atau preview laga sesuai jadwal aktual",
+    "event_key": "persita-persija-preview-20261017"
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-16T11:56:26.051Z",
+    "pool_sha256": "bcf40482e7caf1bd141bbc2620c48d4243ed352ee21982d9501f905486756636",
+    "path": "getDailySportsPool release via committed cms-audience-pool.cjs and cms-load.cjs",
+    "note": "Cached broad pool contained no eligible domestic rows; not treated as absence of news/footage. Targeted discovery supplemented it.",
+    "queries": [
+      {
+        "query": [
+          "Persija Persita"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "at": "2026-10-16T11:56:26.977Z",
+        "candidates": 20,
+        "cached": false
+      },
+      {
+        "query": [
+          "Persija latihan Persita"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "at": "2026-10-16T11:56:46.004Z",
+        "candidates": 20,
+        "cached": false
+      }
+    ],
+    "failed_youtube": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=f968qUaNc0w",
+        "creator": "Persija Jakarta",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "checked_at": "2026-10-16T11:57:16.145Z",
+        "log_sha256": "e4482ab5b86d6ddeaaebcac0a135519a5017f2cc5c5da46c691d5c15970c121a",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=2Mrdn5eEU68",
+        "creator": "Bolaskor TV",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "checked_at": "2026-10-16T11:57:38.393Z",
+        "log_sha256": "b1c91cb41aa60a7a37077978a9bdb600f746eae15c514e84ee81f3118a799f3c",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=7Yk1VDAWZ2o",
+        "creator": "Tribunnews",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "checked_at": "2026-10-16T11:57:40.116Z",
+        "log_sha256": "e0cad53730e6530e86ce545fc82cbd841fcee7f8e4304658f5d8d0dd476d2ef8",
+        "not_retried_or_bypassed": true
+      }
+    ],
+    "usable_media": {
+      "source": "Instagram Business Discovery accountpersija; VIDEO/children inspected",
+      "page_url": "https://www.instagram.com/reel/DehIsaoI9eE/",
+      "http": 200,
+      "raw_sha256": "92a95b71d5da041291e2027c6b63d5cce596704640ff967a22477a6c42545387",
+      "raw_bytes": 14563779
+    },
+    "fallback": false
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 188,
+    "digest": "625aa360fc2ccd4b12f3dadca10f92fef5fa14a745478e1909be1aa8b3aeb39b",
+    "benchmarks": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261009-coutinho-debut-fitness-news"
+    ],
+    "review": [
+      "Article written and edited as full NEWS before Reels packaging. Preview remains distinct from previous PSIM result.",
+      "Lead: target fifth win, exact upcoming venue/date/time; Nadeo/statistics add goalkeeper context; independently observed training; opponents record completes preview.",
+      "Short exact Nadeo quote attributed to ILeague, without inventing speech from muted footage.",
+      "Removed meta sentence about how the video is made and repetitive ending before final review. No Analisis Stadione/scaffold/filler."
+    ]
+  },
+  "sources": [
+    {
+      "id": "LEAGUE",
+      "url": "https://www.ileague.id/news/detail/-persija-bidik-lanjutkan-tren-positif-di-serang",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "retrieved_at": "2026-10-16T12:01:05.111Z",
+      "text_sha256": "ffc15974777b3abd8fdf909002cdaccf0d514b828bced127cf4a450329e59cbe",
+      "reading": "Full article read through browser and normal publicHTTP200 throughTD."
+    },
+    {
+      "id": "NADEO",
+      "url": "https://www.ligaindonesiabaru.com/news/detail/-nadeo-argawinata-sebut-kekompakan-jadi-kekuatan-persija",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-16T00:00:00.000Z",
+      "retrieved_at": "2026-10-16T12:01:07.175Z",
+      "text_sha256": "3e27d210115f33e95cb8fc5ba69bf51e1ccd8edba3da0ad1cdbc89e33ce47a8c",
+      "reading": "Full article read through browser and normal publicHTTP200 throughTD."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://sumbar.antaranews.com/berita/783341/nadeo-sebut-kekeluargaan-di-dalam-tim-jadi-kekuatan-persija-musim-ini",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-10-16T02:46:00.000Z",
+      "retrieved_at": "2026-10-16T12:01:07.405Z",
+      "text_sha256": "f9645936bbeaa5aac8e90991308754fe22e9fc79e359cd9c86c2182a284a565c",
+      "reading": "Browseropen unavailable; full public main text read through normalHTTP200 throughTD."
+    },
+    {
+      "id": "OKEZONE",
+      "url": "https://bola.okezone.com/read/2026/10/15/49/3248116/latihan-penuh-tawa-persija-jakarta-bersiap-hadapi-persita-tangerang",
+      "publisher_group": "MNC_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-15T10:16:00.000Z",
+      "retrieved_at": "2026-10-16T12:01:07.258Z",
+      "text_sha256": "86ef6f80f2c31ab0ca5fbe38ee6166278503ddc7f7de8f3f1bf7a0eb6becc365",
+      "reading": "Full article read through browser and normal publicHTTP200 throughTD."
+    },
+    {
+      "id": "OKEZONE2",
+      "url": "https://bola.okezone.com/read/2026/10/15/49/3248116/latihan-penuh-tawa-persija-jakarta-bersiap-hadapi-persita-tangerang?page=2",
+      "publisher_group": "MNC_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-15T10:16:00.000Z",
+      "retrieved_at": "2026-10-16T12:01:07.340Z",
+      "text_sha256": "d25528cc53e6a367eeb10d5c6a5bdd4159dea5102433e1eaf5dbe099f3dbd1ac",
+      "reading": "Full article read through browser and normal publicHTTP200 throughTD."
+    },
+    {
+      "id": "SUARA",
+      "url": "https://www.suara.com/bola/2026/10/16/110729/belum-terkalahkan-di-awal-musim-persita-bikin-shin-tae-yong-gemetar?page=all",
+      "publisher_group": "SUARA_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-16T04:07:29.000Z",
+      "retrieved_at": "2026-10-16T12:01:07.705Z",
+      "text_sha256": "b1a6cc2d0c63a2a35309606978cccb3f3eeb65f6e9768483c26ad5c68ca5d128",
+      "reading": "Browseropen unavailable; full public main text read through normalHTTP200 throughTD."
+    },
+    {
+      "id": "TRAINING",
+      "url": "https://www.instagram.com/reel/DehIsaoI9eE/",
+      "publisher_group": "PERSIJA_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-15T14:08:39.000Z",
+      "retrieved_at": "2026-10-16T12:10:23.736Z",
+      "text_sha256": "12e58557017cfa77b7905d5c337d7e860bdb874034f8b81fc932284120e2c6e9",
+      "reading": "Full official caption and API timestamp read; moving footage inspected. Not an article."
+    }
+  ],
+  "fact_review": {
+    "verified": [
+      "Persita-Persija scheduled17October2026 at19WIB, Banten International Stadium inSerang. Not played at production.",
+      "Persija four wins, three clean sheets, one conceded; keeper statements attributed to Nadeo.",
+      "Persita two wins and two draws; no official startingXI invented.",
+      "Training was15October inDepok, not match footage. Official club caption/time and Okezone reporter on-site support context."
+    ],
+    "caveats": [
+      "Okezonepage2 says9points despite four wins. That number was not adopted; primaryleague/ANTARA/Suara agree12, but totalpoints omitted from narrative.",
+      "ILeaguepreview has wrong team name in a quotation about two wins/two draws; not reproduced. Correct Persita record confirmed narrative and independentSuara.",
+      "ANTARA derives keeper quotation from league; not treated as independent keeper interview. Okezone provided separate on-site training observation.",
+      "Leaguepublication dates day-only, midnight ISO does not assert clock.",
+      "Source clip movement10–13.5 includes later camera/player angle, not a verbatim spoken transcript. Individual players are not named without identification."
+    ]
+  },
+  "render": {
+    "bytes": 15841185,
+    "sha256": "87f8df5b98d3770c763042fae8ee842be0eea444b22ec266b90ddcd703052283",
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 24.56,
+      "scene_count": 6,
+      "source_count": 6,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "normalized_audio": true,
+      "source_video": true,
+      "ai_footage": false,
+      "output_sha256": "87f8df5b98d3770c763042fae8ee842be0eea444b22ec266b90ddcd703052283"
+    },
+    "visual_review": "Final six scene midpoints plus entire final montage sampled2fps inspected. Actual movement, jerseys, faces and native logo compared with original. Not claiming audio audition or real-time playback.",
+    "corrections": [
+      "First hero crop cut faces; final crop y250 shows complete faces and no added text.",
+      "Headline background increased before final approval so third line has room. Caption panels made more compact.",
+      "Keeper cut moved22–26.5 and passing32–37 to remove unrelated opening shot. Final has6cuts24.56s."
+    ],
+    "text": "Headline and captions complete, within safe area, high contrast charcoal panels; no EDISI DIGITAL or promotional footer.",
+    "audio": {
+      "source_muted_physically": true,
+      "full_decode_ok": true,
+      "max_volume_db": -91,
+      "native_catalog": "This Is The One / The K Club, available TRENDING metadata for Stadione. No claim of audio audition or TikTok rank. Combined native soundtrack cannot be locally previewed. Existing publisher rechecks track availability.",
+      "facebook_base": "Silent; Instagram catalogue licence not assumed transferable."
+    }
+  },
+  "scope": {
+    "baseline_rows": 104,
+    "allowed_change": "Target SOCIAL and one new parent ARTICLE only",
+    "preserved": "08/13WIB/additional/historical/credential/renderer/productioncode/services"
+  },
+  "production_path": "Committed cms-produce-slot.cjs preview → visual/byte review → Gitcommit/push → shared schedule → systemd publisher",
+  "raw_materials": "Original MP4, sourceHTML/text, signedCDN URLs, raw API responses and full packet stay privateVPS; Git stores ownarticle, sanitizedreview metadata and derivativeQA contacts only."
+}

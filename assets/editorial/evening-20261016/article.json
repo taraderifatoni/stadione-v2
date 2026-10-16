@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persija Memburu Kemenangan Kelima di Serang",
+  "dek": "Persija dan Persita sama-sama belum kalah menjelang duel Sabtu malam. Empat kemenangan Macan Kemayoran akan diuji di Banten International Stadium.",
+  "caption": "PERSIJA MEMBURU KEMENANGAN KELIMA DI SERANG\n\nEmpat laga awal selalu dimenangi Persija. Ujian berikutnya datang dari Persita, yang juga belum kalah musim ini.\n\nPersita vs Persija dijadwalkan berlangsung di Banten International Stadium, Serang, Sabtu, 17 Oktober 2026 pukul 19.00 WIB.\n\nMontage ini memakai rekaman latihan resmi Persija pada 15 Oktober. Di balik persiapannya, Macan Kemayoran membawa catatan tiga clean sheet dan hanya satu gol kebobolan dalam empat pertandingan. Nadeo mengaitkan start itu dengan kekompakan tim serta kerja para kiper mengikuti arahan Yoo Jae-hoon.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Tim Belum Kalah Bertemu di Serang",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT"
+      ],
+      "text": "Persija Jakarta memburu kemenangan kelima beruntun ketika bertandang menghadapi Persita Tangerang di Banten International Stadium, Serang, Sabtu, 17 Oktober 2026 pukul 19.00 WIB. Laga pekan kelima Super League itu mempertemukan dua tim yang sama-sama belum menelan kekalahan pada awal musim."
+    },
+    {
+      "id": "defence",
+      "heading": "Tiga Kali Menjaga Gawang Tetap Bersih",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "RECORD"
+      ],
+      "quote": {
+        "text": "Keempat kiper mengikuti arahan pelatih kiper, yaitu Coach Yoo Jae-hoon.",
+        "source_id": "NADEO"
+      },
+      "text": "Persija membawa tiga clean sheet dari empat pertandingan dan baru kebobolan satu gol. Nadeo Argawinata mengaitkan catatan itu dengan kekompakan serta sikap saling menghormati di dalam tim. Dalam keterangan yang dimuat I.League, ia mengatakan, “Keempat kiper mengikuti arahan pelatih kiper, yaitu Coach Yoo Jae-hoon.” Menurut Nadeo, suasana kekeluargaan dan kesediaan menerima arahan pelatih ikut membantu persiapan mereka. Ia juga memberi kredit kepada Shin yang dinilainya membuat suasana tim semakin baik dari minggu ke minggu."
+    },
+    {
+      "id": "training",
+      "heading": "Permainan Pembuka Menghidupkan Latihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "PREP"
+      ],
+      "text": "Persiapan berlangsung di Persija Training Ground, Depok, Kamis, 15 Oktober. Okezone yang meliput sesi tersebut melaporkan Shin Tae-yong membuka latihan dengan permainan sederhana yang mengundang tawa pemain. Rekaman resmi klub memperlihatkan pemain bergerak dalam kelompok, latihan penjaga gawang, serta permainan bola."
+    },
+    {
+      "id": "opponent",
+      "heading": "Persita Membawa Dua Kemenangan dan Dua Hasil Imbang",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPPONENT"
+      ],
+      "text": "Persita punya bekal berbeda dari tamunya. Pendekar Cisadane melewati empat laga dengan dua kemenangan dan dua hasil imbang. Dalam keterangan I.League, Shin menilai Persita bermain bagus dan meminta timnya mendekati pertandingan dengan hati-hati."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261009-coutinho-debut-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-16T12:10:23.738Z",
+    "article_digest": "625aa360fc2ccd4b12f3dadca10f92fef5fa14a745478e1909be1aa8b3aeb39b"
+  }
+}
