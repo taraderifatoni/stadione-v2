@@ -1,0 +1,327 @@
+{
+  "reviewed_at": "2026-10-16T05:16:30.837Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "f9bd0e6bc1e479c06a21c41341fdc218118c2dde",
+  "target": {
+    "social_id": "5e489ca4-8679-4d70-b9f2-960201c4d0a6",
+    "plan_key": "2026-10-16:fri-noon",
+    "scheduled_at": "2026-10-16T06:00:00Z",
+    "time_wib": "16 Oktober 2026 13.00 WIB",
+    "pillar": "Komunitas",
+    "angle": "Trivia / interaksi",
+    "format": "CAROUSEL",
+    "event_key": "alex-martins-three-goals-first-opponent-trivia-20261016"
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-16T05:04:18.193Z",
+    "source": "getDailySportsPool active release via committed cms-audience-pool.cjs / cms-load.cjs",
+    "pool_sha256": "dfc624a17646b0bb6b9d9096de349d48f1f4bd36488794e47416139e6f3024c5",
+    "selection": "Pool trends reviewed; broad Europe/conference fixtures did not supply a relevant community quiz. Fresh JPNN16Oct and club15Oct Alex news chosen as follow-up reporting for owner-priority Persebaya. Not a repeat of Bonek charity reel.",
+    "original_slot_carousel": true,
+    "no_reel_fallback": true
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 201,
+    "paragraphs": 4,
+    "digest": "cc2240841057a3ca8057b3082ea00fd486cc734d5118183448e846a71f7f0d11",
+    "final_page_count": 5,
+    "benchmark_ids": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261015-roma-madrid-comeback-match-news"
+    ],
+    "review": [
+      "Full news article written before lossless pagination. Specific verified quiz in caption; answer and first-goal backstory in last paragraph. No invented polling result/reward.",
+      "Progression: current streak, first start/fitness and role, next opponent, historical goal answering the question.",
+      "Only short exact Alex quotation, attributed to club. JPNN quoted club; not misrepresented as second interview. ANTARA match report provides independent chronology.",
+      "No Analisis Stadione, process-of-quoting headings, scaffolds or filler to reach a slide quota."
+    ]
+  },
+  "sources": [
+    {
+      "id": "CLUB",
+      "url": "https://www.persebaya.id/r/4175/alex-martins-angkat-bicara-soal-produktivitas-golnya-di-persebaya",
+      "publisher_group": "PERSEBAYA_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-15T00:00:00Z",
+      "date_precision": "DAY",
+      "retrieved_at": "2026-10-16T05:07:49.541Z",
+      "evidence_text_sha256": "7b13f460d4bad9199e43d5946ae443e3a463a1eaea53af467d3485682d124d3e",
+      "reading": "Full article/main text read through browser and public normal HTTP200 via TD."
+    },
+    {
+      "id": "JPNN",
+      "url": "https://jatim.jpnn.com/olahraga/49387/tiga-gol-dari-tiga-laga-ini-rahasia-alex-martins-terus-berkembang-bersama-persebaya",
+      "publisher_group": "JAWA_POS_GROUP",
+      "primary": false,
+      "published_at": "2026-10-16T01:43:00Z",
+      "date_precision": "MINUTE",
+      "retrieved_at": "2026-10-16T05:09:53.515Z",
+      "evidence_text_sha256": "fe8a83fc2534701e9351eafa8bfbf6ec6b9e76b465628fbcfb07dc54c21ded78",
+      "reading": "Full browser page1+page2 read; selected evidence excerpts stored privately. TD HTTP403 not bypassed."
+    },
+    {
+      "id": "DEBUT",
+      "url": "https://www.persebaya.id/r/4118/dari-cedera-ke-gol-debut-alex-martins-bawa-persebaya-menang",
+      "publisher_group": "PERSEBAYA_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-09-15T00:00:00Z",
+      "date_precision": "DAY",
+      "retrieved_at": "2026-10-16T05:08:36.948Z",
+      "evidence_text_sha256": "585a89d615ff457c378cbc12ec94c35f41413c1d4f01b041995ef193fb1373ca",
+      "reading": "Full article/main text read through browser and public normal HTTP200 via TD."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://www.antaranews.com/berita/5739087/persebaya-menang-tipis-1-0-atas-psim-jogja",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-09-13T15:41:00Z",
+      "date_precision": "MINUTE",
+      "retrieved_at": "2026-10-16T05:08:37.019Z",
+      "evidence_text_sha256": "ab7fbfcb1242509696e9f4cc2c6d6a9aede3202accb4034a63683d5bea7c64c9",
+      "reading": "Full article/main text read through browser and public normal HTTP200 via TD."
+    },
+    {
+      "id": "TAVARES",
+      "url": "https://www.persebaya.id/r/4172/coach-tavares-bedah-kekuatan-pss-persebaya-wajib-siap-hadapi-berbagai-skenario",
+      "publisher_group": "PERSEBAYA_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-14T00:00:00Z",
+      "date_precision": "DAY",
+      "retrieved_at": "2026-10-16T05:08:37.152Z",
+      "evidence_text_sha256": "aea591a3810c222421c949c5021066991c050bacf264275d316b3eaf5e8864d6",
+      "reading": "Full article/main text read through browser and public normal HTTP200 via TD."
+    },
+    {
+      "id": "PREVIEW",
+      "url": "https://jatim.jpnn.com/olahraga/49368/jelang-duel-di-gbt-bernardo-tavares-soroti-pemain-tinggi-hingga-kecepatan-pss-sleman",
+      "publisher_group": "JAWA_POS_GROUP",
+      "primary": false,
+      "published_at": "2026-10-15T05:37:00Z",
+      "date_precision": "MINUTE",
+      "retrieved_at": "2026-10-16T05:10:09.696Z",
+      "evidence_text_sha256": "188b99a0261adfdb2816e1275727d9db060a78526961102338576a0064d0751a",
+      "reading": "Full browser page1+page2 read; selected evidence excerpts stored privately."
+    }
+  ],
+  "fact_review": {
+    "verified": [
+      "Three goals in three successive appearances, absent opener, later first start against Isenmulang Kalteng.",
+      "Club and JPNN both identify PSIM as first opponent, followed by Garudayaksa and Isenmulang.",
+      "Club15Sep4118 and independent ANTARA13Sep match report confirm first goal header81, Jefferson assist, score1–0 and13September at GBT.",
+      "Persebaya-PSS18October is upcoming, not a result; PSS3–0PSM is previous match, not forecast.",
+      "Physical improvement attributed to Alex; no invented measurements or tactical-performance claims."
+    ],
+    "caveats": [
+      "Club dates day-only; midnight ISO is date representation, not asserted publication clock.",
+      "Earlier club4113 search result had inconsistent minute74; not adopted. Later club4118 full text and contemporaneous independent ANTARA agree81.",
+      "JPNN derives player statements from club, so not counted as independent eyewitness verification.",
+      "GoodStats browser520 was not read or used. No blocked source was fetched through alternate routes."
+    ]
+  },
+  "cover": {
+    "variant": "FOTO_DOMINAN",
+    "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "ai_background": true,
+    "authentic_subject_reference": "Persebaya original Alex training photo15October, not claimed match action",
+    "source_photo_url": "https://www.persebaya.id/thumbs/extra-large/uploads/post/2026/10/15/JYT_8339.jpg.jpg",
+    "original_photo": {
+      "bytes": 374677,
+      "sha256": "51882b078e81d662dd9261256007b32e5d2bc3279d4acfe76e6e051f9a1a5aec",
+      "clean_website_hero": true
+    },
+    "artwork_sha256": "01b3ba2cad6271eac75805f0638ae364d777e81c801b4eefd5019767b3714248",
+    "manual_review": [
+      "Actual face/hair/beard/pose/tattooed arms/green patterned kit compared against photographed Alex. Other person removed, background editorial only.",
+      "First artwork had text too close to edges; image generation edit moved type inward before approval.",
+      "Final cover and rendered JPEG inspected: title/deck intact, readable source PERSEBAYA.ID cover only, 1/5 correct, no EDISI DIGITAL or promotional footer.",
+      "All four body pages inspected in contact sheet: complete text, no overflow, modern cream layout."
+    ],
+    "no_raw_photo_committed": true
+  },
+  "render_audit": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PERSEBAYA.ID",
+      "cover_input_sha256": "01b3ba2cad6271eac75805f0638ae364d777e81c801b4eefd5019767b3714248",
+      "output_sha256": "49d22431b42bcc805fc64f66fdf90451478a1cf16c1405c70a465c6149a7fdb1",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "fbfaff6e8941e5e5f7499fac65d337657d0329392067aa34ca2eba0b9e876a86",
+      "output_sha256": "a1210ca8b55e0e63024afb3c43af98e36b0d4e939fb3e0e316700a48d124f67e",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 662,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 904,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "aec77f620df371a7353d39b277eed034caf23d3b7770d8c40557b491791d5378",
+      "output_sha256": "5a5ef1a02e35520e1ad386dec7f064a1b7e5d086eaee0bad5ebe06da4bea5be2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 898,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 901,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "60354dad9fc84c95cf35e4bda2f819cc7cf3a982bc24757723e475e54681c98a",
+      "output_sha256": "6049073b3babee52e41a31c2099b316faf9386e9b5df373bef6a2d4ee4317c44",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 659,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 922,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "217f4dc95058841e3f2577242d60e8a1eb15e1a70058098b2c5cdabf5d4ffad2",
+      "output_sha256": "39635b0da12e1ae27489c90daeb2be0ee8daa8626910bb8c02d0deeaa8c47e4c",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 632,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 935,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "production_path": "/opt/stadione-current/scripts/cms-produce-slot.cjs preview → inspect → commit/push → schedule → shared systemd publisher",
+  "scope": {
+    "other_existing_rows": 102,
+    "preserved": "08/20WIB, additional posts, historical rows, credentials, renderer, production code and services",
+    "baseline_rows": 103
+  },
+  "raw_materials": "Source HTML/text/photo and full packet remain private VPS. Git contains only own article, source/review metadata and derivative QA contact images. No credentials or signed CDN URLs."
+}

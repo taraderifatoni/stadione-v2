@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Tiga Gol Alex, Ingat Lawan Pertamanya?",
+  "dek": "Alex Martins mencetak gol dalam tiga laga beruntun bersama Persebaya. Sebelum PSS datang, uji ingatanmu tentang awal rangkaian itu.",
+  "caption": "TIGA GOL ALEX, INGAT LAWAN PERTAMANYA?\n\nAlex Martins mencetak gol dalam tiga penampilan beruntun bersama Persebaya. Sekarang giliran kamu mengingat awal rangkaian itu.\n\nKe gawang tim mana Alex mencetak gol pertamanya untuk Persebaya di kompetisi resmi?\nA. PSIM Yogyakarta\nB. Garudayaksa\nC. Isenmulang Kalteng\n\nTulis pilihanmu sebelum melihat jawaban di halaman terakhir. Ada cerita sundulan yang menentukan kemenangan di GBT, lalu perkembangan menit bermain Alex menjelang duel dengan PSS Sleman.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Tiga Laga Beruntun Berbuah Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "STREAK"
+      ],
+      "text": "Alex Martins mencetak gol dalam tiga penampilan beruntun bersama Persebaya. Penyerang asal Brasil itu belum dimainkan ketika Bajol Ijo menghadapi Bhayangkara Presisi Lampung FC pada pekan pembuka. Setelah mendapat kesempatan, ia terus mengisi daftar pencetak gol. Catatan itu menjadi bekalnya menjelang pertandingan melawan PSS Sleman. Masih ingat tim yang pertama kali dibobolnya?"
+    },
+    {
+      "id": "role",
+      "heading": "Alex Mulai Dipasang Sejak Awal",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "ROLE"
+      ],
+      "quote": {
+        "text": "Bagi saya, mencetak gol bukanlah satu-satunya prioritas.",
+        "source_id": "CLUB"
+      },
+      "text": "Dalam laga terakhir melawan Isenmulang Kalteng FC, Bernardo Tavares untuk pertama kalinya memasang Alex sejak awal pertandingan. Alex merasa kondisi fisiknya membaik setelah bermain lebih lama. Kepada laman resmi Persebaya, ia mengatakan, “Bagi saya, mencetak gol bukanlah satu-satunya prioritas.” Ia ingin tetap berguna ketika bola tidak berada di kakinya, termasuk dengan berlari dan membantu rekan setim."
+    },
+    {
+      "id": "next",
+      "heading": "PSS Datang dengan Kemenangan Telak",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT"
+      ],
+      "text": "Tantangan berikutnya menanti di Stadion Gelora Bung Tomo, Minggu, 18 Oktober 2026. Persebaya dijadwalkan menjamu PSS yang baru mengalahkan PSM Makassar 3–0. Tavares menaruh perhatian pada variasi pemain depan Super Elja. Ia menyiapkan timnya menghadapi lawan yang bisa mengandalkan postur maupun kecepatan."
+    },
+    {
+      "id": "answer",
+      "heading": "PSIM Menjadi Awal Rangkaian Itu",
+      "kind": "FACT",
+      "claim_ids": [
+        "ANSWER",
+        "STREAK"
+      ],
+      "text": "Jawaban kuisnya adalah PSIM Yogyakarta. Pada 13 September lalu di GBT, Alex menyambut umpan Jefferson Silva dengan sundulan pada menit ke-81. Gol itu memastikan Persebaya menang 1–0. Dari bangku cadangan, ia menjadi pembeda setelah masuk pada awal babak kedua. Sesudah PSIM, Alex kembali mencetak gol melawan Garudayaksa dan Isenmulang Kalteng FC."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261015-roma-madrid-comeback-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-16T05:14:34.219Z",
+    "article_digest": "cc2240841057a3ca8057b3082ea00fd486cc734d5118183448e846a71f7f0d11"
+  }
+}

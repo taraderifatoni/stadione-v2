@@ -1,0 +1,23 @@
+{
+  "at": "2026-10-16T05:12:00.777Z",
+  "baseline_rows": 103,
+  "target": {
+    "id": "5e489ca4-8679-4d70-b9f2-960201c4d0a6",
+    "status": "DRAFT",
+    "plan_key": "2026-10-16:fri-noon",
+    "scheduled_at": "2026-10-16T06:00:00+00:00",
+    "format": "CAROUSEL",
+    "category": "Komunitas",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null
+  },
+  "attempts": 0,
+  "matching_event_cms": [],
+  "matching_topic_cms": [],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 39,
+    "matching": []
+  }
+}
