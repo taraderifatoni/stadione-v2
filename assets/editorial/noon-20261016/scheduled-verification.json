@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-16T05:16:58.819Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "5e489ca4-8679-4d70-b9f2-960201c4d0a6",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-16:fri-noon",
+    "event_key": "alex-martins-three-goals-first-opponent-trivia-20261016",
+    "scheduled_at": "2026-10-16T06:00:00+00:00",
+    "time_wib": "16 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "87070c37-b96e-4a65-8981-391db1ad3811",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-16T06:00:00+00:00",
+    "title": "Tiga Gol Alex, Ingat Lawan Pertamanya?",
+    "canonical_body_identical": true,
+    "digest": "cc2240841057a3ca8057b3082ea00fd486cc734d5118183448e846a71f7f0d11",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 374677,
+      "sha256": "51882b078e81d662dd9261256007b32e5d2bc3279d4acfe76e6e051f9a1a5aec",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 725318,
+      "sha256": "49d22431b42bcc805fc64f66fdf90451478a1cf16c1405c70a465c6149a7fdb1",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 204214,
+      "sha256": "a1210ca8b55e0e63024afb3c43af98e36b0d4e939fb3e0e316700a48d124f67e",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 210939,
+      "sha256": "5a5ef1a02e35520e1ad386dec7f064a1b7e5d086eaee0bad5ebe06da4bea5be2",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 189398,
+      "sha256": "6049073b3babee52e41a31c2099b316faf9386e9b5df373bef6a2d4ee4317c44",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 200315,
+      "sha256": "39635b0da12e1ae27489c90daeb2be0ee8daa8626910bb8c02d0deeaa8c47e4c",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 39,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 102,
+  "changed_other_rows": [],
+  "baseline_rows": 103,
+  "current_rows": 104,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "954dd8f4d73dfd9b6313d21305d3df2731b83f1f"
+}
