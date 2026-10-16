@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-16T00:14:51.691Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "3de2962b-d3b3-4881-b4e4-23e3d1e2b2e6",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-16:fri-am",
+    "event_key": "putri-wang-denmark-qf-preview-20261016",
+    "scheduled_at": "2026-10-16T01:00:00+00:00",
+    "time_wib": "16 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "a812cbb3-c3e9-4257-824a-0b4deee2633a",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-16T01:00:00+00:00",
+    "title": "Putri Menyiapkan Revans atas Wang",
+    "canonical_body_identical": true,
+    "digest": "3f5c5f24f40ac4ffafe6ef1cdd403ffbb1444d600d2680d3d952302a2f588d96",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 38615,
+      "sha256": "3bf5c2f7cae83dc09556acca3245ca21a447279437acdeb87c36467d0ca37ec0",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 818758,
+      "sha256": "10799d6cb1b3668100d10e06657256a229102addfe23496e2f422554f15dc45f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 177840,
+      "sha256": "a7b3a7b69d45af3ada07716b3b31322ed792e30d0b491bd7e7b2903012d5cdcd",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 207618,
+      "sha256": "9c0be850439b46310d5e7f731e0d2749de22a45637e54e405ce439c38fd4d4a6",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 186321,
+      "sha256": "b8e6ef4805a24429bd28d4866b0accddc05c7cf228cf53dfb095cb221b6b0989",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 156251,
+      "sha256": "f99dd6d4a235512e1a496adb4277fa0a1836516d6ae287abbc7ced3bdca75966",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 38,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 101,
+  "changed_other_rows": [],
+  "baseline_rows": 102,
+  "current_rows": 103,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "cdc23b744f4fee5746efbfb475c4918a42604dda"
+}
