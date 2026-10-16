@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-16T12:15:48.872Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "b2dd609a-c8cd-4920-8b68-94d3b5d44d39",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-16:fri-pm",
+    "event_key": "persita-persija-preview-20261017",
+    "scheduled_at": "2026-10-16T13:00:00+00:00",
+    "time_wib": "16 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "issues": []
+  },
+  "article": {
+    "id": "1ecc289b-4a74-48b9-8f06-0b8af9109982",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-16T13:00:00+00:00",
+    "canonical_body_identical": true,
+    "digest": "625aa360fc2ccd4b12f3dadca10f92fef5fa14a745478e1909be1aa8b3aeb39b",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 50724,
+      "sha256": "a1364a4bd4a1b3ec33bbc659166d34b58fa32bdd7a9657ac83dc107bae964e07",
+      "original_frame_without_headline": true
+    }
+  },
+  "render": {
+    "http": 200,
+    "bytes": 15841185,
+    "sha256": "87f8df5b98d3770c763042fae8ee842be0eea444b22ec266b90ddcd703052283",
+    "identical_reviewed_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 24.56,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "ai_footage": false,
+      "scene_count": 6,
+      "source_count": 6,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "catalog_audio": {
+    "title": "This Is The One",
+    "artist": "The K Club",
+    "source": "INSTAGRAM_CATALOG",
+    "audio_id": "1482891479125465",
+    "discovery": "TRENDING",
+    "checked_at": "2026-10-16T12:01:09.123Z",
+    "audio_volume": 35,
+    "video_volume": 0
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 40,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 104,
+  "current_rows": 105,
+  "new_article_rows": 1,
+  "unchanged_existing_other_rows": 103,
+  "changed_other_rows": [],
+  "pre_schedule_commit": "557378961a07cb3abf1b47bceb66011ca513f6f5",
+  "publisher": "Future slot left to shared publisher. Not claiming Instagram or website already published."
+}
