@@ -1,0 +1,293 @@
+{
+  "reviewed_at": "2026-10-16T00:14:15.473Z",
+  "reviewer": "CODEX_EDITOR",
+  "phase": "REVIEWED_PREVIEW_BEFORE_CMS_SCHEDULE",
+  "target_id": "3de2962b-d3b3-4881-b4e4-23e3d1e2b2e6",
+  "plan_key": "2026-10-16:fri-am",
+  "scheduled_at": "2026-10-16T01:00:00Z",
+  "time_wib": "16 Oktober 2026 08.00 WIB",
+  "event_key": "putri-wang-denmark-qf-preview-20261016",
+  "format": "CAROUSEL",
+  "original_status": "DRAFT",
+  "attempts_before": 0,
+  "baseline_rows": 102,
+  "baseline_instagram_media": 38,
+  "instagram": "stadione.id",
+  "duplicate_topic_matches_before": 0,
+  "discovery": {
+    "method": "getDailySportsPool active release through cms-load and committed cms-audience-pool.cjs",
+    "retrieved_at": "2026-10-16T00:03:00.991Z",
+    "cache": "Current-day cached sources/quota preserved.",
+    "selection": "Friday morning non-football preview. Cached football/general-video results excluded despite permissive other-sport ranking. Australian GP is23–25October, not this weekend. Denmark Open quarterfinal preview is current, same-day and not previously covered."
+  },
+  "sources": [
+    {
+      "id": "PBSI",
+      "url": "https://pbsi.id/2026/10/15/denmark-open-2026-putri-ke-perempatfinal-untuk-hadapi-wang-zhi-yi/",
+      "publisher_group": "PBSI_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-15T12:56:43Z",
+      "text_sha256": "1895d4a9c1586bdb6823bc453f499bed4a9d2f8b9afb43dc8528573188d1fe02",
+      "reading": "Full main article normal public HTTP200 via TD. Browser open unavailable; not claimed successful full-text browser access."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://sport.detik.com/raket/d-8708367/hasil-denmark-open-2026-putri-kw-lolos-ke-perempatfinal",
+      "publisher_group": "TRANS_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-15T07:55:00Z",
+      "text_sha256": "09636323287479960e9d342cbc7c45d76ecf43eb16b28ec46b0c019579a7df23",
+      "reading": "Full main article normal public HTTP200 via TD. Browser open unavailable; not claimed successful full-text browser access."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://www.antaranews.com/berita/5789993/putri-kw-usung-misi-revans-atas-wang-zhi-yi",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-10-15T15:53:00Z",
+      "text_sha256": "b60c02821442f6a530faf1cd22ab9dc5c6a8726f066b43e402d2de378c294136",
+      "reading": "Full main article normal public HTTP200 via TD. Browser open unavailable; not claimed successful full-text browser access."
+    },
+    {
+      "id": "JAPAN",
+      "url": "https://pbsi.id/2026/07/18/japan-open-2026-putri-sudah-berjuang-sekuat-tenaga/",
+      "publisher_group": "PBSI_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-07-18T00:00:00Z",
+      "text_sha256": "24f698fe2ba2a62f1e1446f30a6386788bbffcc5e42f7e433f541582fbd2e3e3",
+      "reading": "Full main article normal public HTTP200 via TD. Browser open unavailable; not claimed successful full-text browser access."
+    }
+  ],
+  "fact_review": [
+    "Friday16October quarterfinal is PREVIEW, no result or final score for Putri versus Wang invented. event_at uses DAY precision; exact playing hour omitted without primary order-of-play.",
+    "Previous round Putri versus Huang21-19,21-8 confirmed PBSI,Detik,ANTARA.",
+    "Quote uses PBSI original pengen wording, not ANTARA paraphrase ingin. Besok is clearly the15October post-round statement, not a promise of Saturday match.",
+    "Primary says Huang had favorable attacking conditions; ANTARA wind interpretation differs, so wind attribution excluded.",
+    "Wang seed number removed from final article to avoid confusing seeding with world ranking. Putri fifth seed supported by primary match sheet.",
+    "Japan July win checked with complete PBSI18July report and ANTARA; Asian Games loss checked primary current statement and ANTARA. No unsupported overall head-to-head total or exact historic score."
+  ],
+  "article": {
+    "words": 167,
+    "digest": "3f5c5f24f40ac4ffafe6ef1cdd403ffbb1444d600d2680d3d952302a2f588d96",
+    "article_first": true,
+    "benchmark_ids": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261011-fellhauer-kickoff-pressing-news"
+    ],
+    "padding_removed": "Deleted repeated closing sentence; no added paragraphs to meet a slide quota.",
+    "issues": []
+  },
+  "visual_review": {
+    "all_five_rendered_pages_seen": true,
+    "final_page2_rechecked_after_seed_word_removal": true,
+    "cover_variant": "KOLOM",
+    "selection": "Committed helper least-used eligible excluding recent covers; no score for preview.",
+    "authentic_reference": "PBSI credited photo published by ANTARA/HO-PBSI from15October round16. Face, hair, red-black jersey, overhead arm/racket and waist crop compared to original; editorial background only.",
+    "first_cover_rejected": "Text too near outer edges, corrected through image generation before approval.",
+    "final_cover": "Safe cream inset, sourcePBSI.ID only on cover, exact title/dek, visible1/5; no EDISI DIGITAL or promotional footer. Athlete does not obstruct letters.",
+    "body": "Cream text-only four pages, modern sans36px,72px margins,36px either side of red divider, no clipping.",
+    "website": "Clean original source photo without editorial headline, not generated cover."
+  },
+  "photo": {
+    "source_url": "https://cdn.antaranews.com/cache/1200x800/2026/10/15/IMG-20261015-WA0104.jpg",
+    "bytes": 38615,
+    "sha256": "3bf5c2f7cae83dc09556acca3245ca21a447279437acdeb87c36467d0ca37ec0",
+    "public_hero": "https://api.stadione.pro/storage/v1/object/public/stadione-cms/editorial/production/putri-wang-denmark-qf-preview-20261016/hero-3bf5c2f7cae83dc09556acca3245ca21a447279437acdeb87c36467d0ca37ec0.jpg",
+    "source_access": "Direct PBSI media URL returned403 once and was not retried/bypassed; distinct photo as published on ANTARA CDN normalHTTP200 used."
+  },
+  "cover": {
+    "sha256": "fbdaf271025f1808b7a52ccfa8d50d43e3b30d165242cab6cae5255d38dbd2b5",
+    "bytes": 3044749,
+    "page_count": 5
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 818758,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PBSI.ID",
+      "cover_input_sha256": "fbdaf271025f1808b7a52ccfa8d50d43e3b30d165242cab6cae5255d38dbd2b5",
+      "output_sha256": "10799d6cb1b3668100d10e06657256a229102addfe23496e2f422554f15dc45f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 177840,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "12ba968b3fdb387e960ca77d761ac9fd6f0709e1af7cd2b12f0f5395bc819cd1",
+      "output_sha256": "a7b3a7b69d45af3ada07716b3b31322ed792e30d0b491bd7e7b2903012d5cdcd",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 755,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 894,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 207618,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "2321532d75efe43ab4ada67e0e8cc3a41bd2b9296eb084fc20ebb15fed143688",
+      "output_sha256": "9c0be850439b46310d5e7f731e0d2749de22a45637e54e405ce439c38fd4d4a6",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 825,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 932,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 186321,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "9389f3856fa311e5c5670d2a84fb21782f7d51fa848f3b0e335e315bf61a442c",
+      "output_sha256": "b8e6ef4805a24429bd28d4866b0accddc05c7cf228cf53dfb095cb221b6b0989",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 346,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 748,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 892,
+          "height": 346,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 156251,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "ef465695ee036ebd3d7bc585411d88b69a1bce96d5102c111234a88b88545bf1",
+      "output_sha256": "f99dd6d4a235512e1a496adb4277fa0a1836516d6ae287abbc7ced3bdca75966",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 837,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 932,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": "Only this08WIB SOCIAL and new paired ARTICLE may change; no other slots, additional, historical posts, renderer, credential or services.",
+  "rollback_basis": "79633690c6ac9cfbe39b45cd7df169e315891c51",
+  "publication": "Not scheduled/published at review; commit/push before committed shared adapter schedule."
+}

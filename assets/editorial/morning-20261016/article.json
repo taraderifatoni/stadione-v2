@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Putri Menyiapkan Revans atas Wang",
+  "dek": "Putri Kusuma Wardani memburu tiket semifinal Denmark Open melawan Wang Zhi Yi. Ia ingin mengulang kemenangan di Jepang dan belajar dari kekalahan di Asian Games.",
+  "caption": "PUTRI MENYIAPKAN REVANS ATAS WANG\n\nPutri Kusuma Wardani menghadapi Wang Zhi Yi pada perempat final Denmark Open, Jumat, 16 Oktober. Putri datang dengan kemenangan 21–19, 21–8 atas Huang Yu-Hsun di babak sebelumnya.\n\nAda dua pengalaman berbeda yang dibawanya. Putri pernah menundukkan Wang di Jepang, tetapi kalah dalam pertemuan beregu putri Asian Games. Ia ingin menyiapkan pikirannya lebih kuat untuk pertemuan berikutnya di Odense.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Wang Menanti Putri di Perempat Final",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT",
+        "PLAN"
+      ],
+      "text": "Putri Kusuma Wardani menyiapkan kesempatan membalas kekalahan dari Wang Zhi Yi ketika keduanya bertemu pada perempat final Denmark Open di Odense, Jumat, 16 Oktober 2026. Unggulan kelima asal Indonesia itu akan menghadapi wakil China untuk memperebutkan tempat di semifinal."
+    },
+    {
+      "id": "previous",
+      "heading": "Dua Gim untuk Melewati Huang",
+      "kind": "FACT",
+      "claim_ids": [
+        "R16"
+      ],
+      "text": "Putri mengamankan tiket delapan besar setelah mengalahkan Huang Yu-Hsun dari Chinese Taipei 21–19, 21–8 pada Kamis. Ia sempat tertinggal di interval gim pertama sebelum mengejar dan merebut gim tersebut. Putri mengatakan dirinya berusaha lebih tenang dan cepat menurunkan bola. Pada gim kedua, ia melihat Huang lebih banyak melakukan kesalahan, termasuk pengembalian yang keluar."
+    },
+    {
+      "id": "resolve",
+      "heading": "Putri Ingin Mengulang Kemenangan",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "NEXT",
+        "PLAN",
+        "HISTORY"
+      ],
+      "quote": {
+        "text": "Besok bertemu Wang Zhi Yi saya pengen habis-habisan, pengen menang lagi dari dia karena sudah pernah merasakan caranya menang.",
+        "source_id": "PBSI"
+      },
+      "text": "Dalam keterangan PBSI seusai babak 16 besar, Putri mengatakan, “Besok bertemu Wang Zhi Yi saya pengen habis-habisan, pengen menang lagi dari dia karena sudah pernah merasakan caranya menang.” Ia juga menekankan perlunya kesiapan pikiran yang lebih kuat dan mengambil pelajaran dari kekalahan di Asian Games."
+    },
+    {
+      "id": "context",
+      "heading": "Jepang dan Asian Games Memberi Hasil Berbeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "HISTORY"
+      ],
+      "text": "Putri memiliki pengalaman mengalahkan Wang pada perempat final Japan Open, Juli lalu. Akan tetapi, pertemuan terakhir mereka di nomor beregu putri Asian Games berakhir dengan kemenangan Wang dalam dua gim."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261011-fellhauer-kickoff-pressing-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-16T00:12:33.526Z",
+    "article_digest": "3f5c5f24f40ac4ffafe6ef1cdd403ffbb1444d600d2680d3d952302a2f588d96"
+  }
+}
