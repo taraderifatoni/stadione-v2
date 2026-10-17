@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-17T00:17:02.087Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "4e401008-fad1-4316-87cb-3ce6db19c30a",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-17:match-am",
+    "event_key": "celta-juventus-kolo-muani-comeback-20261015",
+    "scheduled_at": "2026-10-17T01:00:00+00:00",
+    "time_wib": "17 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "issues": []
+  },
+  "article": {
+    "id": "875f2af6-9034-4dd3-9dc1-e203b7720af2",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-17T01:00:00+00:00",
+    "canonical_body_identical": true,
+    "digest": "663148d687f91537d9a03d1fff3356f362399e6b4dd4c74e8b9c00cc59092976",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 48161,
+      "sha256": "50714308086edc03c206647b058227b189a07d7f0f21bf543757064833fe6960",
+      "original_frame_without_headline": true
+    }
+  },
+  "render": {
+    "http": 200,
+    "bytes": 7214018,
+    "sha256": "d057574e13bc9fc8f6f6e6761553e7fcc4686f8b084fac3dd0f9f32e0ff32430",
+    "identical_reviewed_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 31.081333,
+      "platforms": [
+        "DAILYMOTION"
+      ],
+      "ai_footage": false,
+      "scene_count": 5,
+      "source_count": 5,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "catalog_audio": {
+    "title": "Let's Rock (Instrumental)",
+    "artist": "Giulio Cercato",
+    "source": "INSTAGRAM_CATALOG",
+    "audio_id": "1782117859391484",
+    "discovery": "TRENDING",
+    "checked_at": "2026-10-17T00:09:43.997Z",
+    "audio_volume": 35,
+    "video_volume": 0
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 41,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 108,
+  "current_rows": 109,
+  "new_article_rows": 1,
+  "unchanged_existing_other_rows": 107,
+  "changed_other_rows": [],
+  "pre_schedule_commit": "685df46a2b859bfe6352360149691034135a18e6",
+  "publisher": "Future slot left to shared publisher. Not claiming Instagram or website already published."
+}
