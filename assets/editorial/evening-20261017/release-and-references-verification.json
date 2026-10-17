@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-17T12:16:30.433159+00:00",
+  "runtime_reference_committed_identical": true,
+  "runtime_reference_sha256": "ebb35b5593413aecb16eab0d691e9812257fab803c188cbda7225b8814f140a6",
+  "reference_qa": {
+    "ok": true,
+    "file": "/opt/stadione-editorial/goal-readings.json",
+    "entries": 13,
+    "latest_read_at": "2026-10-17T00:40:51.526Z"
+  },
+  "shared_adapter_committed_identical": true,
+  "adapter_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "publisher_timer_active": "active",
+  "timer_note": "Supporting evidence only; target validSCHEDULED/pair/assets/idempotence independentlyverified. No publicationclaim beforeclock."
+}

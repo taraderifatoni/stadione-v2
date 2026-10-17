@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-17T12:15:50.744Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "1efa3edc-7b76-4ea8-b49c-83152ef6151f",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-17:match-pm",
+    "event_key": "persita-persija-startingxi-kwon-arly-20261017",
+    "scheduled_at": "2026-10-17T13:00:00+00:00",
+    "time_wib": "17 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "issues": []
+  },
+  "article": {
+    "id": "9ca06764-dbe4-4a92-a53c-0953095a5659",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-17T13:00:00+00:00",
+    "canonical_body_identical": true,
+    "digest": "1a2e886f8a21de6881bd1f97a665a5f72ad8f9cedbcb5857a0c5e288abb84434",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 50543,
+      "sha256": "a2e7a05d1b74dd9d2afd6c105f408bd74a21c5a565ea0379f0e91ff469a68a27",
+      "original_frame_without_headline": true
+    }
+  },
+  "render": {
+    "http": 200,
+    "bytes": 3657068,
+    "sha256": "6af45b3d09ca6564b52ad61659d6cedad13a945d85c1aa846439ceb2264f1a67",
+    "identical_reviewed_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.098667,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "ai_footage": false,
+      "scene_count": 5,
+      "source_count": 5,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "catalog_audio": {
+    "title": "Move My Body (Instrumental)",
+    "artist": "Ella Joy Meir",
+    "source": "INSTAGRAM_CATALOG",
+    "audio_id": "739108178545320",
+    "discovery": "TRENDING",
+    "checked_at": "2026-10-17T12:05:27.174Z",
+    "audio_volume": 35,
+    "video_volume": 0
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 43,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 110,
+  "current_rows": 111,
+  "new_article_rows": 1,
+  "unchanged_existing_other_rows": 109,
+  "changed_other_rows": [],
+  "pre_schedule_commit": "637791a25c26fcf3a199c0d66f530aae6f41d1d3",
+  "publisher": "Future slot left to shared publisher. Not claiming Instagram or website already published."
+}

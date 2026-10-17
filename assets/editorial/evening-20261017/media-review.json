@@ -58,7 +58,7 @@
       "prepared_bytes": 701384,
       "prepared_sha256": "610b502df0fd79344a61c8dc7d45100636124b057c842d5097fe4b51e8defa0a",
       "caption": "Pilihan starter Persija\nKwon dan Arly bersama Jeremejeff",
-      "visual_transcript": "Transkrip visual sumber asli 0.3–3.3 detik. Kwon turns his head with slight smile; native StartingXI names visible. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+      "visual_transcript": "Transkrip visual sumber asli 0.3\u20133.3 detik. Kwon turns his head with slight smile; native StartingXI names visible. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
     },
     {
       "id": "KWON",
@@ -68,7 +68,7 @@
       "prepared_bytes": 1005231,
       "prepared_sha256": "8ef552b88dd5aea4c7be8bd653e9e10f2fa695e3b597b0113247a9489f291d05",
       "caption": "Kwon di sayap kanan\nArly di sisi kiri",
-      "visual_transcript": "Transkrip visual sumber asli 3.5–8 detik. Kwon smiles/talks toward camera in orange jersey; real mouth and shoulder motion. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+      "visual_transcript": "Transkrip visual sumber asli 3.5\u20138 detik. Kwon smiles/talks toward camera in orange jersey; real mouth and shoulder motion. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
     },
     {
       "id": "FORWARDS",
@@ -78,7 +78,7 @@
       "prepared_bytes": 839543,
       "prepared_sha256": "1fe7940ce046f745831bdad722652544cac3d38e7e484f4df6239c6e682f8450",
       "caption": "Jeremejeff di tengah\nSusunan resmi menghadapi Persita",
-      "visual_transcript": "Transkrip visual sumber asli 8.5–13 detik. Kwon continues head and hand movement behind native roster. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+      "visual_transcript": "Transkrip visual sumber asli 8.5\u201313 detik. Kwon continues head and hand movement behind native roster. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
     },
     {
       "id": "MIDFIELD",
@@ -88,7 +88,7 @@
       "prepared_bytes": 1051144,
       "prepared_sha256": "accb767d2fe4a5fb5858801c0fe360cf9e6d58a026b5e57c6952cce5ac5efd44",
       "caption": "Yoshino, Calonego, Loncar\nMengisi lini tengah Persija",
-      "visual_transcript": "Transkrip visual sumber asli 13.5–18 detik. Kwon looks toward camera, arms moving; native roster remains unchanged. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+      "visual_transcript": "Transkrip visual sumber asli 13.5\u201318 detik. Kwon looks toward camera, arms moving; native roster remains unchanged. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
     },
     {
       "id": "OPTIONS",
@@ -98,7 +98,7 @@
       "prepared_bytes": 802770,
       "prepared_sha256": "714b148dc196346efff976c3b775dd178dee9189855a4cbb988562e1b48db35e",
       "caption": "Mamut dan Witan\nTercantum sebagai pemain pengganti",
-      "visual_transcript": "Transkrip visual sumber asli 18.5–23 detik. Kwon makes heart/hand gesture and smiles, before static logo outro. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+      "visual_transcript": "Transkrip visual sumber asli 18.5\u201323 detik. Kwon makes heart/hand gesture and smiles, before static logo outro. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
     }
   ],
   "hero": {
@@ -127,5 +127,7 @@
     ],
     "full_decode_ok": true,
     "facebook_base": "Silent; Instagram catalogue licence not assumed to transfer."
-  }
+  },
+  "distinct_video_creator_count": 1,
+  "render_source_count_explanation": "Five prepared cut files from one officialPersija announcement. Not five independentpublishers."
 }
