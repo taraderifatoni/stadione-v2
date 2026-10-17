@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Kolo Muani Menuntaskan Comeback Juventus",
+  "dek": "Juventus tertinggal lebih dahulu di Vigo. Voli Nick Woltemade dan sundulan Randal Kolo Muani pada masa tambahan waktu membalikkan kedudukan menjadi 2-1.",
+  "caption": "KOLO MUANI MENUNTASKAN COMEBACK JUVENTUS\n\nUmpan silang Andrea Cambiaso menemui Kolo Muani di depan gawang. Sundulannya pada menit 92 memastikan Juventus menang 2-1 di kandang Celta Vigo.\n\nLaga Liga Europa ini berlangsung Kamis, 15 Oktober waktu setempat atau Jumat, 16 Oktober 2026 dini hari WIB. Hugo Alvarez lebih dahulu membawa Celta unggul pada menit 18. Nick Woltemade menyamakan kedudukan melalui voli pada menit 58, sebelum Kolo Muani menuntaskan kebangkitan tim tamu.\n\nCuplikan pertandingan: beIN SPORTS. Laporan: Juventus, RC Celta, ANSA, beIN SPORTS.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Sundulan Penentu pada Masa Tambahan Waktu",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT"
+      ],
+      "text": "Randal Kolo Muani menuntaskan kebangkitan Juventus lewat sundulan pada menit 92 dalam kemenangan 2-1 di kandang Celta Vigo. Pertandingan Liga Europa di Abanca-Balaidos itu berlangsung Kamis, 15 Oktober waktu setempat atau Jumat, 16 Oktober 2026 dini hari WIB."
+    },
+    {
+      "id": "deficit",
+      "heading": "Celta Lebih Dahulu Memimpin",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPENER"
+      ],
+      "text": "Juventus harus mengejar setelah Hugo Alvarez menuntaskan umpan Williot Swedberg pada menit 18. Tim tamu belum bisa membalas hingga turun minum. Salah satu peluang mereka datang ketika Nick Woltemade mengejar bola panjang Guglielmo Vicario, melepaskan diri dari penjagaan, lalu mengirim tembakan melambung di atas mistar."
+    },
+    {
+      "id": "volley",
+      "heading": "Voli Woltemade Mengubah Kedudukan",
+      "kind": "FACT",
+      "claim_ids": [
+        "EQUALISER"
+      ],
+      "text": "Juventus meningkatkan tekanan setelah jeda. Chico Conceicao menguji Andrei Radu sebelum Woltemade menyamakan kedudukan pada menit 58. Umpan silang Teun Koopmeiners mengenai Marcos Alonso dan jatuh ke arah penyerang Jerman itu. Woltemade menyambarnya dengan voli kaki kanan yang menaklukkan penjaga gawang Celta."
+    },
+    {
+      "id": "change",
+      "heading": "Kolo Muani Menemani Woltemade",
+      "kind": "FACT",
+      "claim_ids": [
+        "TWO_STRIKERS"
+      ],
+      "text": "Luciano Spalletti kemudian menambah penyerang. Kolo Muani masuk menggantikan Kerim Alajbegovic pada menit 64 dan bermain bersama Woltemade. Menjelang akhir pertandingan, Nico Gonzalez sempat mendekati gol kemenangan melalui tembakan melengkung dari dalam kotak penalti, tetapi bola melebar tipis."
+    },
+    {
+      "id": "winner",
+      "heading": "Cambiaso Menemukan Kolo di Depan Gawang",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT"
+      ],
+      "text": "Gol penentu datang ketika Cambiaso mengirim umpan silang ke depan gawang. Kolo Muani lolos dari penjagaan, menyambut bola dengan kepala, dan mengubah skor menjadi 2-1 pada masa tambahan waktu. Celta yang unggul sejak babak pertama akhirnya kehilangan seluruh poin di kandangnya."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261015-roma-madrid-comeback-match-news",
+    "goal-20261016-sarwie-left-back-profile-feature"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-17T00:13:18.063Z",
+    "article_digest": "663148d687f91537d9a03d1fff3356f362399e6b4dd4c74e8b9c00cc59092976"
+  }
+}

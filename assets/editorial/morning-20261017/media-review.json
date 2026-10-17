@@ -1,0 +1,93 @@
+{
+  "page_url": "https://www.dailymotion.com/video/xbo0zby",
+  "publisher": "beIN SPORTS Hong Kong",
+  "uploader_id": "x1vy1cl",
+  "published_at": "2026-10-15T21:16:52.000Z",
+  "original": {
+    "bytes": 134219132,
+    "sha256": "2acac6a078833169a5b3a8aeec9549a2a60010458de94496481295cb17099971",
+    "duration": 497.047007,
+    "width": 1280,
+    "height": 720,
+    "fps": 25,
+    "video": "H264",
+    "audio": "AAC"
+  },
+  "cuts": [
+    {
+      "id": "HOOK",
+      "raw_start": 449,
+      "raw_end": 452,
+      "prepared_duration": 3,
+      "prepared_bytes": 797837,
+      "prepared_sha256": "556cb24d52b2664a3fdd57069624846d00f6ec01c44c2a0e0655f8edf694bfc0",
+      "caption": "Sundulan menit 92\nJuventus menang 2-1",
+      "visual_transcript": "Transkrip visual sumber asli 449–452 detik. Clock90:00+1:43–1:46: sundulan Kolo Muani masuk ke gawang. Hook dari aksi asli; potongan lengkap umpan-ke-gol ditampilkan kemudian. Audio dibisukan fisik, bukan transkrip percakapan. Caption editorial berasal laporan terverifikasi."
+    },
+    {
+      "id": "OPENER",
+      "raw_start": 92,
+      "raw_end": 99,
+      "prepared_duration": 7,
+      "prepared_bytes": 2124335,
+      "prepared_sha256": "56b8eee6ac2bee9a1cb897ebd926933352be941a5c4702141ac93a220e582c77",
+      "caption": "Hugo Alvarez membuka skor\nCelta unggul pada menit 18",
+      "visual_transcript": "Transkrip visual sumber asli 92–99 detik. Broadcast clock16:57 sampai17:04: Swedberg mengirim bola, Hugo Alvarez menyelesaikan di depan gawang; tim biru Celta melawan Juventus hitam. Menit18 berarti menit berjalan17.xx. Audio dibisukan fisik, bukan transkrip percakapan. Caption editorial berasal laporan terverifikasi."
+    },
+    {
+      "id": "EQUALISER",
+      "raw_start": 248,
+      "raw_end": 256,
+      "prepared_duration": 8,
+      "prepared_bytes": 2161844,
+      "prepared_sha256": "1ea3192a9fe0b486b8ad6563d7ca242bf8c28ef2a957a5ceca1044d9e11afd5b",
+      "caption": "Woltemade menyamakan skor\nVoli kaki kanan, menit 58",
+      "visual_transcript": "Transkrip visual sumber asli 248–256 detik. Clock57:50–57:57: umpan dari kiri, bola mengenai Alonso, Woltemade menyambar dengan kaki kanan dan mulai berselebrasi. Audio dibisukan fisik, bukan transkrip percakapan. Caption editorial berasal laporan terverifikasi."
+    },
+    {
+      "id": "WINNER",
+      "raw_start": 444,
+      "raw_end": 453,
+      "prepared_duration": 9,
+      "prepared_bytes": 2338696,
+      "prepared_sha256": "6143268be04dcabe5a348a009bfd5dd7809c82d6f5fc573848225e91d0773db8",
+      "caption": "Umpan Cambiaso, sundulan Kolo\nGol penentu pada menit 92",
+      "visual_transcript": "Transkrip visual sumber asli 444–453 detik. Clock90:00+1:38 sampai+1:47: Cambiaso mengirim silang dari kiri, Kolo menyundul dari depan gawang; bola masuk. Menit92 sesuai91.xx. Seluruh lapangan/bola/clock dipertahankan. Audio dibisukan fisik, bukan transkrip percakapan. Caption editorial berasal laporan terverifikasi."
+    },
+    {
+      "id": "CELEBRATION",
+      "raw_start": 453,
+      "raw_end": 457,
+      "prepared_duration": 4,
+      "prepared_bytes": 1335015,
+      "prepared_sha256": "e341e3e20874a7d3ae5f23b52eee44093ed0829b37545a2667c712f45b25408e",
+      "caption": "Celta 1-2 Juventus\n16 Oktober 2026 dini hari WIB",
+      "visual_transcript": "Transkrip visual sumber asli 453–457 detik. Selebrasi Kolo bersama rekan dengan skorCLT1–2JUV di broadcast; tidak mengklaim laga baru17Oktober. Audio dibisukan fisik, bukan transkrip percakapan. Caption editorial berasal laporan terverifikasi."
+    }
+  ],
+  "hero": {
+    "source_time": 256,
+    "player": "Nick Woltemade after equaliser",
+    "crop": "1000x600 x140y80",
+    "no_added_headline": true,
+    "bytes": 48161,
+    "sha256": "50714308086edc03c206647b058227b189a07d7f0f21bf543757064833fe6960"
+  },
+  "framing": "Full source field scaled1080x608, y590 on charcoal1080x1920. No ball/clock/broadcaster watermark cropped. Actual moving source only; standard renderer unchanged. Physically muted source audio.",
+  "rights": "Owner authorises attributed editorial excerpts; official publication is not a written rights grant from beIN. No bypass or full-match republication. Source watermark/clock retained.",
+  "audio": {
+    "audio_id": "1782117859391484",
+    "title": "Let's Rock (Instrumental)",
+    "artist": "Giulio Cercato",
+    "audio_volume": 35,
+    "video_volume": 0,
+    "checked_at": "2026-10-17T00:09:43.997Z",
+    "discovery": "TRENDING",
+    "source": "INSTAGRAM_CATALOG",
+    "review": "TRENDING metadata available for Stadione; not an audition or TikTok rank claim. Source audio physically muted, native music IG only; FB base silent.",
+    "full_base_decode_ok": true,
+    "source_physically_muted": true,
+    "max_volume_db": -91,
+    "facebook_base": "Silent; no assumption that Instagram catalogue licence transfers."
+  }
+}

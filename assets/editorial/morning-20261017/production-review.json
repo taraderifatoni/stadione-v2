@@ -1,0 +1,203 @@
+{
+  "reviewed_at": "2026-10-17T00:15:38.827Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "fe3e6d640879cfe26e4c6601f2d312e4104e3e42",
+  "target": {
+    "id": "4e401008-fad1-4316-87cb-3ce6db19c30a",
+    "plan_key": "2026-10-17:match-am",
+    "event_key": "celta-juventus-kolo-muani-comeback-20261015",
+    "scheduled_at": "2026-10-17T01:00:00Z",
+    "time_wib": "17 Oktober 2026 08.00 WIB",
+    "format": "REEL",
+    "pillar": "Sepak Bola Eropa",
+    "theme": "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi"
+  },
+  "references": {
+    "runtime_entries": 12,
+    "latest_read_at": "2026-10-16T00:47:48.658Z",
+    "benchmarks": [
+      "goal-20261015-roma-madrid-comeback-match-news",
+      "goal-20261016-sarwie-left-back-profile-feature"
+    ],
+    "application": "Goal Roma-Madrid: lead result with decisive mechanism, chronological goals with passer/finisher, substitution changes role, no invented quotation. Sarwie: describe actual movement and avoid making potential a result."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-16T23:59:57.667Z",
+    "pool_sha256": "5f94bf7811402b8de0ac4d08049ef1831ab61ba17d24fec0a14c49838f5d7a83",
+    "path": "getDailySportsPool release via committed cms-audience-pool.cjs/cms-load.cjs",
+    "note": "No eligible Europe news in broad cached pool; supplemented targeted discovery, not treated as absence of news or footage.",
+    "youtube_queries": [
+      {
+        "queries": [
+          "Juventus Celta"
+        ],
+        "at": "2026-10-17T00:00:24.778Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 20,
+        "cached": false
+      },
+      {
+        "queries": [
+          "Kolo Muani Juventus Celta"
+        ],
+        "at": "2026-10-17T00:00:50.153Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 20,
+        "cached": false
+      }
+    ],
+    "youtube_failures": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=xraLm-iQisE",
+        "creator": "Juventus",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "bbe3f3bd1a60a362310ca1aebcef9fd005821be99ce60a6da5531b6d2f1f70f1",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=BbwGC_ekdVo",
+        "creator": "beIN SPORTS Asia",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "ab0e776be2cc7202ec390717e8204df20406047a6d526f7f38f765cfbab0ac88",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=QCX9onFJCYE",
+        "creator": "beIN SPORTS Indonesia",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "70a3b933ec09aa9f983dc51b5db8555ccc29de0edf68f7acc857b9c4027f56bd",
+        "not_retried_or_bypassed": true
+      }
+    ],
+    "instagram": {
+      "account": "juventus",
+      "children_inspected": true,
+      "result": "Relevant VIDEO posts returned no media_url. Missing permission/access not bypassed through public extractor or direct child."
+    },
+    "usable_candidate": {
+      "page_url": "https://www.dailymotion.com/video/xbo0zby",
+      "article_url": "https://www.beinsports.com/en-asia/football/uefa-europa-league/articles-video/celta-vigo-1-2-juventus-kolo-muani-heads-in-stoppage-time-winner-2026-10-15",
+      "http": 200,
+      "source_sha256": "2acac6a078833169a5b3a8aeec9549a2a60010458de94496481295cb17099971",
+      "download_note": "Initial command hit runtime timeout, not access denial. Confirmed no active process then resumed normal transfer of same publicly accessible file; no geo/login/DRM bypass."
+    },
+    "fallback": false
+  },
+  "article": {
+    "words": 204,
+    "digest": "663148d687f91537d9a03d1fff3356f362399e6b4dd4c74e8b9c00cc59092976",
+    "genre": "NEWS",
+    "review": [
+      "Whole204wordarticle written/reviewed before packaging. Lead decisive header; deficit and missed chance; equaliser mechanism; two-striker substitution; exact winning cross/header.",
+      "No Analisis Stadione, process headings, padding or invented quotations. Match clearly dated Friday16OctoberWIB, not lastnightSaturday.",
+      "Goal source independence: Juventus and Celta are separate first-party accounts; ANSA match report and beIN report are independent publishers, not copies of a press quotation."
+    ]
+  },
+  "sources": [
+    {
+      "id": "JUVE",
+      "url": "https://www.juventus.com/en/news/articles/kolo-muani-scores-late-winner-against-celta-vigo-15-10-26",
+      "publisher_group": "JUVENTUS_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-15T00:00:00Z",
+      "retrieved_at": "2026-10-17T00:03:38.311Z",
+      "text_sha256": "4c009b914d28e92d559773c51eed561db9f777dcad9eb4a986091309918ce207",
+      "reading": "Full article text read via browsing and/or normalHTTP200 throughTD; beIN complete body extracted from public page JSON, not snippet."
+    },
+    {
+      "id": "CELTA",
+      "url": "https://rccelta.es/en/equipo/actualidad/a-cruel-ending-for-celta-against-juventus-1-2/",
+      "publisher_group": "RC_CELTA",
+      "primary": true,
+      "published_at": "2026-10-15T00:00:00Z",
+      "retrieved_at": "2026-10-17T00:04:14.104Z",
+      "text_sha256": "25186b9585ade695586e934ac2b9949c48db5d0c963a3a029ad282ec7c88f06f",
+      "reading": "Full normalpublicHTTP200 article and matchsheet read throughTD; initial tiny relatedarticle extraction rejected and corrected to full mainpage."
+    },
+    {
+      "id": "ANSA",
+      "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/10/15/europa-league-celta-vigo-juventus-1-2_a8c2f086-dd79-4c79-9e3c-c88fc635d9a9.html",
+      "publisher_group": "ANSA",
+      "primary": false,
+      "published_at": "2026-10-15T21:17:00Z",
+      "retrieved_at": "2026-10-17T00:03:42.453Z",
+      "text_sha256": "e1b4413604beb719c511b34219b38a68ef9cad6623224b67b86b7db2da2f9a03",
+      "reading": "Full article text read via browsing and/or normalHTTP200 throughTD; beIN complete body extracted from public page JSON, not snippet."
+    },
+    {
+      "id": "BEIN",
+      "url": "https://www.beinsports.com/en-asia/football/uefa-europa-league/articles-video/celta-vigo-1-2-juventus-kolo-muani-heads-in-stoppage-time-winner-2026-10-15",
+      "publisher_group": "BEIN_SPORTS",
+      "primary": false,
+      "published_at": "2026-10-15T21:19:15Z",
+      "retrieved_at": "2026-10-17T00:11:48.850Z",
+      "text_sha256": "41ce9c38d916a2459e6656fc6035b08c4687a6fb87876b353ee8cc9d6ef38510",
+      "reading": "Full article text read via browsing and/or normalHTTP200 throughTD; beIN complete body extracted from public page JSON, not snippet."
+    }
+  ],
+  "fact_review": {
+    "verified": [
+      "Celta1-2Juventus,15Octoberlocal/16OctoberWIB; HugoAlvarez18, Woltemade58, KoloMuani90+2/92.",
+      "Swedberg assists opener; Koopmeiners cross and Alonso deflection precede Woltemade right-foot volley.",
+      "Celta official matchsheet confirms Kolo entry64 for Alajbegovic. ANSA confirms two-centreforwards alongside Woltemade.",
+      "Cambiaso cross and Kolo header determine final result; clock91.xx is92ndminute,17.xx is18thminute.",
+      "No claims of Saka/Odegaard/other unrelated players. No tablepoints, futurelineup or unverified statistics inserted."
+    ],
+    "caveats": [
+      "Juventus and Celta publication dates have day precision only; midnightISO does not assert publication clock. ANSA23:17CEST=21:17Z.",
+      "Some sources use loose groupstage terminology; narrative uses LigaEuropa, not fixedgroup.",
+      "Shot location described without conflicting left/right corner from reports.",
+      "Broadcast offset around0.1second, raw source timestamps documented; minutes verified independently.",
+      "Website hero is Woltemade, labelled honestly; initial blurred Kolo frame was rejected. Reels customthumbnail support not claimed."
+    ]
+  },
+  "render": {
+    "bytes": 7214018,
+    "sha256": "d057574e13bc9fc8f6f6e6761553e7fcc4686f8b084fac3dd0f9f32e0ff32430",
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 31.081333,
+      "scene_count": 5,
+      "source_count": 5,
+      "platforms": [
+        "DAILYMOTION"
+      ],
+      "normalized_audio": true,
+      "source_video": true,
+      "ai_footage": false,
+      "output_sha256": "d057574e13bc9fc8f6f6e6761553e7fcc4686f8b084fac3dd0f9f32e0ff32430"
+    },
+    "inspection": "Final montage sampled2fps across entire31seconds; all5scene midpoints read at correct30fps. Cross/ball/header and changing clocks/scores inspected against original. Final hero personally viewed. Not claiming real-time audio audition.",
+    "visual": "Full1280x720field preserved at1080x608 on charcoalportrait; modernfont, safe headline/caption wrapping, no EDISIDIGITAL or promotionalfooter.",
+    "corrections": [
+      "Replaced blurred rear-facing Kolo hero with clear authentic Woltemade face, no headline.",
+      "Hook changed to winning header, closing cut ends before crowd smoke.",
+      "A preview attempt overlapped privateclip preparation and failed ffprobe; noCMSmutation. Waited for completion, checked every preparedfile hash/duration/stream, rebuilt packet/uploads and rerendered valid final.",
+      "QA midpoint selection corrected from assumed25fps to output30fps. Final output inspected again."
+    ],
+    "audio": {
+      "audio_id": "1782117859391484",
+      "title": "Let's Rock (Instrumental)",
+      "artist": "Giulio Cercato",
+      "audio_volume": 35,
+      "video_volume": 0,
+      "checked_at": "2026-10-17T00:09:43.997Z",
+      "discovery": "TRENDING",
+      "source": "INSTAGRAM_CATALOG",
+      "review": "TRENDING metadata available for Stadione; not an audition or TikTok rank claim. Source audio physically muted, native music IG only; FB base silent.",
+      "full_base_decode_ok": true,
+      "source_physically_muted": true,
+      "max_volume_db": -91,
+      "facebook_base": "Silent; no assumption that Instagram catalogue licence transfers."
+    }
+  },
+  "scope": {
+    "baseline_rows": 108,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "preserved": "All107otherexistingCMSrows,08/13/20WIBclock,additional,historical,renderer,productioncode,credentials,services"
+  },
+  "production_path": "committedsharedadapter preview→inspection→Gitcommit/push→sharedschedule→systemdpublisher",
+  "private_materials": "RawcopyrightMP4, sourceHTML/text, fullAPIJSON/signedCDN/packet/logs remain privateVPS; no rawsource copiedtoGit."
+}
