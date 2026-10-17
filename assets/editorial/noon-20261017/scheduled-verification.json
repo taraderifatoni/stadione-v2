@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-17T05:13:05.062Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "5814c599-79fb-4ee8-ab9a-22471afbd480",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-17:match-noon",
+    "event_key": "milklife-kudus-school-girls-community-20261017",
+    "scheduled_at": "2026-10-17T06:00:00+00:00",
+    "time_wib": "17 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 6,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "44559ad4-c986-4e17-919e-ac7e9acf5cea",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-17T06:00:00+00:00",
+    "title": "Lapangan Kudus Jadi Panggung Pesepak Bola Putri",
+    "canonical_body_identical": true,
+    "digest": "ee1b4863758bf9dc9a37570d884474852685d59c1dc8a9cae90f71d1062e4858",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 2011065,
+      "sha256": "f6899f3ccfb1670b13f34181c7ba321ae11426bb78286bc33b4d4037175d8b25",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 689112,
+      "sha256": "7c87e0d1f2b9fa20f966c47edf4983564cc33c3cfba8a3afecd11530f79c27b0",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 208050,
+      "sha256": "6713d58b864e7f1ac4496d365214cb7b482e37a8086a6ab3b88eb8847cd7d608",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 160980,
+      "sha256": "431acacb4684846fe26c81fcc11d6ba8cb5697f4f50952a787a5d89dda6ea24a",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 165787,
+      "sha256": "27180a97f8245336bf49d67759657ea9307c94f2b174701601a1f292549d160a",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 213970,
+      "sha256": "55f9606e7f6715916fa0e14c36b25522e10d1ef742842068f2be59154b85e769",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 6,
+      "http": 200,
+      "bytes": 161674,
+      "sha256": "ad5ee0e22ff232b85a8b3bac4307db3f6e24742e36e344299e5255a9d00384bc",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 42,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 108,
+  "changed_other_rows": [],
+  "baseline_rows": 109,
+  "current_rows": 110,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "740c185a0863e03d84cb4a3b6356926a6157888b"
+}

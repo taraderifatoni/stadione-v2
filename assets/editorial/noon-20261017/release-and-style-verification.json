@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-10-17T05:13:18.807Z",
+  "format": "CAROUSEL",
+  "original_format": "REEL",
+  "fallback_reason_preserved": true,
+  "cover": {
+    "variant": "JUDUL_UTAMA",
+    "pages": 6,
+    "source": "MILKLIFESOCCER.COM",
+    "all_body_pages_source_null": true,
+    "all_body_gaps_36": true
+  },
+  "shared_adapter_identical_committed": true,
+  "adapter_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "publisher_timer": "active",
+  "note": "Future schedule, no claim of actual publication before13WIB."
+}
