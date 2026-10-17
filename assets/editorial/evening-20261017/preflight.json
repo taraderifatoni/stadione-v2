@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-10-17T12:00:39.600Z",
+  "rows": 110,
+  "social": {
+    "id": "1efa3edc-7b76-4ea8-b49c-83152ef6151f",
+    "status": "DRAFT",
+    "format": "REEL",
+    "category": "Sepak Bola Indonesia",
+    "plan_key": "2026-10-17:match-pm",
+    "scheduled_at": "2026-10-17T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "username": "stadione.id",
+    "media_count": 43,
+    "duplicate_matches": []
+  },
+  "related_previous_preview": [
+    {
+      "id": "b2dd609a-c8cd-4920-8b68-94d3b5d44d39",
+      "status": "PUBLISHED",
+      "title": "Persija Memburu Kemenangan Kelima di Serang",
+      "event_key": "persita-persija-preview-20261017"
+    }
+  ],
+  "new_angle": "Official17Octoberstarterannouncement Kwon/Arly/Jeremejeff, not yesterdaypreviewNadeo/4wins/training."
+}

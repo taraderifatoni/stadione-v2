@@ -1,0 +1,131 @@
+{
+  "source": {
+    "file": "persija-xi.mp4",
+    "http": 200,
+    "page_url": "https://www.instagram.com/reel/Del89v7uPck/",
+    "published_at": "2026-10-17T11:00:34+0000",
+    "bytes": 3587556,
+    "sha256": "55d99efdd97fa19943e8a05d2fecc454ddea533ec0bcd54a7fbd968745607f84",
+    "duration": "34.919955",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "width": null,
+        "height": null,
+        "r_frame_rate": "0/0"
+      }
+    ]
+  },
+  "hero_source": {
+    "file": "persija-press.mp4",
+    "http": 200,
+    "page_url": "https://www.instagram.com/reel/DejsHjIo0ME/",
+    "published_at": "2026-10-16T13:56:27+0000",
+    "bytes": 2198042,
+    "sha256": "84258b0f69e84928a36c6be44aa342983e50e0639ede5e933ddf357c0e4f343e",
+    "duration": "31.297642",
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "width": 720,
+        "height": 1280,
+        "r_frame_rate": "30/1"
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "width": null,
+        "height": null,
+        "r_frame_rate": "0/0"
+      }
+    ]
+  },
+  "cuts": [
+    {
+      "id": "SELECTION",
+      "raw_start": 0.3,
+      "raw_end": 3.3,
+      "prepared_duration": 3,
+      "prepared_bytes": 701384,
+      "prepared_sha256": "610b502df0fd79344a61c8dc7d45100636124b057c842d5097fe4b51e8defa0a",
+      "caption": "Pilihan starter Persija\nKwon dan Arly bersama Jeremejeff",
+      "visual_transcript": "Transkrip visual sumber asli 0.3–3.3 detik. Kwon turns his head with slight smile; native StartingXI names visible. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+    },
+    {
+      "id": "KWON",
+      "raw_start": 3.5,
+      "raw_end": 8,
+      "prepared_duration": 4.5,
+      "prepared_bytes": 1005231,
+      "prepared_sha256": "8ef552b88dd5aea4c7be8bd653e9e10f2fa695e3b597b0113247a9489f291d05",
+      "caption": "Kwon di sayap kanan\nArly di sisi kiri",
+      "visual_transcript": "Transkrip visual sumber asli 3.5–8 detik. Kwon smiles/talks toward camera in orange jersey; real mouth and shoulder motion. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+    },
+    {
+      "id": "FORWARDS",
+      "raw_start": 8.5,
+      "raw_end": 13,
+      "prepared_duration": 4.5,
+      "prepared_bytes": 839543,
+      "prepared_sha256": "1fe7940ce046f745831bdad722652544cac3d38e7e484f4df6239c6e682f8450",
+      "caption": "Jeremejeff di tengah\nSusunan resmi menghadapi Persita",
+      "visual_transcript": "Transkrip visual sumber asli 8.5–13 detik. Kwon continues head and hand movement behind native roster. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+    },
+    {
+      "id": "MIDFIELD",
+      "raw_start": 13.5,
+      "raw_end": 18,
+      "prepared_duration": 4.5,
+      "prepared_bytes": 1051144,
+      "prepared_sha256": "accb767d2fe4a5fb5858801c0fe360cf9e6d58a026b5e57c6952cce5ac5efd44",
+      "caption": "Yoshino, Calonego, Loncar\nMengisi lini tengah Persija",
+      "visual_transcript": "Transkrip visual sumber asli 13.5–18 detik. Kwon looks toward camera, arms moving; native roster remains unchanged. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+    },
+    {
+      "id": "OPTIONS",
+      "raw_start": 18.5,
+      "raw_end": 23,
+      "prepared_duration": 4.5,
+      "prepared_bytes": 802770,
+      "prepared_sha256": "714b148dc196346efff976c3b775dd178dee9189855a4cbb988562e1b48db35e",
+      "caption": "Mamut dan Witan\nTercantum sebagai pemain pengganti",
+      "visual_transcript": "Transkrip visual sumber asli 18.5–23 detik. Kwon makes heart/hand gesture and smiles, before static logo outro. Pengumuman starter resmi klub sebelum laga, bukan aksi pertandingan. Audio dibisukan fisik, bukan transkrip ucapan."
+    }
+  ],
+  "hero": {
+    "player": "Kwon Chang-hoon at prematch pressconference16October",
+    "source_time": 13,
+    "crop": "720x700 x0y250 from native720x1280 pressconference; native subtitles and corner logo removed by crop, no AI/inpaint or headline",
+    "no_added_headline": true,
+    "bytes": 50543,
+    "sha256": "a2e7a05d1b74dd9d2afd6c105f408bd74a21c5a565ea0379f0e91ff469a68a27"
+  },
+  "framing": "Native720x1080 upper portrait crop preserved at700x1050 x190y370. Face, startingXI and substitute graphic visible; lower sponsor strip removed by crop, with40px before scene caption. Charcoal1080x1920 safe headline and scene caption zones. Moving Kwon only, no static club outro. Source audio physically muted; standard renderer unchanged.",
+  "rights": "Owner-authorised attributed editorial excerpts. Official publication is not a written club grant. NormalAPI public mediaURL HTTP200; no access bypass. Source audio physically muted.",
+  "audio": {
+    "audio_id": "739108178545320",
+    "title": "Move My Body (Instrumental)",
+    "artist": "Ella Joy Meir",
+    "audio_volume": 35,
+    "video_volume": 0,
+    "checked_at": "2026-10-17T12:05:27.174Z",
+    "discovery": "TRENDING",
+    "source": "INSTAGRAM_CATALOG",
+    "review": "Fresh TRENDING catalogue metadata reviewed, instrumental track chosen for lineup announcement. Separate preview downloaded normallyHTTP200 and decoded. Native audio tool returned audio content omitted because model does not support audio input; no listening/audition claim. Existing publisher rereads catalogue metadata before Meta. Do not claim TikTok rank or combined native soundtrack preview.",
+    "source_physically_muted": true,
+    "max_volume_lines": [
+      "[Parsed_volumedetect_0 @ 0x57d9be2fa600] max_volume: -91.0 dB"
+    ],
+    "full_decode_ok": true,
+    "facebook_base": "Silent; Instagram catalogue licence not assumed to transfer."
+  }
+}

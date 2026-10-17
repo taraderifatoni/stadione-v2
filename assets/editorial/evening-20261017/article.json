@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Kwon dan Arly Mendampingi Jeremejeff",
+  "dek": "Persija memilih Kwon Chang-hoon dan Arlyansyah Abdulmanan di sisi Alexander Jeremejeff untuk menghadapi Persita di Serang.",
+  "caption": "KWON DAN ARLY MENDAMPINGI JEREMEJEFF\n\nKwon Chang-hoon dan Arlyansyah Abdulmanan masuk susunan awal Persija melawan Persita, Sabtu, 17 Oktober 2026. Alexander Jeremejeff menjadi penyerang tengah dalam daftar resmi ILeague.\n\nVideo pengumuman starter diunggah Persija sebelum pertandingan. Kyohei Yoshino, Fabio Calonego, dan Stjepan Loncar mengisi lini tengah. Ivan Mamut serta Witan Sulaiman tercantum sebagai pemain pengganti.\n\nCuplikan: Persija / @persija. Susunan resmi: ILeague dan Persija. Konteks: Jawa Pos, Medcom.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kwon dan Arly Mengisi Sayap",
+      "kind": "FACT",
+      "claim_ids": [
+        "XI"
+      ],
+      "text": "Kwon Chang-hoon dan Arlyansyah Abdulmanan dipilih mendampingi Alexander Jeremejeff dalam susunan awal Persija menghadapi Persita, Sabtu, 17 Oktober 2026. Daftar resmi ILeague menempatkan Kwon di sayap kanan dan Arly di kiri, dengan Jeremejeff sebagai penyerang tengah. Duel di Banten International Stadium, Serang, dijadwalkan mulai pukul 19.00 WIB."
+    },
+    {
+      "id": "support",
+      "heading": "Yoshino Bersama Calonego dan Loncar",
+      "kind": "FACT",
+      "claim_ids": [
+        "TEAM"
+      ],
+      "text": "Di lini tengah, Shin Tae-yong memasang Kyohei Yoshino bersama Fabio Calonego dan Stjepan Loncar. Nadeo Argawinata mengawal gawang. Rizky Ridho, Radovan Pankov, Denis Kolinger, dan Dony Tri Pamungkas melengkapi barisan pertahanan yang tercantum dalam susunan pemain resmi."
+    },
+    {
+      "id": "focus",
+      "heading": "Kwon Menekankan Rencana Permainan",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "FOCUS"
+      ],
+      "text": "Persija membawa bekal empat kemenangan dari empat pertandingan awal liga. Dalam konferensi pers menjelang duel dengan Persita, Kwon menekankan pentingnya menjalankan persiapan tim. “Semua pemain sudah mempersiapkan diri dengan baik, dan jika kami melakukannya sesuai rencana, saya yakin kami akan mendapatkan hasil yang baik,” ujar Kwon, seperti dimuat ILeague.",
+      "quote": {
+        "source_id": "LEAGUE_KWON",
+        "text": "Semua pemain sudah mempersiapkan diri dengan baik, dan jika kami melakukannya sesuai rencana, saya yakin kami akan mendapatkan hasil yang baik"
+      }
+    },
+    {
+      "id": "bench",
+      "heading": "Mamut dan Witan di Bangku Cadangan",
+      "kind": "FACT",
+      "claim_ids": [
+        "BENCH"
+      ],
+      "text": "Ivan Mamut dan Witan Sulaiman tercantum sebagai pemain pengganti. Kerim Memija serta Jordi Amat juga berada di bangku cadangan. Dengan susunan tersebut, Shin Tae-yong masih memiliki pilihan penyerang, pemain sayap, dan bek di luar kesebelasan awalnya."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261017-de-zerbi-defensive-leadership-news",
+    "goal-20261013-united-injuries-atletico-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-17T12:12:23.883Z",
+    "article_digest": "1a2e886f8a21de6881bd1f97a665a5f72ad8f9cedbcb5857a0c5e288abb84434"
+  }
+}

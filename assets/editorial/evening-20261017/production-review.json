@@ -1,0 +1,272 @@
+{
+  "reviewed_at": "2026-10-17T12:14:04.102Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "b6712b66ba6fb3470878129da646ccf040bf41cf",
+  "target": {
+    "id": "1efa3edc-7b76-4ea8-b49c-83152ef6151f",
+    "plan_key": "2026-10-17:match-pm",
+    "event_key": "persita-persija-startingxi-kwon-arly-20261017",
+    "scheduled_at": "2026-10-17T13:00:00Z",
+    "time_wib": "17 Oktober 2026 20.00 WIB",
+    "format": "REEL",
+    "pillar": "Sepak Bola Indonesia",
+    "theme": "Live momen hanya dengan sumber real-time/editor; snapshot tren bukan feed live"
+  },
+  "references": {
+    "runtime_entries": 13,
+    "latest_read_at": "2026-10-17T00:40:51.526Z",
+    "benchmarks": [
+      "goal-20261017-de-zerbi-defensive-leadership-news",
+      "goal-20261013-united-injuries-atletico-news"
+    ],
+    "application": "DeZerbi: direct factual lead, quote with specific context. United: distinguish confirmed actual selection from predictions. No generic processlabel or paddedclosing."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-17T12:00:43.012Z",
+    "pool_sha256": "efff5eb0e6e64c97504c2f7e0921f32b31a3dcc151371314a84f7e5fda327155",
+    "path": "getDailySportsPool release via committed helper/cms-load",
+    "note": "No eligibleIndonesia item in broadpool, not proof of absence. Two targeted committedqueries followed by officialclub/league browsing.",
+    "queries": [
+      {
+        "queries": [
+          "Persita Persija 17 Oktober 2026"
+        ],
+        "at": "2026-10-17T12:01:08.090Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 18,
+        "cached": false
+      },
+      {
+        "queries": [
+          "Kwon Chang hoon Persita Persija susunan pemain"
+        ],
+        "at": "2026-10-17T12:04:09.371Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 2,
+        "cached": false
+      }
+    ],
+    "instagram": {
+      "accounts": [
+        "persija",
+        "persita.official"
+      ],
+      "children_inspected": true,
+      "actual_downloads": [
+        {
+          "file": "persija-xi.mp4",
+          "http": 200,
+          "page_url": "https://www.instagram.com/reel/Del89v7uPck/",
+          "published_at": "2026-10-17T11:00:34+0000",
+          "bytes": 3587556,
+          "sha256": "55d99efdd97fa19943e8a05d2fecc454ddea533ec0bcd54a7fbd968745607f84",
+          "duration": "34.919955",
+          "streams": [
+            {
+              "codec_type": "video",
+              "codec_name": "h264",
+              "width": 720,
+              "height": 1280,
+              "r_frame_rate": "30/1"
+            },
+            {
+              "codec_type": "audio",
+              "codec_name": "aac",
+              "width": null,
+              "height": null,
+              "r_frame_rate": "0/0"
+            }
+          ]
+        },
+        {
+          "file": "persita-xi0.mp4",
+          "http": 200,
+          "page_url": "https://www.instagram.com/p/Del9d-HiXyT/",
+          "published_at": "2026-10-17T11:05:01+0000",
+          "bytes": 264733,
+          "sha256": "b5a494e749ff35b00ea33652a62f7099e4ca90ce6b6c8f68ac43ac4480482682",
+          "duration": "15.000000",
+          "streams": [
+            {
+              "codec_type": "video",
+              "codec_name": "h264",
+              "width": 720,
+              "height": 900,
+              "r_frame_rate": "25/1"
+            }
+          ]
+        },
+        {
+          "file": "persita-xi1.mp4",
+          "http": 200,
+          "page_url": "https://www.instagram.com/p/Del9d-HiXyT/",
+          "published_at": "2026-10-17T11:05:01+0000",
+          "bytes": 309069,
+          "sha256": "1bf671af6048da5bcea4d684d7d19806497e528631eb8e46db4eb737e39ab385",
+          "duration": "15.000000",
+          "streams": [
+            {
+              "codec_type": "video",
+              "codec_name": "h264",
+              "width": 720,
+              "height": 900,
+              "r_frame_rate": "25/1"
+            }
+          ]
+        },
+        {
+          "file": "persija-press.mp4",
+          "http": 200,
+          "page_url": "https://www.instagram.com/reel/DejsHjIo0ME/",
+          "published_at": "2026-10-16T13:56:27+0000",
+          "bytes": 2198042,
+          "sha256": "84258b0f69e84928a36c6be44aa342983e50e0639ede5e933ddf357c0e4f343e",
+          "duration": "31.297642",
+          "streams": [
+            {
+              "codec_type": "video",
+              "codec_name": "h264",
+              "width": 720,
+              "height": 1280,
+              "r_frame_rate": "30/1"
+            },
+            {
+              "codec_type": "audio",
+              "codec_name": "aac",
+              "width": null,
+              "height": null,
+              "r_frame_rate": "0/0"
+            }
+          ]
+        }
+      ],
+      "usable": "Persija actual movingKwon in starterannouncement.",
+      "rejected": "Persita first child is staticplayerposter with animatedroster, not used as realfootage; no slideshow fallback."
+    },
+    "fallback": false
+  },
+  "article": {
+    "words": 169,
+    "digest": "1a2e886f8a21de6881bd1f97a665a5f72ad8f9cedbcb5857a0c5e288abb84434",
+    "genre": "NEWS",
+    "review": [
+      "Whole factual169wordstory written before packaging; no quota/padding. Fresh officialXI lead, midfield/defence, attributed Kwonquote, concretebenchoptions.",
+      "No invented duel/action/live score/result, no claim actual matchfootage. No AnalisisStadione or headings about quoting.",
+      "Quote21words exactlyILeague, clearly prematchconference; not pretending spoken in live fixture.",
+      "YesterdayPersija preview is relatedfixture but differentphase/angle. Neweventkey startingXI rather than resurrecthistoricalpreview."
+    ]
+  },
+  "sources": [
+    {
+      "id": "LEAGUE_XI",
+      "url": "https://www.ileague.id/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-17/PERSITA/PERSIJA_JAKARTA",
+      "publisher_group": "ILEAGUE_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-17T00:00:00Z",
+      "retrieved_at": "2026-10-17T12:10:45.430Z",
+      "text_sha256": "2a8b00272bc1da5aa80e6dc4b475e3f0da59c2213d8945b7e8ae4e77a5bea738",
+      "reading": "Full public matchcentre and linkedPDF read in browser. TDHTML502/PDF403 not bypassed or retried; selected browserextract used."
+    },
+    {
+      "id": "LEAGUE_KWON",
+      "url": "https://www.ileague.id/news/detail/kwon-chang-hoon-bidik-kemenangan-kelima-persija",
+      "publisher_group": "ILEAGUE_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-17T00:00:00Z",
+      "retrieved_at": "2026-10-17T12:10:46.046Z",
+      "text_sha256": "72013b2d2e2692ad5ca118049c30f87d7e808b6e6f143527bb96665630f88674",
+      "reading": "Full newsarticle read in browser earlier in session; transient reopenunavailable, TD502. Selectedtext record saved honestly, no fake downloadedPDF."
+    },
+    {
+      "id": "CLUB_XI",
+      "url": "https://www.instagram.com/reel/Del89v7uPck/",
+      "publisher_group": "PERSIJA_OFFICIAL",
+      "primary": true,
+      "published_at": "2026-10-17T11:00:34Z",
+      "retrieved_at": "2026-10-17T12:10:46.748Z",
+      "text_sha256": "dd42c2ebea898f2971a1e2194b4f544e9f3080f657032d312e373da681931fdd",
+      "reading": "Manual transcription of personally viewed officialvideo graphic plus APIcaption, explicitly not fullarticle or spoken transcript."
+    },
+    {
+      "id": "JAWA_POS",
+      "url": "https://www.jawapos.com/sepak-bola-indonesia/2610170151/prediksi-susunan-pemain-persija-jakarta-vs-persita-tangerang-kwon-chang-hoon-starter",
+      "publisher_group": "JAWA_POS",
+      "primary": false,
+      "published_at": "2026-10-17T10:23:00Z",
+      "retrieved_at": "2026-10-17T12:08:42.581Z",
+      "text_sha256": "95d84ba8c16f5f3c57bc69a41303e24e851c98ff2b07faea9d473f5ec060c7b6",
+      "reading": "PublicHTTP200 page1/page2 responses read; returned same visiblebody. Actualsource is prediction, not used for confirmedfullXI."
+    },
+    {
+      "id": "MEDCOM",
+      "url": "https://www.medcom.id/olahraga/liga-indonesia/nN9dmnGK-prediksi-persita-vs-persija-head-to-head-susunan-pemain-dan-skor",
+      "publisher_group": "MEDCOM",
+      "primary": false,
+      "published_at": "2026-10-17T03:46:00Z",
+      "retrieved_at": "2026-10-17T12:04:52.604Z",
+      "text_sha256": "533cbf1b856fa3979b7da97b63c0245d43527f9cfa6c18a9e0fd1f905dc1f717",
+      "reading": "Full unpaginated Medcomarticle normalHTTP200 read viaTD, not snippet. Predictions explicitly excluded."
+    }
+  ],
+  "fact_review": {
+    "verified": [
+      "17October2026, BISSerang, fixture19WIB. OfficialXI listsKwonRWF/ArlyLWF/JeremejeffCF.",
+      "ActualXI fromleague matchedclubnativegraphic; Yoshino/Calonego/Loncar, Nadeo anddefenders correct.",
+      "BenchMamut/Witan/Memija/Jordi notassertedplayed orsubstitutionminute.",
+      "PrimaryILeagueKwonquote exact, independentJawaPosparaphrase supportsfocus/context. Not separateinterview.",
+      "Medcom independentreport fullread; no predictedscore1-2 orlineup adopted."
+    ],
+    "caveats": [
+      "ILeaguepublicationdate dayprecisiononly. ClockmidnightISO notassertingpublishinghour.",
+      "Matchcentre0:0/noeventtimeline nottreatedasconfirmedlive score. No matchresultreported.",
+      "Articlepublished later20WIB describesstarterchoice, notminute-by-minutereport. Sourcepost18WIB explicit.",
+      "Only Kwon physicallyvisible in usablefootage. Nativegraphic namesArly/Jeremejeff, no claim filmingtheiractions.",
+      "No claim customReelsthumbnail supported. Websitehero cleanframe of Kwon from16Octconference, dateattributed."
+    ]
+  },
+  "render": {
+    "bytes": 3657068,
+    "sha256": "6af45b3d09ca6564b52ad61659d6cedad13a945d85c1aa846439ceb2264f1a67",
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.098667,
+      "scene_count": 5,
+      "source_count": 5,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "normalized_audio": true,
+      "source_video": true,
+      "ai_footage": false,
+      "output_sha256": "6af45b3d09ca6564b52ad61659d6cedad13a945d85c1aa846439ceb2264f1a67"
+    },
+    "inspection": "All5scene midpoints and2fps samples across entire21seconds personally inspected. Movingface/head/mouth/arms compared with source. Staticlogo outroexcluded. Fullvideo/audio decode successful; not realtimeplayback or audioaudition claim.",
+    "visual": "Modernfont, safe headline/caption wrapping, no EDISIDIGITAL/promotionalfooter. Firstversioncaption overlappednativesponsorstrip; correctedprivateframingcrop then rebuiltpacket/rerendered, noCMSmutation. Finalcaptiononcharcoal belowfootage with40px gap.",
+    "audio": {
+      "audio_id": "739108178545320",
+      "title": "Move My Body (Instrumental)",
+      "artist": "Ella Joy Meir",
+      "audio_volume": 35,
+      "video_volume": 0,
+      "checked_at": "2026-10-17T12:05:27.174Z",
+      "discovery": "TRENDING",
+      "source": "INSTAGRAM_CATALOG",
+      "review": "Fresh TRENDING catalogue metadata reviewed, instrumental track chosen for lineup announcement. Separate preview downloaded normallyHTTP200 and decoded. Native audio tool returned audio content omitted because model does not support audio input; no listening/audition claim. Existing publisher rereads catalogue metadata before Meta. Do not claim TikTok rank or combined native soundtrack preview.",
+      "source_physically_muted": true,
+      "max_volume_lines": [
+        "[Parsed_volumedetect_0 @ 0x57d9be2fa600] max_volume: -91.0 dB"
+      ],
+      "full_decode_ok": true,
+      "facebook_base": "Silent; Instagram catalogue licence not assumed to transfer."
+    }
+  },
+  "scope": {
+    "baseline_rows": 110,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "preserved": "All109otherexistingrows,08/13/20WIBclocks,additional,historical,renderer,productioncode,credentials,services"
+  },
+  "production_path": "committedsharedadapter preview→inspection→commit/push→sharedschedule→systemdpublisher",
+  "private_materials": "RawcopyrightMP4/photos/sourceHTML/text/APIJSON/CDN/musicpreview/fullpacket remain privateVPS; notGit."
+}
