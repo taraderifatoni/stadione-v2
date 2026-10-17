@@ -1,0 +1,429 @@
+{
+  "reviewed_at": "2026-10-17T05:11:37.609Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "197653a0e61f9e58ff8af9820a280e630b75fcd7",
+  "target": {
+    "id": "5814c599-79fb-4ee8-ab9a-22471afbd480",
+    "plan_key": "2026-10-17:match-noon",
+    "event_key": "milklife-kudus-school-girls-community-20261017",
+    "scheduled_at": "2026-10-17T06:00:00Z",
+    "time_wib": "17 Oktober 2026 13.00 WIB",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "pillar": "Tarkam & Komunitas",
+    "angle": "UGC",
+    "theme": "UGC sepak bola komunitas; hanya tayang setelah izin, kredit, dan moderasi lolos"
+  },
+  "references": {
+    "runtime_entries": 13,
+    "latest_read_at": "2026-10-17T00:40:51.526Z",
+    "benchmarks": [
+      "goal-20261017-de-zerbi-defensive-leadership-news",
+      "goal-20261013-united-injuries-atletico-news"
+    ],
+    "application": "Specific lead first; quotations add player ambition with clear September attribution; next paragraphs bring concrete earlier contribution and forthcoming dates. No invented live result or motivational ending."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-17T04:57:27.506Z",
+    "pool_sha256": "8d4c6481d1b033423c622c1bda4b6007cf95ef016bf452e5b6e6967f59251696",
+    "provider": "getDailySportsPool active release via committed cms-audience-pool.cjs / cms-load.cjs",
+    "note": "Broad COMMUNITY ranking is not semantic proof of community relevance. General sports trends/unrelated videos rejected; targeted research performed.",
+    "queries": [
+      {
+        "queries": [
+          "sepak bola kampung turnamen Oktober 2026"
+        ],
+        "at": "2026-10-17T04:57:43.462Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 6,
+        "cached": false
+      },
+      {
+        "queries": [
+          "MilkLife Soccer Challenge Kudus Oktober 2026"
+        ],
+        "at": "2026-10-17T04:57:58.605Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 0,
+        "cached": false
+      }
+    ],
+    "instagram": {
+      "account": "milklifesoccer",
+      "parents": 30,
+      "video_parents": 17,
+      "relevant_video_urls_available": 0,
+      "child_video_count": 0,
+      "not_access_bypassed": true
+    },
+    "fallback": {
+      "reason": "Footage nyata tidak dapat diperoleh: duaYouTube bot-sign-in dan17videoInstagramresmi tanpaURLmedia, termasukchildren. Fallbackartikelcarouselberfotoresmi; clock13WIB/pilar tetap.",
+      "manifest": "reel-research-review.json",
+      "review_digest": "7b8c2957bac087b336d06115b62078eb9bacf323a93aab8eaf7b4de379b06852",
+      "all_attempts_reviewed": true,
+      "clock_unchanged": true,
+      "not_slideshow_reel": true
+    }
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 199,
+    "paragraphs": 5,
+    "digest": "ee1b4863758bf9dc9a37570d884474852685d59c1dc8a9cae90f71d1062e4858",
+    "page_count": 6,
+    "review": [
+      "Article written as whole before pagination. Current Kudus dates/venues and recent official photo establish relevance; no Kudus champion or invented live scores.",
+      "September Yogyakarta final/Alisya hattrick and Afita statement are explicitly historical context. Player hopes not represented as confirmed selection.",
+      "Removed general sentences about training/rotation and editorial-process explanations, replaced with Alisya actual contribution and next Surabaya dates before final review.",
+      "Short exact Afita quotation9words attributed to organiser. No Analisis Stadione, process headings or page-quota filler."
+    ]
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://milklifesoccer.com/news/526/sd-tarakanita-bumijo-i-lahir-sebagai-juara-baru-milklife-soccer-challenge",
+      "publisher_group": "MILKLIFE_DJARUM",
+      "primary": true,
+      "published_at": "2026-09-20T00:00:00Z",
+      "date_precision": "DAY",
+      "retrieved_at": "2026-10-17T05:01:05.635Z",
+      "text_sha256": "abac5cfc94153487810ce99e80f16a4bdf21feb13747e829cca9d17aba23d44b",
+      "reading": "Full article from public HTML __NEXT_DATA__ news.body read through normalHTTP200; initial homepage/browser shell not claimed fullarticle."
+    },
+    {
+      "id": "PHOTO",
+      "url": "https://milklifesoccer.com/",
+      "publisher_group": "MILKLIFE_DJARUM",
+      "primary": true,
+      "published_at": "2026-10-16T10:59:08Z",
+      "date_precision": "TIMESTAMP",
+      "retrieved_at": "2026-10-17T05:01:05.641Z",
+      "text_sha256": "532df2cee8eb2a9a85dbf04eb91b3c69d8b31c883a69748bf6555a516396b12e",
+      "reading": "Complete official admin photo caption and createdAt from public homepage data read; original photo visually reviewed. Not a full article."
+    },
+    {
+      "id": "EVENT",
+      "url": "https://mainkekudus.com/events/milklife-soccer-challenge-seri-1-2026-2027",
+      "publisher_group": "MAIN_KE_KUDUS",
+      "primary": false,
+      "published_at": null,
+      "date_precision": "UNKNOWN",
+      "retrieved_at": "2026-10-17T05:01:44.472Z",
+      "text_sha256": "693dad928c5f640701a0b50c252cbb3cf9ae30f42fa6b04ffe356cc7942dfa21",
+      "reading": "Full article/eventmain read through browsing and normalHTTP200 TD."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://jogja.antaranews.com/berita/855011/mlsc-yogyakarta-seri-1-2026-upaya-bentuk-ekosistem-sepakbola-putri-tanah-air",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-09-19T13:45:00Z",
+      "date_precision": "TIMESTAMP",
+      "retrieved_at": "2026-10-17T05:01:05.020Z",
+      "text_sha256": "7f10d4f7561f9a3032adf582ff4a55b56c1a82ed9a0329d67b17c8d681817050",
+      "reading": "Full article/eventmain read through browsing and normalHTTP200 TD."
+    },
+    {
+      "id": "WARTA",
+      "url": "https://www.wartajogja.id/2026/09/sd-tarakanita-bumijo-i-juara-baru.html",
+      "publisher_group": "WARTA_JOGJA",
+      "primary": false,
+      "published_at": "2026-09-20T12:53:00Z",
+      "date_precision": "TIMESTAMP",
+      "retrieved_at": "2026-10-17T05:01:44.413Z",
+      "text_sha256": "8ac7ca89f14af122b5cb7e31afbc84225e897ae1da89854e376544fd44662076",
+      "reading": "Full article/eventmain read through browsing and normalHTTP200 TD."
+    }
+  ],
+  "independence": "ANTARA HRI report includes its own on-site Mochizuki/coach/player interviews and independently reports 15-city school programme. Warta reproduces organiser report; not counted as a new interview. MainkeKudus event listing verifies current venue/date, not an eyewitness match result. MilkLife and Djarum same publisher group.",
+  "fact_review": {
+    "verified": [
+      "Kudus event13–18October2026, SupersoccerArena/LapanganRendeng, KU10/KU12. Current official photo16October verifies competition inRendeng; no finalKuduswinner asserted.",
+      "MLSC15-city programme, school andmadrasah participation, organisers DjarumFoundation/MilkLife.",
+      "Historical20SeptemberYogyakarta: firstKU10title Tarakanita3–1MuhammadiyahSapen, Alisya scored allthree.",
+      "AfitaKalasan1 BestPlayerKU12; exact short quote and ambition attributed to September release.",
+      "Next JakartaJaya/JakartaUtara andBandung20–25October; Surabaya27October–1November, schedulednotresult."
+    ],
+    "caveats": [
+      "ANTARA says1294Yogyakartaathletes while organiser says1292. No athlete total adopted.",
+      "September reports are context, not republished as fresh Kudus results. Freshness comes actual officialphoto16October plus ongoing verified schedule.",
+      "EVENT has no verified publicationtimestamp; left empty/null, not fabricated. PHOTO timestamp describes specificphoto published16October, not homepage creation.",
+      "Djarum browsing shell was not a fullread; primary article was read fully on MilkLife public page data.",
+      "KoranBernasTD403/browserunavailable not used; Warta is a separate successfully read source, not bypass of blockedURL.",
+      "No individual submittedUGC consent fabricated: carousel uses official organiser admin photograph under owner-authorised editorialreuse, with honest attribution, not a claimed written publisher licence."
+    ]
+  },
+  "cover": {
+    "variant": "JUDUL_UTAMA",
+    "standard": "STADIONE_COVER_VARIANTS_V1",
+    "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "image_generation": true,
+    "authentic_reference": {
+      "url": "https://milklifesoccer.com/assets/images/posts/profile/89eb43af-8e98-46f6-b0fe-65edb729af5f.jpg",
+      "photo_id": 7939,
+      "date": "2026-10-16T10:59:08.000Z",
+      "description": "Arsyila Shaqueena Humaira in pink kit with white-headscarf/yellow-green opponents in Kudus,16October. Photo not of Afita or Alisya; captions do not identify it as September final.",
+      "bytes": 2167153,
+      "sha256": "f702651f0c9cb120c7a2a0afb1b6e7e20464c85bc96a26ddecee203a9b5fcec4"
+    },
+    "artwork": {
+      "file": "cover.jpg",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 559593,
+      "sha256": "278d351072028dcc7f120e0347cd2fe0035ea2e5c6e468b85d7fcfa2c5fa1166",
+      "normalization": "GeneratedPNG resized only to1080x1350 and JPEG encoded; creative edits through imagegeneration."
+    },
+    "manual_review": [
+      "Original source photograph and finalAIcollage compared: pink-kit girl/face/hair/leggings, defenders whiteheadscarves and yellow-greenkit, bodypose/ball authentic. Background newspaper collage changed; no male from style reference inserted.",
+      "JUDUL_UTAMA selected by committed rotation, cream dominant with headline above photo. Exact title/dek and1/6 visible; sourceMILKLIFESOCCER.COM only cover.",
+      "Initial text/source close to edge refined twice through imagegeneration; safe left/right headline wrapping, readabledeck/source, normal spacing, no EDISIDIGITAL or promotionalfooter.",
+      "All6 finalrenderedJPEGs viewed in two3pagecontactimages; title/paragraphs readable, nooverflow/overlap. Interiorfont36/margins72/divider36+36 audited.",
+      "Clean original website crop separately viewed: realKudusathletes, no addedheadline; no AIhero."
+    ],
+    "website_hero": {
+      "bytes": 2011065,
+      "sha256": "f6899f3ccfb1670b13f34181c7ba321ae11426bb78286bc33b4d4037175d8b25",
+      "crop": "5000x3130 x200y0 from5831x3280original, no addedheadline",
+      "source_native_branding_not_new_text": true
+    },
+    "no_raw_photo_committed": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 689112,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "MILKLIFESOCCER.COM",
+      "cover_input_sha256": "278d351072028dcc7f120e0347cd2fe0035ea2e5c6e468b85d7fcfa2c5fa1166",
+      "output_sha256": "7c87e0d1f2b9fa20f966c47edf4983564cc33c3cfba8a3afecd11530f79c27b0",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 208050,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "006cc207de1abfc0b0827c5c0743dc9415a29787c2fcdfbe9715a810f0ffc62a",
+      "output_sha256": "6713d58b864e7f1ac4496d365214cb7b482e37a8086a6ab3b88eb8847cd7d608",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 139,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 380,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 914,
+          "height": 139,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 420,
+          "width": 932,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 160980,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "0327a708f91ea832d4d38c437cd3086b917b9645166f7ec27c04ed2ff98abbe1",
+      "output_sha256": "431acacb4684846fe26c81fcc11d6ba8cb5697f4f50952a787a5d89dda6ea24a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 887,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 868,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 165787,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b64261500c062cfbc3ae3ce3dacd64e3d675e5cf31cd06db078a42a44144c71c",
+      "output_sha256": "27180a97f8245336bf49d67759657ea9307c94f2b174701601a1f292549d160a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 936,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 902,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 213970,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "fe69ad6bb9ee6bc18f827c8c013f5d92fd149327eecd5fde45cff1ecfd4507cf",
+      "output_sha256": "55f9606e7f6715916fa0e14c36b25522e10d1ef742842068f2be59154b85e769",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 810,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 913,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 6,
+      "bytes": 161674,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e4f54133ec853b3490e8cf64f515d426f68956bb0e88d01f27a61a3d2ac769ba",
+      "output_sha256": "ad5ee0e22ff232b85a8b3bac4307db3f6e24742e36e344299e5255a9d00384bc",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 240,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 918,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 916,
+          "height": 240,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "production_path": "Committedsharedadapter preview→visualinspection→Gitcommit/push→sharedschedule→systemdpublisher",
+  "scope": {
+    "baseline_rows": 109,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "other_existing_rows": 108,
+    "preserved": "08/20WIB, normal13WIBclock, alladditional/historical/scheduledrows, credentials, renderer/productioncode/services"
+  },
+  "raw_materials": "FullsourceHTML/text, APIJSON includingCDN URLs, originalphoto, fullpacket andgenerationPNG stay privateVPS. Git only ownarticle, sanitizedmetadata andderivativeQAcontacts."
+}

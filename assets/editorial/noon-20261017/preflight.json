@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-17T04:57:09.768Z",
+  "rows": 109,
+  "social": {
+    "id": "5814c599-79fb-4ee8-ab9a-22471afbd480",
+    "status": "DRAFT",
+    "format": "REEL",
+    "category": "Tarkam & Komunitas",
+    "plan_key": "2026-10-17:match-noon",
+    "scheduled_at": "2026-10-17T06:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 42,
+    "milklife_matches": 0
+  },
+  "cms_matches": []
+}

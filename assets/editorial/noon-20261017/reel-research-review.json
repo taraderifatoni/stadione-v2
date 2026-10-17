@@ -1,0 +1,65 @@
+{
+  "plan_key": "2026-10-17:match-noon",
+  "checked_at": "2026-10-17T05:07:52.935Z",
+  "queries": [
+    "sepak bola kampung turnamen Oktober 2026",
+    "MilkLife Soccer Challenge Kudus Oktober 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=Br5KVEGexYA",
+      "creator": "TARKAM League",
+      "checked_at": "2026-10-17T04:59:54.098Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Normal yt-dlp request returned bot sign-in requirement. No cookies, login, challenge bypass or retry through another route. Match not watched or downloaded.",
+      "proof": {
+        "kind": "COMMAND_LOG",
+        "summary": "Download log contains Sign in to confirm you are not a bot; no source MP4 obtained.",
+        "sha256": "99941a32db4bd98407a1d244f035c8e0187d64d9b3644542a1bbc9eae3e9582e"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=c48gE0bPANQ",
+      "creator": "MilkLife Soccer Challenge",
+      "checked_at": "2026-10-17T04:59:56.847Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "Official site links JakartaRaya aftermovie2October. Normaldownload requires bot sign-in, not bypassed. Also not footage of Kudus13–18October; no location/date substitution.",
+      "proof": {
+        "kind": "COMMAND_LOG",
+        "summary": "Normal download denied with bot sign-in; public homepage lists this older JakartaRaya aftermovie, not currentKudus.",
+        "sha256": "f970b8a3b92d7379a65af1dbbc1e4470b779ff2af1eaf16f4df54e2b0ab472f4"
+      }
+    },
+    {
+      "page_url": "https://www.instagram.com/reel/Dejd1Ftvd7c/",
+      "creator": "MilkLife Soccer Challenge",
+      "checked_at": "2026-10-17T05:07:52.935Z",
+      "result": "NO_MEDIA",
+      "detail": "Instagram BusinessDiscovery HTTP200 provides officialVIDEO caption and date but no media_url. All30parents andchildren inspected; no relevant VIDEO child with downloadableURL. No extractor/directchild route used.",
+      "proof": {
+        "kind": "API_METADATA",
+        "summary": "Verified accountmilklifesoccer returned VIDEO18056496152648991 withoutmedia_url; caption dates currentKudus. File/APIlog remainsprivate.",
+        "media_id": "18056496152648991",
+        "published_at": "2026-10-16T11:51:01+0000"
+      }
+    },
+    {
+      "page_url": "https://www.instagram.com/reel/DehAoJkRmG2/",
+      "creator": "MilkLife Soccer Challenge",
+      "checked_at": "2026-10-17T05:07:52.935Z",
+      "result": "NO_MEDIA",
+      "detail": "Instagram BusinessDiscovery HTTP200 provides officialVIDEO caption and date but no media_url. All30parents andchildren inspected; no relevant VIDEO child with downloadableURL. No extractor/directchild route used.",
+      "proof": {
+        "kind": "API_METADATA",
+        "summary": "Verified accountmilklifesoccer returned VIDEO18013537313968571 withoutmedia_url; caption dates currentKudus. File/APIlog remainsprivate.",
+        "media_id": "18013537313968571",
+        "published_at": "2026-10-15T12:57:38+0000"
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-17T05:07:52.935Z",
+    "digest": "7b8c2957bac087b336d06115b62078eb9bacf323a93aab8eaf7b4de379b06852"
+  }
+}

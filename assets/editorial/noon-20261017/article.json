@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Lapangan Kudus Jadi Panggung Pesepak Bola Putri",
+  "dek": "MilkLife Soccer Challenge mempertemukan pesepak bola putri usia sekolah di Kudus pada 13–18 Oktober. Dari lapangan sekolah, mereka mendapat panggung kompetisi antartim.",
+  "caption": "LAPANGAN KUDUS JADI PANGGUNG PESEPAK BOLA PUTRI\n\nSupersoccer Arena dan Lapangan Rendeng menjadi tempat bertemunya pesepak bola putri KU 10 dan KU 12 dalam MilkLife Soccer Challenge Kudus, 13–18 Oktober 2026.\n\nKompetisi ini mempertemukan tim-tim sekolah dalam rangkaian yang menjangkau 15 kota. Ada juara baru pada seri terdahulu di Yogyakarta, ada pula pemain yang masih mengejar kesempatan melangkah ke tingkat berikutnya.\n\nDi Yogyakarta pada September, Alisya membawa Tarakanita Bumijo I meraih gelar pertamanya, sementara Afita masih mengejar kesempatan berikutnya. Kini rangkaian kompetisi mempertemukan tim-tim sekolah di Kudus.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Lapangan Menampung Pesepak Bola Putri",
+      "kind": "FACT",
+      "claim_ids": [
+        "CURRENT"
+      ],
+      "text": "Supersoccer Arena dan Lapangan Rendeng menjadi panggung pesepak bola putri usia sekolah di Kudus pada akhir pekan ini. MilkLife Soccer Challenge Kudus Seri 1 2026–2027 berlangsung pada 13–18 Oktober, mempertemukan pemain kelompok umur 10 dan 12 tahun. Pertandingan kelompok umur 10 tahun masih berlangsung di Lapangan Rendeng pada Jumat, 16 Oktober."
+    },
+    {
+      "id": "schools",
+      "heading": "Tim Sekolah Menjadi Bagian Rangkaian 15 Kota",
+      "kind": "FACT",
+      "claim_ids": [
+        "NETWORK"
+      ],
+      "text": "Turnamen yang diinisiasi Bakti Olahraga Djarum Foundation bersama MilkLife itu bertumpu pada tim-tim sekolah dasar dan madrasah ibtidaiyah. Kudus menjadi salah satu persinggahan dalam rangkaian kompetisi di 15 kota."
+    },
+    {
+      "id": "champion",
+      "heading": "Seri Yogyakarta Melahirkan Juara Baru",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRSTWIN"
+      ],
+      "text": "Pada seri Yogyakarta yang berakhir 20 September lalu, SD Tarakanita Bumijo I meraih gelar KU 10 untuk pertama kalinya. Mereka mengalahkan SD Muhammadiyah Sapen 3–1 di final. Alisya Natalia Bandari mencetak ketiga gol Tarakanita pada laga tersebut."
+    },
+    {
+      "id": "player",
+      "heading": "Afita Masih Mengejar Kesempatan Berikutnya",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "PLAYER"
+      ],
+      "quote": {
+        "text": "Saya belum puas dan masih ingin terus berproses lagi.",
+        "source_id": "PRIMARY"
+      },
+      "text": "Dari seri Yogyakarta pula, Afita Nur Inderasari membawa pulang penghargaan pemain terbaik KU 12. Pemain SDN Kalasan 1 itu mengatakan, “Saya belum puas dan masih ingin terus berproses lagi.” Dalam keterangan yang dimuat penyelenggara pada September, Afita berharap bisa terpilih mengikuti MLSC All-Stars, lalu melanjutkan ke Hydroplus Soccer League dan tim nasional."
+    },
+    {
+      "id": "next",
+      "heading": "Rangkaian Berlanjut ke Jakarta Utara dan Bandung",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT",
+        "CURRENT"
+      ],
+      "text": "Jadwal rangkaian di Kudus berakhir pada 18 Oktober. Setelah itu, giliran Jakarta Jaya atau Jakarta Utara dan Bandung menggelar seri mereka pada 20–25 Oktober. Surabaya menyusul pada 27 Oktober–1 November."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261017-de-zerbi-defensive-leadership-news",
+    "goal-20261013-united-injuries-atletico-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-17T05:09:11.383Z",
+    "article_digest": "ee1b4863758bf9dc9a37570d884474852685d59c1dc8a9cae90f71d1062e4858"
+  }
+}
