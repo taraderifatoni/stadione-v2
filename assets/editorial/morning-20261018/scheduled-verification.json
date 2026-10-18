@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-18T00:09:31.711Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "b28fc9bf-46f4-43ea-9914-14c0999b721d",
+    "status": "SCHEDULED",
+    "format": "REEL",
+    "plan_key": "2026-10-18:match-am",
+    "event_key": "betis-barcelona-yamal-nine-wins-20261017",
+    "scheduled_at": "2026-10-18T01:00:00+00:00",
+    "time_wib": "18 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "issues": []
+  },
+  "article": {
+    "id": "53e3bfad-31a9-49c7-ba5f-82942b873d51",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-18T01:00:00+00:00",
+    "canonical_body_identical": true,
+    "digest": "097c9062fbbc3f013e4c9194a780ff3250b6a7eef2bc61809974c7a58072a8df",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 39957,
+      "sha256": "39df3607f85a195fb53c436b77a0e43498803ba7920b3578e9caa2bd2383de9c",
+      "original_frame_without_headline": true
+    }
+  },
+  "render": {
+    "http": 200,
+    "bytes": 4804065,
+    "sha256": "72c045cc18fee2026e16746996aa8a4da8fe5e56261de98a316997a1d57737c5",
+    "identical_reviewed_preview": true,
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.129333,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "ai_footage": false,
+      "scene_count": 5,
+      "source_count": 5,
+      "source_video": true,
+      "normalized_audio": true
+    }
+  },
+  "catalog_audio": {
+    "title": "With Me (Instrumental)",
+    "artist": "Giulio Cercato",
+    "source": "INSTAGRAM_CATALOG",
+    "audio_id": "2022652068369715",
+    "discovery": "TRENDING",
+    "checked_at": "2026-10-18T00:03:48.171Z",
+    "audio_volume": 35,
+    "video_volume": 0
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 44,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 114,
+  "current_rows": 115,
+  "new_article_rows": 1,
+  "unchanged_existing_other_rows": 113,
+  "changed_other_rows": [],
+  "pre_schedule_commit": "643fb0970c21de1d6ec3ed1899918dcd4683f4cb",
+  "publisher": "Future slot left to shared publisher. Not claiming Instagram or website already published."
+}
