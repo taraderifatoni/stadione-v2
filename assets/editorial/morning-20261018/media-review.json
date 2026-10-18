@@ -1,0 +1,167 @@
+{
+  "originals": [
+    {
+      "file": "lamine-action.mp4",
+      "http": 200,
+      "id": "18138485719727799",
+      "page_url": "https://www.instagram.com/reel/DempvJjuGQk/",
+      "published_at": "2026-10-17T17:35:37+0000",
+      "caption": "Lamine in his element. ⭐️\n\n#LaLigaHighlights",
+      "bytes": 1485796,
+      "sha256": "d442864394788c08c9603b10afe8d4fd71a4d040b8ddc237eacce2cdbbf36fbf",
+      "duration": "10.167483",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ]
+    },
+    {
+      "file": "flick-reaction.mp4",
+      "http": 200,
+      "id": "18009061694782917",
+      "page_url": "https://www.instagram.com/reel/DemrvH9ufMJ/",
+      "published_at": "2026-10-17T17:50:31+0000",
+      "caption": "Lamine scores, Flick enjoys. 🙌",
+      "bytes": 2297902,
+      "sha256": "3e339d4d0d2649905057b7bb915267583449bc84baa4c9776810217cf3374491",
+      "duration": "12.953878",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ]
+    },
+    {
+      "file": "lamine-goal.mp4",
+      "http": 200,
+      "id": "18377806270239695",
+      "page_url": "https://www.instagram.com/reel/Deml53YOZP4/",
+      "published_at": "2026-10-17T17:00:02+0000",
+      "caption": "Do we really need to say anything else? 🤯\n\n#LaLigaHighlights",
+      "bytes": 1634511,
+      "sha256": "93c5485f0aff4ca28160d83706de27f4124fa22ba51919b78784a1e4f0cf1ac6",
+      "duration": "9.540544",
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 720,
+          "height": 1280,
+          "r_frame_rate": "30/1"
+        },
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "r_frame_rate": "0/0"
+        }
+      ]
+    }
+  ],
+  "distinct_original_files": 3,
+  "distinct_creator_count": 1,
+  "render_source_count_note": "Five prepared cutfiles from three actualInstagramvideos by one creatorFCBarcelona, not five independentpublishers.",
+  "cuts": [
+    {
+      "id": "HOOK",
+      "source_file": "lamine-goal.mp4",
+      "raw_start": 8,
+      "raw_end": 9.4,
+      "prepared_duration": 1.4000000000000004,
+      "prepared_bytes": 434047,
+      "prepared_sha256": "368c429ba468dc50b45ce116cf0d0d68f57b593f2043029c1c5a7548ef3cf0c6",
+      "caption": "Yamal membuka jalan\nBarcelona menang 5-2",
+      "visual_transcript": "Transkrip visual sumber lamine-goal.mp4 detik8–9.4. AuthenticYamal face and moving celebration at cornerflag, rightarm extended. Hook is emotion aftergoal, notlive-score footage. Audio fisikdimute, tidak mengarang ucapan. Sumber pertandinganBetisBarcelona17Oktober2026."
+    },
+    {
+      "id": "WING",
+      "source_file": "lamine-action.mp4",
+      "raw_start": 0.25,
+      "raw_end": 4.5,
+      "prepared_duration": 4.25,
+      "prepared_bytes": 1020826,
+      "prepared_sha256": "93dee9a9bceee5dc9debf21c5ff65cd3151c41d6d0730c128f3b552976676429",
+      "caption": "Dari sisi kanan\nYamal membawa ancaman",
+      "visual_transcript": "Transkrip visual sumber lamine-action.mp4 detik0.25–4.5. Wide portrait broadcast: Yamal controls ball on rightwing, approachesdefender. This is another attackingclip, not asserted as openinggoal. Audio fisikdimute, tidak mengarang ucapan. Sumber pertandinganBetisBarcelona17Oktober2026."
+    },
+    {
+      "id": "DRIBBLE",
+      "source_file": "lamine-action.mp4",
+      "raw_start": 4.5,
+      "raw_end": 10.1,
+      "prepared_duration": 5.6,
+      "prepared_bytes": 1426393,
+      "prepared_sha256": "6f4a667fcd94a0c6e39320c158989942ac4da80dcf00e6941c5964266542658e",
+      "caption": "Gerak tipuan\nDi ruang sempit",
+      "visual_transcript": "Transkrip visual sumber lamine-action.mp4 detik4.5–10.1. Yamal changesdirection, beatschallengingdefenders on right and shoots/passes towardgoal. Clip does not establish scoringoutcome. No captionclaims itis agoal. Audio fisikdimute, tidak mengarang ucapan. Sumber pertandinganBetisBarcelona17Oktober2026."
+    },
+    {
+      "id": "REACTION",
+      "source_file": "flick-reaction.mp4",
+      "raw_start": 0.2,
+      "raw_end": 5.4,
+      "prepared_duration": 5.2,
+      "prepared_bytes": 1571640,
+      "prepared_sha256": "b84ca511df0c481ef9dc9d2a100d28c734329b89b303b62786c58da425dbf093",
+      "caption": "Gol pembuka Yamal\nFlick merayakannya",
+      "visual_transcript": "Transkrip visual sumber flick-reaction.mp4 detik0.2–5.4. HansiFlick raisesarms, turns and congratulatesstaff besideBetisdugout. Clubcaption explicitly Lamine scores,Flick enjoys. Not a speechtranscript. Audio fisikdimute, tidak mengarang ucapan. Sumber pertandinganBetisBarcelona17Oktober2026."
+    },
+    {
+      "id": "CELEBRATION",
+      "source_file": "lamine-goal.mp4",
+      "raw_start": 0.2,
+      "raw_end": 4.8,
+      "prepared_duration": 4.6,
+      "prepared_bytes": 1272739,
+      "prepared_sha256": "a2402d0b9bfaf72564ae4acee78d399f95f70ec0f1c5dd8245f11007c1aadd13",
+      "caption": "Sembilan laga liga\nSembilan kemenangan",
+      "visual_transcript": "Transkrip visual sumber lamine-goal.mp4 detik0.2–4.8. Yamal foldsarms aftergoal, teammateembraceshim; authentic movingcelebration. Endingreportstatesverified5-2result, notfootageofallfivegoals. Audio fisikdimute, tidak mengarang ucapan. Sumber pertandinganBetisBarcelona17Oktober2026."
+    }
+  ],
+  "hero": {
+    "player": "Lamine Yamal celebrating againstBetis",
+    "page_url": "https://www.instagram.com/reel/Deml53YOZP4/",
+    "source_time": 8.5,
+    "crop": "720x940 x0y140 from original720x1280 celebration; authenticYamalface, nativecornerlogooutsidecrop, noaddedheadline/AI",
+    "no_added_headline": true,
+    "bytes": 39957,
+    "sha256": "39df3607f85a195fb53c436b77a0e43498803ba7920b3578e9caa2bd2383de9c"
+  },
+  "framing": "Full nativeportrait preserved at600x1066 x240y350 on charcoal1080x1920. Field/ball/face/sourceLaLiga watermark not cropped from video. Safe headline and caption areas;44px from videoend1416 tocaption1460. Physically muted sourceaudio. Unchanged sharedrenderer.",
+  "rights": "Owner-authorised attributedlimitededitorialexcerpts; no writtenFCBarca/LaLigagrant asserted. NormalpublicAPI mediaURLsHTTP200, no bypass. Sourcewatermarkretained invideo, audio physicallymuted.",
+  "audio": {
+    "audio_id": "2022652068369715",
+    "title": "With Me (Instrumental)",
+    "artist": "Giulio Cercato",
+    "audio_volume": 35,
+    "video_volume": 0,
+    "checked_at": "2026-10-18T00:03:48.171Z",
+    "discovery": "TRENDING",
+    "source": "INSTAGRAM_CATALOG",
+    "review": "FreshTRENDINGcatalogue metadata, instrumental forfootballreaction. Noaudition/TikTokrankclaim; availabletoolsdonotsupportaudioinput. Sourceaudiomuted; IGnativeonly,FBbase silent.",
+    "full_decode_ok": true,
+    "source_physically_muted": true,
+    "max_volume_lines": [
+      "[Parsed_volumedetect_0 @ 0x595434646b80] max_volume: -91.0 dB"
+    ],
+    "facebook_base": "Silent; nativeInstagramcatalogue rights not assumed to transfer."
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "reviewed_at": "2026-10-18T00:08:02.638Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "ea106c0adbebeccaf5ecb7d828e9394752f908a4",
+  "target": {
+    "id": "b28fc9bf-46f4-43ea-9914-14c0999b721d",
+    "plan_key": "2026-10-18:match-am",
+    "event_key": "betis-barcelona-yamal-nine-wins-20261017",
+    "scheduled_at": "2026-10-18T01:00:00Z",
+    "time_wib": "18 Oktober 2026 08.00 WIB",
+    "format": "REEL",
+    "pillar": "Sepak Bola Eropa",
+    "theme": "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi"
+  },
+  "references": {
+    "ok": true,
+    "file": "/opt/stadione-editorial/goal-readings.json",
+    "entries": 13,
+    "latest_read_at": "2026-10-17T00:40:51.526Z",
+    "benchmarks": [
+      "goal-20261015-roma-madrid-comeback-match-news",
+      "goal-20261017-de-zerbi-defensive-leadership-news"
+    ],
+    "application": "RomaMadrid: lead result and mechanism; chronological scorechanges with passer/finisher; no inventedquotes. DeZerbi: tie judgment to concreteevents, clear attribution. Referencefacts not reused as currentfacts."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-17T23:59:22.030Z",
+    "pool_sha256": "59649cbc2a0f1781d16ad2d2d749975b319588176aeffc7c8946cdb175ac0390",
+    "path": "getDailySportsPool release via committedhelper/cms-load",
+    "selected": "BetisBarcelona toptrend amongpriorityEuropeanclubs; currentofficial5-2result independentlyverified, notjusttrendmetrics.",
+    "queries": [
+      {
+        "queries": [
+          "Arsenal Manchester United Liverpool 17 October 2026 highlights"
+        ],
+        "at": "2026-10-17T23:59:22.899Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 15,
+        "cached": false
+      },
+      {
+        "queries": [
+          "Betis Barcelona 17 October 2026 highlights"
+        ],
+        "at": "2026-10-17T23:59:48.516Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 18,
+        "cached": false
+      }
+    ],
+    "youtube_failures": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=caxXNwJlIEw",
+        "creator": "beIN SPORTS Indonesia",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "596fd999b3c3819cfb744d3c82fe33c453c6ebebef873dc37e47d95dc0ec8606",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=l5ODLAXQyGA",
+        "creator": "FC Barcelona",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "904d3f26c44e2393f0310432f445d0e63baa1d4c3484264b4d45dde1f80318c6",
+        "not_retried_or_bypassed": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=cYMIsxPkeZo",
+        "creator": "LaLiga EA SPORTS",
+        "result": "BOT_SIGN_IN_REQUIRED",
+        "log_sha256": "4569014bd2a17abe6498aa62047c5da1cb6097e7fac7262aa8a5fa6427017f92",
+        "not_retried_or_bypassed": true
+      }
+    ],
+    "instagram": {
+      "accounts": [
+        "fcbarcelona",
+        "laliga",
+        "beinsportsasia",
+        "beinsports"
+      ],
+      "children_inspected": true,
+      "unavailable_account": "beinsportsid returnedInvaliduserid, no credentialchange.",
+      "missing_media": "LaLigaVIDEOposts had no media_url, not retriedviaextractor/directchild.",
+      "usable": "FCBarca official3movingvideos HTTP200. Earlycaptionkeywordfilter omitted Lamine-only captions; reviewed entire30parents andallchildren before availabilitydecision.",
+      "excluded_children": "Getafe3-0 andGalatasaray1-4 children are olderfixtures, notusedasBetisfootage."
+    },
+    "club_video_page": {
+      "url": "https://www.fcbarcelona.com/en/barca-play/videos/4593741/highlights-laliga-betis-v-fc-barcelona",
+      "result": "PublicpageHTTP200 has entitlement-type-barca-fans. PlaybackAPI not probed to bypassentitlement."
+    },
+    "fallback": false
+  },
+  "article": {
+    "words": 185,
+    "digest": "097c9062fbbc3f013e4c9194a780ff3250b6a7eef2bc61809974c7a58072a8df",
+    "genre": "NEWS",
+    "review": [
+      "Whole185wordstory written/reviewed beforepackaging, not paddedtoquota. LeadYamalgoal/9wins, firsthalfGomezRodriVAR, secondhalfJesusAbdeBernal, Eric/Olmofinishand27points.",
+      "No AnalisisStadione/processheadings/scaffold/filler/inventedquotes. NoManoftheMatchaward or inventedmedicaldiagnosis.",
+      "Clear Saturday17Octoberlocaldate, current18OctoberWIBmorningreaction. Matchkickoff18:30CEST=16:30UTC=23:30WIB17October.",
+      "Reuters/CNA is one syndicatedpublishergroup, independentofclub; not counted as twoagencies."
+    ]
+  },
+  "sources": [
+    {
+      "id": "BARCA",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/news/4593638/betis-2-5-fc-barcelona-the-dream-start-continues",
+      "publisher_group": "FC_BARCELONA",
+      "primary": true,
+      "published_at": "2026-10-17T18:34:00.000Z",
+      "retrieved_at": "2026-10-18T00:00:42.181Z",
+      "text_sha256": "f94af370016e4c5897d9b10e546975f5bb2c12bd2602ff3524c9c82bf6d9d2ab",
+      "reading": "Full mainarticle opened/read throughbrowser and normalpublicHTTP200 HTML viaTD; nottitle/snippet.",
+      "timestamp_note": "Exactdata-publish-from1792262040000 onpublicarticle, JSONLDday17October."
+    },
+    {
+      "id": "REUTERS",
+      "url": "https://www.channelnewsasia.com/sport/barcelona-keep-perfect-laliga-record-five-goal-romp-betis-6468951",
+      "publisher_group": "REUTERS",
+      "primary": false,
+      "published_at": "2026-10-17T18:50:42Z",
+      "retrieved_at": "2026-10-18T00:00:43.391Z",
+      "text_sha256": "47149bf1ab4531c9db57a722d56b194095e109f3135302db6b921d3cd639e49f",
+      "reading": "Full mainarticle opened/read throughbrowser and normalpublicHTTP200 HTML viaTD; nottitle/snippet.",
+      "timestamp_note": "CNA JSONLD2026-10-18T02:50:42+08:00 =17October18:50:42Z; Reuterscopy, canonicalredirectURL recorded."
+    }
+  ],
+  "fact_review": {
+    "verified": [
+      "FinalBetis2-5Barcelona, LaCartuja/Seville/17Octoberlocal. NinewinsfromnineLaLiga fixtures,27points.",
+      "Yamal10leftfootcurl fromoutsidebox; GomezheaderFornalscross; Rodri41Fermincorner.",
+      "LoCelsovolleyruledout forCuchohandball. Jesus makes3-1 fromYamalcutback; Abde makes3-2; Bernalstraightred.",
+      "Eric finishesCubarsiball afterYamalfreekick; Olmo81 outsideboxfinish.",
+      "OfficialmatchcentreFT/2-5/goal timeline read, currentfixtureverified."
+    ],
+    "caveats": [
+      "Clubprose andtimeline/Reuters differ onseveralminute descriptions. Only unambiguous10/41 and Olmo81 fromclubtimelineplusReuters appearinarticle. Gomez27/28, Jesus51/53, Eric62/63 omitted.",
+      "Dribblefootage is NOTrepresented as openinggoal, assistsequence or completedgoal. No scoringoutcome claimedforit.",
+      "Flickreaction explicitly tiedtoYamal by officialclubcaption, not inventedspokenquote.",
+      "Montage is selectedaction/emotion, notallfivegoals or livefeed. NoGetafe/Galatasarayvideos reused.",
+      "Heroarticle initialofficialOGphoto showedRodri/Ericbacks; replacedwith authenticYamalframe8.5. Frame6.5flagobscuredface rejected; final8.5cleanface personallyviewed.",
+      "No nativeaudioaudition supported, no claim heardtrack/TikTokrank. No claim customReelsthumbnail support."
+    ]
+  },
+  "render": {
+    "bytes": 4804065,
+    "sha256": "72c045cc18fee2026e16746996aa8a4da8fe5e56261de98a316997a1d57737c5",
+    "audit": {
+      "ok": true,
+      "width": 1080,
+      "height": 1920,
+      "duration": 21.129333,
+      "scene_count": 5,
+      "source_count": 5,
+      "platforms": [
+        "INSTAGRAM"
+      ],
+      "normalized_audio": true,
+      "source_video": true,
+      "ai_footage": false,
+      "output_sha256": "72c045cc18fee2026e16746996aa8a4da8fe5e56261de98a316997a1d57737c5"
+    },
+    "inspection": "Final5midpoints read at30fps plus2fps sampling acrossentire21seconds. Ball/defenders/realmovement/Flickreaction/celebrations compared tosource. Fullvideo/audio decode, physicalsilence max-91dB; no realtimeaudioauditionclaim.",
+    "visual": "Fullportraitsource scaled600x1066oncharcoal; sourceends1416, caption1460 gap44px. Modernfont, measuredsafeheadline/caption wrapping, sourcecreditbelow, no EDISIDIGITAL orpromotionalfooter.",
+    "audio": {
+      "audio_id": "2022652068369715",
+      "title": "With Me (Instrumental)",
+      "artist": "Giulio Cercato",
+      "audio_volume": 35,
+      "video_volume": 0,
+      "checked_at": "2026-10-18T00:03:48.171Z",
+      "discovery": "TRENDING",
+      "source": "INSTAGRAM_CATALOG",
+      "review": "FreshTRENDINGcatalogue metadata, instrumental forfootballreaction. Noaudition/TikTokrankclaim; availabletoolsdonotsupportaudioinput. Sourceaudiomuted; IGnativeonly,FBbase silent.",
+      "full_decode_ok": true,
+      "source_physically_muted": true,
+      "max_volume_lines": [
+        "[Parsed_volumedetect_0 @ 0x595434646b80] max_volume: -91.0 dB"
+      ],
+      "facebook_base": "Silent; nativeInstagramcatalogue rights not assumed to transfer."
+    }
+  },
+  "scope": {
+    "baseline_rows": 114,
+    "allowed": "TargetSOCIAL plusone newpairedARTICLE only",
+    "preserved": "113otherexistingrows,08/13/20WIBclocks,additional,historical,renderer,productioncode,credentials,services"
+  },
+  "production_path": "committedsharedadapter preview→inspection→Gitcommit/push→sharedschedule→systemdpublisher",
+  "private_materials": "RawcopyrightMP4/photos/HTML/text/APIJSON/CDN/fullpacket remainprivateVPS; notGit."
+}

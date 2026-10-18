@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Yamal Membuka Jalan, Barcelona Menang 5–2",
+  "dek": "Gol dan umpan Lamine Yamal mewarnai kemenangan atas Real Betis. Barcelona menuntaskan sembilan pertandingan awal LaLiga dengan sembilan kemenangan.",
+  "caption": "YAMAL MEMBUKA JALAN, BARCELONA MENANG 5–2\n\nLamine Yamal membuka skor lewat tembakan melengkung kaki kiri pada menit 10. Ia juga mengirim umpan untuk gol Gabriel Jesus ketika Barcelona mengalahkan Real Betis 5-2 di La Cartuja, Sabtu, 17 Oktober 2026 waktu setempat.\n\nBetis sempat mendekat hingga 3-2 sebelum kehilangan Facundo Bernal karena kartu merah. Barcelona kemudian menjauh lewat Eric Garcia dan Dani Olmo. Sembilan pertandingan liga, sembilan kemenangan.\n\nVideo menampilkan cuplikan gerak Yamal, selebrasi, dan reaksi Flick dari akun Barcelona. Sumber laporan: FC Barcelona, Reuters/CNA. Cuplikan: FC Barcelona / LaLiga.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Yamal Membuka Kemenangan Barcelona",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "YAMAL"
+      ],
+      "text": "Lamine Yamal membuka kemenangan Barcelona 5-2 atas Real Betis lewat tembakan melengkung kaki kiri dari luar kotak penalti. Laga di La Cartuja, Sabtu, 17 Oktober 2026 waktu setempat, mengantar tim Hansi Flick meraih sembilan kemenangan dari sembilan pertandingan awal LaLiga."
+    },
+    {
+      "id": "first-half",
+      "heading": "Rodri Mengembalikan Keunggulan",
+      "kind": "FACT",
+      "claim_ids": [
+        "YAMAL",
+        "FIRST_HALF"
+      ],
+      "text": "Yamal mencetak gol pada menit 10 setelah bergerak dari kanan. Betis menyamakan skor melalui sundulan Valentin Gomez yang menyambut umpan Pablo Fornals. Rodri kemudian membawa Barcelona kembali unggul pada menit 41 lewat sundulan dari sepak pojok Fermin Lopez. Voli jarak jauh Giovani Lo Celso sempat menggetarkan gawang, tetapi VAR membatalkannya karena handball Cucho Hernandez dalam proses serangan."
+    },
+    {
+      "id": "turn",
+      "heading": "Betis Mendekat Lalu Kehilangan Bernal",
+      "kind": "FACT",
+      "claim_ids": [
+        "YAMAL",
+        "TURN"
+      ],
+      "text": "Selepas jeda, Gabriel Jesus menuntaskan umpan mendatar Yamal untuk membuat kedudukan 3-1. Ez Abde segera memperkecil selisih lewat serangan balik. Namun, upaya Betis mengejar kembali terganggu ketika Facundo Bernal menerima kartu merah langsung setelah insiden dengan Yamal. Tuan rumah harus melanjutkan pertandingan dengan sepuluh pemain."
+    },
+    {
+      "id": "close",
+      "heading": "Eric dan Olmo Memastikan Kemenangan",
+      "kind": "FACT",
+      "claim_ids": [
+        "CLOSE",
+        "RESULT"
+      ],
+      "text": "Eric Garcia memperlebar keunggulan setelah Pau Cubarsi meneruskan bola dari tendangan bebas Yamal ke depan gawang. Dani Olmo menutup kemenangan melalui tembakan dari luar kotak penalti pada menit 81. Barcelona pun membawa pulang tiga poin dan mengumpulkan 27 poin dari sembilan laga liga."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261015-roma-madrid-comeback-match-news",
+    "goal-20261017-de-zerbi-defensive-leadership-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-18T00:05:54.262Z",
+    "article_digest": "097c9062fbbc3f013e4c9194a780ff3250b6a7eef2bc61809974c7a58072a8df"
+  }
+}
