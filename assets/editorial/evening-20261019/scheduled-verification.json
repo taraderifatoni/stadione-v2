@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-19T12:21:21.444Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "f5b1261b-3e15-41de-912e-34d665cf5df3",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-19:mon-pm",
+    "event_key": "cipayung-gildas-bekasi-final-20261018",
+    "scheduled_at": "2026-10-19T13:00:00+00:00",
+    "time_wib": "19 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "42c304db-3ab9-4b5e-b3be-a878b14cd964",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-19T13:00:00+00:00",
+    "title": "Cipayung Juara Lagi di Bekasi",
+    "canonical_body_identical": true,
+    "digest": "016c194d72cba3227cf8a39d9100d7b33bfee75d25a7a652459913c497bc81e8",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 427554,
+      "sha256": "edb52d6d672bda1c1b0b0e3792bb5657adfe2aa08a57b9c19d9206468afc077b",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 632926,
+      "sha256": "01205f239d87cbb114fe7cf7be9979b36bfb779dc22cdd35d2adc7aa1a97e64b",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 174288,
+      "sha256": "6e20b031de9fe706c409eee5a09569dd63d87552d0db92d0442f627a95075672",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 195123,
+      "sha256": "0cf5b795bff752ee5b396f3a75b4f46759bcf0bdf29052f2a566402de85ead1e",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 195850,
+      "sha256": "c72157ffd37f85d713f1cd936d3e617ade77a6f7a505dd80068b7aad91556a36",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 184586,
+      "sha256": "04990e0adfd40bc77af24cf1486a5751e0f9bb370916792459a6db6b79de3113",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 48,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 121,
+  "changed_other_rows": [],
+  "baseline_rows": 122,
+  "current_rows": 123,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "a1d5cddec0428586c88003f5b38c6a515bc00bdf"
+}
