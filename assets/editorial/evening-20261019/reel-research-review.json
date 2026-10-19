@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-19:mon-pm",
+  "checked_at": "2026-10-19T12:11:35.039Z",
+  "queries": [
+    "sepak bola komunitas turnamen 19 Oktober 2026",
+    "MilkLife Soccer Challenge Bekasi final 18 Oktober 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=MmZUTI4CBuE",
+      "creator": "MilkLife Soccer",
+      "checked_at": "2026-10-19T12:07:50.650Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "KandidatBekasi14Oktoberdariakunresmi, normaldownload gagalbot-sign-in; tidakmengulangrutelain/logincookie/challenge. Bukanrekamanfinal18Oktoberyangterverifikasi.",
+      "proof": {
+        "kind": "COMMAND_LOG",
+        "summary": "Normal YouTube request failed with Sign in to confirm you are not a bot; no source video obtained.",
+        "sha256": "43cf62a02942ac3b4d67173788895f908c115b69f287d353a5fbdbd090cde00b"
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=a_t0FeQWIDo",
+      "creator": "AKZ Panara",
+      "checked_at": "2026-10-19T12:08:55.884Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "AlternatifpilarLavvoTanaCupAlor19Oktober, permintaanmetadatanormalyt-dlp gagalbot-sign-in; tidakditonton/diunduh dan tidakbypass. Lokasi/kreatorberbeda, bukanfootageBekasi.",
+      "proof": {
+        "kind": "COMMAND_LOG",
+        "summary": "Normal YouTube request failed with Sign in to confirm you are not a bot; no source video obtained.",
+        "sha256": "de3fe4f4a8d663aeb9b93a7c030e4d441c98c2c4fdd389eec47a5ce0817e0c48"
+      }
+    },
+    {
+      "page_url": "https://www.instagram.com/reel/DeqdQtRzPep/",
+      "creator": "MilkLife Soccer",
+      "checked_at": "2026-10-19T12:11:35.039Z",
+      "result": "NO_MEDIA",
+      "detail": "BusinessDiscovery30parents HTTP200 memuatcaption/tanggalBekasi danVIDEO, tetapi tanpamedia_url; semuachildren diperiksa. Tidakextractoralternatif/directchild atau loginuntukmelewatipermission. Video tidakditonton/diunduh.",
+      "proof": {
+        "kind": "API_METADATA",
+        "summary": "OfficialMilkLife VIDEO18105398693309869 without media_url; actualcaption andtimestamp read. No video child with downloadable media.",
+        "media_id": "18105398693309869",
+        "published_at": "2026-10-19T05:00:06+0000"
+      }
+    },
+    {
+      "page_url": "https://www.instagram.com/reel/DeqEWS8hBB_/",
+      "creator": "MilkLife Soccer",
+      "checked_at": "2026-10-19T12:11:35.039Z",
+      "result": "NO_MEDIA",
+      "detail": "BusinessDiscovery30parents HTTP200 memuatcaption/tanggalBekasi danVIDEO, tetapi tanpamedia_url; semuachildren diperiksa. Tidakextractoralternatif/directchild atau loginuntukmelewatipermission. Video tidakditonton/diunduh.",
+      "proof": {
+        "kind": "API_METADATA",
+        "summary": "OfficialMilkLife VIDEO17909061555573465 without media_url; actualcaption andtimestamp read. No video child with downloadable media.",
+        "media_id": "17909061555573465",
+        "published_at": "2026-10-19T01:23:48+0000"
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-19T12:11:35.039Z",
+    "digest": "02831f4c9d55a55f132b169629d7814267b1dae6d1161c4666b72641c6873259"
+  }
+}

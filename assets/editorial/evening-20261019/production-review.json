@@ -1,0 +1,359 @@
+{
+  "reviewed_at": "2026-10-19T12:20:36.081Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "3eb3e416402aa35f4be8421f5f458b03adedfd2d",
+  "target": {
+    "id": "f5b1261b-3e15-41de-912e-34d665cf5df3",
+    "plan_key": "2026-10-19:mon-pm",
+    "event_key": "cipayung-gildas-bekasi-final-20261018",
+    "scheduled_at": "2026-10-19T13:00:00Z",
+    "time_wib": "19 Oktober 2026 20.00 WIB",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "pillar": "Tarkam & Komunitas",
+    "angle": "UGC / momen",
+    "theme": "Momen komunitas pilihan dengan izin tertulis dan konteks lokasi/tanggal"
+  },
+  "references": {
+    "runtime_entries": 15,
+    "latest_read_at": "2026-10-19T00:16:40.411824Z",
+    "benchmarks": [
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261015-roma-madrid-comeback-match-news"
+    ],
+    "application": "NEWS lead verified result, next paragraph concrete goal/blocked opportunity; individual total distinguished from finalscore, exact shortplayerquote, priorJakartatitle then coachquote. No filler or process headings."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-19T12:06:21.677Z",
+    "pool_sha256": "df0a8eb76ebba84d93094b2d35610df703b5350c0e0fd41b603580f9300107a5",
+    "provider": "getDailySportsPool active release via committed cms-audience-pool.cjs / cms-load.cjs",
+    "note": "Broad COMMUNITY match scores are rankinglabels, not relevance proof. Professionaltrends rejected. Focused schoolfootball Bekasi final after originalcommunityquery.",
+    "queries": [
+      {
+        "queries": [
+          "sepak bola komunitas turnamen 19 Oktober 2026"
+        ],
+        "checked_at": "2026-10-19T12:06:22.656Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 11,
+        "cached": false
+      },
+      {
+        "queries": [
+          "MilkLife Soccer Challenge Bekasi final 18 Oktober 2026"
+        ],
+        "checked_at": "2026-10-19T12:06:56.112Z",
+        "provider": "YOUTUBE_DATA_API",
+        "candidates": 1,
+        "cached": false
+      }
+    ],
+    "instagram": {
+      "account": "milklifesoccer",
+      "parents": 30,
+      "video_parents": 6,
+      "video_urls_available": 0,
+      "video_children": 0,
+      "note": "Initial50parents returned500 withrequesttoreducedata; normal30parent retryHTTP200. Not missingpermission bypass. TARKAMLeague50parents include oneVIDEOchildwithURL, but10OctoberGarudaCupdifferentstory and UGCwrittenpermissionunconfirmed, not watched/downloaded or classifiedUSABLE."
+    },
+    "fallback": {
+      "reason": "Footagecommunityactual belumdapatdiperoleh: YouTubeMilkLife/AKZbot-signin, IGofficialBekasitanpaURLmedia. TidakmenggunakanindividualUGCtanpaizintertulis atau mengemasfotojadiReel. Fallbackcarouselfotoadminpenyelenggara, clock20WIBtetap.",
+      "manifest": "reel-research-review.json",
+      "review_digest": "02831f4c9d55a55f132b169629d7814267b1dae6d1161c4666b72641c6873259",
+      "attempts": 4,
+      "creators": 2,
+      "clock_unchanged": true,
+      "not_slideshow_reel": true,
+      "not_individual_ugc_without_written_permission": true
+    }
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 167,
+    "paragraphs": 4,
+    "digest": "016c194d72cba3227cf8a39d9100d7b33bfee75d25a7a652459913c497bc81e8",
+    "page_count": 5,
+    "review": [
+      "Whole article completed before lossless pagination. Goalmechanism, verifiedfinal1–0, player21totalgoals and priorSeptemberJakartatitle each addnew information.",
+      "Opponent fullawardname SDNCilangkap01PagiB retained fromBola resultslist/photo caption; source prose abbreviatesSDNCilangkap01.",
+      "Two exact shortquotations10+12words attributed toGildas/Kurniawan and officialsource, not inventedinterviews.",
+      "No precisegoalminute, unverifiedMOTM, impendingTimnascallup, ageeligibilityassertion or minute5save misrepresented asgoal.",
+      "No AnalisisStadione/scaffold/padding or processofquotingheading. CurrentBekasifinal differs from priorKudus17Octoberpreview."
+    ]
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://milklifesoccer.com/news/537/sdn-cipayung-02-kembali-juara-sdn-pulogebang-07-bayar-kegagalan",
+      "publisher_group": "MILKLIFE_DJARUM",
+      "primary": true,
+      "published_at": "2026-10-19",
+      "date_precision": "DAY",
+      "retrieved_at": "2026-10-19T12:08:24.759Z",
+      "text_sha256": "93e796af612d6abba6d0360290141716be3ba7938596ee80178fec9c27f1568a",
+      "reading": "Full official article body from publicpage __NEXT_DATA__ pageProps.news, normalHTTP200 read. Browser shell/error not represented as fullread."
+    },
+    {
+      "id": "BOLA",
+      "url": "https://www.bola.com/indonesia/read/8315989/milklife-soccer-challenge-bekasi-dan-kudus-seri-1-20262027-kuantitas-peserta-meningkat-selaras-kualitas",
+      "publisher_group": "KLY_BOLA",
+      "primary": false,
+      "published_at": "2026-10-18T23:45:00+07:00",
+      "date_precision": "TIMESTAMP",
+      "retrieved_at": "2026-10-19T12:08:58.209Z",
+      "text_sha256": "d6d9cd9c8cc3c394b9fdb56c6e87ef4a5314e1bb43e90d0809aedde89c15e583",
+      "reading": "Full Bola article browsed lines26–115 and publicHTMLHTTP200. Independentpublisher, not two separateinterviews claimed."
+    }
+  ],
+  "independence": "OfficialMilkLife/Djarum release537 onepublishersgroup; Bola/KLY8315989 separatepublisherwithauthorBenediktusGerendoPradigdo and ownfinalistphoto attribution. Match facts and quotes overlap organiser material; not claiming two independentinterviews. Akurat onlyfirstpage read, not countedfullsource orusedpacket.",
+  "fact_review": {
+    "verified": [
+      "Cipayung02 KU12Bekasichampion1–0overCilangkap01PagiB18October2026, BekasiInternationalSoccerField.",
+      "Gildas longrange winner; Aqilah opportunity blockedsecondhalf perfullprimary, finalscorematchesBola.",
+      "Gildas top scorer21goalstotal, notfinalscore, shorthopeyoungerplayerquote exact.",
+      "PriorJakartaRayaSeri1Septembertitle, Kurniawan quote explains continuingachievement, not twoBekasititles."
+    ],
+    "caveats": [
+      "Primarydate19Octoberdayonly, no inventedpublishminute. Sourceevent18Octoberdayonly, nokickofftimeinvented.",
+      "No particularpicturedathlete identifiedasGildaswithoutcaptionproof. Photo isofficialreleaseactualduel, notinventedgoalframe.",
+      "Akuratpaginationnotfullyread, not used; search snippets fromotherpublishers notrepresentedfullreads.",
+      "No individualUGC usewithoutwrittenpermission. Ownerauthorised attributededitorialreuse officialorganiserphotograph, notclaimedwrittenorganiser/school/parentgrant."
+    ]
+  },
+  "cover": {
+    "variant": "FOTO_DOMINAN",
+    "standard": "STADIONE_COVER_VARIANTS_V1",
+    "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "image_generation": true,
+    "authentic_reference": {
+      "url": "https://news.milklifesoccer.com/wp-content/uploads/2026/10/bekasi_seri_1_2026-2027_-_press.jpg",
+      "description": "Realduel from officialBekasifinal release: bluekitpurplehairplayer onleft andred/navykitheadbandplayer onright withpinkwhiteball. No identificationofwhichindividualisGildas.",
+      "bytes": 1407238,
+      "sha256": "cf59f4d54b3ff1b2bcd21d68f89427ba2962f9130120549761eca32a4c32fb0d"
+    },
+    "artwork": {
+      "file": "cover.jpg",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 506422,
+      "sha256": "d5ee3e130bc3c50d52e8598facc0165817606ce6cdf0ccb0d7739b8e3a5c35cf",
+      "normalization": "Creative editthroughimagegeneration; PNGnormalizedto1080x1350JPEGonly."
+    },
+    "manual_review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "checks": [
+        "Original official photograph and final generated FOTO_DOMINAN artwork compared: bluekit/purplehairplayer and red/navykit/headbandplayer, faces, age, kit, pose and pinkwhiteball retained. Background only editorial collage; no individual identified asGildas withoutcaption.",
+        "Initial cover text too close toleft/bottom; imagegeneration refinement inset text. Normalized1080x1350 finalOCR source left131px, loweredge80px abovebottom. Headline/dek/source/page1/5 legible, no text/facecollision.",
+        "Allfive finalrenderedJPEGs viewed in contacts. Page3 firstfit32px was rewritten moreconcisely withoutchangingfacts, digest/pagination recomputed, rerendered and finalpage viewedfullresolution. Finalallbodypages36px/margin72/divider4px/gaps36px.",
+        "Covercounter1/5 and exactcanonicaltitle/dek matchfive articleSlides. SourceMILKLIFESOCCER.COM onlycover; bodypages textonlycream. NoEDISIDIGITAL orpromotionalfooter.",
+        "Websitehero authentic1270x720 originalphoto reencodedJPEG, viewedseparately, noheadline orAI. Sourcejerseylogos retained asnativephoto, notaddedheadline.",
+        "Two exactshortquotes10+12words attributedproperly. 21goals expressly totalcompetition; final1–0. Fullarticle reviewedbeforepagination; no filler or quotingprocessheadings."
+      ],
+      "note": "Cover type size reviewed visually from bitmap; body fonts and divider distances measured by renderer.",
+      "reviewed_at": "2026-10-19T12:20:36.012Z"
+    },
+    "website_hero": {
+      "bytes": 427554,
+      "sha256": "edb52d6d672bda1c1b0b0e3792bb5657adfe2aa08a57b9c19d9206468afc077b",
+      "original_photo": true,
+      "text_overlay": false,
+      "reencoded_jpeg": true
+    },
+    "no_raw_photo_committed": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 632926,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "MILKLIFESOCCER.COM",
+      "cover_input_sha256": "d5ee3e130bc3c50d52e8598facc0165817606ce6cdf0ccb0d7739b8e3a5c35cf",
+      "output_sha256": "01205f239d87cbb114fe7cf7be9979b36bfb779dc22cdd35d2adc7aa1a97e64b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 174288,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "2c0ec5c633c697adfb06a1da6d634fbeee32917592bcf4aec879548317bfaca9",
+      "output_sha256": "6e20b031de9fe706c409eee5a09569dd63d87552d0db92d0442f627a95075672",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 834,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 919,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 195123,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "54b8cf9c843d531b7685be41dd03281b369608b65306085082c2b377b3084614",
+      "output_sha256": "0cf5b795bff752ee5b396f3a75b4f46759bcf0bdf29052f2a566402de85ead1e",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 399,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 711,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 880,
+          "height": 399,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 195850,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "2c1803e2f3cd5b2ddd9f3452fc134b774d3aea713934fb2a5baf088c332590f3",
+      "output_sha256": "c72157ffd37f85d713f1cd936d3e617ade77a6f7a505dd80068b7aad91556a36",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 885,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 935,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 184586,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "c0f22a966b1f1459c93ec4c508c1857d983f8bbfa8808b7caf1332cd1464efe9",
+      "output_sha256": "04990e0adfd40bc77af24cf1486a5751e0f9bb370916792459a6db6b79de3113",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 917,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 908,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "production_path": "Committedsharedadapter preview→visualinspection→Gitcommit/push→sharedschedule→systemdpublisher",
+  "scope": {
+    "baseline_rows": 122,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "other_existing_rows": 121,
+    "preserved": "Normal20WIBclock,08/13WIB andalladditional/historical/scheduledrows, credentials, renderer/productioncode/services"
+  },
+  "raw_materials": "FullsourceHTML/text, APIJSON/CDN, originalphoto, fullpacket andgenerationPNG stay privateVPS. Git only ownarticle, sanitizedmetadata, fallbackmanifest andderivativeQAcontacts."
+}

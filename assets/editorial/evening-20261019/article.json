@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Cipayung Juara Lagi di Bekasi",
+  "dek": "Gol Gildas Syauqillah memastikan kemenangan 1–0 SDN Cipayung 02 di final KU 12. Ia juga menutup turnamen sebagai pencetak gol terbanyak dengan 21 gol.",
+  "caption": "CIPAYUNG JUARA LAGI DI BEKASI\n\nTendangan jarak jauh Gildas Syauqillah menentukan final KU 12 MilkLife Soccer Challenge Bekasi, Minggu (18/10/2026). SDN Cipayung 02 menang 1–0 atas SDN Cilangkap 01 Pagi B di Bekasi International Soccer Field.\n\nGildas menjadi pencetak gol terbanyak KU 12 dengan 21 gol sepanjang turnamen. Cipayung sebelumnya juga menjadi juara pada seri Jakarta Raya September lalu.\n\nSumber dan foto MilkLife Soccer Challenge, laporan pembanding Bola.com.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gildas Menentukan Final KU 12",
+      "kind": "FACT",
+      "claim_ids": [
+        "FINAL"
+      ],
+      "text": "SDN Cipayung 02 kembali membawa pulang gelar MilkLife Soccer Challenge. Mereka menjuarai KU 12 regional Bekasi setelah mengalahkan SDN Cilangkap 01 Pagi B dengan skor 1–0 di Bekasi International Soccer Field, Minggu, 18 Oktober 2026. Gildas Syauqillah menjadi pencetak gol penentu kemenangan."
+    },
+    {
+      "id": "goal",
+      "heading": "Tembakan Jarak Jauh Memecah Kebuntuan",
+      "kind": "FACT",
+      "claim_ids": [
+        "FINAL",
+        "PLAYER"
+      ],
+      "text": "Gol Gildas lahir lewat tendangan keras dari jarak jauh. Cipayung mempertahankan keunggulan sampai jeda. Selepas turun minum, Cilangkap meningkatkan tekanan. Aqilah Shafiya Azzahra mendapat peluang di depan gawang, tetapi sepakannya diblok kiper Cipayung. Upaya mengejar ketertinggalan itu berakhir tanpa gol balasan."
+    },
+    {
+      "id": "player",
+      "heading": "Gildas Menutup Turnamen dengan 21 Gol",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "PLAYER"
+      ],
+      "quote": {
+        "text": "Semoga teman-teman yang usianya di bawahku prestasinya bisa lebih baik.",
+        "source_id": "PRIMARY"
+      },
+      "text": "Selain membawa timnya juara, Gildas meraih penghargaan pencetak gol terbanyak KU 12 dengan koleksi 21 gol sepanjang turnamen. Ia berharap pemain Cipayung yang lebih muda dapat meneruskan pencapaian tersebut. “Semoga teman-teman yang usianya di bawahku prestasinya bisa lebih baik.” ujarnya dalam keterangan penyelenggara."
+    },
+    {
+      "id": "repeat",
+      "heading": "Dari Jakarta Raya Berlanjut ke Bekasi",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "REPEAT"
+      ],
+      "quote": {
+        "text": "Setelah dari seri Jakarta berlanjut ke Bekasi, kami kembali meraih hasil juara",
+        "source_id": "PRIMARY"
+      },
+      "text": "Gelar ini melanjutkan keberhasilan Cipayung pada MilkLife Soccer Challenge Jakarta Raya Seri 1, September lalu. Pelatih Kurniawan Heryanto menyebut semangat para pemain tetap terjaga selepas kompetisi sebelumnya. “Setelah dari seri Jakarta berlanjut ke Bekasi, kami kembali meraih hasil juara,” kata Kurniawan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261015-roma-madrid-comeback-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-19T12:19:08.432Z",
+    "article_digest": "016c194d72cba3227cf8a39d9100d7b33bfee75d25a7a652459913c497bc81e8"
+  }
+}

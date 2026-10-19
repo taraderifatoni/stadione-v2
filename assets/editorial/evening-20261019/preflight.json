@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-19T12:05:55.997Z",
+  "rows": 122,
+  "social": {
+    "id": "f5b1261b-3e15-41de-912e-34d665cf5df3",
+    "status": "DRAFT",
+    "format": "REEL",
+    "category": "Tarkam & Komunitas",
+    "plan_key": "2026-10-19:mon-pm",
+    "scheduled_at": "2026-10-19T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 48,
+    "duplicate_matches": 0
+  },
+  "cms_matches": []
+}

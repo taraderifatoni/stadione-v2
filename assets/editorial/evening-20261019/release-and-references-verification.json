@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-10-19T12:20:36.094Z",
+  "committed_adapter_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "release_adapter_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "references": {
+    "entries": 15,
+    "committed_sha256": "22b3231b84dc9ae1b38eeac72bbac5d79ef767d878ecc83333c7f167d6d76441",
+    "runtime_sha256": "22b3231b84dc9ae1b38eeac72bbac5d79ef767d878ecc83333c7f167d6d76441",
+    "valid": true
+  },
+  "renderer_unchanged": true,
+  "credentials_unchanged": true
+}
