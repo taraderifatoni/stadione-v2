@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-19T00:05:04.447Z",
+  "rows": 118,
+  "social": {
+    "id": "383ebe01-7128-4955-8ecc-10ea3da40a8a",
+    "status": "DRAFT",
+    "format": "CAROUSEL",
+    "category": "Sepak Bola Eropa",
+    "plan_key": "2026-10-19:mon-am",
+    "scheduled_at": "2026-10-19T01:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 45,
+    "duplicate_matches": 0
+  },
+  "cms_matches": []
+}

@@ -1,0 +1,319 @@
+{
+  "reviewed_at": "2026-10-19T00:19:41.833Z",
+  "phase": "VISUALLY_REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "113a958125b6ea5663299c3ceb3c261af77b997d",
+  "target": {
+    "id": "383ebe01-7128-4955-8ecc-10ea3da40a8a",
+    "plan_key": "2026-10-19:mon-am",
+    "event_key": "madrid-sevilla-mbappe-panenka-20261018",
+    "scheduled_at": "2026-10-19T01:00:00Z",
+    "time_wib": "19 Oktober 2026 08.00 WIB",
+    "original_format": "CAROUSEL",
+    "format": "CAROUSEL",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Recap / reaction",
+    "theme": "Rekap hasil semalam atau reaction atas hasil yang sudah terkonfirmasi"
+  },
+  "references": {
+    "runtime_entries": 15,
+    "latest_read_at": "2026-10-19T00:16:40.411824Z",
+    "benchmarks": [
+      "goal-20261017-de-zerbi-defensive-leadership-news",
+      "goal-20261013-united-injuries-atletico-news"
+    ],
+    "application": "Lead names Mbappe and verified final result; subsequent paragraphs add goal mechanisms, defensive intervention and late goals/return. No fabricated quote, diagnosis or motivational ending. All numbers verified anew, references provide writing lessons only."
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-19T00:05:12.853Z",
+    "pool_sha256": "c5dc418812c5951a6a9f0bfcf18395d849051f4eff70c565965e84b14aa8bf98",
+    "provider": "getDailySportsPool active release via committed cms-audience-pool.cjs / cms-load.cjs",
+    "note": "RealMadridSevilla second eligible trend. LeedsUnited trend researched first, Sky complete but official club pages HTTP403 and PL shell not complete. No bypass and no claim of full primaryread. Selected verified Madrid result, no pillar/clock/format change."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 174,
+    "paragraphs": 4,
+    "digest": "a3954d0765fea94af1d94e7afa5cb8ad3d20a3cb2e069813e7aa4a5c5bebffb8",
+    "page_count": 5,
+    "review": [
+      "Whole article completed before lossless pagination. NEWS lead result then distinct firsthalf/penalty/late developments.",
+      "Spanish original RealMadrid full report read, English AItranslation checked but not sole primary source. Reuters fullbody onCNA independent, syndication counts once.",
+      "No AnalisisStadione/scaffold/processheading/pagequota filler. No attributed quotation invented.",
+      "Minutes37/80/82/85 verified. Guler around30 and penaltysecondhalf rendered without unsupported precise minute.",
+      "Valverde intervention not inflated into savedgoal statistic, no injury diagnosis or unsupported fullrecovery."
+    ]
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo/cronicas/cronica-real-madrid-sevilla-j9-liga-18-10-2026",
+      "publisher_group": "REAL_MADRID",
+      "primary": true,
+      "published_at": "2026-10-18T21:00:52Z",
+      "retrieved_at": "2026-10-19T00:08:40.290Z",
+      "text_sha256": "a966034c43cf33395a3f713b973c7c2e39cfff41868c5558713aca6a33bc8f92",
+      "reading": "Complete article body read via normal public HTTP200 through TD browserfetch; browser open failed. Did not claim snippet/shell as full text."
+    },
+    {
+      "id": "REUTERS",
+      "url": "https://www.channelnewsasia.com/sport/mbappe-double-helps-real-madrid-sweep-aside-sevilla-ahead-el-clasico-6470441",
+      "publisher_group": "REUTERS",
+      "primary": false,
+      "published_at": "2026-10-18T21:17:27Z",
+      "retrieved_at": "2026-10-19T00:09:04.220Z",
+      "text_sha256": "a1db6841596215ab53f5177119fe085f97a7292d41aedf41a5983892bf5f2ae0",
+      "reading": "Complete article body read via normal public HTTP200 through TD browserfetch; browser open failed. Did not claim snippet/shell as full text."
+    }
+  ],
+  "independence": "RealMadrid club primary report byAlbertoNavarro, Reuters independentagency syndicatedCNA6470441. English andSpanish club versions same publisher; CNA andReuters sameagency. Both entirearticles read normalHTTP200, datesfromJSONLD.",
+  "fact_review": {
+    "verified": [
+      "Madrid4–1Sevilla atBernabeu18Octlocal/19OctWIB, Mbappe2/Guler1/Diomande1/ManuBueno1.",
+      "Guler counterattack/Diomande pass; Mbappe37 Bellinghambackheel, Salas/Vlachodimos dribble.",
+      "Valverde block nearhour; Castrin foulsMbappe, penaltyPanenka confirmsprimary.",
+      "ManuBueno80, Diomande82, Militao85 firstappearance afterApriloperation."
+    ],
+    "caveats": [
+      "No statistical/MOTM/injury/readiness/record or nextmatch claim notneeded forstory.",
+      "English club page labels AItranslation; Spanishoriginal used forfactledger.",
+      "Primary report original timestamp21:00:52Z; CNA Reuters21:17:27Z, both18OctUTC.",
+      "Originalphoto iscelebrationembrace, not depictedasPanenkakick.",
+      "Ownerauthorised editorialreuse withattribution, not invented writtenclubphotographerlicence."
+    ]
+  },
+  "cover": {
+    "variant": "KOLOM",
+    "standard": "STADIONE_COVER_VARIANTS_V1",
+    "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "image_generation": true,
+    "authentic_reference": {
+      "url": "https://assets.realmadrid.com/is/image/realmadrid/ND-LIGA-J09-RM-SEVILLA-ALEGRIA-MBAPPE-DIOMANDE_AV13026?wid=1200&hei=675",
+      "description": "Official report photograph: Mbappe seenfrombacknumber10 huggingDiomande, whosefacevisible. Realpose/kit/arms preserved; no inventedMbappefrontalface orgoalaction.",
+      "bytes": 88923,
+      "sha256": "097901a17bba5b2031a08e9ac3c12aefbc670a4ba6dd6458989ccc36664fa428"
+    },
+    "artwork": {
+      "file": "cover.jpg",
+      "width": 1080,
+      "height": 1350,
+      "bytes": 508252,
+      "sha256": "f9e31d53fe4ceee63950eabe779e84ef9a7a5b9923a4751087f3c321cd1a34cc",
+      "normalization": "Creative editthroughimagegeneration; generatedPNG normalizedto1080x1350JPEGonly."
+    },
+    "manual_review": {
+      "reviewed_at": "2026-10-19T00:19:41.782Z",
+      "reviewer_id": "CODEX_EDITOR",
+      "checks": [
+        "Final generated KOLOM artwork compared with official source: Mbappe back/number10 and Diomande visible face, hairstyle, embrace, hands and kit retained. No invented Mbappe frontal portrait or penalty action.",
+        "All five final JPEGs viewed in contact-a/contact-b; last heading edited to Diomande Mengunci Skor Akhir, digest recalculated and modified final page re-rendered and viewed.",
+        "Headline and exact canonical dek legible; page1/5 consistent with five articleSlides. Source REALMADRID.COM on cover only. No EDISI DIGITAL or promotional footer.",
+        "Initial two artworks had tight margins. Final image-generation edit inset text. OCR source label starts113px from left and ends91px above bottom on1080x1350; readable text leftminimum112px. No headline/athlete collision.",
+        "Body pages cream, font36/margin72; measured red divider gaps36px on both sides. No overflow, missing text, footer or source on body pages.",
+        "Clean1200x675 original hero separately viewed; authentic celebration, no added text or AI. Article fullbody same source text before pagination."
+      ],
+      "note": "Cover font sizes are visually reviewed from bitmap; body type and divider distances are deterministic renderer audits."
+    },
+    "website_hero": {
+      "bytes": 88923,
+      "sha256": "097901a17bba5b2031a08e9ac3c12aefbc670a4ba6dd6458989ccc36664fa428",
+      "original": true,
+      "text_overlay": false
+    },
+    "no_raw_photo_committed": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 627376,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "REALMADRID.COM",
+      "cover_input_sha256": "f9e31d53fe4ceee63950eabe779e84ef9a7a5b9923a4751087f3c321cd1a34cc",
+      "output_sha256": "bd0079b55fabea3e33e876308a2796502d64d912255783c02a27f6c6b6858f1f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 165061,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "1e4d8ad8795ed102f515f0f54420b473a877d2402630db6471437aec4d11712e",
+      "output_sha256": "1f5a58a0aee4df87497ee73ea3957c23ed88fa38b83d6aaeadf169a6a35e50fc",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 131,
+      "body_height": 301,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 372,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 631,
+          "height": 131,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 412,
+          "width": 908,
+          "height": 301,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 198966,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "7322577393e08fa69298ffda4643d50626afb5a7c1b9a347d4089a07c58241b3",
+      "output_sha256": "536c5bc083316d2b8c71d08735923def3591084d42fa28991c3f611d59a6c42a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 842,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 899,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 198534,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "06c8cfaa44b3a34efd3a35adf5fc93f11495c3ba30402a5da32922f723dff40e",
+      "output_sha256": "024dce49c6f5e94e27b1f1e38460fd009596fe480f5a8f1bffd8d8e58c0847b3",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 795,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 931,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 193535,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "a8d2e08f5e5fdaaf30d1e0d6a2fa1db98236070159625da6411d7fe0be5abc9a",
+      "output_sha256": "b725e8bfdf7280c2195a7a19a203664113bf71c9c5c75c7fdb1c344737ecf932",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 866,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 919,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "production_path": "Committedsharedadapter preview→visualinspection→Gitcommit/push→sharedschedule→systemdpublisher",
+  "scope": {
+    "baseline_rows": 118,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "other_existing_rows": 117,
+    "preserved": "Normal08WIBclock,13/20WIB andalladditional/historical/scheduledrows, credentials, renderer/productioncode/services"
+  },
+  "raw_materials": "FullsourceHTML/text, originalphoto, fullpacket andgenerationPNG stay privateVPS. Git only ownarticle, sanitizedmetadata andderivativeQAcontacts."
+}

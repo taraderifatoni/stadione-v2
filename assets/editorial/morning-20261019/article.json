@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Gol Mbappé Bawa Madrid Pesta",
+  "dek": "Real Madrid menaklukkan Sevilla 4–1 di Bernabéu. Mbappé mencetak dua gol, termasuk penalti Panenka, sementara Güler dan Diomande ikut mencatatkan nama di papan skor.",
+  "caption": "DUA GOL MBAPPÉ BAWA MADRID PESTA\n\nKylian Mbappé mencetak dua gol saat Real Madrid mengalahkan Sevilla 4–1 di Bernabéu, Minggu (18/10) waktu setempat atau Senin dini hari WIB. Gol pertamanya lahir setelah umpan tumit Bellingham. Gol berikutnya datang lewat penalti Panenka.\n\nArda Güler membuka skor, Yan Diomande menutup pesta. Manu Bueno mencetak satu gol balasan Sevilla. Eder Militão juga kembali bermain pada menit 85 setelah absen sejak April.\n\nSumber Real Madrid dan Reuters melalui CNA. Foto Real Madrid.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Mbappé Dua Gol di Bernabéu",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT"
+      ],
+      "text": "Kylian Mbappé mencetak dua gol untuk membawa Real Madrid mengalahkan Sevilla 4–1 di Bernabéu, Minggu, 18 Oktober 2026 waktu setempat. Arda Güler dan Yan Diomande turut menyumbang gol dalam kemenangan Madrid, sementara satu balasan Sevilla datang dari Manu Bueno."
+    },
+    {
+      "id": "first",
+      "heading": "Umpan Tumit Bellingham Membuka Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRST"
+      ],
+      "text": "Güler lebih dulu memecah kebuntuan lewat tembakan kaki kiri dari luar kotak penalti, menyelesaikan serangan balik yang diteruskan Diomande. Pada menit 37, giliran Mbappé mencetak gol. Umpan tumit Jude Bellingham disambutnya dengan gerakan berputar, melewati Salas lalu mengecoh kiper Odysseas Vlachodimos sebelum menuntaskan peluang."
+    },
+    {
+      "id": "penalty",
+      "heading": "Panenka Setelah Penyelamatan Valverde",
+      "kind": "FACT",
+      "claim_ids": [
+        "PENALTY"
+      ],
+      "text": "Sevilla sempat mengancam setelah jeda. Sundulan Fede Valverde di dekat garis gawang menggagalkan upaya Félix Correia. Madrid kemudian menjauh lewat penalti setelah Mbappé dijatuhkan Andrés Castrín. Penyerang Prancis itu mengambil sendiri tendangannya dan mencungkil bola dengan gaya Panenka untuk membawa Madrid unggul 3–0."
+    },
+    {
+      "id": "late",
+      "heading": "Diomande Mengunci Skor Akhir",
+      "kind": "FACT",
+      "claim_ids": [
+        "LATE"
+      ],
+      "text": "Manu Bueno memperkecil kedudukan pada menit 80, tetapi Diomande memulihkan keunggulan tiga gol Madrid dua menit kemudian lewat tembakan keras. Malam di Bernabéu juga menandai kembalinya Éder Militão. Bek Brasil itu masuk pada menit 85 dan mendapat sambutan hangat penonton dalam penampilan pertamanya sejak menjalani operasi pada April."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261017-de-zerbi-defensive-leadership-news",
+    "goal-20261013-united-injuries-atletico-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-19T00:18:25.332Z",
+    "article_digest": "a3954d0765fea94af1d94e7afa5cb8ad3d20a3cb2e069813e7aa4a5c5bebffb8"
+  }
+}
