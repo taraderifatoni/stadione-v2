@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-19T00:20:12.807Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "383ebe01-7128-4955-8ecc-10ea3da40a8a",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-19:mon-am",
+    "event_key": "madrid-sevilla-mbappe-panenka-20261018",
+    "scheduled_at": "2026-10-19T01:00:00+00:00",
+    "time_wib": "19 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "02312f43-6e14-4095-bd6f-d08369bb70eb",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-19T01:00:00+00:00",
+    "title": "Dua Gol Mbappé Bawa Madrid Pesta",
+    "canonical_body_identical": true,
+    "digest": "a3954d0765fea94af1d94e7afa5cb8ad3d20a3cb2e069813e7aa4a5c5bebffb8",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 88923,
+      "sha256": "097901a17bba5b2031a08e9ac3c12aefbc670a4ba6dd6458989ccc36664fa428",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 627376,
+      "sha256": "bd0079b55fabea3e33e876308a2796502d64d912255783c02a27f6c6b6858f1f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 165061,
+      "sha256": "1f5a58a0aee4df87497ee73ea3957c23ed88fa38b83d6aaeadf169a6a35e50fc",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 198966,
+      "sha256": "536c5bc083316d2b8c71d08735923def3591084d42fa28991c3f611d59a6c42a",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 198534,
+      "sha256": "024dce49c6f5e94e27b1f1e38460fd009596fe480f5a8f1bffd8d8e58c0847b3",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 193535,
+      "sha256": "b725e8bfdf7280c2195a7a19a203664113bf71c9c5c75c7fdb1c344737ecf932",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 45,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 117,
+  "changed_other_rows": [],
+  "baseline_rows": 118,
+  "current_rows": 119,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "aa4ae89fbffb956d4d78364b8b10381513420798"
+}
