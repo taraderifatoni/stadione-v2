@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-20T05:29:45.981Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "15be808a-c93f-4992-8be9-4d06b143f10d",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-20:mid-noon",
+    "event_key": "fitrah-persik-clean-sheet-20261018",
+    "scheduled_at": "2026-10-20T06:00:00+00:00",
+    "time_wib": "20 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "2a543952-03c0-4d7f-936e-955ea124e851",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-20T06:00:00+00:00",
+    "title": "Fitrah Menjaga Tiga Poin Persib",
+    "canonical_body_identical": true,
+    "digest": "c7bbb5cd62f7f486daef6e05890792c7658705ac7278f4623f72b029a7370157",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 47436,
+      "sha256": "002abe66bf20acce19ca3ef8c7391cb1d3452470e0566e86a38522c4b0b4dec5",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 577762,
+      "sha256": "5178237ada8aad4945e76b500b8694c2704611993be31847eef75a35c8ed6fe2",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 193452,
+      "sha256": "742cc34a498bce6bbcfebd5546edca0b4e8b440b095e8ad53b52a248a8ad13ac",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 190790,
+      "sha256": "99b56b0b0895e332934148e74dfe362873301136f1e77d4cc2701b08c8ab75b5",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 178063,
+      "sha256": "e9272402a1071d2060fb69d19244a3483828e064b9f727ec2693f36146f9256c",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 178378,
+      "sha256": "0f19d759a840b99df199b760963e34e989927816212940bba1922a0e6e01b997",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 50,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 126,
+  "changed_other_rows": [],
+  "baseline_rows": 127,
+  "current_rows": 128,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "e92a57613c2e159ffc948e3ee192104624abbfe8"
+}
