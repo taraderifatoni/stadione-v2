@@ -1,0 +1,381 @@
+{
+  "reviewed_at": "2026-10-20T12:17:03.180Z",
+  "phase": "PREVIEW_REVIEWED_BEFORE_SCHEDULE",
+  "rollback_commit": "581ee3997047d77c98daf9ec92362bbb972b9966",
+  "target": {
+    "id": "04a69cac-ec07-4ff0-a072-d0c8f901aef8",
+    "plan_key": "2026-10-20:mid-pm",
+    "event_key": "fabio-persija-arema-response-20261020-reel",
+    "scheduled_at": "2026-10-20T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-20T11:59:56.592Z",
+    "pool_sha256": "f05e0ed963d3c5f636619966730a5e2b342b7d38560a699ef17854c29674d262",
+    "provider": "SerpAPI getDailySportsPool release via committed cms-audience-pool.cjs/cms-load",
+    "queries": [
+      {
+        "file": "research-indonesia.json",
+        "checked_at": "2026-10-20T11:59:57.363Z",
+        "queries": [
+          "Persija Persib Persebaya Timnas wawancara 20 Oktober 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 0
+      },
+      {
+        "file": "research-persija.json",
+        "checked_at": "2026-10-20T12:00:20.271Z",
+        "queries": [
+          "Persija Fabio Calonego Persita Arema wawancara Oktober 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 0
+      }
+    ],
+    "instagram": "Business Discovery official persija, 30 parents and all children inspected. Three downloadable actualvideos HTTP200; goal and19Octobertraining selected,20Octoberbenchcam not used.",
+    "downloads": [
+      {
+        "id": "18095582783399063",
+        "page_url": "https://www.instagram.com/reel/Den3ziMI8fO/",
+        "published_at": "2026-10-18T04:56:11+0000",
+        "http": 200,
+        "bytes": 16722108,
+        "sha256": "a808bfc6b99e48c18916e4b22fc2b113f025fbb86279d637f12284f5081a5b40",
+        "duration": "63.782358",
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 1276,
+            "height": 718,
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "width": null,
+            "height": null,
+            "codec_name": "aac"
+          }
+        ],
+        "contact_bytes": 94158
+      },
+      {
+        "id": "17893502874432989",
+        "page_url": "https://www.instagram.com/reel/DerbPIyocX0/",
+        "published_at": "2026-10-19T14:03:30+0000",
+        "http": 200,
+        "bytes": 13366919,
+        "sha256": "b169e2885b94ae201af75703a147cabc81ec4bbcd43018e5727a4b1cb9bb1e22",
+        "duration": "62.667800",
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 720,
+            "height": 1280,
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "width": null,
+            "height": null,
+            "codec_name": "aac"
+          }
+        ],
+        "contact_bytes": 203264
+      },
+      {
+        "id": "18128464840632082",
+        "page_url": "https://www.instagram.com/reel/DetJr5ao0Y5/",
+        "published_at": "2026-10-20T06:08:13+0000",
+        "http": 200,
+        "bytes": 10787137,
+        "sha256": "b409dded2bda4337e8515ca3b876fb296adadde5c7278413852197182c3e6370",
+        "duration": "62.760680",
+        "streams": [
+          {
+            "codec_type": "video",
+            "width": 720,
+            "height": 900,
+            "codec_name": "h264"
+          },
+          {
+            "codec_type": "audio",
+            "width": null,
+            "height": null,
+            "codec_name": "aac"
+          }
+        ],
+        "contact_bytes": 239502
+      }
+    ],
+    "fallback": false
+  },
+  "source_reading": [
+    {
+      "id": "CLUB",
+      "url": "https://www.persija.id/media/news/fabio-calonego-tegaskan-persija-akan-kembali-lebih-kuat",
+      "publisher_group": "PERSIJA",
+      "primary": true,
+      "published_at": "2026-10-20",
+      "retrieved_at": "2026-10-20T12:13:58.503Z",
+      "text_sha256": "5ebcfad459379972ed8ff0041cb1ef0cf420d295e1eb09b8bfdafe97b693ce36",
+      "reading": "Full normalpublicHTMLHTTP200 article read. Browser could not accessclubURL; not represented as fullbrowserread. ILeague20October primary fullbrowser lines91–102 separately read."
+    },
+    {
+      "id": "MATCH",
+      "url": "https://www.persija.id/media/news/review-persita-vs-persija-panggilan-untuk-lebih-tangguh-lagi",
+      "publisher_group": "PERSIJA",
+      "primary": true,
+      "published_at": "2026-10-17",
+      "retrieved_at": "2026-10-20T12:13:58.504Z",
+      "text_sha256": "f8a2d6b3650fa568df151b59daed9316c0a1dc101d50d548fd4aca12e28d296a",
+      "reading": "Full normalpublicHTMLHTTP200 article read. Browser could not accessclubURL; not represented as fullbrowserread. ILeague20October primary fullbrowser lines91–102 separately read."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8711868/persita-vs-persija-jakarta-sengit-tuan-rumah-kalahkan-macan-kemayoran-3-2/amp",
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "primary": false,
+      "published_at": "2026-10-17T21:31:00+07:00",
+      "retrieved_at": "2026-10-20T12:13:58.504Z",
+      "text_sha256": "4204d94152e1259f1e29bbbfd5c8ca1cbabd23464d2f8e0c48df743c5178916f",
+      "reading": "Full browser report lines104–128 and normal publicHTTP200 body read. Independent report byNovitasariDewiSalusi,17October21:31WIB."
+    },
+    {
+      "id": "MEDCOM",
+      "url": "https://www.medcom.id/olahraga/liga-indonesia/4ba1v53b-fabio-calonego-tegaskan-persija-bangkit-arema-fc-jadi-ujian-berikutnya",
+      "publisher_group": "MEDCOM",
+      "primary": false,
+      "published_at": "2026-10-20T11:28:00+07:00",
+      "retrieved_at": "2026-10-20T12:13:58.504Z",
+      "text_sha256": "e9f893b6425eb44b99dca405c8ef9a2f1d17c73080dd8e54b5f7e11ab18d4aa0",
+      "reading": "Full browser article lines24–39 read, selected evidence excerpt privately cached; not claimed fullcached. Metadata publication11:28WIB."
+    }
+  ],
+  "additional_primary_browser": {
+    "url": "https://ileague.id/news/detail/fabio-calonego-yakin-persija-bangkit-lebih-kuat",
+    "read": "Fulltextbrowserlines91–102; normalVPSGET403stopped, noalternateextraction. Repeatsclubstatement, notcountedasindependentinterview."
+  },
+  "fact_review": {
+    "verified": [
+      "Persita3–2Persija, Saturday17October2026, BISSerang. Fabioequalizer18 makes1–1 afteropener5.",
+      "Jeremejeffpenalty74 makes2–2; Persitawinnerinaddedtime. Exact90+5 appearsDetik; clubrounds90, soarticleusesaddedtimeonly.",
+      "Club20OctoberFabioresponse attributedasstatementinclubarticle, notnewvideointerview.",
+      "Aremafuturefixture21October19WIBPatriotCandrabhagaBekasi; neitherpreviewnorclipclaimedfinalresult."
+    ],
+    "corrections": [
+      "ILeague/Medcom sayFriday17andFabioinitiallead; incorrectagainstmatchreport/calendar/actual1–1clip. CorrectedSaturday/equalizer.",
+      "Club20/ILeague/Medcomrightfoot conflictsclub17leftfoot. Nofootclaiminarticle/video.",
+      "Luquinhas/ClaudioLucasMorais alternate naming acrosssources; exactgoalscoreraliasnotusedtoclaimnewplayeridentity."
+    ],
+    "independence": "Club andILeague/Medcom use sameFabioquotes; no claimofsecondindependentinterview. Detik independentfullmatchreport supplies actualmatchmechanism/result corroboration."
+  },
+  "article": {
+    "genre": "NEWS",
+    "paragraphs": 5,
+    "words": 199,
+    "digest": "61e86a70bd38b5e2a1a985c23078a2bd454b1ec47454b7e9df7c9e1d4bfe55af",
+    "benchmark_ids": [
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261017-de-zerbi-defensive-leadership-news"
+    ],
+    "lessons_applied": "Carrickreaction: lead attributedresponse thenverifiedresult/goalmechanism, briefquote, concretefixtureending. DeZerbi: separateplayerassessmentfromobservedplay anddonotinventmentalstate/tacticalcause. Fiveparas199words, eachaddsnews/context; noAnalisisStadione, quoteprocessheading orfiller.",
+    "verbatim_quote_words": 11,
+    "whole_article_before_scenes": true
+  },
+  "media": {
+    "sources": [
+      {
+        "id": "GOAL",
+        "page_url": "https://www.instagram.com/reel/Den3ziMI8fO/",
+        "creator": "persija",
+        "published_at": "2026-10-18T04:56:11Z",
+        "transcript": "Transkripvisualsumberasli37–55detik: replaygol1–1Fabio97PersijamerahmelawanPersitabiru; 37–41.5tayanganlebarmemperlihatkanbolaliar/tembakan/gawang;46–51replaydarisisisampingmenampilkansapuanbekdanfinishing;52–54.5selebrasipunggungFABIOCALONEGO97danrekan. Potonganpreprocessdimulaioriginal37sehinggaoriginaltimestamp=media_urltimestamp+37. Wajahbukanbasisidentifikasitunggal; nomor97/nama/kit/sumberresmi/clock17:24danlaporanklub/detikcocok. Audiosumberdimutefisik; bukantranskripucapan.",
+        "scope": "Only original52–54.5,37–41.5,46–51. Actualplay17October, notnew21Octoberfixture. Full1276x718framepreserved inportrait withblurredactualbackground, nofakeaction.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "Pemilik Stadione mengotorisasi penggunaan editorial terbatas beratribusi. Rekaman administrator resmi Persija diperoleh normalHTTP200 melalui BusinessDiscovery API yangdiizinkan. Bukan klaim grantlisensitertulis Persija atau broadcaster; tidak mengunggahulang highlightpenuh. Audio sumber dimatikan fisik."
+      },
+      {
+        "id": "TRAIN",
+        "page_url": "https://www.instagram.com/reel/DerbPIyocX0/",
+        "creator": "persija",
+        "published_at": "2026-10-19T14:03:30Z",
+        "transcript": "Transkripvisualoriginal12–16.5: latihanlari/kelincahanPersija,dengankerucutdanpemainberkitlatihan hitam/merah.45–49.5: latihandenganbolalapanganPersija. Captionowner NextupAremaFC danpersiapanhariini19Oktober. TidakmengidentifikasisetiappemainsebagaiFabioataumengklaimrekamanpertandingan; audioaslidimutefisik, tidakmengklaimASR/audition.",
+        "scope": "12–16.5 dan45–49.5 source19Octoberuntukilustrasipersiapantim, bukanwawancaraFabioatauduelfutureArema. Darkcaptionbandsaddedonly.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "Pemilik Stadione mengotorisasi penggunaan editorial terbatas beratribusi. Rekaman administrator resmi Persija diperoleh normalHTTP200 melalui BusinessDiscovery API yangdiizinkan. Bukan klaim grantlisensitertulis Persija atau broadcaster; tidak mengunggahulang highlightpenuh. Audio sumber dimatikan fisik."
+      }
+    ],
+    "scenes": [
+      {
+        "source_id": "GOAL",
+        "source_start": 15,
+        "source_end": 17.5,
+        "text": "Fabio enggan larut\nPersija bersiap menghadapi Arema",
+        "claim_ids": [
+          "RESPONSE",
+          "NEXT"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 0,
+        "source_end": 4.5,
+        "text": "Persita vs Persija • 17 Oktober\nGol Fabio menyamakan 1–1 pada menit 18",
+        "claim_ids": [
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 9,
+        "source_end": 14,
+        "text": "Dua kali menyamakan skor\nPersija akhirnya kalah 2–3",
+        "claim_ids": [
+          "SEQUENCE",
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "TRAIN",
+        "source_start": 12,
+        "source_end": 16.5,
+        "text": "Latihan Persija • 19 Oktober\nFabio bertekad bangkit usai kekalahan",
+        "claim_ids": [
+          "RESPONSE"
+        ]
+      },
+      {
+        "source_id": "TRAIN",
+        "source_start": 45,
+        "source_end": 49.5,
+        "text": "Berikutnya Persija vs Arema\n21 Oktober • 19.00 WIB • Bekasi",
+        "claim_ids": [
+          "NEXT"
+        ]
+      }
+    ],
+    "processed_files": [
+      {
+        "file": "goal-muted.mp4",
+        "bytes": 12810879,
+        "sha256": "dacfbb6601aaed0262b03c010602c2ee00952e7332fda1dd957976f647861fc7",
+        "duration": "18.000000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "training-muted.mp4",
+        "bytes": 40152376,
+        "sha256": "36ea1f0c208f9bdb6a9134c14e743e883982ad915a8a428981419579710ea7e5",
+        "duration": "52.000000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "hero-frame-clean.jpg",
+        "bytes": 63894,
+        "sha256": "1d0dba6b95ac6ad329a41f7654764943ae6cd5d6e6ce433d45eab3181f16533b",
+        "duration": "0.040000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "mjpeg",
+            "width": 1276,
+            "height": 718
+          }
+        ]
+      }
+    ],
+    "hero": {
+      "original_frame": 53,
+      "player_identification": "BackoforiginalFabioCalonego97duringgoalcelebration, name/number/source/datecorroborated; notclaimingvisiblefrontalface.",
+      "headline_overlay": false,
+      "original_watermarks_preserved": true,
+      "ai": false
+    },
+    "visual_review": {
+      "method": "Nativeimageinspection of sourcecontacts and20frames35–54secsgoalreplay plus final10framescoveringall5cuts andhero. No continuousvideoplayer/inputavailable; nofalseclaimofcontinuousplayback.",
+      "safe_wrapping": true,
+      "portrait_1080x1920": true,
+      "full_broadcastframe_preserved": true,
+      "training_date_label": true,
+      "real_montage": true,
+      "no_ai_or_slideshow": true
+    },
+    "audio": {
+      "source_audio_physically_muted": true,
+      "measured_mean_db": -91,
+      "measured_max_db": -91,
+      "stream": "AAC stereo96kHz",
+      "catalog": {
+        "audio_id": "341425191797100",
+        "title": "You Never Know (Instrumental)",
+        "artist": "Bryan Todd",
+        "audio_volume": 40,
+        "video_volume": 0,
+        "checked_at": "2026-10-20T12:09:08.489Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "review_limit": "CatalogTRENDINGmetadata/instrumentaltype reviewed; audioinput unsupported, noauditionclaimed. CombinedplatformmixnotavailablethroughAPI. No claimgloballyviralorFYPguaranteed.",
+      "facebook": "Silentbasevideo; IGcatalognotdownloadedorassumedcrossplatformlicensed."
+    }
+  },
+  "render": {
+    "file": "1.mp4",
+    "bytes": 11431305,
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 21.077333,
+    "scene_count": 5,
+    "source_count": 2,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "4b8789d4e83e59902c41826190f46fb05da3009c2701972cc4e0703959b0748e"
+  },
+  "scope": {
+    "baseline_rows": 128,
+    "allowed": "TargetSOCIAL plus one pairedARTICLE only",
+    "other_existing_rows": 127,
+    "time_unchanged": "20October20WIB",
+    "no_changes": [
+      "other slots",
+      "additionalposts",
+      "historicalposts",
+      "renderer",
+      "credentials",
+      "productioncode",
+      "services"
+    ]
+  },
+  "deployment": "Commitpushreview -> sharedcommittedadapter schedule -> sharedsystemdpublisher",
+  "private_only": "Rawvideos/HTML/fullsource/articlepacket/APIJSON/signedCDN/audio previews remainprivateVPS. Gitownarticle,sanitizedproof,smallQAcontactderivativesonly."
+}

@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-20T11:59:21.534Z",
+  "rows": 128,
+  "target": {
+    "id": "04a69cac-ec07-4ff0-a072-d0c8f901aef8",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-20T13:00:00+00:00",
+    "plan_key": "2026-10-20:mid-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Kutipan / update",
+    "theme": "Isu aktual atau kutipan langsung; verifikasi sumber primer dan konteks",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media": 51,
+    "duplicates": 0
+  },
+  "cms_duplicates": [],
+  "seeder_needed": false,
+  "already_published_today": [
+    {
+      "id": "17952458445321481",
+      "timestamp": "2026-10-20T06:02:45+0000",
+      "caption_prefix": "FITRAH MENJAGA TIGA POIN PERSIB\n\nFitrah Maulana mencatat tiga penyelamatan saat Persib men"
+    },
+    {
+      "id": "17889984462469035",
+      "timestamp": "2026-10-20T01:02:07+0000",
+      "caption_prefix": "MADUEKE MENYELAMATKAN ARSENAL\n\nNoni Madueke mencetak gol pada menit ke-80 saat Arsenal men"
+    }
+  ]
+}

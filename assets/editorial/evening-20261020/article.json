@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Fabio Enggan Larut dalam Kekalahan",
+  "dek": "Golnya belum cukup membawa Persija pulang dengan poin dari Serang. Fabio Calonego mengarahkan perhatian ke laga kandang melawan Arema.",
+  "caption": "FABIO ENGGAN LARUT DALAM KEKALAHAN\n\nFabio Calonego mencetak gol penyama pada menit ke-18 saat Persija kalah 2–3 dari Persita, Sabtu (17/10/2026). Dalam pernyataan yang dimuat laman klub pada 20 Oktober, ia menegaskan keinginan belajar dari kekalahan itu.\n\nBerikutnya, Persija menjamu Arema FC di Stadion Patriot Candrabhaga, Bekasi, Rabu (21/10), pukul 19.00 WIB.\n\nRekaman gol 17 Oktober dan latihan 19 Oktober berasal dari Persija. Pernyataan pemain bersumber dari artikel klub, bukan ucapan dalam video. Fakta dicocokkan dengan detikSport, ILeague dan Medcom.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Fabio Memilih Bangkit",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESPONSE",
+        "RESULT"
+      ],
+      "text": "Fabio Calonego tidak ingin Persija terlalu lama memikirkan kekalahan 2–3 dari Persita Tangerang. Gelandang asal Brasil itu mengajak timnya belajar dari hasil di Serang sebelum kembali bermain di kandang melawan Arema FC. Sikap tersebut ia sampaikan dalam pernyataan yang dimuat laman resmi Persija pada Selasa, 20 Oktober 2026."
+    },
+    {
+      "id": "goal",
+      "heading": "Gol Menit Ke-18 Belum Cukup",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT"
+      ],
+      "text": "Fabio sempat memberi Persija jalan kembali saat bertanding di Banten International Stadium, Sabtu, 17 Oktober. Ia menyambar bola sapuan bek Persita pada menit ke-18 dan menyamakan kedudukan menjadi 1–1. Gol itu membalas keunggulan tuan rumah yang lebih dulu dicetak Luquinhas pada menit kelima."
+    },
+    {
+      "id": "quote",
+      "heading": "Fabio Menghadapi Kekalahan",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "RESPONSE"
+      ],
+      "quote": {
+        "text": "Aku tidak akan pernah bersembunyi hanya karena sebuah kesalahan atau kekalahan",
+        "source_id": "CLUB"
+      },
+      "text": "“Aku tidak akan pernah bersembunyi hanya karena sebuah kesalahan atau kekalahan,” kata Fabio, dikutip laman resmi Persija. Ia menilai hasil buruk perlu dihadapi dengan evaluasi, sementara perjalanan Persija masih menyisakan banyak pertandingan."
+    },
+    {
+      "id": "equalizers",
+      "heading": "Dua Kali Mengejar, Tetap Pulang Tanpa Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "SEQUENCE",
+        "RESULT"
+      ],
+      "text": "Persija dua kali mengejar ketertinggalan dalam pertandingan tersebut. Setelah gol Fabio, penalti Alexander Jeremejeff pada menit ke-74 membuat skor kembali imbang 2–2. Namun, gol Persita pada masa tambahan waktu akhirnya membuat kedua gol balasan itu tidak menghasilkan poin."
+    },
+    {
+      "id": "fixture",
+      "heading": "Arema Menanti di Bekasi",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT",
+        "RESPONSE"
+      ],
+      "text": "Kesempatan berikutnya datang saat Persija menjamu Arema di Stadion Patriot Candrabhaga, Bekasi, Rabu, 21 Oktober, pukul 19.00 WIB. Fabio ingin timnya kembali lebih kuat. Laga kandang tersebut menjadi kesempatan Persija kembali meraih kemenangan setelah kehilangan poin di Serang."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261017-de-zerbi-defensive-leadership-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-20T12:13:58.504Z",
+    "article_digest": "61e86a70bd38b5e2a1a985c23078a2bd454b1ec47454b7e9df7c9e1d4bfe55af"
+  }
+}
