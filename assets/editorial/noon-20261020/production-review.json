@@ -1,0 +1,353 @@
+{
+  "reviewed_at": "2026-10-20T05:28:33.011Z",
+  "phase": "REVIEWED_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "b6c25feac32748c0d63bb9772e7b9c6ac49033e7",
+  "target": {
+    "id": "15be808a-c93f-4992-8be9-4d06b143f10d",
+    "plan_key": "2026-10-20:mid-noon",
+    "event_key": "fitrah-persik-clean-sheet-20261018",
+    "scheduled_at": "2026-10-20T06:00:00Z",
+    "time_wib": "20 Oktober 2026 13.00 WIB",
+    "format": "CAROUSEL",
+    "pillar": "Sepak Bola Indonesia"
+  },
+  "discovery": {
+    "provider": "SerpAPI getDailySportsPool active release through committed cms-audience-pool.cjs / cms-load.cjs",
+    "pool_fetched_at": "2026-10-20T05:17:27.319Z",
+    "pool_sha256": "b9ba75ec7e45fbf319748f32ed906c760c71acab68f55bbcb86ed9b62caac103",
+    "relevant_trend": "pertandingan persib vs persik kediri",
+    "not_viral_guarantee": true,
+    "selection": "RecentILeague20OctoberandDetik19OctoberFitrahresponse; score18October provides context. PriorPersikMaduracontentdifferentfixture. MorningMaduekeREELalreadyPUBLISHED, notchanged."
+  },
+  "references": {
+    "entries": 16,
+    "latest_read_at": "2026-10-20T00:47:01.156Z",
+    "benchmarks": [
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261020-diaz-finishing-rest-feature"
+    ],
+    "application": "CarrickNEWS: leadactualcontribution, distinguishplayerjudgementfromfacts, placequoteatnewquestion. DiazFEATURE: action/statperiodsverified, recommendationuncertain(menduga), no mentalstateinference. Wholearticlewrittenbeforepagination; NEWSmatchingbenchmarkincluded."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 165,
+    "paragraphs": 4,
+    "digest": "c7bbb5cd62f7f486daef6e05890792c7658705ac7278f4623f72b029a7370157",
+    "pages": 5,
+    "review": [
+      "Result1–0/90minutes/3savesandJulio79verified. ShotstatsPersib2/Persik3readordered, notswapteams.",
+      "PSM1–0frompriorrilisnotusedbecausecontradicted; officialtimelineParkgoalentrynotpromotedtoallowedgoal. No unverifiedMOTM/permanentTejareplacement.",
+      "Mario recommendationpreservedasFitrahopinion, notconfirmedcoachdecision.",
+      "Oneexactshortquote, attributionILeague. NoAnalisisStadione/processofquotingheadings/scaffold/filler; articleandcaptionssamefactledger."
+    ]
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://www.ligaindonesiabaru.com/news/detail/pembuktian-fitrah-maulana-di-bawah-mistar-persib",
+      "primary": true,
+      "publisher_group": "ILEAGUE",
+      "published_at": "2026-10-20",
+      "retrieved_at": "2026-10-20T05:18:37.525Z",
+      "text_sha256": "8ef94595678c75bdf7b75891a293432fefcc448118998e79051d4cecd3b4f59c",
+      "reading": "FullbrowserandpublicHTMLnormalHTTP200; see source-reading-review.json. PrimarynewsdateDAYonly, no inventedpublishhour."
+    },
+    {
+      "id": "MATCH",
+      "url": "https://www.ligaindonesiabaru.com/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-18/PERSIB_BANDUNG/PERSIK_KEDIRI",
+      "primary": true,
+      "publisher_group": "ILEAGUE",
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-10-20T05:18:39.119Z",
+      "text_sha256": "cc24c5f931162fc1f6bb1bdb7445d52b2c34fabc2aa280a3970debd037f226aa",
+      "reading": "FullbrowserandpublicHTMLnormalHTTP200; see source-reading-review.json. PrimarynewsdateDAYonly, no inventedpublishhour."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://www.detik.com/jabar/sepakbola/d-8714179/kepercayaan-pelatih-dibayar-tuntas-oleh-fitrah-maulana",
+      "primary": false,
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "published_at": "2026-10-19T19:15:00+07:00",
+      "retrieved_at": "2026-10-20T05:18:12.609Z",
+      "text_sha256": "278431f6d473cd1ed9689b3f731fd89f06d3eda5712027a3b7c5310bca0c61fb",
+      "reading": "FullbrowserandpublicHTMLnormalHTTP200; see source-reading-review.json. PrimarynewsdateDAYonly, no inventedpublishhour."
+    }
+  ],
+  "independence": "ILeaguenewsandmatchsheetareONEprimarypublishersgroup. DetikJabarBimaBagaskara separatepublisherwithownmatchstatements; sameclubquotesnotclaimedtwoindependentinterviews. ANTARAreadbutnotcountedpacket.",
+  "cover": {
+    "variant": "JUDUL_UTAMA",
+    "standard": "STADIONE_COVER_VARIANTS_V1",
+    "style": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "selection_reason": "least_used_eligible_excluding_recent",
+    "image_generation": true,
+    "authentic_photo_reference": {
+      "url": "https://awsimages.detik.net.id/community/media/visual/2026/09/10/kiper-persib-fitrah-maulana-1789015882154_169.jpeg?w=700&q=90",
+      "bytes": 67763,
+      "sha256": "d13a062bdf9e795616c2ecd30dd70c71de92587fd61ead16428cc6944d54a10f",
+      "identity": "Fitrahcaption, maroonPersibkit, blackundersleeves, raisedwhite/neonglovesreachingball. Archiveberkas10September; no exactcapturedateor18Octoberclaim."
+    },
+    "artwork": {
+      "bytes": 469548,
+      "sha256": "68dc20825934b60b1e351f8013af8734bd3294272cd82689a9b964389843b1b0",
+      "width": 1080,
+      "height": 1350
+    },
+    "visual_review": {
+      "reviewed_at": "2026-10-20T05:28:32.939Z",
+      "method": "Nativeimageinspectionoforiginal700x394photo, generatedcover, andall5finalrenderJPEGs via contact-a/contact-b. Entirecanonicaltextreadacrossallpages.",
+      "cover": {
+        "variant": "JUDUL_UTAMA",
+        "headline": "Fitrah Menjaga Tiga Poin Persib",
+        "all_words_present": true,
+        "deck_exact": true,
+        "visible_counter": "1/5",
+        "source": "SUMBER: LIGAINDONESIABARU.COM",
+        "photo_archive_credit_visible": true,
+        "authentic_subject": "OriginalFitrahphotoidentity/hair/maroonjersey/gloves/raisedhands preserved; backgroundeditorialcollageonly.",
+        "font_review": "Approvedboldcondensedfontcharacter; generatedbitmapfontsizevisualonly,nofalsedeterministicfontclaim. Deckreadable, sourceOCRglyphheight28px supportsreadability.",
+        "normalization": "Generated4:5artwork uniformlyscaled1000x1250 andletterboxed1080x1350 with40pxhorizontal/50pxverticalcreamtechnicalpadding, thenJPEG. No sourceathleteactionorcreativeeditingoutsideimagegeneration.",
+        "ocr_bounds": {
+          "masthead_left": 143,
+          "deck_left": 140,
+          "source_left": 134,
+          "source_top": 1201,
+          "photo_credit_top": 1242,
+          "photo_credit_bottom": 1258,
+          "minimum_bottom_clearance": 92
+        },
+        "no_clipped_text": true,
+        "no_edition_label": true,
+        "no_promotional_footer": true
+      },
+      "article_pages": {
+        "pages": 4,
+        "body_font_size": 36,
+        "horizontal_margin": 72,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "overflow": false,
+        "article_lossless": true
+      },
+      "hero": {
+        "original_clean_photo": true,
+        "no_text_overlay": true,
+        "reencoded_only": true,
+        "archive_documentation": true
+      },
+      "rejected_artworks": "Initialgen hadinsufficientmargins; secondeditomittedPersib fromheadlineandwasrejected. Finaleditreturnedfulltitle, normalizedwithtechnicalpaddingforallsafemargins. Rejectedartworksnotusedpublisher."
+    },
+    "website_hero": {
+      "bytes": 47436,
+      "sha256": "002abe66bf20acce19ca3ef8c7391cb1d3452470e0566e86a38522c4b0b4dec5",
+      "original_without_headline": true,
+      "archive_credit": true
+    },
+    "rights_evidence": "PemilikStadione mengotorisasipenggunaaneditorialfotoaslipublikberatribusi. DokPersibmelaluiDetik, normalHTTP200, bukanindividualUGC. Tidakmengaranggrantlisensitertulisdaripenerbit. URLfotoILeague403dihentikantanparutealternatif; memilihfotoarsipberbedadarisumberlainyangtersedia.",
+    "source_photo403_not_retried": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 577762,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "LIGAINDONESIABARU.COM",
+      "cover_input_sha256": "68dc20825934b60b1e351f8013af8734bd3294272cd82689a9b964389843b1b0",
+      "output_sha256": "5178237ada8aad4945e76b500b8694c2704611993be31847eef75a35c8ed6fe2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 193452,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "d09c7beabd0a726ec8ed76d8ad48ce4783941ffb8ba3ffbdd3239e8518f618ec",
+      "output_sha256": "742cc34a498bce6bbcfebd5546edca0b4e8b440b095e8ad53b52a248a8ad13ac",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 897,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 899,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 190790,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "1f6ca8c1908dceb540fe1ac206ca4b64ddf3129f09b9ead558d5e21d6434ba10",
+      "output_sha256": "99b56b0b0895e332934148e74dfe362873301136f1e77d4cc2701b08c8ab75b5",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 870,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 925,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 178063,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "118bb605530d4d1e679196a51b89e2c629e642408892522af18614055398fccd",
+      "output_sha256": "e9272402a1071d2060fb69d19244a3483828e064b9f727ec2693f36146f9256c",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 346,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 888,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 912,
+          "height": 346,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 178378,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "295acbafdeea8835abdbab44478dde26744362297cf84f64570da9a223ebc02f",
+      "output_sha256": "0f19d759a840b99df199b760963e34e989927816212940bba1922a0e6e01b997",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 729,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 925,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": {
+    "baseline_rows": 127,
+    "allowed": "TargetSOCIAL and one newparentARTICLE only",
+    "other_existing_rows": 126,
+    "preserved": [
+      "original13WIBclock andplan_key",
+      "08/20slots",
+      "additionalposts",
+      "historicalposts",
+      "renderer",
+      "credentials",
+      "productioncode",
+      "services"
+    ]
+  },
+  "deployment": "Committedsharedadapterpreview -> visualcheck -> commitpush -> schedule -> sharedsystemdpublisher",
+  "raw_materials": "FullHTML/text/sourcephoto/APIresponses andgenerationPNGprivateVPS only. Gitownarticle/sanitizedproof/QAcontactderivatives, no signedCDNURLs orrawcopyrightmedia."
+}

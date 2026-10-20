@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-20T05:17:16.219Z",
+  "baseline_rows": 127,
+  "target": {
+    "id": "15be808a-c93f-4992-8be9-4d06b143f10d",
+    "status": "PENDING_REVIEW",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-20:mid-noon",
+    "scheduled_at": "2026-10-20T06:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "engine_state": "BLOCKED",
+    "previous_issues": [
+      "Butuh dua domain penerbit independen dengan teks bukti lengkap; media sosial bukan bukti fakta.",
+      "Identifikasi dua kelompok penerbit independen; salinan sindikasi tidak dihitung.",
+      "Editor perlu audit 5W1H, kronologi, dan kesetiaan naskah.",
+      "Konfirmasikan minimal satu sumber primer.",
+      "Lengkapi pilar, angle, dan alasan aktual.",
+      "Konfirmasikan tanggal dan status kejadian.",
+      "Klaim claim-1: butuh dua sumber termasuk primer.",
+      "Tulis artikel utuh terlebih dahulu; paket carousel wajib memuat article versi 1.",
+      "Slide 1: petakan ke klaim terverifikasi.",
+      "Slide 2: petakan ke klaim terverifikasi.",
+      "Slide 3: petakan ke klaim terverifikasi.",
+      "Slide 4: petakan ke klaim terverifikasi.",
+      "Slide 5: petakan ke klaim terverifikasi.",
+      "Siapkan cover kolase editorial sesuai gaya Stadione; foto mentah bukan cover siap publikasi.",
+      "Feed perlu foto nyata berizin beserta kredit dan scope."
+    ]
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media": 50,
+    "duplicates": 0
+  },
+  "other_cms_duplicates": [],
+  "seeder_needed": false
+}

@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-20T05:22:49.081Z",
+  "reading": [
+    {
+      "url": "https://www.ligaindonesiabaru.com/news/detail/pembuktian-fitrah-maulana-di-bawah-mistar-persib",
+      "method": "Fullbrowser91–97andnormalHTTP200completeinfo-panelbody. Not navigation/loginform.",
+      "independence": "Officialleagueorganiserprimary."
+    },
+    {
+      "url": "https://www.ligaindonesiabaru.com/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-18/PERSIB_BANDUNG/PERSIK_KEDIRI",
+      "method": "OfficialmatchresultfullpublicHTMLHTTP200andbrowser83–99,240–281and333–349; final1–0/goal79/keeper90/SOT2:3 explicitlyread."
+    },
+    {
+      "url": "https://www.detik.com/jabar/sepakbola/d-8714179/kepercayaan-pelatih-dibayar-tuntas-oleh-fitrah-maulana",
+      "method": "Fullbrowser115–144andnormalHTTP200articlebody3545chars, BimaBagaskarabyline19October19:15WIB.",
+      "independence": "SeparateDetikTransmediapublisher, matchdetailsthreesavesand79goal corroboratedofficialstats. Quotesmaydrawsameclubstatements, nottwoindependentinterviews."
+    }
+  ],
+  "excluded": [
+    "PrimaryreleasePSMpriorresult1–0contradictsotherpublishedresult3–1; no priorPSMscore inarticle.",
+    "OfficialtimelineJunheongPark40goalentrydoesnotestablishallowedgoal; finalresult1–0andDetikoffsideaccount, notusedfornewgoalclaim.",
+    "Julioenters78butgoal79; no conflation.",
+    "ANTARAbodyfullread, notusedpacket; no duplicatewirecount."
+  ],
+  "media": {
+    "rejected_url": "https://assets.ileague.id/uploads/images/news/Pembuktian-Fitrah-Maulana-di-Bawah-Mistar-Persib-1792448442.jpg",
+    "rejected_status": 403,
+    "rejected_retry": false,
+    "selected_url": "https://awsimages.detik.net.id/community/media/visual/2026/09/10/kiper-persib-fitrah-maulana-1789015882154_169.jpeg?w=700&q=90",
+    "selected_http": 200,
+    "bytes": 67763,
+    "sha256": "d13a062bdf9e795616c2ecd30dd70c71de92587fd61ead16428cc6944d54a10f",
+    "identity": "CaptionidentifiesFitrahMaulana, DokPersib; maroonkit/blackundersleeves/whiteneongloves reachingball. Archivefilepath10Septembernotproofofexactcapturedate. Notclaimingphotofrom18Octoberfixture."
+  },
+  "article_digest": "c7bbb5cd62f7f486daef6e05890792c7658705ac7278f4623f72b029a7370157"
+}

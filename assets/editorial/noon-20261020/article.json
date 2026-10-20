@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Fitrah Menjaga Tiga Poin Persib",
+  "dek": "Tiga penyelamatan membantu Persib menutup laga melawan Persik tanpa kebobolan. Fitrah Maulana tetap melihat banyak hal yang harus diperbaiki.",
+  "caption": "FITRAH MENJAGA TIGA POIN PERSIB\n\nFitrah Maulana mencatat tiga penyelamatan saat Persib menang 1–0 atas Persik Kediri di Si Jalak Harupat, Minggu (18/10/2026). Ia tampil penuh, sementara gol Julio Cesar pada menit ke-79 menjadi pembeda.\n\nFitrah tetap menilai permainannya perlu diperbaiki. Soal persaingan dengan Teja Paku Alam, ia menyerahkan pilihan kepada pelatih dan menegaskan dukungan untuk siapa pun yang bermain.\n\nSumber ILeague dan detikJabar. Foto arsip Dok. Persib melalui detikJabar; bukan dokumentasi khusus laga 18 Oktober.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Fitrah Menuntaskan Tugas Tanpa Kebobolan",
+      "kind": "FACT",
+      "claim_ids": [
+        "WIN"
+      ],
+      "text": "Fitrah Maulana menjawab kesempatan menjadi starter dengan menjaga gawang Persib tetap bersih. Ia tampil penuh ketika Maung Bandung mengalahkan Persik Kediri 1–0 pada pekan kelima Super League di Stadion Si Jalak Harupat, Kabupaten Bandung, Minggu, 18 Oktober 2026. Kemenangan itu memberi Persib tiga poin."
+    },
+    {
+      "id": "saves",
+      "heading": "Tiga Penyelamatan Menjaga Peluang Menang",
+      "kind": "FACT",
+      "claim_ids": [
+        "SAVE_GOAL",
+        "WIN"
+      ],
+      "text": "Tiga tembakan Persik ke arah gawang tidak menghasilkan gol. Fitrah mematahkan seluruhnya dengan tiga penyelamatan. Di sisi lain, Persib baru mendapatkan gol kemenangan melalui Julio Cesar pada menit ke-79. Keunggulan tipis itu bertahan sampai pertandingan berakhir berkat gawang yang tetap terjaga."
+    },
+    {
+      "id": "improve",
+      "heading": "Fitrah Belum Puas dengan Penampilannya",
+      "kind": "FACT",
+      "claim_ids": [
+        "IMPROVE"
+      ],
+      "text": "Seusai pertandingan, Fitrah berterima kasih atas kepercayaan tim pelatih, terutama kepada Mario Jozic yang sedang menjalani pemulihan. Ia menduga Jozic turut merekomendasikannya untuk bermain. Meski berhasil membantu tim menang, Fitrah menilai masih banyak hal yang perlu dibenahi."
+    },
+    {
+      "id": "support",
+      "heading": "Fitrah dan Teja Saling Mendukung",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "SUPPORT"
+      ],
+      "quote": {
+        "text": "Gimana pun keputusan ada di pelatih, setiap ada yang main, pasti kita dukung",
+        "source_id": "PRIMARY"
+      },
+      "text": "Fitrah juga menegaskan hubungan baiknya dengan Teja Paku Alam. Ia menyerahkan pilihan penjaga gawang kepada pelatih dan siap mendukung siapa pun yang dimainkan. “Gimana pun keputusan ada di pelatih, setiap ada yang main, pasti kita dukung,” kata Fitrah dalam keterangan yang dimuat ILeague."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261020-diaz-finishing-rest-feature"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-20T05:22:02.346Z",
+    "article_digest": "c7bbb5cd62f7f486daef6e05890792c7658705ac7278f4623f72b029a7370157"
+  }
+}
