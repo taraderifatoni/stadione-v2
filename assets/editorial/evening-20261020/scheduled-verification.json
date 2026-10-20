@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-20T12:18:37.655Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "04a69cac-ec07-4ff0-a072-d0c8f901aef8",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-20:mid-pm",
+    "event_key": "fabio-persija-arema-response-20261020-reel",
+    "scheduled_at": "2026-10-20T13:00:00+00:00",
+    "time_wib": "20 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "207e5621-3997-4cdd-973a-23b82efead56",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-20T13:00:00+00:00",
+    "title": "Fabio Enggan Larut dalam Kekalahan",
+    "canonical_body_identical": true,
+    "digest": "61e86a70bd38b5e2a1a985c23078a2bd454b1ec47454b7e9df7c9e1d4bfe55af",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 63894,
+      "sha256": "1d0dba6b95ac6ad329a41f7654764943ae6cd5d6e6ce433d45eab3181f16533b",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 11431305,
+      "sha256": "4b8789d4e83e59902c41826190f46fb05da3009c2701972cc4e0703959b0748e",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 51,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 127,
+  "changed_other_rows": [],
+  "baseline_rows": 128,
+  "current_rows": 129,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "9380b6892e1e5d9318d1128232fdd1c5c8c8cee7"
+}
