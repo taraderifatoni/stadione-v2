@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-20T00:15:04.453Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "7a73f302-21ab-4958-bc6f-752bdbcad8a4",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-20:mid-am",
+    "event_key": "arsenal-madueke-forest-20261018-reel",
+    "scheduled_at": "2026-10-20T01:00:00+00:00",
+    "time_wib": "20 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "9e785cde-7351-4792-aeb8-c9bbe816eebd",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-20T01:00:00+00:00",
+    "title": "Madueke Menyelamatkan Arsenal",
+    "canonical_body_identical": true,
+    "digest": "46a8c49d176a2da895631d8fed5bd1fb1909e734ccb28090ca5d39b4f75858c3",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 51423,
+      "sha256": "9e0377359ecad235d4327fa9832c91eedfaa86378d6d66c88d860d578b471c9d",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 9811367,
+      "sha256": "90dd83554f59b0b51b5db2a9f3327a9d97451ba3e286128caab0332bd0d250c7",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 49,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 125,
+  "changed_other_rows": [],
+  "baseline_rows": 126,
+  "current_rows": 127,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "66a1dae1b741486c76d09526d068f571183d99c4"
+}
