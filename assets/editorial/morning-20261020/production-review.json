@@ -1,0 +1,426 @@
+{
+  "reviewed_at": "2026-10-20T00:13:13.430Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_CMS_SCHEDULE",
+  "rollback_commit": "b11298dedd39a514a10f1939f7c9a7ead0b54c11",
+  "target": {
+    "id": "7a73f302-21ab-4958-bc6f-752bdbcad8a4",
+    "plan_key": "2026-10-20:mid-am",
+    "event_key": "arsenal-madueke-forest-20261018-reel",
+    "scheduled_at": "2026-10-20T01:00:00Z",
+    "format": "REEL",
+    "pillar": "Sepak Bola Eropa"
+  },
+  "discovery": {
+    "pool_provider": "SerpAPI getDailySportsPool from release via committed cms-audience-pool/cms-load",
+    "pool_fetched_at": "2026-10-20T00:03:26.914Z",
+    "pool_sha256": "450e8a35b1bc7ba3c63161af8fa369f8ff0b412bed5c564106c9da6598f384f5",
+    "queries": [
+      {
+        "queries": [
+          "Arsenal Manchester United Liverpool Chelsea highlights 19 October 2026"
+        ],
+        "checked_at": "2026-10-20T00:03:34.076Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 7
+      },
+      {
+        "queries": [
+          "Arsenal Nottingham Forest 19 October 2026 highlights official"
+        ],
+        "checked_at": "2026-10-20T00:03:44.380Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 18
+      }
+    ],
+    "youtube_failures": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=m0G_UKNoSqY",
+        "result": "BOT_SIGN_IN",
+        "log_sha256": "f73ca52a84f9a517a479c98bc0f9daad3c5f7728582ee77657add8766c5ebde1",
+        "not_watched_or_downloaded": true,
+        "no_bypass_or_alternate_route": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=M4l65s09UMA",
+        "result": "BOT_SIGN_IN",
+        "log_sha256": "3eee26b9bb0bd9fe23a48332ef03e8037e7a0c92b2ddc87f6e8303142e3bde9b",
+        "not_watched_or_downloaded": true,
+        "no_bypass_or_alternate_route": true
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=syphyzPytUg",
+        "result": "BOT_SIGN_IN",
+        "log_sha256": "dab885708939871d796ea18dfca4650e5254a96f61cc553dceb1d4a5e41d4997",
+        "not_watched_or_downloaded": true,
+        "no_bypass_or_alternate_route": true
+      }
+    ],
+    "business_discovery": {
+      "account": "arsenal",
+      "parents": 30,
+      "video_children": 3,
+      "all_children_inspected": true,
+      "downloads": [
+        {
+          "id": "18217882312347737",
+          "page_url": "https://www.instagram.com/p/Deq43BRlQhz/",
+          "http": 200,
+          "bytes": 1288073,
+          "sha256": "d93f5ff7dc8efced0d8ed2f0f707e91f0ff75130e36ba0c58007658af27e279f"
+        },
+        {
+          "id": "18076051223465169",
+          "page_url": "https://www.instagram.com/p/Deq43BRlQhz/",
+          "http": 200,
+          "bytes": 2742529,
+          "sha256": "178d5aefcb5481ef4e724ac2007aca3f52b4a689f83675890ca4bd35bcb3fa7f"
+        },
+        {
+          "id": "18139347331622336",
+          "page_url": "https://www.instagram.com/p/Deq43BRlQhz/",
+          "http": 200,
+          "bytes": 5882531,
+          "sha256": "912c03c07899cece26cada80728711418c38245080e27cd27d36dc1b7358a22c"
+        },
+        {
+          "id": "18076774196463662",
+          "page_url": "https://www.instagram.com/reel/DeptLvnxd_g/",
+          "http": 200,
+          "bytes": 5460622,
+          "sha256": "68a49908d54ccc0802c32e7111a14fa11fb83b18951c8b66fcdd7256cbaead58"
+        }
+      ]
+    },
+    "fallback": false
+  },
+  "sources": [
+    {
+      "id": "PL",
+      "url": "https://www.premierleague.com/en/news/4737530",
+      "publisher_group": "PREMIER_LEAGUE",
+      "primary": true,
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-10-20T00:11:42.504Z",
+      "text_sha256": "97d0bb042acd5f337eeee1f14682b83eca55e2acb2b8be8aa702f8404df1d2c3",
+      "reading": "Full browser article lines27–94 plus normalHTTP200 body6312chars. Open corrected visibledate18October; search snippet16October was stale, not used."
+    },
+    {
+      "id": "SKY",
+      "url": "https://www.skysports.com/football/nottingham-forest-vs-arsenal/report/559512",
+      "publisher_group": "SKY_SPORTS",
+      "primary": false,
+      "published_at": "2026-10-19T11:44:00+01:00",
+      "retrieved_at": "2026-10-20T00:11:42.505Z",
+      "text_sha256": "d63264df3f06bd413359118d2e987d203e123a7ea328c4fb67e2dcf004222133",
+      "reading": "Full browser report/analysis/reactions lines27–152 plus normalHTTP200 body. IndependentSkyreporterWilliamBitibiri."
+    },
+    {
+      "id": "ARSE",
+      "url": "https://arseblog.news/2026/10/report-nottingham-forest-0-1-arsenal-inc-goal/",
+      "publisher_group": "ARSEBLOG",
+      "primary": false,
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-10-20T00:11:42.505Z",
+      "text_sha256": "ba4369404eab70fa6f091dc2132d8ae791476f0ab0be8388f3937db542453082",
+      "reading": "Full browser article lines126–164 read. NormalVPSfetch403 stopped, no alternate extraction. Packet stores selected verbatim evidence excerpt, not a claim of complete cached article."
+    }
+  ],
+  "rejected_source": {
+    "url": "https://www.nottinghamforest.co.uk/news/2026/october/18/arsenal-report/",
+    "reason": "PublicHTTP200andbrowser contained clientrenderedshellonly; not counted fullread or source."
+  },
+  "facts": {
+    "verified": [
+      "Sunday18October2026, CityGround, NottinghamForest0–1Arsenal, Madueke80 after enteringsecondhalf.",
+      "Shotdeflected; exactlyoneArsenalshotontarget, not a cleanstraightshot claimed.",
+      "Arsenal18points, second, threebehindCityafterweekend.",
+      "Thirdconsecutiveleaguewin decidedbya substitute; priorBrunoSunderland/Leeds supportedPLandArseblog."
+    ],
+    "not_claimed": [
+      "No today/nightclaim for18Octoberfixture in20Octoberpost.",
+      "No falsequotes or unverifiedshotxG/keeperidentity/golminute inrawfootageclock. Video has no matchclock; timingverifiedwithprimarytexts.",
+      "No mockAIfootball, alteredfaces or fabricatedplay. InterviewisillustrativepostmatchArteta, not a quote aboutMadueke whennativecaptiondiscusseslate defending."
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 178,
+    "digest": "46a8c49d176a2da895631d8fed5bd1fb1909e734ccb28090ca5d39b4f75858c3",
+    "benchmark_ids": [
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261015-roma-madrid-comeback-match-news"
+    ],
+    "application": "Leadmatchwinnerthenmechanism, benchcontributionsandtablestakes; eachparagraphaddsverifiedfact. No scaffold, AnalisisStadione or filler; no inventedquotes. ArticlewrittenwholebeforeReelcaptions.",
+    "sources_independent": "PremierLeaguegoverningcompetitionprimary, Skyoriginalreportindependentpublisher, Arseblogownmatchreport. No syndicatedcopy claimed as secondindependentinterview."
+  },
+  "media": {
+    "files": [
+      {
+        "file": "source-18076774196463662.mp4",
+        "bytes": 5460622,
+        "sha256": "68a49908d54ccc0802c32e7111a14fa11fb83b18951c8b66fcdd7256cbaead58",
+        "duration": "26.723311",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "source-18217882312347737.mp4",
+        "bytes": 1288073,
+        "sha256": "d93f5ff7dc8efced0d8ed2f0f707e91f0ff75130e36ba0c58007658af27e279f",
+        "duration": "21.545375",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 720
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "source-18076051223465169.mp4",
+        "bytes": 2742529,
+        "sha256": "178d5aefcb5481ef4e724ac2007aca3f52b4a689f83675890ca4bd35bcb3fa7f",
+        "duration": "29.673375",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 720
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "source-18139347331622336.mp4",
+        "bytes": 5882531,
+        "sha256": "912c03c07899cece26cada80728711418c38245080e27cd27d36dc1b7358a22c",
+        "duration": "17.272789",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 720
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "goal-muted.mp4",
+        "bytes": 7512743,
+        "sha256": "5c218df891277ee390bd75fc4bb10904f82041357a604b7b977c83ecd7630915",
+        "duration": "26.640000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "arteta-muted.mp4",
+        "bytes": 1821972,
+        "sha256": "a5fbb11075b87d34dd47d4dbe053375f252717411b80e193e336995d8021fda8",
+        "duration": "21.441000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "hero-frame-clean.jpg",
+        "bytes": 51423,
+        "sha256": "9e0377359ecad235d4327fa9832c91eedfaa86378d6d66c88d860d578b471c9d",
+        "duration": "0.040000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "mjpeg",
+            "width": 720,
+            "height": 500
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "GOAL",
+        "page_url": "https://www.instagram.com/reel/DeptLvnxd_g/",
+        "creator": "arsenal",
+        "published_at": "2026-10-18T22:00:07Z",
+        "scope": "Hanya3.0–5.0,11.4–17.3,5.0–9.0,19.5–23.5. Bandkontrasgelapditambahkanpadabatasatas/bawahuntukketerbacaan, bukansyntheticfootage. Sumberasli asli26.72detik. Penataanulangreplaysebelumselebrasi dengancaptionpenjelas. Wajah/nomor/kit dantanggalAPIcocok. Sourcebukanmomenbaruataufoto.",
+        "visual_transcript": "AuthenticMadueke20yellow/navykit, goalreplay11–17s, celebration3–9and19–24s withteam. Face,number,stadium andsameeventdate corroborated.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "Pemilik Stadione mengotorisasi pengemasan editorial terbatas footage nyata dengan atribusi. Publikasi administrator resmi Arsenal diunduh normalHTTP200 melalui media_urlAPIyangdiizinkan. Tidak mengklaim grant lisensi tertulis Arsenal/PremierLeague; bukan unggahulanghighlightpenuh. Audio sumber dimatikan fisik, tidakdidistribusikan."
+      },
+      {
+        "id": "ARTETA",
+        "page_url": "https://www.instagram.com/p/Deq43BRlQhz/",
+        "creator": "arsenal",
+        "published_at": "2026-10-19T09:01:33Z",
+        "scope": "4.5detik interview3.0–7.5, letterboxpreservingactualface/Englishcaption; captionStadionemerangkumfaktabangkucadangan bukan menerjemahkankutipanyangtidaksama.",
+        "visual_transcript": "Artetaface in officialpostmatchinterview, nativeEnglishsubtitles aboutlatechaoticmoments. Used as coachillustration, never falselytranslated tobenchclaim.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "Pemilik Stadione mengotorisasi pengemasan editorial terbatas footage nyata dengan atribusi. Publikasi administrator resmi Arsenal diunduh normalHTTP200 melalui media_urlAPIyangdiizinkan. Tidak mengklaim grant lisensi tertulis Arsenal/PremierLeague; bukan unggahulanghighlightpenuh. Audio sumber dimatikan fisik, tidakdidistribusikan."
+      }
+    ],
+    "scenes": [
+      {
+        "source_id": "GOAL",
+        "source_start": 3,
+        "source_end": 5,
+        "text": "Noni Madueke\nPenentu kemenangan Arsenal",
+        "claim_ids": [
+          "WIN"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 11.4,
+        "source_end": 17.3,
+        "text": "Masuk dari bangku cadangan\nGol penentu pada menit ke-80",
+        "claim_ids": [
+          "WIN",
+          "GOAL"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 5,
+        "source_end": 9,
+        "text": "Satu tembakan tepat sasaran\nNottingham Forest 0–1 Arsenal",
+        "claim_ids": [
+          "GOAL",
+          "WIN"
+        ]
+      },
+      {
+        "source_id": "ARTETA",
+        "source_start": 3,
+        "source_end": 7.5,
+        "text": "Tiga kemenangan liga beruntun\nditentukan pemain pengganti",
+        "claim_ids": [
+          "BENCH"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 19.5,
+        "source_end": 23.5,
+        "text": "Arsenal 18 poin\nTiga poin di belakang Manchester City",
+        "claim_ids": [
+          "TABLE"
+        ]
+      }
+    ],
+    "website_hero": {
+      "source_frame_seconds": 4.6,
+      "crop": "720x500 fromoriginal720x1280,x0/y760, nooverlay, nopixelgeneration",
+      "bytes": 51423,
+      "sha256": "9e0377359ecad235d4327fa9832c91eedfaa86378d6d66c88d860d578b471c9d",
+      "authentic_subject": true,
+      "headline_overlay": false
+    },
+    "thumbnail_limit": "Sharedrenderer/publisherdoesnotguaranteecustomIGthumbnail; firstmovingframe selectedrealMadueke. Cleanarticlehero isseparate.",
+    "visual_review": {
+      "method": "Framecontactsonall5scenesplusraw1-second/2-secondsourcecontacts andcleanheroviewedinnativeimagetool. No continuousvideoplayeravailable, nofalseclaimofplayback.",
+      "file": "render-contact-approved.jpg",
+      "headline_safe": true,
+      "caption_safe": true,
+      "contrast": "Darktranslucentupper/lowerbands preprocessedfootage; nosharedrendererchange. NativeinterviewEnglishsubtitle retained, notfalseIndonesianquote.",
+      "portrait_identity": true,
+      "real_moving_sources": true,
+      "no_slideshow_or_ai_video": true
+    },
+    "audio": {
+      "source_audio_physically_muted": true,
+      "base_video_silent": true,
+      "measurement": "Final preview mean_volume=-91.0dB and max_volume=-91.0dB measured viaffmpegvolumedetect; physicalsilence, not audition.",
+      "catalog": {
+        "audio_id": "806476269035757",
+        "title": "On Fire (Instrumental)",
+        "artist": "Giulio Cercato",
+        "audio_volume": 45,
+        "video_volume": 0,
+        "checked_at": "2026-10-20T00:06:44.719Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "selection_review": "API TRENDING category and instrumentalmetadata reviewed. No universalTikTokviralityclaim. Source audioinputnotavailable to model; nativeaudio()cannotacceptit, noauditionclaimed. Instagramplatformappliestrack; finalmixedpreviewunavailablethroughAPI. Catalogpreviewnotdownloadedorcrossplatformembedded.",
+      "facebook": "Silentbasevideo, InstagramcatalogmusicnotrepresentedlicensedforFB."
+    }
+  },
+  "render": {
+    "file": "1.mp4",
+    "bytes": 9811367,
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.550667,
+    "scene_count": 5,
+    "source_count": 2,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "90dd83554f59b0b51b5db2a9f3327a9d97451ba3e286128caab0332bd0d250c7"
+  },
+  "scope": {
+    "baseline_rows": 126,
+    "allowed_changes": "TargetSOCIAL and one newpairedARTICLE only",
+    "other_existing_rows": 125,
+    "clock_unchanged": "20October08:00WIB",
+    "no_changes": [
+      "other slots",
+      "additionalposts",
+      "historicalposts",
+      "renderer",
+      "credentials",
+      "productioncode",
+      "services"
+    ]
+  },
+  "deployment": "Committedsharedadapterpreview -> manualvisualreview -> commitpush -> sharedschedule -> sharedsystemdpublisher",
+  "raw_materials": "Rawsourcevideo/HTML/fulltexts/APIJSON/signedCDN/previewaudio remainprivateVPS. Gitonlyownarticle,sanitizedmetadata andsmallQAcontactderivative."
+}

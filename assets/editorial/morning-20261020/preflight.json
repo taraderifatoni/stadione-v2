@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-20T00:03:16.764Z",
+  "rows": 126,
+  "target": {
+    "id": "7a73f302-21ab-4958-bc6f-752bdbcad8a4",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-20T01:00:00+00:00",
+    "plan_key": "2026-10-20:mid-am",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Update / nostalgia",
+    "theme": "Hasil kompetisi jika ada; jika tidak, momen bersejarah yang dapat diverifikasi",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "instagram": {
+    "account": "stadione.id",
+    "media": 49,
+    "duplicates": 0
+  },
+  "cms_duplicates": [],
+  "seeder_needed": false
+}

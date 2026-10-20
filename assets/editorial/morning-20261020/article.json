@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Madueke Menyelamatkan Arsenal",
+  "dek": "Masuk dari bangku cadangan, Noni Madueke memecah kebuntuan di markas Nottingham Forest. Satu tembakan tepat sasaran cukup untuk membawa pulang tiga poin.",
+  "caption": "MADUEKE MENYELAMATKAN ARSENAL\n\nNoni Madueke mencetak gol pada menit ke-80 saat Arsenal menang 1–0 di kandang Nottingham Forest, Minggu (18/10/2026). Ia masuk pada babak kedua dan menghasilkan satu-satunya tembakan tepat sasaran Arsenal.\n\nTiga kemenangan liga beruntun kini ditentukan pemain pengganti. Setelah Bruno Guimaraes melawan Sunderland dan Leeds, giliran Madueke memecah kebuntuan.\n\nArsenal mengoleksi 18 poin, terpaut tiga poin dari Manchester City selepas laga ini.\n\nFootage asli Arsenal. Fakta diperiksa melalui Premier League, Sky Sports dan Arseblog.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Madueke Memecah Kebuntuan Menit Ke-80",
+      "kind": "FACT",
+      "claim_ids": [
+        "WIN"
+      ],
+      "text": "Noni Madueke membawa Arsenal keluar dari kebuntuan di City Ground. Pemain pengganti itu mencetak gol pada menit ke-80 untuk memastikan kemenangan 1–0 atas Nottingham Forest dalam lanjutan Liga Inggris, Minggu, 18 Oktober 2026. Ia masuk pada awal babak kedua setelah Arsenal gagal mencetak gol sebelum jeda."
+    },
+    {
+      "id": "shot",
+      "heading": "Satu Tembakan Tepat Sasaran Jadi Pembeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOAL"
+      ],
+      "text": "Madueke bergerak dari sisi kiri, memotong ke dalam, lalu melepaskan tembakan. Bola berbelok arah setelah mengenai bek Forest dan masuk ke gawang. Itulah satu-satunya tembakan tepat sasaran Arsenal sepanjang pertandingan. Penguasaan bola belum memberi mereka gol sampai aksi pemain sayap tersebut memecah pertahanan tuan rumah."
+    },
+    {
+      "id": "bench",
+      "heading": "Bangku Cadangan Kembali Menentukan",
+      "kind": "FACT",
+      "claim_ids": [
+        "BENCH"
+      ],
+      "text": "Kontribusi Madueke melanjutkan peran para pemain pengganti dalam tiga kemenangan liga beruntun Arsenal. Sebelumnya, Bruno Guimaraes membuka jalan saat menghadapi Sunderland dan mencetak gol kemenangan atas Leeds. Kali ini, pergantian pemain kembali memberi Mikel Arteta penyelesaian yang belum ditemukan timnya sejak awal laga."
+    },
+    {
+      "id": "table",
+      "heading": "Jarak dengan City Tetap Tiga Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "TABLE",
+        "WIN"
+      ],
+      "text": "Tiga poin dari Nottingham membawa Arsenal mengoleksi 18 poin. Selepas rangkaian pertandingan akhir pekan tersebut, mereka tetap berada di posisi kedua, tiga poin di belakang Manchester City. Gol Madueke menjaga jarak itu sekaligus memastikan Arsenal tidak pulang dari City Ground dengan hasil tanpa gol."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261015-roma-madrid-comeback-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-20T00:11:42.505Z",
+    "article_digest": "46a8c49d176a2da895631d8fed5bd1fb1909e734ccb28090ca5d39b4f75858c3"
+  }
+}
