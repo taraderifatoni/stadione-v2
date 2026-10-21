@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Celah Persebaya Jelang Lawan PSM",
+  "dek": "Hasil imbang melawan PSS membuka persoalan pelanggaran dan jarak antarlini. Tavares juga ingin aliran bola lebih cepat.",
+  "caption": "DUA CELAH PERSEBAYA JELANG LAWAN PSM\n\nBernardo Tavares menyoroti pelanggaran dan ruang antarlini setelah Persebaya ditahan PSS 2–2 di Gelora Bung Tomo, Minggu (18/10/2026). Gol Melvyn Lorenzen dan Hiromu Tanaka dua kali membuat tuan rumah tertinggal.\n\nPersebaya melepaskan 23 tembakan, sembilan tepat sasaran. Dua gol Miguel Pereira menyelamatkan satu poin. Jelang bertandang ke PSM di Parepare, Kamis (22/10), Tavares ingin perpindahan sisi permainan lebih cepat dan penggunaan umpan bawah saat ruang tersedia.\n\nSumber ILeague, Persebaya, detikSport dan Okezone. Foto asli Catur Pamungkas dalam duel melawan PSS, Persebaya.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Pelanggaran dan Ruang Antarlini Jadi Sorotan",
+      "kind": "FACT",
+      "claim_ids": [
+        "GAPS",
+        "RESULT",
+        "NEXT"
+      ],
+      "text": "Bernardo Tavares membawa dua persoalan pertahanan ke persiapan Persebaya menghadapi PSM Makassar. Pelatih asal Portugal itu menyoroti pelanggaran dan jarak antarlini setelah timnya ditahan PSS Sleman 2–2. Evaluasi tersebut dimuat ILeague pada Selasa, 20 Oktober 2026, dua hari sebelum lawatan ke Parepare."
+    },
+    {
+      "id": "goals",
+      "heading": "Dua Gol PSS Berawal dari Situasi Berbeda",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "GAPS",
+        "RESULT"
+      ],
+      "quote": {
+        "text": "kami membiarkan terlalu banyak ruang di antara lini",
+        "source_id": "PRIMARY"
+      },
+      "text": "Melvyn Lorenzen membuka skor lewat tendangan bebas pada menit kesembilan di Stadion Gelora Bung Tomo, Minggu, 18 Oktober. Hiromu Tanaka kemudian mencetak gol lewat tembakan mendatar dari luar kotak penalti pada menit ke-61. Mengenai gol kedua, Tavares menilai “kami membiarkan terlalu banyak ruang di antara lini”, sehingga lawan leluasa menembak."
+    },
+    {
+      "id": "shots",
+      "heading": "23 Tembakan Baru Menghasilkan Satu Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHANCES",
+        "RESULT"
+      ],
+      "text": "Persebaya mencatat 23 tembakan, sembilan di antaranya tepat sasaran, tetapi tetap harus dua kali mengejar ketertinggalan. Miguel Pereira mencetak kedua gol balasan melalui sundulan, masing-masing pada menit ke-36 dan masa tambahan waktu. Gol terakhirnya menyelamatkan satu poin, sementara banyaknya upaya menyerang belum cukup untuk membawa kemenangan."
+    },
+    {
+      "id": "next",
+      "heading": "Tavares Ingin Bola Berpindah Lebih Cepat",
+      "kind": "FACT",
+      "claim_ids": [
+        "ATTACK",
+        "NEXT"
+      ],
+      "text": "Perbaikan yang diinginkan Tavares juga menyangkut cara menyerang. Ia meminta perpindahan sisi permainan dilakukan lebih cepat dan melihat peluang memakai umpan bawah ketika ruang tersedia. Persebaya berikutnya bertandang ke Stadion Gelora B.J. Habibie, Parepare, untuk menghadapi PSM pada Kamis, 22 Oktober."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261017-de-zerbi-defensive-leadership-news",
+    "goal-20261021-foden-hattrick-city-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-21T05:05:14.383Z",
+    "article_digest": "14c3d247eb74e0501cb8cc27c32cf4019b5d98254619c35affa8122f71353b5a"
+  }
+}

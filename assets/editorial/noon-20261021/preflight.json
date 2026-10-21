@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-21T04:56:19.473Z",
+  "baseline_rows": 132,
+  "target": {
+    "id": "45f4b272-8920-4b71-8672-ba98ff2a3898",
+    "status": "DRAFT",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-10-21T06:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-21:mid-noon",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Update / analisis",
+    "theme": "Liga Indonesia, rumor dengan label jelas, atau bedah taktik berbasis data"
+  },
+  "attempts": 0,
+  "cms_duplicates": [],
+  "instagram": {
+    "username": "stadione.id",
+    "media_count": 52,
+    "duplicate_matches": 0
+  },
+  "seeder_needed": false,
+  "previous_evening": {
+    "media_id": "18115510526031635",
+    "published_at": "2026-10-20T13:01:15Z",
+    "title": "Fabio Enggan Larut dalam Kekalahan",
+    "untouched": true
+  }
+}

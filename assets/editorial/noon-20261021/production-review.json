@@ -1,0 +1,395 @@
+{
+  "reviewed_at": "2026-10-21T05:12:05.422Z",
+  "phase": "PREVIEW_REVIEWED_BEFORE_SCHEDULE",
+  "rollback_commit": "639179bf3e7e377fcb22774f008fadb69413a4bf",
+  "target": {
+    "id": "45f4b272-8920-4b71-8672-ba98ff2a3898",
+    "plan_key": "2026-10-21:mid-noon",
+    "event_key": "persebaya-two-gaps-psm-20261022",
+    "scheduled_at": "2026-10-21T06:00:00Z",
+    "format": "CAROUSEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI getDailySportsPool release through committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-21T04:56:37.307Z",
+    "pool_sha256": "994c64761e4d89c68974721b885ae47083ccd0b2625e8627becd87e68986d4d2",
+    "sources": {
+      "google_trends_trending_now": {
+        "cached": true,
+        "discovered": 12,
+        "eligible": 0
+      },
+      "google_news": {
+        "cached": true,
+        "discovered": 15,
+        "eligible": 0
+      },
+      "bing_videos": {
+        "cached": true,
+        "discovered": 20,
+        "eligible": 0
+      }
+    },
+    "selection": "No audience-eligible stories in filtered daily pool. Supplemental directed browsing found current20October primary evaluation and independently reported18October match. Selected by priorityclub,pillar,verifiedrecency, not falsely described as SerpAPItrend.",
+    "fallback": false
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://www.ileague.id/news/detail/evaluasi-persebaya-jelang-laga-lawan-psm--bernardo-tavares-soroti-2-kesalahan",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-20",
+      "retrieved_at": "2026-10-21T04:58:37.885Z",
+      "text_sha256": "52599a53c9dd5a062c09fc659857d334ccd0efef0dbdfdc85746e50f0765b289",
+      "reading": "FullbrowserandnormalpublicHTMLHTTP200 textread. SourcebodyandHTMLprivateVPS."
+    },
+    {
+      "id": "CLUB",
+      "url": "https://www.persebaya.id/index.php/r/4190/persebaya-ditahan-pss-coach-tavares-pemain-sudah-berusaha-maksimal",
+      "publisher_group": "PERSEBAYA",
+      "primary": true,
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-10-21T04:58:38.569Z",
+      "text_sha256": "11b3752926f6c5b9bdf6f4248dbeea7465455387833dc5c51710fc0867e4a547",
+      "reading": "FullbrowserandnormalpublicHTMLHTTP200 textread. SourcebodyandHTMLprivateVPS."
+    },
+    {
+      "id": "STATS",
+      "url": "https://www.ligaindonesiabaru.com/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-18/PERSEBAYA_SURABAYA/PSS_SLEMAN_",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-18",
+      "retrieved_at": "2026-10-21T04:59:18.558Z",
+      "text_sha256": "bfb4e296402156d630ad661a7650feefd886016c39aee2543af3af65ba7a4556",
+      "reading": "FullbrowserandnormalpublicHTMLHTTP200 textread. SourcebodyandHTMLprivateVPS."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8712738/hasil-super-league-persebaya-vs-pss-tuntas-2-2",
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "primary": false,
+      "published_at": "2026-10-18T17:31:00+07:00",
+      "retrieved_at": "2026-10-21T04:58:40.965Z",
+      "text_sha256": "d08b2102a8afdbaec3f93abeff1e584af589a19cd45e00abd49c4fe628b53ad8",
+      "reading": "FullbrowserandnormalpublicHTMLHTTP200 textread. SourcebodyandHTMLprivateVPS."
+    },
+    {
+      "id": "OKE",
+      "url": "https://bola.okezone.com/read/2026/10/20/49/3249095/benahi-sektor-pertahanan-bernardo-tavares-soroti-dua-celah-fatal-persebaya-surabaya-jelang-lawan-psm-makassar",
+      "publisher_group": "MNC",
+      "primary": false,
+      "published_at": "2026-10-20T18:40:00+07:00",
+      "retrieved_at": "2026-10-21T05:05:14.381Z",
+      "text_sha256": "aa899de7fca4aee9525ca2004db8b094ef0f28efc49a9f5447ba875c130c3eac",
+      "reading": "Fullbrowserbothpagesread, includingpage2; selectedevidencecachedprivately, notfullcachedclaim. QuotesattributedtoILeague, notsecondindependentinterview."
+    }
+  ],
+  "source_independence": "ILeague governingcompetition primary; clubPersebaya primary; DetikoriginalmatchreportbyPutraRusdiKindependent. OkezonequotesILeague, countedasadditionalpublisherbutnotindependentlyconductedinterview.",
+  "facts": {
+    "verified": [
+      "Persebaya2–2PSS18October2026, Sunday, GBT Surabaya. Lorenzenfree-kick9, Tanakalowlongshot61. Miguel2headers36andaddedtime.",
+      "ILeague20OctoberTavaresassessment identifiesfoul andexcessinterlinespace. Attributedto coach, notclaimofindependentvideotacticalanalysis.",
+      "OfficialstatsPersebayaleft/PSSright:23:4shots,9:3ontarget; clubcorroboratesPersebaya23/9.",
+      "NextPSMfixtureThursday22OctoberGeloraBJHabibieParepare, PREVIEW, no unverifiedkickofftime.",
+      "Coachwantsswitchesfasterandgroundpasseswhenspaceexists; notclaimchangealreadyworks."
+    ],
+    "excluded": [
+      "Tavares two-shots phrasing notused as factualPSSshotcount, official4total/3ontarget.",
+      "Standings6/7andPSSpoints4/5varyacrosssources, excluded.",
+      "Duplicategoalfeed/rounded90/91/92notadditionalgoals; addedtimeonlyinpublictext.",
+      "No matchresultprediction or fabricatedquotes."
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 179,
+    "paragraphs": 4,
+    "pages": 5,
+    "digest": "14c3d247eb74e0501cb8cc27c32cf4019b5d98254619c35affa8122f71353b5a",
+    "benchmark_ids": [
+      "goal-20261017-de-zerbi-defensive-leadership-news",
+      "goal-20261021-foden-hattrick-city-match-news"
+    ],
+    "verbatim_quote_words": 8,
+    "whole_article_before_pagination": true,
+    "lessons_applied": "DeZerbi: attributedcoachassessmentexplainedwithactualgoalmechanisms; FodennewNEWSreference: changesofstateandeventmechanismratherthanlistofminutes. Leadcurrentevaluation, goalactions, stats+brace, concreteupcomingfixture. Removedgenericclosingrecapbeforefinaldigest. NoAnalisisStadione/scaffold/quoteprocessheading/filler."
+  },
+  "image": {
+    "source_url": "https://www.persebaya.id/thumbs/extra-large/uploads/post/2026/10/18/WhatsApp%20Image%202026-10-18%20at%2016.14.56.jpg",
+    "source_article": "https://www.persebaya.id/r/4187/gol-telat-miguel-pereira-selamatkan-persebaya-dari-kekalahan-laga-berakhir-2-2",
+    "subject": "Clubcaption identifiesCaturPamungkasduelingPSS. Green2andwhite7 inoriginal; notlabelingCaturasMiguel/Tavares.",
+    "source_http": 200,
+    "source_bytes": 197131,
+    "source_sha256": "0b71076c332dfc10b4d41b83ff8bc82af8ce273bf3b317787b1d5d9f8b511096",
+    "hero": {
+      "bytes": 166646,
+      "sha256": "db249e29479f8cb609f29f8e0decdb7c6ff752ea7d44ea65fd3f5520a1b4d416",
+      "clean_original": true,
+      "headline": false,
+      "ai": false
+    },
+    "cover": {
+      "variant": "KOLOM",
+      "standard": "STADIONE_COVER_VARIANTS_V1",
+      "headline": "Dua Celah Persebaya Jelang Lawan PSM",
+      "deck": "Hasil imbang melawan PSS membuka persoalan pelanggaran dan jarak antarlini. Tavares juga ingin aliran bola lebih cepat.",
+      "source_label": "ILEAGUE.ID",
+      "visible_counter": "1/5",
+      "authentic_identity_pose_kit": true,
+      "generated_background_only": true,
+      "source_credit_visible": "FOTO: PERSEBAYA",
+      "bytes": 581881,
+      "sha256": "a78f1e4325487348ef2b53300ae5c408e48c9977c40117fd14d0bdbd6e8fc7bf",
+      "normalization": "Imagegenportrait1122x1402uniformlyscaled1000x1249, padded1080x1350cream40pxhorizontal/50pxvertical. Technicalexportonly, nopixelathleteeditingoutsideimagegeneration.",
+      "ocr": {
+        "deck_left": 76,
+        "deck_first_top": 912,
+        "deck_last_bottom": 1157,
+        "source_left": 76,
+        "source_top": 1233,
+        "source_glyph_height": 19,
+        "credit_bottom": 1249,
+        "bottom_clearance": 101
+      },
+      "font": "Condensedboldheadlinesandcrispmoderndeck, bitmapglyphmeasurementsupportsreadabilitywithoutclaimingfontmetadata. Sourceglyph19px, approx24pxfont. Allheadline/deck/sourcewordspresent."
+    },
+    "rights": "PemilikStadione mengotorisasi editorialterbatasberatribusi dariadministratorresmipenyelenggara/klub. FotoPersebaya normalHTTP200, bukanindividualUGC. Tidakmengaranggrantlisensitertulisklub/penerbit.",
+    "private_materials": "Rawphoto/HTML/fulltexts/packet/imagegenPNG/base64signedAPI areprivateVPS, notGit. Gitownarticle,sanitizedmetadata,smallQAderivativecontacts."
+  },
+  "visual_review": {
+    "method": "Nativeinspectionoriginalphoto, layoutref,generatedcover,technicalnormalizedcover,andall5finalJPEGvia2contacts. Entiretextread. No claimsbasedonlyonaudit.",
+    "page_count_correct": true,
+    "all_text_present": true,
+    "no_clipped_text": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "cream_text_only_body": true,
+    "body_font_size": 36,
+    "horizontal_margin": 72,
+    "divider_thickness": 4,
+    "headline_divider_gap": 36,
+    "divider_body_gap": 36,
+    "safe_wrap": true,
+    "article_lossless": true
+  },
+  "render": [
+    {
+      "page": 1,
+      "bytes": 712756,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "ILEAGUE.ID",
+      "cover_input_sha256": "a78f1e4325487348ef2b53300ae5c408e48c9977c40117fd14d0bdbd6e8fc7bf",
+      "output_sha256": "f7e1363dbb0147bcf011d4515055bab6853033f4c9594f17e4bfad778d69dc7d",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 193976,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "90847eab9603db7823e91fcdf8839035e89664a524c43f77b29e8b49a3fcb1f6",
+      "output_sha256": "d865da6cfba32ef45dabc028b34c140bcb4c805244efbd2271a5f9ea80215144",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 806,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 909,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 204410,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "fe9eb21c3cdc5e25c77bd569b2dbdbe7a1e593c83c181ab8a6ff43487b97212e",
+      "output_sha256": "597174e744b548ed03da9930d34d741fa4b920271fe017be39bc90320865bc18",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 399,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 854,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 933,
+          "height": 399,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 212241,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "52bbd5a90396746055bae2c0a34a717fe8315b8cbe0584bdb213b53b10961dfe",
+      "output_sha256": "8424e79076e62e0c4816fa9e28110e64adb0c53d7a0cda3c4ded7a9dac4186e6",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 809,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 928,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 192164,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "d364493644664c4d17e1274beca6fa92aa734058e12bab8f579920b746ad05bf",
+      "output_sha256": "35ea6308792892663b4321cf45643f9d0cac5b9726b48d2e721770f1118d73a5",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 774,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 931,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": {
+    "baseline_rows": 132,
+    "allowed_changes": "TargetSOCIAL andone newpairedARTICLE only",
+    "other_existing_rows": 131,
+    "original_clock": "21October13WIB",
+    "untouched": [
+      "other slots",
+      "additionalposts",
+      "historicalposts",
+      "renderer",
+      "credentials",
+      "productioncode",
+      "services"
+    ]
+  },
+  "deployment": "Previewreview -> commitpush -> sharedcommittedadapter schedule -> sharedsystemdpublisher; noMetaDirect",
+  "deduplication_review": {
+    "generic_entity_match": {
+      "id": "87070c37-b96e-4a65-8981-391db1ad3811",
+      "title": "Tiga Gol Alex, Ingat Lawan Pertamanya?",
+      "status": "PUBLISHED",
+      "decision": "Unrelated earlier AlexMartins scoringrunbeforePSS, not newdefensiveassessmentbeforePSM. Nevermodified."
+    },
+    "event_terms": [
+      "persebaya",
+      "antarlini"
+    ],
+    "exact_event_key_matches": 0,
+    "topic_matches": 0,
+    "preview_repeated_after_term_refinement": true,
+    "all_five_reviewed_render_hashes_identical": true
+  }
+}
