@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persib Membuka Pilihan Rotasi di Madura",
+  "dek": "Igor Tolic belum menetapkan komposisi untuk menghadapi Madura United. Kondisi pemain menjadi pertimbangan di tengah jadwal yang rapat.",
+  "caption": "PERSIB MEMBUKA PILIHAN ROTASI DI MADURA\n\nIgor Tolic membuka peluang bagi setiap pemain Persib untuk tampil menghadapi Madura United. Komposisi tim belum ditetapkan, sementara kondisi pemain dan kebutuhan pertandingan menjadi pertimbangan.\n\nDampak pemain pengganti terlihat ketika Julio Cesar mencetak gol kemenangan 1–0 atas Persik, Minggu (18/10/2026), sesaat setelah masuk menggantikan Danijel Loncar. Sundulannya menyambut sepak pojok Thom Haye.\n\nBerikutnya, Madura United vs Persib di Pamekasan, Kamis (22/10), pukul 19.00 WIB.\n\nFootage gol dan ruang ganti dari laga Persik 18 Oktober, sumber resmi Persib. Pernyataan rotasi berasal dari konferensi pers 21 Oktober, dilaporkan IDN Times dan Inilahkoran. Fakta laga dicocokkan dengan ILeague dan detikJabar.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Komposisi Persib Masih Terbuka",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROTATION",
+        "LOAD"
+      ],
+      "text": "Igor Tolic belum mengunci komposisi Persib untuk menghadapi Madura United. Pelatih asal Kroasia itu membuka kesempatan bagi setiap pemain untuk tampil sesuai kebutuhan tim. Jadwal yang rapat membuat kondisi para pemain ikut menentukan pilihannya menjelang laga tandang pada Kamis, 22 Oktober 2026."
+    },
+    {
+      "id": "choice",
+      "heading": "Kesempatan Mengikuti Kebutuhan Tim",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "ROTATION",
+        "LOAD"
+      ],
+      "quote": {
+        "text": "ada peluang bagi setiap pemain untuk bermain",
+        "source_id": "IDN"
+      },
+      "text": "Dalam konferensi pers Rabu, 21 Oktober, Igor mengatakan “ada peluang bagi setiap pemain untuk bermain”. Ia menjelaskan skuad Persib tidak besar dan pemain akan digunakan ketika dibutuhkan. Tim pelatih juga berkomunikasi dengan pemain untuk memeriksa kondisi mereka sebelum menentukan pendekatan pertandingan."
+    },
+    {
+      "id": "example",
+      "heading": "Julio Memberi Dampak Setelah Masuk",
+      "kind": "FACT",
+      "claim_ids": [
+        "SUB"
+      ],
+      "text": "Pengaruh pemain pengganti terlihat pada laga sebelumnya melawan Persik Kediri di Stadion Si Jalak Harupat, Minggu, 18 Oktober. Julio Cesar masuk menggantikan Danijel Loncar, lalu langsung menyambut sepak pojok Thom Haye dengan sundulan. Gol pada menit ke-79 itu memecah kebuntuan dan memastikan kemenangan Persib 1–0."
+    },
+    {
+      "id": "fixture",
+      "heading": "Madura Menjadi Ujian Berikutnya",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT",
+        "ROTATION"
+      ],
+      "text": "Persib berikutnya menghadapi Madura United di Stadion Gelora Madura Ratu Pamelingan, Pamekasan, Kamis, 22 Oktober, pukul 19.00 WIB."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261021-foden-hattrick-city-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-21T12:13:24.584Z",
+    "article_digest": "fe1c0159d64f9884943af78d9be3305eb75e5a07b29f7e4e278cd0e34c894cac"
+  }
+}

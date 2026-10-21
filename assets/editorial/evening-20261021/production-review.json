@@ -1,0 +1,429 @@
+{
+  "reviewed_at": "2026-10-21T12:19:57.980Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "8409876de1d1babd2b8805cbfe4b3f649afbb6de",
+  "target": {
+    "id": "7c176615-e456-41fd-b656-942adf402786",
+    "plan_key": "2026-10-21:mid-pm",
+    "event_key": "persib-madura-rotation-20261022-reel",
+    "scheduled_at": "2026-10-21T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI getDailySportsPool release via committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-21T11:58:58.500Z",
+    "pool_sha256": "b4aa88832eb3649bfee7f8833014c5c7fcb6a788b123a28fc318a5a505d40d2d",
+    "sources": {
+      "google_trends_trending_now": {
+        "cached": true,
+        "discovered": 12,
+        "eligible": 0
+      },
+      "google_news": {
+        "cached": true,
+        "discovered": 15,
+        "eligible": 0
+      },
+      "bing_videos": {
+        "cached": true,
+        "discovered": 20,
+        "eligible": 0
+      }
+    },
+    "supplement": "Filteredpoolhas0eligibleIndonesia; supplementalbrowsingconfirmednew21Octoberpressconference, nevercalledatrendfromemptylist.",
+    "queries": [
+      {
+        "file": "research-indonesia.json",
+        "queries": [
+          "Persib Timnas Indonesia wawancara 21 Oktober 2026"
+        ],
+        "fetched_at": "2026-10-21T11:58:59.013Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 0
+      },
+      {
+        "file": "research-klok.json",
+        "queries": [
+          "Marc Klok pensiun Persib"
+        ],
+        "fetched_at": "2026-10-21T12:01:12.890Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 20
+      },
+      {
+        "file": "research-rotation.json",
+        "queries": [
+          "Persib Madura rotasi Igor Tolic"
+        ],
+        "fetched_at": "2026-10-21T12:09:20.251Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 6
+      }
+    ],
+    "business_discovery": {
+      "persib_parents": 30,
+      "persija_parents": 30,
+      "all_children_inspected": true
+    },
+    "downloads": [
+      {
+        "id": "17905361991596622",
+        "page_url": "https://www.instagram.com/reel/Deo55pazOAo/",
+        "published_at": "2026-10-18T14:33:09+0000",
+        "http": 200,
+        "bytes": 14641905,
+        "sha256": "b8cdae64103f510bb3664369e355b4d7da0ec1b65651f8d92e95ea5460766895",
+        "duration": "33.364218",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ],
+        "contact_bytes": 110367
+      },
+      {
+        "id": "18089233592256944",
+        "page_url": "https://www.instagram.com/reel/Det_5QABUEP/",
+        "published_at": "2026-10-20T14:00:03+0000",
+        "http": 200,
+        "bytes": 7742814,
+        "sha256": "010a7939e1f3a7ca4053ed04318e5f4c7a854308fa60b89c33b869cf9062257d",
+        "duration": "47.830249",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ],
+        "contact_bytes": 94720
+      },
+      {
+        "id": "18140278336619260",
+        "page_url": "https://www.instagram.com/reel/DeqmEoxTB67/",
+        "published_at": "2026-10-19T06:22:24+0000",
+        "http": 200,
+        "bytes": 12310225,
+        "sha256": "f1ed51466be363e2c79af2c3ca9de45509e66552b959913ddcaad19208ea4e83",
+        "duration": "49.478866",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ],
+        "contact_bytes": 138117
+      }
+    ],
+    "editorial_choice": "MarcKlokcontractnewsresearchedbutusableclubfootagedidnotverifyKlokidentity, so notforced. RecentPersib21Octoberrotationstatementchosen. No reuseofJuliofootageasKlok. Source17905361991596622matchcelebrationdownloadednotused. Allfootageavailable, noReelfallback."
+  },
+  "sources": [
+    {
+      "id": "IDN",
+      "url": "https://jabar.idntimes.com/news/jawa-barat/persib-andalkan-rotasi-pemain-meski-harus-tandang-ke-madura-united-00-9y7yl-s78xmq",
+      "publisher_group": "IDN_MEDIA",
+      "primary": true,
+      "published_at": "2026-10-21T15:11:00+07:00",
+      "retrieved_at": "2026-10-21T12:04:35.416Z",
+      "text_sha256": "687297a7c2a97967d2431d7c3e295f7ac835530ad20230e85272a7008f621b20",
+      "reading": "FullnormalpublicHTMLHTTP200storyreadfromreporterDebbieSutrisno,21October15:11WIB. Primaryflagmeansoriginalon-recordpress-conferencereportage21October, notofficialclubpublication. Browsercouldnotopen; nofullbrowserreadclaim."
+    },
+    {
+      "id": "INILAH",
+      "url": "https://www.inilahkoran.id/hadapi-madura-united-persib-kembali-mainkan-fitrah-maulana",
+      "publisher_group": "INILAHKORAN",
+      "primary": false,
+      "published_at": "2026-10-21T17:30:00+07:00",
+      "retrieved_at": "2026-10-21T12:09:51.281Z",
+      "text_sha256": "6ddf49eabe0f0391b4a5dec64fb6c4303b7ce6241079ec474a3936eb4ca29c1c",
+      "reading": "FullnormalpublicHTMLHTTP200storyreadfromreporterMuhammadGinanjar21October17:30WIB. Initialarticletagonlycontainedrelatedlinks; completebodythenreadfromnormalpage. Browsercouldnotopen; nofalsefullbrowserreadclaim."
+    },
+    {
+      "id": "LEAGUE",
+      "url": "https://ileague.id/news/detail/dampak-instan-julio-cesar-bawa-persib-bandung-taklukkan-persik",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-19",
+      "retrieved_at": "2026-10-21T12:04:34.461Z",
+      "text_sha256": "6a07df538a3835f73e0fc610e44ed4c988b065e98e9c8c07080c1deea1bee42d",
+      "reading": "FullILeague19Octoberbrowserlines90–97/Detik19Octoberlines120–145readandnormalpublicHTMLHTTP200bodycachedprivately."
+    },
+    {
+      "id": "PRIMARY",
+      "url": "https://ileague.id/news/detail/pendekatan-igor-tolic-bikin-pemain-persib-tetap-tampil-fight-meski-jadwal-padat",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-20",
+      "retrieved_at": "2026-10-21T12:08:07.616Z",
+      "text_sha256": "12a412ce606077c13237aa8f31c7d364ad2aa8d7e917cd5e512006322ed52611",
+      "reading": "FullILeague20Octoberbrowserarticlelines90–96read. NormalGET502, notcompletecachedHTML; packetselectedevidenceexcerptonly."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://www.detik.com/jabar/sepakbola/d-8713671/magis-15-detik-julio-cesar-masuk-dari-bangku-cadangan-langsung-cetak-gol",
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "primary": false,
+      "published_at": "2026-10-19T17:30:00+07:00",
+      "retrieved_at": "2026-10-21T12:04:35.992Z",
+      "text_sha256": "499a50eaea1291c864b856e4c4aadff1a347ec855cf6e162a596268d33399ea6",
+      "reading": "FullILeague19Octoberbrowserlines90–97/Detik19Octoberlines120–145readandnormalpublicHTMLHTTP200bodycachedprivately."
+    }
+  ],
+  "source_independence": "PrimaryofficialILeagueplusindependentDetikoriginalmatchreportreadinfullbrowser. Forcurrentrotation, IDNTimesfirsthandbylinedpress-conferencereport(primaryreportage)andInilahkoranbyseparatereportercorroborate. Sameconference, nottwoindependentinterviews. Noresellerarticlemarkedofficialclub.",
+  "facts": {
+    "verified": [
+      "Igor21OctoberopensplayingopportunitytoallPersibplayersbasedonneed/condition, compositionforMaduraunsettled; notallplayerswillplayandnotconfirmedXI.",
+      "Persib1–0Persik18OctoberSiJalakHarupat; Julio4replacesLoncar22thenheadsThomHaye33corner, goal79inILeagueandDetik.",
+      "UpcomingMaduraUnitedvsPersib22October19WIB, GeloraMaduraRatuPamelinganPamekasan, PREVIEW.",
+      "Historical18Octoberfootageexplicitlydated; 21Octoberstatementfromtext, notspokeninusedclip."
+    ],
+    "excluded": [
+      "15secondsheadlineunverifiedasexactelapsed; nativevideocounterends23:07andisnotmatchclock. Noexact15or23secondsclaim.",
+      "No goal/resultofMadura, playeravailabilitydiagnosis, assumedstarterorunconfirmedrotationexecution.",
+      "No distinctnewMOTM or repeatkeeperthree-savesangle."
+    ]
+  },
+  "deduplication": {
+    "event_key": "persib-madura-rotation-20261022-reel",
+    "terms": [
+      "persib",
+      "rotasi"
+    ],
+    "cms_matches": 0,
+    "instagram_matches": 0,
+    "related_old_article": "20OctoberFitrahkeeperarticleincludesJulio79asbackground, mainangle3saves. Current21OctoberrotationdecisionandnewrealJuliofootageisdistinct; existingarticle/IGuntouched. No priorStadionevideooftheseselectedsources."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 146,
+    "paragraphs": 4,
+    "digest": "fe1c0159d64f9884943af78d9be3305eb75e5a07b29f7e4e278cd0e34c894cac",
+    "benchmark_ids": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261021-foden-hattrick-city-match-news"
+    ],
+    "quote_words": 7,
+    "whole_article_before_scenes": true,
+    "lessons": "Unitedinjurypreviewkeepsselectionuncertainty; Carrickattributescoachassessmenttotime/source; Fodenreportusesconcretegoalmechanism. Leadnewselectionpolicy, limitedsquad/condition, historicalsubstituteexample, nextfixture. Removedrepeatedclosingrecap; noAnalisisStadione/scaffold/quoteprocessheading/filler."
+  },
+  "media": {
+    "files": [
+      {
+        "file": "goal-muted.mp4",
+        "bytes": 33153099,
+        "sha256": "14f85a211de66333bcc560ac4e17785ae08a8883aa839fc3d8be1ffb2263880e",
+        "duration": "49.390000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "locker-muted.mp4",
+        "bytes": 22371789,
+        "sha256": "35ff9bf89b9da54ac036235ffdd7780e122246733c6953d37b33dee47ad48d22",
+        "duration": "40.006673",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "type": "audio",
+            "codec": "aac"
+          }
+        ]
+      },
+      {
+        "file": "hero-frame-clean.jpg",
+        "bytes": 47710,
+        "sha256": "40dabed4049a6e73a92c74f878ac7fa15b8a842b5e86d42d3694db6f767f8a8f",
+        "duration": "0.040000",
+        "streams": [
+          {
+            "type": "video",
+            "codec": "mjpeg",
+            "width": 720,
+            "height": 800
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "GOAL",
+        "page_url": "https://www.instagram.com/reel/DeqmEoxTB67/",
+        "creator": "persib",
+        "published_at": "2026-10-19T06:22:24Z",
+        "visual_transcript": "Transkripvisualactualsource49.478866s:0–4.5Julio4menunggulalumasukdipergantian,25–29.5Haye33mengambilcornerdanJulio4menyundulbolakegawang,30–40.5Julio4selebrasidenganrekan. Nativeelapsedtimerberhenti23:07adalahgrafisvideo, bukankoordinatjampertandinganatauukuran15detikyangterkonfirmasiduapenerbit. KitPersibbiru/Persikputih, namaJULIOC4danHAYE33terbaca. Minut79/1–0ditetapkanteksILeague/Detik. TidaktampilMaduraatauquoteIgor21Oktober; audioaslidimatikanfisik.",
+        "scope": "30–32.5,24–29.5,0–4.5,34–40.5. Date18Octoberexplicitinhook. Authenticgoal/corner/player/celebrationmotion, notsynthetic. Darkcaptioncontrastbandsaddedonly.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "PemilikStadionemengotorisasipengemasaneditorialterbatasberatribusi. RekamanadministratorresmiPersibdiperolehnormalHTTP200melaluiBusinessDiscoveryAPIyangdiizinkan. TidakmengklaimgrantlisensitertulisPersib/broadcaster, bukanindividualUGCdanbukanunggahulanghighlightpenuh. Audiosumberdimutefisik."
+      },
+      {
+        "id": "LOCKER",
+        "page_url": "https://www.instagram.com/reel/Det_5QABUEP/",
+        "creator": "persib",
+        "published_at": "2026-10-20T14:00:03Z",
+        "visual_transcript": "Transkripvisualactual47.830249s: ruanggantiPersibusailagaPersik18Oktober; stafpelatihdanpemainbiru, Haye33berangkulanberdiridengantim6–10detik. Julio4awalclip,makanan,stafbicara;bukanpresskonferensi21Oktober. Hanyapakai6–10detiksebagaiilustrasitim, bukanquoteatauklaimvideoperintahrotasi. Audioaslidimutefisik;tidakmengakuASR/audition.",
+        "scope": "6–10only. Ruanggangti18Octobercaptionedexplicitly, noclaimtraining21October/newMaduraresult. Noappadvertisementending40secondsplusused.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "PemilikStadionemengotorisasipengemasaneditorialterbatasberatribusi. RekamanadministratorresmiPersibdiperolehnormalHTTP200melaluiBusinessDiscoveryAPIyangdiizinkan. TidakmengklaimgrantlisensitertulisPersib/broadcaster, bukanindividualUGCdanbukanunggahulanghighlightpenuh. Audiosumberdimutefisik."
+      }
+    ],
+    "scenes": [
+      {
+        "source_id": "GOAL",
+        "source_start": 30,
+        "source_end": 32.5,
+        "text": "Persib vs Persik • 18 Oktober\nJulio masuk, langsung mencetak gol",
+        "claim_ids": [
+          "SUB"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 24,
+        "source_end": 29.5,
+        "text": "Sepak pojok Thom Haye\nJulio menanduk, Persib menang 1–0",
+        "claim_ids": [
+          "SUB"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 0,
+        "source_end": 4.5,
+        "text": "Contoh kontribusi pemain pengganti\nPersib kini membuka pilihan rotasi",
+        "claim_ids": [
+          "SUB",
+          "ROTATION"
+        ]
+      },
+      {
+        "source_id": "LOCKER",
+        "source_start": 6,
+        "source_end": 10,
+        "text": "Ilustrasi ruang ganti • 18 Oktober\nPersib belum mengunci komposisi",
+        "claim_ids": [
+          "ROTATION"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 34,
+        "source_end": 40.5,
+        "text": "Berikutnya Madura United vs Persib\n22 Oktober • 19.00 WIB • Pamekasan",
+        "claim_ids": [
+          "NEXT"
+        ]
+      }
+    ],
+    "hero": {
+      "original_source": "18140278336619260",
+      "source_frame_seconds": 32,
+      "crop": "720x800x0y200fromactual720x1280, removesnativeelapsedcounter, keepsactualJulioface/kit. Noimagegeneration/headline.",
+      "sha256": "40dabed4049a6e73a92c74f878ac7fa15b8a842b5e86d42d3694db6f767f8a8f",
+      "bytes": 47710
+    },
+    "visual_review": {
+      "method": "Nativeimagesourcecontacts,goal-tail12frames24–46secs,originalfaces/numbers/kit/actionandall10finalrenderframescovering5cuts,cleanheroviewed. No continuousvideoplayeravailable, nofalseclaimofplayback.",
+      "no_ai_or_slideshow": true,
+      "all_five_cuts_reviewed": true,
+      "caption_contrast_safe": true,
+      "headline_safe": true,
+      "caption_lines": "Secondandfourthcaptionsshortenedafterfirstpreviewtoavoidone-wordHaye/ditetapkanlines; finalrenderrechecked.",
+      "dates_clear": true,
+      "frame_identity": "Julio4andHaye33verifiedbyface/number/name/clubcontext. LockerroomHaye33/teamnotclaimedas21Octoberconferenceorspokenrotationquote.",
+      "thumbnail_limit": "FirstmovingframeauthenticJulio; sharedpublishercustomIGthumbnailnotclaimed."
+    },
+    "audio": {
+      "physically_muted_source": true,
+      "base_mean_db": -91,
+      "base_max_db": -91,
+      "catalog": {
+        "audio_id": "1193260955869259",
+        "title": "Bring The Lights (Instrumental)",
+        "artist": "Jazmine",
+        "audio_volume": 40,
+        "video_volume": 0,
+        "checked_at": "2026-10-21T12:08:08.972Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "review_limit": "TRENDINGmetadata/instrumentaltypeviewed; audioinputunsupported, noauditionclaimed. NoAPIcombinedmixpreview. NoFYP/universalviralclaim. Catalognotdownloadedorcrossplatformembedded.",
+      "facebook": "Silentbasevideo; IGplatformcatalogmusicnotassumedlicensedforFBorwebsite."
+    }
+  },
+  "render": {
+    "bytes": 16813072,
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 23.177333,
+    "scene_count": 5,
+    "source_count": 2,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "a96b4e5ebde81653a17d910e0e002436fedb34abf427103e29b552c41e8f8156"
+  },
+  "scope": {
+    "baseline_rows": 133,
+    "other_existing_rows": 132,
+    "allowed": "OnlytargetSOCIALplusonenewpairedARTICLE",
+    "clock": "21October20WIBunchanged",
+    "no_changes": [
+      "other slots",
+      "additionalposts",
+      "historicalposts",
+      "renderer",
+      "credentials",
+      "productioncode",
+      "services"
+    ]
+  },
+  "deployment": "Commitpushreviewbefore sharedcommittedadapter schedule; sharedsystemdpublisher, neverMetaDirect.",
+  "private_only": "Rawvideo/fullHTML/fulltexts/packet/APIJSON/signedCDNremainprivateVPS. Gitownarticle,sanitizedmetadataandQAcontactderivativesonly."
+}

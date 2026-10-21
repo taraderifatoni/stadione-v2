@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-21T11:58:32.114Z",
+  "baseline_rows": 133,
+  "target": {
+    "id": "7c176615-e456-41fd-b656-942adf402786",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-21T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-21:mid-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Kutipan / update",
+    "theme": "Isu aktual atau kutipan langsung; verifikasi sumber primer dan konteks"
+  },
+  "attempts": 0,
+  "cms_duplicates": [],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 53,
+    "topic_duplicates": 0
+  },
+  "event_terms": [
+    "persib",
+    "rotasi"
+  ],
+  "seeder_needed": false,
+  "published_noon": {
+    "media_id": "18113416462864879",
+    "timestamp": "2026-10-21T06:02:39Z",
+    "title": "Dua Celah Persebaya Jelang Lawan PSM",
+    "untouched": true
+  }
+}
