@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-21T05:13:38.190Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "45f4b272-8920-4b71-8672-ba98ff2a3898",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-21:mid-noon",
+    "event_key": "persebaya-two-gaps-psm-20261022",
+    "scheduled_at": "2026-10-21T06:00:00+00:00",
+    "time_wib": "21 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "f103311b-6cc7-44cf-a524-9a3603d37a92",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-21T06:00:00+00:00",
+    "title": "Dua Celah Persebaya Jelang Lawan PSM",
+    "canonical_body_identical": true,
+    "digest": "14c3d247eb74e0501cb8cc27c32cf4019b5d98254619c35affa8122f71353b5a",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 166646,
+      "sha256": "db249e29479f8cb609f29f8e0decdb7c6ff752ea7d44ea65fd3f5520a1b4d416",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 712756,
+      "sha256": "f7e1363dbb0147bcf011d4515055bab6853033f4c9594f17e4bfad778d69dc7d",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 193976,
+      "sha256": "d865da6cfba32ef45dabc028b34c140bcb4c805244efbd2271a5f9ea80215144",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 204410,
+      "sha256": "597174e744b548ed03da9930d34d741fa4b920271fe017be39bc90320865bc18",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 212241,
+      "sha256": "8424e79076e62e0c4816fa9e28110e64adb0c53d7a0cda3c4ded7a9dac4186e6",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 192164,
+      "sha256": "35ea6308792892663b4321cf45643f9d0cac5b9726b48d2e721770f1118d73a5",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 52,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 131,
+  "changed_other_rows": [],
+  "baseline_rows": 132,
+  "current_rows": 133,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "5f51da74fe6663ecdf76f9ded41f2b807e4bdc3d"
+}
