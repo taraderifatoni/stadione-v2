@@ -222,6 +222,20 @@
       ],
       "application": "Feature Stadione dapat membuka persoalan lewat adegan, mengujinya dengan aksi dan data, lalu menempatkan kutipan sesuai fungsi. Pisahkan fakta, penilaian dan dugaan. Bacaan September ini menjadi acuan teknik; kondisi pemain hari ini harus diverifikasi ulang.",
       "read_at": "2026-10-20T00:47:01.156Z"
+    },
+    {
+      "id": "goal-20261021-foden-hattrick-city-match-news",
+      "url": "https://www.goal.com/id/berita/phil-foden-menggila-setelah-puasa-gol-selama-10-bulan-kini-cetak-hat-trick-untuk-manchester-city/blt26d26683ada6e972",
+      "read_at": "2026-10-21T04:57:29Z",
+      "kind": "NEWS",
+      "lessons": [
+        "Lead menyatukan skor akhir dengan kontribusi pemain yang membedakan laga. Konteks paceklik gol menyusul setelah aksi, sehingga pembaca mendapat kabar utama lebih dahulu.",
+        "Rotasi besar pelatih diperkenalkan sebelum kronologi gol. Latar pemilihan pemain memberi pertanyaan yang dijawab oleh perkembangan pertandingan, tanpa harus menamai bagian sebagai analisis.",
+        "Perubahan skor dijelaskan melalui mekanisme aksi, dari bola muntah dan serangan balik hingga tipuan tembakan serta umpan terakhir. Detail membuat kronologi membawa informasi, bukan hanya daftar menit.",
+        "Gol balasan lawan ditempatkan sebelum respons tuan rumah. Pergantian keadaan membangun perkembangan cerita; penilaian tentang dominasi perlu diuji dengan kejadian dan angka yang tersedia.",
+        "Penutup mengikuti rangkaian dua gol terakhir dan menetapkan skor final. Tidak ada kutipan langsung dalam laporan ini; tulisan tetap lengkap tanpa suara rekaan. Widget pertandingan berikutnya tidak diperlakukan sebagai bagian kronologi."
+      ],
+      "application": "Laporan Stadione dimulai dari hasil dan kontribusi konkret, lalu memperkenalkan keputusan atau masalah tim yang relevan. Jelaskan perubahan keadaan lewat aksi terverifikasi, pisahkan konteks musim dari kejadian pertandingan, dan tutup dengan dampak atau momen penentu. Kutipan hanya dipakai bila tersedia. Bacaan Goal menjadi acuan teknik; fakta pertandingan untuk posting baru tetap diperiksa melalui sumber primer dan penerbit independen."
     }
   ]
 }
