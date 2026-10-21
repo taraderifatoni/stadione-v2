@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-21T12:22:15.060Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "7c176615-e456-41fd-b656-942adf402786",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-21:mid-pm",
+    "event_key": "persib-madura-rotation-20261022-reel",
+    "scheduled_at": "2026-10-21T13:00:00+00:00",
+    "time_wib": "21 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "4400bfce-0537-487d-b6a6-dd915bbd6437",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-21T13:00:00+00:00",
+    "title": "Persib Membuka Pilihan Rotasi di Madura",
+    "canonical_body_identical": true,
+    "digest": "fe1c0159d64f9884943af78d9be3305eb75e5a07b29f7e4e278cd0e34c894cac",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 47710,
+      "sha256": "40dabed4049a6e73a92c74f878ac7fa15b8a842b5e86d42d3694db6f767f8a8f",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 16813072,
+      "sha256": "a96b4e5ebde81653a17d910e0e002436fedb34abf427103e29b552c41e8f8156",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 53,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 132,
+  "changed_other_rows": [],
+  "baseline_rows": 133,
+  "current_rows": 134,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "494dce9ea908ef5da2d491ffd35bbc65feb94b00"
+}
