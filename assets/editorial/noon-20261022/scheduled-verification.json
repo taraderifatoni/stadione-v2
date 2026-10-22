@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-22T05:14:44.139Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "99df7779-2bb7-4d46-aed3-2c54513ffdc1",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-22:mid-noon",
+    "event_key": "persija-arema-five-goals-20261021",
+    "scheduled_at": "2026-10-22T06:00:00+00:00",
+    "time_wib": "22 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "11c50df1-4272-4915-b8b1-ed5c32ddf1b0",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-22T06:00:00+00:00",
+    "title": "Persija Berpesta Lima Gol di Patriot",
+    "canonical_body_identical": true,
+    "digest": "a0a20479721f761ac576d3e29bffbe9977e7d21e3d7f1fa383c2af298417097b",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 130102,
+      "sha256": "7678f84b4eb0371b3bd5bc544fa112abc5fa1b75f2421ceb87d8dce060114514",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 460689,
+      "sha256": "2b357abc106c810c3d0ac77760269fa3b3e9b95eb1d3d33715ec5e696bd5691f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 185957,
+      "sha256": "5a9e91c713682eca140ca92cab82b56bdae01d8e54b5ad1a8d0587a6dda8c7f5",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 124240,
+      "sha256": "6766a1c9585bfc2fa8d3a2a5e33f8ccd059365d77782a54972770f0e3372c236",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 167422,
+      "sha256": "34418b3491709f253329eb98b60fc28091cd7fc83fa829ecc742b5b9535b4cfd",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 180880,
+      "sha256": "2d08400752fbc8b0f415ef9150e67db22eead054b5444a6d4bb5a8e3f5ef8470",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 55,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 137,
+  "changed_other_rows": [],
+  "baseline_rows": 138,
+  "current_rows": 139,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "5ab30f9f28218ec79b9c2556bdf197cd7e457721"
+}
