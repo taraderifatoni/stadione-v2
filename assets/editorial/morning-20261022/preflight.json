@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-22T00:01:12.869Z",
+  "baseline_rows": 137,
+  "target": {
+    "id": "0043dcbe-78cc-4b0d-a2b8-4c8013e8f0ee",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-22T01:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-22:mid-am",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Update / nostalgia"
+  },
+  "attempts": 0,
+  "duplicates": {
+    "cms": 0,
+    "instagram": 0,
+    "query": "Como in titles/body/caption; plus event_key and exact caption terms before shared adapter"
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media": 54
+  },
+  "seeder_needed": false,
+  "previous_evening": {
+    "media_id": "18469612159140597",
+    "published_at": "2026-10-21T13:01:24Z",
+    "untouched": true
+  }
+}

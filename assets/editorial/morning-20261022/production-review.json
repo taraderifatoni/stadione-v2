@@ -1,0 +1,229 @@
+{
+  "reviewed_at": "2026-10-22T00:11:51.761Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "bfb54e0aed548f69b03683044db71c5983c09660",
+  "target": {
+    "id": "0043dcbe-78cc-4b0d-a2b8-4c8013e8f0ee",
+    "plan_key": "2026-10-22:mid-am",
+    "event_key": "como-united-four-goals-20261021-reel",
+    "scheduled_at": "2026-10-22T01:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool_fetched_at": "2026-10-22T00:01:25.512Z",
+    "pool_sha256": "04c38d87cee8d1720f6bc33f5bc3580afa3136b41db6431138c8424b0c42b0cc",
+    "provider": "SerpAPI release getDailySportsPool through committed cms-audience-pool/cms-load",
+    "selected_trend": "Como 1907 vs Manchester United standings; matching independent full match reports, never using trend metadata as score evidence",
+    "queries": [
+      {
+        "file": "research-europe.json",
+        "queries": [
+          "Manchester United Como Bayern Arsenal 21 October 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 12
+      },
+      {
+        "file": "research-como.json",
+        "queries": [
+          "Como Manchester United Carrick 21 October 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 17
+      }
+    ],
+    "business_discovery": [
+      {
+        "account": "manutd",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "comofootball",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "arsenal",
+        "parents": 30,
+        "children_checked": true
+      }
+    ],
+    "account_correction": "manchesterunited resolved to an unrelated personal account; excluded, no download. Correct verified club handle manutd used.",
+    "format": "One genuine moving interview source, four cuts; source_count1 allowed by shared gate. No AI/slideshow or carousel fallback."
+  },
+  "sources": [
+    {
+      "id": "MU",
+      "url": "https://www.manutd.com/en/news/match-report-and-highlights-como-v-man-utd-21-oct-2026",
+      "publisher_group": "MANCHESTER_UNITED",
+      "primary": true,
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-10-22T00:03:53.191Z",
+      "text_sha256": "16a103631c5da963dc21ba0405e3132f7eb47fbd69a7314c921223cea5a5baf6",
+      "full_read": true,
+      "method": "Normal public HTML HTTP200; complete article was in embedded public Next Flight rich text, extracted locally from the same response and read through match details. Initial article tag contained only related story; not counted as full read until corrected. No login/paywall/extra API bypass. Browser open failed, no false browser claim."
+    },
+    {
+      "id": "SKY",
+      "url": "https://www.skysports.com/football/como-vs-manchester-united/report/577645",
+      "publisher_group": "SKY_SPORTS",
+      "primary": false,
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-10-22T00:04:27.010Z",
+      "text_sha256": "27716347faf1dcb425c90dd2154bf0ddf03e632cf5133c6228b12f8e821b774d",
+      "full_read": true,
+      "method": "Normal public HTML HTTP200 read completely through final chronology. Byline Peter Smith; independent original match report. Browser failed, no false browser claim."
+    }
+  ],
+  "additional_reading": "Guardian Jamie Jackson full browser article read to final paragraph as corroboration, no quotation or dependence in article/packet. Source group not counted twice.",
+  "facts": {
+    "included": [
+      "Como4–1ManchesterUnited,21October2026,GiuseppeSinigaglia,ChampionsLeague",
+      "Paztwo goals plus assist to Douvikas49; opening shot from edge of area without minute claim",
+      "Amad and Baleba for Cunha and Santos at half-time; Paz57 creates3–0",
+      "Ramon76 from KaikiBruno cross; Zirkzee added-time reply from Amad; final4–1"
+    ],
+    "excluded": [
+      "Opening goal minute: MU match details3, Sky118seconds/minute2; omitted exact minute rather than forcing agreement",
+      "Carrick sacked, official MOTM, unverified future appointment, exaggerated historical records",
+      "Interview clip is not footage of goals or live match actions; no invented spoken quotes"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 170,
+    "paragraphs": 4,
+    "digest": "54db0f7fe115941d90709f94f5fc13e101d5e4a051745af8ef2a6660ab3432f4",
+    "benchmark_ids": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261019-carrick-leeds-reaction-news"
+    ],
+    "whole_article_before_scenes": true,
+    "quote_words": 0,
+    "lessons": "Foden match report uses result/player contribution then mechanisms behind score changes. Carrick reference separates reaction from reported events. No fabricated quotes, process headings, Analisis Stadione, scaffold or filler."
+  },
+  "media": {
+    "source": {
+      "page_url": "https://www.instagram.com/reel/DexZccLg5yo/",
+      "published_at": "2026-10-21T21:43:23Z",
+      "creator": "manutd",
+      "http": 200,
+      "bytes": 4910837,
+      "sha256": "be03df9ef904e5e85a71513ecd6dd715bd1de00c29d52ec7182b1a921385a889",
+      "duration": 38.960227,
+      "width": 720,
+      "height": 1280,
+      "visual_transcript": "Transkripvisualsumber38.960227detik:0–8Carrickberbicaramenghadapimikrofon,denganbackdropUEFAChampionsLeague,crestManchesterUniteddanbajugelap. Subtitle0Nowhereneargoodenoughinsomanyways;4Wedidntdeservetogetanythingfromthegame;16Collectivelywejust;20Andwedidprettymuchthecompleteopposite;24Iwentoverattheend;28Andtheycaresomuch. Hanyavisual/subtitleyangdibaca, bukanauditionatautranskripASRterverifikasi. Captionhasilmerujukartikel,bukankutipanverbalCarrick. AudiosumberdimutefisikdanEnglishsubtitleditutupbandkontras, wajahautentik. Seluruhframecontact0–36diperiksa."
+    },
+    "scenes": [
+      {
+        "source_id": "REACTION",
+        "source_start": 0,
+        "source_end": 5,
+        "text": "Reaksi Carrick seusai laga\nMU kalah 1–4 di Como",
+        "claim_ids": [
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "REACTION",
+        "source_start": 8,
+        "source_end": 15,
+        "text": "Nico Paz mencetak dua gol\ndan memberi assist untuk Douvikas",
+        "claim_ids": [
+          "PAZ"
+        ]
+      },
+      {
+        "source_id": "REACTION",
+        "source_start": 18,
+        "source_end": 25,
+        "text": "Pergantian saat jeda belum cukup\nComo sudah unggul 3–0 pada menit 57",
+        "claim_ids": [
+          "SECOND"
+        ]
+      },
+      {
+        "source_id": "REACTION",
+        "source_start": 30,
+        "source_end": 36,
+        "text": "Ramon menambah gol pada menit 76\nZirkzee membalas di tambahan waktu",
+        "claim_ids": [
+          "END"
+        ]
+      }
+    ],
+    "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. SumberpostingresmiManchesterUnitedHTTP200melaluiBusinessDiscoveryberizin; tidakmengklaimgrantlisensitertulisklub/broadcaster. Bukansiaranpenuh, bukanindividualUGC; audiosumberdimutefisik.",
+    "hero": {
+      "original_frame_seconds": 8,
+      "crop": "720x720,x0,y140; face only, excludes native subtitle",
+      "bytes": 38308,
+      "sha256": "31b6f4c56e3bbb0883eec7706e70f0490d64af1a57658d208f92e351e0727933",
+      "no_headline": true
+    },
+    "visual_review": {
+      "source_complete_contact": true,
+      "hero_viewed": true,
+      "all_four_cuts_and_ten_render_frames_viewed": true,
+      "identity": "Michael Carrick face, ManchesterUnited crest, UEFA backdrop and verified official account/time/context",
+      "caption_safe": true,
+      "revision": "First scene shortened to two lines; native subtitle fully covered by opaque lower contrast band. Re-previewed and final contact inspected.",
+      "limits": "No continuous video player available; no claim of continuous playback. Native image review plus technical probes only.",
+      "thumbnail": "Authentic first moving frame; no claim of custom IG cover capability."
+    },
+    "audio": {
+      "base_physically_muted": true,
+      "mean_db": -91,
+      "max_db": -91,
+      "catalog": {
+        "audio_id": "1767197957038867",
+        "title": "Under The Eclipse",
+        "artist": "Symphonic Planet",
+        "audio_volume": 25,
+        "video_volume": 0,
+        "checked_at": "2026-10-22T00:04:26.581Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "selection": "Under The Eclipse, Symphonic Planet, current account-specific TRENDING catalog; restrained volume25 and video0 for defeat news.",
+      "review_limit": "Metadata reviewed only. Tools do not accept audio input, so no audition or combined API mix preview claimed. No claim that metadata proves mood, universal virality or FYP.",
+      "facebook": "Muted base video; IG catalog not downloaded or assumed licensed cross-platform."
+    }
+  },
+  "render": {
+    "bytes": 7370209,
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 25.06,
+    "scene_count": 4,
+    "source_count": 1,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "be6d9f0b54756420befab768b2c3eee8f46a3983820151f2490f0b34289e0802"
+  },
+  "scope": {
+    "baseline_rows": 137,
+    "allowed": "Target SOCIAL plus one new paired ARTICLE only",
+    "other_existing_rows": 136,
+    "clock": "22October08WIB unchanged",
+    "preserved": [
+      "other routine slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push proof before schedule through committed shared adapter, never MetaDirect. Future valid SCHEDULED left to same systemd publisher.",
+  "private_only": "Raw source video, full texts/HTML, API JSON, signed URLs and packet stay private VPS. Git includes own article, sanitized review and QA image derivatives only."
+}

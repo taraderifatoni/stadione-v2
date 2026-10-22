@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "MU Tumbang 1–4 di Como",
+  "dek": "Nico Paz mencetak dua gol dan memberi satu assist. Pergantian pemain Manchester United saat jeda belum membendung serangan Como.",
+  "caption": "MU TUMBANG 1–4 DI COMO\n\nManchester United pulang dengan kekalahan 1–4 dari markas Como dalam Liga Champions, Rabu (21/10/2026). Nico Paz mencetak dua gol dan memberi assist untuk Tasos Douvikas.\n\nDouvikas mencetak gol pada menit ke-49, disusul gol kedua Paz pada menit ke-57. Jacobo Ramon menambah keunggulan melalui sundulan pada menit ke-76. Joshua Zirkzee membalas di tambahan waktu.\n\nVideo menampilkan reaksi Michael Carrick seusai pertandingan, bukan cuplikan gol. Sumber rekaman akun resmi Manchester United. Fakta pertandingan dicocokkan dengan laporan resmi klub dan Sky Sports.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Empat Gol di Kandang Como",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "PAZ",
+        "SECOND"
+      ],
+      "text": "Manchester United kalah 1–4 dari Como dalam pertandingan Liga Champions di Stadion Giuseppe Sinigaglia, Rabu, 21 Oktober 2026. Nico Paz menjadi pembeda lewat dua gol dan satu assist untuk tuan rumah. Tim asuhan Michael Carrick sudah tertinggal tiga gol ketika pertandingan memasuki menit ke-57."
+    },
+    {
+      "id": "paz",
+      "heading": "Paz Membuka Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "PAZ"
+      ],
+      "text": "Paz membuka keunggulan Como dengan tembakan melengkung dari tepi kotak penalti. Setelah jeda, ia kembali terlibat dalam gol berikutnya. Umpannya diterima Tasos Douvikas, yang menuntaskan peluang pada menit ke-49 dan membawa Como unggul 2–0."
+    },
+    {
+      "id": "changes",
+      "heading": "Pergantian Belum Menghentikan Como",
+      "kind": "FACT",
+      "claim_ids": [
+        "SECOND"
+      ],
+      "text": "Carrick sebenarnya sudah memasukkan Carlos Baleba dan Amad saat turun minum untuk menggantikan Andrey Santos serta Matheus Cunha. Namun, dua gol Como pada awal babak kedua membuat United semakin tertinggal. Pada menit ke-57, Paz masuk ke kotak penalti dan mengarahkan bola ke sudut jauh untuk mencetak gol keduanya."
+    },
+    {
+      "id": "finish",
+      "heading": "Balasan Datang Setelah Empat Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "END",
+        "RESULT"
+      ],
+      "text": "Keunggulan Como bertambah pada menit ke-76. Umpan dari sisi kiri yang dilepaskan Kaiki Bruno disambut sundulan Jacobo Ramon. United baru membalas pada masa tambahan waktu melalui Joshua Zirkzee setelah menerima umpan Amad. Gol itu mengubah skor menjadi 4–1, hasil yang bertahan sampai pertandingan selesai."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261019-carrick-leeds-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-22T00:11:34.705Z",
+    "article_digest": "54db0f7fe115941d90709f94f5fc13e101d5e4a051745af8ef2a6660ab3432f4"
+  }
+}
