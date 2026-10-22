@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-22T12:21:46.384Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "1477c8f2-d599-4dd9-8df4-b821ac52276b",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-22:mid-pm",
+    "event_key": "persebaya-psm-penalty-retake-20261022-reel",
+    "scheduled_at": "2026-10-22T13:00:00+00:00",
+    "time_wib": "22 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "17f590b9-3262-433e-8925-0072bf9b03c1",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-22T13:00:00+00:00",
+    "title": "Penalti Diulang, Persebaya Tetap Gagal",
+    "canonical_body_identical": true,
+    "digest": "43c037fac9c6fae94298c31840f8d042d0754853d54b58e61210d2357aea9db1",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 57646,
+      "sha256": "23d9ade1b5495151baf3d0920296abe97eba6a3952ccd80a58c8bdf8adf7e3c7",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 10313296,
+      "sha256": "f79a04e878537681bc1c8fa9a30a1184a6d5f6707edf82c7d20506f89175597f",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 56,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 138,
+  "changed_other_rows": [],
+  "baseline_rows": 139,
+  "current_rows": 140,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "78907465e7d2ea32f7b28dc12acd6c7185a8d9c8"
+}
