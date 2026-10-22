@@ -1,0 +1,403 @@
+{
+  "reviewed_at": "2026-10-22T12:21:00.042Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "7eeb9f906502c900dc97b4f515f40a1cfa370a57",
+  "target": {
+    "id": "1477c8f2-d599-4dd9-8df4-b821ac52276b",
+    "plan_key": "2026-10-22:mid-pm",
+    "event_key": "persebaya-psm-penalty-retake-20261022-reel",
+    "scheduled_at": "2026-10-22T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI release getDailySportsPool via committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-22T11:58:18.927Z",
+    "pool_sha256": "c529d5f873ca9777258e7c047df6518df6d7bfee029526edae851567f439377c",
+    "choice": "Pool eligible trend PersijaArema already published at noon; did not repeat. Supplemental actual22OctoberPSMPersebaya result chosen, not falsely claimed as a pool trend.",
+    "queries": [
+      {
+        "file": "research-indonesia.json",
+        "query": [
+          "Persib Persebaya Timnas Indonesia 22 Oktober 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 8
+      },
+      {
+        "file": "research-persebaya.json",
+        "query": [
+          "PSM Persebaya 22 Oktober 2026"
+        ],
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 19
+      }
+    ],
+    "business_discovery": [
+      {
+        "account": "officialpersebaya",
+        "parents": 30,
+        "all_children_checked": true
+      },
+      {
+        "account": "persib",
+        "parents": 30,
+        "all_children_checked": true
+      },
+      {
+        "account": "psm_makassar",
+        "parents": 30,
+        "all_children_checked": true
+      },
+      {
+        "account": "sports.indosiar",
+        "parents": 30,
+        "all_children_checked": true
+      },
+      {
+        "account": "liga1match",
+        "parents": 30,
+        "all_children_checked": true
+      }
+    ],
+    "footage": "Three actual IndosiarSports videos HTTP200; no Reels fallback. ClubReelmetadatawithoutmedia_url was not treated as downloadable or bypassed. InstagramcarouselVIDEOchildren also checked.",
+    "youtube": "Two bounded committed API queries, no quota error. Metadata not treated as download/license. No yt-dlp at PATH; no false claim of bot failure or failed download."
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://www.persebaya.id/r/4202/drama-dua-penalti-di-menit-akhir-persebaya-takluk-lawan-psm",
+      "publisher_group": "PERSEBAYA",
+      "primary": true,
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-10-22T12:01:23.145Z",
+      "text_sha256": "510e4cae267495f114c661cdc00e44bee975437f21169b9cda2eb314b5dfffe6",
+      "reading": "Complete officialPersebaya4202 postmatch article read through ending; normalpublicHTMLHTTP200. Browser open failed, no fullbrowserread claim."
+    },
+    {
+      "id": "IDN",
+      "url": "https://www.idntimes.com/sport/soccer/drama-penalti-warnai-kemenangan-psm-persik-tekuk-pss-00-nwm7r-gwqnq5",
+      "publisher_group": "IDN_MEDIA",
+      "primary": false,
+      "published_at": "2026-10-22T17:53:18+07:00",
+      "retrieved_at": "2026-10-22T12:00:59.183Z",
+      "text_sha256": "cf83c38864fe1a383eb8a984ee2344dcc519158376b9bc3a3943892bfdd59117",
+      "reading": "Complete TinoSatrio IDNTimes report22October17:53:18WIB read through final Persik paragraph from normalpublicHTMLHTTP200. Browser failed. AI-assisted summary excluded from packet source.text, which uses article body starting JakartaIDNTimes and ends before ShareArticle."
+    },
+    {
+      "id": "SPORTS",
+      "url": "https://www.instagram.com/reel/Deyy-z_SChk/",
+      "publisher_group": "INDOSIAR",
+      "primary": true,
+      "published_at": "2026-10-22T10:45:12Z",
+      "retrieved_at": "2026-10-22T12:17:09.818Z",
+      "text_sha256": "ba1761be39a926ac0962abc3328da8e0a5eb62fbb7cc0728d00266720c5a6aae",
+      "reading": "Full officialbroadcastercaption from authorizedBusinessDiscovery read. Text/evidence only from exact Deyy-z_SChk permalink, not merged with another post."
+    },
+    {
+      "id": "PSM",
+      "url": "https://www.instagram.com/p/DeyyuOCpd9W/",
+      "publisher_group": "PSM_MAKASSAR",
+      "primary": true,
+      "published_at": "2026-10-22T10:41:49Z",
+      "retrieved_at": "2026-10-22T12:17:09.818Z",
+      "text_sha256": "d8cb831c0ef31370fc1daa13422f24bcbba2132a9397cd1b7b3dddc68d8b965b",
+      "reading": "Full officialPSM finalpostcaption read through authorizedBusinessDiscovery, includes74YuranFernandesOG. Not mistaken for the73minute match clock."
+    }
+  ],
+  "official_match_reading": {
+    "url": "https://www.ligaindonesiabaru.com/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-22/PSM_MAKASSAR/PERSEBAYA_SURABAYA",
+    "method": "Full browser page read through lineups/statistics/recentmeetings. NormalGET502, not claimed cached HTML. Match page not updated with final result, used only for names/numbers, not result or minutes.",
+    "verified_identity": "PSM goalkeeper1MUHARDIANSYAH,Persebaya39ALEXMARTINSFERREIRA,4YURANFERNANDES,30REZAARYA"
+  },
+  "facts": {
+    "included": [
+      "PSM1–0Persebaya22OctoberGeloraBJHabibieParepare, officialfulltimeposts and footage agree with two full reports",
+      "YuranFernandesown-goal74 from officialPSMcaption plus IDNbody; not an attacking goal for Persebaya",
+      "AlexfirstpenaltyinaddedtimeblockedbyArdiansyah; refereeorderedretake because keeper judged to have moved early",
+      "Ardiansyah again stopped Alex on retake; same penalty repeated, not two distinct penalty awards"
+    ],
+    "excluded": [
+      "No guessed exact90+4/98minute or clock read from cropped original scoreboard",
+      "No assertion of cheating, referee bias, officialMOTM, ranking or unverified future result",
+      "No individualfault/motives beyond documented own-goal and referee decision",
+      "No reuse of Persija5–1 topic, earlier Persebaya–PSS2–2 or previous preview as new result"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 147,
+    "paragraphs": 4,
+    "digest": "43c037fac9c6fae94298c31840f8d042d0754853d54b58e61210d2357aea9db1",
+    "benchmark_ids": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261019-carrick-leeds-reaction-news"
+    ],
+    "whole_article_before_scenes": true,
+    "quote_words": 0,
+    "lessons": "Lead takes consequence plus decisive action; previousgoal provides context; penalty and retake follow in distinct phases. Foden reference supplies concrete mechanisms, Carrick separates reported judgment from writer conclusion. Repeated explanation removed; noAnalisisStadione/quoteprocess/scaffold/filler."
+  },
+  "media": {
+    "original_downloads": [
+      {
+        "name": "penalty",
+        "id": "18183286771436299",
+        "page_url": "https://www.instagram.com/reel/Deyy-z_SChk/",
+        "published_at": "2026-10-22T10:45:12+0000",
+        "http": 200,
+        "bytes": 10535730,
+        "sha256": "fec23e700d7b8d6a385d6a8acd3c8203fcbbe16cda98f3c3e96de79c7d06704a",
+        "duration": "61.994422",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      {
+        "name": "own-goal",
+        "id": "18092916494661893",
+        "page_url": "https://www.instagram.com/reel/DeyvTfgS8yF/",
+        "published_at": "2026-10-22T10:12:56+0000",
+        "http": 200,
+        "bytes": 12152522,
+        "sha256": "68d5f2a7a47f6916de9286ab121fe16d2a6da5dab7463c5d1f9e60f241142818",
+        "duration": "63.039320",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      {
+        "name": "final",
+        "id": "17959248261254625",
+        "page_url": "https://www.instagram.com/reel/DeyzR0ESd5a/",
+        "published_at": "2026-10-22T10:47:40+0000",
+        "http": 200,
+        "bytes": 14270514,
+        "sha256": "48ddce495dbc2b8a8cd8fe3aed259f08cfe1d2f28e0a544d74313502e3d51074",
+        "duration": "59.463447",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      }
+    ],
+    "prepared_files": [
+      {
+        "file": "penalty-portrait-muted.mp4",
+        "bytes": 16916325,
+        "sha256": "18391ca86c1f0ae8dbba2d6ae17ca78720e356bc849dcb97c5c4aa91738135e3",
+        "duration": 61.916667,
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "file": "own-goal-portrait-muted.mp4",
+        "bytes": 20091062,
+        "sha256": "5835c2b4b7489137c603bd06438437c3aed476c7e15eef2daf52f930cd9a60ac",
+        "duration": 62.958333,
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "file": "final-portrait-muted.mp4",
+        "bytes": 23844005,
+        "sha256": "88fb9291601c2f7b98d87674ea90a1c03995baaac27cd7afb0304945179d857b",
+        "duration": 59.375011,
+        "width": 720,
+        "height": 1280
+      }
+    ],
+    "technical_edit": "Crop original720x1280 promotionalbluewrapper to full720x720playfield,x0y168; preserve entire horizontal action and available native scoreboard. Pad charcoal720x1280 atx0y250, source audio physicallymuted. No invented frames, AI video, motionphoto or crop that claims to restore missing original clock.",
+    "scenes": [
+      {
+        "source_id": "PENALTY",
+        "source_start": 33.5,
+        "source_end": 36.5,
+        "text": "Penalti diulang, kembali ditepis!\nArdiansyah menggagalkan Alex lagi",
+        "claim_ids": [
+          "FIRST",
+          "RETAKE"
+        ]
+      },
+      {
+        "source_id": "GOAL",
+        "source_start": 5,
+        "source_end": 11,
+        "text": "Sebelumnya gol bunuh diri Yuran\nPSM unggul pada menit ke-74",
+        "claim_ids": [
+          "OWNGOAL"
+        ]
+      },
+      {
+        "source_id": "PENALTY",
+        "source_start": 2.5,
+        "source_end": 9,
+        "text": "Eksekusi pertama juga dibendung\nNamun penalti harus diulang",
+        "claim_ids": [
+          "FIRST",
+          "RETAKE"
+        ]
+      },
+      {
+        "source_id": "PENALTY",
+        "source_start": 26.5,
+        "source_end": 29.5,
+        "text": "Kiper dinilai bergerak lebih dulu\nWasit memerintahkan pengulangan",
+        "claim_ids": [
+          "RETAKE"
+        ]
+      },
+      {
+        "source_id": "PENALTY",
+        "source_start": 32,
+        "source_end": 39,
+        "text": "Alex kembali menjadi eksekutor\nArdiansyah menepis sekali lagi",
+        "claim_ids": [
+          "RETAKE"
+        ]
+      },
+      {
+        "source_id": "FINAL",
+        "source_start": 52,
+        "source_end": 57,
+        "text": "Persebaya gagal menyamakan skor\nPSM menang 1–0 di Parepare",
+        "claim_ids": [
+          "RESULT"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "PENALTY",
+        "page_url": "https://www.instagram.com/reel/Deyy-z_SChk/",
+        "published_at": "2026-10-22T10:45:12+0000",
+        "creator": "sports.indosiar",
+        "scope": "33.5–36.5 coldopen secondattempt;2.5–9firstattempt;26.5–29.5referee;32–39secondattempt. Portraitpad fullsquareplayfield,mutephysical,notAI.",
+        "visual_transcript": "Transkripvisualsource61.994422s. PemainPersebaya39AlexMartinsputih,kiperPSM1Ardiansyahhijau.1smenunggueksekusi,3.5runup,5.5bolamenujugawang,6–8pertamasaved.23sseranganbalikPSM.27.5refereebiruberbicaramelaluiearpiece,setelahkeputusanulang.31runupulang,34–36penaltiulangditepis,45–47Alexkecewa.58replaykiperhijaumembendung. Frameclockhanyaparsialakibatportraitasli,durasiukurffprobe,phaseaddedtimediperiksateksduaartikel. Contactfps1/5samples2.5,7.5,...bukantime0,5; exact-ssdetail1,3.5,5.5,23,31,34,36,55direview. Audioaslidimutefisik,bukanASRterverifikasi.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. NormalHTTP200 dariakunresmibroadcasterIndosiarSportsmelaluiBDberizin; bukanindividualUGCataureuploadfullmatch. Tidakmengaranggrantlisensitertulisbroadcaster/klub. Wrapperbirudipotongteknisuntukmenjagafullplayfield720px,menghindariteksganda; atribusiIndosiarada,rawprivatVPS. Audiosumberdimutefisik."
+      },
+      {
+        "id": "GOAL",
+        "page_url": "https://www.instagram.com/reel/DeyvTfgS8yF/",
+        "published_at": "2026-10-22T10:12:56+0000",
+        "creator": "sports.indosiar",
+        "scope": "5–11selectedforactualcross/deflection; nativeYuranSalahGawangbluewrapperremoved,notgoalrelabelled.",
+        "visual_transcript": "Transkripvisualsource63.039320s.2.5PSMbuildattack,7.5Lars7burgundymengirimumppandarikanan,sekitar9–12Yuran4putihmengantisipasibola,membelokmasukgawangRezaArya30.12.5boladalamgawang,17–22PSMcelebrates,27.5Yurancloseup,32.5–55replay,57.5Yuranface. Exactgol74dariPSMofficialcaption+IDN,tidakmengarangnativeclockyangtidakutuh. Audiomutefisik.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. NormalHTTP200 dariakunresmibroadcasterIndosiarSportsmelaluiBDberizin; bukanindividualUGCataureuploadfullmatch. Tidakmengaranggrantlisensitertulisbroadcaster/klub. Wrapperbirudipotongteknisuntukmenjagafullplayfield720px,menghindariteksganda; atribusiIndosiarada,rawprivatVPS. Audiosumberdimutefisik."
+      },
+      {
+        "id": "FINAL",
+        "page_url": "https://www.instagram.com/reel/DeyzR0ESd5a/",
+        "published_at": "2026-10-22T10:47:40+0000",
+        "creator": "sports.indosiar",
+        "scope": "52–57 for genuinefull-timebanner1–0andPSMcelebration; hero32sprofilegoalkeeper1withoutheadline.",
+        "visual_transcript": "Transkripvisualsource59.463447s.0–12playersandrefereesfinalmoments,17–23officialsinteractwithplayers; no claimaboutredcarddiscipline.27.5fanscelebrate,30–35Ardiansyahgreenjersey1hugsstaffandteammates,37.5Yuran/disappointedPersebayawhite,47.5Rivera7fromback,52–57broadcastfulltimebannerPSMMakassar1–0PersebayaSurabayaandplayerscelebrate. Hero32sgoalkeeperprofile/jersey1greenverifiedagainstofficialmatchlineups; nofrontal-faceclaim. Audiomutefisik.",
+        "rights_status": "OFFICIAL_REUSE",
+        "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. NormalHTTP200 dariakunresmibroadcasterIndosiarSportsmelaluiBDberizin; bukanindividualUGCataureuploadfullmatch. Tidakmengaranggrantlisensitertulisbroadcaster/klub. Wrapperbirudipotongteknisuntukmenjagafullplayfield720px,menghindariteksganda; atribusiIndosiarada,rawprivatVPS. Audiosumberdimutefisik."
+      }
+    ],
+    "hero": {
+      "original_source": "final-original.mp4",
+      "source_time": 32,
+      "crop": "600x580,x0,y300 from original720x1280. Ardiansyahgreenjersey1leftprofile with teammates/staff, notfrontalportrait; removes scoreboard/headline.",
+      "bytes": 57646,
+      "sha256": "23d9ade1b5495151baf3d0920296abe97eba6a3952ccd80a58c8bdf8adf7e3c7",
+      "native_viewed": true
+    },
+    "visual_review": {
+      "method": "Native complete contacts of all three originals, exact-ss penalty detail frames1,3.5,5.5,23,31,34,36,55, final32hero, all12rendercontact frames across sixcuts; no continuousvideoplayer, no falseplaybackclaim.",
+      "source_contact_sampling": "fps1/5 selects intervalcentres2.5,7.5...; not mistaken for0,5. Exact-ss frames used for cut decisions.",
+      "all_six_cuts_reviewed": true,
+      "clock_limit": "Originalbroadcasterportrait already crops part of native clock/scoreboard; available native fields retained. Event74confirmed through source texts; addedtime/retake confirmed independently, not made-up clock readings.",
+      "chronology": "Coldopen is secondattempt, then captionSebelumnya introduces earlier own-goal, followed by firstattempt/refereedecision/retake. No claim of two penalty awards.",
+      "safe_wrap": true,
+      "contrast_safe": true,
+      "thumbnail_limit": "Firstmovingframe is genuine penalty action. Websitehero separate authentic celebrationframe; customIGthumbnail support not claimed."
+    },
+    "audio": {
+      "physically_muted_source": true,
+      "base_mean_db": -91,
+      "base_max_db": -91,
+      "catalog": {
+        "audio_id": "1003607848234447",
+        "title": "Noir (Slowed) (Instrumental)",
+        "artist": "Tony Dark Eyes",
+        "audio_volume": 30,
+        "video_volume": 0,
+        "checked_at": "2026-10-22T12:05:49.258Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "review_limit": "Account-specificTRENDINGmetadata and instrumental designation reviewed. No audioinput accepted by tools, no audition or combinedcatalogmix preview claimed; metadata not proof of mood/universalvirality/FYP.",
+      "facebook": "Basevideo silent; Instagram catalog not downloaded/embedded into Facebook or website."
+    }
+  },
+  "render": {
+    "bytes": 10313296,
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 30.553333,
+    "scene_count": 6,
+    "source_count": 3,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "f79a04e878537681bc1c8fa9a30a1184a6d5f6707edf82c7d20506f89175597f",
+    "final_after_edit_byte_identical_to_reviewed_preview": true
+  },
+  "scope": {
+    "baseline_rows": 139,
+    "other_existing_rows": 138,
+    "allowed": "Only targetSOCIAL plus one new pairedARTICLE",
+    "clock": "22October20WIB preserved",
+    "preserved": [
+      "other routine slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push review first. Shared committed adapter schedule then verify byteidenticalassets/canonicalARTICLE/scope/idempotence; futurevalidSCHEDULED left to same systemdpublisher, neverMetaDirect.",
+  "private_only": "Original media/fullHTML/fulltexts/packet/APIJSON/signedCDN stay private VPS. Gitownarticle,sanitizedproof and QAcontactderivatives only."
+}

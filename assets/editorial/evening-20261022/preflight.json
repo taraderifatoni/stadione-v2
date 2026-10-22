@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-22T11:57:56.028Z",
+  "baseline_rows": 139,
+  "target": {
+    "id": "1477c8f2-d599-4dd9-8df4-b821ac52276b",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-22T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-22:mid-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Kutipan / update"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "event_terms": [
+    "persebaya",
+    "ardiansyah"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media": 56,
+    "event_duplicates": 0
+  },
+  "published_noon": {
+    "media_id": "18438010528177911",
+    "published_at": "2026-10-22T06:02:06Z",
+    "title": "Persija Berpesta Lima Gol di Patriot",
+    "untouched": true
+  },
+  "seeder_needed": false
+}

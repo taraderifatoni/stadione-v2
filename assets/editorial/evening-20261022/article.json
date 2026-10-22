@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Penalti Diulang, Persebaya Tetap Gagal",
+  "dek": "Ardiansyah membendung eksekusi Alex Martins dan pengulangannya pada tambahan waktu. Persebaya kalah 0–1 dari PSM di Parepare.",
+  "caption": "PENALTI DIULANG, PERSEBAYA TETAP GAGAL\n\nAlex Martins memiliki kesempatan menyamakan skor dari titik putih pada tambahan waktu. Eksekusi pertamanya dibendung Muhammad Ardiansyah, lalu wasit meminta penalti diulang karena kiper dinilai bergerak lebih dulu.\n\nArdiansyah kembali menggagalkan percobaan Alex. PSM mempertahankan kemenangan 1–0 atas Persebaya di Gelora B.J. Habibie, Parepare, Kamis (22/10/2026). Gol tunggal tercatat sebagai gol bunuh diri Yuran Fernandes pada menit ke-74.\n\nFootage pertandingan asli dari Indosiar Sports. Fakta dicocokkan dengan laporan resmi Persebaya, konfirmasi PSM, dan laporan IDN Times.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kesempatan Menyamakan Skor Terbuang",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "FIRST",
+        "RETAKE"
+      ],
+      "text": "Persebaya Surabaya gagal menyamakan skor dari titik penalti pada tambahan waktu dan kalah 0–1 dari PSM Makassar, Kamis, 22 Oktober 2026. Muhammad Ardiansyah membendung eksekusi Alex Martins, termasuk ketika penalti itu harus diulang, untuk menjaga keunggulan tuan rumah di Stadion Gelora B.J. Habibie, Parepare."
+    },
+    {
+      "id": "goal",
+      "heading": "Gol Bunuh Diri Menjadi Pembeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "OWNGOAL",
+        "RESULT"
+      ],
+      "text": "PSM lebih dulu unggul melalui gol bunuh diri Yuran Fernandes pada menit ke-74. Bek Persebaya tersebut salah mengantisipasi bola yang masuk ke pertahanan timnya. Bola justru bersarang di gawang Reza Arya dan menempatkan Persebaya dalam posisi harus mengejar ketertinggalan."
+    },
+    {
+      "id": "initial",
+      "heading": "Tepisannya Belum Mengakhiri Drama",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRST",
+        "RETAKE"
+      ],
+      "text": "Peluang untuk membalas datang pada masa tambahan waktu. Alex menjadi eksekutor, tetapi tendangannya dapat dibendung Ardiansyah. Wasit kemudian memerintahkan pengulangan karena penjaga gawang PSM dinilai bergerak lebih dahulu sebelum bola ditendang."
+    },
+    {
+      "id": "repeat",
+      "heading": "Percobaan Ulang Kembali Dibendung",
+      "kind": "FACT",
+      "claim_ids": [
+        "RETAKE",
+        "RESULT"
+      ],
+      "text": "Alex kembali maju ke titik putih. Hasilnya tetap sama, Ardiansyah menggagalkan eksekusi ulang itu dan Persebaya tidak memperoleh gol penyama. Skor 1–0 bertahan hingga pertandingan berakhir, memastikan tiga poin tetap menjadi milik PSM."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261019-carrick-leeds-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-22T12:17:09.820Z",
+    "article_digest": "43c037fac9c6fae94298c31840f8d042d0754853d54b58e61210d2357aea9db1"
+  }
+}
