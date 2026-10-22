@@ -1,0 +1,354 @@
+{
+  "reviewed_at": "2026-10-22T05:13:25.589Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "ae4430281207d27d6430bfc4d3718e85dd514ef1",
+  "target": {
+    "id": "99df7779-2bb7-4d46-aed3-2c54513ffdc1",
+    "plan_key": "2026-10-22:mid-noon",
+    "event_key": "persija-arema-five-goals-20261021",
+    "scheduled_at": "2026-10-22T06:00:00Z",
+    "format": "CAROUSEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI release getDailySportsPool via committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-22T04:57:26.026Z",
+    "pool_sha256": "5668396f7d1a84668941d5a438b001481405162099d38cc9343e5a44da6803e3",
+    "selected_trend": "persija jakarta vs arema fc",
+    "business_discovery": {
+      "account": "persija",
+      "parents": 30,
+      "children_checked": true
+    },
+    "carousel_slot_original": true,
+    "no_reel_fallback": true
+  },
+  "sources": [
+    {
+      "id": "PRIMARY",
+      "url": "https://www.ileague.id/news/detail/arema-fc-kebobolan-5-gol--marcos-santos-soroti-momentum-yang-hilang-",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-10-22T04:58:51.091Z",
+      "text_sha256": "2b71c7665314f32d102ddd80fcdc65b84691f490a440457523f430ba52e51690",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 read including closing Marcos reaction; browser failed, no full browser claim."
+    },
+    {
+      "id": "MATCH",
+      "url": "https://www.ileague.id/result/detail/BRI_SUPER_LEAGUE_2026-27/2026-10-21/PERSIJA_JAKARTA/AREMA_FC",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-21",
+      "retrieved_at": "2026-10-22T04:58:09.377Z",
+      "text_sha256": "d53728af292470996897cc5faca04fa1af30dd092c76360865260f5138d1c59f",
+      "full_read": true,
+      "method": "Full public match page HTTP200 and browser read through match timeline, lineups, statistics and recent meetings. Page has stale top2:0widget and duplicate event cards, not treated as final score or extra goals."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8718021/hasil-persija-vs-arema-fc-macan-kemayoran-menang-5-1",
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "primary": false,
+      "published_at": "2026-10-21T20:55:00+07:00",
+      "retrieved_at": "2026-10-22T04:58:10.020Z",
+      "text_sha256": "0e9ef89b175b1651ad308ac60de62e6dcec02945c469bb4cda23865cbbe092ba",
+      "full_read": true,
+      "method": "Full browser and normal publicHTMLHTTP200. Original bylined independent match report, DetikRifqiArditaWidianto / ANTARAZaroEzzaSyachniar."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://www.antaranews.com/berita/5802997/jeremejeff-dua-gol-persija-bantai-arema-5-1-di-stadion-patriot",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-10-21T21:17:00+07:00",
+      "retrieved_at": "2026-10-22T04:58:51.182Z",
+      "text_sha256": "b1342e6b485d6e8d67abdeca069aac84e5d8afb87453ca98a1fa2233b54cd7c6",
+      "full_read": true,
+      "method": "Full browser and normal publicHTMLHTTP200. Original bylined independent match report, DetikRifqiArditaWidianto / ANTARAZaroEzzaSyachniar."
+    }
+  ],
+  "facts": {
+    "verified": [
+      "Persija5–1Arema,PatriotCandrabhagaBekasi,21October2026,week6",
+      "Jeremejefftwo first-halfgoals, first10fromHannan withleftfootfinish; secondfromlossofpossessionbuildupatkeeperAdiSatryo, halftime2–0",
+      "Loncar76thenDethan,lateGabrielreplyandaddedtimeMamut;fourPersijascorers"
+    ],
+    "excluded": [
+      "Arema official report says Jeremejeffhat-trick67 but officialleague,DetikandANTARAsaytwo; matchsheet67is substitution OUT, notgoal. Arema report notused inpacket.",
+      "Dethan80vs81,Gabriel87vs88,Mamut90+2vs90+3 conflicts; noexactminute for these goals.",
+      "LoncarassistDethanvsDony conflict; noassisterclaimed for this goal.",
+      "Stale FT2:0topwidget and duplicateeventcards excluded; official narrative1–5away and recentmeetings5:1home corroborate full independent reports.",
+      "No invented quotes, officialMOTM or claims of hat-trick; no current standings assertion requiring live table."
+    ]
+  },
+  "reading_limits": {
+    "pdf": "PublicMatchSummaryPDF downloadedHTTP200 but pdftotext missing; not read or used as evidence, no installation claimed.",
+    "bola": "NormalrequestSSLcertificateerror; stopped without disabling TLS. Notused; sufficient other complete sources."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 148,
+    "paragraphs": 4,
+    "pages": 5,
+    "digest": "a0a20479721f761ac576d3e29bffbe9977e7d21e3d7f1fa383c2af298417097b",
+    "benchmark_ids": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261019-carrick-leeds-reaction-news"
+    ],
+    "whole_article_before_pagination": true,
+    "quote_words": 0,
+    "lessons": "Foden reference ties result to concrete goal mechanisms; latest Havertz reading distinguishes interpretation and evidence. Removed a generic bridging sentence rather than filling a page. NoAnalisisStadione/processheading/scaffold/filler."
+  },
+  "media": {
+    "source": {
+      "index": 0,
+      "id": "18035032586894954",
+      "http": 200,
+      "bytes": 1928207,
+      "sha256": "63beaa8b245faaec3c60f8f7800d90f6c6f27ef43bc53491513e02b8501c33c0",
+      "page_url": "https://www.instagram.com/p/DewtRD2FMxk/",
+      "published_at": "2026-10-21T15:15:37+0000"
+    },
+    "identity": "StjepanLoncar33, tattooedforearm/curlyhair/beard/redkit/number33visible. Chosen as authentic teamwin illustration, not presented as Jeremejeff. Othercandidatephoto2notconfirmedJeremejeff and notused.",
+    "source_photo_private": "photo-0.jpg",
+    "hero": {
+      "bytes": 130102,
+      "sha256": "7678f84b4eb0371b3bd5bc544fa112abc5fa1b75f2421ceb87d8dce060114514",
+      "method": "Original club photo resized900px, no headline or AI background; websitecreditnamesLoncar."
+    },
+    "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. PhotoofficialpersijaalbumDewtRD2FMxkchild18035032586894954diunduhnormalHTTP200, bukanindividualUGC. Tidakmengaranggrantlisensitertulisklub/penerbit.",
+    "cover": {
+      "sha256": "8270d0e60619e7cef605c736787bc57e62c9582ee14088ee8d78303a3c7fc9d8",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "headline": "Persija Berpesta Lima Gol di Patriot",
+      "dek": "Dua gol sebelum jeda mengantar Persija menang 5–1 atas Arema. Loncar, Dethan, dan Mamut menambah gol pada babak kedua.",
+      "source_label": "ILEAGUE.ID",
+      "reviewed_at": "2026-10-22T05:11:34.474Z",
+      "reviewed_by": "CODEX_EDITOR",
+      "page_count": 5,
+      "safe_wrap": true,
+      "authentic_subject": true,
+      "editorial_background": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "variant_id": "FOTO_DOMINAN",
+      "variant_standard": "STADIONE_COVER_VARIANTS_V1",
+      "generated_from_authentic_photo_and_variant_reference": true,
+      "technical_normalization": "See private cover-normalization.json for dimensions, padding and complete-byte review."
+    }
+  },
+  "visual_review": {
+    "method": "Native full sourcephoto/identity number and cover, followed by contact-a pages1–3 and contact-b pages4–5; all body text read. Covertitle/dek/source/count/margins/face checked.",
+    "all_five_slides_read": true,
+    "no_body_overflow": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "source_on_cover_only": true,
+    "body_cream_text_only": true
+  },
+  "render": [
+    {
+      "page": 1,
+      "bytes": 460689,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "ILEAGUE.ID",
+      "cover_input_sha256": "8270d0e60619e7cef605c736787bc57e62c9582ee14088ee8d78303a3c7fc9d8",
+      "output_sha256": "2b357abc106c810c3d0ac77760269fa3b3e9b95eb1d3d33715ec5e696bd5691f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 185957,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "49eb03f71d987c8c979ae51f2c4ec87a123357a0e347a74ad70375ce9d02c594",
+      "output_sha256": "5a9e91c713682eca140ca92cab82b56bdae01d8e54b5ad1a8d0587a6dda8c7f5",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 631,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 911,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 124240,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "0eab3579f15dd6d908648b20181bacf8f3650c05ae8fe1d919e6d35cadec950a",
+      "output_sha256": "6766a1c9585bfc2fa8d3a2a5e33f8ccd059365d77782a54972770f0e3372c236",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 187,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 753,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 929,
+          "height": 187,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 167422,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e349544762cba0eaee651bff27f39ed029ecb34b9cfe18d2b6e9fd85643ebb57",
+      "output_sha256": "34418b3491709f253329eb98b60fc28091cd7fc83fa829ecc742b5b9535b4cfd",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 899,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 881,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 180880,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "1375031460398557ac01ff37a09015bde54bc240ba9ad507ea4616f6e5186b29",
+      "output_sha256": "2d08400752fbc8b0f415ef9150e67db22eead054b5444a6d4bb5a8e3f5ef8470",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 912,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 932,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": {
+    "baseline_rows": 138,
+    "allowed": "Only targetSOCIAL plus one new pairedARTICLE",
+    "other_existing_rows": 137,
+    "clock": "22October13WIB unchanged",
+    "preserved": [
+      "other slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push before committed shared adapter schedule, noMetaDirect. Verify futureSCHEDULED pair/canonicalbody/renderbytes/idempotence and all other rows before leaving sharedpublisher.",
+  "private_only": "Sourcephotos,rawHTML/fulltext,packet,generatedPNG,APIJSON and signedCDNURL remainprivateVPS. Gitownarticle,sanitizedproof,coverbrief and QAderivativesonly."
+}

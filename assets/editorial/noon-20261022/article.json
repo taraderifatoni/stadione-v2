@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persija Berpesta Lima Gol di Patriot",
+  "dek": "Dua gol sebelum jeda mengantar Persija menang 5–1 atas Arema. Loncar, Dethan, dan Mamut menambah gol pada babak kedua.",
+  "caption": "PERSIJA BERPESTA LIMA GOL DI PATRIOT\n\nPersija menang 5–1 atas Arema FC di Patriot Candrabhaga, Bekasi, Rabu (21/10/2026). Alexander Jeremejeff mencetak kedua gol pada babak pertama.\n\nGol pembuka lahir dari umpan Rayhan Hannan. Menjelang jeda, tekanan Persija membuat kiper Arema kehilangan bola dan Jeremejeff menuntaskan peluang ke gawang terbuka.\n\nStjepan Loncar, Victor Dethan, dan Ivan Mamut menambah gol setelah jeda. Gabriel Silva mencetak satu gol balasan Arema.\n\nSumber ILeague, detikSport dan ANTARA. Foto selebrasi asli Stjepan Loncar dari akun resmi Persija, laga melawan Arema pada 21 Oktober.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Gol Jeremejeff Membuka Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "FIRST",
+        "PRESS"
+      ],
+      "text": "Alexander Jeremejeff mencetak dua gol sebelum turun minum saat Persija Jakarta mengalahkan Arema FC 5–1 di Stadion Patriot Candrabhaga, Bekasi, Rabu, 21 Oktober 2026. Keunggulan pada babak pertama menjadi pijakan tuan rumah untuk menambah tiga gol setelah jeda dalam laga pekan keenam Super League tersebut."
+    },
+    {
+      "id": "opener",
+      "heading": "Hannan Menyuplai Gol Pembuka",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRST"
+      ],
+      "text": "Persija membuka skor pada menit ke-10. Jeremejeff menerima umpan Rayhan Hannan dan masuk dari sisi kanan sebelum menyelesaikan peluang dengan kaki kiri."
+    },
+    {
+      "id": "pressure",
+      "heading": "Tekanan Menghasilkan Gol Kedua",
+      "kind": "FACT",
+      "claim_ids": [
+        "PRESS"
+      ],
+      "text": "Gol kedua berawal dari tekanan Persija ketika Arema mencoba membangun serangan. Kiper Muhammad Adi Satryo kehilangan bola, lalu Jeremejeff menuntaskannya ke gawang yang terbuka. Gol menjelang jeda itu membuat Persija masuk ruang ganti dengan keunggulan 2–0."
+    },
+    {
+      "id": "finish",
+      "heading": "Tiga Nama Lain Menambah Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "MORE",
+        "RESULT"
+      ],
+      "text": "Stjepan Loncar memperbesar keunggulan pada menit ke-76, disusul gol Victor Dethan. Arema sempat membalas melalui Gabriel Silva pada akhir babak kedua. Namun, Ivan Mamut menyambar bola hasil tepisan kiper pada masa tambahan waktu untuk mengunci skor 5–1. Persija menutup laga dengan empat pencetak gol berbeda."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261019-carrick-leeds-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-22T05:06:03.749Z",
+    "article_digest": "a0a20479721f761ac576d3e29bffbe9977e7d21e3d7f1fa383c2af298417097b"
+  }
+}

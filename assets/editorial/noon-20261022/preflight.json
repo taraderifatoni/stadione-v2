@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-22T04:57:11.982Z",
+  "baseline_rows": 138,
+  "target": {
+    "id": "99df7779-2bb7-4d46-aed3-2c54513ffdc1",
+    "status": "DRAFT",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-10-22T06:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-22:mid-noon",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Update / analisis"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "event_terms": [
+    "jeremejeff",
+    "5–1"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media": 55,
+    "event_duplicates": 0
+  },
+  "related_previous": "Fabio20October post mentions upcomingArema but reports17OctoberPersita. Current21October5–1result distinct; not mutated.",
+  "published_morning": {
+    "media_id": "18101582045637655",
+    "published_at": "2026-10-22T01:02:17Z",
+    "untouched": true
+  },
+  "seeder_needed": false
+}
