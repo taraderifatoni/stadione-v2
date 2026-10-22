@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-22T00:13:19.378Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "0043dcbe-78cc-4b0d-a2b8-4c8013e8f0ee",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-22:mid-am",
+    "event_key": "como-united-four-goals-20261021-reel",
+    "scheduled_at": "2026-10-22T01:00:00+00:00",
+    "time_wib": "22 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "7cc78534-d195-44f6-b408-5cae10f48a59",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-22T01:00:00+00:00",
+    "title": "MU Tumbang 1–4 di Como",
+    "canonical_body_identical": true,
+    "digest": "54db0f7fe115941d90709f94f5fc13e101d5e4a051745af8ef2a6660ab3432f4",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 38308,
+      "sha256": "31b6f4c56e3bbb0883eec7706e70f0490d64af1a57658d208f92e351e0727933",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 7370209,
+      "sha256": "be6d9f0b54756420befab768b2c3eee8f46a3983820151f2490f0b34289e0802",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 54,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 136,
+  "changed_other_rows": [],
+  "baseline_rows": 137,
+  "current_rows": 138,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "33d411a2785fd2559e7ce9d92e74638ae3f0dee5"
+}
