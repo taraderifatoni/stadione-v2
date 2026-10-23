@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-10-23T00:20:26.255Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "be3baf50-5f99-43a0-9965-610cde073ad8",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-23:fri-am",
+    "event_key": "ubed-french-open-quarterfinal-preview-20261023",
+    "scheduled_at": "2026-10-23T01:00:00+00:00",
+    "time_wib": "23 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "f5846822-d34e-4920-b3c7-db817e36cfd2",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-23T01:00:00+00:00",
+    "title": "Ubed Mengincar Semifinal di Prancis",
+    "canonical_body_identical": true,
+    "digest": "9d9909c54c13221754bd2c11d8e2e37c1cead7d26937b5b44d47bd6f332394fe",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 47614,
+      "sha256": "91db2c038c053daf673e0159006f18f9f5e2b192c2039232735853e430e5a82f",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 689056,
+      "sha256": "2989b0393ca1e0605eb4d0e97f8c72cb737ffceeddcb4a02a66ebd9b88182304",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 166755,
+      "sha256": "46d34bf96d2f9b8bfe41e9a0635224d08f46358e8aed0007b55cf314f9b6efc1",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 204262,
+      "sha256": "42c1878af32f42e8a793fe92403855d8111ddfed3d3cdfcd1b7c528883f09f10",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 210839,
+      "sha256": "55b2d6f137410f1aee0b4d3eda29c144757892ef1b04fcdb0d48af21d277d7c1",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 57,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 142,
+  "changed_other_rows": [],
+  "baseline_rows": 143,
+  "current_rows": 144,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "c7979e45742ddc57282195ad8827d1e424810552"
+}
