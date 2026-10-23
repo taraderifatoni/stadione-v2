@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-23T12:20:26.742Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "5a3d8b40-89a7-4b44-989d-377cada08411",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-23:fri-pm",
+    "event_key": "persib-garudayaksa-recovery-preview-20261025-reel",
+    "scheduled_at": "2026-10-23T13:00:00+00:00",
+    "time_wib": "23 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "b7ae52b7-fe34-4675-9e5d-923923006549",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-23T13:00:00+00:00",
+    "title": "Persib Dahulukan Pemulihan untuk Garudayaksa",
+    "canonical_body_identical": true,
+    "digest": "af8cada916d3efb7249f9fb6600f63c7a0dc0437e118b07ec5788c70c6a33907",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 111907,
+      "sha256": "1194cb95ce12339cdea694cdbf9248c1303468fedbeeeea78de947d7af34b6f6",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 10908307,
+      "sha256": "e23eeb83fcc527fd53417533746701e270fb9ebcde0607499af92c6766856e2d",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 59,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 144,
+  "changed_other_rows": [],
+  "baseline_rows": 145,
+  "current_rows": 146,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "37fc99f14089b4bd592fa8a61cada4cdeaac717f"
+}
