@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persib Dahulukan Pemulihan untuk Garudayaksa",
+  "dek": "Jeda tiga hari setelah laga di Madura membuat kondisi pemain menjadi perhatian Tolic. Persib berikutnya bertandang ke Pakansari.",
+  "caption": "PERSIB DAHULUKAN PEMULIHAN UNTUK GARUDAYAKSA\n\nPersib mengalihkan perhatian ke pemulihan kondisi menjelang laga tandang melawan Garudayaksa FC di Pakansari, Minggu (25/10/2026), pukul 19.00 WIB.\n\nSeusai kalah 0–1 dari Madura United pada 22 Oktober, Igor Tolic menjelaskan rencana menginap dan memulihkan kondisi di Surabaya sebelum kembali ke Bandung. Ia juga belum memastikan susunan pemain dalam keterangannya seusai laga tersebut.\n\nJadwal lawan Garudayaksa dicocokkan dengan operator ILeague dan ANTARA. Rencana pemulihan serta penilaian kondisi pemain berasal dari laporan jumpa pers Liga Olahraga dan detikJabar.\n\nVideo adalah dokumentasi pascalaga di Madura pada 22 Oktober dari akun resmi Persib, bukan rekaman latihan atau perjalanan 23 Oktober. Tidak ada starting XI resmi untuk laga 25 Oktober dalam konten ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kondisi Pemain Jadi Perhatian",
+      "kind": "FACT",
+      "claim_ids": [
+        "RECOVERY",
+        "FIXTURE",
+        "RESULT"
+      ],
+      "text": "Persib Bandung memprioritaskan pemulihan kondisi menjelang pertandingan melawan Garudayaksa FC di Stadion Pakansari, Bogor, Minggu, 25 Oktober 2026. Jadwal itu hanya berjarak tiga hari dari kekalahan 0–1 di markas Madura United, sehingga perjalanan pulang juga menjadi bagian dari persiapan tim."
+    },
+    {
+      "id": "route",
+      "heading": "Pemulihan Dimulai dalam Perjalanan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RECOVERY"
+      ],
+      "text": "Seusai laga di Pamekasan, Igor Tolic menjelaskan rencana tim untuk naik bus dan menginap di Surabaya. Pemulihan akan dilakukan di hotel sebelum rombongan terbang ke Bandung. Rencana itu menempatkan waktu istirahat di sela perpindahan kota, sebelum Persib kembali menyiapkan laga tandang berikutnya."
+    },
+    {
+      "id": "choice",
+      "heading": "Tolic Masih Menilai Kesiapan Pemain",
+      "kind": "FACT",
+      "claim_ids": [
+        "SELECTION"
+      ],
+      "text": "Tolic belum menetapkan susunan pemain dalam keterangannya setelah pertandingan melawan Madura United. Ia akan melihat kondisi anak asuhnya sebelum menentukan siapa yang bermain."
+    },
+    {
+      "id": "next",
+      "heading": "Garudayaksa Menunggu di Pakansari",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE"
+      ],
+      "text": "Menurut jadwal operator ILeague, Garudayaksa akan menjamu Persib pada pekan ketujuh Super League, dengan sepak mula pukul 19.00 WIB."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261019-carrick-leeds-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-23T12:10:36.569Z",
+    "article_digest": "af8cada916d3efb7249f9fb6600f63c7a0dc0437e118b07ec5788c70c6a33907"
+  }
+}

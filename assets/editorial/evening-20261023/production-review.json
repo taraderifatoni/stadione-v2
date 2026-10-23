@@ -1,0 +1,305 @@
+{
+  "reviewed_at": "2026-10-23T12:18:22.099Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "b9841b12f4810d0649435fa264ad950e6e566aa7",
+  "target": {
+    "id": "5a3d8b40-89a7-4b44-989d-377cada08411",
+    "plan_key": "2026-10-23:fri-pm",
+    "event_key": "persib-garudayaksa-recovery-preview-20261025-reel",
+    "scheduled_at": "2026-10-23T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI release getDailySportsPool via committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-23T11:59:34.060Z",
+    "pool_sha256": "6026f2926446e9b7dd4bec35472744006a46efdb0a76a4b41771febd6e38d86a",
+    "selection": "Madura-Persib trend led to current recovery preview of next Garudayaksa fixture. No prioritised club match tonight, not fabricated startingXI.",
+    "youtube_research": [
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Persija Persib Persebaya PSS Timnas Indonesia preview 23 24 Oktober 2026"
+        ],
+        "checked_at": "2026-10-23T11:59:35.087Z",
+        "candidates": 0,
+        "sha256": "440502a1d7bb2e10e974df5f248ab8e350d7e9fa4d91910abe0c00f090549d83"
+      },
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Persib Garudayaksa"
+        ],
+        "checked_at": "2026-10-23T12:00:24.161Z",
+        "candidates": 19,
+        "sha256": "0e1c1cfbc63ee70a3019a388921b101e7f9903fd0e0b9041ab6d2a49eb5cc635"
+      }
+    ],
+    "youtube_limits": "Metadata is not footage; no claims YouTube downloaded. Simulation/PES candidate excluded, schedule cards/commentary not treated as live match evidence. Rumor changed afternoon kickoff not accepted over actual operator fixture19:00.",
+    "business_discovery": [
+      {
+        "account": "persib",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "persija",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "officialpersebaya",
+        "parents": 30,
+        "children_checked": true
+      }
+    ],
+    "format_kept": "REEL, no fallback"
+  },
+  "sources": [
+    {
+      "id": "PRESS",
+      "url": "https://www.ligaolahraga.com/bola/persib-upayakan-proses-pemulihan-di-sela-sela-jadwal-padat",
+      "publisher_group": "LIGA_OLAHRAGA",
+      "primary": true,
+      "published_at": "2026-10-23T09:20:00+07:00",
+      "retrieved_at": "2026-10-23T12:01:33.349Z",
+      "text_sha256": "abe3520f45ccabe9defd8c7da95eee7111aaaa8f1e685c64a8036e3f18e6e038",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body through final paragraph. Browser opens failed internally, not claimed successful. PRESS:bylineM.Aldi direct attributed Tolic postmatch pressconference. DETIK:BimaBagaskara independent publisher reporting same presser, not two interviews. ANTARA full schedule."
+    },
+    {
+      "id": "DETIK",
+      "url": "https://www.detik.com/jabar/sepakbola/d-8720042/persib-bandung-fokus-pemulihan-jelang-laga-kontra-garudayaksa",
+      "publisher_group": "DETIK_TRANSMEDIA",
+      "primary": false,
+      "published_at": "2026-10-23T09:10:00+07:00",
+      "retrieved_at": "2026-10-23T12:01:33.348Z",
+      "text_sha256": "2ad8612dfe12613bd5e37a19535fbb2d4f8294a1806641860fda746e48a85457",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body through final paragraph. Browser opens failed internally, not claimed successful. PRESS:bylineM.Aldi direct attributed Tolic postmatch pressconference. DETIK:BimaBagaskara independent publisher reporting same presser, not two interviews. ANTARA full schedule."
+    },
+    {
+      "id": "FIXTURE",
+      "url": "https://www.ileague.id/fixtures/index/BRI_SUPER_LEAGUE_2026-27/7",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-23T12:04:44.190Z",
+      "text_sha256": "55e8b64e9ffef8da6f9afefc08d70774c8c506dbd4714c183ea1b98e2b4dbd54",
+      "full_read": true,
+      "method": "Official full fixture page browser+normalHTMLHTTP200 on www.ileague.id; earlier ligaindonesiabaru alias connection/502 failure recorded, no auth/challenge bypass. Source day23October is current fixture snapshot tag, not invented publication timestamp."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://www.antaranews.com/berita/5806407/jadwal-super-league-persib-hadapi-garudayaksa-hingga-derbi-suramadu",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-10-23T05:55:00+07:00",
+      "retrieved_at": "2026-10-23T12:01:33.349Z",
+      "text_sha256": "1c1f06676210fb6d7dd306d3ba1629921badb9c9a8f8c93e0409140e4b39655d",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body through final paragraph. Browser opens failed internally, not claimed successful. PRESS:bylineM.Aldi direct attributed Tolic postmatch pressconference. DETIK:BimaBagaskara independent publisher reporting same presser, not two interviews. ANTARA full schedule."
+    }
+  ],
+  "facts": {
+    "verified": [
+      "Garudayaksa hosts Persib25October2026Sunday19.00WIB,PakansariBogor,week7SuperLeague; operator+ANTARA latest read",
+      "Persib lost0–1atMadura22OctoberPamekasan; threecalendar days until25, not72hfullrest",
+      "Tolic postmatch22October described plannedbus/overnightSurabaya/hotelrecovery/flightBandung; not confirmation actual hotel/travel took place23",
+      "Tolic had not fixed players in statementafterMadura; condition assessed before selection. Not fresh officialXIannouncement."
+    ],
+    "excluded": [
+      "Whoosh versus bus on Bandung–Bogor leg conflicts between LigaOlahraga/Detik; omitted both modes for that leg.",
+      "No exact goaltime89, scorer, injuries, currentstandings or tenfixture/fiveremaining/17day counts not necessary to this story.",
+      "No unverified currentdaytraining/recovery footage, false attribution to individual player, invented speech transcript or coach quote from mutedvideo.",
+      "No fictional match tonight or shifted25Octoberafternoon kickoff."
+    ],
+    "primary_basis": "Official ILeague is primary for schedule. PRESS M.Aldi is classified primary for on-record attributed postmatch pressconference report (article explicitly says kataIgorTolicdalamjumpaperssetelahlaga), not mislabelled officialPersib. Detik separate publisher has same presser context. Matchscore also supported by ANTARA."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 124,
+    "paragraphs": 4,
+    "digest": "af8cada916d3efb7249f9fb6600f63c7a0dc0437e118b07ec5788c70c6a33907",
+    "benchmark_ids": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261019-carrick-leeds-reaction-news"
+    ],
+    "whole_article_before_scenes": true,
+    "quote_words": 0,
+    "lessons": "United injury reference links preparation and unsettled availability without inventing diagnosis/selection. Carrick reference attributes assessment/time. Latest ratings reading distinguishes opinion/statistics. Removed defensive/generic bridge and repeated closing rather than padding."
+  },
+  "media": {
+    "downloads": [
+      {
+        "name": "postmatch",
+        "id": "17907848619605135",
+        "page_url": "https://www.instagram.com/reel/DezMXV4TSH1/",
+        "published_at": "2026-10-22T14:29:14+0000",
+        "http": 200,
+        "bytes": 7372944,
+        "sha256": "7edf0c88781d151b3462bdf5554473774f58bf72ea5881f4ad1e1b4cb5ecf059",
+        "duration": "20.686122",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      {
+        "name": "halftime",
+        "id": "18252005005310686",
+        "page_url": "https://www.instagram.com/reel/DezBiKTzgy4/",
+        "published_at": "2026-10-22T12:51:51+0000",
+        "http": 200,
+        "bytes": 1517680,
+        "sha256": "e9d5548a1c62e209f675a7ff3278d65fab1fbf60ebff9f21e8d95f58ecebf460",
+        "duration": "15.090113",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      }
+    ],
+    "usable": "POSTMATCH17907848619605135",
+    "rejected": {
+      "id": "18252005005310686",
+      "page_url": "https://www.instagram.com/reel/DezBiKTzgy4/",
+      "reason": "HALFTIME graphics with still-player frames/photographic card, not accepted movingfootballfootage; downloaded/visually checked but never selected."
+    },
+    "transcript": "Transkripvisual, bukan ASR:source20.686122s/720x1280.0–3benchpemainbirudanstafulightblue,3–5stafbersalaman,5–8pemain/stafdi bench,8–10pemainbiruberjalanmeninggalkanbench,10–13pemainbergantianlewatdekatkamerasambilmasuklorong,13–15staf/pemainmenurunianaktangga,15–18ruanggantipemainbiruberberes,18–20.5pemainkostumkiperswarnaijauhijau dudukdanstafmelintas. Nativefullcontactfps1/5centres2.5,7.5,12.5,17.5;fullsecondscontactcentres0.5hingga20.5 dibaca. Wajah aslihero9.5diperiksanativetanpamenamaiindividual; nodeklimpercakapanyangtidakditranskripsikan. Videoofficialdiunggah22Oct14:29Zcaptionkerjakerasmalamini, rawontekspascalagaMadura. Bukanlatihan/pemulihanfisik23. Audiomutefisik.",
+    "selected_scenes": [
+      {
+        "source_id": "POSTMATCH",
+        "source_start": 0,
+        "source_end": 5,
+        "text": "Persib dahulukan pemulihan\nMenuju laga melawan Garudayaksa",
+        "claim_ids": [
+          "RECOVERY",
+          "FIXTURE"
+        ]
+      },
+      {
+        "source_id": "POSTMATCH",
+        "source_start": 5,
+        "source_end": 9,
+        "text": "Rencana istirahat di Surabaya\nSebelum kembali ke Bandung",
+        "claim_ids": [
+          "RECOVERY"
+        ]
+      },
+      {
+        "source_id": "POSTMATCH",
+        "source_start": 9,
+        "source_end": 15,
+        "text": "Tolic masih menilai kondisi pemain\nSusunan tim belum dipastikan",
+        "claim_ids": [
+          "SELECTION"
+        ]
+      },
+      {
+        "source_id": "POSTMATCH",
+        "source_start": 15,
+        "source_end": 20,
+        "text": "Pakansari, 25 Oktober 19.00 WIB\nFootage pascalaga 22 Oktober",
+        "claim_ids": [
+          "FIXTURE",
+          "RESULT"
+        ]
+      }
+    ],
+    "technical_input": {
+      "bytes": 9001080,
+      "sha256": "81a9857f5c1aeb7224e5e10389e2bf8acf38e9c7bc132575b4c09f6db7271c3f",
+      "method": "Crop720x720x0y220, pad720x1280x0y200charcoal; sourcevisuals retained in square centre, clear header/captionbands; physicalaudio muteAAC. Initial fullportrait preview white text on bright scene rejected, final native contact rechecked."
+    },
+    "hero": {
+      "timestamp": 9.5,
+      "bytes": 111907,
+      "sha256": "1194cb95ce12339cdea694cdbf9248c1303468fedbeeeea78de947d7af34b6f6",
+      "method": "Original frame9.5s crop720x700x0y120→900px, bluejersey player face fully visible, noheadline/AI. Individual name not asserted. Earlier12.5frame rejected because face cut off, not used."
+    },
+    "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. OfficialPersib17907848619605135 normalHTTP200viaBDberizin. BukanUGCpribadi/reuploadfullmatch. Tidakmengaranggrantlisensitertulisklub. Audiosumberdimutefisik;rawprivatVPS.",
+    "audio": {
+      "catalog": {
+        "audio_id": "636633339156845",
+        "title": "Week's Pace (Reels Sound - Before And After)",
+        "artist": "POTG",
+        "audio_volume": 20,
+        "video_volume": 0,
+        "checked_at": "2026-10-23T12:04:57.278Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "metadata_review_only": true,
+      "audition_claimed": false,
+      "limitation": "Tools do not accept playable audio input; no claim listening/audition/combinedcatalogmixpreview. Selection from actual current accountTRENDING metadata, not universalviral/FYP guarantee. Do not download catalog preview or embed into Facebook/website.",
+      "base_mean_db": -91,
+      "base_max_db": -91,
+      "facebook_base_silent": true
+    }
+  },
+  "visual_review": {
+    "method": "Native first sourcecontact, full21frame one-second sampling through20.5s (centres0.5,1.5,...), actual9.5hero. Final rendered8frames at1.25,3.75,...18.75 cover all4cuts. All text/captions/credit/faces/end inspected.",
+    "continuous_video_playback_claimed": false,
+    "moving_footage_verified_from_source_sequence": true,
+    "final_text_contrast": "White on charcoal header/captionbands, no bright scene behind text",
+    "no_ai_or_slideshow": true,
+    "no_mislabeled_training_or_recovery": true,
+    "temporal_label": "Finalcaption explicitly Footagepascalaga22Oktober; description says not23training/travel",
+    "end_trim": "20.0s avoids native dark tail around20.5s",
+    "all_scenes_reviewed": true
+  },
+  "render": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.070667,
+    "scene_count": 4,
+    "source_count": 1,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "e23eeb83fcc527fd53417533746701e270fb9ebcde0607499af92c6766856e2d",
+    "bytes": 10908307,
+    "sha256": "e23eeb83fcc527fd53417533746701e270fb9ebcde0607499af92c6766856e2d"
+  },
+  "scope": {
+    "baseline_rows": 145,
+    "allowed": "Only targetSOCIAL plus one new pairedARTICLE",
+    "other_existing_rows": 144,
+    "clock": "23October20WIB unchanged",
+    "preserved": [
+      "other slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push before committed shared adapter schedule; noMetaDirect. Verify futureSCHEDULED pair/canonicalbody/renderbytes/idempotence and other rows before leaving sharedpublisher.",
+  "private_only": "Rawvideo/sourceHTML/fulltext/APIJSON/packet/signedCDN onlyprivateVPS. Git ownarticle/sanitizedproof/QAcontacts only."
+}

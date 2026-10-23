@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-23T11:59:13.901Z",
+  "baseline_rows": 145,
+  "target": {
+    "id": "5a3d8b40-89a7-4b44-989d-377cada08411",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-23T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-23:fri-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Preview / matchday",
+    "theme": "Starting XI resmi atau preview laga sesuai jadwal aktual"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "event_terms": [
+    "garudayaksa",
+    "pemulihan"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media": 59,
+    "event_duplicates": 0
+  },
+  "related_previous": "21October Persib rotation preview concerns Madura22; current recovery story is for Garudayaksa25. Initial generic Persib+pemulihan search matched3olderCMSrows: SandyViettel14October and FitrahPersik18October plus IG Sandy14October. All manuallyread, distinctfixture/angle; switched to Garudayaksa+pemulihan before commit/schedule and repeated committed preview. Old IG AlexMartins trivia mentions Garudayaksa as Persebaya opponent, also distinct. No revival or historical edit.",
+  "published_noon": {
+    "media_id": "18200932519383133",
+    "published_at": "2026-10-23T06:01:16Z",
+    "untouched": true
+  },
+  "seeder_needed": false
+}
