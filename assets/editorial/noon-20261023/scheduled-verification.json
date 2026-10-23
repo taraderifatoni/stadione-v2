@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-23T05:15:46.890Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "2a1f5930-1462-49e7-a20d-fdc10c301d5b",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-23:fri-noon",
+    "event_key": "clasico-six-point-community-poll-20261025",
+    "scheduled_at": "2026-10-23T06:00:00+00:00",
+    "time_wib": "23 Oktober 2026 13.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "a502c54b-9f56-40a5-9769-f199f0a8a32d",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-23T06:00:00+00:00",
+    "title": "Barcelona atau Madrid, Siapa Pilihanmu?",
+    "canonical_body_identical": true,
+    "digest": "b2240c11d303063ae811bfc90cbac49e45563778c69ba0bc693a0dccfd101cd3",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 58462,
+      "sha256": "106df29010e035bc1012dbf61ff5208e4616ea418fcd7bfd671375b8c1b6aaac",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 664229,
+      "sha256": "b2bd3a58bbfeb7b9c27faefc4c94b7bbd4a3282c8911377d7032dfcc77e81bd3",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 146011,
+      "sha256": "476eb587eeb9eea925a5744d08a17916adf7851465c0a53014eac14da6499799",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 170545,
+      "sha256": "d12bf285f5ea8dbcecae935b27017adb53bb777def35740ace0faff8b8ad7343",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 153212,
+      "sha256": "5ba69c9b81efa0642f0705ba1722f0bc8940fa0b95388558b48318ad16bc4daa",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 153435,
+      "sha256": "e544a3b8d5860607dee753be885a9806bca8ddc25f46d8ea7c62b6e76361ad37",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 58,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 143,
+  "changed_other_rows": [],
+  "baseline_rows": 144,
+  "current_rows": 145,
+  "new_article_rows": 1,
+  "publisher": "Future 13.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "7fc3ec701c5d0be3aec6fe231ef63f8b3e368297"
+}
