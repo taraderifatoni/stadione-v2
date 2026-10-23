@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "kind": "PREDICTION_POLL",
+  "event_key": "clasico-six-point-community-poll-20261025",
+  "question": "Hasil akhir Barcelona vs Real Madrid?",
+  "options": [
+    {
+      "id": "A",
+      "label": "Barcelona menang"
+    },
+    {
+      "id": "B",
+      "label": "Imbang"
+    },
+    {
+      "id": "C",
+      "label": "Real Madrid menang"
+    }
+  ],
+  "answer": null,
+  "answer_status": "NOT_PLAYED",
+  "rationale": "Ini polling prediksi, bukan trivia dengan jawaban historis. Kebenaran hasil hanya dapat ditentukan sesudah final resmi.",
+  "verification_sources": [
+    {
+      "id": "FCB",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured"
+    },
+    {
+      "id": "SER",
+      "url": "https://cadenaser.com/nacional/2026/10/22/fc-barcelona-real-madrid-en-laliga-ea-sports-alineaciones-horario-y-donde-ver-el-clasico-en-directo-cadena-ser/"
+    },
+    {
+      "id": "TABLE",
+      "url": "https://www.laliga.com/en-ES/laliga-easports/standing"
+    }
+  ],
+  "points_promised": false,
+  "auto_resolve_enabled": false
+}

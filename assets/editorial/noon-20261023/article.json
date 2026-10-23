@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Barcelona atau Madrid, Siapa Pilihanmu?",
+  "dek": "Enam poin memisahkan Barcelona dan Real Madrid menjelang El Clásico. Pilih tuan rumah, imbang, atau kemenangan Madrid.",
+  "caption": "BARCELONA ATAU MADRID, SIAPA PILIHANMU?\n\nBarcelona menjamu Real Madrid di Spotify Camp Nou pada Minggu, 25 Oktober 2026 waktu Spanyol, dalam pekan ke-10 LaLiga.\n\nBarça memimpin dengan 27 poin dari sembilan kemenangan. Madrid berada di posisi ketiga dengan 21 poin. Selisih mereka bisa menjadi sembilan, tiga, atau tetap enam poin setelah laga ini.\n\nPilihanmu untuk hasil akhir laga?\nA. Barcelona menang\nB. Imbang\nC. Real Madrid menang\n\nTulis A, B, atau C beserta alasan sepak bolanya di komentar. Ini polling prediksi pembaca; pertandingan belum berlangsung.\n\nSumber FC Barcelona, tabel resmi LaLiga dan Cadena SER. Foto dokumentasi El Clásico dari pengumuman jadwal resmi Barcelona, bukan foto laga 25 Oktober.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "El Clásico Kembali ke Camp Nou",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE",
+        "TABLE"
+      ],
+      "text": "Barcelona akan menjamu Real Madrid di Spotify Camp Nou pada Minggu, 25 Oktober 2026 waktu Spanyol. Enam poin memisahkan kedua tim sebelum duel pada pekan ke-10 LaLiga tersebut, yang menjadi El Clásico liga pertama musim ini."
+    },
+    {
+      "id": "gap",
+      "heading": "Sembilan Kemenangan Jadi Modal Barça",
+      "kind": "FACT",
+      "claim_ids": [
+        "TABLE"
+      ],
+      "text": "Barcelona memimpin klasemen dengan 27 poin dari sembilan pertandingan, seluruhnya berakhir dengan kemenangan. Real Madrid berada di peringkat ketiga dengan 21 poin. Tim tamu mengoleksi tujuh kemenangan dan dua kekalahan, sementara Barcelona belum kehilangan poin di liga."
+    },
+    {
+      "id": "stakes",
+      "heading": "Jarak Bisa Sembilan atau Tiga Poin",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "TABLE",
+        "SCENARIOS"
+      ],
+      "text": "Kemenangan Barcelona akan memperlebar selisih kedua tim menjadi sembilan poin. Jika Madrid menang, jaraknya menyusut menjadi tiga poin. Hasil imbang membuat masing-masing memperoleh satu poin dan mempertahankan jarak enam poin."
+    },
+    {
+      "id": "poll",
+      "heading": "Pilih Hasil Akhir Versimu",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE",
+        "SCENARIOS"
+      ],
+      "text": "Untuk polling pembaca Stadione, pilih A jika Barcelona menang, B jika imbang, atau C jika Real Madrid menang. Jelaskan apa yang paling menentukan pilihanmu. Apakah kemenangan sempurna Barcelona cukup meyakinkan, atau Madrid bisa membalikkan perkiraan di Camp Nou?"
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261021-foden-hattrick-city-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-23T05:07:43.287Z",
+    "article_digest": "b2240c11d303063ae811bfc90cbac49e45563778c69ba0bc693a0dccfd101cd3"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-23T05:01:17.555Z",
+  "baseline_rows": 144,
+  "target": {
+    "id": "2a1f5930-1462-49e7-a20d-fdc10c301d5b",
+    "status": "DRAFT",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-10-23T06:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-23:fri-noon",
+    "pillar": "Komunitas",
+    "angle": "Interaksi",
+    "theme": "Polling big match atau tebak pemain dengan jawaban dan sumber internal"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "event_terms": [
+    "clásico",
+    "pilihanmu"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media": 58,
+    "event_duplicates": 0
+  },
+  "broader_duplicate_search": "All CMS statuses/title/event_key plus live IG captions searched Clasico/Clásico/Barcelona-Madrid: zero. Previous BetisBarca and MadridSevilla results are distinct fixtures, not altered.",
+  "published_morning": {
+    "media_id": "18426927712155690",
+    "published_at": "2026-10-23T01:01:49Z",
+    "untouched": true
+  },
+  "seeder_needed": false
+}

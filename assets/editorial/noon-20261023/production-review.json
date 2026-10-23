@@ -1,0 +1,344 @@
+{
+  "reviewed_at": "2026-10-23T05:14:10.493Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "a5aadef4a3234ba0df13dd2adbbc1ec2186c4505",
+  "target": {
+    "id": "2a1f5930-1462-49e7-a20d-fdc10c301d5b",
+    "plan_key": "2026-10-23:fri-noon",
+    "event_key": "clasico-six-point-community-poll-20261025",
+    "scheduled_at": "2026-10-23T06:00:00Z",
+    "format": "CAROUSEL"
+  },
+  "discovery": {
+    "provider": "SerpAPI release getDailySportsPool via committed cms-audience-pool/cms-load",
+    "fetched_at": "2026-10-23T05:01:37.609Z",
+    "pool_sha256": "4ea249c6ee415dd0248003019bb0c2eec76f13ebb3c8cd2a2caf3452df9b1ef5",
+    "selection": "Pool includes weekend PremierLeague agenda but not Clasico trend explicitly; supplemented targeted Clasico search and original club, official league table and independent CadenaSER full sources. No claim Clasico appeared in trend pool.",
+    "carousel_slot_original": true,
+    "no_reel_fallback": true
+  },
+  "sources": [
+    {
+      "id": "FCB",
+      "url": "https://www.fcbarcelona.com/en/football/first-team/news/4570226/date-and-kick-off-time-of-laliga-clasico-at-the-spotify-camp-nou-confirmed/featured",
+      "publisher_group": "FC_BARCELONA",
+      "primary": true,
+      "published_at": "2026-09-01",
+      "retrieved_at": "2026-10-23T05:04:30.085Z",
+      "text_sha256": "ac9d505cc7b300679fda5779cd2163e50f491a8e0e6eb75dfa8b6e2a0f6e5445",
+      "full_read": true,
+      "method": "Full browser and normal publicHTMLHTTP200 read, through closing article text. FCB September announcement, CadenaSER MiguelMunoz22October."
+    },
+    {
+      "id": "SER",
+      "url": "https://cadenaser.com/nacional/2026/10/22/fc-barcelona-real-madrid-en-laliga-ea-sports-alineaciones-horario-y-donde-ver-el-clasico-en-directo-cadena-ser/",
+      "publisher_group": "PRISA_CADENA_SER",
+      "primary": false,
+      "published_at": "2026-10-22T08:00:00+02:00",
+      "retrieved_at": "2026-10-23T05:04:06.363Z",
+      "text_sha256": "0764a5800155c8533ca13257506e2ebde5dca7eb2299ddba47fffa689c6d494e",
+      "full_read": true,
+      "method": "Full browser and normal publicHTMLHTTP200 read, through closing article text. FCB September announcement, CadenaSER MiguelMunoz22October."
+    },
+    {
+      "id": "TABLE",
+      "url": "https://www.laliga.com/en-ES/laliga-easports/standing",
+      "publisher_group": "LALIGA",
+      "primary": true,
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-23T05:07:05.127Z",
+      "text_sha256": "53e0f941dadaa0584f231e87f4278c77957867fcd0b735ec997651af70511ed7",
+      "full_read": true,
+      "method": "Official complete total table read through20teams, publicHTMLHTTP200 plus browser relevant rows. Snapshot day23October is as-of tag, not invented original publication timestamp; home/away rows not mixed."
+    }
+  ],
+  "facts": {
+    "verified": [
+      "Barcelona hosts RealMadrid at SpotifyCampNou, LaLiga matchday10,25October2026localSpain, first leagueClasico ofseason2026/27",
+      "Official total table: Barcelona1st27points/9matches/9wins/0draws/0losses; Madrid3rd21points/9matches/7wins/0draws/2losses. IndependentSER corroborates9matches/perfectBarca/6pointgap/positions.",
+      "Conditional arithmetic from sixpointgap: Barcelona win9gap, Madridwin3gap,draw6gap; not prediction or guaranteedtitle."
+    ],
+    "excluded": [
+      "No startingXI: CadenaSER lineups treated as preview predictions, not confirmed teams.",
+      "No injury/availableplayer assertions or result of unplayed25OctoberClasico.",
+      "FCB September release says CEST for25October despite DST change. Article expressly uses localSpain25October and omits kick-off conversion; no wrong WIB time invented.",
+      "ESPN21October pressrelease fully read in browser as extra corroboration, but normalGET403 stopped without alternate route/bypass. Not packet evidence and no downloaded HTML claimed.",
+      "No simulated vote counts, winners, guaranteed result, accountpoint or reward claim."
+    ],
+    "poll": {
+      "kind": "PREDICTION_POLL",
+      "options": "A Barcelona win / B draw / C RealMadrid win",
+      "answer_status": "NOT_PLAYED",
+      "answer": null,
+      "internal_manifest": "interaction-internal.json",
+      "auto_resolve_enabled": false,
+      "reason": "Prediction poll has no currently correct answer. Future result must be checked after officialFT; no automation or historicmutation introduced."
+    }
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 141,
+    "paragraphs": 4,
+    "pages": 5,
+    "digest": "b2240c11d303063ae811bfc90cbac49e45563778c69ba0bc693a0dccfd101cd3",
+    "benchmark_ids": [
+      "goal-20261019-carrick-leeds-reaction-news",
+      "goal-20261021-foden-hattrick-city-match-news"
+    ],
+    "whole_article_before_pagination": true,
+    "quote_words": 0,
+    "lessons": "Carrick reference separates assessment and measurablecontext; Foden reference develops new information per section. Latest ratings reading reviewed to separate opinion and stats. Article moves fixture→leagueform→conditionalstakes→readerpoll, edited away generic/defensive bridge sentences before pagination."
+  },
+  "media": {
+    "source_photo": {
+      "url": "https://www.fcbarcelona.com/fcbarcelona/photo/2026/09/01/3b66eb18-5c79-45e4-8144-fd34f60f337b/_M1A1120-1-.jpg",
+      "http": 200,
+      "bytes": 220433
+    },
+    "source_original_sha256": "f0efc81c0822e4118a0d72b7353fd260804a7bff65edfa41025fd30d0a069f07",
+    "identity": "Archival original club announcement photo: Raphinha at right inBarca captainarmband withfootonball; Pedri behind; Camavingaback6 atleft. Native photo viewed. Cover uses Raphinha profile facing same direction, grayscale editorial cutout. Not Mbappe/Yamal or invented frontalCamavinga.",
+    "temporal_context": "Official announcement published1September2026; image is archival illustration, not claimed exact match date or25Octoberfixture photo.",
+    "hero": {
+      "bytes": 58462,
+      "sha256": "106df29010e035bc1012dbf61ff5208e4616ea418fcd7bfd671375b8c1b6aaac",
+      "method": "Original club photograph resized1000px, noheadline/AI background; website uses original three-player composition."
+    },
+    "rights_evidence": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. Foto asli pengumumanresmiBarcelona diunduhnormalHTTP200, bukanUGCpribadi. Tidakmengaranggrantlisensitertulisklub.",
+    "cover": {
+      "sha256": "1f4ab9a1dec05caed50c878ccb21a8ae62488100a728c53b3f844b26a7d0fe03",
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "headline": "Barcelona atau Madrid, Siapa Pilihanmu?",
+      "dek": "Enam poin memisahkan Barcelona dan Real Madrid menjelang El Clásico. Pilih tuan rumah, imbang, atau kemenangan Madrid.",
+      "source_label": "FCBARCELONA.COM",
+      "reviewed_at": "2026-10-23T05:11:30.373Z",
+      "reviewed_by": "CODEX_EDITOR",
+      "page_count": 5,
+      "safe_wrap": true,
+      "authentic_subject": true,
+      "editorial_background": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "variant_id": "PORTRAIT_MERAH",
+      "variant_standard": "STADIONE_COVER_VARIANTS_V1",
+      "generated_from_authentic_photo_and_variant_reference": true,
+      "technical_normalization": "Generated1122x1402 PNG normalized940x1175 and cream pad70px horizontal/87top88bottom to1080x1350; this provides additional right/left text margin and bottomsource breathing. Only technical normalization outside imagegen."
+    }
+  },
+  "visual_review": {
+    "method": "Native original source photo and selected PORTRAIT_MERAH reference; full generated cover compared identity/profile/kit; then final actual JPEG contact-a pages1–3/contact-b4–5 all body text read.",
+    "all_five_slides_read": true,
+    "no_body_overflow": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "source_on_cover_only": true,
+    "body_cream_text_only": true,
+    "body_font_px": 36,
+    "horizontal_margin_px": 72,
+    "divider_gap_above_below_px": 36,
+    "cover_count": "1/5, finalarticle2/5through5/5"
+  },
+  "render": [
+    {
+      "page": 1,
+      "bytes": 664229,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "FCBARCELONA.COM",
+      "cover_input_sha256": "1f4ab9a1dec05caed50c878ccb21a8ae62488100a728c53b3f844b26a7d0fe03",
+      "output_sha256": "b2bd3a58bbfeb7b9c27faefc4c94b7bbd4a3282c8911377d7032dfcc77e81bd3",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "page": 2,
+      "bytes": 146011,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "f11b359e7fe97afbf799adaa2b50b74e1135802c75a3fe61dc36518c5400c86c",
+      "output_sha256": "476eb587eeb9eea925a5744d08a17916adf7851465c0a53014eac14da6499799",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 131,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 372,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 921,
+          "height": 131,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 412,
+          "width": 876,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 3,
+      "bytes": 170545,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "7d0b3ab026ab6da7e5c756ed59275dfeec85eef24b0c6e94aa8ac5ea17a4867f",
+      "output_sha256": "d12bf285f5ea8dbcecae935b27017adb53bb777def35740ace0faff8b8ad7343",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 139,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 380,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 916,
+          "height": 139,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 420,
+          "width": 917,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 4,
+      "bytes": 153212,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "bb705be641bec2e12ee8593ed40ec723b71866c6449312e3f483af46ea6a8d8c",
+      "output_sha256": "5ba69c9b81efa0642f0705ba1722f0bc8940fa0b95388558b48318ad16bc4daa",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 844,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 917,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "page": 5,
+      "bytes": 153435,
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "f68b63c17cf195afbed4357d7d41b2af54c01ffb56efd516de0014c881f5cffc",
+      "output_sha256": "e544a3b8d5860607dee753be885a9806bca8ddc25f46d8ea7c62b6e76361ad37",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 47,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 288,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 828,
+          "height": 47,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 328,
+          "width": 906,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "scope": {
+    "baseline_rows": 144,
+    "allowed": "Only targetSOCIAL plus one new pairedARTICLE",
+    "other_existing_rows": 143,
+    "clock": "23October13WIB unchanged",
+    "preserved": [
+      "other slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push before committed shared adapter schedule, noMetaDirect. Verify futureSCHEDULED pair/canonicalbody/renderbytes/idempotence and all other rows, leave sharedpublisher.",
+  "private_only": "Rawsourcephoto/HTML/fulltext/packet/generatedPNG/APIJSON privateVPS. Git ownarticle/sanitizedproof/coverbrief/ownpollmanifest/QAcontacts only."
+}
