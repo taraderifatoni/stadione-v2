@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Ubed Mengincar Semifinal di Prancis",
+  "dek": "Delapan besar Super 750 pertama belum memuaskan Ubed. Ia menyiapkan langkah berikutnya setelah mengalahkan Koki Watanabe.",
+  "caption": "UBED MENGINCAR SEMIFINAL DI PRANCIS\n\nMoh Zaki Ubaidillah menyiapkan diri untuk perempat final French Open, Jumat (23/10/2026), setelah mengalahkan Koki Watanabe 21–17, 21–14.\n\nIni menjadi perempat final Super 750 pertamanya. Ubed belum puas dan ingin melanjutkan langkah ke semifinal.\n\nIa menyoroti pengaturan tempo saat menghadapi Watanabe. Fokus dan ketenangan membantunya kembali mengendalikan gim kedua setelah sempat tertinggal.\n\nSumber PBSI, ANTARA dan PB Djarum. Foto asli Ubed pada babak 16 besar French Open 22 Oktober, dokumentasi PBSI. Laga perempat final belum berlangsung saat artikel disiapkan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Delapan Besar Belum Cukup",
+      "kind": "FACT",
+      "claim_ids": [
+        "TARGET",
+        "RESULT"
+      ],
+      "text": "Moh Zaki Ubaidillah belum puas dengan perempat final Super 750 pertamanya. Tunggal putra Indonesia yang akrab disapa Ubed itu menyiapkan diri untuk memburu tiket semifinal French Open pada Jumat, 23 Oktober 2026, setelah menyingkirkan Koki Watanabe sehari sebelumnya."
+    },
+    {
+      "id": "tempo",
+      "heading": "Ketenangan Mengembalikan Kendali",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "TEMPO"
+      ],
+      "text": "Ubed mengalahkan wakil Jepang itu 21–17, 21–14 pada babak 16 besar di Paris. Meski menang dua gim, ia sempat kesulitan mengikuti perubahan tempo Watanabe pada awal gim kedua. Menurut Ubed, lawannya mempercepat permainan hingga jarak poin melebar. Ia kemudian berusaha lebih fokus dan tenang untuk mengumpulkan poin satu per satu, lalu kembali memegang kendali."
+    },
+    {
+      "id": "next",
+      "heading": "Ubed Menyiapkan Langkah Berikutnya",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "TARGET",
+        "PREP"
+      ],
+      "quote": {
+        "text": "Semoga bisa memberikan yang terbaik dan melaju ke semifinal.",
+        "source_id": "PBSI"
+      },
+      "text": "“Semoga bisa memberikan yang terbaik dan melaju ke semifinal.” Ubed menyampaikan target itu dalam keterangan PBSI seusai laga melawan Watanabe. Persiapannya juga mencakup mempelajari kembali calon lawan dari Taiwan. Dalam keterangan yang sama, ia menyebut sudah pernah menghadapi kedua pemain yang saat itu masih menjadi calon lawannya, Chi Yu Jen dan Chou Tien Chen."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261019-carrick-leeds-reaction-news",
+    "goal-20261021-foden-hattrick-city-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-23T00:12:37.643Z",
+    "article_digest": "9d9909c54c13221754bd2c11d8e2e37c1cead7d26937b5b44d47bd6f332394fe"
+  }
+}
