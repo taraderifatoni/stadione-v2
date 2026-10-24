@@ -2008,3 +2008,9 @@ Normal evening social `80b9be65-650f-4a48-bf2d-2ceed7726a32` and ARTICLE `f41548
 - Memperbarui `editorial/production-automation.json` agar operator memakai playbook growth dan jendela baru07/19WIB. QA kalender diperbarui dan lulus: 12 slot/minggu, 10 Reel/2 carousel, identitas stabil, WIB, dan existing-row preservation.
 - File yang berubah: `STADIONE_GROWTH_PLAN.md`, `scripts/cms-seed-editorial-plan.py`, `scripts/qa-editorial-calendar.py`, `editorial/production-automation.json`, Plan Master ini. Tidak ada migrasi DB, pengubahan jadwal konten, perubahan renderer/publisher atau publikasi pada langkah ini. Deploy/sinkron operator dan pembaruan task automation dilakukan setelah commit/push terverifikasi.
 - Titik rollback: commit sebelum perubahan `8810fc3`; setelah commit, gunakan revert commit khusus growth reset. Tidak rollback dengan menghapus konten CMS yang sudah terjadwal/terbit.
+
+### Verifikasi perubahan automation produksi
+
+- Pada `2026-10-24T00:38:06Z`, task aktif “Produksi editorial Stadione” diperbarui setelah commit `b97b571`: prompt kini membaca growth plan, menargetkan maksimal12 slot baru/minggu pada dua jendela08/20WIB, dan secara eksplisit melindungi slot13WIB serta antrean lama. Jadwal exact beralih dari 07/12/19WIB ke07/19WIB; automation tetap enabled. Ini mengubah cadence kerja berikutnya, bukan jadwal baris CMS yang sudah ada.
+- Tidak ada publikasi atau mutasi CMS pada reset strategi ini. Seeder dan automation source sudah tercommit; QA kalender dan JSON valid. Tidak ada deployment ke aplikasi Stadione karena perubahan hanya pada workflow/operator dan tidak menyentuh kode aplikasi.
+- Rollback langkah strategi: revert `b97b571` untuk source/docs; pulihkan cadence/prompt automation melalui update eksplisit bila diperlukan. Jangan membatalkan konten yang terjadwal/terbit.
