@@ -15,33 +15,35 @@ WIB = ZoneInfo("Asia/Jakarta")
 HORIZON_DAYS = 7
 
 SLOTS = {
+    # 12 feed posts/week. Existing CMS rows are never rewritten or removed.
+    # Keep a 1–2 post/day ceiling; breaking-news additions remain editorially justified.
     0: [
-        ("mon-am", "08:00", "Highlight / meme Eropa", "Rekap hasil semalam atau reaction atas hasil yang sudah terkonfirmasi", "Sepak Bola Eropa", "Recap / reaction", "CAROUSEL"),
-        ("mon-noon", "13:00", "Non-bola pride", "Apresiasi prestasi atlet Indonesia atau momen akhir pekan yang terkonfirmasi", "Olahraga Indonesia", "Apresiasi", "CAROUSEL"),
-        ("mon-pm", "20:00", "Tarkam of the week", "Momen komunitas pilihan dengan izin tertulis dan konteks lokasi/tanggal", "Tarkam & Komunitas", "UGC / momen", "REEL"),
+        ("mon-am", "08:00", "30 Detik Paham Laga", "Satu momen pertandingan dan dampaknya bagi suporter", "Sepak Bola Eropa", "Reaction / explainer", "REEL"),
+        ("mon-pm", "20:00", "Satu Keputusan, Efek Besar", "Keputusan pemain/pelatih yang mengubah cerita laga, dengan bukti", "Sepak Bola Indonesia", "Analisis ringan", "REEL"),
     ],
     1: [
-        ("mid-am", "08:00", "Update / nostalgia", "Hasil kompetisi jika ada; jika tidak, momen bersejarah yang dapat diverifikasi", "Sepak Bola Eropa", "Update / nostalgia", "REEL"),
-        ("mid-noon", "13:00", "Sepak bola lokal", "Liga Indonesia, rumor dengan label jelas, atau bedah taktik berbasis data", "Sepak Bola Indonesia", "Update / analisis", "CAROUSEL"),
-        ("mid-pm", "20:00", "Hot news / quotes", "Isu aktual atau kutipan langsung; verifikasi sumber primer dan konteks", "Sepak Bola Indonesia", "Kutipan / update", "REEL"),
+        ("mid-am", "08:00", "Cerita dari Tribun", "Suara suporter atau komunitas dengan izin dan konteks yang jelas", "Komunitas", "UGC / kolaborasi", "REEL"),
     ],
-    2: [],
-    3: [],
+    2: [
+        ("mid-am", "08:00", "Laga dalam 3 Data", "Tiga statistik yang menjelaskan laga atau performa, bukan angka lepas", "Sepak Bola Eropa", "Data / utility", "CAROUSEL"),
+        ("mid-pm", "20:00", "Satu Momen, Satu Cerita", "Kabar sepak bola Indonesia dijelaskan melalui konteks dan dampaknya", "Sepak Bola Indonesia", "News explainer", "REEL"),
+    ],
+    3: [
+        ("mid-am", "08:00", "Lapangan Kita", "Cerita sepak bola lokal/akar rumput dengan verifikasi lokasi, tanggal, dan izin", "Tarkam & Komunitas", "Komunitas / UGC", "REEL"),
+    ],
     4: [
-        ("fri-am", "08:00", "Preview non-bola", "Preview agenda F1, MotoGP, atau BWF; hasil hanya setelah sesi berlangsung", "Olahraga Indonesia", "Preview", "CAROUSEL"),
-        ("fri-noon", "13:00", "Trivia / interaksi", "Polling big match atau tebak pemain dengan jawaban dan sumber internal", "Komunitas", "Interaksi", "CAROUSEL"),
-        ("fri-pm", "20:00", "Kick-off / preview lokal", "Starting XI resmi atau preview laga sesuai jadwal aktual", "Sepak Bola Indonesia", "Preview / matchday", "REEL"),
+        ("fri-am", "08:00", "Panduan Pekan Ini", "Jadwal, pemain, atau angka kunci yang berguna untuk diikuti", "Sepak Bola Indonesia", "Utility / data", "CAROUSEL"),
+        ("fri-pm", "20:00", "Apa yang Dipertaruhkan?", "Preview laga berdasarkan jadwal terverifikasi dan satu pertanyaan utama", "Sepak Bola Indonesia", "Preview", "REEL"),
     ],
     5: [
-        ("match-am", "08:00", "Morning reaction", "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi", "Sepak Bola Eropa", "Reaction", "REEL"),
-        ("match-noon", "13:00", "Tarkam / kearifan lokal", "UGC sepak bola komunitas; hanya tayang setelah izin, kredit, dan moderasi lolos", "Tarkam & Komunitas", "UGC", "REEL"),
-        ("match-pm", "20:00", "Watchalong / live momen", "Live momen hanya dengan sumber real-time/editor; snapshot tren bukan feed live", "Sepak Bola Indonesia", "Live / reaction", "REEL"),
+        ("match-am", "08:00", "Reaksi Pagi Suporter", "Satu momen hasil semalam, lalu alasan momen itu penting", "Sepak Bola Eropa", "Reaction", "REEL"),
+        ("match-pm", "20:00", "Tribun Pilih Siapa?", "Kolaborasi/polling spesifik yang memancing pilihan beralasan", "Komunitas", "Interaksi / kolaborasi", "REEL"),
     ],
-    6: [],
+    6: [
+        ("match-am", "08:00", "Pemain yang Perlu Diikuti", "Kontribusi nyata pemain Indonesia atau pemain kunci pada laga hari itu", "Sepak Bola Indonesia", "Player story", "REEL"),
+        ("match-pm", "20:00", "Setelah Peluit", "Reaksi pascalaga dengan fakta terkonfirmasi dan konteks singkat", "Sepak Bola Indonesia", "Post-match reaction", "REEL"),
+    ],
 }
-SLOTS[2] = SLOTS[1]
-SLOTS[3] = SLOTS[1]
-SLOTS[6] = SLOTS[5]
 
 def api(method: str, path: str, body=None, prefer: str | None = None):
     base = os.environ["NEXT_PUBLIC_SUPABASE_URL"].rstrip("/")
