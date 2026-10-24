@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-10-24T12:20:00.273Z",
+  "framework": "STADIONE_GROWTH_PLAN.md,90-day reset dated24October2026",
+  "serial": "Panduan Pekan Ini, adapted as useful calendar correction. Not forcing Saturday communitypoll on a legacy Indonesian football slot.",
+  "core_fact": "PSS–Borneo moves fromWednesday28October toTuesday27October2026,15.30WIB,Maguwoharjo. Official PSS announcement plus latest operator schedule and HarianJogja.",
+  "stadione_angle": "Help supporters correct the day in their saved agenda and plans with friends; do not merely repeat a score.",
+  "hook": "PSS Fans, Jangan Salah Hari. The first scene immediately reveals27October/Tuesday rather than withholding the answer.",
+  "payoff": "New day/date, unchanged15.30WIB kickoff and Maguwoharjo; distinguish the old28October poster.",
+  "audience_action": "Save the corrected fixture and send it to friends who made travel plans with the old date. No generic follow/like prompt or unverified ticket instructions.",
+  "experiment": {
+    "variable": "Hook/angle: direct supporter calendar utility. Single new example, no causal growth claim.",
+    "format": "20.104-second real-footage Reel",
+    "host_voiceover": {
+      "prioritized": true,
+      "used": false,
+      "reason": "No verified host recording, authorized community collaborator or speech/voiceover tool available in this production. Do not invent an interview/voice transcript or fake a host; use actualPSS archive footage with verified text."
+    },
+    "trial_reels": {
+      "used": false,
+      "available_in_shared_adapter": false,
+      "account_eligibility": "Not asserted. Committed shared adapter/publisher exposes no TrialReels parameter; no directMeta workaround or extra duplicatepost."
+    }
+  },
+  "measurement": {
+    "baseline_file": "metrics-baseline.json",
+    "target_metrics": null,
+    "reason": "Target not yet published; no manufactured reach, retention or conversions.",
+    "review_24h_due": "2026-10-25T13:00:00Z",
+    "review_7d_due": "2026-10-31T13:00:00Z",
+    "new_monitor_or_timer_created": false,
+    "unavailable_in_current_helper": [
+      "non-follower reach breakdown",
+      "retention curve",
+      "profile visits per post",
+      "new followers attributed per post",
+      "paid/organic attribution"
+    ],
+    "comparison_limits": "The three recent posts differ in age and format. No engagement percentage based on carousel reach1, no causal Reels-vs-carousel conclusion; preserve actual zeros and unavailable values separately."
+  },
+  "preservation": "No change to12-slot matrix, legacy13 clocks, additional, protectedSCHEDULED/PUBLISHED/archive/tombstone, credentials, renderer or code."
+}

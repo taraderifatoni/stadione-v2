@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-24T12:07:45.189Z",
+  "basis": "Recentposts differentages/formats, no causalcomparison or FYP guarantee. Missing metrics null, not0. TargetDRAFTnotpublished, targetmetrics notyetavailable.",
+  "posts": [
+    {
+      "id": "18129241933889863",
+      "reel": true,
+      "metrics": {
+        "views": 136,
+        "reach": 116,
+        "likes": 1,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 1,
+        "ig_reels_avg_watch_time": 5673,
+        "ig_reels_video_view_total_time": 680876
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18103611572569620",
+      "reel": true,
+      "metrics": {
+        "views": 157,
+        "reach": 116,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0,
+        "ig_reels_avg_watch_time": 12091,
+        "ig_reels_video_view_total_time": 1414678
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18200932519383133",
+      "reel": false,
+      "metrics": {
+        "views": 2,
+        "reach": 1,
+        "likes": 1,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 1
+      },
+      "unavailable": []
+    }
+  ]
+}

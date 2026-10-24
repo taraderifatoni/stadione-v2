@@ -1,0 +1,288 @@
+{
+  "reviewed_at": "2026-10-24T12:20:00.273Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "55c2d4d84f16ec97d9ea241365bd3ec49fd3158c",
+  "target": {
+    "id": "4b967058-3887-4030-87f3-6d59255fadb9",
+    "plan_key": "2026-10-24:match-pm",
+    "event_key": "pss-borneo-schedule-change-20261027-utility-reel",
+    "scheduled_at": "2026-10-24T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool": {
+      "provider": "Release getDailySportsPool SerpAPI via committed cms-audience-pool/cms-load",
+      "fetched_at": "2026-10-24T12:02:21.663Z",
+      "sha256": "4d35420ee87fa3bcce1bc3730d51998bcb8cc1446cd3d35013886a75266b2ae9",
+      "selection": "Latest available daily cached pool: no eligible Indonesian stories. Supplemental bounded directresearch selected current firstparty schedule correction, not an irrelevant available video."
+    },
+    "youtube": [
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Persija Persib Persebaya PSS Sleman Timnas 24 Oktober 2026"
+        ],
+        "checked_at": "2026-10-24T12:02:22.658Z",
+        "candidates": 4,
+        "sha256": "7f42fa89ea770447ac0dc0551f78f1470fdf5ea18c22ab2db8e90da13a990f04"
+      },
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "PSS Sleman Borneo jadwal 27 Oktober 2026"
+        ],
+        "checked_at": "2026-10-24T12:03:55.039Z",
+        "candidates": 15,
+        "sha256": "1901c44635f95f0cbe6b9b7f67ace3f20f643a8c4b9ebb5f3d7da242b5510744"
+      }
+    ],
+    "business_discovery": [
+      {
+        "account": "pssleman",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "persija",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "officialpersebaya",
+        "parents": 30,
+        "children_checked": true
+      }
+    ],
+    "format": "REEL kept, genuine downloaded official footage; no fallback"
+  },
+  "sources": [
+    {
+      "id": "HARIAN",
+      "url": "https://sport.harianjogja.com/r-1276232/jadwal-pss-sleman-vs-borneo-fc-dimajukan-ke-27-oktober",
+      "publisher_group": "BISNIS_INDONESIA_GROUP",
+      "primary": false,
+      "published_at": "2026-10-24T16:57:00+07:00",
+      "retrieved_at": "2026-10-24T12:04:43.345Z",
+      "text_sha256": "b5f3bfaf3bf5e34201d0735455c47c8489c2300a0a59e76b1a22ca778b47db2c",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. HarianJogja CaturDwiJanati24October16:57; PSS fixture and operator club page read in full current response; PSS original matchreport and ANTARA AsmaulChusna22October read through final paragraph for footage context. Day-only metadata on dynamic fixture pages is snapshot date, not invented original publication time."
+    },
+    {
+      "id": "ILEAGUE",
+      "url": "https://www.ileague.id/clubs/single/BRI_SUPER_LEAGUE_2026-27/BORNEO_FC_SAMARINDA",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-24",
+      "retrieved_at": "2026-10-24T12:04:46.203Z",
+      "text_sha256": "e080d64b9e632118c29b7b8cb0b757e632ae8238c2247605ef7390bfdb27ac1e",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. HarianJogja CaturDwiJanati24October16:57; PSS fixture and operator club page read in full current response; PSS original matchreport and ANTARA AsmaulChusna22October read through final paragraph for footage context. Day-only metadata on dynamic fixture pages is snapshot date, not invented original publication time."
+    },
+    {
+      "id": "PSS_FIXTURE",
+      "url": "https://pssleman.id/jadwal-hasil-pertandingan/",
+      "publisher_group": "PSS_SLEMAN",
+      "primary": true,
+      "published_at": "2026-10-24",
+      "retrieved_at": "2026-10-24T12:04:43.472Z",
+      "text_sha256": "6208f5259a9ca583b492094ca4b1ce3574a52e74846d221acd6cd932cc05f0a2",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. HarianJogja CaturDwiJanati24October16:57; PSS fixture and operator club page read in full current response; PSS original matchreport and ANTARA AsmaulChusna22October read through final paragraph for footage context. Day-only metadata on dynamic fixture pages is snapshot date, not invented original publication time."
+    },
+    {
+      "id": "PSS_REPORT",
+      "url": "https://pssleman.id/tanggapan-pieter-huistra-mengenai-hasil-akhir-persik-kontra-pss/",
+      "publisher_group": "PSS_SLEMAN",
+      "primary": true,
+      "published_at": "2026-10-22",
+      "retrieved_at": "2026-10-24T12:08:56.958Z",
+      "text_sha256": "23efab2d3283402b043609a393e75449c7b0313d3702a582e22a7c2c63dcc11e",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. HarianJogja CaturDwiJanati24October16:57; PSS fixture and operator club page read in full current response; PSS original matchreport and ANTARA AsmaulChusna22October read through final paragraph for footage context. Day-only metadata on dynamic fixture pages is snapshot date, not invented original publication time."
+    },
+    {
+      "id": "ANTARA",
+      "url": "https://www.antaranews.com/berita/5806271/pss-sleman-evaluasi-lini-pertahanan-usai-kalah-lawan-persik",
+      "publisher_group": "ANTARA",
+      "primary": false,
+      "published_at": "2026-10-22T23:47:00+07:00",
+      "retrieved_at": "2026-10-24T12:08:57.052Z",
+      "text_sha256": "66dacdb831b162329de55f75cb16045f80e69963049124ba95ffab69c1e8989c",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. HarianJogja CaturDwiJanati24October16:57; PSS fixture and operator club page read in full current response; PSS original matchreport and ANTARA AsmaulChusna22October read through final paragraph for footage context. Day-only metadata on dynamic fixture pages is snapshot date, not invented original publication time."
+    },
+    {
+      "id": "PSS_ANNOUNCEMENT",
+      "url": "https://www.instagram.com/p/De1vjgmyU0V/",
+      "publisher_group": "PSS_SLEMAN",
+      "primary": true,
+      "published_at": "2026-10-23T14:12:12Z",
+      "retrieved_at": "2026-10-24T12:17:19.549Z",
+      "text_sha256": "57adac6247d952e2319e3ca254f7a12b2f55be0a1554963f42a623fa094a4804",
+      "full_read": true,
+      "method": "Full official announcement card and caption viewed natively; both dates and unchanged kickoff transcribed. Not a separate interview."
+    }
+  ],
+  "source_resolution": {
+    "stale_browser": "Browser PSS fixture cached2days earlier retained28October and unfinished22October game. Fresh normalHTTP200 PSS fixture now27, operator club page now27/15:30, official23October card explicitly28→27. Dated new announcement takes precedence over cachedold fixture.",
+    "failed": "HarianJogja browser internalfailed, normal publicGET200 fullbody. Disway browserinternalfail and GET403; stopped, not used in packet, no alternate-route/auth bypass.",
+    "excluded": "No originalCircular20 read, so no police/security rationale or circular contents asserted. No ticket prices, awayfan permission, standings, lineup or future matchresult."
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 113,
+    "paragraphs": 3,
+    "digest": "0abeb4a12a36188d83bcc295e2ed53c0724a79a1af20f474a47cfd290f6805bd",
+    "benchmark_ids": [
+      "goal-20261024-arsenal-everton-match-preview-news",
+      "goal-20261013-united-injuries-atletico-news"
+    ],
+    "whole_article_before_scenes": true,
+    "quote_words": 0,
+    "lessons": "Latest Goal preview reading: organize current fixture and uncertainty, compare stale widgets against updated firstparty facts. United injury reference: specific impact first, no invented confirmation. Three substantive paragraphs, no padding or arbitrarypagecount.",
+    "structure": "Changed day/date → unchanged time/venue → practical implication for supporters arranging to attend together. Last paragraph is grounded advice, not a claim of observed supporter behavior."
+  },
+  "media": {
+    "downloads": [
+      {
+        "id": "18014429195969620",
+        "url": "https://www.instagram.com/reel/De3iLGMSsry/",
+        "published_at": "2026-10-24T06:54:15+0000",
+        "duration": "38.031429",
+        "sha256": "8983654101bf651021aaea4189899f14667efa3c18b42dd0f8b2f38295a12515",
+        "bytes": 8232512,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 960,
+            "height": 720
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      }
+    ],
+    "transcript": "Visualtranscript, not ASR:source38.031429s960x720.0–2clublogooverlay/playerlineup,2–5pemainPSSputihdenganPersikungu,5–8warmups/ball,8–11PSSlineup/handshakes,11–19coachHuistraandteamhuddle,19–24onfieldattack/goalkeepersave,24–29footballchallenge/playersfall,29–33duelnearby,33–38InsideTheGameendcardoverlay. Native38persecondframes0.5–37.5reviewed, selected2–7/10–15/19–24/25–30. No inferred refereecall/foul/goal/newinjury fromtackle. No speechclaimandphysicalaudiomuted. Footageis22OctoberBrawijayanotfuture27OctoberBorneo.",
+    "selected_scenes": [
+      {
+        "source_id": "INSIDE",
+        "source_start": 2,
+        "source_end": 7,
+        "text": "PSS–Borneo maju ke 27 Oktober\nSelasa, bukan Rabu\nDok. PSS–Persik, 22 Oktober",
+        "claim_ids": [
+          "CHANGE",
+          "ARCHIVE"
+        ]
+      },
+      {
+        "source_id": "INSIDE",
+        "source_start": 10,
+        "source_end": 15,
+        "text": "Kick-off tetap 15.30 WIB\nStadion Maguwoharjo, Sleman\nDok. PSS–Persik, 22 Oktober",
+        "claim_ids": [
+          "VENUE",
+          "ARCHIVE"
+        ]
+      },
+      {
+        "source_id": "INSIDE",
+        "source_start": 19,
+        "source_end": 24,
+        "text": "Rabu 28 menjadi Selasa 27 Oktober\nPerbarui agenda ke stadion\nDok. PSS–Persik, 22 Oktober",
+        "claim_ids": [
+          "CHANGE",
+          "ARCHIVE"
+        ]
+      },
+      {
+        "source_id": "INSIDE",
+        "source_start": 25,
+        "source_end": 30,
+        "text": "Simpan tanggalnya, kabari teman tribun\n27 Oktober, 15.30 WIB\nDok. PSS–Persik, 22 Oktober",
+        "claim_ids": [
+          "CHANGE",
+          "VENUE",
+          "ARCHIVE"
+        ]
+      }
+    ],
+    "input": {
+      "bytes": 17973201,
+      "sha256": "7939a0fa80ae4f8333dbbfcf2c73c9daf1379dfc9c4c13d577e960a8f93ae504",
+      "method": "Full960x720 frame padded960x1708 at0,300charcoal. No footballer or ball crop; physicalAAC mute. Original PSS TV/Indosiar corner marks remain in video with sourcecredit."
+    },
+    "hero": {
+      "timestamp": 3.5,
+      "bytes": 63719,
+      "sha256": "f7eb0f1663016e52150270991b1c877313c41b18619ee7511699be42fbcc3cb7",
+      "method": "Actual player in whitePSS jersey, crop560x530at220,150→900px; face/head intact, noheadline/sourcecorneroverlay/AI. Individual name not asserted. Earlier widercrop retainedpartialPSS TV corner and was rejected forcleanhero requirement."
+    },
+    "rights": "PemilikStadione mengotorisasi kutipaneditorialterbatasberatribusi atasfootageofficialPSStersediapublikviaBusinessDiscoveryberizinHTTP200. Bukanfullmatch/privateUGC, rawprivatVPS. Tidakmengaranggrantlisensitertulisklub. Sumberaudiomutefisik; musikInstagramcatalogtidakdiunduh/ditanamkeFB/website.",
+    "audio": {
+      "catalog": {
+        "audio_id": "2141116976274369",
+        "title": "Cosmic Disco Fever (Instrumental)",
+        "artist": "Adam Griffith",
+        "audio_volume": 18,
+        "video_volume": 0,
+        "checked_at": "2026-10-24T12:11:38.370Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "audition_claimed": false,
+      "metadata_review_only": true,
+      "limitation": "No playableaudio/continuousvideo input available. No claim hearing originalspeech, catalogpreview or combinedInstagrammix. Actual current accountTRENDING metadata, not universalviral/FYP guarantee. Catalogpreview not downloaded/reembedded into Facebook/site; basevideo physicallysilent.",
+      "analysis": [
+        "[Parsed_volumedetect_0 @ 0x5a560f61db80] mean_volume: -91.0 dB",
+        "[Parsed_volumedetect_0 @ 0x5a560f61db80] max_volume: -91.0 dB"
+      ]
+    }
+  },
+  "visual_review": {
+    "method": "Native38 sourceframes0.5–37.5 plus fullsourcecontact; originalannouncement card; final8render samples1.25,3.75,...18.75 cover all4cuts; clean3.5hero inspected. Expressions, jersey, movingball/players, coachhuddle and timeline checked. No continuousplayback/audition claim.",
+    "all_scenes_reviewed": true,
+    "final": "White text on charcoal safezones; date27October in first5seconds,15.30WIB/Maguwoharjo in second scene. Every scene explicitly labels PSS–Persik22October. No futurePSS–Borneo footage presented as already played. NoAI/slideshow/endcard. Sourceending avoided by selectedrange through30s.",
+    "hero_only_update": "Final native cleanhero changed; committed preview rerun, MP4SHA identical to reviewedfinal contact."
+  },
+  "render": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.104,
+    "scene_count": 4,
+    "source_count": 1,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "6ead0af38019bb87df0e3f59c18af984291a0bb4bc69a001207f9eae81ae8d6d",
+    "bytes": 7764397,
+    "sha256": "6ead0af38019bb87df0e3f59c18af984291a0bb4bc69a001207f9eae81ae8d6d"
+  },
+  "scope": {
+    "baseline_rows": 150,
+    "allowed": "Only targetSOCIAL and one new pairedARTICLE",
+    "other_existing_rows": 149,
+    "clock": "24October20WIB unchanged",
+    "preserved": [
+      "all legacy13WIB slots",
+      "other08/20slots",
+      "additional",
+      "historicalSCHEDULED/PUBLISHED",
+      "archive/tombstone",
+      "renderer",
+      "credentials",
+      "code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push first. Shared committedadapter schedule, then canonicalpair/clock/publicbytes/gate/scope/idempotence verification. Leave futurevalid schedule to sharedpublisher, noMetaDirect.",
+  "private_only": "Rawvideo/hero/announcement/sourceHTML/fulltext/APIJSON/packet/signedCDN onlyprivateVPS. Git ownarticle/sanitizedreview/growthbrief/metrics/QAderivatives only."
+}

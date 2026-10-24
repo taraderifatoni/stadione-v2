@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-24T12:01:58.781Z",
+  "baseline_rows": 150,
+  "target": {
+    "id": "4b967058-3887-4030-87f3-6d59255fadb9",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-24T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-24:match-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Live / reaction",
+    "theme": "Live momen hanya dengan sumber real-time/editor; snapshot tren bukan feed live"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "dedupe_terms": [
+    "pss",
+    "borneo",
+    "27 oktober"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 61,
+    "event_duplicates": 0
+  },
+  "manual_history": "Read all CMS/IG PSS/Borneo/Maguwoharjo matches. Earlier PSS supporter tragedy, Persebaya gaps, Borneo Buriram, masks and Alex trivia concern different events. None covers this PSS–Borneo date correction. No historical/archived/tombstone revival.",
+  "seeder_needed": false,
+  "morning_published": {
+    "id": "18129241933889863",
+    "timestamp": "2026-10-24T01:01:17Z",
+    "untouched": true
+  },
+  "calendar": "New committed calendar is12/week at08/20. This target already existed with Indonesia/LiveReaction metadata; preserve its identity, clock and pillar. All legacy13 slots/additional and other rows protected."
+}

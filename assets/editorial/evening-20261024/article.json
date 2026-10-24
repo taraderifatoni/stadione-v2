@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "PSS Fans, Jangan Salah Hari",
+  "dek": "PSS–Borneo maju ke Selasa, 27 Oktober. Sepak mula tetap pukul 15.30 WIB di Maguwoharjo.",
+  "caption": "PSS FANS, JANGAN SALAH HARI\n\nPSS Sleman vs Borneo FC Samarinda maju sehari: dari Rabu, 28 Oktober, menjadi Selasa, 27 Oktober 2026.\n\nJamnya tetap 15.30 WIB. Stadionnya tetap Maguwoharjo, Sleman. Tanggal baru sudah diumumkan PSS dan dicocokkan dengan jadwal operator terbaru serta laporan Harian Jogja.\n\nSudah janjian berangkat bersama teman dengan tanggal lama? Simpan jadwal baru ini dan kirim ke teman tribunmu.\n\nVideo adalah arsip PSS–Persik di Brawijaya pada 22 Oktober, dari PSS TV, bukan rekaman pertandingan melawan Borneo yang belum dimainkan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Agenda ke Stadion Maju Sehari",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHANGE"
+      ],
+      "text": "Suporter PSS Sleman perlu memajukan agenda ke Maguwoharjo. Laga kandang melawan Borneo FC Samarinda kini berlangsung pada Selasa, 27 Oktober 2026. Pertandingan pekan ketujuh Super League itu semula dijadwalkan pada Rabu, 28 Oktober, sebelum dimajukan satu hari."
+    },
+    {
+      "id": "time",
+      "heading": "Jam dan Stadion Tetap",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHANGE",
+        "VENUE"
+      ],
+      "text": "Sepak mula tidak ikut bergeser. PSS dan Borneo tetap dijadwalkan bertanding pukul 15.30 WIB di Stadion Maguwoharjo, Sleman. Pengumuman perubahan tanggal disampaikan melalui akun resmi PSS pada Jumat, 23 Oktober, dan tanggal baru juga tercantum pada jadwal operator."
+    },
+    {
+      "id": "supporters",
+      "heading": "Perbarui Janji dengan Teman Tribun",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "CHANGE",
+        "VENUE"
+      ],
+      "text": "Bagi penonton yang sudah menyimpan poster atau menyepakati waktu berangkat bersama teman, hal yang perlu diperbarui adalah harinya. Gunakan tanggal Selasa, 27 Oktober, ketika membagikan kembali agenda pertandingan. Jam sepak mula dan stadion dapat tetap menjadi acuan perjalanan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261024-arsenal-everton-match-preview-news",
+    "goal-20261013-united-injuries-atletico-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-24T12:17:19.549Z",
+    "article_digest": "0abeb4a12a36188d83bcc295e2ed53c0724a79a1af20f474a47cfd290f6805bd"
+  }
+}
