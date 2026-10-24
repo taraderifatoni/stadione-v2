@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-24T00:17:49.282Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "4c1117e8-8d8d-4361-81a6-6e19100971b3",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-24:match-am",
+    "event_key": "arsenal-saka-scan-arteta-reaction-20261023",
+    "scheduled_at": "2026-10-24T01:00:00+00:00",
+    "time_wib": "24 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "e68e7077-42ae-4911-8c8c-6cbb71dab58f",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-24T01:00:00+00:00",
+    "title": "Arteta Menunggu Kepastian Cedera Saka",
+    "canonical_body_identical": true,
+    "digest": "989ebf2928129cd4c73c8fee3a27185190a9ca2abe22390d1a32b99da159e3f4",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 75210,
+      "sha256": "e4e7fac0a54e15ed236ba4ba6e6cad3442fcbbefbccc4c6b1c923507d8318c65",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 5492298,
+      "sha256": "a055146b06231912e47d0c3430bbc550aaa687bc55849768d1f141ea04cd6f54",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 60,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 148,
+  "changed_other_rows": [],
+  "baseline_rows": 149,
+  "current_rows": 150,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "414eafd2df43d74ce41a9095ae59bbe7f8ec7d37"
+}
