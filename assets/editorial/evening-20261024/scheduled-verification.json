@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-24T12:29:39.338Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "4b967058-3887-4030-87f3-6d59255fadb9",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-24:match-pm",
+    "event_key": "pss-borneo-schedule-change-20261027-utility-reel",
+    "scheduled_at": "2026-10-24T13:00:00+00:00",
+    "time_wib": "24 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "a939c616-f7c2-4c13-a875-8982ca7d8c34",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-24T13:00:00+00:00",
+    "title": "PSS Fans, Jangan Salah Hari",
+    "canonical_body_identical": true,
+    "digest": "0abeb4a12a36188d83bcc295e2ed53c0724a79a1af20f474a47cfd290f6805bd",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 82593,
+      "sha256": "0282c38779e9cb9635521869aef26f5c0c2d40c197a3020e8edfa02044233060",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 7416308,
+      "sha256": "29ead160e069b6956ea07e01ef5ec430dee3c878735a30a4ebd3291317583331",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 61,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 149,
+  "changed_other_rows": [],
+  "baseline_rows": 150,
+  "current_rows": 151,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "1e4e7dad4618272498ebdb19d8c87e497dde78da"
+}
