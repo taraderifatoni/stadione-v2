@@ -1,7 +1,7 @@
 {
-  "reviewed_at": "2026-10-24T12:20:00.273Z",
+  "reviewed_at": "2026-10-24T12:28:09.753Z",
   "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
-  "rollback_commit": "55c2d4d84f16ec97d9ea241365bd3ec49fd3158c",
+  "rollback_commit": "9273674ab20e149a7b1e7731ab0461df5431dc05",
   "target": {
     "id": "4b967058-3887-4030-87f3-6d59255fadb9",
     "plan_key": "2026-10-24:match-pm",
@@ -117,7 +117,7 @@
       "publisher_group": "PSS_SLEMAN",
       "primary": true,
       "published_at": "2026-10-23T14:12:12Z",
-      "retrieved_at": "2026-10-24T12:17:19.549Z",
+      "retrieved_at": "2026-10-24T12:27:28.078Z",
       "text_sha256": "57adac6247d952e2319e3ca254f7a12b2f55be0a1554963f42a623fa094a4804",
       "full_read": true,
       "method": "Full official announcement card and caption viewed natively; both dates and unchanged kickoff transcribed. Not a separate interview."
@@ -167,12 +167,12 @@
         ]
       }
     ],
-    "transcript": "Visualtranscript, not ASR:source38.031429s960x720.0–2clublogooverlay/playerlineup,2–5pemainPSSputihdenganPersikungu,5–8warmups/ball,8–11PSSlineup/handshakes,11–19coachHuistraandteamhuddle,19–24onfieldattack/goalkeepersave,24–29footballchallenge/playersfall,29–33duelnearby,33–38InsideTheGameendcardoverlay. Native38persecondframes0.5–37.5reviewed, selected2–7/10–15/19–24/25–30. No inferred refereecall/foul/goal/newinjury fromtackle. No speechclaimandphysicalaudiomuted. Footageis22OctoberBrawijayanotfuture27OctoberBorneo.",
+    "transcript": "Visualtranscript, not ASR:source38.031429s960x720.0–2clublogooverlay/playerlineup,2–5pemainPSSputihdenganPersikungu,5–8warmups/ball,8–11PSSlineup/handshakes,11–19coachHuistraandteamhuddle,19–24onfieldattack/goalkeepersave,24–29footballchallenge/playersfall,29–33duelnearby,33–38InsideTheGameendcardoverlay. Native38persecondframes0.5–37.5reviewed, selected19–24/6–11/11–16/24–29. No inferred refereecall/foul/goal/newinjury fromtackle. No speechclaimandphysicalaudiomuted. Footageis22OctoberBrawijayanotfuture27OctoberBorneo.",
     "selected_scenes": [
       {
         "source_id": "INSIDE",
-        "source_start": 2,
-        "source_end": 7,
+        "source_start": 19,
+        "source_end": 24,
         "text": "PSS–Borneo maju ke 27 Oktober\nSelasa, bukan Rabu\nDok. PSS–Persik, 22 Oktober",
         "claim_ids": [
           "CHANGE",
@@ -181,8 +181,8 @@
       },
       {
         "source_id": "INSIDE",
-        "source_start": 10,
-        "source_end": 15,
+        "source_start": 6,
+        "source_end": 11,
         "text": "Kick-off tetap 15.30 WIB\nStadion Maguwoharjo, Sleman\nDok. PSS–Persik, 22 Oktober",
         "claim_ids": [
           "VENUE",
@@ -191,8 +191,8 @@
       },
       {
         "source_id": "INSIDE",
-        "source_start": 19,
-        "source_end": 24,
+        "source_start": 11,
+        "source_end": 16,
         "text": "Rabu 28 menjadi Selasa 27 Oktober\nPerbarui agenda ke stadion\nDok. PSS–Persik, 22 Oktober",
         "claim_ids": [
           "CHANGE",
@@ -201,8 +201,8 @@
       },
       {
         "source_id": "INSIDE",
-        "source_start": 25,
-        "source_end": 30,
+        "source_start": 24,
+        "source_end": 29,
         "text": "Simpan tanggalnya, kabari teman tribun\n27 Oktober, 15.30 WIB\nDok. PSS–Persik, 22 Oktober",
         "claim_ids": [
           "CHANGE",
@@ -217,10 +217,10 @@
       "method": "Full960x720 frame padded960x1708 at0,300charcoal. No footballer or ball crop; physicalAAC mute. Original PSS TV/Indosiar corner marks remain in video with sourcecredit."
     },
     "hero": {
-      "timestamp": 3.5,
-      "bytes": 63719,
-      "sha256": "f7eb0f1663016e52150270991b1c877313c41b18619ee7511699be42fbcc3cb7",
-      "method": "Actual player in whitePSS jersey, crop560x530at220,150→900px; face/head intact, noheadline/sourcecorneroverlay/AI. Individual name not asserted. Earlier widercrop retainedpartialPSS TV corner and was rejected forcleanhero requirement."
+      "timestamp": 9.5,
+      "bytes": 82593,
+      "sha256": "0282c38779e9cb9635521869aef26f5c0c2d40c197a3020e8edfa02044233060",
+      "method": "Actual PSS team lineup photograph at9.5s, crop880x540at40,125; faces and jerseys intact, source corner overlays excluded. No headline orAI; individual player names not asserted. Earlier narrow3.5hero and groupcrop with remaining corner overlays rejected."
     },
     "rights": "PemilikStadione mengotorisasi kutipaneditorialterbatasberatribusi atasfootageofficialPSStersediapublikviaBusinessDiscoveryberizinHTTP200. Bukanfullmatch/privateUGC, rawprivatVPS. Tidakmengaranggrantlisensitertulisklub. Sumberaudiomutefisik; musikInstagramcatalogtidakdiunduh/ditanamkeFB/website.",
     "audio": {
@@ -238,16 +238,16 @@
       "metadata_review_only": true,
       "limitation": "No playableaudio/continuousvideo input available. No claim hearing originalspeech, catalogpreview or combinedInstagrammix. Actual current accountTRENDING metadata, not universalviral/FYP guarantee. Catalogpreview not downloaded/reembedded into Facebook/site; basevideo physicallysilent.",
       "analysis": [
-        "[Parsed_volumedetect_0 @ 0x5a560f61db80] mean_volume: -91.0 dB",
-        "[Parsed_volumedetect_0 @ 0x5a560f61db80] max_volume: -91.0 dB"
+        "[Parsed_volumedetect_0 @ 0x64d36ac18380] mean_volume: -91.0 dB",
+        "[Parsed_volumedetect_0 @ 0x64d36ac18380] max_volume: -91.0 dB"
       ]
     }
   },
   "visual_review": {
-    "method": "Native38 sourceframes0.5–37.5 plus fullsourcecontact; originalannouncement card; final8render samples1.25,3.75,...18.75 cover all4cuts; clean3.5hero inspected. Expressions, jersey, movingball/players, coachhuddle and timeline checked. No continuousplayback/audition claim.",
+    "method": "Native38 sourceframes0.5–37.5 plus fullsourcecontact; originalannouncement card; final8render samples1.25,3.75,...18.75 cover all4cuts; clean9.5teamhero inspected. Expressions, jersey, movingball/players, coachhuddle and timeline checked. No continuousplayback/audition claim.",
     "all_scenes_reviewed": true,
     "final": "White text on charcoal safezones; date27October in first5seconds,15.30WIB/Maguwoharjo in second scene. Every scene explicitly labels PSS–Persik22October. No futurePSS–Borneo footage presented as already played. NoAI/slideshow/endcard. Sourceending avoided by selectedrange through30s.",
-    "hero_only_update": "Final native cleanhero changed; committed preview rerun, MP4SHA identical to reviewedfinal contact."
+    "pre_schedule_revision": "Before deployment, switch first cut fromstatic lineup to19–24footballaction. Final cuts19–24/6–11/11–16/24–29, still20s; clean9.5teamhero. Final4cut contact rechecked. Subsequent hero-only crop correction preserves the final reviewedMP4SHA."
   },
   "render": {
     "ok": true,
@@ -262,9 +262,9 @@
     "normalized_audio": true,
     "source_video": true,
     "ai_footage": false,
-    "output_sha256": "6ead0af38019bb87df0e3f59c18af984291a0bb4bc69a001207f9eae81ae8d6d",
-    "bytes": 7764397,
-    "sha256": "6ead0af38019bb87df0e3f59c18af984291a0bb4bc69a001207f9eae81ae8d6d"
+    "output_sha256": "29ead160e069b6956ea07e01ef5ec430dee3c878735a30a4ebd3291317583331",
+    "bytes": 7416308,
+    "sha256": "29ead160e069b6956ea07e01ef5ec430dee3c878735a30a4ebd3291317583331"
   },
   "scope": {
     "baseline_rows": 150,
