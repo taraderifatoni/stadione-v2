@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Arteta Menunggu Kepastian Cedera Saka",
+  "dek": "Pemeriksaan lanjutan diperlukan sebelum Arsenal mengetahui tingkat cedera Saka. Arteta juga menyoroti respons para pemain pengganti.",
+  "caption": "ARTETA MENUNGGU KEPASTIAN CEDERA SAKA\n\nArsenal masih menunggu penilaian lebih jelas atas cedera Bukayo Saka. Dalam jumpa pers Jumat (23/10), Mikel Arteta menjelaskan perlunya MRI lanjutan dan pendapat spesialis. Ia belum memberikan jadwal pemulihan yang pasti dalam keterangan tersebut.\n\nSambil menunggu kabar Saka, Arteta memuji kesiapan pilihan pemainnya dan respons Eberechi Eze ketika masuk sebagai pengganti. Arsenal menjamu Everton di Emirates, Sabtu (24/10).\n\nFootage asli dari akun resmi Arsenal, diunggah 23 Oktober, memperlihatkan konferensi pers Arteta serta persiapan latihan menghadapi Everton. Ini bukan video Saka cedera atau menjalani pemeriksaan. Fakta dicocokkan dengan Hayters, Sports Mole dan laman resmi Everton.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "MRI Lanjutan untuk Saka",
+      "kind": "FACT",
+      "claim_ids": [
+        "SCAN",
+        "FIXTURE"
+      ],
+      "text": "Arsenal masih menunggu kepastian tingkat cedera Bukayo Saka menjelang laga melawan Everton. Dalam jumpa pers Jumat, 23 Oktober 2026, Mikel Arteta menjelaskan bahwa pemain sayapnya memerlukan MRI lanjutan. Banyaknya cairan di area yang cedera membuat penilaian awal sulit dilakukan."
+    },
+    {
+      "id": "assessment",
+      "heading": "Arteta Membutuhkan Penilaian Spesialis",
+      "kind": "FACT",
+      "claim_ids": [
+        "SCAN",
+        "MATCH"
+      ],
+      "text": "Saka ditarik saat Arsenal bermain imbang 2–2 di markas Bayern Munich pada Liga Champions. Arteta mengatakan timnya masih membutuhkan pemeriksaan serta pendapat spesialis. Ia memperkirakan informasi yang lebih jelas akan tersedia pada Sabtu, tanpa memberikan jadwal pemulihan yang pasti dalam keterangannya itu."
+    },
+    {
+      "id": "options",
+      "heading": "Respons Eze Menjadi Contoh",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPTIONS"
+      ],
+      "text": "Sambil menunggu kabar Saka, Arteta menekankan bahwa Arsenal mempunyai pilihan pemain dengan kesiapan mental yang baik. Ia mencontohkan Eberechi Eze, yang mampu memberi dampak ketika masuk sebagai pengganti. Respons seperti itulah yang ia harapkan dari pemain yang memulai pertandingan di bangku cadangan."
+    },
+    {
+      "id": "fixture",
+      "heading": "Everton Datang ke Emirates",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE"
+      ],
+      "text": "Arsenal berikutnya menjamu Everton di Emirates Stadium pada Sabtu, 24 Oktober. Pertandingan Premier League itu menjadi agenda terdekat Arteta saat kondisi Saka masih menunggu penilaian lebih lanjut."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261013-united-injuries-atletico-news",
+    "goal-20261019-carrick-leeds-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-24T00:12:58.684Z",
+    "article_digest": "989ebf2928129cd4c73c8fee3a27185190a9ca2abe22390d1a32b99da159e3f4"
+  }
+}

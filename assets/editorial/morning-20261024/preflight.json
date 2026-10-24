@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-23T23:58:30.360Z",
+  "baseline_rows": 149,
+  "target": {
+    "id": "4c1117e8-8d8d-4361-81a6-6e19100971b3",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-24T01:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-24:match-am",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Reaction",
+    "theme": "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "dedupe_terms": [
+    "bukayo saka",
+    "mri"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 60,
+    "event_duplicates": 0
+  },
+  "manual_history": "Broad Saka/Arteta CMS title/body/caption scan includes Madueke Forest18October (7a73f302/9e785cde) and unrelated substring rows. Full Madueke article read, separate event/result/angle; current23OctoberMRI news not previously posted. InitialSaka+pemeriksaan matcheddipaksakan substringinpublishedDeLigtUnitedarticle, fullbodyread distinctevent. FinaldedupeBukayoSaka+MRIhas0matches; nativepreviewrerun forinputbinding, reviewedMP4SHAunchanged. RecentIGnoSaka/Arteta caption matches; no deleted/archive/tombstone revival.",
+  "seeder_needed": false,
+  "previous_evening_published": {
+    "id": "18103611572569620",
+    "timestamp": "2026-10-23T13:01:27Z",
+    "untouched": true
+  }
+}

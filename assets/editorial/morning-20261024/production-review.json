@@ -1,0 +1,300 @@
+{
+  "reviewed_at": "2026-10-24T00:15:57.520Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "131be469b242a0fbc74e6311b8e079ab471c0067",
+  "target": {
+    "id": "4c1117e8-8d8d-4361-81a6-6e19100971b3",
+    "plan_key": "2026-10-24:match-am",
+    "event_key": "arsenal-saka-scan-arteta-reaction-20261023",
+    "scheduled_at": "2026-10-24T01:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool": {
+      "provider": "Release getDailySportsPool SerpAPI via committed cms-audience-pool/cms-load",
+      "fetched_at": "2026-10-23T23:58:52.266Z",
+      "sha256": "a1e82bd6bef8b3ed4c9e31bdb064f3591ff2f6aaad8916a072d670b95fe84a5f",
+      "selection": "EuropeReaction. Saka not claimed trend in generalpool. Supplemental direct current pressconference discovery and two committed YouTube searches."
+    },
+    "youtube": [
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Arsenal Manchester United Liverpool Bayern Barcelona reaction 23 October 2026"
+        ],
+        "checked_at": "2026-10-23T23:58:53.405Z",
+        "candidates": 12,
+        "sha256": "5e593f7087b2236c9f9ac688928ef4508fd64cfb316b569432ed70eb239c840b"
+      },
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Arteta Saka injury Everton press conference"
+        ],
+        "checked_at": "2026-10-23T23:59:22.994Z",
+        "candidates": 18,
+        "sha256": "1124b3c64de90b7906ac584675bea53a92a139b0a5593bcbbd4ab7990d793622"
+      }
+    ],
+    "business_discovery": {
+      "account": "arsenal",
+      "parents": 30,
+      "children_checked": true,
+      "metadata_not_footage_until_download": true
+    },
+    "format": "REEL kept; two genuine downloaded official sources, no fallback"
+  },
+  "sources": [
+    {
+      "id": "PRESS",
+      "url": "https://hayters.com/arsenal-face-anxious-wait-over-saka-injury/",
+      "publisher_group": "HAYTERS",
+      "primary": true,
+      "published_at": "2026-10-23T14:19:00+01:00",
+      "retrieved_at": "2026-10-24T00:04:52.007Z",
+      "text_sha256": "2d22ec5376986550d0ce7054d72caf66a3078f032cdd77ba7868110f70b481d3",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. Browser opens internalfailed, no claim successful browserfullread. PRESS bylinedDanBennett original direct pressconference report primary for attributed remarks, not officialclub. SportsMole BenKnapton independent publisher; both same Friday pressconference, not separate interviews. EVERTON original23October datedURL/currenttitle and entire report, primaryfixture context; day-only published_at reflects verified article date, no invented clock."
+    },
+    {
+      "id": "SPORTSMOLE",
+      "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/arteta-confirms-arsenal-injury-boost-for-everton-amid-latest-saka-update_607559.html",
+      "publisher_group": "SPORTSMOLE",
+      "primary": false,
+      "published_at": "2026-10-23T14:58:00+01:00",
+      "retrieved_at": "2026-10-24T00:03:41.830Z",
+      "text_sha256": "6ffdcdb4f90fb07ee5866e8cf7f9f941896494918619bc48617f55c54694ba7d",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. Browser opens internalfailed, no claim successful browserfullread. PRESS bylinedDanBennett original direct pressconference report primary for attributed remarks, not officialclub. SportsMole BenKnapton independent publisher; both same Friday pressconference, not separate interviews. EVERTON original23October datedURL/currenttitle and entire report, primaryfixture context; day-only published_at reflects verified article date, no invented clock."
+    },
+    {
+      "id": "EVERTON",
+      "url": "https://www.evertonfc.com/news/2026/october/23/Moyes-Talks-Team-News---Norgaard-Fitness-Ahead-Of-Arsenal-Trip/",
+      "publisher_group": "EVERTON_FC",
+      "primary": true,
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-24T00:05:20.498Z",
+      "text_sha256": "5f94bf8e280316e6bf29bc4a08c5cade911d43870c68bf65642b70ccc3d48a46",
+      "full_read": true,
+      "method": "Full normal publicHTMLHTTP200 body read. Browser opens internalfailed, no claim successful browserfullread. PRESS bylinedDanBennett original direct pressconference report primary for attributed remarks, not officialclub. SportsMole BenKnapton independent publisher; both same Friday pressconference, not separate interviews. EVERTON original23October datedURL/currenttitle and entire report, primaryfixture context; day-only published_at reflects verified article date, no invented clock."
+    },
+    {
+      "id": "ARSENAL_PRESS",
+      "url": "https://www.instagram.com/reel/De1y163ur81/",
+      "publisher_group": "ARSENAL_FC",
+      "primary": true,
+      "published_at": "2026-10-23T14:41:16Z",
+      "retrieved_at": "2026-10-24T00:12:58.684Z",
+      "text_sha256": "e629fc037566ca120b2ec80c5092dc013f26b4fd584383e1c919df5986a6e21d",
+      "full_read": true,
+      "method": "Official full35.5second source reviewed via one-second frames and visible English subtitles, not ASR/audition or continuous playback."
+    }
+  ],
+  "blocked_sources": {
+    "arsenal_club_transcript": "Browser403 stopped, noalternate route",
+    "reuters": "NormalGET401 stopped, noalternate route",
+    "premierleague": "Onlystandfirstvisible, notfullreport; excluded",
+    "false9": "Fullread but secondary aggregation notused in packet"
+  },
+  "facts": {
+    "verified": [
+      "Friday23October Arteta described anotherMRI because fluid made severity hard toassess; further scans/specialistopinions needed. ExpectedmoreinformationSaturday, no fixedreturntimeline in statement.",
+      "Saka forcedoffBayern2–2Arsenal ChampionsLeagueWednesday21October, not namedmedicaldiagnosis beyond sourcecontext.",
+      "Arteta officialvideo praises options/mindset and Eze impact as substitute. Film is general pressconference response, not MRIquote clip or videoofSakainjury.",
+      "Arsenal hostsEvertonEmiratesSaturday24October. No publishedXI, matchresult, or guaranteedreplacement."
+    ],
+    "excluded": [
+      "6–8weekabsence rumor notpublished as officialdiagnosis",
+      "No claim MRIresults already available or scan actually completed Friday",
+      "No Saka trainingabsence/duels/medicalimages invented; unnamedplayers in real23Octobertraining not identified as Saka",
+      "No exactinjuryminute, substitute45min history, Eze25minscorer details or standings numbers unnecessary to story"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 150,
+    "paragraphs": 4,
+    "digest": "989ebf2928129cd4c73c8fee3a27185190a9ca2abe22390d1a32b99da159e3f4",
+    "benchmark_ids": [
+      "goal-20261013-united-injuries-atletico-news",
+      "goal-20261019-carrick-leeds-reaction-news"
+    ],
+    "whole_before_pagination_or_scenes": true,
+    "quote_words": 0,
+    "lessons": "United injury reference: lead affectedavailability then assessment and options, keep uncertainty/time. Carrick: attribute coachassessment and specific supporting context. Latest ratings reference distinguishes fact/opinion; no copiedratings or unsupported diagnosis.",
+    "review": "Lead examinationreason; assessment explains why waiting; Eze paragraph adds actual availableoptions response; concreteEvertonfixture close. No AnalisisStadione/scaffold/quoteprocess heading/filler."
+  },
+  "media": {
+    "downloads": [
+      {
+        "name": "training",
+        "id": "18446349328133506",
+        "page_url": "https://www.instagram.com/reel/De2SUxUxlnz/",
+        "published_at": "2026-10-23T19:15:05+0000",
+        "bytes": 8129650,
+        "sha256": "9c8cb18d7a7f57cacfbb3a61e24d9cb38ee8e580ff9730e2f47267c489821ccc",
+        "duration": "44.370476",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      },
+      {
+        "name": "strength",
+        "id": "18118566025786200",
+        "page_url": "https://www.instagram.com/reel/De1y163ur81/",
+        "published_at": "2026-10-23T14:41:16+0000",
+        "bytes": 4089888,
+        "sha256": "01dae7bfeb0b36944560e1356f86f4d5529ffedf29a3fc166331aad54435b691",
+        "duration": "35.523673",
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "PRESS_VIDEO",
+        "page_url": "https://www.instagram.com/reel/De1y163ur81/",
+        "creator": "arsenal",
+        "published_at": "2026-10-23T14:41:16Z",
+        "transcript": "Visual subtitle transcript, not ASR/audition:35.523673s, Arteta orange Arsenal training shirt at pressconference sponsor wall.0–3goodoptions/rightmindset;3–10proudchemistry/desire;10–15playerswhostart/finish;15–20Ebs/Ezeexamplecouldbeupset;20–25substitutedafter45minutes;25–29cameinhugeimpact;29–33benchcanbeasgoodasyouwant;33–35givewhatyouneed. All36one-secondframes0.5–35.5reviewed. Only0–5and15–20used, subtitlescroppedoutbeforeassemblyandbaseaudioisphysicallymuted; Indonesian overlay newsnarration nottranslationofeveryspokenword. NotactualMRIquoteclip.",
+        "scope": "Crop720x825at0,0 retainsauthenticface, excludes embeddedsubtitle;612x700on720x1280charcoalcanvasx54y200.4montagecutsacross2sources."
+      },
+      {
+        "id": "TRAINING",
+        "page_url": "https://www.instagram.com/reel/De2SUxUxlnz/",
+        "creator": "arsenal",
+        "published_at": "2026-10-23T19:15:05Z",
+        "transcript": "Visual transcript, not ASR:44.370476s Arsenal orange/black trainingkit and lightbluebibs on Sobha trainingpitch.0–5ballpass/dribble,5–10bibplayerturns/fallsandrecovers,10–20shots/trackingtowardgoal,20–25goalframe/netball,25–35morepassingandfinishingopponentswithbibs,35–44finalfinishingsequenceandbibplayersstandingneardummies. Use1–6and30–35only. Namesnotasserted,noSakaabsenceclaim,notBayerngameorEvertonmatch. OriginalcaptionRaisingthelevels,InsideTrainingEvertonprep. Full45one-secondcontactreviewbeforeapproval.",
+        "scope": "Squarecrop720x720at0y280on720x1280charcoalx0y200; actualmovingtraining,notmatchproof. Sourceaudio mutedphysically."
+      }
+    ],
+    "scenes": [
+      {
+        "source_id": "PRESS_VIDEO",
+        "source_start": 0,
+        "source_end": 5,
+        "text": "Arteta menunggu kepastian Saka\nPemeriksaan lanjutan masih diperlukan",
+        "claim_ids": [
+          "SCAN"
+        ]
+      },
+      {
+        "source_id": "TRAINING",
+        "source_start": 1,
+        "source_end": 6,
+        "text": "Tingkat cedera belum dipastikan\nKeterangan Arteta, 23 Oktober",
+        "claim_ids": [
+          "SCAN"
+        ]
+      },
+      {
+        "source_id": "PRESS_VIDEO",
+        "source_start": 15,
+        "source_end": 20,
+        "text": "Respons Eze menjadi contoh\nArteta memuji kesiapan pemain pengganti",
+        "claim_ids": [
+          "OPTIONS"
+        ]
+      },
+      {
+        "source_id": "TRAINING",
+        "source_start": 30,
+        "source_end": 35,
+        "text": "Arsenal menjamu Everton, 24 Oktober\nLatihan Arsenal, diunggah 23 Oktober",
+        "claim_ids": [
+          "FIXTURE"
+        ]
+      }
+    ],
+    "rights": "PemilikStadione mengotorisasi pengemasaneditorialterbatasberatribusi. Dua postingofficialArsenal berhasilHTTP200viaBusinessDiscoveryberizin; bukanfullmatch/privateUGC. Tidakmengaranggrantlisensitertulisklub. RawprivatVPS,audiomutefisik;tidakmengklaimkatalogberlisensicrossplatform.",
+    "hero": {
+      "timestamp": 15.5,
+      "bytes": 75210,
+      "sha256": "e4e7fac0a54e15ed236ba4ba6e6cad3442fcbbefbccc4c6b1c923507d8318c65",
+      "method": "OriginalArteta frame15.5 crop720x825→900px. Fullface/chin preserved, originalsource subtitles excluded, noheadline/AI. Earlier3.5crop780 rejected chinclipped."
+    },
+    "audio": {
+      "catalog": {
+        "audio_id": "1174983090781223",
+        "title": "Float In The Waves (Instrumental)",
+        "artist": "Company Money",
+        "audio_volume": 15,
+        "video_volume": 0,
+        "checked_at": "2026-10-24T00:05:21.854Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "audition_claimed": false,
+      "metadata_review_only": true,
+      "limitation": "No playableaudio/continuousvideo input capability; no claim hearing speech/catalog song/combinedmix. Track selected from real accountTRENDINGmetadata, not universalviral guarantee. SourcephysicallymutedAAC and IGvideo_volume0; FBbase silent, Instagramcatalog notdownloaded/reembedded crossplatform.",
+      "analysis": [
+        "[Parsed_volumedetect_0 @ 0x60b9f18c3b80] mean_volume: -91.0 dB",
+        "[Parsed_volumedetect_0 @ 0x60b9f18c3b80] max_volume: -91.0 dB"
+      ]
+    }
+  },
+  "visual_review": {
+    "method": "Native fullsource35.5s press36frames at0.5–35.5 and training44.37s45frames at0.5–44.5. Final8samples at1.25,3.75,...18.75 across all4cuts; finalhero native inspected. Genuine movement/change ofexpression, camera, ball and players verified. No continuousplayback/audition claim.",
+    "all_scenes_reviewed": true,
+    "initial_rejected": "Trainingwhite text overlapped greenpicture and press cropchin tight. Changed onlyinputtransforms, no renderer code.",
+    "final": "Presscrop720x825scaled612x700pad54y200; trainingcrop720squarey280pad0y200; charcoal header/captionbands. Alltext readable, faceArteta full; no source subtitles under news overlays. Training is labelled23October, notactualgame orMRI. Backgroundforeground back-ofplayer partially outsidecrop not named; mainfootballaction preserved.",
+    "no_ai_or_slideshow": true
+  },
+  "render": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.104,
+    "scene_count": 4,
+    "source_count": 2,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "a055146b06231912e47d0c3430bbc550aaa687bc55849768d1f141ea04cd6f54",
+    "bytes": 5492298,
+    "sha256": "a055146b06231912e47d0c3430bbc550aaa687bc55849768d1f141ea04cd6f54"
+  },
+  "scope": {
+    "baseline_rows": 149,
+    "allowed": "TargetSOCIAL plus one new pairedARTICLE only",
+    "other_existing_rows": 148,
+    "clock": "24October08WIB unchanged",
+    "preserved": [
+      "other slots",
+      "additional posts",
+      "historical content",
+      "renderer",
+      "credentials",
+      "production code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/push first, shared committedadapter schedule then verifypair/canonicalHTML/publicbytes/gate/scope/idempotence. NoMetaDirect or timer-basedPUBLISHEDclaim.",
+  "private_only": "Rawvideo/hero/sourceHTML/fulltext/APIJSON/packet/signedCDN onlyprivateVPS. Git ownarticle/sanitizedproof/QAcontactderivatives only."
+}
