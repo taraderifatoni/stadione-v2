@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-25T12:00:48.666Z",
+  "baseline_rows": 155,
+  "target": {
+    "id": "6b0a1193-854a-4668-acd0-50b7b01602a6",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-25T13:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "plan_key": "2026-10-25:match-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Live / reaction",
+    "archived_at": null,
+    "tombstone": null
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "dedupe_terms": [
+    "persija",
+    "persik",
+    "jis"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 63,
+    "event_duplicates": 0
+  },
+  "seeder_needed": false,
+  "manual_history": "AllCMS155rows andIG63media checked. PreviousPersijaAremaresult21October distinct, noPersijaPersikJISguide. Gabrielmorning nowpublished18126907231944753 at01:01:40Z, untouched.",
+  "calendar": "Existing20WIBlegacyIndonesiaLive/reactionREEL preserved; no13WIB/additional/other/protected mutation. New12perweek calendar not overwritten onto existingmetadata."
+}

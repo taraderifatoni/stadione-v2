@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Jak, Besok Merapat ke JIS",
+  "dek": "Persija menjamu Persik di Jakarta setelah laga kandang sebelumnya berlangsung di Bekasi. Catat stadion dan jamnya sebelum berangkat.",
+  "caption": "JAK, BESOK MERAPAT KE JIS\n\nPersija vs Persik Kediri digelar Senin, 26 Oktober 2026, pukul 19.00 WIB di Jakarta International Stadium. Laga kandang sebelumnya melawan Arema berlangsung di Stadion Patriot Candrabhaga, Bekasi. Untuk besok, tujuannya JIS.\n\nSudah janjian berangkat bersama? Simpan jadwal ini dan kirim ke teman tribunmu agar titik temu serta tujuan stadionnya sama.\n\nVideo adalah dokumentasi latihan menuju Persik dari Persija TV, diunggah 24 Oktober. Bukan rekaman pertandingan 26 Oktober atau gambar latihan di JIS. Jadwal dicocokkan dengan pengumuman Persija, ILeague dan Liputan6. Konteks laga sebelumnya diperiksa melalui ILeague dan BolaSkor.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dari Bekasi ke Jakarta",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE",
+        "PREVIOUS"
+      ],
+      "text": "Jakmania kembali punya agenda di Jakarta International Stadium. Persija menjamu Persik Kediri pada Senin, 26 Oktober 2026, pukul 19.00 WIB. Stadionnya berbeda dari laga kandang sebelumnya melawan Arema FC yang berlangsung di Bekasi."
+    },
+    {
+      "id": "previous",
+      "heading": "Patriot Menjadi Latar Kemenangan Sebelumnya",
+      "kind": "FACT",
+      "claim_ids": [
+        "PREVIOUS"
+      ],
+      "text": "Pada 21 Oktober, Persija mengalahkan Arema 5–1 di Stadion Patriot Candrabhaga. Pertemuan dengan Persik membawa Macan Kemayoran kembali bermain di Jakarta. Bagi suporter yang mengikuti kedua pertandingan, tujuan perjalanan kali ini berganti ke JIS."
+    },
+    {
+      "id": "practical",
+      "heading": "Samakan Tujuan Sebelum Berangkat",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "FIXTURE",
+        "PREVIOUS"
+      ],
+      "text": "Jika sudah membuat janji berangkat bersama, cocokkan lagi tujuan stadion dan titik temu dengan teman. Simpan jadwal Persija melawan Persik agar rencana menonton mengacu pada laga yang benar. Pengumuman pertandingan klub dan jadwal ILeague sama-sama menunjuk JIS, dengan sepak mula pukul 19.00 WIB."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261024-arsenal-everton-match-preview-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-25T12:09:12.908Z",
+    "article_digest": "620477241e081c53543ee4ac2926655868d54736c7a3aaee893e15fb122457d5"
+  }
+}

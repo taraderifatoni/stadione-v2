@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-10-25T12:12:52.009Z",
+  "adapter_committed_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "adapter_release_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "references": {
+    "entries": 21,
+    "latest_read_at": "2026-10-25T00:24:34Z",
+    "runtime_sha256": "ce537a2deaa4138b1c2c4ab79a06b28482f953e7e8263dc2e63ac22ad4b826ef",
+    "committed_sha256": "ce537a2deaa4138b1c2c4ab79a06b28482f953e7e8263dc2e63ac22ad4b826ef"
+  }
+}

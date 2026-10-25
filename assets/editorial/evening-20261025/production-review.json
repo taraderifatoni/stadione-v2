@@ -1,0 +1,272 @@
+{
+  "reviewed_at": "2026-10-25T12:12:51.931Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "ad796c676b4fa5c2969daa948c58bf3c62e4fe39",
+  "target": {
+    "id": "6b0a1193-854a-4668-acd0-50b7b01602a6",
+    "plan_key": "2026-10-25:match-pm",
+    "event_key": "persija-persik-jis-supporter-guide-20261026",
+    "scheduled_at": "2026-10-25T13:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool": {
+      "provider": "ReleasegetDailySportsPoolSerpAPI via committedcms-audience-pool/cms-load",
+      "fetched_at": "2026-10-25T12:01:16.844Z",
+      "eligible": 0,
+      "sha256": "2409715555c4437a313324312eb6b0efa136497970f7d05adf787e2278664f6c",
+      "selection": "Indonesiaeligible0, supplementedtargetedresearch, notclaimedtopictrend."
+    },
+    "youtube": [
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Persija Persib Persebaya PSS 25 Oktober 2026"
+        ],
+        "checked_at": "2026-10-25T12:01:32.770Z",
+        "candidates": 15,
+        "sha256": "7f79fd27da697fa9223d846aba28746d6153b0b9fa949aef9b6e5af3baa479f0"
+      },
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Persija Persik Shin Tae yong 25 Oktober 2026"
+        ],
+        "checked_at": "2026-10-25T12:02:18.771Z",
+        "candidates": 2,
+        "sha256": "c90ef6f8f61c14db8da43469b6343ed4ff03ae5c88008d87144c5c08e54401eb"
+      }
+    ],
+    "business_discovery": [
+      {
+        "account": "persib",
+        "parents": 15,
+        "children_checked": true
+      },
+      {
+        "account": "persija",
+        "parents": 15,
+        "children_checked": true
+      },
+      {
+        "account": "officialpersebaya",
+        "parents": 15,
+        "children_checked": true
+      }
+    ],
+    "limits": "MisdatedfanYouTubeGBK/PSS28oldcalendar notadopted. PersebayaVIDEOmetadatawithoutURL notclaimeddownloadfailure. SelectedofficialPersijatrainingHTTP200, nofallback."
+  },
+  "sources": [
+    {
+      "id": "ILEAGUE",
+      "url": "https://www.ileague.id/clubs/single/bri_super_league_2026-27/PERSIJA_JAKARTA",
+      "publisher_group": "ILEAGUE",
+      "primary": true,
+      "published_at": "2026-10-25",
+      "retrieved_at": "2026-10-25T12:03:49.360Z",
+      "text_sha256": "f40a9ec94e9f3fa5ddf60a1b8ce6788876f6237e79a15b0f7465fd66af4d02f0",
+      "full_read": true,
+      "method": "NormalpublicGET200fulltextread throughend. ILeaguedynamicfixturesnapshotretrieved25October, notinventedoriginalpublicationtimestamp. Liputan6NailaAdzkhia24October19WIB. BolaSkorRizqiAriandi23Octoberdirectpressreport, primaryforattributedremarks ratherthanfalselyofficialclub."
+    },
+    {
+      "id": "LIPUTAN6",
+      "url": "https://www.liputan6.com/bola/read/8320314/jadwal-bri-super-league-pekan-ke-7-persib-tantang-garudayaksa-arema-jamu-dewa-united",
+      "publisher_group": "KLY",
+      "primary": false,
+      "published_at": "2026-10-24T19:00:00+07:00",
+      "retrieved_at": "2026-10-25T12:03:49.668Z",
+      "text_sha256": "40f5391a55c9d78424d7618ee456777f940162563744f5b23cdc7475ceb186fd",
+      "full_read": true,
+      "method": "NormalpublicGET200fulltextread throughend. ILeaguedynamicfixturesnapshotretrieved25October, notinventedoriginalpublicationtimestamp. Liputan6NailaAdzkhia24October19WIB. BolaSkorRizqiAriandi23Octoberdirectpressreport, primaryforattributedremarks ratherthanfalselyofficialclub."
+    },
+    {
+      "id": "BOLASKOR",
+      "url": "https://bolaskor.merahputih.com/post/read/shin-tae-yong-beri-kabar-baik-soal-rizky-ridho-dan-kyohei-yoshino-jelang-persija-vs-persik",
+      "publisher_group": "MP_MEDIA",
+      "primary": true,
+      "published_at": "2026-10-23",
+      "retrieved_at": "2026-10-25T12:03:49.857Z",
+      "text_sha256": "f8c50303f24c0cf8f62b8737fab89bd32f5613c5888bcbe8f5a48b3ae5dafaf8",
+      "full_read": true,
+      "method": "NormalpublicGET200fulltextread throughend. ILeaguedynamicfixturesnapshotretrieved25October, notinventedoriginalpublicationtimestamp. Liputan6NailaAdzkhia24October19WIB. BolaSkorRizqiAriandi23Octoberdirectpressreport, primaryforattributedremarks ratherthanfalselyofficialclub."
+    },
+    {
+      "id": "FIXTURE",
+      "url": "https://www.instagram.com/p/De1fVbGoD3T/",
+      "publisher_group": "PERSIJA_FC",
+      "primary": true,
+      "published_at": "2026-10-23T11:51:20+0000",
+      "retrieved_at": "2026-10-25T12:09:12.908Z",
+      "text_sha256": "c0b613ae29662cfcb62b1b08b20913cebb1cfe938c5d391fe6d36261bd97e3eb",
+      "full_read": true,
+      "method": "Fullfirstpartycaption viaauthorizedBusinessDiscovery."
+    },
+    {
+      "id": "TRAINING",
+      "url": "https://www.instagram.com/reel/De3J4Y8PxpQ/",
+      "publisher_group": "PERSIJA_FC",
+      "primary": true,
+      "published_at": "2026-10-24T03:23:23+0000",
+      "retrieved_at": "2026-10-25T12:09:12.908Z",
+      "text_sha256": "a44b50e39704a8584b7ad71f7c543aff3c02aa14082879823b114f7a01944867",
+      "full_read": true,
+      "method": "Fullfirstpartycaption viaauthorizedBusinessDiscovery."
+    }
+  ],
+  "failed_sources": {
+    "Inilah": "GET403stopped, incidentalsearchtextnotclaimedfullread or usedforfresh23mansquad",
+    "Disway": "GET403stopped, excluded",
+    "Bisnis": "GET403stopped, excluded",
+    "browser": "Persiblineuparticles/internalerrors notclaimedfullreads; abandonedcandidate, notinfinalpacket"
+  },
+  "facts": {
+    "verified": [
+      "PersijaPersik26October19WIBJIS matchesfixture row/clubannouncement/Liputan6",
+      "PrevioushomeArema21OctoberPatriotBekasi5–1 matchesILeague/BolaSkor",
+      "Trainingupload24October03:23:23Z verifiedofficialcaptionandactualmovingvideo, noindividualidentityguessed"
+    ],
+    "excluded": [
+      "Fresh25OctoberRidho/Yoshino23mansquadclaim lacksaccessibletwofullsources; nofakedconfirmation",
+      "Nochildface orplayernameguessed fromtraining",
+      "No livePersib/Garudayaksascore/finallabel/startingXI",
+      "Noawaypermission/ticketprices/transportservice/stadiumreasons invented",
+      "ILeaguegenericclubstadiumGBK andoldYouTubedate/venue notsubstitutedforspecific26OctoberfixtureJIS"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 110,
+    "paragraphs": 3,
+    "digest": "620477241e081c53543ee4ac2926655868d54736c7a3aaee893e15fb122457d5",
+    "benchmark_ids": [
+      "goal-20261024-arsenal-everton-match-preview-news"
+    ],
+    "whole_article_before_scenes": true,
+    "structure": "Nextgamevenuecontrast → previoushomecontext → practical supportertravelcheck. Quoteunnecessary, nofakevoice/scaffold/AnalisisStadione/filler.",
+    "lessons": "Goal24preview: verifyexactfixturevsstaleprofile/widget, do notprojectXI. Latestfeature: concretecontextbeforeinterpretation; factsfornewtopic independentlychecked."
+  },
+  "media": {
+    "source": {
+      "page_url": "https://www.instagram.com/reel/De3J4Y8PxpQ/",
+      "media_id": "18454445842127079",
+      "creator": "persija",
+      "published_at": "2026-10-24T03:23:23Z",
+      "http": 200,
+      "duration": 49.084127,
+      "width": 720,
+      "height": 1280,
+      "bytes": 10116059,
+      "sha256": "85a2ed2ccd9fb3e4fe9e7b845cf6fa41685dd8fd2cc930d1f85d5e455f0760f0"
+    },
+    "transcript": "VisualtranscriptnotASR:original49.084127seconds720x1280;49frame0.5–48.5nativeinspected.0–4exercisebike,4–10weights/squat,10–17gymstrength,17–21hurdlewarmupoutdoors,21–40rondopassinggroupblack/redtrainingkitsrealballmovement;40–49staticredPersijaoutro excluded. Selected19–24/24–29/29–34/34–39 fouradjacent5secondcuts, noindividualname/injuryinference/no26Octoberfootageclaim. HerooriginaltodaypressphotoShinred/Denisbeige, noAIface orheadline.",
+    "selected_scenes": [
+      {
+        "source_id": "TRAINING",
+        "source_start": 19,
+        "source_end": 24,
+        "text": "Jak, besok tujuannya JIS!\nPersija menjamu Persik Kediri",
+        "claim_ids": [
+          "FIXTURE"
+        ]
+      },
+      {
+        "source_id": "TRAINING",
+        "source_start": 24,
+        "source_end": 29,
+        "text": "Senin, 26 Oktober 2026\nSepak mula 19.00 WIB",
+        "claim_ids": [
+          "FIXTURE"
+        ]
+      },
+      {
+        "source_id": "TRAINING",
+        "source_start": 29,
+        "source_end": 34,
+        "text": "Laga kandang sebelumnya di Bekasi\nUntuk Persik, kembali ke Jakarta",
+        "claim_ids": [
+          "FIXTURE",
+          "PREVIOUS"
+        ]
+      },
+      {
+        "source_id": "TRAINING",
+        "source_start": 34,
+        "source_end": 39,
+        "text": "Simpan jadwal dan kirim ke teman tribun\nDokumentasi latihan Persija TV",
+        "claim_ids": [
+          "FIXTURE"
+        ]
+      }
+    ],
+    "input": {
+      "bytes": 11976038,
+      "sha256": "8f0d023e1359e6794e8080d13183d34ff15ec5a4e1353689325dd8b53096ab03",
+      "method": "Scale560x996,pad720x1280x80y140charcoal, retainsalloriginalframewidth; realtrainingcut19–39only, nooutro. PhysicalAACmute."
+    },
+    "hero": {
+      "source_page": "https://www.instagram.com/p/De6kaZ2lMSc/",
+      "child_id": "17955010962038652",
+      "published_at": "2026-10-25T11:10:39Z",
+      "original_bytes": 1855053,
+      "original_sha256": "a6fca291a253bba58259a03e11a9966489be7d03e4e587361295b030fc0cac63",
+      "bytes": 138303,
+      "sha256": "33f2f061f3a8feffce67130eb9b42b5ebed8fc66f0d352ac43dfe72e9ed9dd25",
+      "method": "OriginalpressphotoShinTae-yongredandDenisKolingerbeige, identitycaption/photoaligned. Scale1200,crop800x660x200y460,scale900, nocreatedheadline/AIfacealteration. Actualsponsorbackdrop notfakeoverlay. Nativeoriginalphoto and512x420publiclayoutcropreview preserveheads/faces/upperbody."
+    },
+    "rights": "Pemilik Stadione mengotorisasi cuplikan editorial terbatas beratribusi dari kanal resmi klub yang dapat diakses normalHTTP200 melalui BusinessDiscoveryberizin. Tidak mengaranggrantlisensitertulisklub. Tidak mengunggahfullvideo/privateUGC. Audioasal mutedfisik; katalogInstagram tidakditanamkeFB/website.",
+    "audio": {
+      "catalog": {
+        "audio_id": "2007170206566087",
+        "title": "Rewind It Back",
+        "artist": "Dana Point",
+        "audio_volume": 18,
+        "video_volume": 0,
+        "checked_at": "2026-10-25T12:05:36.011Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "metadata_review_only": true,
+      "audition_claimed": false,
+      "limitation": "Tooldoesnotexposeplayablecatalogorcombinedmix input; nohearing/audition/continuousplayback/ASRclaim. AccountTRENDINGnotuniversalviral. Physicalmute−91dBmean/max; Facebookbasevideo silent. Catalognotdownloaded orreembeddedcrossplatform."
+    }
+  },
+  "visual_review": {
+    "method": "Nativefull49sourcepersecondframes0.5–48.5 thenall20finalframes0.5–19.5 cover4cuts. Gym/hurdle/rondo realballmovement, source40–49redstaticoutroexcluded. Nativepressphoto andwebsitegeometryhero512x420checked.",
+    "all_scenes_reviewed": true,
+    "final": "Realhurdle/rondo/passmovement, allfaces/ballwidthkept. Whiteheadline/subtitlesreadable, labelsnotcoveringfaces; finalCTAwrapintwolinewithoutoverflow. Creditonly,nofooterpromotion. NoAI/slideshow/customIGthumbnailclaim."
+  },
+  "render": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.070667,
+    "scene_count": 4,
+    "source_count": 1,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "697bb74bec5f1268872f016f56f4d3248cd2b9cf3bc2b123ea4b21975dcc24b9",
+    "bytes": 10196868,
+    "sha256": "697bb74bec5f1268872f016f56f4d3248cd2b9cf3bc2b123ea4b21975dcc24b9"
+  },
+  "scope": {
+    "baseline_rows": 155,
+    "other_existing_rows": 154,
+    "allowed": "OnlytargetSOCIALandonepairedARTICLE",
+    "preserved": [
+      "13WIB",
+      "additional",
+      "other slots",
+      "SCHEDULED/PUBLISHED/archive/tombstone",
+      "renderer",
+      "code",
+      "credentials",
+      "services"
+    ]
+  },
+  "deployment": "Reviewcommit/pushbefore sharedadapter schedule; verifycanonicalARTICLE/publicbytes/gates/clock/idempotency thenfuturevalidleavepublisher. NotMetaDirect.",
+  "private_only": "Rawcopyrightmedia/originalphoto/sourceHTML/fulltext/APIJSON/packet/signedCDN onlyprivateVPS; Git ownarticle/sanitizedproof/QAderivatives only."
+}
