@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-25T00:22:33.821Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "e173c0d9-e289-4b50-9bd3-2663c9a10c27",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-25:match-am",
+    "event_key": "gabriel-everton-far-post-open-play-20261024",
+    "scheduled_at": "2026-10-25T01:00:00+00:00",
+    "time_wib": "25 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "b25c9f6f-b832-4150-a3dc-13f086e4ecdd",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-25T01:00:00+00:00",
+    "title": "Gabriel Menyambar di Tiang Jauh",
+    "canonical_body_identical": true,
+    "digest": "eb482ae3d2cbf1f150a9e598a311ffd617e3241a7100707ff87b3a4481238148",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 301559,
+      "sha256": "c6054b8303e757c0034b7e70d62663d6e9dc1e257d4760a6d90df92d7a0f8947",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 9303651,
+      "sha256": "b3c30e01d41e65a21ee9378bed8441e9a30f8dcb68f3643e7ac1cb1ce43fbf1a",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 62,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 153,
+  "changed_other_rows": [],
+  "baseline_rows": 154,
+  "current_rows": 155,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "e7883b8d5da9b413424232893c7bc2484caccb0d"
+}
