@@ -1,7 +1,7 @@
 const assert=require("node:assert/strict"),load=require("./cms-load.cjs");
 process.env.META_ACCESS_TOKEN="fixture-token";process.env.INSTAGRAM_USER_ID="123456";process.env.FACEBOOK_PAGE_ID="654321";
 const policy=load("src/lib/cms/reel-music-policy.ts"),music=load("src/lib/cms/reel-music.ts"),meta=load("src/lib/cms/meta.ts"),core=load("src/lib/cms/engine.ts");
-const choice={audio_id:"1307763720055558",title:"Black Sun",artist:"Jumbo",audio_volume:70,video_volume:0,checked_at:new Date().toISOString(),discovery:"TRENDING",source:"INSTAGRAM_CATALOG"};
+const choice={audio_id:"1307763720055558",title:"Black Sun",artist:"Jumbo",audio_volume:70,video_volume:0,checked_at:new Date().toISOString(),discovery:"TRENDING",source:"INSTAGRAM_CATALOG",editorial_override_reason:"Suara sumber tidak layak dan voiceover tidak tersedia."};
 let calls=[],track={audio_id:choice.audio_id,title:choice.title,display_artist:choice.artist,audio_type:"music"},failure=null;
 global.fetch=async (url,options={})=>{const u=new URL(url);calls.push({u,options});if(failure)return Response.json(failure.body,{status:failure.status});if(options.method==="POST")return Response.json({id:"987654"});if(u.pathname.endsWith("/ig_audio"))return Response.json({audio:[{...track,download_url:"https://example.org/preview.mp4",duration_in_ms:30000}]});return Response.json(track);};
 (async()=>{

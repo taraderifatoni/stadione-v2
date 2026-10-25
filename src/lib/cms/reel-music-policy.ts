@@ -7,6 +7,7 @@ export type ReelCatalogAudio = {
   checked_at: string;
   discovery: "TRENDING" | "SEARCH";
   source: "INSTAGRAM_CATALOG";
+  editorial_override_reason: string;
 };
 export function catalogAudioIssues(value: unknown, format: string): string[] {
   if (value === undefined) return [];
@@ -18,6 +19,8 @@ export function catalogAudioIssues(value: unknown, format: string): string[] {
   if (!audio.title?.trim() || !audio.artist?.trim()) errors.push("Judul dan artis musik katalog wajib dicatat.");
   if (audio.source !== "INSTAGRAM_CATALOG" || !["TRENDING","SEARCH"].includes(audio.discovery || "") ||
       !Number.isFinite(Date.parse(audio.checked_at || ""))) errors.push("Bukti penelusuran katalog musik belum lengkap.");
+  if ((audio.editorial_override_reason || "").trim().length < 20)
+    errors.push("Musik katalog pada Reel hanya boleh menjadi pengecualian dengan alasan editorial spesifik minimal 20 karakter.");
   for (const key of ["audio_volume","video_volume"] as const)
     if (!Number.isInteger(audio[key]) || audio[key]! < (key === "audio_volume" ? 1 : 0) || audio[key]! > 100)
       errors.push("Volume musik/video harus bilangan bulat 0–100; musik minimal 1.");

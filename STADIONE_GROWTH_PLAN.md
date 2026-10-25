@@ -25,7 +25,7 @@ Prioritas klub, pemain Timnas, pilar, hak pakai, dan pemeriksaan sumber tetap me
 - **20% konten berguna:** statistik, jadwal terverifikasi, taktik, atau panduan yang pantas disimpan.
 - **15% suara redaksi:** host/reporter memberi konteks dengan bahasa lisan yang natural dan konsisten.
 
-Target format kalender baru: **10 Reel dan 2 carousel per minggu**. Reel mengutamakan footage berizin/orisinal, host atau voiceover, pembuka yang segera menjanjikan isi, dan satu gagasan utama. Carousel dipakai untuk ringkasan data/panduan yang benar-benar bermanfaat; bukan sekadar memindahkan judul berita ke beberapa slide.
+Target format kalender baru: **10 Reel dan 2 carousel per minggu**. Reel mengutamakan footage berizin/orisinal, host atau voiceover, dan suara asli yang relevan. Jangan menimpa suara lapangan, host, atau suporter dengan lagu trending. Carousel dipakai untuk ringkasan data/panduan yang benar-benar bermanfaat; lagu dari katalog Instagram boleh dipilih bila cocok. Jalur Graph API CMS Stadione belum memasang musik pada carousel, jadi jangan mengklaim lagu sudah terpasang lewat publisher otomatis.
 
 ## Kalender uji 12 slot per minggu
 
