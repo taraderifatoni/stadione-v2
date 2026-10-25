@@ -1,0 +1,52 @@
+{
+  "checked_at": "2026-10-25T12:14:36.975Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "6b0a1193-854a-4668-acd0-50b7b01602a6",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-25:match-pm",
+    "event_key": "persija-persik-jis-supporter-guide-20261026",
+    "scheduled_at": "2026-10-25T13:00:00+00:00",
+    "time_wib": "25 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 1,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "aba05375-d5e9-4780-a116-704432366803",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-25T13:00:00+00:00",
+    "title": "Jak, Besok Merapat ke JIS",
+    "canonical_body_identical": true,
+    "digest": "620477241e081c53543ee4ac2926655868d54736c7a3aaee893e15fb122457d5",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 138303,
+      "sha256": "33f2f061f3a8feffce67130eb9b42b5ebed8fc66f0d352ac43dfe72e9ed9dd25",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 10196868,
+      "sha256": "697bb74bec5f1268872f016f56f4d3248cd2b9cf3bc2b123ea4b21975dcc24b9",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 63,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 154,
+  "changed_other_rows": [],
+  "baseline_rows": 155,
+  "current_rows": 156,
+  "new_article_rows": 1,
+  "publisher": "Future 20.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "0429716aaba6045ea29ad787f64618df91e4a6d5"
+}
