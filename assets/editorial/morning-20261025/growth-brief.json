@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-25T00:20:07.956Z",
+  "framework": "STADIONE_GROWTH_PLAN.md",
+  "serial": "Pemain yang Perlu Diikuti, adapted to a verifiedGabriel contribution within legacyEuropeReaction pillar.",
+  "core_fact": "Gabriel heads White cross at farpost inArsenal2–0Everton24October, his200thPremierLeagueappearance forArsenal. Konsa opener came fromcorner.",
+  "stadione_angle": "Show a centreback threatening during openplay, distinguish goalroute fromcorner without inventing coachingintent or blaming a defender.",
+  "hook": "Gabriel Menyambar di Tiang Jauh. First8seconds contain unbroken White buildup/cross, header and ballenteringnet.",
+  "payoff": "White overlap/cross, Gabriel farpost header, milestone200 and two centrebacks scoring via different routes; Arsenal levelonpoints withCity.",
+  "audience_action": "Ask which part the supporter enjoyed most, White cross orGabriel position, with a reason based onthevisibleplay.",
+  "experiment": {
+    "variable": "Player-moment angle and precise football context. One example, no causalclaim.",
+    "host_voiceover": {
+      "prioritized": true,
+      "used": false,
+      "reason": "No verified hostrecording, authorized communitycollaborator or speech tool available; no fakehost/interview/voice transcript."
+    },
+    "trial_reels": {
+      "used": false,
+      "available_in_shared_adapter": false,
+      "account_eligibility": "Not asserted; committed shared path has noTrialReels parameter, noMetaDirect workaround."
+    }
+  },
+  "measurement": {
+    "baseline_file": "metrics-baseline.json",
+    "target_metrics": null,
+    "reason": "Target not published before clock; missingmetrics not fabricated aszero.",
+    "review_24h_due": "2026-10-26T01:00:00Z",
+    "review_7d_due": "2026-11-01T01:00:00Z",
+    "new_timer_or_monitor_created": false,
+    "unavailable_in_current_helper": [
+      "non-follower reach breakdown",
+      "retention curve",
+      "per-post profilevisits/followerattribution",
+      "paid-organic split"
+    ],
+    "limits": "RecentReels ofdifferentages, actualsnapshot times and publishdates retained. Rawwatch-timefields stored without inventingretention. No causalformatcomparison/engagement percent fromsmall denominators."
+  }
+}

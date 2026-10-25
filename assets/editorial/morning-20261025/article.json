@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Gabriel Menyambar di Tiang Jauh",
+  "dek": "Di penampilan liga ke-200 bersama Arsenal, Gabriel menjadi sasaran umpan Ben White dari permainan terbuka.",
+  "caption": "GABRIEL MENYAMBAR DI TIANG JAUH\n\nUmpan Ben White dan sundulan Gabriel melengkapi kemenangan Arsenal 2–0 atas Everton, Sabtu (24/10/2026). Gabriel menandai penampilan ke-200 di Premier League bersama Arsenal dengan gol dari permainan terbuka. Konsa sebelumnya membuka skor dari sepak pojok.\n\nPerhatikan Gabriel nomor 6 saat bola dikirim ke tiang jauh. Menurutmu, bagian terbaik gol ini umpan White atau posisi Gabriel? Sebutkan alasannya.\n\nFootage asli Arsenal. Fakta diperiksa melalui Everton, Sky Sports dan Opta.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol di Penampilan Liga Ke-200",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "MILESTONE"
+      ],
+      "text": "Gabriel menandai penampilan ke-200 di Premier League bersama Arsenal dengan gol yang memastikan kemenangan 2–0 atas Everton. Di Emirates Stadium, Sabtu, 24 Oktober 2026, bek Brasil itu menambah keunggulan tuan rumah pada babak kedua."
+    },
+    {
+      "id": "move",
+      "heading": "White Mengirim ke Tiang Jauh",
+      "kind": "FACT",
+      "claim_ids": [
+        "MOVE"
+      ],
+      "text": "Gol tersebut lahir dari permainan terbuka. Ben White ikut naik melalui sisi kanan sebelum mengirim umpan silang ke tiang jauh. Gabriel menjadi sasaran akhirnya, menyundul bola ke sisi kiri gawang. Keterlibatan bek tengah dalam serangan itu memberi Arsenal penyelesaian di belakang barisan pertahanan Everton."
+    },
+    {
+      "id": "two",
+      "heading": "Dua Bek Lewat Jalur Berbeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "CORNER",
+        "RESULT",
+        "MOVE"
+      ],
+      "text": "Ezri Konsa lebih dulu membuka skor dari situasi sepak pojok. Dua bek tengah Arsenal sama-sama mencetak gol, tetapi lewat jalur serangan yang berbeda. Konsa menuntaskan peluang setelah bola mati, sementara Gabriel menyelesaikan umpan silang ketika serangan mengalir."
+    },
+    {
+      "id": "table",
+      "heading": "Poin City Kembali Terjangkau",
+      "kind": "FACT",
+      "claim_ids": [
+        "TABLE"
+      ],
+      "text": "Kemenangan atas Everton membuat Arsenal menyamai perolehan poin Manchester City. Pemimpin klasemen itu lebih dulu kehilangan poin setelah kalah di markas Aston Villa."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261024-arsenal-everton-match-preview-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-25T00:18:04.438Z",
+    "article_digest": "eb482ae3d2cbf1f150a9e598a311ffd617e3241a7100707ff87b3a4481238148"
+  }
+}

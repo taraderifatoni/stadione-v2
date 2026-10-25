@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-10-24T23:59:35.291Z",
+  "baseline_rows": 154,
+  "target": {
+    "id": "e173c0d9-e289-4b50-9bd3-2663c9a10c27",
+    "status": "DRAFT",
+    "format": "REEL",
+    "scheduled_at": "2026-10-25T01:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-25:match-am",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Reaction",
+    "theme": "Reaction hasil semalam, momen krusial, atau kontroversi dengan sumber terverifikasi"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "dedupe_terms": [
+    "gabriel",
+    "everton",
+    "tiang jauh"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 62,
+    "event_duplicates": 0
+  },
+  "manual_history": "CMS/IG scans ofGabriel/Konsa/Everton/Villa found priorSakaMRI23October and unrelated GabrielJesusBarcelona/PersijaGustavoAlmeida substrings. No24OctoberArsenalEvertonpost or samegoal topic. Read priorSaka context, distinct matchcontribution/angle. All protected rows untouched.",
+  "seeder_needed": false,
+  "previous_evening_published": {
+    "id": "18162009193453575",
+    "timestamp": "2026-10-24T13:03:13Z",
+    "untouched": true
+  },
+  "calendar": "LegacyEuropeReaction slot at25October08WIB remains. New12/week calendar not used to overwrite existing pillar;13WIB/additional/other clocks protected."
+}

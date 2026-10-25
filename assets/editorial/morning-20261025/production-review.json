@@ -1,0 +1,278 @@
+{
+  "reviewed_at": "2026-10-25T00:20:07.956Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "cbc2101835d0010250a21c74d663760a14773846",
+  "target": {
+    "id": "e173c0d9-e289-4b50-9bd3-2663c9a10c27",
+    "plan_key": "2026-10-25:match-am",
+    "event_key": "gabriel-everton-far-post-open-play-20261024",
+    "scheduled_at": "2026-10-25T01:00:00Z",
+    "format": "REEL"
+  },
+  "discovery": {
+    "pool": {
+      "provider": "Release getDailySportsPool SerpAPI via committed cms-audience-pool/cms-load",
+      "fetched_at": "2026-10-24T23:59:58.654Z",
+      "sha256": "65b409ad90180dc02f8bd4973b223170a441f64edad29d6d543773934970c046",
+      "selection": "Pool containsVilla–City trend; Cityloss is context forArsenallevelpoints. Gabriel notclaimed aspooltrend. Selected currentoriginalplayercontribution after supplementalresearch."
+    },
+    "youtube": [
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Arsenal Manchester United Manchester City Liverpool 24 October 2026"
+        ],
+        "checked_at": "2026-10-24T23:59:59.767Z",
+        "candidates": 18,
+        "sha256": "443858dac735e95b453423fe0cd0a167320c238bb30b791ed6c18524fd777b8e"
+      },
+      {
+        "provider": "YOUTUBE_DATA_API",
+        "queries": [
+          "Gabriel Everton 24 October 2026 Arsenal"
+        ],
+        "checked_at": "2026-10-25T00:02:33.834Z",
+        "candidates": 19,
+        "sha256": "ad26d63cc9bb12cc2d83cc28c36387f4418849cbe644d818182eabdf1c35e513"
+      }
+    ],
+    "business_discovery": [
+      {
+        "account": "mancity",
+        "parents": 30,
+        "children_checked": true
+      },
+      {
+        "account": "arsenal",
+        "parents": 30,
+        "children_checked": true
+      }
+    ],
+    "limits": "YouTube simulation/recreation clearlyexcluded. OfficialCityvideo metadata hasno mediaURL; not stated asdownloadfailure orallfootage unavailable. CitynewsGET403 stopped. Gabriel originalofficialReel andphoto obtained200; no fallback."
+  },
+  "sources": [
+    {
+      "id": "SKY",
+      "url": "https://www.skysports.com/football/arsenal-vs-everton/report/559514",
+      "publisher_group": "SKY_COMCAST",
+      "primary": false,
+      "published_at": "2026-10-24T19:46:00+01:00",
+      "retrieved_at": "2026-10-25T00:01:37.211Z",
+      "text_sha256": "e7e54e98a724fe1494365832efde83fe8200c34f16ec3a3f8d0674115fdc6855",
+      "full_read": true,
+      "method": "Full normalpublicHTMLHTTP200 body throughfinalparagraph. SkySportsZinnyBoswell24October19:46BST, officialEvertoncompleteclubreport, Optaoriginalmatchanalysis/statistics. Browserinternalerrors not claimed as successful fullbrowserreads. Publicationday24verified; noinvented exactclock fordate-only primarypages."
+    },
+    {
+      "id": "EVERTON",
+      "url": "https://www.evertonfc.com/news/2026/october/24/everton-defeated-at-arsenal/",
+      "publisher_group": "EVERTON_FC",
+      "primary": true,
+      "published_at": "2026-10-24",
+      "retrieved_at": "2026-10-25T00:01:39.865Z",
+      "text_sha256": "3318de21d0282f9ce3afbc138718aa8cf5e612f904e663b9e0d0839e259253bc",
+      "full_read": true,
+      "method": "Full normalpublicHTMLHTTP200 body throughfinalparagraph. SkySportsZinnyBoswell24October19:46BST, officialEvertoncompleteclubreport, Optaoriginalmatchanalysis/statistics. Browserinternalerrors not claimed as successful fullbrowserreads. Publicationday24verified; noinvented exactclock fordate-only primarypages."
+    },
+    {
+      "id": "OPTA",
+      "url": "https://theanalyst.com/articles/arsenal-vs-everton-stats-premier-league-10-2026",
+      "publisher_group": "STATS_PERFORM_OPTA",
+      "primary": true,
+      "published_at": "2026-10-24",
+      "retrieved_at": "2026-10-25T00:06:10.952Z",
+      "text_sha256": "ea5b31d0d4e7770edbdf5f551dd76259f5fdc197f62ab8bbf68f8bb43f2deb17",
+      "full_read": true,
+      "method": "Full normalpublicHTMLHTTP200 body throughfinalparagraph. SkySportsZinnyBoswell24October19:46BST, officialEvertoncompleteclubreport, Optaoriginalmatchanalysis/statistics. Browserinternalerrors not claimed as successful fullbrowserreads. Publicationday24verified; noinvented exactclock fordate-only primarypages."
+    },
+    {
+      "id": "MILESTONE",
+      "url": "https://www.instagram.com/p/De4LkbfgQce/",
+      "publisher_group": "ARSENAL_FC",
+      "primary": true,
+      "published_at": "2026-10-24T12:55:20Z",
+      "retrieved_at": "2026-10-25T00:18:04.438Z",
+      "text_sha256": "d87b6f1b7ea684a8713e76d7f41c5ddfc051e4a9826d0ec434457c2b25601247",
+      "full_read": true,
+      "method": "Fullofficialcaption forBigGabi200PremierLeague read viaauthorizedBD. Distinct fromBenWhite200allcompetitionArsenalappearancepost."
+    }
+  ],
+  "failed_sources": {
+    "city": "GET403, stopped, unused inpacket",
+    "hayters_livescore": "ConnectTimeout, nofullread, excluded",
+    "browser": "ClubCity/Sky/Opta internalfail; normalGET200forselectedSky/Opta/Everton"
+  },
+  "facts": {
+    "verified": [
+      "Arsenal2–0Everton24OctoberEmirates, Konsaopener/Gabrielsecondhalfheader",
+      "White overlap andfarpostcross, Gabrielheadstowardleftside, openplay ratherthanKonsacorner",
+      "Gabriel200PremierLeagueappearancesforArsenal, separateBenWhitemilestone notconflated",
+      "ArsenaldrawslevelonpointswithCityafterCitylossatVilla; notclaimsoleleader/title"
+    ],
+    "excluded": [
+      "Exactgoalclock68versus69 convention difference",
+      "FirstKonsatouch/assist differs SkyGyokeres versusOptaGabrielflick-on; noassistclaim",
+      "Gabrielhistoricfirstopenplaygoal/21goals/14headers stats notneeded, notpublished",
+      "Injury/diagnosis/recoverytimeline or ArtetaquotefromunreadHayters",
+      "Fan-votedArsenalPOTM isphoto provenance only, notformalPremierLeagueaward assertion",
+      "NoKonsagoal or injuryfootage falselylabelled inselectedGabrielclip"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 138,
+    "paragraphs": 4,
+    "digest": "eb482ae3d2cbf1f150a9e598a311ffd617e3241a7100707ff87b3a4481238148",
+    "benchmark_ids": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261024-arsenal-everton-match-preview-news"
+    ],
+    "whole_article_before_scenes": true,
+    "quote_words": 0,
+    "lessons": "Fodenreading: contribution/resultlead, concrete actionmechanism, distinction betweencontext andspecificmatch. Latestpreview: verifydatedstatus/widgets, donotimportforecast. NoAnalisisStadione/quote-processheadline/scaffold/filler.",
+    "structure": "Milestone+contribution → White/Gabrielfarpostmechanism → contrastwithKonsacorner → actualleagueconsequence, withoutunverified diagnosis."
+  },
+  "media": {
+    "downloads": [
+      {
+        "id": "18115103774025130",
+        "url": "https://www.instagram.com/reel/De5DH-eubmq/",
+        "published_at": "2026-10-24T21:04:31+0000",
+        "duration": "30.647483",
+        "sha256": "a30308cafecd473e9eff1d50824c28ea30558dab1a48276a16ae507b015fdfcf",
+        "bytes": 11624530,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "width": 720,
+            "height": 1280
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "width": null,
+            "height": null
+          }
+        ]
+      }
+    ],
+    "transcript": "Visualtranscript, notASR/audition:source30.647483s720x1280.0–6rightsidebuildup,6–8Whitecross,8–10camera followsheaderball/netwithEvertonblue/Pickfordgreen,10–15Gabrielleavesgoalareaandkneeslides,15–24Gabriel6rejoinsArsenalredteam/claps/hugs,24–30celebrateswithWhite4/otherteam andcameraoperatorsenter. All31secondsamples0.5–30.5reviewed. Selected2–10continuousfullgoalbuildup/unbrokenheader,10–14slide,16–20hug/number6,24–28applause. No fakeASRspeech, injury scare orKonsa goal portrayed. SourcefirstpartyAerialauthority; eventvalidatedwithEverton/Sky/Opta and200PLfirstpartycaption. ActualwhiteGooglePixelphotoinspected separately.",
+    "selected_scenes": [
+      {
+        "source_id": "AERIAL",
+        "source_start": 2,
+        "source_end": 10,
+        "text": "Umpan White, sundulan Gabriel\nGol dari permainan terbuka",
+        "claim_ids": [
+          "MOVE",
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "AERIAL",
+        "source_start": 10,
+        "source_end": 14,
+        "text": "Laga Premier League ke-200 di Arsenal\nGabriel menambah gol kedua",
+        "claim_ids": [
+          "MILESTONE",
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "AERIAL",
+        "source_start": 16,
+        "source_end": 20,
+        "text": "Konsa dan Gabriel sama-sama mencetak gol\nArsenal menang 2–0 atas Everton",
+        "claim_ids": [
+          "CORNER",
+          "RESULT"
+        ]
+      },
+      {
+        "source_id": "AERIAL",
+        "source_start": 24,
+        "source_end": 28,
+        "text": "Umpan White atau posisi Gabriel?\nBagian mana yang paling kamu suka?",
+        "claim_ids": [
+          "MOVE"
+        ]
+      }
+    ],
+    "input": {
+      "bytes": 14628010,
+      "sha256": "e85212b7f9d58c0c0fc6522f92cd13792a2679443b6e65dccd1daf03fe82b6bc",
+      "method": "Crop720x900at0y300,scale560x700,pad720x1280at80,200charcoal. Fullpitchwidth retained; nativegoaltrajectory/header/net checked in final20frames. Sourceaudio physicallymutedAAC."
+    },
+    "hero": {
+      "source_page": "https://www.instagram.com/p/De4ue1fGOAl/",
+      "child_id": "18207112090331508",
+      "source_published_at": "2026-10-24T18:00:13Z",
+      "original_bytes": 737989,
+      "original_sha256": "6db8fc0a8dcf15966851c080ee1a1d3da148c652f0343ed6599e12409daf783a",
+      "bytes": 301559,
+      "sha256": "c6054b8303e757c0034b7e70d62663d6e9dc1e257d4760a6d90df92d7a0f8947",
+      "method": "AuthenticGabrielpostmatchportrait fromofficialArsenalPOTMcarousel, crop700x720at0,100→900px. Originalphoto andcrop reviewed; fullface/hair/chin kept, GooglePixeloverlay outsidecrop, noAI/headline. Native512x420centre-crop QA matchespublicmax-w-lg512/maxHeight420 geometry; imagefullyvisiblehead/chin, notclaimbrowserlivearticle. Originalportrait shownbeforecrop; QAderivative reviewed at600/512 sizes."
+    },
+    "rights": "PemilikStadione mengotorisasi kutipan editorial terbatas beratribusi dari media officialArsenal yang tersedia normalHTTP200 lewat BusinessDiscoveryberizin. Tidakmengarang grantlisensitertulisklub. Bukan privateUGC/fullmatch. FotooriginalArsenalPOTMcarousel18207112090331508 dipotongteknis, wajahautentiktidakdiubah, kreditsumberdicatat. Audiomutefisik; katalogInstagramtidakditanamkeFacebook/website.",
+    "audio": {
+      "catalog": {
+        "audio_id": "622925966589454",
+        "title": "Element (Instrumental)",
+        "artist": "d.higgs",
+        "audio_volume": 18,
+        "video_volume": 0,
+        "checked_at": "2026-10-25T00:08:08.634Z",
+        "discovery": "TRENDING",
+        "source": "INSTAGRAM_CATALOG"
+      },
+      "audition_claimed": false,
+      "metadata_review_only": true,
+      "limitation": "No playableaudio/continuousvideo input. No claim hearing speech/catalogpreview/combinedmix. Selected actualaccountTRENDINGmetadata, not universalviral/FYP guarantee. Catalogpreview not downloaded orreembedded crossplatform. BasephysicallysilentincludingFacebook.",
+      "analysis": [
+        "[Parsed_volumedetect_0 @ 0x630f1428cb80] mean_volume: -91.0 dB",
+        "[Parsed_volumedetect_0 @ 0x630f1428cb80] max_volume: -91.0 dB"
+      ]
+    }
+  },
+  "visual_review": {
+    "method": "Native full31sourceframes0.5–30.5; final20one-secondframes0.5–19.5 cover all4cuts includinggoalnet; originalGabrielphoto, cleanhero andwebsitegeometryQA reviewed. GenuineWhite4/Gabriel6/play/header/net/slide/hugs verified. No continuousplayback/audition claim.",
+    "all_scenes_reviewed": true,
+    "initial_rejected": "First0–8cut endedbefore header/net. Corrected to2–10 continuousbuild/cross/header/net. Earlyphoto640crop widened to700 forwebsitefacecrop safety, overlay excluded.",
+    "final": "2–10/10–14/16–20/24–28,20s. All text/credit readable oncharcoal, noface orballtrajectory lost. No repeatedgoal framed asdifferentevent, noAI/slideshow/customIGthumbnailclaim."
+  },
+  "render": {
+    "ok": true,
+    "width": 1080,
+    "height": 1920,
+    "duration": 20.089333,
+    "scene_count": 4,
+    "source_count": 1,
+    "platforms": [
+      "INSTAGRAM"
+    ],
+    "normalized_audio": true,
+    "source_video": true,
+    "ai_footage": false,
+    "output_sha256": "b3c30e01d41e65a21ee9378bed8441e9a30f8dcb68f3643e7ac1cb1ce43fbf1a",
+    "bytes": 9303651,
+    "sha256": "b3c30e01d41e65a21ee9378bed8441e9a30f8dcb68f3643e7ac1cb1ce43fbf1a"
+  },
+  "scope": {
+    "baseline_rows": 154,
+    "other_existing_rows": 153,
+    "allowed": "Only targetSOCIAL andone new pairedARTICLE",
+    "clock": "25October08WIB unchanged",
+    "preserved": [
+      "legacy13WIB",
+      "allotherslots",
+      "additional",
+      "historicalSCHEDULED/PUBLISHED/archive/tombstone",
+      "renderer",
+      "credentials",
+      "code",
+      "services"
+    ]
+  },
+  "deployment": "Commit/pushbefore sharedadapter schedule. Verifycanonicalpair/clock/publicbytes/gate/scope/idempotence, thenleavefuturevalidschedule tosharedpublisher, noMetaDirect.",
+  "private_only": "Rawmedia/originalportrait/sourceHTML/fulltext/APIJSON/packet/signedCDN onlyprivateVPS; Git ownarticle/sanitizedproof/growthbrief/metrics/QAderivatives only."
+}

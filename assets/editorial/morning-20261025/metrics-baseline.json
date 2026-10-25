@@ -1,0 +1,54 @@
+{
+  "checked_at": "2026-10-25T00:11:16.052Z",
+  "basis": "Actual current snapshots at different ages, not falsely named24h/7d measurements. TargetDRAFTmetrics unavailable.",
+  "posts": [
+    {
+      "id": "18162009193453575",
+      "published_at": "2026-10-24T13:03:13+0000",
+      "metrics": {
+        "views": 148,
+        "reach": 132,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4,
+        "ig_reels_avg_watch_time": 7432,
+        "ig_reels_video_view_total_time": 951375
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18129241933889863",
+      "published_at": "2026-10-24T01:01:17+0000",
+      "metrics": {
+        "views": 136,
+        "reach": 117,
+        "likes": 1,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 1,
+        "ig_reels_avg_watch_time": 5673,
+        "ig_reels_video_view_total_time": 680876
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18103611572569620",
+      "published_at": "2026-10-23T13:01:27+0000",
+      "metrics": {
+        "views": 157,
+        "reach": 116,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0,
+        "ig_reels_avg_watch_time": 12091,
+        "ig_reels_video_view_total_time": 1414678
+      },
+      "unavailable": []
+    }
+  ]
+}
