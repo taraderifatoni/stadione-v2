@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Mbappé Memangkas Jarak Jadi Tiga Poin",
+  "dek": "Dua gol di Camp Nou membuat Real Madrid kembali mendekati Barcelona. Serangan penentu bermula dari putaran Bellingham.",
+  "caption": "MBAPPÉ MEMANGKAS JARAK JADI TIGA POIN\n\nReal Madrid menang 2–1 di Camp Nou, Minggu (25/10/2026) waktu Spanyol. Dua gol Mbappé memperkecil jarak dengan pemimpin LaLiga, Barcelona, menjadi tiga poin.\n\nGol penentu lahir dari rangkaian Bellingham, Arda Güler, Camavinga dan Mbappé. Sebelumnya, Raphinha sudah menyamakan skor dan Lunin menggagalkan sundulan Gerard Martín.\n\nMenurutmu, bagian paling menentukan dari gol terakhir itu putaran Bellingham, tusukan Camavinga atau penyelesaian Mbappé? Tulis pilihanmu beserta alasan.\n\nFakta diperiksa melalui laporan resmi Real Madrid, Barcelona dan Sky Sports. Foto asli Mbappé dari Real Madrid, diunggah seusai El Clásico.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol yang Mendekatkan Madrid",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "TABLE"
+      ],
+      "text": "Dua gol Kylian Mbappé membawa Real Madrid pulang dari Camp Nou dengan jarak yang lebih dekat ke Barcelona. Kemenangan 2–1 dalam El Clásico, Minggu, 25 Oktober 2026 waktu Spanyol, membuat Madrid tinggal terpaut tiga poin dari rivalnya yang masih memimpin LaLiga."
+    },
+    {
+      "id": "first",
+      "heading": "Sapuan yang Berbalik Menghukum",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPENER"
+      ],
+      "text": "Gol pembuka Madrid lahir sebelum turun minum. Yan Diomande mengirim umpan silang ke kotak penalti, lalu Gerard Martín berusaha menyapu bola. Namun, bola justru mengenai Mbappé dan masuk ke gawang. Penyelesaiannya mengandung keberuntungan, tetapi peluang itu muncul setelah rangkaian serangan tim tamu menembus pertahanan Barcelona."
+    },
+    {
+      "id": "reply",
+      "heading": "Raphinha Membalas, Lunin Menahan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESPONSE"
+      ],
+      "text": "Barcelona merespons setelah jeda. Sepak pojok cepat dilanjutkan dengan umpan Pedri kepada Raphinha, yang menyamakan kedudukan pada menit ke-61. Tuan rumah kemudian mencari gol berikutnya. Sundulan Gerard Martín dari situasi sepak pojok hampir membalikkan keadaan, tetapi Lunin menepisnya. Penyelamatan itu menjaga skor tetap imbang saat Barcelona sedang menekan."
+    },
+    {
+      "id": "decider",
+      "heading": "Putaran Bellingham Membuka Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "WINNER",
+        "TABLE"
+      ],
+      "text": "Madrid menemukan jalan keluar menjelang akhir laga. Bellingham berputar untuk memulai serangan, Arda Güler meneruskan bola, lalu Camavinga melewati Pau Cubarsí sebelum mengirim umpan kepada Mbappé. Penyerang Prancis itu menyelesaikannya ke gawang terbuka. Rangkaian tersebut mengakhiri sembilan kemenangan Barcelona sejak awal musim liga. Barça tetap di puncak, tetapi kini Atlético Madrid berjarak dua poin dan Madrid tiga poin."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261026-carrick-identity-press-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-26T00:11:51.300Z",
+    "article_digest": "62e49fe8a69d9686b9a85294a6f6ba4ff91afd28d1bf6c9bcf0082a880311c57"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-26T00:05:04.852Z",
+  "baseline_rows": 159,
+  "target": {
+    "id": "9e89726d-2fd5-47ee-844f-4c3db7c4dff2",
+    "status": "DRAFT",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-10-26T01:00:00+00:00",
+    "parent_id": null,
+    "assets": 0,
+    "archived_at": null,
+    "tombstone": null,
+    "plan_key": "2026-10-26:mon-am",
+    "pillar": "Sepak Bola Eropa",
+    "angle": "Recap / reaction"
+  },
+  "attempts": 0,
+  "event_duplicates": 0,
+  "dedupe_terms": [
+    "mbappé",
+    "camp nou",
+    "tiga poin"
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 64,
+    "event_duplicates": 0
+  },
+  "seeder_needed": false,
+  "manual_history": "All159CMS and64IG media checked. Published23OctoberClasico prediction/poll and olderMbappeSevilla/BETISBarca are different angles/events; no25Octoberresult/gap recap. PublishedJIS18108146800959015 at25October13:01:24Z untouched.",
+  "calendar": "Existing legacyEuropeCAROUSEL08WIB remains. NoREELfallback, noassertion footageunavailable. New12slotmatrix appliesmissingnewslots, notoverwritingexisting13/additional/protected."
+}

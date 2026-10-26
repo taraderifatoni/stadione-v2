@@ -1,0 +1,359 @@
+{
+  "reviewed_at": "2026-10-26T00:26:43.184Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULE",
+  "rollback_commit": "0ab9b9f84e5bb31266950ef8f9968a0c06fcec8b",
+  "target": {
+    "id": "9e89726d-2fd5-47ee-844f-4c3db7c4dff2",
+    "plan_key": "2026-10-26:mon-am",
+    "event_key": "clasico-mbappe-gap-three-points-20261025",
+    "scheduled_at": "2026-10-26T01:00:00Z",
+    "format": "CAROUSEL"
+  },
+  "discovery": {
+    "pool": {
+      "provider": "ReleasegetDailySportsPoolSerpAPI via committedcms-audience-pool/cms-load",
+      "fetched_at": "2026-10-26T00:05:32.012Z",
+      "sha256": "e3566110cb6aebeb4bc137766e2e9b3191419707762184a74fdc97a821e3d731",
+      "selection": "BarcelonaRealMadridstandings andRealMadrid amongeligibletrends; MU/Bournemouth also considered. MostrecentverifiedClasicoimpact selected."
+    },
+    "business_discovery": {
+      "account": "realmadrid",
+      "parents": 20,
+      "children_checked": true,
+      "video_candidates_present": true,
+      "video_unavailability_claimed": false
+    }
+  },
+  "sources": [
+    {
+      "id": "MADRID",
+      "url": "https://www.realmadrid.com/en-US/news/football/first-team/reports/cronica-barcelona-real-madrid-j10-liga-25-10-2026",
+      "publisher_group": "REAL_MADRID",
+      "primary": true,
+      "published_at": "2026-10-25T21:50:57Z",
+      "retrieved_at": "2026-10-26T00:06:01.658Z",
+      "text_sha256": "0c84324526716c7c2569360411e9342e522fee404242213c6d9484724ebb56a7",
+      "full_read": true,
+      "method": "FullnormalpublicGET200 textfromleadtofinalparagraph; Madrid/Barcaofficialreports andSkyPeterSmith. Browserinternalerrors notclaimedfullbrowserread. Madridpublishedmetadata21:50:57Z/modified23:51:05Z verified. Sky23:05UKafterDST25Oct, Barca25Octdayonly, noinventedtime."
+    },
+    {
+      "id": "BARCA",
+      "url": "https://www.fcbarcelona.com/en/news/4598638/fc-barcelona-1-2-real-madrid-heartbreaking-defeat",
+      "publisher_group": "FC_BARCELONA",
+      "primary": true,
+      "published_at": "2026-10-25",
+      "retrieved_at": "2026-10-26T00:06:03.681Z",
+      "text_sha256": "ebd3331bac7a3d5995daa4cf88a2a0838c16a5d8fdd5c21b2e4e67030bed4c3f",
+      "full_read": true,
+      "method": "FullnormalpublicGET200 textfromleadtofinalparagraph; Madrid/Barcaofficialreports andSkyPeterSmith. Browserinternalerrors notclaimedfullbrowserread. Madridpublishedmetadata21:50:57Z/modified23:51:05Z verified. Sky23:05UKafterDST25Oct, Barca25Octdayonly, noinventedtime."
+    },
+    {
+      "id": "SKY",
+      "url": "https://www.skysports.com/football/news/13603624/barcelona-1-2-real-madrid-kylian-mbappe-scores-late-winner-in-el-clasico-to-beat-laliga-leaders",
+      "publisher_group": "SKY_COMCAST",
+      "primary": false,
+      "published_at": "2026-10-25T23:05:00Z",
+      "retrieved_at": "2026-10-26T00:06:03.906Z",
+      "text_sha256": "7af1be92eee9636d61d1543616e8f361531245d4b7024b0cf5fc290d534fbfb3",
+      "full_read": true,
+      "method": "FullnormalpublicGET200 textfromleadtofinalparagraph; Madrid/Barcaofficialreports andSkyPeterSmith. Browserinternalerrors notclaimedfullbrowserread. Madridpublishedmetadata21:50:57Z/modified23:51:05Z verified. Sky23:05UKafterDST25Oct, Barca25Octdayonly, noinventedtime."
+    }
+  ],
+  "failed_sources": {
+    "browser": "Madrid/Skyinternalerrors; normalGET200fulltexts obtained withoutauthentication/challengebypass.",
+    "Reuters": "OptionalcorroborationGET401stopped, notusedinpacket."
+  },
+  "facts": {
+    "verified": [
+      "Madrid2–1Barca25OctoberCampNou, Mbappebrace/Raphinhaequaliser",
+      "Diomandecross/GerardclearancehitsMbappebeforehalftime, noown-goallabel",
+      "Pedri/Raphinha61 andLuninheadersavefromGerard",
+      "Bellinghamroulette,Arda,CamavingapastCubarsi/cutback,Mbappefinishesopen goal",
+      "Barcastilltop, Atletico2behind,Madrid3behind;9openingLaLigawins fromBarcaofficial, distinct11allcompetitionsSkycontext"
+    ],
+    "excluded": [
+      "Opener41Madrid/Sky vs43Barca andwinner87Sky/Barca vs88Madrid omitted",
+      "No100goalstat copiedwithoutindependentconfirmation",
+      "NoCanceloVAR/redcardconclusion,injurydiagnosis/returntimeline,transfer/coachprediction",
+      "NoevidenceofMadridsoleleader/titledecided ornewfixturekickoffinWIBfromconflictingDSTcachedwidgets"
+    ]
+  },
+  "article": {
+    "genre": "NEWS",
+    "words": 192,
+    "paragraphs": 4,
+    "pages": 5,
+    "digest": "62e49fe8a69d9686b9a85294a6f6ba4ff91afd28d1bf6c9bcf0082a880311c57",
+    "benchmark_ids": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261026-carrick-identity-press-news"
+    ],
+    "whole_article_before_pagination": true,
+    "structure": "Leagueconsequence → actualopenermechanism → equaliser/saveandpressure → collectivemoveandtablecontext. Noquoterequired, noAnalisisStadione/scaffold/filler.",
+    "lessons": "Foden21reading: playercontributionlead/concreteaction, notminutelist. Carrick26reference: chronology/context, do notinventanswers/quote. Goalreferences notfactsourcefortarget."
+  },
+  "photo": {
+    "page_url": "https://www.instagram.com/p/De7yh6MCCwk/",
+    "id": "17989789656066845",
+    "creator": "realmadrid",
+    "published_at": "2026-10-25T22:33:15Z",
+    "http": 200,
+    "bytes": 367191,
+    "sha256": "a0179e9478dc3ed11920a69abee051daac41ab8d2fd72470c0b97977e4d72102",
+    "review": "OriginalphotographMbappewhite10smilingwithrightarmraised afterClasico, face/jersey/pose inspectednative. No inventedmatchaction/playeridentity. Websiteusesidenticalcleanoriginalphoto;512x420QAretainshead/face, raisedarmnaturallycroppedbywebgeometry. Noheadline/AIhero."
+  },
+  "cover": {
+    "variant": {
+      "standard": "STADIONE_COVER_VARIANTS_V1",
+      "variant_id": "KOLOM",
+      "variant_name": "Kolom koran",
+      "tone": "LIGHT",
+      "previous_variants": [
+        "KLASIK",
+        "KLASIK",
+        "KLASIK",
+        "KLASIK",
+        "KLASIK",
+        "PORTRAIT_MERAH"
+      ],
+      "selection_reason": "least_used_eligible_excluding_recent",
+      "result_checked": false,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "reference": "assets/editorial/cover-variants-20261012/kolom.jpg",
+      "prompt": "Create ONE finished Stadione1080x1350 editorial cover from the authentic original athlete photograph and selected variant reference.\nUse the same approved font character and cream/charcoal/#84102d palette; composition must follow KOLOM.\nCream dominan, masthead lebih kecil, headline charcoal pada kolom kiri, atlet cutout di kanan, garis burgundy vertikal. Dek rapat di bawah judul. Jangan memakai susunan diagonal klasik.\nPreserve photographed face, hair, body, jersey, pose and identity; transform editorial background only. No invented athlete/action.\nExact headline: Mbappé Memangkas Jarak Jadi Tiga Poin\nExact deck: Dua gol di Camp Nou membuat Real Madrid kembali mendekati Barcelona. Serangan penentu bermula dari putaran Bellingham.\nSource label only: SUMBER: REALMADRID.COM\nPage count: 1/5 exactly; review visible count after final pagination.\nInternal horizontal margins72px, normal tight line spacing, deck32px minimum, source24px minimum; measure wrapping and inspect final pixels.\nNo EDISI DIGITAL, no save/shareCTA, no promotional footer. Website uses clean original photograph; article pages remain cream text-only.",
+      "metadata_to_add": {
+        "variant_id": "KOLOM",
+        "variant_standard": "STADIONE_COVER_VARIANTS_V1"
+      },
+      "note": "Suggestion only. Generate artwork from authentic photo, inspect full-resolution cover, record review/hash and use normal shared preview/audit/publisher. Never mutate existing scheduled or published packets."
+    },
+    "page_count": 5,
+    "bytes": 451908,
+    "sha256": "5412bee509ddf93299b5ec8363d14f9e99d50b8ab0cc37bb52014ceb7dead377",
+    "method": "ImagegenerationfromauthenticMbappephoto andapprovedKOLOMreference; cream/charcoal/burgundy, samecondensedfont. Editscorrectedleftmargins/titleverticalrulegap andpagecounterinset. Finalimageexportmechanicallyscaled1080x1350JPEG, nohanddrawnreplacementtext/athlete.",
+    "review": "Finalnativeimagegenerationoutput andexportedcoverreview: exactheadline/dek/sourceREALMADRID.COM and1/5; photoidentity/white10/raisedfingerkept. Noedition/footerpromotion. Maintextleft75–80px andseparatedfromrule, decklegible, sourcefontlegible. OCRcomplementsvision, recognitionerrorJadi/fall nottreatedasimagecopyerror."
+  },
+  "audio": {
+    "catalog_audio": null,
+    "music_added": false,
+    "reason": "CarouselCMSGraphpublishing hasnomusicfield. No claimnativeaudio/manualflowperformed. NewReeloriginalaudio policyread; no sourceaudio muted andno defaulttrendingtrackaddedinthiscarousel."
+  },
+  "visual_review": {
+    "all_pages_reviewed": true,
+    "method": "Nativegeneratedcoverfullresolution, exportedcover600pxreview, all4articlepages540x675contact andcleanwebsitehero512x420. Articlewords/headings/punctuation/pagecount checked, sourceoncoveronly, creamtextonlybody. FinalarticlepageSHAs boundtoreviewedcontent.",
+    "body_font_size": 36,
+    "headline_font_size": 60,
+    "headline_divider_gap": 36,
+    "divider_body_gap": 36,
+    "safe_wrap": true
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "REALMADRID.COM",
+      "cover_input_sha256": "5412bee509ddf93299b5ec8363d14f9e99d50b8ab0cc37bb52014ceb7dead377",
+      "output_sha256": "de3e40cc23d65f22ddbff4ede9d76772f988c6a49982433ec47a4be749641a30",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true,
+      "page": 1,
+      "bytes": 562974,
+      "sha256": "de3e40cc23d65f22ddbff4ede9d76772f988c6a49982433ec47a4be749641a30"
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "a684ccb5ee4e74f11ba2a4db804b8f2ef6f4b24281f126c0d7900c6dd9f9d557",
+      "output_sha256": "8cb7ba1928d0aac3c34548da08a3810d96f6d262f8f27889f2afac0a8884f561",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 301,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 772,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 892,
+          "height": 301,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true,
+      "page": 2,
+      "bytes": 164741,
+      "sha256": "8cb7ba1928d0aac3c34548da08a3810d96f6d262f8f27889f2afac0a8884f561"
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "2227329474a9b502e961567c0a849f648f8857b61967a618861f5dd5a81f6a67",
+      "output_sha256": "1400e3ea8d4fb83408aa3bd98e8c47015449eeb8bd6e28bc0f75d692761e7da5",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 739,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 929,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true,
+      "page": 3,
+      "bytes": 194879,
+      "sha256": "1400e3ea8d4fb83408aa3bd98e8c47015449eeb8bd6e28bc0f75d692761e7da5"
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "3377bf5b96058c082a7c300d13e21f1208ed48745df0201c1da6371effbedd25",
+      "output_sha256": "a2686480dcecd9fbd728f13c2f6f2f6c8a10f394200f4208ed83762c498b8f6b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 907,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 920,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true,
+      "page": 4,
+      "bytes": 204793,
+      "sha256": "a2686480dcecd9fbd728f13c2f6f2f6c8a10f394200f4208ed83762c498b8f6b"
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "dbec93600513549711753049c0a0bcdaedd5669213f3193df50c53d1d6d99d4c",
+      "output_sha256": "556541ae7b1c4e273d8aa4577410ac805888522acf13662062e61805880e04f2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 511,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 662,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 899,
+          "height": 511,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true,
+      "page": 5,
+      "bytes": 228289,
+      "sha256": "556541ae7b1c4e273d8aa4577410ac805888522acf13662062e61805880e04f2"
+    }
+  ],
+  "scope": {
+    "baseline_rows": 159,
+    "other_existing_rows": 158,
+    "allowed": "OnlytargetSOCIALandonepairedARTICLE",
+    "preserved": [
+      "13WIB",
+      "additional",
+      "allotherslots",
+      "SCHEDULED/PUBLISHED/archive/tombstone",
+      "renderer",
+      "code",
+      "credentials",
+      "services"
+    ]
+  },
+  "deployment": "Commit/pushbefore sharedadapter schedule; verifycanonicalpair/clock/publicbytes/gates/scope/idempotency thenfuturevalidleavepublisher. NoMetaDirect.",
+  "private_only": "Originalcopyrightphoto/sourceHTML/fulltexts/APIJSON/fullpacket/signedCDN privateVPS. Git ownarticle,sanitizedproof,QAderivativesonly."
+}

@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-10-26T00:26:43.184Z",
+  "framework": "STADIONE_GROWTH_PLAN.md",
+  "serial": "30DetikPahamLaga function adapted to existingCAROUSEL: explain a decisive play and leagueconsequence, noformat/clockoverwrite.",
+  "core_fact": "Mbappe brace inMadrid2–1Barcelona25OctoberCampNou leavesMadrid3pointsbehindleaders; Bellingham/Arda/Camavinga made decisiveattack.",
+  "stadione_angle": "HowMadrid foundlatewinner afterBarcaequaliser/pressure, andwhythis mattersfortitlerace; noinventedcoachingintent.",
+  "hook": "Mbappé Memangkas Jarak Jadi Tiga Poin",
+  "payoff": "Deflectedopener, Raphinhaequaliser, Luninheadersave, Bellinghamroulette/Arda/Camavinga/Mbappe winner, actualgap andBarcelona stilltop.",
+  "audience_action": "Askwhichpart decidedfinalmove: Bellinghamturn, CamavingaburstorMbappefinish, withafootballreason.",
+  "format": {
+    "existing": "CAROUSEL",
+    "final": "CAROUSEL",
+    "fallback": false,
+    "reason": "LegacyDRAFTcarousel retained for readablematchcontext; nofootagefailureclaimed.",
+    "trial_reels": "Notapplicable; noTrialeligibility ornewvideo attemptclaimed."
+  },
+  "audio": {
+    "catalog_audio": null,
+    "music_added": false,
+    "reason": "CarouselCMSGraphpublishing hasnomusicfield. No claimnativeaudio/manualflowperformed. NewReeloriginalaudio policyread; no sourceaudio muted andno defaulttrendingtrackaddedinthiscarousel."
+  },
+  "measurement": {
+    "baseline_file": "metrics-baseline.json",
+    "target_metrics": null,
+    "review_24h_due": "2026-10-27T01:00:00Z",
+    "review_7d_due": "2026-11-02T01:00:00Z",
+    "new_timer_created": false,
+    "limits": "Actualperpostobserved_at/published_at retained; recentReels andoldercarousel notfalse24h/7d sample. Carouselreach1 notpercentagebasis. Missingnonfollowers/retentioncurve/profilevisits/follower/paidorganicsplit notzero; noformatcausalclaim."
+  }
+}
