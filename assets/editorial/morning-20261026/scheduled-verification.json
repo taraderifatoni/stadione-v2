@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-26T00:28:54.835Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "9e89726d-2fd5-47ee-844f-4c3db7c4dff2",
+    "status": "SCHEDULED",
+    "plan_key": "2026-10-26:mon-am",
+    "event_key": "clasico-mbappe-gap-three-points-20261025",
+    "scheduled_at": "2026-10-26T01:00:00+00:00",
+    "time_wib": "26 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "fd9a90fa-e1d7-4fa1-b690-429aaddd37ca",
+    "status": "SCHEDULED",
+    "scheduled_at": "2026-10-26T01:00:00+00:00",
+    "title": "Mbappé Memangkas Jarak Jadi Tiga Poin",
+    "canonical_body_identical": true,
+    "digest": "62e49fe8a69d9686b9a85294a6f6ba4ff91afd28d1bf6c9bcf0082a880311c57",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 367191,
+      "sha256": "a0179e9478dc3ed11920a69abee051daac41ab8d2fd72470c0b97977e4d72102",
+      "original_without_headline": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 562974,
+      "sha256": "de3e40cc23d65f22ddbff4ede9d76772f988c6a49982433ec47a4be749641a30",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 164741,
+      "sha256": "8cb7ba1928d0aac3c34548da08a3810d96f6d262f8f27889f2afac0a8884f561",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 194879,
+      "sha256": "1400e3ea8d4fb83408aa3bd98e8c47015449eeb8bd6e28bc0f75d692761e7da5",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 204793,
+      "sha256": "a2686480dcecd9fbd728f13c2f6f2f6c8a10f394200f4208ed83762c498b8f6b",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 228289,
+      "sha256": "556541ae7b1c4e273d8aa4577410ac805888522acf13662062e61805880e04f2",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 64,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 158,
+  "changed_other_rows": [],
+  "baseline_rows": 159,
+  "current_rows": 160,
+  "new_article_rows": 1,
+  "publisher": "Future 08.00 WIB slot left to shared systemd publisher; no direct Meta publish and no claim of already published.",
+  "pre_schedule_commit": "cb7f759a64ee38d82f15e8e4073b9f74312acebd"
+}
