@@ -1851,6 +1851,17 @@ function EditorModal({
   const [narratorVoice, setNarratorVoice] = useState("coral");
   let illustratedAudio: {audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
   try {illustratedAudio=JSON.parse(enginePacket)?.media?.illustration_reel} catch { /* Editor may be typing JSON. */ }
+  function selectFreeMusic() {
+    try {
+      const packet=JSON.parse(enginePacket);
+      if (!packet?.media?.illustration_reel) throw Error("Isi packet ilustrasi terlebih dahulu.");
+      const base=process.env.NEXT_PUBLIC_SUPABASE_URL;
+      if (!base) throw Error("Penyimpanan CMS belum dikonfigurasi.");
+      packet.media.illustration_reel.music={url:`${base}/storage/v1/object/public/stadione-cms/music/cc0/holiznacc0-game-travel-1-piano-ce270b4b.mp3`,credit:"Game Travel 1 (Piano) — HoliznaCC0",rights_evidence:"CC0 1.0 Universal: https://freemusicarchive.org/music/holiznacc0/background-music/game-travel-1-piano/",rights_status:"CLEARED",volume:0.12};
+      setEnginePacket(JSON.stringify(packet,null,2));
+      toast.success("Musik CC0 dipilih. Simpan draf dan buat preview.");
+    } catch(error) {toast.error(error instanceof Error ? error.message : "Packet belum valid.")}
+  }
   function removeMusic() {
     try { const packet=JSON.parse(enginePacket); if(packet?.media?.illustration_reel) {delete packet.media.illustration_reel.music;setEnginePacket(JSON.stringify(packet,null,2));} }
     catch {toast.error("Packet belum valid.")}
@@ -2074,11 +2085,13 @@ function EditorModal({
               <p className="font-bold">Narasi dan musik Reels ilustrasi</p>
               <p className="text-[#B5AC8A]">Isi naskah setiap adegan di packet. Narasi AI otomatis menyesuaikan durasi. Unggah atau pilih musik berizin dan masukkan URL publik; narasi tetap dominan.</p>
               <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
+              <button type="button" onClick={selectFreeMusic} className="rounded border px-3 py-2">Pakai musik gratis CC0 · Game Travel 1 (Piano)</button>
+              {illustratedAudio?.music?.url && <audio controls className="w-full" src={illustratedAudio.music.url} />}
               {illustratedAudio?.audio_url && <audio controls className="w-full" src={illustratedAudio.audio_url} />}
-              <input className="input" defaultValue={illustratedAudio?.music?.url || ""} placeholder="URL musik HTTPS berizin" onBlur={e=>{if(e.target.value) updateMusic("url",e.target.value)}} />
-              <input className="input" defaultValue={illustratedAudio?.music?.credit || ""} placeholder="Kredit musik" onBlur={e=>{if(e.target.value) updateMusic("credit",e.target.value)}} />
-              <input className="input" defaultValue={illustratedAudio?.music?.rights_evidence || ""} placeholder="Bukti dan cakupan izin musik" onBlur={e=>{if(e.target.value) updateMusic("rights_evidence",e.target.value)}} />
-              <label className="flex gap-2"><input type="checkbox" defaultChecked={illustratedAudio?.music?.rights_status === "CLEARED"} onChange={e=>updateMusic("rights_status",e.target.checked ? "CLEARED" : "PENDING")} /> Hak penggunaan musik sudah diperiksa</label>
+              <input key={`music-url-${illustratedAudio?.music?.url || ""}`} className="input" defaultValue={illustratedAudio?.music?.url || ""} placeholder="URL musik HTTPS berizin" onBlur={e=>{if(e.target.value) updateMusic("url",e.target.value)}} />
+              <input key={`music-credit-${illustratedAudio?.music?.credit || ""}`} className="input" defaultValue={illustratedAudio?.music?.credit || ""} placeholder="Kredit musik" onBlur={e=>{if(e.target.value) updateMusic("credit",e.target.value)}} />
+              <input key={`music-rights-${illustratedAudio?.music?.rights_evidence || ""}`} className="input" defaultValue={illustratedAudio?.music?.rights_evidence || ""} placeholder="Bukti dan cakupan izin musik" onBlur={e=>{if(e.target.value) updateMusic("rights_evidence",e.target.value)}} />
+              <label className="flex gap-2"><input key={`music-status-${illustratedAudio?.music?.rights_status || ""}`} type="checkbox" defaultChecked={illustratedAudio?.music?.rights_status === "CLEARED"} onChange={e=>updateMusic("rights_status",e.target.checked ? "CLEARED" : "PENDING")} /> Hak penggunaan musik sudah diperiksa</label>
               <label>Volume musik (0–30%) <input type="number" min="0" max="30" defaultValue={Math.round((illustratedAudio?.music?.volume ?? 0.12)*100)} onBlur={e=>updateMusic("volume",Number(e.target.value)/100)} className="input ml-2 w-24" /></label>
               {illustratedAudio?.music && <button type="button" onClick={removeMusic} className="block rounded border px-3 py-2">Hapus musik dari packet</button>}
             </div>}
