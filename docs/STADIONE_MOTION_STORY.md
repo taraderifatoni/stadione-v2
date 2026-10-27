@@ -15,3 +15,7 @@ npx --no-install hypit build motion.svrun --runtime hypit.runtime.json --follow
 Manifest version 1 berisi `sprites`, `sprite_boxes`, `voice`, `music`, serta `scenes`. Setiap scene berisi `label`, `title`, `narration`, `frames` pada 30fps, `sprite`, `effect`, `sources`, dan `words` berupa `text`, `start`, `end` dalam detik relatif adegan. Efek: gate, road, goal, trophy, award, number. Compiler hanya memeriksa struktur dan rentang waktu, bukan kebenaran klaim atau hak aset. Keluaran `motion.svml`, `motion.svs`, `motion.svrun`, dan `motion-assets/` dapat diedit dan dirender ulang.
 
 Contoh memakai ilustrasi AI, musik CC0 FMA HoliznaCC0 dan suara percobaan Microsoft Edge TTS. Hak komersial layanan suara belum diverifikasi. Karakter dan properti bergerak sebagai sprite, belum animasi sendi/lip-sync. Prototipe ini belum terhubung ke CMS: belum ada editor storyboard, generator riset/gambar/suara, job queue, approval, atau integrasi penerbit. Sebelum produksi dibutuhkan validasi hak dan isi, review keamanan dependensi, serta pengujian end-to-end.
+
+## Mode ilustrasi pilihan editor
+
+Manifest `visual_mode: "illustration"` memilih `storyboard` serta `illustration_box` per adegan. Komposisi judul, latar, ukuran frame, subtitle dan audio tetap sama; karakter/bola/properti animasi dinonaktifkan, ilustrasi editorial menjadi gambar fokus statis. Mode sprite lama tetap didukung. Proyek contoh: `/opt/stadione-editorial/hypit-kane-v4-20261027`.
