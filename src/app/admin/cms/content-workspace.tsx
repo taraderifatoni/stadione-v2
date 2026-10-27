@@ -1847,6 +1847,34 @@ function EditorModal({
     JSON.stringify(meta.engine_packet || null, null, 2),
   );
   const [generating, setGenerating] = useState(false);
+  const [narrating, setNarrating] = useState(false);
+  const [narratorVoice, setNarratorVoice] = useState("coral");
+  let illustratedAudio: {audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
+  try {illustratedAudio=JSON.parse(enginePacket)?.media?.illustration_reel} catch { /* Editor may be typing JSON. */ }
+  function removeMusic() {
+    try { const packet=JSON.parse(enginePacket); if(packet?.media?.illustration_reel) {delete packet.media.illustration_reel.music;setEnginePacket(JSON.stringify(packet,null,2));} }
+    catch {toast.error("Packet belum valid.")}
+  }
+  function updateMusic(field: string, value: string | number) {
+    try {
+      const packet=JSON.parse(enginePacket);
+      if (!packet?.media?.illustration_reel) throw Error("Isi packet ilustrasi terlebih dahulu.");
+      packet.media.illustration_reel.music={url:"",credit:"",rights_evidence:"",rights_status:"PENDING",volume:0.12,...packet.media.illustration_reel.music,[field]:value};
+      setEnginePacket(JSON.stringify(packet,null,2));
+    } catch(error) {toast.error(error instanceof Error ? error.message : "Packet belum valid.")}
+  }
+  async function generateNarration() {
+    setNarrating(true);
+    try {
+      const packet=JSON.parse(enginePacket);
+      const response=await fetch("/api/admin/cms/narration",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:item.id,packet,voice:narratorVoice})});
+      const result=await response.json();if(!response.ok) throw Error(result.error || "Narasi gagal.");
+      packet.media.illustration_reel=result.illustration_reel;
+      setEnginePacket(JSON.stringify(packet,null,2));
+      toast.success("Narasi dibuat dan durasi adegan diselaraskan. Simpan draf sebelum render.");
+    } catch(error) {toast.error(error instanceof Error ? error.message : "Narasi gagal.")}
+    finally {setNarrating(false)}
+  }
   async function generatePreview() {
     setGenerating(true);
     try {
@@ -2031,7 +2059,7 @@ function EditorModal({
                     </ul>
                   )}
                   <p className="mt-2">
-                    Research → klaim → montage video sumber, atau Reels ilustrasi dengan narasi → pemeriksaan editor. Jalur ilustrasi memerlukan gambar dan rekaman narasi siap pakai.
+                    Research → klaim → montage video sumber, atau Reels ilustrasi dengan narasi → pemeriksaan editor. Jalur ilustrasi dapat memakai rekaman narasi atau narasi AI bila penyedia sudah tersambung.
                   </p>
                   <button
                     disabled={generating}
@@ -2042,6 +2070,18 @@ function EditorModal({
                   </button>
                 </div>
               )}
+            {item.format === "REEL" && ["DRAFT", "PENDING_REVIEW"].includes(item.status) && <div className="space-y-3 rounded-xl border border-[#514237] p-4 text-xs">
+              <p className="font-bold">Narasi dan musik Reels ilustrasi</p>
+              <p className="text-[#B5AC8A]">Isi naskah setiap adegan di packet. Narasi AI otomatis menyesuaikan durasi. Unggah atau pilih musik berizin dan masukkan URL publik; narasi tetap dominan.</p>
+              <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
+              {illustratedAudio?.audio_url && <audio controls className="w-full" src={illustratedAudio.audio_url} />}
+              <input className="input" defaultValue={illustratedAudio?.music?.url || ""} placeholder="URL musik HTTPS berizin" onBlur={e=>{if(e.target.value) updateMusic("url",e.target.value)}} />
+              <input className="input" defaultValue={illustratedAudio?.music?.credit || ""} placeholder="Kredit musik" onBlur={e=>{if(e.target.value) updateMusic("credit",e.target.value)}} />
+              <input className="input" defaultValue={illustratedAudio?.music?.rights_evidence || ""} placeholder="Bukti dan cakupan izin musik" onBlur={e=>{if(e.target.value) updateMusic("rights_evidence",e.target.value)}} />
+              <label className="flex gap-2"><input type="checkbox" defaultChecked={illustratedAudio?.music?.rights_status === "CLEARED"} onChange={e=>updateMusic("rights_status",e.target.checked ? "CLEARED" : "PENDING")} /> Hak penggunaan musik sudah diperiksa</label>
+              <label>Volume musik (0–30%) <input type="number" min="0" max="30" defaultValue={Math.round((illustratedAudio?.music?.volume ?? 0.12)*100)} onBlur={e=>updateMusic("volume",Number(e.target.value)/100)} className="input ml-2 w-24" /></label>
+              {illustratedAudio?.music && <button type="button" onClick={removeMusic} className="block rounded border px-3 py-2">Hapus musik dari packet</button>}
+            </div>}
             <Field label="Source packet / claim ledger (JSON)">
               <textarea
                 value={enginePacket}

@@ -81,6 +81,8 @@ export type Packet = {
     catalog_audio?: ReelCatalogAudio;
     illustration_reel?: {
       audio_url: string; audio_credit: string; audio_rights: string; audio_evidence: string;
+      audio_generated?: boolean; audio_script_sha256?: string;
+      music?: { url: string; credit: string; rights_evidence: string; rights_status: string; volume: number };
       scenes: { image_url: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
     };
   };
@@ -257,6 +259,12 @@ export function auditPacket(
       if (!/^https:\/\//.test(illustration.audio_url || "") || !illustration.audio_credit || illustration.audio_rights !== "CLEARED" || !illustration.audio_evidence)
         errors.push("Narasi perlu URL HTTPS, kredit dan bukti hak audio.");
       const scenes = Array.isArray(illustration.scenes) ? illustration.scenes : [];
+      if (illustration.audio_generated && illustration.audio_script_sha256 !== sha(scenes.map(s => s.narration).join("\n"))) errors.push("Naskah berubah setelah narasi AI dibuat; buat ulang narasi.");
+      if (illustration.music) {
+        const music=illustration.music;
+        if (!/^https:\/\//.test(music.url || "") || !music.credit || !music.rights_evidence || music.rights_status !== "CLEARED") errors.push("Musik perlu URL, kredit dan bukti hak pakai.");
+        if (!Number.isFinite(music.volume) || music.volume < 0 || music.volume > 0.3) errors.push("Volume musik harus antara 0 dan 0,3 agar narasi tetap dominan.");
+      }
       if (scenes.length < 3 || scenes.length > 12) errors.push("Reel ilustrasi perlu 3–12 adegan.");
       scenes.forEach((scene, i) => {
         if (!/^https:\/\//.test(scene.image_url || "") || !scene.image_credit || !scene.rights_evidence || !scene.narration || scene.narration.length > 180 || !scene.claim_ids?.length || scene.claim_ids.some(id => !ids.has(id))) errors.push(`Adegan ilustrasi ${i+1}: lengkapi gambar, hak, narasi, dan klaim.`);
