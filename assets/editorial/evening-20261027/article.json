@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Menang di JIS, STY Minta Rumput Dibenahi",
+  "dek": "STY menilai rumput JIS membatasi permainan Persija. Potret arsip 2011 oleh Masashi Hara Hara/Flickr, CC BY 2.0, diolah untuk cover. https://creativecommons.org/licenses/by/2.0/",
+  "caption": "MENANG DI JIS, STY MINTA RUMPUT DIBENAHI\n\nPersija membalikkan ketertinggalan dan menang 2–1 atas Persik di JIS, Senin (26/10/2026). Denis Kolinger dan Rizky Ridho mencetak gol kebangkitan Macan Kemayoran.\n\nNamun, Shin Tae-yong tetap menyoroti rumput stadion. Menurutnya, kondisi lapangan membatasi permainan yang ingin diterapkan dan perlu dibenahi agar tim bisa memberi tontonan lebih baik kepada suporter.\n\nBuat Jak yang menonton laga itu, bagian permainan mana yang paling terlihat terdampak kondisi lapangan? Ceritakan momen yang kamu lihat.\n\nFakta diperiksa melalui Persija dan laporan langsung ANTARA.\n\nFoto arsip STY, I0062454782, oleh Masashi Hara Hara (2011), CC BY 2.0. https://www.flickr.com/photos/66578220@N07/6065009408/ • https://creativecommons.org/licenses/by/2.0/ . Cover dipotong dan dikolase; foto portal dibingkai tanpa teks. Bukan foto laga ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kemenangan Tidak Menutup Keluhan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "GRASS"
+      ],
+      "text": "Persija meraih tiga poin, tetapi Shin Tae-yong belum puas dengan lapangan tempat timnya bermain. Setelah kemenangan 2–1 atas Persik Kediri di Jakarta International Stadium, Senin (26/10/2026), pelatih Macan Kemayoran itu meminta kondisi rumput mendapat penanganan lebih baik."
+    },
+    {
+      "id": "grass",
+      "heading": "Permainan yang Terbatasi",
+      "kind": "FACT",
+      "claim_ids": [
+        "GRASS"
+      ],
+      "text": "Menurut Shin, rumput JIS yang buruk membuat Persija tidak bisa memainkan sepak bola yang diinginkannya. Keluhan itu ia sampaikan dalam jumpa pers seusai laga. Ia mengaitkan pembenahan lapangan dengan kemampuan tim menghadirkan permainan dan tontonan lebih baik bagi suporter yang datang langsung ke stadion."
+    },
+    {
+      "id": "goals",
+      "heading": "Kolinger dan Ridho Membalikkan Skor",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "GOALS"
+      ],
+      "text": "Di pertandingan itu, Persija lebih dulu tertinggal pada babak pertama. Denis Kolinger kemudian menyamakan kedudukan lewat sundulan, sebelum Rizky Ridho mencetak gol penentu kemenangan. Shin mengapresiasi pemainnya yang terus berjuang sampai akhir."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261026-carrick-identity-press-news",
+    "goal-20261024-arsenal-everton-match-preview-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-27T12:28:52.273Z",
+    "article_digest": "499f0ee51464843cd17d72dc2328b546250f5c4774905e7f12f6f9ff921357fa"
+  }
+}

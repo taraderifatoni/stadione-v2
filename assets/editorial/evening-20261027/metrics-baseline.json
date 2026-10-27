@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-27T12:15:50.757Z",
+  "basis": "Actual snapshots with original publication ages, not exact24h/7d observations. Target unpublished; no inventedmetrics/causalcomparison.",
+  "target_metrics": null,
+  "posts": [
+    {
+      "id": "18108146800959015",
+      "published_at": "2026-10-25T13:01:24+0000",
+      "format": "REELS",
+      "http": 200,
+      "metrics": {
+        "views": 117,
+        "reach": 111,
+        "likes": 2,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2,
+        "ig_reels_avg_watch_time": 5266,
+        "ig_reels_video_view_total_time": 574092
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18126907231944753",
+      "published_at": "2026-10-25T01:01:40+0000",
+      "format": "REELS",
+      "http": 200,
+      "metrics": {
+        "views": 153,
+        "reach": 132,
+        "likes": 2,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 2,
+        "ig_reels_avg_watch_time": 10440,
+        "ig_reels_video_view_total_time": 1388589
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18162009193453575",
+      "published_at": "2026-10-24T13:03:13+0000",
+      "format": "REELS",
+      "http": 200,
+      "metrics": {
+        "views": 149,
+        "reach": 133,
+        "likes": 4,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 4,
+        "ig_reels_avg_watch_time": 7424,
+        "ig_reels_video_view_total_time": 957703
+      },
+      "unavailable": []
+    }
+  ]
+}

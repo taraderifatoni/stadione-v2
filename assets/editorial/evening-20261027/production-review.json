@@ -1,0 +1,384 @@
+{
+  "checked_at": "2026-10-27T12:28:55.565Z",
+  "phase": "REVIEWED_PREVIEW_NOT_SCHEDULED",
+  "target": {
+    "id": "d4685a17-da23-4d2a-b2d4-4c1cd62d4184",
+    "plan_key": "2026-10-27:mid-pm",
+    "event_key": "sty-persija-jis-pitch-postmatch-20261026",
+    "scheduled_at": "2026-10-27T13:00:00Z",
+    "original_format": "REEL",
+    "prepared_format": "CAROUSEL",
+    "cms_status": "PENDING_REVIEW"
+  },
+  "sources": {
+    "news": [
+      {
+        "id": "PERSIJA",
+        "url": "https://www.persija.id/media/news/review-persija-vs-persik-dari-tertinggal-menuju-kemenangan",
+        "publisher_group": "PERSIJA_MEDIA",
+        "primary": true,
+        "published_at": "2026-10-26",
+        "retrieved_at": "2026-10-27T12:08:51.994Z",
+        "text_sha256": "3ed9caeee61d74dd6a6ff2a63296f864f065dd33a61018419c49a9a24755fcd7",
+        "full_read": true
+      },
+      {
+        "id": "ANTARA",
+        "url": "https://www.antaranews.com/berita/5813383/shin-tae-yong-apresiasi-kerja-keras-persija-saat-kalahkan-persik",
+        "publisher_group": "ANTARA",
+        "primary": false,
+        "published_at": "2026-10-26T23:11:09+07:00",
+        "retrieved_at": "2026-10-27T12:08:52.031Z",
+        "text_sha256": "3d68ae255228768c2d8de1e4e0547fc1141d5f4081be73732f1f3c4afb386a1d",
+        "full_read": true
+      }
+    ],
+    "browser_evidence": {
+      "persija": {
+        "body_lines": [
+          11,
+          33
+        ],
+        "total_lines": 142
+      },
+      "antara": {
+        "body_lines": [
+          42,
+          59
+        ],
+        "credit_lines": [
+          64,
+          66
+        ],
+        "reporter": "Zaro Ezza Syachniar"
+      },
+      "jpnn": "Bothpagesread;markedantara/jpnnsoNOTthirdindependentreport."
+    },
+    "conflicts_omitted": [
+      "Ridho66ANTARAversus69Persijagoalclockomitted",
+      "ANTARAphotocaption3–1conflictswithbody2–1andprimary2–1;discardcaptionresult",
+      "Persijametadatahourunqualified,onlypublished-dayused;notinventedUTC",
+      "NoJISclosure/medicaldiagnosis/concertcause/Jakproreply/lineupornewfixtureinvented"
+    ]
+  },
+  "photo": {
+    "page_url": "https://www.flickr.com/photos/66578220@N07/6065009408/",
+    "creator": "Masashi Hara Hara",
+    "title": "I0062454782",
+    "date_label": "21 August 2011",
+    "license": "CC BY2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "license_verification": "FlickrcurrentnormalGET200,JSONLDlicenseandrellicenseanchor,titleCCBY2.0;Commonsreview2013confirmslicense. Filename2010isnotadoptedaseventdate.",
+    "original": {
+      "bytes": 48192,
+      "sha256": "a53f5cd569d888d32b88fcd4b9a90de9110a01f3b213b9beb1d69fcfa1c6c86d"
+    },
+    "hero": {
+      "bytes": 34611,
+      "sha256": "9edac1745d4d09eaeb9836ac9c812f5018b4c4a2a9420b81402d9c425af2770b",
+      "dimensions": "512x420",
+      "clean": true,
+      "contains_original_photo": true,
+      "ai": false,
+      "mechanical_fit_pad": true,
+      "head_hair_chin_visible": true
+    },
+    "attribution": "Author/year/licenseURLandmodificationnoticesvisiblecover/dekwebsiteexcerpt/caption. FlickrsourceURLinIGcaptionandmedia.credit;noendorsementclaimed.",
+    "separate_2018_candidate": "Commons2018photoandimageGET403stopped;notretriedviaanotherroute. Selected2011Flickrphotoisdifferentwork;normalpublicpage/imageHTTP200."
+  },
+  "article": {
+    "title": "Menang di JIS, STY Minta Rumput Dibenahi",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 113,
+    "article_digest": "499f0ee51464843cd17d72dc2328b546250f5c4774905e7f12f6f9ff921357fa",
+    "pages": 4,
+    "goal_benchmarks": [
+      "goal-20261026-carrick-identity-press-news",
+      "goal-20261024-arsenal-everton-match-preview-news"
+    ],
+    "writing_review": "Wholearticlebeforepagination;corestatementheadline;noAnalisisStadione/scaffold/filler/quotingprocess. LeadeditedmeraihnotpulangforhomeJIS. Previewrepeatedafteredit,onlypage2changed;cover/pages3/4SHAidentical."
+  },
+  "cover": {
+    "variant_id": "FOTO_DOMINAN",
+    "standard": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "input_bytes": 400191,
+    "input_sha256": "6ec39d8e946eae8f4eb15b005e0a3af2243ce1f640f06f8efd4fa234ecfa2d34",
+    "page_count_visible": "1/4",
+    "source_primary_audit": "PERSIJA.ID",
+    "sources_visible": "PERSIJA.ID • ANTARA",
+    "native_review": true,
+    "authentic_archive_identity": true,
+    "mechanical_export": "Reviewedimagegencomposition resized1030x1288/padded1080x1350toensurehorizontaltextinsetatleast72px;noartworkeditsoutsideimagegen.",
+    "no_edition_label": true,
+    "no_promotional_footer": true,
+    "headline_deck_source_license_readable": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 505861,
+      "sha256": "b3c987b7029bf6e05cfc92fb25d552c6f02735b9907c592528f900b394de6912",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "PERSIJA.ID",
+        "cover_input_sha256": "6ec39d8e946eae8f4eb15b005e0a3af2243ce1f640f06f8efd4fa234ecfa2d34",
+        "output_sha256": "b3c987b7029bf6e05cfc92fb25d552c6f02735b9907c592528f900b394de6912",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 174876,
+      "sha256": "7bfef1684b8dc9ed9a87338829ae3d2c2a5534b86302199c9de85135e8a8970c",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "4079b357ee1cf4f5c5573ed2966104e4d125e44bb557fb6a55c7ece065d3c95c",
+        "output_sha256": "7bfef1684b8dc9ed9a87338829ae3d2c2a5534b86302199c9de85135e8a8970c",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 645,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 869,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 174986,
+      "sha256": "045796ad65952a7d30d85409a4fd995858ea2a683762ef01c435392a8ae90d3c",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "7fc84f8344a3e561b706618c63b9bfaa66942d9c5231f5578bf4b8c48046aeea",
+        "output_sha256": "045796ad65952a7d30d85409a4fd995858ea2a683762ef01c435392a8ae90d3c",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 875,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 906,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 165717,
+      "sha256": "774d2a6e7ed44a72a7c4535693a8c90eb50660b18abf71f737533e6520517ba3",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "77e15e6b6e5cdb9ac4024d4847e293a5a4da1422e9488ed8ba6904e9373bfdf1",
+        "output_sha256": "774d2a6e7ed44a72a7c4535693a8c90eb50660b18abf71f737533e6520517ba3",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 640,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 912,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all4slides_native_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "body_divider_gaps_px": [
+      36,
+      36
+    ],
+    "cream_text_only_body": true,
+    "source_cover_only": true,
+    "cover_source_license_complete": true,
+    "hero_native_read": true,
+    "page4_heading_native_crop_read": true,
+    "ocr_only_supplement": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "catalog_audio": null,
+    "source_muted": false,
+    "reel_audio_review_not_claimed": true,
+    "voiceover_recorded": false,
+    "carousel_music_not_attached": true,
+    "reason": "GraphCMSdoesnotsupportcarouselmusic;noqualifiedlicensedvideochosen,soaudioqualitygatewasnotpassedforReel. No mute/trendingdefault/syntheticmusic."
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-27:mid-pm",
+    "checked_at": "2026-10-27T12:10:51.035Z",
+    "queries": [
+      "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+      "Persija Persik Shin Tae yong 26 Oktober 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.instagram.com/reel/De_WnY7okxG/",
+        "creator": "Persija / Persija TV",
+        "checked_at": "2026-10-27T12:10:51.035Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Business Discovery confirms official postmatch press clip and direct media metadata. Caption and public Persija terms do not grant redistribution rights. Browser page throttled. Not downloaded/seen/heard; no permission denial or all-routes failure claimed.",
+        "proof": {
+          "kind": "BUSINESS_DISCOVERY_CAPTION_AND_PUBLIC_TERMS",
+          "summary": "Official27October08:02:08Z caption identifies pressafterPersik2–1. Persijatermsread; none explicitStadionereuse grant. Websiteiframev-kFycVloWkalsothrottled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=-1ERJiR-scg",
+        "creator": "Mansion Sports FC ",
+        "checked_at": "2026-10-27T12:10:51.035Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube API metadata and description identify topic and standard youtube licence, without an available redistribution grant. Browser source page throttled. No download, visual review, audio quality or inability across all routes claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_DESCRIPTION",
+          "summary": "Metadata actual 2026-10-27T08:30:23Z, duration 60seconds; licence youtube. Description reviewed. No CCgrant or permission evidence located."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=YdHi0xzpnhg",
+        "creator": "Sportlinknews Indonesia",
+        "checked_at": "2026-10-27T12:10:51.035Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube API metadata and description identify topic and standard youtube licence, without an available redistribution grant. Browser source page throttled. No download, visual review, audio quality or inability across all routes claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_DESCRIPTION",
+          "summary": "Metadata actual 2026-10-27T02:00:00Z, duration 6seconds; licence youtube. Description reviewed. No CCgrant or permission evidence located."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-27T12:10:51.035Z",
+      "digest": "6938ed27b4062ee6d5404ca1b9ddb12648379142126af2123aa2edc38a67a700"
+    }
+  },
+  "growth": {
+    "core_fact": "Seusai kemenanganPersija2–1atasPersik26OktoberdiJIS,ShinTae-yongtetapmemintarumputdibenahi. Persija/ANTARAdirectpressreportsfullread.",
+    "angle": "Hasilbagustidakmenghapuskeluhanpelatihataslapanganyangmenurutnyamembatasipermainan. Pertahankanatribusi,tidakmengarangdiagnosis/penutupan/konser.",
+    "hook": "Menang di JIS, STY Minta Rumput Dibenahi",
+    "payoff": "PembacamengetahuikeluhanSTY,hubungannyadengankualitastontonan,sertakonteksgolKolinger/Ridho.",
+    "audience_action": "MintaJakpenontonlangsungmenjelaskanmomenspesifikyangterlihatdipengaruhilapangan, bukanCTAumum.",
+    "series": "Fungsievaluasi/efekuntuksuporter; tidakmemaksakanserialbaruke slotlegacyTue20.",
+    "calendar": "Existinglegacy20WIBslotcreated19Octoberbeforegrowthreset. No newslot/seeder. Newcalendar12/weekunchanged; no13/additional/protectededits.",
+    "format": "ReviewedfallbackCAROUSELwithCCBYportrait; noqualifiedREELpermission/audioapproval claimed.",
+    "metrics": "Actual3Reelsnapshotwithpublishedages,notexact24h/7d,targetunpublishednull;noformatcausality/retention/nonfollower/followerattributioninvented.",
+    "review_due_24h": "2026-10-28T13:00:00Z",
+    "review_due_7d": "2026-11-03T13:00:00Z",
+    "new_automation_created": false
+  },
+  "scope": {
+    "baseline_rows": 163,
+    "after_preview_rows": 163,
+    "session_cms_writes_before_commit": 0,
+    "background_target_status_change": "DRAFTtoPENDING_REVIEWonlytarget,observedafterread-onlypreview;blankautoenginepacketstill0assets/parent/attempts.Notattributedtosession.",
+    "other_existing_rows_unchanged": 162,
+    "renderer_code_changed": false,
+    "credentials_changed": false,
+    "services_changed": false,
+    "automations_changed": false,
+    "old_posts_changed": false,
+    "seed_called": false,
+    "meta_direct_called": false,
+    "schedule_called": false
+  },
+  "references": {
+    "entries": 23,
+    "sha256": "31351f86a46f8a1332db3e948f98d9715c276b51b489f95c7e9ee5453e158a3a",
+    "latest_read_at": "2026-10-27T00:43:42Z",
+    "runtime_committed_identical": true
+  },
+  "rollback_commit": "eaf49dbb7da148e5182017faafa6ee2f2c0103f8",
+  "private_only": "Packet/sourcefulltexts/rawHTML/FlickrandGraphJSON/signedCDN/rawarchivephotoonlyprivateVPS. Gitownarticle/sanitizedreview/QAderivatives,notfullsourcesorsecrets."
+}
