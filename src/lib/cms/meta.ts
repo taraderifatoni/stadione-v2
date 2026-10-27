@@ -60,10 +60,10 @@ export async function createImage(url: string, carouselChild = false, caption?: 
   return result.id
 }
 
-export async function createReel(url: string, caption: string, audio?: ReelCatalogAudio) {
+export async function createReel(url: string, caption: string, audio?: ReelCatalogAudio, coverUrl?: string) {
   const { igId } = credentials()
   if (audio) await verifyReelCatalogAudio(audio)
-  const result = await graphRequest(`${igId}/media`, { media_type: "REELS", video_url: url, caption, share_to_feed: "true", ...(audio ? {audio_configuration: JSON.stringify(catalogAudioConfiguration(audio))} : {}) })
+  const result = await graphRequest(`${igId}/media`, { media_type: "REELS", video_url: url, caption, share_to_feed: "true", ...(coverUrl ? { cover_url: coverUrl } : {}), ...(audio ? {audio_configuration: JSON.stringify(catalogAudioConfiguration(audio))} : {}) })
   if (!result.id) throw new Error("Meta tidak mengembalikan ID kontainer Reels.")
   return result.id
 }

@@ -1909,6 +1909,8 @@ function EditorModal({
     }
   }
   const [sourceUrl, setSourceUrl] = useState(item.source_url || "");
+  const [reelCoverUrl, setReelCoverUrl] = useState(String(meta.cover_url || ""));
+  const [reelCoverSha, setReelCoverSha] = useState(String(meta.cover_sha256 || ""));
   const [factVerified, setFactVerified] = useState(
     meta.fact_check_status === "VERIFIED",
   );
@@ -1971,6 +1973,7 @@ function EditorModal({
           ...(parsedPacket ? { engine_packet: parsedPacket } : {}),
           fact_check_status: factVerified ? "VERIFIED" : "UNVERIFIED",
           rights_status: rightsCleared ? "CLEARED" : "PENDING",
+          ...(item.format === "REEL" ? {cover_url:reelCoverUrl.trim() || null,cover_sha256:reelCoverSha.trim() || null} : {}),
         },
         assets:
           item.kind === "SOCIAL"
@@ -2209,6 +2212,7 @@ function EditorModal({
                     placeholder="https://.../media.jpg"
                   />
                 </Field>
+                {item.format === "REEL" && <div className="space-y-2 rounded-xl border border-[#2E2C28] p-3"><p className="font-bold">Cover Reels</p><input className="input" value={reelCoverUrl} onChange={e=>setReelCoverUrl(e.target.value)} placeholder="URL JPEG cover publik (HTTPS)"/><input className="input" value={reelCoverSha} onChange={e=>setReelCoverSha(e.target.value)} placeholder="SHA-256 berkas cover"/><p className="text-xs text-[#8A8375]">Cover dipakai saat membuat kontainer Meta; checksum wajib cocok.</p>{reelCoverUrl && <img src={reelCoverUrl} alt="Preview cover Reels" className="max-h-72 rounded-lg" />}</div>}
                 {item.format === "REEL" && item.assets?.[0]?.video_url && (
                   <video controls playsInline className="max-h-[600px] rounded-xl" src={item.assets[0].video_url} />
                 )}

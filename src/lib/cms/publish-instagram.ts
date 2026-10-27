@@ -1,7 +1,7 @@
 import "server-only"
 import { verifyReelCatalogAudio } from "./reel-music"
 import { enginePublicationIssues } from "./engine"
-import { verifyCarouselAssets } from "./engine-media"
+import { verifyCarouselAssets, verifyReelCover } from "./engine-media"
 import { writingReferenceIssues } from "./writing-references"
 import { type Packet } from "./engine"
 import { articleHtml, articleDigest } from "./news-writing"
@@ -59,6 +59,13 @@ export async function publishInstagramContent(id: string, actorId: string | null
     catch (error) { return NextResponse.json({ error: error instanceof Error ? error.message : "Audit carousel gagal." }, { status: 409 }) }
   }
 
+  let reelCover: string | undefined;
+  if (item.format === "REEL" && editorial.cover_url) {
+    try {
+      reelCover=publicMediaUrl(editorial.cover_url, "Cover Reels");
+      await verifyReelCover(reelCover, String(editorial.cover_sha256 || ""));
+    } catch(error) {return NextResponse.json({error:error instanceof Error ? error.message : "Cover Reels gagal diperiksa."},{status:409})}
+  }
   const token = crypto.randomUUID()
   const { data: claimed, error: claimError } = await admin.rpc("claim_stadione_ig_publish", { p_content_id: id, p_token: token })
   if (claimError) return NextResponse.json({ error: `Klaim publikasi gagal: ${claimError.message}` }, { status: 500 })
@@ -95,7 +102,7 @@ export async function publishInstagramContent(id: string, actorId: string | null
     }
     if (!state.creation_id) {
       await heartbeat()
-      const creationId = item.format === "CAROUSEL" ? await createCarousel(state.child_ids, caption) : item.format === "REEL" ? await createReel(urls[0], caption, packet?.media.catalog_audio) : await createImage(urls[0], false, caption)
+      const creationId = item.format === "CAROUSEL" ? await createCarousel(state.child_ids, caption) : item.format === "REEL" ? await createReel(urls[0], caption, packet?.media.catalog_audio, reelCover) : await createImage(urls[0], false, caption)
       state = { ...state, creation_id: creationId }
       await save({ creation_id: creationId, state: "PROCESSING", error_message: null })
     }

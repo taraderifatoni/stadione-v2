@@ -130,6 +130,7 @@ export function contentDigest(item: Item) {
       item.category,
       item.assets,
       item.editorial_meta?.engine_packet,
+      ...(item.format === "REEL" && item.editorial_meta?.cover_url ? [item.editorial_meta.cover_url,item.editorial_meta.cover_sha256] : []),
       ...(item.format === "ARTICLE" ? [item.body,item.excerpt] : []),
     ]),
   );

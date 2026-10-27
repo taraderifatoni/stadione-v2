@@ -402,3 +402,12 @@ export async function renderIllustrationReel(packet: Packet) {
     return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,illustration:true,narration:true,background_music:!!spec.music,music_credit:spec.music?.credit || null,ai_footage:true}};
   } finally {await fs.rm(dir,{recursive:true,force:true});}
 }
+
+/** Verify that the Reel cover is exactly the reviewed public JPEG before Meta sees it. */
+export async function verifyReelCover(rawUrl: string, expectedHash: string) {
+  if (!/^[a-f0-9]{64}$/i.test(expectedHash)) throw new Error("Cover Reels memerlukan SHA-256 yang valid.");
+  const bytes=await sourceBytes(rawUrl, 10_000_000);
+  if (createHash("sha256").update(bytes).digest("hex") !== expectedHash.toLowerCase()) throw new Error("Cover Reels berubah setelah diperiksa.");
+  const info=await sharp(bytes,{limitInputPixels:30000000}).metadata();
+  if (info.format!=="jpeg" || !info.width || !info.height || info.width<320 || info.height<320) throw new Error("Cover Reels harus JPEG minimal 320 x 320 piksel.");
+}
