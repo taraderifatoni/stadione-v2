@@ -1,0 +1,1182 @@
+{
+  "version": 1,
+  "sprites": "assets/sprites.png",
+  "sprite_boxes": {
+    "boy": {
+      "left": 0,
+      "top": 0,
+      "width": 340,
+      "height": 512
+    },
+    "boyrun": {
+      "left": 340,
+      "top": 0,
+      "width": 390,
+      "height": 512
+    },
+    "adult": {
+      "left": 730,
+      "top": 0,
+      "width": 450,
+      "height": 512
+    },
+    "winner": {
+      "left": 1180,
+      "top": 0,
+      "width": 356,
+      "height": 512
+    }
+  },
+  "voice": "./assets/narration.wav",
+  "music": "./assets/music.mp3",
+  "scenes": [
+    {
+      "label": "USIA 8 TAHUN",
+      "title": "Dilepas Arsenal",
+      "narration": "Saat berusia delapan tahun, Harry Kane dilepas dari akademi Arsenal. Jalan menuju puncak pun terasa jauh.",
+      "frames": 223,
+      "words": [
+        {
+          "text": "Saat",
+          "start": 0.098166,
+          "end": 0.399082
+        },
+        {
+          "text": "berusia",
+          "start": 0.399083,
+          "end": 0.734708
+        },
+        {
+          "text": "delapan",
+          "start": 0.734708,
+          "end": 1.024041
+        },
+        {
+          "text": "tahun",
+          "start": 1.024083,
+          "end": 1.475458
+        },
+        {
+          "text": "Harry",
+          "start": 1.764833,
+          "end": 2.007874
+        },
+        {
+          "text": "Kane",
+          "start": 2.007875,
+          "end": 2.204625
+        },
+        {
+          "text": "dilepas",
+          "start": 2.204625,
+          "end": 2.598125
+        },
+        {
+          "text": "dari",
+          "start": 2.598166,
+          "end": 2.748624
+        },
+        {
+          "text": "akademi",
+          "start": 2.748625,
+          "end": 3.08425
+        },
+        {
+          "text": "Arsenal",
+          "start": 3.08425,
+          "end": 3.697666
+        },
+        {
+          "text": "Jalan",
+          "start": 4.469458,
+          "end": 4.805083
+        },
+        {
+          "text": "menuju",
+          "start": 4.805083,
+          "end": 5.094416
+        },
+        {
+          "text": "puncak",
+          "start": 5.094458,
+          "end": 5.395374
+        },
+        {
+          "text": "pun",
+          "start": 5.395375,
+          "end": 5.603708
+        },
+        {
+          "text": "terasa",
+          "start": 5.603708,
+          "end": 5.893041
+        },
+        {
+          "text": "jauh",
+          "start": 5.893041,
+          "end": 6.355999
+        }
+      ],
+      "sprite": "boy",
+      "effect": "gate",
+      "value": "",
+      "sources": [
+        "https://www.englandfootball.com/articles/2026/Jul/28/england-harry-kane-grassroots-story-origins-20262807"
+      ]
+    },
+    {
+      "label": "KEMBALI BERMAIN",
+      "title": "Cintanya pada bola tetap ada",
+      "narration": "Ia kembali bermain bersama teman-temannya di Ridgeway Rovers. Di sana, kecintaannya pada sepak bola tetap hidup.",
+      "frames": 231,
+      "words": [
+        {
+          "text": "Ia",
+          "start": 0.098166,
+          "end": 0.283332
+        },
+        {
+          "text": "kembali",
+          "start": 0.283333,
+          "end": 0.572666
+        },
+        {
+          "text": "bermain",
+          "start": 0.572666,
+          "end": 0.966166
+        },
+        {
+          "text": "bersama",
+          "start": 0.966208,
+          "end": 1.278708
+        },
+        {
+          "text": "teman-temannya",
+          "start": 1.278708,
+          "end": 1.880541
+        },
+        {
+          "text": "di",
+          "start": 1.880541,
+          "end": 2.042582
+        },
+        {
+          "text": "Ridgeway",
+          "start": 2.042583,
+          "end": 2.470833
+        },
+        {
+          "text": "Rovers",
+          "start": 2.470833,
+          "end": 3.072666
+        },
+        {
+          "text": "Di",
+          "start": 3.844458,
+          "end": 3.983333
+        },
+        {
+          "text": "sana",
+          "start": 3.983333,
+          "end": 4.480999
+        },
+        {
+          "text": "kecintaannya",
+          "start": 4.758791,
+          "end": 5.291207
+        },
+        {
+          "text": "pada",
+          "start": 5.291208,
+          "end": 5.464833
+        },
+        {
+          "text": "sepak",
+          "start": 5.464833,
+          "end": 5.707874
+        },
+        {
+          "text": "bola",
+          "start": 5.707875,
+          "end": 5.9625
+        },
+        {
+          "text": "tetap",
+          "start": 5.9625,
+          "end": 6.205541
+        },
+        {
+          "text": "hidup",
+          "start": 6.205541,
+          "end": 6.645374
+        }
+      ],
+      "sprite": "boyrun",
+      "effect": "goal",
+      "value": "",
+      "sources": [
+        "https://www.englandfootball.com/articles/2026/Jul/28/england-harry-kane-grassroots-story-origins-20262807"
+      ]
+    },
+    {
+      "label": "MENCARI KESEMPATAN",
+      "title": "Empat klub pinjaman",
+      "narration": "Tottenham kemudian membinanya. Namun, jalan menuju tim utama tidak langsung terbuka. Ia dipinjamkan ke empat klub berbeda.",
+      "frames": 274,
+      "words": [
+        {
+          "text": "Tottenham",
+          "start": 0.099083,
+          "end": 0.631499
+        },
+        {
+          "text": "kemudian",
+          "start": 0.6315,
+          "end": 1.048166
+        },
+        {
+          "text": "membinanya",
+          "start": 1.048166,
+          "end": 1.707874
+        },
+        {
+          "text": "Namun",
+          "start": 2.478708,
+          "end": 2.987958
+        },
+        {
+          "text": "jalan",
+          "start": 3.288875,
+          "end": 3.578208
+        },
+        {
+          "text": "menuju",
+          "start": 3.57825,
+          "end": 3.867583
+        },
+        {
+          "text": "tim",
+          "start": 3.867583,
+          "end": 3.994916
+        },
+        {
+          "text": "utama",
+          "start": 3.994916,
+          "end": 4.330541
+        },
+        {
+          "text": "tidak",
+          "start": 4.330541,
+          "end": 4.550457
+        },
+        {
+          "text": "langsung",
+          "start": 4.550458,
+          "end": 4.839791
+        },
+        {
+          "text": "terbuka",
+          "start": 4.839833,
+          "end": 5.406958
+        },
+        {
+          "text": "Ia",
+          "start": 6.182416,
+          "end": 6.390749
+        },
+        {
+          "text": "dipinjamkan",
+          "start": 6.39075,
+          "end": 6.992583
+        },
+        {
+          "text": "ke",
+          "start": 6.992583,
+          "end": 7.062041
+        },
+        {
+          "text": "empat",
+          "start": 7.062041,
+          "end": 7.293499
+        },
+        {
+          "text": "klub",
+          "start": 7.2935,
+          "end": 7.478666
+        },
+        {
+          "text": "berbeda",
+          "start": 7.478708,
+          "end": 8.080541
+        }
+      ],
+      "sprite": "adult",
+      "effect": "road",
+      "value": "",
+      "sources": [
+        "https://harrykane.com/pages/my-story"
+      ]
+    },
+    {
+      "label": "TOTTENHAM",
+      "title": "280 gol untuk Spurs",
+      "narration": "Ketika kesempatan itu datang, Kane menjawabnya dengan gol. Ia meninggalkan Tottenham sebagai pencetak gol terbanyak klub: 280 gol.",
+      "frames": 279,
+      "words": [
+        {
+          "text": "Ketika",
+          "start": 0.098166,
+          "end": 0.399082
+        },
+        {
+          "text": "kesempatan",
+          "start": 0.399083,
+          "end": 0.815749
+        },
+        {
+          "text": "itu",
+          "start": 0.81575,
+          "end": 0.966208
+        },
+        {
+          "text": "datang",
+          "start": 0.966208,
+          "end": 1.440749
+        },
+        {
+          "text": "Kane",
+          "start": 1.730083,
+          "end": 1.915249
+        },
+        {
+          "text": "menjawabnya",
+          "start": 1.915291,
+          "end": 2.447666
+        },
+        {
+          "text": "dengan",
+          "start": 2.447666,
+          "end": 2.713874
+        },
+        {
+          "text": "gol",
+          "start": 2.713875,
+          "end": 3.118958
+        },
+        {
+          "text": "Ia",
+          "start": 3.900458,
+          "end": 4.062499
+        },
+        {
+          "text": "meninggalkan",
+          "start": 4.0625,
+          "end": 4.525458
+        },
+        {
+          "text": "Tottenham",
+          "start": 4.525458,
+          "end": 4.988416
+        },
+        {
+          "text": "sebagai",
+          "start": 4.988416,
+          "end": 5.324082
+        },
+        {
+          "text": "pencetak",
+          "start": 5.324083,
+          "end": 5.717583
+        },
+        {
+          "text": "gol",
+          "start": 5.717583,
+          "end": 5.925916
+        },
+        {
+          "text": "terbanyak",
+          "start": 5.925916,
+          "end": 6.296291
+        },
+        {
+          "text": "klub",
+          "start": 6.296291,
+          "end": 6.643499
+        },
+        {
+          "text": "280",
+          "start": 6.886583,
+          "end": 7.824083
+        },
+        {
+          "text": "gol",
+          "start": 7.824083,
+          "end": 8.229166
+        }
+      ],
+      "sprite": "adult",
+      "effect": "number",
+      "value": "280",
+      "sources": [
+        "https://www.tottenhamhotspur.com/news/987766/harry-kane-departs-to-bayern-munich"
+      ]
+    },
+    {
+      "label": "FINAL LIGA CHAMPIONS",
+      "title": "Begitu dekat dengan gelar",
+      "narration": "Tetapi gol tidak selalu berujung trofi. Pada 2019, Tottenham mencapai final Liga Champions dan kalah dari Liverpool.",
+      "frames": 248,
+      "words": [
+        {
+          "text": "Tetapi",
+          "start": 0.098166,
+          "end": 0.456957
+        },
+        {
+          "text": "gol",
+          "start": 0.456958,
+          "end": 0.723166
+        },
+        {
+          "text": "tidak",
+          "start": 0.723166,
+          "end": 0.954624
+        },
+        {
+          "text": "selalu",
+          "start": 0.954625,
+          "end": 1.267125
+        },
+        {
+          "text": "berujung",
+          "start": 1.267125,
+          "end": 1.625916
+        },
+        {
+          "text": "trofi",
+          "start": 1.625916,
+          "end": 2.146749
+        },
+        {
+          "text": "Pada",
+          "start": 2.92825,
+          "end": 3.148166
+        },
+        {
+          "text": "2019",
+          "start": 3.148166,
+          "end": 4.1203739
+        },
+        {
+          "text": "Tottenham",
+          "start": 4.386583,
+          "end": 4.768499
+        },
+        {
+          "text": "mencapai",
+          "start": 4.7685,
+          "end": 5.069416
+        },
+        {
+          "text": "final",
+          "start": 5.069458,
+          "end": 5.312499
+        },
+        {
+          "text": "Liga",
+          "start": 5.3125,
+          "end": 5.497666
+        },
+        {
+          "text": "Champions",
+          "start": 5.497666,
+          "end": 6.041666
+        },
+        {
+          "text": "dan",
+          "start": 6.041666,
+          "end": 6.226832
+        },
+        {
+          "text": "kalah",
+          "start": 6.226833,
+          "end": 6.458333
+        },
+        {
+          "text": "dari",
+          "start": 6.458333,
+          "end": 6.631958
+        },
+        {
+          "text": "Liverpool",
+          "start": 6.631958,
+          "end": 7.233791
+        }
+      ],
+      "sprite": "adult",
+      "effect": "trophy",
+      "value": "",
+      "sources": [
+        "https://fcbayern.com/en/teams/first-team/harry-kane"
+      ]
+    },
+    {
+      "label": "PIALA DUNIA 2022",
+      "title": "Penalti yang melambung",
+      "narration": "Tiga tahun kemudian, sebagai kapten Inggris, Kane gagal menyamakan skor dari titik penalti. Inggris tersingkir oleh Prancis.",
+      "frames": 251,
+      "words": [
+        {
+          "text": "Tiga",
+          "start": 0.098166,
+          "end": 0.318041
+        },
+        {
+          "text": "tahun",
+          "start": 0.318041,
+          "end": 0.549541
+        },
+        {
+          "text": "kemudian",
+          "start": 0.549541,
+          "end": 1.128249
+        },
+        {
+          "text": "sebagai",
+          "start": 1.382875,
+          "end": 1.741666
+        },
+        {
+          "text": "kapten",
+          "start": 1.741666,
+          "end": 2.019457
+        },
+        {
+          "text": "Inggris",
+          "start": 2.019458,
+          "end": 2.493999
+        },
+        {
+          "text": "Kane",
+          "start": 2.748625,
+          "end": 2.956958
+        },
+        {
+          "text": "gagal",
+          "start": 2.956958,
+          "end": 3.246291
+        },
+        {
+          "text": "menyamakan",
+          "start": 3.246291,
+          "end": 3.639791
+        },
+        {
+          "text": "skor",
+          "start": 3.639833,
+          "end": 3.917583
+        },
+        {
+          "text": "dari",
+          "start": 3.917583,
+          "end": 4.091208
+        },
+        {
+          "text": "titik",
+          "start": 4.091208,
+          "end": 4.357416
+        },
+        {
+          "text": "penalti",
+          "start": 4.357416,
+          "end": 4.936124
+        },
+        {
+          "text": "Inggris",
+          "start": 5.707875,
+          "end": 6.0435
+        },
+        {
+          "text": "tersingkir",
+          "start": 6.0435,
+          "end": 6.518041
+        },
+        {
+          "text": "oleh",
+          "start": 6.518041,
+          "end": 6.714791
+        },
+        {
+          "text": "Prancis",
+          "start": 6.714833,
+          "end": 7.305124
+        }
+      ],
+      "sprite": "adult",
+      "effect": "goal",
+      "value": "",
+      "sources": [
+        "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2022/france-v-england-world-cup-2022-quarter-final-saturday-10-december-qatar-match-centre"
+      ]
+    },
+    {
+      "label": "LANGKAH BARU",
+      "title": "Pergi dari Spurs",
+      "narration": "Pada 2023, Kane meninggalkan Tottenham menuju Bayern München. Ia mengejar tantangan baru dan gelar bersama tim.",
+      "frames": 242,
+      "words": [
+        {
+          "text": "Pada",
+          "start": 0.107875,
+          "end": 0.339333
+        },
+        {
+          "text": "2023",
+          "start": 0.339333,
+          "end": 1.392582
+        },
+        {
+          "text": "Kane",
+          "start": 1.6935,
+          "end": 1.867125
+        },
+        {
+          "text": "meninggalkan",
+          "start": 1.867125,
+          "end": 2.306958
+        },
+        {
+          "text": "Tottenham",
+          "start": 2.306958,
+          "end": 2.746749
+        },
+        {
+          "text": "menuju",
+          "start": 2.74675,
+          "end": 3.070833
+        },
+        {
+          "text": "Bayern",
+          "start": 3.070833,
+          "end": 3.360166
+        },
+        {
+          "text": "München",
+          "start": 3.360166,
+          "end": 3.869416
+        },
+        {
+          "text": "Ia",
+          "start": 4.643041,
+          "end": 4.851374
+        },
+        {
+          "text": "mengejar",
+          "start": 4.851375,
+          "end": 5.210166
+        },
+        {
+          "text": "tantangan",
+          "start": 5.210166,
+          "end": 5.557374
+        },
+        {
+          "text": "baru",
+          "start": 5.557416,
+          "end": 5.835166
+        },
+        {
+          "text": "dan",
+          "start": 5.835166,
+          "end": 6.031916
+        },
+        {
+          "text": "gelar",
+          "start": 6.031958,
+          "end": 6.274999
+        },
+        {
+          "text": "bersama",
+          "start": 6.275,
+          "end": 6.633791
+        },
+        {
+          "text": "tim",
+          "start": 6.633791,
+          "end": 7.015749
+        }
+      ],
+      "sprite": "adult",
+      "effect": "road",
+      "value": "",
+      "sources": [
+        "https://www.tottenhamhotspur.com/news/987766/harry-kane-departs-to-bayern-munich"
+      ]
+    },
+    {
+      "label": "MUSIM PERTAMA",
+      "title": "36 gol di Bundesliga",
+      "narration": "Di musim pertamanya, ia mencetak 36 gol liga. Tetapi Bayern tidak menjadi juara Bundesliga musim itu.",
+      "frames": 235,
+      "words": [
+        {
+          "text": "Di",
+          "start": 0.098166,
+          "end": 0.248624
+        },
+        {
+          "text": "musim",
+          "start": 0.248625,
+          "end": 0.480083
+        },
+        {
+          "text": "pertamanya",
+          "start": 0.480083,
+          "end": 1.139791
+        },
+        {
+          "text": "ia",
+          "start": 1.406,
+          "end": 1.568041
+        },
+        {
+          "text": "mencetak",
+          "start": 1.568041,
+          "end": 1.949999
+        },
+        {
+          "text": "36",
+          "start": 1.95,
+          "end": 2.586582
+        },
+        {
+          "text": "gol",
+          "start": 2.586583,
+          "end": 2.737041
+        },
+        {
+          "text": "liga",
+          "start": 2.737041,
+          "end": 3.211582
+        },
+        {
+          "text": "Tetapi",
+          "start": 3.983333,
+          "end": 4.457874
+        },
+        {
+          "text": "Bayern",
+          "start": 4.457875,
+          "end": 4.816666
+        },
+        {
+          "text": "tidak",
+          "start": 4.816666,
+          "end": 5.001832
+        },
+        {
+          "text": "menjadi",
+          "start": 5.001833,
+          "end": 5.314333
+        },
+        {
+          "text": "juara",
+          "start": 5.314333,
+          "end": 5.580541
+        },
+        {
+          "text": "Bundesliga",
+          "start": 5.580541,
+          "end": 6.089791
+        },
+        {
+          "text": "musim",
+          "start": 6.089833,
+          "end": 6.332874
+        },
+        {
+          "text": "itu",
+          "start": 6.332875,
+          "end": 6.772708
+        }
+      ],
+      "sprite": "adult",
+      "effect": "number",
+      "value": "36",
+      "sources": [
+        "https://fcbayern.com/en/teams/first-team/harry-kane"
+      ]
+    },
+    {
+      "label": "2025",
+      "title": "Akhir penantian",
+      "narration": "Penantian gelar besar bersama klub akhirnya berakhir. Pada 2025, Kane dan Bayern menjuarai Bundesliga.",
+      "frames": 235,
+      "words": [
+        {
+          "text": "Penantian",
+          "start": 0.098166,
+          "end": 0.526374
+        },
+        {
+          "text": "gelar",
+          "start": 0.526375,
+          "end": 0.7
+        },
+        {
+          "text": "besar",
+          "start": 0.7,
+          "end": 1.035666
+        },
+        {
+          "text": "bersama",
+          "start": 1.035666,
+          "end": 1.394457
+        },
+        {
+          "text": "klub",
+          "start": 1.394458,
+          "end": 1.625916
+        },
+        {
+          "text": "akhirnya",
+          "start": 1.625916,
+          "end": 2.007874
+        },
+        {
+          "text": "berakhir",
+          "start": 2.007875,
+          "end": 2.575
+        },
+        {
+          "text": "Pada",
+          "start": 3.3565,
+          "end": 3.587958
+        },
+        {
+          "text": "2025",
+          "start": 3.587958,
+          "end": 4.6296659
+        },
+        {
+          "text": "Kane",
+          "start": 4.942125,
+          "end": 5.162041
+        },
+        {
+          "text": "dan",
+          "start": 5.162041,
+          "end": 5.312499
+        },
+        {
+          "text": "Bayern",
+          "start": 5.3125,
+          "end": 5.601833
+        },
+        {
+          "text": "menjuarai",
+          "start": 5.601833,
+          "end": 6.030083
+        },
+        {
+          "text": "Bundesliga",
+          "start": 6.030083,
+          "end": 6.782416
+        }
+      ],
+      "sprite": "winner",
+      "effect": "trophy",
+      "value": "",
+      "sources": [
+        "https://fcbayern.com/en/news/2025/05/harry_kane_defends_top_scorers_canon"
+      ]
+    },
+    {
+      "label": "MUSIM TERBAIK",
+      "title": "61 gol untuk Bayern",
+      "narration": "Ia belum berhenti. Pada musim 2025–2026, Kane mencetak 61 gol di semua kompetisi untuk Bayern.",
+      "frames": 256,
+      "words": [
+        {
+          "text": "Ia",
+          "start": 0.099083,
+          "end": 0.365291
+        },
+        {
+          "text": "belum",
+          "start": 0.365291,
+          "end": 0.585166
+        },
+        {
+          "text": "berhenti",
+          "start": 0.585166,
+          "end": 1.198582
+        },
+        {
+          "text": "Pada",
+          "start": 1.979166,
+          "end": 2.164332
+        },
+        {
+          "text": "musim",
+          "start": 2.164333,
+          "end": 2.430541
+        },
+        {
+          "text": "2025",
+          "start": 2.430541,
+          "end": 3.333333
+        },
+        {
+          "text": "2026",
+          "start": 3.333333,
+          "end": 4.374999
+        },
+        {
+          "text": "Kane",
+          "start": 4.664333,
+          "end": 4.837958
+        },
+        {
+          "text": "mencetak",
+          "start": 4.837958,
+          "end": 5.173624
+        },
+        {
+          "text": "61",
+          "start": 5.173625,
+          "end": 5.717582
+        },
+        {
+          "text": "gol",
+          "start": 5.717583,
+          "end": 5.960624
+        },
+        {
+          "text": "di",
+          "start": 5.960666,
+          "end": 6.030082
+        },
+        {
+          "text": "semua",
+          "start": 6.030083,
+          "end": 6.273124
+        },
+        {
+          "text": "kompetisi",
+          "start": 6.273166,
+          "end": 6.747666
+        },
+        {
+          "text": "untuk",
+          "start": 6.747666,
+          "end": 6.979166
+        },
+        {
+          "text": "Bayern",
+          "start": 6.979166,
+          "end": 7.499999
+        }
+      ],
+      "sprite": "winner",
+      "effect": "number",
+      "value": "61",
+      "sources": [
+        "https://www.englandfootball.com/articles/2026/Oct/26/harry-kane-ballon-d-or-2026-reaction-20262610"
+      ]
+    },
+    {
+      "label": "BALLON D’OR 2026",
+      "title": "Kembali menyebut Tottenham",
+      "narration": "Lalu datang Ballon d’Or 2026. Di panggung penghargaan, Kane berterima kasih kepada Tottenham, klub yang membantunya tumbuh.",
+      "frames": 259,
+      "words": [
+        {
+          "text": "Lalu",
+          "start": 0.098166,
+          "end": 0.364332
+        },
+        {
+          "text": "datang",
+          "start": 0.364333,
+          "end": 0.653666
+        },
+        {
+          "text": "Ballon",
+          "start": 0.653708,
+          "end": 0.919916
+        },
+        {
+          "text": "d’Or",
+          "start": 0.919916,
+          "end": 1.128249
+        },
+        {
+          "text": "2026",
+          "start": 1.12825,
+          "end": 2.274083
+        },
+        {
+          "text": "Di",
+          "start": 3.055541,
+          "end": 3.182874
+        },
+        {
+          "text": "panggung",
+          "start": 3.182875,
+          "end": 3.449083
+        },
+        {
+          "text": "penghargaan",
+          "start": 3.449083,
+          "end": 4.143541
+        },
+        {
+          "text": "Kane",
+          "start": 4.432875,
+          "end": 4.594916
+        },
+        {
+          "text": "berterima",
+          "start": 4.594916,
+          "end": 4.907416
+        },
+        {
+          "text": "kasih",
+          "start": 4.907416,
+          "end": 5.196749
+        },
+        {
+          "text": "kepada",
+          "start": 5.19675,
+          "end": 5.439791
+        },
+        {
+          "text": "Tottenham",
+          "start": 5.439833,
+          "end": 6.041666
+        },
+        {
+          "text": "klub",
+          "start": 6.296291,
+          "end": 6.516207
+        },
+        {
+          "text": "yang",
+          "start": 6.516208,
+          "end": 6.631958
+        },
+        {
+          "text": "membantunya",
+          "start": 6.631958,
+          "end": 7.071749
+        },
+        {
+          "text": "tumbuh",
+          "start": 7.07175,
+          "end": 7.581
+        }
+      ],
+      "sprite": "winner",
+      "effect": "award",
+      "value": "",
+      "sources": [
+        "https://www.tottenhamhotspur.com/news/1181217/i-want-to-say-thank-you-to-tottenham-hotspur-ballon-dor-winner-harry-kane"
+      ]
+    },
+    {
+      "label": "HARRY KANE",
+      "title": "Perjalanan itu berarti",
+      "narration": "Kisah ini bukan jalan lurus menuju emas. Ada penolakan, kekalahan, dan penantian panjang di sepanjang jalannya.",
+      "frames": 241,
+      "words": [
+        {
+          "text": "Kisah",
+          "start": 0.098166,
+          "end": 0.364332
+        },
+        {
+          "text": "ini",
+          "start": 0.364333,
+          "end": 0.607374
+        },
+        {
+          "text": "bukan",
+          "start": 0.607416,
+          "end": 0.850457
+        },
+        {
+          "text": "jalan",
+          "start": 0.850458,
+          "end": 1.081958
+        },
+        {
+          "text": "lurus",
+          "start": 1.081958,
+          "end": 1.371291
+        },
+        {
+          "text": "menuju",
+          "start": 1.371291,
+          "end": 1.637499
+        },
+        {
+          "text": "emas",
+          "start": 1.6375,
+          "end": 2.112041
+        },
+        {
+          "text": "Ada",
+          "start": 2.883791,
+          "end": 3.126832
+        },
+        {
+          "text": "penolakan",
+          "start": 3.126833,
+          "end": 3.763416
+        },
+        {
+          "text": "kekalahan",
+          "start": 4.018041,
+          "end": 4.666207
+        },
+        {
+          "text": "dan",
+          "start": 4.944,
+          "end": 5.175458
+        },
+        {
+          "text": "penantian",
+          "start": 5.175458,
+          "end": 5.545833
+        },
+        {
+          "text": "panjang",
+          "start": 5.545833,
+          "end": 5.916208
+        },
+        {
+          "text": "di",
+          "start": 5.916208,
+          "end": 5.974083
+        },
+        {
+          "text": "sepanjang",
+          "start": 5.974083,
+          "end": 6.402333
+        },
+        {
+          "text": "jalannya",
+          "start": 6.402333,
+          "end": 6.992624
+        }
+      ],
+      "sprite": "winner",
+      "effect": "award",
+      "value": "",
+      "sources": [
+        "https://www.englandfootball.com/articles/2026/Jul/28/england-harry-kane-grassroots-story-origins-20262807"
+      ]
+    }
+  ]
+}
