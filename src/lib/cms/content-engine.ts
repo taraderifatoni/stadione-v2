@@ -2,7 +2,7 @@ import "server-only"
 import { randomUUID, createHash } from "node:crypto"
 import { createAdminClient } from "@/lib/supabase/admin"
 import { ENGINE, auditPacket, contentDigest, packetDigest, type Packet, type Source } from "./engine"
-import { sourceBytes, renderCarousel, renderReel } from "./engine-media"
+import { sourceBytes, renderCarousel, renderReel, renderIllustrationReel } from "./engine-media"
 import { CAROUSEL_STYLE, CAROUSEL_DESIGN_BRIEF } from "./carousel-style"
 import { articleSlides, articleHtml, WRITING_STANDARD } from "./news-writing"
 import { writingReferenceIssues, writerBrief } from "./writing-references"
@@ -59,20 +59,24 @@ export async function generateEnginePreview(id:string) {
     savedTimestamp=savedItem.updated_at
     if(issues.length) {await checkpoint("CLAIM_AUDIT","BLOCKED",{issues});return {id,state:"BLOCKED",issues}}
     await checkpoint("RENDER")
-    const rendered=item.format==="REEL"?[await renderReel(packet)]:await renderCarousel(packet)
+    const rendered=item.format==="REEL"?[packet.media.illustration_reel ? await renderIllustrationReel(packet) : await renderReel(packet)]:await renderCarousel(packet)
     const assets=[]
     for(let i=0;i<rendered.length;i++) {
       const extension=item.format==="REEL"?"mp4":"jpg";const path=`engine/${id}/${fingerprint}-${i+1}.${extension}`
       const {error:uploadError}=await admin.storage.from("stadione-cms").upload(path,rendered[i].bytes,{contentType:item.format==="REEL"?"video/mp4":"image/jpeg",upsert:true})
       if(uploadError)throw new Error(`Upload render gagal: ${uploadError.message}`)
       const {data:url}=admin.storage.from("stadione-cms").getPublicUrl(path)
-      const clips=packet.media.video_sources || []; assets.push({...packet.slides[i],type:item.format==="REEL"?"video":"image",...(item.format==="REEL"?{video_url:url.publicUrl}:{url:url.publicUrl}),credit:item.format==="REEL"?clips.map(c=>c.credit).join(" · "):packet.media.credit,rights_status:"CLEARED",rights_evidence:item.format==="REEL"?clips.map(c=>c.rights_evidence).join(" · "):packet.media.rights_evidence,source_url:item.format==="REEL"?clips[0]?.page_url:packet.media.url,source_clips:item.format==="REEL"?clips.map(c=>({id:c.id,platform:c.platform,page_url:c.page_url,creator:c.creator,credit:c.credit,rights_status:c.rights_status,scope:c.scope})):undefined,render_audit:rendered[i].audit})
+      const clips=packet.media.video_sources || []; assets.push({...packet.slides[i],type:item.format==="REEL"?"video":"image",...(item.format==="REEL"?{video_url:url.publicUrl}:{url:url.publicUrl}),credit:item.format==="REEL"?(packet.media.illustration_reel ? [...new Set(packet.media.illustration_reel.scenes.map(s=>s.image_credit)),packet.media.illustration_reel.audio_credit].join(" · ") : clips.map(c=>c.credit).join(" · ")):packet.media.credit,rights_status:"CLEARED",rights_evidence:item.format==="REEL"?(packet.media.illustration_reel ? [...packet.media.illustration_reel.scenes.map(s=>s.rights_evidence),packet.media.illustration_reel.audio_evidence].join(" · ") : clips.map(c=>c.rights_evidence).join(" · ")):packet.media.rights_evidence,source_url:item.format==="REEL"?(packet.media.illustration_reel ? packet.sources.find(s=>s.primary)?.url : clips[0]?.page_url):packet.media.url,source_clips:item.format==="REEL"?clips.map(c=>({id:c.id,platform:c.platform,page_url:c.page_url,creator:c.creator,credit:c.credit,rights_status:c.rights_status,scope:c.scope})):undefined,render_audit:rendered[i].audit})
     }
     const caption=packet.article?.caption || packet.claims.map(c=>c.text).join("\n\n")
     const readyMeta={...baseMeta,engine_state:"READY_FOR_REVIEW",engine_issues:[],fact_check_status:"VERIFIED",rights_status:"CLEARED",rendered_packet_digest:packetDigest(packet),render_audit:{ok:true,format:item.format,assets:rendered.map(r=>r.audit)}}
     const {data:ready,error:finishError}=await admin.from("stadione_content_items").update({title:packet.slides[0].headline,caption,assets,editorial_meta:readyMeta}).eq("id",id).eq("updated_at",savedTimestamp).select("*").single()
     if(finishError||!ready)throw finishError || new Error("Preview gagal disimpan")
     savedTimestamp=ready.updated_at
+    if (packet.media.illustration_reel) {
+      await checkpoint("READY_FOR_REVIEW","COMPLETED",{assets:assets.length,review_required:true});
+      return {id,state:"READY_FOR_REVIEW",assets:assets.length,review_required:true};
+    }
     const approval={actor_id:"AUTO_EDITORIAL",approved_at:new Date().toISOString(),digest:contentDigest(ready)}
     // Preserve the normal slot; additional work never moves a routine plan.
     const planned=Date.parse(String(meta.planned_at || item.scheduled_at || ""))

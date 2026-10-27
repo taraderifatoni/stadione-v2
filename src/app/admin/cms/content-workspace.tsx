@@ -2031,9 +2031,7 @@ function EditorModal({
                     </ul>
                   )}
                   <p className="mt-2">
-                    Research → klaim → potongan video nyata dari
-                    portal/YouTube/TikTok/X → montage Reels atau carousel →
-                    quality gate → jadwal otomatis. AI tidak membuat footage.
+                    Research → klaim → montage video sumber, atau Reels ilustrasi dengan narasi → pemeriksaan editor. Jalur ilustrasi memerlukan gambar dan rekaman narasi siap pakai.
                   </p>
                   <button
                     disabled={generating}
@@ -2052,9 +2050,7 @@ function EditorModal({
               />
               <p className="text-[10px] text-[#8A8375]">
                 Simpan sebelum membuat preview. Untuk Reels, isi video_sources
-                dan scenes: URL halaman, URL media, platform, kreator,
-                transkrip, timestamp potongan, kredit, hak media/audio, dan
-                claim_ids. Engine membuat montage, bukan footage AI.
+                dan scenes untuk montage. Untuk ilustrasi, isi media.illustration_reel: audio_url, audio_credit, audio_rights CLEARED, audio_evidence, dan scenes berisi image_url, image_credit, rights_evidence, start, end, narration, claim_ids. Gunakan URL HTTPS publik. Waktu dimulai dari 0 dan berurutan. Simpan draf lalu buat preview. Narasi dan gambar perlu disiapkan terlebih dahulu.
                 Untuk carousel, siapkan cover kolase editorial sesuai gaya
                 Stadione; foto sumber saja belum menjadi cover siap terbit.
               </p>
@@ -2160,6 +2156,9 @@ function EditorModal({
                     placeholder="https://.../media.jpg"
                   />
                 </Field>
+                {item.format === "REEL" && item.assets?.[0]?.video_url && (
+                  <video controls playsInline className="max-h-[600px] rounded-xl" src={item.assets[0].video_url} />
+                )}
                 {item.format === "CAROUSEL" && (
                   <div>
                     <div className="mb-2 text-[11px] font-bold text-[#B5AC8A]">

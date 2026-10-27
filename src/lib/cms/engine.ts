@@ -79,6 +79,10 @@ export type Packet = {
     video_sources?: VideoSource[];
     scenes?: ReelScene[];
     catalog_audio?: ReelCatalogAudio;
+    illustration_reel?: {
+      audio_url: string; audio_credit: string; audio_rights: string; audio_evidence: string;
+      scenes: { image_url: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
+    };
   };
 };
 type Item = {
@@ -248,6 +252,21 @@ export function auditPacket(
   if (format === "REEL") {
     if(packet.article && (!/^https:\/\//.test(packet.media.article_image?.url || '') || !packet.media.article_image?.credit))
       errors.push("Artikel pasangan Reels perlu foto/frame asli tanpa overlay sebagai hero; URL video bukan foto artikel.");
+    const illustration = packet.media.illustration_reel;
+    if (illustration) {
+      if (!/^https:\/\//.test(illustration.audio_url || "") || !illustration.audio_credit || illustration.audio_rights !== "CLEARED" || !illustration.audio_evidence)
+        errors.push("Narasi perlu URL HTTPS, kredit dan bukti hak audio.");
+      const scenes = Array.isArray(illustration.scenes) ? illustration.scenes : [];
+      if (scenes.length < 3 || scenes.length > 12) errors.push("Reel ilustrasi perlu 3–12 adegan.");
+      scenes.forEach((scene, i) => {
+        if (!/^https:\/\//.test(scene.image_url || "") || !scene.image_credit || !scene.rights_evidence || !scene.narration || scene.narration.length > 180 || !scene.claim_ids?.length || scene.claim_ids.some(id => !ids.has(id))) errors.push(`Adegan ilustrasi ${i+1}: lengkapi gambar, hak, narasi, dan klaim.`);
+        if (!Number.isFinite(scene.start) || !Number.isFinite(scene.end) || scene.end <= scene.start || scene.end - scene.start > 20 || (i === 0 ? scene.start !== 0 : Math.abs(scene.start - scenes[i-1].end) > 0.01)) errors.push(`Adegan ilustrasi ${i+1}: waktu harus berurutan tanpa jeda, maksimal 20 detik.`);
+        if ((scene.narration.match(/\d+(?:[.,:]\d+)*/g) || []).some(n => !numbers.has(n))) errors.push(`Adegan ilustrasi ${i+1}: angka tidak ada di claim ledger.`);
+      });
+      const total = scenes.at(-1)?.end || 0;
+      if (total < 8 || total > 90) errors.push("Durasi Reel ilustrasi harus 8–90 detik.");
+      if (packet.media.catalog_audio) errors.push("Reel ilustrasi memakai narasi; musik katalog tidak didukung pada jalur ini.");
+    } else {
     const clips = packet.media.video_sources || [],
       scenes = packet.media.scenes || [],
       clipIds = new Set(clips.map((c) => c.id));
@@ -302,6 +321,7 @@ export function auditPacket(
     );
     if (total < 8 || total > 90)
       errors.push("Durasi montage Reel harus 8–90 detik.");
+    }
   } else {
     if (format === "CAROUSEL") errors.push(...editorialCoverIssues(packet));
     const m = packet.media;

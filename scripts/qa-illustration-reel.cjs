@@ -1,0 +1,13 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+const assert=require('node:assert/strict'), fs=require('node:fs'), path=require('node:path'), ts=require('typescript'), Module=require('node:module'), {execFileSync}=require('node:child_process'), sharp=require('sharp');
+const root=path.resolve(__dirname,'..'); require('./cms-load.cjs');
+function load(file,replacements={}) {let source=fs.readFileSync(path.join(root,file),'utf8'); for(const [a,b] of Object.entries(replacements)) source=source.replace(a,b); const m=new Module(path.join(root,file),module);m.filename=path.join(root,file);m.paths=Module._nodeModulePaths(root);m._compile(ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText,m.filename);return m.exports;}
+(async()=>{const dir=fs.mkdtempSync('/tmp/stadione-illustration-qa-');try {
+ global.__qaImage=await sharp({create:{width:800,height:1200,channels:3,background:'#754d35'}}).jpeg().toBuffer(); const wav=path.join(dir,'narration.wav');execFileSync('ffmpeg',['-v','error','-y','-f','lavfi','-i','sine=frequency=350:sample_rate=48000','-t','9','-c:a','pcm_s16le',wav]);global.__qaAudio=fs.readFileSync(wav);
+ const media=load('src/lib/cms/engine-media.ts',{'await sourceBytes(spec.audio_url, 25_000_000)':'global.__qaAudio','await sourceBytes(scene.image_url, 12_000_000)':'global.__qaImage'});
+ const scenes=[0,3,6].map((start,i)=>({image_url:'https://example.org/a.jpg',image_credit:'QA',rights_evidence:'Synthetic fixture',start,end:start+3,narration:['Dari lapangan kecil','Menuju panggung besar','Perjalanan seorang pemain'][i],claim_ids:['c']}));
+ const result=await media.renderIllustrationReel({media:{illustration_reel:{audio_url:'https://example.org/a.wav',audio_credit:'QA',audio_rights:'CLEARED',audio_evidence:'Synthetic fixture',scenes}}});
+ assert.equal(result.audit.width,1080);assert.equal(result.audit.height,1920);assert.equal(result.audit.scene_count,3);assert(result.audit.duration>=8.9);assert(result.bytes.length>10000);
+ await assert.rejects(()=>media.renderIllustrationReel({media:{illustration_reel:{audio_url:'https://example.org/a.wav',scenes:[...scenes.slice(0,2),{...scenes[2],end:15}]}}}),/lebih pendek/);
+ console.log(JSON.stringify({ok:true,tests:['illustration_render','voice_track','scene_captions','vertical_mp4','short_audio_rejected']}));
+}finally{fs.rmSync(dir,{recursive:true,force:true})}})().catch(e=>{console.error(e);process.exitCode=1});

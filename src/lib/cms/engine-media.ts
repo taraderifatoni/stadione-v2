@@ -361,3 +361,35 @@ scenes = packet.media.scenes || [],
     await fs.rm(directory, { recursive: true, force: true });
   }
 }
+
+// Illustration reel: a reviewed voice track and owned/licensed stills, with scene captions.
+export async function renderIllustrationReel(packet: Packet) {
+  const spec = packet.media.illustration_reel;
+  if (!spec) throw new Error("Packet ilustrasi tidak tersedia.");
+  const dir = await fs.mkdtemp(join(tmpdir(), "stadione-illustrated-"));
+  try {
+    const audio = join(dir, "narration.audio");
+    await fs.writeFile(audio, await sourceBytes(spec.audio_url, 25_000_000));
+    const audioInfo = await probe(audio);
+    const audioDuration = Number(audioInfo.format.duration);
+    if (!audioInfo.streams.some((s: {codec_type: string}) => s.codec_type === "audio") || !Number.isFinite(audioDuration) || audioDuration + 0.05 < spec.scenes[spec.scenes.length-1].end) throw new Error("Audio narasi tidak ada atau lebih pendek dari adegan.");
+    const segments: string[] = [];
+    for (let i=0; i<spec.scenes.length; i++) {
+      const scene=spec.scenes[i], duration=scene.end-scene.start;
+      const image=join(dir, `image-${i}.jpg`), caption=join(dir, `caption-${i}.png`), segment=join(dir, `segment-${i}.mp4`);
+      const imageBytes=await sourceBytes(scene.image_url, 12_000_000);
+      await sharp(imageBytes, {limitInputPixels: 30000000}).rotate().resize(1080,1920,{fit:"cover"}).jpeg({quality:88}).toFile(image);
+      const text=await measuredText(scene.narration, 880, 330, 46, true);
+      await fs.writeFile(caption,text.buffer);
+      const filter="[0:v]scale=1188:2112,zoompan=z='min(zoom+0.0004,1.08)':d=1:s=1080x1920:fps=30,setsar=1[v];[v]drawbox=x=60:y=1350:w=960:h=420:color=black@0.66:t=fill[base];[base][2:v]overlay=(W-w)/2:1400[out]";
+      await run("ffmpeg",["-v","error","-y","-nostdin","-loop","1","-framerate","30","-i",image,"-ss",String(scene.start),"-t",String(duration),"-i",audio,"-i",caption,"-filter_complex",filter,"-map","[out]","-map","1:a:0","-t",String(duration),"-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-c:a","aac","-ar","48000","-ac","2",segment],{timeout:180000,maxBuffer:2000000});
+      segments.push(segment);
+    }
+    const list=join(dir,"concat.txt"), output=join(dir,"reel.mp4");
+    await fs.writeFile(list,segments.map(f=>`file '${f}'`).join("\n"));
+    await run("ffmpeg",["-v","error","-y","-nostdin","-f","concat","-safe","0","-i",list,"-c","copy","-movflags","+faststart",output],{timeout:120000,maxBuffer:2000000});
+    const meta=await probe(output), video=meta.streams.find((s: {codec_type:string})=>s.codec_type==="video"), duration=Number(meta.format.duration);
+    if(video?.width!==1080 || video?.height!==1920 || !meta.streams.some((s: {codec_type:string})=>s.codec_type==="audio") || duration < 7.8 || duration > 90.2) throw new Error("Video ilustrasi gagal audit format atau durasi.");
+    return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,illustration:true,narration:true,ai_footage:true}};
+  } finally {await fs.rm(dir,{recursive:true,force:true});}
+}
