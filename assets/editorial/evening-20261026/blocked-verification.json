@@ -1,0 +1,274 @@
+{
+  "checked_at": "2026-10-27T00:03:43.411Z",
+  "outcome": "BLOCKED_BEFORE_PRODUCTION",
+  "stage": "SOURCE_CONTEXT_AND_MEDIA_PERMISSION",
+  "target": {
+    "id": "01390d63-4775-49dd-bce2-78a04436a4ce",
+    "plan_key": "2026-10-26:mon-pm",
+    "pillar": "Tarkam & Komunitas",
+    "format": "REEL",
+    "status": "PENDING_REVIEW",
+    "scheduled_at": "2026-10-26T13:00:00+00:00",
+    "assets": 0,
+    "parent_article": null,
+    "attempts": 0,
+    "rights_status": "PENDING"
+  },
+  "blocking_reasons": [
+    "SlotUGCthemeexplicitlyrequireswrittenpermission/contextdate-location. ThreeidentifiedYouTubevideos havestandardlicence withnoavailablewrittenredistributiongrant; no fabricatedpermission.",
+    "Fresh26OctOffsidealbumisphotographs ofdinner, notverified25Octclinicfootage. Promoeventschedule nottreatedasproof ofcompletedactivity.",
+    "Twofullindependentproductionreportsincludingprimary notcompleted: ANTARAfull23Octoberread, JawaPospaginationnotfullyresolved.",
+    "No qualifyinglicensedvideo/audioavailable inreviewedcandidates. Audioquality,transcript,timestamps,render andpublicationgates wereNOTpassed orclaimed. No silentvideo/trendingmusicdefault/AI/slideshow substitution."
+  ],
+  "discovery": {
+    "pool": {
+      "provider": "ReleasegetDailySportsPoolSerpAPI via committedcms-audience-pool/cms-load",
+      "fetched_at": "2026-10-26T11:56:53.664Z",
+      "sha256": "9c3b0dd463ca87d47f8fc63882e2c7017187376f91e76283e80207f547bf2ed3",
+      "topic": "EvraIndonesia community/fanactivities appearsnews pool; unrelatedfashion/streamingtrailers rejected despitecommunityaliasranking."
+    },
+    "queries": [
+      {
+        "queries": [
+          "sepak bola tarkam komunitas 26 Oktober 2026"
+        ],
+        "checked_at": "2026-10-26T11:57:38.792Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 0,
+        "sha256": "37fbe40610987e2fb0b643dd85d28551d5425d9c645987ebe508dec557e22ca0"
+      },
+      {
+        "queries": [
+          "Patrice Evra Park Ji sung Bintaro OGFC 2026"
+        ],
+        "checked_at": "2026-10-26T11:58:46.399Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 0,
+        "sha256": "21d30e4aad270351bd5681fa108202782bf25c633975b546787bfb441fe88576"
+      },
+      {
+        "queries": [
+          "Patrice Evra Jakarta"
+        ],
+        "checked_at": "2026-10-26T11:59:32.411Z",
+        "provider": "YOUTUBE_DATA_API",
+        "cached": false,
+        "candidates": 4,
+        "sha256": "d9c55b09a6395d89031c10738e56eccc5538b7a896186157ff48755032539289"
+      }
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=GmvFGuIaths",
+        "creator": "STARPRO Indonesia",
+        "published_at": "2026-10-23T08:51:12Z",
+        "license": "youtube",
+        "result": "PERMISSION_UNCONFIRMED",
+        "metadata_checked_at": "2026-10-26T11:59:32.411Z",
+        "detail": "Public YouTube metadata gives standard youtube licence, not a redistributable CC licence. Reviewed description has source/credit orcopyright/channelpromotion but no written permission forStadione reupload. Browserpage open was throttled. No download or visual/audio inspection claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_DESCRIPTION",
+          "summary": "Originalpage URL,creator,date,licence anddescription reviewed. No availablewritten grant located inCMS target or editorialpermissionfile search. Sourceis23October press/arrival footage; notverified25Octoberclinic."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=2GhhdWIjMC0",
+        "creator": "BOLASPORTCOM",
+        "published_at": "2026-10-23T14:55:54Z",
+        "license": "youtube",
+        "result": "PERMISSION_UNCONFIRMED",
+        "metadata_checked_at": "2026-10-26T11:59:32.411Z",
+        "detail": "Public YouTube metadata gives standard youtube licence, not a redistributable CC licence. Reviewed description has source/credit orcopyright/channelpromotion but no written permission forStadione reupload. Browserpage open was throttled. No download or visual/audio inspection claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_DESCRIPTION",
+          "summary": "Originalpage URL,creator,date,licence anddescription reviewed. No availablewritten grant located inCMS target or editorialpermissionfile search. Sourceis23October press/arrival footage; notverified25Octoberclinic."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=y_yLiOenGKY",
+        "creator": "BolacomID",
+        "published_at": "2026-10-23T09:53:57Z",
+        "license": "youtube",
+        "result": "PERMISSION_UNCONFIRMED",
+        "metadata_checked_at": "2026-10-26T11:59:32.411Z",
+        "detail": "Public YouTube metadata gives standard youtube licence, not a redistributable CC licence. Reviewed description has source/credit orcopyright/channelpromotion but no written permission forStadione reupload. Browserpage open was throttled. No download or visual/audio inspection claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_DESCRIPTION",
+          "summary": "Originalpage URL,creator,date,licence anddescription reviewed. No availablewritten grant located inCMS target or editorialpermissionfile search. Sourceis23October press/arrival footage; notverified25Octoberclinic."
+        }
+      }
+    ],
+    "business_discovery": {
+      "offsidecorp": {
+        "parents": 15,
+        "all_children_checked": true,
+        "latest": {
+          "id": "18113381261154332",
+          "page_url": "https://www.instagram.com/p/De8jtKCk7_W/",
+          "published_at": "2026-10-26T05:42:57+0000",
+          "media_type": "CAROUSEL_ALBUM",
+          "children": [
+            {
+              "id": "18017660840953336",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18169482097477514",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18121293931897348",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "17929961811423292",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18106250915238640",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18137322661725936",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18130284541870108",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18117924977517452",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18134052256685630",
+              "media_type": "IMAGE"
+            },
+            {
+              "id": "18084485054364148",
+              "media_type": "IMAGE"
+            }
+          ],
+          "context": "Captionthanks dinnerguestswithEvra/Park; notcoachingclinicproof.",
+          "permission_grant_found": false
+        },
+        "video": {
+          "id": "17884395942625190",
+          "page_url": "https://www.instagram.com/reel/Dex-B6dzg0i/",
+          "published_at": "2026-10-22T03:01:54Z",
+          "media_url_available": false,
+          "download_attempted": false,
+          "not_claimed_all_routes_failed": true
+        }
+      },
+      "patrice_evra": "Metadatareviewed; recentreturnsareolderAugust/Septemberclips, notverified25Octoberactivity."
+    },
+    "alternative_discovery": "Bonek30kmaskerdelivery andPialaSoeratinIKN newsfoundonlyasdiscovery; notclaimedfullverifiednewstory/licensedfootage. Noexistingdonationpostrevived."
+  },
+  "sources": [
+    {
+      "url": "https://www.antaranews.com/berita/5807787/patrice-evra-ingin-lebih-sering-berkunjung-ke-indonesia",
+      "publisher": "ANTARA",
+      "published_at": "2026-10-23T18:14:00+07:00",
+      "full_browser_read": true,
+      "body_lines": [
+        42,
+        55
+      ],
+      "primary": "DirectreportbySriDewiLarasatifrom23Octoberpressconference",
+      "limits": "Not evidence that25Octobercoachingclinicwascompleted. Noimage/video reuselicense inferred."
+    },
+    {
+      "url": "https://www.jawapos.com/sports/2610240368/legenda-manchester-united-patrice-evra-dan-park-ji-sung-promosikan-sport-tourism-indonesia",
+      "publisher": "JawaPos",
+      "published_at": "2026-10-25T01:47:00+07:00",
+      "full_browser_read": false,
+      "read": "Firstpagebody89–106read; pageall/page2 returnedsamepage1, so notclaimedcompletearticle.",
+      "limits": "Discoveryonly, notclaimedtwoindependentfullsourcesforproduction."
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 65,
+    "candidate_event_matches": 0,
+    "published_morning": {
+      "id": "17995276944044551",
+      "timestamp": "2026-10-26T01:01:10Z",
+      "untouched": true
+    }
+  },
+  "existing_cms_gate_issues": [
+    "Butuh dua domain penerbit independen dengan teks bukti lengkap; media sosial bukan bukti fakta.",
+    "Identifikasi dua kelompok penerbit independen; salinan sindikasi tidak dihitung.",
+    "Editor perlu audit 5W1H, kronologi, dan kesetiaan naskah.",
+    "Konfirmasikan minimal satu sumber primer.",
+    "Lengkapi pilar, angle, dan alasan aktual.",
+    "Belum ada sumber aktual terverifikasi dalam 48 jam.",
+    "Konfirmasikan tanggal dan status kejadian.",
+    "Klaim claim-1: butuh dua sumber termasuk primer.",
+    "Slide 1: petakan ke klaim terverifikasi.",
+    "Slide 2: petakan ke klaim terverifikasi.",
+    "Slide 3: petakan ke klaim terverifikasi.",
+    "Slide 4: petakan ke klaim terverifikasi.",
+    "Slide 5: petakan ke klaim terverifikasi.",
+    "Reel perlu minimal satu video nyata dari portal/YouTube/TikTok/X/sumber resmi.",
+    "Reel perlu 3–12 potongan dengan caption berubah.",
+    "Durasi montage Reel harus 8–90 detik."
+  ],
+  "scope": {
+    "session_cms_writes": 0,
+    "adapter_preview_called": false,
+    "adapter_schedule_called": false,
+    "meta_publish_called": false,
+    "article_created": false,
+    "fallback_applied": false,
+    "private_rawmedia_downloaded": false,
+    "baseline_rows": 160,
+    "latest_rows": 163,
+    "observed_background_changes": [
+      {
+        "id": "01390d63-4775-49dd-bce2-78a04436a4ce",
+        "before": "DRAFT",
+        "after": "PENDING_REVIEW"
+      }
+    ],
+    "observed_background_added_rows": [
+      {
+        "id": "3283b214-98dc-444d-9389-b55036b874d7",
+        "kind": "SOCIAL",
+        "status": "DRAFT"
+      },
+      {
+        "id": "57d76d99-0708-4479-82a2-9493b512916b",
+        "kind": "SOCIAL",
+        "status": "DRAFT"
+      },
+      {
+        "id": "a87eb4d6-b6f4-4ac6-819d-354b5c775b02",
+        "kind": "SOCIAL",
+        "status": "DRAFT"
+      }
+    ],
+    "note": "Read-onlyresearchdidnotmutateCMS. Between26October11:55Z and27October00:01Z external/backgroundchangesobserved, includingDRAFT→PENDING_REVIEW; notattributed tothissession orassertedgloballyunchanged. No clock/otherrow/protected edits."
+  },
+  "references": {
+    "entries": 22,
+    "latest_read_at": "2026-10-26T00:09:00.766122Z",
+    "sha256": "a0b29abfefdd32c6d0ed9c280adb89d56877022d077496feba70e6e07e13c95f",
+    "committed_runtime_identical": true,
+    "journal_modified_by_this_run": false
+  },
+  "audio": {
+    "checked": false,
+    "reason": "No permission-cleared source reached audio stage.",
+    "muted": false,
+    "catalog_audio": null,
+    "voiceover_recorded": false,
+    "quality_pass_claimed": false
+  },
+  "remaining": "Need permission-clearedcommunityvideo withdate/location andusableoriginalaudio orrealStadioneVO, plusfullfactcorroboration before newsharedpreview. Existing26Octoberclocknotrescheduled orrevived bythisblockedcheck.",
+  "rollback_commit": "7565464d9a4096fb1bc42bba0d59fce8ca87b8f4",
+  "private_only": "RawAPIJSON/fullcaptions/contactdetails andsignedCDN remainprivate; Git stores onlysanitized metadata/reasons, no copyrightedrawmedia or secrets."
+}
