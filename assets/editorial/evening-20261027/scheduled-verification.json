@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-27T12:31:44.631Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "d4685a17-da23-4d2a-b2d4-4c1cd62d4184",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-27:mid-pm",
+    "event_key": "sty-persija-jis-pitch-postmatch-20261026",
+    "scheduled_at": "2026-10-27T13:00:00+00:00",
+    "time_wib": "27 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "b8a0cd91-132e-4b0c-a7db-5640cda8ffe1",
+    "status": "SCHEDULED",
+    "slug": "menang-di-jis-sty-minta-rumput-dibenahi-d4685a17",
+    "scheduled_at": "2026-10-27T13:00:00+00:00",
+    "title": "Menang di JIS, STY Minta Rumput Dibenahi",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "499f0ee51464843cd17d72dc2328b546250f5c4774905e7f12f6f9ff921357fa",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 34611,
+      "sha256": "9edac1745d4d09eaeb9836ac9c812f5018b4c4a2a9420b81402d9c425af2770b",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 505861,
+      "sha256": "b3c987b7029bf6e05cfc92fb25d552c6f02735b9907c592528f900b394de6912",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 174876,
+      "sha256": "7bfef1684b8dc9ed9a87338829ae3d2c2a5534b86302199c9de85135e8a8970c",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 174986,
+      "sha256": "045796ad65952a7d30d85409a4fd995858ea2a683762ef01c435392a8ae90d3c",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 165717,
+      "sha256": "774d2a6e7ed44a72a7c4535693a8c90eb50660b18abf71f737533e6520517ba3",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 65,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 162,
+  "changed_other_rows": [],
+  "baseline_rows": 163,
+  "current_rows": 164,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 2,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 23,
+    "sha256": "31351f86a46f8a1332db3e948f98d9715c276b51b489f95c7e9ee5453e158a3a",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future20WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "9d3667f47ea0055b83c5730b44633b7159befa1b"
+}
