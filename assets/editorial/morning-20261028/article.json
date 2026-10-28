@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Penyelamatan Lynch yang Menyingkirkan Arsenal",
+  "dek": "Peluang Ben White dan penalti Bruno dihentikan. Foto arsip Arteta 2012 oleh Ronnie Macdonald/Flickr, CC BY 2.0, diolah. https://creativecommons.org/licenses/by/2.0/",
+  "caption": "DUA PENYELAMATAN LYNCH YANG MENYINGKIRKAN ARSENAL\n\nArsenal tersingkir dari Carabao Cup setelah imbang 1–1 di kandang Fleetwood Town, Selasa (27/10/2026) waktu Inggris. Fleetwood memenangi adu penalti 5–3.\n\nDua momen Jay Lynch menentukan arah akhir laga. Ia menahan peluang Ben White menjelang peluit panjang, lalu menggagalkan penalti Bruno Guimaraes. Conor Haughey menuntaskan kesempatan Fleetwood untuk lolos.\n\nMenurutmu, momen Lynch mana yang lebih menentukan, menahan White saat skor imbang atau menggagalkan Bruno dalam adu penalti? Sebutkan alasannya.\n\nLaporan siaran dan wawancara langsung Sky Sports dicocokkan dengan laporan Arseblog serta pengumuman hasil resmi Arsenal.\n\nFoto arsip Mikel Arteta, Ronnie Macdonald/Flickr (2012), CC BY 2.0. Sumber https://www.flickr.com/photos/ronmacphotos/7810893464/ . Lisensi https://creativecommons.org/licenses/by/2.0/ . Cover dipotong dan dikolase, foto portal dibingkai tanpa teks. Bukan foto pertandingan ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Lynch Menjaga Jalan Fleetwood",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "WHITE",
+        "SHOOTOUT"
+      ],
+      "text": "Dua penyelamatan Jay Lynch membantu Fleetwood Town menghentikan langkah Arsenal di Carabao Cup. Setelah menahan peluang Ben White menjelang akhir laga, kiper tuan rumah menggagalkan penalti Bruno Guimaraes. Pertandingan di Highbury Stadium, Fleetwood, Selasa (27/10/2026) waktu Inggris, berakhir 1–1 sebelum Fleetwood menang adu penalti 5–3."
+    },
+    {
+      "id": "goals",
+      "heading": "Gol Balasan dan Kartu Merah",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOALS_RED",
+        "RESULT"
+      ],
+      "text": "Arsenal lebih dulu tertinggal melalui gol Aaron Loupalo-Bi. Viktor Gyokeres membalas pada awal babak kedua setelah umpan Ceadach O’Neill masuk ke kotak penalti. Namun, gol penyama itu tidak diikuti gol kemenangan. Tim tamu juga harus menyelesaikan pertandingan dengan sepuluh pemain setelah Max Dowman mendapat kartu merah."
+    },
+    {
+      "id": "white",
+      "heading": "White Nyaris Memutus Drama",
+      "kind": "FACT",
+      "claim_ids": [
+        "WHITE",
+        "RESULT"
+      ],
+      "text": "Menjelang berakhirnya waktu normal, Ben White mendapat kesempatan membawa Arsenal unggul. Lynch menyelamatkan gawangnya dan mempertahankan skor imbang. Penyelamatan tersebut membuat Fleetwood tetap memiliki kesempatan ketika pertandingan harus ditentukan melalui adu penalti."
+    },
+    {
+      "id": "shootout",
+      "heading": "Bruno Dihentikan, Haughey Menyudahi",
+      "kind": "FACT",
+      "claim_ids": [
+        "SHOOTOUT",
+        "RESULT"
+      ],
+      "text": "Di babak penentuan itu, Lynch kembali membuat perbedaan. Setelah tiga penendang Arsenal mencetak gol, ia menggagalkan eksekusi Bruno Guimaraes. Conor Haughey lalu menuntaskan penalti penentu Fleetwood. Tuan rumah menyelesaikan kelima tendangannya dengan gol dan melaju ke perempat final, sementara perjalanan Arsenal berakhir di babak 16 besar."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261026-carrick-identity-press-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-28T00:18:20.702Z",
+    "article_digest": "d81d0758fa828c8d05427b7fc130d4aae6096aa9f02aa9f9518db881a70bed62"
+  }
+}

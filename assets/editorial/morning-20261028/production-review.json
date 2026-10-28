@@ -1,0 +1,434 @@
+{
+  "checked_at": "2026-10-28T00:38:57.672Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "8755dbe3-bb1d-4b26-a1c0-6779a2d5bf4c",
+    "plan_key": "2026-10-28:mid-am",
+    "event_key": "fleetwood-arsenal-lynch-two-saves-20261027",
+    "status": "DRAFT",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-28T01:00:00Z",
+    "scheduled_wib": "28 Oktober 2026 08.00 WIB"
+  },
+  "research": {
+    "pool_generated_at": "2026-10-28T00:05:56.721Z",
+    "pool": "Deployed getDailySportsPool via committed audience-pool helper; relevant Fleetwood Arsenal trend; no claim that an empty news list contained an article.",
+    "full_text_sources": [
+      {
+        "url": "https://www.skysports.com/football/fleetwood-vs-arsenal/report/578610",
+        "publisher": "Sky Sports",
+        "primary": true,
+        "reason": "Original broadcaster report and direct Arteta/Lawlor interviews explicitly attributed to Sky Sports.",
+        "full_article_read": true,
+        "transport": "Normal public GET 200; browser extraction failed."
+      },
+      {
+        "url": "https://arseblog.news/2026/10/report-fleetwood-town-1-1-arsenal-5-3-on-penalties-inc-goals/",
+        "publisher": "Arseblog News",
+        "author": "Phil Costa",
+        "independent": true,
+        "full_article_read": true,
+        "transport": "Normal public GET 200; full report read before comments."
+      }
+    ],
+    "official_visual": {
+      "url": "https://www.instagram.com/p/DfA5m4XgVbg/",
+      "id": "18127134304908064",
+      "published_at": "2026-10-27T22:11:26Z",
+      "review": "Downloaded public API image 200 and visually inspected. Graphic says 1–1 and Fleetwood win 5–3 on penalties. This is a graphic/caption, not a full text article; not used as production artwork."
+    },
+    "conflicts_resolved": [
+      "Sky headline 4–3 differs from body and official graphic 5–3: use corroborated 5–3.",
+      "Dowman minute varies 85/90: omit exact minute.",
+      "Use two decisive saves, not a claim of only two total saves.",
+      "Highbury Stadium is in Fleetwood; not Arsenal old London ground."
+    ],
+    "access_limits": "Arsenal/Fleetwood page403, RTE403, Talksport device verification stopped. No challenge/login/DRM/geofence bypass."
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-28:mid-am",
+    "checked_at": "2026-10-28T00:18:21.372Z",
+    "queries": [
+      "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+      "Fleetwood Arsenal 27 October 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=8oib1S8YP9o",
+        "creator": "beIN SPORTS NZ",
+        "checked_at": "2026-10-28T00:18:21.372Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube API metadata and full description give standard youtube licence, not a confirmed grant for Stadione redistribution. Browser source page throttled. No download, viewing, listening, transcript or all-routes failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_DESCRIPTION",
+          "summary": "Published 2026-10-27T23:15:35Z, duration 204seconds, standard youtube licence. Description reviewed; no permission or CCgrant evidence found."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=L6eFh5Bvfdo",
+        "creator": "Sky Sports Football",
+        "checked_at": "2026-10-28T00:18:21.372Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube API metadata and full description give standard youtube licence, not a confirmed grant for Stadione redistribution. Browser source page throttled. No download, viewing, listening, transcript or all-routes failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_DESCRIPTION",
+          "summary": "Published 2026-10-27T22:49:30Z, duration 368seconds, standard youtube licence. Description reviewed; no permission or CCgrant evidence found."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=PkbrgS9kyOk",
+        "creator": "ESPN UK",
+        "checked_at": "2026-10-28T00:18:21.372Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube API metadata and full description give standard youtube licence, not a confirmed grant for Stadione redistribution. Browser source page throttled. No download, viewing, listening, transcript or all-routes failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_DESCRIPTION",
+          "summary": "Published 2026-10-27T22:40:53Z, duration 561seconds, standard youtube licence. Description reviewed; no permission or CCgrant evidence found."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-28T00:18:21.372Z",
+      "digest": "9864c0d6f0287e98084daa0dac33a3ae99c1547af103bbf811e2e2540fe0475f"
+    }
+  },
+  "illustrated_story": {
+    "owner_approval_acknowledged": true,
+    "motion_story_doc_read": true,
+    "kane_v4_example_reviewed": true,
+    "status": "Manual prototype, not fully integrated with CMS.",
+    "edge_tts_used": false,
+    "configured_licensed_voice_available": false,
+    "provider_presence_only": {
+      "openai": false,
+      "azure_speech": false,
+      "elevenlabs": false
+    },
+    "reason": "No verified configured licensed voice asset; do not reuse Kane one-off owner upload exception. Carousel selected without altering slot time."
+  },
+  "media_rights": {
+    "photo": {
+      "creator": "Ronnie Macdonald",
+      "title": "Mikel Arteta",
+      "date": "2012-08-18",
+      "url": "https://www.flickr.com/photos/ronmacphotos/7810893464/",
+      "commons": "https://commons.wikimedia.org/wiki/File:Flickr_-_Ronnie_Macdonald_-_Mikel_Arteta.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "verification": "Current normal public Flickr GET200 JSON-LD licence and rel=license anchor; Commons reviewed licence corroborates.",
+      "original_sha256": "500c5f5921a4a19c1b9baefd5c1f4d376e67067c6fb431cfec844fef5891a46e",
+      "original_bytes": 170651,
+      "archive_disclosure": "Cover, caption and website excerpt identify Arteta archive2012, author, licence URL and alterations; not represented as Lynch or 2026 match photo.",
+      "changes": "AI editorial collage using real original Arteta as reference; mechanical JPEG resize; clean website original-photo fit/pad. No endorsement implied."
+    },
+    "hero": {
+      "bytes": 73399,
+      "sha256": "dcca21ae522d11f6e894087d9ff6834d2fa4f65490f1f6b88224f80240219c13",
+      "dimensions": "512x420",
+      "native_review": true,
+      "clean_original_photo_without_text": true
+    }
+  },
+  "article": {
+    "title": "Dua Penyelamatan Lynch yang Menyingkirkan Arsenal",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 169,
+    "digest": "d81d0758fa828c8d05427b7fc130d4aae6096aa9f02aa9f9518db881a70bed62",
+    "goal_benchmarks": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261026-carrick-identity-press-news"
+    ],
+    "whole_article_before_pagination": true,
+    "audit_issues": []
+  },
+  "cover": {
+    "variant": "JUDUL_UTAMA",
+    "source": "SKYSPORTS.COM",
+    "page_count": 5,
+    "bytes": 502282,
+    "sha256": "2d9e366c48ed3263b05dfc4952494357415504a4ae4a287f4a12b84a9459fc3d",
+    "native_review": true,
+    "real_archive_face_preserved": true,
+    "headline_deck_rule_spacing_readable": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 623595,
+      "sha256": "2f40a5afea1694300ea23ab438964131db750b30335e0b08c343a14b9d882ab5",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "SKYSPORTS.COM",
+        "cover_input_sha256": "2d9e366c48ed3263b05dfc4952494357415504a4ae4a287f4a12b84a9459fc3d",
+        "output_sha256": "2f40a5afea1694300ea23ab438964131db750b30335e0b08c343a14b9d882ab5",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 192278,
+      "sha256": "56b026256993f9b3364d6460a97be0b283b8a6eddc64fb9b14e9b54d83ac8ede",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "a5e4b73933c8ca356cea04c3a6cbe2d90890483b96413a9ae11c3aef39e6d791",
+        "output_sha256": "56b026256993f9b3364d6460a97be0b283b8a6eddc64fb9b14e9b54d83ac8ede",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 682,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 925,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 183270,
+      "sha256": "6acf4344d71c7e21b468f8f460b58c59418c2c9297dcc8d665972c8ba2a686c4",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "0a372a0a72192293ea8a2c08a82d00302ed1bdd9ba357afbd7e9afeaec4f4ca7",
+        "output_sha256": "6acf4344d71c7e21b468f8f460b58c59418c2c9297dcc8d665972c8ba2a686c4",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 399,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 747,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 916,
+            "height": 399,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 170934,
+      "sha256": "158137aacd222cf06955605a6a3c910b6d3c657918c44452b74348facf39640d",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "242c38eeebecca5a56ba7d93ec1c72b0cd4fafadac728be8455f69dfca00f32e",
+        "output_sha256": "158137aacd222cf06955605a6a3c910b6d3c657918c44452b74348facf39640d",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 769,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 910,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 5,
+      "bytes": 202036,
+      "sha256": "adad7fb473e52119370038dd0c84e2a8a616221746558f401c8c175b1097f27a",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "1258191d57978e464e356ff4df53b7bb8d2b068eae053f3fb4378434b3e6b49d",
+        "output_sha256": "adad7fb473e52119370038dd0c84e2a8a616221746558f401c8c175b1097f27a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 683,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 887,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_read": true,
+    "hero_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "body_text_only_cream": true,
+    "source_cover_only": true,
+    "no_clipping_or_overlap": true,
+    "ocr_supplement_only": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "source_muted": false,
+    "voiceover_created": false,
+    "reel_audio_audition_not_claimed": true
+  },
+  "growth": {
+    "serial": "Laga dalam 3 Data",
+    "adaptation": "Wednesday morning calendar retained. Two documented decisive saves are more defensible than forcing three arbitrary statistics; serial label is not printed.",
+    "fact": "Fleetwood eliminated Arsenal after 1–1 and 5–3 on penalties on 27 October UK time; official Arsenal result graphic corroborates both scores.",
+    "angle": "Lynch kept the tie alive against White before stopping Bruno in the shootout: two different moments explain the result.",
+    "hook": "How did two saves change Arsenal’s cup route?",
+    "payoff": "Article identifies the White chance, Bruno fourth penalty and Haughey fifth penalty without inventing unseen technique or intent.",
+    "audience_action": "Caption asks which save mattered more and why; full context offers a useful match reference.",
+    "format": "CAROUSEL",
+    "trial_reels": "Not applicable: no Reel is being produced.",
+    "review_due_24h": "2026-10-29T01:00:00Z",
+    "review_due_7d": "2026-11-04T01:00:00Z"
+  },
+  "scope": {
+    "checked_at": "2026-10-28T00:38:05.947Z",
+    "baseline_rows": 165,
+    "current_rows": 165,
+    "changed": [],
+    "added": [],
+    "target": {
+      "status": "DRAFT",
+      "format": "REEL",
+      "clock": "2026-10-28T01:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "cms_writes_before_commit": 0,
+    "other_existing_rows_unchanged": 164,
+    "no_changes": [
+      "13.00 slots",
+      "additional content",
+      "scheduled/published/archive/tombstone",
+      "renderer",
+      "credentials",
+      "services",
+      "automations",
+      "routine calendar"
+    ],
+    "seeder_called": false,
+    "meta_direct_called": false
+  },
+  "references": {
+    "entries": 23,
+    "latest_read_at": "2026-10-27T00:43:42Z",
+    "sha256": "31351f86a46f8a1332db3e948f98d9715c276b51b489f95c7e9ee5453e158a3a",
+    "runtime_committed_identical": true
+  },
+  "rollback_commit": "8084bff1e3a81ede86fcf27639b6235532e450c4",
+  "private_only": "Full source texts/HTML, source metadata, full input packet, original photos/official graphics/CDN URLs and raw environment stay private; Git contains own article, sanitized evidence and attributed licensed QA derivatives only."
+}
