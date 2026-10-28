@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-28T12:27:31.887Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "4f46a1f0-d2d6-4470-94fb-725da3f75671",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-28:mid-pm",
+    "event_key": "persija-league-cup-rotation-20261028",
+    "scheduled_at": "2026-10-28T13:00:00+00:00",
+    "time_wib": "28 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "76d43c3e-a459-4ce0-ae76-9ba1a4a39a73",
+    "status": "SCHEDULED",
+    "slug": "league-cup-membuka-panggung-pelapis-persija-4f46a1f0",
+    "scheduled_at": "2026-10-28T13:00:00+00:00",
+    "title": "League Cup Membuka Panggung Pelapis Persija",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "ae83832de518f1f7051e2aebe96e83977f0f4fc3129c131645ba74d6efdeaa94",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 34611,
+      "sha256": "9edac1745d4d09eaeb9836ac9c812f5018b4c4a2a9420b81402d9c425af2770b",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 582126,
+      "sha256": "d23f17a784756defb18b3ef874860e97bc63d11be69b7fe3f933554a13acae94",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 167515,
+      "sha256": "2779307a243e224ea9363ad5da875981cc1c1e75ddaa5d070b21ee780859b8d0",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 146179,
+      "sha256": "f75aa7b31380663f11af7a0606c2f3b15a95d6198e41157ebcd4bab058c4092a",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 155640,
+      "sha256": "522007778f7531074c5bf0cf6ea52f6e141259afe44784e84647cfc40b18c578",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 162787,
+      "sha256": "9d2f879e2e23a6d0aa9dc93ca740e7d2bd7b7c883aa78f45d88047e603684632",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 67,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 165,
+  "changed_other_rows": [],
+  "baseline_rows": 166,
+  "current_rows": 167,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 5,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 24,
+    "sha256": "50238e02b387edd4290eefc4881b2f492cce34f221f99ae0f78e6d9184a97245",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future20WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "43c5771d03a65a80fa238c6fc82c8aabb417d114"
+}
