@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-28T00:40:06.962Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "8755dbe3-bb1d-4b26-a1c0-6779a2d5bf4c",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-28:mid-am",
+    "event_key": "fleetwood-arsenal-lynch-two-saves-20261027",
+    "scheduled_at": "2026-10-28T01:00:00+00:00",
+    "time_wib": "28 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "306788ae-4f8a-4257-a07d-d7069ffb4356",
+    "status": "SCHEDULED",
+    "slug": "dua-penyelamatan-lynch-yang-menyingkirkan-arsenal-8755dbe3",
+    "scheduled_at": "2026-10-28T01:00:00+00:00",
+    "title": "Dua Penyelamatan Lynch yang Menyingkirkan Arsenal",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "d81d0758fa828c8d05427b7fc130d4aae6096aa9f02aa9f9518db881a70bed62",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 73399,
+      "sha256": "dcca21ae522d11f6e894087d9ff6834d2fa4f65490f1f6b88224f80240219c13",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 623595,
+      "sha256": "2f40a5afea1694300ea23ab438964131db750b30335e0b08c343a14b9d882ab5",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 192278,
+      "sha256": "56b026256993f9b3364d6460a97be0b283b8a6eddc64fb9b14e9b54d83ac8ede",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 183270,
+      "sha256": "6acf4344d71c7e21b468f8f460b58c59418c2c9297dcc8d665972c8ba2a686c4",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 170934,
+      "sha256": "158137aacd222cf06955605a6a3c910b6d3c657918c44452b74348facf39640d",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 202036,
+      "sha256": "adad7fb473e52119370038dd0c84e2a8a616221746558f401c8c175b1097f27a",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 67,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 164,
+  "changed_other_rows": [],
+  "baseline_rows": 165,
+  "current_rows": 166,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 4,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 23,
+    "sha256": "31351f86a46f8a1332db3e948f98d9715c276b51b489f95c7e9ee5453e158a3a",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future08WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "63cd4c5893f8cd83ea066344bea2f599e6c096a5"
+}
