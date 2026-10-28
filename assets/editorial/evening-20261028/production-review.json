@@ -1,0 +1,464 @@
+{
+  "checked_at": "2026-10-28T12:26:05.368Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_NOT_SCHEDULED",
+  "target": {
+    "id": "4f46a1f0-d2d6-4470-94fb-725da3f75671",
+    "plan_key": "2026-10-28:mid-pm",
+    "event_key": "persija-league-cup-rotation-20261028",
+    "original_format": "REEL",
+    "prepared_format": "CAROUSEL",
+    "status": "PENDING_REVIEW",
+    "original_clock": "2026-10-28T13:00:00Z",
+    "time_wib": "28 Oktober2026 20.00 WIB"
+  },
+  "sources": {
+    "pool_fetched_at": "2026-10-28T11:57:33.166Z",
+    "pool": "Deployed getDailySportsPool through committed cms-audience-pool helper; audience prioritization applied. Direct discovery supplemented limited pool, not claimed as pool article.",
+    "full_text": [
+      {
+        "id": "PERSIJA",
+        "url": "https://www.persija.id/media/news/persija-bersiap-hadapi-tantangan-league-cup-20262027",
+        "group": "PERSIJA_MEDIA",
+        "primary": true,
+        "published_at": "2026-10-28",
+        "full_read": true,
+        "access": "Normal public GET200; browser extraction internal error. Full body through foreign-registration paragraph read; related links excluded."
+      },
+      {
+        "id": "DETIK",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8726719/sty-beri-sinyal-positif-ke-shayne-pattynama-cs-persija-akan-rotasi-skuad",
+        "group": "TRANSMEDIA",
+        "author": "Muhammad Robbani",
+        "primary": false,
+        "published_at": "2026-10-27T14:45:00Z",
+        "full_read": true,
+        "access": "Browser body117–137 read through article end, also normal GET200. Statement attributed26October; not misdated to publication28October."
+      },
+      {
+        "id": "INEWS",
+        "url": "https://www.inews.id/sport/soccer/shin-tae-yong-siapkan-kejutan-di-league-cup-ada-rotasi-besar-besaran",
+        "group": "MNC",
+        "author": "Reynaldi Hermawan",
+        "primary": false,
+        "published_at": "2026-10-28T00:00:00Z",
+        "full_read": true,
+        "access": "Normal public GET200 pages1,2,3; selector first captured only header, then corrected to full text and all pagination followed. No full read claim based only on page1."
+      }
+    ],
+    "checks": [
+      "PSMS3November at StadionUtamaSumateraUtara confirmed club and iNews;19WIB from club.",
+      "Group PSMS/Sumsel and away/home order confirmed club and detik.",
+      "Dewa31October confirmed club and iNews page3. Calendar gap to3November is3days.",
+      "No startingXI, guaranteed named starters, future match result or unverified quota rule claimed. Conditional quote preserved.",
+      "Event not already in CMS or Instagram; old post about JIS pitch is a different story."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-28:mid-pm",
+    "checked_at": "2026-10-28T12:14:26.904Z",
+    "queries": [
+      "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+      "Shin Tae-yong Persija League Cup rotasi 28 Oktober 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=DmtTRIki33U",
+        "creator": "GARUDA NUSANTARA",
+        "checked_at": "2026-10-28T12:14:26.904Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Metadata and description reviewed; standard YouTube licence does not establish Stadione redistribution rights. These broader Persija/Timnas candidates do not verify the current League Cup announcement. Browser throttled; no downloaded/seen/heard footage or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "API 2026-10-21T08:21:26Z, 488 seconds, licence youtube. No explicit redistribution grant found in reviewed description. Topic-specific League Cup query returned zero candidates; broad clips not represented as current announcement."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=J1N4sJhlwt4",
+        "creator": "FSVRICHES",
+        "checked_at": "2026-10-28T12:14:26.904Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Metadata and description reviewed; standard YouTube licence does not establish Stadione redistribution rights. These broader Persija/Timnas candidates do not verify the current League Cup announcement. Browser throttled; no downloaded/seen/heard footage or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "API 2026-10-23T09:30:22Z, 529 seconds, licence youtube. No explicit redistribution grant found in reviewed description. Topic-specific League Cup query returned zero candidates; broad clips not represented as current announcement."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=OlUamG2G7j4",
+        "creator": "Galeri bola",
+        "checked_at": "2026-10-28T12:14:26.904Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Metadata and description reviewed; standard YouTube licence does not establish Stadione redistribution rights. These broader Persija/Timnas candidates do not verify the current League Cup announcement. Browser throttled; no downloaded/seen/heard footage or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "API 2026-10-23T04:07:43Z, 21 seconds, licence youtube. No explicit redistribution grant found in reviewed description. Topic-specific League Cup query returned zero candidates; broad clips not represented as current announcement."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-28T12:14:26.904Z",
+      "digest": "d2d7ff2e63846ab76e5bae538d2b69d20511713404d8dc58b50ae719ae1cbbd8"
+    }
+  },
+  "illustrated_story": {
+    "motion_story_and_kane_v4_read": true,
+    "owner_format_approval_acknowledged": true,
+    "status": "Manual prototype, not represented as fully automated CMS integration.",
+    "voice_rights": "No verified licensed voice chosen; configured OpenAI/Azure/ElevenLabs environment presence checked false. Kane EdgeTTS one-off authorization is not reused.",
+    "edge_tts_used": false,
+    "synthetic_music_used": false,
+    "licensed_recording_or_voiceover_created": false
+  },
+  "initial_persib_research": {
+    "primary_victory_reports_full_read": true,
+    "jpnn_full_read_pages": 2,
+    "official_lineup_graphic_native_read": true,
+    "chosen": false,
+    "reason": "Changed to current Persija announcement after suitable media rights/access were not confirmed. No Persib claims/artwork inserted into final packet.",
+    "limits": [
+      "Commons CarloBruil Haye image shows CC BY2 page but embedded NC restrictions; source Flickr404: not used.",
+      "Separate Giovanni Haye CC BY-SA image download403: not retried or used.",
+      "Government photo source403 browser: not used.",
+      "Source Persib official images used for factual inspection only, not production artwork."
+    ]
+  },
+  "photo": {
+    "creator": "Masashi Hara Hara",
+    "url": "https://www.flickr.com/photos/66578220@N07/6065009408/",
+    "title": "I0062454782",
+    "date_label": "21 August2011",
+    "license": "CC BY2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "current_verification": "Public source normalGET200 on28October; rel=license anchors CC BY2.0, Taken on21August2011. Commons licensed metadata/review25October2013 previously verified and retained. Filename2010 is not adopted as capture date.",
+    "original": {
+      "bytes": 48192,
+      "sha256": "a53f5cd569d888d32b88fcd4b9a90de9110a01f3b213b9beb1d69fcfa1c6c86d",
+      "source": "Existing licensed private archive file from27October, unchanged; not claimed downloaded today."
+    },
+    "hero": {
+      "bytes": 34611,
+      "sha256": "9edac1745d4d09eaeb9836ac9c812f5018b4c4a2a9420b81402d9c425af2770b",
+      "dimensions": "512x420",
+      "native_review": true,
+      "clean_original_photo_without_headline": true
+    },
+    "attribution": "Cover, caption and website excerpt identify archive2011, author/Flickr, CC BY2.0 link and alterations; no endorsement implied."
+  },
+  "article": {
+    "title": "League Cup Membuka Panggung Pelapis Persija",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 137,
+    "digest": "ae83832de518f1f7051e2aebe96e83977f0f4fc3129c131645ba74d6efdeaa94",
+    "benchmarks": [
+      "goal-20261028-gasperini-napoli-roma-reaction-news",
+      "goal-20261026-carrick-identity-press-news"
+    ],
+    "whole_article_before_pagination": true,
+    "review": "Lead tightened and repetitive explanation removed before preview. Source quote exact and conditional, all facts and dates checked; no scaffold/AnalisisStadione/filler."
+  },
+  "cover": {
+    "variant_id": "PORTRAIT_MERAH",
+    "previous_variants": [
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "KLASIK",
+      "KLASIK"
+    ],
+    "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+    "bytes": 468060,
+    "sha256": "d85c2d29b5c417a2e1fd2cb7f187f90219e1bacc32108a3940c28b26e2a49917",
+    "page_count_visible": "1/5",
+    "source": "PERSIJA.ID",
+    "native_jpeg_review": true,
+    "authentic_portrait_reference_reviewed": true,
+    "mechanical_export": "Imagegen composition fitted1000x1250 within1080x1350 with charcoal40pxhorizontal/50pxverticalpadding to improve headline safe inset. Text wrapping and image identity retained; no creative edits outside imagegen.",
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 582126,
+      "sha256": "d23f17a784756defb18b3ef874860e97bc63d11be69b7fe3f933554a13acae94",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "PERSIJA.ID",
+        "cover_input_sha256": "d85c2d29b5c417a2e1fd2cb7f187f90219e1bacc32108a3940c28b26e2a49917",
+        "output_sha256": "d23f17a784756defb18b3ef874860e97bc63d11be69b7fe3f933554a13acae94",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 167515,
+      "sha256": "2779307a243e224ea9363ad5da875981cc1c1e75ddaa5d070b21ee780859b8d0",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "a76b75b898c2dd7412f2ed24180aec3942084c540960e3a8f6c32d626dd46987",
+        "output_sha256": "2779307a243e224ea9363ad5da875981cc1c1e75ddaa5d070b21ee780859b8d0",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 691,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 908,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 146179,
+      "sha256": "f75aa7b31380663f11af7a0606c2f3b15a95d6198e41157ebcd4bab058c4092a",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "057d5b28e99c1e2990fd96fd1075f71fb82a7d33cda9671d01e747b8f7bc9692",
+        "output_sha256": "f75aa7b31380663f11af7a0606c2f3b15a95d6198e41157ebcd4bab058c4092a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 246,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 697,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 880,
+            "height": 246,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 155640,
+      "sha256": "522007778f7531074c5bf0cf6ea52f6e141259afe44784e84647cfc40b18c578",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "ae082e9e884af7dff4348efb63b83524e4d0a927a87bc5d16db8d1d8ab81bc50",
+        "output_sha256": "522007778f7531074c5bf0cf6ea52f6e141259afe44784e84647cfc40b18c578",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 293,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 666,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 930,
+            "height": 293,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 5,
+      "bytes": 162787,
+      "sha256": "9d2f879e2e23a6d0aa9dc93ca740e7d2bd7b7c883aa78f45d88047e603684632",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "50b4b8519675a44f00b890c0cbfa94857ce7d233041ed63557b6f0aa3addcbb1",
+        "output_sha256": "9d2f879e2e23a6d0aa9dc93ca740e7d2bd7b7c883aa78f45d88047e603684632",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 808,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 897,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_native_read": true,
+    "hero_native_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_clipping_or_overlap": true,
+    "cream_text_only_body": true,
+    "source_cover_only": true,
+    "headline_deck_attribution_clear": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "source_muted": false,
+    "voiceover_created": false,
+    "no_false_audio_audition_claim": true
+  },
+  "growth": {
+    "serial": "Satu Momen, Satu Cerita",
+    "fact": "Shin plans League Cup rotation for players with limited Super League minutes, as announced by Persija28October and reported by independent detik27October.",
+    "angle": "One coaching decision opens competitive minutes to players who have waited; purpose and first opponents give context beyond match results.",
+    "hook": "Who gets a stage when Persija rotates?",
+    "payoff": "Explain recovery/intensity, PSMS first3November19WIB, Sumsel home next, and Dewa league game31October, keeping proposed selection conditional.",
+    "audience_action": "Jakmania choose one player with limited minutes they most want to see against PSMS and explain a specific part of his game.",
+    "format": "CAROUSEL",
+    "trial_reels": "Not applicable: no verified licensed Reel selected.",
+    "review_due_24h": "2026-10-29T13:00:00Z",
+    "review_due_7d": "2026-11-04T13:00:00Z"
+  },
+  "scope": {
+    "checked_at": "2026-10-28T12:22:14.453Z",
+    "baseline_rows": 166,
+    "current_rows": 166,
+    "changed": [
+      {
+        "id": "4f46a1f0-d2d6-4470-94fb-725da3f75671",
+        "before": "DRAFT",
+        "after": "PENDING_REVIEW"
+      }
+    ],
+    "added": [],
+    "target": {
+      "status": "PENDING_REVIEW",
+      "format": "REEL",
+      "clock": "2026-10-28T13:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "session_cms_writes_before_commit": 0,
+    "background_change": "Only target DRAFT→PENDING_REVIEW observed during read-only production; not attributed to operator.",
+    "other_existing_rows_unchanged": 165,
+    "renderer_changed": false,
+    "credentials_changed": false,
+    "services_changed": false,
+    "automations_changed": false,
+    "seeder_called": false,
+    "meta_direct_called": false
+  },
+  "references": {
+    "entries": 24,
+    "latest_read_at": "2026-10-28T00:43:10Z",
+    "sha256": "50238e02b387edd4290eefc4881b2f492cce34f221f99ae0f78e6d9184a97245",
+    "runtime_committed_identical": true
+  },
+  "publisher_check": {
+    "timer_active": true,
+    "service_last_result": "success",
+    "last_check": "2026-10-28T12:15:12.777Z",
+    "results_empty": true,
+    "notice": "Timer health is not proof of target publication. Future approved schedule will be left to shared publisher; no MetaDirect."
+  },
+  "rollback_commit": "12ecc928688b21d565f375cc8c1919216a4fae7f",
+  "private_only": "Full input packet/source texts/HTML/API/CDN URLs/raw photos retained privately. Git only own article, sanitized proof/growth/metrics and licensed QA derivatives."
+}

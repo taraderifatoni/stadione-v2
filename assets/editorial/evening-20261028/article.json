@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "League Cup Membuka Panggung Pelapis Persija",
+  "dek": "Rotasi membuka kesempatan bagi pemain yang minim menit. Arsip Shin 2011: Masashi Hara Hara/Flickr, CC BY 2.0, diolah. creativecommons.org/licenses/by/2.0/",
+  "caption": "LEAGUE CUP MEMBUKA PANGGUNG PELAPIS PERSIJA\n\nShin Tae-yong menyiapkan rotasi untuk pemain yang belum banyak mendapat menit bermain di Super League. Tujuannya memberi kesempatan, menjaga kondisi dan membiasakan mereka dengan intensitas pertandingan.\n\nPersija membuka League Cup dengan bertandang ke PSMS Medan pada 3 November 2026, pukul 19.00 WIB. Sumsel United menjadi lawan berikutnya di kandang Persija. Sebelum itu, ada laga liga menghadapi Dewa United pada 31 Oktober.\n\nJakmania, siapa pemain yang minim menit bermain yang paling ingin kamu lihat melawan PSMS? Pilih satu nama dan jelaskan apa yang ingin kamu lihat dari permainannya.\n\nRencana rotasi dan jadwal diperiksa melalui pengumuman Persija, laporan detikSepakbola dan iNews. Rencana kesempatan bermain belum merupakan susunan pemain resmi.\n\nFoto arsip Shin Tae-yong: Masashi Hara Hara/Flickr (2011), CC BY 2.0. https://www.flickr.com/photos/66578220@N07/6065009408/ . https://creativecommons.org/licenses/by/2.0/ . Cover dipotong dan dikolase; hero dibingkai tanpa teks. Bukan foto League Cup 2026.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kesempatan Setelah Menunggu",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROTASI"
+      ],
+      "text": "Shin Tae-yong menyiapkan rotasi Persija di League Cup untuk memberi panggung kepada pemain pelapis. Pengumuman klub pada Rabu (28/10/2026) menyebut mereka yang mendapat menit terbatas selama tujuh pekan Super League sebagai bagian dari rencana tersebut."
+    },
+    {
+      "id": "purpose",
+      "heading": "Menjaga Kondisi dan Intensitas",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "TUJUAN",
+        "ROTASI"
+      ],
+      "quote": {
+        "text": "sebagian besar pemain yang tidak sering bermain di liga kemungkinan besar akan dimainkan",
+        "source_id": "PERSIJA"
+      },
+      "text": "Shin menjelaskan bahwa rotasi juga ditujukan untuk pemulihan kondisi dan menjaga kebiasaan bertanding. Ia mengatakan, “sebagian besar pemain yang tidak sering bermain di liga kemungkinan besar akan dimainkan”."
+    },
+    {
+      "id": "group",
+      "heading": "PSMS Menjadi Ujian Pertama",
+      "kind": "FACT",
+      "claim_ids": [
+        "GRUP"
+      ],
+      "text": "Persija berada satu grup dengan PSMS Medan dan Sumsel United. Macan Kemayoran dijadwalkan lebih dulu bertandang ke Stadion Utama Sumatera Utara, Medan, Selasa (3/11/2026), pukul 19.00 WIB. Setelah itu, Persija mendapat giliran menjamu Sumsel United."
+    },
+    {
+      "id": "calendar",
+      "heading": "Dewa United Lebih Dulu Menanti",
+      "kind": "FACT",
+      "claim_ids": [
+        "DEWA",
+        "ROTASI"
+      ],
+      "text": "Sebelum memulai perjalanan di League Cup, Persija menghadapi Dewa United pada Sabtu (31/10/2026) dalam Super League. Jarak menuju laga pembuka League Cup hanya tiga hari. Jadwal liga dan piala itu menjadi konteks rencana pembagian menit bermain di dalam skuad."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261028-gasperini-napoli-roma-reaction-news",
+    "goal-20261026-carrick-identity-press-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-28T12:18:39.776Z",
+    "article_digest": "ae83832de518f1f7051e2aebe96e83977f0f4fc3129c131645ba74d6efdeaa94"
+  }
+}
