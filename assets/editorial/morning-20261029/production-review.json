@@ -1,0 +1,470 @@
+{
+  "checked_at": "2026-10-29T00:25:05.682Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "d6ede472-823f-41e9-ad10-5f201d296a70",
+    "plan_key": "2026-10-29:mid-am",
+    "event_key": "liverpool-chelsea-gomez-eighth-penalty-20261028",
+    "status": "DRAFT",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-29T01:00:00Z",
+    "scheduled_wib": "29 Oktober 2026 08.00 WIB"
+  },
+  "research": {
+    "pool_generated_at": "2026-10-29T00:02:05.413Z",
+    "pool": "Deployed getDailySportsPool through committed audience helper. Liverpool trend used; no eligible news-list entry claimed. Direct publisher discovery supplemented the pool.",
+    "independent_publisher_groups": [
+      "Liverpool FC",
+      "Sky Sports"
+    ],
+    "full_text_sources": [
+      {
+        "url": "https://www.liverpoolfc.com/news/match-report-liverpool-beat-chelsea-on-penalties-on-dramatic-night-at-anfield",
+        "http": 200,
+        "retrieved_at": "2026-10-29T00:04:06.609051+00:00",
+        "sha256": "03aad3aa6f9be7e1c09c40d2f1dab64d1b63182dec3620d7d06d772acb9d9797",
+        "text_chars": 3368,
+        "publisher": "Liverpool FC",
+        "primary": true,
+        "full_article_read": true,
+        "transport": "Normal public GET 200; browser extraction failed."
+      },
+      {
+        "url": "https://www.liverpoolfc.com/news/joe-gomez-reaction-liverpools-mentality-shootout-win-and-carabao-cup-dreams",
+        "http": 200,
+        "retrieved_at": "2026-10-29T00:04:07.629065+00:00",
+        "sha256": "567c2e44803184ea81799ed957859adfb46e2cffd744b82e1c640a3b5763008c",
+        "text_chars": 1749,
+        "publisher": "Liverpool FC",
+        "primary": true,
+        "full_article_read": true,
+        "transport": "Normal public GET 200; browser extraction failed."
+      },
+      {
+        "url": "https://www.skysports.com/football/liverpool-vs-chelsea/report/578612",
+        "http": 200,
+        "retrieved_at": "2026-10-29T00:04:07.898415+00:00",
+        "sha256": "7528bdef767d15dc948bd941499bbcb6e578c7f79f900c3e1c0bb3d2cec0ff96",
+        "text_chars": 6476,
+        "publisher": "Sky Sports",
+        "primary": false,
+        "full_article_read": true,
+        "transport": "Normal public GET 200; browser extraction failed."
+      }
+    ],
+    "verification": [
+      "Normal-time 1–1, shootout 6–5; no extra-time claim.",
+      "Rogers and Gakpo scored normal-time penalties; exact minutes omitted.",
+      "Mamardashvili stopped Palestra late; no assertion this was the decisive shootout save.",
+      "Each team scored five from seven; Gomez eighth taker, sixth Liverpool success. Fofana shot over, not saved.",
+      "Home Bournemouth quarter-final confirmed in both publisher groups.",
+      "Gomez reaction reproduces ITV interview; reading reproduction is not hearing the interview."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-29:mid-am",
+    "checked_at": "2026-10-29T00:13:58.800Z",
+    "queries": [
+      "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+      "Liverpool Chelsea 28 October 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=g3qB1nADGJg",
+        "creator": "Dollar VFX",
+        "checked_at": "2026-10-29T00:13:58.800Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "API metadata and full description reviewed; standard YouTube licence and no explicit Stadione redistribution grant. Browser throttled. Highlight label/fan reaction not treated as verified real match footage; no download, viewing, listening or all-routes access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-28T22:32:42Z, duration 240seconds, licence youtube. Source pages opened but browser throttled; no explicit reuse grant in description. Metadata only, not verified footage/audio."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=h7BsxunWYO0",
+        "creator": "Anfield Agenda",
+        "checked_at": "2026-10-29T00:13:58.800Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "API metadata and full description reviewed; standard YouTube licence and no explicit Stadione redistribution grant. Browser throttled. Highlight label/fan reaction not treated as verified real match footage; no download, viewing, listening or all-routes access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-28T22:24:22Z, duration 48seconds, licence youtube. Source pages opened but browser throttled; no explicit reuse grant in description. Metadata only, not verified footage/audio."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=PZ60166w3uM",
+        "creator": "Stan Sport Football",
+        "checked_at": "2026-10-29T00:13:58.800Z",
+        "result": "UNVERIFIED_CONTEXT",
+        "detail": "Metadata identifies Henderson arrival, not decisive Gomez/Mamardashvili actions; standard YouTube licence grants no confirmed redistribution rights. Browser throttled; no downloaded/seen/heard footage claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-28T21:01:27Z, duration 13seconds, licence youtube. Source pages opened but browser throttled; no explicit reuse grant in description. Metadata only, not verified footage/audio."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-29T00:13:58.800Z",
+      "digest": "7bb210f98d85204dcf0fd6e9048a78765f6ab8c21fd00c7edf1896f4359480b9"
+    }
+  },
+  "illustrated_story": {
+    "owner_approval_acknowledged": true,
+    "motion_story_doc_read": true,
+    "kane_v4_example_reviewed": true,
+    "status": "Manual prototype, not fully integrated with CMS.",
+    "edge_tts_used": false,
+    "configured_licensed_voice_available": false,
+    "provider_presence_only": {
+      "openai": false,
+      "azure_speech": false,
+      "elevenlabs": false
+    },
+    "reason": "No verified configured licensed voice or selected authorized recording; Kane one-off upload exception is not a reusable licence. Carousel keeps the slot time."
+  },
+  "media_rights": {
+    "photo": {
+      "creator": "Eric The Fish",
+      "title": "DSC_4798",
+      "date": "2019-06-02",
+      "url": "https://www.flickr.com/photos/ericthefishking/47992558548/",
+      "commons": "https://commons.wikimedia.org/wiki/File:LFC_Parade_2019_01_Joe_Gomez.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "verification": "Current public Flickr GET200 rel=license confirms CC BY2.0 and photo date; independent Commons metadata corroborates. Public original GET200 and native visual identity reviewed.",
+      "original_bytes": 15181917,
+      "original_sha256": "7ca9f1f764b3d1e3426ceeb81f9011845f45558fbb011829a8457cd2d89a1aa5",
+      "original_dimensions": [
+        6016,
+        4016
+      ],
+      "reference_crop": {
+        "x": 3150,
+        "y": 850,
+        "width": 1000,
+        "height": 1100
+      },
+      "hero_crop": {
+        "x": 3320,
+        "y": 880,
+        "width": 680,
+        "height": 720
+      },
+      "archive_disclosure": "Cover, caption and website excerpt identify archive2019, creator, licence URL and alterations; not represented as a 2026 shootout photo.",
+      "changes": "Real original portrait referenced in generated editorial composition. Mechanical JPEG resize/fit. Website original-photo crop/fit/pad without headline. No endorsement implied.",
+      "access_limits": "A different CC0 Commons work returned403 and was stopped. Selected CC BY2.0 parade work is a separate public source; no login/challenge/DRM/geofence bypass."
+    },
+    "hero": {
+      "bytes": 71899,
+      "sha256": "dc221409ebc1c5c962c58057bfd1a2318c3b4c3665604c25d1d4eff12c6813a2",
+      "dimensions": [
+        512,
+        420
+      ],
+      "native_review": true,
+      "clean_original_photo_without_text": true
+    }
+  },
+  "article": {
+    "title": "Dua Penalti Gagal, Liverpool Masih Punya Gomez",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 161,
+    "digest": "9ed1665b66f66f8d67cc3de72f00234306cfdabc0214f0a1cebba82b3360bfbb",
+    "goal_benchmarks": [
+      "goal-20261021-foden-hattrick-city-match-news",
+      "goal-20261028-gasperini-napoli-roma-reaction-news"
+    ],
+    "whole_article_before_pagination": true,
+    "audit_issues": []
+  },
+  "cover": {
+    "variant": "KOLOM",
+    "source": "LIVERPOOLFC.COM",
+    "page_count": 5,
+    "bytes": 378547,
+    "sha256": "6cf5839d88494e01acfbf6593e6ea3200adfbac5bc6c0a33816654f6a609ee80",
+    "native_review": true,
+    "real_archive_face_preserved": true,
+    "headline_deck_rule_spacing_readable": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 480252,
+      "sha256": "61c2ba20f2e60e8a595e677717d589d2fb1e27384f2529c2e02aa7f2d6b19c5b",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "LIVERPOOLFC.COM",
+        "cover_input_sha256": "6cf5839d88494e01acfbf6593e6ea3200adfbac5bc6c0a33816654f6a609ee80",
+        "output_sha256": "61c2ba20f2e60e8a595e677717d589d2fb1e27384f2529c2e02aa7f2d6b19c5b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 187325,
+      "sha256": "1bd33d9baa00c18eee8d2667bceefdbd1d9c948d869b5ffea7150d5e3590d1e3",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "f470b31dc6614c6695be55b7a57e9e7736e84a6002c115ca5ecfbe6dd7b68b2e",
+        "output_sha256": "1bd33d9baa00c18eee8d2667bceefdbd1d9c948d869b5ffea7150d5e3590d1e3",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 719,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 921,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 165768,
+      "sha256": "9b1ce0b9b5e7ad44edd14ac73b1eaf6b9a746d742286a1fb14f90ebdaa888e52",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "c67ae4c4621ff95689bd77b8ae75baf9f3d4aaedb1b54244f111a250fa7f8178",
+        "output_sha256": "9b1ce0b9b5e7ad44edd14ac73b1eaf6b9a746d742286a1fb14f90ebdaa888e52",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 47,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 288,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 785,
+            "height": 47,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 328,
+            "width": 923,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 162667,
+      "sha256": "2361b81bfb70074a2e6021dc2d061d160bf30f22c3a44e991e4e8021976a8c28",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "ec5ede0abb0f33fba5a89ff8deb97b35737e53c7444e1fe8429e1ea9173f9830",
+        "output_sha256": "2361b81bfb70074a2e6021dc2d061d160bf30f22c3a44e991e4e8021976a8c28",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 819,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 932,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 5,
+      "bytes": 186664,
+      "sha256": "5e32e0002af52c8c26790e4b393e1bfe147df979b58f7b10829ac6866e398a29",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "f3ce2af4367c360be6d4fd848fad41923662463c68e4c09efc0fb8a56982ca09",
+        "output_sha256": "5e32e0002af52c8c26790e4b393e1bfe147df979b58f7b10829ac6866e398a29",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 832,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 899,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_read": true,
+    "hero_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "body_text_only_cream": true,
+    "source_cover_only": true,
+    "no_clipping_or_overlap": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "source_muted": false,
+    "voiceover_created": false,
+    "reel_audio_audition_not_claimed": true
+  },
+  "growth": {
+    "serial": "Lapangan Kita is Thursday’s community framework, not forced on the existing European assignment.",
+    "adaptation": "Retain legacy Thursday Europe slot and clock. Focus on the decision point after two missed penalties rather than a result-only headline.",
+    "fact": "Liverpool beat Chelsea 6–5 on penalties after 1–1 at Anfield on 28 October UK local time.",
+    "angle": "Gomez was the eighth taker and sixth successful penalty: two different counts explain the tension.",
+    "hook": "Two Liverpool misses still left a route through Gomez.",
+    "payoff": "Explain normal-time penalties, Mamardashvili’s late Palestra save and the five-from-seven to eighth-kick sequence, then next opponent.",
+    "audience_action": "Compare which mattered more, Mamardashvili’s late save or Gomez’s eighth penalty; invite a specific reason. Full chronology is a match reference worth saving.",
+    "format": "CAROUSEL",
+    "trial_reels": "Not applicable to the selected format.",
+    "review_due_24h": "2026-10-30T01:00:00Z",
+    "review_due_7d": "2026-11-05T01:00:00Z",
+    "reviews_planned_only": true
+  },
+  "scope": {
+    "checked_at": "2026-10-29T00:23:34.211Z",
+    "baseline_rows": 173,
+    "current_rows": 173,
+    "changed": [],
+    "added": [],
+    "target": {
+      "status": "DRAFT",
+      "format": "REEL",
+      "clock": "2026-10-29T01:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "cms_writes_before_commit": 0,
+    "other_existing_rows_unchanged": 172,
+    "no_changes": [
+      "13.00 slots",
+      "additional content",
+      "scheduled/published/archive/tombstone",
+      "renderer",
+      "credentials",
+      "services",
+      "automations",
+      "routine calendar"
+    ],
+    "seeder_called": false,
+    "meta_direct_called": false
+  },
+  "references": {
+    "entries": 25,
+    "latest_read_at": "2026-10-29T00:23:12.049Z",
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true
+  },
+  "rollback_commit": "955246bddefebb427ed5b68a2fc8687981807c6e",
+  "private_only": "Raw source text/HTML, full input packet, original photo, API response and private CDN URLs stay outside Git; committed own article, sanitized proof and attributed licensed QA derivatives only."
+}

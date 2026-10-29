@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Penalti Gagal, Liverpool Masih Punya Gomez",
+  "dek": "Gomez mengambil giliran kedelapan setelah dua kegagalan Liverpool. Arsip 2019: Eric The Fish/Flickr, CC BY 2.0, diolah. creativecommons.org/licenses/by/2.0/",
+  "caption": "DUA PENALTI GAGAL, LIVERPOOL MASIH PUNYA GOMEZ\n\nJoe Gomez maju sebagai penendang kedelapan Liverpool setelah kedua tim sama-sama memasukkan lima dari tujuh penalti. Golnya menjadi eksekusi sukses keenam, lalu Wesley Fofana menendang melambung.\n\nLiverpool menang adu penalti 6–5 setelah imbang 1–1 melawan Chelsea di Anfield, Rabu, 28 Oktober 2026 waktu Inggris. Sebelumnya, Mamardashvili menahan peluang Palestra dan menjaga pertandingan tetap imbang. Liverpool mendapat laga kandang melawan Bournemouth di perempat final.\n\nMenurutmu, momen paling menentukan penyelamatan Mamardashvili sebelum adu penalti atau keberanian Gomez saat giliran kedelapan? Pilih satu dan jelaskan alasannya.\n\nFakta diperiksa melalui laporan Liverpool, reaksi Gomez yang mengutip wawancara ITV, dan laporan Sky Sports. Foto arsip Joe Gomez, parade Liverpool 2 Juni 2019: Eric The Fish/Flickr, CC BY 2.0. https://www.flickr.com/photos/ericthefishking/47992558548/ . https://creativecommons.org/licenses/by/2.0/ . Foto dipotong/dikolase untuk cover dan dibingkai tanpa teks untuk portal. Bukan dokumentasi Liverpool–Chelsea 2026.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gomez Menjaga Jalan Liverpool",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "SEQUENCE"
+      ],
+      "text": "Liverpool tetap menemukan jalan keluar meski dua eksekusinya gagal dalam adu penalti melawan Chelsea. Joe Gomez menyelesaikan gilirannya sebelum Wesley Fofana menendang melambung. Liverpool menang 6–5 dalam adu penalti setelah bermain 1–1 di Anfield, Rabu (28/10/2026) waktu Inggris, dan lolos ke perempat final Carabao Cup."
+    },
+    {
+      "id": "regular",
+      "heading": "Dua Gol dari Titik Putih",
+      "kind": "FACT",
+      "claim_ids": [
+        "REGULAR",
+        "RESULT"
+      ],
+      "text": "Dua gol pada waktu normal juga berasal dari penalti. Morgan Rogers membawa Chelsea unggul setelah Ryan Gravenberch melanggar Moises Caicedo. Cody Gakpo kemudian menyamakan kedudukan setelah Fofana menyentuh bola dengan tangan di area penalti. Skor kembali seimbang sebelum turun minum."
+    },
+    {
+      "id": "keeper",
+      "heading": "Mamardashvili Menahan Palestra",
+      "kind": "FACT",
+      "claim_ids": [
+        "KEEPER",
+        "RESULT"
+      ],
+      "text": "Chelsea sempat mendekati gol tambahan melalui Marco Palestra pada akhir babak kedua. Giorgi Mamardashvili menepis tembakannya dan menjaga skor tetap 1–1. Tidak ada gol tambahan sampai waktu normal selesai, sehingga kedua tim langsung menjalani adu penalti."
+    },
+    {
+      "id": "shootout",
+      "heading": "Gol Keenam pada Giliran Kedelapan",
+      "kind": "FACT",
+      "claim_ids": [
+        "SEQUENCE",
+        "NEXT"
+      ],
+      "text": "Ketika masing-masing tim baru memasukkan lima dari tujuh tendangan, Gomez maju sebagai penendang kedelapan Liverpool. Golnya menjadi penalti sukses keenam bagi tuan rumah. Fofana kemudian gagal menyamakan. Setelah melewati malam ini, Liverpool mendapat laga kandang melawan Bournemouth pada perempat final."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261021-foden-hattrick-city-match-news",
+    "goal-20261028-gasperini-napoli-roma-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-29T00:15:30.574Z",
+    "article_digest": "9ed1665b66f66f8d67cc3de72f00234306cfdabc0214f0a1cebba82b3360bfbb"
+  }
+}
