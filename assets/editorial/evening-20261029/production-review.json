@@ -1,0 +1,515 @@
+{
+  "checked_at": "2026-10-29T12:23:09.746Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "6d94d11c-34d5-4588-a90c-20f626d666c4",
+    "plan_key": "2026-10-29:mid-pm",
+    "event_key": "persib-melbourne-klok-absence-nine-points-20261028",
+    "status": "PENDING_REVIEW",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-29T13:00:00Z",
+    "scheduled_wib": "29 Oktober 2026 20.00 WIB"
+  },
+  "research": {
+    "pool_generated_at": "2026-10-29T12:02:27.384Z",
+    "pool": "Release getDailySportsPool through committed audience helper; cached source components and quotas respected. Persib–Melbourne trend supplied a discovery lead, not proof of facts/rights or a viral forecast.",
+    "full_text_sources": [
+      {
+        "url": "https://melbournevictory.com.au/news/victory-put-away-by-persib/",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:03:58.370277+00:00",
+        "sha256": "32b2469a37b00ff7553714ae99aa193e4ff3ab67b8324a2e49bab5aaab3777f0",
+        "text_chars": 4049,
+        "publisher": "Melbourne Victory official match report",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8728586/persib-vs-melbourne-victory-sekulic-brace-maung-bandung-menang-2-0/amp",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:04:00.546373+00:00",
+        "sha256": "19e2e63d30d8d3327bf8fb5c46c426e11556cb8071b129e7c42a0304bc99b69e",
+        "text_chars": 1269,
+        "publisher": "detikSepakbola / Adhi Prasetya",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://jabar.suara.com/read/2026/10/29/003500/persib-kalahkan-melbourne-victory-2-0-igor-tolic-grup-belum-usai?page=all",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:04:00.936006+00:00",
+        "sha256": "d3f9004107d6762c71cd13f72217e37d818e7085214263f853619cdb8f957188",
+        "text_chars": 4555,
+        "publisher": "SuaraJabar / Rahman, page=all complete",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://www.ligaindonesiabaru.com/news/detail/balsa-sekulic-cetak-2-gol-persib-tundukkan-melbourne-victory",
+        "retrieved_at": "2026-10-29T12:05:15.676553+00:00",
+        "http": 200,
+        "sha256": "9aac46fe2c46f76fd80d4082f3f49a38c206e0f84cc9b746b6acfad8b0c8c187",
+        "text_chars": 2260,
+        "publisher": "ILeague official report and Tolic statements",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://melbournevictory.com.au/news/piecing-together-persib/",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:09:39.343172+00:00",
+        "sha256": "f3a5e1e672ad086244aac6b743e75e0d033fc47c5ce07d7cec565ccd1ad6af0d",
+        "text_chars": 2904,
+        "publisher": "Melbourne Victory official preview",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://www.rctiplus.com/news/detail/okezone/5503447/2-pemain-persib-bandung-yang-bakal-absen-saat-hadapi-melbourne-victory--nomor-1-kena-sanksi-",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:09:43.168109+00:00",
+        "sha256": "8c429574dc6ddaa9f11534578aa70ac37a3276c60cbb85f752f82c0dd97570ed",
+        "text_chars": 2722,
+        "publisher": "Okezone report reproduced by RCTI+, counted as one MNC publisher",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      },
+      {
+        "url": "https://oppal.co.id/news/detail/persib-bungkam-melbourne-victory-2-0-makin-dekat-ke-16-besar-acl-two-dan-dongkrak-poin-liga-indonesia",
+        "http": 200,
+        "retrieved_at": "2026-10-29T12:10:39.850426+00:00",
+        "sha256": "df1c21655f70e6785112fee14efacf495d40b42c82c3d7c09a5f6b0d7b309b48",
+        "text_chars": 3507,
+        "publisher": "OPPAL full report",
+        "full_article_read": true,
+        "transport": "Normal public GET200. Main Melbourne/detik/Suara/ILeague and preview/Okezone pages also opened with browser; viewport and full body checked separately."
+      }
+    ],
+    "independent_publisher_groups": [
+      "Melbourne Victory",
+      "Transmedia",
+      "Arkadia",
+      "ILeague",
+      "MNC",
+      "OPPAL"
+    ],
+    "verification": [
+      "Official report match-details label says Persib1 despite intro2–0 and two Sekulic goals. Use2–0 corroborated by detik, Suara and ILeague.",
+      "Do not reproduce four-goals quote in ILeague/Suara: inconsistent with the match. Short quote used only: namun grup ini belum usai.",
+      "Klok absent after Viettel red card confirmed by opponent primary preview and independent Okezone; no injury or guaranteed return/XI claim.",
+      "Sekulic47/67 and Loncar/Berguinho deliveries corroborated by official report and detik. No unseen technique invented.",
+      "Nine points from three wins, no concessions, Melbourne second with four; no certain qualification arithmetic.",
+      "Next4November at AAMI Park verified by primary Melbourne and independent OPPAL. No timezone conversion or future result claimed.",
+      "Two Melbourne pages count as one publisher; Okezone and RCTI+ are one MNC source."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-29:mid-pm",
+    "checked_at": "2026-10-29T12:13:29.455Z",
+    "queries": [
+      "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+      "Persib Melbourne Victory 28 October 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=RfyIIPH6TZM",
+        "creator": "Okezone",
+        "checked_at": "2026-10-29T12:13:29.455Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official API metadata and full description reviewed. Standard YouTube licence; no explicit Stadione redistribution grant. Browser source open throttled. No download, visual/audio inspection or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-29T09:15:44Z, duration 494 seconds, licence youtube. Description reviewed without a reuse grant; metadata alone does not verify real footage or audio. Not selected."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=dxVshTIdWak",
+        "creator": "PERSIB TODAY",
+        "checked_at": "2026-10-29T12:13:29.455Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official API metadata and full description reviewed. Standard YouTube licence; no explicit Stadione redistribution grant. Browser source open throttled. No download, visual/audio inspection or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-29T00:00:18Z, duration 29 seconds, licence youtube. Description reviewed without a reuse grant; metadata alone does not verify real footage or audio. Not selected."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=paWVqy_Bdj0",
+        "creator": "Maung VIP",
+        "checked_at": "2026-10-29T12:13:29.455Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official API metadata and full description reviewed. Standard YouTube licence; no explicit Stadione redistribution grant. Browser source open throttled. No download, visual/audio inspection or complete access failure claimed.",
+        "proof": {
+          "kind": "YOUTUBE_API_METADATA_DESCRIPTION_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-29T00:30:03Z, duration 1534 seconds, licence youtube. Description reviewed without a reuse grant; metadata alone does not verify real footage or audio. Not selected."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-29T12:13:29.455Z",
+      "digest": "cd3a05b88942ed46bd2a28cbabc4c0b07337c07a8ccd8f6d35f5932be1300cc5"
+    }
+  },
+  "illustrated_story": {
+    "owner_approval_acknowledged": true,
+    "motion_story_doc_read": true,
+    "kane_v4_example_reviewed": true,
+    "status": "Manual prototype, not fully integrated with CMS.",
+    "edge_tts_used": false,
+    "configured_licensed_voice_available": false,
+    "provider_presence_only": {
+      "openai": false,
+      "azure_speech": false,
+      "elevenlabs": false
+    },
+    "reason": "No selected authorized recording or configured licensed provider verified. No reuse of Kane one-off exception; preserve source audio policy, choose documented carousel fallback."
+  },
+  "media_rights": {
+    "photo": {
+      "creator": "Chin Yu Chu",
+      "title": "Marc Klok",
+      "date": "2023-10-17",
+      "url": "https://www.flickr.com/photos/195030826@N02/53616004626/",
+      "commons": "https://commons.wikimedia.org/wiki/File:Marc_Klok_-_53616004626.jpg",
+      "license": "CC BY-SA2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "verification": "Current normal public Flickr GET200 has two rel=license CC BY-SA2.0 links and Taken on October17,2023. Commons confirms photographer/date/licence and28March2024 Flickr review.",
+      "downloaded_bytes": 190572,
+      "downloaded_sha256": "ba7eedbf31dfc70b32b4cd583fcae2000864d35dfaf99721cdd7a51c8f321778",
+      "downloaded_dimensions": [
+        683,
+        1024
+      ],
+      "hero_crop": {
+        "x": 0,
+        "y": 0,
+        "width": 682,
+        "height": 750
+      },
+      "archive_disclosure": "Archive2023 and author/licence/changes are visible on cover, caption and website excerpt. Headline states WITHOUT Klok; no implication that archive is this game or Klok scored/played.",
+      "changes": "Image generation uses actual Klok photograph as reference and changes editorial background. Mechanical image fit. Website mechanically crops/frames the original without headline.",
+      "share_alike": "Photo and derived cover/hero/QA derivatives are explicitly offered under CC BY-SA2.0 in cover/caption/website excerpt and IMAGE-LICENSE.md. No endorsement implied.",
+      "access_limits": "Different Sandy Walsh Commons photo HTTP403 stopped; different Haye Flickr work404 stopped and EXIF/Commons licensing discrepancy not relied upon. No denied URL rerouted, no login/challenge bypass. Klok is a distinct work with public licence and accessible photo."
+    },
+    "hero": {
+      "bytes": 44229,
+      "sha256": "fc1e26d1785184ce60ee14eaed1dd84435d400e9936c29906d80e9d5556fd786",
+      "dimensions": [
+        512,
+        420
+      ],
+      "native_review": true,
+      "clean_original_photo_without_text": true
+    }
+  },
+  "article": {
+    "title": "Persib Menang Tanpa Klok, Tiket Belum Aman",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 142,
+    "digest": "1f1a5a65e64c65a7777b0d8c023fd17d3fa1796a6b53d3f45a16b22a0cbf7cbf",
+    "goal_benchmarks": [
+      "goal-20261029-bayern-magdeburg-match-news",
+      "goal-20261028-gasperini-napoli-roma-reaction-news"
+    ],
+    "whole_article_before_pagination": true,
+    "audit_issues": []
+  },
+  "cover": {
+    "variant": "FOTO_DOMINAN",
+    "source": "MELBOURNEVICTORY.COM.AU",
+    "page_count": 5,
+    "bytes": 392298,
+    "sha256": "f34bedd1e21097cc1a78bcbeb4f05331c47baf32d367d771b4950847c29d4610",
+    "native_review": true,
+    "real_archive_face_preserved": true,
+    "spacing_revision": "Imagegen revision gave headline/rule/deck breathing room before shared preview; archive attribution and source kept within canvas.",
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 497659,
+      "sha256": "7895911e710765470811a87d57b5a9d5a100f0dd7ae211601b766430c71b23f9",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "MELBOURNEVICTORY.COM.AU",
+        "cover_input_sha256": "f34bedd1e21097cc1a78bcbeb4f05331c47baf32d367d771b4950847c29d4610",
+        "output_sha256": "7895911e710765470811a87d57b5a9d5a100f0dd7ae211601b766430c71b23f9",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 172120,
+      "sha256": "d1a3290002da5f35551ed07b08e9be8365c6a7cdaf85d14b510aea647830e4a4",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "f36302826d5b7459823c7cbc6f169f3c72dde2ef2a68a87dfee37d067447bc47",
+        "output_sha256": "d1a3290002da5f35551ed07b08e9be8365c6a7cdaf85d14b510aea647830e4a4",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 139,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 380,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 670,
+            "height": 139,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 420,
+            "width": 926,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 159568,
+      "sha256": "4421f2a2e923de43fe5e28bee7539dc161966be30183df6dd580027298975eda",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "e249cc1720144ac08d777e52935ce71288807c2238c8714b99de2138f8fc1323",
+        "output_sha256": "4421f2a2e923de43fe5e28bee7539dc161966be30183df6dd580027298975eda",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 719,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 892,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 145530,
+      "sha256": "5882cc071760458abf2773eac7fab6d5eea6de5fb2d1eb84c28e98781ef96093",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "f921f0aed64c77e3da79545881705f6800c0311c37298a4ef5ca949c5cd95117",
+        "output_sha256": "5882cc071760458abf2773eac7fab6d5eea6de5fb2d1eb84c28e98781ef96093",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 47,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 288,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 742,
+            "height": 47,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 328,
+            "width": 912,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 5,
+      "bytes": 147766,
+      "sha256": "429090a13420a95a834bada6826146dd784923500c1406be05e3f330f594b4e3",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "156d3eede3165216db0aa39d5cd357378810724129054ca0ea7687d32c205c1d",
+        "output_sha256": "429090a13420a95a834bada6826146dd784923500c1406be05e3f330f594b4e3",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 246,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 642,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 875,
+            "height": 246,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_read": true,
+    "hero_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "body_text_only_cream": true,
+    "source_cover_only": true,
+    "no_clipping_or_overlap": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "source_muted": false,
+    "voiceover_created": false,
+    "reel_audio_audition_not_claimed": true
+  },
+  "growth": {
+    "serial": "Legacy Thursday hot news / quotes. New calendar has no Thursday evening serial; preserve the existing eligible slot.",
+    "adaptation": "Do not force Lapangan Kita onto a first-team continental match. Keep Indonesia pillar and existing20.00WIB clock. No new slot seeded.",
+    "fact": "Persib beat Melbourne2–0 without suspended captain Marc Klok, with Sekulic scoring both goals. Nine points from three games do not mean group is complete.",
+    "angle": "Absence of captain and team result are verified separately; Tolic warning explains what supporters still have to follow.",
+    "hook": "Persib won without Klok, but a perfect start is not a qualification announcement.",
+    "payoff": "Explain Klok suspension, actual scorer/assists, Tolic short quotation and next meeting of the top two teams.",
+    "audience_action": "Compare preserving a clean sheet with maintaining Sekulic–Berguinho connection in the away match; ask for a specific reason. Fixture date gives a reason to save.",
+    "format": "CAROUSEL",
+    "trial_reels": "Not applicable to carousel; no capability or trial outcome assumed.",
+    "review_due_24h": "2026-10-30T13:00:00Z",
+    "review_due_7d": "2026-11-05T13:00:00Z",
+    "reviews_planned_only": true
+  },
+  "scope": {
+    "checked_at": "2026-10-29T12:23:09.254Z",
+    "baseline_rows": 174,
+    "current_rows": 174,
+    "changed": [
+      {
+        "id": "6d94d11c-34d5-4588-a90c-20f626d666c4",
+        "before": "DRAFT",
+        "after": "PENDING_REVIEW"
+      }
+    ],
+    "added": [],
+    "target": {
+      "status": "PENDING_REVIEW",
+      "format": "REEL",
+      "clock": "2026-10-29T13:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "operator_cms_writes_before_commit": 0,
+    "background_change": "Only target changed DRAFT to PENDING_REVIEW at12:15UTC with an automatic unapproved pool packet; assets/parent/attempt0. Re-read before adapter; protected states still skipped.",
+    "other_existing_rows_unchanged": 173,
+    "no_changes": [
+      "13.00 slots",
+      "additional content",
+      "scheduled/published/archive/tombstone",
+      "renderer",
+      "credentials",
+      "services",
+      "automations",
+      "routine calendar"
+    ],
+    "seeder_called": false,
+    "meta_direct_called": false
+  },
+  "references": {
+    "entries": 25,
+    "latest_read_at": "2026-10-29T00:23:12.049Z",
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true,
+    "journal_changed": false
+  },
+  "rollback_commit": "910ec617894f173f8c1f155985ef091869490388",
+  "private_only": "Full source text/HTML, raw API responses, full input packet and original source photo stay private; own article, sanitized evidence and explicitly licensed image derivatives only in Git."
+}

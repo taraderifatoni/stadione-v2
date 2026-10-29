@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persib Menang Tanpa Klok, Tiket Belum Aman",
+  "dek": "Sembilan poin belum menutup persaingan Grup E. Foto arsip Klok 2023: Chin Yu Chu/Flickr. Foto dan olahan CC BY-SA 2.0, creativecommons.org/licenses/by-sa/2.0/",
+  "caption": "PERSIB MENANG TANPA KLOK, TIKET BELUM AMAN\n\nTanpa kapten Marc Klok yang terkena skorsing, Persib mengalahkan Melbourne Victory 2–0 lewat dua gol Balsa Sekulic pada menit ke-47 dan ke-67. Sembilan poin dari tiga laga dan belum kebobolan menjadi modal, tetapi Igor Tolic mengingatkan grup belum usai.\n\nPertemuan berikutnya berlangsung di Melbourne pada 4 November. Melbourne masih di posisi kedua dengan empat poin.\n\nBobotoh, untuk laga tandang nanti kamu lebih mengutamakan menjaga gawang tetap bersih atau mempertahankan duet Sekulic–Berguinho? Pilih satu prioritas dan jelaskan alasannya.\n\nFakta diperiksa melalui laporan klub Melbourne Victory, detikSepakbola, SuaraJabar, ILeague, Okezone via RCTI+ dan OPPAL.\n\nFoto arsip Marc Klok (17 Oktober 2023): Chin Yu Chu/Flickr. https://www.flickr.com/photos/195030826@N02/53616004626/ . Foto dan olahan cover/hero: CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0/ . Foto dipotong/dikolase; hero dibingkai tanpa teks. Klok absen melawan Melbourne, bukan pencetak gol laga ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Menang Tanpa Sang Kapten",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "ABSENCE",
+        "GROUP"
+      ],
+      "text": "Persib Bandung melewati laga tanpa kapten Marc Klok dengan kemenangan, tetapi belum memastikan tiket fase gugur. Hasil 2–0 atas Melbourne Victory di Stadion Si Jalak Harupat, Rabu (28/10/2026), membawa Maung Bandung mengoleksi sembilan poin dari tiga pertandingan Grup E AFC Champions League Two."
+    },
+    {
+      "id": "goals",
+      "heading": "Sekulic Memberi Dua Jawaban",
+      "kind": "FACT",
+      "claim_ids": [
+        "ABSENCE",
+        "GOALS"
+      ],
+      "text": "Klok absen setelah mendapat kartu merah melawan The Cong-Viettel. Di lapangan, Balsa Sekulic menjadi pembeda dengan gol pada menit ke-47 dan ke-67. Gol pembuka berawal dari bola Danijel Loncar, sedangkan gol kedua memanfaatkan umpan Berguinho."
+    },
+    {
+      "id": "caution",
+      "heading": "Tolic Menahan Euforia",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "GROUP",
+        "CAUTION"
+      ],
+      "quote": {
+        "source_id": "ILEAGUE",
+        "text": "namun grup ini belum usai"
+      },
+      "text": "Persib menyapu bersih tiga kemenangan dan belum kebobolan. Meski begitu, Igor Tolic menegaskan, “namun grup ini belum usai”. Pelatih Persib tersebut mengingatkan bahwa posisi di puncak klasemen belum berarti perjalanan fase grup selesai."
+    },
+    {
+      "id": "next",
+      "heading": "Ujian Berikutnya di Melbourne",
+      "kind": "FACT",
+      "claim_ids": [
+        "NEXT",
+        "GROUP"
+      ],
+      "text": "Persib kembali menghadapi Melbourne Victory pada Rabu (4/11/2026) di AAMI Park, Melbourne. Tuan rumah berikutnya menempati posisi kedua dengan empat poin setelah tiga laga. Dua tim teratas grup akan kembali berhadapan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261029-bayern-magdeburg-match-news",
+    "goal-20261028-gasperini-napoli-roma-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-29T12:21:22.078Z",
+    "article_digest": "1f1a5a65e64c65a7777b0d8c023fd17d3fa1796a6b53d3f45a16b22a0cbf7cbf"
+  }
+}
