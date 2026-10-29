@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-29T00:25:29.224Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "d6ede472-823f-41e9-ad10-5f201d296a70",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-29:mid-am",
+    "event_key": "liverpool-chelsea-gomez-eighth-penalty-20261028",
+    "scheduled_at": "2026-10-29T01:00:00+00:00",
+    "time_wib": "29 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "e0d5fc14-71a3-4148-9f50-267f8d69a63e",
+    "status": "SCHEDULED",
+    "slug": "dua-penalti-gagal-liverpool-masih-punya-gomez-d6ede472",
+    "scheduled_at": "2026-10-29T01:00:00+00:00",
+    "title": "Dua Penalti Gagal, Liverpool Masih Punya Gomez",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "9ed1665b66f66f8d67cc3de72f00234306cfdabc0214f0a1cebba82b3360bfbb",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 71899,
+      "sha256": "dc221409ebc1c5c962c58057bfd1a2318c3b4c3665604c25d1d4eff12c6813a2",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 480252,
+      "sha256": "61c2ba20f2e60e8a595e677717d589d2fb1e27384f2529c2e02aa7f2d6b19c5b",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 187325,
+      "sha256": "1bd33d9baa00c18eee8d2667bceefdbd1d9c948d869b5ffea7150d5e3590d1e3",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 165768,
+      "sha256": "9b1ce0b9b5e7ad44edd14ac73b1eaf6b9a746d742286a1fb14f90ebdaa888e52",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 162667,
+      "sha256": "2361b81bfb70074a2e6021dc2d061d160bf30f22c3a44e991e4e8021976a8c28",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 186664,
+      "sha256": "5e32e0002af52c8c26790e4b393e1bfe147df979b58f7b10829ac6866e398a29",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 68,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 172,
+  "changed_other_rows": [],
+  "baseline_rows": 173,
+  "current_rows": 174,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 6,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 25,
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Valid future 08.00 WIB schedule left to the shared systemd publisher. No MetaDirect. Not a claim of Instagram or website publication; target metrics are not yet available.",
+  "pre_schedule_commit": "b11745cbf517c87f6516b50b21828e42bcd73221"
+}
