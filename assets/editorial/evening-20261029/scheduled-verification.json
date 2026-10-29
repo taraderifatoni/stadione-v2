@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-29T12:23:43.331Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "6d94d11c-34d5-4588-a90c-20f626d666c4",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-29:mid-pm",
+    "event_key": "persib-melbourne-klok-absence-nine-points-20261028",
+    "scheduled_at": "2026-10-29T13:00:00+00:00",
+    "time_wib": "29 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "e32b2e94-9752-41fd-900e-ddde5de03e1c",
+    "status": "SCHEDULED",
+    "slug": "persib-menang-tanpa-klok-tiket-belum-aman-6d94d11c",
+    "scheduled_at": "2026-10-29T13:00:00+00:00",
+    "title": "Persib Menang Tanpa Klok, Tiket Belum Aman",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "1f1a5a65e64c65a7777b0d8c023fd17d3fa1796a6b53d3f45a16b22a0cbf7cbf",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 44229,
+      "sha256": "fc1e26d1785184ce60ee14eaed1dd84435d400e9936c29906d80e9d5556fd786",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 497659,
+      "sha256": "7895911e710765470811a87d57b5a9d5a100f0dd7ae211601b766430c71b23f9",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 172120,
+      "sha256": "d1a3290002da5f35551ed07b08e9be8365c6a7cdaf85d14b510aea647830e4a4",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 159568,
+      "sha256": "4421f2a2e923de43fe5e28bee7539dc161966be30183df6dd580027298975eda",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 145530,
+      "sha256": "5882cc071760458abf2773eac7fab6d5eea6de5fb2d1eb84c28e98781ef96093",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 147766,
+      "sha256": "429090a13420a95a834bada6826146dd784923500c1406be05e3f330f594b4e3",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 69,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 173,
+  "changed_other_rows": [],
+  "baseline_rows": 174,
+  "current_rows": 175,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 7,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 25,
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Valid future20.00WIB schedule left to the shared systemd publisher. No MetaDirect. This is not a claim of Instagram or website publication; target metrics are not available yet.",
+  "pre_schedule_commit": "28e645350953702f256995ad40351c242ec354b8"
+}
