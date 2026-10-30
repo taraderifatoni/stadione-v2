@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-30T12:26:05.368Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "12c73d77-6259-4b6e-8256-910e7c586318",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-30:fri-pm",
+    "event_key": "dewa-persija-four-point-gap-preview-20261031",
+    "scheduled_at": "2026-10-30T13:00:00+00:00",
+    "time_wib": "30 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "8b4e57e9-1ab3-48b0-8b97-7d76f2d9cf0c",
+    "status": "SCHEDULED",
+    "slug": "dewa-persija-empat-poin-yang-bisa-berubah-12c73d77",
+    "scheduled_at": "2026-10-30T13:00:00+00:00",
+    "title": "Dewa–Persija, Empat Poin yang Bisa Berubah",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "40dfd265bda16636acc7121335da940a5729b824395d7c62fb99bb3e15b89845",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 44657,
+      "sha256": "5034fd08feb938f9ad9b6ac20051215bc95f605d6c3cbce00fdc79b95c39e167",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 562915,
+      "sha256": "2ee39c6a35c8821e81572c1fb0c2cf5c1ec7cee7e532d3a3811e088df0bbad4e",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 157280,
+      "sha256": "b96629842dcc7ab9374fb496753abe2d818a75617bcb97c7e9a87e512dfaccb6",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 146463,
+      "sha256": "0f0cc4c38e91f17113dd61fcf6495f8e7ba41f078101f68a7036b3de25c6f39d",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 188015,
+      "sha256": "3642e081e25741cd935490be8e1d90056071a4116fdfb89d15492d92f752cbd7",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 71,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 178,
+  "changed_other_rows": [],
+  "baseline_rows": 179,
+  "current_rows": 180,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 9,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 26,
+    "sha256": "39b161ee48b5b45c9505b89ec7e22b664c9b27ec1f773406ede9a46b61fb2f8d",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future20WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "ff41d51ae9e6da7159e2c4dd44a076761eb2ec18"
+}

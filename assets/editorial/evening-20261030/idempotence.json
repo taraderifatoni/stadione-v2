@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-10-30T12:26:06.575Z",
+  "shared_adapter_replay": {
+    "skipped": true,
+    "id": "12c73d77-6259-4b6e-8256-910e7c586318",
+    "status": "SCHEDULED",
+    "reason": "existing_scheduled_published_archived_or_attempt"
+  },
+  "cms_rows": 180,
+  "all_rows_identical": true,
+  "attempts": 0,
+  "attempts_identical": true,
+  "scope": "Only initial targetSOCIAL and one new pairedARTICLE changed in production; replay mutated no rows or attempts."
+}
