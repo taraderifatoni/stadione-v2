@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-30T00:36:05.354Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "953aa0f9-ccf8-4758-a9d3-19643b315248",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-30:fri-am",
+    "event_key": "veda-sepang-three-day-viewing-guide-20261030",
+    "scheduled_at": "2026-10-30T01:00:00+00:00",
+    "time_wib": "30 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "4c70bc8e-c268-4534-96d5-1401ea12072d",
+    "status": "SCHEDULED",
+    "slug": "veda-di-sepang-tiga-hari-yang-perlu-dicatat-953aa0f9",
+    "scheduled_at": "2026-10-30T01:00:00+00:00",
+    "title": "Veda di Sepang, Tiga Hari yang Perlu Dicatat",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "e52192087085b191268c6c9e6bcb86839d66c40101abc50c69e34b2d75f15bd1",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 17282,
+      "sha256": "6c0f755b09cf218cfae8efa65d59697d5ce141926a459b7af16e1d2e1229ff79",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 743833,
+      "sha256": "d3ebe44ccc7b3e2b2a07c148bf0ffb9a98d4ed56aef72ae569416030fbf1a73e",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 165502,
+      "sha256": "51e4786de91e5915e3ea08b52f54adcddfc53585610378f9080982d89845f760",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 152914,
+      "sha256": "79aa56fdf5b629ac3326ae62f372844740675546f881db06670094b75da0e4b8",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 118320,
+      "sha256": "ea54e57ed4241f1be566b532c8c0f81bb2a0b821c4c5207c6fb99742ee7c017a",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 130383,
+      "sha256": "96de0b32ebb232ed37349346cc1b0c9249c9b04ffac00a4bd56773dead86c52c",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 70,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 177,
+  "changed_other_rows": [],
+  "baseline_rows": 178,
+  "current_rows": 179,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 8,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 25,
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future08WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "bf3cce2306af224d29d698d83b1c0458ce98c254"
+}
