@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-30:fri-pm",
+  "checked_at": "2026-10-30T12:08:15.675Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Persija Dewa United 31 Oktober 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=95-4yGWoydg",
+      "creator": "RADIO BOLA",
+      "checked_at": "2026-10-30T12:08:15.675Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Metadata licence=youtube; published=2026-10-30T07:00:33Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=36BWNzD7REY",
+      "creator": "PONTIANAK SPORT",
+      "checked_at": "2026-10-30T12:08:15.675Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Metadata licence=youtube; published=2026-10-26T18:00:31Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=s4IKopzRfaw",
+      "creator": "ITSMe",
+      "checked_at": "2026-10-30T12:08:15.675Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Metadata licence=youtube; published=2026-10-30T11:00:56Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-30T12:08:15.675Z",
+    "digest": "722e0f8f818d65e897c3bc7bde235a31e1a7d918c636e888b5c83ebd3f7469d0"
+  }
+}

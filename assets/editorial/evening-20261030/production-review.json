@@ -1,0 +1,463 @@
+{
+  "checked_at": "2026-10-30T12:23:40.782Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "12c73d77-6259-4b6e-8256-910e7c586318",
+    "plan_key": "2026-10-30:fri-pm",
+    "event_key": "dewa-persija-four-point-gap-preview-20261031",
+    "status": "DRAFT",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-30T13:00:00Z",
+    "time_wib": "30 Oktober2026 20.00WIB"
+  },
+  "research": {
+    "pool_generated_at": "2026-10-30T12:00:13.843Z",
+    "pool": "Current release getDailySportsPool through committed audiencehelper/cms-load. Cached broad pillar pool:0eligibletrends/0eligiblenews/1eligiblevideo; bounded primary/independent discovery supplements, not a claim that selected preview was in pool.",
+    "full_text_and_primary_data": [
+      {
+        "url": "https://www.persija.id/media/news/stjepan-dan-nadeo-tegaskan-pentingnya-jaga-momentum",
+        "http": 200,
+        "retrieved_at": "2026-10-30T12:02:21.505116+00:00",
+        "text_chars": 2228,
+        "sha256": "8a803ebbd5a4ab6e735f5b6df3fd759989a00d0009fb3cc4943737ba46f3759b",
+        "id": "persija",
+        "read_scope": "Full article read",
+        "transport": "NormalGET200. Browser additionally opened; browser standings extraction omitted table, actualGETtable read.",
+        "publisher_group": "Persija"
+      },
+      {
+        "url": "https://www.ileague.id/fixtures/index/BRI_SUPER_LEAGUE_2026-27/8",
+        "http": 200,
+        "retrieved_at": "2026-10-30T12:02:22.343022+00:00",
+        "text_chars": 2281,
+        "sha256": "27a168d55ac13792d081cc1297b40e872fd125824f46bd3fab091665aa68d75a",
+        "id": "fixtures",
+        "read_scope": "Complete public fixtures/table data read from normalGET200",
+        "transport": "NormalGET200. Browser additionally opened; browser standings extraction omitted table, actualGETtable read.",
+        "publisher_group": "ILeague"
+      },
+      {
+        "url": "https://www.ileague.id/fixtures/index/BRI_SUPER_LEAGUE_2026-27/7",
+        "http": 200,
+        "retrieved_at": "2026-10-30T12:11:43.553954+00:00",
+        "text_chars": 2418,
+        "sha256": "32241c8a54ec101525145eabecaaffd8c989a55e7fd3b6440c47e1232972cb15",
+        "id": "fixtures7",
+        "read_scope": "Complete public fixtures/table data read from normalGET200",
+        "transport": "NormalGET200. Browser additionally opened; browser standings extraction omitted table, actualGETtable read.",
+        "publisher_group": "ILeague"
+      },
+      {
+        "url": "https://www.ileague.id/table/index/BRI_SUPER_LEAGUE_2026-27",
+        "http": 200,
+        "retrieved_at": "2026-10-30T12:03:29.703088+00:00",
+        "text_chars": 2534,
+        "sha256": "3aec6b7882a1ee14a38c1c842d1fa69433e7c6fd85646cb112389ac47e119588",
+        "id": "standings",
+        "read_scope": "Complete public fixtures/table data read from normalGET200",
+        "transport": "NormalGET200. Browser additionally opened; browser standings extraction omitted table, actualGETtable read.",
+        "publisher_group": "ILeague"
+      },
+      {
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8727289/jadwal-super-league-pekan-8-dewa-united-vs-persija-persib-vs-isenmulang",
+        "http": 200,
+        "retrieved_at": "2026-10-30T12:03:48.238823+00:00",
+        "text_chars": 3132,
+        "sha256": "e254e0ba4e512b9135c71f7a9049a28802323419e51ff1cbd4e79ab53c60f72d",
+        "id": "detik",
+        "read_scope": "Full article read",
+        "transport": "NormalGET200. Browser additionally opened; browser standings extraction omitted table, actualGETtable read.",
+        "publisher_group": "Transmedia"
+      },
+      {
+        "id": "tirto",
+        "url": "https://tirto.id/dewa-utd-vs-persija-liga-super-2026-prediksi-h2h-live-di-mana-hEpC",
+        "publisher_group": "Tirto",
+        "full_article_read": true,
+        "transport": "Full browser text read from lead to final streaming note; normalGET403stopped. Private packet stores a marked browser excerpt, not a claimed fullGETbody.",
+        "browser_published_at": "2026-10-30T06:20:00+07:00",
+        "private_excerpt_sha256": "35541a604f05a7e07a644ba5d6b67c50b4347d3381d4113bcf3f5a1fa9598c6e"
+      }
+    ],
+    "independent_groups": [
+      "Persija",
+      "ILeague",
+      "Tirto",
+      "Transmedia"
+    ],
+    "verification": [
+      "Official fixture31Oct19WIBBantenInternationalStadium matches independentreports.",
+      "Official table18/14from7matches each; all outcomes calculated:21/14gap7,18/17gap1,19/15gap4. Explicitly gapbetween two clubs, not all rivals or a championship guarantee.",
+      "Official round7recordsArema4Dewa0on25Oct andPersija2Persik1on26Oct; clubreport confirms first-half deficit and goalsKolinger/Ridho.",
+      "Tirto imagecaption3–1 conflicts with body2–1. Primaryclub/fixtures andTirtobody agree2–1; captionerror not adopted.",
+      "MediaIndonesia fullbrowser article read but namesCarlosPena; not adopted for coachidentity. GET403stopped; no bypass or globalsourceabsenceclaim.",
+      "No predictedlineups, injuries, rain, tactical cause ofloss, freshPersebayaresult, or winner prediction. No directquotes used."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-30:fri-pm",
+    "checked_at": "2026-10-30T12:08:15.675Z",
+    "queries": [
+      "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+      "Persija Dewa United 31 Oktober 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=95-4yGWoydg",
+        "creator": "RADIO BOLA",
+        "checked_at": "2026-10-30T12:08:15.675Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Metadata licence=youtube; published=2026-10-30T07:00:33Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=36BWNzD7REY",
+        "creator": "PONTIANAK SPORT",
+        "checked_at": "2026-10-30T12:08:15.675Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Metadata licence=youtube; published=2026-10-26T18:00:31Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=s4IKopzRfaw",
+        "creator": "ITSMe",
+        "checked_at": "2026-10-30T12:08:15.675Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube Data API verified source URL, channel, absolute upload date and standard youtube licence. Candidate description reviewed: no redistribution grant for Stadione video/audio. Browser source-page opening throttled. No download, viewing, transcript or audio audition claimed; no bypass or re-route.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Metadata licence=youtube; published=2026-10-30T11:00:56Z. Source description carries no verified reuse grant. Browser opening returned Online fetch throttled. Metadata/embeddable does not grant montage republication; permission not confirmed."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-30T12:08:15.675Z",
+      "digest": "722e0f8f818d65e897c3bc7bde235a31e1a7d918c636e888b5c83ebd3f7469d0"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Three targeted candidateURLs from3creators have metadata standardYouTubelicence and no verified reusegrant for video/audio; browser opensthrottled. No authorizedmontage produced; no metadata-onlyclaim of viewing/listening/downloading.",
+    "two_queries_reviewed": true,
+    "downloaded": false,
+    "transcript_verified": false,
+    "audio_audition_claimed": false,
+    "bypass_or_rejected_route_retry": false,
+    "primary_extra": "Persija article embeds v-kFycVloWk; browserembedthrottled. ClubfooterARR is not a reusegrant."
+  },
+  "illustration_option": {
+    "motion_story_doc_read": true,
+    "kane_v4_project_visual_mode": "illustration",
+    "kane_v4_scene_count": 12,
+    "example_audio_audition_claimed": false,
+    "status": "Manualprototype; fullCMSautomationnotclaimed.",
+    "configured_licensed_provider_present": false,
+    "provider_presence_checked_after_existing_env": true,
+    "available_voice_generation_tool_found": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "reason": "No configured licensed narrationprovider or selected authorizedhostrecording; owner Kaneexception not generalized. No silent synthetic defaultmusic Reel."
+  },
+  "media_rights": {
+    "photo": {
+      "creator": "Chin Yu Chu",
+      "source": "https://www.flickr.com/photos/195030826@N02/53615135042/",
+      "short_source": "https://flic.kr/p/2pFMzJ3",
+      "short_source_resolves_to_original": true,
+      "commons": "https://commons.wikimedia.org/wiki/File:Rizky_Ridho_-_53615135042.jpg",
+      "date": "2023-10-17",
+      "uploaded": "2024-03-28",
+      "place": "Hassanal Bolkiah National Stadium, Brunei",
+      "license": "CC BY-SA2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "verification": "Current public creator Flickr rel-license GET200 and author/date checked; Commons metadata/Flickrreview corroborate. Public original GET200 and native original face/jersey5 reviewed. Indonesia archive identified, not represented as contemporary Persija action.",
+      "original_dimensions": [
+        1992,
+        2988
+      ],
+      "original_bytes": 2290288,
+      "original_sha256": "03f5100aaa546f8ed5a5c339ff52ada96c6aa70804bb13b04f99f3c02bfe7736",
+      "hero_crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1992,
+        "height": 1634
+      },
+      "alterations": "Image generation from real source photo for editorial collage; mechanical JPEGexport. Website original clean crop without text. Source/licence/archive/change attribution on cover/caption/websiteexcerpt and licence document; derivativevisualsCCBYSA2.0. No endorsement inferred."
+    },
+    "hero": {
+      "bytes": 44657,
+      "sha256": "5034fd08feb938f9ad9b6ac20051215bc95f605d6c3cbce00fdc79b95c39e167",
+      "dimensions": [
+        512,
+        420
+      ],
+      "native_review": true,
+      "clean_original_photo_without_text": true
+    }
+  },
+  "article": {
+    "title": "Dewa–Persija, Empat Poin yang Bisa Berubah",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 127,
+    "digest": "40dfd265bda16636acc7121335da940a5729b824395d7c62fb99bb3e15b89845",
+    "goal_benchmarks": [
+      "goal-20261024-arsenal-everton-match-preview-news",
+      "goal-20261030-bayern-centreback-competition-feature"
+    ],
+    "whole_article_before_pagination": true,
+    "adjacent_final_paragraphs_share_substantive_heading": true,
+    "audit_issues": []
+  },
+  "cover": {
+    "variant": "JUDUL_UTAMA",
+    "rotation": "Committed cms-cover-brief selects least-used eligible variant excluding latestKLASIK/FOTO_DOMINAN.",
+    "source": "ILEAGUE.ID",
+    "page_count": 4,
+    "bytes": 454274,
+    "sha256": "f7338a51c143f825b1d4b4a510fbd01c937e86e000e043a22cc5d679fd9d005e",
+    "native_review": true,
+    "face_hair_red_Indonesia_jersey5_identity_preserved": true,
+    "photo_licence_source_links_visible": true,
+    "headline_rule_deck_spacing_revised_with_imagegen": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 562915,
+      "sha256": "2ee39c6a35c8821e81572c1fb0c2cf5c1ec7cee7e532d3a3811e088df0bbad4e",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "ILEAGUE.ID",
+        "cover_input_sha256": "f7338a51c143f825b1d4b4a510fbd01c937e86e000e043a22cc5d679fd9d005e",
+        "output_sha256": "2ee39c6a35c8821e81572c1fb0c2cf5c1ec7cee7e532d3a3811e088df0bbad4e",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 157280,
+      "sha256": "b96629842dcc7ab9374fb496753abe2d818a75617bcb97c7e9a87e512dfaccb6",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "f98d85f625a30b5f4ce40c2d1d84b943ff22a6717859ea002ec07f91cb09341f",
+        "output_sha256": "b96629842dcc7ab9374fb496753abe2d818a75617bcb97c7e9a87e512dfaccb6",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 909,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 926,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 146463,
+      "sha256": "0f0cc4c38e91f17113dd61fcf6495f8e7ba41f078101f68a7036b3de25c6f39d",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "0bc17d4efd66c031686b4a6275be37bf015299932c44506faacc62b21783e0a6",
+        "output_sha256": "0f0cc4c38e91f17113dd61fcf6495f8e7ba41f078101f68a7036b3de25c6f39d",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 718,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 886,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 188015,
+      "sha256": "3642e081e25741cd935490be8e1d90056071a4116fdfb89d15492d92f752cbd7",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "8c4b72cfe850dc692a53a1015b5f419849e2152c24eebd70c6cab62a492e25b1",
+        "output_sha256": "3642e081e25741cd935490be8e1d90056071a4116fdfb89d15492d92f752cbd7",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 47,
+        "body_height": 511,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 288,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 638,
+            "height": 47,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 328,
+            "width": 910,
+            "height": 511,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_four_rendered_jpegs_read": true,
+    "hero_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "body_divider_gaps_px": [
+      36,
+      36
+    ],
+    "body_text_only_cream": true,
+    "source_cover_only": true,
+    "no_clipping_or_overlap": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "no_video_or_voice_created": true,
+    "no_clear_source_audio_muted": true
+  },
+  "growth": {
+    "serial": "Apa yang Dipertaruhkan?",
+    "fact": "Dewa hosts Persija31October19WIB inSerang. Official table has Persija18/Dewa14from7games each.",
+    "angle": "Only the gap between these two clubs: a Persija win makes7points, a Dewa win1, draw4. Conditional arithmetic, not predicted outcome or gap to all other rivals.",
+    "hook": "Dewa–Persija, Empat Poin yang Bisa Berubah",
+    "payoff": "Show all three point outcomes and contrast Persija comeback with Dewa response after0–4.",
+    "audience_action": "Choose three-point pursuit or a draw away, explain from the stated gap; save scenarios to compare with tomorrow’s result.",
+    "format": "CAROUSEL fallback from original REEL, same20WIBclock.",
+    "trial_reels": "Not applicable to the chosen carousel; no claim account trial capability was tested.",
+    "review_due_24h": "2026-10-31T13:00:00Z",
+    "review_due_7d": "2026-11-06T13:00:00Z",
+    "reviews_planned_only": true
+  },
+  "scope": {
+    "checked_at": "2026-10-30T12:23:40.294Z",
+    "baseline_rows": 179,
+    "current_rows": 179,
+    "changed": [],
+    "added": [],
+    "target": {
+      "status": "DRAFT",
+      "format": "REEL",
+      "clock": "2026-10-30T13:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "cms_production_writes_before_commit": 0,
+    "other_existing_rows_unchanged": 178,
+    "seeder_called": false,
+    "meta_direct_called": false,
+    "no_changes": [
+      "13WIB",
+      "additional",
+      "SCHEDULED/PUBLISHED/archived/tombstone",
+      "renderer",
+      "credential",
+      "services",
+      "automations",
+      "routinecalendar"
+    ]
+  },
+  "references": {
+    "entries": 26,
+    "latest_read_at": "2026-10-30T00:55:14.809Z",
+    "sha256": "39b161ee48b5b45c9505b89ec7e22b664c9b27ec1f773406ede9a46b61fb2f8d",
+    "runtime_committed_identical": true
+  },
+  "rollback_commit": "a768afc398e4525f8050756c64484a51899582a1",
+  "private_only": "Raw sourceHTML/text/APIresponses, full packet, originalphoto and candidate descriptions remain private. Ownarticle, sanitizedproof/metrics/fallbackmanifest and attributedlicensedQAderivatives only committed."
+}

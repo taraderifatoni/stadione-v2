@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dewa–Persija, Empat Poin yang Bisa Berubah",
+  "dek": "Menang, seri, kalah: jarak kedua tim dipertaruhkan. Arsip 2023: Chin Yu Chu, CC BY-SA 2.0, diolah. flic.kr/p/2pFMzJ3 · creativecommons.org/licenses/by-sa/2.0/",
+  "caption": "DEWA–PERSIJA, EMPAT POIN YANG BISA BERUBAH\n\nPersija membawa 18 poin ke markas Dewa United yang mengoleksi 14 poin. Duel Sabtu, 31 Oktober 2026, pukul 19.00 WIB di Banten International Stadium mempertaruhkan jarak kedua tim.\n\nPersija menang: 21–14, jarak tujuh poin.\nDewa menang: 18–17, jarak satu poin.\nSeri: 19–15, jarak tetap empat poin.\n\nPersija datang setelah membalikkan ketertinggalan melawan Persik. Dewa ingin merespons kekalahan 0–4 dari Arema.\n\nUntuk laga ini, kamu lebih memilih Persija mengejar tiga poin atau menerima satu poin tandang? Jelaskan pilihanmu berdasarkan selisih di atas. Simpan skenarionya untuk membandingkan hasil besok.\n\nJadwal dan poin diperiksa pada ILeague; konteks melalui Persija, Tirto dan detik.\n\nFoto arsip Rizky Ridho, 17 Oktober 2023: Chin Yu Chu/Flickr, https://www.flickr.com/photos/195030826@N02/53615135042/ . Foto dan olahan cover/hero CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0/ . Foto dipotong/dikolase; hero foto asli tanpa teks. Seragam Timnas pada foto arsip, bukan dokumentasi laga Persija akhir pekan ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Empat Poin Menuju Serang",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIXTURE",
+        "POINTS"
+      ],
+      "text": "Persija Jakarta membawa keunggulan empat poin atas Dewa United menuju pertemuan Sabtu (31/10/2026). Persija mengoleksi 18 poin dan Dewa 14 dari masing-masing tujuh laga. Pertandingan di Banten International Stadium, Serang, dijadwalkan mulai pukul 19.00 WIB."
+    },
+    {
+      "id": "stakes",
+      "heading": "Tiga Hasil, Tiga Jarak",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "POINTS",
+        "SCENARIO"
+      ],
+      "text": "Jika Persija menang, mereka mengoleksi 21 poin dan Dewa tetap 14, sehingga jaraknya tujuh. Jika Dewa menang, tuan rumah meraih 17 poin sementara Persija tetap 18; selisihnya satu. Hasil seri memberi Persija 19 poin dan Dewa 15, menjaga jarak empat poin."
+    },
+    {
+      "id": "comeback",
+      "heading": "Dua Bekal Berbeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "PERSIK"
+      ],
+      "text": "Persija memasuki laga ini setelah mengalahkan Persik Kediri 2–1 pada 26 Oktober. Mereka tertinggal pada babak pertama sebelum gol Denis Kolinger dan Rizky Ridho membalikkan keadaan. Kemenangan itu menjadi bekal menjelang lawatan ke Serang."
+    },
+    {
+      "id": "response",
+      "heading": "Dua Bekal Berbeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "DEWA_FORM",
+        "POINTS"
+      ],
+      "text": "Dewa, sebaliknya, baru kalah 0–4 dari Arema. Kekalahan itu memutus rangkaian empat kemenangan dan dua hasil seri."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261024-arsenal-everton-match-preview-news",
+    "goal-20261030-bayern-centreback-competition-feature"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-30T12:22:29.688Z",
+    "article_digest": "40dfd265bda16636acc7121335da940a5729b824395d7c62fb99bb3e15b89845"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-10-30T12:10:38.140Z",
+  "basis": "Actual snapshots with original ages; not exact24h/7d observations. Kane additional is a separate owner-authorized upload with its own rights exception, not a reusable voice licence or proof of organic performance. No causal format comparison.",
+  "target_metrics": null,
+  "posts": [
+    {
+      "id": "18098026916391079",
+      "published_at": "2026-10-30T01:01:56+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18467899582186128",
+      "published_at": "2026-10-29T13:02:27+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "17992920297062223",
+      "published_at": "2026-10-29T01:02:46+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18017444855977726",
+      "published_at": "2026-10-28T13:01:25+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 4,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    }
+  ]
+}
