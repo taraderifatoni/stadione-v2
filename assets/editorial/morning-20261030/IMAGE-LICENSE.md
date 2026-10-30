@@ -1,0 +1,9 @@
+# Foto dan olahan visual
+
+Foto arsip Moto3 di Autodrom Brno, 19 Juni 2026, oleh **Katuš Rumíšková**. Sumber asli: [Flickr 55593557608](https://www.flickr.com/photos/205078321@N06/55593557608/) / [tautan singkat](https://flic.kr/p/2sGBvPW). Foto kelompok memuat Máximo Quiles, Joel Esteban, Brian Uriarte, Matteo Bertelle dan Veda Ega Pratama; yang digunakan adalah pembalap Honda bernomor 9 di belakang kiri. Nomor 9 dicocokkan dengan profil resmi Veda di Honda Racing. Crop terpisah di Commons yang berlabel Veda tetapi memperlihatkan nomor 51 ditolak dan tidak diterbitkan.
+
+Lisensi sumber yang diperiksa pada halaman publik pencipta: [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). Metadata file kelompok Commons juga mengonfirmasi pencipta, tanggal, lisensi dan checksum SHA-1 original.
+
+Cover, hero dan gambar QA turunan foto dalam direktori ini juga tersedia di bawah **CC BY-SA 4.0**. Perubahan: crop pembalap asli, pembingkaian dan ekspor mekanis; komposisi cover dibuat melalui image generation dengan foto asli sebagai referensi dan kolase latar editorial. Wajah tetap tertutup helm; nomor, pose dan identitas tidak direka. Softness sumber kecil dipertahankan. Hero menggunakan crop foto asli tanpa headline. Foto merupakan arsip Brno, bukan dokumentasi sesi Sepang akhir pekan ini. Atribusi pencipta, sumber, lisensi dan perubahan ditampilkan pada cover, caption dan excerpt artikel website. Penggunaan ini tidak menyiratkan endorsement pencipta/pembalap.
+
+Original 5184×3456, 8.671.468 byte, SHA-256 `cedf2e961b7175d25f2f9552f41b9ac12b091319e09d757b0ab3b211e7f82fc3`, SHA-1 `35289585857cd60372f8517e21a52a7fca4b27c0`. Berkas original dan ekstraksi sumber disimpan privat, bukan dalam Git. Crop yang digunakan: x1770, y790, 420×420; hero dibingkai menjadi 512×420. Tidak ada footage, rekaman suara atau lagu yang dilisensikan/diterbitkan dalam paket carousel ini.

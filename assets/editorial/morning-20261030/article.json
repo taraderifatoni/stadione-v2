@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Veda di Sepang, Tiga Hari yang Perlu Dicatat",
+  "dek": "Latihan, kualifikasi, dan balapan Moto3 dalam WIB. Foto arsip: Katuš Rumíšková, CC BY-SA 4.0. flic.kr/p/2sGBvPW · creativecommons.org/licenses/by-sa/4.0/ · Arsip Brno, Juni 2026, diolah.",
+  "caption": "VEDA DI SEPANG, TIGA HARI YANG PERLU DICATAT\n\nSetelah meraih pole di Australia, Veda Ega Pratama menjalani Moto3 Malaysia di Sepang pada 30 Oktober–1 November 2026 bersama Honda Team Asia. Simpan agenda ini; semua jam dalam WIB.\n\nJumat, 30 Oktober: FP1 pukul 08.00, Practice pukul 12.15.\nSabtu, 31 Oktober: FP2 pukul 07.40, kualifikasi mulai 11.45.\nMinggu, 1 November: balapan Moto3 pukul 11.00, sepanjang 15 putaran. Moto2 menyusul 12.15 dan MotoGP 14.00.\n\nUntuk akhir pekan Veda, kamu lebih menunggu sesi kualifikasi atau balapan 15 putaran? Pilih satu dan tulis apa yang ingin kamu lihat.\n\nJadwal diperiksa melalui MotoGP, sirkuit Sepang, detikJogja dan detikOto; identitas tim melalui Honda Racing.\n\nFoto arsip Brno, 19 Juni 2026: Katuš Rumíšková/Flickr. https://www.flickr.com/photos/205078321@N06/55593557608/ . Foto dan olahan cover/hero CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0/ . Foto dipotong dari pembalap bernomor9 pada foto kelompok dan dikolase; hero dibingkai tanpa teks. Foto arsip tidak menggambarkan sesi Sepang akhir pekan ini.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Tiga Hari Mengikuti Veda",
+      "kind": "FACT",
+      "claim_ids": [
+        "RIDER",
+        "WEEKEND",
+        "POLE"
+      ],
+      "text": "Veda Ega Pratama memasuki akhir pekan Sepang setelah meraih pole Moto3 di Australia. Pembalap Honda Team Asia itu menjalani rangkaian latihan, kualifikasi, dan balapan pada 30 Oktober–1 November 2026. Tiga agenda berikut membantu penonton Indonesia mengikuti akhir pekannya dalam WIB."
+    },
+    {
+      "id": "friday",
+      "heading": "Jumat Dimulai dengan Latihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "FRIDAY",
+        "WEEKEND"
+      ],
+      "text": "Pada Jumat (30/10), FP1 Moto3 dijadwalkan mulai pukul 08.00 WIB. Sesi berikutnya, Practice, dimulai pukul 12.15 WIB. Kedua sesi memberi kesempatan untuk mengikuti catatan waktu Veda sebelum persaingan posisi start berlangsung pada Sabtu."
+    },
+    {
+      "id": "saturday",
+      "heading": "Sabtu Menentukan Posisi Start",
+      "kind": "FACT",
+      "claim_ids": [
+        "SATURDAY",
+        "WEEKEND"
+      ],
+      "text": "Sabtu (31/10), FP2 Moto3 dimulai pukul 07.40 WIB. Setelah itu, rangkaian kualifikasi dimulai pukul 11.45 WIB untuk menentukan posisi start balapan."
+    },
+    {
+      "id": "sunday",
+      "heading": "Balapan Veda Pukul Sebelas",
+      "kind": "FACT",
+      "claim_ids": [
+        "SUNDAY",
+        "WEEKEND"
+      ],
+      "text": "Minggu (1/11), balapan Moto3 dijadwalkan mulai pukul 11.00 WIB dengan jarak 15 putaran. Dalam jadwal yang sama, balapan Moto2 dimulai pukul 12.15 WIB dan MotoGP pukul 14.00 WIB."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261024-arsenal-everton-match-preview-news",
+    "goal-20261029-bayern-magdeburg-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-30T00:31:04.890Z",
+    "article_digest": "e52192087085b191268c6c9e6bcb86839d66c40101abc50c69e34b2d75f15bd1"
+  }
+}

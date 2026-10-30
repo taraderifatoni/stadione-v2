@@ -1,0 +1,450 @@
+{
+  "checked_at": "2026-10-30T00:34:34.617Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "953aa0f9-ccf8-4758-a9d3-19643b315248",
+    "plan_key": "2026-10-30:fri-am",
+    "event_key": "veda-sepang-three-day-viewing-guide-20261030",
+    "status": "PENDING_REVIEW",
+    "original_format": "CAROUSEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-30T01:00:00Z",
+    "time_wib": "30 Oktober2026 08.00WIB"
+  },
+  "research": {
+    "pool_generated_at": "2026-10-30T00:02:06.150Z",
+    "pool": "Current release getDailySportsPool via committed cms-audience-pool/cms-load. Broad nonbola pool reviewed; bounded official/independent publisher discovery supplemented it. No claim Veda schedule was in eligible pool news.",
+    "independent_groups": [
+      "MotoGP",
+      "Transmedia",
+      "Honda",
+      "Sepang circuit"
+    ],
+    "full_text_sources": [
+      {
+        "url": "https://www.motogp.com/en/news/2026/10/26/time-schedule-petronas-grand-prix-of-malaysia/1181207",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:03:15.579912+00:00",
+        "sha256": "ad48d2f45d8c1a5505883a69824492ed4c873b238d451d2e81e350587c1a9bb0",
+        "text_chars": 2802,
+        "id": "motogp",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "MotoGP"
+      },
+      {
+        "url": "https://www.detik.com/jogja/berita/d-8728981/jadwal-moto3-malaysia-30-oktober-1-november-2026-dan-klasemen-veda",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:03:17.992142+00:00",
+        "sha256": "6bb6ea9c35a0f8636a1ff0cc43c5c26b01f57eb7cf3411f41b5e5b985e5caafd",
+        "text_chars": 5419,
+        "id": "detik-veda",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "Transmedia"
+      },
+      {
+        "url": "https://oto.detik.com/otosport/d-8729006/jadwal-motogp-malaysia-akhir-pekan-ini-veda-main-jam-segini/amp",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:06:58.992335+00:00",
+        "sha256": "0b6d5dc7801371810110cf783b37ea238a3a84eee4761e06534fe63a3d0794f1",
+        "text_chars": 4786,
+        "id": "detik-oto",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "Transmedia"
+      },
+      {
+        "url": "https://honda.racing/moto-3/post/home-hero-pratama-takes-top-honda-honours-in-indonesia",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:03:20.382418+00:00",
+        "sha256": "d34d8283cf88dd72da5df8a71be35b295769a3ab7f4c821a61c532967ad7ea6b",
+        "text_chars": 2173,
+        "id": "honda",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "Honda"
+      },
+      {
+        "url": "https://honda.racing/moto-3/post/pole-perfection-for-pratama-down-under",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:15:22.668488+00:00",
+        "sha256": "09ec48f4b65bcd23260e14866b7e97a58773138d7bc55766335c315d3eb2707b",
+        "text_chars": 2821,
+        "id": "honda-pole",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "Honda"
+      },
+      {
+        "url": "https://www.sepangcircuit.com/events/petronas-grand-prix-of-malaysia-2026-overview.html",
+        "http": 200,
+        "retrieved_at": "2026-10-30T00:12:29.299066+00:00",
+        "sha256": "01ad7484eb6670cc3964143e7704af1d2a06f1d6a80bba302f3ff0637b5e0a3c",
+        "text_chars": 3691,
+        "id": "circuit",
+        "full_article_read": true,
+        "transport": "Normal public GET200, full main text read; MotoGP and circuit also opened with browsing.",
+        "publisher_group": "Sepang circuit"
+      }
+    ],
+    "metadata_only_sources": [
+      "Honda rider profile: browser full information panel includes number9; GET text extraction36chars, not a news article.",
+      "Red Bull Rookies profile: metadata only, GET extractor empty; not counted as full reading.",
+      "Commons full-group photo metadata, not a news article."
+    ],
+    "verification": [
+      "MYT UTC+8 -> WIB UTC+7 subtract one hour; detikJogja independently gives same WIB times.",
+      "DetikOto Sunday narrative11.00 conflicts with its10.00 table. Use primaryMotoGP12MYT=11WIB, corroborated bydetikJogja.",
+      "FridayFP1 08WIB, Practice12.15; SaturdayFP2 07.40, qualifying start11.45; no unsupported Q2 time.",
+      "SundayMoto3 11WIB15laps, Moto2 12.15, MotoGP14.00. Dates circuit30Oct–1Nov. No winner/live result/standings/weather claims.",
+      "Veda pole refers Australia qualifying24Oct, not an Australian race win or a Sepang pole.",
+      "detikJogja anddetikOto counted as one publisher group. No quotations copied into public article."
+    ]
+  },
+  "media_rights": {
+    "photo": {
+      "creator": "Katuš Rumíšková",
+      "source": "https://www.flickr.com/photos/205078321@N06/55593557608/",
+      "short_source": "https://flic.kr/p/2sGBvPW",
+      "short_source_resolves_to_original": true,
+      "commons": "https://commons.wikimedia.org/wiki/File:M%C3%A1ximo_Quiles,_Joel_Esteban,_Brian_Uriarte,_Matteo_Bertelle,_Veda_Ega_Pratama_(2026).jpg",
+      "date": "2026-06-19",
+      "place": "Autodrom Brno",
+      "license": "CC BY-SA4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "verification": "Current creator Flickr GET200 rel-license and author/date checked; Commons full-group metadata confirms licence and SHA1. Public original downloaded and viewed natively. Rear-left Honda rider9 identified against official Honda profileVeda9. Face hidden by helmet; no generated visible face or number repainting.",
+      "original_dimensions": [
+        5184,
+        3456
+      ],
+      "original_bytes": 8671468,
+      "original_sha256": "cedf2e961b7175d25f2f9552f41b9ac12b091319e09d757b0ab3b211e7f82fc3",
+      "original_sha1": "35289585857cd60372f8517e21a52a7fca4b27c0",
+      "crop": {
+        "x": 1770,
+        "y": 790,
+        "width": 420,
+        "height": 420
+      },
+      "source_limitation": "Small original rider crop; preserved honest softness/halftone, no assertion of a new sharp face. Cover is editorial collage, not a contemporary Sepang event photograph.",
+      "alterations": "Mechanical crop/fit/pad for clean website hero; photo used as native reference in generated collage. Derivatives CC BY-SA4.0, creator/source/licence/change/archive attribution on cover/caption/websiteexcerpt and licence document.",
+      "rejected": "Initial extracted Commons-labelled Veda crop actually showed51; rejected before CMS production. Both initial hero and cover are unused. Palace alternative government source and public copy HTTP403 stopped, no bypass. Honda ARR image not used: no publisher photo licence inferred from owner editorial permission."
+    },
+    "hero": {
+      "bytes": 17282,
+      "sha256": "6c0f755b09cf218cfae8efa65d59697d5ce141926a459b7af16e1d2e1229ff79",
+      "dimensions": [
+        512,
+        420
+      ],
+      "native_review": true,
+      "clean_original_photo_without_text": true
+    }
+  },
+  "article": {
+    "title": "Veda di Sepang, Tiga Hari yang Perlu Dicatat",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 122,
+    "digest": "e52192087085b191268c6c9e6bcb86839d66c40101abc50c69e34b2d75f15bd1",
+    "goal_benchmarks": [
+      "goal-20261024-arsenal-everton-match-preview-news",
+      "goal-20261029-bayern-magdeburg-match-news"
+    ],
+    "whole_article_before_pagination": true,
+    "audit_issues": []
+  },
+  "cover": {
+    "variant": "KLASIK",
+    "rotation": "Committed cms-cover-brief chose least-used eligible variant excluding two latest covers.",
+    "source": "MOTOGP.COM",
+    "page_count": 5,
+    "bytes": 601497,
+    "sha256": "6e3e6085262bf29b7a20bb5e9d87ecdad577e5302fb235474ed857b35b49e51e",
+    "native_review": true,
+    "original_helmet_bike_number9_pose_preserved": true,
+    "photo_licence_source_links_visible": true,
+    "no_edition_label": true,
+    "no_promotional_footer": true
+  },
+  "renders": [
+    {
+      "page": 1,
+      "bytes": 743833,
+      "sha256": "d3ebe44ccc7b3e2b2a07c148bf0ffb9a98d4ed56aef72ae569416030fbf1a73e",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "MOTOGP.COM",
+        "cover_input_sha256": "6e3e6085262bf29b7a20bb5e9d87ecdad577e5302fb235474ed857b35b49e51e",
+        "output_sha256": "d3ebe44ccc7b3e2b2a07c148bf0ffb9a98d4ed56aef72ae569416030fbf1a73e",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      }
+    },
+    {
+      "page": 2,
+      "bytes": 165502,
+      "sha256": "51e4786de91e5915e3ea08b52f54adcddfc53585610378f9080982d89845f760",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "b9af22a8d003150f47153f93cb76b225f7d42a4552c1750940741737e151b719",
+        "output_sha256": "51e4786de91e5915e3ea08b52f54adcddfc53585610378f9080982d89845f760",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 853,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 895,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 3,
+      "bytes": 152914,
+      "sha256": "79aa56fdf5b629ac3326ae62f372844740675546f881db06670094b75da0e4b8",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "6a4037e1ede7d0e164ef4dceeb037566f845ec01c5ef968007f28fcb36f4e6eb",
+        "output_sha256": "79aa56fdf5b629ac3326ae62f372844740675546f881db06670094b75da0e4b8",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 246,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 751,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 911,
+            "height": 246,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 4,
+      "bytes": 118320,
+      "sha256": "ea54e57ed4241f1be566b532c8c0f81bb2a0b821c4c5207c6fb99742ee7c017a",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "85a9fd84d64724175ac0a707940c6dffadc98352e7104d52640f540ad0de456f",
+        "output_sha256": "ea54e57ed4241f1be566b532c8c0f81bb2a0b821c4c5207c6fb99742ee7c017a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 140,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 853,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 916,
+            "height": 140,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    },
+    {
+      "page": 5,
+      "bytes": 130383,
+      "sha256": "96de0b32ebb232ed37349346cc1b0c9249c9b04ffac00a4bd56773dead86c52c",
+      "audit": {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "9bcede9d4398577af9ed84797e724839cc31613f18dd419905fbc2dd12ce80ab",
+        "output_sha256": "96de0b32ebb232ed37349346cc1b0c9249c9b04ffac00a4bd56773dead86c52c",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 193,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 664,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 892,
+            "height": 193,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    }
+  ],
+  "visual_review": {
+    "all_five_rendered_jpegs_read": true,
+    "hero_read": true,
+    "body_font_px": 36,
+    "headline_font_px": 60,
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "body_text_only_cream": true,
+    "source_cover_only": true,
+    "no_clipping_or_overlap": true,
+    "final_cover_reinspection": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "graph_carousel_music_unsupported": true,
+    "no_video_or_voice_created": true
+  },
+  "growth": {
+    "serial": "Panduan Pekan Ini",
+    "fact": "Moto3 Sepang30October–1November2026. Veda Honda Team Asia9, coming from maiden Australia qualifying pole. Official MotoGP MYT times converted one hour earlier to WIB and crosschecked with detikJogja.",
+    "angle": "Three distinct viewing decisions: Friday practice, Saturday grid-setting and Sunday15-lap race. Indonesia nonbola assignment retained.",
+    "hook": "Veda di Sepang, Tiga Hari yang Perlu Dicatat",
+    "payoff": "Concrete practice/qualifying/race times in WIB, SundayMoto3 at11.00 ahead ofMoto2 at12.15 andMotoGP14.00.",
+    "audience_action": "Save the three-day timetable; choose qualifying or15-lap race and say what to watch for. Not a result-only headline or generic engagement bait.",
+    "format": "CAROUSEL original format retained, no Reel fallback required.",
+    "trial_reels": "Not applicable to carousel.",
+    "review_due_24h": "2026-10-31T01:00:00Z",
+    "review_due_7d": "2026-11-06T01:00:00Z",
+    "reviews_planned_only": true
+  },
+  "scope": {
+    "checked_at": "2026-10-30T00:34:34.125Z",
+    "baseline_rows": 178,
+    "current_rows": 178,
+    "changed": [
+      {
+        "id": "953aa0f9-ccf8-4758-a9d3-19643b315248",
+        "before": "DRAFT",
+        "after": "PENDING_REVIEW"
+      }
+    ],
+    "added": [],
+    "target": {
+      "status": "PENDING_REVIEW",
+      "format": "CAROUSEL",
+      "clock": "2026-10-30T01:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "cms_production_writes_before_commit": 0,
+    "target_background_delta": "Automatic engine DRAFT toPENDING_REVIEW while agent researched; no assets/parent/attempts. All other177rows remained identical.",
+    "other_existing_rows_unchanged": 177,
+    "seeder_called": false,
+    "meta_direct_called": false,
+    "no_changes": [
+      "13WIB",
+      "additional",
+      "SCHEDULED/PUBLISHED/archived/tombstone",
+      "renderer",
+      "credential",
+      "services",
+      "automations",
+      "routinecalendar"
+    ]
+  },
+  "references": {
+    "entries": 25,
+    "latest_read_at": "2026-10-29T00:23:12.049Z",
+    "sha256": "71400b6420f2cfa97869d476f340f4b275c3c59274042bf785730794f12aff86",
+    "runtime_committed_identical": true
+  },
+  "rollback_commit": "4054a40cbacf41dfbaf2be7b9758e7fc4a8e0b6b",
+  "private_only": "Raw source HTML/text, original full photo, full input packet and API snapshots stay outside Git. Only own article, sanitized proof/metrics and attributed licensed QA derivatives committed."
+}
