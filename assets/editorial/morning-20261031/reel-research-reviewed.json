@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-31:match-am",
+  "checked_at": "2026-10-31T00:20:04.376Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "PSG Le Havre 30 octobre 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=pgSTMssyw8s",
+      "creator": "TigerEye",
+      "checked_at": "2026-10-31T00:20:04.376Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Creator description explicitly identifies EA Sports FC27 gameplay simulation, not actual match footage. Browser source opening throttled. Not downloaded or watched.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Verified metadata license=youtube; uploaded=2026-10-28T16:00:08Z. Explicit simulated gameplay cannot represent real Hakimi action."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=MM1wcYw7SLg",
+      "creator": "Magic Gaming",
+      "checked_at": "2026-10-31T00:20:04.376Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Standard YouTube license and reviewed description provide no verified montage redistribution grant for video/audio. Browser source opening throttled. Not downloaded, watched or auditioned. No bypass or alternate route.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Verified metadata license=youtube; uploaded=2026-10-30T20:15:07Z. No verified reuse grant in reviewed metadata. Browser Online fetch throttled; metadata is not visual/audio evidence."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=7nhWihz2-7c",
+      "creator": "Imran News Network",
+      "checked_at": "2026-10-31T00:20:04.376Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Standard YouTube license and reviewed description provide no verified montage redistribution grant for video/audio. Browser source opening throttled. Not downloaded, watched or auditioned. No bypass or alternate route.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Verified metadata license=youtube; uploaded=2026-10-30T20:01:22Z. No verified reuse grant in reviewed metadata. Browser Online fetch throttled; metadata is not visual/audio evidence."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-31T00:20:04.376Z",
+    "digest": "79e19f1a9a2f54ccc6dfc1c75ee63f3649473bce30c234621b2c8b2654089079"
+  }
+}

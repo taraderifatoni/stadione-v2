@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "PSG Sempat Tertinggal, Hakimi Mengambil Alih",
+  "dek": "Umpan penyeimbang, lalu tiga gol. Arsip 2018: J. L. Bonaño/Archimadrid.es, CC BY-SA 2.0 (diolah). flic.kr/p/HX4bNM · creativecommons.org/licenses/by-sa/2.0/",
+  "caption": "PSG SEMPAT TERTINGGAL, HAKIMI MENGAMBIL ALIH\n\nPSG menang 5–1 di kandang Le Havre, Jumat (30/10) waktu Prancis. Tetapi skor akhir tidak memperlihatkan seluruh ceritanya: tuan rumah sempat memimpin.\n\nHakimi mengirim umpan untuk gol penyeimbang Mika Godts, lalu membawa PSG berbalik unggul sebelum jeda. Pada babak kedua ia menambah dua gol, termasuk lewat tendangan bebas. Senny Mayulu juga mencetak gol.\n\nHakimi menyebutnya hat-trick pertamanya dalam wawancara kanal klub. Yang ia tekankan tetap respons tim setelah kebobolan.\n\nMenurutmu, lebih menentukan umpan penyeimbang atau tendangan bebas Hakimi? Bandingkan perannya sebelum dan sesudah PSG unggul, lalu jelaskan pilihanmu.\n\nSumber: laporan lengkap HAC, reaksi resmi PSG, dan AS.\n\nFoto arsip Hakimi, 27 Mei 2018: José Luis Bonaño / Fotografías Archimadrid.es / Flickr, https://www.flickr.com/photos/147780794@N08/27533656457/ . Foto dan olahan CC BY-SA 2.0, https://creativecommons.org/licenses/by-sa/2.0/ . Dipotong/dikolase; hero foto asli tanpa teks. Bukan dokumentasi pertandingan PSG–Le Havre 2026.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kemenangan yang Diawali Tertinggal",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT"
+      ],
+      "text": "Achraf Hakimi mencetak tiga gol saat Paris Saint-Germain menang 5–1 di kandang Le Havre, Jumat (30/10/2026) waktu Prancis. Di Stade Océane, PSG justru kebobolan lebih dahulu. Trigol itu menjadi bagian dari kebangkitan tim, bukan pesta gol sejak awal."
+    },
+    {
+      "id": "turn",
+      "heading": "Umpan Sebelum Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "COMEBACK"
+      ],
+      "text": "Josh Maja membawa tuan rumah memimpin. PSG kemudian menyamakan lewat Mika Godts, yang menerima umpan Hakimi. Bek kanan itu lantas mencetak gol untuk membalikkan kedudukan menjadi 2–1 sebelum turun minum."
+    },
+    {
+      "id": "finish",
+      "heading": "Dua Gol Lagi Setelah Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "SECOND_HALF"
+      ],
+      "text": "Hakimi kembali mencetak gol melalui tendangan bebas pada babak kedua. Setelah Senny Mayulu menambah keunggulan PSG, Hakimi melengkapi trigolnya sekaligus menutup skor menjadi 5–1. Kontribusinya terlihat ketika PSG mengejar ketertinggalan maupun saat sudah memimpin."
+    },
+    {
+      "id": "close",
+      "heading": "Dua Gol Lagi Setelah Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "REACTION"
+      ],
+      "text": "Kepada kanal resmi PSG, Hakimi menyebut ini hat-trick pertamanya. Ia menekankan sikap tim yang mampu bangkit setelah kebobolan. Urutan pertandingan memberi konteks bagi trigolnya: Hakimi ikut membuka jalan penyama, lalu ikut memperlebar keunggulan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261029-bayern-magdeburg-match-news",
+    "goal-20261030-bayern-centreback-competition-feature"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-31T00:20:04.376Z",
+    "article_digest": "67e8d5c999f0c411d14349667404ea58fb07b70f344462e99ea83563a1f09d9a"
+  }
+}
