@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-31T00:24:36.464Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "a98d3c1a-cfe0-40ab-9a8a-d32db607bad8",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-31:match-am",
+    "event_key": "psg-lehavre-hakimi-comeback-hattrick-20261030",
+    "scheduled_at": "2026-10-31T01:00:00+00:00",
+    "time_wib": "31 Oktober 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "bfe60071-f9c2-4b3e-8fd3-30e87a4bf50b",
+    "status": "SCHEDULED",
+    "slug": "psg-sempat-tertinggal-hakimi-mengambil-alih-a98d3c1a",
+    "scheduled_at": "2026-10-31T01:00:00+00:00",
+    "title": "PSG Sempat Tertinggal, Hakimi Mengambil Alih",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "67e8d5c999f0c411d14349667404ea58fb07b70f344462e99ea83563a1f09d9a",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 26294,
+      "sha256": "5f7688b287b12fd610cdde285a2bbfc5034c88b013ff9de82e9ecc8784b9db75",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 655412,
+      "sha256": "bbe9e119579d7777920d5bc5727e55017a63994e484954bd894161719b8738e9",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 161126,
+      "sha256": "fe51a4b88976a03a80b0cb19769ec2351bcb9b5650d200f7973ed15101dc71b0",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 133388,
+      "sha256": "4ed1b6dd514f5197e76abb5e26b9d5e6296ed592b1511318e9a976b9b22bf9a3",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 250251,
+      "sha256": "4cbecd7236af171d44342b1eddf4e23a6520099962afeba9dbee73c705c3969a",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 72,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 182,
+  "changed_other_rows": [],
+  "baseline_rows": 183,
+  "current_rows": 184,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 10,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 26,
+    "sha256": "39b161ee48b5b45c9505b89ec7e22b664c9b27ec1f773406ede9a46b61fb2f8d",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future08WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "08563ac5d977df61ba563e5431d954f6bde41d67"
+}
