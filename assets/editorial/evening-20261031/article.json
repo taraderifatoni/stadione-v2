@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persebaya Selamat, Tavares Tetap Minta Maaf",
+  "dek": "Sundulan Risto membawa satu poin, target menang belum tercapai. Foto arsip: Alhosniomani20, CC0, diolah.",
+  "caption": "PERSEBAYA SELAMAT, TAVARES TETAP MINTA MAAF\n\nSundulan Risto Mitrevski pada tambahan waktu menyelamatkan Persebaya dari kekalahan melawan Persijap. Hasil akhir 1–1 di GBT, Jumat (30/10), tetap belum memenuhi target kemenangan.\n\nRisto menyambut sepak pojok Francisco Rivera. Setelah itu, gol Miguel Pereira dianulir karena pelanggaran Alex Martins terhadap kiper; Persebaya tidak mendapatkan gol kemenangan.\n\nTavares menyampaikan permintaan maaf kepada suporter dan menegaskan akan terus bekerja keras. Itu komitmen pelatih, bukan jaminan hasil laga berikutnya.\n\nMenurutmu, satu poin ini layak disyukuri karena lolos dari kalah, atau lebih terasa sebagai kesempatan menang yang hilang? Jelaskan lewat peluang atau kejadian pertandingan, bukan serangan pribadi.\n\nSumber: laporan dan reaksi resmi Persebaya, detik, Bola.com, serta Selasar Surabaya.\n\nFoto arsip Bernardo Tavares: Alhosniomani20, public domain/CC0. https://commons.wikimedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg . https://creativecommons.org/publicdomain/zero/1.0/ . Cover diolah menjadi kolase; hero foto asli dibingkai tanpa teks. Bukan dokumentasi Persebaya–Persijap 2026; pakaian arsip dipertahankan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol Penyama Belum Menjawab Harapan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "EQUALIZER",
+        "APOLOGY"
+      ],
+      "text": "Persebaya terhindar dari kekalahan lewat sundulan Risto Mitrevski pada tambahan waktu saat menjamu Persijap, Jumat (30/10/2026). Namun, hasil 1–1 di Stadion Gelora Bung Tomo belum memenuhi target kemenangan Bernardo Tavares. Pelatih itu tetap menyampaikan permintaan maaf kepada suporter."
+    },
+    {
+      "id": "turn",
+      "heading": "Sepak Pojok yang Menjaga Satu Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "EQUALIZER",
+        "RESULT"
+      ],
+      "text": "Tertinggal pada babak kedua, Persebaya baru menyamakan kedudukan ketika Risto menyambut sepak pojok Francisco Rivera. Pemain pengganti itu memberi tuan rumah satu poin setelah sejumlah peluang sebelumnya belum menghasilkan gol."
+    },
+    {
+      "id": "decision",
+      "heading": "Pekerjaan Setelah Gol Penyelamat",
+      "kind": "FACT",
+      "claim_ids": [
+        "DISALLOWED"
+      ],
+      "text": "Persebaya sempat kembali menjebol gawang melalui Miguel Pereira. Gol tersebut dianulir setelah Alex Martins dinyatakan melanggar penjaga gawang. Skor tetap 1–1; gol penyelamat Risto tidak berlanjut menjadi kemenangan."
+    },
+    {
+      "id": "close",
+      "heading": "Pekerjaan Setelah Gol Penyelamat",
+      "kind": "FACT",
+      "claim_ids": [
+        "APOLOGY",
+        "WORK"
+      ],
+      "text": "Dalam laporan kanal resmi klub, Tavares mengakui kekecewaan dan meminta maaf kepada Bonek serta Bonita yang datang mendukung. Ia memilih menjanjikan kerja keras, bukan hasil berlebihan. Bagi Persebaya, evaluasi berikutnya adalah mengubah peluang menjadi gol yang sah, bukan berhenti pada kelegaan lolos dari kekalahan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261028-gasperini-napoli-roma-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-31T12:12:37.754Z",
+    "article_digest": "fd692b16cb54cbf5e0f528c8778aa86e397744573aea04e95858fc0738c4c417"
+  }
+}

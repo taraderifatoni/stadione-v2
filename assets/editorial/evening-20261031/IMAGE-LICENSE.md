@@ -1,0 +1,5 @@
+# Image rights and archive context
+
+Bernardo Tavares, original archive portrait at Al Hidd SC. Photographer/uploader: Alhosniomani20. Original author explicitly released this work into the public domain and CC0 1.0. Source: https://commons.wikimedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg . Original-upload log: https://en.wikipedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg . Licence: https://creativecommons.org/publicdomain/zero/1.0/ . Original467x640,40704bytes, SHA1 3eb63531537fdd96c174f27d8d178e0492bba283 verified.
+
+Description dates photo2013, EXIF2015; archive label does not assert year. Photo depicts original blue clothes, not current Persebaya uniform or30October2026match. Changes: generated newspaper collage background from authentic portrait reference, mechanical JPEGfit; website hero is original framed without text. Cover/source/archive credit visible, source/licence/changes in caption and documentation. No endorsement inferred. Original binary, raw sourceHTML/API/fullpacket remain private; only reviewed derivatives and owned editorial text committed.

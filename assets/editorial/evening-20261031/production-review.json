@@ -1,0 +1,526 @@
+{
+  "checked_at": "2026-10-31T12:16:53.102Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SCHEDULING",
+  "target": {
+    "id": "3c12aa51-2dc7-42b1-bd92-80fbf3d8c042",
+    "plan_key": "2026-10-31:match-pm",
+    "event_key": "persebaya-persijap-tavares-apology-after-equalizer-20261030",
+    "pillar": "Sepak Bola Indonesia",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-10-31T13:00:00Z",
+    "time_wib": "31 Oktober2026 20.00WIB"
+  },
+  "research": {
+    "pool_requested_at": "2026-10-31T11:59:17.976Z",
+    "method": "Committed cms-audience-pool uses current-release getDailySportsPool through cms-load with existing cache/quota. Twelve trends yield one eligible PersebayaPersijap item, fifteen news yield zero eligible; pool is discovery, not live match proof.",
+    "sources": [
+      {
+        "id": "PERSEBAYA",
+        "url": "https://www.persebaya.id/index.php/r/4226/gol-menit-akhir-risto-mitrevski-selamatkan-persebaya-dari-kekalahan",
+        "publisher_group": "PERSEBAYA",
+        "primary": true,
+        "published_at": "2026-10-30",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "29cff551dbe885b3e2e6578e83bacc73e2b67223538fab31feedba8faaf94b9a"
+      },
+      {
+        "id": "TAVARES",
+        "url": "https://www.persebaya.id/index.php/r/4227/gagal-menang-atas-persijap-coach-tavares-sampaikan-permintaan-maaf",
+        "publisher_group": "PERSEBAYA",
+        "primary": true,
+        "published_at": "2026-10-30",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "cb34076b0711dac6dc43f4dbba080316974608765b9d93625d282e5d9829e0f2"
+      },
+      {
+        "id": "DETIK",
+        "url": "https://www.detik.com/jatim/sepakbola/d-8731797/hasil-super-legue-persebaya-vs-persijap-tanpa-pemenang",
+        "publisher_group": "TRANSMEDIA",
+        "primary": false,
+        "published_at": "2026-10-30T14:01:00Z",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "2366642976a3142ffe5a9f6186b615c09f41ac4e63027bcc5260f815e51359ae"
+      },
+      {
+        "id": "BOLA",
+        "url": "https://www.bola.com/indonesia/read/8325578/persebaya-main-buruk-bernardo-tavares-minta-maaf-usai-didemo-bonek",
+        "publisher_group": "KLY",
+        "primary": false,
+        "published_at": "2026-10-31T07:15:00Z",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "47563b730b4aa46ec9d07524586331ebc8c283a84ff3a595413b6eead4c96883"
+      },
+      {
+        "id": "SELASAR",
+        "url": "https://www.selasarsurabaya.com/2026/10/31/gagal-menang-lawan-tim-juru-kunci-di-gbt-tavares-minta-maaf-ke-bonek/",
+        "publisher_group": "SELASAR",
+        "primary": false,
+        "published_at": "2026-10-31",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "8027bf3f05897fd99443a6c6e0faa5eac9328a9f09aefe9f96fcc188ea931e17"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg",
+        "publisher_group": "ALHOSNIOMANI20",
+        "primary": true,
+        "published_at": "2015-03-12",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "ca3bd807d5737ef4a7476e95a38a14ec3f9d47a98617206f34061e4f2cd95b13"
+      },
+      {
+        "id": "PHOTOLOG",
+        "url": "https://en.wikipedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg",
+        "publisher_group": "ALHOSNIOMANI20",
+        "primary": true,
+        "published_at": "2015-03-12",
+        "retrieved_at": "2026-10-31T12:12:37.754Z",
+        "normalized_text_sha256": "9bdd99b0f36a2905ffc605ec24e4ec997e7012f0b1ac765a10b876becf55fc8b"
+      }
+    ],
+    "full_read": [
+      "Persebaya complete match report and Tavares reaction",
+      "detik complete match narrative/lineups",
+      "Bola.com complete Tavares apology report",
+      "SelasarSurabaya full apology report",
+      "Rivera reaction also fully read for context, not used to invent a quote"
+    ],
+    "independent_publishers": [
+      "Persebaya primary",
+      "Transmedia/detik",
+      "KLY/Bola.com",
+      "SelasarSurabaya"
+    ],
+    "verification": [
+      "Final1-1, homeGBT30October, lateRisto header fromRivera corner, laterMiguel goal disallowed afterAlexfoul match primary/detik.",
+      "Tavares apology verified primary/Bola/Selasar; no direct quotations used. No guarantee next result or unsupported tacticalcause.",
+      "Primarymatch narrative53minute versusreaction/detik55; Sofa search90+2versusprimary90+1: precise goal minutes omitted.",
+      "ANTARA report opening namesMiguel as equalizer; conflicts with primary/detik/Bola/Selasar, not adopted. Sofa browser staleHT0-0 not treated as live data.",
+      "No inferred protest size, abuse, claimVARwrong, standings, possession/shots totals or real-time score. ExistingDewaPersija preview not repeated."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-10-31:match-pm",
+    "checked_at": "2026-10-31T12:12:37.754Z",
+    "queries": [
+      "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+      "Persebaya Persijap 30 Oktober 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=MIoX-ys7bYc",
+        "creator": "KONTEKS",
+        "checked_at": "2026-10-31T12:12:37.754Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Description credits Instagram/serdadumerahputih_1945, so source-rights chain remains unconfirmed. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T06:58:18Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=-NUALKOlGFc",
+        "creator": "Sportlinknews Indonesia",
+        "checked_at": "2026-10-31T12:12:37.754Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T09:11:38Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=4DVkyy941Xk",
+        "creator": "OopsIQ",
+        "checked_at": "2026-10-31T12:12:37.754Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T03:45:10Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-10-31T12:12:37.754Z",
+      "digest": "20c9abf313ce9f5fde33839322081aac824e635931bf0d795c052ecd77728e12"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Three actual topic sourceURLs from KONTEKS, SportlinknewsIndonesia and OopsIQ have standardYouTube licence and no verified Stadione video/audio reusegrant in complete descriptions. All browser opens returned Onlinefetchthrottled. KONTEKS credits Instagram/serdadumerahputih_1945, leaving source-rights chain unconfirmed.",
+    "usable": 0,
+    "downloaded": false,
+    "viewed": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_global_footage_absence_claim": true,
+    "no_login_challenge_paywall_DRM_bypass": true
+  },
+  "illustration_option": {
+    "motion_story_doc_read": true,
+    "kane_v4_story_metadata_read": true,
+    "example_audio_audition_claimed": false,
+    "manual_prototype_not_fully_integrated": true,
+    "configured_licensed_voice_provider_found": false,
+    "checked_after_existing_production_environment": true,
+    "authorized_host_recording_selected": false,
+    "voice_generation_tool_available": false,
+    "edge_tts_used": false,
+    "synthetic_or_default_music_used": false,
+    "no_clear_source_audio_muted": true
+  },
+  "media": {
+    "subject": "Bernardo Tavares",
+    "source": "https://commons.wikimedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg",
+    "original_upload_metadata": "https://en.wikipedia.org/wiki/File:BernardoTavaresBahrainHidd.jpg",
+    "creator": "Alhosniomani20",
+    "rights": "Original author PD-self and CC0 1.0 dedication; not inferred from club or owner editorial authorization.",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "date_caveat": "Description says2013; EXIF2015. Material labels photo archive without asserting captureyear.",
+    "original": {
+      "bytes": 40704,
+      "dimensions": [
+        467,
+        640
+      ],
+      "sha1": "3eb63531537fdd96c174f27d8d178e0492bba283",
+      "sha256": "25291575e2d88e3709f57dce40084f73475c91eae43e7c68825825373dc8f143",
+      "native_viewed": true
+    },
+    "retrieval": "Default Wikimedia requests returned403 explicitly requesting an identified User-Agent. Followed published robot-policy instruction using honest StadioneEditorial/1.0 identity; public metadata and original thenGET200. No login/challenge/auth workaround. IriantoCCBYSAportrait obtained the same way but not selected because Tavares is the actual story subject.",
+    "changes": "Image generation collage from authentic archivalface/baldhead/brows/eyes/hand/bluejacket. No currentPersebayauniform orcurrentmatchrepresentation. Hero full original fitted in cream frame512x420 without text. Archive/author/CC0/changes oncover, fullsource/licencecredit caption/documentation.",
+    "cover": {
+      "variant_id": "KOLOM",
+      "helper": "Committed cms-cover-brief; excludes lastPORTRAIT_MERAH/JUDUL_UTAMA",
+      "page_count": 4,
+      "bytes": 421629,
+      "sha256": "ac08fc341c0a0258ee2cd82d5ad6c060ebf3b6cb34641a50cf1693d00185de0b",
+      "native_review": true,
+      "identity_and_clothes_preserved": true,
+      "source": "PERSEBAYA.ID",
+      "archive_credit_visible": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "bytes": 32040,
+      "sha256": "0aaecc1b7d7a436b322198b781945725525f857e3896a0db2b854140170c8983",
+      "dimensions": [
+        512,
+        420
+      ],
+      "native_review": true,
+      "original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Persebaya Selamat, Tavares Tetap Minta Maaf",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 140,
+    "digest": "fd692b16cb54cbf5e0f528c8778aa86e397744573aea04e95858fc0738c4c417",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261028-gasperini-napoli-roma-reaction-news"
+    ],
+    "whole_article_before_lossless_pagination": true,
+    "reviewed": true,
+    "audit_issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PERSEBAYA.ID",
+      "cover_input_sha256": "ac08fc341c0a0258ee2cd82d5ad6c060ebf3b6cb34641a50cf1693d00185de0b",
+      "output_sha256": "722c811b51170bfafac5eeb4e465eb351a7248dbde72db543e20bf570af90dc0",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "54e44f73a26959c03344d045673fb0ddff7a0f9906028794dfeb175d1dcbb60c",
+      "output_sha256": "595f48b508df1b28d010995230f09b5532fd9ab50aab5c985bdc3ee697ba2b8f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 670,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 918,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "740182ba79f628582ee9363e0d1a7d04f19313d9a6d4894ead1f66773e32e3a9",
+      "output_sha256": "32746f7c3c18e09569c328bf762b6af1d1c1224917bb7fcc07771046beb36ad3",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 902,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 926,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e32ef869b961362c0759e875a132bacf66663de92fffa1c960d21d592a9298c6",
+      "output_sha256": "ae92d817401a3d766e423b4252d7cd70d635009d2c1bc29f053496af425224e0",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 670,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 739,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 930,
+          "height": 670,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_jpegs_read_natively": true,
+    "body_cream_text_only": true,
+    "font_sizes_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "headline_divider_body_gaps_px": [
+      36,
+      36
+    ],
+    "no_clipping_overlap": true,
+    "cover_count_matches_final_slides": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "video_voice_music_created": false,
+    "carousel_music_attached": false,
+    "graph_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Tribun Pilih Siapa?",
+    "adaptation": "A reasoned supporter choice between relief at a saved point and disappointment at a missed win; no invented collaboration or forced player poll.",
+    "core_fact": "Persebaya1-1Persijap, lateRisto equalizer, laterMiguel goal disallowed; Tavares apologizes.",
+    "angle": "A saved point does not fulfill the stated win target.",
+    "hook": "Persebaya selamat, mengapa Tavares tetap meminta maaf?",
+    "payoff": "Equalizer and disallowedwinner explain difference; coach reaction attributed.",
+    "audience_action": "Evaluate relief versus missed opportunity using a specific match incident, without personal abuse.",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "format_reason": "Reel source video/audio reuse grant unconfirmed for three actualcreatorURLs and browseropeningthrottled. No configuredlicensednarration or authorizedhostrecording. Reviewedfallback retains20WIBclock andIndonesia pillar.",
+    "review_due_24h": "2026-11-01T13:00:00Z",
+    "review_due_7d": "2026-11-07T13:00:00Z",
+    "target_metrics": null,
+    "no_virality_promise": true,
+    "measurement": "Use only API-supplied reach/views/shares/saved/comments; different-age baseline is not a causal format comparison or exact24h/7d reading."
+  },
+  "metrics": {
+    "checked_at": "2026-10-31T12:13:12.308Z",
+    "basis": "Actual snapshots with original ages; not exact24h/7d observations. Kane additional is a separate owner-authorized upload with its own rights exception, not a reusable voice licence or proof of organic performance. No causal format comparison.",
+    "target_metrics": null,
+    "posts": [
+      {
+        "id": "18185545699426440",
+        "published_at": "2026-10-31T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17991872067062607",
+        "published_at": "2026-10-30T13:02:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18098026916391079",
+        "published_at": "2026-10-30T01:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18467899582186128",
+        "published_at": "2026-10-29T13:02:27+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-10-31T12:16:52.683Z",
+    "baseline_rows": 184,
+    "current_rows": 184,
+    "changed": [
+      {
+        "id": "3c12aa51-2dc7-42b1-bd92-80fbf3d8c042",
+        "before": "DRAFT",
+        "after": "PENDING_REVIEW"
+      }
+    ],
+    "added": [],
+    "target": {
+      "status": "PENDING_REVIEW",
+      "format": "REEL",
+      "clock": "2026-10-31T13:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "other_existing_rows_unchanged": 183,
+    "seeder_called": false,
+    "meta_direct_called": false,
+    "no_changes": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 27,
+    "latest_read_at": "2026-10-31T00:25:50.840Z",
+    "sha256": "943fc5deb83d003d25103c85f53c7b9bc5b85a29120750fa8c4de37df4a11f89",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "shared_adapter_sha256": "23a329959dfddd0c3ce389c85167d76c5b2908e91601ce1186ff58029bdb2cb6",
+  "rollback_commit": "766e00175c17d81c6453d3f2ee21f4516ec43dd0",
+  "remaining": "Commit and push review before sharedschedule; verify pairedARTICLE, bytes, scope and idempotency. No published claim."
+}

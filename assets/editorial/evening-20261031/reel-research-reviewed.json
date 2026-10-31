@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-10-31:match-pm",
+  "checked_at": "2026-10-31T12:12:37.754Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Persebaya Persijap 30 Oktober 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=MIoX-ys7bYc",
+      "creator": "KONTEKS",
+      "checked_at": "2026-10-31T12:12:37.754Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Description credits Instagram/serdadumerahputih_1945, so source-rights chain remains unconfirmed. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T06:58:18Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=-NUALKOlGFc",
+      "creator": "Sportlinknews Indonesia",
+      "checked_at": "2026-10-31T12:12:37.754Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T09:11:38Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=4DVkyy941Xk",
+      "creator": "OopsIQ",
+      "checked_at": "2026-10-31T12:12:37.754Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "YouTube official metadata and complete creator description reviewed. Standard youtube licence gives no verified Stadione montage grant for video/audio. Browser source opening returned Online fetch throttled. Not downloaded, watched or auditioned. No login/challenge/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T03:45:10Z; standard youtube licence, no verified reuse grant in fulldescription; source opening throttled, actualmedia/audio/transcript not verified."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-10-31T12:12:37.754Z",
+    "digest": "20c9abf313ce9f5fde33839322081aac824e635931bf0d795c052ecd77728e12"
+  }
+}
