@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-10-31T12:17:17.307Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "3c12aa51-2dc7-42b1-bd92-80fbf3d8c042",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-10-31:match-pm",
+    "event_key": "persebaya-persijap-tavares-apology-after-equalizer-20261030",
+    "scheduled_at": "2026-10-31T13:00:00+00:00",
+    "time_wib": "31 Oktober 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "13326c2e-35ef-4f72-be4c-96d3d5e5dbbd",
+    "status": "SCHEDULED",
+    "slug": "persebaya-selamat-tavares-tetap-minta-maaf-3c12aa51",
+    "scheduled_at": "2026-10-31T13:00:00+00:00",
+    "title": "Persebaya Selamat, Tavares Tetap Minta Maaf",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "fd692b16cb54cbf5e0f528c8778aa86e397744573aea04e95858fc0738c4c417",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 32040,
+      "sha256": "0aaecc1b7d7a436b322198b781945725525f857e3896a0db2b854140170c8983",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 532176,
+      "sha256": "722c811b51170bfafac5eeb4e465eb351a7248dbde72db543e20bf570af90dc0",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 181395,
+      "sha256": "595f48b508df1b28d010995230f09b5532fd9ab50aab5c985bdc3ee697ba2b8f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 158933,
+      "sha256": "32746f7c3c18e09569c328bf762b6af1d1c1224917bb7fcc07771046beb36ad3",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 265937,
+      "sha256": "ae92d817401a3d766e423b4252d7cd70d635009d2c1bc29f053496af425224e0",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 73,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 183,
+  "changed_other_rows": [],
+  "baseline_rows": 184,
+  "current_rows": 185,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 11,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 27,
+    "sha256": "943fc5deb83d003d25103c85f53c7b9bc5b85a29120750fa8c4de37df4a11f89",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future20WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "c305de0c05bdf55eb4f438e4308f883c58e697cb"
+}
