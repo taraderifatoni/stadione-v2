@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-01:match-am",
+  "checked_at": "2026-11-01T00:06:37.805Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Fermin Barcelona Alaves 31 October 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=QZBGlWN5u5o",
+      "creator": "Just Foot&Ball",
+      "checked_at": "2026-11-01T00:06:37.805Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T23:16:40Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=A6_qKoSAUMw",
+      "creator": "Carpetas Blaugranas",
+      "checked_at": "2026-11-01T00:06:37.805Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T22:21:39Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=evWBr7nSncc",
+      "creator": "FOOTARREK",
+      "checked_at": "2026-11-01T00:06:37.805Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T21:45:46Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-01T00:06:37.805Z",
+    "digest": "21ccb3f6458c7a069a3c522a1fd1e2a2d79430256d568665834bc65f8ac8387c"
+  }
+}

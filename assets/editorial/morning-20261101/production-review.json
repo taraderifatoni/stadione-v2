@@ -1,0 +1,523 @@
+{
+  "checked_at": "2026-11-01T00:12:19.346Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULING",
+  "target": {
+    "id": "fae4c2a2-8949-40f4-aa4f-1784e1de9cd9",
+    "plan_key": "2026-11-01:match-am",
+    "event_key": "barcelona-alaves-fermin-first-three-goals-20261031",
+    "pillar": "Sepak Bola Eropa",
+    "original_format": "REEL",
+    "chosen_format": "CAROUSEL",
+    "scheduled_at": "2026-11-01T01:00:00Z",
+    "time_wib": "1 November2026 08.00WIB"
+  },
+  "research": {
+    "pool_date": "2026-11-01",
+    "pool_requested_at": "2026-10-31T23:58:07.790Z",
+    "pool_method": "Committed audience helper/current release cms-load/getDailySportsPool with existing cache/quota. Twelve trends=>seven eligible includingBarcelonaAlaves; fifteen news=>zero eligible; videoindex only oldClasico. Discovery is not live-score or rights evidence.",
+    "sources": [
+      {
+        "id": "BARCA",
+        "url": "https://www.fcbarcelona.com/en/football/first-team/news/4602177/fc-barcelona-6-1-alaves-thats-more-like-it",
+        "publisher_group": "FCBARCELONA",
+        "primary": true,
+        "published_at": "2026-10-31",
+        "retrieved_at": "2026-11-01T00:06:37.805Z",
+        "normalized_text_sha256": "77b50a8c5d151d827b13ca3ae784a2d9643439c1343d576948eb73e19f2dad3c"
+      },
+      {
+        "id": "MD",
+        "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261031/1004245575/fermin-mvp-hemos-reencontrado.html",
+        "publisher_group": "GRUPOGODO",
+        "primary": false,
+        "published_at": "2026-10-31T23:07:00Z",
+        "retrieved_at": "2026-11-01T00:06:37.805Z",
+        "normalized_text_sha256": "48a90f6490dbb14b17e2ca8fe50cdb75867bb29c3997aa6b0eeabd850a0a0fc7"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Ferm%C3%ADn_L%C3%B3pez.jpg",
+        "publisher_group": "BISO",
+        "primary": true,
+        "published_at": "2025-09-04",
+        "retrieved_at": "2026-11-01T00:06:37.805Z",
+        "normalized_text_sha256": "f8cf5f67606862c32bdab0034ed735553eedcc1ca9a9759c369daf99dbf0a17d"
+      },
+      {
+        "id": "REUTERS",
+        "url": "https://www.reuters.com/sports/soccer/barcelona-bounce-back-with-big-win-over-alaves-2026-10-31/",
+        "publisher_group": "REUTERS",
+        "primary": false,
+        "published_at": "2026-10-31T22:06:38Z",
+        "retrieved_at": "2026-11-01T00:06:37.805Z",
+        "normalized_text_sha256": "35edef644e1b04d5733d24875a9a18c9802ada941c4b463a7d439d792d06bd45"
+      },
+      {
+        "id": "PHOTO_LICENSE",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-01T00:06:37.805Z",
+        "normalized_text_sha256": "ab3705857a7563e9ace01f2f19b6b0ecbc418431af2d48a786c0645c0fe2dad7"
+      }
+    ],
+    "full_read": [
+      "FCBarcelona complete MikeRoberts match report, browser and GET200, main factual basis",
+      "MundoDeportivo complete JavierGascon Ferminreaction article including finalRaphinha/Lamineparagraph, browser and GET200",
+      "Reuters complete RuairidhBarlow report, browser; packet stores labelled paraphrasedreadingnotes, not purportedoriginalquotes or fullGET extraction"
+    ],
+    "independent_publishers": [
+      "FCBarcelona primary",
+      "GrupoGodo/MundoDeportivo",
+      "Reuters"
+    ],
+    "verification": [
+      "One goal plus two assists for initial3-0 independently confirmed by primary andMundoDeportivo. Ball recovery and bothRaphinhaassists corroborated Reuters.",
+      "Final6-1 atSpotifyCampNou Saturday31OctoberSpanishlocal; no currentSundaymatch or live-feed claim.",
+      "Lamine secondgoal65inclub versus64Reuters: exactgoalminutes omitted. Opening scorepair4-0 wrapped in firstpreview, rewritten as empat gol tanpa balas without changing facts.",
+      "No standings, seasonrecords, MVPaward, transfer/roster claims or inventedquotes used. Separate priorlosses toPSGinChampionsLeague andMadridinLaLiga, not twoleague losses."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-01:match-am",
+    "checked_at": "2026-11-01T00:06:37.805Z",
+    "queries": [
+      "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+      "Fermin Barcelona Alaves 31 October 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=QZBGlWN5u5o",
+        "creator": "Just Foot&Ball",
+        "checked_at": "2026-11-01T00:06:37.805Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T23:16:40Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=A6_qKoSAUMw",
+        "creator": "Carpetas Blaugranas",
+        "checked_at": "2026-11-01T00:06:37.805Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T22:21:39Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=evWBr7nSncc",
+        "creator": "FOOTARREK",
+        "checked_at": "2026-11-01T00:06:37.805Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "OfficialYouTube publicmetadata and complete creator description reviewed; standardyoutube licence, no verified Stadione montage grant for video/audio. Browser source opening Onlinefetchthrottled. Not downloaded, watched, transcribed or auditioned; no challenge/auth/DRM bypass.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T21:45:46Z; complete description no verified reusegrant, licenceyoutube. Sourceopeningthrottled; metadata is not playback or sound verification."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-01T00:06:37.805Z",
+      "digest": "21ccb3f6458c7a069a3c522a1fd1e2a2d79430256d568665834bc65f8ac8387c"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "JustFoot&Ball, CarpetasBlaugranas and FOOTARREK metadata standardYouTube licence; full descriptions give no verified Stadione montage video/audio reuse grant. Actual source-page openings Onlinefetchthrottled. No footage/transcript/audio playback evidence.",
+    "queries": 2,
+    "actual_candidate_urls": 3,
+    "creators": 3,
+    "usable": 0,
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "no_global_footage_absence_claim": true,
+    "no_auth_challenge_DRM_bypass": true
+  },
+  "illustration_option": {
+    "motion_story_doc_read": true,
+    "kane_v4_metadata_read": true,
+    "kane_example_audio_audition_claimed": false,
+    "manual_prototype_not_full_CMS_automation": true,
+    "configured_licensed_voice_provider_found": false,
+    "existing_production_environment_checked": true,
+    "authorized_host_recording_selected": false,
+    "voice_generation_tool_found": false,
+    "edge_tts_used": false,
+    "synthetic_default_music_used": false,
+    "no_clear_source_audio_muted": true
+  },
+  "media": {
+    "subject": "FerminLopez",
+    "author": "Biso",
+    "source": "https://commons.wikimedia.org/wiki/File:Ferm%C3%ADn_L%C3%B3pez.jpg",
+    "short_source": "https://commons.wikimedia.org/?curid=174499557",
+    "short_source_http": 200,
+    "short_source_page_title": "File:Fermín López.jpg - Wikimedia Commons",
+    "photo_date": "2025-09-04",
+    "event": "Spain atBulgaria, archive warmup photograph",
+    "license": "CC BY4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "original_author_grant_read": true,
+    "CC_licence_deed_read": true,
+    "retrieval": "Public normal GET200 using identified StadioneEditorial User-Agent, no authentication/challenge bypass.",
+    "original": {
+      "bytes": 604697,
+      "dimensions": [
+        1534,
+        2657
+      ],
+      "sha1": "234f4a1d21e60a2ab533820741a3e0593a3c95e0",
+      "sha256": "77e03bd9d46a7a202b1fc13bed94802ece3c1944c4eeaca7bcb7fddc826ffa7d",
+      "native_viewed": true
+    },
+    "changes": "Authentic face/hair/body/pose/lightSpaintrainingclothes/navyshorts/red socks/ball reference preserved; otherplayer/backgroundremoved in generated newspaper collage. Archive/author/CCBY4/changes/fullsourceURL/licencelink visible oncover and repeatedcaption/excerpt/docs. Not Barcakit or actual2026matchphoto.",
+    "hero": {
+      "crop": {
+        "x": 200,
+        "y": 0,
+        "width": 1200,
+        "height": 984
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 48795,
+      "sha256": "cd10a84d0c35c8bc245ac1509a66a31f136c305bd05793434308cdd0b6d5cec0",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    },
+    "cover": {
+      "variant_id": "FOTO_DOMINAN",
+      "committed_rotation_helper": true,
+      "previous_variants": [
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM"
+      ],
+      "page_count": 4,
+      "bytes": 498120,
+      "sha256": "65515da582608db867421eb47af101b8f9f4f73a6998e5ff94b84a8130510b01",
+      "native_viewed": true,
+      "spacing_refined_with_image_generation": true,
+      "source": "FCBARCELONA.COM",
+      "archive_and_license_credit_readable": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    }
+  },
+  "article": {
+    "title": "Fermín Ada di Balik Tiga Gol Awal Barça",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 138,
+    "digest": "dc964b72ca11fb92d7521aa122ad9bfd216639636a7d4a02ac3b7f770dd416a6",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261029-bayern-magdeburg-match-news"
+    ],
+    "whole_article_before_lossless_pagination": true,
+    "audit_issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "FCBARCELONA.COM",
+      "cover_input_sha256": "65515da582608db867421eb47af101b8f9f4f73a6998e5ff94b84a8130510b01",
+      "output_sha256": "8824c829ffeb5473d4db321c448731b1c26de3fd3fc982997699e9fa3c7fcb56",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "86adac997a7cba4e4cb9487463aa1285183dd23bac83f64edbf3bfe9f0202ae8",
+      "output_sha256": "4186ddaa3e3a68178df0bb169210038f045bffed3e4ba041b8fe08ede3c3510e",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 301,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 829,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 912,
+          "height": 301,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "be2a0403a360a65a10a7153dfbcb7bc9f8fac2c96d040610548d5d982f9444bf",
+      "output_sha256": "42c5b8fa22343982cbe9ba057dd5db50edf7a42aef61268f352bc14a57b47682",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 301,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 805,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 929,
+          "height": 301,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "52a1997c3541943c8b0c2f20f2fbd07c78e015d3f7051b741d0f25c42065c896",
+      "output_sha256": "d5fa450e05aa709665dd8bd58f5ee0646832e3e5babf1a918b45aa48d4bb4c51",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 617,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 710,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 921,
+          "height": 617,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_rendered_jpegs_read": true,
+    "hero_read": true,
+    "final_page4_read_after_text_fix": true,
+    "first_three_jpegs_identical_after_text_fix": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_clipping_overlap_or_split_score_pair": true,
+    "cover_count_matches_articleSlides": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "video_voice_music_created": false,
+    "carousel_music_attached": false,
+    "graph_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Pemain yang Perlu Diikuti",
+    "core_fact": "Fermin scored once and assisted twice for the initial3-0 in Barcelona6-1Alaves.",
+    "angle": "Compare passing and ball recovery before the large final score; not just a scorer tally.",
+    "hook": "Why did Fermin matter before the score became emphatic?",
+    "payoff": "Opening assist, Fermin scoring from a Lamine pass, ball recovery and second Raphinha assist.",
+    "audience_action": "Choose openingassist or recoverybeforethirdgoal, with a reason grounded in that action.",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "format_reason": "Three video/audio source reuse permissions unconfirmed, standardYouTubelicences and browser sourceopening throttled. No configuredlicensednarration or authorizedhostrecording forillustration. Reviewedcarousel preservesSunday08WIB.",
+    "target_metrics": null,
+    "no_virality_promise": true,
+    "review_due_24h": "2026-11-02T01:00:00Z",
+    "review_due_7d": "2026-11-08T01:00:00Z",
+    "measurement": "Actual API metrics only. Different-age snapshots are not causal format comparisons, exact24h/7d observations or proof of organic/paid split."
+  },
+  "metrics": {
+    "checked_at": "2026-11-01T00:07:10.951Z",
+    "basis": "Actual snapshots with original ages; not exact24h/7d observations. Kane additional is a separate owner-authorized upload with its own rights exception, not a reusable voice licence or proof of organic performance. No causal format comparison.",
+    "target_metrics": null,
+    "posts": [
+      {
+        "id": "18022650269943932",
+        "published_at": "2026-10-31T13:02:03+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18185545699426440",
+        "published_at": "2026-10-31T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17991872067062607",
+        "published_at": "2026-10-30T13:02:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18098026916391079",
+        "published_at": "2026-10-30T01:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-01T00:12:18.900Z",
+    "baseline_rows": 188,
+    "current_rows": 188,
+    "changed": [],
+    "added": [],
+    "target": {
+      "status": "DRAFT",
+      "format": "REEL",
+      "clock": "2026-11-01T01:00:00+00:00",
+      "parent": null,
+      "assets": 0,
+      "attempts": 0
+    },
+    "other_existing_rows_unchanged": 187,
+    "weekly_before": 11,
+    "weekly_proposed": 12,
+    "weekly_limit": 12,
+    "seeder_called": false,
+    "meta_direct_called": false,
+    "no_changes": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 27,
+    "latest_read_at": "2026-10-31T00:25:50.840Z",
+    "sha256": "943fc5deb83d003d25103c85f53c7b9bc5b85a29120750fa8c4de37df4a11f89",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "rollback_commit": "1fb3b2d9f4c06ef459e5ebbbc08279860ed51447",
+  "remaining": "Commit/push reviewedproof, then sharedschedule; verify pairedARTICLE, clock, bytes, scope and idempotency. No claimpublished."
+}

@@ -1,0 +1,5 @@
+# Photograph rights and archive context
+
+Fermín López, Spain at Bulgaria,4September2025. Photograph by Biso, ownwork, licensed CreativeCommons Attribution4.0International. Source https://commons.wikimedia.org/wiki/File:Ferm%C3%ADn_L%C3%B3pez.jpg ; shortsource https://commons.wikimedia.org/?curid=174499557 verifiedGET200 and correctfiletitle. Licence https://creativecommons.org/licenses/by/4.0/ . Original1534x2657,604697bytes, SHA1 234f4a1d21e60a2ab533820741a3e0593a3c95e0 verified.
+
+Changes: generatededitorialcollage from authenticphoto reference, background/otherplayer removed, mechanicalJPEGfit; hero originalcrop200,0,1200,984 resized512x420withouttext. Face/hair/body/pose/originalSpaintrainingclothes preserved. Not a Barcelonauniform or2026Alavesmatchpicture. Archive/creator/licence/changes/source links visible oncover and in caption/articleexcerpt. No endorsement implied. Raw original/sourceHTML/API/fullpacket private; owneditorialtext and attributed reviewedderivatives onlycommitted.

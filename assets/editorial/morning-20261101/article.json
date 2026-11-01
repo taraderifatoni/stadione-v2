@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Fermín Ada di Balik Tiga Gol Awal Barça",
+  "dek": "Satu gol dan dua assist membentuk keunggulan awal. Arsip Spanyol 2025: Biso, CC BY 4.0, diolah. commons.wikimedia.org/?curid=174499557",
+  "caption": "FERMÍN ADA DI BALIK TIGA GOL AWAL BARÇA\n\nBarcelona menang 6–1 atas Alavés, Sabtu (31/10) waktu Spanyol. Sebelum Raphinha dan Lamine Yamal menutup laga dengan masing-masing dua gol, Fermín sudah terlibat dalam tiga gol pertama.\n\nIa mengumpan untuk gol pembuka Raphinha, mencetak gol dari umpan Lamine, lalu merebut bola dan kembali menyiapkan gol Raphinha. Satu gol dan dua assist itu membentuk keunggulan 3–0.\n\nKemenangan di Camp Nou menjadi respons setelah kekalahan dari PSG di Liga Champions dan Real Madrid di LaLiga.\n\nMenurutmu, kontribusi paling menentukan Fermín adalah umpan pembuka atau merebut bola sebelum gol ketiga? Jelaskan pilihanmu lewat aksi tersebut, bukan hanya jumlah gol akhir.\n\nSumber: laporan lengkap FC Barcelona, Mundo Deportivo, dan Reuters.\n\nFoto arsip Fermín López bersama Spanyol, 4 September 2025: Biso, CC BY 4.0. https://commons.wikimedia.org/?curid=174499557 . Lisensi: https://creativecommons.org/licenses/by/4.0/ . Cover dipotong/dikolase; hero memakai crop foto asli tanpa teks. Bukan dokumentasi Barcelona–Alavés 2026; pakaian latihan Spanyol pada foto dipertahankan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Tiga Kontribusi Sebelum Laga Menjauh",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "FERMIN"
+      ],
+      "text": "Fermín López mencetak satu gol dan memberi dua assist dalam kemenangan Barcelona 6–1 atas Alavés, Sabtu (31/10/2026) waktu Spanyol. Ketiga kontribusi itu membentuk keunggulan 3–0 tuan rumah. Perannya sudah terasa sebelum skor akhir menjadi telak."
+    },
+    {
+      "id": "actions",
+      "heading": "Mengumpan, Mencetak, Merebut Bola",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPENING"
+      ],
+      "text": "Menerima umpan Pedri di kiri, Fermín mengirim bola untuk gol pembuka Raphinha. Ia lalu mencetak gol dari umpan Lamine Yamal. Menjelang jeda, Fermín merebut penguasaan bola dan kembali menyiapkan gol Raphinha, membawa Barça unggul 3–0."
+    },
+    {
+      "id": "rest",
+      "heading": "Respons Setelah Dua Kekalahan",
+      "kind": "FACT",
+      "claim_ids": [
+        "REST",
+        "FERMIN"
+      ],
+      "text": "Lamine kemudian membawa Barça unggul empat gol tanpa balas sebelum turun minum. Pada babak kedua, ia menambah gol, disusul Anthony Gordon. Mariano membalas untuk Alavés. Raphinha dan Lamine masing-masing menutup pertandingan dengan dua gol."
+    },
+    {
+      "id": "context",
+      "heading": "Respons Setelah Dua Kekalahan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "CONTEXT"
+      ],
+      "text": "Kemenangan di Spotify Camp Nou itu datang setelah Barcelona kalah dari Paris Saint-Germain di Liga Champions dan Real Madrid di LaLiga. Kontribusi Fermín pada fase awal memberi timnya pijakan untuk merespons dua hasil tersebut."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261029-bayern-magdeburg-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-01T00:09:21.609Z",
+    "article_digest": "dc964b72ca11fb92d7521aa122ad9bfd216639636a7d4a02ac3b7f770dd416a6"
+  }
+}
