@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-11-01T12:20:22.789Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "bc53a0cd-b657-4f67-ae2b-5a43fa0e3e2d",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-01:match-pm",
+    "event_key": "persija-dewa-ridho-self-evaluation-20261031",
+    "scheduled_at": "2026-11-01T13:00:00+00:00",
+    "time_wib": "1 November 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "b9063e42-b592-4c87-a6e3-7d0c411f4a4b",
+    "status": "SCHEDULED",
+    "slug": "persija-kehilangan-jarak-ridho-pilih-introspeksi-bc53a0cd",
+    "scheduled_at": "2026-11-01T13:00:00+00:00",
+    "title": "Persija Kehilangan Jarak, Ridho Pilih Introspeksi",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "363587ca9489365d29688d2be199b1a972aebda64fd0e5a0898dcc7ea048d6f9",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 56825,
+      "sha256": "3f78f8650303e1e0c8b1cbca73cbd9d978a19fef39a0a3cfeedfef4703dd65d9",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 820441,
+      "sha256": "8d7aeb10adb7e8879afa5c982e303d2c8e78fd6d42de5450f90195a67246f2f2",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 165865,
+      "sha256": "f4dd9c56fb074bbfffc1f0ddc62fdc4945c9e5191562dcccc930b256fe0e5022",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 171760,
+      "sha256": "3fd5b39c7231825516c96b56863ec173abe4392af0ea9c61bc27ba7d20597a32",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 159389,
+      "sha256": "16f20cf14f7b36a2747b0d74b179079c3237082b24faa91c1e44c7b110c06be9",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 138526,
+      "sha256": "0930d4751f1e79d9c51bd5e4dc18889aed8d15b886be6a86c444d89ed70cf47d",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 75,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 188,
+  "changed_other_rows": [],
+  "baseline_rows": 189,
+  "current_rows": 190,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 12,
+  "weekly_limit": 12,
+  "additional_excluded_from_routine_and_unchanged": true,
+  "reference": {
+    "entries": 28,
+    "sha256": "6b15297eed0a5deb6caa16d52892e139e8a328644446f2a19ad2aa5c47aa99f2",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future20WIB schedule left to sharedsystemdpublisher. NoMetaDirect. Not claiming Instagram or website published; targetmetrics unavailable.",
+  "pre_schedule_commit": "cfce861814292e0b0c1bd621d21aa284db55c48a",
+  "native_public_render_review": {
+    "checked_at": "2026-11-01T12:21:44.866Z",
+    "slides": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "resolution": [
+      1080,
+      1350
+    ],
+    "downloaded_public_bytes_match_all_preview_sha256": true,
+    "all_five_opened_and_read_at_original_resolution": true,
+    "no_clipping_overlap_or_missing_text": true,
+    "cover_counter": "1/5",
+    "hero_clean_original_reviewed": true
+  },
+  "publisher_service": {
+    "checked_at": "2026-11-01T12:20:23Z",
+    "timer": "active",
+    "last_service_result": "success",
+    "last_exit_status": 0,
+    "not_publication_evidence_by_itself": true
+  }
+}
