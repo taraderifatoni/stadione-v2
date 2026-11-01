@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-01:match-pm",
+  "checked_at": "2026-11-01T12:05:39.983Z",
+  "queries": [
+    "Persija Dewa United 31 Oktober 2026",
+    "Persija Dewa United Shin Tae yong konferensi pers 31 Oktober 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=Q0CJhIY8sG8",
+      "creator": "97 Sports",
+      "checked_at": "2026-11-01T12:05:39.983Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T13:57:54Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=TbCTWUvkETo",
+      "creator": "Hasil Liga",
+      "checked_at": "2026-11-01T12:05:39.983Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-10-31T13:59:02Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=yuffGkvXY6s",
+      "creator": "CHANNEL BERBAGI",
+      "checked_at": "2026-11-01T12:05:39.983Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Published 2026-11-01T00:15:28Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-01T12:05:39.983Z",
+    "digest": "a2a9d519bf821dba3e6623a0fa1f136d741e9cb847f54c4e5bdefb63a6f912e9"
+  }
+}

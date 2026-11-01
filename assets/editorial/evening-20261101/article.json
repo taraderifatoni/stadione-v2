@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persija Kehilangan Jarak, Ridho Pilih Introspeksi",
+  "dek": "Ridho mengakui salah operan usai kalah dari Dewa. Arsip 2023: Pangalau, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=139128242",
+  "caption": "PERSIJA KEHILANGAN JARAK, RIDHO PILIH INTROSPEKSI\n\nUnggul lewat Rayhan Hannan pada menit keempat belum cukup. Persija kalah 1–2 dari Dewa United di Banten International Stadium, Sabtu (31/10/2026).\n\nDenilson menyamakan skor sebelum jeda. Pada babak kedua, Dony Tri Pamungkas menerima kartu kuning kedua, lalu Taisei Marukawa membawa Dewa berbalik unggul.\n\nSesudah laga, Ridho mengakui kesalahan operan tim dan penampilannya sendiri. Ia sepakat dengan STY, yang menyoroti peluang tak menjadi gol dan operan yang keliru. Kartu merah menambah kesulitan, tetapi evaluasi mereka juga menyentuh permainan tim.\n\nJarak kedua tim yang semula empat poin menjadi satu seusai pertandingan itu.\n\nMenurutmu, pembenahan lebih mendesak ada pada penyelesaian peluang atau ketelitian operan? Beri alasan dari jalannya laga, tanpa menyerang pemain secara pribadi.\n\nSumber: laporan dan reaksi lengkap Persija; detikSepakbola.\n\nRizky Ridho, foto arsip Indonesia–Brunei, 17 Oktober 2023, oleh Pangalau. Sumber: https://commons.wikimedia.org/?curid=139128242 . Lisensi: https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli; keduanya dibagikan dengan CC BY-SA 4.0. Bukan dokumentasi Dewa–Persija 2026; jersey Timnas asli dipertahankan. Tidak menyiratkan dukungan fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kapten Memasukkan Diri dalam Evaluasi",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "RIDHO_EVAL",
+        "PHOTO"
+      ],
+      "text": "Rizky Ridho mengakui Persija banyak salah operan setelah kalah 1–2 dari Dewa United di Banten International Stadium, Sabtu (31/10/2026). Kapten Persija itu juga memasukkan penampilannya sendiri dalam evaluasi, bukan hanya menunjuk kesalahan rekan."
+    },
+    {
+      "id": "chronology",
+      "heading": "Keunggulan yang Tidak Bertahan",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHRONOLOGY",
+        "RESULT"
+      ],
+      "text": "Rayhan Hannan membuka skor pada menit keempat, sebelum Denilson menyamakan kedudukan menjelang jeda. Pada babak kedua, Dony Tri Pamungkas menerima kartu kuning kedua. Persija harus melanjutkan laga dengan sepuluh pemain, lalu Taisei Marukawa mencetak gol kemenangan Dewa."
+    },
+    {
+      "id": "reaction",
+      "heading": "Bukan Hanya Soal Kartu Merah",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "RIDHO_EVAL",
+        "STY_EVAL"
+      ],
+      "quote": {
+        "text": "Saya sendiri juga banyak melakukan kesalahan hari ini.",
+        "source_id": "RIDHO"
+      },
+      "text": "“Saya sendiri juga banyak melakukan kesalahan hari ini.” Ridho menyampaikan pengakuan itu lewat laman Persija. Ia sepakat dengan Shin Tae-yong, yang menyoroti peluang gagal menjadi gol dan kesalahan operan. Evaluasi mereka tidak berhenti pada kartu merah."
+    },
+    {
+      "id": "gap",
+      "heading": "Empat Poin Menjadi Satu",
+      "kind": "FACT",
+      "claim_ids": [
+        "GAP"
+      ],
+      "text": "Seusai pertandingan tersebut, jarak Persija dengan Dewa menyusut dari empat menjadi satu poin. Persija mengoleksi 18 poin, sedangkan Dewa 17. Kesempatan menjauh justru berakhir dengan pesaing yang makin dekat."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261028-gasperini-napoli-roma-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-01T12:06:08.319Z",
+    "article_digest": "363587ca9489365d29688d2be199b1a972aebda64fd0e5a0898dcc7ea048d6f9"
+  }
+}

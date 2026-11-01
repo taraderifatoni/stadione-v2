@@ -1,0 +1,610 @@
+{
+  "checked_at": "2026-11-01T12:18:56.852Z",
+  "phase": "REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULING",
+  "target": {
+    "id": "bc53a0cd-b657-4f67-ae2b-5a43fa0e3e2d",
+    "plan_key": "2026-11-01:match-pm",
+    "event_key": "persija-dewa-ridho-self-evaluation-20261031",
+    "pillar": "Sepak Bola Indonesia",
+    "scheduled_at": "2026-11-01T13:00:00Z",
+    "time_wib": "1 November 2026 20.00 WIB",
+    "original_format": "REEL",
+    "format": "CAROUSEL"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-01",
+      "fetchedAt": "2026-11-01T11:59:56.773Z",
+      "method": "Committed cms-audience-pool helper reads getDailySportsPool from current release via scripts/cms-load.cjs; existing cache/quota.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1,
+          "titles": [
+            "dewa united vs persija jakarta"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 1,
+          "titles": [
+            "OPS! On Point Sports 🎙️ | \"Kisah Perjuangan di Balik Layar Timnas Indonesia"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "PERSIJA",
+        "url": "https://www.persija.id/media/news/review-dewa-united-vs-persija-alarm-untuk-kembali-fokus",
+        "publisher_group": "PERSIJA",
+        "primary": true,
+        "published_at": "2026-10-31",
+        "retrieved_at": "2026-11-01T12:05:39.983Z",
+        "normalized_text_sha256": "6c17c35d7ae5f5666ad9c5d12c51aad2f00c338244966e4bbd3e6657b6479d2a"
+      },
+      {
+        "id": "RIDHO",
+        "url": "https://www.persija.id/media/news/rizky-ridho-introspeksi-untuk-lebih-baik",
+        "publisher_group": "PERSIJA",
+        "primary": true,
+        "published_at": "2026-10-31",
+        "retrieved_at": "2026-11-01T12:05:39.983Z",
+        "normalized_text_sha256": "3c01ff1b769cbc533d4366610e573d48f71371661a464c97d571be99309c50f7"
+      },
+      {
+        "id": "DETIK",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8733535/persija-kalah-dari-dewa-united-karena-kesalahan-sendiri",
+        "publisher_group": "DETIK",
+        "primary": false,
+        "published_at": "2026-11-01T09:00:00Z",
+        "retrieved_at": "2026-11-01T12:05:39.983Z",
+        "normalized_text_sha256": "f19b970095c6c5b8a8adccef39d8289e549d26d0cd0517eaf9f17d15260ef931"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Indonesia-Brunei_17_October_2023_(Players)_23.jpg",
+        "publisher_group": "PANGALAU",
+        "primary": true,
+        "published_at": "2023-10-17",
+        "retrieved_at": "2026-11-01T12:05:39.983Z",
+        "normalized_text_sha256": "57f2170dcd0e3735240be60b3baa014cf6cac8c047cab8c46940533cba6c1933"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-01T12:05:39.983Z",
+        "normalized_text_sha256": "94bde7214af6f06362819c3a4d45c264ac4b4e7a42af0a9a40eccbd7166b1370"
+      },
+      {
+        "id": "DETIK_MATCH",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8732882/hasil-super-league-persija-kalah-1-2-dari-dewa-united",
+        "publisher_group": "DETIK",
+        "primary": false,
+        "published_at": "2026-10-31T13:57:00Z",
+        "retrieved_at": "2026-11-01T12:06:08.318Z",
+        "normalized_text_sha256": "73adfacd8d478bcd127281fe2ad4d2562e3a05b91bf518f8ffdced5d4253677a"
+      }
+    ],
+    "full_read": [
+      "Persija official full match review and Ridho postmatch reaction, browser main body through final quote, normal GET200 private extraction.",
+      "detikSepakbola full independent match report and next-day coach/captain reaction, browser through story end, GET200 private extraction.",
+      "Commons full original ownwork licensing declaration and CC BY-SA4.0 deed read, not merely search snippet."
+    ],
+    "independent_groups": [
+      "PERSIJA primary",
+      "DETIK independent"
+    ],
+    "verification": [
+      "Final31October2026 resultDewa2-1Persija atBantenInternationalStadium, not IndomilkArena from conflicting leagueaggregator.",
+      "Hannan fourthminute, Denilson equalizer, Dony secondyellow, Marukawa winner; precise redcard65/66 andwinner85/86 omitted due presentationdifferences.",
+      "Eight-word Ridho quote matches official source punctuation exactly; no fabricated direct quotes or passing statistics.",
+      "Gap18vs17 andfourtoone refers to immediately after31Octmatch, not currentSundaystandings.",
+      "Only prior previewfourpointscenario exists inCMS/IG; newpostmatchRidho selfevaluation is distinct, no duplicateevent."
+    ],
+    "media_rejected": [
+      "RayhanHannan Commons uploader attributes thirdparty AnotherSource, no original licensor grant verified; not used."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-01:match-pm",
+    "checked_at": "2026-11-01T12:05:39.983Z",
+    "queries": [
+      "Persija Dewa United 31 Oktober 2026",
+      "Persija Dewa United Shin Tae yong konferensi pers 31 Oktober 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=Q0CJhIY8sG8",
+        "creator": "97 Sports",
+        "checked_at": "2026-11-01T12:05:39.983Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T13:57:54Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=TbCTWUvkETo",
+        "creator": "Hasil Liga",
+        "checked_at": "2026-11-01T12:05:39.983Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-10-31T13:59:02Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=yuffGkvXY6s",
+        "creator": "CHANNEL BERBAGI",
+        "checked_at": "2026-11-01T12:05:39.983Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full YouTube Data API descriptions and licence metadata reviewed. Standard YouTube licence; no verified Stadione video/audio montage reuse grant. Browser source page returned Online fetch throttled. No download, viewing, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Published 2026-11-01T00:15:28Z; licence youtube; complete description has no verified reuse grant. Actual browser page open throttled, not playable footage evidence."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-01T12:05:39.983Z",
+      "digest": "a2a9d519bf821dba3e6623a0fa1f136d741e9cb847f54c4e5bdefb63a6f912e9"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Three actual YouTube source pages from97Sports/HasilLiga/CHANNELBERBAGI have standardYouTube licence and no verified Stadione video/audio montage reuse grant in complete descriptions. Browser opens throttled. Official Persija embedded video open also throttled.",
+    "queries": 2,
+    "candidate_urls": 3,
+    "creators": 3,
+    "usable": 0,
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcripts_verified": false,
+    "no_global_footage_absence_claim": true,
+    "no_auth_challenge_DRM_bypass": true
+  },
+  "illustration": {
+    "motion_story_doc_read": true,
+    "kane_v4_story_and_assets_metadata_read": true,
+    "example_audio_audition_claimed": false,
+    "manual_prototype_not_full_CMS_automation": true,
+    "existing_environment_voice_config_checked": true,
+    "configured_licensed_voice_provider_found": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "default_or_synthetic_music_used": false,
+    "source_audio_muted": false
+  },
+  "media": {
+    "subject": "Rizky Ridho",
+    "author": "Pangalau",
+    "photo_event": "Indonesia–Brunei17October2023, archive Timnas jersey not Dewa–Persija2026",
+    "source": "https://commons.wikimedia.org/?curid=139128242",
+    "license": "CC BY-SA4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_author_ownwork_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "bytes": 4032226,
+      "dimensions": [
+        2388,
+        2985
+      ],
+      "sha1": "e62386f4250f1dd7c7bd1c2678bb1c93257e9786",
+      "sha256": "dc93d0b5bc0ea40aa08ff5f951b57039e752bee13167ba56844fe6a90fb05221",
+      "hash_matches_Commons": true,
+      "native_reference_reviewed": true
+    },
+    "changes": "Background replaced by generatedStadione collage; authentic face/hair/pose/redIndonesiaMillsnumber5 preserved. Cover typography margin refined via imagegeneration. Hero originalcrop, no text. Both adaptations releasedCCBYSA4.0 with attribution and source/license/changes links incaption and documentation, archivecredit/source incover andarticleexcerpt; no endorsement.",
+    "hero": {
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 2388,
+        "height": 1959
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 56825,
+      "sha256": "3f78f8650303e1e0c8b1cbca73cbd9d978a19fef39a0a3cfeedfef4703dd65d9",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    },
+    "cover": {
+      "variant_id": "KLASIK",
+      "rotation_helper": true,
+      "previous_variants": [
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN"
+      ],
+      "page_count": 5,
+      "bytes": 701575,
+      "sha256": "cbbe39bdd636bef762652b54f3b8bc699ff9cf77cef4e737b274f33edb7d0f9a",
+      "generated_cover_reviewed": true,
+      "margin_refinement_reviewed": true,
+      "text_safe_margin_px_at_least": 72,
+      "source_label_canonical": "PERSIJA.ID",
+      "visible_source_labels": [
+        "PERSIJA.ID",
+        "DETIK.COM"
+      ],
+      "canonical_primary_label_fixed_before_final_preview": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    }
+  },
+  "article": {
+    "title": "Persija Kehilangan Jarak, Ridho Pilih Introspeksi",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 135,
+    "digest": "363587ca9489365d29688d2be199b1a972aebda64fd0e5a0898dcc7ea048d6f9",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261028-gasperini-napoli-roma-reaction-news"
+    ],
+    "complete_before_pagination": true,
+    "pagination_lossless": true,
+    "audit_issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PERSIJA.ID",
+      "cover_input_sha256": "cbbe39bdd636bef762652b54f3b8bc699ff9cf77cef4e737b274f33edb7d0f9a",
+      "output_sha256": "8d7aeb10adb7e8879afa5c982e303d2c8e78fd6d42de5450f90195a67246f2f2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "5b6ed7cb3cce732f6eeaa68312549d066f5ab8f1c5a9116d97f9fedf6afc09c5",
+      "output_sha256": "f4dd9c56fb074bbfffc1f0ddc62fdc4945c9e5191562dcccc930b256fe0e5022",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 845,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 911,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "59836c38f3e7dac232a68137f8b154a518e67dac677ddbd2d5be2b6132e6e723",
+      "output_sha256": "3fd5b39c7231825516c96b56863ec173abe4392af0ea9c61bc27ba7d20597a32",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 794,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 924,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "c3438d2632296340cec5cb04d18a281b6611c5b65f0965ec5f7adb60d213c15a",
+      "output_sha256": "16f20cf14f7b36a2747b0d74b179079c3237082b24faa91c1e44c7b110c06be9",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 810,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 934,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "c8c059965fd5498abb7dc34c2c63e945536faca07c72fb4abb44c9ff681852f9",
+      "output_sha256": "0930d4751f1e79d9c51bd5e4dc18889aed8d15b886be6a86c444d89ed70cf47d",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 842,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 919,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "cover_and_all_four_body_pages_reviewed": true,
+    "body_pages_compared_after_cover_fix_identical": true,
+    "hero_reviewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_clipping": true,
+    "visible_page_count_matches": 5
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "graph_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Setelah Peluit",
+    "core_fact": "Ridho acknowledges own and team passing errors after Persija loses1-2 toDewa on31October2026.",
+    "angle": "Captain takes responsibility beyond the red card; an early lead does not prevent the gap shrinking.",
+    "hook": "What did Persija lose beyond three points after leading early?",
+    "payoff": "Chronology of lost lead, ten players, self criticism and four-point gap reduced toone after thatmatch.",
+    "audience_action": "Choose conversion or passing accuracy as the first improvement, supported by an event or the coach/captain statements; no personal abuse.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "Three real video source URLs have standard YouTube licences without a verified reuse grant; browser playback unavailable. No licensed voice configuration or authorized host recording for illustration. Reviewed carousel preserves20WIB.",
+    "trial_reel_test_performed": false,
+    "trial_reason": "Carousel fallback; no usable rights-cleared video/audio or licensed voice selected.",
+    "metrics_target": null,
+    "review_due_24h": "2026-11-02T13:00:00Z",
+    "review_due_7d": "2026-11-08T13:00:00Z",
+    "measurement": "Keep unavailable values null; differing-age snapshots are not causal evidence or exact24h/7d measurements."
+  },
+  "metrics": {
+    "checked_at": "2026-11-01T12:17:13.288Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots at differing posting ages; not exact24h/7d observations. No organic/paid split, retention, follows, FYP or causal format effect inferred where unavailable.",
+    "posts": [
+      {
+        "id": "18420977149153554",
+        "published_at": "2026-11-01T01:02:32+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18022650269943932",
+        "published_at": "2026-10-31T13:02:03+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18185545699426440",
+        "published_at": "2026-10-31T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17991872067062607",
+        "published_at": "2026-10-30T13:02:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-01T12:17:13.299Z",
+    "baseline_rows": 189,
+    "current_rows": 189,
+    "changed_target_by_existing_engine_only": [
+      "bc53a0cd-b657-4f67-ae2b-5a43fa0e3e2d"
+    ],
+    "changed_other_rows": [],
+    "added": [],
+    "unchanged_other_rows": 188,
+    "target": {
+      "id": "bc53a0cd-b657-4f67-ae2b-5a43fa0e3e2d",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-01T13:00:00+00:00",
+      "assets": 0,
+      "attempts": 0
+    },
+    "weekly_routine_before": 11,
+    "weekly_routine_proposed": 12,
+    "weekly_limit": 12,
+    "owner_approved_additional_without_plan_key_excluded_from_routine": 1,
+    "journal_entries": 28,
+    "journal_sha256": "6b15297eed0a5deb6caa16d52892e139e8a328644446f2a19ad2aa5c47aa99f2",
+    "journal_runtime_committed_identical": true,
+    "seeder_called": false,
+    "meta_direct_called": false,
+    "no_changes_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ],
+    "automatic_target_transition": "Existing content-engine moved same target DRAFT to PENDING_REVIEW/BLOCKED at12:15UTC with unverified single-source scaffold. Still eligible, assets0,parentnull,attempts0; new reviewed packet replaces only this target through normal shared adapter."
+  },
+  "references": {
+    "entries": 28,
+    "latest_read_at": "2026-11-01T00:21:28.378Z",
+    "sha256": "6b15297eed0a5deb6caa16d52892e139e8a328644446f2a19ad2aa5c47aa99f2",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "rollback_commit": "629b9d74e797ae6786e50332f2a34d06201e744f",
+  "remaining": "Commit/push reviewed proof, then schedule via committed shared adapter; verify paired article/clock/bytes/scope/idempotency. No claim already published."
+}
