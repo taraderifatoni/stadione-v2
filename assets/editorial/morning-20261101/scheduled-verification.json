@@ -1,0 +1,83 @@
+{
+  "checked_at": "2026-11-01T00:12:49.168Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "fae4c2a2-8949-40f4-aa4f-1784e1de9cd9",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-01:match-am",
+    "event_key": "barcelona-alaves-fermin-first-three-goals-20261031",
+    "scheduled_at": "2026-11-01T01:00:00+00:00",
+    "time_wib": "1 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "05e5d11c-f51a-4764-bc51-5e5260492db7",
+    "status": "SCHEDULED",
+    "slug": "fermín-ada-di-balik-tiga-gol-awal-barça-fae4c2a2",
+    "scheduled_at": "2026-11-01T01:00:00+00:00",
+    "title": "Fermín Ada di Balik Tiga Gol Awal Barça",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "dc964b72ca11fb92d7521aa122ad9bfd216639636a7d4a02ac3b7f770dd416a6",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 48795,
+      "sha256": "cd10a84d0c35c8bc245ac1509a66a31f136c305bd05793434308cdd0b6d5cec0",
+      "clean_original_photo_framed_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 619327,
+      "sha256": "8824c829ffeb5473d4db321c448731b1c26de3fd3fc982997699e9fa3c7fcb56",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 168095,
+      "sha256": "4186ddaa3e3a68178df0bb169210038f045bffed3e4ba041b8fe08ede3c3510e",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 156544,
+      "sha256": "42c5b8fa22343982cbe9ba057dd5db50edf7a42aef61268f352bc14a57b47682",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 237299,
+      "sha256": "d5fa450e05aa709665dd8bd58f5ee0646832e3e5babf1a918b45aa48d4bb4c51",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 74,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "unchanged_existing_other_rows": 187,
+  "changed_other_rows": [],
+  "baseline_rows": 188,
+  "current_rows": 189,
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 12,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 27,
+    "sha256": "943fc5deb83d003d25103c85f53c7b9bc5b85a29120750fa8c4de37df4a11f89",
+    "runtime_committed_identical": true
+  },
+  "publisher": "Future08WIBschedulelefttosharedsystemdpublisher.NoMetaDirect.NoclaimIGpublishedorwebsitealreadylive;targetmetricsnotavailable.",
+  "pre_schedule_commit": "f28368c0a7819830c43868fc904eb16f93a67772"
+}
