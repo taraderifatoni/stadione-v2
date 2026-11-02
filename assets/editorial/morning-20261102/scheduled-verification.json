@@ -1,0 +1,104 @@
+{
+  "checked_at": "2026-11-02T00:18:05.088Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "0b4bed16-44c2-49d3-b16e-38bb3b7dd349",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-02:mon-am",
+    "event_key": "arsenal-liverpool-havertz-anfield-league-wait-20261101",
+    "scheduled_at": "2026-11-02T01:00:00+00:00",
+    "time_wib": "2 November2026 08.00WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "623aacb6-a673-41c3-9fab-227dc64ba305",
+    "status": "SCHEDULED",
+    "slug": "havertz-mengakhiri-penantian-arsenal-di-anfield-0b4bed16",
+    "scheduled_at": "2026-11-02T01:00:00+00:00",
+    "title": "Havertz Mengakhiri Penantian Arsenal di Anfield",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "a9835a2a4805c04f21963c1cdceb0381d6b20f3b8b14488e25b7362acd6df3be",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 78539,
+      "sha256": "90b6efcb9b51111dee9979df2a18232f558a24c74bc02033dec6416677cb8c68",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 726320,
+      "sha256": "2f29a15da44887c6750ff7aa5e7d5785e71c3e77894c1d81b411da689e6826db",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 132957,
+      "sha256": "1aa9de153f051b96c5a5a64cbb80e957c5f9299541993de682ac30cd906957c9",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 158142,
+      "sha256": "1fc3e58fcca2a398085eb139b2cc29ec0e1f7165af7c2058c1f3ef6801f2b951",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 152243,
+      "sha256": "b25910859cc2a8e8c8745f63544c6d39b2a742509e84110a01971ecb5e459818",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 141123,
+      "sha256": "7abfa26aefa64694b9c6fc5c61f4b1357a47cd9610ffd09f059a4777af66c13d",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 76,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 193,
+  "current_rows": 194,
+  "unchanged_existing_other_rows": 192,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 1,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 29,
+    "sha256": "a19435d7ae0e77a7c7f7bf416c7c0b2f90274d831bd95184dbf1f5f8264a87d3",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_five_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/5",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "62b3b1f58c1a293ebf093e9014ed6e80c779da5d",
+  "publisher_service": {
+    "checked_at": "2026-11-02T00:18:06Z",
+    "timer": "active",
+    "last_service_result": "success",
+    "last_exit_status": 0,
+    "not_publication_evidence_by_itself": true
+  }
+}
