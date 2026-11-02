@@ -1,0 +1,23 @@
+const assert=require('node:assert/strict');
+const {requiresIllustration,illustrationIssues,renderPacket,classifyProductionResult}=require('./illustrated-slot-policy.cjs');
+const item=(key,status='DRAFT',extra={})=>({status,editorial_meta:{plan_key:key,...extra}});
+assert(requiresIllustration(item('2026-11-02:mon-pm')));
+assert(requiresIllustration(item('2026-11-04:wed-pm')));
+for(const key of ['2026-10-26:mon-pm','2026-11-02:mon-am','2026-11-03:tue-am','2026-11-02:mon-pm:article','2026-11-03:mon-pm'])assert(!requiresIllustration(item(key)));
+for(const status of ['SCHEDULED','PUBLISHED','ARCHIVED'])assert(!requiresIllustration(item('2026-11-02:mon-pm',status)));
+assert(!requiresIllustration(item('2026-11-02:mon-pm','DRAFT',{cms_deleted_at:'2026-11-01'})));
+assert(!requiresIllustration(item('2026-11-02:mon-pm','DRAFT',{additional:true})));
+assert(illustrationIssues({format:'CAROUSEL'},item('2026-11-02:mon-pm')).length);
+assert(illustrationIssues({format:'REEL',packet:{media:{}}},item('2026-11-02:mon-pm')).length);
+assert.deepEqual(illustrationIssues({format:'REEL',packet:{media:{illustration_reel:{}}}},item('2026-11-02:mon-pm')),[]);
+(async()=>{
+ const calls=[];const media={renderCarousel:async()=>{calls.push('carousel');return['c'];},renderReel:async()=>{calls.push('footage');return'f';},renderIllustrationReel:async()=>{calls.push('illustration');return'i';}};
+ assert.deepEqual(await renderPacket(media,{media:{illustration_reel:{}}},'REEL'),['i']);
+ assert.deepEqual(await renderPacket(media,{media:{}},'REEL'),['f']);
+ assert.deepEqual(await renderPacket(media,{media:{}},'CAROUSEL'),['c']);
+ assert.deepEqual(calls,['illustration','footage','carousel']);
+ assert.equal(classifyProductionResult({state:'READY_FOR_REVIEW'}),'READY_FOR_REVIEW');
+ assert.equal(classifyProductionResult({state:'AUTO_SCHEDULED'}),'AUTO_SCHEDULED');
+ assert.throws(()=>classifyProductionResult({state:'BLOCKED',issues:['voice unavailable']}),/voice unavailable/);
+ console.log(JSON.stringify({ok:true,groups:['two_weekly_assignments','date_weekday_validation','protected_content','no_carousel_downgrade','required_packet','correct_renderer_dispatch','review_not_schedule','blocked_is_failure']}));
+})().catch(e=>{console.error(e);process.exitCode=1});

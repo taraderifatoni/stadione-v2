@@ -8,6 +8,7 @@ const core=load('src/lib/cms/engine.ts'), writing=load('src/lib/cms/news-writing
 const media=load('src/lib/cms/engine-media.ts'), refs=load('src/lib/cms/writing-references.ts');
 const db=load('src/lib/supabase/admin.ts').createAdminClient();
 const sha=b=>createHash('sha256').update(b).digest('hex');
+const illustratedPolicy=require('./illustrated-slot-policy.cjs');
 async function main(){
  const [mode,inputFile,coverFile]=process.argv.slice(2);
  if(!['preview','schedule'].includes(mode)||!inputFile)throw Error('Use preview input.json cover.png, inspect JPEGs, then schedule input.json');
@@ -20,6 +21,7 @@ async function main(){
  if(!['DRAFT','PENDING_REVIEW'].includes(item.status)||item.editorial_meta?.cms_deleted_at||attempts?.some(x=>!['FAILED'].includes(x.state))){console.log(JSON.stringify({skipped:true,id:item.id,status:item.status,reason:'existing_scheduled_published_archived_or_attempt'}));return;}
  const duplicate=rows.find(x=>x.id!==item.id&&x.editorial_meta?.event_key===input.event_key);
  if(duplicate){console.log(JSON.stringify({skipped:true,id:duplicate.id,status:duplicate.status,reason:'existing_event_identity'}));return;}
+ const illustrationIssues=illustratedPolicy.illustrationIssues(input,item);if(illustrationIssues.length)throw Error(illustrationIssues.join('\n'));
  const audienceIssues=require('./editorial-audience.cjs').packetIssues(input.packet);if(audienceIssues.length)throw Error(audienceIssues.join('\n'));
  const fallback=require('./reel-research-policy.cjs').fallbackIssues(input,item);if(fallback.length)throw Error(fallback.join('\n'));
  if(!Array.isArray(input.dedupe_terms)||input.dedupe_terms.length<2)throw Error('Require at least two event-specific Instagram duplicate terms');
@@ -41,7 +43,7 @@ async function main(){
    packet.media.editorial_cover={...packet.media.editorial_cover,url:db.storage.from('stadione-cms').getPublicUrl(key).data.publicUrl,sha256:digest,page_count:packet.slides.length};
   }
   const issues=[...core.auditPacket(packet,input.format),...await refs.writingReferenceIssues(packet.article)];if(issues.length)throw Error(issues.join('\n'));
-  const rendered=input.format==='REEL'?[await media.renderReel(packet)]:await media.renderCarousel(packet);
+  const rendered=await illustratedPolicy.renderPacket(media,packet,input.format);
   for(const asset of rendered){const digest=sha(asset.bytes);if(asset.audit.output_sha256&&asset.audit.output_sha256!==digest)throw Error('Renderer checksum does not match output bytes');asset.audit={...asset.audit,output_sha256:digest};}
   for(let i=0;i<rendered.length;i++)fs.writeFileSync(path.join(dir,(i+1)+(input.format==='REEL'?'.mp4':'.jpg')),rendered[i].bytes);
   fs.writeFileSync(file,JSON.stringify({input_sha256:sha(fs.readFileSync(inputFile)),packet,render_audit:rendered.map(x=>x.audit)},null,2));
@@ -53,6 +55,6 @@ async function main(){
  const issues=[...core.auditPacket(packet,input.format),...await refs.writingReferenceIssues(packet.article)];if(issues.length)throw Error(issues.join('\n'));
  const {error:se}=await db.from('stadione_content_items').update({format:input.format,editorial_meta:{...item.editorial_meta,event_key:input.event_key,format_reason:input.format_reason||null,engine_packet:packet,planned_at:item.scheduled_at}}).eq('id',item.id).eq('updated_at',item.updated_at).in('status',['DRAFT','PENDING_REVIEW']).select('id').single();if(se)throw se;
  const result=await load('src/lib/cms/content-engine.ts').generateEnginePreview(item.id);console.log(JSON.stringify(result));
- if(result.state!=='AUTO_SCHEDULED'&&!result.skipped)throw Error('Slot production did not reach AUTO_SCHEDULED');
+ illustratedPolicy.classifyProductionResult(result); // READY_FOR_REVIEW is not a publication claim.
 }
 main().catch(e=>{console.error(e.message);process.exitCode=1});

@@ -85,3 +85,6 @@ Jangan memakai persentase engagement dengan denominator jangkauan 1–4 sebagai 
 ## Batas implementasi
 
 Seeder hanya membuat slot baru sesuai matriks 12/minggu. Ia tidak mengedit atau menghapus baris konten lama. Slot pukul 13.00 WIB, konten additional, jadwal aktif, publikasi, arsip, dan tombstone yang sudah ada tetap diproses menurut data masing-masing. Format ini mulai berlaku pada slot baru yang dibuat setelah perubahan disinkronkan; minggu transisi dapat memuat lebih dari 12 unggahan karena antrean lama dipertahankan.
+
+## Penugasan ilustrasi mulai 2 November 2026
+Senin 20.00 dan Rabu 20.00 menjadi slot cerita ilustrasi mengikuti acuan Kane v4, dalam kalender12 slot existing. Berlaku pada draft rutin yang belum dijadwalkan/terbit. Bila narasi, ilustrasi, review atau render tertahan, laporkan BLOCKED dan jangan mengganti ke carousel secara otomatis. Lihat docs/STADIONE_MOTION_STORY.md untuk batas implementasi dan preflight.
