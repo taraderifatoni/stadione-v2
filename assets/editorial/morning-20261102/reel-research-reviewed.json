@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-02:mon-am",
+  "checked_at": "2026-11-02T00:08:56.080Z",
+  "queries": [
+    "Liverpool Arsenal 1 November 2026",
+    "Kai Havertz Liverpool Arsenal Anfield 2026 November 1 goal"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=Zt1VugPdwFw",
+      "creator": "Arsenal",
+      "checked_at": "2026-11-02T00:08:56.080Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Source Arsenal published 2026-11-01T22:01:34Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=sjase4s7R0I",
+      "creator": "Liverpool FC",
+      "checked_at": "2026-11-02T00:08:56.080Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Source Liverpool FC published 2026-11-01T22:00:13Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=2mHR4BRbOuQ",
+      "creator": "Sky Sports Premier League",
+      "checked_at": "2026-11-02T00:08:56.080Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Source Sky Sports Premier League published 2026-11-01T18:48:31Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-02T00:08:56.080Z",
+    "digest": "c9ed3fd90c017c0ebabe45f0d81ec61d183017eae4427ef86ad11ea974a805d0"
+  }
+}

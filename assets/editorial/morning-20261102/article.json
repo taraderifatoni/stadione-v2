@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Havertz Mengakhiri Penantian Arsenal di Anfield",
+  "dek": "Satu gol menutup penantian liga. Arsip Mei 2026: Chensiyuan, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=192897364",
+  "caption": "HAVERTZ MENGAKHIRI PENANTIAN ARSENAL DI ANFIELD\n\nSatu gol Kai Havertz pada menit ke-16 membawa Arsenal menang 1–0 di kandang Liverpool, Minggu (1/11/2026) waktu Inggris. Itu kemenangan liga pertama mereka di Anfield dalam 14 tahun.\n\nGolnya bermula saat Arsenal merebut bola ketika Liverpool membangun permainan dari sepakan gawang. Declan Rice bergerak melewati Noni Madueke di kanan, lalu mengirim umpan rendah yang diselesaikan Havertz di tiang jauh.\n\nLiverpool sempat mengancam lewat tendangan bebas Florian Wirtz yang mengenai mistar dan sundulan Alexis Mac Allister yang melambung. Di sisi lain, Alisson juga menggagalkan peluang Christos Tzolis agar skor tidak bertambah.\n\nArteta menyebut Arsenal harus bangkit setelah kekalahan dari Fleetwood di Piala Liga. Mereka melewati tekanan di Anfield dan membawa pulang kemenangan.\n\nMenurutmu, bagian paling penting dari gol itu adalah merebut bola kembali atau gerak Rice mencari ruang? Jelaskan lewat urutan aksinya.\n\nSumber: laporan lengkap Liverpool FC, Sky Sports, serta Reuters. Reaksi Arteta diparafrasakan dari teks wawancara Sky.\n\nKai Havertz, foto arsip Crystal Palace–Arsenal, 24 Mei 2026, oleh Chensiyuan. Sumber: https://commons.wikimedia.org/?curid=192897364 . Lisensi: https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli dan dibagikan dengan CC BY-SA 4.0. Bukan dokumentasi Liverpool–Arsenal 1 November 2026; jersey Arsenal asli dipertahankan. Tidak menyiratkan dukungan fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Penantian Liga yang Berakhir",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "HISTORY",
+        "PHOTO"
+      ],
+      "text": "Kai Havertz membawa Arsenal meraih kemenangan liga pertama di Anfield dalam 14 tahun. Golnya pada menit ke-16 menentukan kemenangan 1–0 atas Liverpool, Minggu (1/11/2026) waktu Inggris."
+    },
+    {
+      "id": "goal",
+      "heading": "Merebut Bola, Menemukan Tiang Jauh",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOAL"
+      ],
+      "text": "Arsenal merebut penguasaan bola ketika Liverpool membangun permainan dari sepakan gawang. Declan Rice bergerak melewati Noni Madueke di sisi kanan. Umpan rendah Rice menemukan Havertz di tiang jauh untuk diselesaikan dari jarak dekat."
+    },
+    {
+      "id": "chances",
+      "heading": "Kedua Tim Masih Punya Peluang",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHANCES"
+      ],
+      "text": "Liverpool merespons lewat tendangan bebas Florian Wirtz yang mengenai mistar dan sundulan Alexis Mac Allister yang melambung. Pada babak kedua, Alisson juga menggagalkan peluang Christos Tzolis, menjaga selisih agar tetap satu gol."
+    },
+    {
+      "id": "reaction",
+      "heading": "Respons Setelah Fleetwood",
+      "kind": "FACT",
+      "claim_ids": [
+        "REACTION"
+      ],
+      "text": "Bagi Mikel Arteta, kemenangan itu menjadi respons setelah Arsenal disingkirkan Fleetwood Town di Piala Liga. Kepada Sky Sports, ia mengatakan timnya harus bangkit dan melewati periode ketika Liverpool menekan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261102-martinez-murphy-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-02T00:09:37.026Z",
+    "article_digest": "a9835a2a4805c04f21963c1cdceb0381d6b20f3b8b14488e25b7362acd6df3be"
+  }
+}

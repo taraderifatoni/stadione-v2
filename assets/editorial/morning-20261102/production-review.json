@@ -1,0 +1,595 @@
+{
+  "checked_at": "2026-11-02T00:16:32.563Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "0b4bed16-44c2-49d3-b16e-38bb3b7dd349",
+    "plan_key": "2026-11-02:mon-am",
+    "event_key": "arsenal-liverpool-havertz-anfield-league-wait-20261101",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "CAROUSEL",
+    "scheduled_at": "2026-11-02T01:00:00Z",
+    "time_wib": "2 November2026 08.00WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-02",
+      "fetchedAt": "2026-11-02T00:03:46.289Z",
+      "method": "Currentrelease getDailySportsPool via committed cms-audience-pool/cms-load with cache/quota.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 5,
+          "titles": [
+            "klasemen racing santander vs real madrid",
+            "klasemen liverpool vs arsenal",
+            "juventus vs napoli",
+            "racing santander vs real madrid",
+            "liverpool f.c. vs arsenal f.c. standings"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 1,
+          "titles": [
+            "🔥 EL CLÁSICO - BARCELONA vs REAL MADRID 🟢 Duel Raksasa LaLiga 2026/27 di Camp Nou"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "SKY",
+        "url": "https://www.skysports.com/football/news/13606658/liverpool-0-1-arsenal-kai-havertz-seals-gunners-first-victory-at-anfield-for-14-years-to-move-top-of-premier-league",
+        "publisher_group": "SKY",
+        "primary": true,
+        "published_at": "2026-11-01T23:30:00Z",
+        "retrieved_at": "2026-11-02T00:08:56.080Z",
+        "normalized_text_sha256": "5a9707d96227d45dcba39142a679317a2b8f0acf3f3ecbabc31e889aa2c52cbe"
+      },
+      {
+        "id": "LFC",
+        "url": "https://lfcbeta.liverpoolfc.com/news/match-report-liverpool-arsenal-premier-league-november-2026",
+        "publisher_group": "LIVERPOOLFC",
+        "primary": true,
+        "published_at": "2026-11-01",
+        "retrieved_at": "2026-11-02T00:08:56.080Z",
+        "normalized_text_sha256": "3865d6b746fc7b326c5a3732299b353f1231620592cb3e1994d5d27e3b9b41a7"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:1_kai_havertz_2026.jpg",
+        "publisher_group": "CHENSIYUAN",
+        "primary": true,
+        "published_at": "2026-05-24",
+        "retrieved_at": "2026-11-02T00:08:56.080Z",
+        "normalized_text_sha256": "57a7b9e70247823b04654606c55730815aed1a6d0ee886473fbd35901b28ced4"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-02T00:08:56.080Z",
+        "normalized_text_sha256": "94bde7214af6f06362819c3a4d45c264ac4b4e7a42af0a9a40eccbd7166b1370"
+      },
+      {
+        "id": "REUTERS",
+        "url": "https://www.reuters.com/sports/soccer/arsenal-claim-top-spot-havertz-seals-win-liverpool-2026-11-01/",
+        "publisher_group": "REUTERS",
+        "primary": false,
+        "published_at": "2026-11-01T18:34:06Z",
+        "retrieved_at": "2026-11-02T00:08:56.080Z",
+        "normalized_text_sha256": "8a3116212d9e87a0f293e9b7b2985df04ef9c3e791525b99f7d48e4cb5702595"
+      }
+    ],
+    "full_read": [
+      "LiverpoolFC official full GlennPrice matchreport through attendance, browser and GET200.",
+      "SkySports full LauraHunter matchreport including keymoments and complete original Arteta/Iraola interview sections, browser and GET200. Sky is primary for its own published firsthand postmatch interview, not a club press release.",
+      "Reuters complete MartynHerman matchreport through reportingcredit, browser; packet explicitly labels supporting readingnotes as paraphrase, not original transcript.",
+      "Commons ownwork authorgrant and CC BY-SA4.0 deed, browser and GET200."
+    ],
+    "independent_publisher_groups": [
+      "LiverpoolFC",
+      "Sky",
+      "Reuters"
+    ],
+    "verification": [
+      "FinalArsenal1-0Liverpool1NovemberBritishlocal, Havertz16 fromRicelowcross. PrimaryLiverpool and independentSky agree.",
+      "14years explicitlyPremierLeague only; ArtetaownSkyinterview confirms14yearmission, Reutersindependentlyconfirmsfirstleaguewin. OfficialArsenal video description also says firstawayleaguevictory14years, but metadata is not footage or reusepermission.",
+      "Wonball whileLiverpoolbuildingfromgoalkick, MaduekeRiceoverlap/farpostfinish supported primaryLiverpool andReutersnotes. No invented tactic or shotstat.",
+      "ZeroLiverpoolSOT claim excluded becauseLiverpoolreport describeslateMunozattemptsavedbyRaya. No refereeingverdict, alltimeGermanscorerrecord, currenttable orfakequotes.",
+      "Arteta response paraphrased inIndonesian withSkyattribution, no fabricated verbatimtranslation."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-02:mon-am",
+    "checked_at": "2026-11-02T00:08:56.080Z",
+    "queries": [
+      "Liverpool Arsenal 1 November 2026",
+      "Kai Havertz Liverpool Arsenal Anfield 2026 November 1 goal"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=Zt1VugPdwFw",
+        "creator": "Arsenal",
+        "checked_at": "2026-11-02T00:08:56.080Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Source Arsenal published 2026-11-01T22:01:34Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=sjase4s7R0I",
+        "creator": "Liverpool FC",
+        "checked_at": "2026-11-02T00:08:56.080Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Source Liverpool FC published 2026-11-01T22:00:13Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=2mHR4BRbOuQ",
+        "creator": "Sky Sports Premier League",
+        "checked_at": "2026-11-02T00:08:56.080Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Official YouTube Data API descriptions/licence reviewed in full privately. Standard YouTube licence, no verified Stadione video/audio montage grant; Sky description directs licensing requests. Browser actual source page throttled. No download, viewing, audition or transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Source Sky Sports Premier League published 2026-11-01T18:48:31Z; licence youtube, no verified reuse permission. Browser Online fetch throttled; metadata and official status are not a footage/audio reuse grant."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-02T00:08:56.080Z",
+      "digest": "c9ed3fd90c017c0ebabe45f0d81ec61d183017eae4427ef86ad11ea974a805d0"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "actual_urls": 3,
+    "creators": [
+      "Arsenal",
+      "Liverpool FC",
+      "Sky Sports Premier League"
+    ],
+    "queries": 2,
+    "reason": "StandardYouTube licences, no verified montage video/audio reuse grant; Sky directs enquiries to licensing. All three browserpageopens throttled. Existing CMSformatCAROUSEL retained.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_global_footage_absence_claim": true,
+    "no_login_challenge_DRM_bypass": true
+  },
+  "illustration": {
+    "motion_story_doc_read": true,
+    "kane_v4_story_metadata_read": true,
+    "example_audio_audition_claimed": false,
+    "manual_prototype_not_full_CMS_automation": true,
+    "configured_licensed_voice_provider_found": false,
+    "existing_production_environment_checked": true,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "default_music_used": false,
+    "source_audio_muted": false
+  },
+  "media": {
+    "subject": "KaiHavertz",
+    "creator": "Chensiyuan",
+    "source": "https://commons.wikimedia.org/?curid=192897364",
+    "photo_event": "CrystalPalaceArsenal24May2026, archive notLiverpoolmatch",
+    "licence": "CC BY-SA4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_author_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "bytes": 13339098,
+      "dimensions": [
+        4674,
+        3104
+      ],
+      "sha1": "eabf491d3f85aaf96a8fe7756631d9b5819d78b8",
+      "sha256": "afb6d4e7974fda5debb6d70c3ca3e15771e177587ffee8b591141baee1d91e54",
+      "original_and_cropped_reference_viewed": true
+    },
+    "changes": "Originalathlete cutout reference, otherplayerremoved andnewspaperbackground/typographygenerated; originalwhiteArsenalkit/face/hair/posepreserved. Crop/cover adaptations releasedCCBYSA4.0 withcredit/archive/changes/source/licencelinks caption/cover/excerpt/docs, no endorsement.",
+    "cover": {
+      "variant_id": "JUDUL_UTAMA",
+      "rotation_helper": true,
+      "previous_variants": [
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK"
+      ],
+      "page_count": 5,
+      "bytes": 618773,
+      "sha256": "1a0ed210e7dcbabdd746fe86fb9b7ee851f6573a3a16749f39e052a6686dfd8d",
+      "margins_refined_via_imagegeneration": true,
+      "source_label": "SKYSPORTS.COM",
+      "native_render_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 1250,
+        "y": 200,
+        "width": 1600,
+        "height": 1313
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 78539,
+      "sha256": "90b6efcb9b51111dee9979df2a18232f558a24c74bc02033dec6416677cb8c68",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Havertz Mengakhiri Penantian Arsenal di Anfield",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 120,
+    "digest": "a9835a2a4805c04f21963c1cdceb0381d6b20f3b8b14488e25b7362acd6df3be",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261102-martinez-murphy-reaction-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "SKYSPORTS.COM",
+      "cover_input_sha256": "1a0ed210e7dcbabdd746fe86fb9b7ee851f6573a3a16749f39e052a6686dfd8d",
+      "output_sha256": "2f29a15da44887c6750ff7aa5e7d5785e71c3e77894c1d81b411da689e6826db",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "9867f3fc083e768fd424e71a8ca8cbb8e5f7b3d57c9e172fb39dd164c4292b38",
+      "output_sha256": "1aa9de153f051b96c5a5a64cbb80e957c5f9299541993de682ac30cd906957c9",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 683,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 931,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "3e9602be517e7c277f4b4f6fcbfdfdcde638e02b90a26d62fb1c2af4a923375e",
+      "output_sha256": "1fc3e58fcca2a398085eb139b2cc29ec0e1f7165af7c2058c1f3ef6801f2b951",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 910,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 913,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "d29177dc3b1ab965ade00bc26db0f1971c05db6655b0e23fb7f336131449f598",
+      "output_sha256": "b25910859cc2a8e8c8745f63544c6d39b2a742509e84110a01971ecb5e459818",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 800,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 925,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b21d5739fa63ecb95da9c2d11743ca3630b085b6a106f6e1290e5a41e362833c",
+      "output_sha256": "7abfa26aefa64694b9c6fc5c61f4b1357a47cd9610ffd09f059a4777af66c13d",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 556,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 929,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_at_original1080x1350": true,
+    "review_downloads_match_preview_sha256": true,
+    "hero_original_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_clipping_or_overlap": true,
+    "cover1of5_matches_final": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "video_voice_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "30 Detik Paham Laga",
+    "adaptation": "Framework only; retains existing CMSCAROUSEL, no claim a30secondReel produced.",
+    "core_fact": "Havertz winner gives Arsenal firstPremierLeague win atAnfield in14years.",
+    "angle": "Reconstruct recovery afterLiverpoolgoalkick, Riceoverlap andfarpostfinish, then give historicalleaguecontext andArtetareaction.",
+    "hook": "Why does onegoal atAnfield mean more than another1-0?",
+    "payoff": "Goal sequence, opposition chances and14year leaguewait, with scope ofrecord explicit.",
+    "audience_action": "Choose ballrecovery orRicemovement as decisive, with a reason from the play.",
+    "original_format": "CAROUSEL",
+    "format": "CAROUSEL",
+    "format_reason": "Retain existing CMS CAROUSEL slot. Reels research found no verified montage video/audio reuse grant for three official sources; source playback throttled and no licensed voice configuration/host recording selected. Clock08WIB unchanged.",
+    "trial_reel_test_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-03T01:00:00Z",
+    "review_due_7d": "2026-11-09T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-02T00:16:32.415Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots of differing posting ages; not exact24h/7d measurements, no causal format/FYP/organicpaid conclusion. Unavailable fields are not filled with zero.",
+    "posts": [
+      {
+        "id": "18124521968514357",
+        "published_at": "2026-11-01T13:01:38+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18420977149153554",
+        "published_at": "2026-11-01T01:02:32+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18022650269943932",
+        "published_at": "2026-10-31T13:02:03+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18185545699426440",
+        "published_at": "2026-10-31T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-02T00:16:32.497Z",
+    "baseline_rows": 193,
+    "current_rows": 193,
+    "changed_other_rows": [],
+    "added": [],
+    "unchanged_other_rows": 192,
+    "target": {
+      "id": "0b4bed16-44c2-49d3-b16e-38bb3b7dd349",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-02T01:00:00+00:00",
+      "format": "CAROUSEL",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 0,
+    "weekly_routine_proposed": 1,
+    "weekly_limit": 12,
+    "instagram_media": 76,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 29,
+    "latest_read_at": "2026-11-02T00:02:21.773Z",
+    "sha256": "a19435d7ae0e77a7c7f7bf416c7c0b2f90274d831bd95184dbf1f5f8264a87d3",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "1120313dcf092d2dc8a90e335cc157f1cd7e3ce4",
+  "remaining": "Commit and push reviewed evidence before sharedschedule, then verify pairedARTICLE/clock/byte/scope/idempotency. Future08WIB, no publishedclaim."
+}
