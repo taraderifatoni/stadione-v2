@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-11-02T12:00:52.998Z",
+  "state": "BLOCKED",
+  "stage": "NARRATION_PREFLIGHT",
+  "issue_code": "NARRATION_PROVIDER_MISSING",
+  "reason": "OPENAI_API_KEY is not configured in the existing Stadione production environment. No authorized per-scene narration recording was supplied for this slot.",
+  "preflight_command": "node --env-file=/opt/stadione/.env.production scripts/cms-illustrated-preflight.cjs",
+  "preflight_exit_status": 2,
+  "provider": "openai",
+  "provider_configured": false,
+  "target": {
+    "id": "d2d31c3e-9cca-4f04-a9e0-481c460d8861",
+    "plan_key": "2026-11-02:mon-pm",
+    "status": "DRAFT",
+    "current_format": "REEL",
+    "required_format": "REEL",
+    "required_visual_mode": "illustration",
+    "pillar": "Tarkam & Komunitas",
+    "serial": "Satu Keputusan, Efek Besar",
+    "scheduled_at": "2026-11-02T13:00:00+00:00",
+    "time_wib": "2 November 2026 20.00 WIB",
+    "assets": 0,
+    "parent_id": null,
+    "event_key": null,
+    "archived_at": null,
+    "tombstone": false
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "http": 200,
+    "media_count": 77,
+    "target_published_media_id": null,
+    "topic_duplicate_check": "No new editorial topic selected: blocked before source research/production. No claim a completed duplicate review for a non-existent packet."
+  },
+  "durable_attempts": 0,
+  "weekly_routine_published_or_scheduled_count": 1,
+  "weekly_limit": 12,
+  "scope": {
+    "all_cms_rows_identical": true,
+    "rows": 194,
+    "all_target_attempts_identical": true,
+    "CMS_mutations": 0,
+    "Meta_writes": 0,
+    "no_seeder": true,
+    "no_carousel_fallback": true,
+    "no_preview_render": true,
+    "no_narration_provider_request": true,
+    "no_fixture_publication": true,
+    "no_schedule_or_approval_claim": true,
+    "protected_slots_and_additional_untouched": true,
+    "renderer_credentials_services_automation_unchanged": true
+  },
+  "references": {
+    "entries": 29,
+    "latest_read_at": "2026-11-02T00:02:21.773Z",
+    "sha256": "a19435d7ae0e77a7c7f7bf416c7c0b2f90274d831bd95184dbf1f5f8264a87d3",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "implementation": {
+    "head": "8b73eed00f9ca602a97c92f2491f572d80d90794",
+    "release": "/opt/stadione-releases/ba88c8d",
+    "motion_story_doc_read": true,
+    "kane_v4_story_metadata_read": true,
+    "example_audio_audition_claimed": false,
+    "scene_aligned_subtitles_only": true,
+    "not_claiming_complete_automation": true
+  },
+  "needed_action": "Configure the Stadione narration provider securely in the production environment, or supply authorized per-scene narration recordings; then resume source-led illustrated production, audio/timing review, CMS approval and matching ARTICLE scheduling.",
+  "rollback_commit": "8b73eed00f9ca602a97c92f2491f572d80d90794"
+}
