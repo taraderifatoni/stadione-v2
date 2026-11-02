@@ -83,7 +83,7 @@ export type Packet = {
       audio_url: string; audio_credit: string; audio_rights: string; audio_evidence: string;
       audio_generated?: boolean; audio_script_sha256?: string;
       music?: { url: string; credit: string; rights_evidence: string; rights_status: string; volume: number };
-      scenes: { image_url: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
+      scenes: { title?: string; image_url: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
     };
   };
 };
@@ -268,6 +268,7 @@ export function auditPacket(
       }
       if (scenes.length < 3 || scenes.length > 12) errors.push("Reel ilustrasi perlu 3–12 adegan.");
       scenes.forEach((scene, i) => {
+        if(scene.title!==undefined && (typeof scene.title!=="string" || !scene.title.trim() || scene.title.length>96)) errors.push(`Adegan ilustrasi ${i+1}: judul maksimal 96 karakter.`);
         if (!/^https:\/\//.test(scene.image_url || "") || !scene.image_credit || !scene.rights_evidence || !scene.narration || scene.narration.length > 180 || !scene.claim_ids?.length || scene.claim_ids.some(id => !ids.has(id))) errors.push(`Adegan ilustrasi ${i+1}: lengkapi gambar, hak, narasi, dan klaim.`);
         if (!Number.isFinite(scene.start) || !Number.isFinite(scene.end) || scene.end <= scene.start || scene.end - scene.start > 20 || (i === 0 ? scene.start !== 0 : Math.abs(scene.start - scenes[i-1].end) > 0.01)) errors.push(`Adegan ilustrasi ${i+1}: waktu harus berurutan tanpa jeda, maksimal 20 detik.`);
         if ((scene.narration.match(/\d+(?:[.,:]\d+)*/g) || []).some(n => !numbers.has(n))) errors.push(`Adegan ilustrasi ${i+1}: angka tidak ada di claim ledger.`);
