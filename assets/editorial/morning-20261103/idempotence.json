@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-03T00:11:46.684Z",
+  "adapter_result": {
+    "skipped": true,
+    "id": "3283b214-98dc-444d-9389-b55036b874d7",
+    "status": "SCHEDULED",
+    "reason": "existing_scheduled_published_archived_or_attempt"
+  },
+  "all_rows_identical": true,
+  "rows": 198,
+  "durable_attempts_identical": true,
+  "attempts": 0,
+  "no_extra_article_or_assets": true
+}
