@@ -1,0 +1,71 @@
+{
+  "checked_at": "2026-11-03T00:10:33.539Z",
+  "target_metrics": null,
+  "basis": "Actual snapshots of differing posting ages; not exact24h/7d measurements. No causal format/FYP/organicpaid conclusion. Unavailable metrics stay unavailable.",
+  "posts": [
+    {
+      "id": "18137367565667125",
+      "published_at": "2026-11-02T01:01:57+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 2,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18124521968514357",
+      "published_at": "2026-11-01T13:01:38+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 1,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18420977149153554",
+      "published_at": "2026-11-01T01:02:32+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 3,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    },
+    {
+      "id": "18022650269943932",
+      "published_at": "2026-10-31T13:02:03+0000",
+      "format": "FEED",
+      "http": 200,
+      "metrics": {
+        "views": 2,
+        "reach": 1,
+        "likes": 0,
+        "comments": 0,
+        "saved": 0,
+        "shares": 0,
+        "total_interactions": 0
+      },
+      "unavailable": []
+    }
+  ]
+}

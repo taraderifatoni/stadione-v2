@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-03:mid-am",
+  "checked_at": "2026-11-03T00:03:40.898Z",
+  "queries": [
+    "Juventus Napoli 1 November 2026 highlights",
+    "Juventus Napoli Alajbegovic Boga 2-0"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=ojK3YRit7bE",
+      "creator": "Juventus",
+      "checked_at": "2026-11-03T00:03:40.898Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Juventus published 2026-11-02T11:18:26Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=iqciggyhLvM",
+      "creator": "Serie A",
+      "checked_at": "2026-11-03T00:03:40.898Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Serie A published 2026-11-01T22:27:17Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=D9vSmIhRdyg",
+      "creator": "BJtv",
+      "checked_at": "2026-11-03T00:03:40.898Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "BJtv published 2026-11-01T22:19:04Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-03T00:03:40.898Z",
+    "digest": "758d7050f43ca978387b71add81df867ec480d6f76149ed1d00856b8319ca3ff"
+  }
+}

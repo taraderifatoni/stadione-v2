@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Juventus Unggul Sebelum Kartu Merah Napoli",
+  "dek": "Gol pembuka datang lebih dulu. Arsip 2025: Werner100359, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=178226980",
+  "caption": "JUVENTUS UNGGUL SEBELUM KARTU MERAH NAPOLI\n\nJuventus menang 2–0 atas Napoli, Minggu (1/11/2026), tetapi urutannya penting: gol Kerim Alajbegović pada menit ke-70 datang lebih dulu. Napoli baru kehilangan Luca Marianucci karena kartu kuning kedua beberapa menit kemudian.\n\nEdon Zhegrova, yang masuk menggantikan Randal Kolo Muani, menyiapkan gol pembuka itu. Alajbegović menyelesaikannya lewat tembakan dari luar kotak penalti. Pemain pengganti lain, Jérémie Boga, kemudian memastikan kemenangan pada menit ke-87 dengan tembakan melengkung ke sudut jauh.\n\nSebelumnya, kedua tim menutup babak pertama tanpa gol. Sundulan Juan Cabal mengenai tiang dan Alex Meret menggagalkan tembakan Alajbegović menjelang jeda.\n\nMana yang lebih menentukan menurutmu: umpan Zhegrova yang membuka kebuntuan atau penyelesaian Boga yang menutup laga? Ceritakan alasannya, bukan hanya skornya.\n\nSumber: laporan lengkap Lega Serie A, Juventus, dan ANSA. Menit kartu merah tidak dirinci karena dua sumber primer berbeda satu menit; urutannya sama.\n\nFoto arsip Kerim Alajbegović saat Salzburg–Club Brugge, 6 Agustus 2025, oleh Werner100359; crop oleh Ђидо. Sumber: https://commons.wikimedia.org/?curid=178226980 . Lisensi https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli, dibagikan CC BY-SA 4.0. Bukan dokumentasi Juventus–Napoli 1 November 2026; jersey asli dipertahankan. Tidak menyiratkan dukungan fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol Dulu, Baru Kartu Merah",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "PHOTO"
+      ],
+      "text": "Juventus sudah memimpin ketika Napoli kehilangan seorang pemain di Allianz Stadium, Minggu (1/11/2026). Gol Kerim Alajbegović pada menit ke-70 membuka jalan menuju kemenangan 2–0. Luca Marianucci baru menerima kartu kuning kedua beberapa menit setelah gol tersebut."
+    },
+    {
+      "id": "first-half",
+      "heading": "Tiang dan Meret Menjaga Skor",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRSTHALF"
+      ],
+      "text": "Kedua tim menutup babak pertama tanpa gol. Sundulan Juan Cabal membentur tiang, sedangkan Alex Meret menepis tembakan Alajbegović menjelang jeda."
+    },
+    {
+      "id": "opener",
+      "heading": "Zhegrova Membuka Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "OPENER"
+      ],
+      "text": "Edon Zhegrova masuk menggantikan Randal Kolo Muani, lalu memberikan bola kepada Alajbegović untuk gol pembuka. Penyerang Bosnia itu menuntaskannya melalui tembakan dari luar kotak penalti. Saat gol tercipta, Napoli masih bermain dengan jumlah pemain lengkap."
+    },
+    {
+      "id": "closing",
+      "heading": "Boga Menutup dari Bangku Cadangan",
+      "kind": "FACT",
+      "claim_ids": [
+        "BOGA"
+      ],
+      "text": "Jérémie Boga, yang menggantikan Alajbegović pada menit ke-72, menggandakan keunggulan pada menit ke-87. Ia bergerak dari kiri, memotong ke dalam, lalu melepaskan tembakan kaki kanan melengkung ke sudut jauh. Kedua gol Juventus lahir dari luar kotak penalti."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261102-martinez-murphy-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-03T00:03:40.898Z",
+    "article_digest": "f78929fbfb766dac30073611713518a98f30842cb764027fc85a3d5c60f4c63e"
+  }
+}

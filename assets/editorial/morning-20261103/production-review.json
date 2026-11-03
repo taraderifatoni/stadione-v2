@@ -1,0 +1,590 @@
+{
+  "checked_at": "2026-11-03T00:10:33.738Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "3283b214-98dc-444d-9389-b55036b874d7",
+    "plan_key": "2026-11-03:mid-am",
+    "event_key": "juventus-napoli-alajbegovic-goal-before-red-20261101",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-03T01:00:00Z",
+    "time_wib": "3November2026 08.00WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-03",
+      "fetchedAt": "2026-11-02T23:56:39.846Z",
+      "method": "Currentrelease getDailySportsPool via committed cms-audience-pool/cms-load with cache/quota.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0,
+          "titles": []
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 2,
+          "titles": [
+            "Juventus Hajar Napoli 2-0! Kartu Merah Jadi Petaka di Turin! #juventus #napoli",
+            "Isak vs Segitiga Bermuda EPL: Siap-Siap Lawan Trio Liverpool!"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "LEGA",
+        "url": "https://www.legaseriea.it/serie-a/news/juventus-napoli-2026-2027-2-0-cronaca-risultato-gol",
+        "publisher_group": "LEGASERIEA",
+        "primary": true,
+        "published_at": "2026-11-01",
+        "retrieved_at": "2026-11-03T00:03:40.898Z",
+        "normalized_text_sha256": "efcaa0a10e5c7e5ac009ce63713d4c1a2927026be165b2a9ff66df6f2f849edf"
+      },
+      {
+        "id": "JUVE",
+        "url": "https://jacademy.juventus.com/en/news/articles/juventus-2-0-napoli-bianconeri-celebrate-129th-birthday-with-victory",
+        "publisher_group": "JUVENTUS",
+        "primary": true,
+        "published_at": "2026-11-01",
+        "retrieved_at": "2026-11-03T00:03:40.898Z",
+        "normalized_text_sha256": "d916f9eeefab47e03ba5e29c1497d7f22cbcdb57ae96f55f58232f535682e4ed"
+      },
+      {
+        "id": "ANSA",
+        "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/01/serie-a-juventus-napoli-2-0_505444f4-a6d1-4e37-a9c2-1232911544ad.html",
+        "publisher_group": "ANSA",
+        "primary": false,
+        "published_at": "2026-11-01T22:38:00+01:00",
+        "retrieved_at": "2026-11-03T00:03:40.898Z",
+        "normalized_text_sha256": "17961a4449d84f072884654e968e121c212629201a36439133948be90ee6a7d2"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Kerim_Alajbegovi%C4%87_(2025).jpg",
+        "publisher_group": "WERNER100359",
+        "primary": true,
+        "published_at": "2025-08-06",
+        "retrieved_at": "2026-11-03T00:03:40.898Z",
+        "normalized_text_sha256": "63c6627f8aed9b91cd7fcc5fa28978e208c33de51e0a9beed1028ec3ba454146"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-03T00:03:40.898Z",
+        "normalized_text_sha256": "94bde7214af6f06362819c3a4d45c264ac4b4e7a42af0a9a40eccbd7166b1370"
+      }
+    ],
+    "full_read": [
+      "JuventusEnglishofficialreport throughmatchdetails/lineups; browser andGET200.",
+      "LegaSerieAItalianreport in full; browser andGET200. Lega pageAIimage notused.",
+      "ANSA fullshortmatchreport, byRedazioneANSA Turin1November22:38; wholebodyoneparagraph read, notsnippet. BrowserandGET200.",
+      "Commonscrop page, originalWernerownwork explicitgrant and CCBYSA4.0deed read withbrowser; crop/deedGET200."
+    ],
+    "independent_publisher_groups": [
+      "Juventus",
+      "LegaSerieA",
+      "ANSA"
+    ],
+    "verification": [
+      "FinalJuventus2-0Napoli1November atAllianzStadium; Kerim70 opener thenMarianuccisecondyellow thenBoga87. All3publishers supportchronology.",
+      "Juventussays5minutesaftergoal, Legasays4minutesaftergoal forredcard; omitexactminute, no causalclaimredcausedopener.",
+      "Cabalpost/Meretstop beforegoallesshalftime supportedbothprimaryreports.",
+      "Zhegrova59 forKoloMuani; Kerim72 forBoga andBoga87 confirmedofficiallineups/report. BothgoalsoutsideboxconfirmedLega. No unverifiedage/records/standings/coachclaims orquotations."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-03:mid-am",
+    "checked_at": "2026-11-03T00:03:40.898Z",
+    "queries": [
+      "Juventus Napoli 1 November 2026 highlights",
+      "Juventus Napoli Alajbegovic Boga 2-0"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=ojK3YRit7bE",
+        "creator": "Juventus",
+        "checked_at": "2026-11-03T00:03:40.898Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Juventus published 2026-11-02T11:18:26Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=iqciggyhLvM",
+        "creator": "Serie A",
+        "checked_at": "2026-11-03T00:03:40.898Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Serie A published 2026-11-01T22:27:17Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=D9vSmIhRdyg",
+        "creator": "BJtv",
+        "checked_at": "2026-11-03T00:03:40.898Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube Data API metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Actual page browser open returned Online fetch throttled. No download, playback, audition or transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "BJtv published 2026-11-01T22:19:04Z; standard youtube licence and no verified reuse grant. Browser source page throttled; no alternate-route retry or bypass."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-03T00:03:40.898Z",
+      "digest": "758d7050f43ca978387b71add81df867ec480d6f76149ed1d00856b8319ca3ff"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "actual_urls": 3,
+    "creators": [
+      "Juventus",
+      "SerieA",
+      "BJtv"
+    ],
+    "queries": 2,
+    "reason": "StandardYouTubelicences noverifiedmontage video/audio grant; browser sourcepages throttled. OriginalREEL usesallowedCAROUSELfallback withsameclock/pillar; Tuesday08 notmandatoryillustration.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_login_challenge_DRM_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "AsiaJakartaTuesday3November08WIB; mandatoryMonday20/Wednesday20 rule doesnotapply. GlobalpreflightblockedOPENAIkeynotconfigured earliercheckwasnot thisslots requirement.",
+    "edge_tts_used": false,
+    "licensed_voice_recording_selected": false,
+    "full_automation_claimed": false
+  },
+  "media": {
+    "subject": "KerimAlajbegovic",
+    "creator": "Werner100359",
+    "crop_creator": "Ђидо",
+    "source": "https://commons.wikimedia.org/?curid=178226980",
+    "original_author_source": "https://commons.wikimedia.org/wiki/File:FC_Salzburg_gegen_Club_Br%C3%BCgge_(2025-08-06_Championsleague_Qualifikation_Dritte_Runde)_105.jpg",
+    "photo_event": "SalzburgClubBrugge6August2025 archive, notJuventusNapoli2026",
+    "licence": "CC BY-SA4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_author_explicit_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "curid": "178226980",
+      "source": "https://commons.wikimedia.org/wiki/File:Kerim_Alajbegovi%C4%87_(2025).jpg",
+      "bytes": 874727,
+      "sha1": "325ff20596b8ee9902e31abefa1e836dc867c2fe",
+      "sha256": "a37c800aeab80093dd4b5aad4a5fdefa4bbd52ef2b279cc3ad02b85f0d8f14f3",
+      "dimensions": [
+        1505,
+        1905
+      ],
+      "viewed": true
+    },
+    "changes": "Actualface/hair/whiteSalzburgshirtredcollar/pose retained; newspaperbackground/typographygenerated withauthenticphotoreference. Cover/hero adaptations releasedCCBYSA4.0. Archive/source/creator/changes/licencelinks cover/caption/articledek/docs; noendorsement.",
+    "cover": {
+      "variant_id": "PORTRAIT_MERAH",
+      "rotation_helper": true,
+      "previous_variants": [
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA"
+      ],
+      "page_count": 5,
+      "bytes": 510155,
+      "sha256": "7baf818f519ef9ec1bf225aaf4eabf6cbf5393f7dd80f760798e40b3f9df9c34",
+      "margins_refined_via_imagegeneration": true,
+      "aspect_preserved": "Contain1092x1440to1080x1350withburgundysidepadding, avoidingcropofsource; nativefinalreinspected.",
+      "source_label": "LEGASERIEA.IT",
+      "native_render_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1505,
+        "height": 1235
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 59677,
+      "sha256": "1daa579a09da1fff49b2b31016e9fa2ec01b26a0d0eddeacd37a7c529941926f",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Juventus Unggul Sebelum Kartu Merah Napoli",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 128,
+    "digest": "f78929fbfb766dac30073611713518a98f30842cb764027fc85a3d5c60f4c63e",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261102-martinez-murphy-reaction-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "LEGASERIEA.IT",
+      "cover_input_sha256": "7baf818f519ef9ec1bf225aaf4eabf6cbf5393f7dd80f760798e40b3f9df9c34",
+      "output_sha256": "8bfdc8eb607bfcedb15df2889ca4f0c2adcea52d04c5b7feec5e8ed23ff5f61b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "3965899d44654432dbf6b861f9973b17a510845afe517ef76feb2ddcea2a3c72",
+      "output_sha256": "9ab077a1ae656d254838c2dba944f7c19233bcf9a475156945cb01f849c5e4f2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 55,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 296,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 930,
+          "height": 55,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 336,
+          "width": 933,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "2b52d950f36ac22c076bf54ca508c2bb164468c29c64e6c1fbfb4b6e38b988d9",
+      "output_sha256": "0f4132d22b1ba6840e8cf22e7cbb3b953974082729312ee8ced7de066860b287",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 862,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 915,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "3fbd65592a6ab42e55cc3d519e301edd62cf1ace98f711210581b10eb4b6bb2c",
+      "output_sha256": "7c99a63c02d83211d0d0b055470026fa317acc80375eadb2c29924fd7d88b319",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 853,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 918,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "0f58601ea2b1ddd0dadde1b4b9ac320482bf62f037ffee488a6e2cc43b3f458f",
+      "output_sha256": "e9f3a1e854622743314f7cc3c85f9b9862d0d8f96d6af6d0d8352110ed737a5c",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 301,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 917,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 910,
+          "height": 301,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_at_original1080x1350": true,
+    "review_downloads_match_preview_sha256": true,
+    "hero_original_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_clipping_or_overlap": true,
+    "cover1of5_matches_final": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "video_voice_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "30 Detik Paham Laga",
+    "adaptation": "Framework only; existing legacyTuesdaymorningEuropepillar retained, not forced tocommunityserial; no30secondReel claim.",
+    "core_fact": "Juventus scored70 beforeNapoli secondyellow; Boga87 doubled afterred.",
+    "angle": "Chronology andtwo substitutes, not finalscore only; redcardcannot explain earliergoal.",
+    "hook": "Juventus Unggul Sebelum Kartu Merah Napoli",
+    "payoff": "Scoringsequence, goallessfirsthalf and specificsubstitutecontributions.",
+    "audience_action": "CompareZhegrovaopeningpass vsBogafinish withreason fromreport.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "Original REEL researched via two committed YouTube queries and three actual source pages/creators. Standard licences no verified montage video/audio grant and browser playback throttled. Use cleared archival-photo carousel; retain Europe pillar and08WIB clock. Tuesday08 is not Monday/Wednesday20 mandatoryillustration.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_test_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-04T01:00:00Z",
+    "review_due_7d": "2026-11-10T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-03T00:10:33.539Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots of differing posting ages; not exact24h/7d measurements. No causal format/FYP/organicpaid conclusion. Unavailable metrics stay unavailable.",
+    "posts": [
+      {
+        "id": "18137367565667125",
+        "published_at": "2026-11-02T01:01:57+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18124521968514357",
+        "published_at": "2026-11-01T13:01:38+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18420977149153554",
+        "published_at": "2026-11-01T01:02:32+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18022650269943932",
+        "published_at": "2026-10-31T13:02:03+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-03T00:10:33.631Z",
+    "baseline_rows": 197,
+    "current_rows": 197,
+    "changed_other_rows": [],
+    "added": [],
+    "unchanged_other_rows": 196,
+    "target": {
+      "id": "3283b214-98dc-444d-9389-b55036b874d7",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-03T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 1,
+    "weekly_routine_proposed": 2,
+    "weekly_limit": 12,
+    "instagram_media": 77,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 29,
+    "latest_read_at": "2026-11-02T00:02:21.773Z",
+    "sha256": "a19435d7ae0e77a7c7f7bf416c7c0b2f90274d831bd95184dbf1f5f8264a87d3",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "693065a7b7d1c0e3450aff466916e4c82542dc1f",
+  "remaining": "Commit/push reviewed proof then sharedschedule and pair/clock/bytes/scope/idempotency verification. Future08WIB, no publicationclaim."
+}
