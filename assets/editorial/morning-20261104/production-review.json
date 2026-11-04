@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-11-04T00:10:55.047Z",
-  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
   "target": {
     "id": "f8444159-1157-484b-9d7c-e2fcdc13a8c0",
     "plan_key": "2026-11-04:mid-am",
@@ -276,7 +276,8 @@
     ],
     "article_complete_before_pagination": true,
     "pagination_lossless": true,
-    "issues": []
+    "issues": [],
+    "parent_id": "c97a40a2-05e8-4487-a846-7b50aac665ff"
   },
   "renders": [
     {
@@ -570,5 +571,7 @@
     "modified_by_production": false
   },
   "rollback_commit": "f787c231644a0aad01f561d432d5a7f0cc498ef1",
-  "remaining": "Commit/push reviewedproof before sharedschedule; verifyARTICLEpair/clock/bytes/gate/scope/idempotency. No publicationclaim before08WIB."
+  "remaining": "Leave valid SCHEDULED pair to normal shared publisher at2026-11-04T01:00:00Z. No Instagram/website PUBLISHED claim before time; target metrics unavailable. No further mutation required.",
+  "schedule_verification_file": "scheduled-verification.json",
+  "idempotence_file": "idempotence.json"
 }

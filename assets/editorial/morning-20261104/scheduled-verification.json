@@ -1,0 +1,97 @@
+{
+  "checked_at": "2026-11-04T00:12:25.062Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "f8444159-1157-484b-9d7c-e2fcdc13a8c0",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-04:mid-am",
+    "event_key": "manchester-united-roma-cunha-three-minute-comeback-20261103",
+    "scheduled_at": "2026-11-04T01:00:00+00:00",
+    "time_wib": "4 November2026 08.00WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "c97a40a2-05e8-4487-a846-7b50aac665ff",
+    "status": "SCHEDULED",
+    "slug": "tiga-menit-cunha-mengubah-malam-mu-f8444159",
+    "scheduled_at": "2026-11-04T01:00:00+00:00",
+    "title": "Tiga Menit Cunha Mengubah Malam MU",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "603b829620760d7b9b5731321fa796fb768cd215c9e3eb032deb0b970158d81f",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 56818,
+      "sha256": "2358416d0dcb4b209b9048ae2e2874481193d8ac9ce82956c71cb078004451c1",
+      "clean_original_without_text": true
+    },
+    "publication_path": "Shared publish-due publishes parent ARTICLE after successful Instagram publication; separate parent auto_publish flag is not required."
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 627228,
+      "sha256": "b6b89ce34205a7979d206603bfb981c5bb78abebbcaaeab9bdb13e1038bd8d66",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 161593,
+      "sha256": "bc7d29badefe15da8c145fea09f6fb916219d7ad24beb2e59c2ba4dc5c35bb45",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 160059,
+      "sha256": "f0864b1ed3a984470ab88346daf7ea516aa5a4e65a0a0c1fd3079b55fecf86a2",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 169107,
+      "sha256": "46105baa46724f0124437632c07e38fe09dedbaf28efc5c0df7ce22868c10ffa",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 78,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 201,
+  "current_rows": 202,
+  "unchanged_existing_other_rows": 200,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 3,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 30,
+    "sha256": "60011925153015be33155b59846db0565da668272249fc4a922c9391ed11afb2",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_four_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/4",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "e2783a3088ef5642e7b08378466c826a21fed9d5",
+  "publisher_timer": {
+    "unit": "stadione-cms-publish.timer",
+    "observed_active": true,
+    "last_service_result": "success",
+    "observation_only_not_publication_evidence": true
+  }
+}
