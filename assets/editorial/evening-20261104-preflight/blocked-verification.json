@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-11-04T12:04:48.070Z",
+  "state": "BLOCKED",
+  "stage": "NARRATION_PREFLIGHT",
+  "exit_code": 2,
+  "issues": [
+    "NARRATION_PROVIDER_MISSING: OPENAI_API_KEY belum dikonfigurasi untuk Stadione. Alternatif: rekaman narasi berizin per adegan."
+  ],
+  "target": {
+    "id": "17386e44-8886-4330-baeb-9d94a41f978f",
+    "plan_key": "2026-11-04:mid-pm",
+    "event_key": null,
+    "pillar": "Sepak Bola Indonesia",
+    "serial": "Satu Momen, Satu Cerita",
+    "status": "DRAFT",
+    "format": "REEL",
+    "required_format": "REEL",
+    "required_visual_mode": "illustration",
+    "scheduled_at": "2026-11-04T13:00:00+00:00",
+    "time_wib": "4November2026 20.00WIB",
+    "assets": 0,
+    "parent_id": null,
+    "archived_at": null,
+    "tombstone": false,
+    "attempts": 0
+  },
+  "provider": {
+    "name": "openai",
+    "configured": false,
+    "test_call_made": false,
+    "raw_environment_values_logged": false,
+    "existing_environment_used": true
+  },
+  "scope": {
+    "baseline_rows": 202,
+    "current_rows": 202,
+    "all_cms_rows_identical": true,
+    "durable_attempts_identical": true,
+    "mutations": 0,
+    "weekly_routine_published_or_scheduled": 3,
+    "weekly_limit": 12,
+    "other_slots_changed": false,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "shared_schedule_called": false,
+    "renderer_or_credentials_changed": false,
+    "services_or_automations_changed": false
+  },
+  "instagram": {
+    "http": 200,
+    "account": "stadione.id",
+    "media_count": 79,
+    "latest": [
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "caption_start": "TIGA MENIT CUNHA MENGUBAH MALAM MU\n\nDua gol Matheus Cunha dalam tiga menit memba"
+      },
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "caption_start": "JUVENTUS UNGGUL SEBELUM KARTU MERAH NAPOLI\n\nJuventus menang 2–0 atas Napoli, Min"
+      },
+      {
+        "id": "18137367565667125",
+        "published_at": "2026-11-02T01:01:57+0000",
+        "caption_start": "HAVERTZ MENGAKHIRI PENANTIAN ARSENAL DI ANFIELD\n\nSatu gol Kai Havertz pada menit"
+      }
+    ],
+    "no_new_topic_selected": true,
+    "topic_duplicate_check_completed": false,
+    "reason": "Preflight blocks before source selection; account/media verified but no new event exists to audit for duplicate."
+  },
+  "production": {
+    "source_selection_started": false,
+    "article_written": false,
+    "packet_created": false,
+    "illustration_generated": false,
+    "narration_generated": false,
+    "render_created": false,
+    "fixture_published": false,
+    "edge_tts_used": false,
+    "carousel_fallback": false,
+    "catalog_music_used": false,
+    "approval_completed": false,
+    "article_pair_completed": false,
+    "valid_scheduled": false,
+    "published": false,
+    "target_metrics": null
+  },
+  "references": {
+    "entries": 31,
+    "latest_read_at": "2026-11-04T00:57:38.595Z",
+    "sha256": "d20245131bff6fbf59a7e5a3af4d41dc7e1669a16f01c698ac17233aa97eacca",
+    "runtime_committed_identical": true,
+    "journal_changed": false
+  },
+  "release": "/opt/stadione-releases/ba88c8d",
+  "remaining": "Configure licensed STADIONE narration provider securely or supply authorized per-scene voice recordings. Then research sources, write story, generate/review illustrations and narration, preview audiovisual bytes, CMS approval and pairedARTICLE before scheduling. Do not change targetclock or fallback tocarousel.",
+  "rollback_commit": "10bfa56cf85106f73d7fbc9dbf03d285f170d318"
+}
