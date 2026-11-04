@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Tiga Menit Cunha Mengubah Malam MU",
+  "dek": "Dua gol penentu, lalu kartu merah. Arsip Juni 2026: Bryan Berlin / WikiPortraits, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=194284778",
+  "caption": "TIGA MENIT CUNHA MENGUBAH MALAM MU\n\nDua gol Matheus Cunha dalam tiga menit membalikkan keadaan untuk Manchester United. Ia menyamakan skor pada menit ke-83, lalu mencetak gol penentu pada menit ke-86 saat United mengalahkan Roma 3–2 di Old Trafford, Selasa (3/11/2026) waktu Inggris.\n\nUnited sebelumnya tertinggal dua gol saat jeda. Bruno Fernandes memperkecil selisih lewat penalti yang diulang setelah percobaan pertamanya ditahan Devis Vásquez. Wasit memerintahkan pengulangan karena pemain Roma masuk kotak penalti terlalu cepat.\n\nMalam Cunha tidak berakhir dengan dua gol saja. Ia mendapat kartu kuning setelah melepas jersey dan masuk tribun saat merayakan gol kemenangan. Pelanggarannya terhadap Leonardo Balerdi di penghujung laga kemudian menghasilkan kuning kedua, membuat United menutup pertandingan dengan sepuluh pemain.\n\nMana titik balik yang paling menentukan menurutmu: kesempatan kedua penalti Bruno atau dua penyelesaian Cunha? Jelaskan alasannya dari rangkaian kejadian.\n\nSumber: laporan lengkap Reuters; peliputan langsung David Hytner di Old Trafford untuk The Guardian; konfirmasi hasil resmi AS Roma. Tidak menyimpulkan masa depan pelatih dari satu kemenangan.\n\nFoto arsip Matheus Cunha, Brasil–Maroko, 13 Juni 2026, oleh Bryan Berlin / WikiPortraits; crop EndzoneEnthusiast. Sumber https://commons.wikimedia.org/?curid=194284778 . Lisensi https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli, dibagikan CC BY-SA 4.0. Bukan dokumentasi Manchester United–Roma; jersey Brasil asli dipertahankan. Tidak menyiratkan dukungan fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Tiga Menit untuk Membalikkan Skor",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "PHOTO"
+      ],
+      "text": "Dua gol Matheus Cunha dalam tiga menit membalikkan keadaan untuk Manchester United. Ia menyamakan skor pada menit ke-83, lalu mencetak gol penentu pada menit ke-86 saat United mengalahkan Roma 3–2 di Old Trafford, Selasa (3/11/2026) waktu Inggris."
+    },
+    {
+      "id": "fightback",
+      "heading": "Penalti Ulang Menjaga Peluang",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIGHTBACK"
+      ],
+      "text": "United sebelumnya tertinggal dua gol saat jeda. Bruno Fernandes memperkecil selisih lewat penalti yang diulang setelah percobaan pertamanya ditahan Devis Vásquez. Wasit memerintahkan pengulangan karena pemain Roma masuk kotak penalti terlalu cepat."
+    },
+    {
+      "id": "discipline",
+      "heading": "Dua Kuning Sesudah Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "DISCIPLINE"
+      ],
+      "text": "Malam Cunha tidak berakhir dengan dua gol saja. Ia mendapat kartu kuning setelah melepas jersey dan masuk tribun saat merayakan gol kemenangan. Pelanggarannya terhadap Leonardo Balerdi di penghujung laga kemudian menghasilkan kuning kedua, membuat United menutup pertandingan dengan sepuluh pemain."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261102-martinez-murphy-reaction-news",
+    "goal-20261103-bournemouth-milan-tactics-feature"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-04T00:04:48.156Z",
+    "article_digest": "603b829620760d7b9b5731321fa796fb768cd215c9e3eb032deb0b970158d81f"
+  }
+}

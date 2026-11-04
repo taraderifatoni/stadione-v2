@@ -1,0 +1,574 @@
+{
+  "checked_at": "2026-11-04T00:10:55.047Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "f8444159-1157-484b-9d7c-e2fcdc13a8c0",
+    "plan_key": "2026-11-04:mid-am",
+    "event_key": "manchester-united-roma-cunha-three-minute-comeback-20261103",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-04T01:00:00Z",
+    "time_wib": "4November2026 08.00WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-04",
+      "fetchedAt": "2026-11-03T23:59:52.288Z",
+      "method": "Currentrelease getDailySportsPool via committedcms-audience-pool/cms-load, cache/quota retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 5,
+          "titles": [
+            "man utd vs roma",
+            "villarreal vs psg",
+            "feyenoord vs inter",
+            "atlético madrid vs bayern",
+            "klasemen fc barcelona vs aston villa"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 2,
+          "titles": [
+            "Juventus Hajar Napoli 2-0! Kartu Merah Jadi Petaka di Turin! #juventus #napoli",
+            "Isak vs Segitiga Bermuda EPL: Siap-Siap Lawan Trio Liverpool!"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "GUARDIAN",
+        "url": "https://www.theguardian.com/football/2026/nov/03/manchester-united-roma-champions-league-match-report",
+        "publisher_group": "GUARDIAN",
+        "primary": true,
+        "published_at": "2026-11-03T22:11:04Z",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "0f1d09394864670316304aa5229fda7574e230325278f3d88f17c617c4bacef2"
+      },
+      {
+        "id": "ROMA",
+        "url": "https://www.asroma.com/en/news/76177/manchester-united-3-2-roma-photo-gallery",
+        "publisher_group": "ASROMA",
+        "primary": true,
+        "published_at": "2026-11-03",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "efd2f474d1e5bd244d2c384d1da2b10f835b73282905a1dd50076c98dd466d65"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178_(cropped).jpg",
+        "publisher_group": "BRYANBERLIN",
+        "primary": true,
+        "published_at": "2026-06-13",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "5667a7dcdc171f896051b3e56d3c808e99f163f218c77fe23088e782640ad21a"
+      },
+      {
+        "id": "PHOTO_ORIGINAL",
+        "url": "https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178.jpg",
+        "publisher_group": "BRYANBERLIN",
+        "primary": true,
+        "published_at": "2026-06-13",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "4bbaaea4d573df1ac0a98a6a30106c64f19a515cfda09bd1b2abe5e57da0f824"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "94bde7214af6f06362819c3a4d45c264ac4b4e7a42af0a9a40eccbd7166b1370"
+      },
+      {
+        "id": "REUTERS",
+        "url": "https://www.reuters.com/sports/soccer/psg-hit-villarreal-six-bayern-win-man-united-fight-back-2026-11-03/",
+        "publisher_group": "REUTERS",
+        "primary": false,
+        "published_at": "2026-11-03T22:21:55Z",
+        "retrieved_at": "2026-11-04T00:04:48.156Z",
+        "normalized_text_sha256": "424c33932f56b6661424684e8dc1b0bc4dfb6c6dbe2a860aa0b7e56399c0b1a9"
+      }
+    ],
+    "full_read": [
+      "DavidHytneroriginaleyewitnessreport atOldTrafford forTheGuardian, fullnarrative throughlastparagraph readbrowser/GET200. Primaryforhisownfirsthandreporting; notclubpressrelease.",
+      "ReutersfullRuairidhBarlow/TommyLundroundup throughreportingeditingcredit readbrowser. DirectGET401; notbypassed. Packetnotesexplicitlyparaphrased, notfulltextorverbatimtranscript.",
+      "ASRomaofficialgallerywholebrieftext confirmsfinalscore/date/venue; notclaimedfulllengthmatchnarrative. PregameGasperinipressalsofullyread, notusedaspostmatchconfirmation.",
+      "Commonscrop, originalBryanBerlinownworkgrant andCCBYSA4licencedeedread. OriginalauthorcreditBryanBerlin/WikiPortraitsmandatory."
+    ],
+    "independent_publisher_groups": [
+      "GUARDIAN",
+      "REUTERS",
+      "ASROMA"
+    ],
+    "source_limits": [
+      "MU/UEFA matchpages onlyshell, notfullreport.",
+      "RTE/Eurosport/reportURL notaccessible, notclaimedread.",
+      "UEFApdfnotaccessible, notused.",
+      "Do notpresentGuardianfieldreportasclubstatement; noowninterview/watchclaim."
+    ],
+    "verification": [
+      "FinalUnited3-2Roma3NovOldTrafford; officialASRoma confirmsresult, independentReuters/directGuardianfieldreport agree.",
+      "Cunhaequaliser83, winner86 perReuters; Guardian83/nextwinnersequence. Three-minuteinterval nottacticalcause.",
+      "Brunoretakenpenalty afterfirstsave; encroachment describedGuardian andReuters. No verdict onrefereeing.",
+      "Firstyellowcelebration, secondlatechallenge; exactredminute omitted becauseGuardian90vsReutersstoppagetime. No automaticcoachsurvivalorunverifiedbanlength claim."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-04:mid-am",
+    "checked_at": "2026-11-04T00:04:48.156Z",
+    "queries": [
+      "Manchester United Roma 3 November 2026 highlights",
+      "Manchester United Roma Cunha comeback"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=hWIQF-HyKlY",
+        "creator": "Flying Pig United",
+        "checked_at": "2026-11-04T00:04:48.156Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Flying Pig United published 2026-11-03T22:45:45Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=yeG32LqKfoU",
+        "creator": "The Football Terrace",
+        "checked_at": "2026-11-04T00:04:48.156Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "The Football Terrace published 2026-11-03T23:35:36Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=iY0FIMlnGbU",
+        "creator": "March Football Highlights",
+        "checked_at": "2026-11-04T00:04:48.156Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "March Football Highlights published 2026-11-03T22:03:58Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-04T00:04:48.156Z",
+      "digest": "e673263df05f05fc2d3c0d70d01b543c27231b4da8ec00bc707a5d50edee20fd"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "actual_urls": 3,
+    "creators": [
+      "Flying Pig United",
+      "The Football Terrace",
+      "March Football Highlights"
+    ],
+    "queries": 2,
+    "reason": "StandardYouTubelicences noverifiedmontagevideo/audio grant; fairusedisclaimer isnotlicence. Actualsourcepages browserthrottled. AllowedCAROUSELfallback sameEuropepillar/08WIB.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Wednesday08WIB; illustrationassignmentisWednesday20WIB anduntouched.",
+    "licensed_voice_provider_configured": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "default_music_used": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "MatheusCunha",
+    "creator": "Bryan Berlin / WikiPortraits",
+    "crop_creator": "EndzoneEnthusiast",
+    "source": "https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178_(cropped).jpg",
+    "original_author_source": "https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178.jpg",
+    "photo_event": "BrazilMorocco13June2026archive, notUnitedRoma3Nov",
+    "licence": "CC BY-SA4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "explicit_original_author_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "curid": "194284778",
+      "source": "https://commons.wikimedia.org/wiki/File:Matheus_Cunha_Brazil_V_Morocco_13_June_2026-178_(cropped).jpg",
+      "bytes": 763571,
+      "sha1": "634d79d2417305cf81d1493ff299c348cb921177",
+      "sha256": "49fdadd06fbd4037f61c9722b9494ed2b86df7359e256cf48a51f36285bba77a",
+      "dimensions": [
+        1502,
+        1926
+      ],
+      "native_viewed": true
+    },
+    "changes": "Actualface/downturnedgaze/hair/beard/pose/yellowBraziljersey9 retained; imagegenerated newspaperbackground/typography. Cover/hero adaptationsCCBYSA4 witharchive/source/mandatoryauthor/changes/licencelinks cover/caption/dek/docs, noendorsement.",
+    "cover": {
+      "variant_id": "KOLOM",
+      "rotation_helper": true,
+      "previous_variants": [
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH"
+      ],
+      "page_count": 4,
+      "bytes": 507541,
+      "sha256": "c649ac7a7425221e716cf86e48e8c00e586c7b17f5778b488d55c718deef6419",
+      "margins_refined_via_imagegeneration": true,
+      "aspect_preserved_with_contain": true,
+      "source_label": "THEGUARDIAN.COM",
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 160,
+        "y": 80,
+        "width": 1200,
+        "height": 985
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 56818,
+      "sha256": "2358416d0dcb4b209b9048ae2e2874481193d8ac9ce82956c71cb078004451c1",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Tiga Menit Cunha Mengubah Malam MU",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 109,
+    "digest": "603b829620760d7b9b5731321fa796fb768cd215c9e3eb032deb0b970158d81f",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261102-martinez-murphy-reaction-news",
+      "goal-20261103-bournemouth-milan-tactics-feature"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "THEGUARDIAN.COM",
+      "cover_input_sha256": "c649ac7a7425221e716cf86e48e8c00e586c7b17f5778b488d55c718deef6419",
+      "output_sha256": "b6b89ce34205a7979d206603bfb981c5bb78abebbcaaeab9bdb13e1038bd8d66",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "95f39190013d73317f2f4a8ac91a811220a3b68bf58e2d1a35c37e5e779ab871",
+      "output_sha256": "bc7d29badefe15da8c145fea09f6fb916219d7ad24beb2e59c2ba4dc5c35bb45",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 625,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 924,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e43dc6c103fd7aef475158bc56e4e75e9340800afcd054b1c0683d8e3f726262",
+      "output_sha256": "f0864b1ed3a984470ab88346daf7ea516aa5a4e65a0a0c1fd3079b55fecf86a2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 756,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 914,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "ca641d6360d3c4c2d0811c294b53654916223b61701f44216bf56c4f3671ccd1",
+      "output_sha256": "46105baa46724f0124437632c07e38fe09dedbaf28efc5c0df7ce22868c10ffa",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 824,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 898,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_JPEG_opened_at_original1080x1350": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_original_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of4_matches_final": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Laga dalam 3 Data",
+    "core_fact": "United0-2 atbreak, Cunha83and86 interval3minutes, twoCunhayellows afterwinner.",
+    "angle": "Explain chronology anddiscipline alongsidecomeback; no resultonlyheadline orclaimcoachfuturedecided.",
+    "hook": "Tiga Menit Cunha Mengubah Malam MU",
+    "payoff": "Three paragraphfacts: latebrace, retakenpenalty, expulsion.",
+    "audience_action": "Which turningpoint matteredmore: BrunoretakeorCunhafinishes, explainreason.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "OriginalREEL researched withtwofreshYouTubequeries andthreeactualpages/threecreators; standardlicences noverifiedmontagevideo/audio grant, sourcebrowserthrottled. ClearedarchivephotoCAROUSEL fitsWednesdayLagaDalam3Data framework, sameEuropepillar/08WIB. NotWednesday20mandatoryillustration.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-05T01:00:00Z",
+    "review_due_7d": "2026-11-11T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-04T00:10:55.047Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots of differing posting ages; not exact24h/7d measures. Missing metrics not zero. No format/FYP/paidorganic causal inference.",
+    "posts": [
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18137367565667125",
+        "published_at": "2026-11-02T01:01:57+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18124521968514357",
+        "published_at": "2026-11-01T13:01:38+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18420977149153554",
+        "published_at": "2026-11-01T01:02:32+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-04T00:10:55.047Z",
+    "baseline_rows": 201,
+    "current_rows": 201,
+    "unchanged_other_rows": 200,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "f8444159-1157-484b-9d7c-e2fcdc13a8c0",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-04T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 2,
+    "weekly_routine_proposed": 3,
+    "weekly_limit": 12,
+    "instagram_media": 78,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 30,
+    "latest_read_at": "2026-11-03T00:39:07.254Z",
+    "sha256": "60011925153015be33155b59846db0565da668272249fc4a922c9391ed11afb2",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "f787c231644a0aad01f561d432d5a7f0cc498ef1",
+  "remaining": "Commit/push reviewedproof before sharedschedule; verifyARTICLEpair/clock/bytes/gate/scope/idempotency. No publicationclaim before08WIB."
+}

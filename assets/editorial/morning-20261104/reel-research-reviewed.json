@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-04:mid-am",
+  "checked_at": "2026-11-04T00:04:48.156Z",
+  "queries": [
+    "Manchester United Roma 3 November 2026 highlights",
+    "Manchester United Roma Cunha comeback"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=hWIQF-HyKlY",
+      "creator": "Flying Pig United",
+      "checked_at": "2026-11-04T00:04:48.156Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Flying Pig United published 2026-11-03T22:45:45Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=yeG32LqKfoU",
+      "creator": "The Football Terrace",
+      "checked_at": "2026-11-04T00:04:48.156Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "The Football Terrace published 2026-11-03T23:35:36Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=iY0FIMlnGbU",
+      "creator": "March Football Highlights",
+      "checked_at": "2026-11-04T00:04:48.156Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Committed YouTube metadata and full returned description reviewed; standard youtube licence, no verified Stadione montage video/audio reuse grant. Fair-use disclaimer on FootballTerrace is not a licence. Actual source browser open returned Online fetch throttled. No download/viewing/audition/transcript claim.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "March Football Highlights published 2026-11-03T22:03:58Z; licence youtube, no verified reuse grant. Browser sourcepage Online fetch throttled; no alternate-route retry or bypass."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-04T00:04:48.156Z",
+    "digest": "e673263df05f05fc2d3c0d70d01b543c27231b4da8ec00bc707a5d50edee20fd"
+  }
+}
