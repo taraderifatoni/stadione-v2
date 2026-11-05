@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-05:mid-am",
+  "checked_at": "2026-11-05T00:06:41.264Z",
+  "queries": [
+    "Slavia Arsenal 4 November 2026 highlights",
+    "Gyokeres Madueke Slavia Arsenal"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=sITRnOVnDv8",
+      "creator": "ThatGuyKas",
+      "checked_at": "2026-11-05T00:06:41.264Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "ThatGuyKas published 2026-11-04T23:14:33Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=NdReY-fTPsw",
+      "creator": "The Gunners Indonesia - Berita Arsenal Terbaru",
+      "checked_at": "2026-11-05T00:06:41.264Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "The Gunners Indonesia - Berita Arsenal Terbaru published 2026-11-04T23:47:05Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=_6NEKQXXsDQ",
+      "creator": "The Football Terrace",
+      "checked_at": "2026-11-05T00:06:41.264Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "The Football Terrace published 2026-11-04T23:13:06Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-05T00:06:41.264Z",
+    "digest": "c41e20d4a2d22dbaaf96ed2fe04cf57c883ed357d48e4ad7fd6ce9ce16afd944"
+  }
+}

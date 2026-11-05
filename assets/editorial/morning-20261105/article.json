@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Gyökeres Membuka Jalan untuk Arsenal",
+  "dek": "Umpan pembuka, lalu golnya sendiri. Arsip Juni 2026: Bryan Berlin / WikiPortraits, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=201733011",
+  "caption": "GYÖKERES MEMBUKA JALAN UNTUK ARSENAL\n\nViktor Gyökeres terlibat langsung dalam kedua gol Arsenal saat menang 2–1 di Fortuna Arena, kandang Slavia Praha, Rabu (4/11/2026) waktu Ceko. Ia menyiapkan gol Noni Madueke sebelum mencetak golnya sendiri.\n\nGol pembuka bermula dari bola panjang David Raya. Gyökeres lebih dulu mencapai bola, mengontrolnya dengan dada, lalu melepas umpan ke jalur lari Madueke. Pemain sayap itu menuntaskan peluang untuk membawa Arsenal unggul.\n\nPada menit ke-38, Gyökeres bertukar umpan dengan Mikel Merino di kotak penalti. Ia kemudian melepaskan tembakan melengkung ke sudut jauh, masuk melalui tiang. Arsenal membawa keunggulan dua gol ke jeda.\n\nSlavia meningkatkan tekanan pada babak kedua. Raya menepis sundulan Oskar Kubiak ke tiang sebelum Wiktor Nowak memperkecil selisih pada menit ke-90. Arsenal tetap mempertahankan keunggulan hingga peluit akhir.\n\nKontribusi mana yang lebih kamu soroti: kontrol dan umpan untuk Madueke atau kombinasi dengan Merino sebelum golnya sendiri? Pilih satu dan jelaskan alasannya.\n\nSumber: laporan resmi Slavia, laporan lengkap Sky Sports, peliputan Ed Aarons di Fortuna Arena untuk The Guardian, serta Goal.\n\nFoto arsip Viktor Gyökeres, Prancis–Swedia, 30 Juni 2026, oleh Bryan Berlin / WikiPortraits; crop Guyrichtheman. Sumber https://commons.wikimedia.org/?curid=201733011 . Lisensi https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli, dibagikan CC BY-SA 4.0. Bukan dokumentasi Slavia–Arsenal; jersey Swedia asli dipertahankan. Tidak menyiratkan dukungan fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Gol Berawal dari Gyökeres",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "ASSIST",
+        "GOAL",
+        "PHOTO"
+      ],
+      "text": "Viktor Gyökeres terlibat langsung dalam kedua gol Arsenal saat menang 2–1 di Fortuna Arena, kandang Slavia Praha, Rabu (4/11/2026) waktu Ceko. Ia menyiapkan gol Noni Madueke sebelum mencetak golnya sendiri."
+    },
+    {
+      "id": "assist",
+      "heading": "Kontrol Dada, Umpan untuk Madueke",
+      "kind": "FACT",
+      "claim_ids": [
+        "ASSIST"
+      ],
+      "text": "Gol pembuka bermula dari bola panjang David Raya. Gyökeres lebih dulu mencapai bola, mengontrolnya dengan dada, lalu melepas umpan ke jalur lari Madueke. Pemain sayap itu menuntaskan peluang untuk membawa Arsenal unggul."
+    },
+    {
+      "id": "goal",
+      "heading": "Giliran Merino Membantu Gyökeres",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOAL"
+      ],
+      "text": "Pada menit ke-38, Gyökeres bertukar umpan dengan Mikel Merino di kotak penalti. Ia kemudian melepaskan tembakan melengkung ke sudut jauh, masuk melalui tiang. Arsenal membawa keunggulan dua gol ke jeda."
+    },
+    {
+      "id": "closing",
+      "heading": "Raya Menahan Tekanan Setelah Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "PRESSURE"
+      ],
+      "text": "Slavia meningkatkan tekanan pada babak kedua. Raya menepis sundulan Oskar Kubiak ke tiang sebelum Wiktor Nowak memperkecil selisih pada menit ke-90. Arsenal tetap mempertahankan keunggulan hingga peluit akhir."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-05T00:10:20.630Z",
+    "article_digest": "6f293d40d514d4865b37299c683fd9359608b14aaff21711e36ec2c10698fcaa"
+  }
+}

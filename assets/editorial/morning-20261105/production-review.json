@@ -1,0 +1,622 @@
+{
+  "checked_at": "2026-11-05T00:14:53.103Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
+    "plan_key": "2026-11-05:mid-am",
+    "event_key": "slavia-arsenal-gyokeres-assist-goal-20261104",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-05T01:00:00Z",
+    "time_wib": "5 November 2026 08.00 WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-05",
+      "fetchedAt": "2026-11-05T00:01:37.423Z",
+      "method": "Current release getDailySportsPool via committed cms-audience-pool/cms-load; cache/quota retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 5,
+          "titles": [
+            "leipzig vs man city",
+            "fenerbahçe vs liverpool",
+            "slavia praha vs arsenal",
+            "klasemen slavia praha vs arsenal",
+            "aek athens f.c. vs real madrid standings"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 2,
+          "titles": [
+            "Juventus Hajar Napoli 2-0! Kartu Merah Jadi Petaka di Turin! #juventus #napoli",
+            "Isak vs Segitiga Bermuda EPL: Siap-Siap Lawan Trio Liverpool!"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "SLAVIA",
+        "url": "https://www.slavia.cz/cze/match/7150",
+        "publisher_group": "SLAVIA",
+        "primary": true,
+        "published_at": "2026-11-04",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "927e4dbc9f8503e5b3ae7fa93b09066489ca85c8efcc9a5d252cbfd510af8bc9"
+      },
+      {
+        "id": "SKY",
+        "url": "https://www.skysports.com/football/news/13607452/slavia-prague-1-2-arsenal-noni-madueke-and-viktor-gyokeres-on-target-as-gunners-survive-second-half-scare",
+        "publisher_group": "SKY",
+        "primary": false,
+        "published_at": "2026-11-04T23:11:00Z",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "86c949eea2985c822eaa45531528b9c103f4c69d4c8ab747b61c8f8ff2693353"
+      },
+      {
+        "id": "GUARDIAN",
+        "url": "https://www.theguardian.com/football/2026/nov/04/slavia-prague-arsenal-champions-league-match-report",
+        "publisher_group": "GUARDIAN",
+        "primary": true,
+        "published_at": "2026-11-04T22:05:11Z",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "060463711f7126caaee627eb2f028a64a06bd2bfcbdc25aec15ce796a3328537"
+      },
+      {
+        "id": "GOAL",
+        "url": "https://www.goal.com/en/news/strong-first-half-enough-for-arsenal-as-they-stay-hot-on-the-heels-of-psg-and-real-madrid/blt96605e6924378a87",
+        "publisher_group": "GOAL",
+        "primary": false,
+        "published_at": "2026-11-04T21:57:00Z",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "056fed0db8b4fac135e7cbb4b48bda86f8c21954995c807e79370ac92a0954a1"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Viktor_Gyokeres_France_v_Sweden_6.30.26-123_(cropped).jpg",
+        "publisher_group": "BRYANBERLIN",
+        "primary": true,
+        "published_at": "2026-06-30",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "7e92400d70a5839a01a96968dcc35035f958671a7409bd4179e680c73d5888c3"
+      },
+      {
+        "id": "PHOTO_ORIGINAL",
+        "url": "https://commons.wikimedia.org/wiki/File:Viktor_Gyokeres_France_v_Sweden_6.30.26-123.jpg",
+        "publisher_group": "BRYANBERLIN",
+        "primary": true,
+        "published_at": "2026-06-30",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "c4c9c90a0d1f0f2906504719f76c9a47b00985f09407e4484ccb4c7a39e522c4"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-05T00:06:41.264Z",
+        "normalized_text_sha256": "94bde7214af6f06362819c3a4d45c264ac4b4e7a42af0a9a40eccbd7166b1370"
+      }
+    ],
+    "full_read": [
+      "Official Slavia Czech match report, 3130 characters, entire normalized body read through public HTTP GET 200 via TD. Browser generic fetch failure; no authentication or access-control bypass.",
+      "Sky Nick Wright full report and analysis, 7576 characters, entire normalized body read via public HTTP GET 200. Browser failed. TNT interview reproductions not our own interviews/audio; no quotes used.",
+      "Guardian Ed Aarons at Fortuna Arena full eyewitness report read in browser and public HTTP GET 200 (6415 normalized characters). Primary for his own firsthand reporting, not a club press release.",
+      "Goal Rian Rosendaal complete body, 1924 normalized characters, read via public GET 200. Browser failed. Interpretive claim of comfortable control not adopted.",
+      "Commons crop and original Bryan Berlin own-work grant plus CC BY-SA 4.0 deed read."
+    ],
+    "independent_publisher_groups": [
+      "SLAVIA",
+      "SKY",
+      "GUARDIAN",
+      "GOAL"
+    ],
+    "source_limits": [
+      "Arsenal site 403 not bypassed. Other unavailable pages/search snippets not claimed full readings.",
+      "Opening minute differs 8/9 between publishers; omitted. Shot totals, records, standings and unsupported tactical explanations omitted.",
+      "Old 2025 3-0 and 2021 reports excluded. No match video/watch/transcript claim."
+    ],
+    "verification": [
+      "Final Arsenal 2-1 Slavia on 4 November 2026 at Fortuna Arena, 0-2 at break, agreed official Slavia and independent Sky/Guardian.",
+      "Gyokeres chest-controls Raya long ball and passes to Madueke; Goal/Sky/Guardian agree.",
+      "Gyokeres goal 38 after Merino one-two, curler via far post, agrees Slavia/Sky.",
+      "Raya pushes Kubiak header onto post before Nowak goal 90, Slavia/Sky agree."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-05:mid-am",
+    "checked_at": "2026-11-05T00:06:41.264Z",
+    "queries": [
+      "Slavia Arsenal 4 November 2026 highlights",
+      "Gyokeres Madueke Slavia Arsenal"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=sITRnOVnDv8",
+        "creator": "ThatGuyKas",
+        "checked_at": "2026-11-05T00:06:41.264Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "ThatGuyKas published 2026-11-04T23:14:33Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=NdReY-fTPsw",
+        "creator": "The Gunners Indonesia - Berita Arsenal Terbaru",
+        "checked_at": "2026-11-05T00:06:41.264Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "The Gunners Indonesia - Berita Arsenal Terbaru published 2026-11-04T23:47:05Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=_6NEKQXXsDQ",
+        "creator": "The Football Terrace",
+        "checked_at": "2026-11-05T00:06:41.264Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed. Standard youtube licence without verified Stadione montage video/audio grant; fair-use disclaimers not reuse licence. Actual sourcepage browser Online fetch throttled. No download/playback/audition/transcript verification claimed.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "The Football Terrace published 2026-11-04T23:13:06Z; licence youtube, no verified reuse grant. Sourcepage browser fetch throttled, not retried via alternate routes."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-05T00:06:41.264Z",
+      "digest": "c41e20d4a2d22dbaaf96ed2fe04cf57c883ed357d48e4ad7fd6ce9ce16afd944"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "actual_urls": 3,
+    "creators": [
+      "ThatGuyKas",
+      "The Gunners Indonesia - Berita Arsenal Terbaru",
+      "The Football Terrace"
+    ],
+    "queries": 2,
+    "reason": "Standard YouTube licences without verified montage video/audio grant; fair-use disclaimer not licence. Actual source pages browser throttled. Same pillar and time retained in allowed carousel fallback.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Thursday morning, not Monday or Wednesday 20 WIB.",
+    "licensed_voice_provider_configured": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "default_music_used": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "Viktor Gyokeres",
+    "creator": "Bryan Berlin / WikiPortraits",
+    "crop_creator": "Guyrichtheman",
+    "source": "https://commons.wikimedia.org/?curid=201733011",
+    "original_author_source": "https://commons.wikimedia.org/wiki/File:Viktor_Gyokeres_France_v_Sweden_6.30.26-123.jpg",
+    "photo_event": "France-Sweden, 30 June 2026 archive, not Slavia-Arsenal",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "explicit_original_author_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "curid": "201733011",
+      "source": "https://commons.wikimedia.org/wiki/File:Viktor_Gyokeres_France_v_Sweden_6.30.26-123_(cropped).jpg",
+      "bytes": 667913,
+      "sha1": "aba688451d8201b120b6d1bea52a2cc518594334",
+      "sha256": "7c5553418428878c42f037f63ea6757de86d8a19d488bf895e3a7aee6b17f6e2",
+      "dimensions": [
+        1138,
+        1818
+      ],
+      "native_viewed": true
+    },
+    "changes": "Original photo reference retains recognizable face/hair/expression/pose/yellow-blue Sweden jersey 17; generated newspaper background and typography. Archive, source, creator and licence shown, changes documented; adaptations released CC BY-SA 4.0, no endorsement implied.",
+    "cover": {
+      "variant_id": "FOTO_DOMINAN",
+      "rotation_helper": true,
+      "previous_variants": [
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM"
+      ],
+      "page_count": 5,
+      "bytes": 497526,
+      "sha256": "eee2a418d798cb8895212579371b0d2efd09c536337420854b841af71d3069ec",
+      "aspect_preserved_with_contain": true,
+      "source_label": "SLAVIA.CZ",
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 0,
+        "y": 80,
+        "width": 1138,
+        "height": 934
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 61566,
+      "sha256": "7540ba6fbfd5696f3b7418fc8034bcb1df31112a1cff42edb50e7175da4e5cfe",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Gyökeres Membuka Jalan untuk Arsenal",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 120,
+    "digest": "6f293d40d514d4865b37299c683fd9359608b14aaff21711e36ec2c10698fcaa",
+    "benchmarks": [
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "SLAVIA.CZ",
+      "cover_input_sha256": "eee2a418d798cb8895212579371b0d2efd09c536337420854b841af71d3069ec",
+      "output_sha256": "566364481e34ae81ab9621418b54dbb16854a570f3357de5000e035bee65970d",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "f7836cd3dae56416ef140675952b4747c8d550915be4ff3ef42a21ffbac06c70",
+      "output_sha256": "8c8ec6874d8893bf68d69df3b57310fb2b3cbde3fb8966e74cd9ac3b78014f73",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 707,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 910,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "5aee8de5f0f29cb94a2b7c6bfacc4052581aca178afa8dbb204e22c1570d0038",
+      "output_sha256": "f335b686b1df52bae9e387061ae031ddecfa516f20313a6a3e8edebed6892fb2",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 718,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 905,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "951e98aa9864f605c0db96762e1b308482d2fda7873662a8248340205442031f",
+      "output_sha256": "5211f7ce884c9243405014b06a08a8a9c7a4bada8d31746d0d8a87b2e72f9f46",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 858,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 907,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "580290360b716b7374928df585c8888cefddcf00f9ddc4767f846c422a895ef9",
+      "output_sha256": "46e9f955a9d53c72a1f8e1c08a79066e20e6cde2e08970a85272f1b0d29e349f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 788,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 884,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_at_original1080x1350": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_original_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of5_matches_final": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "30 Detik Paham Laga",
+    "core_fact": "Gyokeres assists Madueke, then scores after exchanging passes with Merino; Raya resists second-half pressure.",
+    "angle": "Explain two different contributions and the later difficulty rather than repeat the score. Thursday community serial not forced onto the existing Europe pillar.",
+    "hook": "Gyökeres Membuka Jalan untuk Arsenal",
+    "payoff": "First touch and passing contrasted with combination and finishing, plus second-half context.",
+    "audience_action": "Compare the opening assist with the goal and explain which contribution mattered more.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "ExistingREEL researched withtwofreshYouTubequeries/threeactualpages/threecreators: standardlicences noverifiedmontagevideo/audio grant, browserfetchthrottled. UseclearedarchivephotoCAROUSEL retainingEuropepillar/08WIB. Thursdaymorningnotmandatoryillustration; noauthorizedhostrecordingorconfiguredlicensedvoiceprovider.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-06T01:00:00Z",
+    "review_due_7d": "2026-11-12T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-05T00:14:53.103Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18137367565667125",
+        "published_at": "2026-11-02T01:01:57+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18124521968514357",
+        "published_at": "2026-11-01T13:01:38+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-05T00:14:53.103Z",
+    "baseline_rows": 205,
+    "current_rows": 205,
+    "unchanged_other_rows": 204,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-05T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 3,
+    "weekly_routine_proposed": 4,
+    "weekly_limit": 12,
+    "instagram_media": 79,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 31,
+    "latest_read_at": "2026-11-04T00:57:38.595Z",
+    "sha256": "d20245131bff6fbf59a7e5a3af4d41dc7e1669a16f01c698ac17233aa97eacca",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "3b8f833495be91cc266d8017ca2309db048cb287",
+  "remaining": "Commit/push reviewed proof before shared schedule, then verify ARTICLE pair, clock, bytes, gate, scope, idempotency. No publication claim before 08 WIB."
+}
