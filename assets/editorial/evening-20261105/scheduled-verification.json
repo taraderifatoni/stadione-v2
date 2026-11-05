@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-11-05T12:14:06.284Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "a9762d0b-37dc-4053-b846-7f4afa8b3183",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-05:mid-pm",
+    "event_key": "persib-melbourne-menalo-bench-comeback-20261104",
+    "scheduled_at": "2026-11-05T13:00:00+00:00",
+    "time_wib": "5 November 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "3d170de6-d497-49ed-8ccd-ca70d700c8ba",
+    "status": "SCHEDULED",
+    "slug": "persib-punya-jawaban-dari-bangku-cadangan-a9762d0b",
+    "scheduled_at": "2026-11-05T13:00:00+00:00",
+    "title": "Persib Punya Jawaban dari Bangku Cadangan",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "670ad3585b637b0faba2f45ba637e474c964c12dc95cc2e52bbe233f64069177",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 42319,
+      "sha256": "a73241fe5831994832bdd978f8725ed6d08186d2f943e8f9beae565515fc2835",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 709668,
+      "sha256": "4963b4f238323ca73c9a6a7685769203931870a21145ea7d16ef8402c997d2db",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 145059,
+      "sha256": "fed9488a41a4d7e35ece27f56f41821503cac3e541b0211b029cae8c5cbc0bc0",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 154706,
+      "sha256": "25a0ff9ef95039cdab7acb4c02f9ce95eba55dd15b9768100ad9c2a1dae5c298",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 152125,
+      "sha256": "ddf54dca78610e3738abe143077b8d0fa752e9efdf9497c90ca75a39b0af32ef",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 123232,
+      "sha256": "484a0f4286be8f36dc9e5203c890defa748f78b9857ea079391e098cbd2cd8bf",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 80,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 206,
+  "current_rows": 207,
+  "unchanged_existing_other_rows": 205,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 5,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 32,
+    "sha256": "20dc4c3f82db0467375ed6f2fad25d8b3614cb1b236aa835b7695cd548b14233",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_five_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/5",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Shared systemd publisher at the future20.00 WIB clock. No MetaDirect. Instagram and website publication not yet claimed; target metrics unavailable.",
+  "pre_schedule_commit": "a14827c4aaefb8d8ed9fea1ac1010a00c5a4bd7d",
+  "publisher_operational_check": {
+    "basis": "Read-only systemctl context; timer activity is not publication evidence."
+  }
+}
