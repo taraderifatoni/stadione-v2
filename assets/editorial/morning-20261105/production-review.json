@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-11-05T00:14:53.103Z",
-  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
   "target": {
     "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
     "plan_key": "2026-11-05:mid-am",
@@ -618,5 +618,49 @@
     "modified_by_production": false
   },
   "rollback_commit": "3b8f833495be91cc266d8017ca2309db048cb287",
-  "remaining": "Commit/push reviewed proof before shared schedule, then verify ARTICLE pair, clock, bytes, gate, scope, idempotency. No publication claim before 08 WIB."
+  "remaining": "Valid scheduled pair handed to shared publisher for 2026-11-05T01:00:00Z. No re-render or re-schedule needed. Publication and target metrics remain future/unavailable.",
+  "final_verification_at": "2026-11-05T00:15:44.864Z",
+  "social_scheduled": {
+    "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-05:mid-am",
+    "event_key": "slavia-arsenal-gyokeres-assist-goal-20261104",
+    "scheduled_at": "2026-11-05T01:00:00+00:00",
+    "time_wib": "5 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "paired_article": {
+    "id": "c72508b5-0f9f-4ffc-a643-22228905a3c4",
+    "status": "SCHEDULED",
+    "slug": "gyökeres-membuka-jalan-untuk-arsenal-c94048fd",
+    "scheduled_at": "2026-11-05T01:00:00+00:00",
+    "title": "Gyökeres Membuka Jalan untuk Arsenal",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "6f293d40d514d4865b37299c683fd9359608b14aaff21711e36ec2c10698fcaa",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 61566,
+      "sha256": "7540ba6fbfd5696f3b7418fc8034bcb1df31112a1cff42edb50e7175da4e5cfe",
+      "clean_original_without_text": true
+    }
+  },
+  "idempotence": {
+    "checked_at": "2026-11-05T00:15:45.648Z",
+    "adapter_result": {
+      "skipped": true,
+      "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
+      "status": "SCHEDULED",
+      "reason": "existing_scheduled_published_archived_or_attempt"
+    },
+    "all_rows_identical": true,
+    "rows": 206,
+    "durable_attempts_identical": true,
+    "attempts": 0,
+    "no_extra_article_or_assets": true
+  }
 }

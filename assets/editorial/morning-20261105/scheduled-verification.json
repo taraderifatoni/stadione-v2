@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-11-05T00:15:44.864Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "c94048fd-c5f5-4394-95e7-709b1c0caebc",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-05:mid-am",
+    "event_key": "slavia-arsenal-gyokeres-assist-goal-20261104",
+    "scheduled_at": "2026-11-05T01:00:00+00:00",
+    "time_wib": "5 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "c72508b5-0f9f-4ffc-a643-22228905a3c4",
+    "status": "SCHEDULED",
+    "slug": "gyökeres-membuka-jalan-untuk-arsenal-c94048fd",
+    "scheduled_at": "2026-11-05T01:00:00+00:00",
+    "title": "Gyökeres Membuka Jalan untuk Arsenal",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "6f293d40d514d4865b37299c683fd9359608b14aaff21711e36ec2c10698fcaa",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 61566,
+      "sha256": "7540ba6fbfd5696f3b7418fc8034bcb1df31112a1cff42edb50e7175da4e5cfe",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 606058,
+      "sha256": "566364481e34ae81ab9621418b54dbb16854a570f3357de5000e035bee65970d",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 144548,
+      "sha256": "8c8ec6874d8893bf68d69df3b57310fb2b3cbde3fb8966e74cd9ac3b78014f73",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 151541,
+      "sha256": "f335b686b1df52bae9e387061ae031ddecfa516f20313a6a3e8edebed6892fb2",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 148770,
+      "sha256": "5211f7ce884c9243405014b06a08a8a9c7a4bada8d31746d0d8a87b2e72f9f46",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 151661,
+      "sha256": "46e9f955a9d53c72a1f8e1c08a79066e20e6cde2e08970a85272f1b0d29e349f",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 79,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 205,
+  "current_rows": 206,
+  "unchanged_existing_other_rows": 204,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 4,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 31,
+    "sha256": "d20245131bff6fbf59a7e5a3af4d41dc7e1669a16f01c698ac17233aa97eacca",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_five_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/5",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Shared systemd publisher at the future 08.00 WIB clock. No MetaDirect. Instagram and website publication not yet claimed; target metrics unavailable.",
+  "pre_schedule_commit": "1f10b18b7eb3d8db66b616d416f4a3031fc4febf",
+  "publisher_operational_check": {
+    "timer": "active waiting",
+    "service": "inactive between minute runs",
+    "basis": "Read-only systemctl status, operational context only; not publication evidence."
+  }
+}
