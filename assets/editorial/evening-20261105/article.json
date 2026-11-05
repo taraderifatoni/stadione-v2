@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Persib Punya Jawaban dari Bangku Cadangan",
+  "dek": "Menalo menyamakan skor, Sekulic menuntaskan. Arsip Marc Klok 2015: Dfotev, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=38424642",
+  "caption": "PERSIB PUNYA JAWABAN DARI BANGKU CADANGAN\n\nLuka Menalo menjadi salah satu jawaban Persib dari bangku cadangan. Ia mencetak gol penyeimbang sebelum Balsa Sekulic memastikan kemenangan 2–1 atas Melbourne Victory di AAMI Park, Rabu (4/11/2026).\n\nMenalo dan Marc Klok masuk pada menit ke-73 ketika Persib tertinggal 0–1. Pada menit ke-85, Menalo menyambar bola lanjutan umpan silang dengan tembakan kaki kanan. Gol itu mengembalikan peluang Persib untuk menang.\n\n“Menurut saya, kekuatannya selalu terletak pada tim.” Igor Tolic menyampaikan penilaian itu seusai laga, dikutip detikSepakbola. Ia juga menyoroti kesiapan pemain di lapangan dan bangku cadangan sebagai alasan timnya bisa melakukan rotasi.\n\nSekulic mencetak gol penentu pada menit ke-90. Kemenangan keempat dari empat laga membawa Persib ke 12 poin sekaligus memastikan tempat di babak gugur ACL Two.\n\nBobotoh, mana yang lebih menentukan dalam kebangkitan ini: gol penyeimbang Menalo atau penyelesaian Sekulic pada akhir laga? Pilih satu dan jelaskan alasannya.\n\nSumber: AFC, laporan resmi Melbourne Victory dan detikSepakbola.\n\nFoto arsip Marc Klok, 14 Februari 2015, “Marc klok.JPG” oleh Dfotev, https://commons.wikimedia.org/wiki/File:Marc_klok.JPG . Lisensi https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah dari foto asli, adaptasi dibagikan CC BY-SA 4.0. Bukan foto laga Melbourne–Persib; jersey asli dipertahankan. Tidak menyiratkan dukungan fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Jawaban dari Pemain Pengganti",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "SUBS",
+        "PHOTO"
+      ],
+      "text": "Luka Menalo menjadi salah satu jawaban Persib dari bangku cadangan. Ia mencetak gol penyeimbang sebelum Balsa Sekulic memastikan kemenangan 2–1 atas Melbourne Victory di AAMI Park, Rabu (4/11/2026)."
+    },
+    {
+      "id": "change",
+      "heading": "Menalo dan Klok Masuk pada Menit ke-73",
+      "kind": "FACT",
+      "claim_ids": [
+        "SUBS",
+        "RESULT"
+      ],
+      "text": "Menalo dan Marc Klok masuk pada menit ke-73 ketika Persib tertinggal 0–1. Pada menit ke-85, Menalo menyambar bola lanjutan umpan silang dengan tembakan kaki kanan. Gol itu mengembalikan peluang Persib untuk menang."
+    },
+    {
+      "id": "reaction",
+      "heading": "Tolic Menyoroti Kekuatan Tim",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "REACTION"
+      ],
+      "quote": {
+        "text": "Menurut saya, kekuatannya selalu terletak pada tim.",
+        "source_id": "DETIK"
+      },
+      "text": "“Menurut saya, kekuatannya selalu terletak pada tim.” Igor Tolic menyampaikan penilaian itu seusai laga, dikutip detikSepakbola. Ia juga menyoroti kesiapan pemain di lapangan dan bangku cadangan sebagai alasan timnya bisa melakukan rotasi."
+    },
+    {
+      "id": "closing",
+      "heading": "Gol Sekulic Mengunci Tiket",
+      "kind": "FACT",
+      "claim_ids": [
+        "QUALIFY"
+      ],
+      "text": "Sekulic mencetak gol penentu pada menit ke-90. Kemenangan keempat dari empat laga membawa Persib ke 12 poin sekaligus memastikan tempat di babak gugur ACL Two."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261102-martinez-murphy-reaction-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-05T12:10:59.828Z",
+    "article_digest": "670ad3585b637b0faba2f45ba637e474c964c12dc95cc2e52bbe233f64069177"
+  }
+}

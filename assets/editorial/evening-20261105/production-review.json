@@ -1,0 +1,632 @@
+{
+  "checked_at": "2026-11-05T12:13:15.327Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "a9762d0b-37dc-4053-b846-7f4afa8b3183",
+    "plan_key": "2026-11-05:mid-pm",
+    "event_key": "persib-melbourne-menalo-bench-comeback-20261104",
+    "pillar": "Sepak Bola Indonesia",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-05T13:00:00Z",
+    "time_wib": "5 November 2026 20.00 WIB",
+    "legacy_created_at": "2026-10-28T17:05:14.733887+00:00"
+  },
+  "calendar": {
+    "new_slot_calendar_unchanged": true,
+    "legacy_queue_preserved": true,
+    "reason": "Existing Thursday20 row created28October, no new Thursdaynight row or seeder. Growth plan preserves existing queue; proposed weekly actual5/12.",
+    "mandatory_illustration": false
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-05",
+      "fetchedAt": "2026-11-05T11:58:23.266Z",
+      "method": "Current release getDailySportsPool via committed cms-audience-pool/cms-load, cache/quota retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1,
+          "titles": [
+            "klasemen melbourne victory vs persib bandung"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 4,
+          "titles": [
+            "KASAR BANGET! SIKUT MASUK KE DADA!! ZAH RAHAN KESAKITAN | PERSEBAYA VS",
+            "Dewa United vs Persija: Dewa Turun ke Posisi 5, Menang Naik ke 2! Klasemen BRI Super",
+            "KAKINYA ISENG BANGET! BERAKHIR PELANGGARAN SERIUS | PERSEBAYA VS",
+            "FINISHING JELEK BANGET!! DIKIT LAGI MALAH BLUNDER!! | SRIWIJAYA VS PERSEBAYA"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "AFC",
+        "url": "https://www.the-afc.com/en/club/afc_champions_league_two.html/news/group-e-melbourne-victory-aus-1-2-persib-bandung-idn",
+        "publisher_group": "AFC",
+        "primary": true,
+        "published_at": "2026-11-04",
+        "retrieved_at": "2026-11-05T12:04:18.097Z",
+        "normalized_text_sha256": "c11a36f6997571749c143685dea1c8db3496edefc64d3fc167e29a3c63ab9840",
+        "text_scope": "Complete available three-paragraph official brief, excluding unrelated article cards"
+      },
+      {
+        "id": "VICTORY",
+        "url": "https://melbournevictory.com.au/news/victory-pipped-by-persib-in-acl-two/",
+        "publisher_group": "MELBOURNEVICTORY",
+        "primary": true,
+        "published_at": "2026-11-04",
+        "retrieved_at": "2026-11-05T12:04:18.097Z",
+        "normalized_text_sha256": "aefd4a34260d64e5a26a88dff8f4debc42aea4baf19b7c2ef3ae814603608216",
+        "text_scope": "Complete public report"
+      },
+      {
+        "id": "DETIK",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8738837/persib-comeback-di-melbourne-igor-tolic-puas-kedalaman-skuad",
+        "publisher_group": "DETIK",
+        "primary": false,
+        "published_at": "2026-11-04T19:00:00Z",
+        "retrieved_at": "2026-11-05T12:04:18.097Z",
+        "normalized_text_sha256": "fc860cbbabb3295d525c2a27264bd0dc7e74b81647c64560373c642f11fdd0e0",
+        "text_scope": "Complete public report"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Marc_klok.JPG",
+        "publisher_group": "DFOTEV",
+        "primary": true,
+        "published_at": "2015-02-14",
+        "retrieved_at": "2026-11-05T12:04:18.097Z",
+        "normalized_text_sha256": "66098c8417c52a1e0dce1627b3a6decc823da3d863aa77ad84b573a370e7a2fc",
+        "text_scope": "Labelled extracted facts/paraphrased browser notes, not full verbatim transcript"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-05T12:04:18.097Z",
+        "normalized_text_sha256": "2a0526f814e8c5e3ee764fbb08b57c4d30f71ca23f4381d00617236e8fdce569",
+        "text_scope": "Labelled extracted facts/paraphrased browser notes, not full verbatim transcript"
+      },
+      {
+        "id": "ILEAGUE",
+        "url": "https://www.ligaindonesiabaru.com/news/detail/harumkan-nama-indonesia-di-asia-persib-kunci-tiket-16-besar-acl-2",
+        "publisher_group": "ILEAGUE",
+        "primary": true,
+        "published_at": "2026-11-05",
+        "retrieved_at": "2026-11-05T12:05:29.613Z",
+        "normalized_text_sha256": "b80e79d5e59250bc1dafd15d1e9810726587f417cbaa63f5ffb6bc8d4ee572bd",
+        "text_scope": "Complete public report"
+      }
+    ],
+    "full_read": [
+      "Melbourne Victory official full report through match details/lineups, browser plus public HTTP GET200.",
+      "Independent Muhammad Robbani detikSepakbola reaction report through reporter/editor credit, browser and public GET200.",
+      "AFC complete available three-paragraph brief in browser; not claimed as a long match narrative.",
+      "Official ILeague complete5Nov article via ordinary public HTTP GET200; browser generic unavailable. Published record of Tolic statement, not ACL organizer or our interview.",
+      "Dfotev Commons full photo description/explicit own-work CC BY-SA4 grant read in browser; photo page public GET200 and wgArticleId38424642 verified. CC BY-SA4 deed read in browser."
+    ],
+    "independent_publisher_groups": [
+      "AFC",
+      "MELBOURNEVICTORY",
+      "DETIK",
+      "ILEAGUE"
+    ],
+    "source_limits": [
+      "AFC summary credits Hamill for opening goal, club report/detik own goal Cesar; opening scorer omitted rather than asserting a disputed attribution.",
+      "Club lineups duplicate Klok in unused substitutes, differ from score sites on Peralta/Ragnar minutes; those fields not used. Menalo/Klok73 and goals85/90 retained.",
+      "Tolic Indonesian wording differs ILeague/detik; quoted wording attributed specifically to detik. No new interview/audio or exact English original claimed.",
+      "Photo Chin Yu Chu original CDN and Commons metadata API403; not retried via alternate route, not used. Dirk Klok photo page403 not retried, not used. Dfotev is a different independently licensed photo with successful public download.",
+      "Commons photo/license packet text contains labelled extracted/paraphrased facts, not full verbatim browser text."
+    ],
+    "verification": [
+      "4Nov2026 Persib2-1Melbourne atAAMI/RectangularStadium, final not live.",
+      "Menalo/Klok enter73, substituteMenalo85 right-footed equaliser after cross second phase, Sekulic90 winner. Klok not credited with unverified goal/assist or tactical mechanism.",
+      "Four wins/four group games,12points, knockout place confirmed byAFC4Nov. No assertion alreadygroupwinner or unverified next fixture.",
+      "Exact short Tolic quote appears in detik source; substance team/bench/rotation corroborated official ILeague published statement."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-05:mid-pm",
+    "checked_at": "2026-11-05T12:04:18.097Z",
+    "queries": [
+      "Persib Melbourne Victory",
+      "Persib Menalo Sekulic Melbourne comeback"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=gNSfPi4w6VM",
+        "creator": "RCTI Sports",
+        "checked_at": "2026-11-05T12:04:18.097Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "RCTI Sports published 2026-11-04T09:45:00Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=bQlJT0vpM3c",
+        "creator": "The AFC Hub",
+        "checked_at": "2026-11-05T12:04:18.097Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "The AFC Hub published 2026-11-04T22:15:11Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=EkVEvG4QYa0",
+        "creator": "Bung Harpa",
+        "checked_at": "2026-11-05T12:04:18.097Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Bung Harpa published 2026-11-04T10:15:22Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-05T12:04:18.097Z",
+      "digest": "395f4c558438035eec97669c36f42527401b544afa71cb70ea71af2215790a84"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "actual_urls": 3,
+    "creators": [
+      "RCTI Sports",
+      "The AFC Hub",
+      "Bung Harpa"
+    ],
+    "queries": 2,
+    "reason": "Standard YouTube licences, no verified Stadione montage video/audio grant. Official channel is not permission. Source page browser fetch throttled; no alternate-route retries.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Thursday20 legacy slot, not Monday/Wednesday mandatory illustration.",
+    "licensed_voice_provider_configured": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "default_music_used": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "Marc Klok",
+    "creator": "Dfotev",
+    "title": "Marc klok.JPG",
+    "source": "https://commons.wikimedia.org/?curid=38424642",
+    "photo_event": "Archive14February2015, not Melbourne-Persib4November2026",
+    "licence": "CC BY-SA4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "explicit_original_author_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "source": "https://commons.wikimedia.org/wiki/File:Marc_klok.JPG",
+      "width": 600,
+      "height": 672,
+      "bytes": 120823,
+      "sha1": "37542a4558fb3d692149825a5297554bdcdc523d",
+      "sha256": "90327fe83379d37c5a841a5d4942a2ca5842a730e8b0abeaac9f5e4cd7de3d74",
+      "creator": "Dfotev",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "archive_date": "2015-02-14",
+      "grant": "Explicit own-work author grant on Commons, read in browser turn750864view1.",
+      "curid": "38424642",
+      "native_viewed": true
+    },
+    "changes": "Authentic face/hair/beard/downward gaze/pose/blue-black original jersey and glove retained; newspaper background/typography generated. No invented Persib kit, aging or current match photo claim. Adaptations CC BY-SA4 with title/creator/source/licence/archive/changes on cover/caption/dek/docs.",
+    "cover": {
+      "variant_id": "KLASIK",
+      "rotation_helper": true,
+      "previous_variants": [
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN"
+      ],
+      "page_count": 5,
+      "bytes": 578680,
+      "sha256": "0c3cc3f57c0a6674ad5da55d21ce5286a3ea5c3b09df747d0074a13e718879d0",
+      "credit_URL_refined_via_image_generation": true,
+      "aspect_preserved_with_contain": true,
+      "source_label": "THE-AFC.COM",
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 60,
+        "y": 0,
+        "width": 480,
+        "height": 394
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 42319,
+      "sha256": "a73241fe5831994832bdd978f8725ed6d08186d2f943e8f9beae565515fc2835",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Persib Punya Jawaban dari Bangku Cadangan",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 117,
+    "digest": "670ad3585b637b0faba2f45ba637e474c964c12dc95cc2e52bbe233f64069177",
+    "benchmarks": [
+      "goal-20261102-martinez-murphy-reaction-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "THE-AFC.COM",
+      "cover_input_sha256": "0c3cc3f57c0a6674ad5da55d21ce5286a3ea5c3b09df747d0074a13e718879d0",
+      "output_sha256": "4963b4f238323ca73c9a6a7685769203931870a21145ea7d16ef8402c997d2db",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "922629740df91b587c2e56e40957151b90e16d3fcb65062a2794ff7a91a89866",
+      "output_sha256": "fed9488a41a4d7e35ece27f56f41821503cac3e541b0211b029cae8c5cbc0bc0",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 244,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 711,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 889,
+          "height": 244,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b434fefff7c5f26a59eaa95b2b5ed29f9d2d5f9f7912157370ba04e49c227baa",
+      "output_sha256": "25a0ff9ef95039cdab7acb4c02f9ce95eba55dd15b9768100ad9c2a1dae5c298",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 799,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 856,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "1bdb94f2e0e3217da5b72d22757a389ffeeaa430c4c628a4339760b92df92863",
+      "output_sha256": "ddf54dca78610e3738abe143077b8d0fa752e9efdf9497c90ca75a39b0af32ef",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 856,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 906,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "87417141834b30073f451abc1e4fabeee5925c8f613966e02283495a93ff00fd",
+      "output_sha256": "484a0f4286be8f36dc9e5203c890defa748f78b9857ea079391e098cbd2cd8bf",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 916,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 900,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_at_original1080x1350": true,
+    "final_cover_opened_after_credit_URL_fix": true,
+    "body_pages_identical_to_previously_opened_bytes": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_original_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of5_matches_final": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Satu Keputusan, Efek Besar",
+    "use": "Framework for explaining a substitution, not a new Thursday assignment. Existing legacy update pillar/time retained.",
+    "core_fact": "Substitute Menalo equalises before Sekulic winner; Tolic credits the whole squad.",
+    "angle": "Show the concrete bench contribution and coach perspective behind the comeback.",
+    "hook": "Persib Punya Jawaban dari Bangku Cadangan",
+    "payoff": "Menalo and Klok enter73, Menalo85, Sekulic90, confirmed knockout ticket.",
+    "audience_action": "Compare the equaliser and winner and explain which mattered most.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "REEL researched via2freshcommittedYouTubequeries/3actualvideoURLs/3creators; standardlicence withoutverifiedmontagevideo/audio grant, browserfetchthrottled. UseclearedarchivephotoCAROUSEL retainingexistingIndonesiapillar/20WIB; notmandatoryillustrationslot. Noauthorizedhostrecordingorconfiguredlicensednarrationprovider.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-06T13:00:00Z",
+    "review_due_7d": "2026-11-12T13:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-05T12:13:15.327Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18015723341990275",
+        "published_at": "2026-11-05T01:02:24+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18137367565667125",
+        "published_at": "2026-11-02T01:01:57+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-05T12:13:15.327Z",
+    "baseline_rows": 206,
+    "current_rows": 206,
+    "unchanged_other_rows": 205,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "a9762d0b-37dc-4053-b846-7f4afa8b3183",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-05T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 4,
+    "weekly_routine_proposed": 5,
+    "weekly_limit": 12,
+    "instagram_media": 80,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 32,
+    "latest_read_at": "2026-11-05T00:35:16.711Z",
+    "sha256": "20dc4c3f82db0467375ed6f2fad25d8b3614cb1b236aa835b7695cd548b14233",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "95c2eea2f28aec0ca79561b43f8d774cc986cf09",
+  "remaining": "Commit/push reviewed proof before shared schedule, then verify ARTICLE pair/clock/bytes/gate/scope/idempotency. No publication claim before20WIB."
+}

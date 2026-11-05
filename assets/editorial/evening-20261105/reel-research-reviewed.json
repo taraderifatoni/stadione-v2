@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-05:mid-pm",
+  "checked_at": "2026-11-05T12:04:18.097Z",
+  "queries": [
+    "Persib Melbourne Victory",
+    "Persib Menalo Sekulic Melbourne comeback"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=gNSfPi4w6VM",
+      "creator": "RCTI Sports",
+      "checked_at": "2026-11-05T12:04:18.097Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "RCTI Sports published 2026-11-04T09:45:00Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=bQlJT0vpM3c",
+      "creator": "The AFC Hub",
+      "checked_at": "2026-11-05T12:04:18.097Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "The AFC Hub published 2026-11-04T22:15:11Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=EkVEvG4QYa0",
+      "creator": "Bung Harpa",
+      "checked_at": "2026-11-05T12:04:18.097Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual YouTube metadata and full description reviewed; standard licence without verified Stadione montage video/audio grant. Source browser fetch throttled; no download/watch/audition/transcript claim. Official channel does not itself grant reuse.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Bung Harpa published 2026-11-04T10:15:22Z; standard youtube licence, no verified reuse grant. Browser Online fetch throttled; no alternate-route bypass."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-05T12:04:18.097Z",
+    "digest": "395f4c558438035eec97669c36f42527401b544afa71cb70ea71af2215790a84"
+  }
+}
