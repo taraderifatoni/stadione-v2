@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-11-06T00:07:54.904Z",
+  "state": "BLOCKED",
+  "stage": "SOURCE_POOL_DISCOVERY",
+  "target": {
+    "id": "bd6cd57a-2d70-429c-a961-644b5b182e43",
+    "plan_key": "2026-11-06:fri-am",
+    "pillar": "Olahraga Indonesia",
+    "format": "CAROUSEL",
+    "status": "DRAFT",
+    "scheduled_at": "2026-11-06T01:00:00+00:00",
+    "time_wib": "6 November2026 08.00WIB",
+    "assets": 0,
+    "parent_id": null,
+    "attempts": 0,
+    "archived_at": null,
+    "tombstone": false
+  },
+  "source_error": {
+    "checked_at": "2026-11-06T00:06:43.468Z",
+    "engine": "google_trends_trending_now",
+    "http": 200,
+    "provider_error": "Failed to retrieve the data.",
+    "request_key_values_printed": false,
+    "request_or_response_modified": false,
+    "committed_helper": "scripts/cms-audience-pool.cjs",
+    "shared_module": "/opt/stadione-current/scripts/cms-load.cjs -> src/lib/cms/serpapi.ts:getDailySportsPool",
+    "latest_daily_pool_returned": false,
+    "google_news_current_day_cache_present": true,
+    "prior_day_trends_not_substituted": true,
+    "previous_worker_failure_at": "2026-11-05T23:16:27.838931+00:00",
+    "operator_invocations": 2,
+    "diagnostic_retry": "One bounded retry through identical committed helper and reservation/cache policy; transient private fetch observer reads sanitized error only, does not change response/request.",
+    "initial_filter_label_corrected": "First read-only filter argument Sepak Bola Indonesia; diagnostic uses actual CMS pillar Olahraga Indonesia. Both fail in getDailySportsPool before audience filtering. No topic/packet/CMS mutation.",
+    "usage": {
+      "used": 15,
+      "limit": 100,
+      "automatedLimit": 93,
+      "configured": true
+    }
+  },
+  "scope": {
+    "baseline_rows": 210,
+    "current_rows": 210,
+    "all_CMS_rows_identical": true,
+    "durable_attempts_identical": true,
+    "weekly_routine_scheduled_or_published": 5,
+    "weekly_limit": 12,
+    "seeder_called": false,
+    "no_new_article": true,
+    "no_render": true,
+    "no_approval": true,
+    "no_schedule_call": true,
+    "no_MetaDirect": true,
+    "no_changes_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "other slots",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 81,
+    "http": 200,
+    "target_event_not_selected": true,
+    "target_metrics": null,
+    "duplicate_research_not_claimed": true
+  },
+  "references": {
+    "entries": 32,
+    "latest_read_at": "2026-11-05T00:35:16.711Z",
+    "sha256": "20dc4c3f82db0467375ed6f2fad25d8b3614cb1b236aa835b7695cd548b14233",
+    "runtime_committed_identical": true,
+    "reference_issues": [],
+    "modified": false
+  },
+  "production_not_claimed": [
+    "two complete event publishers",
+    "selected topic/media rights",
+    "article",
+    "pagination",
+    "cover",
+    "render bytes/visual/audio QA",
+    "ARTICLE pair",
+    "valid schedule",
+    "Meta publication",
+    "target metrics"
+  ],
+  "rollback_commit": "52aa4fb9f6d610cbbc2404c2621944cd45bc8fd0",
+  "remaining": "Restore successful current daily pool retrieval before selecting/producing this slot through shared adapter. Preserve original08WIB clock; do not resurrect protected/other slots. No automatic retry loop, provider/credential/code change or claim timer equals publication."
+}
