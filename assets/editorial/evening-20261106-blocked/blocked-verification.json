@@ -1,0 +1,150 @@
+{
+  "checked_at": "2026-11-06T12:04:49.814Z",
+  "state": "BLOCKED",
+  "stage": "SOURCE_POOL_DISCOVERY",
+  "target": {
+    "id": "e49e4253-7019-4167-a3d5-b2328c249362",
+    "plan_key": "2026-11-06:fri-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "format": "REEL",
+    "status": "DRAFT",
+    "scheduled_at": "2026-11-06T13:00:00+00:00",
+    "time_wib": "6 November 2026 20.00 WIB",
+    "assets": 0,
+    "parent_id": null,
+    "attempts": 0,
+    "archived_at": null,
+    "tombstone": false
+  },
+  "source_error": {
+    "checked_at": "2026-11-06T12:03:44.620Z",
+    "engine": "google_trends_trending_now",
+    "http": 200,
+    "provider_error": "Failed to retrieve the data.",
+    "request_key_values_printed": false,
+    "request_or_response_modified": false,
+    "committed_helper": "scripts/cms-audience-pool.cjs",
+    "shared_module": "/opt/stadione-current/scripts/cms-load.cjs -> src/lib/cms/serpapi.ts:getDailySportsPool",
+    "pillar": "Sepak Bola Indonesia",
+    "latest_daily_pool_returned": false,
+    "prior_day_trends_not_substituted": true,
+    "operator_invocations": 2,
+    "diagnostic_retry": "One bounded retry through unchanged committed helper and reservation/cache policy; private fetch observer only reads sanitized error from response.clone(), without changing request or response.",
+    "usage": {
+      "used": 17,
+      "limit": 100,
+      "automatedLimit": 93,
+      "configured": true
+    },
+    "current_day_cache": [
+      {
+        "cache_key": "2026-11-06:google_news:904d15d7bf495ada",
+        "engine": "google_news",
+        "expires_at": "2026-11-07T01:16:29.291+00:00",
+        "updated_at": "2026-11-05T23:16:29.292+00:00"
+      }
+    ]
+  },
+  "scope": {
+    "baseline_rows": 210,
+    "current_rows": 210,
+    "all_CMS_rows_identical": true,
+    "durable_attempts_identical": true,
+    "weekly_routine_scheduled_or_published": 5,
+    "weekly_limit": 12,
+    "mandatory_illustration_slot": false,
+    "seeder_called": false,
+    "no_new_article": true,
+    "no_render": true,
+    "no_approval": true,
+    "no_schedule_call": true,
+    "no_MetaDirect": true,
+    "no_changes_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "other slots",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 81,
+    "http": 200,
+    "target_event_not_selected": true,
+    "target_metrics": null,
+    "duplicate_research_not_claimed": true
+  },
+  "references": {
+    "entries": 33,
+    "latest_read_at": "2026-11-06T00:40:06.374Z",
+    "sha256": "0c3a231f38b505c1bdd3e45e9d8f05494be7e75d7497a20d8984662e05c18a4c",
+    "runtime_committed_identical": true,
+    "reference_issues": [],
+    "modified": false
+  },
+  "documents": [
+    {
+      "file": "AGENTS.md",
+      "sha256_before_master_append": "d3654f0401f0dad0ded1807ade341507b9af853ae50ed3a6f87add3df11b3aed",
+      "read_basis": "Current file read this inspection"
+    },
+    {
+      "file": "STADIONE_GROWTH_PLAN.md",
+      "sha256_before_master_append": "41c613d79f33f6e20a6b73f132093d4d1d32b6eedb37ec6285b5f27afbf32345",
+      "read_basis": "Unchanged version previously read in this conversation; git diff confirms no policy changes."
+    },
+    {
+      "file": "STADIONE_PLAN_MASTER.md",
+      "sha256_before_master_append": "6e9ff9dc1c36a4fd5b79379d44786c673f86166e84dfb9bc7976dfcc4e05c626",
+      "read_basis": "Current file read this inspection"
+    },
+    {
+      "file": "STADIONE_WRITING_GUIDE.md",
+      "sha256_before_master_append": "ee6b0e36929ec6bdef9cbceac1c7fe011cf1db26cc68d5ace8cc70a8c7a3f57b",
+      "read_basis": "Unchanged version previously read in this conversation; git diff confirms no policy changes."
+    },
+    {
+      "file": "STADIONE_AUDIENCE_POLICY.md",
+      "sha256_before_master_append": "d54d5209f7bb8e7f6eac61f4cd3ccc8d0884d50546263b976a7258f4ad894549",
+      "read_basis": "Unchanged version previously read in this conversation; git diff confirms no policy changes."
+    },
+    {
+      "file": "STADIONE_REELS_PLAYBOOK.md",
+      "sha256_before_master_append": "9bd63a1884dbe9a5bd1af2f80ec3dfbb150af2065fa9897c872c09b3a2331364",
+      "read_basis": "Unchanged version previously read in this conversation; git diff confirms no policy changes."
+    },
+    {
+      "file": "docs/STADIONE_MOTION_STORY.md",
+      "sha256_before_master_append": "86d1575dc3ec87e0aa2f5bbc7abfdaf967b659dd70358bceedd174fe47633dfc",
+      "read_basis": "Unchanged version previously read in this conversation; git diff confirms no policy changes."
+    }
+  ],
+  "example": {
+    "path": "/opt/stadione-editorial/hypit-kane-v4-20261027",
+    "visual_mode": "illustration",
+    "scenes": 12,
+    "prototype_not_used_for_production": true
+  },
+  "production_not_claimed": [
+    "two complete event publishers",
+    "selected topic/media rights",
+    "article",
+    "pagination",
+    "cover",
+    "render bytes/visual/audio QA",
+    "ARTICLE pair",
+    "valid schedule",
+    "Meta publication",
+    "target metrics"
+  ],
+  "rollback_commit": "64880815a0cc9b01ce8b9f43d2761c1294fd4dc8",
+  "remaining": "Restore successful retrieval of current daily source pool before topic selection and production via shared adapter. Keep original20WIB clock; no retry loop, provider/credential/code changes, protected-slot revival or timer-as-publication claim."
+}
