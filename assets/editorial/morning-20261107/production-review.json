@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-07T00:12:57.015Z",
-  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "checked_at": "2026-11-07T00:14:25.491Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
   "target": {
     "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
     "plan_key": "2026-11-07:match-am",
@@ -657,5 +657,116 @@
     "modified_by_production": false
   },
   "rollback_commit": "1ffd174b0adc1543f549fc4077774b3788f3f812",
-  "remaining": "Commit/push reviewed proof, then shared schedule and verify ARTICLE pair, clock, public bytes, gate, scope and idempotency. Future 08 WIB publisher handoff; no Instagram/website publication claim."
+  "remaining": "No production work remains before original 08 WIB publisher clock. Instagram and website publication and target metrics are not yet claimed; valid scheduled pair handed to existing shared publisher.",
+  "preview_reviewed_at": "2026-11-07T00:12:57.015Z",
+  "deployment": {
+    "pre_schedule_commit": "83c8ce99dea51ec634f2a61847b888dec1ec1cfd",
+    "adapter_result": {
+      "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+      "state": "AUTO_SCHEDULED",
+      "assets": 5,
+      "review_required": false,
+      "publish_at": "2026-11-07T01:00:00.000Z"
+    },
+    "social": {
+      "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+      "status": "SCHEDULED",
+      "format": "CAROUSEL",
+      "plan_key": "2026-11-07:match-am",
+      "event_key": "az-juventus-kolo-muani-assist-goal-20261105",
+      "scheduled_at": "2026-11-07T01:00:00+00:00",
+      "time_wib": "7 November 2026 08.00 WIB",
+      "auto_publish": true,
+      "assets": 5,
+      "publication_issues": []
+    },
+    "article": {
+      "id": "324332b9-033f-406d-a6df-31d260ea0d9d",
+      "status": "SCHEDULED",
+      "slug": "dua-gol-juve-berawal-dari-kolo-muani-d6e3f2e4",
+      "scheduled_at": "2026-11-07T01:00:00+00:00",
+      "title": "Dua Gol Juve Berawal dari Kolo Muani",
+      "canonical_body_identical": true,
+      "canonical_dek_identical": true,
+      "digest": "4d47dd31e5448c2b61a251367b1820f7f83c4323f76e05645cc3c70cbe13c3c7",
+      "issues": [],
+      "hero": {
+        "http": 200,
+        "bytes": 62898,
+        "sha256": "50983d3e9eac377b4bb97b8ffe1519bfb7c24ed88056439d7820d77d81524645",
+        "clean_original_without_text": true
+      }
+    },
+    "public_render_bytes_verified": [
+      {
+        "page": 1,
+        "http": 200,
+        "bytes": 635863,
+        "sha256": "bdacdcd52761538ee09fd28ebc7ecd616994ce25754f7096b7b28bed5287028e",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 2,
+        "http": 200,
+        "bytes": 169726,
+        "sha256": "249a805135ca61c45ab1ff0325e36f9aaa3d360bd536e3a59111d83a36d3500b",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 3,
+        "http": 200,
+        "bytes": 142268,
+        "sha256": "9fac1c837df4cc90a4952e85b1a2aeb05522c6efea4bf9a299cacd12dc265837",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 4,
+        "http": 200,
+        "bytes": 132738,
+        "sha256": "07c25c7b7d5338189107debbf7f8c58b28d034a0fdf1f5100665e59b884fea5a",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 5,
+        "http": 200,
+        "bytes": 129550,
+        "sha256": "2f02fc16fb0950c17a095feebb872510f43ea493199238f4c4888c0986530e5a",
+        "identical_reviewed_preview": true
+      }
+    ],
+    "scope": {
+      "baseline_rows": 213,
+      "current_rows": 214,
+      "unchanged_existing_other_rows": 212,
+      "changed_other_rows": [],
+      "new_article_rows": 1
+    },
+    "idempotence": {
+      "checked_at": "2026-11-07T00:14:26.456Z",
+      "adapter_result": {
+        "skipped": true,
+        "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+        "status": "SCHEDULED",
+        "reason": "existing_scheduled_published_archived_or_attempt"
+      },
+      "all_rows_identical": true,
+      "rows": 214,
+      "durable_attempts_identical": true,
+      "attempts": 0,
+      "no_extra_article_or_assets": true
+    },
+    "publisher_operational_context": {
+      "checked_at": "2026-11-07T00:15:35.644Z",
+      "timer": "stadione-cms-publish.timer",
+      "timer_active": true,
+      "service": "stadione-cms-publish.service",
+      "last_result": "success",
+      "last_exit_status": 0,
+      "last_exit_at": "2026-11-07T00:14:03Z",
+      "active_release": "/opt/stadione-releases/ba88c8d",
+      "operational_context_only": true,
+      "publication_claim": false,
+      "service_changes": false
+    }
+  }
 }
