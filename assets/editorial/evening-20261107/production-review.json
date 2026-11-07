@@ -1,0 +1,621 @@
+{
+  "checked_at": "2026-11-07T12:12:32.649Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "895bea48-aa52-4aa8-891e-37704f861002",
+    "plan_key": "2026-11-07:match-pm",
+    "event_key": "timnas-bali-tc-new-players-november-20261106",
+    "pillar": "Sepak Bola Indonesia",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-07T13:00:00Z",
+    "time_wib": "7 November 2026 20.00 WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-07",
+      "fetchedAt": "2026-11-07T11:56:16.139Z",
+      "method": "Current release getDailySportsPool via committed cms-audience-pool/cms-load; daily cache and quota retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0,
+          "titles": []
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 2,
+          "titles": [
+            "John Herdman Alihkan Agenda FIFA Matchday November, Timnas Indonesia TC di Bali",
+            "Lawan Timnas Indonesia November 2026: BTN Jajaki Hong Kong"
+          ]
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 4,
+          "titles": [
+            "KASAR BANGET! SIKUT MASUK KE DADA!! ZAH RAHAN KESAKITAN | PERSEBAYA VS",
+            "Dewa United vs Persija: Dewa Turun ke Posisi 5, Menang Naik ke 2! Klasemen BRI Super",
+            "KAKINYA ISENG BANGET! BERAKHIR PELANGGARAN SERIUS | PERSEBAYA VS",
+            "FINISHING JELEK BANGET!! DIKIT LAGI MALAH BLUNDER!! | SRIWIJAYA VS PERSEBAYA"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "TVRI",
+        "url": "https://olahraga.tvrinews.com/berita/t520js3-john-herdman-alihkan-agenda-fifa-matchday-november-timnas-indonesia-tc-di-bali",
+        "publisher_group": "TVRI",
+        "primary": true,
+        "published_at": "2026-11-06T14:16:00Z",
+        "retrieved_at": "2026-11-07T12:03:23.680Z",
+        "normalized_text_sha256": "e0899f82c2aa6a0ec52ad1eced3c54215c614289aa5ca5cf00c78343a944ee13"
+      },
+      {
+        "id": "DETIK",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8741976/timnas-indonesia-absen-di-fifa-matchday-november-tapi-gelar-tc-di-bali",
+        "publisher_group": "DETIK",
+        "primary": false,
+        "published_at": "2026-11-06T15:02:00Z",
+        "retrieved_at": "2026-11-07T12:03:23.680Z",
+        "normalized_text_sha256": "7da107e757658653c3c00ed4ac3b17797db12a2630bd1da0a04c716e57b05e79"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Johnherdman.jpg",
+        "publisher_group": "LORD_BOB",
+        "primary": true,
+        "published_at": "2012-01-27",
+        "retrieved_at": "2026-11-07T12:03:23.680Z",
+        "normalized_text_sha256": "506c4462a8227f7948dce30547c29af3eaae7d07b9847366b6ffabfb2045b929"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-07T12:03:23.680Z",
+        "normalized_text_sha256": "9675d6c13be0aad20f671b1a431dd6618a08acea0986b2da72dc26cbd8a7961c"
+      }
+    ],
+    "full_read": [
+      {
+        "publisher": "TVRI",
+        "author": "Christhoper Natanael Raja",
+        "browser": "turn683433view1",
+        "body_lines": [
+          61,
+          74
+        ],
+        "read_method": "Entire body read through browser and ordinary public HTTP GET200 via TD",
+        "normalized_chars": 2183,
+        "primary_scope": "Directly received Herdman written statement, explicitly stated by TVRINews. Primary for that published statement record; not an interview we conducted and not a claim PSSI website was read."
+      },
+      {
+        "publisher": "DETIK",
+        "author": "Mercy Raya",
+        "browser": "turn790639view2",
+        "body_lines": [
+          117,
+          133
+        ],
+        "read_method": "Entire narrative read in browser and ordinary public GET200 via TD",
+        "normalized_chars": 2073,
+        "primary": false
+      }
+    ],
+    "independent_publisher_groups": [
+      "TVRI",
+      "DETIK"
+    ],
+    "verification": [
+      "Seven-day Bali TC and combination of current/new players agree in TVRI/directly received written record and independent detik report.",
+      "Reasons for abandoning Middle East programme are attributed to Herdman, not presented as independently established geopolitical diagnosis.",
+      "Quoted sentence matches TVRI text exactly; written record received Friday6November2026. No interview/audio audition claim.",
+      "Evaluation of potential, tactical understanding and cooperation are coach programme aims; no training results, exact TC start date or selected player names asserted."
+    ],
+    "source_limits": [
+      "PSSI homepage HTTP403 not bypassed or fetched via alternative route. TVRI is primary only within its direct statement record scope.",
+      "Reuters page inaccessible in browser, ordinary public GET401; not read or used. CNN browser internal error, not claimed full reading.",
+      "No Hong Kong rejection, exact revised Asian Cup date, qualification starting date, rankings or roster asserted.",
+      "Pool is discovery, not a live-match feed. Current editorial update is labelled as planned TC, not live watchalong or fabricated supporter coverage.",
+      "Old Herdman October talent-plan CMS content protected; this is a distinct November programme change."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-07:match-pm",
+    "checked_at": "2026-11-07T12:03:23.680Z",
+    "queries": [
+      "Timnas Indonesia November 2026",
+      "John Herdman Timnas TC Bali November"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=JbJSIZJOBds",
+        "creator": "SportZone ID",
+        "checked_at": "2026-11-07T12:03:23.680Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "SportZone ID published 2026-11-07T11:06:52Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=ZLJw6K4l70A",
+        "creator": "update_bola7",
+        "checked_at": "2026-11-07T12:03:23.680Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "update_bola7 published 2026-11-07T05:37:24Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=VDRV2Q0n3u0",
+        "creator": "KONTEKS",
+        "checked_at": "2026-11-07T12:03:23.680Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "KONTEKS published 2026-11-07T09:45:03Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-07T12:03:23.680Z",
+      "digest": "f0a1c2810f826e0a10ad3591c97502440974746b64f19d4bf96dda2eac1674d9"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": [
+      "SportZone ID",
+      "update_bola7",
+      "KONTEKS"
+    ],
+    "reason": "Standard YouTube licences without verified montage video/audio grant. Actual browser source pages Online fetch throttled. No alternate routes, download, viewing, audition or transcript claimed. Allowed carousel fallback retains Indonesia pillar and20WIB.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Saturday20WIB, not Monday/Wednesday20WIB.",
+    "licensed_voice_provider_configured": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "default_music_used": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "John Herdman",
+    "creator": "Lord Bob",
+    "source": "https://commons.wikimedia.org/wiki/File:Johnherdman.jpg",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "grant_read": true,
+    "deed_read": true,
+    "browser_grant": "turn748642view0",
+    "browser_deed": "turn748642view1",
+    "original": {
+      "source": "https://commons.wikimedia.org/wiki/File:Johnherdman.jpg",
+      "curid": "18199173",
+      "width": 800,
+      "height": 1147,
+      "bytes": 793606,
+      "sha256": "e341b6c34375c588d3e5985e7445b4c435f35119d191fe9bfe35bf8ae89998e6",
+      "sha1": "0680a6761071196cae3d7a14531d855d8f0c1e40",
+      "creator": "Lord Bob",
+      "archive_date": "2012-01-27",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "native_viewed": true
+    },
+    "archive_context": "Canadian women team press conference after Canada-Mexico, 27January2012. Not planned Bali November2026 TC.",
+    "changes": "Authentic original portrait reference converted to monochrome within generated newspaper collage, recognizable face/gaze/hair/expression and original jacket/lanyard retained. No ageing or replacement Indonesia kit. Invented microphone removed in image-generation review; final source label corrected to locked hostname. Adaptations including our contributions distributed CC BY-SA3.0 without added restrictions or endorsement.",
+    "cover": {
+      "variant_id": "PORTRAIT_MERAH",
+      "rotation_helper": true,
+      "previous_variants": [
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA"
+      ],
+      "page_count": 4,
+      "bytes": 429557,
+      "sha256": "9a8726cff5136ec899da877baee3d74a9b6e14062e2e3e19d518fd94f7187dc7",
+      "source_label": "OLAHRAGA.TVRINEWS.COM",
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 2484667,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "preview_initial_failure": "Source metadata label shortened toTVRINEWS.COM differed from locked primary hostname; corrected artwork and metadata, then shared audit passed. No guard bypass."
+    },
+    "hero": {
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 40396,
+      "sha256": "a6080ae850b04d930717c46de39d6c09cbfeb5c4a8bf0fa6030cfd6c09272301",
+      "native_final_viewed": true,
+      "clean_original_without_text": true,
+      "full_original_contained_on_cream": true,
+      "no_face_clipping": true,
+      "earlier_tight_crop_replaced_before_schedule": true
+    }
+  },
+  "article": {
+    "title": "Timnas Membuka Pintu untuk Wajah Baru",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 98,
+    "digest": "f9812fd10ccef42c33048b0c2e3a217e674b06d42b81d0a3e82e4945fcc6b0ae",
+    "benchmarks": [
+      "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "quote_exact_source": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "OLAHRAGA.TVRINEWS.COM",
+      "cover_input_sha256": "9a8726cff5136ec899da877baee3d74a9b6e14062e2e3e19d518fd94f7187dc7",
+      "output_sha256": "7f180361f6202650a79cfaa60db9e22090dab377eb8ac14a3fd5faa0b139f58c",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "3098f53a60cc4d58e8547e315e9c219b00d344c8d34dd7328ad39b2644b0239c",
+      "output_sha256": "7fb25bb10f62c89dfa43183ad6eaa10d8649deb1facaed7b2d15833d8fbdd2b1",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 786,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 906,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b68d84c8ce98e96b65e6f18dc432235c64c3cf29cd4498be9d8a9c8f2491578e",
+      "output_sha256": "74f332d911d639ec38181ee53ed89c6c614eae3578cab89fdd20012bc83a4518",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 733,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 925,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "4a5d3f99025d605f82aeaffaab65537fc1204f18b210bbf494f106fc41ca4e7c",
+      "output_sha256": "4d160951483f7235d11d91f1c2dcf892114ac9827b11ce8e5b5beef76bf41f25",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 399,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 735,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 931,
+          "height": 399,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_JPEG_opened_at_original1080x1350": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_final_opened_at_original512x420": true,
+    "hero_correction_preserved_all_four_reviewed_JPEG_bytes": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of4_matches_final": true,
+    "cover_text_inside_safe_edges": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Tribun Pilih Siapa?",
+    "framework_only": true,
+    "core_fact": "Herdman merencanakan TC tujuh hari di Bali dengan kombinasi pemain skuad utama dan pemain baru.",
+    "angle": "Terangkan fungsi evaluasi di balik perubahan agenda, lalu minta alasan tentang kebutuhan posisi.",
+    "hook": "Timnas Membuka Pintu untuk Wajah Baru",
+    "payoff": "Pembaca memahami tiga tujuan: evaluasi potensi, pemahaman taktik dan kerja sama.",
+    "audience_action": "Sebut posisi yang perlu mendapat tambahan pilihan dan jelaskan alasan.",
+    "fan_reaction_invented": false,
+    "live_feed_claimed": false,
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "REEL researched via two fresh targeted committed queries and three actual URLs/creators. Standard licences without verified video/audio reuse grant; browser pages throttled. Same-pillar permitted carousel fallback at original20WIB; Saturday not mandatory illustration. No authorized host recording selected or licensed voice provider configured.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-08T13:00:00Z",
+    "review_due_7d": "2026-11-14T13:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-07T12:12:32.649Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17907882534584969",
+        "published_at": "2026-11-05T13:02:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18015723341990275",
+        "published_at": "2026-11-05T01:02:24+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-07T12:12:32.649Z",
+    "baseline_rows": 214,
+    "current_rows": 214,
+    "unchanged_other_rows": 213,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "895bea48-aa52-4aa8-891e-37704f861002",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-07T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 6,
+    "weekly_routine_proposed": 7,
+    "weekly_limit": 12,
+    "instagram_media": 81,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 34,
+    "latest_read_at": "2026-11-07T00:26:43.628Z",
+    "sha256": "bc751ccf061a11106764ea6d7ac55d59a01ea390d1b9a7778d6aa21bb20c7789",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "publisher_prior_protected_error": {
+    "protected_social_id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+    "status": "SCHEDULED",
+    "publish_error": "Meta API: An unexpected error has occurred. Please retry your request later. (2)",
+    "observed_in_baseline": true,
+    "unchanged_by_this_production": true,
+    "not_current_target": true,
+    "no_reschedule_or_retry_performed": true
+  },
+  "rollback_commit": "e96f0fc4dbc39de8f476f3174d4aea746f7981b3",
+  "remaining": "Commit/push reviewed proof before shared schedule; then verify ARTICLE pair, original clock, public bytes, gate, scope and idempotency. No claim Instagram/website already published."
+}

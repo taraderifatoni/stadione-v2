@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Timnas Membuka Pintu untuk Wajah Baru",
+  "dek": "TC tujuh hari di Bali menjadi ruang evaluasi. Arsip 2012: Lord Bob, CC BY-SA 3.0; diolah. commons.wikimedia.org/?curid=18199173",
+  "caption": "TIMNAS MEMBUKA PINTU UNTUK WAJAH BARU\n\nTimnas Indonesia akan menggabungkan pemain skuad utama dan sejumlah pemain baru dalam pemusatan latihan tujuh hari di Bali pada FIFA Matchday November. John Herdman menyiapkan program itu untuk memperkuat kedalaman skuad.\n\nKeputusan itu mengikuti tidak dilanjutkannya agenda pertandingan di Timur Tengah. Dalam keterangan tertulis yang diterima TVRINews pada Jumat (6/11/2026), Herdman menyebut penundaan Piala Asia serta eskalasi situasi regional sebagai pertimbangannya.\n\n“Kami akan melibatkan kombinasi pemain dari skuad utama dan sejumlah pemain baru.” Herdman menjelaskan, program tersebut memberi kesempatan mengevaluasi potensi pemain, memperdalam pemahaman taktik, dan memperkuat kerja sama antarpemain. Persiapan menuju Kualifikasi Piala Dunia juga menjadi sasaran.\n\nGaruda fans, posisi mana yang paling perlu mendapat tambahan pilihan dalam TC ini? Sebut posisi dan jelaskan alasannya.\n\nSumber: keterangan tertulis Herdman yang diterima TVRINews dan laporan detikSepakbola.\n\nFoto arsip “Johnherdman.jpg” oleh Lord Bob: konferensi pers tim putri Kanada, 27 Januari 2012. Sumber https://commons.wikimedia.org/?curid=18199173 . Lisensi https://creativecommons.org/licenses/by-sa/3.0/ . Cover kolase dan hero crop diolah dari foto asli, adaptasi dibagikan CC BY-SA 3.0. Bukan dokumentasi TC Bali November 2026. Tidak menyiratkan dukungan fotografer atau Herdman.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Pemain Baru Mendapat Kesempatan",
+      "kind": "FACT",
+      "claim_ids": [
+        "PROGRAM",
+        "EVAL",
+        "PHOTO"
+      ],
+      "text": "Timnas Indonesia akan menggabungkan pemain skuad utama dan sejumlah pemain baru dalam pemusatan latihan tujuh hari di Bali pada FIFA Matchday November. John Herdman menyiapkan program itu untuk memperkuat kedalaman skuad."
+    },
+    {
+      "id": "change",
+      "heading": "Agenda Pertandingan Berganti Latihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "CHANGE",
+        "PROGRAM"
+      ],
+      "text": "Keputusan itu mengikuti tidak dilanjutkannya agenda pertandingan di Timur Tengah. Dalam keterangan tertulis yang diterima TVRINews pada Jumat (6/11/2026), Herdman menyebut penundaan Piala Asia serta eskalasi situasi regional sebagai pertimbangannya."
+    },
+    {
+      "id": "evaluation",
+      "heading": "Tiga Sasaran Evaluasi Herdman",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "EVAL"
+      ],
+      "quote": {
+        "text": "Kami akan melibatkan kombinasi pemain dari skuad utama dan sejumlah pemain baru.",
+        "source_id": "TVRI"
+      },
+      "text": "“Kami akan melibatkan kombinasi pemain dari skuad utama dan sejumlah pemain baru.” Herdman menjelaskan, program tersebut memberi kesempatan mengevaluasi potensi pemain, memperdalam pemahaman taktik, dan memperkuat kerja sama antarpemain. Persiapan menuju Kualifikasi Piala Dunia juga menjadi sasaran."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-07T12:03:23.680Z",
+    "article_digest": "f9812fd10ccef42c33048b0c2e3a217e674b06d42b81d0a3e82e4945fcc6b0ae"
+  }
+}

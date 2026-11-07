@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-07:match-pm",
+  "checked_at": "2026-11-07T12:03:23.680Z",
+  "queries": [
+    "Timnas Indonesia November 2026",
+    "John Herdman Timnas TC Bali November"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=JbJSIZJOBds",
+      "creator": "SportZone ID",
+      "checked_at": "2026-11-07T12:03:23.680Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "SportZone ID published 2026-11-07T11:06:52Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=ZLJw6K4l70A",
+      "creator": "update_bola7",
+      "checked_at": "2026-11-07T12:03:23.680Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "update_bola7 published 2026-11-07T05:37:24Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=VDRV2Q0n3u0",
+      "creator": "KONTEKS",
+      "checked_at": "2026-11-07T12:03:23.680Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned metadata and description reviewed; standard YouTube licence without verified montage video/audio grant. Actual source browser page Online fetch throttled. No download, viewing, audition or transcript claim. No alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "KONTEKS published 2026-11-07T09:45:03Z; standard youtube licence, no verified reuse grant. Actual page browser throttled."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-07T12:03:23.680Z",
+    "digest": "f0a1c2810f826e0a10ad3591c97502440974746b64f19d4bf96dda2eac1674d9"
+  }
+}
