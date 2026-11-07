@@ -1,0 +1,7 @@
+# Photograph and editorial adaptation
+
+Randal Kolo Muani, Lens–Nantes warm-up, Stade Bollaert-Delelis, 25 November 2020. Photograph by Supporterhéninois; crop FMSky; prior source colour adjustment Marcus Cyron. Source https://commons.wikimedia.org/?curid=143540993 . Original author own-work grant: https://commons.wikimedia.org/wiki/File:RC_Lens_-_FC_Nantes_(25-11-2020)_13.jpg . CC0 1.0 Universal: https://creativecommons.org/publicdomain/zero/1.0/ . Original grant, crop page and deed read in full. Commercial use and adaptation allowed. Source image 1187×1611, 1249566 bytes, SHA256 bcc71d486ab9ce7470db62243d8c0b92d186efb1ddd2d10ac9e526ff0bc396a2.
+
+Cover uses this authentic photo as reference, preserving the naturally soft-focus profile, hair, pose, gloves and Nantes training jersey. No reconstruction of face or substitution of Juventus kit. Editorial newspaper collage and typography generated. Artwork contained at 948×1250 and centred on 1080×1350 cream canvas to preserve aspect and safe text edges. Hero: clean original crop 60,0,1067,875 resized to 512×420. Archive, not AZ–Juventus match action. Credit/archive/source/changes supplied; no endorsement implied. CC0 concerns the source photograph, without an unsolicited dedication of our text/layout.
+
+Raw source media, full publisher text, API responses and production packet remain private. Repository contains reviewed derivatives, original article and sanitized evidence.

@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Gol Juve Berawal dari Kolo Muani",
+  "dek": "Umpan untuk Koopmeiners, lalu golnya sendiri. Arsip Nantes 2020: Supporterhéninois, CC0; diolah. commons.wikimedia.org/?curid=143540993",
+  "caption": "DUA GOL JUVE BERAWAL DARI KOLO MUANI\n\nRandal Kolo Muani menyiapkan gol pembuka dan mencetak gol kedua saat Juventus menang 2–1 di kandang AZ Alkmaar, Kamis (5/11/2026). Dua kontribusi itu dibangun lewat aksi berbeda: melewati lawan untuk membuka ruang umpan, lalu merebut kembali bola sebelum menyelesaikan peluang.\n\nPada menit ke-19, Kolo Muani melewati bek di sisi kanan dan mengirim umpan tarik. Teun Koopmeiners menyambutnya dengan tembakan kaki kiri untuk membawa Juventus unggul.\n\nPada menit ke-37, Kolo Muani merebut kembali bola, bertukar umpan dengan Nick Woltemade, lalu menuntaskannya dengan kaki kiri. Juventus masuk jeda dengan keunggulan dua gol.\n\nAZ memperkecil selisih melalui Mexx Meerdink pada menit ke-88. Juventus mempertahankan kemenangan hingga akhir dan membawa pulang tiga poin dari Alkmaar.\n\nJuventini, aksi mana yang lebih menentukan menurutmu: umpan tarik untuk Koopmeiners atau perebutan bola sebelum gol Kolo Muani? Pilih satu dan jelaskan alasannya.\n\nSumber: laporan resmi dan lembar pertandingan Juventus, serta Football Italia.\n\nFoto arsip Randal Kolo Muani saat Lens–Nantes, 25 November 2020, oleh Supporterhéninois; crop FMSky, penyesuaian warna sumber Marcus Cyron. Foto asli didedikasikan CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/ . Sumber https://commons.wikimedia.org/?curid=143540993 dan foto induk https://commons.wikimedia.org/wiki/File:RC_Lens_-_FC_Nantes_(25-11-2020)_13.jpg . Cover kolase dan hero crop diolah; seragam Nantes asli dipertahankan. Foto arsip, bukan dokumentasi AZ–Juventus. Tidak menyiratkan dukungan fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Kontribusi dalam Satu Malam",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "ASSIST",
+        "GOAL",
+        "PHOTO"
+      ],
+      "text": "Randal Kolo Muani menyiapkan gol pembuka dan mencetak gol kedua saat Juventus menang 2–1 di kandang AZ Alkmaar, Kamis (5/11/2026). Dua kontribusi itu dibangun lewat aksi berbeda: melewati lawan untuk membuka ruang umpan, lalu merebut kembali bola sebelum menyelesaikan peluang."
+    },
+    {
+      "id": "assist",
+      "heading": "Putaran di Kanan Membuka Gol Koopmeiners",
+      "kind": "FACT",
+      "claim_ids": [
+        "ASSIST"
+      ],
+      "text": "Pada menit ke-19, Kolo Muani melewati bek di sisi kanan dan mengirim umpan tarik. Teun Koopmeiners menyambutnya dengan tembakan kaki kiri untuk membawa Juventus unggul."
+    },
+    {
+      "id": "goal",
+      "heading": "Tekanan Berujung Golnya Sendiri",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOAL"
+      ],
+      "text": "Pada menit ke-37, Kolo Muani merebut kembali bola, bertukar umpan dengan Nick Woltemade, lalu menuntaskannya dengan kaki kiri. Juventus masuk jeda dengan keunggulan dua gol."
+    },
+    {
+      "id": "closing",
+      "heading": "Keunggulan Diuji Menjelang Akhir",
+      "kind": "FACT",
+      "claim_ids": [
+        "CLOSING",
+        "RESULT"
+      ],
+      "text": "AZ memperkecil selisih melalui Mexx Meerdink pada menit ke-88. Juventus mempertahankan kemenangan hingga akhir dan membawa pulang tiga poin dari Alkmaar."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261104-bayern-atletico-match-news",
+    "goal-20261031-hakimi-comeback-match-news",
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-07T00:04:59.916Z",
+    "article_digest": "4d47dd31e5448c2b61a251367b1820f7f83c4323f76e05645cc3c70cbe13c3c7"
+  }
+}

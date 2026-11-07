@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-07:match-am",
+  "checked_at": "2026-11-07T00:04:59.916Z",
+  "queries": [
+    "Juventus AZ Alkmaar",
+    "Kolo Muani AZ Alkmaar Juventus"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=LNdqcV-89i0",
+      "creator": "beIN SPORTS Indonesia",
+      "checked_at": "2026-11-07T00:04:59.916Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "beIN SPORTS Indonesia published 2026-11-05T22:38:16Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=3t9hzXVY_d8",
+      "creator": "Juventus",
+      "checked_at": "2026-11-07T00:04:59.916Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Juventus published 2026-11-05T23:24:40Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=AdoOw_vhmhI",
+      "creator": "AZ Alkmaar",
+      "checked_at": "2026-11-07T00:04:59.916Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "AZ Alkmaar published 2026-11-06T18:00:16Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-07T00:04:59.916Z",
+    "digest": "1e253ed11240a8b815505c790c344019addbfd620fccaf47d920e3d8ffe5d4c9"
+  }
+}

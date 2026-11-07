@@ -1,0 +1,661 @@
+{
+  "checked_at": "2026-11-07T00:12:57.015Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+    "plan_key": "2026-11-07:match-am",
+    "event_key": "az-juventus-kolo-muani-assist-goal-20261105",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-07T01:00:00Z",
+    "time_wib": "7 November 2026 08.00 WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-07",
+      "fetchedAt": "2026-11-07T00:00:25.675Z",
+      "method": "Current release getDailySportsPool through committed cms-audience-pool and cms-load; cache and quota retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0,
+          "titles": []
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 2,
+          "titles": [
+            "Juventus Hajar Napoli 2-0! Kartu Merah Jadi Petaka di Turin! #juventus #napoli",
+            "Isak vs Segitiga Bermuda EPL: Siap-Siap Lawan Trio Liverpool!"
+          ]
+        }
+      }
+    },
+    "discovery_note": "Pool successfully loaded after prior-day provider failures; no new eligible Europe news. Old Juventus-Napoli and Liverpool videos were club seeds, not new match facts. Supplemented fresh committed YouTube queries and direct publisher browsing.",
+    "sources": [
+      {
+        "id": "JUVE",
+        "url": "https://www.juventus.com/en/news/articles/koopmeiners-scores-as-the-bianconeri-beat-az-alkmaar",
+        "publisher_group": "JUVENTUS",
+        "primary": true,
+        "published_at": "2026-11-05",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "123d74f40473f4c09b19dfcf180be8eb56f619ef127e66e588917c78e732bb3a"
+      },
+      {
+        "id": "FI",
+        "url": "https://football-italia.net/uel-az-alkmaar-1-2-juventus-special-k-success/",
+        "publisher_group": "FOOTBALLITALIA",
+        "primary": false,
+        "published_at": "2026-11-05T21:57:00",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "7b0f8e6e1440c60890651e2cecfc2c8101289f4e56fa32510db959f165dbf0a8"
+      },
+      {
+        "id": "SHEET",
+        "url": "https://www.juventus.com/it/news/articoli/uefa-europa-league-az-alkmaar-juventus-il-tabellino",
+        "publisher_group": "JUVENTUS",
+        "primary": true,
+        "published_at": "2026-11-05",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "ef3b84fb6b276d219299210e930ea7fe55948ddd271597ef524da08d63bf558c"
+      },
+      {
+        "id": "PRESS",
+        "url": "https://www.juventus.com/en/news/articles/press-room-comments-after-az-alkmaar-juventus-05-11-26",
+        "publisher_group": "JUVENTUS",
+        "primary": true,
+        "published_at": "2026-11-05",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "1dbd78f8f0bb8fa4cee0dfd7022cda51a175822bccafa23065097f271cb3d42c"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Randal_Kolo_Muani_2020.jpg",
+        "publisher_group": "SUPPORTERHENINOIS",
+        "primary": true,
+        "published_at": "2020-11-25",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "e67985476c1fc6949c9e283a600e030c7488476ea403546ff8eed07f630d5765"
+      },
+      {
+        "id": "PHOTO_ORIGINAL",
+        "url": "https://commons.wikimedia.org/wiki/File:RC_Lens_-_FC_Nantes_(25-11-2020)_13.jpg",
+        "publisher_group": "SUPPORTERHENINOIS",
+        "primary": true,
+        "published_at": "2020-11-25",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "f9304a0240dffa8d2100217ab0e161f35b208ef54a416829444aa727ca40402f"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-07T00:04:59.916Z",
+        "normalized_text_sha256": "c2ff97bd509cf1c6890703f6468cb175ad7d3ee3fc651d4069f710e6fb85bdfe"
+      }
+    ],
+    "full_read": [
+      "Entire Juventus official English match report read in browser and public HTTP GET 200 via TD (2736 normalized characters).",
+      "Entire Football Italia Susy Campanale narrative and match summary read in browser and public HTTP GET 200 (6217 normalized characters); independent publisher from Juventus.",
+      "Entire Juventus Italian match sheet read in browser and public HTTP GET 200 (1332 normalized characters).",
+      "Entire Juventus official press-room comments read in browser and public HTTP GET 200 (1479 normalized characters); no quotation used in article.",
+      "Commons crop, original author own-work CC0 grant and CC0 1.0 deed read in browser."
+    ],
+    "independent_publisher_groups": [
+      "JUVENTUS",
+      "FOOTBALLITALIA"
+    ],
+    "verification": [
+      "Juventus wins 2-1 away at AZ on Thursday 5 November 2026, not Friday or last night.",
+      "Kolo Muani turns past defender on right and cuts back for Koopmeiners left-foot opener, minute 19 confirmed official sheet.",
+      "Kolo Muani recovers ball, exchanges with Woltemade and finishes left-footed, minute 37 confirmed sheet.",
+      "Meerdink goal minute 88 agrees official sheet and Football Italia. Three points follow the final win."
+    ],
+    "source_limits": [
+      "Football Italia displays 5 November 21:57 without explicit timezone; no UTC conversion claimed.",
+      "No offside equaliser, season statistics, records or unsupported tactical conclusions included.",
+      "Juventus match report, match sheet and press room count as one publisher.",
+      "No actual match-video viewing, audio audition or transcript claimed."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-07:match-am",
+    "checked_at": "2026-11-07T00:04:59.916Z",
+    "queries": [
+      "Juventus AZ Alkmaar",
+      "Kolo Muani AZ Alkmaar Juventus"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=LNdqcV-89i0",
+        "creator": "beIN SPORTS Indonesia",
+        "checked_at": "2026-11-07T00:04:59.916Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "beIN SPORTS Indonesia published 2026-11-05T22:38:16Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=3t9hzXVY_d8",
+        "creator": "Juventus",
+        "checked_at": "2026-11-07T00:04:59.916Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Juventus published 2026-11-05T23:24:40Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=AdoOw_vhmhI",
+        "creator": "AZ Alkmaar",
+        "checked_at": "2026-11-07T00:04:59.916Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full returned YouTube metadata/description reviewed; standard licence without verified Stadione montage video/audio grant. Actual browser sourcepage fetch throttled. No download/watch/audition/transcript claimed, official does not imply reuse permission.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "AZ Alkmaar published 2026-11-06T18:00:16Z; licence youtube, no verified reuse grant. Browser Online fetch throttled, not retried through alternate routes."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-07T00:04:59.916Z",
+      "digest": "1e253ed11240a8b815505c790c344019addbfd620fccaf47d920e3d8ffe5d4c9"
+    }
+  },
+  "reel_limitation": {
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": [
+      "beIN SPORTS Indonesia",
+      "Juventus",
+      "AZ Alkmaar"
+    ],
+    "reason": "Standard YouTube licences without verified Stadione montage video/audio grant. Actual browser pages Online fetch throttled; not bypassed or retried via alternate routes. Permitted same-pillar carousel fallback retains scheduled_at.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Saturday 08 WIB, not Monday or Wednesday 20 WIB.",
+    "licensed_voice_provider_configured": false,
+    "authorized_host_recording_selected": false,
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "default_music_used": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "Randal Kolo Muani",
+    "creator": "Supporterhéninois",
+    "crop_creator": "FMSky",
+    "source_color_adjustment": "Marcus Cyron",
+    "source": "https://commons.wikimedia.org/wiki/File:Randal_Kolo_Muani_2020.jpg",
+    "original_author_source": "https://commons.wikimedia.org/wiki/File:RC_Lens_-_FC_Nantes_(25-11-2020)_13.jpg",
+    "photo_event": "Lens–Nantes warm-up, Stade Bollaert-Delelis, 25 November 2020; archive, not AZ–Juventus match footage.",
+    "licence": "CC0 1.0 Universal",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "explicit_original_author_grant_read": true,
+    "licence_deed_read": true,
+    "original": {
+      "source": "https://commons.wikimedia.org/wiki/File:Randal_Kolo_Muani_2020.jpg",
+      "curid": "143540993",
+      "width": 1187,
+      "height": 1611,
+      "bytes": 1249566,
+      "sha256": "bcc71d486ab9ce7470db62243d8c0b92d186efb1ddd2d10ac9e526ff0bc396a2",
+      "sha1": "c79ffb165624b2e2f2ad1e98216c0067a7c91bac",
+      "creator": "Supporterhéninois",
+      "crop_creator": "FMSky",
+      "archive_date": "2020-11-25",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "native_viewed": true
+    },
+    "changes": "Original photograph used as image-generation reference. Naturally soft-focus right-facing profile, hair, pose, gloves and navy/yellow Nantes jersey preserved; no sharpening/reconstruction of face or new Juventus kit. Newspaper background and typography generated; hero is clean original crop. Archive/source/credit/changes stated. No endorsement implied. CC0 applies to source photo; no unsolicited dedication of owned text/layout.",
+    "cover": {
+      "variant_id": "JUDUL_UTAMA",
+      "rotation_helper": true,
+      "previous_variants": [
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK"
+      ],
+      "page_count": 5,
+      "bytes": 536215,
+      "sha256": "ed3a9450946daed073082bc9bf290b79be2e0cab9cd4ff83de326abe4d0774f9",
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 3226319,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "source_label": "JUVENTUS.COM",
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 60,
+        "y": 0,
+        "width": 1067,
+        "height": 875
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 62898,
+      "sha256": "50983d3e9eac377b4bb97b8ffe1519bfb7c24ed88056439d7820d77d81524645",
+      "native_viewed": true,
+      "clean_original_without_text": true,
+      "natural_source_soft_focus_preserved": true
+    }
+  },
+  "article": {
+    "title": "Dua Gol Juve Berawal dari Kolo Muani",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 111,
+    "digest": "4d47dd31e5448c2b61a251367b1820f7f83c4323f76e05645cc3c70cbe13c3c7",
+    "benchmarks": [
+      "goal-20261104-bayern-atletico-match-news",
+      "goal-20261031-hakimi-comeback-match-news",
+      "goal-20261106-amorim-milan-ferencvaros-reaction-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "JUVENTUS.COM",
+      "cover_input_sha256": "ed3a9450946daed073082bc9bf290b79be2e0cab9cd4ff83de326abe4d0774f9",
+      "output_sha256": "bdacdcd52761538ee09fd28ebc7ecd616994ce25754f7096b7b28bed5287028e",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "fd640436da05dfd531eea876333e0c0f6a5ffd97e4d3c66175254d32ea0a13f3",
+      "output_sha256": "249a805135ca61c45ab1ff0325e36f9aaa3d360bd536e3a59111d83a36d3500b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 900,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 922,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e2cbd846f04f079f5d4bef20f89c74da26812ca85c1a78537ed9ef87b768fc51",
+      "output_sha256": "9fac1c837df4cc90a4952e85b1a2aeb05522c6efea4bf9a299cacd12dc265837",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 920,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 891,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b55fd7598eb4a871f8b0c3b3f4dc77dfc5cc0e02ed087c2bf9285d23eaa3c85b",
+      "output_sha256": "07c25c7b7d5338189107debbf7f8c58b28d034a0fdf1f5100665e59b884fea5a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 861,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 925,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "34f34ea7eef5b34f09443d530a32b122fa9001900bfb07d06ccbd890ace8688f",
+      "output_sha256": "2f02fc16fb0950c17a095feebb872510f43ea493199238f4c4888c0986530e5a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 572,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 882,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_at_original1080x1350": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_opened_at_original512x420": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of5_matches_final": true,
+    "cover_text_inside_safe_edges": true,
+    "photo_identity_compared_to_original": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Reaksi Pagi Suporter",
+    "framework_only": true,
+    "core_fact": "Kolo Muani menyiapkan gol Koopmeiners lalu mencetak gol kedua melalui perebutan bola dan kombinasi Woltemade.",
+    "angle": "Dua kontribusi dibedakan lewat urutan aksi terverifikasi, disertai ancaman gol AZ menjelang akhir.",
+    "hook": "Dua Gol Juve Berawal dari Kolo Muani",
+    "payoff": "Pembaca dapat membandingkan penciptaan peluang lewat umpan tarik dengan perebutan bola dan penyelesaian.",
+    "audience_action": "Pilih kontribusi yang lebih menentukan dan jelaskan alasannya.",
+    "fan_reaction_invented": false,
+    "match_date": "2026-11-05",
+    "not_claimed_last_night": true,
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "OriginalREEL researched withtwofreshcommittedYouTubequeries/3actualpages/3creators. Standardlicence noverifiedmontagevideo/audio grant andbrowserfetchthrottled. AllowedCC0archivephotoCAROUSELfallback sameEuropepillar/08WIB. Saturdaymorningnotmandatoryillustration; authorizedhostrecordingnotselected andlicensedvoiceproviderunconfigured.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-08T01:00:00Z",
+    "review_due_7d": "2026-11-14T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-07T00:12:57.015Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17907882534584969",
+        "published_at": "2026-11-05T13:02:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18015723341990275",
+        "published_at": "2026-11-05T01:02:24+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18133156117824146",
+        "published_at": "2026-11-03T01:02:37+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-07T00:12:57.015Z",
+    "baseline_rows": 213,
+    "current_rows": 213,
+    "unchanged_other_rows": 212,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-07T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 5,
+    "weekly_routine_proposed": 6,
+    "weekly_limit": 12,
+    "instagram_media": 81,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 33,
+    "latest_read_at": "2026-11-06T00:40:06.374Z",
+    "sha256": "0c3a231f38b505c1bdd3e45e9d8f05494be7e75d7497a20d8984662e05c18a4c",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "1ffd174b0adc1543f549fc4077774b3788f3f812",
+  "remaining": "Commit/push reviewed proof, then shared schedule and verify ARTICLE pair, clock, public bytes, gate, scope and idempotency. Future 08 WIB publisher handoff; no Instagram/website publication claim."
+}
