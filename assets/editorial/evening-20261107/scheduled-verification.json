@@ -1,0 +1,121 @@
+{
+  "checked_at": "2026-11-07T12:13:59.493Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "895bea48-aa52-4aa8-891e-37704f861002",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-07:match-pm",
+    "event_key": "timnas-bali-tc-new-players-november-20261106",
+    "scheduled_at": "2026-11-07T13:00:00+00:00",
+    "time_wib": "7 November 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "1d47626d-80ef-43f4-8a51-1247c941ed4d",
+    "status": "SCHEDULED",
+    "slug": "timnas-membuka-pintu-untuk-wajah-baru-895bea48",
+    "scheduled_at": "2026-11-07T13:00:00+00:00",
+    "title": "Timnas Membuka Pintu untuk Wajah Baru",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "f9812fd10ccef42c33048b0c2e3a217e674b06d42b81d0a3e82e4945fcc6b0ae",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 40396,
+      "sha256": "a6080ae850b04d930717c46de39d6c09cbfeb5c4a8bf0fa6030cfd6c09272301",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 525470,
+      "sha256": "7f180361f6202650a79cfaa60db9e22090dab377eb8ac14a3fd5faa0b139f58c",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 156339,
+      "sha256": "7fb25bb10f62c89dfa43183ad6eaa10d8649deb1facaed7b2d15833d8fbdd2b1",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 168885,
+      "sha256": "74f332d911d639ec38181ee53ed89c6c614eae3578cab89fdd20012bc83a4518",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 179391,
+      "sha256": "4d160951483f7235d11d91f1c2dcf892114ac9827b11ce8e5b5beef76bf41f25",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 81,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 214,
+  "current_rows": 215,
+  "unchanged_existing_other_rows": 213,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 7,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 34,
+    "sha256": "bc751ccf061a11106764ea6d7ac55d59a01ea390d1b9a7778d6aa21bb20c7789",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_four_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/4",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future20WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "ab48b0cf921dc26a7a0da9a7422079461751add4",
+  "publisher_operational_context": {
+    "checked_at": "2026-11-07T12:15:06.136Z",
+    "timer": "stadione-cms-publish.timer",
+    "timer_active": true,
+    "service": "stadione-cms-publish.service",
+    "last_result": "success",
+    "last_exit_status": 0,
+    "last_exit_at": "2026-11-07T12:13:48Z",
+    "active_release": "/opt/stadione-releases/ba88c8d",
+    "operational_context_only": true,
+    "publication_claim": false,
+    "service_changes": false,
+    "prior_protected_meta_failure": {
+      "checked_at": "2026-11-07T12:14:18.803Z",
+      "social_id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+      "status": "SCHEDULED",
+      "publish_error": "Meta API: An unexpected error has occurred. Please retry your request later. (2)",
+      "external_post_id": null,
+      "published_at": null,
+      "attempts": [
+        {
+          "state": "FAILED",
+          "media_id": null,
+          "error_message": "Meta API: An unexpected error has occurred. Please retry your request later. (2)",
+          "updated_at": "2026-11-07T01:00:07.993+00:00"
+        }
+      ],
+      "instagram_matching_media": [],
+      "scope": "Read-only observation of protected earlier slot. No retry, reschedule or update performed."
+    }
+  }
+}

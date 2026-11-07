@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-11-07T12:14:18.803Z",
+  "social_id": "d6e3f2e4-40f0-411f-bb36-78d0a9bc8574",
+  "status": "SCHEDULED",
+  "publish_error": "Meta API: An unexpected error has occurred. Please retry your request later. (2)",
+  "external_post_id": null,
+  "published_at": null,
+  "attempts": [
+    {
+      "state": "FAILED",
+      "media_id": null,
+      "error_message": "Meta API: An unexpected error has occurred. Please retry your request later. (2)",
+      "updated_at": "2026-11-07T01:00:07.993+00:00"
+    }
+  ],
+  "instagram_matching_media": [],
+  "scope": "Read-only observation of protected earlier slot. No retry, reschedule or update performed."
+}
