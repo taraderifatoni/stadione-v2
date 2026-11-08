@@ -1,0 +1,103 @@
+{
+  "checked_at": "2026-11-08T00:14:05.586Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "b022b5f5-62f0-4626-a3ab-cfa0631914a8",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-08:match-am",
+    "event_key": "forest-manchester-city-delap-comeback-stop-20261107",
+    "scheduled_at": "2026-11-08T01:00:00+00:00",
+    "time_wib": "8 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "2d61a458-c2c3-4edc-bac0-a802c23b84d1",
+    "status": "SCHEDULED",
+    "slug": "delap-memadamkan-kebangkitan-city-b022b5f5",
+    "scheduled_at": "2026-11-08T01:00:00+00:00",
+    "title": "Delap Memadamkan Kebangkitan City",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "98de40c351e9420e7c348dee49a2fd8e6f6d46b9c9f8e090465211f551506b04",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 42143,
+      "sha256": "4d6910aca9e761a934788f712520a4f43834d6efbcc0b5280fb605b0190a6979",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 578214,
+      "sha256": "d72a38a991727c42f70c20f11e5807bc3cdd2c2371504bd26dbc6e7889a3c523",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 154351,
+      "sha256": "4b33429028204f7c05857200bef74be4385bc43779f156f11c42759371237d38",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 151026,
+      "sha256": "56cbd24d07f82f2586516d6d510c51a383ccff9c9fc7b65da39e7a95cff991f1",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 175122,
+      "sha256": "324ae4ab2805eca9db6a8aa07fc58f1c55a9b3a31248bb0c312bb2d6c0a569a5",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 82,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 218,
+  "current_rows": 219,
+  "unchanged_existing_other_rows": 217,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 8,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 34,
+    "sha256": "bc751ccf061a11106764ea6d7ac55d59a01ea390d1b9a7778d6aa21bb20c7789",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_four_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/4",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "2f2ae4ebdb70632b7e3ef6ff17a141c081b1276f",
+  "publisher_operational_context": {
+    "checked_at": "2026-11-08T00:14:49.150Z",
+    "timer": "stadione-cms-publish.timer",
+    "timer_active": true,
+    "service": "stadione-cms-publish.service",
+    "last_result": "success",
+    "last_exit_status": 0,
+    "last_exit_at": "2026-11-08T00:14:03Z",
+    "active_release": "/opt/stadione-releases/ba88c8d",
+    "operational_context_only": true,
+    "publication_claim": false,
+    "service_changes": false
+  }
+}
