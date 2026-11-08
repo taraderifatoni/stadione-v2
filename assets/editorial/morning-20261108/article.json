@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Delap Memadamkan Kebangkitan City",
+  "dek": "Serangan balik mengembalikan jarak dua gol. Arsip 2024: James Cracknell, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=157271890",
+  "caption": "DELAP MEMADAMKAN KEBANGKITAN CITY\n\nLiam Delap mencetak dua gol saat Nottingham Forest mengalahkan Manchester City 3–1 di City Ground, Sabtu (7/11/2026) waktu Inggris. Gol keduanya datang ketika City sedang mengejar penyama, lalu mengembalikan keunggulan dua gol Forest.\n\nDelap lebih dulu memperbesar keunggulan pada menit ke-18, setelah Jair Cunha membuka skor. Mantan penyerang City itu melakukan lari individu sebelum melepas tembakan yang menaklukkan Gianluigi Donnarumma.\n\nRayan Cherki memperkecil selisih pada awal babak kedua dan City meningkatkan tekanan. Forest kemudian membalas melalui serangan balik yang dituntaskan Delap untuk mengubah skor menjadi 3–1. City menutup laga dengan kekalahan ketiga beruntun di Premier League.\n\nGol kedua Delap datang dari serangan balik ketika City menekan. Bagaimana seharusnya City menjaga keseimbangan saat mengejar skor? Jelaskan alasanmu.\n\nSumber: laporan resmi Manchester City dan laporan lengkap Adam Bate untuk Sky Sports.\n\nFoto arsip “Wolves v Town, Dec 2024 (18).jpg” oleh James Cracknell, crop Mattythewhite: Liam Delap saat pemanasan Ipswich di Molineux, 14 Desember 2024. Sumber https://commons.wikimedia.org/?curid=157271890 . Lisensi https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah, adaptasi dibagikan CC BY-SA 4.0. Jersey Ipswich asli dipertahankan; bukan dokumentasi Forest–City 2026. Tidak menyiratkan dukungan fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol Delap Mengembalikan Jarak",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "SECOND",
+        "PHOTO"
+      ],
+      "text": "Liam Delap mencetak dua gol saat Nottingham Forest mengalahkan Manchester City 3–1 di City Ground, Sabtu (7/11/2026) waktu Inggris. Gol keduanya datang ketika City sedang mengejar penyama, lalu mengembalikan keunggulan dua gol Forest."
+    },
+    {
+      "id": "first",
+      "heading": "Lari Individu Memperbesar Keunggulan",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRST"
+      ],
+      "text": "Delap lebih dulu memperbesar keunggulan pada menit ke-18, setelah Jair Cunha membuka skor. Mantan penyerang City itu melakukan lari individu sebelum melepas tembakan yang menaklukkan Gianluigi Donnarumma."
+    },
+    {
+      "id": "second",
+      "heading": "Serangan Balik Mematahkan Respons City",
+      "kind": "FACT",
+      "claim_ids": [
+        "SECOND",
+        "STREAK"
+      ],
+      "text": "Rayan Cherki memperkecil selisih pada awal babak kedua dan City meningkatkan tekanan. Forest kemudian membalas melalui serangan balik yang dituntaskan Delap untuk mengubah skor menjadi 3–1. City menutup laga dengan kekalahan ketiga beruntun di Premier League."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-08T00:10:55.074Z",
+    "article_digest": "98de40c351e9420e7c348dee49a2fd8e6f6d46b9c9f8e090465211f551506b04"
+  }
+}

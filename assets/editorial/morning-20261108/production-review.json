@@ -1,0 +1,605 @@
+{
+  "checked_at": "2026-11-08T00:12:32.047Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "b022b5f5-62f0-4626-a3ab-cfa0631914a8",
+    "plan_key": "2026-11-08:match-am",
+    "event_key": "forest-manchester-city-delap-comeback-stop-20261107",
+    "pillar": "Sepak Bola Eropa",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-08T01:00:00Z",
+    "time_wib": "8 November 2026 08.00 WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-08",
+      "fetchedAt": "2026-11-08T00:02:52.707Z",
+      "method": "Release getDailySportsPool through committed cms-audience-pool/cms-load; quota/cache retained.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 8,
+          "titles": [
+            "klasemen valencia cf vs real madrid",
+            "nottingham forest vs man city",
+            "klasemen nottingham forest vs man city",
+            "roma vs sassuolo",
+            "psg vs troyes",
+            "klasemen arsenal vs hull city",
+            "mainz 05 vs bayern",
+            "klasemen mainz 05 vs bayern"
+          ]
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0,
+          "titles": []
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 2,
+          "titles": [
+            "Juventus Hajar Napoli 2-0! Kartu Merah Jadi Petaka di Turin! #juventus #napoli",
+            "Isak vs Segitiga Bermuda EPL: Siap-Siap Lawan Trio Liverpool!"
+          ]
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "CITY",
+        "url": "https://www.mancity.com/news/mens/nottingham-forest-manchester-city-match-report-premier-league-63929666",
+        "publisher_group": "MANCITY",
+        "primary": true,
+        "published_at": "2026-11-07",
+        "retrieved_at": "2026-11-08T00:07:04.877Z",
+        "normalized_text_sha256": "53a35185299d6e3145e51d31cd1ac24692d84248a48a49212b5c11d75c7bb07f"
+      },
+      {
+        "id": "SKY",
+        "url": "https://www.skysports.com/football/n-forest-vs-man-city/report/559542",
+        "publisher_group": "SKY",
+        "primary": false,
+        "published_at": "2026-11-07",
+        "retrieved_at": "2026-11-08T00:07:04.877Z",
+        "normalized_text_sha256": "cbb87080c52f56a923bf94445965ec8089f24ba4241f732b31d6bde633e27dc9"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Wolves_v_Town,_Dec_2024_(18).jpg",
+        "publisher_group": "JAMES_CRACKNELL",
+        "primary": true,
+        "published_at": "2024-12-14",
+        "retrieved_at": "2026-11-08T00:07:04.877Z",
+        "normalized_text_sha256": "441bbf20484fb35f499174be2b4265e0a8352c80556076f1b74598d6d52e499e"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-08T00:07:04.877Z",
+        "normalized_text_sha256": "e4b563343197f9b105390961f8d2b000c86d1753d005fcc3be1a91b71637c3bd"
+      }
+    ],
+    "full_read": [
+      {
+        "publisher": "MANCITY",
+        "author": "Rob Pollard",
+        "primary": true,
+        "method": "Ordinary public HTTP GET200 via TD after generic browser error; full match narrative, teams, reaction and implications read. Ticket promotion excluded from source text.",
+        "normalized_chars": 4225
+      },
+      {
+        "publisher": "SKY",
+        "author": "Adam Bate",
+        "primary": false,
+        "method": "Ordinary public HTTP GET200 via TD after generic browser error; entire report, press conference, analysis and key moments read, not just summary.",
+        "normalized_chars": 8226
+      }
+    ],
+    "independent_publisher_groups": [
+      "MANCITY",
+      "SKY"
+    ],
+    "verification": [
+      "Saturday7November2026 UK date explicit, kickoff17:30UK/GMT perSky. Sunday8Nov08WIB publishing clock retained.",
+      "Forest3-1City, Delap two goals, first minute18 after Cunha opener, former City affiliation and individual run corroborated club/Sky.",
+      "Cherki reduced deficit early second half, City pushed, Delap finished counter to restore two-goal lead; third consecutive league defeat corroborated."
+    ],
+    "limits": [
+      "Browser opening of City/Sky generic errors; public GET200 read as declared. No paywall/login/challenge bypass.",
+      "Forest official report returned HTTP200 with empty rendered text; not claimed full reading or used as extra publisher.",
+      "Second goal73minute and off-post/top-corner wording omitted. Half-time substitutions not characterised as tactical after Sky injury clarification.",
+      "No 122-year record, table points/positions, manager-future or psychological diagnosis. No quotations used.",
+      "Old weekly BingJuventusNapoli/Liverpool not new match evidence; actual ForestCity daily trend supplemented direct publisher/YouTube discovery."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-08:match-am",
+    "checked_at": "2026-11-08T00:07:04.877Z",
+    "queries": [
+      "Nottingham Forest Manchester City",
+      "Liam Delap Manchester City Forest"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=c-KZAF-BQag",
+        "creator": "ESPN UK",
+        "checked_at": "2026-11-08T00:07:04.877Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "ESPN UK published 2026-11-07T20:17:26Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=1rsZgAedZAM",
+        "creator": "talkSPORT",
+        "checked_at": "2026-11-08T00:07:04.877Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "talkSPORT published 2026-11-07T22:24:31Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=CQ7S0wykarg",
+        "creator": "DMX Football",
+        "checked_at": "2026-11-08T00:07:04.877Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "DMX Football published 2026-11-07T19:27:23Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-08T00:07:04.877Z",
+      "digest": "d0d447500d55a8f02c2971e6f26ec79a8adc6331700365d5cef68d28b07bd526"
+    }
+  },
+  "reel_limitation": {
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": [
+      "ESPN UK",
+      "talkSPORT",
+      "DMX Football"
+    ],
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Standard YouTube licences, no verified montage footage/audio grant. ESPN/talkSPORT reaction metadata not match footage licence. Source pages browser throttled, no alternate-route retry.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_bypass": true
+  },
+  "illustration": {
+    "mandatory_for_target": false,
+    "reason": "Sunday08WIB, not Monday/Wednesday20WIB.",
+    "edge_tts_used": false,
+    "AI_video_used": false,
+    "authorized_host_recording_selected": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "subject": "Liam Delap",
+    "creator": "James Cracknell",
+    "crop_creator": "Mattythewhite",
+    "source": "https://commons.wikimedia.org/wiki/File:Wolves_v_Town,_Dec_2024_(18).jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "own_work_grant_read": true,
+    "deed_read": true,
+    "browser_grant": "turn495134view0",
+    "browser_deed": "turn495134view2",
+    "original": {
+      "source": "https://commons.wikimedia.org/wiki/File:Wolves_v_Town,_Dec_2024_(18).jpg",
+      "curid": "157271890",
+      "bytes": 1178137,
+      "sha256": "9c55634ac99b55dea8445d23fa24595c40de3fab71ad9d924a0f4394d61ea513",
+      "sha1": "63e5579c799c538134fb40f541cf686053df1950",
+      "creator": "James Cracknell",
+      "crop_creator": "Mattythewhite",
+      "archive_date": "2024-12-14",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "width": 1294,
+      "height": 1773,
+      "native_viewed": true
+    },
+    "archive_context": "Ipswich warm-up at Molineux14December2024, not ForestCity2026.",
+    "changes": "Authentic original photograph reference retains recognizable face/hair/expression, scarf/gloves, blue-red Ipswich training top19. Generated newspaper collage/type; no Forest kit, new action or ageing. Archive/source/creator/licence/changes stated. Adaptations including our contributions CC BY-SA4.0 without added restrictions or implied endorsement.",
+    "cover": {
+      "variant_id": "KOLOM",
+      "rotation_helper": true,
+      "previous_variants": [
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH"
+      ],
+      "page_count": 4,
+      "bytes": 464954,
+      "sha256": "a57f6a5fbf29fce6a46d728d065b420c857f31987395ee69a6e4d56c9d07cf38",
+      "source_label": "MANCITY.COM",
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 2769944,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "native_final_viewed": true,
+      "no_edition_label": true,
+      "no_promotional_footer": true
+    },
+    "hero": {
+      "crop": {
+        "x": 100,
+        "y": 60,
+        "width": 1094,
+        "height": 898
+      },
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 42143,
+      "sha256": "4d6910aca9e761a934788f712520a4f43834d6efbcc0b5280fb605b0190a6979",
+      "native_viewed": true,
+      "clean_original_without_text": true
+    }
+  },
+  "article": {
+    "title": "Delap Memadamkan Kebangkitan City",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 96,
+    "digest": "98de40c351e9420e7c348dee49a2fd8e6f6d46b9c9f8e090465211f551506b04",
+    "benchmarks": [
+      "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "article_complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "MANCITY.COM",
+      "cover_input_sha256": "a57f6a5fbf29fce6a46d728d065b420c857f31987395ee69a6e4d56c9d07cf38",
+      "output_sha256": "d72a38a991727c42f70c20f11e5807bc3cdd2c2371504bd26dbc6e7889a3c523",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "60cd9c2fe3db3f3c92acdddb529c8b864ad41d188389d70c8c68b4242e74a32a",
+      "output_sha256": "4b33429028204f7c05857200bef74be4385bc43779f156f11c42759371237d38",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 887,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 919,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "04cba9ffcfe851845b34beaf2d9d8cdd4cc1272f7e3d395aa7277224f2c5b908",
+      "output_sha256": "56cbd24d07f82f2586516d6d510c51a383ccff9c9fc7b65da39e7a95cff991f1",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 909,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 905,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "066c9e2de1a1f340c1e19aa08e810ef062b3a2ff85ed2c77741272df87b01195",
+      "output_sha256": "324ae4ab2805eca9db6a8aa07fc58f1c55a9b3a31248bb0c312bb2d6c0a569a5",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 896,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 924,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_JPEG_opened_at_original1080x1350": true,
+    "reviewed_downloads_match_preview_sha256": true,
+    "hero_original512x420_viewed": true,
+    "body_cream_text_only": true,
+    "font_px": {
+      "headline": 60,
+      "body": 36
+    },
+    "divider_gaps_px": [
+      36,
+      36
+    ],
+    "no_overflow_or_overlap": true,
+    "cover1of4_matches_final": true,
+    "cover_text_safe_edges": true,
+    "timezone_clarification_page2_rerendered_and_native_reviewed": true,
+    "other_three_JPEG_byte_identical_after_clarification": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "voice_video_music_created": false,
+    "carousel_music_attached": false,
+    "Graph_API_carousel_music_unsupported": true
+  },
+  "growth": {
+    "serial": "Pemain yang Perlu Diikuti",
+    "framework_only": true,
+    "core_fact": "Delap dua gol dalam Forest3-1City, gol kedua melalui serangan balik sesudah Cherki memperkecil selisih.",
+    "angle": "Kontribusi pemain dijelaskan melalui dua fase laga dan gagalnya respons City.",
+    "hook": "Delap Memadamkan Kebangkitan City",
+    "payoff": "Pembaca memahami mengapa gol kedua berbeda kepentingannya dari gol pertama.",
+    "audience_action": "Bahas keseimbangan City saat mengejar skor dengan alasan.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "Two targeted committed YouTube queries and three actual URLs/creators reviewed. Standard licences without verified footage/audio reuse grant; browser throttled. Allowed same-Europe-pillar carousel fallback at original08WIB; Sunday morning not mandatory illustration. No authorized host recording selected.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-09T01:00:00Z",
+    "review_due_7d": "2026-11-15T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-08T00:12:32.047Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17966817417218122",
+        "published_at": "2026-11-07T13:00:50+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17907882534584969",
+        "published_at": "2026-11-05T13:02:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18015723341990275",
+        "published_at": "2026-11-05T01:02:24+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17905383843669664",
+        "published_at": "2026-11-04T01:02:21+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-08T00:12:32.047Z",
+    "baseline_rows": 218,
+    "current_rows": 218,
+    "unchanged_other_rows": 217,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "b022b5f5-62f0-4626-a3ab-cfa0631914a8",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-08T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 7,
+    "weekly_routine_proposed": 8,
+    "weekly_limit": 12,
+    "instagram_media": 82,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 34,
+    "latest_read_at": "2026-11-07T00:26:43.628Z",
+    "sha256": "bc751ccf061a11106764ea6d7ac55d59a01ea390d1b9a7778d6aa21bb20c7789",
+    "runtime_committed_identical": true,
+    "modified_by_production": false
+  },
+  "rollback_commit": "f2fc6cef4e1948d88b3475103ef282dfa69d76c5",
+  "remaining": "Commit/push reviewed evidence before shared schedule. Verify identical ARTICLE pair/time, public asset bytes, gate, scope and idempotency. Future08WIB publisher handoff, not a publication claim."
+}

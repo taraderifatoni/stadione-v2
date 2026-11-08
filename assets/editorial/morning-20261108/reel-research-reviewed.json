@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-08:match-am",
+  "checked_at": "2026-11-08T00:07:04.877Z",
+  "queries": [
+    "Nottingham Forest Manchester City",
+    "Liam Delap Manchester City Forest"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=c-KZAF-BQag",
+      "creator": "ESPN UK",
+      "checked_at": "2026-11-08T00:07:04.877Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "ESPN UK published 2026-11-07T20:17:26Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=1rsZgAedZAM",
+      "creator": "talkSPORT",
+      "checked_at": "2026-11-08T00:07:04.877Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "talkSPORT published 2026-11-07T22:24:31Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=CQ7S0wykarg",
+      "creator": "DMX Football",
+      "checked_at": "2026-11-08T00:07:04.877Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full metadata/description reviewed; standard YouTube licence without verified montage video/audio reuse grant. ESPN/talkSPORT reactions not original match footage licence. Actual browser page fetch throttled. No download/watch/audition/transcript or alternate-route retry.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "DMX Football published 2026-11-07T19:27:23Z; standard youtube licence with no verified montage reuse grant; actual browser page Online fetch throttled."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-08T00:07:04.877Z",
+    "digest": "d0d447500d55a8f02c2971e6f26ec79a8adc6331700365d5cef68d28b07bd526"
+  }
+}
