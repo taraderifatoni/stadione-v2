@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Gol Mamut Tak Menghapus Catatan Shin",
+  "dek": "Shin meminta bola lebih cepat dialirkan. Foto arsip: Bogororange/CC0 1.0; diolah. commons.wikimedia.org/?curid=202075661",
+  "caption": "GOL MAMUT TAK MENGHAPUS CATATAN SHIN\n\nGol Ivan Mamut membawa Persija Jakarta menang 1–0 atas Persebaya Surabaya di Jakarta International Stadium, Sabtu (7/11/2026). Namun, hasil itu tidak menghapus evaluasi Shin Tae-yong terhadap kondisi lapangan dan cara timnya mengalirkan bola.\n\nKebuntuan baru pecah pada pengujung laga. Umpan mendatar Viktor Dethan disambut Mamut dengan tembakan yang diblok kiper Persebaya. Mamut lalu menyambar bola pantul untuk memastikan kemenangan Persija.\n\nMenurut Shin, permukaan lapangan membuat pemain berisiko kehilangan bola bila terlalu lama menggiring. Ia meminta bola lebih cepat dialirkan dan tekanan dimulai dari lini depan.\n\nMenurutmu, bagian permainan Persija mana yang paling perlu diperbaiki setelah kemenangan ini? Sertakan alasanmu.\n\nSumber: laporan lengkap I.League dan Hery Kurniawan untuk Bola.com.\n\nFoto arsip Ivan Mamut saat PSIM–Persija, 10 Oktober 2026, oleh Bogororange (own work), CC0 1.0. Sumber https://commons.wikimedia.org/?curid=202075661 . Deed https://creativecommons.org/publicdomain/zero/1.0/ . Cover kolase dan hero crop diolah; bukan foto laga 7 November. Identitas dan jersey asli dipertahankan, tanpa menyiratkan dukungan.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kemenangan Masih Menyisakan Catatan",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "PHOTO"
+      ],
+      "text": "Gol Ivan Mamut membawa Persija Jakarta menang 1–0 atas Persebaya Surabaya di Jakarta International Stadium, Sabtu (7/11/2026). Namun, hasil itu tidak menghapus evaluasi Shin Tae-yong terhadap kondisi lapangan dan cara timnya mengalirkan bola."
+    },
+    {
+      "id": "goal",
+      "heading": "Bola Pantul Menjadi Pembeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOAL",
+        "RESULT"
+      ],
+      "text": "Kebuntuan baru pecah pada pengujung laga. Umpan mendatar Viktor Dethan disambut Mamut dengan tembakan yang diblok kiper Persebaya. Mamut lalu menyambar bola pantul untuk memastikan kemenangan Persija."
+    },
+    {
+      "id": "evaluation",
+      "heading": "Shin Meminta Operan Lebih Cepat",
+      "kind": "FACT",
+      "claim_ids": [
+        "TACTIC"
+      ],
+      "text": "Menurut Shin, permukaan lapangan membuat pemain berisiko kehilangan bola bila terlalu lama menggiring. Ia meminta bola lebih cepat dialirkan dan tekanan dimulai dari lini depan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+    "goal-20261108-arsenal-hull-record-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-08T12:06:32.623Z",
+    "article_digest": "dbda9fe811cdc36032ba330f14c2542589cfee127b1367c1a9290f97004c8c58"
+  }
+}

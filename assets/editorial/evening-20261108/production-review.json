@@ -1,0 +1,564 @@
+{
+  "checked_at": "2026-11-08T12:08:07.581Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "89af8c3d-0dff-4941-aa76-09be5c60c540",
+    "plan_key": "2026-11-08:match-pm",
+    "event_key": "persija-persebaya-mamut-shin-ball-circulation-20261107",
+    "pillar": "Sepak Bola Indonesia",
+    "format": "CAROUSEL",
+    "original_format": "REEL",
+    "scheduled_at": "2026-11-08T13:00:00Z",
+    "time_wib": "8 November2026 20.00WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-08",
+      "fetchedAt": "2026-11-08T12:00:31.115Z",
+      "method": "Committed cms-audience-pool calls release getDailySportsPool through cms-load, cache/quota preserved.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 20,
+          "eligible": 4
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "LEAGUE",
+        "url": "https://www.ileague.id/news/detail/gol-pengujung-laga-antarkan-persija-taklukan-persebaya",
+        "publisher_group": "ILEAGUE",
+        "primary": true,
+        "published_at": "2026-11-08",
+        "retrieved_at": "2026-11-08T12:03:20.519Z",
+        "normalized_text_sha256": "3fe60e46696cd7672440ddd252ea662e1253db51026a18ecf7a360e8eb0fcf0d"
+      },
+      {
+        "id": "BOLA",
+        "url": "https://www.bola.com/indonesia/read/8330811/shin-tae-yong-bongkar-taktik-cerdik-persija-jinakkan-persebaya-di-jis-siasati-kondisi-rumput-hingga-high-pressing",
+        "publisher_group": "KLY",
+        "primary": false,
+        "published_at": "2026-11-08",
+        "retrieved_at": "2026-11-08T12:03:20.519Z",
+        "normalized_text_sha256": "e727b817520b363093b3b9423fd84330cdeb02d5585c23b6b25133f6db9931ab"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Ivan_Mamut_Persija_-_1001018817_(cropped).jpg",
+        "publisher_group": "BOGORORANGE",
+        "primary": true,
+        "published_at": "2026-10-10",
+        "retrieved_at": "2026-11-08T12:03:20.519Z",
+        "normalized_text_sha256": "8452e060093ad350148dd95650142311164b4e1457409b29254fdd5d0443be36"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-08T12:03:20.519Z",
+        "normalized_text_sha256": "b359a9f01ada22565ee93c54d7de98c533a485382b0feb9da1db9901101b16ac"
+      }
+    ],
+    "full_read": [
+      {
+        "publisher": "I.LEAGUE",
+        "primary": true,
+        "method": "Full public browser narrative through final quote, also ordinary GET200 via TD; match sheet checked. Browser turn847047view1/turn339817view0."
+      },
+      {
+        "publisher": "BOLA.COM",
+        "author": "Hery Kurniawan",
+        "primary": false,
+        "method": "Full ordinary public GET200 via TD after generic browser error; all sections through final coach quote read. No bypass.",
+        "retrieved_chars": 11810
+      },
+      {
+        "publisher": "ANTARA",
+        "author": "Aloysius Lewokeda",
+        "primary": false,
+        "method": "Entire browser report through conclusion/byline turn847047view0, supplemental cross-check only. No photo reuse."
+      }
+    ],
+    "verification": [
+      "Persija1-0Persebaya, JIS, Saturday7November2026; late Mamut rebound after Dethan pass.",
+      "Coach described quicker circulation and pressure from front in response to pitch/control risk; opinion attributed, not our own pitch inspection."
+    ],
+    "limits": [
+      "ANTARA90minute versus official/Bola89: precise minute omitted.",
+      "Bola photo caption says Saturday8November; narrative and primary corroborate Saturday7November.",
+      "Official coach quotation contains away-win wording despite home fixture; not repeated. No direct quotes used.",
+      "Mansaid video description minute68 conflicts primary89, not used as factual evidence.",
+      "No claim watched whole game, own interview, standings/next fixture or proof pitch caused victory."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-08:match-pm",
+    "checked_at": "2026-11-08T12:03:20.519Z",
+    "queries": [
+      "sepak bola Indonesia 8 November 2026 hasil pertandingan",
+      "Persija Persebaya Ivan Mamut 7 November 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=QjH6e1ypKt8",
+        "creator": "Mansaid Channel",
+        "checked_at": "2026-11-08T12:03:20.519Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Mansaid Channel 2026-11-07T16:00:40Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=10BDJoAPqMg",
+        "creator": "Chris WorldWanderer",
+        "checked_at": "2026-11-08T12:03:20.519Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Chris WorldWanderer 2026-11-08T03:13:49Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=GcpORXFH04A",
+        "creator": "Tribunnews",
+        "checked_at": "2026-11-08T12:03:20.519Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Tribunnews 2026-11-08T00:57:45Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-08T12:03:20.519Z",
+      "digest": "4c2654bc14c7354d0fe4512314ef3e1fbbb92a3158ceeb92ddc0c6649ed8f0ed"
+    }
+  },
+  "reel_limits": {
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": [
+      "Mansaid Channel",
+      "Chris WorldWanderer",
+      "Tribunnews"
+    ],
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Standard YouTube licences without verified montage video/audio reuse grant; browser Online fetch throttled.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_alternate_route_retry": true
+  },
+  "illustration": {
+    "mandatory_for_slot": false,
+    "reason": "Sunday20WIB, not Monday/Wednesday20WIB.",
+    "Edge_TTS": false,
+    "AI_video": false,
+    "authorized_host_recording_selected": false,
+    "fully_automated_engine_claimed": false
+  },
+  "media": {
+    "source": "https://commons.wikimedia.org/wiki/File:Ivan_Mamut_Persija_-_1001018817_(cropped).jpg",
+    "creator": "Bogororange",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "bytes": 1074327,
+    "sha256": "de7de364f8a4eac7e034ebfd17d165362f59a3949b645a9918247a9777ca8903",
+    "curid": "202075661",
+    "width": 1901,
+    "height": 2379,
+    "own_work_grant_read": true,
+    "deed_read": true,
+    "browser_grant": "turn847047view2",
+    "browser_deed": "turn339817view1",
+    "original_native_viewed": true,
+    "archive_context": "PSIM-PersijaOctober2026 per source; not7Novembermatch.",
+    "changes": "Authentic Mamut photographed face/hair/expression/jersey/pose retained as imagegen reference; generated background collage/type. No invented action/kit. Source CC0; no endorsement implied.",
+    "cover": {
+      "variant_id": "FOTO_DOMINAN",
+      "rotation_helper": true,
+      "previous_variants": [
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM"
+      ],
+      "page_count": 4,
+      "bytes": 424412,
+      "sha256": "b483c4ee695be2c617333913d99ca69083dfd99a1a9cb4a03d57bfbaaab294fc",
+      "source_label": "ILEAGUE.ID",
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 2551836,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "native_viewed": true,
+      "safe_edges": true,
+      "no_edition_or_promotional_footer": true
+    },
+    "hero": {
+      "dimensions": [
+        512,
+        420
+      ],
+      "bytes": 42205,
+      "sha256": "94d5f2e036600bd9cbd2ae3d67a3c1a5f1bdffae1b4ddf65adc20feda149fa26",
+      "method": "Original full photo contained on cream canvas, no text.",
+      "native_viewed": true
+    }
+  },
+  "article": {
+    "title": "Gol Mamut Tak Menghapus Catatan Shin",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 85,
+    "digest": "dbda9fe811cdc36032ba330f14c2542589cfee127b1367c1a9290f97004c8c58",
+    "benchmarks": [
+      "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+      "goal-20261108-arsenal-hull-record-match-news"
+    ],
+    "complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "ILEAGUE.ID",
+      "cover_input_sha256": "b483c4ee695be2c617333913d99ca69083dfd99a1a9cb4a03d57bfbaaab294fc",
+      "output_sha256": "b77bbc988e32d06f616c195820d66130dfe754888ab64f1514854d80a64ceecf",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "b9702cb0c88579892e05d2a46f79c0a065c7e170bec5cc822c26134de39ccd93",
+      "output_sha256": "4038b628c78edc84a2ac01fb615a0c963ab15c72b94b5f93cf4fa40c8d702f77",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 299,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 680,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 905,
+          "height": 299,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "e1906ec95481291d9b110e33279151fb6388cd21be92cd0a371326dc96c1cf6b",
+      "output_sha256": "822d74b33ed954d52e83e4f4f3f97346e9c47c3a291f1f554bc25346c7921843",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 128,
+      "body_height": 246,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 369,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 667,
+          "height": 128,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 409,
+          "width": 891,
+          "height": 246,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "8eec922f04f48af277ce6d34d4bf91bd71dbeabf12c9b234f42da01dde8606b2",
+      "output_sha256": "6513e70cd65c29a7c455526b83578d3238b8378bd57eb0322731063504585b1a",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 193,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 729,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 895,
+          "height": 193,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_JPEG_opened_native1080x1350": true,
+    "downloaded_SHA_match_preview": true,
+    "hero_opened512x420": true,
+    "body_cream_text_only": true,
+    "headline_font_px": 60,
+    "body_font_px": 36,
+    "divider_gaps_px": 36,
+    "no_overflow_or_overlap": true,
+    "cover1of4_matches_final": true,
+    "last_sentence_repetition_removed_page4_rerendered_native_reviewed": true,
+    "other_three_JPEG_unchanged_after_edit": true
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "Graph_API_carousel_music_not_supported": true,
+    "no_muting_synthetic_song_or_voice_created": true
+  },
+  "growth": {
+    "serial": "Setelah Peluit",
+    "framework_only": true,
+    "core_fact": "Mamut menyambar bola pantul sebagai penentu Persija1-0Persebaya; Shin masih mengevaluasi lapangan dan menjelaskan percepatan operan/tekanan dari depan.",
+    "angle": "Menang tidak menghapus catatan pelatih; bedakan hasil dan evaluasi beratribusi.",
+    "audience_action": "Tanggapi bagian permainan Persija yang perlu diperbaiki dengan alasan.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "Two targeted committed YouTube queries, three actual URLs/creators reviewed. Standard licences without montage video/audio reuse grant and browser throttled. Sunday20WIB not mandatory illustration; same-pillar verified carousel fallback retains original time. No authorized host recording selected.",
+    "mandatory_illustration": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-09T13:00:00Z",
+    "review_due_7d": "2026-11-15T13:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-08T12:08:07.581Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18099409229536366",
+        "published_at": "2026-11-08T01:01:54+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17966817417218122",
+        "published_at": "2026-11-07T13:00:50+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17907882534584969",
+        "published_at": "2026-11-05T13:02:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18015723341990275",
+        "published_at": "2026-11-05T01:02:24+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-08T12:08:07.581Z",
+    "baseline_rows": 219,
+    "current_rows": 219,
+    "unchanged_other_rows": 218,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "89af8c3d-0dff-4941-aa76-09be5c60c540",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-08T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 8,
+    "weekly_routine_proposed": 9,
+    "weekly_limit": 12,
+    "instagram_media": 83,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 35,
+    "latest_read_at": "2026-11-08T00:50:35.784Z",
+    "sha256": "dab299cf64db7d7a9245186d0702d75447266b237618587c6a6e8e0b0e786933",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "rollback_commit": "127eb6f262246eacd0a14395e0c118c39add5316",
+  "remaining": "Commit/push reviewed proof before shared schedule. Verify ARTICLE canonical/time, public bytes, gate, scope and idempotency. Future20WIB handoff not publication claim."
+}

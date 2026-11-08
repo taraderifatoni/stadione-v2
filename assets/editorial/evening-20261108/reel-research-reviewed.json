@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-08:match-pm",
+  "checked_at": "2026-11-08T12:03:20.519Z",
+  "queries": [
+    "sepak bola Indonesia 8 November 2026 hasil pertandingan",
+    "Persija Persebaya Ivan Mamut 7 November 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=QjH6e1ypKt8",
+      "creator": "Mansaid Channel",
+      "checked_at": "2026-11-08T12:03:20.519Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Mansaid Channel 2026-11-07T16:00:40Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=10BDJoAPqMg",
+      "creator": "Chris WorldWanderer",
+      "checked_at": "2026-11-08T12:03:20.519Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Chris WorldWanderer 2026-11-08T03:13:49Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=GcpORXFH04A",
+      "creator": "Tribunnews",
+      "checked_at": "2026-11-08T12:03:20.519Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/descriptions reviewed; standard YouTube licence without verified montage footage/audio reuse grant. Browser page fetch throttled, no alternate-route retry. Mansaid description minute68 contradicts primary89, rejected as match evidence. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Tribunnews 2026-11-08T00:57:45Z; standard youtube licence without verified reuse grant. Browser Online fetch throttled."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-08T12:03:20.519Z",
+    "digest": "4c2654bc14c7354d0fe4512314ef3e1fbbb92a3158ceeb92ddc0c6649ed8f0ed"
+  }
+}

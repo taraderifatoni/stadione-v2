@@ -1,0 +1,5 @@
+# Photograph and cover
+
+Archive Ivan Mamut during PSIM–Persija2026/27. Source: https://commons.wikimedia.org/wiki/File:Ivan_Mamut_Persija_-_1001018817_(cropped).jpg . Own-work creator Bogororange, source date10October2026; grant CC0 1.0 and full deed https://creativecommons.org/publicdomain/zero/1.0/ read. Source1901×2379,1074327bytes, SHA256 de7de364f8a4eac7e034ebfd17d165362f59a3949b645a9918247a9777ca8903.
+
+Authentic photograph used as imagegen reference for FOTO_DOMINAN newspaper cover. Face/hair/jersey/pose retained, background and typography changed. Not a photograph of7November match, no invented action or endorsement. Cover proportions preserved with safe cream margins; hero original photo contained512×420 without text. Source/archive/creator/licence/changes stated on cover and caption. CC0 does not waive third-party trademark or personality rights; use is factual editorial without implied endorsement. Raw photo, source text, packet and API responses remain private, Git contains derivatives and our editorial documentation only.
