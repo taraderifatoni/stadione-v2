@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-11-11T12:07:40.235Z",
+  "state": "BLOCKED",
+  "stage": "NARRATION_PREFLIGHT",
+  "target": {
+    "id": "c8f1600e-9460-44f0-82e3-1716bf600478",
+    "plan_key": "2026-11-11:mid-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "format": "REEL",
+    "required_visual_mode": "illustration",
+    "status": "DRAFT",
+    "scheduled_at": "2026-11-11T13:00:00+00:00",
+    "time_wib": "11 November2026 20.00WIB",
+    "parent_id": null,
+    "assets": 0,
+    "attempts": 0,
+    "published_at": null,
+    "external_post_id": null
+  },
+  "preflight": {
+    "provider": "openai",
+    "provider_configured": false,
+    "issues": [
+      "NARRATION_PROVIDER_MISSING: OPENAI_API_KEY belum dikonfigurasi untuk Stadione. Alternatif: rekaman narasi berizin per adegan."
+    ],
+    "target_assignment": {
+      "id": "c8f1600e-9460-44f0-82e3-1716bf600478",
+      "title": "Hot news / quotes — 11/11/2026",
+      "status": "DRAFT",
+      "current_format": "REEL",
+      "required_format": "REEL",
+      "required_visual_mode": "illustration",
+      "plan_key": "2026-11-11:mid-pm",
+      "scheduled_at": "2026-11-11T13:00:00+00:00"
+    },
+    "mutations": 0
+  },
+  "scope": {
+    "baseline_rows": 229,
+    "current_rows": 229,
+    "all_CMS_rows_byte_equivalent": true,
+    "changed_rows": [],
+    "added_rows": [],
+    "durable_attempts_target": 0,
+    "no_seeder_render_preview_approval_schedule_publish_or_MetaDirect": true,
+    "protected_slots_13WIB_additional_scheduled_published_archived_tombstone_untouched": true,
+    "services_automations_renderer_credentials_unchanged": true
+  },
+  "instagram": {
+    "checked_at": "2026-11-11T12:04:40.674Z",
+    "account": "stadione.id",
+    "media_count": 84,
+    "target_media_id": null,
+    "target_metrics": null,
+    "topic_duplicate_check": "No new topic assigned because mandatory illustration preflight blocked before production. Existing media feed and CMS inspected; no duplicate production attempted."
+  },
+  "references": {
+    "entries": 36,
+    "latest_read_at": "2026-11-11T12:06:04.570Z",
+    "sha256": "4e54253d0f542714ba7f23c6e5788756c621bc8fb9e9c6a1e82f990c69ea92c9",
+    "runtime_committed_identical": true,
+    "release_issues": []
+  },
+  "not_performed": [
+    "fresh topic research and two publisher fact verification",
+    "source packet/storyboard/illustrations/new narration",
+    "render/audio inspection/approval/article pairing",
+    "schedule/publication/idempotent mutation replay"
+  ],
+  "reason": "Required illustration slot cannot proceed with configured shared narration: production OPENAI_API_KEY missing. No approved per-scene recorded narration supplied for this unassigned story. Prototype Edge TTS audio is not eligible reuse.",
+  "next_action": "Owner/operator configures licensed production narration provider through existing secure configuration, or supplies licensed per-scene recordings. Agent then researches/writes and reviews actual audio/timing, preview, CMS approval, identical ARTICLE, shared schedule. Do not bypass with carousel, mock or QA fixture.",
+  "rollback_commit": "b7a9651e0b109f1a0fd339e37081e05b7707dfb2"
+}
