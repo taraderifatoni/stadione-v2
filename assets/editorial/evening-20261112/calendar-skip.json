@@ -1,0 +1,65 @@
+{
+  "checked_at": "2026-11-12T12:01:07.314Z",
+  "state": "SKIPPED_NO_ELIGIBLE_CALENDAR_SLOT",
+  "calendar": {
+    "checked_at": "2026-11-12T12:01:01.369414+00:00",
+    "time_wib": "2026-11-12T19:01:01.369414+07:00",
+    "window_end": "2026-11-12T14:01:01.369414+00:00",
+    "calendar_source": "/opt/stadione-engine-work/scripts/cms-seed-editorial-plan.py",
+    "weekly_slots": 12,
+    "current_weekday": "Thursday",
+    "today_allowed_times": [
+      "08:00"
+    ],
+    "eligible": [],
+    "next_calendar_slot": {
+      "plan_key": "2026-11-13:fri-am",
+      "scheduled_at": "2026-11-13T01:00:00Z",
+      "serial": "Panduan Pekan Ini"
+    },
+    "seeder_main_called": false
+  },
+  "legacy_rows_in_window": [
+    {
+      "id": "5e0ce080-d975-4a55-acca-94d01280754b",
+      "plan_key": "2026-11-12:mid-pm",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-12T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0,
+      "reason": "Thursday20WIB absent from current12-slot weekly calendar; preserve existing draft without production/removal/rescheduling."
+    }
+  ],
+  "cms": {
+    "baseline_rows": 233,
+    "current_rows": 233,
+    "all_rows_unchanged": true,
+    "changed": [],
+    "added": []
+  },
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 85,
+    "read_before_production": true,
+    "no_new_topic_or_duplicate_production_attempted": true
+  },
+  "references": {
+    "entries": 37,
+    "latest_read_at": "2026-11-12T00:24:52.046Z",
+    "sha256": "3a255647c0c45db28a76ff25758e24d2ee3c31b439863eefc2cb8949dc24eb30",
+    "runtime_committed_identical": true,
+    "release_issues": []
+  },
+  "scope": {
+    "CMS_mutations": 0,
+    "seeder_executed": false,
+    "SerpAPI_queries": 0,
+    "production_render_preview_schedule_publish": false,
+    "renderer_credentials_services_automations_unchanged": true
+  },
+  "rollback_commit": "8975298b79b135b3475b9844922811142411465c",
+  "remaining": "No eligible routine slot in requested two-hour window. Leave legacy draft and all protected content unchanged; next calendar slot is outside this run."
+}
