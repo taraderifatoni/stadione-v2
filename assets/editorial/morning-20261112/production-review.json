@@ -1,0 +1,584 @@
+{
+  "checked_at": "2026-11-12T00:05:44.119Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "68798bd2-3be4-45b7-bd6d-7ed22b3255c7",
+    "plan_key": "2026-11-12:mid-am",
+    "event_key": "isak-timber-kmi-penalty-var-split-review-20261111",
+    "pillar": "Sepak Bola Eropa",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-11-12T01:00:00Z",
+    "time_wib": "12 November2026 08.00WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-12",
+      "fetchedAt": "2026-11-11T23:58:40.291Z",
+      "method": "Release getDailySportsPool via committed cms-audience-pool/cms-load, cache/quota preserved.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "PL",
+        "url": "https://www.premierleague.com/es/news/4763025/kmi-panel-matchweek-9",
+        "publisher_group": "PREMIERLEAGUE",
+        "primary": true,
+        "published_at": "2026-11-11",
+        "retrieved_at": "2026-11-12T00:01:35.621Z",
+        "normalized_text_sha256": "8fa15519ced010c944431f1d9c9cd4f820144d2d16fb5e8f033eeb4806526fd5"
+      },
+      {
+        "id": "BBC",
+        "url": "https://sports.yahoo.com/articles/shirt-pull-isak-penalty-panel-101042507.html",
+        "publisher_group": "BBC",
+        "primary": false,
+        "published_at": "2026-11-11",
+        "retrieved_at": "2026-11-12T00:01:35.621Z",
+        "normalized_text_sha256": "21d56013ec843e41e4cb5095402e91368d06560ac494bef7f6b3ade11af6e6d2"
+      },
+      {
+        "id": "AFP",
+        "url": "https://www.enca.com/sport/liverpool-should-have-had-penalty-shirt-pull-isak-panel",
+        "publisher_group": "AFP",
+        "primary": false,
+        "published_at": "2026-11-11",
+        "retrieved_at": "2026-11-12T00:01:35.621Z",
+        "normalized_text_sha256": "34933779e65bee6b8eb49e83a53cfb1e6ad024c2418b04c33da23554319f6085"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Alexander_Isak_France_v_Sweden_6.30.26-043.jpg",
+        "publisher_group": "BRYAN_BERLIN",
+        "primary": true,
+        "published_at": "2026-06-30",
+        "retrieved_at": "2026-11-12T00:01:35.621Z",
+        "normalized_text_sha256": "5ae0f298c2b798db1bedae945229214b0e280438b67bebea2f19c776b9aa1c21"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-12T00:01:35.621Z",
+        "normalized_text_sha256": "d6a298847d049cd69d384aad72c19a4bf4868b0fd595046d07acb63bd0ebafd9"
+      }
+    ],
+    "full_read": [
+      {
+        "publisher": "PREMIERLEAGUE",
+        "primary": true,
+        "method": "Full official KMI MatchRound9 article, all holding and handball sections through final PDF/FAQ links; ordinary public GET200 via TD after generic browser error.",
+        "retrieved_chars": 4312
+      },
+      {
+        "publisher": "BBC",
+        "author": "Dale Johnson",
+        "primary": false,
+        "method": "Entire syndicated YahooSports BBC report through IpswichHull conclusion, ordinary public GET200 via TD after generic browser error. Syndication is one publisher, not Yahoo second independent newsroom.",
+        "retrieved_chars": 7446
+      },
+      {
+        "publisher": "AFP",
+        "primary": false,
+        "method": "Full eNCA AFP report through final Iraola quote/byline, ordinary public GET200 via TD after generic browser error.",
+        "retrieved_chars": 2205
+      }
+    ],
+    "verification": [
+      "Review published11November2026, distinct new event from Arsenal1November match and earlier Havertz winner post.",
+      "Four-to-one penalty, three-to-two VAR review; minority concern is subjective impact and high intervention threshold.",
+      "Original LiverpoolArsenal atAnfield1November2026, Arsenal1-0; non-penalty/onfield and VAR review distinguished."
+    ],
+    "limits": [
+      "Primary minute20 vs BBC21 omitted; no exact clip clock claimed.",
+      "No counterfactualgoal/result/points change, referee motive or assertion every shirt pull is automatic penalty.",
+      "No claim watched incident video or full match; no quotations used.",
+      "AFP and BBC independent newsrooms plus primary; repeated syndications not counted twice.",
+      "Naijapodnews description calls other incident Championship, inconsistent with primaryPL; video descriptions not sources of facts.",
+      "Generic browser errors handled with ordinary public GET200, no login/challenge/paywall bypass."
+    ]
+  },
+  "reel_research": {
+    "version": 1,
+    "plan_key": "2026-11-12:mid-am",
+    "checked_at": "2026-11-12T00:01:35.621Z",
+    "queries": [
+      "Arsenal Liverpool Manchester United football 11 November 2026",
+      "Isak Timber penalty panel November 2026"
+    ],
+    "attempts": [
+      {
+        "page_url": "https://www.youtube.com/watch?v=xpHvYjzV6E0",
+        "creator": "Dias Footy",
+        "checked_at": "2026-11-12T00:01:35.621Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Dias Footy 2026-11-11T13:14:00Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=pQZ4kyqiQN4",
+        "creator": "The Soccer Sauce",
+        "checked_at": "2026-11-12T00:01:35.621Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "The Soccer Sauce 2026-11-11T16:36:19Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+        }
+      },
+      {
+        "page_url": "https://www.youtube.com/watch?v=kC3Dtm3yihA",
+        "creator": "Naijapodnews",
+        "checked_at": "2026-11-12T00:01:35.621Z",
+        "result": "PERMISSION_UNCONFIRMED",
+        "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+        "proof": {
+          "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+          "summary": "Naijapodnews 2026-11-11T11:00:30Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+        }
+      }
+    ],
+    "review": {
+      "reviewer_id": "CODEX_EDITOR",
+      "reviewed_at": "2026-11-12T00:01:35.621Z",
+      "digest": "d1b0552e1566899f43b9c31833742207c4c2fbf42eecbb64b547a6bb89ea0d23"
+    }
+  },
+  "reel_limits": {
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": [
+      "Dias Footy",
+      "The Soccer Sauce",
+      "Naijapodnews"
+    ],
+    "stage": "SOURCE_RIGHTS_AND_ACCESS",
+    "reason": "Complete API metadata/descriptions reviewed; standard YouTube licences without verified video/audio montage grant; actual browser opens throttled.",
+    "downloaded": false,
+    "watched": false,
+    "auditioned": false,
+    "transcript_verified": false,
+    "no_alternate_route_retry": true
+  },
+  "illustration": {
+    "mandatory_for_slot": false,
+    "reason": "Thursday08WIB, not Monday/Wednesday20WIB.",
+    "Edge_TTS": false,
+    "AI_video": false,
+    "authorized_host_recording_selected": false,
+    "fully_automated_claimed": false
+  },
+  "media": {
+    "source": "https://commons.wikimedia.org/wiki/File:Alexander_Isak_France_v_Sweden_6.30.26-043.jpg",
+    "creator": "Bryan Berlin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "bytes": 3178724,
+    "sha256": "643704eda680acad41fb720370735d4d7a9e78e24d7872d872a1ac38ba31a33c",
+    "curid": "199419509",
+    "width": 3333,
+    "height": 5000,
+    "own_work_grant_read": true,
+    "grant_method": "Full Commons source page ordinary publicGET200 viaTD; browser generic error not claimed full browser read.",
+    "deed_read": true,
+    "deed_browser": "turn903793view1",
+    "original_native_viewed": true,
+    "archive_context": "FranceSweden30June2026, original yellowSwedenjersey; not NovemberAnfield incident.",
+    "changes": "Authentic face/hair/expression/body/jersey/pose retained as reference; generated KLASIK newspaper collage/type background. No Liverpool kit or fabricated holding. Adaptations including our contributions CC BY-SA4.0, no added restriction or implied endorsement.",
+    "cover": {
+      "variant_id": "KLASIK",
+      "rotation_helper": true,
+      "previous_variants": [
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK",
+        "FOTO_DOMINAN"
+      ],
+      "page_count": 4,
+      "bytes": 555551,
+      "sha256": "37502315219e35f2a49d1346fc6e7d1cf7301899b7af3c464061b8a0aee552fa",
+      "source_label": "PREMIERLEAGUE.COM",
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 3069372,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "native_viewed": true,
+      "safe_edges": true,
+      "no_edition_or_promotional_footer": true
+    },
+    "hero": {
+      "dimensions": [
+        512,
+        420
+      ],
+      "crop": [
+        0,
+        0,
+        3333,
+        2734
+      ],
+      "bytes": 49725,
+      "sha256": "6eb9afca1bd37371ad0b27b05c114ad54cd6720f3a768ff4e7f188dc89736caa",
+      "original_without_text": true,
+      "native_viewed": true
+    }
+  },
+  "article": {
+    "title": "Penalti Isak, Suara VAR Lebih Tipis",
+    "genre": "NEWS",
+    "paragraphs": 3,
+    "words": 117,
+    "digest": "badb7d3528431215bf132f5db242f83e34169ac46261e108ed38553a4d23bb5e",
+    "benchmarks": [
+      "goal-20261108-arsenal-hull-record-match-news",
+      "goal-20261106-amorim-milan-ferencvaros-reaction-news"
+    ],
+    "complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": []
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PREMIERLEAGUE.COM",
+      "cover_input_sha256": "37502315219e35f2a49d1346fc6e7d1cf7301899b7af3c464061b8a0aee552fa",
+      "output_sha256": "d0f92b1c61a41f8374664dc05d4ae926880dd6c6f45dbd1626ec726e93c8b226",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "7b4e390523534c3eefee92ea2979e6d9a3e560c06b13eeb5d65bce618b1b7d80",
+      "output_sha256": "75ef8d43acc1d4649e7b02fbfa4756f5591a8f6201060c9943ce8f280cc89f41",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 293,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 902,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 904,
+          "height": 293,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "8a7c01fc5f52c3469185ee1dfe9d80e181252b709d52249beda2cf774d191733",
+      "output_sha256": "cd1890f1cfc17a3fe5000dc816b5c228f5b794fbbb640d6e28868f1e5e5cab1f",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 139,
+      "body_height": 346,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 380,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 693,
+          "height": 139,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 420,
+          "width": 918,
+          "height": 346,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "4ca615ed62918ad22aae00ecc692b5fe4cf2951219fd733db2b3141c8ccbf33f",
+      "output_sha256": "2bdfb5b751ded28411d5d8391ce5097749d2262a7ab26f9e7a74b0476a9a7605",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 47,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 288,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 900,
+          "height": 47,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 328,
+          "width": 924,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_four_JPEG_opened_native1080x1350": true,
+    "downloaded_SHA_match_preview": true,
+    "hero_opened512x420": true,
+    "body_cream_text_only": true,
+    "no_overflow_or_overlap": true,
+    "cover1of4_matches_final": true,
+    "headline_font_px": 60,
+    "body_font_px": 36,
+    "divider_gaps_px": 36
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "Graph_API_carousel_music_not_supported": true,
+    "no_muting_synthetic_song_or_voice_created": true
+  },
+  "growth": {
+    "serial": "Lapangan Kita tidak dipaksakan pada pilar Eropa existing",
+    "framework_only": true,
+    "core_fact": "Panel KMI menilai penalti4:1 dan intervensi VAR3:2 pada insiden Isak–Timber; dua anggota mempertimbangkan subjektivitas dampak tarikan.",
+    "angle": "Bedakan keputusan pelanggaran dan ambang intervensi VAR melalui jumlah suara serta alasan yang diterbitkan.",
+    "hook": "Penalti Isak, Suara VAR Lebih Tipis",
+    "payoff": "Pembaca memahami mengapa dukungan untuk VAR lebih tipis.",
+    "audience_action": "Simpan perbedaan dua penilaian dan tanggapi kejelasan ambang VAR dengan alasan.",
+    "original_format": "REEL",
+    "format": "CAROUSEL",
+    "format_reason": "Two targeted committed YouTube searches and three actual URLs/creators reviewed; standard licences without verified video/audio reuse grant, browser throttled. Thursday08WIB not mandatory illustration. Same Europe pillar and original time preserved with verified carousel. No authorized host recording selected.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-13T01:00:00Z",
+    "review_due_7d": "2026-11-19T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-12T00:05:44.119Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18643361083057857",
+        "published_at": "2026-11-08T13:01:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18099409229536366",
+        "published_at": "2026-11-08T01:01:54+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17966817417218122",
+        "published_at": "2026-11-07T13:00:50+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17907882534584969",
+        "published_at": "2026-11-05T13:02:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-12T00:05:44.119Z",
+    "baseline_rows": 232,
+    "current_rows": 232,
+    "unchanged_other_rows": 231,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "68798bd2-3be4-45b7-bd6d-7ed22b3255c7",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-12T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 0,
+    "weekly_routine_proposed": 1,
+    "weekly_limit": 12,
+    "instagram_media": 84,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "only_target_and_new_article_authorized": true,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "otherdrafts",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 36,
+    "latest_read_at": "2026-11-11T12:06:04.570Z",
+    "sha256": "4e54253d0f542714ba7f23c6e5788756c621bc8fb9e9c6a1e82f990c69ea92c9",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "rollback_commit": "eec502af6a90398ef9a0b8afa0daa410e1360c06",
+  "remaining": "Commit/push before shared schedule. Verify ARTICLE canonical/time/bytes, gate, scope, idempotency. Valid future08WIB schedule handed to shared publisher, not publication claim."
+}

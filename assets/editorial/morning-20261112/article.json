@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Penalti Isak, Suara VAR Lebih Tipis",
+  "dek": "Empat suara untuk penalti, tiga untuk intervensi VAR. Arsip: Bryan Berlin/CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=199419509",
+  "caption": "PENALTI ISAK, SUARA VAR LEBIH TIPIS\n\nPanel Key Match Incidents Premier League menilai Liverpool seharusnya mendapat penalti setelah Jurrien Timber menarik kostum Alexander Isak. Dalam evaluasi yang dipublikasikan Rabu (11/11/2026), empat anggota mendukung penalti dan satu menolak.\n\nInsiden terjadi saat Arsenal menang 1–0 di Anfield pada 1 November. Wasit Andy Madley tidak memberi penalti dan VAR Stuart Attwell tidak merekomendasikan tinjauan monitor. Panel menilai kedua keputusan itu keliru, tetapi dukungan untuk intervensi VAR lebih tipis: tiga suara berbanding dua.\n\nMayoritas panel menganggap keputusan wasit sebagai kesalahan yang jelas dan nyata sehingga VAR perlu turun tangan. Dua anggota berbeda pendapat karena menilai dampak tarikan bersifat subjektif dan belum memenuhi ambang intervensi VAR. Jadi, penilaian pelanggaran dan alasan mengubah keputusan melalui VAR diperiksa secara terpisah.\n\nMenurutmu, ambang intervensi VAR pada tarikan kostum sudah cukup jelas? Jelaskan alasanmu.\n\nSumber: evaluasi lengkap Premier League, Dale Johnson/BBC melalui Yahoo Sports, dan AFP melalui eNCA.\n\nFoto arsip “Alexander Isak France v Sweden 6.30.26-043.jpg” oleh Bryan Berlin, WikiPortraits, 30 Juni 2026. Sumber https://commons.wikimedia.org/?curid=199419509 . CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan hero crop diolah; seluruh kontribusi adaptasi dibagikan dengan lisensi sama tanpa pembatasan tambahan. Jersey Swedia asli dipertahankan, bukan foto insiden Anfield. Tanpa dukungan tersirat fotografer/pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Empat Suara untuk Penalti",
+      "kind": "FACT",
+      "claim_ids": [
+        "PENALTY",
+        "PHOTO"
+      ],
+      "text": "Panel Key Match Incidents Premier League menilai Liverpool seharusnya mendapat penalti setelah Jurrien Timber menarik kostum Alexander Isak. Dalam evaluasi yang dipublikasikan Rabu (11/11/2026), empat anggota mendukung penalti dan satu menolak."
+    },
+    {
+      "id": "context",
+      "heading": "Dua Keputusan yang Diperiksa",
+      "kind": "FACT",
+      "claim_ids": [
+        "MATCH",
+        "VAR"
+      ],
+      "text": "Insiden terjadi saat Arsenal menang 1–0 di Anfield pada 1 November. Wasit Andy Madley tidak memberi penalti dan VAR Stuart Attwell tidak merekomendasikan tinjauan monitor. Panel menilai kedua keputusan itu keliru, tetapi dukungan untuk intervensi VAR lebih tipis: tiga suara berbanding dua."
+    },
+    {
+      "id": "threshold",
+      "heading": "Letak Perbedaan Penilaian",
+      "kind": "FACT",
+      "claim_ids": [
+        "VAR"
+      ],
+      "text": "Mayoritas panel menganggap keputusan wasit sebagai kesalahan yang jelas dan nyata sehingga VAR perlu turun tangan. Dua anggota berbeda pendapat karena menilai dampak tarikan bersifat subjektif dan belum memenuhi ambang intervensi VAR. Jadi, penilaian pelanggaran dan alasan mengubah keputusan melalui VAR diperiksa secara terpisah."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261108-arsenal-hull-record-match-news",
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-12T00:01:35.621Z",
+    "article_digest": "badb7d3528431215bf132f5db242f83e34169ac46261e108ed38553a4d23bb5e"
+  }
+}

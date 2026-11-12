@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-12:mid-am",
+  "checked_at": "2026-11-12T00:01:35.621Z",
+  "queries": [
+    "Arsenal Liverpool Manchester United football 11 November 2026",
+    "Isak Timber penalty panel November 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=xpHvYjzV6E0",
+      "creator": "Dias Footy",
+      "checked_at": "2026-11-12T00:01:35.621Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Dias Footy 2026-11-11T13:14:00Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=pQZ4kyqiQN4",
+      "creator": "The Soccer Sauce",
+      "checked_at": "2026-11-12T00:01:35.621Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "The Soccer Sauce 2026-11-11T16:36:19Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=kC3Dtm3yihA",
+      "creator": "Naijapodnews",
+      "checked_at": "2026-11-12T00:01:35.621Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Complete API metadata/description reviewed, standard YouTube licence without verified footage/audio montage reuse grant. Actual browser page Online fetch throttled, no alternate-route retry. Reactions/narrated reports are not licence for original incident footage. No download/watch/audition/transcript. Naijapodnews Championship wording conflicts primaryPL and not used for facts.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Naijapodnews 2026-11-11T11:00:30Z standard youtube licence no verified reuse grant; actual browser fetch throttled."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-12T00:01:35.621Z",
+    "digest": "d1b0552e1566899f43b9c31833742207c4c2fbf42eecbb64b547a6bb89ea0d23"
+  }
+}
