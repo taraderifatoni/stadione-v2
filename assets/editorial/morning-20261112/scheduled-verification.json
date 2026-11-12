@@ -1,0 +1,115 @@
+{
+  "checked_at": "2026-11-12T00:06:58.722Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "pre_schedule_commit": "5b6824ae8b74632aad6a29306c0c5709ec4aa8b3",
+  "verification": {
+    "checked_at": "2026-11-12T00:06:29.830Z",
+    "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+    "social": {
+      "id": "68798bd2-3be4-45b7-bd6d-7ed22b3255c7",
+      "status": "SCHEDULED",
+      "format": "CAROUSEL",
+      "plan_key": "2026-11-12:mid-am",
+      "event_key": "isak-timber-kmi-penalty-var-split-review-20261111",
+      "scheduled_at": "2026-11-12T01:00:00+00:00",
+      "time_wib": "12 November 2026 08.00 WIB",
+      "auto_publish": true,
+      "assets": 4,
+      "publication_issues": []
+    },
+    "article": {
+      "id": "d6d392d8-abf7-4fbc-8371-cbc011985daa",
+      "status": "SCHEDULED",
+      "slug": "penalti-isak-suara-var-lebih-tipis-68798bd2",
+      "scheduled_at": "2026-11-12T01:00:00+00:00",
+      "title": "Penalti Isak, Suara VAR Lebih Tipis",
+      "canonical_body_identical": true,
+      "canonical_dek_identical": true,
+      "digest": "badb7d3528431215bf132f5db242f83e34169ac46261e108ed38553a4d23bb5e",
+      "issues": [],
+      "hero": {
+        "http": 200,
+        "bytes": 49725,
+        "sha256": "6eb9afca1bd37371ad0b27b05c114ad54cd6720f3a768ff4e7f188dc89736caa",
+        "clean_original_without_text": true
+      }
+    },
+    "renders": [
+      {
+        "page": 1,
+        "http": 200,
+        "bytes": 671686,
+        "sha256": "d0f92b1c61a41f8374664dc05d4ae926880dd6c6f45dbd1626ec726e93c8b226",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 2,
+        "http": 200,
+        "bytes": 149657,
+        "sha256": "75ef8d43acc1d4649e7b02fbfa4756f5591a8f6201060c9943ce8f280cc89f41",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 3,
+        "http": 200,
+        "bytes": 167708,
+        "sha256": "cd1890f1cfc17a3fe5000dc816b5c228f5b794fbbb640d6e28868f1e5e5cab1f",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 4,
+        "http": 200,
+        "bytes": 187406,
+        "sha256": "2bdfb5b751ded28411d5d8391ce5097749d2262a7ab26f9e7a74b0476a9a7605",
+        "identical_reviewed_preview": true
+      }
+    ],
+    "instagram": {
+      "account": "stadione.id",
+      "media_count": 84,
+      "duplicate_matches": 0
+    },
+    "attempts": 0,
+    "baseline_rows": 232,
+    "current_rows": 233,
+    "unchanged_existing_other_rows": 231,
+    "changed_other_rows": [],
+    "new_article_rows": 1,
+    "weekly_routine_published_or_scheduled_count": 1,
+    "weekly_limit": 12,
+    "reference": {
+      "entries": 36,
+      "sha256": "4e54253d0f542714ba7f23c6e5788756c621bc8fb9e9c6a1e82f990c69ea92c9",
+      "runtime_committed_identical": true
+    },
+    "native_render_review": {
+      "all_four_opened1080x1350": true,
+      "reviewed_bytes_match_scheduled_assets": true,
+      "hero_opened": true,
+      "cover_count": "1/4",
+      "no_overflow_or_clipping": true
+    },
+    "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+    "pre_schedule_commit": "5b6824ae8b74632aad6a29306c0c5709ec4aa8b3"
+  },
+  "idempotence": {
+    "checked_at": "2026-11-12T00:06:30.643Z",
+    "adapter_result": {
+      "skipped": true,
+      "id": "68798bd2-3be4-45b7-bd6d-7ed22b3255c7",
+      "status": "SCHEDULED",
+      "reason": "existing_scheduled_published_archived_or_attempt"
+    },
+    "all_rows_identical": true,
+    "rows": 233,
+    "durable_attempts_identical": true,
+    "attempts": 0,
+    "no_extra_article_or_assets": true
+  },
+  "publisher_liveness": {
+    "timer": "ActiveState=active\nSubState=waiting\n",
+    "service": "Result=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+    "note": "Liveness supports future shared handoff only; not proof of target Instagram/website publication."
+  },
+  "remaining": "Leave valid SCHEDULED SOCIAL/ARTICLE to shared publisher at original08WIB. No target media_id/website publication or metrics yet."
+}
