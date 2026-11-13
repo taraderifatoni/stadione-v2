@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Alwi–Ubed, Satu Tiket Semifinal",
+  "dek": "Dua cara mengatasi tekanan, satu tiket di Kumamoto. Arsip: Tony2803.tw/CC BY 4.0; diolah. commons.wikimedia.org/?curid=155994396",
+  "caption": "ALWI–UBED, SATU TIKET SEMIFINAL\n\nAlwi Farhan dan Moh Zaki Ubaidillah akan saling berhadapan di perempat final Kumamoto Masters, Jumat (13/11/2026). Duel sesama tunggal putra Indonesia ini menjamin satu tempat di semifinal. Yang menarik untuk diikuti ialah cara keduanya menghadapi tekanan setelah melewati ujian berbeda pada babak sebelumnya.\n\nPada Kamis, Alwi mengalahkan Kenta Nishimoto 21–13, 6–21, 21–11. Dalam keterangan PBSI, ia menjelaskan bahwa arah angin membuat gim kedua lebih melelahkan. Setelah tertinggal jauh, ia menghemat tenaga agar bisa kembali fokus pada gim penentuan. Keberhasilannya melewati laga itu datang setelah menyesuaikan rencana dengan kondisi lapangan.\n\nUbed menundukkan Christo Popov 21–15, 21–19. Kepada PBSI, ia mengatakan belajar dari pertemuan terdahulu serta rekaman permainan lawan. Saat tertinggal pada gim kedua, ia justru meningkatkan tempo, lebih menguasai permainan depan, dan menyerang lebih agresif. Hasil itu menjadi bekal menghadapi Alwi, tetapi belum menentukan siapa yang akan memenangi perempat final.\n\nDua kemenangan itu memberi titik perhatian untuk menonton: kapan pemain perlu menahan tenaga, dan kapan perlu mengambil inisiatif. Ini bukan jaminan pola yang sama akan terulang dalam duel mereka. Respons Alwi dan Ubed ketika rencana awal terganggu akan lebih menarik dicermati daripada sekadar menunggu nama pemenang.\n\nSaat tertinggal, pendekatan mana yang lebih menarik kamu ikuti: mengatur tenaga atau menaikkan tempo? Beri alasanmu.\n\nSumber: keterangan lengkap PBSI, laporan CNN Indonesia, dan PB Djarum. Jam laga dapat berubah mengikuti urutan pertandingan; artikel ini tidak menetapkan jam mulai.\n\nFoto arsip “Alwi Farhan.jpg”, 21 Juni 2024, Tony2803.tw, karya sendiri melalui https://commons.wikimedia.org/?curid=155994396 . CC BY 4.0 https://creativecommons.org/licenses/by/4.0/ . Cover kolase dan crop hero diolah; identitas, jersey dan pose asli dipertahankan. Bukan foto Kumamoto 2026. Tanpa dukungan tersirat fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Satu Tiket untuk Indonesia",
+      "kind": "FACT",
+      "claim_ids": [
+        "DUEL",
+        "PHOTO"
+      ],
+      "text": "Alwi Farhan dan Moh Zaki Ubaidillah akan saling berhadapan di perempat final Kumamoto Masters, Jumat (13/11/2026). Duel sesama tunggal putra Indonesia ini menjamin satu tempat di semifinal. Yang menarik untuk diikuti ialah cara keduanya menghadapi tekanan setelah melewati ujian berbeda pada babak sebelumnya."
+    },
+    {
+      "id": "alwi",
+      "heading": "Alwi Memilih Menyimpan Tenaga",
+      "kind": "FACT",
+      "claim_ids": [
+        "ALWI"
+      ],
+      "text": "Pada Kamis, Alwi mengalahkan Kenta Nishimoto 21–13, 6–21, 21–11. Dalam keterangan PBSI, ia menjelaskan bahwa arah angin membuat gim kedua lebih melelahkan. Setelah tertinggal jauh, ia menghemat tenaga agar bisa kembali fokus pada gim penentuan. Keberhasilannya melewati laga itu datang setelah menyesuaikan rencana dengan kondisi lapangan."
+    },
+    {
+      "id": "ubed",
+      "heading": "Ubed Menaikkan Tempo",
+      "kind": "FACT",
+      "claim_ids": [
+        "UBED"
+      ],
+      "text": "Ubed menundukkan Christo Popov 21–15, 21–19. Kepada PBSI, ia mengatakan belajar dari pertemuan terdahulu serta rekaman permainan lawan. Saat tertinggal pada gim kedua, ia justru meningkatkan tempo, lebih menguasai permainan depan, dan menyerang lebih agresif. Hasil itu menjadi bekal menghadapi Alwi, tetapi belum menentukan siapa yang akan memenangi perempat final."
+    },
+    {
+      "id": "watch",
+      "heading": "Perhatikan Respons saat Tertinggal",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "ALWI",
+        "UBED",
+        "DUEL"
+      ],
+      "text": "Dua kemenangan itu memberi titik perhatian untuk menonton: kapan pemain perlu menahan tenaga, dan kapan perlu mengambil inisiatif. Ini bukan jaminan pola yang sama akan terulang dalam duel mereka. Respons Alwi dan Ubed ketika rencana awal terganggu akan lebih menarik dicermati daripada sekadar menunggu nama pemenang."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261112-ferdinand-pochettino-reaction-news",
+    "goal-20261108-arsenal-hull-record-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-13T00:09:26.018Z",
+    "article_digest": "bc180e8a979f3c8533796755b52f7414cfdabe9bd1b03af546089f89c1f90ae7"
+  }
+}

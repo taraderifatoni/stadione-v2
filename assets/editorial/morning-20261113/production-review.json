@@ -1,0 +1,586 @@
+{
+  "checked_at": "2026-11-13T00:13:38.344Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "e4f9fc5d-38cf-45e9-9df7-40e767ac8ce0",
+    "plan_key": "2026-11-13:fri-am",
+    "event_key": "kumamoto-2026-alwi-ubed-quarterfinal-preview-20261113",
+    "pillar": "Olahraga Indonesia",
+    "original_format": "CAROUSEL",
+    "format": "CAROUSEL",
+    "scheduled_at": "2026-11-13T01:00:00Z",
+    "time_wib": "13 November 2026 08.00 WIB"
+  },
+  "research": {
+    "pool": {
+      "date": "2026-11-13",
+      "fetchedAt": "2026-11-13T00:03:45.274Z",
+      "method": "ReleasegetDailySportsPool via committedcms-audience-pool/cms-load,cachequota preserved.",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 11
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 15
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 18
+        }
+      }
+    },
+    "sources": [
+      {
+        "id": "PBSI_ALWI",
+        "url": "https://pbsi.id/2026/11/12/kumamoto-masters-2026-trik-alwi-kembali-sukses-hentikan-nishimoto/",
+        "publisher_group": "PBSI",
+        "primary": true,
+        "published_at": "2026-11-12",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "ec7b74207b028cc0f35a18d88d472510f2c71cf2ae61e52806030f6cd680de75"
+      },
+      {
+        "id": "PBSI_UBED",
+        "url": "https://pbsi.id/2026/11/12/kumamoto-masters-2026-ubed-jungkalkan-pemain-nomor-satu-dunia/",
+        "publisher_group": "PBSI",
+        "primary": true,
+        "published_at": "2026-11-12",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "14b922d92e37e1122a9c7383f6f0e2eb44ca56f1f83bf3d973c794eaf5bfa997"
+      },
+      {
+        "id": "CNN",
+        "url": "https://www.cnnindonesia.com/olahraga/20261112163703-170-1426487/daftar-4-wakil-indonesia-di-perempat-final-kumamoto-masters-2026",
+        "publisher_group": "CNNINDONESIA",
+        "primary": false,
+        "published_at": "2026-11-12T09:57:00Z",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "99f2b51f1933b0dedfaa7d1c6363db8962ed390dea1c0c55c2a7d4c4e28896c6"
+      },
+      {
+        "id": "CNN_UBED",
+        "url": "https://www.cnnindonesia.com/olahraga/20261112115916-170-1426280/kata-kata-ubed-usai-kalahkan-pebulutangkis-nomor-1-dunia-christo-popov",
+        "publisher_group": "CNNINDONESIA",
+        "primary": false,
+        "published_at": "2026-11-12T05:06:00Z",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "dc1d32b71476508b91479f926e11ee134822542ff4c7517a07a47a65ddb8961e"
+      },
+      {
+        "id": "DJARUM",
+        "url": "https://pbdjarum.org/berita/turnamen-internasional/20261112-kumamoto-masters-japan-2026-alwi-bersiap-hadapi-ubed",
+        "publisher_group": "PBDJARUM",
+        "primary": false,
+        "published_at": "2026-11-12",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "906f3130bc964e82d11639f9d8fda11fef369abdba7e831dc4f39f29b6fadae4"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Alwi_Farhan.jpg",
+        "publisher_group": "TONY2803",
+        "primary": true,
+        "published_at": "2024-06-21",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "8314d1e1f909dc0def911547bf865408e6f7ee959b17cf00ffa3c54e695dc565"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-13T00:09:26.018Z",
+        "normalized_text_sha256": "a19a70129f6b251bbf7658b3534c2f4b53e41c9724eaa31f5575d1d469833048"
+      }
+    ],
+    "full_read": [
+      {
+        "publisher": "PBSI",
+        "primary": true,
+        "articles": [
+          "alwi.txt",
+          "ubed.txt"
+        ],
+        "method": "Full primary matchstatements, browser primary opened and ordinaryTD publicGET200, including conclusion of both athlete statements.",
+        "chars": [
+          875,
+          781
+        ]
+      },
+      {
+        "publisher": "CNNINDONESIA",
+        "primary": false,
+        "articles": [
+          "cnn.txt",
+          "cnn-ubed.txt"
+        ],
+        "method": "Full independent publisher pages through bylines, ordinarypublicGET200 viaTD after genericbrowsererror.",
+        "chars": [
+          2156,
+          2227
+        ]
+      },
+      {
+        "publisher": "PBDJARUM",
+        "primary": false,
+        "method": "Full article through finalAlwi attribution; quotations explicitly originatePBSI, not claimedindependent witness.",
+        "chars": 3746
+      }
+    ],
+    "verification": [
+      "Friday13Novemberquarterfinal Alwi versusUbed; drawensuresoneIndonesianMSsemifinalberth, not completedQFresult.",
+      "Thursday12November R16 scoresAlwiNishimoto21-13,6-21,21-11; UbedPopov21-15,21-19.",
+      "Alwi attributes conservingenergy tosecondgamewindconditions, Ubedattributes turnaround totempo/frontcourt/aggression; reviewcommentary groundedtwoclaims."
+    ],
+    "limits": [
+      "No precise startingtime because orderofplay not verified.",
+      "No headtohead, exactdeficit13vs14 conflictingCNN/PBSI, ranking or nextopponent asserted.",
+      "No ownmatchvideo or athleteinterview claim. CNN andDjarum reproducePBSIstatements, not additional independentwitnesses.",
+      "JPNN returnedshortnonarticle body and notusedassource.",
+      "Pool actualfreshcache checked, footballfalsepositives and unrelatedUS items notforcedinto nonbolapillar.",
+      "No login/paywall/challenge bypass."
+    ]
+  },
+  "illustration": {
+    "mandatory_for_slot": false,
+    "reason": "Friday08WIB, existingCAROUSEL, notMonday/Wednesday20WIB.",
+    "Edge_TTS": false,
+    "AI_video": false,
+    "fully_automated_claimed": false
+  },
+  "media": {
+    "source": "https://commons.wikimedia.org/wiki/File:Alwi_Farhan.jpg",
+    "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Alwi_Farhan.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "author": "Tony2803.tw",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "date": "2024-06-21",
+    "curid": "155994396",
+    "sha256": "49eef2f9d4a8705605af084d9328ccc6c001f86a78659f1fd13a931752acdfb6",
+    "bytes": 2064644,
+    "width": 5149,
+    "height": 3433,
+    "own_work_grant_read": true,
+    "deed_read": true,
+    "deed_browser": "https://creativecommons.org/licenses/by/4.0/",
+    "original_native_viewed": true,
+    "archive_context": "Alwi21June2024, notKumamoto2026.",
+    "changes": "Authenticface/hair/jersey/body/pose retained fromoriginalreference; generatednewspaperbackground/typography; cleanoriginalhero centre crop. Credit/source/licence/changesdisclosed; noimpliedendorsement.",
+    "cover": {
+      "variant_id": "JUDUL_UTAMA",
+      "rotation_helper": true,
+      "previous_variants": [
+        "KLASIK",
+        "FOTO_DOMINAN",
+        "KOLOM",
+        "PORTRAIT_MERAH",
+        "JUDUL_UTAMA",
+        "KLASIK"
+      ],
+      "page_count": 5,
+      "bytes": 538576,
+      "sha256": "35fc8a8efa90311c5c24c1c5b43f02b40d7607cd12c40d56af6f4b410735d555",
+      "source_label": "PBSI.ID",
+      "sizing": {
+        "generated": {
+          "format": "png",
+          "size": 3229048,
+          "width": 1092,
+          "height": 1440,
+          "space": "srgb",
+          "channels": 3,
+          "depth": "uchar",
+          "density": 72,
+          "isProgressive": false,
+          "isPalette": false,
+          "bitsPerSample": 8,
+          "hasProfile": false,
+          "hasAlpha": false,
+          "autoOrient": {
+            "width": 1092,
+            "height": 1440
+          }
+        },
+        "fitted": {
+          "width": 948,
+          "height": 1250
+        },
+        "canvas": [
+          1080,
+          1350
+        ],
+        "inset": {
+          "left": 66,
+          "top": 50
+        },
+        "aspect_preserved": true
+      },
+      "native_viewed": true,
+      "safe_edges": true,
+      "no_edition_or_promotional_footer": true
+    },
+    "hero": {
+      "dimensions": [
+        512,
+        420
+      ],
+      "crop": "centre cover crop of5149x3433original",
+      "bytes": 51358,
+      "sha256": "19e8eb2755dfd26213c9c1e191c7a0f5d397764108f63d40134b98c8910d1b99",
+      "original_without_overlay": true,
+      "native_viewed": true
+    }
+  },
+  "article": {
+    "title": "Alwi–Ubed, Satu Tiket Semifinal",
+    "genre": "NEWS",
+    "paragraphs": 4,
+    "words": 185,
+    "digest": "bc180e8a979f3c8533796755b52f7414cfdabe9bd1b03af546089f89c1f90ae7",
+    "benchmarks": [
+      "goal-20261112-ferdinand-pochettino-reaction-news",
+      "goal-20261108-arsenal-hull-record-match-news"
+    ],
+    "complete_before_pagination": true,
+    "pagination_lossless": true,
+    "issues": [],
+    "lessons_applied": "Lead statesverifiedupcomingduel; developsAlwi thenUbed withattributedparaphrases; closesgroundedwatchingquestion, noforecastwinner."
+  },
+  "renders": [
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_collage_cover",
+      "authentic_photo": true,
+      "editorial_background": true,
+      "source_label": "PBSI.ID",
+      "cover_input_sha256": "35fc8a8efa90311c5c24c1c5b43f02b40d7607cd12c40d56af6f4b410735d555",
+      "output_sha256": "ff4077572749ed4985dfa9d530a65337e60b07769ceb1df15749bd9999f739db",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "safe_wrap": true,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "de9532f9c4678f0edf7372ff6ea622c9d0fe2cce1c66970fe1ded6694b834e75",
+      "output_sha256": "56255377a91ce18f3a3fd076fae0dc46f0b805c39c8ba38d4c4d47c32a7f1c2b",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 47,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 288,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 908,
+          "height": 47,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 328,
+          "width": 905,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "40fdc626cdef0ed5c00ed85ecabeb491dec9af7fc4a16b58456cb4f957e8a602",
+      "output_sha256": "73db630674f3f83fef7fcf82e330fb81c6b9dc091622b4e17cfade97232c64cc",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 405,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 844,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 913,
+          "height": 405,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "70f136a803a4c44aaef0efed0a2ced8be3e266075c872d11fbdafb4d8cdd3c02",
+      "output_sha256": "76d1d4c86f18c33b7eb22388f63aee61fea99c6d3562a4b28e8252f66c603307",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 59,
+      "body_height": 458,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 300,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 800,
+          "height": 59,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 340,
+          "width": 905,
+          "height": 458,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    },
+    {
+      "width": 1080,
+      "height": 1350,
+      "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+      "layout": "newspaper_article",
+      "paper_tone": "#eee9dd",
+      "authentic_photo": false,
+      "source_label": null,
+      "text_sha256": "f863955e4f2cebfac1eebbb78fc0847015e8e9db7ce28ae31fa9ec45239eda4d",
+      "output_sha256": "43a1ac370f570fc520e8f3c602dc36f6facec8623a752b2c1327a101323dde88",
+      "no_edition_label": true,
+      "no_promotional_footer": true,
+      "headline_height": 140,
+      "body_height": 352,
+      "headline_font_size": 60,
+      "body_font_size": 36,
+      "divider_top": 381,
+      "divider_thickness": 4,
+      "headline_divider_gap": 36,
+      "divider_body_gap": 36,
+      "boxes": [
+        {
+          "x": 72,
+          "y": 205,
+          "width": 843,
+          "height": 140,
+          "font_size": 60
+        },
+        {
+          "x": 72,
+          "y": 421,
+          "width": 930,
+          "height": 352,
+          "font_size": 36
+        }
+      ],
+      "safe_wrap": true,
+      "columns": 1,
+      "ok": true
+    }
+  ],
+  "visual_review": {
+    "all_five_JPEG_opened_native1080x1350": true,
+    "downloaded_SHA_match_preview": true,
+    "hero_opened512x420": true,
+    "body_cream_text_only": true,
+    "no_overflow_or_overlap": true,
+    "cover1of5_matches_final": true,
+    "headline_font_px": 60,
+    "body_font_px": 36,
+    "divider_gaps_px": 36
+  },
+  "audio": {
+    "format": "CAROUSEL",
+    "music_attached": false,
+    "Graph_API_carousel_music_not_supported": true,
+    "no_voice_or_video_generated": true
+  },
+  "growth": {
+    "serial": "Panduan Pekan Ini",
+    "framework_only": true,
+    "core_fact": "Alwi–Ubed pada perempat final Jumat13November memastikan satu tiket semifinal Indonesia.",
+    "angle": "Dua respons berbeda saat tertekan, ditopang keterangan pemain tentang laga16besar.",
+    "hook": "Alwi–Ubed, Satu Tiket Semifinal",
+    "payoff": "Kenali tanggal, pemain, taruhan dan aspek permainan yang dapat diikuti.",
+    "audience_action": "Menonton respons saat tertinggal dan menanggapi pilihan ritme dengan alasan.",
+    "original_format": "CAROUSEL",
+    "format": "CAROUSEL",
+    "format_reason": "Original Friday08WIB CAROUSEL and nonbolaIndonesia pillar retained; Panduan Pekan Ini preview verifiedplayers/date/stakes. No Reel fallback or mandatoryillustration.",
+    "mandatory_illustration_slot": false,
+    "trial_reel_performed": false,
+    "target_metrics": null,
+    "review_due_24h": "2026-11-14T01:00:00Z",
+    "review_due_7d": "2026-11-20T01:00:00Z"
+  },
+  "metrics": {
+    "checked_at": "2026-11-13T00:13:38.344Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18121297981995470",
+        "published_at": "2026-11-12T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18643361083057857",
+        "published_at": "2026-11-08T13:01:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18099409229536366",
+        "published_at": "2026-11-08T01:01:54+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17966817417218122",
+        "published_at": "2026-11-07T13:00:50+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-13T00:13:38.344Z",
+    "baseline_rows": 236,
+    "current_rows": 236,
+    "unchanged_other_rows": 235,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "e4f9fc5d-38cf-45e9-9df7-40e767ac8ce0",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-13T01:00:00+00:00",
+      "format": "CAROUSEL",
+      "pillar": "Olahraga Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 1,
+    "weekly_routine_proposed": 2,
+    "weekly_limit": 12,
+    "instagram_media": 85,
+    "duplicate_matches": 0,
+    "seeder_called": false,
+    "MetaDirect_called": false,
+    "only_target_and_new_article_authorized": true,
+    "no_mutations_to": [
+      "13WIB",
+      "additional",
+      "SCHEDULED",
+      "PUBLISHED",
+      "archived",
+      "tombstone",
+      "otherdrafts",
+      "calendar",
+      "renderer",
+      "credentials",
+      "services",
+      "automations"
+    ]
+  },
+  "references": {
+    "entries": 37,
+    "latest_read_at": "2026-11-12T00:24:52.046Z",
+    "sha256": "3a255647c0c45db28a76ff25758e24d2ee3c31b439863eefc2cb8949dc24eb30",
+    "runtime_committed_identical": true,
+    "modified": false
+  },
+  "rollback_commit": "2f48eafde00874c6c90b058d5ef8953ed1f51cf8",
+  "remaining": "Commit/push then shared schedule; verifyARTICLEcanonical/time/bytes/gate/scope/idempotency. Future08WIBhandoff not publicationclaim."
+}
