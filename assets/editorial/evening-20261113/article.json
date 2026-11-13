@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Lawan Kamboja, Ujian Ketajaman Garuda",
+  "dek": "Nascimento menuntut peluang jadi gol sebelum duel Kamboja. Arsip 2007: Luctor IV/CC BY-SA 3.0; diolah. commons.wikimedia.org/?curid=2549635",
+  "caption": "LAWAN KAMBOJA, UJIAN KETAJAMAN GARUDA\n\nDavid Nascimento menuntut Timnas Indonesia U-17 lebih tajam menjelang laga melawan Kamboja, Sabtu (14/11/2026), pukul 15.30 WIB. Kemenangan 3–0 atas Filipina belum membuat pelatih itu puas pada penyelesaian akhir. Duel di Stadion Starcity Sports Club, Myanmar, menjadi kesempatan berikutnya untuk memperbaiki catatan tersebut.\n\n“Kami memiliki begitu banyak kesempatan untuk mencetak gol,” kata Nascimento setelah laga melawan Filipina, sebagaimana dilaporkan ANTARA. Ia menilai timnya bisa mencetak lebih banyak gol. Untuk menghadapi Kamboja, ia memprioritaskan pemulihan setelah jeda istirahat dua hari, sekaligus meminta tim analis mempelajari lawan.\n\nIndonesia mengantongi tiga poin dari satu pertandingan, sementara Afghanistan memiliki enam poin dari dua laga. Hanya juara grup yang melaju ke putaran final. Karena itu, kemenangan atas Kamboja akan menambah modal Indonesia, tetapi belum dengan sendirinya memastikan kelolosan. Perebutan tiket masih berjalan dalam rangkaian pertandingan Grup A.\n\nBagi suporter, catatan Nascimento memberi fokus untuk menonton: apakah peluang yang tercipta dapat lebih sering diselesaikan menjadi gol? Itu perlu dinilai bersama jalannya pertandingan dan kondisi pemain setelah pemulihan. Hasil melawan Filipina menjadi bahan evaluasi, bukan jaminan duel Kamboja akan berlangsung dengan pola atau skor serupa.\n\nApa yang paling ingin kamu lihat saat Garuda Muda menghadapi Kamboja: penyelesaian peluang atau cara menjaga tekanan? Beri alasan dari permainan yang nanti kamu saksikan.\n\nSumber: jadwal dan ketentuan AFC, laporan lengkap ANTARA, CNN Indonesia, serta Tirto. Jadwal laga: Sabtu, 14 November, pukul 15.30 WIB.\n\nFoto arsip “Nascimento.jpg”, David Nascimento, 11 Agustus 2007, karya sendiri Luctor IV melalui https://commons.wikimedia.org/?curid=2549635 . CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/ . Cover kolase dan crop hero diolah, termasuk kontribusi kami dibagikan dengan lisensi sama tanpa pembatasan tambahan. Wajah, pakaian dan pose asli dipertahankan; bukan foto pemusatan latihan Timnas 2026. Tanpa dukungan tersirat fotografer atau pelatih.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Peluang Harus Menjadi Gol",
+      "kind": "FACT",
+      "claim_ids": [
+        "MATCH",
+        "FINISH",
+        "PHOTO"
+      ],
+      "text": "David Nascimento menuntut Timnas Indonesia U-17 lebih tajam menjelang laga melawan Kamboja, Sabtu (14/11/2026), pukul 15.30 WIB. Kemenangan 3–0 atas Filipina belum membuat pelatih itu puas pada penyelesaian akhir. Duel di Stadion Starcity Sports Club, Myanmar, menjadi kesempatan berikutnya untuk memperbaiki catatan tersebut."
+    },
+    {
+      "id": "quote",
+      "heading": "Catatan di Balik Kemenangan",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "FINISH",
+        "RECOVERY"
+      ],
+      "quote": {
+        "text": "Kami memiliki begitu banyak kesempatan untuk mencetak gol",
+        "source_id": "ANTARA"
+      },
+      "text": "“Kami memiliki begitu banyak kesempatan untuk mencetak gol,” kata Nascimento setelah laga melawan Filipina, sebagaimana dilaporkan ANTARA. Ia menilai timnya bisa mencetak lebih banyak gol. Untuk menghadapi Kamboja, ia memprioritaskan pemulihan setelah jeda istirahat dua hari, sekaligus meminta tim analis mempelajari lawan."
+    },
+    {
+      "id": "stakes",
+      "heading": "Tiga Poin Belum Mengakhiri Perburuan",
+      "kind": "FACT",
+      "claim_ids": [
+        "STAKES",
+        "MATCH"
+      ],
+      "text": "Indonesia mengantongi tiga poin dari satu pertandingan, sementara Afghanistan memiliki enam poin dari dua laga. Hanya juara grup yang melaju ke putaran final. Karena itu, kemenangan atas Kamboja akan menambah modal Indonesia, tetapi belum dengan sendirinya memastikan kelolosan. Perebutan tiket masih berjalan dalam rangkaian pertandingan Grup A."
+    },
+    {
+      "id": "watch",
+      "heading": "Efektivitas yang Layak Dicermati",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "FINISH",
+        "RECOVERY",
+        "STAKES"
+      ],
+      "text": "Bagi suporter, catatan Nascimento memberi fokus untuk menonton: apakah peluang yang tercipta dapat lebih sering diselesaikan menjadi gol? Itu perlu dinilai bersama jalannya pertandingan dan kondisi pemain setelah pemulihan. Hasil melawan Filipina menjadi bahan evaluasi, bukan jaminan duel Kamboja akan berlangsung dengan pola atau skor serupa."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261106-amorim-milan-ferencvaros-reaction-news",
+    "goal-20261112-ferdinand-pochettino-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-13T12:09:55.471Z",
+    "article_digest": "d2499f71242fd65cd0f870b035422b1f596dc28a6868a333213d522d9ee6ae02"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-13:fri-pm",
+  "checked_at": "2026-11-13T12:09:55.471Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Timnas Indonesia U17 Kamboja"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=GLFcJr29NCg",
+      "creator": "HBS STUDIO",
+      "checked_at": "2026-11-13T12:09:55.471Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/description read, standardYouTubelicence withoutverifiedmontagevideo/audio reusegrant. Actualbrowserpage Onlinefetchthrottled, noalternaterouteretry. Prediction/livebeforeofficial14Novnotmatchproof. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "HBS STUDIO published 2026-11-13T10:45:20Z licence youtube; sourcepage browserthrottled. Actualmatchscheduled14Nov15.30WIB, no verifiedreusablemontagefootage/audio."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=knnCHgin5kc",
+      "creator": "Markas Garuda",
+      "checked_at": "2026-11-13T12:09:55.471Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/description read, standardYouTubelicence withoutverifiedmontagevideo/audio reusegrant. Actualbrowserpage Onlinefetchthrottled, noalternaterouteretry. Prediction/livebeforeofficial14Novnotmatchproof. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Markas Garuda published 2026-11-13T10:00:12Z licence youtube; sourcepage browserthrottled. Actualmatchscheduled14Nov15.30WIB, no verifiedreusablemontagefootage/audio."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=0G852mWGl5s",
+      "creator": "Raden History",
+      "checked_at": "2026-11-13T12:09:55.471Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Full API metadata/description read, standardYouTubelicence withoutverifiedmontagevideo/audio reusegrant. Actualbrowserpage Onlinefetchthrottled, noalternaterouteretry. Prediction/livebeforeofficial14Novnotmatchproof. No download/watch/audition/transcript.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Raden History published 2026-11-13T10:54:18Z licence youtube; sourcepage browserthrottled. Actualmatchscheduled14Nov15.30WIB, no verifiedreusablemontagefootage/audio."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=q-HBsLruKyk",
+      "creator": "TIG ID",
+      "checked_at": "2026-11-13T12:09:55.471Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Metadata licence creativeCommon acknowledged, but Live HariIni title on12Nov predates official14Novmatch; actual browserpage throttled, no verified originalfootageidentity/date/underlyingvideo/audio rights. NotmarkedUSABLE fromlicencelabelalone.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "TIG ID published 2026-11-12T12:07:49Z licence creativeCommon; sourcepage browserthrottled. Actualmatchscheduled14Nov15.30WIB, no verifiedreusablemontagefootage/audio."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-13T12:09:55.471Z",
+    "digest": "5f2d60c7c22ebc6f1df18914235fe5ecb2887d5bd2507e5e38535846bb08f43f"
+  }
+}

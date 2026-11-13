@@ -1,0 +1,5 @@
+# Photograph and adaptations
+
+Nascimento.jpg, DavidNascimentoarchive11August2007, own-work photographer LuctorIV. Source https://commons.wikimedia.org/wiki/File:Nascimento.jpg and https://commons.wikimedia.org/?curid=2549635 . Explicitly selected CC BY-SA3.0 https://creativecommons.org/licenses/by-sa/3.0/ from multiplelicences. Full grant and deed read. Original1121×913,138458bytes,SHA256 4701e07101988e68f3b36a0fd6ce3924a865fd23aa5556fcf5f9f8438c938368.
+
+Authentic photographed face,age,hair,greypolo and pose reference the generatedPORTRAIT_MERAH newspaperbackground and typography; grayscale conversion. Archive2007, notTimnas2026training. Mechanical proportional artwork948×1250 on1080×1350creamcanvas; hero original crop80,80,790,648 resized512×420 without overlay. Title,creator,source,licence,archive andchangesdisclosed. Cover/hero adaptations includingourcontributions areCCBYSA3.0 withnoaddedrestriction orimpliedendorsement. Raw photograph/fullsources/API/packetprivate; Git storesderivatives andowneditorialevidence.
