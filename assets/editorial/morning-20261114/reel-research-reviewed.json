@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-14:match-am",
+  "checked_at": "2026-11-14T00:17:13.955Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Manchester United Pochettino appointment"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=FEvsyLh_jPk",
+      "creator": "Sky Sports News",
+      "checked_at": "2026-11-14T00:17:13.955Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "CompleteAPI metadata/description read; standardYouTube licence withnoverifiedvideo/audio montagegrant. Skyexplicitlicensinginquiry notgrant; Rio/Guardian copyrightnotcleared. Actualbrowserpages Onlinefetchthrottled, noalternateaccessroute. No download/watch/audition/transcript. Articlefactsfromverifiedwrittenprimaryandindependentreports.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Sky Sports News published 2026-11-13T15:23:27Z standardYouTubelicence, noverifiedreusegrant. Actualbrowserfetchthrottled; sourceaudio notobtained ormuted."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=x_-Y4qVRIe0",
+      "creator": "Rio Ferdinand Presents",
+      "checked_at": "2026-11-14T00:17:13.955Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "CompleteAPI metadata/description read; standardYouTube licence withnoverifiedvideo/audio montagegrant. Skyexplicitlicensinginquiry notgrant; Rio/Guardian copyrightnotcleared. Actualbrowserpages Onlinefetchthrottled, noalternateaccessroute. No download/watch/audition/transcript. Articlefactsfromverifiedwrittenprimaryandindependentreports.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Rio Ferdinand Presents published 2026-11-13T13:09:18Z standardYouTubelicence, noverifiedreusegrant. Actualbrowserfetchthrottled; sourceaudio notobtained ormuted."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=pwpJ4VbrjwA",
+      "creator": "Guardian Football",
+      "checked_at": "2026-11-14T00:17:13.955Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "CompleteAPI metadata/description read; standardYouTube licence withnoverifiedvideo/audio montagegrant. Skyexplicitlicensinginquiry notgrant; Rio/Guardian copyrightnotcleared. Actualbrowserpages Onlinefetchthrottled, noalternateaccessroute. No download/watch/audition/transcript. Articlefactsfromverifiedwrittenprimaryandindependentreports.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Guardian Football published 2026-11-13T15:42:45Z standardYouTubelicence, noverifiedreusegrant. Actualbrowserfetchthrottled; sourceaudio notobtained ormuted."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-14T00:17:13.955Z",
+    "digest": "ca96a99294793091eb9cac7ad8a8f5b481a91a8b10936f1206007d55dbd0d4f7"
+  }
+}

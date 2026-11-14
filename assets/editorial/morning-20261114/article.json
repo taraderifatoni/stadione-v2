@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Pochettino ke MU, Tugas AS Belum Usai",
+  "dek": "Dua laga Haiti mendahului transisi ke Manchester. Arsip: Bryan Berlin/CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=188295278",
+  "caption": "POCHETTINO KE MU, TUGAS AS BELUM USAI\n\nMauricio Pochettino resmi ditunjuk menjadi pelatih Manchester United, tetapi tugasnya bersama timnas Amerika Serikat belum selesai. Dalam pengumuman Jumat (13/11/2026), U.S. Soccer menyatakan ia dan stafnya masih akan menangani dua pertandingan melawan Haiti pada 14 dan 17 November waktu setempat sebelum beralih ke United.\n\nAP dan BBC melaporkan Pochettino akan mulai bertugas di United pada 18 November dengan kontrak dua setengah tahun, hingga Juni 2029. AP menyebut pertandingan pertamanya adalah lawatan menghadapi Liverpool pada 22 November. Jadwal itu menempatkan proses perpindahan staf di antara dua agenda pertandingan.\n\nPengangkatan ini menyusul pemecatan Michael Carrick pada Kamis, 12 November, ketika United berada di peringkat ke-18 Premier League. Dalam konferensi pers yang dilaporkan AP, Pochettino menggambarkan keputusan meninggalkan AS sebagai keputusan yang sangat sulit. Ia tetap akan menuntaskan dua laga terakhir bersama tim tersebut.\n\nJarak antara tanggal mulai yang dilaporkan dan laga Liverpool hanya empat hari. Itu memberi alasan bagi suporter untuk mengikuti serah-terima staf: Pochettino masih punya kewajiban pertandingan sebelum menyiapkan tim baru. Jarak kalender ini tidak menjelaskan berapa sesi latihan yang akan ia pimpin atau seperti apa perubahan permainan United nanti.\n\nApa yang ingin kamu lihat lebih dulu dari permainan United setelah pergantian pelatih: organisasi bertahan atau kualitas serangan? Jelaskan alasanmu.\n\nSumber: pengumuman lengkap U.S. Soccer, laporan AP melalui ABC News, dan ringkasan berita BBC melalui Yahoo. Tanggal laga Haiti mengikuti waktu setempat AS.\n\nFoto arsip “Mauricio Pochettino USMNT v Belgium Mar 28 2026-2.jpg”, Bryan Berlin/WikiPortraits, 28 Maret 2026, Atlanta. Karya sendiri melalui https://commons.wikimedia.org/?curid=188295278 . CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan crop hero diolah; termasuk kontribusi kami dibagikan dengan lisensi sama tanpa pembatasan tambahan. Blazer dan badge AS asli dipertahankan, bukan foto pengumuman atau kedatangan di United. Tanpa dukungan tersirat fotografer atau pelatih.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Laga AS Masih Menanti",
+      "kind": "FACT",
+      "claim_ids": [
+        "APPOINT",
+        "PHOTO"
+      ],
+      "text": "Mauricio Pochettino resmi ditunjuk menjadi pelatih Manchester United, tetapi tugasnya bersama timnas Amerika Serikat belum selesai. Dalam pengumuman Jumat (13/11/2026), U.S. Soccer menyatakan ia dan stafnya masih akan menangani dua pertandingan melawan Haiti pada 14 dan 17 November waktu setempat sebelum beralih ke United."
+    },
+    {
+      "id": "calendar",
+      "heading": "Mulai Bertugas pada 18 November",
+      "kind": "FACT",
+      "claim_ids": [
+        "CONTRACT"
+      ],
+      "text": "AP dan BBC melaporkan Pochettino akan mulai bertugas di United pada 18 November dengan kontrak dua setengah tahun, hingga Juni 2029. AP menyebut pertandingan pertamanya adalah lawatan menghadapi Liverpool pada 22 November. Jadwal itu menempatkan proses perpindahan staf di antara dua agenda pertandingan."
+    },
+    {
+      "id": "context",
+      "heading": "Menggantikan Carrick saat MU Terpuruk",
+      "kind": "FACT",
+      "claim_ids": [
+        "CONTEXT",
+        "APPOINT"
+      ],
+      "text": "Pengangkatan ini menyusul pemecatan Michael Carrick pada Kamis, 12 November, ketika United berada di peringkat ke-18 Premier League. Dalam konferensi pers yang dilaporkan AP, Pochettino menggambarkan keputusan meninggalkan AS sebagai keputusan yang sangat sulit. Ia tetap akan menuntaskan dua laga terakhir bersama tim tersebut."
+    },
+    {
+      "id": "watch",
+      "heading": "Empat Hari dalam Kalender",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "CONTRACT",
+        "APPOINT"
+      ],
+      "text": "Jarak antara tanggal mulai yang dilaporkan dan laga Liverpool hanya empat hari. Itu memberi alasan bagi suporter untuk mengikuti serah-terima staf: Pochettino masih punya kewajiban pertandingan sebelum menyiapkan tim baru. Jarak kalender ini tidak menjelaskan berapa sesi latihan yang akan ia pimpin atau seperti apa perubahan permainan United nanti."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261114-pochettino-appointment-transition-news",
+    "goal-20261112-ferdinand-pochettino-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-14T00:17:13.955Z",
+    "article_digest": "287a3936895ab284f181569332c800a0951cdffb73fc4dc93a5c47332520ccda"
+  }
+}

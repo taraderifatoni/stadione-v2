@@ -1,0 +1,476 @@
+{
+  "checked_at": "2026-11-14T00:22:29.655Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "8ada06fa-1223-4444-88c1-fa32547a2a12",
+    "plan_key": "2026-11-14:match-am",
+    "scheduled_at": "2026-11-14T01:00:00Z",
+    "time_wib": "14 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "original_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Pochettino ke MU, Tugas AS Belum Usai",
+    "genre": "NEWS",
+    "words": 180,
+    "paragraphs": 4,
+    "slides": 5,
+    "digest": "287a3936895ab284f181569332c800a0951cdffb73fc4dc93a5c47332520ccda",
+    "benchmarks": [
+      "goal-20261114-pochettino-appointment-transition-news",
+      "goal-20261112-ferdinand-pochettino-reaction-news"
+    ],
+    "canonical_article_written_before_pagination": true
+  },
+  "references": {
+    "entries": 39,
+    "sha256": "1672ffb7ef711ae2868733e03c9966e05b2ec00193a43961db8b39f4959ab751",
+    "runtime_identical_committed": true
+  },
+  "research": {
+    "sources": [
+      {
+        "file": "us.txt",
+        "bytes": 4807,
+        "sha256": "ea82e27329858d1dfdea0b081fd738191a9ee744c7b8a934bcdd90ff0ebddd67",
+        "full_text_read": true
+      },
+      {
+        "file": "mu-full.txt",
+        "bytes": 1220,
+        "sha256": "bf268af604ecd813d395aae588d3529c4e27bbe7be2f79d456bc8e91eb255a57",
+        "full_text_read": true
+      },
+      {
+        "file": "carrick.txt",
+        "bytes": 873,
+        "sha256": "6cd71860b7fccfe9d45a4a4296dd3657d720fe0cfc786d846667411e09b07d44",
+        "full_text_read": true
+      },
+      {
+        "file": "lfc.txt",
+        "bytes": 639,
+        "sha256": "9652d74dcea13f2a3112847d9636ab90940edd72d2108567c1abc9dff268bb55",
+        "full_text_read": true
+      },
+      {
+        "file": "ap.txt",
+        "bytes": 6982,
+        "sha256": "ed34d2397585d5af52b398cde6568c1b1949f3870406b541e8dfa7e91d68cbb6",
+        "full_text_read": true
+      },
+      {
+        "file": "bbc.txt",
+        "bytes": 1096,
+        "sha256": "5b60741e6977a18eafafd70fb8da63c3ffa35a9bab09745612a1678c55c051d9",
+        "full_text_read": true
+      }
+    ],
+    "packet_sources": [
+      {
+        "id": "USSOCCER",
+        "url": "https://www.ussoccer.com/stories/2026/11/usmnt/mauricio-pochettino-to-depart-as-head-coach",
+        "publisher_group": "USSOCCER",
+        "primary": true,
+        "published_at": "2026-11-13",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "ATLANTA (Nov. 13, 2026) – U.S. Soccer today announced that Mauricio Pochettino will depart his role as Head Coach of the U.S. Men’s National Team following the conclusion of the current camp to become Head Coach of Manchester United. Pochettino and his staff will coach the USMNT in its upcoming matches against Haiti on November 14 and 17. “Mauricio has left a lasting mark on U.S. Soccer through his leadership, professionalism and commitment to our players and culture,” said U.S. Soccer CEO and Secretary General JT Batson. “What we are most proud of goes beyond the wins. He and his staff raised standards, strengthened our culture and created clearer connections from the Youth National Teams to the senior team. Those changes are now embedded in how we operate, and we will keep building on them as we pursue sustained success on the world stage.” Pochettino was named USMNT head coach in September 2024 and compiled a record of 21 wins, 12 losses and two draws across 35 matches. Under his leadership, the United States reached the 2025 Concacaf Gold Cup Final and advanced to the Round of 16 at the 2026 FIFA World Cup on home soil. The USMNT finished first in its World Cup group and earned its first knockout-round victory since 2002. With three victories during the tournament, Pochettino recorded the most World Cup wins of any head coach in USMNT history. Beyond the results, Pochettino and his staff helped create stronger alignment across the Men’s National Team program. They established clearer connections between the Youth National Teams and the senior team, expanded opportunities for young players and reinforced the standards and expectations that come with representing the United States. That work is now built into the program and will continue after his departure. Pochettino also broadened the senior-team player pool, with 75 players earning at least one cap during his tenure. In the most recent window, 11 players under age 21 made their senior-team debuts, including eight teenagers. Across the team’s most recent four-match winning streak, seven of its 12 goals were scored by players who were uncapped when the stretch began, and three joined the list of the youngest goalscorers in USMNT history. \"The opportunity to represent the USA crest was one of the greatest honors of my career. We are so grateful to the players for their commitment, to the fans for their belief, and to the Federation for always supporting our staff and creating the opportunities to impact the culture of soccer in this great country,” Pochettino said. “We want to thank Cindy Parlow Cone, JT Batson and Dan Helfrich for their partnership and incredible working relationships throughout our time here. There is tremendous talent in the U.S. player pool from the youth teams through to the senior team, and it’s one of the reasons we have so much belief for the future of U.S. Soccer. You will always have a special place in our hearts, and we will be supporting the teams whenever they step on the field.\" Pochettino will remain responsible for all USMNT activities through the conclusion of the current camp. Steve Cherundolo will lead the team’s previously scheduled December camp, which will feature a primarily MLS-based roster. The camp will reflect the increased alignment between the senior and Olympic programs, and there will not be a separate Under-23 camp in December. “I want to thank Mauricio and his staff for all their contributions over the past two years to move our Men’s National Team forward, and wish him all the best at Manchester United,” said U.S. Soccer President Cindy Parlow Cone. “As we look ahead, we have an exciting group of players and our focus at the completion of this FIFA window is on finding the right coaching staff to help us build on the progress we’ve built and lead this team to even more success on the world stage.” Batson and U.S. Soccer Chief Operating Officer Dan Helfrich, alongside the soccer leadership team at U.S. Soccer that includes Emma Hayes and Oguchi Onyewu, will lead the search for the next USMNT head coach, drawing on input from leaders across U.S. Soccer and the global soccer landscape. The Federation will consider candidates from a broad range of backgrounds. “With the great combination of veterans, fantastic young talent and a world-class facility, we are confident in the future of this program,” Batson said. “We are looking for a leader with the talent, experience and belief to match our ambition, build on the culture and pathway now in place and help the USMNT take the next step.” Before joining U.S. Soccer, Pochettino managed Espanyol, Southampton, Tottenham Hotspur, Paris Saint-Germain and Chelsea during more than two decades of coaching in European football.",
+        "sha256": "e9eb8877cba7700da436d890ffb19c803365879794a772ea9d5c9a33930fdc90"
+      },
+      {
+        "id": "UNITED",
+        "url": "https://www.manutd.com/en/news/mauricio-pochettino-agrees-to-become-united-head-coach",
+        "publisher_group": "MANCHESTERUNITED",
+        "primary": true,
+        "published_at": "2026-11-13T12:00:00Z",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "Mauricio Pochettino has agreed to become the Manchester United men’s head coach from 18 November. The club has reached an agreement with the U.S. Soccer Federation for Mauricio and his staff to be released after the conclusion of their responsibilities with the U.S. Men’s National Team. The Argentinian is renowned for his high-intensity, attacking style of football, his dedication to building strong, cohesive teams and his outstanding record of developing individual players. Pochettino has consistently performed at the highest level of football across multiple leagues. He began his coaching career with Espanyol in 2009 before joining Southampton and achieving a club-record Premier League points tally in 2014. During five full seasons at Tottenham Hotspur, Pochettino established the club as regular UEFA Champions League contenders, securing qualification in four consecutive seasons and leading the club to its first final in the competition in 2019. In 2021, he joined Paris Saint-Germain, where he won the Ligue 1 title, the Coupe de France and the Trophée des Champions before joining Chelsea in 2023. Most recently he led the U.S. Men’s National Team to the Round of 16 at the FIFA World Cup.",
+        "sha256": "93a965f7510d1833250a09e8abc126fe242ade767a0d7a2231753e72abe25a06"
+      },
+      {
+        "id": "UNITED_CARRICK",
+        "url": "https://www.manutd.com/en/news/club-statement-on-michael-carrick-departure",
+        "publisher_group": "MANCHESTERUNITED",
+        "primary": true,
+        "published_at": "2026-11-12",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "Manchester United can confirm that Michael Carrick has departed his role as men’s first-team head coach. Michael rejoined the club in January and guided the team to a third-placed Premier League finish by winning 12 out of the remaining 17 games of the 2025/26 season, accumulating the highest points tally in the league during that period. After a disappointing start to the season, the club has come to the extremely difficult conclusion that a change is necessary in order to achieve our ambitions. Michael is, and always will be, a Manchester United legend. Just as he did as a player, he has conducted himself with the highest standards of dedication and professionalism throughout his time back with the club. His leadership and achievements last season will always be fondly remembered. The club intends to appoint a permanent successor as quickly as possible.",
+        "sha256": "ab6cf85919b17746bc5970226444ae884cc8f9dfb575e0fe52a6bbe24c47ba16"
+      },
+      {
+        "id": "LFC",
+        "url": "https://www.liverpoolfc.com/news/fixture-updates-three-premier-league-changes-liverpool-november",
+        "publisher_group": "LIVERPOOLFC",
+        "primary": true,
+        "published_at": "2026-09-21",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "The updated details can be found below. Crystal Palace v Liverpool – 2pm, Sunday November 8 (Sky Sports) Liverpool v Manchester United – 4.30pm, Sunday November 22 (Sky Sports) Everton v Liverpool – 12pm, Sunday November 29 (TNT Sports) All kick-off times are GMT. View an updated 2026-27 fixture list and download our official eCalendar here . Book matchday hospitality packages at Anfield for 2026-27 here . Follow the Reds home and away with Expedia, LFC's official travel partner. Go here to visit Expedia Live, sign up, and receive member-only travel deals. Share Premier League fixtures Everton Crystal Palace Manchester United",
+        "sha256": "599f9005285a6fa02adb67b7119c1037fe056593543d9fbecae82333289a9da0"
+      },
+      {
+        "id": "AP",
+        "url": "https://abcnews.com/Sports/wireStory/man-united-hires-mauricio-pochettino-leaves-us-job-138104614",
+        "publisher_group": "AP",
+        "primary": false,
+        "published_at": "2026-11-13T12:02:18Z",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "Man United hires Mauricio Pochettino, who tearfully leaves US national team job Mauricio Pochettino has been hired as Manchester United’s head coach, agreeing to leave his job with the U.S. national team to take on the challenge of reviving the fortunes of English soccer’s once dominant force By CHARLES ODUM, JAMES ROBSON AND RONALD BLUM AP sports writers November 13, 2026, 7:02 AM 5:59 U.S. men's national soccer team head coach Mauricio Pochettino wipes his eye during a news conference in Fayetteville, Ga., Friday, Nov. 13, 2026. (AP Photo/Colin Hubbard) The Associated Press FAYETTEVILLE, Ga. -- Tears filled Mauricio Pochettino's eyes as he discussed quitting the U.S. national team for his dream job with Manchester United. “A decision that in some parts, it’s a very sad decision, in other parts, we are professional and we need also to try to find the next step, to try and make your dreams come true,” he said. Just three months after the U.S. Soccer Federation announced his contract to lead the Americans through the 2030 World Cup , Pochettino said Friday he will depart next week for Old Trafford. He will try to revive the 20-time English champions, in the relegation zone after 10 games of the Premier League season. “They know that there’s not too many opportunities (that) can happen in your career like a side of Manchester United and, of course, when that arrives, it’s difficult to turn down,” Pochettino said during an emotional news conference at the U.S. team training camp. He signed a 2 1/2-year contract and will take over on Nov. 18 ahead of the match at Liverpool four days later, becoming United's eighth permanent coach or manager since Alex Ferguson retired in 2013 . Pochettino choked up at a news conference, speaking while seated between USSF president Cindy Parlow Cone and CEO JT Batson. “One of the most difficult decision in our career,” he said, crying and rubbing his hands as Cone put a supportive hand on his back. He did not want to speak about the state of United. The English club said the 54-year-old Argentine was “renowned for his high-intensity, attacking style of football, his dedication to building strong, cohesive teams and his outstanding record of developing individual players,\" and had “consistently performed at the highest level of football across multiple leagues.” Pochettino's appointment came one day after Michael Carrick was fired for overseeing United's worst league start in 40 years. Manchester United is 18th in the 20-team league. Pochettino and his assistants will remain with the U.S. for the CONCACAF Nations League quarterfinals against Haiti on Saturday and Tuesday. “We recovered our motivation,” Pochettino said. “We recovered our capacity to dream big, the capacity to train players that really want to improve and really want to share good moments and players that really care about the federation and this country.” Pochettino took over the U.S. team in the fall of 2024 and led the co-host Americans to the round of 16 at this year’s World Cup. The USSF is likely to inquire about Pep Guardiola’s interest and also could consider elevating Under-23 coach Steve Cherundolo , a former national team defender. Cherundolo will lead a senior national team training camp next month with players mostly from Major League Soccer. Going into his final two games, Pochettino led the U.S. to 21 wins, 12 losses and two draws — counting a penalty-kicks win over Costa Rica as a draw. He was the first long-term U.S. coach not to win any titles since Steve Sampson from 1995-98. “What you’ve done with the men’s and the boys program in two years has been unbelievable,” Parlow Cone said. “Not only have you contributed to their advancement, you’ve contributed to the entire federation being better.” Batson and chief operating officer Dan Helfrich will lead the search, assisted by women’s national team coach Emma Hayes and former American defender Oguchi Onyewu, a member of the USSF staff. Manchester United is paying a release fee to the USSF to terminate his contract. US soldier accused of spying for Russia identified: Source 1 day ago Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury 19 hours ago Ukraine fires nearly 1,200 drones at Russia as US-led talks consider Europe security 12 hours ago “Those funds are used to help us hire great coaches, help us (with) youth national team programs, coaching education,” Batson said. “Those funds are available for us to invest to make the biggest impact on our goals.” Pochettino said he told his U.S. players and staff of his decision in a meeting on Thursday. “I want to say thank you because they were very supportive and they really understand the situation,” Pochettino said. “And they know us, how committed we are for the next two games.\" After coaching Southampton, Tottenham and Chelsea in the Premier League, Espanyol in Spain and winning the French title with Paris Saint-Germain, Pochettino takes a job that has proved to be too big for a succession of managers since Ferguson led the team to a record 13 Premier League titles and two Champions League crowns during a near 27-year tenure. United has not won the league since Ferguson’s last season in 2013 and has been overtaken by rivals Manchester City, Liverpool, Chelsea and Arsenal. Champions League-winning coaches Louis van Gaal and Jose Mourinho failed to meet United’s expectations, while David Moyes , Ole Gunnar Solskjaer , Erik ten Hag and Carrick also came up short. Despite winning the French league with PSG in 2022 , arguably Pochettino’s greatest achievement was turning Tottenham into a serial title contender in the Premier League and also leading the club to the Champions League final in 2019. He has never won a major trophy in England, most recently losing the final of the English League Cup with Chelsea in 2024. It is not known how much Pochettino will earn at United, as typically European soccer teams do not disclose the salaries of coaches and players. United has spent huge sums on coaches and executives over the past 13 years and paid well in excess of $100 million in severance payments alone . Pochettino earned just over $5 million during his first seven months as coach of the U.S., according to the U.S. Soccer Federation’s tax filing . ___ Robson reported from Manchester, England, and Blum from New York. ___ James Robson is at https://x.com/jamesalanrobson ___ See AP’s full soccer coverage here Related Topics Soccer Sponsored Content by Taboola NFL quarterback to search for love on ‘The Bachelor’ 11 hours ago Alex Murdaugh wants murder indictments dismissed, saying agent lied to grand jury 19 hours ago Ukraine fires nearly 1,200 drones at Russia as US-led talks consider Europe security 12 hours ago US soldier accused of spying for Russia identified: Source 1 day ago ABC News Live 24/7 coverage of breaking news and live events",
+        "sha256": "365574870e663ba0fe6215801166c4de8503aaba5ae4978f2b99b35282f94782"
+      },
+      {
+        "id": "BBC",
+        "url": "https://nz.news.yahoo.com/manchester-united-confirm-pochettino-manager-124611503.html",
+        "publisher_group": "BBC",
+        "primary": false,
+        "published_at": "2026-11-13",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "'One of the most difficult decisions' - New Man Utd boss Pochettino in tears on leaving US job Mauricio Pochettino is in tears at his USA news conference, saying leaving to take the Man Utd job is 'one of the most difficult decisions of his career' Manchester United confirm he will become their new manager from 18 November - Man Utd statement Pochettino has signed a two-and-a-half year contract with the club, until June 2029, sources tell BBC Sport Pochettino will take charge of USA's next two matches , both against Haiti It comes after Man Utd sacked Michael Carrick on Thursday with the club in the Premier League's relegation zone Carrick has released a statement saying it's been a 'privilege' to lead the 'club I love' and that he wants ' nothing but success ' for them There has been huge criticism by fans of the way United is being run. Sporting director Jason Wilcox is blamed by many for bad recruitment, but the budget was set higher up, writes Simon Stone 'One of the most difficult decisions' - New Man Utd boss Pochettino in tears on leaving US job Advertisement About our ads",
+        "sha256": "bc579ee41d3b03c298992431c392125fe7d57c321b39d87edb3fd2596f4aef24"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Mauricio_Pochettino_USMNT_v_Belgium_Mar_28_2026-2.jpg",
+        "publisher_group": "BRYAN_BERLIN",
+        "primary": true,
+        "published_at": "2026-03-28",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "Size of this preview: 500 × 667 pixels . Other resolutions: 250 × 333 pixels | 960 × 1,280 pixels | 1,920 × 2,560 pixels | 3,750 × 5,000 pixels . Original file (3,750 × 5,000 pixels, file size: 4.12 MB, MIME type: image/jpeg ) File information Structured data Captions Captions English Mauricio Pochettino during USMNT v Belgium on March 28 2026 Summary [ edit ] Description Mauricio Pochettino USMNT v Belgium Mar 28 2026-2.jpg English: Mauricio Pochettino during USMNT v Belgium on March 28 2026 at Mercedes-Benz Stadium in Atlanta, Georgia Date 28 March 2026, 14:28:07 Source Own work Author Bryan Berlin This photo was taken during International Soccer Matches 2026 as part of the WikiPortraits initiative. All photos from this event » Personality rights Personality rights Personality rights warning Although this work is freely licensed or in the public domain , the person(s) shown may have rights that legally restrict certain re-uses unless those depicted consent to such uses. In these cases, a model release or other evidence of consent could protect you from infringement claims. Though not obliged to do so, the uploader may be able to help you to obtain such evidence. See our general disclaimer for more information. Licensing [ edit ] I, the copyright holder of this work, hereby publish it under the following license: This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. You are free: to share – to copy, distribute and transmit the work to remix – to adapt the work Under the following conditions: attribution – You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. share alike – If you remix, transform, or build upon the material, you must distribute your contributions under the same or compatible license as the original. https://creativecommons.org/licenses/by-sa/4.0 CC BY-SA 4.0 Creative Commons Attribution-Share Alike 4.0 true true File history Click on a date/time to view the file as it appeared at that time. Date/Time Thumbnail Dimensions User Comment current 02:18, 7 April 2026 3,750 × 5,000 (4.12 MB) Berlination ( talk | contribs ) Uploaded own work with UploadWizard You cannot overwrite this file. File usage on Commons The following 2 pages use this file: Commons:WikiPortraits/Upload Log/Sports/2026 April Category:Mauricio Pochettino File usage on other wikis The following other wikis use this file: Usage on ar.wikipedia.org ماوريسيو بوتشيتينو Usage on arz.wikipedia.org ماوريسيو بوتشيتينو Usage on ast.wikipedia.org Mauricio Pochettino Usage on be-tarask.wikipedia.org Маўрысіё Пачэтына Usage on da.wikipedia.org Mauricio Pochettino Usage on de.wikipedia.org Mauricio Pochettino Usage on el.wikipedia.org Μαουρίσιο Ποτσετίνο Usage on en.wikipedia.org List of Chelsea F.C. managers Mauricio Pochettino List of Manchester United F.C. managers List of Argentine footballers in La Liga Usage on fr.wikipedia.org Mauricio Pochettino Usage on gl.wikipedia.org Mauricio Pochettino Usage on he.wikipedia.org מאוריסיו פוצ'טינו Usage on hyw.wikipedia.org Մաուրիցիօ Փոքեթինօ Usage on ja.wikipedia.org マウリシオ・ポチェッティーノ Usage on mg.wikipedia.org Mauricio Pochettino Usage on no.wikipedia.org Mauricio Pochettino Usage on pl.wikipedia.org Manchester United F.C. Usage on ro.wikipedia.org Mauricio Pochettino Usage on sr.wikipedia.org Маурисио Почетино Usage on tk.wikipedia.org Wikipediýa:Wiki dünýä kubogyny söýýär/Döretmek üçin makalalar Usage on ur.wikipedia.org موریسیو پوچیٹینو Usage on uz.wikipedia.org Vikipediya:Viki Jahon chempionatini sevadi/Yaratish uchun maqolalar Usage on vi.wikipedia.org Mauricio Pochettino Usage on vo.wikipedia.org Mauricio Pochettino Usage on www.wikidata.org Q313000 Usage on zh-yue.wikipedia.org 普捷天奴 Usage on zh.wikipedia.org 毛里西奥·波切蒂诺 Metadata This file contains additional information such as Exif metadata which may have been added by the digital camera, scanner, or software program used to create or digitize it. If the file has been modified from its original state, some details such as the timestamp may not fully reflect those of the original file. The timestamp is only as accurate as the clock in the camera, and it may be completely wrong. Camera manufacturer SONY Camera model ILCE-6700 Exposure time 1/320 sec (0.003125) F-number f/4.5 ISO speed rating 1,250 Date and time of data generation 14:28, 28 March 2026 Lens focal length 61 mm Horizontal resolution 240 dpi Vertical resolution 240 dpi Software used Adobe Lightroom 9.2 (Macintosh) File change date and time 10:13, 31 March 2026 Exposure Program Shutter priority Exif version 2.32 Date and time of digitizing 14:28, 28 March 2026 APEX shutter speed 8.321928 APEX aperture 4.33985 APEX brightness 4.025 APEX exposure bias 0 Maximum land aperture 2.96875 APEX (f/2.8) Metering mode Pattern Light source Unknown Flash Flash did not fire, compulsory flash suppression DateTimeOriginal subseconds 124 DateTimeDigitized subseconds 124 Color space sRGB Focal plane X resolution 2,646.1538391113 Focal plane Y resolution 2,646.1538391113 Focal plane resolution unit 3 File source Digital still camera Scene type A directly photographed image Custom image processing Normal process Exposure mode Auto exposure White balance Manual white balance Digital zoom ratio 1 Focal length in 35 mm film 91 mm Scene capture type Standard Contrast Normal Saturation Normal Sharpness Normal Lens used E 28-75mm F2.8 A063 Date metadata was last modified 06:13, 31 March 2026 Unique ID of original document 7F9D745208506322DA97BE9ED030F093 IIM version 4 Structured data Items portrayed in this file depicts Mauricio Pochettino copyright status copyrighted copyright license Creative Commons Attribution-ShareAlike 4.0 International inception 28 March 2026 media type image/jpeg ISO speed 1,250 exposure time 0.003125 second f-number 4.5 focal length 61 millimetre data size 4,323,852 byte height 5,000 pixel width 3,750 pixel checksum 53c902a8dc7aa8ae930e2a4cffceb86e2ada8a09 determination method or standard : SHA-1 captured with Sony α6700 instance of photograph Retrieved from \" https://commons.wikimedia.org/w/index.php?title=File:Mauricio_Pochettino_USMNT_v_Belgium_Mar_28_2026-2.jpg&oldid=1264945813 \"",
+        "sha256": "517bf36bd62880e22d791d8c1b0869a7f954bffc0c8abd1dadc30d5d887c7396"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-14T00:17:13.955Z",
+        "text": "FullbrowserCCBYSA4.0deedread: commercialsharing/adaptation allowed with title/creatorcredit/source/licencelink andchangesindicated, adaptations includingowncontributions sameCCBYSA4.0, noaddedrestrictions orimpliedendorsement. Personality/trademarkrightsnotwaived.",
+        "sha256": "98989ed81da4c8313da54ba15809d11c919de0271bf0f38b7580c793b7a0bbd5"
+      }
+    ],
+    "pool_file": "audience-pool.json",
+    "pool_date": "2026-11-14",
+    "pool_fetched_at": "2026-11-14T00:02:05.328Z",
+    "cached_sources": true,
+    "eligible_pool_items": 0,
+    "interpretation": "Zero pool-eligible items was not treated as no news. Fresh targeted research and complete sources used.",
+    "full_read_methods": "U.S. Soccer and AP via ABC normal public HTML; United appointment and Carrick statements full normal Chromium HTTP200; LFC official fixture changes full browser/HTML; BBC entire short syndicated summary.",
+    "verified": "13Nov appointment; Haiti14/17Nov US local dates; United formal start18Nov; Liverpool22Nov per official rescheduling; four calendar days, not four training sessions; Carrick12Nov and United18th corroborated AP/BBC.",
+    "limitations": "Initial United SSR showed related cards, not full article; full browser reading completed. Sky403 excluded; Guardian not packet fact source. No unverified match completion, staff training count, salary/fee or predicted style."
+  },
+  "fallback": {
+    "stage": "SOURCE_MEDIA_ACCESS_AND_RIGHTS",
+    "queries": 2,
+    "selected_urls": 3,
+    "creators": 3,
+    "reason": "Three video pages throttled; standard YouTube licences and no verified reuse permission. No downloaded, watched or auditioned footage, transcript or montage evidence. Carousel fallback retains original slot clock."
+  },
+  "media": {
+    "photo_author": "Bryan Berlin/WikiPortraits",
+    "photo_date": "2026-03-28",
+    "commons_page": "https://commons.wikimedia.org/?curid=188295278",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "a2e55e550e674d455ce89cb8604dfddb19219723547b7b6d931f7000f7640e68",
+    "original_dimensions": [
+      3750,
+      5000
+    ],
+    "archive_disclosed": true,
+    "derivative_share_alike": true,
+    "face_hair_blazer_USA_badge_preserved": true,
+    "cover_variant": "KOLOM",
+    "cover_source": "USSOCCER.COM",
+    "page_count": 5,
+    "cover_input_sha256": "c9549a41c95dd2a43bd1f06ae1357254935b57252b097e3fc15be1e5feefbb3e",
+    "hero_sha256": "411b576930df4550b7d324e9768b7e6b1e68c3949a170a3d35b6fd0f6cabb522",
+    "hero_clean_photo_no_text": true
+  },
+  "native_review": {
+    "all_five_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-14T00:22:29.655Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_headline_safe": true,
+    "cream_body_text_only": true,
+    "all_text_readable_no_clipping": true,
+    "cover_count_matches_final_slides": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "USSOCCER.COM",
+        "cover_input_sha256": "c9549a41c95dd2a43bd1f06ae1357254935b57252b097e3fc15be1e5feefbb3e",
+        "output_sha256": "73c375c0751f663f9d121f48ed7bb8b7b3ff77bdd411ed0cb97eac159572ec5a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "25e320ecaea898ec7534c190d6736e5f4ca58a0f198105f2ea1ef8f0d25a535f",
+        "output_sha256": "2f29bfde7672de85b119c5c45d3f445cc36355d1927ab1049de0f72a1491b48b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 399,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 637,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 920,
+            "height": 399,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "7645fc4fd5fdae3962f371d3014c542917f98cc19e022b401607b5f9d8679142",
+        "output_sha256": "0020cf597b94b25e8e184d4f1fcddafa467b3bbfca7e8ec3dd589dfb2cc00adf",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 798,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 917,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "086e6721b728074105476d0d1e34361114397ce5fbd751ed7dffa11d58574c2a",
+        "output_sha256": "a9169518c0506d966e3a95018100fa7e7501d3480661fd97991d6f09a69cb131",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 399,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 908,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 918,
+            "height": 399,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "79b65f7f816ab8c737226b316f7c39bcd2d9523c58507e9028f4ffe709e26f5f",
+        "output_sha256": "d8854fdd7ba98470ab544cfda75171c2b77717c1339b0ffba662fe4f470f87d3",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 927,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 919,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-14T00:22:29.655Z",
+    "baseline_rows": 241,
+    "current_rows": 241,
+    "unchanged_other_rows": 240,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "8ada06fa-1223-4444-88c1-fa32547a2a12",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-14T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 3,
+    "weekly_routine_proposed": 4,
+    "weekly_limit": 12,
+    "instagram_media": 87,
+    "duplicate_matches": 0
+  },
+  "cms_content_duplicate_matches": [],
+  "metrics": {
+    "checked_at": "2026-11-14T00:22:29.655Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18080840546480271",
+        "published_at": "2026-11-13T13:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17954667666319287",
+        "published_at": "2026-11-13T01:02:00+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 5,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18121297981995470",
+        "published_at": "2026-11-12T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18643361083057857",
+        "published_at": "2026-11-08T13:01:46+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 3,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "39a0704c3a4de8adc901985b5dc19d5469e385ed",
+  "remaining": "Commit/push this reviewed proof, run committed shared schedule adapter, verify paired ARTICLE, public bytes, publication gate, scope and idempotence. No claim published before slot."
+}
