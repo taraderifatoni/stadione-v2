@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-14T12:15:55.090Z",
+  "serial": "Tribun Pilih Siapa?",
+  "assignment": {
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Dua kemenangan menghasilkan enam poin, tetapi puncak grup dan tiket belum diraih; pertemuan dengan Afghanistan menjadi patokan berikutnya.",
+    "why_now": "Finished14Novmatchnewdevelopmentafter13Novpreview; nootherpostmatchinCMS/IG. SaturdayTribunPilihSiapaframeworkspecificsupporterquestionwithreasons, nofabricatedcollaborator/poll/fanreaction."
+  },
+  "core_fact": "AFC, detikSport and Medcom confirm IndonesiaU17 beatCambodia2-0 on14Nov,6points; AFC/Detik confirmAfghanistan samepoints, Indonesia stillsecond.",
+  "editorial_angle": "Two wins do not yet mean group leadership or qualification. Explain goals, secondhalf opportunities and next direct rival.",
+  "hook": "Enam Poin, Garuda Belum di Puncak",
+  "payoff": "Confirmed match mechanisms and only group winners advance; Afghanistan17Nov, Myanmar20Nov.",
+  "audience_action": "Choose attack cooperation or defensive concentration to retain against Afghanistan, giving a reason from the match; no invented supporter poll/collaboration.",
+  "format": "CAROUSEL",
+  "format_reason": "Saturday20WIBnotmandatoryillustration. Twofreshqueries,3actualvideoURLs/3creators; pagesfetchthrottled, standardYouTubelicence noverifiedmontagevideo/audio grant; onematchpreviewnotpostmatchfootage. Verifiedcarousel sameIndonesia pillar/clock, noclaimnativecarouselmusic.",
+  "audio": "No carousel music attached by GraphAPI; no voiceover or source audio claimed.",
+  "source_media_failure": {
+    "stage": "SOURCE_MEDIA_CONTEXT_ACCESS_AND_RIGHTS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": 3,
+    "reason": "Three actual YouTube pages Onlinefetchthrottled; standard licences without verified montagevideo/audio grant. Two postmatch metadata entries do not prove footage; one schedulepreview publishedbeforematch is not verified postmatchaction. No download/watch/audition/transcript, no owned host or licensed voiceover asset selected. Same-pillar same-clock carousel fallback."
+  }
+}

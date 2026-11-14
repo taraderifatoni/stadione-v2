@@ -1,0 +1,486 @@
+{
+  "checked_at": "2026-11-14T12:15:55.090Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "058717c9-523a-4a8f-a4c4-6ca0b065ec0b",
+    "plan_key": "2026-11-14:match-pm",
+    "scheduled_at": "2026-11-14T13:00:00Z",
+    "time_wib": "14 November 2026 20.00 WIB",
+    "pillar": "Sepak Bola Indonesia",
+    "original_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Enam Poin, Garuda Belum di Puncak",
+    "genre": "NEWS",
+    "words": 171,
+    "paragraphs": 4,
+    "slides": 5,
+    "digest": "35952d2bcecaa8cb063aeb48d2b6976e86fa7a665e313cc96ab88dfa644a1ca3",
+    "benchmarks": [
+      "goal-20261114-pochettino-appointment-transition-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "article_written_before_pagination": true
+  },
+  "references": {
+    "entries": 39,
+    "sha256": "1672ffb7ef711ae2868733e03c9966e05b2ec00193a43961db8b39f4959ab751",
+    "runtime_identical_committed": true
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/qualifiers-group-a-myanmar-3-1-philippines-indonesia-2-0-cambodia",
+        "publisher_group": "AFC",
+        "primary": true,
+        "published_at": "2026-11-14",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "657ec5e4ca19bb911e79e9a6a86be2a9bc2120c4201fa3f125ea043a7653cbd8",
+        "normalized_text_characters": 2942,
+        "full_read": true,
+        "method": "Complete public HTTP200 article/deed, not snippet"
+      },
+      {
+        "id": "AFC_RULES",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-qualifiers-md3-results-reports-2",
+        "publisher_group": "AFC",
+        "primary": true,
+        "published_at": "2026-11-14",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "4ad36a04b6651c39262da34629a09968652029c2a437c4b601cba881912a3a9a",
+        "normalized_text_characters": 1356,
+        "full_read": true,
+        "method": "Complete public HTTP200 article/deed, not snippet"
+      },
+      {
+        "id": "AFC_SCHEDULE",
+        "url": "https://assets.the-afc.com/2027_AFC_U17_Asian_Cup/Download/AFC-U17-Asian-Cup-Uzbekistan-2027-Qualifiers-Match-Schedule--6Novupd.pdf",
+        "publisher_group": "AFC",
+        "primary": true,
+        "published_at": "2026-11-06",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "bc7a7d4411f8ff914a36f28284a3940dc18b0f1cb73bdd2deaba8486d7df2c04",
+        "normalized_text_characters": 326,
+        "full_read": false,
+        "method": "Downloaded official PDF HTTP200 and browser-parsed GroupA page0; manual structured extraction, not visual PDF review"
+      },
+      {
+        "id": "DETIK",
+        "url": "https://sport.detik.com/sepakbola/liga-indonesia/d-8753085/hasil-kualifikasi-piala-asia-u-17-2027-indonesia-kalahkan-kamboja-2-0/amp",
+        "publisher_group": "DETIK",
+        "primary": false,
+        "published_at": "2026-11-14T10:28:00Z",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "7a277feb475a629bf95fc7ac5a3907ef518e2921ce99480acd014a929629c766",
+        "normalized_text_characters": 2226,
+        "full_read": true,
+        "method": "Complete public HTTP200 article/deed, not snippet"
+      },
+      {
+        "id": "MEDCOM",
+        "url": "https://www.medcom.id/olahraga/liga-dunia/5b2y6lrN-hasil-timnas-indonesia-u-17-vs-kamboja-garuda-muda-raih-kemenangan-kedua",
+        "publisher_group": "MEDCOM",
+        "primary": false,
+        "published_at": "2026-11-14T10:24:00Z",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "00b8ab080edc747bfa7bd48f8021397c7a981c8e0ca1f2b7da6fd7d70d0e9c4b",
+        "normalized_text_characters": 4194,
+        "full_read": true,
+        "method": "Complete public HTTP200 article/deed, not snippet"
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Nascimento.jpg",
+        "publisher_group": "LUCTOR_IV",
+        "primary": true,
+        "published_at": "2007-08-11",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "67eec503e88d0a67d1b5111de4789f41d7d3a394712f7c715c5c36d497875aa6",
+        "normalized_text_characters": 4765,
+        "full_read": true,
+        "method": "Complete licensed Commons snapshot acquired13Nov2026 and re-read14Nov; currentGET403, no fresh200claim"
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-14T12:08:16.153Z",
+        "normalized_text_sha256": "ac6fd7467f150c50ea1d82a8d0bd014797829b2aa62d51bb0e7a0cd35322ae4a",
+        "normalized_text_characters": 2579,
+        "full_read": true,
+        "method": "Complete public HTTP200 article/deed, not snippet"
+      }
+    ],
+    "pool": {
+      "date": "2026-11-14",
+      "fetched_at": "2026-11-14T12:00:47.785Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 1
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "One pool-eligible Hubner item; pool not treated as complete news list. Fresh completed priorityTimnas match chosen through targeted full-source research, new result after yesterday preview.",
+    "verified": "14Nov final2-0, six points from two matches, second on goal difference, goals10/35primaryAFC+Detik, sevengroupwinners advance, next17NovAfghanistan/20NovMyanmar from official6NovPDF.",
+    "discrepancies": "Medcom Melki34 vsAFC/Detik35: primarycorroborated35 used. Disallowedgoal85/86clock omitted. Detik number1-0 typo not used, some2026headline typos notrepeated; official competition2027. No unverified possession/chancecounts/tactics/conversionrates, no own video viewing or interviews/quotes."
+  },
+  "fallback": {
+    "stage": "SOURCE_MEDIA_CONTEXT_ACCESS_AND_RIGHTS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": 3,
+    "reason": "Three actual YouTube pages Onlinefetchthrottled; standard licences without verified montagevideo/audio grant. Two postmatch metadata entries do not prove footage; one schedulepreview publishedbeforematch is not verified postmatchaction. No download/watch/audition/transcript, no owned host or licensed voiceover asset selected. Same-pillar same-clock carousel fallback."
+  },
+  "duplicate_review": {
+    "checked_at": "2026-11-14T12:12:36.096Z",
+    "original_terms": [
+      "kamboja",
+      "enam poin"
+    ],
+    "matched_media_id": "18080840546480271",
+    "matched_article": "Lawan Kamboja, Ujian Ketajaman Garuda",
+    "finding": "13Nov preview has Afghanistan six points, not Indonesia postmatch six points. Full caption compared; noDolvi/Melki/postmatch result in88Instagram captions or242CMSrows. Newpostmatchevent separate from preview, no historical mutation.",
+    "refined_event_terms": [
+      "kamboja",
+      "dolvi",
+      "melki"
+    ]
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "media": {
+    "photo_author": "Luctor IV",
+    "photo_date": "2007-08-11",
+    "commons_page": "https://commons.wikimedia.org/?curid=2549635",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "original_sha256": "4701e07101988e68f3b36a0fd6ce3924a865fd23aa5556fcf5f9f8438c938368",
+    "original_dimensions": [
+      1121,
+      913
+    ],
+    "original_bytes": 138458,
+    "archive_year_visible_on_cover": true,
+    "derivative_share_alike": true,
+    "face_age_hair_grey_polo_pose_preserved": true,
+    "not_current_match_photography": true,
+    "cover_variant": "FOTO_DOMINAN",
+    "previous_variants": [
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM"
+    ],
+    "cover_source": "THE-AFC.COM",
+    "page_count": 5,
+    "cover_input_sha256": "5952b104dc3004981545e9866c04bc03cffb73e0afc3cbc077290202d7db435b",
+    "hero_sha256": "0a68bb9b884f9b4bab9ce6ee4decc6ec8579fe02b8a293ca0cd5b9453fe774f9",
+    "hero_clean_without_text": true,
+    "licence_evidence": "Complete13NovCommonsgrant re-read14Nov plus freshCCdeed200. CurrentCommons403 disclosed; no bypass or fabricated fresh200."
+  },
+  "native_review": {
+    "all_five_final_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-14T12:15:55.090Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_safe_wrapping": true,
+    "cream_body_text_only": true,
+    "no_overflow_or_clipping": true,
+    "score_wrap_revision": "Initial2–0splitacrosslines; changedprosetoequivalentduagoltanpabalas, article/caption/digest/previewrefreshed, page2re-opened. OtherfourfinalJPEGshashesunchanged from native review.",
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "THE-AFC.COM",
+        "cover_input_sha256": "5952b104dc3004981545e9866c04bc03cffb73e0afc3cbc077290202d7db435b",
+        "output_sha256": "25d7ce78a0dbf61f797ac14be8acce07fd4921852a24d22727de31ca204b4d0d",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "734f0d07e7ed82b998121f180b1b334c9793d847649ba454f15a3b4fdd8b4d73",
+        "output_sha256": "55aa8098964ac76d1b3d5d56bf7424ab4d1f0a0147c461e3082faeae7f34d93b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 55,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 296,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 824,
+            "height": 55,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 336,
+            "width": 927,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "222dc45e91ad635c8f3864fce04aa1f37aba126b71222de8353d73ebfb90d1c8",
+        "output_sha256": "c3d51514c5e7d3b6c0a590d04cd83420a96845c297808a8e591b8d11ec7a3779",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 895,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 899,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "90697ecc91639a972e769ead1bfa4f30e59c889667ced52a19f8d9001e28b04c",
+        "output_sha256": "ed2d70712e352cf60d4900e249048a81f2cfa728c6cfeb57b812cfab4bada3da",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 678,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 925,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "4943de840fce62fa367b675206769b241a8626b9ca50abadcc331c6d11323d85",
+        "output_sha256": "43b65f685f271f10936ed2fd2c66374488eb5871aab59bccd06123e45a0911e5",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 891,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 929,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-14T12:15:55.090Z",
+    "baseline_rows": 242,
+    "current_rows": 242,
+    "unchanged_other_rows": 241,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "058717c9-523a-4a8f-a4c4-6ca0b065ec0b",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-14T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 4,
+    "weekly_routine_proposed": 5,
+    "weekly_limit": 12,
+    "instagram_media": 88,
+    "duplicate_matches": 0
+  },
+  "metrics": {
+    "checked_at": "2026-11-14T12:15:55.090Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18053616077817781",
+        "published_at": "2026-11-14T01:00:47+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18080840546480271",
+        "published_at": "2026-11-13T13:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17954667666319287",
+        "published_at": "2026-11-13T01:02:00+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 5,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18121297981995470",
+        "published_at": "2026-11-12T01:02:14+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "f3979d21c638259b522b6a87070a2d6f4c300f8d",
+  "remaining": "Commit/push evidence before shared schedule, then verify same canonical ARTICLE/title/dek/digest/clock/hero, public JPEG hashes, gate, scope and idempotence. Leave futurevalidschedule to shared publisher; no claim published."
+}

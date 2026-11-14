@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Enam Poin, Garuda Belum di Puncak",
+  "dek": "Dua kemenangan membuka persaingan. Afghanistan menunggu pada 17 November. Arsip 2007 Nascimento: Luctor IV/CC BY-SA 3.0; diolah. commons.wikimedia.org/?curid=2549635",
+  "caption": "ENAM POIN, GARUDA BELUM DI PUNCAK\n\nDua kemenangan belum membawa Timnas Indonesia U-17 ke puncak Grup A Kualifikasi Piala Asia U-17 2027. Setelah menundukkan Kamboja dua gol tanpa balas di Starcity Sports Club, Thanlyin, Sabtu (14/11/2026), Garuda Muda mengoleksi enam poin dari dua laga. Poinnya sama dengan Afghanistan, tetapi Indonesia masih kalah selisih gol.\n\nDolvi Solossa membuka keunggulan pada menit ke-10 melalui tembakan yang membentur pemain Kamboja sebelum melewati kiper Karim Romaton. Pada menit ke-35, Melki Alvando menyambut umpan silang Chico Yarangga dengan sundulan. Laporan AFC dan detikSport mencatat dua gol itu lahir sebelum turun minum.\n\nMenurut laporan AFC, Indonesia tetap menciptakan peluang selepas jeda: tembakan Ichiro Akbar melebar, sedangkan upaya Dzaky ditepis Karim. Kamboja sempat memasukkan bola lewat sundulan, tetapi golnya dianulir karena offside. Skor tidak berubah hingga pertandingan selesai.\n\nHanya juara dari masing-masing tujuh grup yang lolos ke putaran final. Karena itu, pertemuan dengan Afghanistan pada 17 November menjadi agenda penting: Indonesia akan menghadapi pesaing yang kini memiliki poin sama. Sesudahnya, Myanmar menunggu pada 20 November. Dua kemenangan membuka persaingan, tetapi perebutan tiket belum selesai.\n\nMenjelang Afghanistan, apa yang paling perlu dipertahankan: kerja sama serangan atau konsentrasi pertahanan? Beri alasan dari jalannya laga, bukan sekadar prediksi skor.\n\nSumber: laporan lengkap AFC, detikSport dan Medcom; jadwal resmi AFC versi 6 November. Angka serta klasemen merujuk hasil 14 November saat review.\n\nFoto arsip David Nascimento, 11 Agustus 2007, Luctor IV, karya sendiri: https://commons.wikimedia.org/?curid=2549635 . CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/ . Cover kolase dan crop hero diolah; kontribusi kami dibagikan dengan lisensi sama tanpa pembatasan tambahan. Wajah, usia, pose dan polo abu-abu asli dipertahankan. Ini foto pelatih, bukan Dolvi/Melki atau dokumentasi laga 14 November 2026; tanpa dukungan tersirat fotografer atau pelatih.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Enam Poin, Posisi Kedua",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "PHOTO"
+      ],
+      "text": "Dua kemenangan belum membawa Timnas Indonesia U-17 ke puncak Grup A Kualifikasi Piala Asia U-17 2027. Setelah menundukkan Kamboja dua gol tanpa balas di Starcity Sports Club, Thanlyin, Sabtu (14/11/2026), Garuda Muda mengoleksi enam poin dari dua laga. Poinnya sama dengan Afghanistan, tetapi Indonesia masih kalah selisih gol."
+    },
+    {
+      "id": "goals",
+      "heading": "Tembakan Dolvi, Sundulan Melki",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOALS"
+      ],
+      "text": "Dolvi Solossa membuka keunggulan pada menit ke-10 melalui tembakan yang membentur pemain Kamboja sebelum melewati kiper Karim Romaton. Pada menit ke-35, Melki Alvando menyambut umpan silang Chico Yarangga dengan sundulan. Laporan AFC dan detikSport mencatat dua gol itu lahir sebelum turun minum."
+    },
+    {
+      "id": "interval",
+      "heading": "Peluang Seusai Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "SECOND_HALF",
+        "RESULT"
+      ],
+      "text": "Menurut laporan AFC, Indonesia tetap menciptakan peluang selepas jeda: tembakan Ichiro Akbar melebar, sedangkan upaya Dzaky ditepis Karim. Kamboja sempat memasukkan bola lewat sundulan, tetapi golnya dianulir karena offside. Skor tidak berubah hingga pertandingan selesai."
+    },
+    {
+      "id": "stakes",
+      "heading": "Afghanistan Menjadi Ujian Berikutnya",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "STAKES",
+        "RESULT"
+      ],
+      "text": "Hanya juara dari masing-masing tujuh grup yang lolos ke putaran final. Karena itu, pertemuan dengan Afghanistan pada 17 November menjadi agenda penting: Indonesia akan menghadapi pesaing yang kini memiliki poin sama. Sesudahnya, Myanmar menunggu pada 20 November. Dua kemenangan membuka persaingan, tetapi perebutan tiket belum selesai."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261114-pochettino-appointment-transition-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-14T12:13:46.417Z",
+    "article_digest": "35952d2bcecaa8cb063aeb48d2b6976e86fa7a665e313cc96ab88dfa644a1ca3"
+  }
+}
