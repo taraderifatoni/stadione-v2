@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Gol dan Umpan Linda Belum Cukup",
+  "dek": "Linda ikut membalikkan skor, lalu Badalona menyamakan kedudukan. Arsip 2024: Katie Chan/CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=144523495",
+  "caption": "GOL DAN UMPAN LINDA BELUM CUKUP\n\nGol dan umpan silang Linda Caicedo membantu Real Madrid Femenino berbalik unggul, tetapi gagal mengantar timnya menang. Badalona memaksakan hasil imbang tiga sama di Alfredo Di Stéfano pada Sabtu (14/11/2026) waktu Madrid. Linda memulai laga dari bangku cadangan.\n\nPau Quesada memasukkan Linda bersama Andreia Jacinto dan Felicia Schröder. Angeldahl menyamakan skor setelah Madrid tertinggal oleh gol Lucía Martínez, namun Elena Julve kembali membawa Badalona memimpin. Linda lalu menyelesaikan serangan dari tiang jauh untuk membuat skor dua sama.\n\nUmpan silang Linda berikutnya dituntaskan Lotte Keukelaar, yang dicatat Liga F sebagai MVP pertandingan. Madrid akhirnya berada di depan dengan skor tiga berbanding dua. Namun, kombinasi María Llompart dan Irina Uribe menghasilkan gol balasan Badalona.\n\nDari uraian pertandingan ini, mana yang lebih menonjol dari kontribusi Linda: penyelesaian di tiang jauh atau umpan silangnya untuk Keukelaar? Jelaskan alasanmu.\n\nSumber: laporan lengkap Liga F dan Esport3/3Cat. Tanggal pertandingan memakai waktu Madrid; laga berlangsung dini hari 15 November WIB.\n\nFoto arsip Linda Caicedo, 24 Januari 2024, Chelsea Women–Real Madrid Femenino di Stamford Bridge, karya sendiri Katie Chan: https://commons.wikimedia.org/?curid=144523495 . CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan crop hero diolah; kontribusi kami dibagikan dengan lisensi sama tanpa pembatasan tambahan. Wajah, usia, rambut kepang, jaket charcoal bergaris kuning, crest dan pose asli dipertahankan. Bukan dokumentasi laga Badalona November 2026; tanpa dukungan tersirat fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Kontribusi Linda, Hasil Tetap Imbang",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "BENCH",
+        "CROSS",
+        "PHOTO"
+      ],
+      "text": "Gol dan umpan silang Linda Caicedo membantu Real Madrid Femenino berbalik unggul, tetapi gagal mengantar timnya menang. Badalona memaksakan hasil imbang tiga sama di Alfredo Di Stéfano pada Sabtu (14/11/2026) waktu Madrid. Linda memulai laga dari bangku cadangan."
+    },
+    {
+      "id": "equalizer",
+      "heading": "Datang ke Tiang Jauh",
+      "kind": "FACT",
+      "claim_ids": [
+        "BENCH"
+      ],
+      "text": "Pau Quesada memasukkan Linda bersama Andreia Jacinto dan Felicia Schröder. Angeldahl menyamakan skor setelah Madrid tertinggal oleh gol Lucía Martínez, namun Elena Julve kembali membawa Badalona memimpin. Linda lalu menyelesaikan serangan dari tiang jauh untuk membuat skor dua sama."
+    },
+    {
+      "id": "cross",
+      "heading": "Keunggulan yang Kembali Lepas",
+      "kind": "FACT",
+      "claim_ids": [
+        "CROSS",
+        "RESULT"
+      ],
+      "text": "Umpan silang Linda berikutnya dituntaskan Lotte Keukelaar, yang dicatat Liga F sebagai MVP pertandingan. Madrid akhirnya berada di depan dengan skor tiga berbanding dua. Namun, kombinasi María Llompart dan Irina Uribe menghasilkan gol balasan Badalona."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261114-pochettino-appointment-transition-news",
+    "goal-20261104-bayern-atletico-match-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-15T00:11:09.041Z",
+    "article_digest": "126a7848ecfc9cdf27a3659385f8cbee7b726e0fcf2a9c857433d48f6d913b48"
+  }
+}

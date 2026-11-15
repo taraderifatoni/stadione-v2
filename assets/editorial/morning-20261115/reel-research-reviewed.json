@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-15:match-am",
+  "checked_at": "2026-11-15T00:11:09.041Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Linda Caicedo Badalona 14 noviembre 2026",
+    "Real Madrid Badalona"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=1Kx6oqa7H6E",
+      "creator": "Liga F",
+      "checked_at": "2026-11-15T00:11:09.041Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. FullAPI metadata/description read, standardYouTube licencewithoutverifiedmontagevideo/audio grant. OfficialLigaF/DAZN statusisnotreusepermission; SkorBeyni sourcecontextnotwatched. Noalternateaccess/download/watch/audition/transcript orsourceaudiomuting. No ownedhostrecording/clearedVOasset selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Liga F published 2026-11-14T22:06:31Z, 186sec, standardYouTubelicence; sourcepagefetchthrottled, no verified media/audio reusegrant."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=ZXEOOuYulPE",
+      "creator": "DAZN Fútbol",
+      "checked_at": "2026-11-15T00:11:09.041Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. FullAPI metadata/description read, standardYouTube licencewithoutverifiedmontagevideo/audio grant. OfficialLigaF/DAZN statusisnotreusepermission; SkorBeyni sourcecontextnotwatched. Noalternateaccess/download/watch/audition/transcript orsourceaudiomuting. No ownedhostrecording/clearedVOasset selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "DAZN Fútbol published 2026-11-14T23:21:06Z, 181sec, standardYouTubelicence; sourcepagefetchthrottled, no verified media/audio reusegrant."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=Dmr-dsD-NUk",
+      "creator": "SkorBeyni",
+      "checked_at": "2026-11-15T00:11:09.041Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. FullAPI metadata/description read, standardYouTube licencewithoutverifiedmontagevideo/audio grant. OfficialLigaF/DAZN statusisnotreusepermission; SkorBeyni sourcecontextnotwatched. Noalternateaccess/download/watch/audition/transcript orsourceaudiomuting. No ownedhostrecording/clearedVOasset selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "SkorBeyni published 2026-11-14T22:55:05Z, 23sec, standardYouTubelicence; sourcepagefetchthrottled, no verified media/audio reusegrant."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-15T00:11:09.041Z",
+    "digest": "3048f375760e7f7da5775db466ea6b218de28b303037add78ebb51b4ef9f9c3d"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "checked_at": "2026-11-15T00:21:01.935Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "8425171b-b5a0-475a-bc12-8628b10cd6d6",
+    "plan_key": "2026-11-15:match-am",
+    "scheduled_at": "2026-11-15T01:00:00Z",
+    "time_wib": "15 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "original_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Gol dan Umpan Linda Belum Cukup",
+    "genre": "NEWS",
+    "words": 112,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "126a7848ecfc9cdf27a3659385f8cbee7b726e0fcf2a9c857433d48f6d913b48",
+    "benchmarks": [
+      "goal-20261114-pochettino-appointment-transition-news",
+      "goal-20261104-bayern-atletico-match-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_padding_for_slide_quota": true
+  },
+  "references": {
+    "entries": 40,
+    "sha256": "f9d3bd55948caa3e7b35d720f4722155060924846e5142bf2fa3d3892dc52cda",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-15T00:19:36.259Z",
+    "note": "15Nov FEATURE Litmanen fully read and synced; NEWS benchmarks remain14Nov and4Nov by genre. All40entries genuine; no fabricated timestamp."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "LIGAF",
+        "url": "https://ligaf.es/noticia/irina-uribe-frena-al-real-madrid-en-el-di-stefano",
+        "publisher_group": "LIGAF",
+        "primary": true,
+        "published_at": "2026-11-14",
+        "retrieved_at": "2026-11-15T00:11:09.041Z",
+        "normalized_text_sha256": "13439b0c5fb8b87c2690966f28820ed1291febdf91df17c521101043ffa7f3fe",
+        "text_characters": 3484,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body, not headline/snippet; no login or access challenge bypass."
+      },
+      {
+        "id": "ESPORT3",
+        "url": "https://www.3cat.cat/esport3/empat-heroic-del-badalona-women-contra-el-madrid-i-larbitratge/noticia-amp/3439897/",
+        "publisher_group": "3CAT_ESPORT3",
+        "primary": false,
+        "published_at": "2026-11-14",
+        "retrieved_at": "2026-11-15T00:11:09.041Z",
+        "normalized_text_sha256": "91f9912c7ba8a5d46386013b799e3457a67c99596b22063dd5b2411048735a33",
+        "text_characters": 3228,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body, not headline/snippet; no login or access challenge bypass."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:20240124-Linda_Caicedo.jpg",
+        "publisher_group": "KATIE_CHAN",
+        "primary": true,
+        "published_at": "2024-01-24",
+        "retrieved_at": "2026-11-15T00:11:09.041Z",
+        "normalized_text_sha256": "4f125e7e186cb7c417a661f5ed95dc5ab758fd60cb489705661f87ab544b57af",
+        "text_characters": 5212,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body, not headline/snippet; no login or access challenge bypass."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-15T00:11:09.041Z",
+        "normalized_text_sha256": "ce644b7de52a87e96b620419506edd5818f48ebccbd7754b8838ff742ef8e58e",
+        "text_characters": 2605,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body, not headline/snippet; no login or access challenge bypass."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-15",
+      "fetched_at": "2026-11-15T00:04:34.396Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "PooltrendRealMadridFemeninovsLevanteBadalona ledtoverifiedcurrentmatch; trendwasdiscovery, not result evidence.",
+    "full_read_correction": "InitialLigaF articleCSSselector onlyrelatedcard74chars; corrected complete3484charbody readthroughlastparagraph. CompleteindependentEsport3/3Cat3568chars readthroughconclusion.",
+    "verified": "Final3-3,14Nov2026 Madridlocaldate versus15NovWIBovernight, Linda frombench duringtriplechange, farpostequalizer, crossforKeukelaar3-2lead, MVPKeukelaarattributedLigaF, Llompart/Uribefinalequality.",
+    "excluded": "RealMadridconnecttimeout, AS403, Caracol202 andgenericconnectorerrors were notfullreads orpacketfacts. No56/68minutes, injury/selectionreason, preciseLeague20:47timestamptimezone, currenttable, refereebiasopinion or inventedvideo/scouting/interview/quotes."
+  },
+  "fallback": {
+    "stage": "SOURCE_MEDIA_ACCESS_AND_RIGHTS",
+    "queries": 3,
+    "actual_urls": 3,
+    "creators": 3,
+    "reason": "Specific longquery returned0; shorterquery returned relevantofficialhighlights. Threeactualpages Onlinefetchthrottled, standardYouTubelicences withoutverifiedmontagevideo/audio grant. OfficialLigaF/DAZN statusnotreusepermission; SkorBeyni contextnotwatched. No download/watch/audition/transcript orsourceaudiomuting, no ownedhost/clearedVOasset selected. Sameclock/pillarcarousel fallback."
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "media": {
+    "photo_author": "Katie Chan",
+    "photo_date": "2024-01-24",
+    "source": "https://commons.wikimedia.org/wiki/File:20240124-Linda_Caicedo.jpg",
+    "commons_curid": "144523495",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "494bc1b57d1e6ff92c37cac6e6165425d34da0889de209e5fe56ae7217886dde",
+    "original_dimensions": [
+      2132,
+      1421
+    ],
+    "original_bytes": 551530,
+    "original_acquisition_http": 200,
+    "commons_and_deed_full_read_http": 200,
+    "archive2024_visible": true,
+    "derivative_share_alike": true,
+    "face_age_braids_charcoal_jacket_yellow_stripes_crest_pose_preserved": true,
+    "not_current_match_photo": true,
+    "cover_variant": "KLASIK",
+    "previous_variants": [
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN"
+    ],
+    "cover_source": "LIGAF.ES",
+    "page_count": 4,
+    "cover_input_sha256": "d8a4c73ff815a47a002b8a097a42ba068c183527d55b6fe6e8103dff660a0611",
+    "hero_sha256": "fd94714c594b6ef57bf2a6a15cd1c140994660adb1dfbfa6f70cedafe9841d5f",
+    "hero_clean_original_crop_no_text": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-15T00:21:01.935Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "cream_body_text_only": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "LIGAF.ES",
+        "cover_input_sha256": "d8a4c73ff815a47a002b8a097a42ba068c183527d55b6fe6e8103dff660a0611",
+        "output_sha256": "bbac56e50de7796fde03ae8e0188a5b4380b3c5d7c1f35544799e7d6c4735552",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "058840d5147c8321f1334176fb3fc3c2279c50deaae49c5827d3745a44fc8f4c",
+        "output_sha256": "0c8f2b48ebec1e51e6fd3208cfa92e62324acfce683b59f932d55993b52fd7d3",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 765,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 925,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "54a2b766cef094308616329cf22e5348ffffba174ca3f8c463b33baafa4521df",
+        "output_sha256": "63dbc6728df8e43163fd07b5b2ecef0e999aa735ca8abe86c491c1c827100c37",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 714,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 915,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "10b9c99015c466fc211a3709a38cd39857bd22c7f9f423448ad7c14991f447cd",
+        "output_sha256": "387000c914aceab4f4dafd5fb5fae53108ae543531b291de4ad286034786911f",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 876,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 884,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-15T00:21:01.935Z",
+    "baseline_rows": 246,
+    "current_rows": 246,
+    "unchanged_other_rows": 245,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "8425171b-b5a0-475a-bc12-8628b10cd6d6",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-15T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 5,
+    "weekly_routine_proposed": 6,
+    "weekly_limit": 12,
+    "instagram_media": 89,
+    "duplicate_matches": 0
+  },
+  "metrics": {
+    "checked_at": "2026-11-15T00:21:01.935Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18117075515117636",
+        "published_at": "2026-11-14T13:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18053616077817781",
+        "published_at": "2026-11-14T01:00:47+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18080840546480271",
+        "published_at": "2026-11-13T13:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17954667666319287",
+        "published_at": "2026-11-13T01:02:00+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 5,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "8c99ed9dd45263e14bf5eed470487acd55678a25",
+  "remaining": "Commit/push proof before committedsharedschedule; then verify identical canonicalARTICLE/dek/digest/clock/hero, publicationgate, publicbytes, scopeand idempotence. FutureSCHEDULED isnotPUBLISHED."
+}
