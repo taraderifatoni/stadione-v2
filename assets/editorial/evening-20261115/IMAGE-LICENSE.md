@@ -1,0 +1,5 @@
+# Photo and derivative licence
+
+Tim geypens.jpg, Bé Speelman/Filmwijker via Wikiportret.nl,18February2026 VIP day VriendenLoterij. Source: https://commons.wikimedia.org/?curid=184578328 . CC BY-SA4.0: https://creativecommons.org/licenses/by-sa/4.0/ . Full public Commons grant and CC deed read; public VRT permission notice2026021810009585 inspected, private correspondence not accessed. Original raw4640x3472, EXIF orientation6, upright3472x4640,2979800bytes acquired HTTP200, SHA256 7ba05e980a2ee5f1a5ade49bfa2d7abf28feaf59a7868c61fce8a9933577a7b9.
+
+Image generation preserves photographed face, hair, age, pose, red FC Emmen training jacket, crest, Stanno, number5 and Vandaglas sponsor. Background and typography adapted; archiveFebruary2026 explicit, not Timnas/BaliUnited current kit or15Novclosedtrial photography. Hero mechanically auto-oriented and cropped from original without overlay. Creator/source/licence/archive/changes disclosed on cover/dek/caption. Our derivative contributions use same CC BY-SA4.0 without additional restrictions; no endorsement implied.

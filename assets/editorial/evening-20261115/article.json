@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Geypens, Opsi Baru di Tengah Garuda",
+  "dek": "Herdman ingin menambah pilihan gelandang. Arsip Februari 2026: Bé Speelman/Filmwijker, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=184578328",
+  "caption": "GEYPENS, OPSI BARU DI TENGAH GARUDA\n\nTim Geypens masuk rencana John Herdman untuk menambah pilihan lini tengah Timnas Indonesia. Pemain Bali United yang dikenal sebagai bek kiri itu akan dicoba sebagai gelandang dalam pemusatan latihan di Bali. Herdman menyoroti kemampuannya mengisi beberapa posisi bersama klub.\n\nDalam pernyataan yang dimuat I.League pada 11 November, Herdman mengatakan, “Jadi, kami akan memberinya kesempatan untuk bermain di posisi gelandang tengah.” Ia ingin menilai Geypens dalam kerangka prinsip permainan dan profil pemain yang dicari.\n\nLaporan Bola.com pada Minggu (15/11/2026) menyebut uji coba kontra Bali United dijadwalkan pukul 19.00 WITA atau 18.00 WIB di Stadion Kapten I Wayan Dipta. Media Officer Bali United, Alexander, mengonfirmasi sesi itu tertutup bagi media. Kepada ANTARA pada 10 November, Herdman menjelaskan latih tanding dipakai untuk menilai kedalaman skuad berisi 22 pemain.\n\nJika Geypens dicoba di tengah, aspek apa yang paling perlu dinilai: distribusi bola atau posisi saat bertahan? Jelaskan alasanmu.\n\nSumber: pernyataan Herdman di I.League (11 November), laporan langsung ANTARA (10 November), dan laporan agenda Bola.com (15 November).\n\nFoto arsip “Tim geypens.jpg”, Tim Geypens saat VIP-dag VriendenLoterij, 18 Februari 2026, Bé Speelman/Filmwijker via Wikiportret: https://commons.wikimedia.org/?curid=184578328 . CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/ . Cover kolase dan crop hero diolah; kontribusi kami dibagikan dengan lisensi sama tanpa pembatasan tambahan. Wajah, rambut, usia, pose dan atasan latihan FC Emmen asli (nomor 5, crest, sponsor) dipertahankan. Bukan dokumentasi TC Bali, jersey Timnas/Bali United atau laga 15 November 2026. Tanpa dukungan tersirat fotografer atau pemain.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Opsi Tambahan untuk Lini Tengah",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROLE",
+        "PHOTO"
+      ],
+      "text": "Tim Geypens masuk rencana John Herdman untuk menambah pilihan lini tengah Timnas Indonesia. Pemain Bali United yang dikenal sebagai bek kiri itu akan dicoba sebagai gelandang dalam pemusatan latihan di Bali. Herdman menyoroti kemampuannya mengisi beberapa posisi bersama klub."
+    },
+    {
+      "id": "coach",
+      "heading": "Dinilai Menurut Kebutuhan Timnas",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "COACH"
+      ],
+      "quote": {
+        "source_id": "ILEAGUE",
+        "text": "Jadi, kami akan memberinya kesempatan untuk bermain di posisi gelandang tengah."
+      },
+      "text": "Dalam pernyataan yang dimuat I.League pada 11 November, Herdman mengatakan, “Jadi, kami akan memberinya kesempatan untuk bermain di posisi gelandang tengah.” Ia ingin menilai Geypens dalam kerangka prinsip permainan dan profil pemain yang dicari."
+    },
+    {
+      "id": "trial",
+      "heading": "Agenda Tertutup di Dipta",
+      "kind": "FACT",
+      "claim_ids": [
+        "TRIAL",
+        "COACH"
+      ],
+      "text": "Laporan Bola.com pada Minggu (15/11/2026) menyebut uji coba kontra Bali United dijadwalkan pukul 19.00 WITA atau 18.00 WIB di Stadion Kapten I Wayan Dipta. Media Officer Bali United, Alexander, mengonfirmasi sesi itu tertutup bagi media. Kepada ANTARA pada 10 November, Herdman menjelaskan latih tanding dipakai untuk menilai kedalaman skuad berisi 22 pemain."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261114-pochettino-appointment-transition-news",
+    "goal-20261112-ferdinand-pochettino-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-15T12:09:24.306Z",
+    "article_digest": "c581efa3318596a068f1e6f74c53f5b7a10928f2e6a5b19d0e32517dfebeec25"
+  }
+}

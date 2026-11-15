@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-15:match-pm",
+  "checked_at": "2026-11-15T12:09:24.306Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Timnas Indonesia Bali United"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=alzef5jChPU",
+      "creator": "FOOTBALL BES REBORN",
+      "checked_at": "2026-11-15T12:09:24.306Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. CompleteAPI metadata/description read. Uploaderdisclaimer sayssourceclipsnotallowned andfairuseassertionisnotredistributiongrant; successorPelupessyspeculationnotadopted. StandardYouTubelicencewithoutverifiedmontagevideo/audio grant, noalternateaccess/download/watch/audition/transcript. NoownedhostrecordingorclearedVOassetselected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "FOOTBALL BES REBORN published 2026-11-11T09:00:03Z, 46sec standardYouTubelicence; actualpagefetchthrottled, context/video/audio rightsnotcleared."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=YoXqpyujL78",
+      "creator": "TRIBUN BALI",
+      "checked_at": "2026-11-15T12:09:24.306Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. CompleteAPI metadata/description read. 10Novfirsttrainingmetadataisnotverified15Novclosedmatchfootage. StandardYouTubelicencewithoutverifiedmontagevideo/audio grant, noalternateaccess/download/watch/audition/transcript. NoownedhostrecordingorclearedVOassetselected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "TRIBUN BALI published 2026-11-10T10:24:13Z, 124sec standardYouTubelicence; actualpagefetchthrottled, context/video/audio rightsnotcleared."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=zLwc_L6l1Uk",
+      "creator": "Demen Bola ID",
+      "checked_at": "2026-11-15T12:09:24.306Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actualbrowserpage Onlinefetchthrottled. CompleteAPI metadata/description read. 10Novfirsttrainingmetadataisnotverified15Novclosedmatchfootage. StandardYouTubelicencewithoutverifiedmontagevideo/audio grant, noalternateaccess/download/watch/audition/transcript. NoownedhostrecordingorclearedVOassetselected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Demen Bola ID published 2026-11-10T11:41:35Z, 28sec standardYouTubelicence; actualpagefetchthrottled, context/video/audio rightsnotcleared."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-15T12:09:24.306Z",
+    "digest": "0ef9faaa093577155130300c6fe264139268e68abece8819758c02ca5e5ac5c2"
+  }
+}

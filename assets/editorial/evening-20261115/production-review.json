@@ -1,0 +1,427 @@
+{
+  "checked_at": "2026-11-15T12:16:33.553Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "4d11d945-2640-4fd8-9ea4-2a3e543e1636",
+    "plan_key": "2026-11-15:match-pm",
+    "scheduled_at": "2026-11-15T13:00:00Z",
+    "time_wib": "15 November 2026 20.00 WIB",
+    "pillar": "Sepak Bola Indonesia",
+    "original_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Geypens, Opsi Baru di Tengah Garuda",
+    "genre": "NEWS",
+    "words": 125,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "c581efa3318596a068f1e6f74c53f5b7a10928f2e6a5b19d0e32517dfebeec25",
+    "benchmarks": [
+      "goal-20261114-pochettino-appointment-transition-news",
+      "goal-20261112-ferdinand-pochettino-reaction-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_padding_for_slide_quota": true
+  },
+  "references": {
+    "entries": 40,
+    "sha256": "f9d3bd55948caa3e7b35d720f4722155060924846e5142bf2fa3d3892dc52cda",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-15T00:19:36.259Z",
+    "note": "15Nov FEATURE Litmanen fully read and synced earlier today; NEWS benchmarks14NovPochettino and12NovFerdinand by genre. All40entries retained."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "ILEAGUE",
+        "url": "https://www.ligaindonesiabaru.com/news/detail/john-herdman-siapkan-peran-baru-untuk-bek-bali-united",
+        "publisher_group": "ILEAGUE",
+        "primary": true,
+        "published_at": "2026-11-11",
+        "retrieved_at": "2026-11-15T12:09:24.306Z",
+        "normalized_text_sha256": "cb9e5f7e0bc17046051cb1028d90482ddc7fdf6648b90a8259f2772aa8c210f9",
+        "text_characters": 2047,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body read, not title/snippet; no authentication or challenge bypass. ANTARA is firsthand reporting of Herdman comments, I.League institutional primary, Bola.com fresh original reporting."
+      },
+      {
+        "id": "ANTARA",
+        "url": "https://www.antaranews.com/berita/5844695/timnas-indonesia-dijadwalkan-uji-coba-lawan-bali-united",
+        "publisher_group": "ANTARA",
+        "primary": true,
+        "published_at": "2026-11-10T12:26:00Z",
+        "retrieved_at": "2026-11-15T12:09:24.306Z",
+        "normalized_text_sha256": "e974f4709da82e12bc625f029ad2621c3519345b2eabe569784e2a819374c08f",
+        "text_characters": 2054,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body read, not title/snippet; no authentication or challenge bypass. ANTARA is firsthand reporting of Herdman comments, I.League institutional primary, Bola.com fresh original reporting."
+      },
+      {
+        "id": "BOLA",
+        "url": "https://www.bola.com/indonesia/read/8335626/mees-hilgers-sudah-gabung-timnas-indonesia-tanding-hadapi-bali-united-malam-ini",
+        "publisher_group": "EMTEK",
+        "primary": false,
+        "published_at": "2026-11-15T05:00:00Z",
+        "retrieved_at": "2026-11-15T12:09:24.306Z",
+        "normalized_text_sha256": "23431b156af6a5207f5e1024b3cb00795b44b661f7c0729ad0e52989ef30799a",
+        "text_characters": 3671,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body read, not title/snippet; no authentication or challenge bypass. ANTARA is firsthand reporting of Herdman comments, I.League institutional primary, Bola.com fresh original reporting."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Tim_geypens.jpg",
+        "publisher_group": "BE_SPEELMAN_FILMWIJKER",
+        "primary": true,
+        "published_at": "2026-02-18",
+        "retrieved_at": "2026-11-15T12:09:24.306Z",
+        "normalized_text_sha256": "69be5a11f48eace1820b50d5c0be55b6193e88323aad475f1199fee930e72182",
+        "text_characters": 6211,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body read, not title/snippet; no authentication or challenge bypass. ANTARA is firsthand reporting of Herdman comments, I.League institutional primary, Bola.com fresh original reporting."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-15T12:09:24.306Z",
+        "normalized_text_sha256": "ce644b7de52a87e96b620419506edd5818f48ebccbd7754b8838ff742ef8e58e",
+        "text_characters": 2605,
+        "full_text_read": true,
+        "method": "Complete public HTTP200 body read, not title/snippet; no authentication or challenge bypass. ANTARA is firsthand reporting of Herdman comments, I.League institutional primary, Bola.com fresh original reporting."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-15",
+      "fetched_at": "2026-11-15T11:57:27.324Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "Fresh daily pool had0eligible items across all3sources. Targeted current role and closed-trial research followed; zeroeligible is not a claim that no actual news exists.",
+    "verified": "I.League official11Nov full closing paragraph read; exact Herdman central-midfield quote/principles/profile. ANTARA10Nov firsthand report through bylines: leftback versatility and22-player depth evaluation. Bola.comAlitBinawan15Nov all3sections through closing quote: Sunday15Nov19WITA=18WIB atDipta and closed to media perAlexander. Announcement dates distinguished from15Nov agenda.",
+    "excluded": "BaliUnited club index onlyLoading news catalog, iNews header244characters, browsergenericerrors and pre-event Marukawa debut video titles not full source evidence. No trial score, startinglineup, Geypensminutes, assertion experiment already played/succeeded, permanent position switch, Pelupessy succession, injury diagnosis or TCstart/duration reconciliation invented.",
+    "dedupe_context": "7Nov published general TC article895bea48-aa52-4aa8-891e-37704f861002 and other Herdman captions read in full; they do not cover specific Geypens midfield plan/current15Novclosedtrial agenda. Existing article not altered or revived."
+  },
+  "fallback": {
+    "stage": "SOURCE_MEDIA_CONTEXT_ACCESS_AND_RIGHTS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": 3,
+    "reason": "Two fresh YouTube searches and three actual pages reviewed. Actual browser page opens Onlinefetchthrottled; full API metadata/descriptions standard YouTube licences without verified montage video/audio grant. FOOTBALL BES REBORN says clips not all owned: fair use disclaimer is not permission. TRIBUN BALI and Demen Bola ID describe 10 November training, not the 15 November closed trial. No download/watch/audition/transcript or source audio muting; no owned host recording or cleared voiceover asset selected. Same pillar and clock retained."
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "media": {
+    "photo_author": "Bé Speelman/Filmwijker",
+    "photo_date": "2026-02-18",
+    "source": "https://commons.wikimedia.org/wiki/File:Tim_geypens.jpg",
+    "commons_curid": "184578328",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "7ba05e980a2ee5f1a5ade49bfa2d7abf28feaf59a7868c61fce8a9933577a7b9",
+    "raw_dimensions": [
+      4640,
+      3472
+    ],
+    "exif_orientation": 6,
+    "oriented_dimensions": [
+      3472,
+      4640
+    ],
+    "original_bytes": 2979800,
+    "original_acquisition_http": 200,
+    "commons_and_deed_full_read_http": 200,
+    "public_VRT_permission_notice": "2026021810009585; private correspondence not accessed",
+    "archive_February2026_visible": true,
+    "derivative_share_alike": true,
+    "authentic_face_hair_age_pose_FCEmmen_red_jacket_number5_crest_sponsor_preserved": true,
+    "not_current_TC_or_trial_photograph": true,
+    "cover_variant": "JUDUL_UTAMA",
+    "previous_variants": [
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK"
+    ],
+    "cover_source_identifier": "LIGAINDONESIABARU.COM",
+    "cover_visible_source_abbreviation": "I.LEAGUE (same primary publisher)",
+    "page_count": 4,
+    "cover_input_sha256": "28de4d5e32cc8daab81fa902b5a20ce0422e056555a3620af2e7702655cfdf81",
+    "hero_sha256": "82a89fe02d32560a84b4a15727d992d37a863b43c6de64ffce3f8e430308cd07",
+    "hero_clean_original_crop_no_overlay_text": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-15T12:16:33.553Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "cream_body_text_only": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "LIGAINDONESIABARU.COM",
+        "cover_input_sha256": "28de4d5e32cc8daab81fa902b5a20ce0422e056555a3620af2e7702655cfdf81",
+        "output_sha256": "fed77ae06fcee13c293126d461569a8e20cd21ace4349e6ec3a82bd9c7d194dd",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "b2b7ae054c3af66f350aca7fc1e8c622866026380849bfe0d336543ff1ea6fe1",
+        "output_sha256": "50ed22a2b16ec3153562b820c039c52a10157d73a2a3ea8c14160d90ac1a9470",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 875,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 932,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "1f0b5c1d31bc20b534f55622dc7ce0317693748a20bbedfb9ad86e9d345a6f03",
+        "output_sha256": "babefb0e95f6ef58d54dbe9fec3aa36e7711d1c5e350f79d96195436fab169c0",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 914,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 921,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "03193fac994b273f6ea4e67dee5408918ccf6f86ba68668c03867e3b2f50b7d3",
+        "output_sha256": "544c8d3d36ddd0dc835fea05a3c46dadd9321b18df8c2c20219b4418ab3f9a3a",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 853,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 929,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-15T12:16:33.553Z",
+    "baseline_rows": 247,
+    "current_rows": 247,
+    "unchanged_other_rows": 246,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "4d11d945-2640-4fd8-9ea4-2a3e543e1636",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-15T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 6,
+    "weekly_routine_proposed": 7,
+    "weekly_limit": 12,
+    "instagram_media": 90,
+    "duplicate_matches": 0
+  },
+  "metrics": {
+    "checked_at": "2026-11-15T12:16:33.553Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17984167719128894",
+        "published_at": "2026-11-15T01:02:35+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18117075515117636",
+        "published_at": "2026-11-14T13:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18053616077817781",
+        "published_at": "2026-11-14T01:00:47+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18080840546480271",
+        "published_at": "2026-11-13T13:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "918ddc1c8fb35a97cac68ee44b6eda882ae5e594",
+  "remaining": "Commit/push review before committed shared schedule; then verify canonical ARTICLE/body/dek/digest/clock/hero, publication gate, public bytes, scope and idempotence. Future SCHEDULED is not PUBLISHED.",
+  "background_preparation": {
+    "initial_status": "DRAFT",
+    "observed_status": "PENDING_REVIEW",
+    "observed_engine_state": "BLOCKED",
+    "updated_at": "2026-11-15T12:15:08.758922+00:00",
+    "reason": "Shared background preparation populated one incomplete ANTARA video source while agent preview was being reviewed. No assets/parent/publish attempt; original plan/clock/pillar unchanged. All246 other rows unchanged. Authorized reviewed packet will be submitted through committed shared adapter."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-15T12:16:33.553Z",
+  "serial": "Setelah Peluit",
+  "serial_application": "Not forced into a postmatch report: trial closed to media, result and appearances unverified. Specific role experiment supplies editorial frame.",
+  "assignment": {
+    "pillar": "Sepak Bola Indonesia",
+    "angle": "Bek kiri Geypens memberi Herdman opsi untuk diuji di lini tengah; penilaian mengikuti kebutuhan Timnas, bukan asumsi hasil laga tertutup.",
+    "why_now": "15Novreportedclosedtrialagenda makesdeclaredroleexperimenttimely; allCMS247/IG90nocontentGeypensmidfield. Specificnewanglebeyond7NovgeneralTC, no claimannounced15Nov."
+  },
+  "core_fact": "Herdman wants to try Geypens in central midfield; official I.League11Nov and firsthandANTARA10Nov. Fresh Bola.com15Nov reports closed trial agenda,19WITA=18WIB, Alexander media confirmation.",
+  "editorial_angle": "Versatility gives Herdman an additional midfield option to evaluate against national team principles; a proposed experiment, not demonstrated success or a permanent role switch.",
+  "hook": "Geypens, Opsi Baru di Tengah Garuda",
+  "payoff": "Explain the positional option and evaluation criteria, then distinguish current closed-trial agenda from verified performance.",
+  "audience_action": "Ask whether distribution or defensive positioning should matter more and why; no fabricated supporter response, poll or match viewing claim.",
+  "format": "CAROUSEL",
+  "audio": "Carousel GraphAPI does not attach music; no music or voiceover attachment claim.",
+  "source_media_failure": {
+    "stage": "SOURCE_MEDIA_CONTEXT_ACCESS_AND_RIGHTS",
+    "queries": 2,
+    "actual_urls": 3,
+    "creators": 3,
+    "reason": "Two fresh YouTube searches and three actual pages reviewed. Actual browser page opens Onlinefetchthrottled; full API metadata/descriptions standard YouTube licences without verified montage video/audio grant. FOOTBALL BES REBORN says clips not all owned: fair use disclaimer is not permission. TRIBUN BALI and Demen Bola ID describe 10 November training, not the 15 November closed trial. No download/watch/audition/transcript or source audio muting; no owned host recording or cleared voiceover asset selected. Same pillar and clock retained."
+  }
+}
