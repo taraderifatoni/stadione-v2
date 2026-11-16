@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Bangku Cadangan Menyelamatkan Barça",
+  "dek": "Patri dan Van Asten membawa jalan keluar. Arsip 2024: MichaelEmilio, CC BY-SA 4.0; diolah. commons.wikimedia.org/?curid=146743804",
+  "caption": "BANGKU CADANGAN MENYELAMATKAN BARÇA\n\nUmpan silang Patri Guijarro dan sundulan Renee van Asten menyelamatkan Barcelona Femení dari kekalahan di Riazor. Keduanya masuk dari bangku cadangan dalam laga kontra Deportivo Abanca yang berakhir imbang 1–1, Minggu (15/11/2026) waktu Spanyol.\n\nPere Romeu merotasi susunan pemain setelah laga Liga Champions melawan Arsenal. Noa Jiménez dan Laia Cabetas menjalani debut di Liga F. Dalam laporannya, Barcelona menjelaskan pilihan tim muda itu sebagai pembagian beban pertandingan.\n\nVan Asten masuk selepas jeda, tetapi Deportivo lebih dulu unggul lewat Vega Montesinos pada menit ke-48. Romeu kemudian memasukkan Patri, Clàudia Pina, dan Ewa Pajor. Gol penyama baru datang pada masa tambahan waktu: Patri mengirim umpan silang dan Van Asten menuntaskannya dengan kepala.\n\nDeportivo memprotes lamanya tambahan waktu saat Van Asten mencetak gol. Liga F mencatat keberatan tersebut dalam laporan resminya. Dalam laporan resmi klub, Deportivo menilai pengelolaan waktu memengaruhi hasil pertandingan.\n\nSaat memberi kesempatan kepada pemain muda, kapan pelatih perlu memasukkan pemain berpengalaman? Gunakan momen laga ini untuk menjelaskan pilihanmu.\n\nSumber: Liga F, FC Barcelona, Mundo Deportivo, Esport3 dan RC Deportivo, 15 November 2026.\n\nFoto arsip Patri Guijarro, “Brann - Barça Femení CG3A6302 (cropped).jpg”, MichaelEmilio, 20 Maret 2024, CC BY-SA 4.0: https://commons.wikimedia.org/?curid=146743804 . Lisensi: https://creativecommons.org/licenses/by-sa/4.0/ . Versi Commons telah dicrop dan diseimbangkan bayangannya oleh Kingsif pada Maret 2024; cover kolase dan crop hero diolah Stadione. Kontribusi kami berlisensi sama, tanpa pembatasan tambahan atau dukungan tersirat. Wajah, rambut, pose, jersey turquoise, crest, sponsor dan ban kapten asli dipertahankan; bukan foto laga Riazor 15 November 2026 atau potret Van Asten.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Gol dari Dua Pemain Pengganti",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "BENCH"
+      ],
+      "text": "Umpan silang Patri Guijarro dan sundulan Renee van Asten menyelamatkan Barcelona Femení dari kekalahan di Riazor. Keduanya masuk dari bangku cadangan dalam laga kontra Deportivo Abanca yang berakhir imbang 1–1, Minggu (15/11/2026) waktu Spanyol."
+    },
+    {
+      "id": "rotation",
+      "heading": "Kesempatan untuk Debutan",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROTATION"
+      ],
+      "text": "Pere Romeu merotasi susunan pemain setelah laga Liga Champions melawan Arsenal. Noa Jiménez dan Laia Cabetas menjalani debut di Liga F. Dalam laporannya, Barcelona menjelaskan pilihan tim muda itu sebagai pembagian beban pertandingan."
+    },
+    {
+      "id": "bench",
+      "heading": "Pergantian Menjadi Jalan Keluar",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "BENCH"
+      ],
+      "text": "Van Asten masuk selepas jeda, tetapi Deportivo lebih dulu unggul lewat Vega Montesinos pada menit ke-48. Romeu kemudian memasukkan Patri, Clàudia Pina, dan Ewa Pajor. Gol penyama baru datang pada masa tambahan waktu: Patri mengirim umpan silang dan Van Asten menuntaskannya dengan kepala."
+    },
+    {
+      "id": "protest",
+      "heading": "Protes Mengiringi Gol Penyama",
+      "kind": "FACT",
+      "claim_ids": [
+        "PROTEST"
+      ],
+      "text": "Deportivo memprotes lamanya tambahan waktu saat Van Asten mencetak gol. Liga F mencatat keberatan tersebut dalam laporan resminya. Dalam laporan resmi klub, Deportivo menilai pengelolaan waktu memengaruhi hasil pertandingan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261114-pochettino-appointment-transition-news",
+    "goal-20261112-ferdinand-pochettino-reaction-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-16T00:05:24.453Z",
+    "article_digest": "4bfd590c81ee6502ba2d6b7ab9070c089ec3c81cf79a916954711e4628d9b013"
+  }
+}

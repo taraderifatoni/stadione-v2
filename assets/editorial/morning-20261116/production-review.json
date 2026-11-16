@@ -1,0 +1,483 @@
+{
+  "checked_at": "2026-11-16T00:13:18.807Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "a3a36d82-fee2-4066-b5cc-7d10fad99581",
+    "plan_key": "2026-11-16:mon-am",
+    "scheduled_at": "2026-11-16T01:00:00Z",
+    "time_wib": "16 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "initial_format": "CAROUSEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Bangku Cadangan Menyelamatkan Barça",
+    "genre": "NEWS",
+    "words": 139,
+    "paragraphs": 4,
+    "slides": 5,
+    "digest": "4bfd590c81ee6502ba2d6b7ab9070c089ec3c81cf79a916954711e4628d9b013",
+    "benchmarks": [
+      "goal-20261114-pochettino-appointment-transition-news",
+      "goal-20261112-ferdinand-pochettino-reaction-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_slide_quota_padding": true,
+    "editorial_angle": "Youth opportunity followed by an experienced bench response, explained through the actual equalising action rather than a result-only title."
+  },
+  "references": {
+    "entries": 40,
+    "sha256": "f9d3bd55948caa3e7b35d720f4722155060924846e5142bf2fa3d3892dc52cda",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-15T00:19:36.259Z",
+    "note": "Latest genuine15NovFEATURE Litmanen read; NEWS references14NovPochettino/12NovFerdinand by genre. No new daily reading or refreshed timestamp invented."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "LIGAF",
+        "url": "https://ligaf.es/noticia/van-asten-evita-la-derrota-del-barca-en-riazor",
+        "publisher_group": "LIGAF",
+        "primary": true,
+        "published_at": "2026-11-15",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "936c788474aed1d4d7b17bc49df3249000ee69bc9fd58b83ce1a38990780e197",
+        "text_characters": 2966,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "BARCA",
+        "url": "https://www.fcbarcelona.es/es/futbol/femenino-a/noticias/4609457/deportivo-barca-empate-in-extremis-en-riazor-1-1",
+        "publisher_group": "FCBARCELONA",
+        "primary": true,
+        "published_at": "2026-11-15",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "4b2634b13fe445ec4c38c00ba7d3626d219a4229251700c69154c7e5e01fb31c",
+        "text_characters": 2633,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "MD",
+        "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261115/1004251370/1-1-resaca-europea-empate-agonico-barca-riazor.html",
+        "publisher_group": "GODO",
+        "primary": false,
+        "published_at": "2026-11-15T19:37:10Z",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "98f8c7955039556a2864117aa0e801e11995dd69a5208d23743cd77f51cc70c8",
+        "text_characters": 3388,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "ESPORT3",
+        "url": "https://www.3cat.cat/esport3/revolucio-fallida-de-pere-romeu-a-la-corunya-empat-al-102-i-gracies-1-1/noticia-amp/3439976/",
+        "publisher_group": "CCMA",
+        "primary": false,
+        "published_at": "2026-11-15",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "91939a12d606f2cd96bf47cb7052fed75faee3943256087f84cf69fd2fb33fec",
+        "text_characters": 3401,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "DEPOR",
+        "url": "https://www.rcdeportivo.es/es/noticias/atropello-en-el-depor-abanca-fc-barcelona",
+        "publisher_group": "RCDEPORTIVO",
+        "primary": true,
+        "published_at": "2026-11-15",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "f583504fed084c350dc792d372f3ac4f5f605ced15db68e9acea376b4cde288f",
+        "text_characters": 4023,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Brann_-_Bar%C3%A7a_Femen%C3%AD_CG3A6302_(cropped).jpg",
+        "publisher_group": "MICHAELEMILIO",
+        "primary": true,
+        "published_at": "2024-03-20",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "92f8892dbbc3d6d5afbf7d93eb07ea02344da8f43ef70457bf196c3d9bb724fa",
+        "text_characters": 6507,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-16T00:05:24.453Z",
+        "normalized_text_sha256": "ce644b7de52a87e96b620419506edd5818f48ebccbd7754b8838ff742ef8e58e",
+        "text_characters": 2605,
+        "full_text_read": true,
+        "method": "Full public article body read through closing paragraphs, or full Commons grant/deed. Initial snippets, related cards and generic browser errors excluded."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-16",
+      "fetched_at": "2026-11-15T23:57:07.494Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "16NovJakarta pool trend Deportivo vs FCBarcelonaFemeni led to verified15NovSpain match; trend not result evidence.",
+    "full_read_correction": "LigaF first selector returned70characters of related card; complete article body read through final Patri cross/protest. Deportivo first selector30character relatedheading corrected full report through match sheet. Barca3966, MundoDeportivo4324, Esport33401character article bodies read; do not claim watching embedded match highlights or interviews.",
+    "verified": "Final1-1 atRiazor15Nov2026 localSpain, Vega48, VanAstenhalftime, Patri/Pina/Pajor aftertrailing; Patri cross/VanAsten header. NoaJimenez/LaiaCabetas LigaFdebuts; loadsharing attributed toBarcelona. Club Deportivo addedtime complaint attributed, not referee error verdict.",
+    "discrepancies": "FCBarcelona minute101 versus MD/Esport3/Deportivo102 and tablegap4 versusMD3; exact equalising minute and gap omitted from prose. Deportivo substitution clocks differ too; do not use. Generic browser inaccessible article errors not full reads; actual publicTDHTTP200 bodies are reading evidence.",
+    "excluded": "No invented cause that rotation alone causeddraw, medical fatigue diagnosis, refereebias/corruption verdict, unseenfootage/transcript, 29Nov mensfixture confusion, timezone guesses for LigaFraw18:00:54 metadata."
+  },
+  "media": {
+    "photo_author": "MichaelEmilio",
+    "photo_date": "2024-03-20",
+    "source": "https://commons.wikimedia.org/wiki/File:Brann_-_Bar%C3%A7a_Femen%C3%AD_CG3A6302_(cropped).jpg",
+    "commons_curid": "146743804",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "61528de663534353de63bdd624843f38af258c5ac3aa274287451665ca739126",
+    "original_dimensions": [
+      1678,
+      2209
+    ],
+    "original_bytes": 1015051,
+    "original_acquisition_http": 200,
+    "commons_grant_read": "Full public browser grant and public TDHTTP200 after explicit Wikimedia request to identify User-Agent. App identifies StadioneEditorial/1.0; no authentication, cookies, private access or challenge bypass.",
+    "deed_full_read": true,
+    "prior_modifications": "Kingsif crop and shadow balance March2024",
+    "own_derivative_contributions_same_share_alike": true,
+    "face_hair_identity_original_jersey_crest_sponsor_armband_checked": true,
+    "cover_grayscale_adaptation": true,
+    "archive2024_visible": true,
+    "not_VanAsten_or_currentRiazor_match_photo": true,
+    "cover_variant": "PORTRAIT_MERAH",
+    "previous_variants": [
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA"
+    ],
+    "cover_source": "LIGAF.ES",
+    "page_count": 5,
+    "cover_input_sha256": "8796ccabd5b5af1f1f100490c366e607a4b0dec40af569e4d8561916bce63d79",
+    "hero_sha256": "fd2ccdfbd28ece90acadb88083ce5362247ad0f161b83a9e15628d49dda68e0e",
+    "hero_original_color_crop_no_overlay_text": true
+  },
+  "native_review": {
+    "all_five_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-16T00:13:18.807Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/5",
+    "safe_wrap": true,
+    "cream_text_only_article_pages": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "LIGAF.ES",
+        "cover_input_sha256": "8796ccabd5b5af1f1f100490c366e607a4b0dec40af569e4d8561916bce63d79",
+        "output_sha256": "23e9d3f91b4cf05591c98e6e2198a07de3541fc99aebf58e71d77257956e2b07",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "8153cc4c885096b0ec6f343f896f4f82eda191d6bb625618f7e9cabb2c09401b",
+        "output_sha256": "f84dd3d2b06590025ba9c412b79a8decd2f26b29105b4f125c3d86267e5fda1d",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 299,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 687,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 901,
+            "height": 299,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "6cc023e0670a83e11041eeb18f128583409c0a371a6c9cf982b567a2d5993a09",
+        "output_sha256": "cf91d63e86c1cac384ae82e72a299d13eb522242d125a8e58cd672a5f9b26e32",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 246,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 637,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 928,
+            "height": 246,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "4eefbfda98e467333c6d615cb33d4cdd818cd99145665023b73de994e6b01e85",
+        "output_sha256": "fe63ba8b802b409ea7fb3e8bee84c24f9fb5d7436873ed2a90a786f24f95b6f9",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 352,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 842,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 905,
+            "height": 352,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "3777b1b930ff989be1aa73cb7495d63bec384774b2f4d3d9be3bc27429e00eb7",
+        "output_sha256": "faff5b5e2bb1cba5528b2ef0699de127e0b289058eca2ecd4a881dc4a1c13b04",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 246,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 730,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 930,
+            "height": 246,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-16T00:13:18.807Z",
+    "baseline_rows": 251,
+    "current_rows": 251,
+    "unchanged_other_rows": 250,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "a3a36d82-fee2-4066-b5cc-7d10fad99581",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-16T01:00:00+00:00",
+      "format": "CAROUSEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 0,
+    "weekly_routine_proposed": 1,
+    "weekly_limit": 12,
+    "instagram_media": 91,
+    "duplicate_matches": 0
+  },
+  "background_preparation": null,
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "van asten",
+      "deportivo"
+    ],
+    "broad_false_match": "Barça+Deportivo matched MundoDeportivo source credit in Fermin-Alaves31Oct caption; full caption read and different event confirmed. Specific VanAsten+Deportivo terms used, not suppressing an actual duplicate."
+  },
+  "metrics": {
+    "checked_at": "2026-11-16T00:13:18.807Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17984167719128894",
+        "published_at": "2026-11-15T01:02:35+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18117075515117636",
+        "published_at": "2026-11-14T13:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18053616077817781",
+        "published_at": "2026-11-14T01:00:47+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "8956d2859cddfdd92b17bc4a87b7a9f501f96899",
+  "remaining": "Commit/push proof, then committed shared adapter schedule; verify ARTICLE canonicalbody/dek/digest/clock/hero, gate, public bytes, scope and idempotence. Valid futureSCHEDULED is not a publication claim."
+}

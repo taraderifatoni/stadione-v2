@@ -1,0 +1,5 @@
+# Photo and derivative licence
+
+Brann - Barça Femení CG3A6302 (cropped).jpg: Patri Guijarro,20March2024, MichaelEmilio, ownworkCCBYSA4.0. Source https://commons.wikimedia.org/?curid=146743804 . Licence https://creativecommons.org/licenses/by-sa/4.0/ . Source crop/shadowbalance byKingsif inMarch2024 retained in attribution. FullCommonsgrant and CCdeed read. Original1678x2209,1015051bytes,HTTP200,SHA256 61528de663534353de63bdd624843f38af258c5ac3aa274287451665ca739126. Initial requests received a requirement to identify User-Agent; StadioneEditorial/1.0 identifies the app and conforms to the public endpoint request. No private access or challenge bypass.
+
+Cover adapts background/typography and converts the authentic player photograph to grayscale; original face,hair,jersey,crest,Spotify,Nike,captain armband reviewed. Hero cropped in original colour without overlay. Archive2024 explicit, not VanAsten or15Nov2026Riazor match photography. Creator/source/licence/archive/changes disclosed oncover/dek/caption. Our derivative contributions use sameCCBYSA4.0 without added restrictions; no endorsement implied.
