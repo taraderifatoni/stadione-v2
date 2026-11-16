@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-11-16T12:05:28.256Z",
+  "state": "BLOCKED_BEFORE_PRODUCTION",
+  "stage": "NARRATION_PREFLIGHT",
+  "reason_code": "NARRATION_PROVIDER_MISSING",
+  "issues": [
+    "NARRATION_PROVIDER_MISSING: OPENAI_API_KEY belum dikonfigurasi untuk Stadione. Alternatif: rekaman narasi berizin per adegan."
+  ],
+  "provider": "openai",
+  "provider_configured": false,
+  "preflight": {
+    "command": "node --env-file=/opt/stadione/.env.production scripts/cms-illustrated-preflight.cjs",
+    "exit_code": 2,
+    "committed_script_identical": true,
+    "script_sha256": "67bec37b8e79bb85ae2fab1e0a335904c1a0c9fdc103217e605d915da12bd4c7",
+    "mutations": 0,
+    "assignment": {
+      "id": "22ed87ff-1378-46e4-9aa2-1f0711362e16",
+      "title": "Tarkam of the week — 16/11/2026",
+      "status": "DRAFT",
+      "current_format": "REEL",
+      "required_format": "REEL",
+      "required_visual_mode": "illustration",
+      "plan_key": "2026-11-16:mon-pm",
+      "scheduled_at": "2026-11-16T13:00:00+00:00"
+    }
+  },
+  "target": {
+    "id": "22ed87ff-1378-46e4-9aa2-1f0711362e16",
+    "status": "DRAFT",
+    "format": "REEL",
+    "pillar": "Tarkam & Komunitas",
+    "plan_key": "2026-11-16:mon-pm",
+    "scheduled_at": "2026-11-16T13:00:00+00:00",
+    "time_wib": "16 November 2026 20.00 WIB",
+    "assets": 0,
+    "parent_article_id": null,
+    "durable_attempts": 0,
+    "archived": false,
+    "tombstone": false
+  },
+  "editorial": {
+    "serial": "Satu Keputusan, Efek Besar",
+    "required_visual_mode": "illustration",
+    "calendar_limit": 12,
+    "weekly_published_or_scheduled": 1,
+    "no_fallback_to_carousel": true,
+    "no_reschedule": true,
+    "no_topic_or_article_produced": true,
+    "source_pool_or_full_source_reading": "Not started: mandatory narration preflight BLOCKED before production. No claim of completed topic research.",
+    "narration": "No configured production TTS call or licensed scene recording selected/reviewed. Prototype Kane Edge TTS rights unverified and not reused.",
+    "qa": "No new audio, images, render, preview, approval or ARTICLE generated; no fixture published. Render/audio/pair/idempotence production checks not claimed as passed.",
+    "publisher": "No cms-produce-slot schedule or MetaDirect call; active publisher cannot publish an unproduced draft."
+  },
+  "scope": {
+    "baseline_rows": 252,
+    "current_rows": 252,
+    "all_rows_identical": true,
+    "changed_rows": [],
+    "new_rows": [],
+    "target_and_other_rows_unchanged": true,
+    "publish_attempts": 0
+  },
+  "instagram": {
+    "http": 200,
+    "account": "stadione.id",
+    "media_count": 92,
+    "latest_posts": [
+      {
+        "id": "18391575454227538",
+        "timestamp": "2026-11-16T01:01:39+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "17904969456607580",
+        "timestamp": "2026-11-15T13:01:02+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "17984167719128894",
+        "timestamp": "2026-11-15T01:02:35+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "18117075515117636",
+        "timestamp": "2026-11-14T13:01:56+0000",
+        "format": "FEED"
+      }
+    ],
+    "topic_duplicate_audit": "Not applicable: preflight stopped before topic selection; no duplicate-free topic claim."
+  },
+  "references": {
+    "entries": 41,
+    "latest": "goal-20261116-klopp-rebuild-netherlands-preview-news",
+    "read_at": "2026-11-16T00:51:36.139Z",
+    "sha256": "f0dbd49e123b7893786115bd6c7b29d843ee9082f00598863decfa81c22107bd",
+    "runtime_identical_committed": true
+  },
+  "metrics": {
+    "checked_at": "2026-11-16T12:05:28.256Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots at differing posting ages; missing metrics not zero. No retention/nonfollower metrics or24h/7d comparisons invented.",
+    "posts": [
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17984167719128894",
+        "published_at": "2026-11-15T01:02:35+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18117075515117636",
+        "published_at": "2026-11-14T13:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "release": "/opt/stadione-releases/ba88c8d",
+  "rollback_commit": "85141b88497401257fddd399a6dc0c865f56c6a2",
+  "remaining": "Owner must provide configured licensed narration provider or licensed per-scene recording for mandatory illustrated slot. Then repeat preflight and complete research, article, illustrations, audio/timing, render, CMS review/approval, identical ARTICLE and shared publisher schedule. No credential changed."
+}
