@@ -1,0 +1,140 @@
+{
+  "checked_at": "2026-11-16T00:15:41.054Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "pre_schedule_commit": "890d83061740035f5f9894538fec2e5afe582201",
+  "verification": {
+    "checked_at": "2026-11-16T00:14:51.008Z",
+    "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+    "social": {
+      "id": "a3a36d82-fee2-4066-b5cc-7d10fad99581",
+      "status": "SCHEDULED",
+      "format": "CAROUSEL",
+      "plan_key": "2026-11-16:mon-am",
+      "event_key": "barca-rotation-bench-riazor-20261115",
+      "scheduled_at": "2026-11-16T01:00:00+00:00",
+      "time_wib": "16 November 2026 08.00 WIB",
+      "auto_publish": true,
+      "assets": 5,
+      "publication_issues": []
+    },
+    "article": {
+      "id": "b7e3c795-e26b-423c-8232-f237fc0a631a",
+      "status": "SCHEDULED",
+      "slug": "bangku-cadangan-menyelamatkan-barça-a3a36d82",
+      "scheduled_at": "2026-11-16T01:00:00+00:00",
+      "title": "Bangku Cadangan Menyelamatkan Barça",
+      "canonical_body_identical": true,
+      "canonical_dek_identical": true,
+      "digest": "4bfd590c81ee6502ba2d6b7ab9070c089ec3c81cf79a916954711e4628d9b013",
+      "issues": [],
+      "hero": {
+        "http": 200,
+        "bytes": 49950,
+        "sha256": "fd2ccdfbd28ece90acadb88083ce5362247ad0f161b83a9e15628d49dda68e0e",
+        "clean_original_without_text": true
+      }
+    },
+    "renders": [
+      {
+        "page": 1,
+        "http": 200,
+        "bytes": 772210,
+        "sha256": "23e9d3f91b4cf05591c98e6e2198a07de3541fc99aebf58e71d77257956e2b07",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 2,
+        "http": 200,
+        "bytes": 157688,
+        "sha256": "f84dd3d2b06590025ba9c412b79a8decd2f26b29105b4f125c3d86267e5fda1d",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 3,
+        "http": 200,
+        "bytes": 149528,
+        "sha256": "cf91d63e86c1cac384ae82e72a299d13eb522242d125a8e58cd672a5f9b26e32",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 4,
+        "http": 200,
+        "bytes": 173615,
+        "sha256": "fe63ba8b802b409ea7fb3e8bee84c24f9fb5d7436873ed2a90a786f24f95b6f9",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 5,
+        "http": 200,
+        "bytes": 151470,
+        "sha256": "faff5b5e2bb1cba5528b2ef0699de127e0b289058eca2ecd4a881dc4a1c13b04",
+        "identical_reviewed_preview": true
+      }
+    ],
+    "instagram": {
+      "account": "stadione.id",
+      "media_count": 91,
+      "duplicate_matches": 0
+    },
+    "attempts": 0,
+    "baseline_rows": 251,
+    "current_rows": 252,
+    "unchanged_existing_other_rows": 250,
+    "changed_other_rows": [],
+    "new_article_rows": 1,
+    "weekly_routine_published_or_scheduled_count": 1,
+    "weekly_limit": 12,
+    "reference": {
+      "entries": 40,
+      "sha256": "f9d3bd55948caa3e7b35d720f4722155060924846e5142bf2fa3d3892dc52cda",
+      "runtime_committed_identical": true
+    },
+    "native_render_review": {
+      "all_five_opened1080x1350": true,
+      "reviewed_bytes_match_scheduled_assets": true,
+      "hero_opened": true,
+      "cover_count": "1/5",
+      "no_overflow_or_clipping": true
+    },
+    "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+    "pre_schedule_commit": "890d83061740035f5f9894538fec2e5afe582201"
+  },
+  "idempotence": {
+    "checked_at": "2026-11-16T00:14:52.122Z",
+    "adapter_result": {
+      "skipped": true,
+      "id": "a3a36d82-fee2-4066-b5cc-7d10fad99581",
+      "status": "SCHEDULED",
+      "reason": "existing_scheduled_published_archived_or_attempt"
+    },
+    "all_rows_identical": true,
+    "rows": 252,
+    "durable_attempts_identical": true,
+    "attempts": 0,
+    "no_extra_article_or_assets": true
+  },
+  "format_decision": {
+    "initial": "CAROUSEL",
+    "final": "CAROUSEL",
+    "original_clock_and_pillar_retained": true,
+    "no_reel_fallback": true,
+    "mandatory_illustration": false
+  },
+  "full_history_duplicate_check": {
+    "cms_rows": 251,
+    "instagram_media": 91,
+    "cms": [],
+    "instagram": [],
+    "terms": [
+      "van asten",
+      "deportivo"
+    ],
+    "broad_false_match": "Barça+Deportivo matched MundoDeportivo source credit in Fermin-Alaves31Oct caption; full caption read and different event confirmed. Specific VanAsten+Deportivo terms used, not suppressing an actual duplicate."
+  },
+  "publisher_liveness": {
+    "timer": "ActiveState=active\nSubState=waiting\n",
+    "service": "Result=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+    "note": "Future shared publisher handoff; timer liveness does not prove target Instagram or website publication."
+  },
+  "remaining": "Leave valid SCHEDULED SOCIAL/ARTICLE at16Nov08WIB to shared publisher. Targetmedia_id, public website publication and target metrics not yet available."
+}
