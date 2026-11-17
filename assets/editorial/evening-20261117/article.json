@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Garuda Lolos Sebelum Laga Penutup",
+  "dek": "Timnas U-17 mengunci tiket dengan sembilan poin. Arsip 2007: Luctor IV, CC BY-SA 3.0; diolah. commons.wikimedia.org/?curid=2549635",
+  "caption": "GARUDA LOLOS SEBELUM LAGA PENUTUP\n\nTimnas Indonesia U-17 memastikan tiket Piala Asia U-17 2027 sebelum laga terakhir kualifikasi. Kemenangan 4–0 atas Afghanistan di Yangon, Selasa (17/11/2026), membawa Garuda Muda mengoleksi sembilan poin. AFC menegaskan Indonesia sudah mengamankan posisi teratas Grup A, apa pun hasil pertandingan penutup.\n\nSkor akhir itu tidak menggambarkan seluruh tekanan pada babak pertama. Majesta membawa Indonesia unggul pada menit kedelapan, tetapi Afghanistan sempat dua kali memasukkan bola ke gawang. Keduanya dianulir karena pelanggaran dan offside. Satu peluang Afghanistan juga membentur mistar sebelum jeda, saat Indonesia masih unggul 1–0.\n\nJarak baru melebar selepas turun minum. Penalti Dzaky Azfar ditepis, tetapi Majesta mengejar bola dan mengirim umpan kembali untuk dituntaskan Dzaky menjadi gol kedua. Dhamar Tri Kusuma lalu menambah keunggulan, sebelum gol kedua Dzaky melengkapi kemenangan.\n\nMomen mana yang paling menentukan: bertahan dengan keunggulan tipis atau merebut kembali bola setelah penalti? Jelaskan pilihanmu.\n\nSumber: AFC, detikSport dan Bola.net, 17 November 2026.\n\nFoto arsip David Nascimento, “Nascimento.jpg”, Luctor IV, 11 Agustus 2007: https://commons.wikimedia.org/?curid=2549635 . CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/ . Cover kolase dan crop hero diolah Stadione; kontribusi kami berlisensi sama tanpa pembatasan tambahan. Wajah, rambut, usia, pose dan polo abu-abu asli dipertahankan. Bukan foto laga Afghanistan atau potret pemain U-17. Tanpa dukungan tersirat fotografer atau subjek.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Tiket Aman Sebelum Penutup",
+      "kind": "FACT",
+      "claim_ids": [
+        "QUALIFIED"
+      ],
+      "text": "Timnas Indonesia U-17 memastikan tiket Piala Asia U-17 2027 sebelum laga terakhir kualifikasi. Kemenangan 4–0 atas Afghanistan di Yangon, Selasa (17/11/2026), membawa Garuda Muda mengoleksi sembilan poin. AFC menegaskan Indonesia sudah mengamankan posisi teratas Grup A, apa pun hasil pertandingan penutup."
+    },
+    {
+      "id": "pressure",
+      "heading": "Keunggulan Tipis Saat Jeda",
+      "kind": "FACT",
+      "claim_ids": [
+        "FIRST_HALF"
+      ],
+      "text": "Skor akhir itu tidak menggambarkan seluruh tekanan pada babak pertama. Majesta membawa Indonesia unggul pada menit kedelapan, tetapi Afghanistan sempat dua kali memasukkan bola ke gawang. Keduanya dianulir karena pelanggaran dan offside. Satu peluang Afghanistan juga membentur mistar sebelum jeda, saat Indonesia masih unggul 1–0."
+    },
+    {
+      "id": "response",
+      "heading": "Bola Kedua Membuka Jarak",
+      "kind": "FACT",
+      "claim_ids": [
+        "SECOND_HALF"
+      ],
+      "text": "Jarak baru melebar selepas turun minum. Penalti Dzaky Azfar ditepis, tetapi Majesta mengejar bola dan mengirim umpan kembali untuk dituntaskan Dzaky menjadi gol kedua. Dhamar Tri Kusuma lalu menambah keunggulan, sebelum gol kedua Dzaky melengkapi kemenangan."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261116-klopp-rebuild-netherlands-preview-news",
+    "goal-20261114-pochettino-appointment-transition-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-17T12:11:16.057Z",
+    "article_digest": "57b1bebf96c85bd5f578ed81ec313a8991938d985361f792d7ecc4be7547046c"
+  }
+}

@@ -1,0 +1,5 @@
+# Photo and derivative licence
+
+“Nascimento.jpg”: David Nascimento, Luctor IV, own work, 11 August 2007. Source: https://commons.wikimedia.org/?curid=2549635 . Selected licence: CC BY-SA3.0 https://creativecommons.org/licenses/by-sa/3.0/ . Full public Commons grant and full licence deed read on17November2026. Fresh original HTTP200,1121x913,138458bytes, SHA256 4701e07101988e68f3b36a0fd6ce3924a865fd23aa5556fcf5f9f8438c938368.
+
+Foreground coach face, dreadlocked hair, age, expression, grey polo and identity retained from authentic archive. Other people removed in cover background; this is not a current match scene or a portrait of an U17 player. Cover background/typography collage generated with reference KOLOM; clean website hero resized/cropped from the original without overlay. Author, source, licence, archive year and changes disclosed in cover deck and caption. Our derivative contributions are distributed under the same CC BY-SA3.0 without additional restrictions; no endorsement implied.

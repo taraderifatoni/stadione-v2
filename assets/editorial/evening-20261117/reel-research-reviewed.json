@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-17:mid-pm",
+  "checked_at": "2026-11-17T12:11:16.057Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Indonesia U17 Afghanistan"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=V4Z8_Zr-5io",
+      "creator": "TIG ID",
+      "checked_at": "2026-11-17T12:11:16.057Z",
+      "result": "NOT_ACCESSIBLE",
+      "detail": "YouTube API identifies creativeCommon licence and ten seconds, embeddable=false. Actual browser open fetch throttled. Actual contents/provenance/audio could not be inspected, not assumed slideshow or standard licence; no download, audition, transcript or usable clip asserted. No cleared owned host/voiceover asset selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "TIG ID published 2026-11-17T11:14:04Z, 10sec licence=creativeCommon embeddable=false. Three real URLs/three creators, metadata is not actual video/audio inspection."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=PoWyG8c5hlg",
+      "creator": "Tarkam TV",
+      "checked_at": "2026-11-17T12:11:16.057Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actual browser open fetch throttled. Full API metadata and description read, standard youtube licence has no verified montage/audio grant. Description names Starcity Sports Club against AFC/detik Thuwunna, reject unverified venue. No download/watch/audition/transcript or cleared owned voiceover.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Tarkam TV published 2026-11-17T10:34:31Z, 235sec licence=youtube embeddable=true. Three real URLs/three creators, metadata is not actual video/audio inspection."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=_oitwlZLE5o",
+      "creator": "Raftelsport",
+      "checked_at": "2026-11-17T12:11:16.057Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actual browser open fetch throttled. Full API metadata and description read, standard youtube licence has no verified montage/audio grant. Description says Myanmar draw still needed, contradicting official AFC qualification; reject unsupported tactical claims. No download/watch/audition/transcript or cleared owned voiceover.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Raftelsport published 2026-11-17T10:51:07Z, 138sec licence=youtube embeddable=true. Three real URLs/three creators, metadata is not actual video/audio inspection."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-17T12:11:16.057Z",
+    "digest": "a22eb250c58bd3e57708aa2b9d56a0f2fce77f822f73e7476d69429c9497bd4c"
+  }
+}
