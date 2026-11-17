@@ -1,0 +1,201 @@
+{
+  "checked_at": "2026-11-17T01:08:18.183Z",
+  "state": "NO_ELIGIBLE_SLOT_IN_REQUESTED_WINDOW",
+  "stage": "SLOT_SELECTION",
+  "reason_code": "WINDOW_STARTED_AFTER_0800_NO_FUTURE_SLOT_WITHIN_TWO_HOURS",
+  "selection_window": {
+    "start": "2026-11-17T01:05:23.389Z",
+    "end": "2026-11-17T03:05:23.389Z",
+    "timezone": "Asia/Jakarta",
+    "start_wib": "17 November2026 08.05.23 WIB",
+    "end_wib": "17 November2026 10.05.23 WIB",
+    "routine_slots_in_window": 0,
+    "all_social_slots_in_window": 0
+  },
+  "overdue_morning_slot": {
+    "id": "5494a4a2-a5f9-47f1-b7be-c91a6f049b47",
+    "plan_key": "2026-11-17:mid-am",
+    "status": "PENDING_REVIEW",
+    "format": "REEL",
+    "pillar": "Sepak Bola Eropa",
+    "scheduled_at": "2026-11-17T01:00:00+00:00",
+    "assets": 0,
+    "parent_article_id": null,
+    "archived": false,
+    "tombstone": false,
+    "engine_state": "BLOCKED",
+    "engine_issues": [
+      "Butuh dua domain penerbit independen dengan teks bukti lengkap; media sosial bukan bukti fakta.",
+      "Identifikasi dua kelompok penerbit independen; salinan sindikasi tidak dihitung.",
+      "Editor perlu audit 5W1H, kronologi, dan kesetiaan naskah.",
+      "Konfirmasikan minimal satu sumber primer.",
+      "Lengkapi pilar, angle, dan alasan aktual.",
+      "Konfirmasikan tanggal dan status kejadian.",
+      "Klaim claim-1: butuh dua sumber termasuk primer.",
+      "Slide 1: petakan ke klaim terverifikasi.",
+      "Slide 2: petakan ke klaim terverifikasi.",
+      "Slide 3: petakan ke klaim terverifikasi.",
+      "Slide 4: petakan ke klaim terverifikasi.",
+      "Slide 5: petakan ke klaim terverifikasi.",
+      "Reel perlu minimal satu video nyata dari portal/YouTube/TikTok/X/sumber resmi.",
+      "Reel perlu 3–12 potongan dengan caption berubah.",
+      "Durasi montage Reel harus 8–90 detik."
+    ],
+    "durable_attempts": 0,
+    "minutes_overdue_at_selection": 5.3898166666666665
+  },
+  "other_today_slots": [
+    {
+      "id": "797ffff3-bfbd-4d5f-9432-faadfdd14eb9",
+      "plan_key": "2026-11-17:mid-pm",
+      "status": "DRAFT",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "scheduled_at": "2026-11-17T13:00:00+00:00",
+      "assets": 0,
+      "parent_article_id": null,
+      "archived": false,
+      "tombstone": false
+    },
+    {
+      "id": "dca34b56-d7d5-430c-8a28-ab57aa3e2fe2",
+      "plan_key": "2026-11-17:mid-noon",
+      "status": "DRAFT",
+      "format": "CAROUSEL",
+      "pillar": "Sepak Bola Indonesia",
+      "scheduled_at": "2026-11-17T06:00:00+00:00",
+      "assets": 0,
+      "parent_article_id": null,
+      "archived": false,
+      "tombstone": false
+    }
+  ],
+  "scope": {
+    "baseline_rows": 255,
+    "current_rows": 255,
+    "all_rows_identical": true,
+    "changed_rows": [],
+    "new_rows": [],
+    "cms_mutations": 0,
+    "publish_calls": 0,
+    "no_reschedule": true,
+    "no_seeder": true,
+    "no_revival_of_overdue_slots": true
+  },
+  "instagram": {
+    "http": 200,
+    "account": "stadione.id",
+    "media_count": 92,
+    "latest_posts": [
+      {
+        "id": "18391575454227538",
+        "timestamp": "2026-11-16T01:01:39+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "17904969456607580",
+        "timestamp": "2026-11-15T13:01:02+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "17984167719128894",
+        "timestamp": "2026-11-15T01:02:35+0000",
+        "format": "FEED"
+      },
+      {
+        "id": "18117075515117636",
+        "timestamp": "2026-11-14T13:01:56+0000",
+        "format": "FEED"
+      }
+    ],
+    "topic_duplicate_check": "No topic selected or produced; no duplicate-free event claim."
+  },
+  "references": {
+    "entries": 42,
+    "latest": "goal-20261117-spain-england-phase-analysis-feature",
+    "read_at": "2026-11-17T00:57:11.203Z",
+    "sha256": "e51bea2bbdd10167ca217c5516a869565f9d961aafe219b1bf3d919a2d65d3be",
+    "runtime_identical_committed": true
+  },
+  "metrics": {
+    "checked_at": "2026-11-17T01:08:18.183Z",
+    "target_metrics": null,
+    "basis": "Actual existing-post snapshots at different posting ages. Missing metrics are not zero; no target publication or retention claims.",
+    "posts": [
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17984167719128894",
+        "published_at": "2026-11-15T01:02:35+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18117075515117636",
+        "published_at": "2026-11-14T13:01:56+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "not_performed": [
+    "No eligible target selected",
+    "No source pool/full article research or new editorial packet",
+    "No new render/audio QA or CMS approval",
+    "No cms-produce-slot preview/schedule or MetaDirect",
+    "No ARTICLE creation or modification",
+    "No success claim based on publisher timer"
+  ],
+  "rollback_commit": "5f474f1a8acedf36d3d3c9d20af72f41108e6532",
+  "remaining": "Report missed08WIB incomplete/BLOCKED slot. Preserve past,13WIB and outside-window20WIB records. Future routine production must select a qualifying08/20WIB draft inside its requested window; no recovery or rescheduling performed by this run."
+}
