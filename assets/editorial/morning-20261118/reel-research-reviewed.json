@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-18:mid-am",
+  "checked_at": "2026-11-18T00:16:13.019Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Desire Segbe Bourges Bayern"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=orsm_k8kzq4",
+      "creator": "100% Gila Bola News - Berita Bola Terbaru",
+      "checked_at": "2026-11-18T00:16:13.019Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "100% Gila Bola News - Berita Bola Terbaru; published 2026-11-17T23:33:29Z; 885sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=KGDa9WT2KlA",
+      "creator": "Deshid Soccer News",
+      "checked_at": "2026-11-18T00:16:13.019Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. Uploader says all footage/images belong to respective companies and asserts fair use; this is not a grant to Stadione. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Deshid Soccer News; published 2026-11-17T21:23:49Z; 963sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=bq7LQ7Hcvjg",
+      "creator": "TAU BOLA",
+      "checked_at": "2026-11-18T00:16:13.019Z",
+      "result": "UNVERIFIED_CONTEXT",
+      "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. Published12November before13November appointment; description does not establish the selected event. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "TAU BOLA; published 2026-11-12T12:04:40Z; 797sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-18T00:16:13.019Z",
+    "digest": "61d3a3b6d973657486d61285da3fd752471786f465a880564ee67134066f4e85"
+  }
+}

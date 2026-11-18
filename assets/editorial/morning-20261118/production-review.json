@@ -1,0 +1,508 @@
+{
+  "checked_at": "2026-11-18T00:24:14.712Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "9e26c1c7-a125-4075-8cfc-bb89e26a2576",
+    "plan_key": "2026-11-18:mid-am",
+    "scheduled_at": "2026-11-18T01:00:00Z",
+    "time_wib": "18 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "initial_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Segbé: dari Bayern II ke Meja Keputusan",
+    "genre": "NEWS",
+    "words": 97,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "eafd40c42bae3ff0bab0c77d7ae20632cbba126ecacdcc20617e592612702e20",
+    "benchmarks": [
+      "goal-20261116-klopp-rebuild-netherlands-preview-news",
+      "goal-20261114-pochettino-appointment-transition-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_slide_quota_padding": true
+  },
+  "references": {
+    "entries": 42,
+    "sha256": "e51bea2bbdd10167ca217c5516a869565f9d961aafe219b1bf3d919a2d65d3be",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-17T00:57:11.203Z",
+    "application": "NEWS16NovKlopp/14NovPochettino: lead with confirmed role, distinguish appointment date from latest profile publication, and move from historical context to present responsibilities. Goal17Nov phase lesson: a concrete action supports context without claiming unseen video. No new daily journal entry or refreshed timestamp."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "BOURGES",
+        "url": "https://fr.linkedin.com/posts/bourges-foot-18_%F0%9D%90%83%F0%9D%90%84%F0%9D%90%92%F0%9D%90%88%F0%9D%90%91%F0%9D%90%84-%F0%9D%90%92%F0%9D%90%84%F0%9D%90%86%F0%9D%90%81%F0%9D%90%84-%F0%9D%90%8D%F0%9D%90%8E%F0%9D%90%94%F0%9D%90%95-activity-7526956085874966529-bcNk",
+        "publisher_group": "BOURGESFC",
+        "primary": true,
+        "published_at": "2026-11-13",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "c80337d67436e6bc1f6c07e9ad7c341d95e062ba138b54ce13c02a712ebaee23",
+        "evidence_characters": 578,
+        "full_source_read": true,
+        "method": "Complete public post opened/read via browsing turn3view0/1, transcribed into private evidence; no login."
+      },
+      {
+        "id": "SENEWEB",
+        "url": "https://seneweb.com/fr/news/Sport/france-desire-azankpo-nomme-directeur-sportif-de-bourges-fc-le-club-de-son-ami-sadio-mane_n_999003532.html",
+        "publisher_group": "SENEWEB",
+        "primary": false,
+        "published_at": "2026-11-13T13:37:00Z",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "17d161d619d6b73918fd4ab05964b595b9cfbcf1aacc23f706e1201ff98e59f3",
+        "evidence_characters": 1126,
+        "full_source_read": true,
+        "method": "Complete public body/grant/deed read through closing, HTTP200. Navigation and unrelated material not counted as article."
+      },
+      {
+        "id": "GOAL",
+        "url": "https://www.goal.com/id/berita/pemain-gagal-yang-dulu-membawanya-ke-fc-bayern-eks-pemain-bayern-kini-jadi-direktur-olahraga/blt279e329b4e2e6f00",
+        "publisher_group": "FOOTBALLCO",
+        "primary": false,
+        "published_at": "2026-11-17T16:24:37.528Z",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "4d33181212f8ea314105638288d78ef9225ded7057c52334d196e0c328d44a0e",
+        "evidence_characters": 2880,
+        "full_source_read": true,
+        "method": "Complete public body/grant/deed read through closing, HTTP200. Navigation and unrelated material not counted as article."
+      },
+      {
+        "id": "SEGBE",
+        "url": "https://fr.linkedin.com/posts/d%C3%A9sir%C3%A9-segbe-azankpo-6a7ab03a8_bourgesfc-football-nouvelleaventure-activity-7528003735789240320-5XMh",
+        "publisher_group": "DESIRESEGBE",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "514af203c476fede01f2d172315ff3a60a41657fb0ef8bfc58a9cf8ca7598448",
+        "evidence_characters": 785,
+        "full_source_read": true,
+        "method": "Complete public post opened/read via browsing turn3view0/1, transcribed into private evidence; no login."
+      },
+      {
+        "id": "BAYERN",
+        "url": "https://fcbayern.com/de/news/spielberichte/2023/09/spielbericht-regionalliga-bayern-fc-bayern-amateure---fc-memmingen",
+        "publisher_group": "FCBAYERN",
+        "primary": true,
+        "published_at": "2023-09-01",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "11763f071778bfb31aafec5116b086e39fb6458168800928a5fa4e9c3a2b8268",
+        "evidence_characters": 1191,
+        "full_source_read": true,
+        "method": "Complete official report read via browsing turn6view0 through matchsheet; private evidence stores an explicitly labelled relevant excerpt, not full HTTP download."
+      },
+      {
+        "id": "MEMMINGEN",
+        "url": "https://www.fc-memmingen.de/liveticker-fc-bayern-muenchen-ii-fc-memmingen-43/",
+        "publisher_group": "FCMEMMINGEN",
+        "primary": true,
+        "published_at": "2023-09-01",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "8289e94b7a47fbeeacd96b7e4893b2fc2a41e0077da6326d398ea9d6a31a577a",
+        "evidence_characters": 7221,
+        "full_source_read": true,
+        "method": "Complete public body/grant/deed read through closing, HTTP200. Navigation and unrelated material not counted as article."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:D%C3%A9sir%C3%A9_Segb%C3%A9_Azankpo_and_Razak_Omotoyossi.jpg",
+        "publisher_group": "DESIRESEGBE_PHOTO",
+        "primary": true,
+        "published_at": "2014-05-13",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "679886fd41243e47fbe8b41cbdd42c786589cda5637fa7b4510f8d40ebc0ebcf",
+        "evidence_characters": 5608,
+        "full_source_read": true,
+        "method": "Complete public body/grant/deed read through closing, HTTP200. Navigation and unrelated material not counted as article."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-18T00:16:13.019Z",
+        "evidence_text_sha256": "a5e3381bb265255af86df43a66ef233ff85e203afd2a14a347eaa38ab53a4def",
+        "evidence_characters": 1990,
+        "full_source_read": true,
+        "method": "Complete public body/grant/deed read through closing, HTTP200. Navigation and unrelated material not counted as article."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-18",
+      "fetched_at": "2026-11-18T00:03:35.983Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 1
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "Only audience-eligible news item in18Nov daily pool was Goal Segbé career transition, published17Nov16:24:37.528Z and modified17:16:02.799Z per actual JSON-LD. Appointment dated13Nov by Seneweb, not treated as new18Nov announcement.",
+    "verified": "Bourges full club post confirms appointment and sporting-sector coordination/development/structure mandate; independent Seneweb13Nov corroborates. Segbé personal post confirms retirement and thanks club; Goal confirms career transition. Bayern official report plus Memmingen complete ticker verify1Sept2023 penalty39 in4-3BayernIIwin, not a new match.",
+    "discrepancies_and_exclusions": "Goal calls Bourges fourth tier; Seneweb calls fourth division/National1 inconsistently; no division claim. Aggregate12goals28appearances not independently primary-verified, omitted. No friendship entitlement allegation, transfer fee, unverified qualification or made-up quote. Generic Goal browser open error not full read; actual TDHTTP200body read through final squad paragraph. Guessed Bayern exitURL timed out and excluded; verified historical match source opened in browser instead.",
+    "video_failure": {
+      "stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+      "queries": [
+        "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+        "Desire Segbe Bourges Bayern"
+      ],
+      "topic_query_candidates": 0,
+      "attempts": [
+        {
+          "page_url": "https://www.youtube.com/watch?v=orsm_k8kzq4",
+          "creator": "100% Gila Bola News - Berita Bola Terbaru",
+          "checked_at": "2026-11-18T00:16:13.019Z",
+          "result": "UNVERIFIED_CONTEXT",
+          "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "100% Gila Bola News - Berita Bola Terbaru; published 2026-11-17T23:33:29Z; 885sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=KGDa9WT2KlA",
+          "creator": "Deshid Soccer News",
+          "checked_at": "2026-11-18T00:16:13.019Z",
+          "result": "UNVERIFIED_CONTEXT",
+          "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. Uploader says all footage/images belong to respective companies and asserts fair use; this is not a grant to Stadione. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Deshid Soccer News; published 2026-11-17T21:23:49Z; 963sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=bq7LQ7Hcvjg",
+          "creator": "TAU BOLA",
+          "checked_at": "2026-11-18T00:16:13.019Z",
+          "result": "UNVERIFIED_CONTEXT",
+          "detail": "Actual source page opened through browsing and returned Online fetch throttled. Complete official API metadata/description read; describes a general European football/transfer roundup, not verified Segbé/Bourges appointment footage. Standard YouTube licence without verified redistribution/montage/audio grant. Published12November before13November appointment; description does not establish the selected event. No downloaded clip, watch, audition, timestamps or transcript claimed. Topic-specific query returned0candidates; no API auth/quota failure reported. No cleared owned host or voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "TAU BOLA; published 2026-11-12T12:04:40Z; 797sec; youtube licence; embeddable=true. Actual browser page fetch throttled. Metadata alone does not verify video/audio or rights."
+          }
+        }
+      ],
+      "review_digest": "61d3a3b6d973657486d61285da3fd752471786f465a880564ee67134066f4e85",
+      "fallback_issues": []
+    }
+  },
+  "media": {
+    "photo_author": "Désiré Sègbè (Waristide)",
+    "photo_date": "2014-05-13",
+    "source": "https://commons.wikimedia.org/wiki/File:D%C3%A9sir%C3%A9_Segb%C3%A9_Azankpo_and_Razak_Omotoyossi.jpg",
+    "commons_curid": 33874137,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "original_sha256": "47a37dd3074f8a73d6aeec26bc050a9258fe1832bbad528e8dd80f6461b33ba6",
+    "original_bytes": 2532568,
+    "raw_dimensions": [
+      3264,
+      2448
+    ],
+    "oriented_dimensions": [
+      2448,
+      3264
+    ],
+    "exif_orientation": 6,
+    "original_acquisition_http": 200,
+    "grant_and_deed_full_read": true,
+    "identity": "Segbé is the right-hand man in white Benin polo; left-hand jersey8 man identified as Razak Omotoyossi by separate Commons crop, opened native. First maillot file is only a kit on a bed, excluded.",
+    "first_file_correction": "maillot.JPG actually depicts kit on a bed; opened native and rejected before cover production. Pair original and separate Razak crop opened native, identifying right-hand Segbé in white polo.",
+    "own_derivative_contributions_same_share_alike": true,
+    "authentic_face_hair_archive_age_white_Benin_polo_checked": true,
+    "not_current_appointment_or_Bayern_kit": true,
+    "cover_variant": "FOTO_DOMINAN",
+    "previous_variants": [
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM"
+    ],
+    "source_label": "FR.LINKEDIN.COM",
+    "source_label_reason": "Actual primary Bourges FC public post host matches the visible source label and audit metadata.",
+    "cover_audit_correction": "Initial preview rejected publisher-name BOURGES FC because shared contract requires source host FR.LINKEDIN.COM. Cover source line edited through image generation, artwork reviewed again, metadata/hash updated and shared preview rerun. No audit bypass or CMS scheduling on rejected cover.",
+    "page_count": 4,
+    "cover_input_sha256": "c0038efb8afc4e591133bac57daf8b6d6ae84effdc60d0c88a38a617fb58c4ca",
+    "hero_sha256": "5c237d1673eb24534edac9dd632e5a8f0084e1818ab5d914e426efbf07e71ae4",
+    "hero_crop": [
+      1320,
+      450,
+      1100,
+      902
+    ],
+    "hero_clean_original_without_overlay": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-18T00:24:14.712Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "cream_text_only_article_pages": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "FR.LINKEDIN.COM",
+        "cover_input_sha256": "c0038efb8afc4e591133bac57daf8b6d6ae84effdc60d0c88a38a617fb58c4ca",
+        "output_sha256": "756b1fdef0d7b95755ae30853a6d65816884e476d9caa70bdf5b94b74b74e021",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "9088315cd1fb6c853808c4ac53dfbe1658e0bd6e355c33041e46a25926c1bedc",
+        "output_sha256": "8787f96eb2f400042da7e5c09fa2671ccc74132862b29745575943083b22bf8c",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 301,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 618,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 866,
+            "height": 301,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "4808bf9ff3b34ccb5311f93973f77ff74bc0dbffc0661f04f875a2d942a06876",
+        "output_sha256": "548f5bdf55b93650beb748ef6549f60d0c765152f793b4a3e6742cd267711ff5",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 248,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 704,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 896,
+            "height": 248,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "fbacf066b23b8e3250e3a80b645ab3b194d00036e620fbc21468ea1eceaaa32a",
+        "output_sha256": "0f28c5008f95e575ef8d2a541a94a4a3fe1a0cc34eac6599594e61d5fd21c214",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 354,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 686,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 935,
+            "height": 354,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-18T00:24:14.712Z",
+    "baseline_rows": 259,
+    "current_rows": 259,
+    "unchanged_other_rows": 258,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "9e26c1c7-a125-4075-8cfc-bb89e26a2576",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-18T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 2,
+    "weekly_routine_proposed": 3,
+    "weekly_limit": 12,
+    "instagram_media": 93,
+    "duplicate_matches": 0
+  },
+  "background_preparation": null,
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "segb",
+      "bourges"
+    ],
+    "broader_check": "Full original CMS259 and Instagram93 searched for Segbé/Segbe/Azankpo/Bourges, no prior item. Previous17Nov Indonesia U17 publication observed read-only, not changed."
+  },
+  "metrics": {
+    "checked_at": "2026-11-18T00:24:14.712Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18101685965207407",
+        "published_at": "2026-11-17T13:01:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17984167719128894",
+        "published_at": "2026-11-15T01:02:35+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "fd5a68182515d6506b90950b6508b04d57114718",
+  "remaining": "Commit/push reviewed proof, then shared adapter schedule; verify identical ARTICLE/body/dek/digest/clock/hero, gate, bytes, scope and idempotence. Future SCHEDULED is not publication."
+}

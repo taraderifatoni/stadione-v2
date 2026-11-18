@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Segbé: dari Bayern II ke Meja Keputusan",
+  "dek": "Penyerang beralih ke pengelolaan klub. Arsip 2014: Désiré Sègbè/Waristide, CC BY-SA 3.0; diolah. commons.wikimedia.org/?curid=33874137",
+  "caption": "SEGBÉ: DARI BAYERN II KE MEJA KEPUTUSAN\n\nDésiré Segbé, mantan penyerang Bayern II, kini mengambil peran di luar lapangan. Bourges FC menunjuknya sebagai direktur olahraga. Pengumuman pada 13 November 2026 itu membawa tugas baru: memimpin dan mengoordinasikan seluruh sektor olahraga klub.\n\nSegbé pernah memperkuat tim cadangan Bayern. Pada 1 September 2023, penaltinya pada menit ke-39 membawa Bayern II unggul 2–1 atas Memmingen. Pertandingan itu berakhir dengan kemenangan Bayern II 4–3.\n\nDalam pernyataan pribadinya, Segbé menyampaikan bahwa karier bermainnya telah berakhir. Ia berterima kasih atas kepercayaan Bourges dan ingin berkontribusi pada perkembangan klub. Bourges menjelaskan arah pekerjaannya: mendampingi pengembangan sektor olahraga dan menata proyek klub.\n\nSaat mantan striker menjadi direktur olahraga, bekal apa yang paling penting untuk menyatukan kerja sektor olahraga klub? Jelaskan alasanmu.\n\nSumber: pengumuman Bourges FC dan Segbé, Seneweb (13 November), Goal (17 November), serta arsip Bayern/FC Memmingen (1 September 2023).\n\nFoto arsip Segbé bersama Razak Omotoyossi, 13 Mei 2014; Segbé berada di kanan dengan polo putih Benin. Author tercantum Désiré Sègbè, pengunggah Waristide: https://commons.wikimedia.org/?curid=33874137 . CC BY-SA 3.0 https://creativecommons.org/licenses/by-sa/3.0/ . Cover dan hero dicrop; latar cover diolah. Kontribusi kami berlisensi sama tanpa pembatasan tambahan. Wajah, rambut, usia dan polo asli dipertahankan. Bukan foto penunjukan 2026 atau jersey Bayern. Tanpa dukungan tersirat subjek/fotografer.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dari Penyerang ke Pengelola",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROLE",
+        "BAYERN_ROLE"
+      ],
+      "text": "Désiré Segbé, mantan penyerang Bayern II, kini mengambil peran di luar lapangan. Bourges FC menunjuknya sebagai direktur olahraga. Pengumuman pada 13 November 2026 itu membawa tugas baru: memimpin dan mengoordinasikan seluruh sektor olahraga klub."
+    },
+    {
+      "id": "archive",
+      "heading": "Jejak Gol di Bayern II",
+      "kind": "FACT",
+      "claim_ids": [
+        "BAYERN_ROLE"
+      ],
+      "text": "Segbé pernah memperkuat tim cadangan Bayern. Pada 1 September 2023, penaltinya pada menit ke-39 membawa Bayern II unggul 2–1 atas Memmingen. Pertandingan itu berakhir dengan kemenangan Bayern II 4–3."
+    },
+    {
+      "id": "mandate",
+      "heading": "Mandat Membangun Proyek Klub",
+      "kind": "FACT",
+      "claim_ids": [
+        "ROLE",
+        "RETIRE"
+      ],
+      "text": "Dalam pernyataan pribadinya, Segbé menyampaikan bahwa karier bermainnya telah berakhir. Ia berterima kasih atas kepercayaan Bourges dan ingin berkontribusi pada perkembangan klub. Bourges menjelaskan arah pekerjaannya: mendampingi pengembangan sektor olahraga dan menata proyek klub."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261116-klopp-rebuild-netherlands-preview-news",
+    "goal-20261114-pochettino-appointment-transition-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-18T00:23:39.117Z",
+    "article_digest": "eafd40c42bae3ff0bab0c77d7ae20632cbba126ecacdcc20617e592612702e20"
+  }
+}
