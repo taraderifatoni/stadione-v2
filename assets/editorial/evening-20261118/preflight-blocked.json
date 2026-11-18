@@ -1,0 +1,199 @@
+{
+  "checked_at": "2026-11-18T11:58:34.092Z",
+  "phase": "BLOCKED_BEFORE_EDITORIAL_PRODUCTION",
+  "stage": "NARRATION_PREFLIGHT",
+  "reason_code": "NARRATION_PROVIDER_MISSING",
+  "issues": [
+    "NARRATION_PROVIDER_MISSING: OPENAI_API_KEY belum dikonfigurasi untuk Stadione. Alternatif: rekaman narasi berizin per adegan."
+  ],
+  "window": {
+    "start": "2026-11-18T11:56:46.259Z",
+    "end": "2026-11-18T13:56:46.259Z",
+    "timezone": "Asia/Jakarta",
+    "date": "2026-11-18"
+  },
+  "target": {
+    "id": "d15fe666-805a-4af8-a4cf-3c0041dcf546",
+    "plan_key": "2026-11-18:mid-pm",
+    "title": "Hot news / quotes — 18/11/2026",
+    "status": "DRAFT",
+    "format": "REEL",
+    "pillar": "Sepak Bola Indonesia",
+    "scheduled_at": "2026-11-18T13:00:00+00:00",
+    "time_wib": "18 November2026 20.00WIB",
+    "required_format": "REEL",
+    "required_visual_mode": "illustration",
+    "serial": "Satu Momen, Satu Cerita",
+    "assets": 0,
+    "parent_article_id": null,
+    "durable_attempts": 0
+  },
+  "preflight": {
+    "command": "node --env-file=/opt/stadione/.env.production scripts/cms-illustrated-preflight.cjs",
+    "checked_at": "2026-11-18T11:57:15.296Z",
+    "exit_status": 2,
+    "state": "BLOCKED",
+    "provider": "openai",
+    "provider_configured": false,
+    "mutations": 0,
+    "target_assignment_present": true
+  },
+  "audio": {
+    "licensed_scene_recording_selected": false,
+    "licensed_scene_recording_verified": false,
+    "alternative": "A licensed narration provider configured for Stadione or permitted narration recordings per scene is required.",
+    "edge_tts_used": false,
+    "kane_demo_audio_used": false,
+    "catalogue_music_used": false
+  },
+  "editorial_stages": {
+    "serpapi_pool": "NOT_STARTED_AFTER_BLOCKED_PREFLIGHT",
+    "two_independent_full_sources": "NOT_STARTED",
+    "topic_duplicate_clearance": "NOT_CLAIMED_NO_TOPIC_SELECTED",
+    "whole_article": "NOT_STARTED",
+    "image_generation": "NOT_STARTED",
+    "narration": "NOT_STARTED",
+    "audio_quality_and_timing": "NOT_TESTED",
+    "preview": "NOT_STARTED",
+    "render": "NOT_STARTED",
+    "cms_approval": "NOT_STARTED",
+    "paired_article": "NOT_CREATED",
+    "schedule": "NOT_RUN",
+    "publication": "NOT_CLAIMED",
+    "format_fallback": "NOT_USED_MANDATORY_ILLUSTRATION",
+    "seeder": "NOT_NEEDED_EXISTING_TARGET"
+  },
+  "scope": {
+    "baseline_rows": 260,
+    "current_rows": 260,
+    "all_existing_rows_identical": true,
+    "unchanged_existing_other_rows": 259,
+    "target_identical": true,
+    "new_rows": 0,
+    "new_assets": 0,
+    "new_article": 0,
+    "durable_attempts_identical": true,
+    "weekly_routine_published_or_scheduled": 3,
+    "weekly_limit": 12,
+    "original_plan_key_clock_pillar_retained": true,
+    "protected_rows_untouched": true,
+    "code_renderer_credentials_services_unchanged": true,
+    "meta_direct_used": false
+  },
+  "instagram": {
+    "http": 200,
+    "account": "stadione.id",
+    "media_count": 94,
+    "recent_observation": [
+      {
+        "id": "17910739812334604",
+        "timestamp": "2026-11-18T01:01:55+0000"
+      },
+      {
+        "id": "18101685965207407",
+        "timestamp": "2026-11-17T13:01:06+0000"
+      },
+      {
+        "id": "18391575454227538",
+        "timestamp": "2026-11-16T01:01:39+0000"
+      }
+    ],
+    "no_target_post_claim": true
+  },
+  "references": {
+    "entries": 43,
+    "latest_read_at": "2026-11-18T00:46:32.775Z",
+    "sha256": "84b3942d5eded2237376397c1e946bb8801a2c59ba0fa85abfe3410e7cab1520",
+    "runtime_committed_identical": true,
+    "reference_issues": []
+  },
+  "guides_read": [
+    "AGENTS.md",
+    "STADIONE_GROWTH_PLAN.md",
+    "STADIONE_PLAN_MASTER.md",
+    "STADIONE_WRITING_GUIDE.md",
+    "STADIONE_AUDIENCE_POLICY.md",
+    "STADIONE_REELS_PLAYBOOK.md",
+    "docs/STADIONE_MOTION_STORY.md"
+  ],
+  "kane_reference": {
+    "path": "/opt/stadione-editorial/hypit-kane-v4-20261027",
+    "visual_mode": "illustration",
+    "scenes": 12,
+    "prototype_only": true,
+    "demo_voice_not_cleared_or_reused": true
+  },
+  "metrics": {
+    "checked_at": "2026-11-18T11:58:34.092Z",
+    "target_metrics": null,
+    "reason": "Target not produced; no target media or metrics. Actual snapshots have different posting ages, not exact24h/7d measures. Missing values are not zero and no format/retention/nonfollower/paid-organic causal claim is made.",
+    "posts": [
+      {
+        "id": "17910739812334604",
+        "published_at": "2026-11-18T01:01:55+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18101685965207407",
+        "published_at": "2026-11-17T13:01:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "a26a18e3286eb5cdc53348b6419603eea3ad202f",
+  "remaining": "Report the concrete preflight block. Supply a licensed configured narration provider or verified permitted scene recordings, then rerun preflight before research/article/illustration/audio/render/approval and paired-article scheduling. Do not use carousel, reschedule, or publish QA fixtures."
+}
