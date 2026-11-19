@@ -1,0 +1,455 @@
+{
+  "checked_at": "2026-11-19T00:15:57.311Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "target": {
+    "id": "a396b82a-3672-4278-a1ed-e694cb575c8b",
+    "plan_key": "2026-11-19:mid-am",
+    "scheduled_at": "2026-11-19T01:00:00Z",
+    "time_wib": "19 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "initial_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Bruun Menuntaskan Bola Kedua",
+    "genre": "NEWS",
+    "words": 131,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "90d6ee2ee489cd6f6afc6866bb09c8c734337f5fe77a3a25bfd4fe3bb38e4259",
+    "benchmarks": [
+      "goal-20261118-germany-netherlands-match-report-news",
+      "goal-20261116-klopp-rebuild-netherlands-preview-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_slide_quota_padding": true
+  },
+  "references": {
+    "entries": 43,
+    "sha256": "84b3942d5eded2237376397c1e946bb8801a2c59ba0fa85abfe3410e7cab1520",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-18T00:46:32.775Z",
+    "application": "Goal18Nov match-report lesson: lead with result consequence and specific action; progress from resistance to decisive phase; corroborate disputed details with primary report. Goal16Nov: distinguish confirmed facts from editorial reasoning. No new reading or refreshed timestamp claimed."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "INTER",
+        "url": "https://www.inter.it/it/notizie/real-madrid-inter-women-uefa-women-champions-league-2026-27",
+        "publisher_group": "INTER",
+        "primary": true,
+        "published_at": "2026-11-18",
+        "retrieved_at": "2026-11-19T00:13:52.452Z",
+        "evidence_text_sha256": "de60171eaf15043dce6123a19152cbfe4baa1a4e34fa1c0aff2aca4925cb1cfa",
+        "evidence_characters": 8407,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed read through closing; HTTP200. Navigation not counted as sports narrative."
+      },
+      {
+        "id": "RTVE",
+        "url": "https://www.rtve.es/deportes/20261118/real-madrid-inter-champions-femenina-resultado/17320675.shtml",
+        "publisher_group": "RTVE",
+        "primary": false,
+        "published_at": "2026-11-18T20:00:34Z",
+        "retrieved_at": "2026-11-19T00:13:52.452Z",
+        "evidence_text_sha256": "f4fe153d8271593423c6f7ca1cf7ea9ec8937b4d4ae8a442ad2c55360b89cf78",
+        "evidence_characters": 5450,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed read through closing; HTTP200. Navigation not counted as sports narrative."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Valerenga_v_Real_Madrid,_2023_-_A_05.jpg",
+        "publisher_group": "MICHAELEMILIO",
+        "primary": true,
+        "published_at": "2023-10-18",
+        "retrieved_at": "2026-11-19T00:13:52.452Z",
+        "evidence_text_sha256": "b5de01ee412ebd88d696e19700889e9c15ce32374ee6a0b44575bfd47dc4371e",
+        "evidence_characters": 4289,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed read through closing; HTTP200. Navigation not counted as sports narrative."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-19T00:13:52.452Z",
+        "evidence_text_sha256": "6121c669a9c26e08b78fb3ab9b9d284f57ff59335e931655c33657985733a056",
+        "evidence_characters": 2840,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed read through closing; HTTP200. Navigation not counted as sports narrative."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-19",
+      "fetched_at": "2026-11-19T00:03:30.879Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 3
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "Latest19NovdailySerpAPIpool first eligibletrend RealMadridfemeninovsInter;18Novcompletedmatch. FullInter8409chars andRTVE5451chars fetchedHTTP200/read through closing; independent MarioVallejo RTVE narrative with EFE matchsheet distinguished.",
+    "discrepancies_and_exclusions": "RealMadrid site Spanish/English/Portuguese browser/HTTP unavailable, not counted as full source. Inter red minute41, RTVE text40/matchsheet42: omit exact minute. Inter header keeper/post vs RTVE crossbar: state only header not in and Bruun rebound. No invented xG, quotes, referee bias, player diagnosis or guaranteed qualification. RTVE metadata published18Nov21:00:34+01:00, modified21:25:40+01:00. Inter JSONLD modified18Nov23:00:17.621Z; date18Nov without invented exactpublicationclock.",
+    "video_failure": {
+      "stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+      "queries": [
+        "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+        "Real Madrid Inter women 18 November 2026"
+      ],
+      "topic_query_candidates": 17,
+      "attempts": [
+        {
+          "page_url": "https://www.youtube.com/watch?v=JmhLmIOImH0",
+          "creator": "Golden Picks",
+          "checked_at": "2026-11-19T00:13:52.452Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Pre-match prediction published16:55UTC before17:45kickoff, not verified match footage. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Golden Picks; 2026-11-18T16:55:27Z; 64sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=uy7rpQQb9IA",
+          "creator": "Fry Irish",
+          "checked_at": "2026-11-19T00:13:52.452Z",
+          "result": "NO_MEDIA",
+          "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Creator explicitly says live score only, no live match footage. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Fry Irish; 2026-11-18T17:29:15Z; 7815sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=saFdZwDta0Q",
+          "creator": "Akosubo Stevyn Iwekumo (ASK Teddy)",
+          "checked_at": "2026-11-19T00:13:52.452Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Post-match summary description includes score/scorers; actual video frames and audio were not accessible or verified. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Akosubo Stevyn Iwekumo (ASK Teddy); 2026-11-18T20:28:04Z; 19sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+          }
+        }
+      ],
+      "additional_primary_page": {
+        "url": "https://www.inter.it/en/inter-tv/0_8fzx2l9l",
+        "http": 200,
+        "description_read": true,
+        "footage_downloaded_or_auditioned": false,
+        "redistribution_grant_verified": false
+      },
+      "review_digest": "de7d3c53ad4c319139ff0d3f4a66a9317b4eb791b8903d1d2255d2e3c89a73bd",
+      "fallback_issues": []
+    }
+  },
+  "media": {
+    "photo_author": "MichaelEmilio",
+    "photo_date": "2023-10-18",
+    "source": "https://commons.wikimedia.org/wiki/File:Valerenga_v_Real_Madrid,_2023_-_A_05.jpg",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "original_sha256": "9dce4bf1de52feb68e7a0eff7a6932237f1200676b40b49e8565a329d17bd6f5",
+    "original_bytes": 4297669,
+    "dimensions": [
+      6960,
+      4640
+    ],
+    "original_acquisition_http": 200,
+    "grant_and_deed_full_read": true,
+    "identity": "SigneBruun filecategory andWikipedia usage; nativecloseup shows tiedhair, eyebrowtape andwhitewarmupjacket. Preserve archiveface/age/pose. Not actual18Nov2026matchphoto.",
+    "cover_variant": "KLASIK",
+    "previous_variants": [
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN"
+    ],
+    "source_label": "INTER.IT",
+    "source_label_reason": "First primary source is actual Inter full match report; visible label matches host metadata.",
+    "page_count": 4,
+    "cover_input_sha256": "939de13d9008e5c19d2281af77cd45a18bcd0dff1425f88a0c940597c37cb700",
+    "hero_sha256": "4b4cdc63a1d9b8005d3a381706d505efe674d11d48616455b1df5006089ab18c",
+    "hero_crop": [
+      1650,
+      450,
+      4100,
+      3363
+    ],
+    "hero_clean_original_without_overlay": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-19T00:15:57.311Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "cream_text_only_article_pages": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "INTER.IT",
+        "cover_input_sha256": "939de13d9008e5c19d2281af77cd45a18bcd0dff1425f88a0c940597c37cb700",
+        "output_sha256": "ca748ffa97487f5c62339b46e2f4ff64b7f9dbc39b768a0ec94fbd4d6ceed9fd",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "e9a2ddcdc39651f22941200a672273a2625ef95f9515839bf6948c787cb71121",
+        "output_sha256": "ba4e47368d1529045c85020e094ecad1c28aa7ac5af42c0d411bb1fef2d71b87",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 346,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 743,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 904,
+            "height": 346,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "3e9c5c6ac277236f7f042ae0dac73602c12b3bb464ac8c3fb11d8186cb1c618c",
+        "output_sha256": "2138c061ef8eed715954ee786cca150d5ee63df17f5674df99f0bdc0d0df77be",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 807,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 916,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "e08c26277475fcd0bacc77641552e5720d013e861fdcaeddaa05b6ac4c0c6966",
+        "output_sha256": "e21198d4476df4791c46410ddee779be701a412a2a2f23411ae236ae2e271634",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 405,
+        "headline_font_size": 60,
+        "body_font_size": 36,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 764,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 931,
+            "height": 405,
+            "font_size": 36
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-19T00:15:57.311Z",
+    "baseline_rows": 263,
+    "current_rows": 263,
+    "unchanged_other_rows": 262,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "a396b82a-3672-4278-a1ed-e694cb575c8b",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-19T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 3,
+    "weekly_routine_proposed": 4,
+    "weekly_limit": 12,
+    "instagram_media": 94,
+    "duplicate_matches": 0
+  },
+  "background_preparation": null,
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "bruun",
+      "inter"
+    ],
+    "broader_check": "Full baseline263CMS and94Instagram searched Bruun/RealMadridInter. No matching event or scorer story. Published/scheduled/archived/additional/13WIB/tombstone and other drafts preserved."
+  },
+  "metrics": {
+    "checked_at": "2026-11-19T00:15:57.311Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17910739812334604",
+        "published_at": "2026-11-18T01:01:55+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18101685965207407",
+        "published_at": "2026-11-17T13:01:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17904969456607580",
+        "published_at": "2026-11-15T13:01:02+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 4,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "rollback_commit": "0cedbb7a1ae18dad12206708714761f142b06877",
+  "remaining": "Commit/push reviewed proof before shared adapter schedule; then verify identical ARTICLE, clock, body/dek/digest, public bytes, gate, scope and idempotence. Future SCHEDULED not publication."
+}

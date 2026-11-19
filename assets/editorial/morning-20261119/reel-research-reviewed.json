@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-19:mid-am",
+  "checked_at": "2026-11-19T00:13:52.452Z",
+  "queries": [
+    "Arsenal|Manchester United|Chelsea|Manchester City|Liverpool|Juventus|Inter Milan|AS Roma|Real Madrid|Barcelona|PSG|Bayern|Ajax",
+    "Real Madrid Inter women 18 November 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=JmhLmIOImH0",
+      "creator": "Golden Picks",
+      "checked_at": "2026-11-19T00:13:52.452Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Pre-match prediction published16:55UTC before17:45kickoff, not verified match footage. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Golden Picks; 2026-11-18T16:55:27Z; 64sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=uy7rpQQb9IA",
+      "creator": "Fry Irish",
+      "checked_at": "2026-11-19T00:13:52.452Z",
+      "result": "NO_MEDIA",
+      "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Creator explicitly says live score only, no live match footage. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Fry Irish; 2026-11-18T17:29:15Z; 7815sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=saFdZwDta0Q",
+      "creator": "Akosubo Stevyn Iwekumo (ASK Teddy)",
+      "checked_at": "2026-11-19T00:13:52.452Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual source page opened in browser turn18view and returned Online fetch throttled. Full official API description read. Post-match summary description includes score/scorers; actual video frames and audio were not accessible or verified. Standard YouTube metadata licence; no documented grant to Stadione for redistributing video/audio. No downloaded clip, watch, audition, transcript, usable host recording or cleared voiceover claimed.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Akosubo Stevyn Iwekumo (ASK Teddy); 2026-11-18T20:28:04Z; 19sec; licence=youtube. Browser source page throttled. Metadata does not verify redistribution rights, source images or audio."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-19T00:13:52.452Z",
+    "digest": "de7d3c53ad4c319139ff0d3f4a66a9317b4eb791b8903d1d2255d2e3c89a73bd"
+  }
+}

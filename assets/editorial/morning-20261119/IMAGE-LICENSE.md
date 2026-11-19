@@ -1,0 +1,5 @@
+# Photo and derivatives
+
+Original “Valerenga v Real Madrid, 2023 - A 05.jpg”,18October2023, MichaelEmilio. Source https://commons.wikimedia.org/wiki/File:Valerenga_v_Real_Madrid,_2023_-_A_05.jpg . CC BY4.0 https://creativecommons.org/licenses/by/4.0/ . Full grant/deed freshly read, originalHTTP200 4297669bytes SHA256 9dce4bf1de52feb68e7a0eff7a6932237f1200676b40b49e8565a329d17bd6f5. Original6960x4640. Commons category and Wikipedia file usage identify SigneBruun, actual original opened native.
+
+Cover uses authentic portrait reference with tied hair, eyebrow tape and white warmup jacket. Editorial background/newspaper collage and typography adapted through image generation, retaining identity, age and pose. KLASIK variant follows committed helper rotation. Archive2023 explicitly marked; not18Nov2026match photo, no kit swap. Final cover resized within cream1080x1350 canvas; website hero is clean original crop1650,450,4100,3363 resized512x420, no text. Attribution/license/source and changes disclosed in caption and cover archive credit; no implied endorsement or additional restrictions.

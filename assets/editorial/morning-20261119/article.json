@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Bruun Menuntaskan Bola Kedua",
+  "dek": "Sepak pojok belum selesai pada sundulan pertama. Foto arsip 2023: MichaelEmilio, CC BY 4.0; diolah.",
+  "caption": "BRUUN MENUNTASKAN BOLA KEDUA\n\nReal Madrid membutuhkan penyelesaian Signe Bruun pada menit ke-85 untuk kembali memimpin atas Inter yang bermain dengan sepuluh pemain. Kemenangan 3–1 di Alfredo Di Stéfano, 18 November 2026, baru terbuka menjelang akhir. Unggul jumlah pemain belum membuat jalan Madrid mudah.\n\nLineth Beerensteyn membawa Madrid unggul lebih dahulu. Namun, setelah kehilangan Karolina Vilhjálmsdóttir karena kartu merah, Inter justru menyamakan skor sebelum turun minum. Sepak pojok Benedetta Glionna disambut sentuhan Brittany Raphino, lalu dituntaskan Michela Cambiaghi. Di babak kedua, Rúnarsdóttir berkali-kali menggagalkan peluang Madrid.\n\nBruun masuk menggantikan Beerensteyn pada menit ke-72. Gol pemecah kebuntuan datang dari sepak pojok: sundulan María Méndez belum masuk, tetapi Bruun menuntaskan bola muntah. Ia kemudian mencetak penalti setelah Linda Caicedo dijatuhkan. Detail untuk diperhatikan suporter: duel bola mati belum selesai pada sundulan pertama; bola berikutnya bisa menentukan hasil.\n\nSaat timmu menyerang dari sepak pojok, kamu lebih memperhatikan duel udara atau pemain yang menunggu bola muntah? Jelaskan alasannya.\n\nSumber: laporan lengkap Inter dan RTVE, 18 November 2026.\n\nFoto arsip Signe Bruun, 18 Oktober 2023: MichaelEmilio/Wikimedia Commons, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Valerenga_v_Real_Madrid,_2023_-_A_05.jpg . https://creativecommons.org/licenses/by/4.0/ . Dicrop; latar dan tipografi cover diolah. Wajah, rambut, usia dan jaket asli dipertahankan. Bukan foto laga 2026; tanpa dukungan tersirat.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Unggul Pemain Belum Cukup",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "BRUUN"
+      ],
+      "text": "Real Madrid membutuhkan penyelesaian Signe Bruun pada menit ke-85 untuk kembali memimpin atas Inter yang bermain dengan sepuluh pemain. Kemenangan 3–1 di Alfredo Di Stéfano, 18 November 2026, baru terbuka menjelang akhir. Unggul jumlah pemain belum membuat jalan Madrid mudah."
+    },
+    {
+      "id": "resistance",
+      "heading": "Inter Tetap Menemukan Jalan",
+      "kind": "FACT",
+      "claim_ids": [
+        "SEQUENCE",
+        "RESULT"
+      ],
+      "text": "Lineth Beerensteyn membawa Madrid unggul lebih dahulu. Namun, setelah kehilangan Karolina Vilhjálmsdóttir karena kartu merah, Inter justru menyamakan skor sebelum turun minum. Sepak pojok Benedetta Glionna disambut sentuhan Brittany Raphino, lalu dituntaskan Michela Cambiaghi. Di babak kedua, Rúnarsdóttir berkali-kali menggagalkan peluang Madrid."
+    },
+    {
+      "id": "second-ball",
+      "heading": "Peluang Belum Selesai",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "BRUUN",
+        "RESULT"
+      ],
+      "text": "Bruun masuk menggantikan Beerensteyn pada menit ke-72. Gol pemecah kebuntuan datang dari sepak pojok: sundulan María Méndez belum masuk, tetapi Bruun menuntaskan bola muntah. Ia kemudian mencetak penalti setelah Linda Caicedo dijatuhkan. Detail untuk diperhatikan suporter: duel bola mati belum selesai pada sundulan pertama; bola berikutnya bisa menentukan hasil."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261118-germany-netherlands-match-report-news",
+    "goal-20261116-klopp-rebuild-netherlands-preview-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-19T00:13:52.452Z",
+    "article_digest": "90d6ee2ee489cd6f6afc6866bb09c8c734337f5fe77a3a25bfd4fe3bb38e4259"
+  }
+}
