@@ -3242,3 +3242,9 @@ Build production lulus. Preflight /login sukses sebelum pengalihan symlink atomi
 ## 19 November 2026 — Integrasi narasi Publisio disetujui pemilik
 
 Pemilik secara eksplisit mengizinkan menyalakan/menggunakan Publisio dan VPS. Health clone kembali HTTP200 sebelum tindakan, voice taradfs tersedia; tidak melakukan restart yang tidak diperlukan. Implementasi narasi menerima publisio-taradfs, mengirim frase ke endpoint say bertoken dan memakai durasi audio sebenarnya untuk subtitle. UI menawarkan Tara DFS Publisio sebagai default. OpenAI tetap pilihan terpisah, tidak diam-diam mengganti suara. Credential hanya environment produksi, tidak Git. Pengujian TypeScript lulus. Berikutnya konfigurasi private dari layanan Publisio yang sama, tes suara nyata, build/deploy. Rollback kode ke c0c8130; env sebelumnya dibackup privat. Ketergantungan GPU laptop/tunnel tetap, layanan belum independen24jam.
+
+### Verifikasi Publisio nyata dan produksi807f6ff
+
+Uji generateIllustratedNarration memakai clone taradfs nyata sukses:3adegan,18.43detik,1769358byte WAV, subtitle dari durasi frasa. Berkas privat /opt/stadione-editorial/publisio-narration-live-20261119/{narration.wav,timing.json}. Upload pada uji ini ditampung lokal, bukan CMS/storage produksi; tidak mengklaim uji E2E video atau publikasi. Endpoint health kembali aktif sebelum tindakan, jadi tidak melakukan restart clone server.
+
+QA narasi mock dan build production lulus. Rilis807f6ff dibangun dari commit, preflight login sukses, layanan aktif setelah pengalihan symlink atomik. Login publik200, CMS307. Konfigurasi clone tersimpan private dan pemilik mengizinkan penggunaan suara sendiri; tanpa credential di Git. Rollback aplikasi ke d94eb85; backup env privat tersedia jika perlu. Layanan GPU/tunnel eksternal harus aktif untuk produksi suara. Belum menonton/mendengarkan hasil lengkap atau menghasilkan satu video editorial melalui CMS, sehingga misi keseluruhan belum diklaim selesai.
