@@ -84,7 +84,7 @@ export type Packet = {
       motion?: "static" | "photo-pan";
       audio_generated?: boolean; audio_script_sha256?: string;
       music?: { url: string; credit: string; rights_evidence: string; rights_status: string; volume: number };
-      scenes: { title?: string; image_url: string; cutout_url?: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
+      scenes: { title?: string; image_url: string; cutout_url?: string; captions?: {text:string;start:number;end:number}[]; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
     };
   };
 };
@@ -270,6 +270,13 @@ export function auditPacket(
       }
       if (scenes.length < 3 || scenes.length > 12) errors.push("Reel ilustrasi perlu 3–12 adegan.");
       scenes.forEach((scene, i) => {
+        if (scene.captions) {
+          if (!Array.isArray(scene.captions) || !scene.captions.length || scene.captions.length>30) errors.push(`Adegan ${i+1}: subtitle per frasa tidak valid.`);
+          else {
+            if(scene.captions.map(c=>c.text).join(" ").replace(/\s+/g," ").trim()!==scene.narration.replace(/\s+/g," ").trim()) errors.push(`Adegan ${i+1}: subtitle harus sama dengan narasi.`);
+            scene.captions.forEach((c,j)=>{if(!c.text?.trim() || c.text.length>90 || !Number.isFinite(c.start) || !Number.isFinite(c.end) || c.start<0 || c.end<=c.start || c.end>scene.end-scene.start+0.01 || (j>0 && c.start<scene.captions![j-1].end)) errors.push(`Adegan ${i+1}: waktu subtitle tumpang tindih/di luar adegan.`);});
+          }
+        }
         if(scene.title!==undefined && (typeof scene.title!=="string" || !scene.title.trim() || scene.title.length>96)) errors.push(`Adegan ilustrasi ${i+1}: judul maksimal 96 karakter.`);
         if (scene.cutout_url && !/^https:\/\//.test(scene.cutout_url)) errors.push(`Adegan ilustrasi ${i+1}: cutout harus URL HTTPS berizin.`);
         if (!/^https:\/\//.test(scene.image_url || "") || !scene.image_credit || !scene.rights_evidence || !scene.narration || scene.narration.length > 180 || !scene.claim_ids?.length || scene.claim_ids.some(id => !ids.has(id))) errors.push(`Adegan ilustrasi ${i+1}: lengkapi gambar, hak, narasi, dan klaim.`);

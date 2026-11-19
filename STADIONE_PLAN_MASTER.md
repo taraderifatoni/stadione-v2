@@ -3200,3 +3200,10 @@ Permintaan pemilik mencakup perapian carousel tanpa perubahan cover dan penambah
 
 - Build production lulus, release dari commit f3ee0e8 dibuat dan preflight terpisah /login200 /admin/cms307. Symlink /opt/stadione-current dialihkan atomik ke f3ee0e8; restart service active, login lokal/publik200, CMS lokal307. Tidak ada posting, pergantian jadwal, atau mutasi data editorial.
 - Cutout adalah opsi berbasis URL PNG transparan manual; belum dipakai pada konten baru. Rollback layanan ke /opt/stadione-releases/44c4dd6, restart stadione, verifikasi endpoint; tanpa migrasi DB. QA visual memakai foto manusia nyata dan hak redistribusi cutout masih perlu dilakukan sebelum produksi konten. Status LIVE_OPTIONAL_RENDERER, bukan complete automated Publisio/Vox engine.
+
+## 19 November 2026 — Subtitle frasa eksplisit dan inspeksi Publisio live
+
+- Packet scene menerima captions text/start/end relatif adegan, memvalidasi kesesuaian teks narasi, urutan dan batas waktu. Renderer menggambar tiap frasa (maks124px tinggi) dalam interval masing-masing, tetap menjaga judul dan visual. Default lama tetap subtitle satu adegan. Narasi baru menghapus timing caption lama agar tidak terbawa pada suara berbeda.
+- TypeScript, qa-engine dan qa-illustration-reel lulus termasuk render photo-pan dengan dua frasa per adegan. Timing masih harus disediakan, belum forced alignment otomatis atau UI cue editor. Belum deploy perubahan ini; produksi tetap f3ee0e8. Tidak ada perubahan konten/publikasi.
+- Publisio live ditemukan dalam worker dxjyjiwl2jw5teima6e6ukso. Inspeksi kode worker/tts.ts menunjukkan Edge TTS dan clone server dengan cache audio. Health clone server HTTP200; Gemini configured=true. Tidak membaca nilai credential ke output dan tidak memindahkannya. Stadione openai/gemini/atlas configured=false. Integrasi provider Publisio belum dilakukan; tidak boleh menyatakan seluruh engine selesai.
+- Rollback kode ke7bb2083; deployment saat ini tidak berubah. Tersisa integrasi provider, pembentukan subtitle otomatis, review visual aktual dan uji konten CMS end-to-end.

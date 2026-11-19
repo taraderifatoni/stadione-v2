@@ -25,7 +25,7 @@ export async function generateIllustratedNarration(admin:ReturnType<typeof creat
       const info=JSON.parse((await run("ffprobe",["-v","error","-show_format","-of","json",file],{timeout:20000})).stdout)
       const duration=Number(info.format.duration)
       if(!Number.isFinite(duration) || duration<=0 || duration>20) throw new Error(`Narasi adegan ${i+1} melebihi 20 detik atau tidak valid.`)
-      const end=Math.round((start+duration)*1000000)/1000000;timed.push({...scenes[i],start,end});start=end;files.push(file)
+      const end=Math.round((start+duration)*1000000)/1000000;timed.push({...scenes[i],captions:undefined,start,end});start=end;files.push(file)
     }
     if(start<8 || start>90) throw new Error("Total narasi harus 8–90 detik; sesuaikan naskah.")
     const list=join(dir,"list.txt"),output=join(dir,"narration.wav")
