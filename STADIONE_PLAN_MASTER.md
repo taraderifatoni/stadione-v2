@@ -3184,3 +3184,8 @@ Permintaan pemilik mencakup perapian carousel tanpa perubahan cover dan penambah
 
 - src/app/admin/cms/content-workspace.tsx menampilkan pilihan Ilustrasi tetap / Foto bergerak halus saat packet illustration_reel valid. Pilihan menulis illustration_reel.motion ke JSON draf yang sama; editor harus menyimpan draf sebelum preview. Tidak mengubah video lama, cover, narasi, musik, atau antrean.
 - Verifikasi TypeScript dan qa-engine.cjs lulus. Deployment masih tertunda sampai build/verifikasi rilis. Rollback kode ke6201244. Cutout dan subtitle per-frasa belum tersedia, sehingga jalur ini belum engine lengkap Publisio/Vox.
+
+### Verifikasi produksi rilis 44c4dd6 — 19 November 2026
+
+- Release dibuat dari commit 44c4dd6, build lulus. Preflight proses terpisah merespons CMS307; setelah symlink atomik dan restart, service active, /login lokal HTTP200, /admin/cms lokal HTTP307 dan /login publik HTTP200. Login admin terautentikasi dan rendering konten riil belum diuji; tidak ada posting atau perubahan CMS.
+- Seluruh carousel historis tetap memakai aset tersimpan. Pengubahan ukuran berlaku pada preview baru. Pilihan motion baru hanya bekerja pada packet ilustrasi yang dipilih eksplisit; default static. Rollback layanan: symlink /opt/stadione-current ke /opt/stadione-releases/ba88c8d dan restart stadione; jangan ubah data. Sisa pekerjaan sama dengan entry implementasi awal, terutama cutout per elemen, subtitle per-frasa, pilihan format lebih luas, worker render dan QA editorial nyata.
