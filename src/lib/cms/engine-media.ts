@@ -123,6 +123,13 @@ export async function renderCarousel(packet: Packet) {
     throw new Error("Cover editorial wajib gambar statis minimal 1080x1350 dengan rasio 4:5; tidak boleh dicrop ulang.");
   const images = [];
   const left = 72, width = 936, bottom = 1278;
+  // Pick one readable body size for the entire article, measured against each headline.
+  // The approved cover export below is deliberately unchanged.
+  const bodyCandidates = await Promise.all(packet.slides.slice(1).map(async slide => {
+    const title = await measuredText(slide.headline, width, 235, 60, true, "#191714");
+    return measuredText(slide.body, width, bottom - (205 + title.height + 76), 48, false, "#302c27");
+  }));
+  const articleBodySize = Math.min(...bodyCandidates.map(body => body.font_size));
   for (let i = 0; i < packet.slides.length; i++) {
     if (i === 0) {
       // Mechanical export only. Never regenerate or place a second headline over the approved artwork.
@@ -139,7 +146,7 @@ export async function renderCarousel(packet: Packet) {
     const dividerTop = titleTop + headline.height + dividerGap;
     const dividerCenter = dividerTop + dividerThickness / 2;
     const bodyTop = dividerTop + dividerThickness + dividerGap;
-    const body = await measuredText(slide.body, width, bottom - bodyTop, 36, false, "#302c27");
+    const body = await measuredText(slide.body, width, bottom - bodyTop, articleBodySize, false, "#302c27");
     if (body.font_size < 32) throw new Error("Pisahkan artikel menjadi halaman tambahan; jangan perkecil teks di bawah batas baca.");
     const boxes = [
       { x: left, y: titleTop, width: headline.width, height: headline.height, font_size: headline.font_size },
@@ -160,7 +167,7 @@ export async function renderCarousel(packet: Packet) {
     const layers: sharp.OverlayOptions[] = [];
     layers.push({ input: headline.buffer, left, top: titleTop }, { input: body.buffer, left, top: bodyTop });
     const bytes = await sharp(base).composite(layers).jpeg({quality:95,chromaSubsampling:"4:4:4"}).toBuffer();
-    images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_article",paper_tone:"#eee9dd",authentic_photo:false,source_label:null,text_sha256:packetDigest(slide),output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,divider_top:dividerTop,divider_thickness:dividerThickness,headline_divider_gap:dividerGap,divider_body_gap:dividerGap,boxes,safe_wrap:safe,columns:1,ok:safe}});
+    images.push({bytes,audit:{width:1080,height:1350,style_version:CAROUSEL_STYLE,layout:"newspaper_article",interior_version:"EDITORIAL_READABLE_V2",paper_tone:"#eee9dd",authentic_photo:false,source_label:null,text_sha256:packetDigest(slide),output_sha256:hash(bytes),no_edition_label:true,no_promotional_footer:true,headline_height:headline.height,body_height:body.height,headline_font_size:headline.font_size,body_font_size:body.font_size,divider_top:dividerTop,divider_thickness:dividerThickness,headline_divider_gap:dividerGap,divider_body_gap:dividerGap,boxes,safe_wrap:safe,columns:1,ok:safe}});
   }
   return images;
 }
@@ -397,8 +404,19 @@ export async function renderIllustrationReel(packet: Packet) {
       await sharp(chrome).composite([{input:label.buffer,left:90,top:100},{input:headline.buffer,left:90,top:235},{input:art,left:67,top:480}]).jpeg({quality:92}).toFile(image);
       const text=await measuredText(scene.narration,880,260,46,true);
       await fs.writeFile(caption,text.buffer);
-      const filter="[0:v]setsar=1[base];[base][2:v]overlay=(W-w)/2:1450[out]";
-      await run("ffmpeg",["-v","error","-y","-nostdin","-loop","1","-framerate","30","-i",image,"-ss",String(scene.start),"-t",String(duration),"-i",mixedAudio,"-i",caption,"-filter_complex",filter,"-map","[out]","-map","1:a:0","-t",String(duration),"-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-c:a","aac","-ar","48000","-ac","2",segment],{timeout:180000,maxBuffer:2000000});
+      const moving = spec.motion === "photo-pan";
+      const artFile = join(dir, `art-${i}.png`);
+      if (moving) {
+        await fs.writeFile(artFile, art);
+        // Keep typography fixed; only the art viewport moves. No face synthesis.
+        await sharp(chrome).composite([{input:label.buffer,left:90,top:100},{input:headline.buffer,left:90,top:235}]).jpeg({quality:92}).toFile(image);
+      }
+      const frames = Math.max(1, Math.round(duration * 30));
+      const zoom = i % 2 ? `1.045-0.045*on/${frames}` : `1+0.045*on/${frames}`;
+      const filter = moving
+        ? `[3:v]scale=1890:1530,zoompan=z='${zoom}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=${frames}:s=945x765:fps=30[art];[0:v]setsar=1[base];[base][art]overlay=67:480[scene];[scene][2:v]overlay=(W-w)/2:1450[out]`
+        : "[0:v]setsar=1[base];[base][2:v]overlay=(W-w)/2:1450[out]";
+      await run("ffmpeg",["-v","error","-y","-nostdin","-loop","1","-framerate","30","-i",image,"-ss",String(scene.start),"-t",String(duration),"-i",mixedAudio,"-i",caption,...(moving ? ["-i",artFile] : []),"-filter_complex",filter,"-map","[out]","-map","1:a:0","-t",String(duration),"-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-c:a","aac","-ar","48000","-ac","2",segment],{timeout:180000,maxBuffer:2000000});
       segments.push(segment);
     }
     const list=join(dir,"concat.txt"), output=join(dir,"reel.mp4");
@@ -406,7 +424,7 @@ export async function renderIllustrationReel(packet: Packet) {
     await run("ffmpeg",["-v","error","-y","-nostdin","-f","concat","-safe","0","-i",list,"-c","copy","-movflags","+faststart",output],{timeout:120000,maxBuffer:2000000});
     const meta=await probe(output), video=meta.streams.find((s: {codec_type:string})=>s.codec_type==="video"), duration=Number(meta.format.duration);
     if(video?.width!==1080 || video?.height!==1920 || !meta.streams.some((s: {codec_type:string})=>s.codec_type==="audio") || duration < 7.8 || duration > 90.2) throw new Error("Video ilustrasi gagal audit format atau durasi.");
-    return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,visual_template:"kane-illustration-v4",subtitle_timing:"scene-aligned",illustration:true,narration:true,background_music:!!spec.music,music_credit:spec.music?.credit || null,ai_footage:true}};
+    return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,visual_template:spec.motion === "photo-pan" ? "stadione-photo-pan-v1" : "kane-illustration-v4",motion:spec.motion || "static",subtitle_timing:"scene-aligned",illustration:true,narration:true,background_music:!!spec.music,music_credit:spec.music?.credit || null,ai_footage:true}};
   } finally {await fs.rm(dir,{recursive:true,force:true});}
 }
 

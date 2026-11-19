@@ -81,6 +81,7 @@ export type Packet = {
     catalog_audio?: ReelCatalogAudio;
     illustration_reel?: {
       audio_url: string; audio_credit: string; audio_rights: string; audio_evidence: string;
+      motion?: "static" | "photo-pan";
       audio_generated?: boolean; audio_script_sha256?: string;
       music?: { url: string; credit: string; rights_evidence: string; rights_status: string; volume: number };
       scenes: { title?: string; image_url: string; image_credit: string; rights_evidence: string; start: number; end: number; narration: string; claim_ids: string[] }[];
@@ -257,6 +258,7 @@ export function auditPacket(
       errors.push("Artikel pasangan Reels perlu foto/frame asli tanpa overlay sebagai hero; URL video bukan foto artikel.");
     const illustration = packet.media.illustration_reel;
     if (illustration) {
+      if (illustration.motion !== undefined && !["static", "photo-pan"].includes(illustration.motion)) errors.push("Pilihan gerak Reels tidak valid.");
       if (!/^https:\/\//.test(illustration.audio_url || "") || !illustration.audio_credit || illustration.audio_rights !== "CLEARED" || !illustration.audio_evidence)
         errors.push("Narasi perlu URL HTTPS, kredit dan bukti hak audio.");
       const scenes = Array.isArray(illustration.scenes) ? illustration.scenes : [];
