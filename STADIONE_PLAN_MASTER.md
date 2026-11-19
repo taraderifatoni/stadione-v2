@@ -3195,3 +3195,8 @@ Permintaan pemilik mencakup perapian carousel tanpa perubahan cover dan penambah
 - engine.ts menerima cutout_url HTTPS per scene. engine-media.ts memeriksa PNG memiliki alpha dan resolusi minimum200x200, menampilkan subjek di atas foto adegan yang diburamkan; gerak subjek pelan dan tipografi/subtitle tetap. Jalur ini hanya aktif pada motion photo-pan dan cutout_url yang diberikan; Reels static/historis tetap.
 - Editor CMS menampilkan masukan cutout untuk setiap scene yang valid pada mode Foto bergerak halus. URL dimasukkan ke packet dan tetap perlu disimpan sebelum preview. Hak gambar mengikuti audit image_credit/rights_evidence per scene; tidak mengekstrak subjek otomatis, tidak mengklaim izin dari URL.
 - QA sintetis: TypeScript, qa-engine, qa-illustration-reel termasuk render cutout nyata sukses. Belum ada pemeriksaan mata atas subjek manusia/foto editorial nyata, dan belum ada subtitle per-frasa. Tidak ada perubahan DB/jadwal/konten. Rollback kode ke44c4dd6. Deployment menunggu build/release.
+
+### Verifikasi rilis cutout f3ee0e8 — 19 November 2026
+
+- Build production lulus, release dari commit f3ee0e8 dibuat dan preflight terpisah /login200 /admin/cms307. Symlink /opt/stadione-current dialihkan atomik ke f3ee0e8; restart service active, login lokal/publik200, CMS lokal307. Tidak ada posting, pergantian jadwal, atau mutasi data editorial.
+- Cutout adalah opsi berbasis URL PNG transparan manual; belum dipakai pada konten baru. Rollback layanan ke /opt/stadione-releases/44c4dd6, restart stadione, verifikasi endpoint; tanpa migrasi DB. QA visual memakai foto manusia nyata dan hak redistribusi cutout masih perlu dilakukan sebelum produksi konten. Status LIVE_OPTIONAL_RENDERER, bukan complete automated Publisio/Vox engine.
