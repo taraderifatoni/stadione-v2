@@ -17,15 +17,27 @@ export async function generateIllustratedNarration(admin:ReturnType<typeof creat
   try {
     const files:string[]=[], timed:typeof scenes=[]; let start=0
     for(let i=0;i<scenes.length;i++) {
-      const response=await fetch("https://api.openai.com/v1/audio/speech",{method:"POST",headers:{"Authorization":`Bearer ${process.env.OPENAI_API_KEY}`,"Content-Type":"application/json"},body:JSON.stringify({model:"gpt-4o-mini-tts",voice,input:scenes[i].narration,instructions:"Bacakan dalam bahasa Indonesia dengan jelas dan natural sebagai narator olahraga. Jangan menambahkan kata.",response_format:"mp3"}),signal:AbortSignal.timeout(60000)})
+      const phrases:string[]=[];let phrase="";
+      for(const word of scenes[i].narration.trim().split(/\s+/)) {
+        if(phrase && (phrase+" "+word).length>64){phrases.push(phrase);phrase="";}
+        phrase+=(phrase?" ":"")+word;
+      }
+      if(phrase)phrases.push(phrase);
+      const sceneStart=start, captions:{text:string;start:number;end:number}[]=[];
+      for(let j=0;j<phrases.length;j++) {
+      const response=await fetch("https://api.openai.com/v1/audio/speech",{method:"POST",headers:{"Authorization":`Bearer ${process.env.OPENAI_API_KEY}`,"Content-Type":"application/json"},body:JSON.stringify({model:"gpt-4o-mini-tts",voice,input:phrases[j],instructions:"Bacakan dalam bahasa Indonesia dengan jelas dan natural sebagai narator olahraga. Jangan menambahkan kata.",response_format:"mp3"}),signal:AbortSignal.timeout(60000)})
       if(!response.ok) throw new Error(`Penyedia narasi gagal (HTTP ${response.status}). Periksa konfigurasi dan kuota.`)
       const bytes=Buffer.from(await response.arrayBuffer());if(bytes.length<100 || bytes.length>10_000_000) throw new Error("Berkas narasi tidak valid.")
-      const mp3=join(dir,`scene-${i}.mp3`),file=join(dir,`scene-${i}.wav`);await fs.writeFile(mp3,bytes)
+      const mp3=join(dir,`scene-${i}-${j}.mp3`),file=join(dir,`scene-${i}-${j}.wav`);await fs.writeFile(mp3,bytes)
       await run("ffmpeg",["-v","error","-y","-nostdin","-i",mp3,"-c:a","pcm_s16le","-ar","48000","-ac","1",file],{timeout:30000})
       const info=JSON.parse((await run("ffprobe",["-v","error","-show_format","-of","json",file],{timeout:20000})).stdout)
       const duration=Number(info.format.duration)
       if(!Number.isFinite(duration) || duration<=0 || duration>20) throw new Error(`Narasi adegan ${i+1} melebihi 20 detik atau tidak valid.`)
-      const end=Math.round((start+duration)*1000000)/1000000;timed.push({...scenes[i],captions:undefined,start,end});start=end;files.push(file)
+      const end=Math.round((start+duration)*1000000)/1000000;
+      captions.push({text:phrases[j],start:Math.round((start-sceneStart)*1000000)/1000000,end:Math.round((end-sceneStart)*1000000)/1000000});start=end;files.push(file);
+      }
+      if(start-sceneStart>20)throw new Error(`Narasi adegan ${i+1} melebihi 20 detik.`);
+      timed.push({...scenes[i],captions,start:sceneStart,end:start});
     }
     if(start<8 || start>90) throw new Error("Total narasi harus 8–90 detik; sesuaikan naskah.")
     const list=join(dir,"list.txt"),output=join(dir,"narration.wav")
