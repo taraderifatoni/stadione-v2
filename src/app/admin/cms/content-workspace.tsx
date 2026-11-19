@@ -1849,8 +1849,17 @@ function EditorModal({
   const [generating, setGenerating] = useState(false);
   const [narrating, setNarrating] = useState(false);
   const [narratorVoice, setNarratorVoice] = useState("coral");
-  let illustratedAudio: {audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
+  let illustratedAudio: {motion?:"static"|"photo-pan";audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
   try {illustratedAudio=JSON.parse(enginePacket)?.media?.illustration_reel} catch { /* Editor may be typing JSON. */ }
+  function selectReelMotion(motion: "static" | "photo-pan") {
+    try {
+      const packet=JSON.parse(enginePacket);
+      if (!packet?.media?.illustration_reel) throw Error("Isi packet ilustrasi terlebih dahulu.");
+      packet.media.illustration_reel.motion=motion;
+      setEnginePacket(JSON.stringify(packet,null,2));
+      toast.success("Gerak foto dipilih. Simpan draf sebelum membuat preview.");
+    } catch(error) { toast.error(error instanceof Error ? error.message : "Packet belum valid."); }
+  }
   function selectFreeMusic() {
     try {
       const packet=JSON.parse(enginePacket);
@@ -2087,6 +2096,11 @@ function EditorModal({
             {item.format === "REEL" && ["DRAFT", "PENDING_REVIEW"].includes(item.status) && <div className="space-y-3 rounded-xl border border-[#514237] p-4 text-xs">
               <p className="font-bold">Narasi dan musik Reels ilustrasi</p>
               <p className="text-[#B5AC8A]">Isi naskah setiap adegan di packet. Narasi AI otomatis menyesuaikan durasi. Unggah atau pilih musik berizin dan masukkan URL publik; narasi tetap dominan.</p>
+              {illustratedAudio && <label className="block">Gerak visual
+                <select aria-label="Gerak visual Reels" className="input mt-1" value={illustratedAudio.motion || "static"} onChange={e=>selectReelMotion(e.target.value as "static" | "photo-pan")}>
+                  <option value="static">Ilustrasi tetap</option><option value="photo-pan">Foto bergerak halus</option>
+                </select>
+              </label>}
               <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
               <button type="button" onClick={selectFreeMusic} className="rounded border px-3 py-2">Pakai musik gratis CC0 · Game Travel 1 (Piano)</button>
               {illustratedAudio?.music?.url && <audio controls className="w-full" src={illustratedAudio.music.url} />}

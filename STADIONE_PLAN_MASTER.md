@@ -3179,3 +3179,8 @@ Permintaan pemilik mencakup perapian carousel tanpa perubahan cover dan penambah
 - Verifikasi: tsc --noEmit, qa-engine.cjs dan qa-illustration-reel.cjs lulus, termasuk render MP4 nyata memakai fixture sintetis, musik, penolakan audio pendek, ukuran teks konsisten dan byte cover identik ekspor terdahulu. Fixture bukan konten siap terbit atau bukti kualitas editorial.
 - Belum deploy; produksi tetap /opt/stadione-releases/ba88c8d. Tidak ada perubahan database, scheduler, credential, cover, artikel, atau publikasi. Rollback kode ke8ac0a447c8a1eab51ca5cf0d95eeefc13e70c4ba.
 - Sisa lingkup: preview visual dengan aset editorial nyata; layout foto carousel; cutout per elemen; subtitle per frasa; UI pemilih format; worker/antrian checkpoint; provider suara operasional; integrasi end-to-end CMS dan publikasi terverifikasi. Jangan melaporkan engine lengkap atau aktif sebelum semua tahap terkait selesai.
+
+### 19 November 2026 — Pilihan gerak pada editor CMS
+
+- src/app/admin/cms/content-workspace.tsx menampilkan pilihan Ilustrasi tetap / Foto bergerak halus saat packet illustration_reel valid. Pilihan menulis illustration_reel.motion ke JSON draf yang sama; editor harus menyimpan draf sebelum preview. Tidak mengubah video lama, cover, narasi, musik, atau antrean.
+- Verifikasi TypeScript dan qa-engine.cjs lulus. Deployment masih tertunda sampai build/verifikasi rilis. Rollback kode ke6201244. Cutout dan subtitle per-frasa belum tersedia, sehingga jalur ini belum engine lengkap Publisio/Vox.
