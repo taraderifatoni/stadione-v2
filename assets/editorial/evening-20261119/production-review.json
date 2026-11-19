@@ -1,0 +1,489 @@
+{
+  "checked_at": "2026-11-19T12:10:02.487Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "base_commit": "f6ddf85d2452c4e4c9d22b44a5120bc661e5c4f1",
+  "active_release": "/opt/stadione-releases/f3ee0e8",
+  "target": {
+    "id": "7458f9d8-b478-41d8-b924-b96ad332ff3c",
+    "plan_key": "2026-11-19:mid-pm",
+    "scheduled_at": "2026-11-19T13:00:00Z",
+    "time_wib": "19 November 2026 20.00 WIB",
+    "pillar": "Sepak Bola Indonesia",
+    "initial_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Bagi Hilgers, Uji Coba Ini Berarti Kembali",
+    "genre": "NEWS",
+    "words": 121,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "612833f5e78b3176235c7880be931c444795fd02f8d172bbc21686c6741f8076",
+    "benchmarks": [
+      "goal-20261116-klopp-rebuild-netherlands-preview-news",
+      "goal-20261118-germany-netherlands-match-report-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_slide_quota_padding": true,
+    "direct_quote_exact_original": true
+  },
+  "references": {
+    "entries": 44,
+    "sha256": "e5f4f80449aec5848df4b4c57b11623798b693a9f46d37aaad2fcbd196a815bb",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-19T00:35:27.732Z",
+    "application": "NEWS16Nov: leadpriority/voice/context progression andconditionalconsequence. NEWS18Nov: separateverifiedfacts fromauthorassessment. FEATURE19Nov lesson applied toquotecontext andsourceperiod, notforcedFEATUREgenre. No newlearning/timestamp claimed."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "HILGERS",
+        "url": "https://www.instagram.com/p/Df4M6kBAJn_/",
+        "publisher_group": "MEESHILGERSS",
+        "primary": true,
+        "published_at": "2026-11-18",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "b4a5f94f510619943a21e438ab1aa99d07c201e5bff7b5e0ffc88c6186598231",
+        "evidence_characters": 1481,
+        "full_source_read": true,
+        "method": "Complete public caption read from actualInstagram captionedembed HTTP200 andoriginalogmetadata author/date. Plainpostbodyonlylogin, notclaimedfullbody; no comments/photos viewing claimed."
+      },
+      {
+        "id": "CNN",
+        "url": "https://www.cnnindonesia.com/olahraga/20261118180804-142-1428674/pesan-menyentuh-mees-hilgers-usai-comeback-bela-timnas-indonesia",
+        "publisher_group": "TRANSMEDIA",
+        "primary": false,
+        "published_at": "2026-11-18T15:45:00Z",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "0f7ec51f20c6dbcc9da9b11391f1e8e4eb750ba50f45e28efd21f0c9b2642f27",
+        "evidence_characters": 3289,
+        "full_source_read": true,
+        "method": "Complete public narrative/grant/deed read through closing HTTP200, navigation not treated as article."
+      },
+      {
+        "id": "ANTARA",
+        "url": "https://gorontalo.antaranews.com/amp/berita/436771/mees-hilgers-bangga-kembali-berseragam-garuda-setelah-500-hari-absen",
+        "publisher_group": "ANTARA",
+        "primary": false,
+        "published_at": "2026-11-19T00:54:00Z",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "35a7b286cc44d78aa45551010e60a4880057b68ae13f097082598c320d4723b7",
+        "evidence_characters": 3578,
+        "full_source_read": true,
+        "method": "Complete public narrative/grant/deed read through closing HTTP200, navigation not treated as article."
+      },
+      {
+        "id": "CLUB",
+        "url": "https://www.sc-heerenveen.nl/nieuws/om-utens-farji-geeft-assist-en-klaverboer-plaatst-zich-ondanks-nederlaag-voor-ek",
+        "publisher_group": "SCHEERENVEEN",
+        "primary": true,
+        "published_at": "2026-11-17",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "fb92058401950d55abff9e54e81aa64a9e58aa6f1d9e110c492ea7fd59130949",
+        "evidence_characters": 4361,
+        "full_source_read": true,
+        "method": "Complete public narrative/grant/deed read through closing HTTP200, navigation not treated as article."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Mees_hilgers-1672744656.jpg",
+        "publisher_group": "HANSREEFMAN",
+        "primary": true,
+        "published_at": "2022-12-10",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "14093aaf09979d9b10c31243d151e6fe7d0ca82fad7942798879575cb1ebcac4",
+        "evidence_characters": 6005,
+        "full_source_read": true,
+        "method": "Complete public narrative/grant/deed read through closing HTTP200, navigation not treated as article."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-19T12:04:00.727Z",
+        "evidence_text_sha256": "98018f07e1fa37f6806e2578c3c48420db3e3385eef853fa4539616027ea8029",
+        "evidence_characters": 2870,
+        "full_source_read": true,
+        "method": "Complete public narrative/grant/deed read through closing HTTP200, navigation not treated as article."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-19",
+      "fetched_at": "2026-11-19T11:58:46.417Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 4
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "Fresh19Novpool includes18NovCNNHilgersmessage. Other3eligibleitems repeatU17qualification/Afghanistan story alreadycovered17Nov, notrepublished. Originalcaption18Nov fullpublicembed631chars andogmetadataread. FullCNN3289chars andindependentAntara3578chars, plusclub4361charroundup readthroughclosing.",
+    "discrepancies_and_exclusions": "CNN sayssevendaysTC vsAntara9-17Nov, no durationclaim. Clubmatchreport intro5-2 vsclosing5-3 andnoHilgersminute; excludedfrompacket, no guessedfirstreturn/85minuteclaim. No500daysobjectivecount, diagnosis, injurytype, guaranteedstartingrole/fullfitness. Originalakuquotepreserved, Antarasaya notsubstituted. Originalpostphotos notreusedwithoutgrant.",
+    "video_failure": {
+      "stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+      "queries": [
+        "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+        "Mees Hilgers Indonesia Bali United"
+      ],
+      "topic_query_candidates": 13,
+      "attempts": [
+        {
+          "page_url": "https://www.youtube.com/watch?v=eRpWtP9JmlQ",
+          "creator": "Pergerakan Timnas",
+          "checked_at": "2026-11-19T12:04:00.727Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. Published19Nov but describes15Novfixture as upcoming, temporalcontext stale. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Pergerakan Timnas; 2026-11-19T06:00:31Z; 48sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=EQz3qzMAVbo",
+          "creator": "Tribun Gayo",
+          "checked_at": "2026-11-19T12:04:00.727Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. News narration credits namedscriptwriter/voiceover/editor, not permission for Stadione to reuse recording. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Tribun Gayo; 2026-11-19T09:54:25Z; 158sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=wiRxIypt1Pc",
+          "creator": "Garudascope",
+          "checked_at": "2026-11-19T12:04:00.727Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. Post-match personal-message summary; actualvideo images/audio not accessible or verified. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Garudascope; 2026-11-18T13:36:02Z; 49sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+          }
+        }
+      ],
+      "review_digest": "200597e4bee1d767011946860d922e896293af51baa7c304066a9a4adf8b4856",
+      "fallback_issues": [],
+      "no_usable_candidate_verified": true
+    }
+  },
+  "media": {
+    "photo_author": "Hans Reefman",
+    "photo_date": "2022-12-10",
+    "source": "https://commons.wikimedia.org/wiki/File:Mees_hilgers-1672744656.jpg",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "d59bb5b5bc191effbd4ee6e1908a10823d8e29b30bb67e4b2f88c8627b621129",
+    "original_bytes": 1454094,
+    "dimensions": [
+      1654,
+      1591
+    ],
+    "original_acquisition_http": 200,
+    "grant_and_deed_full_read": true,
+    "vrt_ticket_public_reference": "2023010310004703",
+    "identity": "OriginalnativeMeesHilgersFCTwenteredkit10Dec2022; noIndonesiajersey or2026TCphoto claim. Facehairagepose/crests preserved.",
+    "own_derivative_contributions_same_share_alike": true,
+    "cover_variant": "JUDUL_UTAMA",
+    "previous_variants": [
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK"
+    ],
+    "source_label": "INSTAGRAM.COM",
+    "source_label_reason": "FirstprimarysourceactualHilgersposthost, visiblelabelmatchesmetadata.",
+    "page_count": 4,
+    "cover_input_sha256": "75102fa1999ea0baa18a0e3d1ff0f8cd177cd26b4658542a8fb456bdb6b66103",
+    "hero_sha256": "e7461c6aacdcba189a25c94d0cd21312ce174195446adc736cfb8d07b54cb374",
+    "hero_crop": [
+      350,
+      0,
+      1250,
+      1025
+    ],
+    "hero_clean_original_without_overlay": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-19T12:10:02.487Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "cream_text_only_article_pages": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "INSTAGRAM.COM",
+        "cover_input_sha256": "75102fa1999ea0baa18a0e3d1ff0f8cd177cd26b4658542a8fb456bdb6b66103",
+        "output_sha256": "136adad93974e4fa7f943aa9be3daed939f0e2bc6315c51558a41eda10b2932b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "7e8c8ad762ddf9ca7ac8326707f26606ef93a66dd8d5f02f19bec2bc8c744135",
+        "output_sha256": "3e41335d9c2907bb39e6d99f7423a0a313931f1b641ce4fadb32dcd767c9a221",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 583,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 855,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 929,
+            "height": 583,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "dde0d70ee2493b403307f1a24c75cae249eb7711e8489eaa25585ef3acd937bc",
+        "output_sha256": "2bfd8d460daee2ba4fd7c43d5f521d7a39318b14bea4061da0180b449fab5ee6",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 574,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 830,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 926,
+            "height": 574,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "3762effb487563075a627a3db9cd39e88ed85ffae2a86c7a9f093730143e5893",
+        "output_sha256": "1b55015113ae2153e4891547150c953de4d2e2313289647d9338564132a660be",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 47,
+        "body_height": 641,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 288,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 759,
+            "height": 47,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 328,
+            "width": 922,
+            "height": 641,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-19T12:10:02.487Z",
+    "baseline_rows": 264,
+    "current_rows": 264,
+    "unchanged_other_rows": 263,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "7458f9d8-b478-41d8-b924-b96ad332ff3c",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-19T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 4,
+    "weekly_routine_proposed": 5,
+    "weekly_limit": 12,
+    "instagram_media": 95,
+    "duplicate_matches": 0
+  },
+  "background_preparation": null,
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "hilgers",
+      "tanah airku"
+    ],
+    "initial_broad_terms": [
+      "hilgers",
+      "bali"
+    ],
+    "initial_broad_matches": [
+      "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+      "f41548c6-572d-476b-b90b-a4fa8176f1d9"
+    ],
+    "correction": "Fullpublishedarticle/caption inspected:7Octscouting/absentees, not18NovHilgerspersonalreturnmessage; protectedrowsuntouched. Event-specificquotedphrasepreventsfalsepositive.",
+    "broader_check": "All264CMS and95InstagramHilgerssearchfoundonly7OctHerdmantalentscoutcontext, different event. InitialHilgers+Balitermpair matchedtwo7Octscoutingrows, fullbody/captionread confirmed different event. Terms refined toHilgers+tanahairku, fullhistorymatchesempty. Existingpublished/scheduled/13WIB/additional/archive/tombstone/otherdraftsunchanged."
+  },
+  "metrics": {
+    "checked_at": "2026-11-19T12:10:02.487Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "17998277448050242",
+        "published_at": "2026-11-19T01:00:41+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17910739812334604",
+        "published_at": "2026-11-18T01:01:55+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18101685965207407",
+        "published_at": "2026-11-17T13:01:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18391575454227538",
+        "published_at": "2026-11-16T01:01:39+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "remaining": "Commit/pushreviewproof beforecommittedadapterschedule, verifycanonicalARTICLE/body/dek/digest/clock/hero andpublicbytes/gate/scope/idempotence. SCHEDULEDfuturehandoff notpublication."
+}

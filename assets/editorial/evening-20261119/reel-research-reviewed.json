@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-19:mid-pm",
+  "checked_at": "2026-11-19T12:04:00.727Z",
+  "queries": [
+    "Persija|Persib|Persebaya|PSS Sleman|Timnas Indonesia|Maarten Paes|pemain Timnas Indonesia di luar negeri",
+    "Mees Hilgers Indonesia Bali United"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=eRpWtP9JmlQ",
+      "creator": "Pergerakan Timnas",
+      "checked_at": "2026-11-19T12:04:00.727Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. Published19Nov but describes15Novfixture as upcoming, temporalcontext stale. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Pergerakan Timnas; 2026-11-19T06:00:31Z; 48sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=EQz3qzMAVbo",
+      "creator": "Tribun Gayo",
+      "checked_at": "2026-11-19T12:04:00.727Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. News narration credits namedscriptwriter/voiceover/editor, not permission for Stadione to reuse recording. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Tribun Gayo; 2026-11-19T09:54:25Z; 158sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=wiRxIypt1Pc",
+      "creator": "Garudascope",
+      "checked_at": "2026-11-19T12:04:00.727Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "Actual source URL opened in browser turn27view and returned Online fetch throttled. Complete official YouTube API description read. Post-match personal-message summary; actualvideo images/audio not accessible or verified. Standard YouTube licence, no documented redistribution/video/audio grant. No downloaded clip, watch, audition, transcript or matchtimestamps claimed; no cleared owned host/voiceover recording selected.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Garudascope; 2026-11-18T13:36:02Z; 49sec; licence=youtube. Fullmetadata does not verify video/audio rights. Actualbrowserpage throttled."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-19T12:04:00.727Z",
+    "digest": "200597e4bee1d767011946860d922e896293af51baa7c304066a9a4adf8b4856"
+  }
+}

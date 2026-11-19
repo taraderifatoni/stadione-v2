@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Bagi Hilgers, Uji Coba Ini Berarti Kembali",
+  "dek": "Kesempatan bermain bersama Garuda setelah absen panjang. Foto arsip 2022: Hans Reefman, CC BY-SA 4.0; diolah.",
+  "caption": "BAGI HILGERS, UJI COBA INI BERARTI KEMBALI\n\nMees Hilgers kembali merasakan pertandingan bersama Timnas Indonesia dalam uji coba melawan Bali United. Setelah masa absen panjang, bek SC Heerenveen itu menyampaikan rasa bangga dan syukurnya. Unggahan pada 18 November 2026 memperlihatkan arti kesempatan mengenakan Garuda bagi dirinya.\n\n“Bangga dan bersyukur bisa kembali bermain untuk tanah airku. Di sinilah akar dan darahku berasal, dan di sinilah hatiku berada.” tulis Hilgers melalui akun Instagram pribadinya. Ia juga menyampaikan kebahagiaan bisa kembali ke lapangan bersama rekan-rekannya dan berjuang untuk lambang Garuda di dada.\n\nCatatan resmi Heerenveen turut menunjukkan perubahan statusnya: Hilgers absen pada periode internasional sebelumnya, lalu masuk skuad definitif Indonesia untuk agenda kali ini. ANTARA melaporkan kesempatan bermainnya datang dalam pemusatan latihan di Bali pada 9–17 November di bawah John Herdman.\n\nSetelah pemain lama absen, apa yang ingin kamu lihat lebih dahulu: menit bermain yang bertambah atau adaptasi dengan rekan di pertahanan? Jelaskan alasanmu.\n\nSumber: unggahan Mees Hilgers (18 November), CNN Indonesia, ANTARA, dan catatan resmi SC Heerenveen.\n\nFoto arsip Hilgers dengan seragam FC Twente, 10 Desember 2022: Hans Reefman/Wikiportret, Wikimedia Commons, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Mees_hilgers-1672744656.jpg . https://creativecommons.org/licenses/by-sa/4.0/ . Dicrop; latar dan tipografi cover diolah. Kontribusi adaptasi berlisensi sama tanpa pembatasan tambahan atau dukungan tersirat. Bukan foto TC Bali 2026; wajah, rambut, usia dan seragam asli dipertahankan.",
+  "paragraphs": [
+    {
+      "id": "return",
+      "heading": "Kesempatan yang Berarti",
+      "kind": "FACT",
+      "claim_ids": [
+        "RETURN",
+        "SELECTION"
+      ],
+      "text": "Mees Hilgers kembali merasakan pertandingan bersama Timnas Indonesia dalam uji coba melawan Bali United. Setelah masa absen panjang, bek SC Heerenveen itu menyampaikan rasa bangga dan syukurnya. Unggahan pada 18 November 2026 memperlihatkan arti kesempatan mengenakan Garuda bagi dirinya."
+    },
+    {
+      "id": "voice",
+      "heading": "Ikatan dengan Indonesia",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "QUOTE",
+        "RETURN"
+      ],
+      "quote": {
+        "text": "Bangga dan bersyukur bisa kembali bermain untuk tanah airku. Di sinilah akar dan darahku berasal, dan di sinilah hatiku berada.",
+        "source_id": "HILGERS"
+      },
+      "text": "“Bangga dan bersyukur bisa kembali bermain untuk tanah airku. Di sinilah akar dan darahku berasal, dan di sinilah hatiku berada.” tulis Hilgers melalui akun Instagram pribadinya. Ia juga menyampaikan kebahagiaan bisa kembali ke lapangan bersama rekan-rekannya dan berjuang untuk lambang Garuda di dada."
+    },
+    {
+      "id": "callup",
+      "heading": "Kembali Masuk Pilihan",
+      "kind": "FACT",
+      "claim_ids": [
+        "SELECTION",
+        "RETURN"
+      ],
+      "text": "Catatan resmi Heerenveen turut menunjukkan perubahan statusnya: Hilgers absen pada periode internasional sebelumnya, lalu masuk skuad definitif Indonesia untuk agenda kali ini. ANTARA melaporkan kesempatan bermainnya datang dalam pemusatan latihan di Bali pada 9–17 November di bawah John Herdman."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261116-klopp-rebuild-netherlands-preview-news",
+    "goal-20261118-germany-netherlands-match-report-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-19T12:04:00.727Z",
+    "article_digest": "612833f5e78b3176235c7880be931c444795fd02f8d172bbc21686c6741f8076"
+  }
+}
