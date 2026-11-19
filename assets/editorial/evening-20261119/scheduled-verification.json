@@ -1,0 +1,157 @@
+{
+  "checked_at": "2026-11-19T12:11:53.116Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "pre_schedule_commit": "a02ef24c91a5270ee917649ec0bafd85f5a10e1a",
+  "adapter_result": {
+    "id": "7458f9d8-b478-41d8-b924-b96ad332ff3c",
+    "state": "AUTO_SCHEDULED",
+    "assets": 4,
+    "review_required": false,
+    "publish_at": "2026-11-19T13:00:00.000Z"
+  },
+  "verification": {
+    "checked_at": "2026-11-19T12:10:59.991Z",
+    "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+    "social": {
+      "id": "7458f9d8-b478-41d8-b924-b96ad332ff3c",
+      "status": "SCHEDULED",
+      "format": "CAROUSEL",
+      "plan_key": "2026-11-19:mid-pm",
+      "event_key": "hilgers-garuda-return-personal-message-20261118",
+      "scheduled_at": "2026-11-19T13:00:00+00:00",
+      "time_wib": "19 November 2026 20.00 WIB",
+      "auto_publish": true,
+      "assets": 4,
+      "publication_issues": []
+    },
+    "article": {
+      "id": "89548780-7333-463b-9122-99d1a4657721",
+      "status": "SCHEDULED",
+      "slug": "bagi-hilgers-uji-coba-ini-berarti-kembali-7458f9d8",
+      "scheduled_at": "2026-11-19T13:00:00+00:00",
+      "title": "Bagi Hilgers, Uji Coba Ini Berarti Kembali",
+      "canonical_body_identical": true,
+      "canonical_dek_identical": true,
+      "digest": "612833f5e78b3176235c7880be931c444795fd02f8d172bbc21686c6741f8076",
+      "issues": [],
+      "hero": {
+        "http": 200,
+        "bytes": 49988,
+        "sha256": "e7461c6aacdcba189a25c94d0cd21312ce174195446adc736cfb8d07b54cb374",
+        "clean_original_without_text": true
+      }
+    },
+    "renders": [
+      {
+        "page": 1,
+        "http": 200,
+        "bytes": 620051,
+        "sha256": "136adad93974e4fa7f943aa9be3daed939f0e2bc6315c51558a41eda10b2932b",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 2,
+        "http": 200,
+        "bytes": 223315,
+        "sha256": "3e41335d9c2907bb39e6d99f7423a0a313931f1b641ce4fadb32dcd767c9a221",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 3,
+        "http": 200,
+        "bytes": 219550,
+        "sha256": "2bfd8d460daee2ba4fd7c43d5f521d7a39318b14bea4061da0180b449fab5ee6",
+        "identical_reviewed_preview": true
+      },
+      {
+        "page": 4,
+        "http": 200,
+        "bytes": 216022,
+        "sha256": "1b55015113ae2153e4891547150c953de4d2e2313289647d9338564132a660be",
+        "identical_reviewed_preview": true
+      }
+    ],
+    "instagram": {
+      "account": "stadione.id",
+      "media_count": 95,
+      "duplicate_matches": 0
+    },
+    "attempts": 0,
+    "baseline_rows": 264,
+    "current_rows": 265,
+    "unchanged_existing_other_rows": 263,
+    "changed_other_rows": [],
+    "new_article_rows": 1,
+    "weekly_routine_published_or_scheduled_count": 5,
+    "weekly_limit": 12,
+    "reference": {
+      "entries": 44,
+      "sha256": "e5f4f80449aec5848df4b4c57b11623798b693a9f46d37aaad2fcbd196a815bb",
+      "runtime_committed_identical": true
+    },
+    "native_render_review": {
+      "all_four_opened1080x1350": true,
+      "reviewed_bytes_match_scheduled_assets": true,
+      "hero_opened": true,
+      "cover_count": "1/4",
+      "no_overflow_or_clipping": true
+    },
+    "publisher": "Future20WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+    "pre_schedule_commit": "a02ef24c91a5270ee917649ec0bafd85f5a10e1a"
+  },
+  "idempotence": {
+    "checked_at": "2026-11-19T12:11:02.839Z",
+    "adapter_result": {
+      "skipped": true,
+      "id": "7458f9d8-b478-41d8-b924-b96ad332ff3c",
+      "status": "SCHEDULED",
+      "reason": "existing_scheduled_published_archived_or_attempt"
+    },
+    "all_rows_identical": true,
+    "rows": 265,
+    "durable_attempts_identical": true,
+    "attempts": 0,
+    "no_extra_article_or_assets": true
+  },
+  "format_decision": {
+    "initial": "REEL",
+    "final": "CAROUSEL",
+    "original_clock_and_pillar_retained": true,
+    "mandatory_illustration": false,
+    "failure_stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+    "fallback_issues": [],
+    "canonical_research_digest": "200597e4bee1d767011946860d922e896293af51baa7c304066a9a4adf8b4856"
+  },
+  "full_history_duplicate_check": {
+    "cms_rows": 264,
+    "instagram_media": 95,
+    "cms": [],
+    "instagram": [],
+    "terms": [
+      "hilgers",
+      "tanah airku"
+    ],
+    "initial_broad_terms": [
+      "hilgers",
+      "bali"
+    ],
+    "initial_broad_matches": [
+      "80b9be65-650f-4a48-bf2d-2ceed7726a32",
+      "f41548c6-572d-476b-b90b-a4fa8176f1d9"
+    ],
+    "correction": "Fullpublishedarticle/caption inspected:7Octscouting/absentees, not18NovHilgerspersonalreturnmessage; protectedrowsuntouched. Event-specificquotedphrasepreventsfalsepositive.",
+    "broader_check": "All264CMS and95InstagramHilgerssearchfoundonly7OctHerdmantalentscoutcontext, different event. InitialHilgers+Balitermpair matchedtwo7Octscoutingrows, fullbody/captionread confirmed different event. Terms refined toHilgers+tanahairku, fullhistorymatchesempty. Existingpublished/scheduled/13WIB/additional/archive/tombstone/otherdraftsunchanged."
+  },
+  "active_renderer": {
+    "release": "/opt/stadione-releases/f3ee0e8",
+    "interior_version": "EDITORIAL_READABLE_V2",
+    "body_font_size": 48,
+    "all_actual_pages_opened": true
+  },
+  "publisher_liveness": {
+    "timer": "ActiveState=active\nSubState=waiting\n",
+    "service": "Result=success\nExecMainStatus=0\nActiveState=inactive\nSubState=dead\n",
+    "note": "Future shared publisher handoff. Timer liveness does not prove target Instagram or website publication."
+  },
+  "remaining": "Leave valid SCHEDULED SOCIAL/ARTICLE at19Nov20WIB to shared publisher. Target InstagramID, website publication and targetmetrics unavailable. No restart/deployment/protectedrow changes."
+}
