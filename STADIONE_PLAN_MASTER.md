@@ -3238,3 +3238,7 @@ Publisio worker aktif terbaru dxjyjiwl2jw5teima6e6ukso-20261119T063828 diperiksa
 ### Verifikasi rilis d94eb85
 
 Build production lulus. Preflight /login sukses sebelum pengalihan symlink atomik. Produksi kini /opt/stadione-releases/d94eb85, service active, login publik200, admin CMS307. Tidak ada perubahan data, jadwal atau publikasi dari pekerjaan ini. Commit editorial a02ef24/78df26a yang masuk bersamaan hanya bukti editorial/dokumentasi, dipertahankan. Tidak mengklaim hasil konten riil atau QA suara selesai. Narasi Publisio masih ECONNREFUSED dan provider OpenAI Stadione belum tersedia.
+
+## 19 November 2026 — Integrasi narasi Publisio disetujui pemilik
+
+Pemilik secara eksplisit mengizinkan menyalakan/menggunakan Publisio dan VPS. Health clone kembali HTTP200 sebelum tindakan, voice taradfs tersedia; tidak melakukan restart yang tidak diperlukan. Implementasi narasi menerima publisio-taradfs, mengirim frase ke endpoint say bertoken dan memakai durasi audio sebenarnya untuk subtitle. UI menawarkan Tara DFS Publisio sebagai default. OpenAI tetap pilihan terpisah, tidak diam-diam mengganti suara. Credential hanya environment produksi, tidak Git. Pengujian TypeScript lulus. Berikutnya konfigurasi private dari layanan Publisio yang sama, tes suara nyata, build/deploy. Rollback kode ke c0c8130; env sebelumnya dibackup privat. Ketergantungan GPU laptop/tunnel tetap, layanan belum independen24jam.

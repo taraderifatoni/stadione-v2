@@ -1848,7 +1848,7 @@ function EditorModal({
   );
   const [generating, setGenerating] = useState(false);
   const [narrating, setNarrating] = useState(false);
-  const [narratorVoice, setNarratorVoice] = useState("coral");
+  const [narratorVoice, setNarratorVoice] = useState("publisio-taradfs");
   let illustratedAudio: {motion?:"static"|"photo-pan";scenes?:{title?:string;cutout_url?:string}[];audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
   try {illustratedAudio=JSON.parse(enginePacket)?.media?.illustration_reel} catch { /* Editor may be typing JSON. */ }
   function selectReelMotion(motion: "static" | "photo-pan") {
@@ -2112,7 +2112,7 @@ function EditorModal({
                   <option value="static">Ilustrasi tetap</option><option value="photo-pan">Foto bergerak halus</option>
                 </select>
               </label>}
-              <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
+              <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="publisio-taradfs">Tara DFS · Publisio</option><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
               {illustratedAudio?.motion === "photo-pan" && illustratedAudio.scenes?.map((scene,index)=><label key={index} className="block">Cutout adegan {index+1} (PNG transparan, opsional)
                 <input key={`cutout-${index}-${scene.cutout_url || ""}`} className="input mt-1" defaultValue={scene.cutout_url || ""} placeholder="https://.../subjek.png" onBlur={e=>{if(e.target.value.trim() !== (scene.cutout_url || "")) updateSceneCutout(index,e.target.value.trim())}} />
               </label>)}
