@@ -405,6 +405,14 @@ export async function renderIllustrationReel(packet: Packet) {
       const text=await measuredText(scene.narration,880,260,46,true);
       await fs.writeFile(caption,text.buffer);
       const moving = spec.motion === "photo-pan";
+      const cutoutFile = join(dir, `subject-${i}.png`);
+      const hasCutout = moving && !!scene.cutout_url;
+      if (hasCutout) {
+        const subjectBytes=await sourceBytes(scene.cutout_url!,12_000_000);
+        const subjectInfo=await sharp(subjectBytes,{limitInputPixels:30000000}).metadata();
+        if (subjectInfo.format!=="png" || !subjectInfo.hasAlpha || !subjectInfo.width || !subjectInfo.height || subjectInfo.width<200 || subjectInfo.height<200) throw new Error("Cutout perlu PNG transparan berkualitas.");
+        await sharp(subjectBytes).resize(720,700,{fit:"contain",background:"#00000000"}).png().toFile(cutoutFile);
+      }
       const artFile = join(dir, `art-${i}.png`);
       if (moving) {
         await fs.writeFile(artFile, art);
@@ -413,10 +421,11 @@ export async function renderIllustrationReel(packet: Packet) {
       }
       const frames = Math.max(1, Math.round(duration * 30));
       const zoom = i % 2 ? `1.045-0.045*on/${frames}` : `1+0.045*on/${frames}`;
-      const filter = moving
-        ? `[3:v]scale=1890:1530,zoompan=z='${zoom}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=${frames}:s=945x765:fps=30[art];[0:v]setsar=1[base];[base][art]overlay=67:480[scene];[scene][2:v]overlay=(W-w)/2:1450[out]`
+      const filter = hasCutout
+        ? `[3:v]scale=1890:1530,zoompan=z='${zoom}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=${frames}:s=945x765:fps=30,boxblur=20:1[art];[0:v]setsar=1[base];[base][art]overlay=67:480[scene];[4:v]format=rgba[subject];[scene][subject]overlay=x='(W-w)/2+10*sin(t*1.2)':y='505+8*sin(t*0.9)'[foreground];[foreground][2:v]overlay=(W-w)/2:1450[out]`
+        : moving ? `[3:v]scale=1890:1530,zoompan=z='${zoom}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=${frames}:s=945x765:fps=30[art];[0:v]setsar=1[base];[base][art]overlay=67:480[scene];[scene][2:v]overlay=(W-w)/2:1450[out]`
         : "[0:v]setsar=1[base];[base][2:v]overlay=(W-w)/2:1450[out]";
-      await run("ffmpeg",["-v","error","-y","-nostdin","-loop","1","-framerate","30","-i",image,"-ss",String(scene.start),"-t",String(duration),"-i",mixedAudio,"-i",caption,...(moving ? ["-i",artFile] : []),"-filter_complex",filter,"-map","[out]","-map","1:a:0","-t",String(duration),"-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-c:a","aac","-ar","48000","-ac","2",segment],{timeout:180000,maxBuffer:2000000});
+      await run("ffmpeg",["-v","error","-y","-nostdin","-loop","1","-framerate","30","-i",image,"-ss",String(scene.start),"-t",String(duration),"-i",mixedAudio,"-i",caption,...(moving ? ["-i",artFile] : []),...(hasCutout ? ["-loop","1","-framerate","30","-i",cutoutFile] : []),"-filter_complex",filter,"-map","[out]","-map","1:a:0","-t",String(duration),"-c:v","libx264","-preset","veryfast","-crf","23","-pix_fmt","yuv420p","-c:a","aac","-ar","48000","-ac","2",segment],{timeout:180000,maxBuffer:2000000});
       segments.push(segment);
     }
     const list=join(dir,"concat.txt"), output=join(dir,"reel.mp4");
@@ -424,7 +433,7 @@ export async function renderIllustrationReel(packet: Packet) {
     await run("ffmpeg",["-v","error","-y","-nostdin","-f","concat","-safe","0","-i",list,"-c","copy","-movflags","+faststart",output],{timeout:120000,maxBuffer:2000000});
     const meta=await probe(output), video=meta.streams.find((s: {codec_type:string})=>s.codec_type==="video"), duration=Number(meta.format.duration);
     if(video?.width!==1080 || video?.height!==1920 || !meta.streams.some((s: {codec_type:string})=>s.codec_type==="audio") || duration < 7.8 || duration > 90.2) throw new Error("Video ilustrasi gagal audit format atau durasi.");
-    return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,visual_template:spec.motion === "photo-pan" ? "stadione-photo-pan-v1" : "kane-illustration-v4",motion:spec.motion || "static",subtitle_timing:"scene-aligned",illustration:true,narration:true,background_music:!!spec.music,music_credit:spec.music?.credit || null,ai_footage:true}};
+    return {bytes:await fs.readFile(output),audit:{ok:true,width:1080,height:1920,duration,scene_count:spec.scenes.length,visual_template:spec.motion === "photo-pan" ? "stadione-photo-pan-v1" : "kane-illustration-v4",motion:spec.motion || "static",cutout_scenes:spec.scenes.filter(s=>s.cutout_url && spec.motion==="photo-pan").length,subtitle_timing:"scene-aligned",illustration:true,narration:true,background_music:!!spec.music,music_credit:spec.music?.credit || null,ai_footage:true}};
   } finally {await fs.rm(dir,{recursive:true,force:true});}
 }
 

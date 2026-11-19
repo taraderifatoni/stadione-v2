@@ -3189,3 +3189,9 @@ Permintaan pemilik mencakup perapian carousel tanpa perubahan cover dan penambah
 
 - Release dibuat dari commit 44c4dd6, build lulus. Preflight proses terpisah merespons CMS307; setelah symlink atomik dan restart, service active, /login lokal HTTP200, /admin/cms lokal HTTP307 dan /login publik HTTP200. Login admin terautentikasi dan rendering konten riil belum diuji; tidak ada posting atau perubahan CMS.
 - Seluruh carousel historis tetap memakai aset tersimpan. Pengubahan ukuran berlaku pada preview baru. Pilihan motion baru hanya bekerja pada packet ilustrasi yang dipilih eksplisit; default static. Rollback layanan: symlink /opt/stadione-current ke /opt/stadione-releases/ba88c8d dan restart stadione; jangan ubah data. Sisa pekerjaan sama dengan entry implementasi awal, terutama cutout per elemen, subtitle per-frasa, pilihan format lebih luas, worker render dan QA editorial nyata.
+
+### 19 November 2026 — Cutout opsional untuk Reels ilustrasi
+
+- engine.ts menerima cutout_url HTTPS per scene. engine-media.ts memeriksa PNG memiliki alpha dan resolusi minimum200x200, menampilkan subjek di atas foto adegan yang diburamkan; gerak subjek pelan dan tipografi/subtitle tetap. Jalur ini hanya aktif pada motion photo-pan dan cutout_url yang diberikan; Reels static/historis tetap.
+- Editor CMS menampilkan masukan cutout untuk setiap scene yang valid pada mode Foto bergerak halus. URL dimasukkan ke packet dan tetap perlu disimpan sebelum preview. Hak gambar mengikuti audit image_credit/rights_evidence per scene; tidak mengekstrak subjek otomatis, tidak mengklaim izin dari URL.
+- QA sintetis: TypeScript, qa-engine, qa-illustration-reel termasuk render cutout nyata sukses. Belum ada pemeriksaan mata atas subjek manusia/foto editorial nyata, dan belum ada subtitle per-frasa. Tidak ada perubahan DB/jadwal/konten. Rollback kode ke44c4dd6. Deployment menunggu build/release.

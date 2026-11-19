@@ -1849,7 +1849,7 @@ function EditorModal({
   const [generating, setGenerating] = useState(false);
   const [narrating, setNarrating] = useState(false);
   const [narratorVoice, setNarratorVoice] = useState("coral");
-  let illustratedAudio: {motion?:"static"|"photo-pan";audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
+  let illustratedAudio: {motion?:"static"|"photo-pan";scenes?:{title?:string;cutout_url?:string}[];audio_url?:string;music?:{url?:string;credit?:string;rights_evidence?:string;rights_status?:string;volume?:number}} | undefined;
   try {illustratedAudio=JSON.parse(enginePacket)?.media?.illustration_reel} catch { /* Editor may be typing JSON. */ }
   function selectReelMotion(motion: "static" | "photo-pan") {
     try {
@@ -1858,6 +1858,17 @@ function EditorModal({
       packet.media.illustration_reel.motion=motion;
       setEnginePacket(JSON.stringify(packet,null,2));
       toast.success("Gerak foto dipilih. Simpan draf sebelum membuat preview.");
+    } catch(error) { toast.error(error instanceof Error ? error.message : "Packet belum valid."); }
+  }
+  function updateSceneCutout(index:number, url:string) {
+    try {
+      const packet=JSON.parse(enginePacket);
+      const scene=packet?.media?.illustration_reel?.scenes?.[index];
+      if (!scene) throw Error("Adegan tidak ditemukan.");
+      if (url && !/^https:\/\//.test(url)) throw Error("Cutout harus URL HTTPS publik.");
+      if (url) scene.cutout_url=url; else delete scene.cutout_url;
+      setEnginePacket(JSON.stringify(packet,null,2));
+      toast.success("Cutout disimpan dalam packet. Simpan draf sebelum preview.");
     } catch(error) { toast.error(error instanceof Error ? error.message : "Packet belum valid."); }
   }
   function selectFreeMusic() {
@@ -2102,6 +2113,9 @@ function EditorModal({
                 </select>
               </label>}
               <div className="flex gap-2"><select className="input" value={narratorVoice} onChange={e=>setNarratorVoice(e.target.value)}><option value="coral">Coral</option><option value="cedar">Cedar</option><option value="marin">Marin</option><option value="onyx">Onyx</option></select><button type="button" disabled={narrating} onClick={generateNarration} className="rounded border px-3">{narrating ? "Membuat..." : "Buat narasi AI"}</button></div>
+              {illustratedAudio?.motion === "photo-pan" && illustratedAudio.scenes?.map((scene,index)=><label key={index} className="block">Cutout adegan {index+1} (PNG transparan, opsional)
+                <input key={`cutout-${index}-${scene.cutout_url || ""}`} className="input mt-1" defaultValue={scene.cutout_url || ""} placeholder="https://.../subjek.png" onBlur={e=>{if(e.target.value.trim() !== (scene.cutout_url || "")) updateSceneCutout(index,e.target.value.trim())}} />
+              </label>)}
               <button type="button" onClick={selectFreeMusic} className="rounded border px-3 py-2">Pakai musik gratis CC0 · Game Travel 1 (Piano)</button>
               {illustratedAudio?.music?.url && <audio controls className="w-full" src={illustratedAudio.music.url} />}
               {illustratedAudio?.audio_url && <audio controls className="w-full" src={illustratedAudio.audio_url} />}
