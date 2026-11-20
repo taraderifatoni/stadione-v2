@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-11-20T12:07:06.125Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "07eaaf1d-ca97-4764-a79a-c11c1668e4f8",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-20:fri-pm",
+    "event_key": "indonesia-myanmar-u17-dolvi-equalizer-20261120",
+    "scheduled_at": "2026-11-20T13:00:00+00:00",
+    "time_wib": "20 November 2026 20.00 WIB",
+    "auto_publish": true,
+    "assets": 4,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "9c863de7-d14e-4729-94ec-8ca6ad16d791",
+    "status": "SCHEDULED",
+    "slug": "garuda-dua-kali-mengejar-07eaaf1d",
+    "scheduled_at": "2026-11-20T13:00:00+00:00",
+    "title": "Garuda Dua Kali Mengejar",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "f016d5ef0e9b2040c706fcedc055395c932bc9f12d1361b5d2e6f1b6311fa697",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 64634,
+      "sha256": "2c26f6d84986192092abff285fd9eee29fb05fc20148409967a4c593aff1f43d",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 521190,
+      "sha256": "56835fbbf5b6400996e81591a1ffb76d7b653f4d3d91507cae033f48c852282b",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 218377,
+      "sha256": "1dec2aee9594839151f670bed10729a09fd8bffbff95d74797746314420178c7",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 213766,
+      "sha256": "7196c9d2746739b616f2219d8910cc9734f456ada28b099bb6079cdc108ac665",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 248566,
+      "sha256": "e999124b228b6061747a14b27b1feea59344bc1225ca179dd1502747bbbe4681",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 97,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 270,
+  "current_rows": 271,
+  "unchanged_existing_other_rows": 269,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 7,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 45,
+    "sha256": "d5bc1ea4ff0bc0266ddbf9fe21ffc0feb7734e381dbf1ea08c136412cdd414c0",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_four_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/4",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future20WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "12f972ec96b25e363bb9268f0fe2fc2b274c6404",
+  "publisher_handoff": {
+    "checked_at": "2026-11-20T12:07:56.112Z",
+    "timer": {
+      "LastTriggerUSec": "Fri 2026-11-20 12:07:27 UTC",
+      "ActiveState": "active",
+      "SubState": "waiting"
+    },
+    "service": {
+      "Result": "success",
+      "ExecMainExitTimestamp": "Fri 2026-11-20 12:07:27 UTC",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "action": "Read-only health check; no restart, direct publication or reschedule. Leave valid SCHEDULED pair for sharedpublisher20WIB.",
+    "active_release": "/opt/stadione-releases/807f6ff"
+  },
+  "review_commit": "12f972ec96b25e363bb9268f0fe2fc2b274c6404",
+  "format_decision": {
+    "initial": "REEL",
+    "final": "CAROUSEL",
+    "mandatory_illustration": false,
+    "failure_stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+    "reason": "Three actual YouTube pages browserthrottled; standardlicence/sourcecredit doesnotgrantvideo/audio redistribution. Two previewsstaleaftergame, resulttitlecandidatepermissionunconfirmed. OwnerlicensedTaraVOcannotlicencefootage. NoUSABLEcandidate bypassed.",
+    "research_digest": "cb2ef80855de0879e3ced4ea0ec03e2a4bda2cadb325a95c2d35d54a712b0dad",
+    "guard_issues": [],
+    "owner_notification_required": true
+  },
+  "source_display_policy": {
+    "visible_cover": "AFC",
+    "caption_news_sources": [
+      "AFC",
+      "Medcom",
+      "detikSulsel"
+    ],
+    "internal_audit_source_label": "THE-AFC.COM",
+    "reason": "Owner19Novrequires shortpublicpublishernames. Internalcanonicalprimaryhost retained underunchangedrenderercontract; AFCandthe-afc.comsameentity. Photocredit/licenceseparate."
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "myanmar",
+      "dolvi",
+      "dua kali"
+    ],
+    "broad_terms": [
+      "myanmar",
+      "dolvi"
+    ],
+    "broad_matches": {
+      "cms": [
+        "058717c9-523a-4a8f-a4c4-6ca0b065ec0b",
+        "19dca950-a548-43b3-9eca-8e1296b68c51"
+      ],
+      "instagram": [
+        "18117075515117636"
+      ]
+    },
+    "resolution": "FullcaptionandARTICLEof14NovKamboja2-0read: DolviopenerandfutureMyanmarfixturemention, not20Nov2-2story. Protectedpublishedpairuntouched. Adddua kalitodescribecurrentevent, fullhistory0actualduplicates."
+  },
+  "metrics": {
+    "target": null,
+    "history_file": "metrics-baseline.json",
+    "limitation": "Targetnotpublished; no exact24h/7d, retention or nonfollower metrics assumed."
+  },
+  "remaining": "Sharedpublisher to publish Instagram andARTICLE atscheduledclock. SCHEDULED notPUBLISHED. Report concreteReelfailure despitecompletedcarousel."
+}
