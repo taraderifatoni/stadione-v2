@@ -1,0 +1,139 @@
+{
+  "checked_at": "2026-11-20T00:23:08.236Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "38f218b7-5975-417b-b6c2-bb8bb10b39df",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-20:fri-am",
+    "event_key": "indonesia-slovenia-bjkc-clay-preview-20261120",
+    "scheduled_at": "2026-11-20T01:00:00+00:00",
+    "time_wib": "20 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "92247324-fbfd-4302-93c8-75ba51a3ee17",
+    "status": "SCHEDULED",
+    "slug": "tanah-liat-jadi-ujian-awal-indonesia-38f218b7",
+    "scheduled_at": "2026-11-20T01:00:00+00:00",
+    "title": "Tanah Liat Jadi Ujian Awal Indonesia",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "d1084cbc26a2ff02fcb2a38f14e454dffec2d8f5946e3f209aab9b879a686aba",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 28953,
+      "sha256": "2b59dc25aa07435924ddc10f82262a2bbf5cc515abb1f853b404fc37994daf1f",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 601367,
+      "sha256": "cb226f9385de149fb050ee0d47f60869da466cd06975e25d04bec0077a73dd5b",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 222485,
+      "sha256": "698d1d0d84f82b76eecc10c6909799062764f910f923560b818f130e9f92115f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 205233,
+      "sha256": "c921eafeacfce11b8d14afbcce4a5071b9f58d10117af197657d3eb6d2b7d4cb",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 213215,
+      "sha256": "2cdf957c00fb02cb8858a81ebcd0c0eeee1234a80cf60fd67fffc5c283a5dac1",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 211674,
+      "sha256": "e227b2f2df0352659c9076eb24e2ae410ee55098e6c4f449125a1c4026f43500",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 96,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 269,
+  "current_rows": 270,
+  "unchanged_existing_other_rows": 268,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 6,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 44,
+    "sha256": "e5f4f80449aec5848df4b4c57b11623798b693a9f46d37aaad2fcbd196a815bb",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_five_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/5",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "f787910d5801d68d3e9b05442fed4fe0cf61a371",
+  "publisher_handoff": {
+    "checked_at": "2026-11-20T00:23:50.707Z",
+    "timer": {
+      "NextElapseUSecRealtime": "",
+      "LastTriggerUSec": "Fri 2026-11-20 00:23:45 UTC",
+      "ActiveState": "active",
+      "SubState": "waiting"
+    },
+    "service": {
+      "Result": "success",
+      "ExecMainExitTimestamp": "Fri 2026-11-20 00:23:45 UTC",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "action": "Read-only health check. No restart, direct publish or reschedule. Future valid SCHEDULED pair left for shared publisher at original clock.",
+    "active_release": "/opt/stadione-releases/807f6ff"
+  },
+  "review_commit": "f787910d5801d68d3e9b05442fed4fe0cf61a371",
+  "original_format": "CAROUSEL",
+  "reel_fallback": false,
+  "mandatory_illustration": false,
+  "source_display_policy": {
+    "visible_cover": "BJK CUP",
+    "caption_news_sources": [
+      "BJK Cup",
+      "Tenis Slovenija",
+      "ANTARA"
+    ],
+    "private_audit_host": "BILLIEJEANKINGCUP.COM",
+    "basis": "Owner19NovMastercorrection: publicnews attribution shortpublishernames, notlongURLs/auditnotes. Coverimage usesrecognizableorganizername; internal renderer source_label remains canonicalprimaryhost. Sameentity, noalterationofsharedcontract. Photoattribution/separatelicencelinks retained."
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "metrics": {
+    "target": null,
+    "history_file": "metrics-baseline.json",
+    "limitation": "Target not yet published; no target performance, exact24h/7d, retention or non-follower metrics assumed."
+  },
+  "remaining": "Instagram and website publication to be performed at scheduled clock by shared publisher. SCHEDULED is not PUBLISHED."
+}
