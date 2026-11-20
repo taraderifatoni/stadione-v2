@@ -1,0 +1,5 @@
+# Photo and derivatives
+
+“Aldila Sutjiadi (2024 DC Open) 04.jpg”, 29 July 2024, Hameltion. Source: https://commons.wikimedia.org/?curid=168599024 . CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/ . Original photo at practice in Washington, not Slovenia 2026. Full public grant and licence deed read; original HTTP200, 5573019 bytes, SHA256 74e261626e1f29829a2d68d1db4337077e639fb210d33b4f1147dd18b517d192. Raw6000x4000, EXIF8, auto-oriented4000x6000. Original opened native before editing.
+
+Cover uses authentic photographic face, hair, archive age, white visor and BNI/ASICS tennis kit/pose, converted to grayscale. Other people/background replaced with editorial collage and typography; PORTRAIT_MERAH chosen by committed helper rotation. Page1/5 and archive2024 explicit. Website hero is clean original crop600,600,2300,1887 after orientation, resized512x420 without text. Own crop/collage contributions use sameCCBYSA4 without additional restrictions or implied endorsement. Attribution, source, licence and changes disclosed separately from shortnews source names.

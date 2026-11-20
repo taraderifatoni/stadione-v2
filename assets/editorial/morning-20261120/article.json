@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Tanah Liat Jadi Ujian Awal Indonesia",
+  "dek": "Panduan duel 20–21 November di Velenje. Foto arsip Aldila 2024: Hameltion, CC BY-SA 4.0; diolah.",
+  "caption": "TANAH LIAT JADI UJIAN AWAL INDONESIA\n\nTim tenis putri Indonesia menghadapi Slovenia di lapangan tanah liat dalam ruangan, Bela Dvorana, Velenje, pada 20–21 November 2026. Kapten Christopher Rungkat menempatkan adaptasi lapangan sebagai tantangan awal. Sebagian pemain Indonesia sudah lama tidak bermain di tanah liat.\n\n“Jadi adaptasi mungkin ini adalah hari kedua untuk Dila dan kawan-kawan.” kata Christo kepada ANTARA pada 19 November. Ia ingin memanfaatkan sesi latihan terakhir sebelum bertanding. Menurutnya, kondisi lapangan tersebut dapat menjadi keuntungan bagi tuan rumah.\n\nJumat, 20 November, Mischka Goenadi dijadwalkan menghadapi Dalila Jakupovic, disusul Lulwa Naswardhani melawan Tamara Zidansek. Sabtu, 21 November, agenda dibuka dengan ganda Mischka/Aldila Sutjiadi melawan Andreja Klepac/Nika Radisic, lalu dua partai tunggal berikutnya.\n\nPertemuan memakai empat partai tunggal dan satu ganda; tim pertama yang meraih tiga poin menang. Karena itu, kemenangan ganda saja tidak mencukupi. Dua tunggal pembuka layak diikuti untuk melihat posisi awal Indonesia sebelum Aldila turun. Pemenang pertemuan menuju Kualifikasi 2027.\n\nSimpan urutan laganya untuk mengikuti perjuangan Indonesia. Menurutmu, apa yang paling perlu diperhatikan saat pemain menyesuaikan diri dengan tanah liat: pantulan bola atau pergerakan? Beri alasan.\n\nSumber: BJK Cup, Tenis Slovenija, ANTARA.\n\nFoto arsip Aldila, Washington 2024: Hameltion/Wikimedia Commons, CC BY-SA 4.0. https://commons.wikimedia.org/?curid=168599024 | https://creativecommons.org/licenses/by-sa/4.0/ . Crop dan kolase diolah; adaptasi berlisensi sama.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Adaptasi Sebelum Mengejar Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "VENUE",
+        "ADAPT"
+      ],
+      "text": "Tim tenis putri Indonesia menghadapi Slovenia di lapangan tanah liat dalam ruangan, Bela Dvorana, Velenje, pada 20–21 November 2026. Kapten Christopher Rungkat menempatkan adaptasi lapangan sebagai tantangan awal. Sebagian pemain Indonesia sudah lama tidak bermain di tanah liat."
+    },
+    {
+      "id": "adaptation",
+      "heading": "Waktu Mengenali Lapangan",
+      "kind": "QUOTE",
+      "claim_ids": [
+        "ADAPT",
+        "VENUE"
+      ],
+      "quote": {
+        "text": "Jadi adaptasi mungkin ini adalah hari kedua untuk Dila dan kawan-kawan.",
+        "source_id": "ANTARA"
+      },
+      "text": "“Jadi adaptasi mungkin ini adalah hari kedua untuk Dila dan kawan-kawan.” kata Christo kepada ANTARA pada 19 November. Ia ingin memanfaatkan sesi latihan terakhir sebelum bertanding. Menurutnya, kondisi lapangan tersebut dapat menjadi keuntungan bagi tuan rumah."
+    },
+    {
+      "id": "schedule",
+      "heading": "Urutan Laga untuk Disimpan",
+      "kind": "FACT",
+      "claim_ids": [
+        "DRAW",
+        "VENUE"
+      ],
+      "text": "Jumat, 20 November, Mischka Goenadi dijadwalkan menghadapi Dalila Jakupovic, disusul Lulwa Naswardhani melawan Tamara Zidansek. Sabtu, 21 November, agenda dibuka dengan ganda Mischka/Aldila Sutjiadi melawan Andreja Klepac/Nika Radisic, lalu dua partai tunggal berikutnya."
+    },
+    {
+      "id": "stakes",
+      "heading": "Ganda Saja Belum Cukup",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "FORMAT",
+        "DRAW"
+      ],
+      "text": "Pertemuan memakai empat partai tunggal dan satu ganda; tim pertama yang meraih tiga poin menang. Karena itu, kemenangan ganda saja tidak mencukupi. Dua tunggal pembuka layak diikuti untuk melihat posisi awal Indonesia sebelum Aldila turun. Pemenang pertemuan menuju Kualifikasi 2027."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261116-klopp-rebuild-netherlands-preview-news",
+    "goal-20261118-germany-netherlands-match-report-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-20T00:13:24.103Z",
+    "article_digest": "d1084cbc26a2ff02fcb2a38f14e454dffec2d8f5946e3f209aab9b879a686aba"
+  }
+}

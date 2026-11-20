@@ -1,0 +1,517 @@
+{
+  "checked_at": "2026-11-20T00:22:17.418Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "base_commit": "7e79059e4dfde32ca5520eb79af375638d42726b",
+  "active_release": "/opt/stadione-releases/807f6ff",
+  "target": {
+    "id": "38f218b7-5975-417b-b6c2-bb8bb10b39df",
+    "plan_key": "2026-11-20:fri-am",
+    "scheduled_at": "2026-11-20T01:00:00Z",
+    "time_wib": "20 November 2026 08.00 WIB",
+    "pillar": "Olahraga Indonesia",
+    "initial_format": "CAROUSEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Tanah Liat Jadi Ujian Awal Indonesia",
+    "genre": "NEWS",
+    "words": 147,
+    "paragraphs": 4,
+    "slides": 5,
+    "digest": "d1084cbc26a2ff02fcb2a38f14e454dffec2d8f5946e3f209aab9b879a686aba",
+    "benchmarks": [
+      "goal-20261116-klopp-rebuild-netherlands-preview-news",
+      "goal-20261118-germany-netherlands-match-report-news"
+    ],
+    "complete_article_written_before_pagination": true,
+    "no_slide_quota_padding": true,
+    "direct_quote_exact_source": true
+  },
+  "references": {
+    "entries": 44,
+    "sha256": "e5f4f80449aec5848df4b4c57b11623798b693a9f46d37aaad2fcbd196a815bb",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-19T00:35:27.732Z",
+    "application": "NEWS16Novpreview: leadcentralchallenge, attributevoice/context andconditionalstakes. NEWS18Novreport: separateverifiedactions frominference, checkcontradictorydetails. FEATURE19Nov: quotecontext anddatadefinition, notforcedgenre. No newdailyreading/timestamp claimed."
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "BJK",
+        "url": "https://www.billiejeankingcup.com/en/news/slovenia-v-indonesia-2026-billie-jean-king-cup-play-offs-preview",
+        "publisher_group": "WORLD_TENNIS",
+        "primary": true,
+        "published_at": "2026-11-18",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "0ed0b85925dac7fc1f22c254261c0f1c99f2c75edde905ff8775b7eb5ed87148",
+        "evidence_characters": 9029,
+        "full_source_read": true,
+        "method": "Entire public rich-text narrative, sections, nominations, schedule and broadcast table decoded from NextRSC data of same HTTP200 public article. Browser rendered onlytitle/relatedlinks, notclaimedfullbrowserread. Alltextvalues9056charsread."
+      },
+      {
+        "id": "ANTARA",
+        "url": "https://www.antaranews.com/berita/5866355/christo-sebut-lapangan-tanah-liat-jadi-tantangan-di-playoff-bjk-cup",
+        "publisher_group": "ANTARA",
+        "primary": true,
+        "published_at": "2026-11-19T16:40:00Z",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "6aa16801296ae411f6c678db55aff1b6a01a73e471b63bea40fc84b4220ff81f",
+        "evidence_characters": 6887,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed readHTTP200 throughclosing/byline. Navigation notcountedas narrative."
+      },
+      {
+        "id": "DRAW",
+        "url": "https://www.antaranews.com/berita/5866323/indonesia-kembali-hadapi-slovenia-setelah-22-tahun-di-playoff-bjk-cup",
+        "publisher_group": "ANTARA",
+        "primary": false,
+        "published_at": "2026-11-19T16:17:00Z",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "33ce11b1debb22a431d8ccfa9cb9612c360e4905b7daebda6182252b562ad802",
+        "evidence_characters": 6682,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed readHTTP200 throughclosing/byline. Navigation notcountedas narrative."
+      },
+      {
+        "id": "SLOVENIA",
+        "url": "https://www.tenis-slovenija.si/bjk-jutri-najprej-dalila-jakupovic-nato-se-tamara-zidansek/",
+        "publisher_group": "TENISSLOVENIJA",
+        "primary": true,
+        "published_at": "2026-11-19",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "96af47008b8b1ded1592267d8c6586d73bb8a25422f5055e75a2f50da632a3c5",
+        "evidence_characters": 5305,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed readHTTP200 throughclosing/byline. Navigation notcountedas narrative."
+      },
+      {
+        "id": "POOL",
+        "url": "https://peradaban.id/indonesia-hadapi-slovenia-playoff-billie-jean",
+        "publisher_group": "PERADABAN",
+        "primary": false,
+        "published_at": "2026-11-19T23:05:00Z",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "82c3062baa13a22b7b6673640654a9d3c8ec971c81ec6acb507291c140b1e705",
+        "evidence_characters": 6016,
+        "full_source_read": true,
+        "method": "Complete public report readHTTP200; explicitly repeatsKompas/ANTARA, discoveryonlynotindependentcorroborator."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Aldila_Sutjiadi_(2024_DC_Open)_04.jpg",
+        "publisher_group": "HAMELTION",
+        "primary": true,
+        "published_at": "2024-07-29",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "da25d374f2afabc4310c1cb988c62ad19ef850a97a6ce88a4a5105d39a0ce843",
+        "evidence_characters": 4769,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed readHTTP200 throughclosing/byline. Navigation notcountedas narrative."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-20T00:13:24.103Z",
+        "evidence_text_sha256": "98018f07e1fa37f6806e2578c3c48420db3e3385eef853fa4539616027ea8029",
+        "evidence_characters": 2870,
+        "full_source_read": true,
+        "method": "Complete public report/grant/deed readHTTP200 throughclosing/byline. Navigation notcountedas narrative."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-20",
+      "fetched_at": "2026-11-20T00:06:14.594Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 11
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 15
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 18
+        }
+      }
+    },
+    "selection": "20Novlatestpool containsIndonesiaSloveniaBJKCup throughPeradaban/CWIBC. SelectactualIndonesiannonfootball subject, nothigh-rankedfootballitems orunrelatedUSsportstrends. FullPeradabanreadexplicitlyattributestoKompas/ANTARA; findoriginalANTARAinterviews andprimaryorganizer/hostreports.",
+    "verified": "OrganizerfullRSC9056chars throughbroadcasttable, hostfederation5361chars throughallquotes/closing, twoANTARAoriginalreports6890/6685chars throughbylineclosing readHTTP200. Coreclay/date/draw/formatchecked; noeventresultbeforestart.",
+    "discrepancies_and_exclusions": "BJKolderfiveplayernominationsincludePriska; latest19Novhostdraw/ANTARAcurrentfourplayerrosterused. SlovenianGunadi/Medyana spelling versusIndonesianGoenadi/Meydiana; useMischkaGoenadi consistentBJK/Antara. OrganizerFriday13local12GMT=19WIB andSaturday11local10GMT=17WIB, whileVidiolistFriday17WIB maydifferentbroadcastclock; exactclock/TVplatform omitted, noinventedavailability/freewatch claim. Ranking/headtohead/recordclaims notneeded, notimported. Christoadaptationquoteincludingmungkin remains exact.",
+    "source_display_policy": {
+      "visible_cover": "BJK CUP",
+      "caption_news_sources": [
+        "BJK Cup",
+        "Tenis Slovenija",
+        "ANTARA"
+      ],
+      "private_audit_host": "BILLIEJEANKINGCUP.COM",
+      "basis": "Owner19NovMastercorrection: publicnews attribution shortpublishernames, notlongURLs/auditnotes. Coverimage usesrecognizableorganizername; internal renderer source_label remains canonicalprimaryhost. Sameentity, noalterationofsharedcontract. Photoattribution/separatelicencelinks retained."
+    },
+    "reel_research": {
+      "required": false,
+      "reason": "OriginalslotCAROUSEL, formatunchanged. Nofallback ormandatoryillustration exception."
+    }
+  },
+  "media": {
+    "photo_author": "Hameltion",
+    "photo_date": "2024-07-29",
+    "source": "https://commons.wikimedia.org/wiki/File:Aldila_Sutjiadi_(2024_DC_Open)_04.jpg",
+    "commons_curid": 168599024,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "original_sha256": "74e261626e1f29829a2d68d1db4337077e639fb210d33b4f1147dd18b517d192",
+    "original_bytes": 5573019,
+    "raw_dimensions": [
+      6000,
+      4000
+    ],
+    "exif_orientation": 8,
+    "oriented_dimensions": [
+      4000,
+      6000
+    ],
+    "original_acquisition_http": 200,
+    "grant_and_deed_full_read": true,
+    "identity": "AuthenticAldilaSutjiadiWashingtonpractice29July2024. FacehairagewhitevisorBNIASICStop/shortsracketpose retained; grayscaleconversiononcover. NotSlovenia2026photo, no inventedaction/kit.",
+    "own_derivative_contributions_same_share_alike": true,
+    "cover_variant": "PORTRAIT_MERAH",
+    "previous_variants": [
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA"
+    ],
+    "visible_source_label": "BJK CUP",
+    "audit_source_host": "BILLIEJEANKINGCUP.COM",
+    "page_count": 5,
+    "cover_input_sha256": "cc002aad2c1c0ff46fb27dcf8c4c546d2d4fdf7d8e822c4a57c590c12b157bc6",
+    "hero_sha256": "2b59dc25aa07435924ddc10f82262a2bbf5cc515abb1f853b404fc37994daf1f",
+    "hero_crop_oriented": [
+      600,
+      600,
+      2300,
+      1887
+    ],
+    "hero_clean_original_without_overlay": true
+  },
+  "native_review": {
+    "all_five_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-20T00:22:17.418Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/5",
+    "safe_wrap": true,
+    "cream_text_only_article_pages": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "BILLIEJEANKINGCUP.COM",
+        "cover_input_sha256": "cc002aad2c1c0ff46fb27dcf8c4c546d2d4fdf7d8e822c4a57c590c12b157bc6",
+        "output_sha256": "cb226f9385de149fb050ee0d47f60869da466cd06975e25d04bec0077a73dd5b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "ce256f5be11eca25e8acbd11fc93aee34f643991a00e6e9e6720eb38508874a3",
+        "output_sha256": "698d1d0d84f82b76eecc10c6909799062764f910f923560b818f130e9f92115f",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 574,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 609,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 902,
+            "height": 574,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "debe0f966c9766c3bb61af67afd1c831b81881de82ecdb819308917d6b61bd63",
+        "output_sha256": "c921eafeacfce11b8d14afbcce4a5071b9f58d10117af197657d3eb6d2b7d4cb",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 507,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 584,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 933,
+            "height": 507,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "0230222c0a5f136a0348406cb9c51dc195e09d2a430e128d1e691f7ad4321205",
+        "output_sha256": "2cdf957c00fb02cb8858a81ebcd0c0eeee1234a80cf60fd67fffc5c283a5dac1",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 516,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 632,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 929,
+            "height": 516,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "5d8cb2c6a4a7d93476d51594e689f765efbf9c6af5767d0e8c4935ec242e7187",
+        "output_sha256": "e227b2f2df0352659c9076eb24e2ae410ee55098e6c4f449125a1c4026f43500",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 574,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 845,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 929,
+            "height": 574,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-20T00:22:17.418Z",
+    "baseline_rows": 269,
+    "current_rows": 269,
+    "unchanged_other_rows": 268,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "38f218b7-5975-417b-b6c2-bb8bb10b39df",
+      "status": "PENDING_REVIEW",
+      "scheduled_at": "2026-11-20T01:00:00+00:00",
+      "format": "CAROUSEL",
+      "pillar": "Olahraga Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 5,
+    "weekly_routine_proposed": 6,
+    "weekly_limit": 12,
+    "instagram_media": 96,
+    "duplicate_matches": 0
+  },
+  "background_preparation": {
+    "changed_target_fields": [
+      "status",
+      "source_url",
+      "source_snapshot",
+      "editorial_meta",
+      "updated_at"
+    ],
+    "status": "PENDING_REVIEW",
+    "engine_state": "BLOCKED"
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "slovenia",
+      "indonesia"
+    ],
+    "broader_check": "All269CMS/96Instagram baseline searchedSlovenia/Sutjiadi/BillieJean/BJKCup, nopriorstory. PublishedHilgers19Nov observedreadonly, nevermodified. Otherrows/protectedhistorypreserved."
+  },
+  "metrics": {
+    "checked_at": "2026-11-20T00:22:17.418Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18118258403125122",
+        "published_at": "2026-11-19T13:01:42+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17998277448050242",
+        "published_at": "2026-11-19T01:00:41+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17910739812334604",
+        "published_at": "2026-11-18T01:01:55+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18101685965207407",
+        "published_at": "2026-11-17T13:01:06+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 1,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "remaining": "Commit/pushreviewproof beforecommittedadapterschedule, verifyidenticalcanonicalARTICLE/body/dek/digest/clock/hero andpublicbytes/gate/scope/idempotence. FutureSCHEDULEDhandoff notpublication."
+}
