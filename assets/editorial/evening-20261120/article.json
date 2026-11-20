@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Garuda Dua Kali Mengejar",
+  "dek": "Gol Dolvi menjaga catatan tanpa kalah. Foto arsip pelatih Nascimento 2007: Luctor IV, CC BY-SA 3.0; diolah.",
+  "caption": "GARUDA DUA KALI MENGEJAR\n\nTimnas Indonesia U-17 menutup kualifikasi tanpa kekalahan setelah bermain imbang 2–2 dengan Myanmar di Stadion Thuwunna, Yangon, Jumat (20/11/2026). Gol Dolvi Salossa pada masa tambahan waktu menyelamatkan satu poin. Garuda Muda sebelumnya sudah memastikan tiket ke Piala Asia U-17 2027.\n\nMyanmar lebih dahulu unggul melalui Thura Hein Htet. Indonesia baru menyamakan kedudukan pada babak kedua lewat Dewa Majesta, tetapi Paing Zay Tun membawa tuan rumah memimpin lagi. Dolvi kemudian mencetak gol penyeimbang menjelang akhir laga. Dua kali tertinggal, dua kali pula Indonesia menyusul.\n\nIndonesia mengakhiri Grup A dengan 10 poin dari tiga kemenangan dan satu hasil imbang. Target sapu bersih kemenangan gagal, tetapi catatan tak terkalahkan tetap terjaga. Arti gol Dolvi ada pada hasil laga penutup; kelolosan sudah diamankan setelah kemenangan atas Afghanistan. Dua catatan itu perlu dibedakan saat menilai perjalanan Garuda Muda.\n\nBagikan untuk membedakan hasil laga penutup dari tiket yang sudah diraih. Dari dua kali tertinggal, apa yang lebih perlu dibenahi sebelum putaran final: awal pertandingan atau menjaga kedudukan setelah menyamakan skor? Beri alasan.\n\nSumber: AFC, Medcom, detikSulsel.\n\nFoto arsip pelatih David Nascimento, 2007: “Nascimento.jpg”, Luctor IV/Wikimedia Commons, CC BY-SA 3.0. https://commons.wikimedia.org/?curid=2549635 | https://creativecommons.org/licenses/by-sa/3.0/ . Crop dan kolase diolah, adaptasi berlisensi sama. Bukan Dolvi atau foto laga 2026.",
+  "paragraphs": [
+    {
+      "id": "latepoint",
+      "heading": "Gol Penyelamat Satu Poin",
+      "kind": "FACT",
+      "claim_ids": [
+        "FINAL",
+        "STAKES"
+      ],
+      "text": "Timnas Indonesia U-17 menutup kualifikasi tanpa kekalahan setelah bermain imbang 2–2 dengan Myanmar di Stadion Thuwunna, Yangon, Jumat (20/11/2026). Gol Dolvi Salossa pada masa tambahan waktu menyelamatkan satu poin. Garuda Muda sebelumnya sudah memastikan tiket ke Piala Asia U-17 2027."
+    },
+    {
+      "id": "twicebehind",
+      "heading": "Dua Kali Mengejar",
+      "kind": "FACT",
+      "claim_ids": [
+        "COMEBACK",
+        "FINAL"
+      ],
+      "text": "Myanmar lebih dahulu unggul melalui Thura Hein Htet. Indonesia baru menyamakan kedudukan pada babak kedua lewat Dewa Majesta, tetapi Paing Zay Tun membawa tuan rumah memimpin lagi. Dolvi kemudian mencetak gol penyeimbang menjelang akhir laga. Dua kali tertinggal, dua kali pula Indonesia menyusul."
+    },
+    {
+      "id": "meaning",
+      "heading": "Tak Sempurna, Tetap Tanpa Kalah",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "FINAL",
+        "STAKES"
+      ],
+      "text": "Indonesia mengakhiri Grup A dengan 10 poin dari tiga kemenangan dan satu hasil imbang. Target sapu bersih kemenangan gagal, tetapi catatan tak terkalahkan tetap terjaga. Arti gol Dolvi ada pada hasil laga penutup; kelolosan sudah diamankan setelah kemenangan atas Afghanistan. Dua catatan itu perlu dibedakan saat menilai perjalanan Garuda Muda."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261118-germany-netherlands-match-report-news",
+    "goal-20261120-caicedo-substitution-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-20T12:05:46.938Z",
+    "article_digest": "f016d5ef0e9b2040c706fcedc055395c932bc9f12d1361b5d2e6f1b6311fa697"
+  }
+}

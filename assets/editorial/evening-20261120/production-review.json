@@ -1,0 +1,497 @@
+{
+  "checked_at": "2026-11-20T12:06:22.239Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "base_commit": "a8ec669f73a00ce35b558b30af8a6fc9b6aa588a",
+  "active_release": "/opt/stadione-releases/807f6ff",
+  "target": {
+    "id": "07eaaf1d-ca97-4764-a79a-c11c1668e4f8",
+    "plan_key": "2026-11-20:fri-pm",
+    "scheduled_at": "2026-11-20T13:00:00Z",
+    "time_wib": "20 November 2026 20.00 WIB",
+    "pillar": "Sepak Bola Indonesia",
+    "initial_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Garuda Dua Kali Mengejar",
+    "genre": "NEWS",
+    "words": 133,
+    "paragraphs": 3,
+    "slides": 4,
+    "digest": "f016d5ef0e9b2040c706fcedc055395c932bc9f12d1361b5d2e6f1b6311fa697",
+    "benchmarks": [
+      "goal-20261118-germany-netherlands-match-report-news",
+      "goal-20261120-caicedo-substitution-fitness-news"
+    ],
+    "article_written_before_pagination": true,
+    "no_filler": true,
+    "no_fabricated_quotes": true
+  },
+  "research": {
+    "sources": [
+      {
+        "id": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/qualifiers-group-a-indonesia-2-2-myanmar-philippines-2-2-afghanistan",
+        "publisher_group": "AFC",
+        "primary": true,
+        "published_at": "2026-11-20",
+        "retrieved_at": "2026-11-20T12:01:42.721Z",
+        "evidence_characters": 2957,
+        "evidence_sha256": "5c6dd4c489979f354d2c9974954a93cbae6b2845c8b6bcfda065a27b81482bc9",
+        "full_text_read": true,
+        "access": "Fullbrowserturn46view0includingbothmatches throughline99; publicHTMLHTTP200full2958characters."
+      },
+      {
+        "id": "MEDCOM",
+        "url": "https://www.medcom.id/olahraga/liga-dunia/zNPR8rWk-hasil-indonesia-u-17-vs-myanmar-2-2-dolvi-salossa-jadi-penyelamat",
+        "publisher_group": "MEDIAGROUP",
+        "primary": false,
+        "published_at": "2026-11-20T10:47:00Z",
+        "retrieved_at": "2026-11-20T12:01:42.721Z",
+        "evidence_characters": 5675,
+        "evidence_sha256": "b9759705c9398612fda35bbdf1cac61f429f9729917acfb417e7399826608a04",
+        "full_text_read": true,
+        "access": "Fullpublicarticle/deedHTTP200readthroughclosing; nottitle/snippet."
+      },
+      {
+        "id": "DETIK",
+        "url": "https://www.detik.com/sulsel/sepakbola/d-8762191/hasil-indonesia-vs-myanmar-skor-2-2-garuda-lolos-ke-piala-asia-u-17-2027",
+        "publisher_group": "TRANSMEDIA",
+        "primary": false,
+        "published_at": "2026-11-20T10:27:00Z",
+        "retrieved_at": "2026-11-20T12:01:42.721Z",
+        "evidence_characters": 2562,
+        "evidence_sha256": "e55f24a70ea66bee596e15af0009cc48bfa5a338ad3390f8c5b2a6e0e6deffbf",
+        "full_text_read": true,
+        "access": "Fullpublicarticle/deedHTTP200readthroughclosing; nottitle/snippet."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://commons.wikimedia.org/wiki/File:Nascimento.jpg",
+        "publisher_group": "LUCTORIV",
+        "primary": true,
+        "published_at": "2007-08-11",
+        "retrieved_at": "2026-11-20T12:01:42.721Z",
+        "evidence_characters": 5060,
+        "evidence_sha256": "580b8bc24e716d9fc7b3720d5b68fdd501595bbbcbc0eff43ea9f68981ecc510",
+        "full_text_read": true,
+        "access": "CachedfullCommonsgrantfrom17Novreadagain; originalcachedhashverified. FreshCommons/original20Nov403notclaimedfreshHTTP200."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-20T12:01:42.721Z",
+        "evidence_characters": 2844,
+        "evidence_sha256": "0c302508e33d20e5e7d9f0d03df1294ecb3d1d8206e5a915a53353d59228685a",
+        "full_text_read": true,
+        "access": "Fullpublicarticle/deedHTTP200readthroughclosing; nottitle/snippet."
+      }
+    ],
+    "pool": {
+      "date": "2026-11-20",
+      "fetched_at": "2026-11-20T11:56:20.869Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 0
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 2
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "Daily20NovpoolMyanmarpreview followedtoconfirmedpostmatchAFC/Medcom/detik. Oldpreviewclocknotusedasfutureat20WIB. CNNpostmatch403/Tirtofailednotclaimedreadfull. AFCandMedcom/detikindependentgroups.",
+    "excluded_conflicts": "Dewa75Medcomvs76AFC/detik; Thura6Medcomvs5AFC/detik; assistValdoAFCvsDolvidetik. Omitexactminutes/assist. No scorecausation, matchviewing, tacticsdiagnosis orcoachquotationinvented. U17finalUzbekistanprimarysupports; alreadyqualifiedwithmatchspare.",
+    "source_display_policy": {
+      "visible_cover": "AFC",
+      "caption_news_sources": [
+        "AFC",
+        "Medcom",
+        "detikSulsel"
+      ],
+      "internal_audit_source_label": "THE-AFC.COM",
+      "reason": "Owner19Novrequires shortpublicpublishernames. Internalcanonicalprimaryhost retained underunchangedrenderercontract; AFCandthe-afc.comsameentity. Photocredit/licenceseparate."
+    },
+    "reel_failure": {
+      "stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+      "queries": [
+        "Timnas Indonesia Persija Persib Persebaya PSS Sleman 20 November 2026",
+        "Indonesia Myanmar U17 20 November 2026"
+      ],
+      "attempts": [
+        {
+          "page_url": "https://www.youtube.com/watch?v=9_YmBFDj1BA",
+          "creator": "carabola",
+          "checked_at": "2026-11-20T12:01:42.721Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Pre-matchpreviewstaleaftergame; notusableascurrentpost-matchreport. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "carabola; absoluteupload 2026-11-20T06:25:07Z; 32sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=NqXqg15gD_8",
+          "creator": "Tarkam TV",
+          "checked_at": "2026-11-20T12:01:42.721Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Titlematchesactual2-2result; claimedAFCsourcecreditnotredistributiongrant. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Tarkam TV; absoluteupload 2026-11-20T10:34:08Z; 269sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=xltqkBByQF8",
+          "creator": "Goal Scroll",
+          "checked_at": "2026-11-20T12:01:42.721Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Pre-matchpreviewstaleaftergame; notusableascurrentpost-matchreport. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Goal Scroll; absoluteupload 2026-11-18T05:45:32Z; 16sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+          }
+        }
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EDITOR",
+        "reviewed_at": "2026-11-20T12:01:42.721Z",
+        "digest": "cb2ef80855de0879e3ced4ea0ec03e2a4bda2cadb325a95c2d35d54a712b0dad"
+      },
+      "guard_issues": [],
+      "usable_candidates": 0,
+      "owner_notification_required": true
+    }
+  },
+  "references": {
+    "entries": 45,
+    "sha256": "d5bc1ea4ff0bc0266ddbf9fe21ffc0feb7734e381dbf1ea08c136412cdd414c0",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-20T00:46:03.799Z",
+    "application": "NEWS18Novconsequencelead, actionchronology andcautioncontradictoryvenue/details; NEWS20Nov distinguishuncertaincondition/timeandconditionaloutcome. No newreading/timestampclaimed."
+  },
+  "media": {
+    "source": "https://commons.wikimedia.org/wiki/File:Nascimento.jpg",
+    "author": "Luctor IV",
+    "date": "2007-08-11",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "original_sha256": "4701e07101988e68f3b36a0fd6ce3924a865fd23aa5556fcf5f9f8438c938368",
+    "original_bytes": 138458,
+    "original_dimensions": [
+      1121,
+      913
+    ],
+    "acquisition": "Reusedcachedverifiedoriginalfrom17Nov, hashidentical. FreshCommons/original40320Nov, notclaimed200; cachedfullgrantreadanddeed20NovfullHTTP200/browserstateslicenceirrevocablewhiletermsmet.",
+    "identity": "Authentic2007DavidNascimentoformerfootballer/coachportrait, shortblackcurlyhair/darkcomplexion/graypolo/posepreserved. NotDolviandnot2026matchphoto, explicitarchivecoachcredit.",
+    "cover_variant": "KOLOM",
+    "previous_variants": [
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM",
+      "PORTRAIT_MERAH"
+    ],
+    "visible_source_label": "AFC",
+    "internal_audit_source_label": "THE-AFC.COM",
+    "page_count": 4,
+    "cover_input_sha256": "b0fb700c1af4ae575fabeca17c422f2d5a3abb427c87d93f2af4abbb11fa6639",
+    "hero_sha256": "2c26f6d84986192092abff285fd9eee29fb05fc20148409967a4c593aff1f43d",
+    "hero_crop": [
+      120,
+      60,
+      750,
+      615
+    ],
+    "hero_without_overlay": true,
+    "own_derivatives_same_SA3": true
+  },
+  "native_review": {
+    "all_four_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-20T12:06:22.239Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/4",
+    "safe_wrap": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "THE-AFC.COM",
+        "cover_input_sha256": "b0fb700c1af4ae575fabeca17c422f2d5a3abb427c87d93f2af4abbb11fa6639",
+        "output_sha256": "56835fbbf5b6400996e81591a1ffb76d7b653f4d3d91507cae033f48c852282b",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "29f87f8c82ab75bdc8490c7aa904b0a69e2d36f60240b359114d82eb42abc82e",
+        "output_sha256": "1dec2aee9594839151f670bed10729a09fd8bffbff95d74797746314420178c7",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 574,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 873,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 927,
+            "height": 574,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "75384a03d1692bd0979ca3290561dec6901b4c82e1666da786e6df3f88c79af7",
+        "output_sha256": "7196c9d2746739b616f2219d8910cc9734f456ada28b099bb6079cdc108ac665",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 583,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 617,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 933,
+            "height": 583,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "a07db78810ca9e47df4c46d72032d35afdf8159b9c7059c3735db4dd116db365",
+        "output_sha256": "e999124b228b6061747a14b27b1feea59344bc1225ca179dd1502747bbbe4681",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 650,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 926,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 913,
+            "height": 650,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-20T12:06:22.239Z",
+    "baseline_rows": 270,
+    "current_rows": 270,
+    "unchanged_other_rows": 269,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "07eaaf1d-ca97-4764-a79a-c11c1668e4f8",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-20T13:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Indonesia",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 6,
+    "weekly_routine_proposed": 7,
+    "weekly_limit": 12,
+    "instagram_media": 97,
+    "duplicate_matches": 0
+  },
+  "background_preparation": {
+    "initial_status": "DRAFT",
+    "current_status": "DRAFT",
+    "changed_target_fields": []
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "myanmar",
+      "dolvi",
+      "dua kali"
+    ],
+    "broad_terms": [
+      "myanmar",
+      "dolvi"
+    ],
+    "broad_matches": {
+      "cms": [
+        "058717c9-523a-4a8f-a4c4-6ca0b065ec0b",
+        "19dca950-a548-43b3-9eca-8e1296b68c51"
+      ],
+      "instagram": [
+        "18117075515117636"
+      ]
+    },
+    "resolution": "FullcaptionandARTICLEof14NovKamboja2-0read: DolviopenerandfutureMyanmarfixturemention, not20Nov2-2story. Protectedpublishedpairuntouched. Adddua kalitodescribecurrentevent, fullhistory0actualduplicates."
+  },
+  "metrics": {
+    "checked_at": "2026-11-20T12:06:22.239Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18098200697146420",
+        "published_at": "2026-11-20T01:02:16+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 5,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18118258403125122",
+        "published_at": "2026-11-19T13:01:42+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17998277448050242",
+        "published_at": "2026-11-19T01:00:41+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17910739812334604",
+        "published_at": "2026-11-18T01:01:55+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "remaining": "Commit/pushreviewbeforeschedule, verifyidenticalARTICLE/body/dek/digest/clock/hero/publicbytes/gate/scope/idempotence. SCHEDULEDfuturehandoffnotPUBLISHED; reportReelfailureconcretelyevenwithcarouselcompleted."
+}

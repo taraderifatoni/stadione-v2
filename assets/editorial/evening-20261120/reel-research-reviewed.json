@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-20:fri-pm",
+  "checked_at": "2026-11-20T12:01:42.721Z",
+  "queries": [
+    "Timnas Indonesia Persija Persib Persebaya PSS Sleman 20 November 2026",
+    "Indonesia Myanmar U17 20 November 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=9_YmBFDj1BA",
+      "creator": "carabola",
+      "checked_at": "2026-11-20T12:01:42.721Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Pre-matchpreviewstaleaftergame; notusableascurrentpost-matchreport. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "carabola; absoluteupload 2026-11-20T06:25:07Z; 32sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=NqXqg15gD_8",
+      "creator": "Tarkam TV",
+      "checked_at": "2026-11-20T12:01:42.721Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Titlematchesactual2-2result; claimedAFCsourcecreditnotredistributiongrant. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Tarkam TV; absoluteupload 2026-11-20T10:34:08Z; 269sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=xltqkBByQF8",
+      "creator": "Goal Scroll",
+      "checked_at": "2026-11-20T12:01:42.721Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubesourcepage openedbrowserturn44view0/1/2 returnedOnlinefetchthrottled. OfficialAPIabsolutedate/creator/full description/standardlicencechecked. Pre-matchpreviewstaleaftergame; notusableascurrentpost-matchreport. No verifiedvideo/audioreusegrant oractualclip/audition/timestamps. ConfiguredownerlicensedPublisioTaraVOavailableinprinciplebutdoesnotclearbroadcastfootage; no ownedrecordedhost footage selected. Fridaynotmandatoryillustration; manualprototype/ownerrejectedHilgerspreviewnotreusedasfinishedengine.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Goal Scroll; absoluteupload 2026-11-18T05:45:32Z; 16sec; licence=youtube. Browserpage throttled; no actualvideo/audio review orpermission claimed."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-20T12:01:42.721Z",
+    "digest": "cb2ef80855de0879e3ced4ea0ec03e2a4bda2cadb325a95c2d35d54a712b0dad"
+  }
+}
