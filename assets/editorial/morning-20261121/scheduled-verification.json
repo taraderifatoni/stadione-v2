@@ -1,0 +1,159 @@
+{
+  "checked_at": "2026-11-21T00:15:22.791Z",
+  "phase": "VALID_SCHEDULED_BEFORE_CLOCK",
+  "social": {
+    "id": "2f8faab5-e68e-4b84-b915-d7d7be341bfe",
+    "status": "SCHEDULED",
+    "format": "CAROUSEL",
+    "plan_key": "2026-11-21:match-am",
+    "event_key": "bayern-koln-injury-substitutions-20261120",
+    "scheduled_at": "2026-11-21T01:00:00+00:00",
+    "time_wib": "21 November 2026 08.00 WIB",
+    "auto_publish": true,
+    "assets": 5,
+    "publication_issues": []
+  },
+  "article": {
+    "id": "9234510e-a4c9-455b-b57b-cece803f8fb2",
+    "status": "SCHEDULED",
+    "slug": "dua-pergantian-beban-baru-bayern-2f8faab5",
+    "scheduled_at": "2026-11-21T01:00:00+00:00",
+    "title": "Dua Pergantian, Beban Baru Bayern",
+    "canonical_body_identical": true,
+    "canonical_dek_identical": true,
+    "digest": "af35fe546cece19d8954e48875a53b450d2ff0d91048d0e04f2cdea8b0afc068",
+    "issues": [],
+    "hero": {
+      "http": 200,
+      "bytes": 68503,
+      "sha256": "4f0c9156acd5ba23b2689ba0b370e56246645e554b78659a6413f5d948b1449f",
+      "clean_original_without_text": true
+    }
+  },
+  "renders": [
+    {
+      "page": 1,
+      "http": 200,
+      "bytes": 333121,
+      "sha256": "0d7d978648fe0eb3393b11418333db6dd27a8e0c73934716a6d7bb7cdfcfdc31",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 2,
+      "http": 200,
+      "bytes": 212982,
+      "sha256": "db5bea432741f135cd00a48dedbba45ab0d09c6d90dd0095659dbc162834a522",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 3,
+      "http": 200,
+      "bytes": 228687,
+      "sha256": "29684665d9e90f51d7b33ab4e1f620f67ea576332e162c60a439ed19e419926f",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 4,
+      "http": 200,
+      "bytes": 211294,
+      "sha256": "69fce420051d940d2f912c9e0962afec0cfa534d2feb71a0a34cb454e5d68133",
+      "identical_reviewed_preview": true
+    },
+    {
+      "page": 5,
+      "http": 200,
+      "bytes": 229894,
+      "sha256": "312a0964ef28cc8e45b1aae6905420d9d879bea26287a993d8e1605b91d03734",
+      "identical_reviewed_preview": true
+    }
+  ],
+  "instagram": {
+    "account": "stadione.id",
+    "media_count": 98,
+    "duplicate_matches": 0
+  },
+  "attempts": 0,
+  "baseline_rows": 274,
+  "current_rows": 275,
+  "unchanged_existing_other_rows": 273,
+  "changed_other_rows": [],
+  "new_article_rows": 1,
+  "weekly_routine_published_or_scheduled_count": 8,
+  "weekly_limit": 12,
+  "reference": {
+    "entries": 45,
+    "sha256": "d5bc1ea4ff0bc0266ddbf9fe21ffc0feb7734e381dbf1ea08c136412cdd414c0",
+    "runtime_committed_identical": true
+  },
+  "native_render_review": {
+    "all_five_opened1080x1350": true,
+    "reviewed_bytes_match_scheduled_assets": true,
+    "hero_opened": true,
+    "cover_count": "1/5",
+    "no_overflow_or_clipping": true
+  },
+  "publisher": "Future08WIB sharedsystemdpublisher; noMetaDirect, no claimInstagram orwebsite already published; targetmetrics unavailable.",
+  "pre_schedule_commit": "2a0ea16616f311f2cf80d54f29e0f5bc2c511dcd",
+  "publisher_handoff": {
+    "checked_at": "2026-11-21T00:16:07.068Z",
+    "timer": {
+      "LastTriggerUSec": "Sat 2026-11-21 00:15:52 UTC",
+      "ActiveState": "active",
+      "SubState": "waiting"
+    },
+    "service": {
+      "Result": "success",
+      "ExecMainExitTimestamp": "Sat 2026-11-21 00:15:52 UTC",
+      "ExecMainStatus": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "action": "Read-only health check. Leave valid SCHEDULED pair for shared publisher at 08.00 WIB.",
+    "active_release": "/opt/stadione-releases/807f6ff"
+  },
+  "review_commit": "2a0ea16616f311f2cf80d54f29e0f5bc2c511dcd",
+  "format_decision": {
+    "initial": "REEL",
+    "final": "CAROUSEL",
+    "mandatory_illustration": false,
+    "failure_stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+    "reason": "Three actual YouTube pages browser-throttled; standard licences do not grant video/audio redistribution. Official club highlights inaccessible and no reuse grant verified. Configured licensed Tara voiceover cannot license broadcast footage. No usable candidate bypassed.",
+    "research_digest": "8f8203991c79ca469864626ceab8b65a79935d69e815e30fe084fa8d714d65e8",
+    "guard_issues": [],
+    "owner_notification_required": true
+  },
+  "source_display_policy": {
+    "visible_cover": "FC BAYERN",
+    "caption_news_sources": [
+      "FC Bayern",
+      "Bundesliga",
+      "Sky",
+      "Sports Illustrated"
+    ],
+    "internal_audit_source_label": "FCBAYERN.COM",
+    "basis": "Owner19Novpublicnewsattributionshortnames; canonicalprimaryhostretainedunderunchangedrenderercontract, sameentity. Photocredit/source/licenceseparate."
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "bayern",
+      "köln",
+      "bischof"
+    ],
+    "broader_terms": "Bayern AND Köln/Koln",
+    "broader_matches": {
+      "cms": [],
+      "instagram": []
+    },
+    "basis": "All274CMS/98Instagram baseline checked, noeventstory. OldKaneEnglandrecorddifferentfixture/notmatched; publishedrows untouched."
+  },
+  "metrics": {
+    "target": null,
+    "history_file": "metrics-baseline.json",
+    "limitation": "Target not published; no exact 24h/7d, retention or nonfollower metrics assumed."
+  },
+  "remaining": "Shared publisher to publish Instagram and ARTICLE at scheduled clock. SCHEDULED is not PUBLISHED. Report concrete Reel failure despite completed carousel."
+}
