@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "genre": "NEWS",
+  "title": "Dua Pergantian, Beban Baru Bayern",
+  "dek": "Kane dan Olise keluar saat Bayern imbang. Foto arsip Kane 2017: Brad Tutterow, CC BY 2.0; diolah.",
+  "caption": "DUA PERGANTIAN, BEBAN BARU BAYERN\n\nBayern Muenchen harus mengganti dua pemain depannya saat ditahan Köln 1–1 di Allianz Arena, Jumat (20/11/2026). Harry Kane keluar pada menit ke-20, sedangkan Michael Olise tidak melanjutkan babak kedua. Dua pergantian itu menambah pekerjaan Vincent Kompany setelah jeda internasional.\n\nKöln lebih dahulu memimpin lewat Mikey Moore pada menit ke-12. Bayern membalas pada menit ke-37 melalui Nathaniel Brown, yang menerima umpan Tom Bischof. Bischof sebelumnya masuk menggantikan Kane. Gol itu menyelamatkan satu poin, tetapi Bayern tidak menemukan gol kemenangan setelah jeda.\n\nDalam laporan Bundesliga, Kompany menyatakan Kane akan absen berbulan-bulan. Kondisi Olise berbeda: Sports Illustrated melaporkan memar pada bagian depan kakinya dan peluang tersedia saat menghadapi Lille. Peluang tersebut belum menjadi kepastian bahwa ia dapat bermain.\n\nBayern kini memiliki 22 poin dari sepuluh pertandingan, satu poin di atas Dortmund. Kemenangan Dortmund atas Gladbach dapat menggusur mereka dari puncak. Kunjungan ke markas Lille pada 25 November menjadi agenda berikutnya, ketika Kompany juga perlu menata pilihan serangan setelah kehilangan Kane.\n\nMenjelang Lille, apa yang lebih perlu ditata Bayern: susunan serangan atau ruang bagi pemain pengganti? Jelaskan alasanmu dari perubahan saat menghadapi Köln.\n\nSumber: FC Bayern, Bundesliga, Sky, Sports Illustrated.\n\nFoto arsip “Harry Kane”, Tottenham 2017, tampak belakang: Brad Tutterow/Flickr, CC BY 2.0. https://www.flickr.com/photos/fivetilnoon/35805453874 | https://creativecommons.org/licenses/by/2.0/ . Dicrop; latar dan tipografi cover diolah. Bukan foto laga Köln 2026 atau adegan cedera.",
+  "paragraphs": [
+    {
+      "id": "lead",
+      "heading": "Dua Pemain Harus Diganti",
+      "kind": "FACT",
+      "claim_ids": [
+        "RESULT",
+        "INJURY"
+      ],
+      "text": "Bayern Muenchen harus mengganti dua pemain depannya saat ditahan Köln 1–1 di Allianz Arena, Jumat (20/11/2026). Harry Kane keluar pada menit ke-20, sedangkan Michael Olise tidak melanjutkan babak kedua. Dua pergantian itu menambah pekerjaan Vincent Kompany setelah jeda internasional."
+    },
+    {
+      "id": "equalizer",
+      "heading": "Bischof Masuk, Brown Menyamakan",
+      "kind": "FACT",
+      "claim_ids": [
+        "GOALS",
+        "RESULT"
+      ],
+      "text": "Köln lebih dahulu memimpin lewat Mikey Moore pada menit ke-12. Bayern membalas pada menit ke-37 melalui Nathaniel Brown, yang menerima umpan Tom Bischof. Bischof sebelumnya masuk menggantikan Kane. Gol itu menyelamatkan satu poin, tetapi Bayern tidak menemukan gol kemenangan setelah jeda."
+    },
+    {
+      "id": "recovery",
+      "heading": "Masa Absen Perlu Dibedakan",
+      "kind": "FACT",
+      "claim_ids": [
+        "INJURY",
+        "RESULT"
+      ],
+      "text": "Dalam laporan Bundesliga, Kompany menyatakan Kane akan absen berbulan-bulan. Kondisi Olise berbeda: Sports Illustrated melaporkan memar pada bagian depan kakinya dan peluang tersedia saat menghadapi Lille. Peluang tersebut belum menjadi kepastian bahwa ia dapat bermain."
+    },
+    {
+      "id": "agenda",
+      "heading": "Tekanan Berlanjut ke Pekan Depan",
+      "kind": "ANALYSIS",
+      "claim_ids": [
+        "STAKES",
+        "INJURY"
+      ],
+      "text": "Bayern kini memiliki 22 poin dari sepuluh pertandingan, satu poin di atas Dortmund. Kemenangan Dortmund atas Gladbach dapat menggusur mereka dari puncak. Kunjungan ke markas Lille pada 25 November menjadi agenda berikutnya, ketika Kompany juga perlu menata pilihan serangan setelah kehilangan Kane."
+    }
+  ],
+  "benchmark_ids": [
+    "goal-20261118-germany-netherlands-match-report-news",
+    "goal-20261120-caicedo-substitution-fitness-news"
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-21T00:07:13.635Z",
+    "article_digest": "af35fe546cece19d8954e48875a53b450d2ff0d91048d0e04f2cdea8b0afc068"
+  }
+}

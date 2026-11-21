@@ -1,0 +1,581 @@
+{
+  "checked_at": "2026-11-21T00:14:40.032Z",
+  "phase": "NATIVE_REVIEWED_PREVIEW_BEFORE_SHARED_SCHEDULE",
+  "base_commit": "f525c6533711c3b15310da6b774a6a8a3d7ed1d6",
+  "active_release": "/opt/stadione-releases/807f6ff",
+  "target": {
+    "id": "2f8faab5-e68e-4b84-b915-d7d7be341bfe",
+    "plan_key": "2026-11-21:match-am",
+    "scheduled_at": "2026-11-21T01:00:00Z",
+    "time_wib": "21 November 2026 08.00 WIB",
+    "pillar": "Sepak Bola Eropa",
+    "initial_format": "REEL",
+    "production_format": "CAROUSEL"
+  },
+  "article": {
+    "title": "Dua Pergantian, Beban Baru Bayern",
+    "genre": "NEWS",
+    "words": 157,
+    "paragraphs": 4,
+    "slides": 5,
+    "digest": "af35fe546cece19d8954e48875a53b450d2ff0d91048d0e04f2cdea8b0afc068",
+    "benchmarks": [
+      "goal-20261118-germany-netherlands-match-report-news",
+      "goal-20261120-caicedo-substitution-fitness-news"
+    ],
+    "article_written_before_pagination": true,
+    "no_filler": true,
+    "no_fabricated_quotes": true
+  },
+  "research": {
+    "source_evidence": [
+      {
+        "id": "FCB",
+        "url": "https://fcbayern.com/en/news/matchreports/2026/11/match-report-bundesliga-fc-bayern-v-1.-fc-koeln-201126",
+        "publisher_group": "FCBAYERN",
+        "primary": true,
+        "published_at": "2026-11-20",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 218,
+        "evidence_sha256": "6ed36b86732fb4c1e165a9cf011abf8e19e54be562aaebc720ec2e133fca1feb",
+        "full_source_read": true,
+        "method": "Entirearticleopenedinbrowser; onlyselectedshortexcerptsstoredinprivateledger, notfullHTMLorclaimofVPSHTTP200."
+      },
+      {
+        "id": "BUNDES",
+        "url": "https://www.bundesliga.com/de/bundesliga/news/fc-bayern-muenchen-1-fc-koeln-spieltag-10-spielbericht-highlights-40057",
+        "publisher_group": "DFL",
+        "primary": true,
+        "published_at": "2026-11-20",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 172,
+        "evidence_sha256": "36e0bfe2084380f6a1615cac2fac515d4dc265459c034e28ddfd0190f07bdb59",
+        "full_source_read": true,
+        "method": "Entirearticleopenedinbrowser; onlyselectedshortexcerptsstoredinprivateledger, notfullHTMLorclaimofVPSHTTP200."
+      },
+      {
+        "id": "INJURY",
+        "url": "https://www.bundesliga.com/de/bundesliga/news/fc-bayern-munchen-harry-kane-michael-olise-verletzt-koln-40056",
+        "publisher_group": "DFL",
+        "primary": true,
+        "published_at": "2026-11-20",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 178,
+        "evidence_sha256": "3aa266cf26fe245b50bd2e7434f77ce393fe30456c1d77a1ad2a7f4b10f43ad6",
+        "full_source_read": true,
+        "method": "Entirearticleopenedinbrowser; onlyselectedshortexcerptsstoredinprivateledger, notfullHTMLorclaimofVPSHTTP200."
+      },
+      {
+        "id": "SI",
+        "url": "https://www.si.com/soccer/harry-kane-massive-injury-setback-recovery-timeline-revealed",
+        "publisher_group": "SPORTSILLUSTRATED",
+        "primary": false,
+        "published_at": "2026-11-20",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 3486,
+        "evidence_sha256": "a7b98203c3655e52cca087091fb2ebaa4f2f8b5636f01f4483ae2ad49acf682a",
+        "full_source_read": true,
+        "method": "Completepublicarticle/grant/deedreadHTTP200throughclosing."
+      },
+      {
+        "id": "SKY",
+        "url": "https://videos.sport.sky.de/fussball/fc-bayern-vs-koeln/spielbericht/563395",
+        "publisher_group": "SKY",
+        "primary": false,
+        "published_at": "2026-11-20T21:28:00Z",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 4831,
+        "evidence_sha256": "7b1ef671cba185e6691b990ec5134f6e200dfe7c0d71254370006b792288e4bd",
+        "full_source_read": true,
+        "method": "Completepublicarticle/grant/deedreadHTTP200throughclosing."
+      },
+      {
+        "id": "PHOTO",
+        "url": "https://www.flickr.com/photos/fivetilnoon/35805453874",
+        "publisher_group": "BRADTUTTEROW",
+        "primary": true,
+        "published_at": "2017-07-29",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 775,
+        "evidence_sha256": "569c47cf84a8099e93e66bfb27b9a764bacd4f78cf09c11e005fb0d9f6b15af4",
+        "full_source_read": true,
+        "method": "Completepublicarticle/grant/deedreadHTTP200throughclosing."
+      },
+      {
+        "id": "LICENSE",
+        "url": "https://creativecommons.org/licenses/by/2.0/",
+        "publisher_group": "CREATIVECOMMONS",
+        "primary": true,
+        "published_at": "",
+        "retrieved_at": "2026-11-21T00:07:13.635Z",
+        "evidence_characters": 2542,
+        "evidence_sha256": "de38a8fc23c55d3442fdc0e180c3289d292a69021faba2194ce4afbce2e5140d",
+        "full_source_read": true,
+        "method": "Completepublicarticle/grant/deedreadHTTP200throughclosing."
+      }
+    ],
+    "browser_read_proof": {
+      "club": "turn53view0 complete148lines, narrative42-54, matchsheet59-90, byline56",
+      "league": "turn53view1 complete232lines, narrative117-165, MatchFacts167-172",
+      "injury": "turn54view1 complete203lines, narrative117-143includinglastagenda",
+      "guardian": "turn49view1 fullread58-84, notusedasproductioncopy/primarymedicaldiagnosis"
+    },
+    "http_reads": {
+      "sky": {
+        "http": 200,
+        "characters": 4857,
+        "closing": "SID/bylinefooter"
+      },
+      "si": {
+        "http": 200,
+        "characters": 3486,
+        "closing": "SophiaVeselyauthorfooter"
+      },
+      "flickr": {
+        "http": 200,
+        "characters": 775,
+        "license_link": "CCBY2.0browserturn63view0 andpublicFlickrlicense4"
+      }
+    },
+    "pool": {
+      "date": "2026-11-21",
+      "fetched_at": "2026-11-20T23:57:49.634Z",
+      "sources": {
+        "google_trends_trending_now": {
+          "cached": true,
+          "discovered": 12,
+          "eligible": 1
+        },
+        "google_news": {
+          "cached": true,
+          "discovered": 15,
+          "eligible": 0
+        },
+        "bing_videos": {
+          "cached": true,
+          "discovered": 18,
+          "eligible": 0
+        }
+      }
+    },
+    "selection": "OnlyeligibleEurope21Novtrendbayernvs koln followedthroughfreshfullprimaryreportsandindependentjournalism, notassumedresultfromtrend. Saturdaymorningreactionfits.",
+    "excluded_conflicts": "VPSFCBrequeststimeout/DFL403notclaimedHTTP200. DFLinjuryarticlemisattributesoneOlisehopequotation, omitted. Youtube descriptionscontradictpossession/xG/minutes, neverusedasfacts. No exactKanereturndate/surgerycertainty orOliseavailabilityguarantee. FutureDortmundwinconditional. Match20Nov19:30UTC=21Nov02:30WIB; sourcecalendarretainedwithoutfalseWIBdate.",
+    "reel_failure": {
+      "stage": "SOURCE_MEDIA_ACCESS_CONTEXT_AND_RIGHTS",
+      "queries": [
+        "Arsenal Liverpool Barcelona Bayern 20 November 2026 highlights",
+        "Bayern Koln 1-1 Kane injury 20 November 2026"
+      ],
+      "attempts": [
+        {
+          "page_url": "https://www.youtube.com/watch?v=xzth9vTj2YA",
+          "creator": "Dollar VFX",
+          "checked_at": "2026-11-21T00:07:13.635Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Dollar VFX; 2026-11-20T21:19:04Z; 192sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=2I_qweLOnog",
+          "creator": "BAD SPORT TV - WE SPEAK FOOTBALL ",
+          "checked_at": "2026-11-21T00:07:13.635Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "BAD SPORT TV - WE SPEAK FOOTBALL ; 2026-11-20T22:22:37Z; 16sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+          }
+        },
+        {
+          "page_url": "https://www.youtube.com/watch?v=1YPwFQddepI",
+          "creator": "Jejclub",
+          "checked_at": "2026-11-21T00:07:13.635Z",
+          "result": "PERMISSION_UNCONFIRMED",
+          "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+          "proof": {
+            "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+            "summary": "Jejclub; 2026-11-20T23:44:40Z; 15sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+          }
+        }
+      ],
+      "review": {
+        "reviewer_id": "CODEX_EDITOR",
+        "reviewed_at": "2026-11-21T00:07:13.635Z",
+        "digest": "8f8203991c79ca469864626ceab8b65a79935d69e815e30fe084fa8d714d65e8"
+      },
+      "guard_issues": [],
+      "usable": 0,
+      "owner_notification_required": true
+    },
+    "source_display_policy": {
+      "visible_cover": "FC BAYERN",
+      "caption_news_sources": [
+        "FC Bayern",
+        "Bundesliga",
+        "Sky",
+        "Sports Illustrated"
+      ],
+      "internal_audit_source_label": "FCBAYERN.COM",
+      "basis": "Owner19Novpublicnewsattributionshortnames; canonicalprimaryhostretainedunderunchangedrenderercontract, sameentity. Photocredit/source/licenceseparate."
+    }
+  },
+  "references": {
+    "entries": 45,
+    "sha256": "d5bc1ea4ff0bc0266ddbf9fe21ffc0feb7734e381dbf1ea08c136412cdd414c0",
+    "runtime_identical_committed": true,
+    "latest_read_at": "2026-11-20T00:46:03.799Z",
+    "application": "NEWS18Nov consequencelead, actionprogression andcrosscheckconflicts; NEWS20Nov separateobservedsubstitutionfromlaterfitnessstatement, preserveconditionalavailability. No newreading/timestampclaimed."
+  },
+  "media": {
+    "source": "https://www.flickr.com/photos/fivetilnoon/35805453874",
+    "title": "Harry Kane",
+    "author": "Brad Tutterow",
+    "date": "2017-07-29",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0/",
+    "original_url": "https://live.staticflickr.com/4344/35805453874_294b3803eb_o.jpg",
+    "original_http": 200,
+    "original_sha256": "0ca8724d612325b7c66d4805390e4c37ff50657c55abf01f01c9b8bf661c2a27",
+    "original_bytes": 1959234,
+    "original_dimensions": [
+      4912,
+      3264
+    ],
+    "rights": "ActualphotographerFlickrpagepublicCCBY2.0link/fullgrant/deedread, originaldownloadedfromexplicitpublicsizes.oURL. Title/date/source/author/licence/changesdisclosed. OwncontributionsCCBY2.0,noadditionalrestrictionsorendorsement.",
+    "excluded_candidates": "No10Commons2023photoexcludedconflictingeditorialonly/noalterationmetadata; Voltmetro2018original/thumbnail429stopped, notbypassed. BradFlickrindependentlegitimatealternategrant.",
+    "identity": "ActualKane2017NashvillefrombehinddarkTottenhamKANE10shirt, hair/body/posepreserved. No inventedface/redBayernkit/injuryaction. Explicitarchive2017, notcurrentinjuryphoto.",
+    "cover_variant": "FOTO_DOMINAN",
+    "previous_variants": [
+      "KOLOM",
+      "PORTRAIT_MERAH",
+      "JUDUL_UTAMA",
+      "KLASIK",
+      "FOTO_DOMINAN",
+      "KOLOM"
+    ],
+    "page_count": 5,
+    "visible_source_label": "FC BAYERN",
+    "internal_audit_source_label": "FCBAYERN.COM",
+    "cover_input_sha256": "6231bd45c063f484d7ce1a724af7218f54041fe4306edb81e48d17d4bd4ece2f",
+    "hero_sha256": "4f0c9156acd5ba23b2689ba0b370e56246645e554b78659a6413f5d948b1449f",
+    "hero_crop": [
+      1500,
+      500,
+      1500,
+      1230
+    ],
+    "hero_without_overlay": true
+  },
+  "native_review": {
+    "all_five_actual_JPEGs_and_hero_opened": true,
+    "checked_at": "2026-11-21T00:14:40.032Z",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "cover_count": "1/5",
+    "safe_wrap": true,
+    "no_overflow_or_clipping": true,
+    "render_bytes": [
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_collage_cover",
+        "authentic_photo": true,
+        "editorial_background": true,
+        "source_label": "FCBAYERN.COM",
+        "cover_input_sha256": "6231bd45c063f484d7ce1a724af7218f54041fe4306edb81e48d17d4bd4ece2f",
+        "output_sha256": "0d7d978648fe0eb3393b11418333db6dd27a8e0c73934716a6d7bb7cdfcfdc31",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "safe_wrap": true,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "b46eff2a84eb5aaa2c7c153ef0d3d25eb73975197a53429789a862f1a0a4e1e5",
+        "output_sha256": "db5bea432741f135cd00a48dedbba45ab0d09c6d90dd0095659dbc162834a522",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 59,
+        "body_height": 574,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 300,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 884,
+            "height": 59,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 340,
+            "width": 908,
+            "height": 574,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "6f36df7eb6445aa5a21f90b2319315278c3995adb21e981764ef1da0b0de8917",
+        "output_sha256": "29684665d9e90f51d7b33ab4e1f620f67ea576332e162c60a439ed19e419926f",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 583,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 739,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 925,
+            "height": 583,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "6bbce972b2baf7ee1c5159e82b556a2825b92b0720efb981798bc1624e2b372c",
+        "output_sha256": "69fce420051d940d2f912c9e0962afec0cfa534d2feb71a0a34cb454e5d68133",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 128,
+        "body_height": 516,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 369,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 596,
+            "height": 128,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 409,
+            "width": 916,
+            "height": 516,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      },
+      {
+        "width": 1080,
+        "height": 1350,
+        "style_version": "STADIONE_NEWSPAPER_COLLAGE_V1",
+        "layout": "newspaper_article",
+        "interior_version": "EDITORIAL_READABLE_V2",
+        "paper_tone": "#eee9dd",
+        "authentic_photo": false,
+        "source_label": null,
+        "text_sha256": "b91276cc417148d13655c4bd1cb7edf35cfbd80e418fc65cc37e815521a0b358",
+        "output_sha256": "312a0964ef28cc8e45b1aae6905420d9d879bea26287a993d8e1605b91d03734",
+        "no_edition_label": true,
+        "no_promotional_footer": true,
+        "headline_height": 140,
+        "body_height": 641,
+        "headline_font_size": 60,
+        "body_font_size": 48,
+        "divider_top": 381,
+        "divider_thickness": 4,
+        "headline_divider_gap": 36,
+        "divider_body_gap": 36,
+        "boxes": [
+          {
+            "x": 72,
+            "y": 205,
+            "width": 712,
+            "height": 140,
+            "font_size": 60
+          },
+          {
+            "x": 72,
+            "y": 421,
+            "width": 929,
+            "height": 641,
+            "font_size": 48
+          }
+        ],
+        "safe_wrap": true,
+        "columns": 1,
+        "ok": true
+      }
+    ]
+  },
+  "scope": {
+    "checked_at": "2026-11-21T00:14:40.032Z",
+    "baseline_rows": 274,
+    "current_rows": 274,
+    "unchanged_other_rows": 273,
+    "changed_other_rows": [],
+    "added": [],
+    "target": {
+      "id": "2f8faab5-e68e-4b84-b915-d7d7be341bfe",
+      "status": "DRAFT",
+      "scheduled_at": "2026-11-21T01:00:00+00:00",
+      "format": "REEL",
+      "pillar": "Sepak Bola Eropa",
+      "assets": 0,
+      "parent_id": null,
+      "attempts": 0
+    },
+    "weekly_routine_before": 7,
+    "weekly_routine_proposed": 8,
+    "weekly_limit": 12,
+    "instagram_media": 98,
+    "duplicate_matches": 0
+  },
+  "background_preparation": {
+    "initial_status": "DRAFT",
+    "current_status": "DRAFT",
+    "changed_target_fields": []
+  },
+  "full_history_duplicates": {
+    "cms": [],
+    "instagram": []
+  },
+  "dedupe_review": {
+    "terms": [
+      "bayern",
+      "köln",
+      "bischof"
+    ],
+    "broader_terms": "Bayern AND Köln/Koln",
+    "broader_matches": {
+      "cms": [],
+      "instagram": []
+    },
+    "basis": "All274CMS/98Instagram baseline checked, noeventstory. OldKaneEnglandrecorddifferentfixture/notmatched; publishedrows untouched."
+  },
+  "metrics": {
+    "checked_at": "2026-11-21T00:14:40.032Z",
+    "target_metrics": null,
+    "basis": "Actual snapshots with differing posting ages, not exact 24h/7d measures. Missing metrics are not zero; no format/FYP/paid-organic causal inference.",
+    "posts": [
+      {
+        "id": "18149877073575558",
+        "published_at": "2026-11-20T13:00:49+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18098200697146420",
+        "published_at": "2026-11-20T01:02:16+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 5,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "18118258403125122",
+        "published_at": "2026-11-19T13:01:42+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 2,
+          "reach": 1,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      },
+      {
+        "id": "17998277448050242",
+        "published_at": "2026-11-19T01:00:41+0000",
+        "format": "FEED",
+        "http": 200,
+        "metrics": {
+          "views": 0,
+          "reach": 0,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": []
+      }
+    ]
+  },
+  "remaining": "Commit/pushreviewbeforeschedule; verifyidenticalARTICLE/body/dek/digest/clock/hero/publicbytes/gate/scope/idempotence. FutureSCHEDULEDhandoffnotPUBLISHED. ReportReelfailureconcretelyevenwithcarouselcompleted."
+}

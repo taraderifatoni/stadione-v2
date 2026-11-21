@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "plan_key": "2026-11-21:match-am",
+  "checked_at": "2026-11-21T00:07:13.635Z",
+  "queries": [
+    "Arsenal Liverpool Barcelona Bayern 20 November 2026 highlights",
+    "Bayern Koln 1-1 Kane injury 20 November 2026"
+  ],
+  "attempts": [
+    {
+      "page_url": "https://www.youtube.com/watch?v=xzth9vTj2YA",
+      "creator": "Dollar VFX",
+      "checked_at": "2026-11-21T00:07:13.635Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Dollar VFX; 2026-11-20T21:19:04Z; 192sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=2I_qweLOnog",
+      "creator": "BAD SPORT TV - WE SPEAK FOOTBALL ",
+      "checked_at": "2026-11-21T00:07:13.635Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "BAD SPORT TV - WE SPEAK FOOTBALL ; 2026-11-20T22:22:37Z; 16sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+      }
+    },
+    {
+      "page_url": "https://www.youtube.com/watch?v=1YPwFQddepI",
+      "creator": "Jejclub",
+      "checked_at": "2026-11-21T00:07:13.635Z",
+      "result": "PERMISSION_UNCONFIRMED",
+      "detail": "ActualYouTubepageopenedbrowserturn50view0/1/2throttled. OfficialAPIabsolutedate/fullmetadata/standardYouTubelicencechecked. Noverifiedvideo/audioredistributiongrant; highlighttitleornewsnarrationnotpermission. Stats/incidentminutesdifferbetweendescriptions, nottrustedfacts. Noactualwatch/audition/download/timestampsclaimed. OwnerlicensedTaraVOavailablebutdoesnotclearbroadcastfootage. OfficialFCBhighlights browserunavailableandno reusegrantselected; no ownedhostrecordingselected. Saturday08notmandatoryillustration, manualprototypenotclaimedfinished.",
+      "proof": {
+        "kind": "YOUTUBE_DATA_API_METADATA_AND_BROWSER_OPEN",
+        "summary": "Jejclub; 2026-11-20T23:44:40Z; 15sec; licence=youtube. Actualpagebrowserthrottled; no clearedfootage/audio, no playbackclaimed."
+      }
+    }
+  ],
+  "review": {
+    "reviewer_id": "CODEX_EDITOR",
+    "reviewed_at": "2026-11-21T00:07:13.635Z",
+    "digest": "8f8203991c79ca469864626ceab8b65a79935d69e815e30fe084fa8d714d65e8"
+  }
+}
