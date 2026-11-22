@@ -1,4 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server"
+import { resolveJuaraPath } from "./lib/juara/routing"
 
 const SKIP = ["/_next/", "/api/", "/favicon", "/manifest", "/sw.js", "/.well-known", "/404"]
 
@@ -11,6 +12,13 @@ export function middleware(request: NextRequest) {
   const url = request.nextUrl.clone()
 
   if (shouldSkip(url.pathname)) return NextResponse.next()
+
+  // B2B executive suite: juara.stadione.pro -> /juara/*
+  const juaraPath = resolveJuaraPath(hostname, url.pathname)
+  if (juaraPath && juaraPath !== url.pathname) {
+    url.pathname = juaraPath
+    return NextResponse.rewrite(url)
+  }
 
   const isPos = hostname.startsWith("pos.")
   const isAdmin = hostname.startsWith("admin.")
