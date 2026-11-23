@@ -26,3 +26,12 @@
 - Mandat Owner terlaksana. Sprint 7 + deploy diterima secara teknis.
 - Prioritas berikutnya: UAT RLS runtime begitu SSH pulih (bukan klaim, tapi eksekusi script). Jangan tandai produksi "fully verified" sebelum itu.
 - SSO / pen-test / notifikasi / data klub riil tetap menunggu input Owner/vendor — minta Owner sediakan kredensial & anggaran bila mau lanjut.
+
+## [2026-11-23 23.x WIB] — Audit UAT RLS authenticated (final)
+- Status: TERVERIFIKASI — UAT RLS runtime SELESAI
+- SSH pulih (`SSH_OK` — CTO cek mandiri). PM eksekusi `juara-uat.sh` via admin API/service key di VPS (nilai tidak dicetak). Handoff ACKNOWLEDGED, commit `3d00e93`.
+- B1 insert user A → 201 PASS; B2/B3 user B baca → 200 `[]` PASS; B4 user B insert ke Club A → 403/42501 PASS; B5 bootstrap RPC → 200 UUID PASS. Dokumen `RLS_RUNTIME_EVIDENCE.md` bagian B lengkap & konsisten.
+- CTO verifikasi mandiri pasca-UAT: GET anon ke `juara_playbooks` → HTTP 200 body `[]` (data UAT benar-benar dibersihkan, tidak ada row bocor). Commit `695d983`, repo bersih & sinkron (0 0).
+- Kebersihan: `qa_token.txt` sudah hilang; `/tmp/opencode/juara-migrations.tgz` & `juara-uat.sh` masih ada (artefak non-sensitif, berguna — bukan kredensial).
+- **Batas klaim dipertahankan**: "UAT RLS runtime TERVERIFIKASI" (anon + authenticated). Produksi **BELUM** "fully verified" — SSO, pen-test, kredensial notifikasi, data klub riil masih tertunda (input eksternal). PM benar tidak mengklaim lebih.
+- Rekomendasi: tutup item UAT RLS sebagai selesai. Sisa 4 item eksternal menunggu Owner/vendor.

@@ -3,6 +3,28 @@ import { playbookGenerateSchema } from "../../../../../lib/juara/validation.ts"
 import { buildPlaybookInsertRow } from "../../../../../lib/juara/playbook-save.ts"
 import { getActiveKey } from "../../../../../lib/juara/keyring.ts"
 import { createClient } from "../../../../../lib/supabase/server.ts"
+import { getJuaraMembership } from "../../../../../lib/juara/server-auth.ts"
+
+export async function GET() {
+  const res = await getJuaraMembership()
+  if (!res.ok) {
+    if (res.status === 403 && res.code === "NO_CLUB") {
+      return Response.json({ ok: true, playbooks: [] })
+    }
+    return Response.json({ error: res.error, code: res.code }, { status: res.status })
+  }
+
+  const supabase = await createClient()
+  const { data, error } = await supabase
+    .from("juara_playbooks")
+    .select("id, version_name, horizon_years, target_sporting_outcome, tactical_dna_type, status, created_at")
+    .eq("club_id", res.membership.clubId)
+    .order("created_at", { ascending: false })
+    .limit(50)
+
+  if (error) return Response.json({ error: "Gagal membaca playbook" }, { status: 500 })
+  return Response.json({ ok: true, playbooks: data ?? [] })
+}
 
 export async function POST(request: Request) {
   let payload: unknown
