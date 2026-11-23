@@ -1,5 +1,5 @@
-import { buildAgeMatrix, classifyScr, computeGradeQuota } from "./formulas"
-import type { PlaybookGenerateInput } from "./validation"
+import { buildAgeMatrix, classifyScr, computeGradeQuota } from "./formulas.ts"
+import type { PlaybookGenerateInput } from "./validation.ts"
 
 /** Deterministic Sprint-1 summary. Financial detail is specified in FINANCE_SPEC.md. */
 export function generatePlaybookSummary(input: PlaybookGenerateInput) {
