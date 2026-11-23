@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server"
-import { resolveJuaraPath } from "./lib/juara/routing"
+import { isJuaraProtected, resolveJuaraPath } from "./lib/juara/routing"
 
 const SKIP = ["/_next/", "/api/", "/favicon", "/manifest", "/sw.js", "/.well-known", "/404"]
 
@@ -18,6 +18,15 @@ export function middleware(request: NextRequest) {
   if (juaraPath && juaraPath !== url.pathname) {
     url.pathname = juaraPath
     return NextResponse.rewrite(url)
+  }
+
+  // Auth guard for protected juara routes (Sprint 4, RENCANA DB)
+  if (isJuaraProtected(url.pathname)) {
+    const hasSession = request.cookies.getAll().some((c) => c.name.startsWith("sb-") && c.name.includes("auth-token"))
+    if (!hasSession) {
+      const loginUrl = new URL("/juara/login", request.url)
+      return NextResponse.redirect(loginUrl)
+    }
   }
 
   const isPos = hostname.startsWith("pos.")

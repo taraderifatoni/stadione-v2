@@ -36,6 +36,8 @@ export default function OwnerWizard() {
   const [draft, setDraft] = useState<Draft>(INITIAL)
   const [result, setResult] = useState<unknown>(null)
   const [error, setError] = useState<string | null>(null)
+  const [pdfLoading, setPdfLoading] = useState(false)
+  const [pdfError, setPdfError] = useState<string | null>(null)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -57,6 +59,35 @@ export default function OwnerWizard() {
       return
     }
     setResult(await res.json())
+  }
+
+  async function downloadPdf() {
+    const parsed = playbookGenerateSchema.safeParse(draft)
+    if (!parsed.success) return
+    setPdfLoading(true)
+    setPdfError(null)
+    try {
+      const res = await fetch("/api/juara/v1/playbooks/export", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...parsed.data,
+          meta: { downloader: "Owner", role: "OWNER", timestamp: new Date().toLocaleString("id-ID") },
+        }),
+      })
+      if (!res.ok) throw new Error("Gagal mengunduh PDF")
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement("a")
+      a.href = url
+      a.download = "club-playbook.pdf"
+      a.click()
+      URL.revokeObjectURL(url)
+    } catch (e) {
+      setPdfError(e instanceof Error ? e.message : "Gagal mengunduh PDF")
+    } finally {
+      setPdfLoading(false)
+    }
   }
 
   function set<K extends keyof Draft>(key: K, value: Draft[K]) {
@@ -135,6 +166,14 @@ export default function OwnerWizard() {
 
       {error && <div style={{ color: "#DC2626", fontSize: 12, marginTop: 8 }}>{String(error)}</div>}
       {result !== null && <pre style={{ fontSize: 11, background: "#F8FAFC", padding: 8, overflow: "auto" }}>{JSON.stringify(result, null, 2)}</pre>}
+      {result !== null && (
+        <div style={{ marginTop: 8 }}>
+          <button type="button" onClick={downloadPdf} disabled={pdfLoading} style={{ ...button, background: "#064E3B", color: "#FFFFFF" }}>
+            {pdfLoading ? "Mengunduh..." : "Unduh PDF"}
+          </button>
+          {pdfError && <div style={{ color: "#DC2626", fontSize: 12, marginTop: 4 }}>{pdfError}</div>}
+        </div>
+      )}
 
       <div style={{ display: "flex", gap: 8, marginTop: 16 }}>
         <button type="button" disabled={step === 0} onClick={() => setStep((s) => s - 1)} style={button}>Kembali</button>
