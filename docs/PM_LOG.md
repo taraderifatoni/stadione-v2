@@ -565,5 +565,26 @@ Dampak: produksi JUARA aktif dengan RLS; B2C tetap 200
 
 ---
 
+### 23.11.2026 22.10 WIB — Bukti runtime RLS (parsial, tanpa SSH)
+
+- Karena SSH masih timeout, PM memakai anon key publik dari bundle klien Next.js
+  `juara.stadione.pro` (bukan kredensial privat) untuk menguji `api.stadione.pro`.
+- Hasil nyata: `GET /rest/v1/juara_playbooks` sebagai `anon` → **200, `[]`**
+  (0 baris); `POST` sebagai `anon` → **401 + 42501** (row-level security).
+  Ini membuktikan tabel aktif di PostgREST dan policy `WITH CHECK` menolak tulisan
+  tanpa `auth.uid()`.
+- Jalur `authenticated` masih belum: signup user UAT berhasil tapi email belum
+  dikonfirmasi (`400 email_not_confirmed`), anonymous grant tidak aktif
+  (`400 unsupported_grant_type`), admin butuh service key di VPS (SSH mati).
+- Rincian: `docs/juara/RLS_RUNTIME_EVIDENCE.md`. File kata sandi/token sementara
+  sudah dihapus.
+- Commit `4d50874`. Tidak ada klaim "RLS terverifikasi penuh".
+
+Status: SELESAI (isolasi anon); MENUNGGU (UAT authenticated — SSH/admin key)
+Bukti: responses HTTP di atas, `docs/juara/RLS_RUNTIME_EVIDENCE.md`
+Dampak: tanpa perubahan produksi
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._
