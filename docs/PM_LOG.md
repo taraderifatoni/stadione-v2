@@ -571,18 +571,24 @@ Dampak: produksi JUARA aktif dengan RLS; B2C tetap 200
   `juara.stadione.pro` (bukan kredensial privat) untuk menguji `api.stadione.pro`.
 - Hasil nyata: `GET /rest/v1/juara_playbooks` sebagai `anon` → **200, `[]`**
   (0 baris); `POST` sebagai `anon` → **401 + 42501** (row-level security).
-  Ini membuktikan tabel aktif di PostgREST dan policy `WITH CHECK` menolak tulisan
-  tanpa `auth.uid()`.
-- Jalur `authenticated` masih belum: signup user UAT berhasil tapi email belum
-  dikonfirmasi (`400 email_not_confirmed`), anonymous grant tidak aktif
-  (`400 unsupported_grant_type`), admin butuh service key di VPS (SSH mati).
-- Rincian: `docs/juara/RLS_RUNTIME_EVIDENCE.md`. File kata sandi/token sementara
-  sudah dihapus.
-- Commit `4d50874`. Tidak ada klaim "RLS terverifikasi penuh".
+- Jalur `authenticated` belum saat itu: email_not_confirmed, anonymous grant tidak
+  aktif, SSH mati. Commit `4d50874`.
 
-Status: SELESAI (isolasi anon); MENUNGGU (UAT authenticated — SSH/admin key)
-Bukti: responses HTTP di atas, `docs/juara/RLS_RUNTIME_EVIDENCE.md`
-Dampak: tanpa perubahan produksi
+### 23.11.2026 22.45 WIB — UAT RLS authenticated SELESAI
+
+- SSH pulih (`SSH_OK`, srv1862653). Dijalankan UAT dengan 2 user terkonfirmasi
+  + 2 klub berbeda via admin API/service key di VPS (nilai tidak dicetak).
+- B1 insert Club A oleh member A: **HTTP 201**. B2 select semua oleh B: **200 []**.
+  B3 select row A oleh B: **200 []**. B4 insert B ke Club A: **403/42501**.
+  B5 `juara_bootstrap_club()` via RPC: **200 UUID** (A dan B).
+- Semua data UAT (1 playbook, 2 members, 2 clubs, 2 users) dihapus via transaksi
+  SQL `ON_ERROR_STOP=1`. Semua file sementara VPS/lokal dihapus.
+- `docs/juara/RLS_RUNTIME_EVIDENCE.md` diperbarui; anon dan authenticated keduanya
+  terverifikasi. SSO/pen-test/notifikasi/data klub riil tetap tertunda (eksternal).
+
+Status: SELESAI (RLS runtime anon + authenticated)
+Bukti: tabel HTTP di `RLS_RUNTIME_EVIDENCE.md`
+Dampak: tanpa perubahan produksi; data UAT dibersihkan
 
 ---
 

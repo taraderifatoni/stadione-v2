@@ -1,73 +1,55 @@
 # Bukti Runtime RLS JUARA — 23 November 2026
 
-Metode: tanpa SSH, memakai **anon key publik** yang memang disertakan Next.js di
-bundle klien `juara.stadione.pro` (dalam produksi, `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-bersifat publik dan memang dikirim ke browser). Tidak ada kredensial privat yang
-dicari, dicetak, atau dipakai.
+Metode: anon key publik dari bundle klien Next.js `juara.stadione.pro`
+(`NEXT_PUBLIC_SUPABASE_ANON_KEY` memang publik). UAT authenticated dijalankan
+lewat SSH VPS dengan admin API/service key hanya di server (nilai tidak dicetak).
 
 Supabase produksi: `https://api.stadione.pro`.
 
-## A. Isolasi anon — LULU (bukti runtime nyata)
-
-Perintah (anon key disimpan di file sementara, tidak dicetak):
+## A. Isolasi anon — TERVERIFIKASI
 
 ```bash
-ANON=$(cat /tmp/opencode/juara-anon.txt)
-curl -sS -i -H "apikey: $ANON" -H "Authorization: Bearer $ANON" \
+curl -H "apikey: $ANON" -H "Authorization: Bearer $ANON" \
   'https://api.stadione.pro/rest/v1/juara_playbooks?select=id&limit=5'
+# HTTP 200, body []
 ```
 
-Hasil:
-- `HTTP 200`, body `[]` → tabel ada dan dapat di-query, tetapi **0 baris** terlihat
-  oleh `anon`. RLS bekerja.
-- Tidak ada error `PGRST205` (tabel tidak ada) maupun `42501` (ditolak) — ini
-  membuktikan tabel `juara_playbooks` benar-benar aktif di PostgREST produksi.
-
-## B. Anon mencoba menulis — DITOLAK (bukti runtime nyata)
+- `HTTP 200`, body `[]` → tabel ada, 0 baris terlihat oleh `anon`.
 
 ```bash
-curl -sS -X POST -H "apikey: $ANON" -H "Authorization: Bearer $ANON" \
-  -H 'Content-Type: application/json' -H 'Prefer: return=minimal' \
-  'https://api.stadione.pro/rest/v1/juara_playbooks' \
-  -d '{"club_id":"00000000-0000-0000-0000-000000000000","horizon_years":1,
-       "target_sporting_outcome":"CHAMPION","tactical_dna_type":"BALANCED_HYBRID"}'
+curl -X POST ... /rest/v1/juara_playbooks -d '{...}'
+# HTTP 401, {"code":"42501","message":"new row violates row-level security policy for table \"juara_playbooks\""}
 ```
 
-Hasil:
-- `HTTP 401`
-- Body: `{"code":"42501","message":"new row violates row-level security policy for table \"juara_playbooks\""}`
+- Tulisan anon ditolak RLS `WITH CHECK`.
 
-Ini bukti bahwa `WITH CHECK` policy menolak tulisan tanpa `auth.uid()` yang
-terhubung ke klub.
+## B. Authenticated UAT — TERVERIFIKASI (23.11.2026, setelah SSH pulih)
 
-## C. Jalur authenticated — BELUM TERBUKTI
+Lingkungan: VPS `31.97.49.146`, SSH `root@31.97.49.146` pulih (`SSH_OK`). Dua user
+UAT dibuat via admin API, email dikonfirmasi, password diset sementara (tidak
+dicatat). Setiap user memanggil `juara_bootstrap_club()` → mendapat `club_id`
+berbeda (RLS helper `auth.uid()` bekerja).
 
-Upaya yang sudah dicoba dan gagal jujur:
+| # | Pemeriksaan | Hasil | Bukti |
+|---|---|---:|---|
+| B1 | User A (member Club A) insert `juara_playbooks` milik Club A | **PASS** | `HTTP 201`, row dikembalikan |
+| B2 | User B (member Club B) `select` semua playbooks | **PASS** | `HTTP 200`, body `[]` |
+| B3 | User B filter row milik Club A (`id=eq.<row_a>`) | **PASS** | `HTTP 200`, body `[]` |
+| B4 | User B mencoba insert ke Club A | **PASS (ditolak)** | `HTTP 403`, `42501 row violates row-level security policy` |
+| B5 | `juara_bootstrap_club()` dipanggil user authenticated | **PASS** | `HTTP 200`, UUID klub dikembalikan (A dan B) |
 
-1. `POST /auth/v1/signup` untuk `juara-uat@stadione.pro` → `HTTP 200`, user dibuat
-   (id `7767122e-d23c-4135-9737-e2168692a882`), tetapi **email belum terverifikasi**.
-2. `POST /auth/v1/token?grant_type=password` → `400 email_not_confirmed`.
-3. `POST /auth/v1/token?grant_type=anonymous` → `400 unsupported_grant_type`
-   (anonymous sign-in tidak diaktifkan di instance ini).
-4. Admin API `/auth/v1/admin/users` membutuhkan `service_role` key yang hanya ada
-   di VPS; SSH ke `31.97.49.146` masih `banner timeout`.
+## C. Kebersihan data UAT
 
-Karena itu **belum ada bukti runtime** bahwa:
-- `authenticated` dengan membership bisa menginsert baris ke klubnya;
-- user dari klub lain tidak bisa membaca baris klub tersebut;
-- `juara_bootstrap_club()` bisa dipanggil via RPC oleh user yang sah.
+Semua artefak UAT dihapus setelah bukti terkumpul (transaksi SQL tunggal,
+`ON_ERROR_STOP=1`): 1 row `juara_playbooks`, 2 row `juara_club_members`, 2 row
+`juara_clubs`, 2 user `auth.users`. File sementara di VPS (`/tmp/juara-uat*`,
+token/password) dan di lokal (`/tmp/opencode/juara-*`) dihapus. Tidak ada nilai
+kunci/secret yang dicetak.
 
-Script `juara-uat.sh` di VPS sudah disiapkan untuk tiga pemeriksaan itu dan
-**tinggal dieksekusi begitu SSH/admin key tersedia**.
+## Kesimpulan
 
-## Kesimpulan terbatas
-
-- Isolasi `anon` (baca 0 baris, tulis ditolak RLS): **TERVERIFIKASI**.
-- Isolasi antar-klub `authenticated`: **BELUM TERVERIFIKASI** — jangan diklaim selesai.
-- Migrasi/administrasi database sudah tercatat di `MIGRATION_APPLIED.md`.
-
-## Kebersihan
-
-File sementara berisi kata sandi/token UAT (`/tmp/opencode/juara-uat-pw`,
-`/tmp/opencode/juara-uat-token.json`, `/tmp/opencode/juara-signup.json`) dihapus
-setelah verifikasi. Anon key adalah nilai publik dan tidak disimpan di repo.
+- Isolasi `anon`: **TERVERIFIKASI**.
+- Isolasi `authenticated` antar-klub + bootstrap RPC: **TERVERIFIKASI**.
+- Produksi **belum** "fully verified" untuk semua aspek (SSO, pen-test, notifikasi,
+  data klub riil masih tertunda), tetapi **UAT RLS runtime** yang diminta CTO
+  sudah selesai dan dibuktikan.
