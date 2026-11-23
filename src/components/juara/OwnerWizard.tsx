@@ -38,6 +38,9 @@ export default function OwnerWizard() {
   const [error, setError] = useState<string | null>(null)
   const [pdfLoading, setPdfLoading] = useState(false)
   const [pdfError, setPdfError] = useState<string | null>(null)
+  const [saveLoading, setSaveLoading] = useState(false)
+  const [saveError, setSaveError] = useState<string | null>(null)
+  const [saveResult, setSaveResult] = useState<string | null>(null)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -92,6 +95,28 @@ export default function OwnerWizard() {
 
   function set<K extends keyof Draft>(key: K, value: Draft[K]) {
     setDraft((d) => ({ ...d, [key]: value }))
+  }
+
+  async function savePlaybook() {
+    const parsed = playbookGenerateSchema.safeParse(draft)
+    if (!parsed.success) return
+    setSaveLoading(true)
+    setSaveError(null)
+    setSaveResult(null)
+    try {
+      const res = await fetch("/api/juara/v1/playbooks", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+      })
+      if (!res.ok) throw new Error("Gagal menyimpan Playbook")
+      const body = await res.json()
+      setSaveResult(body.note ?? "Tersimpan (RENCANA — butuh apply migrasi)")
+    } catch (e) {
+      setSaveError(e instanceof Error ? e.message : "Gagal menyimpan Playbook")
+    } finally {
+      setSaveLoading(false)
+    }
   }
 
   return (
@@ -167,11 +192,16 @@ export default function OwnerWizard() {
       {error && <div style={{ color: "#DC2626", fontSize: 12, marginTop: 8 }}>{String(error)}</div>}
       {result !== null && <pre style={{ fontSize: 11, background: "#F8FAFC", padding: 8, overflow: "auto" }}>{JSON.stringify(result, null, 2)}</pre>}
       {result !== null && (
-        <div style={{ marginTop: 8 }}>
+        <div style={{ marginTop: 8, display: "flex", gap: 8, flexWrap: "wrap" }}>
           <button type="button" onClick={downloadPdf} disabled={pdfLoading} style={{ ...button, background: "#064E3B", color: "#FFFFFF" }}>
             {pdfLoading ? "Mengunduh..." : "Unduh PDF"}
           </button>
+          <button type="button" onClick={savePlaybook} disabled={saveLoading} style={button}>
+            {saveLoading ? "Menyimpan..." : "Simpan Playbook"}
+          </button>
           {pdfError && <div style={{ color: "#DC2626", fontSize: 12, marginTop: 4 }}>{pdfError}</div>}
+          {saveError && <div style={{ color: "#DC2626", fontSize: 12, marginTop: 4 }}>{saveError}</div>}
+          {saveResult && <div style={{ color: "#059669", fontSize: 12, marginTop: 4 }}>{saveResult}</div>}
         </div>
       )}
 

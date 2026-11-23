@@ -1,4 +1,5 @@
 import type { ReactNode } from "react"
+import { SessionProvider } from "@/components/juara/SessionProvider"
 
 const WORKSPACES = [
   "Boardroom Inbox",
@@ -23,6 +24,7 @@ const TICKER = [
 
 export default function JuaraLayout({ children }: { children: ReactNode }) {
   return (
+    <SessionProvider>
     <div style={{ minHeight: "100vh", background: "#F8FAFC", color: "#0F172A", fontFamily: "Inter, sans-serif" }}>
       <div style={{ display: "flex", minHeight: "100vh" }}>
         <aside style={{ width: 220, background: "#0F172A", color: "#F8FAFC", padding: 16, flexShrink: 0 }}>
@@ -56,5 +58,6 @@ export default function JuaraLayout({ children }: { children: ReactNode }) {
         </div>
       </div>
     </div>
+    </SessionProvider>
   )
 }
