@@ -513,5 +513,25 @@ Dampak: tanpa perubahan produksi
 
 ---
 
+### 23.11.2026 09.10 WIB — Working tree dibersihkan (koreksi CTO)
+
+- CTO audit menemukan: HEAD sekarang `280c695` (bukan `8f360e7` seperti laporan PM
+  sebelumnya), file `src/app/auth/callback/page.tsx` terhapus, dan
+  `tests/juara/pdf-route.test.ts` untracked.
+- Penjelasan: `src/app/auth/callback/page.tsx` terhapus karena `rm -rf src/app/auth`
+  saat memindahkan callback ke `/juara/auth/callback` di Sprint 5. File B2C itu sudah
+  **dipulihkan** via `git checkout HEAD -- src/app/auth/callback/page.tsx`.
+- Semua file docs/ dan tests/ yang belum committed (Sprint 0–6) sekarang di-commit
+  sebagai `280c695 chore(juara): restore auth callback page, commit docs/tests, clean working tree`.
+- Working tree sekarang **bersih** (`git status --short` kosong). HEAD = `280c695`.
+- CTO handoff diterima: sebelum Sprint 7, pastikan working tree bersih (sekarang
+  terpenuhi) dan sebutkan commit pasti di laporan.
+
+Status: SELESAI (cleanup + koreksi CTO)
+Bukti: `git status --short` (kosong); HEAD `280c695bf03f14bc20b4e639aa2c879171c64887`
+Dampak: tanpa perubahan produksi
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._
