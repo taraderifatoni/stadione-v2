@@ -37,3 +37,14 @@ Dapat ditimpa CTO/Owner. Berlaku untuk Divisi 3–6.
   PM juga tidak memilikinya di daftar skill sesi. Pengganti: aritmetika independen +
   pengecekan silang PRD. Ini dicatat, bukan dianggap sudah memakai skill tersebut.
 - Status: **DITERIMA dengan koreksi R9**.
+
+## Putusan lanjutan 23.11.2026 (izin Owner: "pilihkan yang terbaik")
+
+| ID | Topik | Putusan PM | Alasan |
+|---|---|---|---|
+| R18 | R7 angka final multiplier | Tetap **input terkonfigurasi, default netral 1.00**. Untuk v1.0 PM menetapkan *preset* opsional dan bukan hardcode: prestasi juara/promosi `1.15`, top-4/stabil `1.08`, menengah `1.00`, turnaround `0.90`; gaya main menyerang tinggi hanya mengubah okupansi dengan preset `1.05`. Owner bisa menimpa; semua angka ber-label `INPUT_MANUAL_KLUB` atau `TEMPLATE_PRD` | PRD tidak memuat angka; memaksa angka "final" akan mengarang data. Preset memberi reproducible default tanpa mengunci konfigurasi |
+| R19 | R8 besaran kenaikan gaji bertahap | Kenaikan **kumulatif atas gaji pokok**: `+5%` di 15 penampilan, `+10%` di 35, `+15%` di 60. Pemicu mengikuti PRD §9; tidak ada kenaikan di luar tiga ambang ini | Menutup celah R8 tanpa mengubah pemicu PRD; angka konservatif dan termonet darurat |
+| R20 | Termin sponsor | `50%` ditagih di bulan ke-1, `30%` bulan ke-7, `20%` bulan ke-10 dari nilai kontrak (R10, tersimpan terenkripsi di vault) | Profil arus kas realistis untuk klub Liga 1/2 Indonesia; memberi headroom SCR tanpa mengubah total |
+
+Catatan: R18–R20 adalah **default yang dipilih PM atas mandat Owner**, bukan angka dari PRD.
+Bila Owner memiliki angka berbeda, ubah lewat putusan baru dan tandai versi.

@@ -39,3 +39,12 @@ Catatan: Divisi 2 tidak bergantung rulebook; Divisi 6 v0 tidak menunggu artefak 
 - Read-only terhadap kode produk; dilarang deploy/DNS/SSL/push/migrasi/kredensial.
 - `graphify` sebelum baca source; `ui-ux-pro-max` sebelum `frontend-design`; `verify` sebelum klaim selesai.
 - Lapor: `Laporan <Topik> / Konteks: ... / - bullet`.
+
+## Pembaruan 23.11.2026 — keputusan model worker
+
+Owner memberi mandat "pilihkan yang terbaik". PM memilih **opsi C: lanjut native**
+untuk semua pekerjaan JUARA sampai ada keputusan biaya berbayar. Alasan: kuota free
+Divisi 6 habis, model berbayar membutuhkan persetujuan pengeluaran, dan pekerjaan
+berikutnya bersifat berurutan serta bergantung pada konteks produksi yang sudah ada
+di sesi PM. Enam worker tetap sehat di DB dan tidak dihapus; tidak ada tugas baru
+yang dikirim sebelum ada model/provider baru yang disetujui Owner.

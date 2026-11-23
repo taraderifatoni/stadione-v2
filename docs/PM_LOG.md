@@ -533,5 +533,37 @@ Dampak: tanpa perubahan produksi
 
 ---
 
+### 23.11.2026 21.00 WIB — Sprint 7 + produksi (mandat Owner "lanjut saja semua")
+
+- Owner memberi izin penuh dan meminta PM memilih yang terbaik secara berurutan.
+- `writing-plans` dipakai; rencana `docs/superpowers/plans/2026-11-23-juara-sprint7-production.md`.
+- Model worker: **opsi C (native)** — kuota free habis, model berbayar butuh izin biaya.
+- Migrasi M-00…M-08 **ter-apply** di Supabase self-hosted produksi (`api.stadione.pro`)
+  lewat `psql` di container DB. Hasil: 8 tabel + 1 view, 8/8 RLS aktif, 8 policy,
+  grant `service_role` pada objek `juara_*` = 0. M-07 dan M-08 adalah tambahan PM
+  (hardening view + bootstrap klub berbasis `auth.uid()`).
+- Kunci AES-256-GCM 32 byte `v1` terpasang di `.env.production` VPS dan `.env.local`
+  lokal; nilai tidak pernah dicetak. Round-trip enkripsi = true.
+- Kode nyata: keyring sesuai ARCH §6.3, `buildPlaybookInsertRow` dengan AAD terikat
+  baris, save route 401/403/503/201 memakai JWT user. Test 39/39 PASS, build exit 0.
+- Commit `e5e03d8`; push `72d4598..e5e03d8`; VPS `git merge --no-ff` → `825d8db`,
+  build exit 0, `stadione.service active`. HTTP: `/juara` 307 → `/juara/login`,
+  login 200, `stadione.pro` 200. Commit lokal VPS `ea5b162` + `96e78e6` dipertahankan.
+- Putusan baru R18 (multiplier R7), R19 (kenaikan gaji R8), R20 (termin sponsor)
+  ditulis di `PM_RULINGS.md`.
+- **Tidak selesai:** UAT RLS runtime penuh, SSO, pen-test, kredensial notifikasi,
+  data klub riil. UAT tertahan karena SSH `31.97.49.146` mengalami banner timeout
+  berulang setelah deploy; script `juara-uat.sh` sudah disiapkan, belum dijalankan.
+  Tidak ada klaim terverifikasi untuk item ini.
+- Rincian: `docs/juara/SPRINT7_VERIFICATION.md`, `docs/juara/MIGRATION_APPLIED.md`,
+  `docs/juara/ENCRYPTION_KEY_RUNBOOK.md`.
+
+Status: SELESAI (migrasi, kunci, kode, deploy); MENUNGGU (RLS runtime UAT — SSH,
+plus input eksternal SSO/pen-test/kredensial/data riil)
+Bukti: commit `e5e03d8`, VPS `825d8db`, verifikasi di atas
+Dampak: produksi JUARA aktif dengan RLS; B2C tetap 200
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._
