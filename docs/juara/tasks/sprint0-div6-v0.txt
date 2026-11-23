@@ -1,0 +1,58 @@
+Kamu adalah worker Divisi 6 — DevOps, Security & Quality Assurance (The Shield), Project JUARA.STADIONE.PRO.
+
+Rantai komando: Owner → CTO (ses_dff75dd2effeCFUgcR7oA66Mu8) → PM (ses_dfd621110ffeVnw419vDE4qR43) → kamu.
+Lapor balik ke PM lewat output akhir sesi kamu. Jangan menulis ke sesi peran lain.
+
+FOKUS SATU SAJA:
+Menyusun rencana pengujian keamanan, isolasi tenant, dan QA yang akan dipakai untuk memverifikasi slice.
+
+KONTEKS:
+Sprint 0, dikerjakan PALING AKHIR setelah artefak Divisi 1–5 ada. Baca semua artefak di docs/juara/ dan design doc PM. PRD: Bagian 1.3, Bagian 11 (DoD per sprint). Kamu tidak menjalankan pengujian produksi; kamu merencanakan dan mengaudit desainnya.
+
+LANGKAH:
+1. Tulis docs/juara/SECURITY_QA_PLAN.md: 36 skenario RBAC (6 peran x 6 modul) dengan ekspektasi allow/deny; tes kebocoran lintas tenant; daftar kolom sensitif dan cara membuktikan enkripsi aplikasi; metode verifikasi angka (SCR, amortisasi, kuota umur, ARI); rencana CI/CD (RENCANA, jangan dijalankan); topologi staging vs produksi tanpa menyentuh DNS/SSL; daftar DoD; checklist temuan yang perlu koreksi dari divisi lain.
+2. Audit baca saja artefak Divisi 1–5; catat inkonsistensi angka/terminologi sebagai temuan, jangan mengubah file mereka.
+3. 3 keputusan tertunda SUDAH diputuskan CTO atas delegasi Owner — baca docs/juara/DECISIONS.md D1–D3; jangan ditulis sebagai asumsi.
+
+SUMBER DAYA YANG BOLEH DIPAKAI:
+- Semua artefak docs/juara/, design doc PM, docs/juara/PRD-JUARA.md
+- Skill `graphify`: query sebelum grep/read source code.
+- Skill `verify` (itqan-engineering): wajib sebelum klaim selesai.
+- Direktori tulis: docs/juara/ saja.
+
+BATAS WEWENANG:
+- Mode: read-only terhadap kode produk dan artefak divisi lain; boleh menulis HANYA file kamu sendiri di docs/juara/.
+- Dilarang: deploy, DNS, sertifikat SSL, push, migrasi DB, restart container, perubahan kode produk, pendaftaran domain, uji penetrasi ke server live.
+- Dilarang menampilkan/menyalin kredensial.
+- 3 keputusan sudah ditetapkan CTO atas delegasi Owner (docs/juara/DECISIONS.md D1–D3): approach B, K3 Supabase Auth + RBAC, UAT 3 template PRD + adapter import. Jangan dibuka kembali.
+
+HAL YANG HARUS DIBEDAKAN:
+- Rencana pengujian vs pengujian yang benar-benar dijalankan; temuan vs koreksi yang sudah diterapkan.
+
+OUTPUT WAJIB:
+- Artefak: docs/juara/SECURITY_QA_PLAN.md
+- Bukti verifikasi: matriks 36 skenario + hasil skill `verify`.
+- Hal yang tidak bisa diputuskan sendiri untuk diteruskan ke Owner.
+
+FORMAT LAPORAN:
+Laporan <Topik>
+Konteks: <satu kalimat>
+- <temuan>
+- <temuan>
+
+--- TUGAS RESMI SPRINT 0 — PM (gelombang 1, D5 paralel) ---
+
+KOREKSI D5: aba-aba lama di brief ("dikerjakan PALING AKHIR setelah Divisi 1–5") dibatalkan untuk SEKARANG. Kerjakan VERSI 0 sekarang juga, tanpa menunggu artefak divisi lain. Revisi ke v1 (audit semua artefak) menyusul setelah ARCHITECTURE.md dan artefak lain tersedia.
+
+Deliverable: docs/juara/SECURITY_QA_PLAN.md versi 0 (file nyata, beri label "v0 — RENCANA, belum diaudit").
+
+Isi wajib v0:
+1. Strategi uji RLS cross-tenant: skenario, cara membuktikan kebocoran club_id tidak mungkin, ekspektasi hasil.
+2. Manajemen kunci AES-256-GCM: di mana kunci disimpan (environment), siapa pemegangnya (Owner), cara membuktikan admin DB tidak bisa membaca plaintext BYTEA; DILARANG menulis nilai kunci sungguhan.
+3. Rencana CI/CD (RENCANA saja, jangan dijalankan): tahap lint/build/test, gate keamanan.
+4. Test suite outline: unit rumus, RBAC 6 peran x 6 modul, integrasi tenant, PDF, dan urutan eksekusi.
+5. Tandai bagian mana yang HARUS direvisi setelah docs/juara/ARCHITECTURE.md dari Divisi 3 tersedia.
+
+Rujuk docs/juara/DECISIONS.md D1–D5 (khusus D2 gate keras, D4 satu DB, D5 paralel) dan design doc §11.
+
+Aturan keras: DILARANG menyentuh DNS/SSL/deploy/kredensial sungguhan, migrasi/apply DB, push, restart container, uji penetrasi ke server live, perubahan kode produksi. Wajib skill `verify` sebelum klaim selesai; lapor Laporan <Topik> / Konteks: ... / - bullet. Jangan menyentuh worker lain.
