@@ -1,0 +1,124 @@
+Preparing worktree (detached HEAD 1a2655c)
+HEAD is now at 1a2655c fix(juara): closure corrections - mobile, recovery, HTTP assertions, rollback proof
+
+> stadione-v2@0.1.0 build
+> next build
+
+▲ Next.js 16.2.12 (Turbopack)
+- Environments: .env.production.local
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 11.9s
+  Running TypeScript ...
+  Finished TypeScript in 10.7s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/54) ...
+  Generating static pages using 15 workers (13/54) 
+  Generating static pages using 15 workers (26/54) 
+  Generating static pages using 15 workers (40/54) 
+✓ Generating static pages using 15 workers (54/54) in 848ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /academy
+├ ƒ /academy/report
+├ ○ /admin
+├ ○ /admin/academy
+├ ○ /admin/bookings
+├ ○ /admin/dashboard
+├ ○ /admin/discounts
+├ ○ /admin/fees
+├ ○ /admin/members
+├ ○ /admin/platform
+├ ○ /admin/reports
+├ ○ /admin/settings
+├ ○ /admin/staff
+├ ○ /admin/users
+├ ○ /admin/venues
+├ ƒ /admin/w/[slug]
+├ ƒ /admin/w/[slug]/academy
+├ ƒ /admin/w/[slug]/bookings
+├ ƒ /admin/w/[slug]/members
+├ ƒ /admin/w/[slug]/reports
+├ ƒ /admin/w/[slug]/settings
+├ ƒ /admin/w/[slug]/staff
+├ ƒ /api/admin/announcements
+├ ƒ /api/admin/check-role
+├ ƒ /api/admin/dashboard
+├ ƒ /api/admin/discounts
+├ ƒ /api/admin/fees
+├ ƒ /api/auth/session
+├ ƒ /api/cron/booking-reminder
+├ ƒ /api/cron/membership-expiry
+├ ƒ /api/juara/v1/auth/register
+├ ƒ /api/juara/v1/clubs/bootstrap
+├ ƒ /api/juara/v1/clubs/me
+├ ƒ /api/juara/v1/members/invite
+├ ƒ /api/juara/v1/playbooks
+├ ƒ /api/juara/v1/playbooks/export
+├ ƒ /api/juara/v1/playbooks/generate
+├ ƒ /api/juara/v1/vision/draft
+├ ƒ /api/offline/checkin
+├ ƒ /api/payment/callback
+├ ƒ /api/payment/create
+├ ƒ /api/payment/refund
+├ ƒ /api/staff/accept
+├ ƒ /api/staff/invite
+├ ƒ /api/staff/invite-info
+├ ○ /auth/callback
+├ ƒ /booking
+├ ƒ /fitness
+├ ƒ /fitness/plans
+├ ƒ /forgot-password
+├ ƒ /invite
+├ ○ /juara
+├ ƒ /juara/auth/callback
+├ ○ /juara/login
+├ ○ /juara/playbooks
+├ ○ /juara/signup
+├ ○ /juara/vision
+├ ƒ /login
+├ ƒ /my-bookings
+├ ƒ /notifications
+├ ○ /pos
+├ ƒ /pos/[slug]/checkin
+├ ƒ /pos/[slug]/shift
+├ ƒ /pos/[slug]/walkin
+├ ƒ /profile
+├ ○ /profile/account
+├ ○ /profile/bookings
+├ ○ /profile/children
+├ ○ /profile/notifications
+├ ○ /profile/payments
+├ ○ /profile/privacy
+├ ƒ /register
+├ ○ /search
+├ ƒ /venue/[venueSlug]
+├ ƒ /venue/[venueSlug]/academy
+├ ƒ /venue/[venueSlug]/booking
+├ ƒ /venue/[venueSlug]/fitness
+└ ƒ /venues
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+rollback_artifact=1a2655c build_id=qvS-txjemv-TSPma4ib3y
+rollback_get={
+  "rev": 2,
+  "status": 200
+}
+rollback_put={
+  "rev": 3,
+  "status": 200
+}
+rollback_cas={
+  "code": "VERSION_CONFLICT",
+  "status": 409
+}
+ROLLBACK_APP_SMOKE_PASS build_id=qvS-txjemv-TSPma4ib3y

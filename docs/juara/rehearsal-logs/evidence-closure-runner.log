@@ -21,10 +21,10 @@ juara_squad_slots:juara_squad_slots_tenant:{authenticated}:ALL:(playbook_id IN (
    FROM juara_playbooks
   WHERE (juara_playbooks.club_id = juara_current_club_id()))):(playbook_id IN ( SELECT juara_playbooks.id
    FROM juara_playbooks
-  WHERE (juara_playbooks.club_id = juara_current_club_id()))) data=c40f24789f20fdb202b01a62200c864b
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))) data=d863d0ab50a371c9143bd177e94bf8a3
 ASSERT_PASS: injected_failure_rollback_full
 psql:/tmp/cutover.sql:109: NOTICE:  function juara_set_vision_draft(uuid,bytea,bytea,pg_catalog.int4) does not exist, skipping
 ASSERT_PASS: cutover_atomic
-7c23623f45b90990858d4048fae6c7a5dd62990bc015341fd727cba39546ee73
+80f2705270436720c9035a35ccbe3f6c307d434da177e2225bf9339b739c36e0
 ASSERT_PASS: staging_ready
 KEEP requested; cleanup NOT executed

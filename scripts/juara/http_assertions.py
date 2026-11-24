@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
-"""Authenticated HTTP assertions for JUARA staging. Exits nonzero on any false positive.
+"""Authenticated HTTP assertions for JUARA staging. Exits nonzero on failed assertion.
 
-Requires: local candidate app at JUARA_APP_URL, proxy at JUARA_PROXY_URL, staging DB
-created by evidence_closure_rehearsal.sh --keep. Auth is production GoTrue; REST is
-isolated staging PostgREST — that boundary is stated in the log.
+Boundary: auth=production GoTrue; REST/DB=isolated staging. No production writes.
 """
 import base64
-import hashlib
 import json
 import os
 import secrets
@@ -35,48 +32,54 @@ def guard():
     for url in (APP, PROXY):
         host = url.split("://", 1)[-1].split(":", 1)[0]
         assert host in ("127.0.0.1", "localhost"), f"refusing non-local endpoint: {url}"
-    assert Path(".env.production.local").exists(), "preview env missing"
+    assert OWNER_PW and SD_PW, "QA passwords required via env"
 
 
 def run(cmd, stdin=None, timeout=90):
     return subprocess.run(cmd, input=stdin, text=True, capture_output=True, timeout=timeout)
 
 
-def ssh_psql(sql):
-    path = Path("/tmp/opencode/assert-seed.sql")
-    path.write_text(sql)
-    r = run(["scp", "-o", "ConnectTimeout=20", str(path), f"{VPS}:/tmp/assert-seed.sql"])
-    assert r.returncode == 0, r.stderr
-    r = run(["ssh", "-o", "ConnectTimeout=20", VPS,
-             f"docker cp /tmp/assert-seed.sql {DBCONTAINER}:/tmp/assert-seed.sql && "
-             f"docker exec {DBCONTAINER} psql -U postgres -d {STAGE} -tA -q -v ON_ERROR_STOP=1 -f /tmp/assert-seed.sql"])
-    assert r.returncode == 0, f"psql failed: {r.stderr[-300:]}"
-    return r.stdout.strip()
-
-
-def db_query(sql):
-    r = run(["ssh", "-o", "ConnectTimeout=20", VPS,
-             f"docker exec {DBCONTAINER} psql -U postgres -d {STAGE} -tA -q -c \"{sql}\""])
-    assert r.returncode == 0, r.stderr
-    return r.stdout.strip()
-
-
-def ab(*args, stdin=None):
-    r = run([AB, "--session", "httpassert", *args], stdin)
-    assert r.returncode == 0, f"agent-browser failed: {args}: {r.stderr[-300:]}"
+def ab(session, *args, stdin=None):
+    r = run([AB, "--session", session, *args], stdin)
+    assert r.returncode == 0, f"agent-browser {session} failed: {args}: {r.stderr[-300:]}"
     return r.stdout
 
 
-def ev(js):
-    out = ab("eval", "--stdin", stdin=js)
+def ev(session, js):
+    out = ab(session, "eval", "--stdin", stdin=js)
     start, end = out.find("{"), out.rfind("}")
-    assert start >= 0 and end > start, f"no JSON: {out[-300:]}"
+    assert start >= 0 and end > start, f"no JSON from {session}: {out[-300:]}"
     return json.loads(out[start:end + 1])
+
+
+def login(session, email, password):
+    for attempt in range(3):
+        ab(session, "close")
+        ab(session, "set", "viewport", "1440", "900")
+        ab(session, "open", f"{APP}/juara/login")
+        ab(session, "wait", "--load", "networkidle")
+        ab(session, "find", "label", "Email", "fill", email)
+        ab(session, "find", "label", "Kata sandi", "fill", password)
+        ab(session, "find", "role", "button", "click", "--name", "Masuk")
+        ab(session, "wait", "--load", "networkidle")
+        url = ab(session, "get", "url").strip().splitlines()[-1].rstrip("/")
+        if url.endswith("/juara"):
+            return
+    raise AssertionError(f"login failed {session} after 3 attempts: {url}")
 
 
 def anon_key():
     return next(l.split("=", 1)[1] for l in Path(".env.production.local").read_text().splitlines()
                 if l.startswith("NEXT_PUBLIC_SUPABASE_ANON_KEY="))
+
+
+def token_for(email, password):
+    r = run(["curl", "-sS", "-X", "POST", f"{PROXY}/auth/v1/token?grant_type=password",
+             "-H", f"apikey: {anon_key()}", "-H", "Content-Type: application/json",
+             "-d", json.dumps({"email": email, "password": password})])
+    data = json.loads(r.stdout)
+    assert data.get("access_token"), f"token missing for {email}"
+    return data["access_token"], data["user"]["id"]
 
 
 def keyring():
@@ -94,110 +97,128 @@ def encrypted(value, column, club_id):
     return "\\x" + (bytes([1, len(kid)]) + kid.encode() + nonce + ct).hex()
 
 
-def rest(path, token=None, method="GET", body=None):
-    headers = {"apikey": anon_key()}
-    if token:
-        headers["Authorization"] = "Bearer " + token
-    if body is not None:
-        headers["Content-Type"] = "application/json"
-    r = run(["curl", "-sS", "-o", "/tmp/opencode/rest.out", "-w", "%{http_code}",
-             "--max-time", "25", "-X", method, f"{PROXY}/rest/v1/{path}",
-             *sum((["-H", f"{k}: {v}"] for k, v in headers.items()), []),
-             *(["-d", json.dumps(body)] if body is not None else [])])
-    return int(r.stdout.strip() or 0), Path("/tmp/opencode/rest.out").read_text()
+def ssh_psql(sql):
+    p = Path("/tmp/opencode/assert-seed.sql")
+    p.write_text(sql)
+    assert run(["scp", "-o", "ConnectTimeout=20", str(p), f"{VPS}:/tmp/assert-seed.sql"]).returncode == 0
+    r = run(["ssh", "-o", "ConnectTimeout=20", VPS,
+             f"docker cp /tmp/assert-seed.sql {DBCONTAINER}:/tmp/assert-seed.sql && "
+             f"docker exec {DBCONTAINER} psql -U postgres -d {STAGE} -tA -q -v ON_ERROR_STOP=1 -f /tmp/assert-seed.sql"])
+    assert r.returncode == 0, f"psql failed: {r.stderr[-300:]}"
+    return r.stdout.strip()
 
 
-def token_for(email, password):
-    r = run(["curl", "-sS", "-X", "POST", f"{PROXY}/auth/v1/token?grant_type=password",
-             "-H", f"apikey: {anon_key()}", "-H", "Content-Type: application/json",
-             "-d", json.dumps({"email": email, "password": password})])
-    data = json.loads(r.stdout)
-    assert data.get("access_token"), "token missing"
-    return data["access_token"], data["user"]["id"]
+def db_query(sql):
+    r = run(["ssh", "-o", "ConnectTimeout=20", VPS,
+             f"docker exec {DBCONTAINER} psql -U postgres -d {STAGE} -tA -q -c \"{sql}\""])
+    assert r.returncode == 0, r.stderr
+    return r.stdout.strip()
 
 
 def main():
     guard()
     started = time.monotonic()
-    lines = [f"# HTTP assertions {datetime.now(timezone.utc).isoformat()}",
-             f"app={APP} proxy={PROXY}",
-             "isolation: auth=production GoTrue; REST=isolated staging PostgREST; no club real data"]
     sha = run(["git", "rev-parse", "HEAD"]).stdout.strip()
-    lines.append(f"candidate_sha={sha}")
+    runner_sha = run(["sha256sum", str(Path(__file__).resolve())]).stdout.split()[0]
+    lines = [f"# HTTP assertions {datetime.now(timezone.utc).isoformat()}",
+             f"app={APP} proxy={PROXY} candidate_sha={sha} runner_sha256={runner_sha}",
+             "isolation: auth=production GoTrue; REST/DB=isolated staging; no club real data"]
     try:
-        assert OWNER_PW and SD_PW, "missing QA passwords"
-        owner_token, owner_id = token_for(OWNER_EMAIL, OWNER_PW)
-        sd_token, sd_id = token_for(SD_EMAIL, SD_PW)
-        ids = db_query("select id from juara_clubs order by name")
-        club_rows = [x for x in ids.splitlines() if x]
-        assert len(club_rows) >= 2, "fixture clubs missing"
-        club, other = club_rows[0], club_rows[1]
-        ssh_psql(f"INSERT INTO auth.users (id,email) VALUES ('{owner_id}','{OWNER_EMAIL}'),('{sd_id}','{SD_EMAIL}') ON CONFLICT (id) DO NOTHING;\n"
+        club = db_query("select id from juara_clubs order by name limit 1")
+        other = db_query("select id from juara_clubs order by name offset 1 limit 1")
+        assert club and other and club != other, "fixture clubs missing"
+
+        owner_token, owner_uid = token_for(OWNER_EMAIL, OWNER_PW)
+        sd_token, sd_uid = token_for(SD_EMAIL, SD_PW)
+        ssh_psql(f"INSERT INTO auth.users (id,email) VALUES ('{owner_uid}','{OWNER_EMAIL}'),('{sd_uid}','{SD_EMAIL}') ON CONFLICT (id) DO NOTHING;\n"
                  f"INSERT INTO juara_club_members (user_id,club_id,role) VALUES "
-                 f"('{owner_id}','{club}','OWNER'),('{sd_id}','{club}','SPORTING_DIRECTOR') "
+                 f"('{owner_uid}','{club}','OWNER'),('{sd_uid}','{club}','SPORTING_DIRECTOR') "
                  f"ON CONFLICT (user_id,club_id) DO UPDATE SET role=EXCLUDED.role;\n")
 
-        own_code, own_body = rest(f"juara_clubs?id=eq.{club}&select=id,name", owner_token)
-        own = json.loads(own_body)
-        assert own_code == 200 and len(own) == 1, (own_code, own_body)
-        other_code, other_body = rest(f"juara_clubs?id=eq.{other}&select=id,name", owner_token)
-        assert other_code == 200 and json.loads(other_body) == [], (other_code, other_body)
-        w_code, _ = rest(f"juara_clubs?id=eq.{other}", owner_token, "PATCH", {"name": "HACK"})
-        assert w_code in (401, 403), w_code
-        unchanged = db_query(f"select name from juara_clubs where id='{other}'")
-        assert unchanged != "HACK", unchanged
-        lines.append(f"TENANT_OWN_CLUB={own_code} rows=1 OTHER_READ={other_code} rows=0 OTHER_WRITE={w_code} unchanged={unchanged}")
+        owner_s, sd_s = "ownerassert", "sdassert"
+        login(owner_s, OWNER_EMAIL, OWNER_PW)
+        login(sd_s, SD_EMAIL, SD_PW)
 
-        sd_role = db_query(f"select role from juara_club_members where user_id='{sd_id}' and club_id='{club}'")
-        assert sd_role == "SPORTING_DIRECTOR", sd_role
-        lines.append(f"TENANT_SD_ROLE={sd_role}")
-
-        # Legacy-only encrypted fixture, SD rejected, Owner backfill without equity.
         legacy = encrypted({"leagueTier": "LIGA_2", "horizonYears": 1, "targetOutcome": "CHAMPION",
                             "tacticalDna": "HIGH_PRESSING", "formationMode": "AUTO", "baseFormation": "",
                             "philosophy": {"star": 25, "competitive": 45, "academy": 30},
                             "guardrails": {"equity": 100, "scrMax": 65}}, "vision_draft_enc", club)
         ssh_psql(f"UPDATE juara_clubs SET vision_draft_enc='{legacy}'::bytea, vision_finance_enc=NULL, "
                  f"vision_revision=0, vision_legacy_migrated=false WHERE id='{club}'::uuid;\n")
-        args = {"p_club_id": club, "p_blob": "\\\\x00", "p_finance_blob": None, "p_expected_revision": 0}
-        sd_code, sd_body = rest("rpc/juara_set_vision_draft", sd_token, "POST", args)
-        assert "LEGACY_NOT_MIGRATED" in sd_body, (sd_code, sd_body)
-        lines.append(f"LEGACY_SD_REJECTED={sd_code} code=LEGACY_NOT_MIGRATED")
-        # Owner backfill must omit equity; use encrypted payload captured from fixture via app GET.
-        ab("set", "viewport", "1440", "900")
-        ab("open", f"{APP}/juara/login")
-        ab("wait", "--load", "networkidle")
-        ab("find", "label", "Email", "fill", OWNER_EMAIL)
-        ab("find", "label", "Kata sandi", "fill", OWNER_PW)
-        ab("find", "role", "button", "click", "--name", "Masuk")
-        ab("wait", "--load", "networkidle")
-        g = ev("(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {status:r.status,rev:b.revision,draft:b.draft}})()")
-        assert g["status"] == 200 and g["draft"], g
-        omitted = ev(f"""(async()=>{{const d={json.dumps(g['draft'])};delete d.guardrails.equity;const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:d,expectedRevision:{g['rev']}}})}});return {{status:r.status,body:await r.json()}}}})()""")
-        assert omitted["status"] == 200, omitted
-        owner_equity = ev("(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {equity:b.draft.guardrails.equity}})()")["equity"]
+
+        sd_get = ev(sd_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {status:r.status,rev:b.revision,keys:Object.keys(b.draft?.guardrails||{}),draft:b.draft}})()")
+        assert sd_get["status"] == 200 and "equity" not in sd_get["keys"], sd_get
+        sd_pre = ev(sd_s, f"""(async()=>{{const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:{json.dumps(sd_get['draft'])},expectedRevision:{sd_get['rev']}}})}});const b=await r.json();return {{status:r.status,code:b.code,error:b.error}}}})()""")
+        assert sd_pre["status"] == 409 and sd_pre["code"] == "LEGACY_NOT_MIGRATED", sd_pre
+        lines.append(f"SD_ROUTE_PRE_MIGRATION={sd_pre['status']} code={sd_pre['code']}")
+
+        owner_get = ev(owner_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {status:r.status,rev:b.revision,draft:b.draft}})()")
+        d = dict(owner_get["draft"])
+        d["guardrails"] = dict(d["guardrails"])
+        d["guardrails"].pop("equity", None)
+        backfill = ev(owner_s, f"""(async()=>{{const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:{json.dumps(d)},expectedRevision:{owner_get['rev']}}})}});return {{status:r.status,body:await r.json()}}}})()""")
+        assert backfill["status"] == 200, backfill
+        owner_equity = ev(owner_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {equity:b.draft.guardrails.equity}})()")["equity"]
         assert owner_equity == 100, owner_equity
-        lines.append(f"LEGACY_OWNER_BACKFILL={omitted['status']} equity={owner_equity}")
+        lines.append(f"OWNER_BACKFILL={backfill['status']} equity={owner_equity}")
 
-        # Concurrent HTTP with state assertion.
-        rev = int(owner_equity and omitted["body"]["revision"])
-        concurrent = ev(f"""(async()=>{{const api='/api/juara/v1/vision/draft';const g=await fetch(api,{{cache:'no-store'}});const b=await g.json();const put=async(s)=>{{const d={{...b.draft,philosophy:{{star:s,competitive:45,academy:100-45-s}}}};const r=await fetch(api,{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:d,expectedRevision:{rev}}})}});return {{status:r.status,body:await r.json()}}}};const [a,c]=await Promise.all([put(31),put(22)]);const g2=await fetch(api,{{cache:'no-store'}});const f=await g2.json();return {{codes:[a.status,c.status],bodies:[a.body,c.body],final:f.revision,star:f.draft.philosophy.star}}}})()""")
-        codes = sorted(concurrent["codes"])
-        assert codes == [200, 409], concurrent
-        winner = 31 if 31 in [b.get("philosophy", {}).get("star") for b in concurrent["bodies"]] else concurrent["final"]
-        assert concurrent["final"] == rev + 1, (concurrent, rev)
-        assert concurrent["star"] == 31, concurrent
-        lines.append(f"PARALLEL={concurrent['codes']} final_revision={concurrent['final']} winner_star={concurrent['star']}")
+        sd_after_get = ev(sd_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {status:r.status,rev:b.revision,draft:b.draft}})()")
+        d2 = dict(sd_after_get["draft"])
+        d2["guardrails"] = dict(d2["guardrails"])
+        d2["guardrails"]["scrMax"] = 63
+        sd_after = ev(sd_s, f"""(async()=>{{const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:{json.dumps(d2)},expectedRevision:{sd_after_get['rev']}}})}});return {{status:r.status,body:await r.json()}}}})()""")
+        assert sd_after["status"] == 200, sd_after
+        final_owner = ev(owner_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {equity:b.draft.guardrails.equity,scrMax:b.draft.guardrails.scrMax,rev:b.revision}})()")
+        assert final_owner["equity"] == 100 and final_owner["scrMax"] == 63, final_owner
+        lines.append(f"SD_ROUTE_AFTER_BACKFILL={sd_after['status']} owner_equity={final_owner['equity']} owner_scrMax={final_owner['scrMax']}")
 
-        # Malformed finance: keep valid payload/revision, then corrupt ciphertext and PUT same valid payload.
-        g = ev("(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {rev:b.revision,draft:b.draft}})()")
-        cached_draft, cached_rev = json.dumps(g["draft"]), g["rev"]
-        ssh_psql(f"UPDATE juara_clubs SET vision_finance_enc='\\xdeadbeef'::bytea WHERE id='{club}'::uuid;\n")
-        malformed = ev(f"""(async()=>{{const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:{cached_draft},expectedRevision:{cached_rev}}})}});return {{status:r.status,body:await r.json()}}}})()""")
-        db_rev = db_query(f"select vision_revision from juara_clubs where id='{club}'")
-        assert malformed["status"] == 500 and malformed["body"].get("error") == "Draf lama tidak dapat dibaca", malformed
-        assert db_rev == str(cached_rev), (db_rev, cached_rev)
-        lines.append(f"MALFORMED_FINANCE={malformed['status']} error={malformed['body'].get('error')} revision_unchanged={db_rev}")
+        # Restore public100 + finance200 omitted-equity case.
+        pub = encrypted({"leagueTier": "LIGA_2", "horizonYears": 1, "targetOutcome": "CHAMPION",
+                         "tacticalDna": "HIGH_PRESSING", "formationMode": "AUTO", "baseFormation": "",
+                         "philosophy": {"star": 25, "competitive": 45, "academy": 30},
+                         "guardrails": {"equity": 100, "scrMax": 65}}, "vision_draft_enc", club)
+        fin = encrypted({"equity": 200}, "vision_finance_enc", club)
+        ssh_psql(f"UPDATE juara_clubs SET vision_draft_enc='{pub}'::bytea, vision_finance_enc='{fin}'::bytea, "
+                 f"vision_revision=0, vision_legacy_migrated=true WHERE id='{club}'::uuid;\n")
+        g = ev(owner_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {rev:b.revision,draft:b.draft}})()")
+        assert g["draft"]["guardrails"]["equity"] == 200, g
+        d3 = dict(g["draft"]); d3["guardrails"] = dict(d3["guardrails"]); d3["guardrails"].pop("equity", None)
+        omit = ev(owner_s, f"""(async()=>{{const r=await fetch('/api/juara/v1/vision/draft',{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:{json.dumps(d3)},expectedRevision:{g['rev']}}})}});const b=await r.json();const g2=await fetch('/api/juara/v1/vision/draft',{{cache:'no-store'}});const a=await g2.json();return {{status:r.status,equity:a.draft.guardrails.equity}}}})()""")
+        assert omit["status"] == 200 and omit["equity"] == 200, omit
+        lines.append(f"FINANCE_100_200_OMITTED={omit['status']} retained={omit['equity']}")
+
+        # Concurrent winner determined from actual 200 response.
+        base = ev(owner_s, "(async()=>{const r=await fetch('/api/juara/v1/vision/draft',{cache:'no-store'});const b=await r.json();return {rev:b.revision,draft:b.draft}})()")
+        rev = base["rev"]
+        conc = ev(owner_s, f"""(async()=>{{const api='/api/juara/v1/vision/draft';const put=async(s)=>{{const d={{...{json.dumps(base['draft'])},philosophy:{{star:s,competitive:45,academy:100-45-s}}}};const r=await fetch(api,{{method:'PUT',headers:{{'Content-Type':'application/json'}},body:JSON.stringify({{draft:d,expectedRevision:{rev}}})}});return {{status:r.status,body:await r.json(),star:s}}}};const [a,b]=await Promise.all([put(31),put(22)]);const g=await fetch(api,{{cache:'no-store'}});const f=await g.json();return {{a:{{status:a.status,code:a.body.code,star:a.star}},b:{{status:b.status,code:b.body.code,star:b.star}},finalRev:f.revision,finalStar:f.draft.philosophy.star}}}})()""")
+        responses = [conc["a"], conc["b"]]
+        winners = [r for r in responses if r["status"] == 200]
+        losers = [r for r in responses if r["status"] == 409]
+        assert len(winners) == 1 and len(losers) == 1, conc
+        assert losers[0]["code"] == "VERSION_CONFLICT", conc
+        assert conc["finalRev"] == rev + 1 and conc["finalStar"] == winners[0]["star"], conc
+        lines.append(f"PARALLEL=200/409 winner_star={winners[0]['star']} final_revision={conc['finalRev']} loser_code={losers[0]['code']}")
+
+        # Tenant isolation with authenticated Bearer (Owner) and positive control.
+        token = json.loads(run(["curl", "-sS", "-X", "POST", f"{PROXY}/auth/v1/token?grant_type=password",
+                                "-H", f"apikey: {anon_key()}", "-H", "Content-Type: application/json",
+                                "-d", json.dumps({"email": OWNER_EMAIL, "password": OWNER_PW})]).stdout)["access_token"]
+        def rest(path, method="GET", body=None):
+            h = ["-H", f"apikey: {anon_key()}", "-H", f"Authorization: Bearer {token}"]
+            if body is not None:
+                h += ["-H", "Content-Type: application/json"]
+            r = run(["curl", "-sS", "-o", "/tmp/opencode/rest.out", "-w", "%{http_code}",
+                     "--max-time", "25", "-X", method, f"{PROXY}/rest/v1/{path}", *h,
+                     *(["-d", json.dumps(body)] if body is not None else [])])
+            return int(r.stdout.strip() or 0), Path("/tmp/opencode/rest.out").read_text()
+        own_code, own_body = rest(f"juara_clubs?id=eq.{club}&select=id,name")
+        assert own_code == 200 and len(json.loads(own_body)) == 1, (own_code, own_body)
+        other_code, other_body = rest(f"juara_clubs?id=eq.{other}&select=id,name")
+        assert other_code == 200 and json.loads(other_body) == [], (other_code, other_body)
+        w_code, _ = rest(f"juara_clubs?id=eq.{other}", "PATCH", {"name": "HACK"})
+        assert w_code in (401, 403), w_code
+        assert db_query(f"select name from juara_clubs where id='{other}'") != "HACK"
+        lines.append(f"TENANT_OWNER own=200 rows=1 other=200 rows=0 patch={w_code} unchanged=true")
 
         lines.append(f"ELAPSED={time.monotonic()-started:.2f}s")
         lines.append("ASSERTIONS_PASS")

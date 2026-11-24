@@ -1,12 +1,11 @@
-# HTTP assertions 2026-11-24T06:07:33.389155+00:00
-app=http://127.0.0.1:3105 proxy=http://127.0.0.1:3104
-isolation: auth=production GoTrue; REST=isolated staging PostgREST; no club real data
-candidate_sha=d815d86392aa66bb2b86382d4d01393b2995711c
-TENANT_OWN_CLUB=200 rows=1 OTHER_READ=200 rows=0 OTHER_WRITE=403 unchanged=Other Club
-TENANT_SD_ROLE=SPORTING_DIRECTOR
-LEGACY_SD_REJECTED=400 code=LEGACY_NOT_MIGRATED
-LEGACY_OWNER_BACKFILL=200 equity=100
-PARALLEL=[200, 409] final_revision=2 winner_star=31
-MALFORMED_FINANCE=500 error=Draf lama tidak dapat dibaca revision_unchanged=2
-ELAPSED=14.85s
+# HTTP assertions 2026-11-24T07:00:59.309164+00:00
+app=http://127.0.0.1:3105 proxy=http://127.0.0.1:3104 candidate_sha=12948d695e0be231b2c92a20a4ec67d6b730d8b6 runner_sha256=a83564c93dd11fbcd6fc887d26a17ff6fb2a2d0926881ba26dbe960a4c3a9291
+isolation: auth=production GoTrue; REST/DB=isolated staging; no club real data
+SD_ROUTE_PRE_MIGRATION=409 code=LEGACY_NOT_MIGRATED
+OWNER_BACKFILL=200 equity=100
+SD_ROUTE_AFTER_BACKFILL=200 owner_equity=100 owner_scrMax=63
+FINANCE_100_200_OMITTED=200 retained=200
+PARALLEL=200/409 winner_star=31 final_revision=2 loser_code=VERSION_CONFLICT
+TENANT_OWNER own=200 rows=1 other=200 rows=0 patch=403 unchanged=true
+ELAPSED=27.63s
 ASSERTIONS_PASS

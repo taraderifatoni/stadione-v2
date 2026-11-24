@@ -1,0 +1,174 @@
+source_sha=12948d695e0be231b2c92a20a4ec67d6b730d8b6 runner_sha256=940d8d79bc2be4252cbe2aef3e10fcb61ac3c2fadbc5abcb2eaa49f218f8bfb7 dirty= 10 files changed, 236 insertions(+), 155 deletions(-)
+boundary: auth=production GoTrue; REST/DB=isolated staging juara_evclose_stage
+NOTICE:  database "juara_evclose_stage_fail" does not exist, skipping
+NOTICE:  database "juara_evclose_stage" does not exist, skipping
+NOTICE:  role "pgrst_evclose" does not exist, skipping
+TARGET host=f879595afc3b db=juara_evclose_stage role=pgrst_evclose port=3103
+ASSERT_PASS: nonempty_fixture_seeded
+ROLLBACK_SNAPSHOT sig=juara_set_vision_draft(uuid,bytea,bytea) policies=juara_audit_logs:juara_audit_logs_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_club_members:juara_club_members_read:{authenticated}:SELECT:(club_id = juara_current_club_id()):
+juara_clubs:juara_clubs_tenant:{authenticated}:ALL:(id = juara_current_club_id()):(id = juara_current_club_id())
+juara_contracts_vault:juara_contracts_vault_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_playbooks:juara_playbooks_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_players:juara_players_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_projections:juara_projections_tenant:{authenticated}:ALL:(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))):(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id())))
+juara_squad_slots:juara_squad_slots_tenant:{authenticated}:ALL:(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))):(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))) data=d863d0ab50a371c9143bd177e94bf8a3
+ASSERT_PASS: injected_failure_rollback_full
+ASSERT_PASS: cutover_atomic
+ASSERT_PASS: staging_ready
+LOG=/tmp/juara-evclose.log
+KEEP requested; cleanup NOT executed
+
+> stadione-v2@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /home/taradfs/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /home/taradfs/stadione-v2/package-lock.json
+
+▲ Next.js 16.2.12 (Turbopack)
+- Environments: .env.production.local, .env.local
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 5.4s
+  Running TypeScript ...
+  Finished TypeScript in 7.3s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/54) ...
+  Generating static pages using 15 workers (13/54) 
+  Generating static pages using 15 workers (26/54) 
+  Generating static pages using 15 workers (40/54) 
+✓ Generating static pages using 15 workers (54/54) in 416ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ƒ /
+├ ○ /_not-found
+├ ƒ /academy
+├ ƒ /academy/report
+├ ○ /admin
+├ ○ /admin/academy
+├ ○ /admin/bookings
+├ ○ /admin/dashboard
+├ ○ /admin/discounts
+├ ○ /admin/fees
+├ ○ /admin/members
+├ ○ /admin/platform
+├ ○ /admin/reports
+├ ○ /admin/settings
+├ ○ /admin/staff
+├ ○ /admin/users
+├ ○ /admin/venues
+├ ƒ /admin/w/[slug]
+├ ƒ /admin/w/[slug]/academy
+├ ƒ /admin/w/[slug]/bookings
+├ ƒ /admin/w/[slug]/members
+├ ƒ /admin/w/[slug]/reports
+├ ƒ /admin/w/[slug]/settings
+├ ƒ /admin/w/[slug]/staff
+├ ƒ /api/admin/announcements
+├ ƒ /api/admin/check-role
+├ ƒ /api/admin/dashboard
+├ ƒ /api/admin/discounts
+├ ƒ /api/admin/fees
+├ ƒ /api/auth/session
+├ ƒ /api/cron/booking-reminder
+├ ƒ /api/cron/membership-expiry
+├ ƒ /api/juara/v1/auth/register
+├ ƒ /api/juara/v1/clubs/bootstrap
+├ ƒ /api/juara/v1/clubs/me
+├ ƒ /api/juara/v1/members/invite
+├ ƒ /api/juara/v1/playbooks
+├ ƒ /api/juara/v1/playbooks/export
+├ ƒ /api/juara/v1/playbooks/generate
+├ ƒ /api/juara/v1/vision/draft
+├ ƒ /api/offline/checkin
+├ ƒ /api/payment/callback
+├ ƒ /api/payment/create
+├ ƒ /api/payment/refund
+├ ƒ /api/staff/accept
+├ ƒ /api/staff/invite
+├ ƒ /api/staff/invite-info
+├ ○ /auth/callback
+├ ƒ /booking
+├ ƒ /fitness
+├ ƒ /fitness/plans
+├ ƒ /forgot-password
+├ ƒ /invite
+├ ○ /juara
+├ ƒ /juara/auth/callback
+├ ○ /juara/login
+├ ○ /juara/playbooks
+├ ○ /juara/signup
+├ ○ /juara/vision
+├ ƒ /login
+├ ƒ /my-bookings
+├ ƒ /notifications
+├ ○ /pos
+├ ƒ /pos/[slug]/checkin
+├ ƒ /pos/[slug]/shift
+├ ƒ /pos/[slug]/walkin
+├ ƒ /profile
+├ ○ /profile/account
+├ ○ /profile/bookings
+├ ○ /profile/children
+├ ○ /profile/notifications
+├ ○ /profile/payments
+├ ○ /profile/privacy
+├ ƒ /register
+├ ○ /search
+├ ƒ /venue/[venueSlug]
+├ ƒ /venue/[venueSlug]/academy
+├ ƒ /venue/[venueSlug]/booking
+├ ƒ /venue/[venueSlug]/fitness
+└ ƒ /venues
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+candidate_build_id=8SiotUGz9O90saw5m-eQt source_sha=12948d695e0be231b2c92a20a4ec67d6b730d8b6
+runtime_backend=Fixture Club build_id=8SiotUGz9O90saw5m-eQt port=3105 pid=7943
+# HTTP assertions 2026-11-24T07:00:59.309164+00:00
+app=http://127.0.0.1:3105 proxy=http://127.0.0.1:3104 candidate_sha=12948d695e0be231b2c92a20a4ec67d6b730d8b6 runner_sha256=a83564c93dd11fbcd6fc887d26a17ff6fb2a2d0926881ba26dbe960a4c3a9291
+isolation: auth=production GoTrue; REST/DB=isolated staging; no club real data
+SD_ROUTE_PRE_MIGRATION=409 code=LEGACY_NOT_MIGRATED
+OWNER_BACKFILL=200 equity=100
+SD_ROUTE_AFTER_BACKFILL=200 owner_equity=100 owner_scrMax=63
+FINANCE_100_200_OMITTED=200 retained=200
+PARALLEL=200/409 winner_star=31 final_revision=2 loser_code=VERSION_CONFLICT
+TENANT_OWNER own=200 rows=1 other=200 rows=0 patch=403 unchanged=true
+ELAPSED=27.63s
+ASSERTIONS_PASS
+rollback_artifact=1a2655c build_id=qvS-txjemv-TSPma4ib3y
+curl: (7) Failed to connect to 127.0.0.1 port 3106 after 0 ms: Could not connect to server
+rollback_get={
+  "rev": 2,
+  "status": 200
+}
+rollback_put={
+  "rev": 3,
+  "status": 200
+}
+rollback_cas={
+  "code": "VERSION_CONFLICT",
+  "status": 409
+}
+ROLLBACK_APP_SMOKE_PASS build_id=qvS-txjemv-TSPma4ib3y
+ENTRYPOINT_PASS source_sha=12948d695e0be231b2c92a20a4ec67d6b730d8b6 candidate_build=8SiotUGz9O90saw5m-eQt
+NOTICE:  database "juara_evclose_stage_fail" does not exist, skipping
+CLEANUP_ATTEMPTED

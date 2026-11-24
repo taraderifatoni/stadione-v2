@@ -118,6 +118,23 @@ terlanjur ada di produksi sebelum M-14).
   Health/read/write application pasca-rollback diwakili HTTP assertions pada build kandidat
   terhadap schema M-16.
 
+## Gate akhir audit `OWNER_REP_EVIDENCE_VALIDITY_AUDIT`
+
+- Entry point `scripts/juara/final_evidence_entrypoint.sh` dijalankan penuh sampai cleanup:
+  `ENTRYPOINT_PASS source_sha=12948d6 candidate_build=8SiotUGz9O90saw5m-eQt`. Port guard,
+  env staging eksplisit, build sebelum start, backend `Fixture Club`, PID/port/diverifikasi.
+  Log: `docs/juara/rehearsal-logs/entrypoint.log`.
+- SD journey lewat **route aplikasi** pada sesi terpisah: GET tanpa equity, PUT sebelum
+  migrasi `409 LEGACY_NOT_MIGRATED`, setelah Owner backfill PUT `200`, Owner GET equity 100.
+  Tidak lagi memakai RPC langsung sebagai pengganti.
+- `FINANCE_100_200_OMITTED=200 retained=200` dipulihkan. Parallel oracle berasal dari respons:
+  winner ditentukan indeks 200, loser 409 `VERSION_CONFLICT`, revision `R+1`, final star = winner.
+- Rollback aplikasi nyata: pinned artifact `1a2655c` build `qvS-txjemv-TSPma4ib3y` dengan
+  schema M-16, health `OK`, GET `200`, PUT `200`, stale CAS `409 VERSION_CONFLICT`.
+  Log: `docs/juara/rehearsal-logs/app-rollback.log`. Ini bukan klaim "diwakili candidate".
+- Manifest visual diperbarui: timezone WIB benar, crop 1024/768 tidak diklaim menampilkan
+  alert/aksi yang berada di luar gambar.
+
 ## Catatan
 
 - Bukti visual tidak menggantikan rehearsal DB.
