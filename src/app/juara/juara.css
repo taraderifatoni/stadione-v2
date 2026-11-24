@@ -290,4 +290,25 @@
   .ju-grid-4 { grid-template-columns: 1fr; }
   .ju-row { grid-template-columns: 1fr; }
   .ju-topbar-sub { display: none; }
+  .ju-sidebar,
+  .ju-sidebar[data-collapsed="true"] {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 64px;
+    flex: none;
+    padding: 6px 8px;
+    z-index: 30;
+  }
+  .ju-sidebar-top, .ju-sidebar-foot { display: none; }
+  .ju-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; overflow: visible; }
+  .ju-navitem { justify-content: center; flex-direction: column; gap: 2px; padding: 6px 2px; font-size: 10px; }
+  .ju-main { padding-bottom: 64px; }
+  .ju-content { padding-bottom: 84px; }
+  .ju-topbar h1 { font-size: 14px; }
+  .ju-user > span:not(.ju-avatar) { display: none; }
+  .ju-user .ju-btn { padding: 8px 10px; }
 }
