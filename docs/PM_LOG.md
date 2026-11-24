@@ -592,5 +592,30 @@ Dampak: tanpa perubahan produksi; data UAT dibersihkan
 
 ---
 
+### 24.11.2026 — Sprint 9: perbaikan tampilan & alur pakai (mandat PM)
+
+- Owner menilai UI 1/10 dan aplikasi tidak berfungsi. PM mengakui kesalahan:
+  selama ini verifikasi berhenti di test/build/HTTP, bukan di pengalaman pakai.
+- Keputusan PM: prioritas tunggal = JUARA bisa dipakai manusia.
+- Dikerjakan: auth page terpisah dari dashboard shell (desain two-column, brand
+  jelas, responsif); workspace shell baru dengan navigasi nyata; dashboard dan
+  arsip playbook menampilkan data sungguhan; wizard dilengkapi field target &
+  formasi yang hilang dan hasil engine dirender rapi; registrasi klub dibuka via
+  `POST /api/juara/v1/auth/register` + M-09 `juara_create_owner_club()`;
+  auth guard mengizinkan `/juara/signup` dan `/juara/auth/*`.
+- Akun demo sementara: `demo@juara.stadione.pro` / `JuaraDemo2026!` (klub Klub Demo
+  JUARA). Dicatat sebagai beta-only, harus dihapus sebelum peluncuran umum.
+- Bukti: 40/40 test, build exit 0, lint sumber juara exit 0, register HTTP 201,
+  deploy VPS merge `29ec189`, service active. End-to-end agent-browser:
+  login → dashboard → wizard → generate → simpan → arsip menampilkan baris baru.
+  Screenshot: `/tmp/opencode/{login,dashboard,playbooks}.png`.
+- Rincian: `docs/juara/SPRINT9_UI_VERIFICATION.md`, `MIGRATION_APPLIED.md`.
+
+Status: SELESAI (bisa dipakai, sudah diuji sebagai manusia)
+Bukti: verifikasi di atas
+Dampak: produksi diperbarui; akun demo beta sementara
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._

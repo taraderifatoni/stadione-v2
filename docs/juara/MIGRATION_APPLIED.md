@@ -24,6 +24,7 @@ membutuhkan kata sandi baru.
 | `20261123000006_juara_hardening.sql` (M-06) | OK |
 | `20261123000007_juara_hardening_view.sql` (M-07) | OK — tambahan PM: cabut grant view audit |
 | `20261123000008_juara_bootstrap_club.sql` (M-08) | OK (retry setelah SSH pulih) |
+| `20261124000009_juara_registration.sql` (M-09) | OK — `juara_create_owner_club()` untuk registrasi, grant hanya `service_role` |
 
 Tidak ada `DROP`, `TRUNCATE`, atau `DELETE` pada objek apa pun. Semua objek baru
 ber-prefix `juara_` di `schema public`.
