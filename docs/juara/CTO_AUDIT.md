@@ -47,3 +47,11 @@
 - **TEMUAN KEAMANAN**: kredensial demo benar-benar tampil di HTML produksi `/juara/login` (CTO curl + grep, nilai tidak dicetak di log ini). PM transparan soal ini di dokumen, tapi tetap risiko: akun demo dengan kata sandi known-public di endpoint publik. Rekomendasi: (1) hapus demo account sebelum rilis umum, (2) sembunyikan kredensial dari halaman login produksi — tampilkan hanya di internal docs atau di balik beta flag. Butuh keputusan Owner.
 - Screenshot masih di `/tmp` (tmpfs, volatil) — minta PM salin ke `storage/` persisten seperti inspirasi.
 - Batas klaim dipertahankan: UI & alur utama terverifikasi lewat E2E PM; SSO, pen-test, notifikasi, data riil tetap eksternal. Responsivitas 320/768/1024/1440 baru lewat CSS, belum di-screenshot.
+
+## [2026-11-24 08.3x WIB] — Verifikasi ulang tindak lanjut Sprint 9
+- Status: TEMUAN KEAMANAN DITUTUP
+- Kredensial demo: CTO curl ulang HTML produksi `/juara/login` → bersih dari `demo@juara`, `JuaraDemo`, `@juara.stadione` (nilai tidak dicetak). Diff `7e664d6` mengganti hint kredensial dengan teks "Kredensial demo diberikan terpisah oleh tim JUARA". Valid.
+- Screenshot: 3 file ada di `docs/juara/screenshots/` (login 175 KB, dashboard 68 KB, playbooks 44 KB) — persisten, tidak lagi di /tmp.
+- Akun demo tetap aktif sampai Owner selesai mencoba, lalu hapus sebelum rilis umum — keputusan PM, perlu Owner ingat.
+- Repo: commit `7e664d6` (push), sinkron 0 0, working tree bersih. Deploy VPS `7341260`, build exit 0, service active. Test 40/40 PASS (CTO jalankan ulang).
+- Batas klaim tetap: UI & alur utama terverifikasi oleh PM via browser; CTO tidak melihat screenshot secara visual. SSO/pen-test/notifikasi/data riil eksternal.
