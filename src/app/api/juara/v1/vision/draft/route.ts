@@ -3,15 +3,29 @@ import { createClient } from "../../../../../../lib/supabase/server.ts"
 import { authzResponse, requireCapability } from "../../../../../../lib/juara/server/authz.ts"
 import { getActiveKey } from "../../../../../../lib/juara/keyring.ts"
 import { encryptField, decryptField } from "../../../../../../lib/juara/field-crypto.ts"
-import { draftForRole, mergeRestrictedDraft, readExistingDraft } from "../../../../../../lib/juara/draft-dto.ts"
+import {
+  draftForRole,
+  mergeRestrictedDraft,
+  splitDraftForStorage,
+  mergeFinanceIntoDraft,
+  draftVersion,
+  readExistingDraft,
+} from "../../../../../../lib/juara/draft-dto.ts"
 
-const putSchema = z.object({ draft: z.unknown() })
+const putSchema = z.object({ draft: z.unknown(), expectedHash: z.string().optional() })
 const TABLE = "juara_clubs"
 const COLUMN = "vision_draft_enc"
+const FINANCE_COLUMN = "vision_finance_enc"
 
 function isMissingFunction(error: { code?: string; message?: string } | null): boolean {
   if (!error) return false
   return error.code === "PGRST202" || /could not find the function/i.test(error.message ?? "")
+}
+
+function decrypt(blob: unknown, keyring: { key: Buffer; keyId: string }, clubId: string, column: string): Record<string, unknown> {
+  if (typeof blob !== "string" || !blob) return {}
+  const raw = Buffer.from(blob.slice(2), "hex")
+  return readExistingDraft(decryptField(raw, keyring.key, clubId, TABLE, column, clubId))
 }
 
 export async function GET() {
@@ -24,17 +38,20 @@ export async function GET() {
 
   const { data, error } = await supabase
     .from(TABLE)
-    .select(COLUMN)
+    .select(`${COLUMN}, ${FINANCE_COLUMN}`)
     .eq("id", auth.clubId)
     .maybeSingle()
   if (error) return Response.json({ error: "Gagal membaca draf" }, { status: 500 })
-  if (!data?.[COLUMN]) return Response.json({ ok: true, draft: null })
+
+  const raw = typeof data?.[COLUMN] === "string" ? data[COLUMN] as string : null
+  if (!raw) return Response.json({ ok: true, draft: null, version: "0" })
 
   try {
-    const blob = Buffer.from((data[COLUMN] as string).slice(2), "hex")
-    const plain = decryptField(blob, keyring.key, auth.clubId, TABLE, COLUMN, auth.clubId)
-    const parsed = readExistingDraft(plain)
-    return Response.json({ ok: true, draft: draftForRole(parsed, auth.role) })
+    const publicDraft = decrypt(raw, keyring, auth.clubId, COLUMN)
+    const finance = decrypt(data?.[FINANCE_COLUMN], keyring, auth.clubId, FINANCE_COLUMN)
+    const legacyEquity = (publicDraft.guardrails as Record<string, unknown> | undefined)?.equity
+    const merged = mergeFinanceIntoDraft(publicDraft, Object.keys(finance).length ? finance : null, auth.role, legacyEquity)
+    return Response.json({ ok: true, draft: draftForRole(merged, auth.role), version: draftVersion(raw) })
   } catch {
     return Response.json({ error: "Draf tidak dapat dibaca" }, { status: 500 })
   }
@@ -59,38 +76,58 @@ export async function PUT(request: Request) {
     return Response.json({ error: "Draf harus berupa objek" }, { status: 400 })
   }
 
-  // Ambil nilai privat lama untuk merge; editor terbatas tidak bisa menimpanya.
-  const { data: existingRow } = await supabase
+  // Fail closed: kegagalan membaca draft lama membatalkan penulisan.
+  const { data: existingRow, error: existingError } = await supabase
     .from(TABLE)
-    .select(COLUMN)
+    .select(`${COLUMN}, ${FINANCE_COLUMN}`)
     .eq("id", auth.clubId)
     .maybeSingle()
-  let existing: Record<string, unknown> = {}
-  if (existingRow?.[COLUMN]) {
-    try {
-      const blob = Buffer.from((existingRow[COLUMN] as string).slice(2), "hex")
-      existing = readExistingDraft(decryptField(blob, keyring.key, auth.clubId, TABLE, COLUMN, auth.clubId))
-    } catch {
-      return Response.json({ error: "Draf lama tidak dapat dibaca" }, { status: 500 })
-    }
+  if (existingError) return Response.json({ error: "Gagal memverifikasi draf lama" }, { status: 500 })
+
+  const existingRaw = typeof existingRow?.[COLUMN] === "string" ? existingRow[COLUMN] as string : null
+  const currentVersion = draftVersion(existingRaw)
+  if (parsed.data.expectedHash && parsed.data.expectedHash !== currentVersion) {
+    return Response.json({ error: "Draf berubah di sesi lain", code: "VERSION_CONFLICT", version: currentVersion }, { status: 409 })
   }
 
-  const merged = mergeRestrictedDraft(parsed.data.draft as Record<string, unknown>, existing, auth.role)
-  const json = JSON.stringify(merged)
-  if (json.length > 20_000) return Response.json({ error: "Draf terlalu besar" }, { status: 413 })
+  let existingPublic: Record<string, unknown> = {}
+  try {
+    existingPublic = decrypt(existingRaw, keyring, auth.clubId, COLUMN)
+  } catch {
+    return Response.json({ error: "Draf lama tidak dapat dibaca" }, { status: 500 })
+  }
 
-  const blob = encryptField(json, keyring.key, keyring.keyId, auth.clubId, TABLE, COLUMN, auth.clubId)
-  const hex = `\\x${blob.toString("hex")}`
+  const merged = mergeRestrictedDraft(parsed.data.draft as Record<string, unknown>, existingPublic, auth.role)
+  const split = splitDraftForStorage(merged, auth.role)
+  const publicJson = JSON.stringify(split.publicDraft)
+  if (publicJson.length > 20_000) return Response.json({ error: "Draf terlalu besar" }, { status: 413 })
 
-  // Adapter transisi: RPC tersedia setelah M-14; fallback untuk schema lama.
-  const rpc = await supabase.rpc("juara_set_vision_draft", { p_club_id: auth.clubId, p_blob: hex })
+  const publicBlob = encryptField(publicJson, keyring.key, keyring.keyId, auth.clubId, TABLE, COLUMN, auth.clubId)
+  const publicHex = `\\x${publicBlob.toString("hex")}`
+  const financeHex = split.finance
+    ? `\\x${encryptField(JSON.stringify(split.finance), keyring.key, keyring.keyId, auth.clubId, TABLE, FINANCE_COLUMN, auth.clubId).toString("hex")}`
+    : null
+
+  // RPC scoped peran; fallback hanya untuk schema sebelum M-15.
+  const rpc = await supabase.rpc("juara_set_vision_draft", {
+    p_club_id: auth.clubId,
+    p_blob: publicHex,
+    p_finance_blob: financeHex,
+  })
   if (rpc.error && !isMissingFunction(rpc.error)) {
     return Response.json({ error: "Gagal menyimpan draf" }, { status: 500 })
   }
   if (rpc.error && isMissingFunction(rpc.error)) {
-    const { error } = await supabase.from(TABLE).update({ [COLUMN]: hex }).eq("id", auth.clubId)
+    const { error } = await supabase.from(TABLE).update({ [COLUMN]: publicHex }).eq("id", auth.clubId)
     if (error) return Response.json({ error: "Gagal menyimpan draf" }, { status: 500 })
+    if (financeHex && (auth.role === "OWNER" || auth.role === "CEO")) {
+      const { error: finError } = await supabase.from(TABLE).update({ [FINANCE_COLUMN]: financeHex }).eq("id", auth.clubId)
+      if (finError) return Response.json({ error: "Gagal menyimpan draf keuangan" }, { status: 500 })
+    }
   }
 
-  return Response.json({ ok: true })
+  const after = await supabase.from(TABLE).select(COLUMN).eq("id", auth.clubId).maybeSingle()
+  if (after.error) return Response.json({ error: "Gagal memverifikasi draf" }, { status: 500 })
+  const afterRaw = typeof after.data?.[COLUMN] === "string" ? after.data[COLUMN] as string : null
+  return Response.json({ ok: true, version: draftVersion(afterRaw) })
 }

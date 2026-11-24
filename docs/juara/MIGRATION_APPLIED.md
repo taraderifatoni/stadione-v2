@@ -29,6 +29,8 @@ membutuhkan kata sandi baru.
 | `20261124000011_juara_tactical_dna_extend.sql` (M-11) | OK — ENUM `juara_tactical_dna` jadi 10 nilai (6 tambahan R21) |
 | `20261124000012_juara_member_role_guard.sql` (M-12) | OK — policy member jadi SELECT-only + RPC `juara_set_member_role` owner-only |
 | `20261124000013_juara_vision_draft.sql` (M-13) | OK — kolom `vision_draft_enc` di `juara_clubs` |
+| `20261124000014_juara_action_policies.sql` (M-14) | **STAGING ONLY** — 16 migrasi & negative test lolos di `juara_staging_20261124`; belum di-apply produksi sampai gate visual/deploy |
+| `20261124000015_juara_draft_finance_split.sql` (M-15) | OK produksi — `vision_finance_enc` + RPC draft self-contained; di-reapply setelah penyempurnaan |
 
 Tidak ada `DROP`, `TRUNCATE`, atau `DELETE` pada objek apa pun. Semua objek baru
 ber-prefix `juara_` di `schema public`.

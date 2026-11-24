@@ -1,6 +1,12 @@
 import test from "node:test"
 import assert from "node:assert/strict"
-import { draftForRole, mergeRestrictedDraft } from "../../src/lib/juara/draft-dto.ts"
+import {
+  draftForRole,
+  mergeRestrictedDraft,
+  splitDraftForStorage,
+  mergeFinanceIntoDraft,
+  draftVersion,
+} from "../../src/lib/juara/draft-dto.ts"
 
 const draft = {
   leagueTier: "LIGA_2",
@@ -30,6 +36,37 @@ test("draft merge: SD tidak bisa menimpa equity lama", () => {
   const merged = mergeRestrictedDraft(incoming, existing, "SPORTING_DIRECTOR")
   assert.equal(merged.guardrails.equity, 15_000_000_000)
   assert.equal(merged.guardrails.scrMax, 62)
+})
+
+test("draft merge: SD tidak menyisipkan equity saat draft lama kosong", () => {
+  const merged = mergeRestrictedDraft(
+    { guardrails: { equity: 99, scrMax: 62 } },
+    {},
+    "SPORTING_DIRECTOR"
+  )
+  assert.ok(!("equity" in merged.guardrails))
+  assert.equal(merged.guardrails.scrMax, 62)
+})
+
+test("draft storage: SD tidak menghasilkan finance blob", () => {
+  const split = splitDraftForStorage({ guardrails: { equity: 15_000_000_000, scrMax: 65 } }, "SPORTING_DIRECTOR")
+  assert.equal(split.finance, null)
+  assert.ok(!("equity" in split.publicDraft.guardrails))
+  const owner = splitDraftForStorage({ guardrails: { equity: 15_000_000_000, scrMax: 65 } }, "OWNER")
+  assert.equal(owner.finance.equity, 15_000_000_000)
+})
+
+test("draft finance: gabung hanya untuk peran berhak", () => {
+  const sd = mergeFinanceIntoDraft({ guardrails: { scrMax: 65 } }, { equity: 15_000_000_000 }, "SPORTING_DIRECTOR")
+  assert.ok(!("equity" in sd.guardrails))
+  const owner = mergeFinanceIntoDraft({ guardrails: { scrMax: 65 } }, { equity: 15_000_000_000 }, "OWNER")
+  assert.equal(owner.guardrails.equity, 15_000_000_000)
+})
+
+test("draft version: deterministik dan berubah saat isi berubah", () => {
+  assert.equal(draftVersion("abc"), draftVersion("abc"))
+  assert.notEqual(draftVersion("abc"), draftVersion("abd"))
+  assert.equal(draftVersion(null), "0")
 })
 
 test("draft merge: Owner boleh mengubah equity", () => {
