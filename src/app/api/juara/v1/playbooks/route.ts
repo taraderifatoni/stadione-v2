@@ -3,22 +3,20 @@ import { playbookGenerateSchema } from "../../../../../lib/juara/validation.ts"
 import { buildPlaybookInsertRow } from "../../../../../lib/juara/playbook-save.ts"
 import { getActiveKey } from "../../../../../lib/juara/keyring.ts"
 import { createClient } from "../../../../../lib/supabase/server.ts"
-import { getJuaraMembership } from "../../../../../lib/juara/server-auth.ts"
+import { authzResponse, requireCapability } from "../../../../../lib/juara/server/authz.ts"
 
 export async function GET() {
-  const res = await getJuaraMembership()
-  if (!res.ok) {
-    if (res.status === 403 && res.code === "NO_CLUB") {
-      return Response.json({ ok: true, playbooks: [] })
-    }
-    return Response.json({ error: res.error, code: res.code }, { status: res.status })
+  const supabase = await createClient()
+  const auth = await requireCapability(supabase, "playbook.read")
+  if (!auth.ok) {
+    if (auth.code === "NO_CLUB") return Response.json({ ok: true, playbooks: [] })
+    return authzResponse(auth)
   }
 
-  const supabase = await createClient()
   const { data, error } = await supabase
     .from("juara_playbooks")
     .select("id, version_name, horizon_years, target_sporting_outcome, tactical_dna_type, status, created_at")
-    .eq("club_id", res.membership.clubId)
+    .eq("club_id", auth.clubId)
     .order("created_at", { ascending: false })
     .limit(50)
 
@@ -47,31 +45,12 @@ export async function POST(request: Request) {
   }
 
   const supabase = await createClient()
-  const { data: auth } = await supabase.auth.getUser()
-  if (!auth.user) {
-    return Response.json({ error: "Butuh sesi login", code: "UNAUTHENTICATED" }, { status: 401 })
-  }
-
-  const { data: membership, error: membershipError } = await supabase
-    .from("juara_club_members")
-    .select("club_id, role")
-    .eq("user_id", auth.user.id)
-    .limit(1)
-    .maybeSingle()
-
-  if (membershipError) {
-    return Response.json({ error: "Gagal membaca keanggotaan klub" }, { status: 500 })
-  }
-  if (!membership) {
-    return Response.json(
-      { error: "Akun belum terhubung ke klub", code: "NO_CLUB" },
-      { status: 403 }
-    )
-  }
+  const auth = await requireCapability(supabase, "playbook.create")
+  if (!auth.ok) return authzResponse(auth)
 
   const row = buildPlaybookInsertRow(
     parsed.data,
-    membership.club_id,
+    auth.clubId,
     crypto.randomUUID(),
     keyring
   )

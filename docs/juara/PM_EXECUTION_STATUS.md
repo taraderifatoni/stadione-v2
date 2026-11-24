@@ -58,5 +58,6 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
 
 ## Update
 
-- D1: baseline dicatat; dimulai implementasi D2.
-- D2: dimulai — capability matrix + RLS anti eskalasi.
+- D1: **IMPLEMENTED + TESTED** — baseline/commit/migrasi/rollback tercatat di dokumen ini dan `SECURITY_GATE_UAT.md`.
+- D2: **IMPLEMENTED + TESTED** — capability matrix, `requireCapability`, redaksi DTO, gate route v1, M-12 anti eskalasi. Bukti: 57/57 test, build exit 0, runtime PATCH/RPC seperti tercatat. **Belum DEPLOYED/ACCEPTED**.
+- D3: berikutnya — shell FM + draft persistence + bukti browser sebelum deploy bertahap.

@@ -1,0 +1,218 @@
+{
+  "date": "2026-11-24",
+  "type": "standalone design prototype only",
+  "viewports": [
+    {
+      "width": 1440,
+      "view": "boardroom",
+      "result": {
+        "heading": "Ambisi jelas. Langkah berikutnya terukur.",
+        "overflow": false,
+        "pageWidth": 1440,
+        "viewport": 1440
+      }
+    },
+    {
+      "width": 1440,
+      "view": "squad",
+      "result": {
+        "heading": "Skuad yang mengikuti rencana.",
+        "overflow": false,
+        "pageWidth": 1440,
+        "viewport": 1440
+      }
+    },
+    {
+      "width": 1440,
+      "view": "finance",
+      "result": {
+        "heading": "Kemampuan membiayai ambisi.",
+        "overflow": false,
+        "pageWidth": 1440,
+        "viewport": 1440
+      }
+    },
+    {
+      "width": 1440,
+      "view": "compare",
+      "result": {
+        "heading": "Satu tujuan. Tiga jalan yang bisa dipilih.",
+        "overflow": false,
+        "pageWidth": 1440,
+        "viewport": 1440
+      }
+    },
+    {
+      "width": 1024,
+      "view": "boardroom",
+      "result": {
+        "heading": "Ambisi jelas. Langkah berikutnya terukur.",
+        "overflow": false,
+        "pageWidth": 1024,
+        "viewport": 1024
+      }
+    },
+    {
+      "width": 1024,
+      "view": "squad",
+      "result": {
+        "heading": "Skuad yang mengikuti rencana.",
+        "overflow": false,
+        "pageWidth": 1024,
+        "viewport": 1024
+      }
+    },
+    {
+      "width": 1024,
+      "view": "finance",
+      "result": {
+        "heading": "Kemampuan membiayai ambisi.",
+        "overflow": false,
+        "pageWidth": 1024,
+        "viewport": 1024
+      }
+    },
+    {
+      "width": 1024,
+      "view": "compare",
+      "result": {
+        "heading": "Satu tujuan. Tiga jalan yang bisa dipilih.",
+        "overflow": false,
+        "pageWidth": 1024,
+        "viewport": 1024
+      }
+    },
+    {
+      "width": 768,
+      "view": "boardroom",
+      "result": {
+        "heading": "Ambisi jelas. Langkah berikutnya terukur.",
+        "overflow": false,
+        "pageWidth": 768,
+        "viewport": 768
+      }
+    },
+    {
+      "width": 768,
+      "view": "squad",
+      "result": {
+        "heading": "Skuad yang mengikuti rencana.",
+        "overflow": false,
+        "pageWidth": 768,
+        "viewport": 768
+      }
+    },
+    {
+      "width": 768,
+      "view": "finance",
+      "result": {
+        "heading": "Kemampuan membiayai ambisi.",
+        "overflow": false,
+        "pageWidth": 768,
+        "viewport": 768
+      }
+    },
+    {
+      "width": 768,
+      "view": "compare",
+      "result": {
+        "heading": "Satu tujuan. Tiga jalan yang bisa dipilih.",
+        "overflow": false,
+        "pageWidth": 768,
+        "viewport": 768
+      }
+    },
+    {
+      "width": 390,
+      "view": "boardroom",
+      "result": {
+        "heading": "Ambisi jelas. Langkah berikutnya terukur.",
+        "overflow": false,
+        "pageWidth": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "width": 390,
+      "view": "squad",
+      "result": {
+        "heading": "Skuad yang mengikuti rencana.",
+        "overflow": false,
+        "pageWidth": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "width": 390,
+      "view": "finance",
+      "result": {
+        "heading": "Kemampuan membiayai ambisi.",
+        "overflow": false,
+        "pageWidth": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "width": 390,
+      "view": "compare",
+      "result": {
+        "heading": "Satu tujuan. Tiga jalan yang bisa dipilih.",
+        "overflow": false,
+        "pageWidth": 390,
+        "viewport": 390
+      }
+    },
+    {
+      "width": 375,
+      "view": "boardroom",
+      "result": {
+        "heading": "Ambisi jelas. Langkah berikutnya terukur.",
+        "overflow": false,
+        "pageWidth": 375,
+        "viewport": 375
+      }
+    },
+    {
+      "width": 375,
+      "view": "squad",
+      "result": {
+        "heading": "Skuad yang mengikuti rencana.",
+        "overflow": false,
+        "pageWidth": 375,
+        "viewport": 375
+      }
+    },
+    {
+      "width": 375,
+      "view": "finance",
+      "result": {
+        "heading": "Kemampuan membiayai ambisi.",
+        "overflow": false,
+        "pageWidth": 375,
+        "viewport": 375
+      }
+    },
+    {
+      "width": 375,
+      "view": "compare",
+      "result": {
+        "heading": "Satu tujuan. Tiga jalan yang bisa dipilih.",
+        "overflow": false,
+        "pageWidth": 375,
+        "viewport": 375
+      }
+    }
+  ],
+  "checks": {
+    "search": true,
+    "emptySearch": true,
+    "dialogOpenClose": true,
+    "focusRestore": true,
+    "twoPitchGaps": true,
+    "scenarioMath": {
+      "revenue": "Rp19,6 M",
+      "scr": "76,5%"
+    },
+    "browserErrors": ""
+  }
+}

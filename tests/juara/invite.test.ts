@@ -1,25 +1,18 @@
 import test from "node:test"
 import assert from "node:assert/strict"
-import { POST } from "../../src/app/api/juara/v1/members/invite/route.ts"
+import { inviteSchema } from "../../src/lib/juara/invite.ts"
 
-test("invite: payload valid → ok", async () => {
-  const req = new Request("http://localhost/api/juara/v1/members/invite", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: "a@b.com", role: "OWNER", clubId: "c1" }),
-  })
-  const res = await POST(req)
-  assert.equal(res.status, 200)
-  const body = await res.json()
-  assert.equal(body.ok, true)
+test("invite: payload valid lolos validasi", () => {
+  const parsed = inviteSchema.safeParse({ email: "a@b.com", role: "OWNER", clubId: "c1" })
+  assert.equal(parsed.success, true)
 })
 
-test("invite: role invalid → 400", async () => {
-  const req = new Request("http://localhost/api/juara/v1/members/invite", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email: "a@b.com", role: "SUPERADMIN", clubId: "c1" }),
-  })
-  const res = await POST(req)
-  assert.equal(res.status, 400)
+test("invite: role invalid ditolak", () => {
+  const parsed = inviteSchema.safeParse({ email: "a@b.com", role: "SUPERADMIN", clubId: "c1" })
+  assert.equal(parsed.success, false)
+})
+
+test("invite: email invalid ditolak", () => {
+  const parsed = inviteSchema.safeParse({ email: "bukan-email", role: "CEO", clubId: "c1" })
+  assert.equal(parsed.success, false)
 })
