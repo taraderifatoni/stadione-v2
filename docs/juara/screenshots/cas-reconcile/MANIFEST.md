@@ -10,7 +10,7 @@
 | Bukti | `dashboard-loading-1440x900.png`, `dashboard-1440x900.png`, `dashboard-1024x768.png`, `dashboard-768x1024.png`, `dashboard-390x844.png`, `vision-validation-1440x900.png`, `vision-save-blocked-1440x900.png` |
 | Deviasi | Sama dengan paket sebelumnya: inspector 360–440px dan action bar 52px belum ada; isi dashboard masih kartu lama, bukan meja keputusan FM; panel kanan wizard masih "Catatan". `vision-save-blocked` menampilkan "Gagal memverifikasi draf lama" karena M-16 sengaja belum di-apply — ini **fail-closed yang diharapkan**, bukan regresi rilis. |
 | Pemeriksaan PM | Dashboard loaded menampilkan klub, Liga 2, 2 playbook (bukan "Memuat ringkasan"). Validasi menampilkan total 85% + sisa 15%. Simpan draf gagal closed tanpa raw UPDATE fallback sesuai gate. Tidak ada clipping 390×844. |
-| Review | **PENDING** — Owner Representative wajib membuka gambar. Belum `VISUALLY ACCEPTED`. |
+| Review | **REVIEWED — CHANGES REQUIRED** — Owner Representative membuka seluruh 7 gambar; hasil per gambar dan gate teknis ada di `../../OWNER_REP_CAS_AUDIT.md`. Belum `VISUALLY ACCEPTED`. |
 
 Catatan: bukti transaksi/CAS bukan dari screenshot melainkan runner staging di
 `docs/juara/CAS_RECONCILE_EVIDENCE.md` (urutan produksi M-15 → M-14 → M-16, CAS paralel

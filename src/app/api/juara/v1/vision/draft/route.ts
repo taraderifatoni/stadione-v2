@@ -2,14 +2,13 @@ import { z } from "zod"
 import { createClient } from "../../../../../../lib/supabase/server.ts"
 import { authzResponse, requireCapability } from "../../../../../../lib/juara/server/authz.ts"
 import { getActiveKey } from "../../../../../../lib/juara/keyring.ts"
-import { encryptField, decryptField } from "../../../../../../lib/juara/field-crypto.ts"
+import { decryptField } from "../../../../../../lib/juara/field-crypto.ts"
 import {
   draftForRole,
-  mergeRestrictedDraft,
-  splitDraftForStorage,
   mergeFinanceIntoDraft,
   readExistingDraft,
 } from "../../../../../../lib/juara/draft-dto.ts"
+import { prepareDraftWriteFromEncrypted } from "../../../../../../lib/juara/draft-write.ts"
 
 const putSchema = z.object({ draft: z.unknown(), expectedRevision: z.number().int().nonnegative() })
 const TABLE = "juara_clubs"
@@ -86,22 +85,23 @@ export async function PUT(request: Request) {
   const { data: existingRow, error: existingError } = await supabase.from(TABLE).select(SELECT_FIELDS).eq("id", auth.clubId).maybeSingle()
   if (existingError) return Response.json({ error: "Gagal memverifikasi draf lama" }, { status: 500 })
 
-  let existingPublic: Record<string, unknown> = {}
+  let publicHex: string
+  let financeHex: string | null
   try {
-    existingPublic = decrypt(existingRow?.[COLUMN], keyring, auth.clubId, COLUMN)
+    const prepared = prepareDraftWriteFromEncrypted({
+      incoming: parsed.data.draft as Record<string, unknown>,
+      existingPublicHex: typeof existingRow?.[COLUMN] === "string" ? existingRow[COLUMN] as string : null,
+      existingFinanceHex: typeof existingRow?.[FINANCE_COLUMN] === "string" ? existingRow[FINANCE_COLUMN] as string : null,
+      role: auth.role,
+      clubId: auth.clubId,
+      keyring,
+    })
+    publicHex = prepared.publicHex
+    financeHex = prepared.financeHex
   } catch {
     return Response.json({ error: "Draf lama tidak dapat dibaca" }, { status: 500 })
   }
-
-  const merged = mergeRestrictedDraft(parsed.data.draft as Record<string, unknown>, existingPublic, auth.role)
-  const split = splitDraftForStorage(merged, auth.role)
-  const publicJson = JSON.stringify(split.publicDraft)
-  if (publicJson.length > 20_000) return Response.json({ error: "Draf terlalu besar" }, { status: 413 })
-
-  const publicHex = `\\x${encryptField(publicJson, keyring.key, keyring.keyId, auth.clubId, TABLE, COLUMN, auth.clubId).toString("hex")}`
-  const financeHex = split.finance
-    ? `\\x${encryptField(JSON.stringify(split.finance), keyring.key, keyring.keyId, auth.clubId, TABLE, FINANCE_COLUMN, auth.clubId).toString("hex")}`
-    : null
+  if (publicHex.length > 40_000) return Response.json({ error: "Draf terlalu besar" }, { status: 413 })
 
   // Satu transaksi atomik di database. Tidak ada fallback raw UPDATE.
   const rpc = await supabase.rpc("juara_set_vision_draft", {

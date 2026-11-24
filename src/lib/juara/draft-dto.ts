@@ -1,7 +1,7 @@
 import { can, type Capability } from "./capabilities.ts"
 import type { JuaraRole } from "./rbac.ts"
 
-type DraftObject = Record<string, unknown>
+export type DraftObject = Record<string, unknown>
 
 const BASE_FIELDS = [
   "leagueTier", "horizonYears", "targetOutcome", "tacticalDna",
@@ -33,7 +33,7 @@ export function draftVersion(raw: string | null): string {
   return h.toString(16)
 }
 
-function allowlisted(draft: DraftObject, role: JuaraRole): DraftObject {
+export function allowlisted(draft: DraftObject, role: JuaraRole): DraftObject {
   const out: DraftObject = {}
   for (const key of BASE_FIELDS) if (key in draft) out[key] = draft[key]
 

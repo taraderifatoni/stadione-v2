@@ -41,9 +41,27 @@ terlanjur ada di produksi sebelum M-14).
 - Tidak ada perubahan DB produksi untuk M-14/M-16. Audit compatibility M-15 produksi
   dilakukan read-only: kolom `vision_finance_enc` ada, fungsi 3 argumen ada; tidak ada rollback.
 
+## Koreksi audit berikutnya (checkpoint saat ini)
+
+-Bug finance: `planDraftWrite` sekarang memakai `existingFinance` sebagai authoritative;
+  legacy `public.guardrails.equity` hanya dipakai bila finance blob absen. Route melewati
+  `prepareDraftWriteFromEncrypted` (enkripsi/dekripsi nyata). Malformed finance → fail closed.
+- Regression encrypted-blob: public equity=100 + finance=200 + Owner PUT tanpa equity →
+  finance tetap 200; SD PUT equity=999 → tidak mengubah finance; backfill legacy-only → 100.
+- M-16 sekarang `BEGIN; … COMMIT;`; injected `SELECT 1/0` sebelum COMMIT pada klon staging
+  membuat exit 3 dan signature RPC tetap sama setelah rollback.
+- Backend staging terisolasi: PostgREST port 3101 + proxy lokal 3102 + candidate Next 3100.
+  HTTP Owner/SD: save/reload, allowlist SD, stale-write tidak mengubah data, cross-tenant
+  GET `[]` / PATCH 403. Log sanitized: `docs/juara/rehearsal-logs/http-cas.log`.
+- Runner persisten: `scripts/juara/cas_sql_staging.sh`, `scripts/juara/cas_assert.sh`,
+  `scripts/juara/staging_http_rehearsal.sh`, `scripts/juara/local-supabase-proxy.js`.
+- Paket visual build kandidat: `docs/juara/screenshots/http-cas-stage/` (Owner save sukses,
+  reload, conflict attempt). Screenshot conflict UI tidak berhasil diambil; bukti conflict
+  memakai HTTP stale-write + runner SQL paralel.
+
 ## Catatan
 
-- Bukti visual dari build kandidat disimpan terpisah di
-  `docs/juara/screenshots/cas-reconcile/` dan bukan pengganti rehearsal DB.
+- Bukti visual tidak menggantikan rehearsal DB.
 - Account/data uji sepenuhnya sintetis; tidak ada klub riil.
 - Rollback tetap pada level aplikasi; policy keamanan tidak dilemahkan.
+- M-14/M-16 masih belum di-apply produksi; UI belum di-deploy; P1 belum accepted.

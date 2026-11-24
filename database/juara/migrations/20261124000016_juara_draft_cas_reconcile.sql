@@ -3,6 +3,8 @@
 -- menyusul lalu M-16 menghapus overload yang dibuatnya). Atomik per statement.
 -- TIDAK di-apply produksi pada slice ini; rehearsal staging wajib.
 
+BEGIN;
+
 ALTER TABLE juara_clubs
   ADD COLUMN IF NOT EXISTS vision_revision INTEGER NOT NULL DEFAULT 0,
   ADD COLUMN IF NOT EXISTS vision_legacy_migrated BOOLEAN NOT NULL DEFAULT false;
@@ -76,3 +78,5 @@ BEGIN
     RAISE EXCEPTION 'Overload juara_set_vision_draft masih ada';
   END IF;
 END $$;
+
+COMMIT;

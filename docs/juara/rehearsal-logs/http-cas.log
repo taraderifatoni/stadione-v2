@@ -1,0 +1,48 @@
+# Sanitized rehearsal log — commit-fixes-v3 candidate
+
+Tanggal: 24 Nov 2026. Lingkungan: staging DB `juara_cas_stage` / `juara_http_stage` di container `supabase-db-zurmq2lrm9hj510fmnj1seqr`; PostgREST staging port 3101; local proxy 3102; candidate Next 3100. Semua akun/dataset sintetis; tidak ada klub riil atau kredensial tercatat.
+
+## SQL staging (urutan produksi M-00…M-13 → M-15 → M-14 → M-16)
+
+OK 20261123000000_juara_types.sql … OK 20261124000016_juara_draft_cas_reconcile.sql
+--- overload sebelum M16 ---
+juara_set_vision_draft(uuid,bytea)
+juara_set_vision_draft(uuid,bytea,bytea)
+--- overload sesudah M16 ---
+juara_set_vision_draft(uuid,bytea,bytea,integer)
+NEG_sd_before_migration RC=1 :: ERROR: LEGACY_NOT_MIGRATED
+OK_owner_backfill RC=0 :: 1
+after_owner_rev=1 migrated=true finance=bb
+OK_sd_existing_finance_preserved RC=0 :: 2
+after_sd_rev=2 finance=bb
+NEG_fin_direct_rpc RC=1 :: ERROR: Tidak berhak menulis draft klub ini
+NEG_cross_tenant RC=0 :: 0
+CAS_PARALLEL_RC=0/1
+CAS1=3
+CAS2=ERROR: REVISION_CONFLICT
+final_revision=3
+juara_audit_logs:SELECT … juara_projections:SELECT
+STAGE_DROPPED
+
+## Rollback injected failure (M-16 atomik)
+
+BEFORE=juara_set_vision_draft(uuid,bytea,bytea,integer)
+FAIL_RC=3 :: ERROR: division by zero (disuntik sebelum COMMIT, setelah DROP/CREATE)
+AFTER=juara_set_vision_draft(uuid,bytea,bytea,integer)
+FAIL_ROLLBACK_DONE
+
+## HTTP candidate (Owner & SD via local proxy)
+
+Owner GET draft → 200, revision 0, draft null.
+Owner PUT equity=100 → 200 revision 1; GET → equity 100, revision 1.
+Owner PUT equity=200 → 200 revision 2; GET → equity 200, revision 2.
+Owner PUT tanpa equity → 200 revision 3; GET → equity 200 (authoritative finance dipertahankan).
+Stale PUT expectedRevision=7 setelah revision naik ke 8 → tidak mengubah data (revision/star tetap 8/33).
+SD GET draft → 200, guardrails keys = ["scrMax"], equity tidak tampil.
+SD PUT dengan equity=999 → 200 revision 9; Owner GET → equity tetap 300, scrMax 61.
+Cross-tenant GET klub lain dengan token Owner → 200 body [].
+Cross-tenant PATCH klub lain → 403 42501 permission denied.
+
+Catatan: dua PUT paralel via browser sempat CDP timeout, tetapi replay SQL paralel di atas
+membuktikan CAS 1 sukses / 1 conflict. Screenshot conflict UI tidak berhasil diambil;
+bukti conflict memakai HTTP stale-write dan runner SQL.
