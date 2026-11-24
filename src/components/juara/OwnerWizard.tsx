@@ -99,7 +99,7 @@ export default function OwnerWizard() {
   const [saveError, setSaveError] = useState<string | null>(null)
   const [saveResult, setSaveResult] = useState<string | null>(null)
   const [draftStatus, setDraftStatus] = useState<string | null>(null)
-  const [draftVersion, setDraftVersion] = useState("0")
+  const [revision, setRevision] = useState(0)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -170,11 +170,11 @@ export default function OwnerWizard() {
       const res = await fetch("/api/juara/v1/vision/draft", {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ draft, expectedHash: draftVersion }),
+        body: JSON.stringify({ draft, expectedRevision: revision }),
       })
       const body = await res.json()
       if (!res.ok) throw new Error(body.error ?? "Gagal menyimpan draf")
-      if (body.version) setDraftVersion(body.version)
+      if (typeof body.revision === "number") setRevision(body.revision)
       setDraftStatus("Draf tersimpan")
     } catch (e) {
       setDraftStatus(e instanceof Error ? e.message : "Gagal menyimpan draf")
@@ -196,7 +196,7 @@ export default function OwnerWizard() {
             philosophy: { ...INITIAL.philosophy, ...(d.philosophy ?? {}) },
             guardrails: { ...INITIAL.guardrails, ...(d.guardrails ?? {}) },
           })
-          setDraftVersion(body.version ?? "0")
+          setRevision(typeof body.revision === "number" ? body.revision : 0)
           setDraftStatus("Draf dimuat")
         }
       } catch {
