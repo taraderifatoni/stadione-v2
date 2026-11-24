@@ -48,3 +48,14 @@ Divisi 6 habis, model berbayar membutuhkan persetujuan pengeluaran, dan pekerjaa
 berikutnya bersifat berurutan serta bergantung pada konteks produksi yang sudah ada
 di sesi PM. Enam worker tetap sehat di DB dan tidak dihapus; tidak ada tugas baru
 yang dikirim sebelum ada model/provider baru yang disetujui Owner.
+
+### Pembaruan 24.11.2026 — seluruh worker kena kuota
+
+Keenam sesi worker (`ses_juara_div1_domain` … `ses_juara_div6_devops`) melaporkan
+`Free usage limit reached`. Ini **bukan kegagalan deliverable**: 6 artefak Sprint 0
+sudah selesai, diverifikasi, dan ter-commit sejak 22–23.11. Pola ini mengonfirmasi
+kuota bersifat akun/harian, sehingga mengganti model gratis tidak menyelesaikan
+masalah. Keputusan PM tetap **opsi C (native)**: seluruh pekerjaan lanjutan
+(Sprint 7–9: migrasi, RLS UAT, UI rebuild, registrasi) sudah dan akan dikerjakan
+langsung di sesi PM. Tidak ada model berbayar yang dipakai tanpa lampu hijau Owner.
+Sesi worker tidak dihapus dan tidak dikirimi tugas baru.

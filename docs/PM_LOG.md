@@ -620,5 +620,21 @@ Dampak: produksi diperbarui; akun demo beta sementara
 
 ---
 
+### 24.11.2026 — Kuota worker habis (seluruh divisi)
+
+- Keenam worker JUARA (`ses_juara_div1_domain` … `ses_juara_div6_devops`)
+  melaporkan `Free usage limit reached`. Tidak ada pekerjaan yang hilang: 6 artefak
+  Sprint 0 sudah selesai dan ter-commit; Sprint 7–9 dikerjakan native di sesi PM.
+- Ini keterbatasan harness/kuota harian akun, bukan kegagalan kualitas worker.
+- Keputusan PM tetap opsi C (native). Dilarang pindah ke model berbayar tanpa izin
+  Owner; sesi worker tidak dihapus dan tidak dikirimi tugas baru.
+- Dicatat di `docs/juara/TEAM.md`.
+
+Status: TIDAK ADA BLOKIR
+Bukti: notifikasi 6 sesi + 6 artefak Sprint 0 ada di repo
+Dampak: tanpa perubahan produksi
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._
