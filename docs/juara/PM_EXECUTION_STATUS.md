@@ -56,6 +56,18 @@ tertinggal satu commit docs; tidak ada risiko produksi.
 Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED → ACCEPTED`.
 "Sprint selesai" tidak dipakai sebelum journey dan bukti visual diuji.
 
+## Catatan assessment restrukturisasi AI (24 Nov 2026, mandat Owner terpisah)
+
+- Assessment feature-based dibaca/dikirimkan di `docs/assessment/PM_AI_CAPACITY_ASSESSMENT.md`
+  dan artefak pendukung; **rekomendasi, bukan struktur yang disetujui**.
+- Enam worker ada di DB tetapi 0 terbukti runnable (429 free-limit); kapasitas nyata 1 PM aktif
+  (+1 CTO plausibel); konkurensi worker maksimal pernah dibuktikan 3; biaya 0 dan paid provider
+  dilarang tanpa izin Owner.
+- Inventaris 86 feature groups, 6 pod usulan A–F, pilot maksimal 3 lane, semua ownership
+  masih Proposed/PM interim. Tidak ada rename/reassign permanen atau pembuatan paid capacity.
+- Payment static triage mengonfirmasi REAL BLOCKER pada source yang di-deploy; tidak ada
+  transaksi riil atau exploit live. Menunggu keputusan Owner sebelum perbaikan/rollout.
+
 ## Update
 
 - D1: **IMPLEMENTED + TESTED** — baseline/commit/migrasi/rollback tercatat di dokumen ini dan `SECURITY_GATE_UAT.md`.
