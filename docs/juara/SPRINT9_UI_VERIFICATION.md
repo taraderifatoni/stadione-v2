@@ -28,16 +28,16 @@ keputusan: prioritas tunggal = JUARA bisa dipakai manusia, bukan sekadar build h
 
 ## Bukti end-to-end (agent-browser, HTTPS produksi)
 
-1. Buka `https://juara.stadione.pro/juara/login` → screenshot `/tmp/opencode/login.png`:
+1. Buka `https://juara.stadione.pro/juara/login` → screenshot `docs/juara/screenshots/login.png`:
    halaman auth two-column, brand JUARA, form rapi, tidak ada skeleton dashboard.
 2. Isi email/password demo → klik Masuk → URL `https://juara.stadione.pro/juara`,
    sidebar navigasi muncul, judul "Selamat datang, Klub Demo JUARA".
-   Screenshot `/tmp/opencode/dashboard.png`.
+   Screenshot `docs/juara/screenshots/dashboard.png`.
 3. Klik Owner Vision → 5 langkah → Generate Playbook → tabel matriks usia tampil
    (17-21: 25%/7 slot, 22-24: 25%/7, 25-29: 40%/11, 30-33: 10%/2).
 4. Klik Simpan Playbook → muncul notifikasi "tersimpan".
 5. Klik Playbook → tabel arsip menampilkan baris `CHAMPION 1Y / CHAMPION / 1 tahun /
-   DRAFT / 24/11/2026`. Screenshot `/tmp/opencode/playbooks.png`.
+   DRAFT / 24/11/2026`. Screenshot `docs/juara/screenshots/playbooks.png`.
 6. `/juara/signup` tidak kena auth guard; form registrasi render lengkap.
 
 ## Akun demo (sementara)
@@ -46,8 +46,11 @@ keputusan: prioritas tunggal = JUARA bisa dipakai manusia, bukan sekadar build h
 - Password: `JuaraDemo2026!`
 - Klub: Klub Demo JUARA (Liga 2), peran OWNER.
 
-Kredensial ini juga ditampilkan di halaman login untuk kemudahan UAT Owner.
-**Hapus sebelum peluncuran umum** (beta/internal hanya).
+Kredensial awalnya ditampilkan di halaman login, tetapi **CTO menemukan risiko
+keamanan** (akun dengan sandi publik di endpoint publik). Sesuai keputusan PM,
+kredensial sudah **disembunyikan dari halaman login produksi** dan hanya tersimpan
+di dokumen internal ini + disampaikan langsung ke Owner. Akun demo tetap aktif
+sampai Owner selesai mencoba; **hapus sebelum peluncuran umum**.
 
 ## Masih terbuka
 

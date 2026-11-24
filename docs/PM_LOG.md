@@ -605,6 +605,9 @@ Dampak: tanpa perubahan produksi; data UAT dibersihkan
   auth guard mengizinkan `/juara/signup` dan `/juara/auth/*`.
 - Akun demo sementara: `demo@juara.stadione.pro` / `JuaraDemo2026!` (klub Klub Demo
   JUARA). Dicatat sebagai beta-only, harus dihapus sebelum peluncuran umum.
+- Tindak lanjut audit CTO: kredensial demo ditarik dari HTML halaman login produksi
+  (risiko sandi publik), kini hanya di dokumen internal & disampaikan ke Owner;
+  screenshot E2E dipindah dari `/tmp` ke `docs/juara/screenshots/`.
 - Bukti: 40/40 test, build exit 0, lint sumber juara exit 0, register HTTP 201,
   deploy VPS merge `29ec189`, service active. End-to-end agent-browser:
   login → dashboard → wizard → generate → simpan → arsip menampilkan baris baru.

@@ -35,3 +35,15 @@
 - Kebersihan: `qa_token.txt` sudah hilang; `/tmp/opencode/juara-migrations.tgz` & `juara-uat.sh` masih ada (artefak non-sensitif, berguna — bukan kredensial).
 - **Batas klaim dipertahankan**: "UAT RLS runtime TERVERIFIKASI" (anon + authenticated). Produksi **BELUM** "fully verified" — SSO, pen-test, kredensial notifikasi, data klub riil masih tertunda (input eksternal). PM benar tidak mengklaim lebih.
 - Rekomendasi: tutup item UAT RLS sebagai selesai. Sisa 4 item eksternal menunggu Owner/vendor.
+
+## [2026-11-24 08.x WIB] — Audit Sprint 9 UI & alur pakai (keluhan UI 1/10)
+- Status: TERVERIFIKASI TEKNIS; PENGALAMAN PAKAI但 bersandar pada E2E PM (CTO tidak bisa melihat gambar).
+- Owner nilai UI 1/10 & aplikasi "tidak berfungsi". PM akui verifikasi lama berhenti di test/build/HTTP — pengakuan jujur, bagus. Prioritas tunggal: JUARA bisa dipakai manusia.
+- Repo: commit `baae533` (UI rebuild + register + wizard) & `ab5c181` (dok) ada; `main...origin/main` 0 0 sinkron; working tree bersih. Deploy VPS `8addba9`, service active.
+- Verifikasi CTO: `node --test tests/juara/*.test.ts` → 40 pass / 0 fail. Build & ESLint exit 0 (dari artefak PM). Artefak `SPRINT9_UI_VERIFICATION.md` lengkap.
+- Produksi (CTO curl sendiri): `/juara` 307, `/juara/login` 200, `/juara/signup` 200, `stadione.pro` 200.
+- Register HTTP 201 + migrasi M-09 `juara_create_owner_club` (service_role only) — bersandar pada artefak PM; CTO tidak menguji tulis ke DB produksi.
+- E2E agent-browser: login → dashboard (nama klub nyata) → wizard 5 langkah → generate → simpan → arsip `CHAMPION 1Y`. Ini DATA E2E PM. CTO tidak bisa melihat screenshot (`/tmp/opencode/{login,dashboard,playbooks}.png`) — Owner harus nilai visual sendiri apakah sudah layak.
+- **TEMUAN KEAMANAN**: kredensial demo benar-benar tampil di HTML produksi `/juara/login` (CTO curl + grep, nilai tidak dicetak di log ini). PM transparan soal ini di dokumen, tapi tetap risiko: akun demo dengan kata sandi known-public di endpoint publik. Rekomendasi: (1) hapus demo account sebelum rilis umum, (2) sembunyikan kredensial dari halaman login produksi — tampilkan hanya di internal docs atau di balik beta flag. Butuh keputusan Owner.
+- Screenshot masih di `/tmp` (tmpfs, volatil) — minta PM salin ke `storage/` persisten seperti inspirasi.
+- Batas klaim dipertahankan: UI & alur utama terverifikasi lewat E2E PM; SSO, pen-test, notifikasi, data riil tetap eksternal. Responsivitas 320/768/1024/1440 baru lewat CSS, belum di-screenshot.

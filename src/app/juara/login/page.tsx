@@ -73,7 +73,7 @@ export default function JuaraLoginPage() {
           </div>
           <div className="ju-hint">
             <ShieldCheck size={13} aria-hidden="true" /> Akses dibatasi RLS: Anda hanya melihat data klub sendiri.
-            <br /><Gauge size={13} aria-hidden="true" /> <FileSpreadsheet size={13} aria-hidden="true" /> Demo sementara: <b>demo@juara.stadione.pro</b> / <b>JuaraDemo2026!</b>
+            <br /><Gauge size={13} aria-hidden="true" /> <FileSpreadsheet size={13} aria-hidden="true" /> Kredensial demo diberikan terpisah oleh tim JUARA.
           </div>
         </div>
       </section>
