@@ -27,6 +27,8 @@ membutuhkan kata sandi baru.
 | `20261124000009_juara_registration.sql` (M-09) | OK — `juara_create_owner_club()` untuk registrasi, grant hanya `service_role` |
 | `20261124000010_juara_tactical_profile.sql` (M-10) | OK — kolom `tactical_profile_enc` ditambah ke `juara_playbooks` (8 tabel, tanpa tabel baru) |
 | `20261124000011_juara_tactical_dna_extend.sql` (M-11) | OK — ENUM `juara_tactical_dna` jadi 10 nilai (6 tambahan R21) |
+| `20261124000012_juara_member_role_guard.sql` (M-12) | OK — policy member jadi SELECT-only + RPC `juara_set_member_role` owner-only |
+| `20261124000013_juara_vision_draft.sql` (M-13) | OK — kolom `vision_draft_enc` di `juara_clubs` |
 
 Tidak ada `DROP`, `TRUNCATE`, atau `DELETE` pada objek apa pun. Semua objek baru
 ber-prefix `juara_` di `schema public`.

@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { playbookGenerateSchema } from "@/lib/juara/validation"
 import {
   FORMATION_TEMPLATES,
@@ -98,6 +98,7 @@ export default function OwnerWizard() {
   const [saveLoading, setSaveLoading] = useState(false)
   const [saveError, setSaveError] = useState<string | null>(null)
   const [saveResult, setSaveResult] = useState<string | null>(null)
+  const [draftStatus, setDraftStatus] = useState<string | null>(null)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -161,6 +162,46 @@ export default function OwnerWizard() {
       baseFormation: d.formationMode === "MANUAL" ? d.baseFormation : "",
     }))
   }
+
+  async function persistDraft() {
+    setDraftStatus("Menyimpan draf...")
+    try {
+      const res = await fetch("/api/juara/v1/vision/draft", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ draft }),
+      })
+      const body = await res.json()
+      if (!res.ok) throw new Error(body.error ?? "Gagal menyimpan draf")
+      setDraftStatus("Draf tersimpan")
+    } catch (e) {
+      setDraftStatus(e instanceof Error ? e.message : "Gagal menyimpan draf")
+    }
+  }
+
+  useEffect(() => {
+    const ctrl = new AbortController()
+    void Promise.resolve().then(async () => {
+      try {
+        const res = await fetch("/api/juara/v1/vision/draft", { cache: "no-store", signal: ctrl.signal })
+        if (!res.ok) return
+        const body = await res.json()
+        if (body.draft && typeof body.draft === "object") {
+          const d = body.draft as Partial<Draft>
+          setDraft({
+            ...INITIAL,
+            ...d,
+            philosophy: { ...INITIAL.philosophy, ...(d.philosophy ?? {}) },
+            guardrails: { ...INITIAL.guardrails, ...(d.guardrails ?? {}) },
+          })
+          setDraftStatus("Draf dimuat")
+        }
+      } catch {
+        // no draft yet — normal for a new club
+      }
+    })
+    return () => ctrl.abort()
+  }, [])
 
   async function submit() {
     const parsed = playbookGenerateSchema.safeParse(draft)
@@ -511,6 +552,8 @@ export default function OwnerWizard() {
       )}
 
       <div className="ju-wizard-nav">
+        <button className="ju-btn" type="button" onClick={persistDraft}>Simpan draf</button>
+        {draftStatus && <span className="ju-inline-note" role="status">{draftStatus}</span>}
         <button className="ju-btn" type="button" disabled={step === 0} onClick={() => setStep((s) => s - 1)}>Kembali</button>
         {step < 4 ? (
           <button className="ju-btn ju-btn-primary" type="button"

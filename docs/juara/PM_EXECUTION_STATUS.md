@@ -60,4 +60,6 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
 
 - D1: **IMPLEMENTED + TESTED** — baseline/commit/migrasi/rollback tercatat di dokumen ini dan `SECURITY_GATE_UAT.md`.
 - D2: **IMPLEMENTED + TESTED** — capability matrix, `requireCapability`, redaksi DTO, gate route v1, M-12 anti eskalasi. Bukti: 57/57 test, build exit 0, runtime PATCH/RPC seperti tercatat. **Belum DEPLOYED/ACCEPTED**.
-- D3: berikutnya — shell FM + draft persistence + bukti browser sebelum deploy bertahap.
+- D3: **IMPLEMENTED + TESTED** — shell lima zona parsial (sidebar collapsible, header, tab konteks, kanvas; action bar/inspector menyusul), draft visi terenkripsi per klub (M-13 + `/api/juara/v1/vision/draft`), tombol Simpan draf di wizard. Bukti: 57/57 test, build exit 0, route terdaftar. **Belum DEPLOYED/ACCEPTED**.
+- Rollback siap: VPS dapat di-reset ke `019ebcd` lalu `npm run build` + restart `stadione.service`; direktori `/opt/stadione-releases/*` tersedia. Browser regression siap dijalankan dengan `agent-browser viewport <w> <h>` (v0.33.1).
+- Gate deploy: build ✓, security ✓, browser regression **siap dijalankan setelah deploy** (bukan blocker), rollback ✓. Deploy bertahap berikutnya.
