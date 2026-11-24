@@ -1,12 +1,12 @@
-# HTTP assertions 2026-11-24T05:43:45.928520+00:00
-base=http://127.0.0.1:3105
-GET_status=200 revision=0
-PUT_equity100=200 revision=1
-GET_after_backfill=200 equity=100 revision=1
-PUT_omitted_equity=200 equity_retained=100
-PARALLEL=[200, 409] conflict_code=VERSION_CONFLICT
-FINANCE_100_200 before=200 omitted_equity_status=200 retained=200
-MALFORMED_RAW={'status': 400} bad_rev=1 db_rev=1
-MALFORMED_FINANCE status=400 revision_unchanged=1
-CROSS_TENANT read=200 rows=0 write=401
+# HTTP assertions 2026-11-24T06:07:33.389155+00:00
+app=http://127.0.0.1:3105 proxy=http://127.0.0.1:3104
+isolation: auth=production GoTrue; REST=isolated staging PostgREST; no club real data
+candidate_sha=d815d86392aa66bb2b86382d4d01393b2995711c
+TENANT_OWN_CLUB=200 rows=1 OTHER_READ=200 rows=0 OTHER_WRITE=403 unchanged=Other Club
+TENANT_SD_ROLE=SPORTING_DIRECTOR
+LEGACY_SD_REJECTED=400 code=LEGACY_NOT_MIGRATED
+LEGACY_OWNER_BACKFILL=200 equity=100
+PARALLEL=[200, 409] final_revision=2 winner_star=31
+MALFORMED_FINANCE=500 error=Draf lama tidak dapat dibaca revision_unchanged=2
+ELAPSED=14.85s
 ASSERTIONS_PASS

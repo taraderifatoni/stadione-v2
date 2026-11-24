@@ -98,6 +98,26 @@ terlanjur ada di produksi sebelum M-14).
   injected failure dan mengassert identik sesudah rollback; `CLEANUP_DONE` hanya
   dicetak bila drop DB dan role berhasil; `--keep` dicatat sebagai cleanup belum dijalankan.
 
+## Validitas bukti akhir (audit `OWNER_REP_CLOSURE_FINAL_AUDIT`)
+
+- Cross-tenant kini memakai **dua token authenticated** (Owner & SD). Kontrol positif klub sendiri
+  `200 rows=1`, klub lain `200 rows=0`, PATCH klub lain `403` dan nama tidak berubah. Role SD
+  diverifikasi `SPORTING_DIRECTOR`.
+- Malformed finance: payload valid + revision disimpan **sebelum** korupsi `deadbeef`, lalu PUT
+  payload valid tersebut menghasilkan route `500 Draf lama tidak dapat dibaca`, revision DB tetap.
+- Legacy-only: seed public encrypted equity=100, finance NULL, migrated=false → SD `409
+  LEGACY_NOT_MIGRATED`; Owner PUT **tanpa equity** → 200 equity 100; SD save → 200; Owner tetap 100.
+- Concurrent: `200/409 VERSION_CONFLICT`, final revision `R+1`, winner star 31 tersimpan.
+- Log memuat `candidate_sha` dan `ELAPSED`, bukan narasi. Entry point:
+  `scripts/juara/final_evidence_entrypoint.sh` (guard local endpoint, staging clean, seeded fixture,
+  assertions, cleanup). Batas isolasi dinyatakan: auth produksi, REST/DB staging.
+- Rollback: fixture nonempty sebelum clone; snapshot deterministik md5 dari nama/league/ciphertext,
+  policy lengkap `roles/cmd/qual/with_check`, dan grants tanpa `|| true`, identik setelah rollback.
+- Compatible rollback build: `1a2655c`/candidate saat ini memakai RPC 4 argumen dan policy
+  `SELECT-only`; build lama dengan raw UPDATE/RPC 2 argumen **tidak** dipakai sebagai rollback.
+  Health/read/write application pasca-rollback diwakili HTTP assertions pada build kandidat
+  terhadap schema M-16.
+
 ## Catatan
 
 - Bukti visual tidak menggantikan rehearsal DB.

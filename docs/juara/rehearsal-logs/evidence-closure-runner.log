@@ -2,20 +2,29 @@ TARGET host=f879595afc3b db=juara_evclose_stage role=pgrst_evclose port=3103
 NOTICE:  database "juara_evclose_stage" does not exist, skipping
 NOTICE:  role "pgrst_evclose" does not exist, skipping
 psql:/tmp/_m.sql:23: NOTICE:  function juara_set_vision_draft(uuid,bytea) does not exist, skipping
+ASSERT_PASS: nonempty_fixture_seeded
 NOTICE:  database "juara_evclose_stage_fail" does not exist, skipping
 psql:/tmp/cutover_fail.sql:109: NOTICE:  function juara_set_vision_draft(uuid,bytea,bytea,pg_catalog.int4) does not exist, skipping
 psql:/tmp/cutover_fail.sql:178: ERROR:  division by zero
-ROLLBACK_SNAPSHOT sig=juara_set_vision_draft(uuid,bytea,bytea) policies=juara_audit_logs:ALL
-juara_club_members:SELECT
-juara_clubs:ALL
-juara_contracts_vault:ALL
-juara_playbooks:ALL
-juara_players:ALL
-juara_projections:ALL
-juara_squad_slots:ALL data=0
+ROLLBACK_SNAPSHOT sig=juara_set_vision_draft(uuid,bytea,bytea) policies=juara_audit_logs:juara_audit_logs_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_club_members:juara_club_members_read:{authenticated}:SELECT:(club_id = juara_current_club_id()):
+juara_clubs:juara_clubs_tenant:{authenticated}:ALL:(id = juara_current_club_id()):(id = juara_current_club_id())
+juara_contracts_vault:juara_contracts_vault_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_playbooks:juara_playbooks_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_players:juara_players_tenant:{authenticated}:ALL:(club_id = juara_current_club_id()):(club_id = juara_current_club_id())
+juara_projections:juara_projections_tenant:{authenticated}:ALL:(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))):(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id())))
+juara_squad_slots:juara_squad_slots_tenant:{authenticated}:ALL:(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))):(playbook_id IN ( SELECT juara_playbooks.id
+   FROM juara_playbooks
+  WHERE (juara_playbooks.club_id = juara_current_club_id()))) data=c40f24789f20fdb202b01a62200c864b
 ASSERT_PASS: injected_failure_rollback_full
 psql:/tmp/cutover.sql:109: NOTICE:  function juara_set_vision_draft(uuid,bytea,bytea,pg_catalog.int4) does not exist, skipping
 ASSERT_PASS: cutover_atomic
-d7d7d97ed096f35625c2d2dbfbb34c42e155874e4ee472c6b84c4b21d433f293
+7c23623f45b90990858d4048fae6c7a5dd62990bc015341fd727cba39546ee73
 ASSERT_PASS: staging_ready
 KEEP requested; cleanup NOT executed

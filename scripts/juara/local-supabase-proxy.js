@@ -3,7 +3,8 @@
 const http = require("node:http")
 const https = require("node:https")
 
-const REST = { host: "127.0.0.1", port: 3101 }
+const REST = { host: "127.0.0.1", port: Number(process.env.JUARA_REST_PORT || 3101) }
+const PROXY_PORT = Number(process.env.JUARA_PROXY_PORT || 3102)
 const AUTH = { host: "api.stadione.pro", port: 443, tls: true }
 
 function forward(req, res, target, path) {
@@ -46,4 +47,4 @@ http.createServer((req, res) => {
   } else {
     forward(req, res, AUTH, url.pathname + url.search)
   }
-}).listen(3102, "127.0.0.1", () => console.log("proxy ready on 3102"))
+}).listen(PROXY_PORT, "127.0.0.1", () => console.log(`proxy ready on ${PROXY_PORT}`))

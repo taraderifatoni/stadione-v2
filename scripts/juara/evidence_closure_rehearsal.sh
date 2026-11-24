@@ -77,12 +77,27 @@ Path('/tmp/cutover.sql').write_text(combined)
 Path('/tmp/cutover_fail.sql').write_text(combined.replace('COMMIT;','SELECT 1/0;\nCOMMIT;'))
 PY
 
+# Non-empty fixture seeded BEFORE rollback clone so data hash is meaningful.
+FIX_OWNER=$(python3 -c 'import uuid;print(uuid.uuid4())')
+FIX_SD=$(python3 -c 'import uuid;print(uuid.uuid4())')
+FIX_CLUB=$(python3 -c 'import uuid;print(uuid.uuid4())')
+FIX_OTHER=$(python3 -c 'import uuid;print(uuid.uuid4())')
+docker exec -i "$CONTAINER" psql -U postgres -d "$STAGE" -q -v ON_ERROR_STOP=1 <<SQL >>"$LOG" 2>&1
+INSERT INTO auth.users (id,email) VALUES ('$FIX_OWNER','owner@stage.test'),('$FIX_SD','sd@stage.test'),('$FIX_OTHER','other@stage.test');
+INSERT INTO juara_clubs (id,name,league_tier,vision_draft_enc,vision_finance_enc)
+VALUES ('$FIX_CLUB','Fixture Club','LIGA_2','\\x010203'::bytea,'\\xaabbcc'::bytea),
+       ('$FIX_OTHER','Other Club','LIGA_3',NULL,NULL);
+INSERT INTO juara_club_members (user_id,club_id,role) VALUES
+ ('$FIX_OWNER','$FIX_CLUB','OWNER'),('$FIX_SD','$FIX_CLUB','SPORTING_DIRECTOR'),('$FIX_OTHER','$FIX_OTHER','OWNER');
+SQL
+pass "nonempty_fixture_seeded"
+
 # Injected failure on a clone: transaction must leave M15+M14 state untouched.
 docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE IF EXISTS ${STAGE}_fail;" -c "CREATE DATABASE ${STAGE}_fail TEMPLATE $STAGE;" >>"$LOG" 2>&1
 SIG_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select p.oid::regprocedure from pg_proc p join pg_namespace n on n.oid=p.pronamespace where p.proname='juara_set_vision_draft' and n.nspname='public' order by 1;")
-GRANTS_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name='juara_set_vision_draft' order by 1;" 2>/dev/null || true)
-POL_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||cmd from pg_policies where tablename like 'juara_%' order by 1;")
-DATA_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from juara_clubs;" 2>/dev/null || echo "no-table")
+GRANTS_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name like 'juara_%' order by 1;")
+POL_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||policyname||':'||roles::text||':'||cmd||':'||coalesce(qual,'')||':'||coalesce(with_check,'') from pg_policies where tablename like 'juara_%' order by 1;")
+DATA_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select md5(string_agg(format('%s|%s|%s|%s|%s',id,name,league_tier,coalesce(encode(vision_draft_enc,'hex'),'-'),coalesce(encode(vision_finance_enc,'hex'),'-')),'~' order by id)) from juara_clubs;")
 docker cp /tmp/cutover_fail.sql "$CONTAINER:/tmp/cutover_fail.sql" >/dev/null
 set +e
 docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -q -v ON_ERROR_STOP=1 -f /tmp/cutover_fail.sql >>"$LOG" 2>&1
@@ -92,9 +107,9 @@ assert_eq "$RC" "3" "injected failure harus gagal"
 COLS=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from information_schema.columns where table_name='juara_clubs' and column_name in ('vision_revision','vision_legacy_migrated');")
 assert_eq "$COLS" "0" "rollback cutover: kolom baru harus absen"
 SIG_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select p.oid::regprocedure from pg_proc p join pg_namespace n on n.oid=p.pronamespace where p.proname='juara_set_vision_draft' and n.nspname='public' order by 1;")
-GRANTS_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name='juara_set_vision_draft' order by 1;" 2>/dev/null || true)
-POL_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||cmd from pg_policies where tablename like 'juara_%' order by 1;")
-DATA_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from juara_clubs;" 2>/dev/null || echo "no-table")
+GRANTS_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name like 'juara_%' order by 1;")
+POL_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||policyname||':'||roles::text||':'||cmd||':'||coalesce(qual,'')||':'||coalesce(with_check,'') from pg_policies where tablename like 'juara_%' order by 1;")
+DATA_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select md5(string_agg(format('%s|%s|%s|%s|%s',id,name,league_tier,coalesce(encode(vision_draft_enc,'hex'),'-'),coalesce(encode(vision_finance_enc,'hex'),'-')),'~' order by id)) from juara_clubs;")
 assert_eq "$SIG_AFTER" "$SIG_BEFORE" "rollback signature identik"
 assert_eq "$GRANTS_AFTER" "$GRANTS_BEFORE" "rollback grants identik"
 assert_eq "$POL_AFTER" "$POL_BEFORE" "rollback policies identik"
@@ -115,14 +130,11 @@ assert_eq "$POL" "SELECT" "cutover policy"
 pass "cutover_atomic"
 
 OWNER=2e75becd-7695-48dd-bd84-70bbf6fe2607
-CLUB=$(python3 -c 'import uuid;print(uuid.uuid4())')
-OTHER=$(python3 -c 'import uuid;print(uuid.uuid4())')
-docker exec -i "$CONTAINER" psql -U postgres -d "$STAGE" -q -v ON_ERROR_STOP=1 <<SQL >>"$LOG" 2>&1
-INSERT INTO auth.users (id,email) VALUES ('$OWNER','demo@juara.stadione.pro'),('$OTHER','other@stage.test');
-INSERT INTO juara_clubs (id,name,league_tier) VALUES ('$CLUB','Stage Club','LIGA_2'),('$OTHER','Other Club','LIGA_3');
-INSERT INTO juara_club_members (user_id,club_id,role) VALUES ('$OWNER','$CLUB','OWNER'),('$OTHER','$OTHER','OWNER');
-GRANT SELECT ON ALL TABLES IN SCHEMA public TO authenticated, anon;
-SQL
+CLUB=$FIX_CLUB
+OTHER=$FIX_OTHER
+docker exec "$CONTAINER" psql -U postgres -d "$STAGE" -q -v ON_ERROR_STOP=1 -c "GRANT SELECT ON ALL TABLES IN SCHEMA public TO authenticated, anon;" >>"$LOG" 2>&1
+echo "CLUB=$CLUB OWNER=$OWNER OTHER=$OTHER SD=$FIX_SD" > /tmp/evclose-ids.txt
+chmod 600 /tmp/evclose-ids.txt
 
 JWT=$(docker inspect supabase-kong-zurmq2lrm9hj510fmnj1seqr --format '{{range .Config.Env}}{{println .}}{{end}}' | grep '^PGRST_JWT_SECRET=' | cut -d= -f2-)
 docker rm -f "$PGRST" >/dev/null 2>&1 || true
