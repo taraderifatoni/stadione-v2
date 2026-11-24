@@ -76,4 +76,5 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
 - Gate: 61/61 test, build exit 0. M-14 **belum di-apply** produksi sampai review visual
   dan deploy diizinkan; policy live sudah diverifikasi read-only (tujuh tabel masih `ALL`).
 - Visual: paket screenshot baru sesuai `VISUAL_ACCEPTANCE_STANDARD.md` disiapkan sebelum deploy.
-- **BLOCKER bridge (24 Nov 2026 10:5x WIB):** `scripts/owner-rep/notify.py --checkpoint commit-p1-fixes` gagal sebelum `codex queue --resume` dijalankan: `FileNotFoundError: [Errno 2] No such file or directory: 'codex'`. `command -v codex` kosong; pencarian path masih berjalan. Receipt dedup **tidak ditulis**, jadi checkpoint ini **belum ter-queue**, bukan "queued". Perlu PATH/absolute path ke CLI `codex` di host ini. Tidak ada retry duplikat.
+- **BLOCKER bridge (24 Nov 2026 10:5x WIB):** `scripts/owner-rep/notify.py --checkpoint commit-p1-fixes` gagal sebelum `codex queue --resume`: `FileNotFoundError: 'codex'`. Receipt dedup tidak ditulis, checkpoint belum ter-queue.
+- **Resolver blocker (10:5x WIB):** CLI ditemukan di `/mnt/c/Users/Lenovo/.codex/plugins/.plugin-appserver/codex.exe` (v0.167.0-alpha.4.1). Retry trigger yang sama dengan PATH yang memuat direktori tersebut — bukan checkpoint baru, bukan duplikat karena receipt belum ada.
