@@ -6,7 +6,7 @@ Tanggal: 24 Nov 2026. Status: **ASSESSMENT / REKOMENDASI — belum ada reorganis
 
 - Enam worker existing **ada di DB** tetapi **0 terbukti bisa berjalan** saat assessment: semua ber-`idle_outcome = failed` dengan `provider.free-limit` HTTP 429 pada 08.37–08.38 WIB. Kapasitas terobservasi: **1 sesi PM native aktif**, **1 CTO plausibel**. Konkurensi worker maksimal yang pernah dibuktikan **3**, bukan 6（`docs/assessment/AI_WORKER_CAPACITY.md`）.
 - Semua sesi `cost = 0.0`. Model gratis yang dicoba worker tetap kena kuota akun/harian. **Dilarang** memakai provider/model berbayar tanpa lampu hijau Owner. Tidak ada probe kuota baru dan tidak ada tugas worker baru.
-- Produksi berjalan (`stadione.service active`, HTTP 200) tetapi **deployed HEAD `6425ae5` tertinggal** dari lokal `063c1c8`. DB produksi baru sampai M-13/M-15 parsial: policy 7 tabel masih `ALL`, `vision_revision` belum ada. Semua acceptance JUARA adalah **staging**, bukan produksi（`docs/assessment/PRODUCTION_STATUS_MAP.md`）.
+- Produksi berjalan (`stadione.service active`, HTTP 200) tetapi **deployed HEAD `6425ae5` tertinggal** dari lokal `063c1c8`. DB produksi baru sampai M-13/M-15 parsial: policy 7 tabel masih `ALL`; CAS `vision_revision`/`vision_legacy_migrated` **belum ada di `juara_clubs`** (bukan `juara_playbooks`). Semua acceptance JUARA adalah **staging**, bukan produksi（`docs/assessment/PRODUCTION_STATUS_MAP.md`）.
 - Payment static triage mengonfirmasi **empat jalur konkret** yang memungkinkan perubahan state pembayaran tanpa otorisasi/validasi. Ini **REAL BLOCKER** pada level source yang di-deploy, **bukan klaim eksploit live**（`docs/assessment/PAYMENT_STATIC_TRIAGE.md`）.
 - Kandidat D3 graphite/navy/cobalt masih **provisional**, belum di-deploy; palet hijau/emas lama ditolak Owner（`docs/juara/D3_PREMIUM_VISUAL_BRIEF.md`, `docs/juara/design/D3_COLOR_REFERENCES.md`）.
 
@@ -56,7 +56,13 @@ middleware skip `/api/`; amount dari body; status `paid` ditulis saat URL checko
 
 ## 4. Rekomendasi struktur FEATURE-BASED (belum dieksekusi)
 
-**Rekomendasi utama (dari `FEATURE_TEAM_RECOMMENDATION.md`) — proposal, bukan keputusan:**
+**Catatan revisi Owner:** tabel A–F di bawah **superseded** oleh
+`docs/assessment/DUAL_PRODUCT_TEAM_PROPOSAL.md` (8 pod: J1–J4, S1–S3, P1) dan
+`docs/assessment/DUAL_POD_OWNERSHIP_MAP.csv` (86 feature ID, tepat satu owner per ID).
+Ringkasan terkini ada di `docs/assessment/DUAL_POD_ASSESSMENT.md`. Tabel A–F tetap
+dipertahankan sebagai riwayat assessment, bukan strukturUsulan yang berlaku.
+
+**Rekomendasi awal A–F (riwayat, sudah digantikan) — proposal, bukan keputusan:**
 
 | Pod | Feature Owner usulan | Investment fitur | Status kapasitas |
 |---|---|---|---|

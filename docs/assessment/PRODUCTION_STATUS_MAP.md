@@ -21,8 +21,8 @@ restart, migrasi, transaksi, atau perubahan kredensial. Nama env saja; tidak ada
 |---|---|---|
 | `juara_*` tables | 9 | 8 tabel + 1 view inventaris policy |
 | Policy `juara_*` | 8 | `juara_club_members` = `SELECT`; 7 tabel lain masih `ALL` |
-| Kolom baru `juara_playbooks` | 1 dari 3 (`tactical_profile_enc`) | `vision_revision` dan `vision_finance_enc` belum ada |
-| `vision_draft_enc`, `vision_finance_enc` di `juara_clubs` | ada | M-13 + M-15 sudah ter-apply |
+| `juara_playbooks` | `tactical_dna_type`, `tactical_profile_enc` ada | M-10/M-11 ter-apply. Tidak ada kolom CAS di tabel ini. |
+| `juara_clubs` | `vision_draft_enc`, `vision_finance_enc` ada; `vision_revision`, `vision_legacy_migrated` **tidak ada** | M-13 + M-15 ter-apply; M-16 (CAS) belum. Koreksi dari catatan sebelumnya yang salah menaruh revision di `juara_playbooks`. |
 | ENUM `juara_tactical_dna` | 10 nilai | M-11 ter-apply |
 | M-14/M-16 | **belum** ter-apply di produksi | Policy `FOR ALL` masih ada; CAS revision belum aktif |
 

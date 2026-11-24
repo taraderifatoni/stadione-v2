@@ -1,3 +1,5 @@
+> SUPERSEDED domain/team mapping: see DUAL_PRODUCT_TEAM_PROPOSAL.md (Owner scope: JUARA primary + Stadione). Lifecycle/KPI sections remain proposal.
+
 # Assessment Feature-Based AI Team — Stadione
 
 24 November 2026. **Usulan untuk review Owner; belum implementasi restrukturisasi.**

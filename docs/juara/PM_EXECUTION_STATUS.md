@@ -67,6 +67,10 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
   masih Proposed/PM interim. Tidak ada rename/reassign permanen atau pembuatan paid capacity.
 - Payment static triage mengonfirmasi REAL BLOCKER pada source yang di-deploy; tidak ada
   transaksi riil atau exploit live. Menunggu keputusan Owner sebelum perbaikan/rollout.
+- Steering Owner terbaru: Academy Stadione **tidak dihapus**; integrasi JUARA via S2 source,
+  J3 integrated journey, J4 private finance, P1 canonical identity. 86 feature ID dipetakan
+  ke 8 pod dual-product dengan tepat satu owner/ID di `DUAL_POD_OWNERSHIP_MAP.csv`; ringkasan
+  `DUAL_POD_ASSESSMENT.md`. Proposal only; tidak ada reorganisasi/deploy/spend.
 
 ## Update
 
