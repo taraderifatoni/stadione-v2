@@ -46,8 +46,6 @@ $$;
 REVOKE ALL ON FUNCTION juara_set_member_role(UUID, TEXT) FROM PUBLIC, anon;
 GRANT EXECUTE ON FUNCTION juara_set_member_role(UUID, TEXT) TO authenticated;
 
--- Rollback (manual):
--- DROP POLICY IF EXISTS juara_club_members_read ON juara_club_members;
--- CREATE POLICY juara_club_members_tenant ON juara_club_members FOR ALL TO authenticated
---   USING (club_id = juara_current_club_id())
---   WITH CHECK (club_id = juara_current_club_id());
+-- Rollback: JANGAN mengembalikan policy FOR ALL — itu membuka eskalasi role.
+-- Rollback dilakukan pada aplikasi (kode + deploy), bukan dengan melemahkan policy.
+-- Schema/policy M-12 dan M-14 tetap aktif saat aplikasi dirollback.

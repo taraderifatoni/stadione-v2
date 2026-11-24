@@ -55,14 +55,30 @@ export async function POST(request: Request) {
     keyring
   )
 
-  const { data: inserted, error } = await supabase
-    .from("juara_playbooks")
-    .insert(row)
-    .select("id")
-    .single()
+  // Adapter transisi: RPC tersedia setelah M-14; fallback untuk schema lama.
+  const rpc = await supabase.rpc("juara_insert_playbook", {
+    p_id: row.id,
+    p_club_id: row.club_id,
+    p_version_name: row.version_name,
+    p_horizon_years: row.horizon_years,
+    p_target_sporting_outcome: row.target_sporting_outcome,
+    p_tactical_dna_type: row.tactical_dna_type,
+    p_base_formation: row.base_formation,
+    p_philosophy_star_pct: row.philosophy_star_pct,
+    p_philosophy_prime_pct: row.philosophy_prime_pct,
+    p_philosophy_academy_pct: row.philosophy_academy_pct,
+    p_owner_equity_injection_enc: row.owner_equity_injection_enc,
+    p_tactical_profile_enc: row.tactical_profile_enc,
+    p_scr_max_threshold_pct: row.scr_max_threshold_pct,
+  })
 
-  if (error) {
+  if (rpc.error && rpc.error.code !== "PGRST202" && !/could not find the function/i.test(rpc.error.message ?? "")) {
     return Response.json({ error: "Gagal menyimpan Playbook" }, { status: 500 })
   }
-  return Response.json({ ok: true, id: inserted.id }, { status: 201 })
+  if (rpc.error) {
+    const { error } = await supabase.from("juara_playbooks").insert(row).select("id").single()
+    if (error) return Response.json({ error: "Gagal menyimpan Playbook" }, { status: 500 })
+  }
+
+  return Response.json({ ok: true, id: row.id }, { status: 201 })
 }

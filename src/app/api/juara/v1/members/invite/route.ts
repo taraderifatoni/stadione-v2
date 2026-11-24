@@ -18,7 +18,9 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid payload", issues: parsed.error.issues }, { status: 400 })
   }
 
-  // RENCANA SEC-02: undangan nyata dengan token sekali pakai dan expiry.
-  // Gate izin sudah aktif; penulisan membership menyusul.
-  return Response.json({ ok: true, note: "RENCANA — butuh invite nyata (SEC-02)" })
+  // SEC-02 belum diimplementasi: jangan pernah mengembalikan sukses.
+  return Response.json(
+    { ok: false, code: "NOT_IMPLEMENTED", note: "Undangan belum tersedia; gate izin sudah aktif." },
+    { status: 501 }
+  )
 }

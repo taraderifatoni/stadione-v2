@@ -31,6 +31,6 @@ export async function POST(request: Request) {
   const bytes = await buildBoardroomPdf(summary, meta)
   return new Response(bytes as unknown as BodyInit, {
     status: 200,
-    headers: { "Content-Type": "application/pdf.ts" },
+    headers: { "Content-Type": "application/pdf" },
   })
 }

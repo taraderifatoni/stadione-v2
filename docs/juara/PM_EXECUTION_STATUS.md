@@ -61,8 +61,18 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
 - D1: **IMPLEMENTED + TESTED** — baseline/commit/migrasi/rollback tercatat di dokumen ini dan `SECURITY_GATE_UAT.md`.
 - D2: **IMPLEMENTED + TESTED** — capability matrix, `requireCapability`, redaksi DTO, gate route v1, M-12 anti eskalasi. Bukti: 57/57 test, build exit 0, runtime PATCH/RPC seperti tercatat. **Belum DEPLOYED/ACCEPTED**.
 - D3: **IMPLEMENTED + TESTED** — shell lima zona parsial (sidebar collapsible, header, tab konteks, kanvas; action bar/inspector menyusul), draft visi terenkripsi per klub (M-13 + `/api/juara/v1/vision/draft`), tombol Simpan draf di wizard. Bukti: 57/57 test, build exit 0, route terdaftar. **Belum DEPLOYED/ACCEPTED**.
-- Rollback siap: VPS dapat di-reset ke `019ebcd` lalu `npm run build` + restart `stadione.service`; direktori `/opt/stadione-releases/*` tersedia. Browser regression **tidak dijalankan sebelum deploy** — dijalankan **setelah** deploy ke VPS dengan `agent-browser set viewport <w> <h>` (v0.33.1). Ini koreksi atas catatan sebelumnya yang menyebut "siap dijalankan".
+- Rollback aplikasi: VPS dapat di-reset ke commit aplikasi sebelumnya lalu `npm run build` + restart. **Policy M-12/M-14 tidak ikut dilemahkan** — rollback bukan dengan membuka `FOR ALL`. Browser regression **tidak dijalankan sebelum deploy** — dijalankan **setelah** deploy ke VPS dengan `agent-browser set viewport <w> <h>` (v0.33.1). Ini koreksi atas catatan sebelumnya yang menyebut "siap dijalankan".
 - Gate deploy: build ✓, security ✓, browser regression ✓ (dijalankan setelah deploy), rollback ✓.
 - **Deploy bertahap selesai**: VPS `6425ae5`, service active, B2C 200. Lihat `P1_DEPLOY_VERIFICATION.md`.
 - D1/D2/D3 sekarang **IMPLEMENTED → TESTED → DEPLOYED**. **ACCEPTED: belum** — menunggu Owner Representative/Owner. Khusus D3 **tidak boleh ditandai accepted**: inspector 360–440px dan action bar 52px belum dibangun, sehingga UX-01 hanya sebagian. Koreksi gate browser: regression dijalankan setelah deploy, bukan sebelum deploy.
 - Lanjut tersisa: inspector + action bar + 9 rute (UX-01 lanjutan), SEC-02 invite nyata, finance engine.
+
+## Audit P1 — perbaikan slice berikutnya (belum accepted)
+
+- Sumber: `docs/juara/OWNER_REP_P1_AUDIT.md` (CHANGES REQUIRED).
+- Dikerjakan: DTO allowlist draft + merge peran (SD tidak melihat/menimpa equity),
+  policy tabel `juara_*` jadi SELECT-only + RPC ber-authz (M-14), invite 501 non-sukses,
+  MIME PDF `application/pdf`, rollback policy tidak melemahkan keamanan, rekonsiliasi ledger.
+- Gate: 61/61 test, build exit 0. M-14 **belum di-apply** produksi sampai review visual
+  dan deploy diizinkan; policy live sudah diverifikasi read-only (tujuh tabel masih `ALL`).
+- Visual: paket screenshot baru sesuai `VISUAL_ACCEPTANCE_STANDARD.md` disiapkan sebelum deploy.

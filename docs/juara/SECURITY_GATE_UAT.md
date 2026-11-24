@@ -41,5 +41,6 @@ Catatan: uji pertama dengan `Prefer: return=minimal` menghasilkan 204; itu adala
 
 ## Status
 
-Implemented ✓ · Tested ✓ · **Deployed: belum** · Accepted: belum.
-Deploy menunggu browser regression (D3) dan rollback rehearsal.
+Implemented ✓ · Tested ✓ · **Deployed ✓** (`6425ae5`) · Accepted: belum.
+Catatan reconciliasi: browser regression dijalankan **setelah** deploy, bukan sebagai gate
+pradeploy; status D3 parsial (inspector/action bar belum ada). Lihat `P1_DEPLOY_VERIFICATION.md`.
