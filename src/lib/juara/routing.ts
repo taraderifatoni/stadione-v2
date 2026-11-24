@@ -3,6 +3,8 @@
 export function isJuaraProtected(pathname: string): boolean {
   if (!pathname.startsWith("/juara")) return false
   if (pathname === "/juara/login" || pathname.startsWith("/juara/login/")) return false
+  if (pathname === "/juara/signup" || pathname.startsWith("/juara/signup/")) return false
+  if (pathname.startsWith("/juara/auth/")) return false
   return true
 }
 

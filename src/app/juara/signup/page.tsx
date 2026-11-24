@@ -1,86 +1,116 @@
 "use client"
 
-import { useState, Suspense } from "react"
-import { useSearchParams } from "next/navigation"
-import { createClient } from "@/lib/supabase/client"
+import { useState } from "react"
+import Link from "next/link"
+import { useRouter } from "next/navigation"
+import { ArrowRight, CheckCircle2 } from "lucide-react"
 
-function SignupForm() {
-  const params = useSearchParams()
-  const token = params.get("token")
+type Tier = "LIGA_1" | "LIGA_2" | "LIGA_3" | "ACADEMY_PRO"
+
+export default function JuaraSignupPage() {
+  const router = useRouter()
+  const [name, setName] = useState("")
+  const [tier, setTier] = useState<Tier>("LIGA_2")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const [clubName, setClubName] = useState("")
   const [error, setError] = useState<string | null>(null)
   const [done, setDone] = useState(false)
   const [loading, setLoading] = useState(false)
-
-  if (!token) {
-    return (
-      <section style={{ maxWidth: 420, margin: "40px auto", background: "#FFFFFF", border: "1px solid #E2E8F0", padding: 24 }}>
-        <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 12 }}>Signup — JUARA.STADIONE.PRO</h1>
-        <p style={{ color: "#DC2626", fontSize: 13 }}>Invite token diperlukan. Minta undangan dari Club Owner.</p>
-      </section>
-    )
-  }
 
   async function submit(e: React.FormEvent) {
     e.preventDefault()
     setLoading(true)
     setError(null)
-    const supabase = createClient()
-    const { error: err } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { data: { club_name: clubName, invite_token: token } },
-    })
-    setLoading(false)
-    setPassword("")
-    if (err) {
-      setError(err.message)
-      return
+    try {
+      const res = await fetch("/api/juara/v1/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, leagueTier: tier, email, password }),
+      })
+      const body = await res.json()
+      if (!res.ok) throw new Error(body.error ?? "Gagal mendaftar")
+      setDone(true)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Gagal mendaftar")
+    } finally {
+      setLoading(false)
     }
-    setDone(true)
   }
 
-  if (done) {
-    return (
-      <section style={{ maxWidth: 420, margin: "40px auto", background: "#FFFFFF", border: "1px solid #E2E8F0", padding: 24 }}>
-        <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 12 }}>Signup — JUARA.STADIONE.PRO</h1>
-        <p style={{ color: "#059669", fontSize: 13 }}>Akun dibuat. Periksa email untuk konfirmasi, lalu masuk.</p>
+  return (
+    <div className="ju-auth">
+      <section className="ju-auth-brand">
+        <div className="ju-brandmark"><span>J</span> JUARA</div>
+        <div className="ju-auth-pitch">
+          <div className="ju-eyebrow">Mulai sekarang</div>
+          <h1>Satu akun. Satu klub. Satu arah.</h1>
+          <p>
+            Buat ruang kerja klub Anda dalam hitungan menit. Pemilik akun otomatis
+            menjadi Owner dengan akses penuh ke playbook dan keuangan.
+          </p>
+          <ul className="ju-feature-list">
+            <li><span className="ju-feature-dot">01</span><span><b>Klub langsung aktif</b> — tanpa menunggu undangan manual.</span></li>
+            <li><span className="ju-feature-dot">02</span><span><b>Aman by design</b> — data dipisah per klub sejak baris pertama.</span></li>
+            <li><span className="ju-feature-dot">03</span><span><b>Siap pakai</b> — wizard 5 langkah ke playbook pertama.</span></li>
+          </ul>
+        </div>
+        <div className="ju-auth-foot">© 2026 Stadione · Ruang kerja eksekutif klub</div>
       </section>
-    )
-  }
 
-  return (
-    <section style={{ maxWidth: 420, margin: "40px auto", background: "#FFFFFF", border: "1px solid #E2E8F0", padding: 24 }}>
-      <h1 style={{ fontSize: 20, fontWeight: 700, marginBottom: 12 }}>Signup — JUARA.STADIONE.PRO</h1>
-      <p style={{ fontSize: 12, color: "#475569", marginBottom: 12 }}>Hanya via undangan (invite-only).</p>
-      <form onSubmit={submit} style={{ display: "grid", gap: 12 }}>
-        <label style={{ display: "grid", gap: 4, fontSize: 13 }}>
-          Nama klub
-          <input value={clubName} onChange={(e) => setClubName(e.target.value)} required style={{ padding: 8, border: "1px solid #CBD5E1", borderRadius: 4 }} />
-        </label>
-        <label style={{ display: "grid", gap: 4, fontSize: 13 }}>
-          Email
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ padding: 8, border: "1px solid #CBD5E1", borderRadius: 4 }} />
-        </label>
-        <label style={{ display: "grid", gap: 4, fontSize: 13 }}>
-          Kata sandi
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required style={{ padding: 8, border: "1px solid #CBD5E1", borderRadius: 4 }} />
-        </label>
-        {error && <div style={{ color: "#DC2626", fontSize: 12 }}>{error}</div>}
-        <button type="submit" disabled={loading} style={{ padding: "10px 14px", background: "#064E3B", color: "#FFFFFF", border: "none", borderRadius: 4, fontSize: 13 }}>
-          {loading ? "Memproses..." : "Buat akun"}
-        </button>
-      </form>
-    </section>
-  )
-}
-
-export default function JuaraSignupPage() {
-  return (
-    <Suspense fallback={<div style={{ padding: 24 }}>Memuat...</div>}>
-      <SignupForm />
-    </Suspense>
+      <section className="ju-auth-side">
+        <div className="ju-auth-card">
+          {done ? (
+            <>
+              <h2>Akun dibuat</h2>
+              <p>Klub Anda sudah aktif dan siap dipakai.</p>
+              <div className="ju-notice" role="status">
+                <CheckCircle2 size={14} aria-hidden="true" /> Pendaftaran berhasil.
+              </div>
+              <button className="ju-btn ju-btn-primary ju-btn-wide" style={{ marginTop: 20 }} onClick={() => router.push("/juara/login")}>
+                Lanjut ke Masuk <ArrowRight size={16} aria-hidden="true" />
+              </button>
+            </>
+          ) : (
+            <>
+              <h2>Daftarkan klub</h2>
+              <p>Buat akun Owner untuk klub Anda.</p>
+              <form className="ju-form" onSubmit={submit}>
+                <label className="ju-label">
+                  Nama klub
+                  <input className="ju-input" required minLength={3} value={name}
+                    onChange={(e) => setName(e.target.value)} placeholder="Contoh: Persiba Nusantara" />
+                </label>
+                <label className="ju-label">
+                  Kasta kompetisi
+                  <select className="ju-input" value={tier} onChange={(e) => setTier(e.target.value as Tier)}>
+                    <option value="LIGA_1">Liga 1</option>
+                    <option value="LIGA_2">Liga 2</option>
+                    <option value="LIGA_3">Liga 3</option>
+                    <option value="ACADEMY_PRO">Akademi / Liga profesional</option>
+                  </select>
+                </label>
+                <label className="ju-label">
+                  Email
+                  <input className="ju-input" type="email" autoComplete="email" required
+                    value={email} onChange={(e) => setEmail(e.target.value)} placeholder="owner@klub.id" />
+                </label>
+                <label className="ju-label">
+                  Kata sandi
+                  <input className="ju-input" type="password" autoComplete="new-password" required minLength={8}
+                    value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Minimal 8 karakter" />
+                </label>
+                {error && <div className="ju-error" role="alert">{error}</div>}
+                <button className="ju-btn ju-btn-primary ju-btn-wide" type="submit" disabled={loading}>
+                  {loading ? "Membuat akun..." : "Buat akun & klub"} <ArrowRight size={16} aria-hidden="true" />
+                </button>
+              </form>
+              <div className="ju-auth-switch">
+                Sudah punya akun? <Link className="ju-link" href="/juara/login">Masuk</Link>
+              </div>
+            </>
+          )}
+        </div>
+      </section>
+    </div>
   )
 }

@@ -1,3 +1,4 @@
+import { createClient } from "@/lib/supabase/server"
 import { getJuaraMembership } from "@/lib/juara/server-auth"
 
 export async function GET() {
@@ -8,5 +9,21 @@ export async function GET() {
     }
     return Response.json({ error: res.error, code: res.code }, { status: res.status })
   }
-  return Response.json({ ok: true, membership: res.membership })
+
+  const supabase = await createClient()
+  const { data: club } = await supabase
+    .from("juara_clubs")
+    .select("name, league_tier, fiscal_year_start_month")
+    .eq("id", res.membership.clubId)
+    .maybeSingle()
+
+  return Response.json({
+    ok: true,
+    membership: {
+      ...res.membership,
+      clubName: club?.name ?? "Klub",
+      leagueTier: club?.league_tier ?? null,
+      fiscalYearStartMonth: club?.fiscal_year_start_month ?? null,
+    },
+  })
 }

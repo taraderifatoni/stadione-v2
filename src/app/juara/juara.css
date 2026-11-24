@@ -1,0 +1,256 @@
+/* JUARA design system — scoped to /juara, PRD Bagian 6 (no neon/purple). */
+
+.ju-root,
+.ju-auth,
+.ju-shell {
+  --ju-navy: #0d1b2a;
+  --ju-navy-2: #142639;
+  --ju-ink: #1b2735;
+  --ju-muted: #5b6b7c;
+  --ju-line: #dde3ea;
+  --ju-panel: #f4f6f8;
+  --ju-accent: #0e6b5c;
+  --ju-accent-dark: #0a4f44;
+  --ju-amber: #c7861b;
+  --ju-danger: #b42318;
+  --ju-success: #0e7a51;
+  color: var(--ju-ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ---------- Auth ---------- */
+.ju-auth {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background: #ffffff;
+}
+.ju-auth-brand {
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 15%, #1c3b4f 0%, transparent 45%), var(--ju-navy);
+  color: #f4f7f9;
+  padding: 56px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ju-auth-brand::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background-image: linear-gradient(#ffffff18 1px, transparent 1px), linear-gradient(90deg, #ffffff18 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+}
+.ju-brandmark {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+.ju-brandmark span {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  background: var(--ju-amber);
+  color: #0d1b2a;
+  border-radius: 6px;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+.ju-auth-pitch { position: relative; z-index: 1; max-width: 520px; }
+.ju-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ju-amber);
+  margin-bottom: 16px;
+}
+.ju-auth-pitch h1 {
+  font-size: clamp(30px, 3.2vw, 46px);
+  line-height: 1.12;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  margin: 0 0 20px;
+}
+.ju-auth-pitch p {
+  color: #b9c6d2;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+.ju-feature-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.ju-feature-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 14px; color: #dbe4ec; }
+.ju-feature-list b { color: #fff; font-weight: 650; }
+.ju-feature-dot {
+  flex: 0 0 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ffffff45;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  color: var(--ju-amber);
+  margin-top: 1px;
+}
+.ju-auth-foot { position: relative; z-index: 1; font-size: 12px; color: #8fa2b3; }
+.ju-auth-side { display: flex; align-items: center; justify-content: center; padding: 40px 32px; }
+.ju-auth-card { width: 100%; max-width: 430px; }
+.ju-auth-card h2 { font-size: 26px; font-weight: 750; letter-spacing: -0.015em; margin: 0 0 6px; }
+.ju-auth-card > p { color: var(--ju-muted); font-size: 14px; margin: 0 0 28px; line-height: 1.6; }
+.ju-form { display: grid; gap: 16px; }
+.ju-label { display: grid; gap: 7px; font-size: 13px; font-weight: 600; }
+.ju-label small { font-weight: 450; color: var(--ju-muted); font-size: 11px; }
+.ju-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 13px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--ju-ink);
+  background: #fff;
+  border: 1px solid var(--ju-line);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.ju-input:focus { border-color: var(--ju-accent); box-shadow: 0 0 0 3px #0e6b5c1f; }
+.ju-input::placeholder { color: #9aa8b6; }
+.ju-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.ju-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  border-radius: 8px;
+  border: 1px solid var(--ju-line);
+  background: #fff;
+  color: var(--ju-ink);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+.ju-btn:hover:not(:disabled) { background: #f7f9fa; }
+.ju-btn:active:not(:disabled) { transform: translateY(1px); }
+.ju-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.ju-btn-primary { background: var(--ju-accent); border-color: var(--ju-accent); color: #fff; }
+.ju-btn-primary:hover:not(:disabled) { background: var(--ju-accent-dark); border-color: var(--ju-accent-dark); }
+.ju-btn-wide { width: 100%; }
+.ju-error { color: var(--ju-danger); font-size: 13px; background: #fef3f2; border: 1px solid #fecdca; padding: 10px 12px; border-radius: 8px; }
+.ju-notice { color: var(--ju-success); font-size: 13px; background: #ecfdf3; border: 1px solid #abefc6; padding: 10px 12px; border-radius: 8px; }
+.ju-auth-switch { margin-top: 24px; font-size: 13px; color: var(--ju-muted); }
+.ju-link { color: var(--ju-accent); font-weight: 650; text-decoration: none; }
+.ju-link:hover { text-decoration: underline; }
+.ju-hint { margin-top: 18px; font-size: 12px; color: var(--ju-muted); border-left: 2px solid var(--ju-amber); padding-left: 10px; line-height: 1.6; }
+
+/* ---------- Workspace ---------- */
+.ju-shell { min-height: 100dvh; display: flex; background: var(--ju-panel); }
+.ju-sidebar {
+  width: 244px;
+  flex: 0 0 244px;
+  background: var(--ju-navy);
+  color: #dbe4ec;
+  padding: 22px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ju-sidebar .ju-brandmark { padding: 0 8px; font-size: 17px; }
+.ju-nav { display: grid; gap: 4px; }
+.ju-nav-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: #7d93a8; padding: 0 10px 8px; }
+.ju-navitem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 7px;
+  color: #c6d2dd;
+  font-size: 13px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.ju-navitem:hover { background: #ffffff12; color: #fff; }
+.ju-navitem[data-active="true"] { background: var(--ju-navy-2); color: #fff; box-shadow: inset 3px 0 0 var(--ju-amber); }
+.ju-navitem svg { width: 16px; height: 16px; opacity: 0.85; }
+.ju-sidebar-foot { margin-top: auto; padding: 12px 10px; border-top: 1px solid #ffffff1f; font-size: 11px; color: #8197ab; line-height: 1.6; }
+.ju-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ju-topbar {
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid var(--ju-line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  gap: 16px;
+}
+.ju-topbar h1 { font-size: 16px; font-weight: 700; margin: 0; }
+.ju-topbar-sub { font-size: 12px; color: var(--ju-muted); margin-top: 2px; }
+.ju-user { display: flex; align-items: center; gap: 12px; font-size: 12px; color: var(--ju-muted); }
+.ju-avatar { width: 30px; height: 30px; border-radius: 50%; background: var(--ju-navy); color: #fff; display: grid; place-items: center; font-size: 11px; font-weight: 700; }
+.ju-content { padding: 28px; max-width: 1280px; width: 100%; margin: 0 auto; box-sizing: border-box; }
+.ju-pagehead { margin-bottom: 22px; }
+.ju-pagehead h2 { font-size: 22px; font-weight: 750; letter-spacing: -0.015em; margin: 0 0 4px; }
+.ju-pagehead p { margin: 0; color: var(--ju-muted); font-size: 13px; }
+.ju-grid { display: grid; gap: 16px; }
+.ju-grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.ju-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ju-card { background: #fff; border: 1px solid var(--ju-line); border-radius: 10px; padding: 20px; }
+.ju-card h3 { font-size: 14px; font-weight: 700; margin: 0 0 14px; }
+.ju-kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ju-muted); }
+.ju-kpi-value { font-size: 26px; font-weight: 750; margin-top: 8px; letter-spacing: -0.02em; }
+.ju-kpi-foot { font-size: 11px; color: var(--ju-muted); margin-top: 6px; }
+.ju-empty { text-align: center; padding: 36px 16px; color: var(--ju-muted); font-size: 13px; }
+.ju-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.ju-table th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ju-muted); font-weight: 650; padding: 0 10px 10px 0; border-bottom: 1px solid var(--ju-line); }
+.ju-table td { padding: 12px 10px 12px 0; border-bottom: 1px solid #eef1f4; }
+.ju-table tr:last-child td { border-bottom: 0; }
+.ju-badge { display: inline-block; padding: 3px 8px; border-radius: 999px; font-size: 11px; font-weight: 650; background: #eef2f6; color: #405267; }
+.ju-badge-active { background: #ecfdf3; color: var(--ju-success); }
+.ju-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.ju-section-title { font-size: 13px; font-weight: 700; margin: 26px 0 12px; }
+
+/* ---------- Wizard ---------- */
+.ju-steps { display: flex; gap: 6px; margin-bottom: 22px; }
+.ju-step-dot { flex: 1; height: 4px; border-radius: 99px; background: #e3e8ed; }
+.ju-step-dot[data-on="true"] { background: var(--ju-accent); }
+.ju-field { display: grid; gap: 7px; font-size: 13px; font-weight: 600; }
+.ju-field-grid { display: grid; gap: 16px; }
+.ju-inline-note { font-size: 12px; color: var(--ju-muted); }
+.ju-result { background: #f7f9fa; border: 1px solid var(--ju-line); border-radius: 8px; padding: 14px; max-height: 260px; overflow: auto; font-size: 12px; white-space: pre-wrap; word-break: break-word; }
+.ju-wizard-nav { display: flex; gap: 10px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--ju-line); }
+
+@media (max-width: 1024px) {
+  .ju-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .ju-auth { grid-template-columns: 1fr; }
+  .ju-auth-brand { display: none; }
+  .ju-auth-side { padding: 32px 20px; }
+  .ju-sidebar { width: 100%; flex: none; padding: 12px; gap: 10px; }
+  .ju-sidebar .ju-brandmark, .ju-sidebar-foot, .ju-nav-label { display: none; }
+  .ju-nav { display: flex; overflow-x: auto; gap: 4px; }
+  .ju-navitem { white-space: nowrap; padding: 8px 10px; }
+  .ju-shell { flex-direction: column; }
+  .ju-topbar { padding: 0 16px; }
+  .ju-content { padding: 18px 14px; }
+  .ju-grid-2 { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .ju-grid-4 { grid-template-columns: 1fr; }
+  .ju-row { grid-template-columns: 1fr; }
+  .ju-topbar-sub { display: none; }
+}
