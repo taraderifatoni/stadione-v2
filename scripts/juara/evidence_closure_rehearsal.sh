@@ -21,10 +21,11 @@ assert_eq() { [ "$1" = "$2" ] || fail "$3 (expected=$2 actual=$1)"; }
 assert_contains() { printf '%s' "$1" | grep -q "$2" || fail "$3"; }
 
 cleanup() {
-  [ "$KEEP" = "1" ] && { echo "KEEP requested; staging left running" | tee -a "$LOG"; return; }
+  [ "$KEEP" = "1" ] && { echo "KEEP requested; cleanup NOT executed" | tee -a "$LOG"; return; }
   docker rm -f "$PGRST" >/dev/null 2>&1 || true
-  docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE IF EXISTS $STAGE;" >/dev/null 2>&1 || true
-  docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP ROLE IF EXISTS $ROLE;" >/dev/null 2>&1 || true
+  docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE IF EXISTS ${STAGE}_fail;" >/dev/null 2>&1 || true
+  docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE IF EXISTS $STAGE;" || { echo "CLEANUP_FAIL db" | tee -a "$LOG"; return 1; }
+  docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP ROLE IF EXISTS $ROLE;" || { echo "CLEANUP_FAIL role" | tee -a "$LOG"; return 1; }
   echo "CLEANUP_DONE" | tee -a "$LOG"
 }
 trap cleanup EXIT
@@ -78,6 +79,10 @@ PY
 
 # Injected failure on a clone: transaction must leave M15+M14 state untouched.
 docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE IF EXISTS ${STAGE}_fail;" -c "CREATE DATABASE ${STAGE}_fail TEMPLATE $STAGE;" >>"$LOG" 2>&1
+SIG_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select p.oid::regprocedure from pg_proc p join pg_namespace n on n.oid=p.pronamespace where p.proname='juara_set_vision_draft' and n.nspname='public' order by 1;")
+GRANTS_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name='juara_set_vision_draft' order by 1;" 2>/dev/null || true)
+POL_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||cmd from pg_policies where tablename like 'juara_%' order by 1;")
+DATA_BEFORE=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from juara_clubs;" 2>/dev/null || echo "no-table")
 docker cp /tmp/cutover_fail.sql "$CONTAINER:/tmp/cutover_fail.sql" >/dev/null
 set +e
 docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -q -v ON_ERROR_STOP=1 -f /tmp/cutover_fail.sql >>"$LOG" 2>&1
@@ -86,8 +91,17 @@ set -e
 assert_eq "$RC" "3" "injected failure harus gagal"
 COLS=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from information_schema.columns where table_name='juara_clubs' and column_name in ('vision_revision','vision_legacy_migrated');")
 assert_eq "$COLS" "0" "rollback cutover: kolom baru harus absen"
+SIG_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select p.oid::regprocedure from pg_proc p join pg_namespace n on n.oid=p.pronamespace where p.proname='juara_set_vision_draft' and n.nspname='public' order by 1;")
+GRANTS_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select routine_name||':'||grantee||':'||privilege_type from information_schema.routine_privileges where routine_name='juara_set_vision_draft' order by 1;" 2>/dev/null || true)
+POL_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select tablename||':'||cmd from pg_policies where tablename like 'juara_%' order by 1;")
+DATA_AFTER=$(docker exec "$CONTAINER" psql -U postgres -d "${STAGE}_fail" -tA -q -c "select count(*) from juara_clubs;" 2>/dev/null || echo "no-table")
+assert_eq "$SIG_AFTER" "$SIG_BEFORE" "rollback signature identik"
+assert_eq "$GRANTS_AFTER" "$GRANTS_BEFORE" "rollback grants identik"
+assert_eq "$POL_AFTER" "$POL_BEFORE" "rollback policies identik"
+assert_eq "$DATA_AFTER" "$DATA_BEFORE" "rollback data identik"
+echo "ROLLBACK_SNAPSHOT sig=$SIG_AFTER policies=$POL_AFTER data=$DATA_AFTER" | tee -a "$LOG"
 docker exec "$CONTAINER" psql -U postgres -d postgres -q -c "DROP DATABASE ${STAGE}_fail;" >>"$LOG" 2>&1
-pass "injected_failure_rollback"
+pass "injected_failure_rollback_full"
 
 # Real cutover
 docker cp /tmp/cutover.sql "$CONTAINER:/tmp/cutover.sql" >/dev/null

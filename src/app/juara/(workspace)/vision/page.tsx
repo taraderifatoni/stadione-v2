@@ -8,9 +8,9 @@ export default function OwnerVisionPage() {
         <h2>Owner Vision</h2>
         <p>Lima keputusan fondasi sebelum playbook klub Anda dibuat.</p>
       </div>
-      <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) 280px", gap: 20 }}>
+      <div className="ju-vision-layout">
         <OwnerWizard />
-        <aside className="ju-card" style={{ alignSelf: "start" }}>
+        <aside className="ju-card ju-vision-aside">
           <h3><Info size={15} aria-hidden="true" /> Catatan</h3>
           <p className="ju-inline-note">
             Hasil dihasilkan oleh engine rumus JUARA, bukan angka hardcode. Simpan playbook

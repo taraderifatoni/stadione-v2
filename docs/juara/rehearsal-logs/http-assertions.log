@@ -1,0 +1,12 @@
+# HTTP assertions 2026-11-24T05:43:45.928520+00:00
+base=http://127.0.0.1:3105
+GET_status=200 revision=0
+PUT_equity100=200 revision=1
+GET_after_backfill=200 equity=100 revision=1
+PUT_omitted_equity=200 equity_retained=100
+PARALLEL=[200, 409] conflict_code=VERSION_CONFLICT
+FINANCE_100_200 before=200 omitted_equity_status=200 retained=200
+MALFORMED_RAW={'status': 400} bad_rev=1 db_rev=1
+MALFORMED_FINANCE status=400 revision_unchanged=1
+CROSS_TENANT read=200 rows=0 write=401
+ASSERTIONS_PASS

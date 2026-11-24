@@ -3,9 +3,19 @@ NOTICE:  database "juara_evclose_stage" does not exist, skipping
 NOTICE:  role "pgrst_evclose" does not exist, skipping
 psql:/tmp/_m.sql:23: NOTICE:  function juara_set_vision_draft(uuid,bytea) does not exist, skipping
 NOTICE:  database "juara_evclose_stage_fail" does not exist, skipping
-psql:/tmp/cutover_fail.sql:177: ERROR:  division by zero
-ASSERT_PASS: injected_failure_rollback
+psql:/tmp/cutover_fail.sql:109: NOTICE:  function juara_set_vision_draft(uuid,bytea,bytea,pg_catalog.int4) does not exist, skipping
+psql:/tmp/cutover_fail.sql:178: ERROR:  division by zero
+ROLLBACK_SNAPSHOT sig=juara_set_vision_draft(uuid,bytea,bytea) policies=juara_audit_logs:ALL
+juara_club_members:SELECT
+juara_clubs:ALL
+juara_contracts_vault:ALL
+juara_playbooks:ALL
+juara_players:ALL
+juara_projections:ALL
+juara_squad_slots:ALL data=0
+ASSERT_PASS: injected_failure_rollback_full
+psql:/tmp/cutover.sql:109: NOTICE:  function juara_set_vision_draft(uuid,bytea,bytea,pg_catalog.int4) does not exist, skipping
 ASSERT_PASS: cutover_atomic
-e29145f910a771c43fc7ea5418402bba25a473034d5a402b391b01a22b373f5f
+d7d7d97ed096f35625c2d2dbfbb34c42e155874e4ee472c6b84c4b21d433f293
 ASSERT_PASS: staging_ready
-KEEP requested; staging left running
+KEEP requested; cleanup NOT executed

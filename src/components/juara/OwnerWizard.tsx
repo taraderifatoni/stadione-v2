@@ -17,6 +17,7 @@ import {
   type Width,
 } from "@/lib/juara/tactics"
 import { Check, Download, Save } from "lucide-react"
+import { chooseLocalDraft, chooseServerDraft, cloneDraft } from "@/lib/juara/draft-recovery"
 
 type Draft = {
   leagueTier: "LIGA_1" | "LIGA_2" | "LIGA_3" | "ACADEMY_PRO"
@@ -101,6 +102,7 @@ export default function OwnerWizard() {
   const [draftStatus, setDraftStatus] = useState<string | null>(null)
   const [revision, setRevision] = useState(0)
   const [conflict, setConflict] = useState(false)
+  const [localBackup, setLocalBackup] = useState<Draft | null>(null)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -175,10 +177,14 @@ export default function OwnerWizard() {
       })
       const body = await res.json()
       if (!res.ok) {
+        if (body.code === "VERSION_CONFLICT") {
+          setLocalBackup(cloneDraft(draft) as unknown as Draft)
+        }
         setConflict(body.code === "VERSION_CONFLICT")
         throw new Error(body.error ?? "Gagal menyimpan draf")
       }
       setConflict(false)
+      setLocalBackup(null)
       if (typeof body.revision === "number") setRevision(body.revision)
       setDraftStatus("Draf tersimpan")
     } catch (e) {
@@ -192,12 +198,34 @@ export default function OwnerWizard() {
       const res = await fetch("/api/juara/v1/vision/draft", { cache: "no-store" })
       const body = await res.json()
       if (!res.ok) throw new Error(body.error ?? "Gagal memuat versi terbaru")
+      const server = body.draft as Record<string, unknown> | null
+      if (!server) throw new Error("Server belum memiliki draf")
+      const merged = {
+        ...INITIAL,
+        ...server,
+        philosophy: { ...INITIAL.philosophy, ...(server.philosophy as object ?? {}) },
+        guardrails: { ...INITIAL.guardrails, ...(server.guardrails as object ?? {}) },
+      } as Draft
+      const choice = chooseServerDraft(merged, localBackup as unknown as Record<string, unknown> | null)
+      setDraft(choice.draft as unknown as Draft)
+      setLocalBackup(choice.localBackup as unknown as Draft | null)
       setRevision(typeof body.revision === "number" ? body.revision : 0)
       setConflict(false)
-      setDraftStatus("Versi terbaru dimuat. Edit lokal Anda masih tersimpan di layar; simpan lagi bila ingin menerapkannya.")
+      setDraftStatus(choice.status)
     } catch (e) {
       setDraftStatus(e instanceof Error ? e.message : "Gagal memuat versi terbaru")
     }
+  }
+
+  function restoreLocalEdit() {
+    if (!localBackup) return
+    const choice = chooseLocalDraft(
+      localBackup as unknown as Record<string, unknown>,
+      draft as unknown as Record<string, unknown>
+    )
+    setDraft(choice.draft as unknown as Draft)
+    setDraftStatus(choice.status)
+    // Revision sengaja tidak diubah: local backup dipakai di atas revision server.
   }
 
   useEffect(() => {
@@ -574,10 +602,20 @@ export default function OwnerWizard() {
       )}
 
       {conflict && (
-        <div className="ju-error" role="alert" style={{ marginTop: 16 }}>
-          Draf di server sudah berubah. Input Anda di layar tidak hilang.
-          <button type="button" className="ju-btn" style={{ marginLeft: 10 }} onClick={reloadLatestRevision}>
+        <div className="ju-error ju-wizard-alert" role="alert">
+          Draf di server sudah berubah. Edit lokal Anda disimpan sebagai salinan, lalu form akan
+          menampilkan versi server.
+          <button type="button" className="ju-btn" onClick={reloadLatestRevision}>
             Muat versi terbaru
+          </button>
+        </div>
+      )}
+
+      {localBackup && !conflict && (
+        <div className="ju-notice ju-backup-note" role="status">
+          Salinan edit lokal tersedia. Memulihkannya akan menimpa perubahan server yang belum Anda lihat.
+          <button type="button" className="ju-btn" onClick={restoreLocalEdit}>
+            Pulihkan edit lokal
           </button>
         </div>
       )}

@@ -266,6 +266,15 @@
 .ju-param-grid { display: grid; gap: 12px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .ju-auto-note { background: #eef6f4; border: 1px solid #bfe0d8; border-radius: 8px; padding: 12px; font-size: 13px; }
 .ju-auto-note b { color: var(--ju-accent-dark); }
+.ju-vision-layout { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 20px; align-items: start; }
+.ju-vision-aside { align-self: start; }
+.ju-wizard-alert { margin-top: 16px; overflow-wrap: anywhere; }
+.ju-backup-note { margin-top: 10px; }
+@media (max-width: 900px) {
+  .ju-vision-layout { grid-template-columns: 1fr; }
+  .ju-vision-aside { order: 2; }
+  .ju-wizard-alert, .ju-backup-note { width: 100%; }
+}
 
 @media (max-width: 1024px) {
   .ju-grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -308,6 +317,9 @@
   .ju-navitem { justify-content: center; flex-direction: column; gap: 2px; padding: 6px 2px; font-size: 10px; }
   .ju-main { padding-bottom: 64px; }
   .ju-content { padding-bottom: 84px; }
+  .ju-wizard-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ju-wizard-nav .ju-inline-note { grid-column: 1 / -1; order: -1; }
+  .ju-wizard-nav .ju-btn { width: 100%; }
   .ju-topbar h1 { font-size: 14px; }
   .ju-user > span:not(.ju-avatar) { display: none; }
   .ju-user .ju-btn { padding: 8px 10px; }

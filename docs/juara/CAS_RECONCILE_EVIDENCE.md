@@ -80,6 +80,24 @@ terlanjur ada di produksi sebelum M-14).
 - HTTP paralel via PostgREST sempat timeout; SQL paralel tetap membuktikan 1 sukses/1 conflict.
   Ini dicatat, bukan diklaim sebagai HTTP 200/409 eksplisit.
 
+## Koreksi audit `OWNER_REP_EVIDENCE_CLOSURE_AUDIT`
+
+- Mobile 390 diperbaiki: layout wizard satu kolom, panel Catatan di bawah form, status
+  recovery penuh lebar, tombol grid 2 kolom. Saya membuka `server-loaded-390x844.png`:
+  tidak ada form 132px, alert/status terbaca, tombol Muat/Pulihkan terlihat.
+- Recovery benar: `reloadLatestRevision` memuat `body.draft` dari server dan menyimpan
+  salinan lokal; `chooseServerDraft` menampilkan server (star 25, scrMax 62),
+  `Pulihkan edit lokal` mengembalikan star 17 secara eksplisit dengan peringatan
+  menimpa server. Test dua field berbeda di `tests/juara/draft-recovery.test.ts`.
+- Runner HTTP executable: `scripts/juara/http_assertions.py` menjalankan GET/PUT
+  terautentikasi: legacy backfill 100, omitted-equity retained 200, parallel
+  **200/409 VERSION_CONFLICT**, finance public100+finance200 retained 200,
+  malformed finance status 400 + revision DB tidak berubah, cross-tenant GET 0/PATCH 401.
+  Log: `docs/juara/rehearsal-logs/http-assertions.log`.
+- Rollback runner sekarang mengukur baseline signature/grants/policies/data sebelum
+  injected failure dan mengassert identik sesudah rollback; `CLEANUP_DONE` hanya
+  dicetak bila drop DB dan role berhasil; `--keep` dicatat sebagai cleanup belum dijalankan.
+
 ## Catatan
 
 - Bukti visual tidak menggantikan rehearsal DB.
