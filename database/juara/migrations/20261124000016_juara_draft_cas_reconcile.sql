@@ -13,6 +13,7 @@ ALTER TABLE juara_clubs
 -- dan 3 argumen dari M-15. Satu-satunya jalur tulis adalah 4 argumen + CAS.
 DROP FUNCTION IF EXISTS juara_set_vision_draft(UUID, BYTEA);
 DROP FUNCTION IF EXISTS juara_set_vision_draft(UUID, BYTEA, BYTEA);
+DROP FUNCTION IF EXISTS juara_set_vision_draft(UUID, BYTEA, BYTEA, INTEGER);
 
 CREATE FUNCTION juara_set_vision_draft(
   p_club_id UUID,
@@ -58,7 +59,7 @@ BEGIN
   RETURNING vision_revision INTO v_new_revision;
 
   IF v_new_revision IS NULL THEN
-    RAISE EXCEPTION 'REVISION_CONFLICT' USING ERRCODE = '40001';
+    RAISE EXCEPTION 'REVISION_CONFLICT' USING ERRCODE = 'P0001';
   END IF;
   RETURN v_new_revision;
 END;

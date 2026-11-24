@@ -59,6 +59,27 @@ terlanjur ada di produksi sebelum M-14).
   reload, conflict attempt). Screenshot conflict UI tidak berhasil diambil; bukti conflict
   memakai HTTP stale-write + runner SQL paralel.
 
+## Evidence closure (audit `OWNER_REP_FINANCE_HTTP_AUDIT`)
+
+- Satu entry point persisten: `scripts/juara/evidence_closure_rehearsal.sh`. Role staging unik
+  `pgrst_evclose`, PostgREST bind `127.0.0.1:3103`, target guard nama DB, cleanup trap; tidak
+  mengubah role bersama `pgrst`. Log sanitized:
+  `docs/juara/rehearsal-logs/evidence-closure-runner.log`.
+- Cutover M-14 + M-16 digabung dalam **satu transaksi eksplisit** (M-16 tidak dibungkus
+  `psql -1` agar tidak bentrok dengan `COMMIT` internal). Injected `SELECT 1/0` sebelum
+  COMMIT pada klon staging → exit 3, kolom `vision_revision`/`vision_legacy_migrated` absen,
+  overload M-15/M-14 tetap dua. Cutover nyata → dua kolom, satu RPC 4 argumen, policy `SELECT`.
+- HTTP route staging: encrypted legacy public equity=100, finance absent → SD PUT ditolak
+  409 `LEGACY_NOT_MIGRATED`; Owner PUT tanpa equity → 200 revision 1, equity 100; seed
+  public100+finance200 → Owner PUT tanpa equity tetap equity 200.
+- Konflik deterministik memakai `P0001` untuk `REVISION_CONFLICT` agar tidak menggantung:
+  tab memegang revision R dengan input lokal 18/17, tab lain menyimpan lebih dulu, tab pertama
+  menampilkan "Draf berubah di sesi lain" + aksi **Muat versi terbaru**. Input lokal tetap
+  (bukti `Pemain bintang` 18/17), DB tidak tertimpa (revision naik, star dari pemenang).
+  Screenshot: `docs/juara/screenshots/evidence-closure/` (conflict & recovery, 1440×900/390×844).
+- HTTP paralel via PostgREST sempat timeout; SQL paralel tetap membuktikan 1 sukses/1 conflict.
+  Ini dicatat, bukan diklaim sebagai HTTP 200/409 eksplisit.
+
 ## Catatan
 
 - Bukti visual tidak menggantikan rehearsal DB.

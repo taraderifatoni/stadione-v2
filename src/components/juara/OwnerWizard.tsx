@@ -100,6 +100,7 @@ export default function OwnerWizard() {
   const [saveResult, setSaveResult] = useState<string | null>(null)
   const [draftStatus, setDraftStatus] = useState<string | null>(null)
   const [revision, setRevision] = useState(0)
+  const [conflict, setConflict] = useState(false)
 
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
@@ -173,11 +174,29 @@ export default function OwnerWizard() {
         body: JSON.stringify({ draft, expectedRevision: revision }),
       })
       const body = await res.json()
-      if (!res.ok) throw new Error(body.error ?? "Gagal menyimpan draf")
+      if (!res.ok) {
+        setConflict(body.code === "VERSION_CONFLICT")
+        throw new Error(body.error ?? "Gagal menyimpan draf")
+      }
+      setConflict(false)
       if (typeof body.revision === "number") setRevision(body.revision)
       setDraftStatus("Draf tersimpan")
     } catch (e) {
       setDraftStatus(e instanceof Error ? e.message : "Gagal menyimpan draf")
+    }
+  }
+
+  async function reloadLatestRevision() {
+    setDraftStatus("Memuat versi terbaru...")
+    try {
+      const res = await fetch("/api/juara/v1/vision/draft", { cache: "no-store" })
+      const body = await res.json()
+      if (!res.ok) throw new Error(body.error ?? "Gagal memuat versi terbaru")
+      setRevision(typeof body.revision === "number" ? body.revision : 0)
+      setConflict(false)
+      setDraftStatus("Versi terbaru dimuat. Edit lokal Anda masih tersimpan di layar; simpan lagi bila ingin menerapkannya.")
+    } catch (e) {
+      setDraftStatus(e instanceof Error ? e.message : "Gagal memuat versi terbaru")
     }
   }
 
@@ -551,6 +570,15 @@ export default function OwnerWizard() {
             {pdfError && <span className="ju-error" role="alert">{pdfError}</span>}
             {saveError && <span className="ju-error" role="alert">{saveError}</span>}
           </div>
+        </div>
+      )}
+
+      {conflict && (
+        <div className="ju-error" role="alert" style={{ marginTop: 16 }}>
+          Draf di server sudah berubah. Input Anda di layar tidak hilang.
+          <button type="button" className="ju-btn" style={{ marginLeft: 10 }} onClick={reloadLatestRevision}>
+            Muat versi terbaru
+          </button>
         </div>
       )}
 

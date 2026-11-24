@@ -112,9 +112,8 @@ export async function PUT(request: Request) {
   })
 
   if (rpc.error && isConflict(rpc.error)) {
-    const { data: current } = await supabase.from(TABLE).select("vision_revision").eq("id", auth.clubId).maybeSingle()
     return Response.json(
-      { error: "Draf berubah di sesi lain", code: "VERSION_CONFLICT", revision: current?.vision_revision ?? null },
+      { error: "Draf berubah di sesi lain", code: "VERSION_CONFLICT", revision: existingRow?.vision_revision ?? null },
       { status: 409 }
     )
   }
