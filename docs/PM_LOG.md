@@ -636,5 +636,25 @@ Dampak: tanpa perubahan produksi
 
 ---
 
+### 24.11.2026 — Sprint 10: wizard taktik benchmarking Football Manager
+
+- Owner uji dan komplain: kode/internal bocor di wizard, terlalu sedikit varian
+  gaya main & formasi, formasi manual tanpa opsi auto.
+- Keputusan PM: hapus tampilan JSON mentah; 10 gaya bermain; 10 template formasi
+  + input khusus; mode Auto/Manual; enam parameter FM (mentalitas, tempo,
+  pressing, garis, lebar, umpan) otomatis terisi dari preset DNA.
+- M-10 menambah `tactical_profile_enc` di `juara_playbooks` (tetap 8 tabel).
+- Bukti: 46/46 test, build exit 0, lint sumber juara exit 0 (3 `any` lama di
+  `pdf.ts` ikut dibersihkan), M-10 ter-apply.
+- Rincian: `docs/juara/SPRINT10_TACTICS_VERIFICATION.md`.
+- Catatan jujur: `agent-browser` hilang dari PATH setelah restart harness, jadi
+  screenshot baru belum diambil; Owner diminta mengecek visual langsung.
+
+Status: SELESAI (kode & API); MENUNGGU PENILAIAN VISUAL OWNER
+Bukti: verifikasi di atas
+Dampak: produksi diperbarui setelah deploy
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._

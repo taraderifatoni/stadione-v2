@@ -29,8 +29,19 @@ export const playbookGenerateSchema = z.object({
   leagueTier: z.enum(["LIGA_1", "LIGA_2", "LIGA_3", "ACADEMY_PRO"]),
   horizonYears: z.union([z.literal(1), z.literal(3)]),
   targetOutcome: z.enum(["CHAMPION", "PROMOTION", "TOP_4", "MID_TABLE_SUSTAINABLE"]),
-  tacticalDna: z.enum(["HIGH_PRESSING", "POSITIONAL_PLAY", "VERTICAL_COUNTER", "BALANCED_HYBRID"]),
-  baseFormation: z.string().min(3).max(20),
+  tacticalDna: z.enum([
+    "HIGH_PRESSING", "POSITIONAL_PLAY", "VERTICAL_COUNTER", "BALANCED_HYBRID",
+    "TOTAL_FOOTBALL", "CATENACCIO", "WING_PLAY", "DIAMOND_MIDFIELD",
+    "FALSE_NINE", "DIRECT_PHYSICAL",
+  ]),
+  formationMode: z.enum(["AUTO", "MANUAL"]).default("AUTO"),
+  baseFormation: z.string().max(20).default(""),
+  mentality: z.enum(["DEFENSIVE", "BALANCED", "POSITIVE", "ATTACKING"]).default("POSITIVE"),
+  tempo: z.enum(["LOW", "STANDARD", "HIGH"]).default("STANDARD"),
+  pressing: z.enum(["LOW", "MEDIUM", "HIGH", "VERY_HIGH"]).default("HIGH"),
+  defensiveLine: z.enum(["DEEP", "STANDARD", "HIGH"]).default("HIGH"),
+  width: z.enum(["NARROW", "STANDARD", "WIDE"]).default("STANDARD"),
+  passingStyle: z.enum(["DIRECT", "MIXED", "POSSESSION"]).default("MIXED"),
   philosophy: z
     .object({
       star: z.number().int().min(0).max(100),
@@ -44,6 +55,17 @@ export const playbookGenerateSchema = z.object({
     equity: z.number().positive(),
     scrMax: z.number().min(58).max(100),
   }),
+}).superRefine((value, ctx) => {
+  if (value.formationMode === "MANUAL") {
+    const len = value.baseFormation.trim().length
+    if (len < 3 || len > 20) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["baseFormation"],
+        message: "Mode manual memerlukan formasi 3–20 karakter",
+      })
+    }
+  }
 })
 
 export type PlaybookGenerateInput = z.infer<typeof playbookGenerateSchema>

@@ -2,14 +2,34 @@
 
 import { useState } from "react"
 import { playbookGenerateSchema } from "@/lib/juara/validation"
+import {
+  FORMATION_TEMPLATES,
+  TACTICAL_DNA_OPTIONS,
+  labelFor,
+  resolveFormation,
+  type DefensiveLine,
+  type Mentality,
+  type PassingStyle,
+  type Pressing,
+  type TacticalProfile,
+  type Tempo,
+  type Width,
+} from "@/lib/juara/tactics"
 import { Check, Download, Save } from "lucide-react"
 
 type Draft = {
   leagueTier: "LIGA_1" | "LIGA_2" | "LIGA_3" | "ACADEMY_PRO"
   horizonYears: 1 | 3
   targetOutcome: "CHAMPION" | "PROMOTION" | "TOP_4" | "MID_TABLE_SUSTAINABLE"
-  tacticalDna: "HIGH_PRESSING" | "POSITIONAL_PLAY" | "VERTICAL_COUNTER" | "BALANCED_HYBRID"
+  tacticalDna: (typeof TACTICAL_DNA_OPTIONS)[number]["code"]
+  formationMode: "AUTO" | "MANUAL"
   baseFormation: string
+  mentality: Mentality
+  tempo: Tempo
+  pressing: Pressing
+  defensiveLine: DefensiveLine
+  width: Width
+  passingStyle: PassingStyle
   philosophy: { star: number; competitive: number; academy: number }
   guardrails: { equity: number; scrMax: number }
 }
@@ -18,6 +38,7 @@ interface Generated {
   totalSlots: number
   horizonYears: number
   tacticalDna: string
+  tacticalProfile: TacticalProfile
   baseFormation: string
   ageMatrix: { bracket: string; percent: number; slots: number }[]
   gradeQuota: { A: number[]; B: number[]; C: number[] }
@@ -29,7 +50,14 @@ const INITIAL: Draft = {
   horizonYears: 1,
   targetOutcome: "CHAMPION",
   tacticalDna: "HIGH_PRESSING",
-  baseFormation: "4-3-3",
+  formationMode: "AUTO",
+  baseFormation: "",
+  mentality: "POSITIVE",
+  tempo: "HIGH",
+  pressing: "VERY_HIGH",
+  defensiveLine: "HIGH",
+  width: "WIDE",
+  passingStyle: "DIRECT",
   philosophy: { star: 25, competitive: 45, academy: 30 },
   guardrails: { equity: 15_000_000_000, scrMax: 65 },
 }
@@ -37,7 +65,7 @@ const INITIAL: Draft = {
 const LABELS = [
   "Profil Kompetisi & Titik Awal",
   "Horizon & Target Prestasi",
-  "Identitas Gaya Bermain",
+  "Identitas Gaya Bermain & Formasi",
   "Filosofi Arsitektur Skuad",
   "Pagu Modal & Disiplin Finansial",
 ]
@@ -47,13 +75,6 @@ const OUTCOME_LABEL: Record<Draft["targetOutcome"], string> = {
   PROMOTION: "Promosi",
   TOP_4: "Top 4",
   MID_TABLE_SUSTAINABLE: "Stabil papan tengah",
-}
-
-const DNA_LABEL: Record<Draft["tacticalDna"], string> = {
-  HIGH_PRESSING: "High-pressing",
-  POSITIONAL_PLAY: "Positional play",
-  VERTICAL_COUNTER: "Vertical counter",
-  BALANCED_HYBRID: "Balanced hybrid",
 }
 
 const SCR_LABEL: Record<string, string> = {
@@ -76,8 +97,31 @@ export default function OwnerWizard() {
   const philosophyTotal =
     draft.philosophy.star + draft.philosophy.competitive + draft.philosophy.academy
 
+  const autoFormation = resolveFormation({
+    formationMode: "AUTO",
+    baseFormation: "",
+    tacticalDna: draft.tacticalDna,
+    targetOutcome: draft.targetOutcome,
+  }).formation
+
   function set<K extends keyof Draft>(key: K, value: Draft[K]) {
     setDraft((d) => ({ ...d, [key]: value }))
+  }
+
+  function chooseDna(code: Draft["tacticalDna"]) {
+    const preset = TACTICAL_DNA_OPTIONS.find((d) => d.code === code)
+    if (!preset) return
+    setDraft((d) => ({
+      ...d,
+      tacticalDna: code,
+      mentality: preset.mentality,
+      tempo: preset.tempo,
+      pressing: preset.pressing,
+      defensiveLine: preset.defensiveLine,
+      width: preset.width,
+      passingStyle: preset.passingStyle,
+      baseFormation: d.formationMode === "MANUAL" ? d.baseFormation : "",
+    }))
   }
 
   async function submit() {
@@ -153,8 +197,8 @@ export default function OwnerWizard() {
   return (
     <div className="ju-card">
       <div className="ju-steps" aria-label={`Langkah ${step + 1} dari 5`}>
-        {LABELS.map((_, i) => (
-          <div key={i} className="ju-step-dot" data-on={i <= step} title={LABELS[i]} />
+        {LABELS.map((label, i) => (
+          <div key={label} className="ju-step-dot" data-on={i <= step} title={label} />
         ))}
       </div>
       <div className="ju-inline-note" style={{ marginBottom: 18 }}>
@@ -197,18 +241,91 @@ export default function OwnerWizard() {
 
         {step === 2 && (
           <>
-            <label className="ju-field">
-              Identitas gaya bermain
-              <select className="ju-input" value={draft.tacticalDna}
-                onChange={(e) => set("tacticalDna", e.target.value as Draft["tacticalDna"])}>
-                {Object.entries(DNA_LABEL).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-              </select>
-            </label>
-            <label className="ju-field">
-              Formasi dasar
-              <input className="ju-input" value={draft.baseFormation} maxLength={20} minLength={3}
-                onChange={(e) => set("baseFormation", e.target.value)} placeholder="4-3-3" />
-            </label>
+            <div className="ju-field">
+              Gaya bermain
+              <div className="ju-option-grid">
+                {TACTICAL_DNA_OPTIONS.map((o) => (
+                  <button key={o.code} type="button" className="ju-option"
+                    data-on={draft.tacticalDna === o.code}
+                    aria-pressed={draft.tacticalDna === o.code}
+                    onClick={() => chooseDna(o.code)}>
+                    <b>{o.label}</b><small>{o.description}</small>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="ju-field">
+              Formasi
+              <div className="ju-segmented" role="group" aria-label="Sumber formasi">
+                <button type="button" data-on={draft.formationMode === "AUTO"}
+                  aria-pressed={draft.formationMode === "AUTO"}
+                  onClick={() => set("formationMode", "AUTO")}>Auto</button>
+                <button type="button" data-on={draft.formationMode === "MANUAL"}
+                  aria-pressed={draft.formationMode === "MANUAL"}
+                  onClick={() => set("formationMode", "MANUAL")}>Manual</button>
+              </div>
+              {draft.formationMode === "AUTO" ? (
+                <div className="ju-auto-note">
+                  Formasi dipilih otomatis dari gaya bermain & target: <b>{autoFormation}</b>.
+                  Mengubah gaya bermain akan memperbarui formasi dan parameter finansial dasar.
+                </div>
+              ) : (
+                <>
+                  <label className="ju-field">
+                    Template formasi
+                    <select className="ju-input" value={FORMATION_TEMPLATES.some((f) => f.code === draft.baseFormation) ? draft.baseFormation : ""}
+                      onChange={(e) => set("baseFormation", e.target.value)}>
+                      <option value="">— Pilih template —</option>
+                      {FORMATION_TEMPLATES.map((f) => (
+                        <option key={f.code} value={f.code}>{f.label} — {f.description}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label className="ju-field">
+                    Atau ketik formasi khusus
+                    <input className="ju-input" value={draft.baseFormation} maxLength={20}
+                      onChange={(e) => set("baseFormation", e.target.value)} placeholder="Contoh: 4-2-2-2" />
+                  </label>
+                </>
+              )}
+            </div>
+
+            <div className="ju-field">
+              <span>Detail taktik <small className="ju-inline-note">(bisa disesuaikan setelah memilih gaya)</small></span>
+              <div className="ju-param-grid">
+                <label className="ju-field">Mentalitas
+                  <select className="ju-input" value={draft.mentality} onChange={(e) => set("mentality", e.target.value as Mentality)}>
+                    {["DEFENSIVE", "BALANCED", "POSITIVE", "ATTACKING"].map((v) => <option key={v} value={v}>{labelFor("mentality", v)}</option>)}
+                  </select>
+                </label>
+                <label className="ju-field">Tempo
+                  <select className="ju-input" value={draft.tempo} onChange={(e) => set("tempo", e.target.value as Tempo)}>
+                    {["LOW", "STANDARD", "HIGH"].map((v) => <option key={v} value={v}>{labelFor("tempo", v)}</option>)}
+                  </select>
+                </label>
+                <label className="ju-field">Pressing
+                  <select className="ju-input" value={draft.pressing} onChange={(e) => set("pressing", e.target.value as Pressing)}>
+                    {["LOW", "MEDIUM", "HIGH", "VERY_HIGH"].map((v) => <option key={v} value={v}>{labelFor("pressing", v)}</option>)}
+                  </select>
+                </label>
+                <label className="ju-field">Garis pertahanan
+                  <select className="ju-input" value={draft.defensiveLine} onChange={(e) => set("defensiveLine", e.target.value as DefensiveLine)}>
+                    {["DEEP", "STANDARD", "HIGH"].map((v) => <option key={v} value={v}>{labelFor("defensiveLine", v)}</option>)}
+                  </select>
+                </label>
+                <label className="ju-field">Lebar
+                  <select className="ju-input" value={draft.width} onChange={(e) => set("width", e.target.value as Width)}>
+                    {["NARROW", "STANDARD", "WIDE"].map((v) => <option key={v} value={v}>{labelFor("width", v)}</option>)}
+                  </select>
+                </label>
+                <label className="ju-field">Gaya umpan
+                  <select className="ju-input" value={draft.passingStyle} onChange={(e) => set("passingStyle", e.target.value as PassingStyle)}>
+                    {["DIRECT", "MIXED", "POSSESSION"].map((v) => <option key={v} value={v}>{labelFor("passingStyle", v)}</option>)}
+                  </select>
+                </label>
+              </div>
+            </div>
           </>
         )}
 
@@ -220,8 +337,7 @@ export default function OwnerWizard() {
                 <input className="ju-input" type="number" min={0} max={100}
                   value={draft.philosophy[k]}
                   onChange={(e) => setDraft((d) => ({
-                    ...d,
-                    philosophy: { ...d.philosophy, [k]: Number(e.target.value) },
+                    ...d, philosophy: { ...d.philosophy, [k]: Number(e.target.value) },
                   }))} />
               </label>
             ))}
@@ -257,10 +373,19 @@ export default function OwnerWizard() {
       {result && (
         <div style={{ marginTop: 22 }}>
           <div className="ju-grid ju-grid-4">
-            <div className="ju-card"><div className="ju-kpi-label">Total slot</div><div className="ju-kpi-value">{result.totalSlots}</div></div>
             <div className="ju-card"><div className="ju-kpi-label">Formasi</div><div className="ju-kpi-value" style={{ fontSize: 20 }}>{result.baseFormation}</div></div>
-            <div className="ju-card"><div className="ju-kpi-label">Gaya main</div><div className="ju-kpi-value" style={{ fontSize: 15 }}>{DNA_LABEL[result.tacticalDna as Draft["tacticalDna"]] ?? result.tacticalDna}</div></div>
+            <div className="ju-card"><div className="ju-kpi-label">Gaya main</div><div className="ju-kpi-value" style={{ fontSize: 15 }}>{result.tacticalDna}</div></div>
+            <div className="ju-card"><div className="ju-kpi-label">Total slot</div><div className="ju-kpi-value">{result.totalSlots}</div></div>
             <div className="ju-card"><div className="ju-kpi-label">Status SCR</div><div className="ju-kpi-value" style={{ fontSize: 15 }}>{SCR_LABEL[result.scrStatus] ?? result.scrStatus}</div></div>
+          </div>
+
+          <div className="ju-auto-note" style={{ marginTop: 14 }}>
+            Profil taktik: mentalitas <b>{labelFor("mentality", result.tacticalProfile.mentality)}</b>,
+            tempo <b>{labelFor("tempo", result.tacticalProfile.tempo)}</b>,
+            pressing <b>{labelFor("pressing", result.tacticalProfile.pressing)}</b>,
+            garis <b>{labelFor("defensiveLine", result.tacticalProfile.defensiveLine)}</b>,
+            lebar <b>{labelFor("width", result.tacticalProfile.width)}</b>,
+            umpan <b>{labelFor("passingStyle", result.tacticalProfile.passingStyle)}</b>.
           </div>
 
           <div className="ju-section-title">Matriks usia</div>
@@ -286,10 +411,6 @@ export default function OwnerWizard() {
             {pdfError && <span className="ju-error" role="alert">{pdfError}</span>}
             {saveError && <span className="ju-error" role="alert">{saveError}</span>}
           </div>
-          <details style={{ marginTop: 16 }}>
-            <summary className="ju-inline-note" style={{ cursor: "pointer" }}>Lihat data mentah hasil engine</summary>
-            <pre className="ju-result">{JSON.stringify(result, null, 2)}</pre>
-          </details>
         </div>
       )}
 

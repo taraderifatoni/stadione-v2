@@ -1,14 +1,18 @@
 import { buildAgeMatrix, classifyScr, computeGradeQuota } from "./formulas.ts"
+import { buildTacticalProfile } from "./tactics.ts"
 import type { PlaybookGenerateInput } from "./validation.ts"
 
 /** Deterministic Sprint-1 summary. Financial detail is specified in FINANCE_SPEC.md. */
 export function generatePlaybookSummary(input: PlaybookGenerateInput) {
   const totalSlots = 27
+  const tacticalProfile = buildTacticalProfile(input)
   return {
     totalSlots,
     horizonYears: input.horizonYears,
-    tacticalDna: input.tacticalDna,
-    baseFormation: input.baseFormation,
+    tacticalDna: tacticalProfile.dnaLabel,
+    tacticalDnaCode: input.tacticalDna,
+    tacticalProfile,
+    baseFormation: tacticalProfile.formation,
     ageMatrix: buildAgeMatrix(totalSlots, input.horizonYears),
     gradeQuota: computeGradeQuota(
       input.horizonYears === 1 && input.targetOutcome === "CHAMPION"

@@ -1,6 +1,7 @@
 import { encryptField } from "./field-crypto.ts"
 import type { KeyringEntry } from "./keyring.ts"
 import type { PlaybookGenerateInput } from "./validation.ts"
+import { buildTacticalProfile } from "./tactics.ts"
 
 /** Payload baris `juara_playbooks` yang siap dikirim ke PostgREST. */
 export interface PlaybookInsertRow {
@@ -15,6 +16,7 @@ export interface PlaybookInsertRow {
   philosophy_prime_pct: number
   philosophy_academy_pct: number
   owner_equity_injection_enc: string
+  tactical_profile_enc: string
   scr_max_threshold_pct: number
   status: "DRAFT"
 }
@@ -40,6 +42,15 @@ export function buildPlaybookInsertRow(
     "owner_equity_injection_enc",
     rowId
   )
+  const profile = encryptField(
+    JSON.stringify(buildTacticalProfile(input)),
+    keyring.key,
+    keyring.keyId,
+    clubId,
+    TABLE,
+    "tactical_profile_enc",
+    rowId
+  )
 
   return {
     id: rowId,
@@ -48,11 +59,12 @@ export function buildPlaybookInsertRow(
     horizon_years: input.horizonYears,
     target_sporting_outcome: input.targetOutcome,
     tactical_dna_type: input.tacticalDna,
-    base_formation: input.baseFormation,
+    base_formation: buildTacticalProfile(input).formation,
     philosophy_star_pct: input.philosophy.star,
     philosophy_prime_pct: input.philosophy.competitive,
     philosophy_academy_pct: input.philosophy.academy,
     owner_equity_injection_enc: `\\x${equity.toString("hex")}`,
+    tactical_profile_enc: `\\x${profile.toString("hex")}`,
     scr_max_threshold_pct: input.guardrails.scrMax,
     status: "DRAFT",
   }
