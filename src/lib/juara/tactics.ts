@@ -183,12 +183,12 @@ export function buildTacticalProfile(input: {
   baseFormation: string
   tacticalDna: string
   targetOutcome: string
-  mentality: Mentality
-  tempo: Tempo
-  pressing: Pressing
-  defensiveLine: DefensiveLine
-  width: Width
-  passingStyle: PassingStyle
+  mentality?: Mentality
+  tempo?: Tempo
+  pressing?: Pressing
+  defensiveLine?: DefensiveLine
+  width?: Width
+  passingStyle?: PassingStyle
 }): TacticalProfile {
   const { formation, source } = resolveFormation(input)
   const dna = findDna(input.tacticalDna)
@@ -197,11 +197,11 @@ export function buildTacticalProfile(input: {
     formationSource: source,
     dnaLabel: dna?.label ?? input.tacticalDna,
     dnaDescription: dna?.description ?? "",
-    mentality: input.mentality,
-    tempo: input.tempo,
-    pressing: input.pressing,
-    defensiveLine: input.defensiveLine,
-    width: input.width,
-    passingStyle: input.passingStyle,
+    mentality: input.mentality ?? dna?.mentality ?? "BALANCED",
+    tempo: input.tempo ?? dna?.tempo ?? "STANDARD",
+    pressing: input.pressing ?? dna?.pressing ?? "MEDIUM",
+    defensiveLine: input.defensiveLine ?? dna?.defensiveLine ?? "STANDARD",
+    width: input.width ?? dna?.width ?? "STANDARD",
+    passingStyle: input.passingStyle ?? dna?.passingStyle ?? "MIXED",
   }
 }

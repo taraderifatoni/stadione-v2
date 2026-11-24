@@ -36,12 +36,12 @@ export const playbookGenerateSchema = z.object({
   ]),
   formationMode: z.enum(["AUTO", "MANUAL"]).default("AUTO"),
   baseFormation: z.string().max(20).default(""),
-  mentality: z.enum(["DEFENSIVE", "BALANCED", "POSITIVE", "ATTACKING"]).default("POSITIVE"),
-  tempo: z.enum(["LOW", "STANDARD", "HIGH"]).default("STANDARD"),
-  pressing: z.enum(["LOW", "MEDIUM", "HIGH", "VERY_HIGH"]).default("HIGH"),
-  defensiveLine: z.enum(["DEEP", "STANDARD", "HIGH"]).default("HIGH"),
-  width: z.enum(["NARROW", "STANDARD", "WIDE"]).default("STANDARD"),
-  passingStyle: z.enum(["DIRECT", "MIXED", "POSSESSION"]).default("MIXED"),
+  mentality: z.enum(["DEFENSIVE", "BALANCED", "POSITIVE", "ATTACKING"]).optional(),
+  tempo: z.enum(["LOW", "STANDARD", "HIGH"]).optional(),
+  pressing: z.enum(["LOW", "MEDIUM", "HIGH", "VERY_HIGH"]).optional(),
+  defensiveLine: z.enum(["DEEP", "STANDARD", "HIGH"]).optional(),
+  width: z.enum(["NARROW", "STANDARD", "WIDE"]).optional(),
+  passingStyle: z.enum(["DIRECT", "MIXED", "POSSESSION"]).optional(),
   philosophy: z
     .object({
       star: z.number().int().min(0).max(100),
