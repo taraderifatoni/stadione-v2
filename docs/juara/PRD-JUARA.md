@@ -532,7 +532,7 @@ Seluruh data disimpan dalam arsitektur relasional dengan kebijakan Row-Level Sec
    * version_name (VARCHAR 100 — contoh: 'v1.0 - Skenario Juara Liga 2 1 Tahun')
    * horizon_years (SMALLINT: 1 s/d 5)
    * target_sporting_outcome (ENUM: 'CHAMPION', 'PROMOTION', 'TOP_4', 'MID_TABLE_SUSTAINABLE')
-   * tactical_dna_type (ENUM: 'HIGH_PRESSING', 'POSITIONAL_PLAY', 'VERTICAL_COUNTER', 'BALANCED_HYBRID')
+   * tactical_dna_type (ENUM 4 nilai kanonik PRD + 6 nilai tambahan PM R21: 'TOTAL_FOOTBALL','CATENACCIO','WING_PLAY','DIAMOND_MIDFIELD','FALSE_NINE','DIRECT_PHYSICAL')
    * base_formation (VARCHAR 20 — contoh: '4-3-3', '4-2-3-1')
    * philosophy_star_pct (NUMERIC 5,2)
    * philosophy_prime_pct (NUMERIC 5,2)

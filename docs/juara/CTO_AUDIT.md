@@ -55,3 +55,15 @@
 - Akun demo tetap aktif sampai Owner selesai mencoba, lalu hapus sebelum rilis umum — keputusan PM, perlu Owner ingat.
 - Repo: commit `7e664d6` (push), sinkron 0 0, working tree bersih. Deploy VPS `7341260`, build exit 0, service active. Test 40/40 PASS (CTO jalankan ulang).
 - Batas klaim tetap: UI & alur utama terverifikasi oleh PM via browser; CTO tidak melihat screenshot secara visual. SSO/pen-test/notifikasi/data riil eksternal.
+
+## [2026-11-24 08.5x WIB] — Audit Sprint 10 wizard taktik
+- Status: TERVERIFIKASI TEKNIS; visual masih di Owner
+- Permintaan Owner: hapus kode bocor, lebih banyak varian gaya/formasi, opsi auto formasi, benchmark Football Manager. PM kerjakan semua.
+- Repo: commit `80340d3` (wizard + M-10) + `ed2eea2` (derive FM params dari DNA) ada; sinkron 0 0; working tree bersih. Deploy `37ef1b3` active.
+- Verifikasi CTO: `node --test tests/juara/*.test.ts` → 46 pass / 0 fail (6 test baru taktik + enkripsi).
+- M-10 terverifikasi dari repo: `database/juara/migrations/20261124000010_juara_tactical_profile.sql` → `ALTER TABLE juara_playbooks ADD COLUMN tactical_profile_enc BYTEA` (1 kolom, tetap 8 tabel), AAD `clubId|table|column|rowId|keyId`.
+- JSON mentah dihapus dari UI; 10 gaya + 10 formasi + Auto/Manual + 6 param FM — sesuai dokumen & kode `tactics.ts`.
+- Produksi (CTO curl): `/juara` 307, `/juara/login` 200, `stadione.pro` 200.
+- `agent-browser` tidak ada di PATH (CTO cek) — sesuai klaim PM. Screenshot langkah 3 belum diambil; CTO tidak bisa nilai visual. Penilaian ada di Owner.
+- Data lama pra-M-10 tidak dimigrasikan (tidak ada input asli) — tercatat, wajar.
+- Batas klaim: UI & alur terverifikasi lewat test/build/struktur kode, bukan lewat browser E2E Sprint 10. SSO/pen-test/notifikasi/data riil tetap eksternal.

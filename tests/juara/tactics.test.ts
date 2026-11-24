@@ -22,13 +22,14 @@ const base = {
   passingStyle: "DIRECT" as const,
 }
 
-test("taktik: 10 gaya bermain dan 10 template formasi tersedia", () => {
+test("taktik: 10 preset gaya bermain dan 13 template formasi tersedia", () => {
   assert.equal(TACTICAL_DNA_OPTIONS.length, 10)
-  assert.equal(FORMATION_TEMPLATES.length, 10)
+  assert.equal(FORMATION_TEMPLATES.length, 13)
+  assert.ok(TACTICAL_DNA_OPTIONS.every((d) => d.suggestedFormations.length === 3))
 })
 
 test("taktik: auto memilih formasi dari preset DNA", () => {
-  assert.equal(resolveFormation(base).formation, "4-2-3-1")
+  assert.equal(resolveFormation(base).formation, "4-3-3")
   assert.equal(resolveFormation(base).source, "AUTO")
 })
 
@@ -40,7 +41,7 @@ test("taktik: mode manual memakai formasi yang diketik user", () => {
 
 test("taktik: target stabil meredam formasi agresif", () => {
   const r = resolveFormation({ ...base, tacticalDna: "DIRECT_PHYSICAL", targetOutcome: "MID_TABLE_SUSTAINABLE" })
-  assert.equal(r.formation, "4-2-3-1")
+  assert.equal(r.formation, "4-3-3")
 })
 
 test("taktik: profil memakai label manusia, bukan kode internal", () => {
@@ -65,7 +66,7 @@ test("playbook-save: profil taktik tersimpan terenkripsi", () => {
   const blob = Buffer.from(row.tactical_profile_enc.slice(2), "hex")
   const plain = decryptField(blob, keyring.key, "club-1", "juara_playbooks", "tactical_profile_enc", "row-1")
   const profile = JSON.parse(plain)
-  assert.equal(profile.formation, "4-2-3-1")
+  assert.equal(profile.formation, "4-3-3")
   assert.equal(profile.dnaLabel, "Gegenpress")
-  assert.equal(row.base_formation, "4-2-3-1")
+  assert.equal(row.base_formation, "4-3-3")
 })

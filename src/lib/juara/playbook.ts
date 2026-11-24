@@ -1,4 +1,4 @@
-import { buildAgeMatrix, classifyScr, computeGradeQuota } from "./formulas.ts"
+import { buildAgeMatrix, computeGradeQuota } from "./formulas.ts"
 import { buildTacticalProfile } from "./tactics.ts"
 import type { PlaybookGenerateInput } from "./validation.ts"
 
@@ -19,7 +19,9 @@ export function generatePlaybookSummary(input: PlaybookGenerateInput) {
         ? "CHAMPION_1Y"
         : "SUSTAINABLE_3Y"
     ),
-    // Test vector from RULEBOOK TV-06; full engine follows FINANCE_SPEC.md.
-    scrStatus: classifyScr(59.8, input.guardrails.scrMax),
+    // TIDAK memakai test vector TV-06 sebagai hasil klub. Nilai SCR riil
+    // menunggu engine FINANCE_SPEC; yang ditampilkan UI adalah ambang input.
+    scrStatus: "MENUNGGU_ENGINE",
+    scrThresholdPct: input.guardrails.scrMax,
   }
 }

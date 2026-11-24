@@ -146,6 +146,7 @@
 .ju-btn:hover:not(:disabled) { background: #f7f9fa; }
 .ju-btn:active:not(:disabled) { transform: translateY(1px); }
 .ju-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.ju-btn-primary[data-muted="true"] { background: #6b9d93; border-color: #6b9d93; }
 .ju-btn-primary { background: var(--ju-accent); border-color: var(--ju-accent); color: #fff; }
 .ju-btn-primary:hover:not(:disabled) { background: var(--ju-accent-dark); border-color: var(--ju-accent-dark); }
 .ju-btn-wide { width: 100%; }

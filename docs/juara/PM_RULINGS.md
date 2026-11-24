@@ -48,3 +48,11 @@ Dapat ditimpa CTO/Owner. Berlaku untuk Divisi 3–6.
 
 Catatan: R18–R20 adalah **default yang dipilih PM atas mandat Owner**, bukan angka dari PRD.
 Bila Owner memiliki angka berbeda, ubah lewat putusan baru dan tandai versi.
+
+## Putusan 24.11.2026 atas hasil riset tim (R21)
+
+| ID | Topik | Putusan PM | Alasan |
+|---|---|---|---|
+| R21 | Kanon 10 Tactical DNA & SCR | **10 DNA resmi untuk v1.0** (4 dari PRD + 6 tambahan R21). Empat DNA pertama memakai model 4 fase terukur PRD §8.1 (PPDA, garis 42–48 m, penguasaan >58%, dll.); enam sisanya berlabel **"Rasionalisasi PM (kualitatif)"**, tidak memakai angka yang tidak ada sumbernya. Status SCR **tidak lagi** memakai test vector 59,8%; engine menampilkan ambang input + keterangan "engine penuh belum terhubung". Mentalitas FM adalah baseline enam parameter, False Nine adalah peran (bukan preset), tempo dibedakan dari arah umpan. Filosofi 100% memakai preset + tombol eksplisit "Isi sisa ke produk akademi" (tanpa coercion diam-diam) dan CTA muted dengan pesan sisa. | Riset tiga agen (dokumentasi SI FM24, gap audit PRD, UX alokasi) menunjukkan kosakata FM sebelumnya diambil tanpa mekanismenya dan angka uji bocor ke UI. Label sumber dipertahankan; tidak ada angka dikarang. |
+
+Bukti: `research_notes/Benchmark taktik JUARA Football Manager/`, laporan gabungan di `reports/Benchmark taktik JUARA Football Manager.md`.

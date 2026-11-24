@@ -28,5 +28,6 @@ test("generate: 27 slot, kuota Grade, dan status SCR dari rumus", () => {
   assert.equal(summary.totalSlots, 27)
   assert.equal(summary.ageMatrix.reduce((s, x) => s + x.slots, 0), 27)
   assert.deepEqual(summary.gradeQuota.A, [6, 8])
-  assert.equal(summary.scrStatus, "YELLOW_WATCHLIST")
+  assert.equal(summary.scrStatus, "MENUNGGU_ENGINE")
+  assert.equal(summary.scrThresholdPct, 65)
 })

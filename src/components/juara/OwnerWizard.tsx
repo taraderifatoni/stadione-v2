@@ -1,10 +1,11 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { playbookGenerateSchema } from "@/lib/juara/validation"
 import {
   FORMATION_TEMPLATES,
   TACTICAL_DNA_OPTIONS,
+  findDna,
   labelFor,
   resolveFormation,
   type DefensiveLine,
@@ -43,7 +44,17 @@ interface Generated {
   ageMatrix: { bracket: string; percent: number; slots: number }[]
   gradeQuota: { A: number[]; B: number[]; C: number[] }
   scrStatus: string
+  scrThresholdPct: number
 }
+
+const formatRupiah = (value: number) =>
+  `Rp ${new Intl.NumberFormat("id-ID", { maximumFractionDigits: 0 }).format(value)}`
+
+const PHILOSOPHY_PRESETS = [
+  { label: "Star-Driven", values: { star: 50, competitive: 35, academy: 15 } },
+  { label: "Balanced Spine + Akademi (rekomendasi)", values: { star: 25, competitive: 45, academy: 30 } },
+  { label: "Academy-First", values: { star: 15, competitive: 35, academy: 50 } },
+] as const
 
 const INITIAL: Draft = {
   leagueTier: "LIGA_2",
@@ -77,12 +88,6 @@ const OUTCOME_LABEL: Record<Draft["targetOutcome"], string> = {
   MID_TABLE_SUSTAINABLE: "Stabil papan tengah",
 }
 
-const SCR_LABEL: Record<string, string> = {
-  GREEN: "Hijau — aman",
-  YELLOW_WATCHLIST: "Kuning — waspada",
-  RED_BREACH: "Merah — dilanggar",
-}
-
 export default function OwnerWizard() {
   const [step, setStep] = useState(0)
   const [draft, setDraft] = useState<Draft>(INITIAL)
@@ -104,8 +109,41 @@ export default function OwnerWizard() {
     targetOutcome: draft.targetOutcome,
   }).formation
 
+  const starRef = useRef<HTMLInputElement>(null)
+  const philosophyValid = philosophyTotal === 100
+  const philosophyRemainder = 100 - philosophyTotal
+
   function set<K extends keyof Draft>(key: K, value: Draft[K]) {
     setDraft((d) => ({ ...d, [key]: value }))
+  }
+
+  function applyPhilosophyPreset(values: { star: number; competitive: number; academy: number }) {
+    setError(null)
+    setDraft((d) => ({ ...d, philosophy: { ...values } }))
+  }
+
+  function autoBalancePhilosophy() {
+    const academy = 100 - draft.philosophy.star - draft.philosophy.competitive
+    if (academy < 0 || academy > 100) {
+      setError("Bintang + kompetitif tidak boleh lebih dari 100%.")
+      return
+    }
+    setError(null)
+    setDraft((d) => ({ ...d, philosophy: { ...d.philosophy, academy } }))
+  }
+
+  function goNext() {
+    if (step === 3 && !philosophyValid) {
+      setError(
+        philosophyRemainder > 0
+          ? `Total masih ${philosophyTotal}%. Sisa ${philosophyRemainder}% belum dialokasikan.`
+          : `Total ${philosophyTotal}%. Kurangi ${-philosophyRemainder}% dari salah satu komponen.`
+      )
+      starRef.current?.focus()
+      return
+    }
+    setError(null)
+    setStep((s) => s + 1)
   }
 
   function chooseDna(code: Draft["tacticalDna"]) {
@@ -267,8 +305,9 @@ export default function OwnerWizard() {
               </div>
               {draft.formationMode === "AUTO" ? (
                 <div className="ju-auto-note">
-                  Formasi dipilih otomatis dari gaya bermain & target: <b>{autoFormation}</b>.
-                  Mengubah gaya bermain akan memperbarui formasi dan parameter finansial dasar.
+                  Formasi dipilih otomatis dari preset FM & target: <b>{autoFormation}</b>.
+                  Alternatif untuk gaya ini: {findDna(draft.tacticalDna)?.suggestedFormations.join(" · ")}.
+                  Preset: <b>{findDna(draft.tacticalDna)?.fmPreset}</b>.
                 </div>
               ) : (
                 <>
@@ -292,7 +331,7 @@ export default function OwnerWizard() {
             </div>
 
             <div className="ju-field">
-              <span>Detail taktik <small className="ju-inline-note">(bisa disesuaikan setelah memilih gaya)</small></span>
+              <span>Detail taktik <small className="ju-inline-note">(mentalitas = baseline; enam parameter lain adalah penyesuaian)</small></span>
               <div className="ju-param-grid">
                 <label className="ju-field">Mentalitas
                   <select className="ju-input" value={draft.mentality} onChange={(e) => set("mentality", e.target.value as Mentality)}>
@@ -319,7 +358,7 @@ export default function OwnerWizard() {
                     {["NARROW", "STANDARD", "WIDE"].map((v) => <option key={v} value={v}>{labelFor("width", v)}</option>)}
                   </select>
                 </label>
-                <label className="ju-field">Gaya umpan
+                <label className="ju-field">Arah umpan
                   <select className="ju-input" value={draft.passingStyle} onChange={(e) => set("passingStyle", e.target.value as PassingStyle)}>
                     {["DIRECT", "MIXED", "POSSESSION"].map((v) => <option key={v} value={v}>{labelFor("passingStyle", v)}</option>)}
                   </select>
@@ -331,19 +370,56 @@ export default function OwnerWizard() {
 
         {step === 3 && (
           <>
-            {(["star", "competitive", "academy"] as const).map((k) => (
+            <div className="ju-field">
+              <span>Preset arsitektur</span>
+              <div className="ju-option-grid">
+                {PHILOSOPHY_PRESETS.map((preset) => (
+                  <button key={preset.label} type="button" className="ju-option"
+                    data-on={
+                      draft.philosophy.star === preset.values.star &&
+                      draft.philosophy.competitive === preset.values.competitive &&
+                      draft.philosophy.academy === preset.values.academy
+                    }
+                    onClick={() => applyPhilosophyPreset(preset.values)}>
+                    <b>{preset.label}</b>
+                    <small>{preset.values.star}% / {preset.values.competitive}% / {preset.values.academy}%</small>
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {(["star", "competitive", "academy"] as const).map((k, index) => (
               <label className="ju-field" key={k}>
                 {k === "star" ? "Pemain bintang (%)" : k === "competitive" ? "Pemain kompetitif (%)" : "Produk akademi (%)"}
-                <input className="ju-input" type="number" min={0} max={100}
+                <input
+                  ref={index === 0 ? starRef : undefined}
+                  className="ju-input"
+                  type="number"
+                  min={0}
+                  max={100}
+                  aria-invalid={!philosophyValid}
+                  aria-describedby="philosophy-total"
                   value={draft.philosophy[k]}
-                  onChange={(e) => setDraft((d) => ({
-                    ...d, philosophy: { ...d.philosophy, [k]: Number(e.target.value) },
-                  }))} />
+                  onChange={(e) => {
+                    setError(null)
+                    setDraft((d) => ({
+                      ...d, philosophy: { ...d.philosophy, [k]: Number(e.target.value) },
+                    }))
+                  }} />
               </label>
             ))}
-            <div className={`ju-inline-note ${philosophyTotal === 100 ? "ju-notice" : "ju-error"}`}>
-              Total {philosophyTotal}% — wajib tepat 100%.
+
+            <div id="philosophy-total" role="status" aria-live="polite"
+              className={philosophyValid ? "ju-notice" : "ju-error"}>
+              Total {philosophyTotal}% — {philosophyValid ? "tepat 100%, siap lanjut." :
+                philosophyRemainder > 0 ? `kurang ${philosophyRemainder}%.` : `lebih ${-philosophyRemainder}%.`}
             </div>
+            {!philosophyValid && (
+              <button type="button" className="ju-btn" onClick={autoBalancePhilosophy}
+                disabled={draft.philosophy.star + draft.philosophy.competitive > 100}>
+                Isi sisa ke produk akademi
+              </button>
+            )}
           </>
         )}
 
@@ -376,7 +452,7 @@ export default function OwnerWizard() {
             <div className="ju-card"><div className="ju-kpi-label">Formasi</div><div className="ju-kpi-value" style={{ fontSize: 20 }}>{result.baseFormation}</div></div>
             <div className="ju-card"><div className="ju-kpi-label">Gaya main</div><div className="ju-kpi-value" style={{ fontSize: 15 }}>{result.tacticalDna}</div></div>
             <div className="ju-card"><div className="ju-kpi-label">Total slot</div><div className="ju-kpi-value">{result.totalSlots}</div></div>
-            <div className="ju-card"><div className="ju-kpi-label">Status SCR</div><div className="ju-kpi-value" style={{ fontSize: 15 }}>{SCR_LABEL[result.scrStatus] ?? result.scrStatus}</div></div>
+            <div className="ju-card"><div className="ju-kpi-label">Ambang SCR Anda</div><div className="ju-kpi-value" style={{ fontSize: 20 }}>{result.scrThresholdPct}%</div><div className="ju-kpi-foot">Engine SCR penuh belum terhubung</div></div>
           </div>
 
           <div className="ju-auto-note" style={{ marginTop: 14 }}>
@@ -385,7 +461,9 @@ export default function OwnerWizard() {
             pressing <b>{labelFor("pressing", result.tacticalProfile.pressing)}</b>,
             garis <b>{labelFor("defensiveLine", result.tacticalProfile.defensiveLine)}</b>,
             lebar <b>{labelFor("width", result.tacticalProfile.width)}</b>,
-            umpan <b>{labelFor("passingStyle", result.tacticalProfile.passingStyle)}</b>.
+            arah umpan <b>{labelFor("passingStyle", result.tacticalProfile.passingStyle)}</b>.
+            Formasi saat menguasai bola <b>{result.tacticalProfile.formationInPossession}</b>,
+            saat bertahan <b>{result.tacticalProfile.formationOutOfPossession}</b>.
           </div>
 
           <div className="ju-section-title">Matriks usia</div>
@@ -398,6 +476,24 @@ export default function OwnerWizard() {
                 ))}
               </tbody>
             </table>
+          </div>
+
+          <div className="ju-section-title">Kuota grade</div>
+          <div className="ju-card">
+            <table className="ju-table">
+              <thead><tr><th>Grade</th><th>Kuota</th><th>Beban gaji</th></tr></thead>
+              <tbody>
+                <tr><td>A</td><td>{result.gradeQuota.A[0]}–{result.gradeQuota.A[1]}</td><td>45–50%</td></tr>
+                <tr><td>B</td><td>{result.gradeQuota.B[0]}–{result.gradeQuota.B[1]}</td><td>35–40%</td></tr>
+                <tr><td>C</td><td>{result.gradeQuota.C[0]}–{result.gradeQuota.C[1]}</td><td>10–15%</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div className="ju-auto-note" style={{ marginTop: 14 }}>
+            Equity yang Anda input: <b>{formatRupiah(draft.guardrails.equity)}</b>.
+            Ilustrasi amortisasi: Rp 1.650.000.000 / 36 bulan = Rp 550.000.000 per tahun
+            (contoh RULEBOOK, bukan hasil klub Anda).
           </div>
 
           <div className="ju-actions" style={{ marginTop: 18 }}>
@@ -418,8 +514,8 @@ export default function OwnerWizard() {
         <button className="ju-btn" type="button" disabled={step === 0} onClick={() => setStep((s) => s - 1)}>Kembali</button>
         {step < 4 ? (
           <button className="ju-btn ju-btn-primary" type="button"
-            disabled={step === 3 && philosophyTotal !== 100}
-            onClick={() => setStep((s) => s + 1)}>Lanjut</button>
+            data-muted={step === 3 && !philosophyValid}
+            onClick={goNext}>Lanjut</button>
         ) : (
           <button className="ju-btn ju-btn-primary" type="button" onClick={submit}>Generate Playbook</button>
         )}

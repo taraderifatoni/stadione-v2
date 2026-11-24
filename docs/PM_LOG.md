@@ -656,5 +656,30 @@ Dampak: produksi diperbarui setelah deploy
 
 ---
 
+### 24.11.2026 — Sprint 11: riset tim + perbaikan wizard (R21)
+
+- Owner: "Pertama: langkah 4 total 90%... Kedua: risetmu kurang dalam dan tidak
+  memanfaatkan kombinasi kerja bareng tim." PM mengakui keduanya.
+- `deep-research` dipakai; **3 agen riset paralel** (FM presets, gap audit PRD,
+  UX alokasi 100%) + 1 `report-writer`. Laporan:
+  `reports/Benchmark taktik JUARA Football Manager.md`; catatan di
+  `research_notes/Benchmark taktik JUARA Football Manager/`.
+- Temuan P0: test vector SCR 59,8% tampil sebagai Status SCR; mentalitas FM
+  bukan dial bebas; False Nine adalah role; tempo ≠ arah umpan; CTA 90% dead-end.
+- Dikerjakan: hapus SCR palsu; kontrak `Generated` eksplisit + Rupiah; preset
+  filosofi + sisa otomatis eksplisit + CTA muted & fokus field; 10 preset FM
+  dengan 3 formasi saran + model 4 fase berlabel sumber; M-11 ENUM 10 DNA;
+  R21 menyelaraskan PRD/RULEBOOK.
+- Bukti: 46/46 test, build exit 0, lint exit 0, M-11 ter-apply (10 enum).
+- **Tidak diklaim selesai secara visual**: agent-browser hilang dari PATH,
+  Owner harus menilai langsung (`P0-3` dalam laporan riset).
+- Rincian: `docs/juara/SPRINT11_RESEARCH_WIZARD.md`.
+
+Status: SELESAI (P0 kode + riset); MENUNGGU PENILAIAN VISUAL OWNER
+Bukti: verifikasi di atas
+Dampak: produksi diperbarui setelah deploy; tanpa data klub riil
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._

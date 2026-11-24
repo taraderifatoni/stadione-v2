@@ -35,7 +35,7 @@ Tiga keputusan yang **sudah ditetapkan** dan tidak dibuka kembali: **approach B 
 | 3 | **VERTICAL_COUNTER** (Compact Block) | Direct bypass ke target man; eksploitasi ruang < 6 detik; winger **> 32,5 km/jam**; blok **28–34 m**; **PPDA > 13,0**; low block 4-4-2 | Duet CB senior **27–31 thn**, **aerial win > 68%**; winger muda eksplosif **20–24 thn**; efisien anggaran |
 | 4 | **BALANCED_HYBRID** | Dominan di kandang, pragmatis tandang; pressing selektif via *pressing triggers* (umpan ke bek sayap); transisi sesuai superioritas jumlah pemain | Pemain **versatile ≥ 2 peran posisi** dari 22 archetype; fleksibilitas taktis tinggi |
 
-Aturan turunan: `tactical_dna_type` harus salah satu ENUM `HIGH_PRESSING | POSITIONAL_PLAY | VERTICAL_COUNTER | BALANCED_HYBRID` `[PRD §10.1]`. Alert High-Pressing pada response contoh menuntut **minimal 4 pemain depan/sayap usia 20–24 thn dengan skor fisik ≥ 15** (skala 1–20) `[PRD §10.2]`.
+Aturan turunan: `tactical_dna_type` harus salah satu ENUM `HIGH_PRESSING | POSITIONAL_PLAY | VERTICAL_COUNTER | BALANCED_HYBRID` `[PRD §10.1]` atau enam nilai tambahan `TOTAL_FOOTBALL | CATENACCIO | WING_PLAY | DIAMOND_MIDFIELD | FALSE_NINE | DIRECT_PHYSICAL` `[R21]`. Enam nilai tambahan hanya punya model 4 fase kualitatif, bukan angka terukur PRD. Alert High-Pressing pada response contoh menuntut **minimal 4 pemain depan/sayap usia 20–24 thn dengan skor fisik ≥ 15** (skala 1–20) `[PRD §10.2]`.
 
 ---
 

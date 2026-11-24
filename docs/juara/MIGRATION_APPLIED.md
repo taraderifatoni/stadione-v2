@@ -26,6 +26,7 @@ membutuhkan kata sandi baru.
 | `20261123000008_juara_bootstrap_club.sql` (M-08) | OK (retry setelah SSH pulih) |
 | `20261124000009_juara_registration.sql` (M-09) | OK — `juara_create_owner_club()` untuk registrasi, grant hanya `service_role` |
 | `20261124000010_juara_tactical_profile.sql` (M-10) | OK — kolom `tactical_profile_enc` ditambah ke `juara_playbooks` (8 tabel, tanpa tabel baru) |
+| `20261124000011_juara_tactical_dna_extend.sql` (M-11) | OK — ENUM `juara_tactical_dna` jadi 10 nilai (6 tambahan R21) |
 
 Tidak ada `DROP`, `TRUNCATE`, atau `DELETE` pada objek apa pun. Semua objek baru
 ber-prefix `juara_` di `schema public`.
