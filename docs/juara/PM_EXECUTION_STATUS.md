@@ -47,11 +47,11 @@ tertinggal satu commit docs; tidak ada risiko produksi.
 | GOV-01 baseline & traceability | IMPLEMENTED (D1) | dokumen ini + `git log`/`curl` baseline |
 | SEC-01 requireCapability + tenant | PLANNED (D2) | tests + 403 matrix + direct DB bypass |
 | SEC-02 invite nyata & anti eskalasi | PLANNED (D2) | M-12 + uji RPC |
-| UX-01 shell FM 5 zona | PLANNED (D3) | screenshot 1440/1024/768/390 |
-| UX-02 DataTable/Inspector | PLANNED (D3) | keyboard + focus + overflow |
-| VIS-01 draft persistence | PLANNED (D3) | save→reload identik |
-| QA-01 browser journey | PLANNED (D3) | QA mengeksekusi, Owner menilai hasil |
-| Deploy bertahap | PLANNED (gate) | build + security + browser + rollback |
+| UX-01 shell FM 5 zona | SEBAGIAN — DEPLOYED | 4 zona ada; inspector 360–440px & action bar 52px **belum ada** |
+| UX-02 DataTable/Inspector | PLANNED | keyboard + focus + overflow belum diuji terpisah |
+| VIS-01 draft persistence | DEPLOYED | save→reload identik (15/45/40), bukti browser |
+| QA-01 browser journey | TESTED (bukan accepted) | PM mengeksekusi journey; Owner Representative mengaudit |
+| Deploy bertahap | DEPLOYED | build + security + browser + rollback |
 
 Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED → ACCEPTED`.
 "Sprint selesai" tidak dipakai sebelum journey dan bukti visual diuji.
@@ -61,8 +61,8 @@ Status per deliverable memakai `PLANNED → IMPLEMENTED → TESTED → DEPLOYED 
 - D1: **IMPLEMENTED + TESTED** — baseline/commit/migrasi/rollback tercatat di dokumen ini dan `SECURITY_GATE_UAT.md`.
 - D2: **IMPLEMENTED + TESTED** — capability matrix, `requireCapability`, redaksi DTO, gate route v1, M-12 anti eskalasi. Bukti: 57/57 test, build exit 0, runtime PATCH/RPC seperti tercatat. **Belum DEPLOYED/ACCEPTED**.
 - D3: **IMPLEMENTED + TESTED** — shell lima zona parsial (sidebar collapsible, header, tab konteks, kanvas; action bar/inspector menyusul), draft visi terenkripsi per klub (M-13 + `/api/juara/v1/vision/draft`), tombol Simpan draf di wizard. Bukti: 57/57 test, build exit 0, route terdaftar. **Belum DEPLOYED/ACCEPTED**.
-- Rollback siap: VPS dapat di-reset ke `019ebcd` lalu `npm run build` + restart `stadione.service`; direktori `/opt/stadione-releases/*` tersedia. Browser regression siap dijalankan dengan `agent-browser viewport <w> <h>` (v0.33.1).
+- Rollback siap: VPS dapat di-reset ke `019ebcd` lalu `npm run build` + restart `stadione.service`; direktori `/opt/stadione-releases/*` tersedia. Browser regression **tidak dijalankan sebelum deploy** — dijalankan **setelah** deploy ke VPS dengan `agent-browser set viewport <w> <h>` (v0.33.1). Ini koreksi atas catatan sebelumnya yang menyebut "siap dijalankan".
 - Gate deploy: build ✓, security ✓, browser regression ✓ (dijalankan setelah deploy), rollback ✓.
 - **Deploy bertahap selesai**: VPS `6425ae5`, service active, B2C 200. Lihat `P1_DEPLOY_VERIFICATION.md`.
-- D1/D2/D3 sekarang **IMPLEMENTED → TESTED → DEPLOYED**. **ACCEPTED: belum** — menunggu Owner Representative/Owner.
+- D1/D2/D3 sekarang **IMPLEMENTED → TESTED → DEPLOYED**. **ACCEPTED: belum** — menunggu Owner Representative/Owner. Khusus D3 **tidak boleh ditandai accepted**: inspector 360–440px dan action bar 52px belum dibangun, sehingga UX-01 hanya sebagian. Koreksi gate browser: regression dijalankan setelah deploy, bukan sebelum deploy.
 - Lanjut tersisa: inspector + action bar + 9 rute (UX-01 lanjutan), SEC-02 invite nyata, finance engine.
