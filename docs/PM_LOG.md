@@ -681,5 +681,31 @@ Dampak: produksi diperbarui setelah deploy; tanpa data klub riil
 
 ---
 
+### 27.11.2026 07.13 WIB — W07 accepted scoped; W08 design/lanes ready
+
+- OwnerRep menerima W07 scoped: 605/605, repro-after menutup 3 blocker, runner 30
+  (28 pass + 2 expected), digest PASS. W07/W05/W06 dibekukan.
+- Board diperbarui: W07 `Accepted (scoped)`, W08 `Development` pada commit
+  `ac699d7`. Debt type-check dicatat persis: 30 error di 7 file test legacy pada
+  `docs/execution/TYPECHECK_DEBT.md`; tidak diklaim repository-wide typecheck green.
+- Design W08 policy-overlay ditulis pada
+  `docs/superpowers/specs/2026-11-26-w08-monthly-projection-design.md`.
+- Builder-check independen selesai dengan 9 pertanyaan; schema totals, role allowlist,
+  contribution ID, provenance, dan completeness sudah dijawab PM. Lima semantik v1
+  diajukan ke Owner: as-of month-end, matriks treatment, penolakan `supersedes`,
+  exclusion event luar horizon, dan window SCR horizon totals.
+- Tiga worktree dibuat dari accepted W07 `3e1466e`: `w08-pm`, `w08-ledger`,
+  `w08-adversarial`; semuanya clean. Baseline PM worktree 605/605 pass.
+- RENCANA — belum dilaksanakan: implementation plan, dispatch D1/D6, kode W08,
+  fixture runner W08, build/digest W08. Tidak ada UI/DB/provider/production/W09.
+
+Status: SELESAI (acceptance W07, design doc, builder check, lane setup); MENUNGGU
+KEPUTUSAN OWNER untuk lima semantik v1
+Bukti: directive W07; design doc; `docs/execution/ACTIVE_BOARD.csv`; worktree HEAD
+`3e1466e`; `/tmp/opencode/w08-baseline.log` (605/605)
+Dampak: tanpa perubahan kode produk W08
+
+---
+
 _PM menjaga aturan: tidak mencatat rencana sebagai sudah dilaksanakan; setiap angka
 yang dilaporkan harus punya sumber yang bisa dibaca ulang._
