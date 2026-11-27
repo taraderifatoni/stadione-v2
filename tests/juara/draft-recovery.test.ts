@@ -16,20 +16,20 @@ const server = {
 test("recovery: memuat server menunjukkan dua field yang berbeda, bukan snapshot lama", () => {
   const backup = cloneDraft(local)
   const choice = chooseServerDraft(server, backup)
-  assert.equal(choice.draft.philosophy.star, 25)
-  assert.equal(choice.draft.guardrails.scrMax, 61)
-  assert.equal(choice.localBackup.philosophy.star, 17)
+  assert.equal((choice.draft as { philosophy: { star: number } }).philosophy.star, 25)
+  assert.equal((choice.draft as { guardrails: { scrMax: number } }).guardrails.scrMax, 61)
+  assert.equal((choice.localBackup as { philosophy: { star: number } }).philosophy.star, 17)
   assert.equal(choice.restoredLocal, false)
   // Backup tidak diubah oleh draft server.
-  assert.equal(backup.philosophy.star, 17)
+  assert.equal((backup as { philosophy: { star: number } }).philosophy.star, 17)
 })
 
 test("recovery: restore lokal eksplisit, bukan otomatis saat save biasa", () => {
   const first = chooseServerDraft(server, cloneDraft(local))
-  assert.equal(first.draft.guardrails.scrMax, 61)
+  assert.equal((first.draft as { guardrails: { scrMax: number } }).guardrails.scrMax, 61)
 
   const restored = chooseLocalDraft(first.localBackup!, server)
-  assert.equal(restored.draft.philosophy.star, 17)
+  assert.equal((restored.draft as { philosophy: { star: number } }).philosophy.star, 17)
   assert.equal(restored.restoredLocal, true)
   assert.match(restored.status, /menimpa perubahan server/)
 })

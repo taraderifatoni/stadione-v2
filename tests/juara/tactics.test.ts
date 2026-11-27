@@ -12,8 +12,8 @@ import { decryptField } from "../../src/lib/juara/field-crypto.ts"
 const base = {
   formationMode: "AUTO" as const,
   baseFormation: "",
-  tacticalDna: "HIGH_PRESSING",
-  targetOutcome: "CHAMPION",
+  tacticalDna: "HIGH_PRESSING" as const,
+  targetOutcome: "CHAMPION" as const,
   mentality: "POSITIVE" as const,
   tempo: "HIGH" as const,
   pressing: "VERY_HIGH" as const,
@@ -56,7 +56,6 @@ test("playbook-save: profil taktik tersimpan terenkripsi", () => {
   const input = {
     leagueTier: "LIGA_2" as const,
     horizonYears: 1 as const,
-    targetOutcome: "CHAMPION" as const,
     ...base,
     philosophy: { star: 25, competitive: 45, academy: 30 },
     guardrails: { equity: 15_000_000_000, scrMax: 65 },

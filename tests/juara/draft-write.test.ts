@@ -60,5 +60,6 @@ test("plan: finance null berarti jangan ubah kolom finance", () => {
     existingFinance: { equity: 200 },
     role: "OWNER",
   })
-  assert.equal(plan.finance.equity, 200)
+  assert.ok(plan.finance !== null)
+  assert.equal(plan.finance!.equity, 200)
 })

@@ -8,6 +8,7 @@ const summary = generatePlaybookSummary({
   horizonYears: 1,
   targetOutcome: "CHAMPION",
   tacticalDna: "HIGH_PRESSING",
+    formationMode: "AUTO" as const,
   baseFormation: "4-3-3",
   philosophy: { star: 25, competitive: 45, academy: 30 },
   guardrails: { equity: 15_000_000_000, scrMax: 65 },

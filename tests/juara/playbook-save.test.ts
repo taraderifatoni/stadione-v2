@@ -10,6 +10,7 @@ const input = {
   horizonYears: 3 as const,
   targetOutcome: "PROMOTION" as const,
   tacticalDna: "HIGH_PRESSING" as const,
+  formationMode: "AUTO" as const,
   baseFormation: "4-3-3",
   philosophy: { star: 25, competitive: 45, academy: 30 },
   guardrails: { equity: 15_000_000_000, scrMax: 62 },
