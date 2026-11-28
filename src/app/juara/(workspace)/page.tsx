@@ -41,34 +41,35 @@ export default function JuaraDashboard() {
     }
   }, [])
 
-  useEffect(() => {
-    void Promise.resolve().then(() => load())
-  }, [load])
+  useEffect(() => { void Promise.resolve().then(() => load()) }, [load])
 
-  const tierLabel: Record<string, string> = {
-    LIGA_1: "Liga 1", LIGA_2: "Liga 2", LIGA_3: "Liga 3", ACADEMY_PRO: "Akademi",
-  }
+  const tierLabel: Record<string, string> = { LIGA_1: "Liga 1", LIGA_2: "Liga 2", LIGA_3: "Liga 3", ACADEMY_PRO: "Akademi" }
 
   return (
     <>
       <div className="ju-pagehead">
-        <h2>Selamat datang{membership ? `, ${membership.clubName}` : ""}</h2>
-        <p>{loading ? "Memuat ringkasan..." : "Ringkasan kondisi klub dan langkah berikutnya."}</p>
+        <h1 style={{ font: "700 36px/1.1 var(--font-display)", margin: "0 0 4px" }}>Ruang Direksi</h1>
+        <p className="muted">{loading ? "Memuat ringkasan..." : `Klub ${membership?.clubName ?? "contoh"} · keputusan yang perlu perhatian klub.`}</p>
       </div>
 
       {error && <div className="ju-error" role="alert">{error}</div>}
 
-      <div className="ju-grid ju-grid-4">
+      <section className="card hero">
+        <small className="muted">PRIORITAS KEPUTUSAN</small>
+        <h1 style={{ marginTop: 8 }}>Tetapkan arah klub.</h1>
+        <p className="muted">Susun visi dan keputusan olahraga sebelum menetapkan pagu. Ini adalah checkpoint implementasi v0.2.1 — data nyata terhubung bertahap.</p>
+        <Link href="/juara/vision" className="ju-btn ju-btn-primary" style={{ marginTop: 8 }}>Buka Visi Owner <ArrowRight size={14} aria-hidden="true" /></Link>
+      </section>
+
+      <div className="ju-grid ju-grid-4" style={{ marginTop: 12 }}>
         <div className="ju-card">
           <div className="ju-kpi-label">Klub</div>
-          <div className="ju-kpi-value" style={{ fontSize: 20 }}>{membership?.clubName ?? "—"}</div>
+          <div className="ju-kpi-value" style={{ fontSize: 22 }}>{membership?.clubName ?? "—"}</div>
           <div className="ju-kpi-foot">{membership ? `Peran: ${membership.role}` : "Belum ada klub"}</div>
         </div>
         <div className="ju-card">
           <div className="ju-kpi-label">Kompetisi</div>
-          <div className="ju-kpi-value" style={{ fontSize: 20 }}>
-            {membership?.leagueTier ? tierLabel[membership.leagueTier] ?? membership.leagueTier : "—"}
-          </div>
+          <div className="ju-kpi-value" style={{ fontSize: 22 }}>{membership?.leagueTier ? tierLabel[membership.leagueTier] ?? membership.leagueTier : "—"}</div>
           <div className="ju-kpi-foot">Tier liga aktif</div>
         </div>
         <div className="ju-card">
@@ -78,7 +79,7 @@ export default function JuaraDashboard() {
         </div>
         <div className="ju-card">
           <div className="ju-kpi-label">Keamanan data</div>
-          <div className="ju-kpi-value" style={{ fontSize: 20, color: "var(--ju-success)" }}>Aktif</div>
+          <div className="ju-kpi-value" style={{ fontSize: 22, color: "var(--positive)" }}>Aktif</div>
           <div className="ju-kpi-foot"><ShieldCheck size={12} aria-hidden="true" /> RLS per klub</div>
         </div>
       </div>
@@ -106,19 +107,21 @@ export default function JuaraDashboard() {
             <Link className="ju-btn ju-btn-primary" href="/juara/vision">Buat playbook pertama</Link>
           </div>
         ) : (
-          <table className="ju-table">
-            <thead><tr><th>Nama</th><th>Target</th><th>Status</th><th>Dibuat</th></tr></thead>
-            <tbody>
-              {playbooks.slice(0, 5).map((p) => (
-                <tr key={p.id}>
-                  <td>{p.version_name ?? p.id.slice(0, 8)}</td>
-                  <td>{p.target_sporting_outcome}</td>
-                  <td><span className="ju-badge">{p.status}</span></td>
-                  <td>{new Date(p.created_at).toLocaleDateString("id-ID")}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="table">
+            <table className="ju-table">
+              <thead><tr><th>Nama</th><th>Target</th><th>Status</th><th>Dibuat</th></tr></thead>
+              <tbody>
+                {playbooks.slice(0, 5).map((p) => (
+                  <tr key={p.id}>
+                    <td>{p.version_name ?? p.id.slice(0, 8)}</td>
+                    <td>{p.target_sporting_outcome}</td>
+                    <td><span className="ju-badge">{p.status}</span></td>
+                    <td>{new Date(p.created_at).toLocaleDateString("id-ID")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         )}
       </div>
     </>
