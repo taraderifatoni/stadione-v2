@@ -1,0 +1,169 @@
+{
+  "checked_at": "2026-11-28T12:04:56.079Z",
+  "phase": "BLOCKED_ACTIVE_EDITORIAL_RUNTIME",
+  "window_utc": {
+    "start": "2026-11-28T12:04:51.199Z",
+    "end": "2026-11-28T14:04:51.199Z"
+  },
+  "base_commit": "3b609b9e69849ce59ff874177ab7ba309af33868",
+  "active_root": "/opt/stadione",
+  "target": {
+    "id": "f0c6e8f8-2a4e-4331-90b1-eb8c30afca37",
+    "status": "DRAFT",
+    "format": "REEL",
+    "plan_key": "2026-11-28:match-pm",
+    "pillar": "Sepak Bola Indonesia",
+    "scheduled_at": "2026-11-28T13:00:00+00:00",
+    "time_wib": "28 November 2026 20.00 WIB",
+    "assets": 0,
+    "parent_id": null,
+    "attempts": 0,
+    "archived_at": null,
+    "tombstone": null
+  },
+  "calendar": {
+    "weekly_limit": 12,
+    "current_week_published_scheduled_routine": 0,
+    "saturday_clocks_wib": [
+      "08:00",
+      "20:00"
+    ],
+    "clock_in_new_matrix": true,
+    "serial_framework": "Tribun Pilih Siapa?",
+    "existing_pillar_preserved": "Sepak Bola Indonesia",
+    "note": "Existing Indonesian football pillar and clock preserved. Saturday20 is not a mandatory illustrated slot. No forced collaboration or topic."
+  },
+  "failure": {
+    "stage": "ACTIVE_RUNTIME_AND_REQUIRED_SOURCE_POOL",
+    "helper": {
+      "exit": 1,
+      "code": "MODULE_NOT_FOUND",
+      "missing_path": "/opt/stadione-current/scripts/cms-load.cjs",
+      "output_file_created": false
+    },
+    "publisher_service": {
+      "Result": "exit-code",
+      "ExecMainExitTimestamp": "Sat 2026-11-28 12:03:53 UTC",
+      "ExecMainStatus": "2"
+    },
+    "publisher_timer": {
+      "LastTriggerUSec": "Sat 2026-11-28 12:03:53 UTC",
+      "ActiveState": "active",
+      "SubState": "waiting"
+    },
+    "publisher_log": "/usr/bin/python3: can't open file '/opt/stadione-current/scripts/cms-publish-due.py': [Errno 2] No such file or directory",
+    "missing_paths": [
+      {
+        "path": "/opt/stadione/scripts/cms-load.cjs",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/scripts/cms-produce-slot.cjs",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/scripts/cms-publish-due.py",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/src/lib/cms/engine.ts",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/src/lib/cms/engine-media.ts",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/src/lib/cms/content-engine.ts",
+        "exists": false
+      },
+      {
+        "path": "/opt/stadione/src/lib/cms/writing-references.ts",
+        "exists": false
+      }
+    ],
+    "reason": "Active deployment lacks required shared CMS runtime. Mandatory source-pool helper fails MODULE_NOT_FOUND before retrieving pool. Publisher repeatedly fails to open cms-publish-due.py and exits2. No historical release or direct Meta publishing used."
+  },
+  "references": {
+    "entries": 49,
+    "latest_read_at": "2026-11-28T00:25:53.917Z",
+    "age_hours": 11.649245,
+    "sha256": "2310ae05ef6aecc4e4b7268b55aee0148b5c9cc9e3f8936160cebeee3cf9be4c",
+    "runtime_identical_committed": true,
+    "issues": [],
+    "active_consumer_verified": false
+  },
+  "instagram_readonly": {
+    "checked_at": "2026-11-28T12:04:52.158Z",
+    "account": "stadione.id",
+    "http": 200,
+    "media_count": 5,
+    "latest": [
+      {
+        "id": "18136472626825406",
+        "published_at": "2026-11-28T03:01:10+0000",
+        "format": "REELS",
+        "http": 200,
+        "metrics": {
+          "views": 17,
+          "reach": 13,
+          "likes": 0,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 0
+        },
+        "unavailable": null
+      },
+      {
+        "id": "18107394344457406",
+        "published_at": "2026-11-27T12:01:40+0000",
+        "format": "REELS",
+        "http": 200,
+        "metrics": {
+          "views": 122,
+          "reach": 117,
+          "likes": 1,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 1
+        },
+        "unavailable": null
+      },
+      {
+        "id": "18155080444552768",
+        "published_at": "2026-11-26T05:51:42+0000",
+        "format": "REELS",
+        "http": 200,
+        "metrics": {
+          "views": 121,
+          "reach": 110,
+          "likes": 2,
+          "comments": 0,
+          "saved": 0,
+          "shares": 0,
+          "total_interactions": 2
+        },
+        "unavailable": null
+      }
+    ],
+    "error": null,
+    "count_scope": "At most five latest items; not total account media count"
+  },
+  "verification": {
+    "all_cms_rows_identical": true,
+    "cms_rows": 296,
+    "target_attempts_identical": true,
+    "cms_mutations": 0,
+    "render": "NOT_RUN",
+    "audio": "NOT_PRODUCED",
+    "article_pair": "NOT_CREATED",
+    "publication": "NOT_ATTEMPTED",
+    "production_idempotence": "NOT_RUN; no production call made, database and attempts unchanged",
+    "target_metrics": null,
+    "metric_limit": "Historical live snapshots have differing ages. Unavailable/null is not zero. No fixed24h/7d or retention/nonfollower assumptions."
+  },
+  "protected": "No edits to13WIB/additional/SCHEDULED/PUBLISHED/archived/tombstones or other drafts. No new slots/reschedules, renderer/credential/symlink/service/code changes or restart.",
+  "remaining": "Report concrete runtime blocker. Reconcile editorial CMS/publisher integration with active deployment before production; do not resurrect missed slots."
+}
